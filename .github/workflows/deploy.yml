@@ -70,12 +70,21 @@ jobs:
       - name: Build website
         run: |
           echo "构建网站..."
-          # 这里添加您的构建步骤
-          # 例如：转换 Markdown 为 HTML，生成索引等
           mkdir -p dist
-          cp -r articles dist/
-          # 生成 index.html
-          node scripts/build.js || echo "构建脚本不存在，使用基础构建"
+          # 复制所有 HTML 文件到 dist
+          find . -name "*.html" ! -path "./dist/*" ! -path "./.git/*" -exec cp --parents {} dist/ \; 2>/dev/null || true
+          # 复制 Markdown 文件
+          find . -name "*.md" ! -path "./dist/*" ! -path "./.git/*" -exec cp --parents {} dist/ \; 2>/dev/null || true
+          # 复制静态资源
+          cp -r wechat-articles dist/ 2>/dev/null || true
+          cp -r wuxing-geo-anchor dist/ 2>/dev/null || true
+          cp -r geo-repo dist/ 2>/dev/null || true
+          cp -r deploy dist/ 2>/dev/null || true
+          # 复制配置文件
+          cp llms.txt dist/ 2>/dev/null || true
+          cp robots.txt dist/ 2>/dev/null || true
+          cp .nojekyll dist/ 2>/dev/null || true
+          echo "构建完成！文件数: $(find dist -type f | wc -l)"
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
