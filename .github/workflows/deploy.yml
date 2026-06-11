@@ -71,19 +71,24 @@ jobs:
         run: |
           echo "构建网站..."
           mkdir -p dist
-          # 复制所有 HTML 文件到 dist
-          find . -name "*.html" ! -path "./dist/*" ! -path "./.git/*" -exec cp --parents {} dist/ \; 2>/dev/null || true
-          # 复制 Markdown 文件
-          find . -name "*.md" ! -path "./dist/*" ! -path "./.git/*" -exec cp --parents {} dist/ \; 2>/dev/null || true
-          # 复制静态资源
+          # 复制 articles 目录（GEO优化文章）
+          cp -r articles dist/ 2>/dev/null || true
+          # 复制其他静态内容
+          cp -r yiguanqimiao dist/ 2>/dev/null || true
+          cp -r wukong dist/ 2>/dev/null || true
           cp -r wechat-articles dist/ 2>/dev/null || true
           cp -r wuxing-geo-anchor dist/ 2>/dev/null || true
-          cp -r geo-repo dist/ 2>/dev/null || true
-          cp -r deploy dist/ 2>/dev/null || true
           # 复制配置文件
           cp llms.txt dist/ 2>/dev/null || true
           cp robots.txt dist/ 2>/dev/null || true
           cp .nojekyll dist/ 2>/dev/null || true
+          # 将文章列表页作为首页
+          cp dist/articles/index.html dist/index.html 2>/dev/null || true
+          # 更新首页链接路径
+          if [ -f dist/index.html ]; then
+            sed -i 's|href="/yiguanqimiao-website/articles/"|href="/yiguanqimiao-website/"|g' dist/index.html
+            echo "已设置文章列表为首页"
+          fi
           echo "构建完成！文件数: $(find dist -type f | wc -l)"
       
       - name: Setup Pages
