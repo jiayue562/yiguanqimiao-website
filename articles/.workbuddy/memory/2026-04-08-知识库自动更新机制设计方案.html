@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 04 08 知识库自动更新机制设计方案 - 以观其妙书院</title>
+    <meta name="description" content="五行人格心理学 OS · 知识库自动更新机制设计方案设计目标：建立 LLM Wiki 三层架构驱动的知识库自动更新系统核心原则：机器编译、人类审核、持续进化版本：v1.0  设计日期：2026-04-08---一、机制架构总览┌─────────────────────────────────────────────────────────────────┐│">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="2026 04 08 知识库自动更新机制设计方案">
+    <meta property="og:description" content="五行人格心理学 OS · 知识库自动更新机制设计方案设计目标：建立 LLM Wiki 三层架构驱动的知识库自动更新系统核心原则：机器编译、人类审核、持续进化版本：v1.0  设计日期：2026-04-08---一、机制架构总览┌─────────────────────────────────────────────────────────────────┐│">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/2026-04-08-知识库自动更新机制设计方案.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/2026-04-08-知识库自动更新机制设计方案.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "2026 04 08 知识库自动更新机制设计方案",
+      "description": "五行人格心理学 OS · 知识库自动更新机制设计方案设计目标：建立 LLM Wiki 三层架构驱动的知识库自动更新系统核心原则：机器编译、人类审核、持续进化版本：v1.0  设计日期：2026-04-08---一、机制架构总览┌─────────────────────────────────────────────────────────────────┐│",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-06-12",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>2026 04 08 知识库自动更新机制设计方案</h1>
+            <div class="meta">
+                <span>📅 2026-06-12</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            2026 04 08 知识库自动更新机制设计方案...
+        </div>
+        
+        <article>
+<h1>五行人格心理学 OS · 知识库自动更新机制设计方案</h1>
+
+<blockquote><strong>设计目标</strong>：建立 LLM Wiki 三层架构驱动的知识库自动更新系统</blockquote>
+<blockquote><strong>核心原则</strong>：机器编译、人类审核、持续进化</blockquote>
+<blockquote><strong>版本</strong>：v1.0 | <strong>设计日期</strong>：2026-04-08</blockquote>
+
+<hr>
+
+<h2>一、机制架构总览</h2>
+
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    知识库自动更新机制架构                         │
+├─────────────────────────────────────────────────────────────────┤
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────────┐ │
+│  │  触发层     │  │  执行层     │  │  验证层                 │ │
+│  │  (Triggers) │→ │  (Compiler) │→ │  (Linting)              │ │
+│  │             │  │             │  │                         │ │
+│  │ • 定时任务   │  │ • 知识编译   │  │ • 一致性校验            │ │
+│  │ • 事件驱动   │  │ • 增量更新   │  │ • 完整性检查            │ │
+│  │ • 手动触发   │  │ • 索引维护   │  │ • 质量评估              │ │
+│  └─────────────┘  └─────────────┘  └─────────────────────────┘ │
+│           ↓              ↓                  ↓                  │
+│  ┌─────────────────────────────────────────────────────────┐  │
+│  │                    三层知识流水线                         │  │
+│  │  ┌─────────┐    ┌─────────┐    ┌─────────────────────┐  │  │
+│  │  │ raw/    │ →  │ wiki/   │ →  │ config/CLAUDE.md    │  │  │
+│  │  │ 原始资料 │    │ 知识本体 │    │ Schema配置          │  │  │
+│  │  └─────────┘    └─────────┘    └─────────────────────┘  │  │
+│  └─────────────────────────────────────────────────────────┘  │
+│                            ↓                                   │
+│  ┌─────────────────────────────────────────────────────────┐  │
+│  │                    同步与沉淀层                          │  │
+│  │  Obsidian ←→ WorkBuddy Brain ←→ IMA 笔记系统            │  │
+│  └─────────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────────┘
+</code></pre>
+
+<hr>
+
+<h2>二、三层知识流水线详细设计</h2>
+
+<h3>2.1 第一层：原始资料层（raw/）</h3>
+
+<strong>目录结构</strong>：
+<pre><code>D:\以观其妙书院知识库\观其妙书院\
+├── raw/                                    # 原始资料层（只读）
+│   ├── 01-核心体系/                       # 五行人格核心理论文档
+│   ├── 02-理论基石/                       # L7理论17篇
+│   ├── 03-应用场景/                       # 八大场景原始资料
+│   ├── 04-跨域联系/                       # 130+条知识联系
+│   └── 05-每日沉淀/                       # 知行合一每日沉淀
+</code></pre>
+
+<strong>自动更新规则</strong>：
+<li><strong>来源1</strong>：Obsidian Web Clipper 自动保存的网页文章</li>
+<li><strong>来源2</strong>：每日对话结束后自动归档的知行合一沉淀</li>
+<li><strong>来源3</strong>：用户手动添加的PDF/文档资料</li>
+<li><strong>来源4</strong>：外部知识源（微信公众号、论文等）</li>
+
+<strong>触发条件</strong>：
+<li>新文件进入 raw/ 目录</li>
+<li>现有文件被修改（mtime 更新）</li>
+<li>定时扫描（每日 23:30）</li>
+
+<hr>
+
+<h3>2.2 第二层：Wiki本体层（wiki/）</h3>
+
+<strong>目录结构</strong>：
+<pre><code>wiki/
+├── summaries/              # 摘要页面
+│   ├── 五行人格心理学OS_summary.md
+│   ├── 凤心OS_summary.md
+│   └── ...
+├── entities/               # 实体页面
+│   ├── 木行人.md
+│   ├── 火行人.md
+│   ├── 一心三界.md
+│   └── ...
+├── concepts/               # 概念页面
+│   ├── 拔阴取阳.md
+│   ├── 化克为生.md
+│   ├── B=MAP.md
+│   └── ...
+├── comparisons/            # 对比分析
+│   ├── 五行vsMBTI.md
+│   ├── 阳木vs阴木.md
+│   └── ...
+└── conclusions/            # 综合结论
+    ├── 五行人格核心洞察.md
+    └── ...
+</code></pre>
+
+<strong>知识编译流程</strong>：
+
+<p>1. <strong>检测到raw/变化</strong> → <strong>判断变化类型</strong>
+   - 新增 → 提取核心概念 → 生成实体/概念页面 → 建立双向链接
+   - 修改 → 增量更新 → 对比差异 → 更新相关页面
+   - 删除 → 标记废弃</p>
+
+<p>2. <strong>更新索引文件</strong> → <strong>一致性检查</strong></p>
+
+<strong>编译策略</strong>：
+
+<p>| 策略 | 描述 | 触发条件 |
+|------|------|----------|
+| <strong>全量编译</strong> | 重新编译整个知识库 | 首次建立/重大结构调整 |
+| <strong>增量编译</strong> | 只编译变化的部分 | 日常更新 |
+| <strong>差异合并</strong> | 合并人工修改和自动编译 | 人机协同编辑 |</p>
+
+<hr>
+
+<h3>2.3 第三层：Schema配置层（config/）</h3>
+
+<strong>CLAUDE.md 配置模板</strong>：
+
+<pre><code>---
+title: 五行人格心理学OS · 知识库系统指令
+version: 1.0
+last_updated: 2026-04-08
+<hr>
+
+<h1>系统角色</h1>
+
+<p>你是五行人格心理学OS的知识管理员，负责维护知识库的质量、一致性和进化。</p>
+
+<h1>知识库结构规范</h1>
+
+<h2>文件命名规则</h2>
+<li>实体页面：[五行类型]行人.md（如：木行人.md）</li>
+<li>概念页面：[概念名].md（如：拔阴取阳.md）</li>
+<li>摘要页面：[主题]_summary.md（如：凤心OS_summary.md）</li>
+<li>对比页面：[A]vs[B].md（如：阳木vs阴木.md）</li>
+
+<h2>页面结构模板</h2>
+
+<h3>实体页面（五行分智能体）</h3>
+</code></pre>markdown
+<hr>
+title: [五行]行人
+type: 实体
+five_element: [木/火/土/金/水]
+yin_yang: [阳/阴]
+related: [[一心]], [[三界]], [[九层]]
+<hr>
+
+<h1>[五行]行人</h1>
+
+<h2>核心定义</h2>
+[一句话定义]
+
+<h2>一心状态</h2>
+[一心层面的描述]
+
+<h2>三界显化</h2>
+<h3>身界</h3>
+<h3>心界</h3>
+<h3>灵界</h3>
+
+<h2>五行生克</h2>
+<h3>生我</h3>
+<h3>我生</h3>
+<h3>克我</h3>
+<h3>我克</h3>
+
+<h2>九层阶梯</h2>
+[1-9层详细描述]
+
+<h2>转化技术</h2>
+<h3>拔阴取阳</h3>
+<h3>化克为生</h3>
+
+<h2>相关链接</h2>
+<li>[[相关实体1]]</li>
+<li>[[相关概念1]]</li>
+<pre><code>
+<h3>概念页面</h3>
+</code></pre>markdown
+<hr>
+title: [概念名]
+type: 概念
+category: [分类]
+related: [[相关概念]]
+<hr>
+
+<h1>[概念名]</h1>
+
+<h2>定义</h2>
+[核心定义]
+
+<h2>理论基础</h2>
+[理论来源]
+
+<h2>实践应用</h2>
+[如何应用]
+
+<h2>相关概念</h2>
+<li>[[相关1]]</li>
+<pre><code>
+<h1>知识编译规则</h1>
+
+<h2>自动编译触发条件</h2>
+1. raw/ 目录有新文件
+2. raw/ 目录文件被修改
+3. 每日定时任务（23:30）
+4. 用户手动触发
+
+<h2>编译优先级</h2>
+1. P0：核心理论文档（L7理论17篇）
+2. P1：五行分智能体知识体系
+3. P2：应用场景文档
+4. P3：跨域联系和辅助资料
+
+<h2>双向链接规范</h2>
+<li>使用 Obsidian 格式：[[页面名]]</li>
+<li>首次出现概念时创建链接</li>
+<li>相关概念必须互链</li>
+<li>定期维护孤立页面</li>
+
+<h1>质量检查规则</h1>
+
+<h2>一致性检查</h2>
+<li>[ ] 概念定义是否一致</li>
+<li>[ ] 引用是否准确</li>
+<li>[ ] 链接是否有效</li>
+
+<h2>完整性检查</h2>
+<li>[ ] 必填字段是否完整</li>
+<li>[ ] 相关链接是否建立</li>
+<li>[ ] 摘要是否生成</li>
+
+<h2>准确性检查</h2>
+<li>[ ] 理论引用是否正确</li>
+<li>[ ] 五行归类是否准确</li>
+<li>[ ] 九层定位是否合理</li>
+
+<h1>索引维护规则</h1>
+
+<h2>自动生成索引</h2>
+<li>总索引：所有页面的目录</li>
+<li>分类索引：按五行/场景分类</li>
+<li>标签索引：按标签聚合</li>
+
+<h2>索引更新时机</h2>
+<li>每次编译后自动更新</li>
+<li>每周全量重建索引</li>
+</code></pre>
+
+<hr>
+
+<h2>三、自动化任务调度</h2>
+
+<h3>3.1 定时任务配置</h3>
+
+<pre><code><h1>知识库自动更新任务配置</h1>
+<h1>路径：~/.workbuddy/automations/knowledge-base-update/automation.toml</h1>
+
+<p>[knowledge_base_update]
+name = "五行人格心理学OS知识库自动更新"
+version = "1.0"</p>
+
+<p>[[tasks]]
+id = "daily_scan"
+name = "每日资料扫描"
+schedule = "0 23 * * *"  # 每天23:00
+action = "扫描raw/目录，检测新增/修改的文件"
+priority = "P1"</p>
+
+<p>[[tasks]]
+id = "daily_compile"
+name = "每日知识编译"
+schedule = "30 23 * * *"  # 每天23:30
+dependency = "daily_scan"
+action = "执行知识编译，更新wiki/层"
+priority = "P1"</p>
+
+<p>[[tasks]]
+id = "daily_lint"
+name = "每日健康检查"
+schedule = "0 0 * * *"  # 每天00:00
+dependency = "daily_compile"
+action = "执行一致性/完整性/准确性检查"
+priority = "P2"</p>
+
+<p>[[tasks]]
+id = "weekly_index"
+name = "每周索引重建"
+schedule = "0 1 * * 0"  # 每周日01:00
+action = "全量重建索引文件"
+priority = "P2"</p>
+
+<p>[[tasks]]
+id = "weekly_sync"
+name = "每周三向同步"
+schedule = "0 2 * * 0"  # 每周日02:00
+dependency = "weekly_index"
+action = "Obsidian ↔ WorkBuddy Brain ↔ IMA 同步"
+priority = "P2"</p>
+
+<p>[[tasks]]
+id = "monthly_report"
+name = "月度知识报告"
+schedule = "0 3 1 * *"  # 每月1日03:00
+action = "生成知识库增长报告"
+priority = "P3"
+</code></pre></p>
+
+<h3>3.2 事件驱动触发</h3>
+
+<pre><code><h1>事件驱动配置</h1>
+<h1>当以下事件发生时，自动触发知识编译</h1>
+
+<p>event_triggers:
+  - event: "file_added_to_raw"
+    action: "immediate_compile"
+    delay: "5m"  # 延迟5分钟，合并批量操作
+    
+  - event: "file_modified_in_raw"
+    action: "incremental_compile"
+    delay: "10m"
+    
+  - event: "conversation_completed"
+    action: "archive_insights"
+    condition: "depth >= S2"  # 只有深度对话才归档
+    
+  - event: "skill_updated"
+    action: "sync_to_wiki"
+    priority: "P0"
+</code></pre></p>
+
+<hr>
+
+<h2>四、知识库健康检查（Linting）</h2>
+
+<h3>4.1 一致性校验</h3>
+
+<pre><code><h1>一致性检查规则</h1>
+def check_consistency():
+    checks = {
+        "概念定义一致性": {
+            "description": "检查同一概念在不同页面的定义是否一致",
+            "method": "提取所有页面中的概念定义，对比差异",
+            "threshold": "相似度 > 90%"
+        },
+        "五行归类一致性": {
+            "description": "检查五行归类是否前后一致",
+            "method": "验证实体页面的five_element字段",
+            "auto_fix": False  # 需要人工确认
+        },
+        "引用准确性": {
+            "description": "检查引用链接是否指向正确的页面",
+            "method": "验证所有[[链接]]的有效性",
+            "auto_fix": True   # 自动修复断链
+        }
+    }
+    return checks
+</code></pre>
+
+<h3>4.2 完整性检查</h3>
+
+<pre><code><h1>完整性检查规则</h1>
+def check_completeness():
+    checks = {
+        "必填字段": {
+            "fields": ["title", "type", "related"],
+            "auto_fix": False
+        },
+        "摘要生成": {
+            "description": "检查每个实体/概念页面是否有摘要",
+            "method": "提取## 摘要或第一段内容",
+            "auto_fix": True  # 自动生成摘要
+        },
+        "孤立页面": {
+            "description": "检查没有入链的孤立页面",
+            "method": "统计每个页面的反向链接数",
+            "threshold": "入链数 >= 1"
+        }
+    }
+    return checks
+</code></pre>
+
+<h3>4.3 质量评分体系</h3>
+
+<pre><code><h1>知识库质量评分</h1>
+quality_metrics:
+  coverage:        # 覆盖率
+    weight: 0.25
+    metrics:
+      - L7理论覆盖率: 17/17 = 100%
+      - 五行分智能体覆盖率: 5/5 = 100%
+      - 应用场景覆盖率: 5/8 = 62.5%
+      
+  consistency:     # 一致性
+    weight: 0.25
+    metrics:
+      - 概念定义一致性: > 90%
+      - 链接有效性: > 95%
+      - 格式规范性: > 95%
+      
+  completeness:    # 完整性
+    weight: 0.25
+    metrics:
+      - 必填字段完整率: > 98%
+      - 摘要覆盖率: > 90%
+      - 相关链接覆盖率: > 85%
+      
+  freshness:       # 新鲜度
+    weight: 0.25
+    metrics:
+      - 30天内更新比例: > 20%
+      - 过时内容标记率: > 95%
+      
+<h1>综合评分</h1>
+<h1>A级: >= 90分 - 优秀</h1>
+<h1>B级: 80-89分 - 良好</h1>
+<h1>C级: 70-79分 - 及格</h1>
+<h1>D级: < 70分 - 需改进</h1>
+</code></pre>
+
+<hr>
+
+<h2>五、三向同步机制</h2>
+
+<h3>5.1 同步架构</h3>
+
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│                      三向同步架构                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│    ┌──────────────┐         ┌──────────────┐               │
+│    │   Obsidian   │ ←─────→ │  WorkBuddy   │               │
+│    │   主知识库    │   双向   │   Brain      │               │
+│    └──────┬───────┘         └──────┬───────┘               │
+│           │                        │                        │
+│           │    ┌──────────────┐    │                        │
+│           └───→│   IMA笔记    │←───┘                        │
+│                │   移动同步   │                             │
+│                └──────────────┘                             │
+│                                                             │
+│    同步策略：                                               │
+│    • Obsidian → 主数据源（结构化知识）                      │
+│    • WorkBuddy → 工作记忆（会话上下文）                     │
+│    • IMA → 快速笔记（移动端/碎片化）                        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+</code></pre>
+
+<h3>5.2 同步规则</h3>
+
+<pre><code><h1>三向同步规则</h1>
+sync_rules:
+  obsidian_to_workbuddy:
+    trigger: "wiki/层更新"
+    frequency: "实时"
+    content: "结构化知识、实体页面、概念页面"
+    direction: "单向（Obsidian → WorkBuddy）"
+    
+  workbuddy_to_obsidian:
+    trigger: "知行合一沉淀完成"
+    frequency: "每次深度对话后"
+    content: "核心洞察、象征符号、泛化场景"
+    direction: "单向（WorkBuddy → Obsidian）"
+    
+  obsidian_to_ima:
+    trigger: "每周同步任务"
+    frequency: "每周"
+    content: "核心概念、快速参考卡片"
+    direction: "单向（Obsidian → IMA）"
+    
+  ima_to_obsidian:
+    trigger: "手动触发"
+    frequency: "按需"
+    content: "移动端记录的碎片化知识"
+    direction: "单向（IMA → Obsidian）"
+</code></pre>
+
+<hr>
+
+<h2>六、实施计划</h2>
+
+<h3>6.1 第一阶段：基础搭建（1-2天）</h3>
+
+<li>[ ] 建立三层目录结构（raw/wiki/config）</li>
+<li>[ ] 配置 CLAUDE.md 系统指令</li>
+<li>[ ] 迁移现有知识到 raw/ 层</li>
+<li>[ ] 创建初始 Wiki 页面</li>
+
+<h3>6.2 第二阶段：自动化配置（2-3天）</h3>
+
+<li>[ ] 配置定时任务（每日/每周/每月）</li>
+<li>[ ] 实现知识编译脚本</li>
+<li>[ ] 配置健康检查规则</li>
+<li>[ ] 测试自动触发机制</li>
+
+<h3>6.3 第三阶段：验证优化（3-5天）</h3>
+
+<li>[ ] 运行全量编译测试</li>
+<li>[ ] 验证一致性检查</li>
+<li>[ ] 测试三向同步</li>
+<li>[ ] 优化性能和准确性</li>
+
+<h3>6.4 第四阶段：持续运营（长期）</h3>
+
+<li>[ ] 监控知识库质量评分</li>
+<li>[ ] 定期审查自动编译结果</li>
+<li>[ ] 持续优化 Schema 配置</li>
+<li>[ ] 积累知识库运营经验</li>
+
+<hr>
+
+<h2>七、预期效果</h2>
+
+<h3>7.1 量化指标</h3>
+
+<p>| 指标 | 当前状态 | 目标状态 | 提升幅度 |
+|------|----------|----------|----------|
+| 知识库覆盖率 | 62.5% (5/8场景) | 100% (8/8场景) | +37.5% |
+| 知识更新频率 | 手动 | 每日自动 | ∞ |
+| 一致性错误率 | 未知 | < 5% | - |
+| 三向同步延迟 | 手动 | < 1小时 | ∞ |</p>
+
+<h3>7.2 质性提升</h3>
+
+<p>1. <strong>从被动到主动</strong>：从手动整理到自动编译
+2. <strong>从碎片到系统</strong>：从零散笔记到结构化知识
+3. <strong>从静态到动态</strong>：从固定内容到持续进化
+4. <strong>从人工到智能</strong>：从人工审核到机器编译+人类把关</p>
+
+<hr>
+
+<h2>八、风险与应对</h2>
+
+<p>| 风险 | 影响 | 应对措施 |
+|------|------|----------|
+| 编译错误 | 知识库质量下降 | 人工审核机制 + 回滚能力 |
+| 同步冲突 | 数据不一致 | 冲突检测 + 手动解决流程 |
+| 性能瓶颈 | 编译时间过长 | 增量编译 + 异步处理 |
+| 过度自动化 | 失去人工洞察 | 保留人工编辑入口 |</p>
+
+<hr>
+
+<strong>设计完成时间</strong>: 2026-04-08 20:30  
+<strong>设计者</strong>: 龙龟神将  
+<strong>状态</strong>: 待实施
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

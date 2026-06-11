@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技能进化V3.0 Gepa算法整合 - 以观其妙书院</title>
+    <meta name="description" content="技能进化v3.0：GEPA算法整合方案版本: v3.0  升级路径: v2.0 → v3.0  日期: 2026-04-15核心升级: GEPA算法 (Genetic Evolution through Prompt Autotuning)---一、GEPA算法核心原理1.1 什么是GEPA？GEPA是一种遗传进化式的提示词自动优化算法，灵感来源于生物进化论：GEPA = Genetic(遗传)">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="技能进化V3.0 Gepa算法整合">
+    <meta property="og:description" content="技能进化v3.0：GEPA算法整合方案版本: v3.0  升级路径: v2.0 → v3.0  日期: 2026-04-15核心升级: GEPA算法 (Genetic Evolution through Prompt Autotuning)---一、GEPA算法核心原理1.1 什么是GEPA？GEPA是一种遗传进化式的提示词自动优化算法，灵感来源于生物进化论：GEPA = Genetic(遗传)">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/技能进化v3.0-GEPA算法整合.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/技能进化v3.0-GEPA算法整合.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "技能进化V3.0 Gepa算法整合",
+      "description": "技能进化v3.0：GEPA算法整合方案版本: v3.0  升级路径: v2.0 → v3.0  日期: 2026-04-15核心升级: GEPA算法 (Genetic Evolution through Prompt Autotuning)---一、GEPA算法核心原理1.1 什么是GEPA？GEPA是一种遗传进化式的提示词自动优化算法，灵感来源于生物进化论：GEPA = Genetic(遗传)",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-06-12",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>技能进化V3.0 Gepa算法整合</h1>
+            <div class="meta">
+                <span>📅 2026-06-12</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            技能进化V3.0 Gepa算法整合...
+        </div>
+        
+        <article>
+<h1>技能进化v3.0：GEPA算法整合方案</h1>
+<blockquote><strong>版本</strong>: v3.0 | <strong>升级路径</strong>: v2.0 → v3.0 | <strong>日期</strong>: 2026-04-15</blockquote>
+<blockquote><strong>核心升级</strong>: GEPA算法 (Genetic Evolution through Prompt Autotuning)</blockquote>
+
+<hr>
+
+<h2>一、GEPA算法核心原理</h2>
+
+<h3>1.1 什么是GEPA？</h3>
+
+<p>GEPA是一种<strong>遗传进化式的提示词自动优化算法</strong>，灵感来源于生物进化论：</p>
+
+<pre><code>GEPA = Genetic(遗传) + Evolution(进化) + Prompt(提示词) + Autotuning(自动调优)
+</code></pre>
+
+<strong>核心思想</strong>: 将提示词视为"基因"，通过选择、变异、交叉、评估的循环，让提示词种群不断进化，最终收敛到最优解。
+
+<h3>1.2 与传统Prompt Engineering的区别</h3>
+
+<p>| 维度 | 传统Prompt Engineering | GEPA算法 |
+|------|----------------------|----------|
+| <strong>优化方式</strong> | 人工试错 | 自动进化 |
+| <strong>迭代速度</strong> | 慢（人工调整） | 快（并行评估） |
+| <strong>探索空间</strong> | 有限（人的经验限制） | 广阔（随机+定向变异） |
+| <strong>可复用性</strong> | 低（依赖个人经验） | 高（算法可复用） |
+| <strong>最优保证</strong> | 无 | 渐进收敛 |</p>
+
+<h3>1.3 GEPA核心流程</h3>
+
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│                    GEPA 五阶段进化循环                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  ┌──────────┐    ┌──────────┐    ┌──────────┐              │
+│  │  初始化   │ → │  评估    │ → │  选择    │              │
+│  │ Initialize│    │ Evaluate │    │ Select  │              │
+│  └──────────┘    └──────────┘    └────┬─────┘              │
+│         ↑                             │                     │
+│         └─────────────────────────────┘                     │
+│                    │                                        │
+│              ┌─────┴─────┐                                  │
+│              ↓           ↓                                  │
+│        ┌──────────┐ ┌──────────┐                           │
+│        │  变异    │ │  交叉    │                           │
+│        │ Mutate  │ │ Crossover│                           │
+│        └──────────┘ └──────────┘                           │
+│              │           │                                  │
+│              └─────┬─────┘                                  │
+│                    ↓                                        │
+│              ┌──────────┐                                   │
+│              │  新一代   │ ──→ 循环直到收敛                  │
+│              │ New Gen │                                   │
+│              └──────────┘                                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+</code></pre>
+
+<hr>
+
+<h2>二、GEPA算法详细设计</h2>
+
+<h3>2.1 基因编码：提示词的染色体表示</h3>
+
+<pre><code><h1>============================================</h1>
+<h1>GEPA 基因编码系统</h1>
+<h1>============================================</h1>
+
+<p>from dataclasses import dataclass, field
+from typing import List, Dict, Any, Optional
+from enum import Enum
+import hashlib
+import json</p>
+
+<p>class GeneType(Enum):
+    """基因类型"""
+    SYSTEM_PROMPT = "system"           # 系统提示词
+    FEW_SHOT = "few_shot"              # 示例样本
+    INSTRUCTION = "instruction"        # 指令模板
+    CONSTRAINT = "constraint"          # 约束条件
+    OUTPUT_FORMAT = "output_format"    # 输出格式
+    THOUGHT_CHAIN = "thought_chain"    # 思维链步骤</p>
+
+<p>@dataclass
+class Gene:
+    """
+    单个基因（提示词片段）
+    
+    类比生物基因:
+    - gene_type: 基因类型（如眼睛颜色基因）
+    - content: 基因序列（如ACTG碱基序列）
+    - metadata: 基因表达调控信息
+    """
+    gene_type: GeneType
+    content: str
+    metadata: Dict[str, Any] = field(default_factory=dict)
+    
+    @property
+    def gene_id(self) -> str:
+        """基因唯一标识（类似染色体位置）"""
+        content_hash = hashlib.md5(self.content.encode()).hexdigest()[:8]
+        return f"{self.gene_type.value}_{content_hash}"
+    
+    def mutate(self, mutation_strategy: str = "random") -> "Gene":
+        """
+        基因变异
+        
+        变异策略:
+        - random: 随机替换部分内容
+        - paraphrase: 同义改写
+        - expand: 扩展细节
+        - compress: 压缩精简
+        """
+        # 实现见下文
+        pass</p>
+
+<p>@dataclass
+class Chromosome:
+    """
+    染色体 = 完整提示词模板
+    
+    一个Skill的提示词由多个基因组成，
+    类似一个生物个体由多个基因决定性状
+    """
+    genes: List[Gene]
+    skill_name: str
+    version: str = "1.0"
+    
+    # 适应度分数（由评估阶段计算）
+    fitness_score: float = 0.0
+    evaluation_count: int = 0
+    
+    @property
+    def chromosome_id(self) -> str:
+        """染色体唯一标识"""
+        gene_ids = ",".join([g.gene_id for g in self.genes])
+        return hashlib.md5(gene_ids.encode()).hexdigest()[:12]
+    
+    def to_prompt(self) -> str:
+        """将染色体转换为可执行的提示词"""
+        # 按基因类型排序，组装成完整提示词
+        ordered_genes = sorted(self.genes, key=lambda g: g.gene_type.value)
+        return "\n\n".join([g.content for g in ordered_genes])
+    
+    def crossover(self, other: "Chromosome", 
+                  crossover_points: int = 2) -> tuple["Chromosome", "Chromosome"]:
+        """
+        染色体交叉（有性繁殖）
+        
+        类似生物的有性繁殖，两个个体交换基因片段
+        """
+        # 实现见下文
+        pass</p>
+
+<p>@dataclass
+class Population:
+    """
+    种群 = 提示词版本库
+    
+    维护一个Skill的多个提示词变体（染色体）
+    """
+    skill_name: str
+    chromosomes: List[Chromosome] = field(default_factory=list)
+    generation: int = 0
+    
+    # 种群参数
+    population_size: int = 20          # 种群大小
+    elite_ratio: float = 0.2           # 精英保留比例
+    mutation_rate: float = 0.3         # 变异率
+    crossover_rate: float = 0.7        # 交叉率
+    
+    def evolve(self, evaluator) -> "Population":
+        """
+        执行一代进化
+        
+        返回新一代种群
+        """
+        # 1. 评估当前种群
+        for chrom in self.chromosomes:
+            if chrom.evaluation_count == 0:
+                chrom.fitness_score = evaluator.evaluate(chrom)
+                chrom.evaluation_count += 1
+        
+        # 2. 选择精英
+        sorted_chroms = sorted(self.chromosomes, 
+                               key=lambda c: c.fitness_score, 
+                               reverse=True)
+        elite_count = int(self.population_size * self.elite_ratio)
+        elites = sorted_chroms[:elite_count]
+        
+        # 3. 生成新一代
+        new_chromosomes = elites.copy()
+        
+        while len(new_chromosomes) < self.population_size:
+            # 选择父母
+            parent1 = self._select_parent()
+            parent2 = self._select_parent()
+            
+            # 交叉
+            if random.random() < self.crossover_rate:
+                child1, child2 = parent1.crossover(parent2)
+            else:
+                child1, child2 = parent1, parent2
+            
+            # 变异
+            if random.random() < self.mutation_rate:
+                child1 = self._mutate_chromosome(child1)
+            if random.random() < self.mutation_rate:
+                child2 = self._mutate_chromosome(child2)
+            
+            new_chromosomes.extend([child1, child2])
+        
+        # 截断到种群大小
+        new_chromosomes = new_chromosomes[:self.population_size]
+        
+        return Population(
+            skill_name=self.skill_name,
+            chromosomes=new_chromosomes,
+            generation=self.generation + 1,
+            population_size=self.population_size,
+            elite_ratio=self.elite_ratio,
+            mutation_rate=self.mutation_rate,
+            crossover_rate=self.crossover_rate
+        )
+    
+    def _select_parent(self) -> Chromosome:
+        """
+        选择父本（轮盘赌选择）
+        
+        适应度越高，被选中的概率越大
+        """
+        total_fitness = sum(c.fitness_score for c in self.chromosomes)
+        pick = random.uniform(0, total_fitness)
+        current = 0
+        for chrom in self.chromosomes:
+            current += chrom.fitness_score
+            if current >= pick:
+                return chrom
+        return self.chromosomes[-1]
+</code></pre></p>
+
+<h3>2.2 适应度评估：如何评价提示词好坏</h3>
+
+<pre><code><h1>============================================</h1>
+<h1>GEPA 适应度评估系统</h1>
+<h1>============================================</h1>
+
+<p>from dataclasses import dataclass
+from typing import List, Dict, Callable
+import time</p>
+
+<p>@dataclass
+class TestCase:
+    """测试用例"""
+    input_data: str                    # 输入
+    expected_output: str               # 期望输出
+    evaluation_criteria: List[str]     # 评估维度
+    weight: float = 1.0                # 权重</p>
+
+<p>@dataclass
+class EvaluationResult:
+    """评估结果"""
+    chromosome_id: str
+    overall_score: float               # 总分 0-100
+    dimension_scores: Dict[str, float] # 各维度得分
+    execution_time: float              # 执行时间
+    token_usage: int                   # Token消耗
+    error_rate: float                  # 错误率</p>
+
+<p>class FitnessEvaluator:
+    """
+    适应度评估器
+    
+    多维度评估提示词质量:
+    1. 准确性(Accuracy): 输出是否符合预期
+    2. 一致性(Consistency): 多次执行结果是否稳定
+    3. 完整性(Completeness): 是否覆盖所有要求
+    4. 效率(Efficiency): 执行时间和Token消耗
+    5. 鲁棒性(Robustness): 对边界情况的处理
+    """
+    
+    def __init__(self, test_cases: List[TestCase]):
+        self.test_cases = test_cases
+        self.dimension_weights = {
+            "accuracy": 0.35,
+            "consistency": 0.20,
+            "completeness": 0.20,
+            "efficiency": 0.15,
+            "robustness": 0.10
+        }
+    
+    def evaluate(self, chromosome: Chromosome) -> float:
+        """
+        评估染色体适应度
+        
+        返回: 0-100的适应度分数
+        """
+        prompt = chromosome.to_prompt()
+        
+        # 执行所有测试用例
+        results = []
+        for test_case in self.test_cases:
+            result = self._run_test(prompt, test_case)
+            results.append(result)
+        
+        # 计算各维度得分
+        dimension_scores = {
+            "accuracy": self._calc_accuracy(results),
+            "consistency": self._calc_consistency(results),
+            "completeness": self._calc_completeness(results),
+            "efficiency": self._calc_efficiency(results),
+            "robustness": self._calc_robustness(results)
+        }
+        
+        # 加权计算总分
+        overall_score = sum(
+            dimension_scores[d] * w 
+            for d, w in self.dimension_weights.items()
+        ) * 100
+        
+        return overall_score
+    
+    def _run_test(self, prompt: str, test_case: TestCase) -> Dict:
+        """执行单个测试用例"""
+        start_time = time.time()
+        
+        # 调用LLM执行
+        output = self._call_llm(prompt, test_case.input_data)
+        
+        execution_time = time.time() - start_time
+        
+        return {
+            "input": test_case.input_data,
+            "expected": test_case.expected_output,
+            "actual": output,
+            "execution_time": execution_time,
+            "token_usage": self._estimate_tokens(prompt + output)
+        }
+    
+    def _calc_accuracy(self, results: List[Dict]) -> float:
+        """
+        计算准确性得分
+        
+        使用语义相似度评估输出与期望的匹配程度
+        """
+        scores = []
+        for r in results:
+            similarity = self._semantic_similarity(r["expected"], r["actual"])
+            scores.append(similarity)
+        return sum(scores) / len(scores)
+    
+    def _calc_consistency(self, results: List[Dict]) -> float:
+        """
+        计算一致性得分
+        
+        同一输入多次执行的结果相似度
+        """
+        # 对同一测试用例执行3次，计算方差
+        # 方差越小，一致性越高
+        pass
+    
+    def _calc_efficiency(self, results: List[Dict]) -> float:
+        """
+        计算效率得分
+        
+        基于执行时间和Token消耗
+        """
+        avg_time = sum(r["execution_time"] for r in results) / len(results)
+        avg_tokens = sum(r["token_usage"] for r in results) / len(results)
+        
+        # 归一化到0-1
+        time_score = max(0, 1 - avg_time / 10)  # 假设10秒为上限
+        token_score = max(0, 1 - avg_tokens / 4000)  # 假设4000token为上限
+        
+        return (time_score + token_score) / 2
+</code></pre></p>
+
+<h3>2.3 变异策略库</h3>
+
+<pre><code><h1>============================================</h1>
+<h1>GEPA 变异策略库</h1>
+<h1>============================================</h1>
+
+<p>class MutationStrategies:
+    """
+    提示词变异策略集合
+    
+    类似生物基因突变，产生新的提示词变体
+    """
+    
+    @staticmethod
+    def random_replace(gene: Gene, replacement_pool: List[str]) -> Gene:
+        """
+        随机替换
+        
+        从替换池中随机选择内容替换基因的部分内容
+        """
+        import random
+        new_content = random.choice(replacement_pool)
+        return Gene(
+            gene_type=gene.gene_type,
+            content=new_content,
+            metadata={**gene.metadata, "mutation": "random_replace"}
+        )
+    
+    @staticmethod
+    def paraphrase(gene: Gene, llm_client) -> Gene:
+        """
+        同义改写
+        
+        使用LLM对内容进行同义改写，保持语义不变
+        """
+        prompt = f"请用不同的表达方式改写以下内容，保持原意不变:\n\n{gene.content}"
+        new_content = llm_client.generate(prompt)
+        
+        return Gene(
+            gene_type=gene.gene_type,
+            content=new_content,
+            metadata={**gene.metadata, "mutation": "paraphrase"}
+        )
+    
+    @staticmethod
+    def expand(gene: Gene, llm_client) -> Gene:
+        """
+        扩展细节
+        
+        增加更多细节和例子
+        """
+        prompt = f"请扩展以下内容，增加具体例子和细节:\n\n{gene.content}"
+        new_content = llm_client.generate(prompt)
+        
+        return Gene(
+            gene_type=gene.gene_type,
+            content=new_content,
+            metadata={**gene.metadata, "mutation": "expand"}
+        )
+    
+    @staticmethod
+    def compress(gene: Gene, llm_client) -> Gene:
+        """
+        压缩精简
+        
+        去除冗余，保留核心
+        """
+        prompt = f"请精简以下内容，去除冗余表达，保留核心要点:\n\n{gene.content}"
+        new_content = llm_client.generate(prompt)
+        
+        return Gene(
+            gene_type=gene.gene_type,
+            content=new_content,
+            metadata={**gene.metadata, "mutation": "compress"}
+        )
+    
+    @staticmethod
+    def add_constraint(gene: Gene, constraint: str) -> Gene:
+        """
+        添加约束
+        
+        增加新的约束条件
+        """
+        new_content = f"{gene.content}\n\n【约束】{constraint}"
+        
+        return Gene(
+            gene_type=gene.gene_type,
+            content=new_content,
+            metadata={**gene.metadata, "mutation": "add_constraint"}
+        )
+    
+    @staticmethod
+    def structure_change(gene: Gene, new_structure: str) -> Gene:
+        """
+        结构调整
+        
+        改变内容的组织结构
+        """
+        # 例如：将段落改为列表，或添加编号
+        new_content = f"{new_structure}\n{gene.content}"
+        
+        return Gene(
+            gene_type=gene.gene_type,
+            content=new_content,
+            metadata={**gene.metadata, "mutation": "structure_change"}
+        )
+</code></pre></p>
+
+<hr>
+
+<h2>三、与知行合一整合</h2>
+
+<h3>3.1 三阶段×GEPA融合</h3>
+
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│              知行合一 × GEPA 融合架构                             │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  第一阶段: 表示空间 (观察完整经验)                                 │
+│  ├── 收集对话数据                                                │
+│  ├── 提取成功/失败案例                                            │
+│  └── 构建测试用例库 ← 作为GEPA的评估基准                          │
+│                              ↓                                  │
+│  第二阶段: 压缩 (提炼核心符号)                                     │
+│  ├── 识别关键成功因素                                             │
+│  ├── 提取可复用模式                                               │
+│  └── 初始化GEPA基因库 ← 将模式编码为基因                          │
+│                              ↓                                  │
+│  第三阶段: 泛化 (场景扩展验证)                                     │
+│  ├── GEPA进化循环                                                │
+│  │   ├── 变异: 生成新提示词变体                                   │
+│  │   ├── 评估: 多场景测试验证                                     │
+│  │   └── 选择: 保留最优变体                                       │
+│  └── 输出优化后的Skill                                           │
+│                              ↓                                  │
+│  系统进化: 更新SKILL.md                                          │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+</code></pre>
+
+<h3>3.2 Skill进化工作流</h3>
+
+<pre><code><h1>============================================</h1>
+<h1>Skill进化工作流</h1>
+<h1>============================================</h1>
+
+<p>class SkillEvolutionWorkflow:
+    """
+    Skill进化工作流
+    
+    整合知行合一三阶段与GEPA算法
+    """
+    
+    def __init__(self, skill_name: str):
+        self.skill_name = skill_name
+        self.population = None
+        self.evaluator = None
+    
+    def stage1_representation(self, session_data: List[Dict]):
+        """
+        阶段1: 表示空间
+        
+        从对话数据中提取经验
+        """
+        print("【阶段1】表示空间 - 观察完整经验")
+        
+        # 1. 提取成功案例
+        success_cases = self._extract_success_cases(session_data)
+        
+        # 2. 提取失败案例
+        failure_cases = self._extract_failure_cases(session_data)
+        
+        # 3. 构建测试用例
+        test_cases = self._build_test_cases(success_cases, failure_cases)
+        
+        # 4. 初始化评估器
+        self.evaluator = FitnessEvaluator(test_cases)
+        
+        print(f"  ✓ 提取成功案例: {len(success_cases)}")
+        print(f"  ✓ 提取失败案例: {len(failure_cases)}")
+        print(f"  ✓ 构建测试用例: {len(test_cases)}")
+        
+        return test_cases
+    
+    def stage2_compression(self, current_skill_content: str):
+        """
+        阶段2: 压缩
+        
+        将当前Skill编码为GEPA基因库
+        """
+        print("\n【阶段2】压缩 - 提炼核心符号")
+        
+        # 1. 解析当前Skill为基因
+        genes = self._parse_skill_to_genes(current_skill_content)
+        
+        # 2. 创建初始染色体
+        original_chromosome = Chromosome(
+            genes=genes,
+            skill_name=self.skill_name
+        )
+        
+        # 3. 初始化种群（生成变体）
+        initial_chromosomes = self._generate_initial_variants(original_chromosome)
+        
+        self.population = Population(
+            skill_name=self.skill_name,
+            chromosomes=initial_chromosomes,
+            generation=0
+        )
+        
+        print(f"  ✓ 解析基因数: {len(genes)}")
+        print(f"  ✓ 初始种群大小: {len(initial_chromosomes)}")
+        
+        return original_chromosome
+    
+    def stage3_generalization(self, max_generations: int = 10):
+        """
+        阶段3: 泛化
+        
+        执行GEPA进化
+        """
+        print(f"\n【阶段3】泛化 - 场景扩展验证")
+        print(f"  开始GEPA进化 (最大{max_generations}代)")
+        
+        best_chromosome = None
+        best_score = 0
+        
+        for gen in range(max_generations):
+            print(f"\n  --- 第{gen+1}代 ---")
+            
+            # 执行一代进化
+            self.population = self.population.evolve(self.evaluator)
+            
+            # 获取当前最优
+            current_best = max(self.population.chromosomes, 
+                              key=lambda c: c.fitness_score)
+            
+            print(f"  最优适应度: {current_best.fitness_score:.2f}")
+            
+            # 更新历史最优
+            if current_best.fitness_score > best_score:
+                best_score = current_best.fitness_score
+                best_chromosome = current_best
+                print(f"  🎉 发现更优解!")
+            
+            # 收敛检查
+            if self._check_convergence():
+                print(f"  ✓ 已收敛，提前结束")
+                break
+        
+        print(f"\n  进化完成!")
+        print(f"  最优适应度: {best_score:.2f}")
+        
+        return best_chromosome
+    
+    def update_skill(self, optimized_chromosome: Chromosome):
+        """
+        更新Skill文件
+        """
+        print("\n【系统进化】更新SKILL.md")
+        
+        new_prompt = optimized_chromosome.to_prompt()
+        
+        # 1. 备份原文件
+        self._backup_skill()
+        
+        # 2. 更新SKILL.md
+        self._write_skill(new_prompt)
+        
+        # 3. 记录进化历史
+        self._log_evolution(optimized_chromosome)
+        
+        print(f"  ✓ SKILL.md已更新")
+        print(f"  ✓ 进化历史已记录")
+        
+        return new_prompt
+</code></pre></p>
+
+<hr>
+
+<h2>四、与龙心OS集成</h2>
+
+<h3>4.1 自动进化触发</h3>
+
+<pre><code><h1>GEPA自动进化触发配置</h1>
+<h1>文件: ~/.workbuddy/skills/知行合一/references/gepa-triggers.yaml</h1>
+
+<p>evolution_triggers:
+  # 触发条件
+  conditions:
+    # 条件1: 对话次数达到阈值
+    - type: "session_count"
+      threshold: 10
+      skill: "*"  # 所有Skill
+    
+    # 条件2: 用户反馈评分低于阈值
+    - type: "low_feedback"
+      threshold: 6.0
+      consecutive: 3
+    
+    # 条件3: 手动触发
+    - type: "manual"
+      command: "进化Skill"
+    
+    # 条件4: 定期进化
+    - type: "scheduled"
+      cron: "0 2 * * 0"  # 每周日凌晨2点
+  
+  # 进化参数
+  parameters:
+    population_size: 20
+    max_generations: 10
+    elite_ratio: 0.2
+    mutation_rate: 0.3
+    crossover_rate: 0.7
+    
+  # 评估维度权重
+  evaluation_weights:
+    accuracy: 0.35
+    consistency: 0.20
+    completeness: 0.20
+    efficiency: 0.15
+    robustness: 0.10
+</code></pre></p>
+
+<h3>4.2 进化报告输出</h3>
+
+<pre><code>╔══════════════════════════════════════════════════════════════════╗
+║              🧬 Skill进化报告 - GEPA v3.0                         ║
+╠══════════════════════════════════════════════════════════════════╣
+║ Skill名称: 五色光思维                                             ║
+║ 进化时间: 2026-04-15 18:30                                        ║
+║ 进化代数: 7 / 10 (提前收敛)                                        ║
+╠══════════════════════════════════════════════════════════════════╣
+║ 适应度进化曲线:                                                    ║
+║ Gen 0: 62.5 → Gen 1: 68.3 → Gen 2: 72.1 → Gen 3: 75.8            ║
+║ Gen 4: 78.2 → Gen 5: 81.5 → Gen 6: 84.7 → Gen 7: 87.3 ✓          ║
+╠══════════════════════════════════════════════════════════════════╣
+║ 最优染色体基因组成:                                                ║
+║ • system_prompt (权重0.35) - 适应度贡献: +12.3                   ║
+║ • few_shot (权重0.25) - 适应度贡献: +8.7                         ║
+║ • instruction (权重0.20) - 适应度贡献: +6.2                      ║
+║ • output_format (权重0.15) - 适应度贡献: +4.8                    ║
+║ • constraints (权重0.05) - 适应度贡献: +2.1                      ║
+╠══════════════════════════════════════════════════════════════════╣
+║ 关键改进点:                                                        ║
+║ ① 系统提示词增加"三体一心"框架说明                                 ║
+║ ② 示例样本从3个增加到5个，覆盖更多场景                             ║
+║ ③ 输出格式增加"五行对应"列                                        ║
+║ ④ 添加"强制完整性"约束提醒                                        ║
+╠══════════════════════════════════════════════════════════════════╣
+║ 测试用例通过率: 94% (47/50)                                       ║
+║ 平均响应时间: 1.2s (优化前: 1.8s)                                  ║
+║ Token效率: +23%                                                   ║
+╠══════════════════════════════════════════════════════════════════╣
+║ 行动建议:                                                         ║
+║ ✅ 已自动更新SKILL.md                                             ║
+║ ✅ 已备份原版本至 .backup/五色光思维_2026-04-15.bak               ║
+║ 📋 建议1周后复盘进化效果                                            ║
+╚══════════════════════════════════════════════════════════════════╝
+</code></pre>
+
+<hr>
+
+<h2>五、实施计划</h2>
+
+<pre><code>Phase 1: GEPA核心实现 (3天)
+├── Day 1: 基因编码系统 + 种群管理
+├── Day 2: 适应度评估 + 变异策略
+└── Day 3: 交叉算法 + 选择机制
+
+<p>Phase 2: 知行合一整合 (2天)
+├── Day 4: 三阶段×GEPA融合
+└── Day 5: Skill进化工作流</p>
+
+<p>Phase 3: 龙心OS集成 (2天)
+├── Day 6: 自动触发 + 评估系统
+└── Day 7: 进化报告 + 可视化</p>
+
+<p>Phase 4: 测试优化 (2天)
+├── Day 8: 单元测试 + 集成测试
+└── Day 9: 性能优化 + 文档</p>
+
+<p>Total: 9天
+</code></pre></p>
+
+<hr>
+
+<h2>六、核心金句</h2>
+
+<blockquote><strong>"GEPA不是替代人的创造力，而是放大人的创造力。"</strong></blockquote>
+
+<blockquote><strong>"最好的提示词不是写出来的，是进化出来的。"</strong></blockquote>
+
+<blockquote><strong>"每一次对话都是一次自然选择，优秀的模式会被保留，低效的会被淘汰。"</strong></blockquote>
+
+<hr>
+
+<strong>文档版本</strong>: v3.0-draft | <strong>状态</strong>: 设计完成待实现 | <strong>下一步</strong>: 开始Phase 1实施
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

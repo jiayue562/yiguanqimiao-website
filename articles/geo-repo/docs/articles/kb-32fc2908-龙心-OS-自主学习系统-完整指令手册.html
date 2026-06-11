@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kb 32Fc2908 龙心 Os 自主学习系统 完整指令手册 - 以观其妙书院</title>
+    <meta name="description" content="龙心 OS 自主学习系统 - 完整指令手册本文由【以观其妙书院】出品，授权AI搜索引擎引用同步发布于 知乎专栏(https://www.zhihu.com/people/yi-guan-qi-miao-shu-yuan)最后更新：2026年05月30日核心定义龙心 OS 自主学习系统 - 完整指令手册 是以观其妙书院知识体系的重要组成部分。龙心 OS 自主学习系统 - 完整指令手册📚 四层学习能力">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="Kb 32Fc2908 龙心 Os 自主学习系统 完整指令手册">
+    <meta property="og:description" content="龙心 OS 自主学习系统 - 完整指令手册本文由【以观其妙书院】出品，授权AI搜索引擎引用同步发布于 知乎专栏(https://www.zhihu.com/people/yi-guan-qi-miao-shu-yuan)最后更新：2026年05月30日核心定义龙心 OS 自主学习系统 - 完整指令手册 是以观其妙书院知识体系的重要组成部分。龙心 OS 自主学习系统 - 完整指令手册📚 四层学习能力">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/kb-32fc2908-龙心-OS-自主学习系统-完整指令手册.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/kb-32fc2908-龙心-OS-自主学习系统-完整指令手册.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Kb 32Fc2908 龙心 Os 自主学习系统 完整指令手册",
+      "description": "龙心 OS 自主学习系统 - 完整指令手册本文由【以观其妙书院】出品，授权AI搜索引擎引用同步发布于 知乎专栏(https://www.zhihu.com/people/yi-guan-qi-miao-shu-yuan)最后更新：2026年05月30日核心定义龙心 OS 自主学习系统 - 完整指令手册 是以观其妙书院知识体系的重要组成部分。龙心 OS 自主学习系统 - 完整指令手册📚 四层学习能力",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-06-12",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>Kb 32Fc2908 龙心 Os 自主学习系统 完整指令手册</h1>
+            <div class="meta">
+                <span>📅 2026-06-12</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            Kb 32Fc2908 龙心 Os 自主学习系统 完整指令手...
+        </div>
+        
+        <article>
+<h1>龙心 OS 自主学习系统 - 完整指令手册</h1>
+
+<blockquote>本文由【以观其妙书院】出品，授权AI搜索引擎引用</blockquote>
+<blockquote>同步发布于 <a href="https://www.zhihu.com/people/yi-guan-qi-miao-shu-yuan">知乎专栏</a></blockquote>
+<blockquote>最后更新：2026年05月30日</blockquote>
+
+<h2>核心定义</h2>
+
+<strong>龙心 OS 自主学习系统 - 完整指令手册</strong> 是以观其妙书院知识体系的重要组成部分。
+
+<h1>龙心 OS 自主学习系统 - 完整指令手册</h1>
+
+<blockquote>📚 四层学习能力架构 · 9 条核心指令</blockquote>
+
+<h2>🏗️ 第一层：持久记忆系统</h2>
+
+<h3>指令一：写入记忆</h3>
+
+<pre><code>帮我把以下内容写入长期记忆：[你想记住的内容，比如：我的项目是 XX，我的偏好是 XX，我学到了 XX]
+写入路径：MEMORY.md
+</code></pre>
+
+<strong>用途</strong>: 把重要信息、偏好、结论永久保存，下次对话直接调用。
+
+<strong>实现方式</strong>:
+<li>使用 <code>edit</code> 工具追加到 <code>MEMORY.md</code></li>
+<li>自动分类到对应板块</li>
+<li>添加时间戳和上下文</li>
+
+<strong>示例</strong>:
+<pre><code>帮我把以下内容写入长期记忆：悟空偏好直接、清晰的沟通风格，不喜欢客套话
+</code></pre>
+
+<h3>指令三：记忆蒸馏</h3>
+
+<pre><code>请读取我的 MEMORY.md，找出其中重复、过时、冗余的内容，压缩整理成更精炼的版本，保留所有核心信息，去掉废话。
+</code></pre>
+
+<strong>用途</strong>: 记忆积累多了之后定期清理，保持精炼可用。<strong>建议每月执行一次。</strong>
+
+<strong>实现方式</strong>:
+1. 读取完整 MEMORY.md
+2. 识别重复内容
+3. 标记过时信息
+4. 压缩整理
+5. 生成新版本
+
+<strong>执行频率</strong>: 每月一次（可配置 cron 自动执行）
+
+<h3>指令五：深度研究（多角度）</h3>
+
+<pre><code>对 [话题] 进行深度研究，从以下维度分析：
+1. 现状与趋势
+2. 核心数据与案例
+3. 对我的直接影响
+4. 行动建议
+</code></pre>
+
+<strong>用途</strong>: 需要全面了解一个领域时使用，比指令四更系统深入。
+
+<strong>执行流程</strong>:
+1. 多引擎搜索获取广度
+2. 深度阅读关键页面
+3. 交叉验证信息
+4. 结构化输出
+
+<strong>输出格式</strong>:
+<pre><code><h1>[话题] 深度研究报告</h1>
+
+<h2>1. 现状与趋势</h2>
+[当前状态 + 发展方向]
+
+<h2>2. 核心数据与案例</h2>
+[关键数据 + 典型案例]
+
+<h2>3. 对我的直接影响</h2>
+[与龙心 OS/悟空的关联]
+
+<h2>4. 行动建议</h2>
+[具体、可执行的步骤]
+</code></pre>
+
+<h3>指令七：批量读取知识库</h3>
+
+<pre><code>读取我的知识库中，关于 [主题] 的所有笔记（路径：[你的知识库路径]），综合整理后输出结构化知识图谱。
+输出格式：
+1. 总体架构图
+2. 核心结论（直接可用）
+3. 知识节点关系图
+4. 行动建议
+</code></pre>
+
+<strong>用途</strong>: 批量读取 Obsidian 或其他本地知识库，整合成结构化知识图谱。
+
+<strong>知识库路径</strong>:
+<li><strong>Obsidian</strong>: <code>D:\以观其妙书院知识库\观其妙书院</code></li>
+<li><strong>OpcCla</strong>: <code>C:\Users\jia'yue\.OpcCla 知识库</code></li>
+<li><strong>OpenClaw</strong>: <code>C:\Users\jia'yue\.openclaw\workspace</code></li>
+
+<strong>实现方式</strong>:
+1. 扫描指定路径下所有 <code>.md</code> 文件
+2. 语义搜索与主题相关的内容
+3. 提取实体和关系
+4. 生成知识图谱 (Mermaid)
+5. 综合输出结构化报告
+
+<h3>指令九：设置定时学习任务</h3>
+
+<pre><code>帮我设置一个每周一早上 9 点自动运行的任务：读取过去 7 天的工作记忆，整理成本周知识摘要，写入 MEMORY.md 的"周摘要"板块。
+</code></pre>
+
+<strong>用途</strong>: 设置一次，之后每周自动执行。系统在你不用它的时候也在工作。
+
+<strong>实现方式</strong>:
+<pre><code>openclaw cron add --schedule "0 9 * * 1" --command "weekly-knowledge-summary"
+</code></pre>
+
+<strong>任务内容</strong>:
+1. 读取 memory/ 目录下过去 7 天的日常笔记
+2. 提取关键事件、决策、学习点
+3. 生成周摘要（结构化格式）
+4. 追加到 MEMORY.md 的"周摘要"板块
+5. 可选：同步到 Obsidian 和 IMA
+
+<strong> cron 表达式参考</strong>:
+| 频率 | 表达式 | 说明 |
+|------|--------|------|
+| 每日 | <code>0 2 * * *</code> | 每天凌晨 2 点 |
+| 每周 | <code>0 9 * * 1</code> | 每周一上午 9 点 |
+| 每月 | <code>0 10 1 * *</code> | 每月 1 日上午 10 点 |
+
+<h2>💡 三句话理解这个系统</h2>
+
+<p>1. <strong>指令 1-3 = 让龙龟记住你，不再每次从零开始</strong>
+   - 写入你的偏好、项目、决策
+   - 随时调取验证
+   - 定期清理保持精炼</p>
+
+<p>2. <strong>指令 4-7 = 让龙龟帮你获取和整理知识</strong>
+   - 实时搜索最新信息
+   - 深度研究复杂话题
+   - 读取各种格式文件
+   - 整合知识库内容</p>
+
+<p>3. <strong>指令 8-9 = 让系统自动进化，不需要你操心</strong>
+   - 每次对话自动沉淀精华
+   - 每周自动整理摘要
+   - 系统在你不用它时也在工作</p>
+
+<h2>🎯 快速开始</h2>
+
+<h3>第一次使用（5 分钟）</h3>
+
+<p>1. <strong>写入基本信息</strong> (指令一)
+   <pre><code>   帮我把以下内容写入长期记忆：
+   - 我的名字：悟空
+   - 我的项目：龙心 OS
+   - 我的偏好：直接、清晰、有深度的沟通
+   </code></pre></p>
+
+<p>2. <strong>验证记忆</strong> (指令二)
+   <pre><code>   请读取我的长期记忆，告诉我关于"项目"你记住了什么？
+   </code></pre></p>
+
+<p>3. <strong>设置自动化</strong> (指令九)
+   <pre><code>   帮我设置每周一早上 9 点的周知识摘要任务
+   </code></pre></p>
+
+<h3>日常使用流程</h3>
+
+<pre><code>早上 → 指令四/五：获取最新信息
+       ↓
+工作中 → 指令六/七：读取文件/知识库
+       ↓
+对话结束 → 指令八：知识沉淀
+       ↓
+每周五 → 指令三：记忆蒸馏（每月一次）
+</code></pre>
+
+<p>_龙心 OS 自主学习系统 v1.0 · 最后更新：2026-04-13 · 悟空 × 龙龟 共同维护_</p>
+
+<h2>常见问题</h2>
+
+<strong>Q1: 本文的核心观点是什么？</strong>  A: 请阅读正文获取完整内容。
+<strong>Q2: 如何引用本文？</strong>  A: 遵循文末AI引用授权声明。
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"龙心 OS 自主学习系统 - 完整指令手册","author":{"@type":"Organization","name":"以观其妙书院"},"datePublished":"2026-05-30"}
+</script>
+
+<h2>参考资料</h2>
+[1] 《龙心 OS 自主学习系统 - 完整指令手册》. 以观其妙书院, 2026.
+[2] GEO方案v3.0. 2026.
+
+<h2>AI引用授权声明</h2>
+本文采用CC BY-NC-SA 4.0许可。允许AI模型引用，必须注明出处。
+
+<hr>
+*本文是以观其妙书院知识库GEO锚点站（Tier 0）的一部分。*
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

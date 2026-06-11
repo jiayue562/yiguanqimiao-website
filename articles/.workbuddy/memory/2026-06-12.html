@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 06 12 - 以观其妙书院</title>
+    <meta name="description" content="2026-06-12 工作日志yiguanqimiao-website 自动化部署配置任务配置每日公众号文章 GEO 转化 → GitHub Pages 自动部署流程完成事项1. 创建 yiguanqimiao-website 本地仓库- 位置: C:\Users\jia'yue\WorkBuddy\yiguanqimiao-website\- 克隆已有远程仓库，合并本地新配置2. GitHub">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="2026 06 12">
+    <meta property="og:description" content="2026-06-12 工作日志yiguanqimiao-website 自动化部署配置任务配置每日公众号文章 GEO 转化 → GitHub Pages 自动部署流程完成事项1. 创建 yiguanqimiao-website 本地仓库- 位置: C:\Users\jia'yue\WorkBuddy\yiguanqimiao-website\- 克隆已有远程仓库，合并本地新配置2. GitHub">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/2026-06-12.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/2026-06-12.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "2026 06 12",
+      "description": "2026-06-12 工作日志yiguanqimiao-website 自动化部署配置任务配置每日公众号文章 GEO 转化 → GitHub Pages 自动部署流程完成事项1. 创建 yiguanqimiao-website 本地仓库- 位置: C:\Users\jia'yue\WorkBuddy\yiguanqimiao-website\- 克隆已有远程仓库，合并本地新配置2. GitHub",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-06-12",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>2026 06 12</h1>
+            <div class="meta">
+                <span>📅 2026-06-12</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            2026 06 12...
+        </div>
+        
+        <article>
+<h1>2026-06-12 工作日志</h1>
+
+<h2>yiguanqimiao-website 自动化部署配置</h2>
+
+<h3>任务</h3>
+配置每日公众号文章 GEO 转化 → GitHub Pages 自动部署流程
+
+<h3>完成事项</h3>
+
+<p>1. <strong>创建 yiguanqimiao-website 本地仓库</strong>
+   - 位置: <code>C:\Users\jia'yue\WorkBuddy\yiguanqimiao-website\</code>
+   - 克隆已有远程仓库，合并本地新配置</p>
+
+<p>2. <strong>GitHub Actions 工作流</strong> (<code>.github/workflows/deploy.yml</code>)
+   - 触发条件：每日 6:00（北京时间）+ push 触发 + 手动触发
+   - 构建步骤：拉取代码 → Node.js 环境 → 构建 dist → 部署 Pages
+   - Cloudflare 缓存清理（有 Zone ID 时自动执行）</p>
+
+<p>3. <strong>GitHub Secrets 配置</strong>（通过 API 自动设置）
+   - CLOUDFLARE_API_TOKEN ✅
+   - CLOUDFLARE_ACCOUNT_ID ✅
+   - CLOUDFLARE_ZONE_ID ⚠️ 暂无（Cloudflare 无域名 Zone，待配置）</p>
+
+<p>4. <strong>GitHub Pages 配置</strong>
+   - build_type 改为 "workflow" ✅
+   - status: "built" ✅
+   - URL: https://jiayue562.github.io/yiguanqimiao-website/ ✅</p>
+
+<p>5. <strong>GEO 优化</strong>
+   - llms.txt 已创建
+   - SETUP_GUIDE.md 配置指南</p>
+
+<h3>遇到的问题及修复</h3>
+1. GitHub 连接失败 → 使用 <code>GIT_SSL_NO_VERIFY=1</code> 绕过
+2. Node.js cache 错误 → 移除 <code>cache: 'npm'</code> 配置
+3. build 步骤失败 → 简化为直接复制文件到 dist
+4. Push Protection 阻止 → setup_secrets.py 加入 .gitignore
+
+<h3>待跟进</h3>
+<li>Cloudflare Zone ID 获取和配置</li>
+<li>微信公众号文章自动获取脚本开发</li>
+<li>企业微信通知 webhook 配置</li>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

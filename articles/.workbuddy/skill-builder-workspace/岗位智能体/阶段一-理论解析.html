@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阶段一 理论解析 - 以观其妙书院</title>
+    <meta name="description" content="岗位智能体 · 阶段一理论解析构建日期: 2026-04-20Skill Builder版本: v1.1阶段: 第一阶段·理论解析（Step 1-4）---一、核心定义提取（Step 1）1.1 一句话核心定义岗位智能体是基于五行人格心理学OS的岗位AI工作流设计系统，通过"行业×企业×岗位×性格×任务×模型"六维框架，生成精准适配的AI提示词与智能体使用方案。1.2 What（是什么）岗位智能体">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="阶段一 理论解析">
+    <meta property="og:description" content="岗位智能体 · 阶段一理论解析构建日期: 2026-04-20Skill Builder版本: v1.1阶段: 第一阶段·理论解析（Step 1-4）---一、核心定义提取（Step 1）1.1 一句话核心定义岗位智能体是基于五行人格心理学OS的岗位AI工作流设计系统，通过"行业×企业×岗位×性格×任务×模型"六维框架，生成精准适配的AI提示词与智能体使用方案。1.2 What（是什么）岗位智能体">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/阶段一-理论解析.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/阶段一-理论解析.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "阶段一 理论解析",
+      "description": "岗位智能体 · 阶段一理论解析构建日期: 2026-04-20Skill Builder版本: v1.1阶段: 第一阶段·理论解析（Step 1-4）---一、核心定义提取（Step 1）1.1 一句话核心定义岗位智能体是基于五行人格心理学OS的岗位AI工作流设计系统，通过"行业×企业×岗位×性格×任务×模型"六维框架，生成精准适配的AI提示词与智能体使用方案。1.2 What（是什么）岗位智能体",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-06-12",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>阶段一 理论解析</h1>
+            <div class="meta">
+                <span>📅 2026-06-12</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            阶段一 理论解析...
+        </div>
+        
+        <article>
+<h1>岗位智能体 · 阶段一理论解析</h1>
+
+<blockquote><strong>构建日期</strong>: 2026-04-20  </blockquote>
+<blockquote><strong>Skill Builder版本</strong>: v1.1  </blockquote>
+<blockquote><strong>阶段</strong>: 第一阶段·理论解析（Step 1-4）</blockquote>
+
+<hr>
+
+<h2>一、核心定义提取（Step 1）</h2>
+
+<h3>1.1 一句话核心定义</h3>
+
+<strong>岗位智能体</strong>是基于五行人格心理学OS的岗位AI工作流设计系统，通过"行业×企业×岗位×性格×任务×模型"六维框架，生成精准适配的AI提示词与智能体使用方案。
+
+<h3>1.2 What（是什么）</h3>
+
+<p>岗位智能体是一个<strong>业务场景×人格特质×思维模型</strong>深度融合的AI提示词生成与岗位工作流设计工具。</p>
+
+<strong>核心组成</strong>：
+<li><strong>六维输入框架</strong>：行业 + 企业简介 + 岗位 + 性格（五行人格）+ 核心任务 + 适用模型</li>
+<li><strong>关键动作设计</strong>：目标量化（结果指标）+ 资源分配 + 数据验证（过程指标）</li>
+<li><strong>风险控制机制</strong>：过程触发风险指标与应对策略</li>
+<li><strong>AI增强关键词</strong>：洞察、剖析、透视、阐释、推演、解构、思辨、溯源、融合、启发、映射</li>
+
+<strong>输出内容</strong>：
+1. 岗位AI助手完整提示词（含五行人格适配）
+2. 工作流拆解图（信息交汇点识别）
+3. 关键决策点AI介入方案
+4. 结果指标 + 过程指标设计
+5. 风险预警与切换机制
+
+<h3>1.3 Why（为什么）</h3>
+
+<strong>现状问题</strong>：
+<li>🔴 通用提示词无法满足特定岗位的深度需求</li>
+<li>🔴 忽视人格特质导致AI协作效果不佳</li>
+<li>🔴 缺乏系统化工作流设计方法</li>
+<li>🔴 结果指标与过程指标混淆</li>
+<li>🔴 风险控制缺乏预警机制</li>
+
+<strong>解决方案</strong>：
+<li>✅ 五行人格×业务场景深度融合（木生火共生视角）</li>
+<li>✅ 工作流化思维（信息交汇点精准识别）</li>
+<li>✅ 六维框架全面覆盖（行业→企业→岗位→性格→任务→模型）</li>
+<li>✅ 结果指标与过程指标双轨制</li>
+<li>✅ 风险指标前置预警</li>
+
+<h3>1.4 How（怎么做）</h3>
+
+<strong>核心工作流</strong>：
+<pre><code>六维输入（行业/企业/岗位/性格/任务/模型）
+    ↓
+五行人格识别与适配（金木水火土）
+    ↓
+关键动作拆解（目标量化/资源分配/数据验证/风险控制）
+    ↓
+AI增强关键词选择（十项认知指令）
+    ↓
+提示词框架生成（黄金公式/基础结构/高级技巧）
+    ↓
+完整智能体方案输出
+</code></pre>
+
+<h3>1.5 使用边界</h3>
+
+<strong>适用场景</strong>：
+<li>✅ 需要为特定岗位设计AI助手</li>
+<li>✅ 希望结合五行人格优化AI协作</li>
+<li>✅ 需要系统化工作流设计</li>
+<li>✅ 需要明确结果指标与过程指标</li>
+<li>✅ 需要建立风险预警机制</li>
+
+<strong>不适用场景</strong>：
+<li>❌ 通用性AI问答（无需岗位特化）</li>
+<li>❌ 纯技术性代码问题</li>
+<li>❌ 一次性简单任务</li>
+
+<hr>
+
+<h2>二、可执行操作流程识别（Step 2）</h2>
+
+<h3>2.1 操作步骤清单</h3>
+
+<strong>总步数</strong>: 7步
+
+<p>| 步骤 | 名称 | 操作描述 | 输入 | 输出 |
+|------|------|----------|------|------|
+| 1 | 六维信息采集 | 收集行业、企业、岗位、性格、任务、模型信息 | 用户描述/表格 | 结构化六维数据 |
+| 2 | 五行人格识别 | 根据性格描述识别五行类型（金木水火土） | 性格描述 | 主五行+副五行 |
+| 3 | 思维模型匹配 | 根据任务类型匹配适用模型（GROW/OKR/第一性原理等） | 任务描述 | 推荐模型+理由 |
+| 4 | 关键动作拆解 | 拆解目标量化、资源分配、数据验证、风险控制 | 核心任务 | 四维关键动作 |
+| 5 | AI关键词选择 | 从十项认知指令中选择增强关键词 | 任务复杂度 | 关键词组合 |
+| 6 | 提示词框架生成 | 生成完整提示词（黄金公式+基础结构+高级技巧） | 以上所有 | 完整提示词 |
+| 7 | 智能体方案整合 | 整合输出完整方案（提示词+工作流+指标+风险） | 所有中间产物 | 完整方案文档 |</p>
+
+<h3>2.2 步骤依赖关系</h3>
+
+<pre><code>步骤1（六维采集）→ 步骤2（五行识别）→ 步骤4（关键动作拆解）
+                           ↓
+步骤3（模型匹配）→ 步骤5（关键词选择）→ 步骤6（提示词生成）
+                           ↓
+                      步骤7（方案整合）
+</code></pre>
+
+<strong>依赖说明</strong>：
+<li>步骤1必须在步骤2之前（需要性格信息）</li>
+<li>步骤2和步骤3可并行（独立判断）</li>
+<li>步骤4依赖步骤1（需要任务信息）</li>
+<li>步骤5依赖步骤3（模型决定关键词）</li>
+<li>步骤6依赖步骤2、4、5（需要全部前置信息）</li>
+<li>步骤7依赖所有前置步骤</li>
+
+<hr>
+
+<h2>三、输入输出规范化（Step 3）</h2>
+
+<h3>3.1 输入规范</h3>
+
+<strong>必需输入</strong>:
+
+<p>| 输入项 | 类型 | 说明 | 示例 |
+|--------|------|------|------|
+| 行业 | 文本 | 所属行业领域 | 餐饮行业，日料，金枪鱼专门店 |
+| 岗位 | 文本 | 具体岗位名称 | 市场总监、总经理、运营经理 |
+| 性格 | 文本 | 五行人格类型及特点 | 水行人-灵活适应、金行人-目标计划 |
+| 核心任务 | 文本 | 岗位主要职责 | 精准渠道投放、高盈利产品战略 |</p>
+
+<strong>可选输入</strong>:
+
+<p>| 输入项 | 类型 | 默认值 | 说明 |
+|--------|------|--------|------|
+| 企业简介 | 文本 | "" | 企业规模、阶段、文化特色 |
+| 适用模型 | 文本 | "GROW模型" | 分析/决策/执行模型 |
+| 年度目标 | 文本 | "" | 量化目标及考核标准 |
+| 风险控制 | 文本 | "" | 过程触发风险指标 |</p>
+
+<h3>3.2 处理逻辑</h3>
+
+<pre><code>处理流程:
+  1. 输入解析:
+     - 提取六维信息
+     - 验证必需字段
+     - 填充默认值
+  
+  2. 五行人格识别:
+     - 解析性格描述
+     - 匹配五行类型（金木水火土）
+     - 识别阴阳属性（阳木/阴木等）
+     - 输出五行适配策略
+  
+  3. 思维模型匹配:
+     - 分析任务类型
+     - 匹配适用模型
+     - 输出模型使用指南
+  
+  4. 关键动作设计:
+     - 目标量化设计（结果指标）
+     - 资源分配建议
+     - 数据验证机制（过程指标）
+     - 风险控制方案
+  
+  5. 提示词生成:
+     - 选择AI增强关键词
+     - 构建黄金公式（角色+任务+上下文+要求）
+     - 应用基础结构（角色扮演/任务分解/格式化）
+     - 应用高级技巧（思维链/多视角/少样本）
+  
+  6. 方案整合:
+     - 组装所有组件
+     - 格式标准化
+     - 质量检查
+</code></pre>
+
+<h3>3.3 输出规范</h3>
+
+<strong>标准输出</strong>:
+
+<p>| 输出项 | 类型 | 说明 |
+|--------|------|------|
+| 岗位AI助手提示词 | Markdown | 完整可用的AI提示词 |
+| 工作流拆解图 | 文本/图形 | 信息交汇点识别 |
+| 关键决策点方案 | Markdown | AI介入时机与方式 |
+| 指标体系 | 表格 | 结果指标+过程指标 |
+| 风险预警机制 | Markdown | 风险点+预警条件+应对策略 |</p>
+
+<strong>错误输出</strong>:
+
+<p>| 错误类型 | 说明 | 处理建议 |
+|----------|------|----------|
+| 输入不完整 | 缺少必需字段 | 提示用户补充 |
+| 五行识别失败 | 性格描述不清晰 | 提供五行测评链接 |
+| 模型匹配失败 | 任务类型不明确 | 请求更多任务细节 |</p>
+
+<hr>
+
+<h2>四、核心算法/逻辑提炼（Step 4）</h2>
+
+<h3>4.1 决策点清单</h3>
+
+<strong>决策点1: 五行人格识别</strong>
+<pre><code>决策点: 五行人格识别
+条件:
+  - 如果描述包含"创新/生发/仁德/规划" → 木行人
+  - 如果描述包含"光明/热情/礼明/洞察" → 火行人
+  - 如果描述包含"承载/稳定/信实/包容" → 土行人
+  - 如果描述包含"决断/精准/义理/清明" → 金行人
+  - 如果描述包含"智慧/流动/润泽/变通" → 水行人
+规则:
+  木行人: 适配创新类任务，强调0→1突破
+  火行人: 适配传播类任务，强调热情感染
+  土行人: 适配运营类任务，强调稳定执行
+  金行人: 适配决策类任务，强调精准判断
+  水行人: 适配策略类任务，强调灵活应变
+</code></pre>
+
+<strong>决策点2: 思维模型匹配</strong>
+<pre><code>决策点: 思维模型匹配
+条件:
+  - 如果任务是"目标规划/业绩提升" → GROW模型
+  - 如果任务是"问题分析/根因挖掘" → 第一性原理
+  - 如果任务是"创新突破/颠覆设计" → 象思维+五色光
+  - 如果任务是"流程优化/效率提升" → 精益管理
+  - 如果任务是"团队协作/沟通改善" → 五行识人
+规则:
+  GROW模型: 聚焦目标设定与行动规划
+  第一性原理: 拆解本质，重构方案
+  象思维: 0→1原创突破
+  五色光: 多维度系统分析
+</code></pre>
+
+<strong>决策点3: AI关键词选择</strong>
+<pre><code>决策点: AI关键词选择
+条件:
+  - 如果需要深入理解 → 洞察、剖析、透视
+  - 如果需要逻辑推理 → 推演、思辨、解构
+  - 如果需要跨域整合 → 溯源、融合、映射
+  - 如果需要创新启发 → 启发、融合
+规则:
+  初级复杂度: 选择1-2个关键词
+  中级复杂度: 选择3-4个关键词
+  高级复杂度: 选择5个以上关键词
+</code></pre>
+
+<strong>决策点4: 提示词复杂度判断</strong>
+<pre><code>决策点: 提示词复杂度
+条件:
+  - 如果用户是初学者 → 基础结构（角色+任务+上下文+要求）
+  - 如果用户有基础 → 增加格式化约束+风格模仿
+  - 如果用户是专家 → 高级技巧（思维链/多视角/少样本）
+规则:
+  初级: 黄金公式即可
+  中级: 黄金公式+格式化+风格
+  高级: 完整模板+迭代优化+多轮对话
+</code></pre>
+
+<h3>4.2 核心公式</h3>
+
+<strong>黄金公式</strong>:
+<pre><code>提示词 = 角色 + 任务 + 上下文 + 要求
+
+<p>示例:
+角色: 你是一位经验丰富的餐饮行业运营总经理
+任务: 设计一份高盈利产品的战略方案
+上下文: 味藏餐饮，专注东方健康烹饪，蓝鳍金枪鱼核心产品
+要求: 符合SMART原则，具有可操作性、易复制性
+</code></pre></p>
+
+<strong>六维框架</strong>:
+<pre><code>岗位智能体 = 行业 × 企业简介 × 岗位 × 性格(五行) × 核心任务 × 适用模型
+
+<p>关键动作 = 目标量化(结果指标) + 资源分配 + 数据验证(过程指标) + 风险控制
+</code></pre></p>
+
+<strong>AI增强公式</strong>:
+<pre><code>增强提示词 = 基础提示词 + AI关键词 + 思维模型 + 五行适配策略
+</code></pre>
+
+<hr>
+
+<h2>五、理论深度解析总结</h2>
+
+<h3>5.1 核心洞察</h3>
+
+<p>1. <strong>五行人格×岗位适配</strong>: 不同五行类型适合不同类型任务
+   - 木行人: 创新、规划、战略类任务
+   - 火行人: 传播、激励、团队类任务
+   - 土行人: 运营、执行、服务类任务
+   - 金行人: 决策、分析、管理类任务
+   - 水行人: 策略、应变、协调类任务</p>
+
+<p>2. <strong>信息交汇点识别</strong>: AI使用的核心作用是"增加效率"，关键在"需要大量人工判断的地方"</p>
+
+<p>3. <strong>双轨制指标</strong>: 结果指标（What）+ 过程指标（How），前者用于考核，后者用于监控</p>
+
+<p>4. <strong>风险前置</strong>: 风险控制不是事后补救，而是过程触发的预警机制</p>
+
+<p>5. <strong>提示词工程分层</strong>: 基础结构→高级技巧→专家级资产，形成能力进阶路径</p>
+
+<h3>5.2 知识图谱节点</h3>
+
+<p>| 节点类型 | 节点名称 | 关联关系 |
+|----------|----------|----------|
+| 核心理论 | 五行人格心理学OS | 基础框架 |
+| 核心理论 | 六维框架 | 输入结构 |
+| 思维模型 | GROW模型 | 目标规划 |
+| 思维模型 | 第一性原理 | 问题分析 |
+| 思维模型 | 五色光思维 | 多维分析 |
+| 思维模型 | 象思维 | 创新突破 |
+| 技能 | 提示词工程 | 输出技术 |
+| 技能 | 工作流设计 | 过程管理 |
+| 概念 | 结果指标 | 考核维度 |
+| 概念 | 过程指标 | 监控维度 |
+| 概念 | 风险预警 | 保障机制 |</p>
+
+<hr>
+
+<h2>六、下一步行动</h2>
+
+<p>理论解析阶段已完成，进入<strong>第二阶段：架构设计</strong></p>
+
+<p>需决策事项：
+1. Skill粒度判断（单体vs生态）
+2. 触发机制设计（四维矩阵）
+3. 与现有Skills关系映射</p>
+
+<hr>
+
+<strong>文档信息</strong>:
+<li>版本: v1.0</li>
+<li>创建时间: 2026-04-20</li>
+<li>维护者: 龙龟神将</li>
+<li>状态: 阶段一完成</li>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

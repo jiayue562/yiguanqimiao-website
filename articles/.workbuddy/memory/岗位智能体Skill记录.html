@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>岗位智能体Skill构建记录 - 以观其妙书院</title>
+    <meta name="description" content="岗位智能体Skill构建记录构建概述使用Skill Builder v1.1完成岗位智能体Skill的工业化生产，采用5阶20步标准化流程。构建详情阶段  内容  输出文件  状态----------------------------阶段一  理论解析  阶段一-理论解析.md  ✅阶段二  架构设计  阶段二-架构设计.md  ✅阶段三  编码实现  SKILL.md + theory.md">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="岗位智能体Skill构建记录">
+    <meta property="og:description" content="岗位智能体Skill构建记录构建概述使用Skill Builder v1.1完成岗位智能体Skill的工业化生产，采用5阶20步标准化流程。构建详情阶段  内容  输出文件  状态----------------------------阶段一  理论解析  阶段一-理论解析.md  ✅阶段二  架构设计  阶段二-架构设计.md  ✅阶段三  编码实现  SKILL.md + theory.md">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/岗位智能体Skill记录.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/岗位智能体Skill记录.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "岗位智能体Skill构建记录",
+      "description": "岗位智能体Skill构建记录构建概述使用Skill Builder v1.1完成岗位智能体Skill的工业化生产，采用5阶20步标准化流程。构建详情阶段  内容  输出文件  状态----------------------------阶段一  理论解析  阶段一-理论解析.md  ✅阶段二  架构设计  阶段二-架构设计.md  ✅阶段三  编码实现  SKILL.md + theory.md",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-04-20",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>岗位智能体Skill构建记录</h1>
+            <div class="meta">
+                <span>📅 2026-04-20</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            岗位智能体Skill构建记录...
+        </div>
+        
+        <article>
+<h1>岗位智能体Skill构建记录</h1>
+
+<h2>构建概述</h2>
+
+<p>使用<strong>Skill Builder v1.1</strong>完成岗位智能体Skill的工业化生产，采用<strong>5阶20步标准化流程</strong>。</p>
+
+<h2>构建详情</h2>
+
+<p>| 阶段 | 内容 | 输出文件 | 状态 |
+|------|------|----------|------|
+| <strong>阶段一</strong> | 理论解析 | 阶段一-理论解析.md | ✅ |
+| <strong>阶段二</strong> | 架构设计 | 阶段二-架构设计.md | ✅ |
+| <strong>阶段三</strong> | 编码实现 | SKILL.md + theory.md + trigger-rules.yaml | ✅ |
+| <strong>阶段四</strong> | 测试验证 | test-cases.md（5个测试用例） | ✅ |
+| <strong>阶段五</strong> | 部署上线 | WorkBuddy目录 + 知识图谱 | ✅ |</p>
+
+<h2>核心成果</h2>
+
+<strong>1. SKILL.md主文档</strong>（约8000字）
+<li>核心定义（What/Why/How）</li>
+<li>触发条件（P0/P1/P2/P3四维矩阵）</li>
+<li>使用流程（7步标准化流程）</li>
+<li>六维框架详解</li>
+<li>五行人格适配矩阵</li>
+<li>AI增强关键词体系</li>
+<li>提示词工程体系</li>
+
+<strong>2. 理论完整版</strong>（约15000字）
+<li>六维框架理论</li>
+<li>五行人格与岗位适配理论</li>
+<li>AI增强关键词详解</li>
+<li>提示词工程理论</li>
+<li>风险控制理论</li>
+<li>知识图谱节点</li>
+
+<strong>3. 自动触发规则</strong>
+<li>P0：7个直接触发词</li>
+<li>P1：6类场景触发词</li>
+<li>P2：5个行为信号</li>
+<li>P3：3个条件触发</li>
+
+<strong>4. 测试用例</strong>（5个场景）
+<li>TC-001：标准场景</li>
+<li>TC-002：边界场景</li>
+<li>TC-003：负面场景</li>
+<li>TC-004：触发机制测试</li>
+<li>TC-005：五行人格识别测试</li>
+
+<strong>5. 知识图谱</strong>
+<li>52个知识节点</li>
+<li>86条跨域联系</li>
+<li>34个标签</li>
+
+<h2>质量评分</h2>
+
+<p>| 标准 | 得分 |
+|------|------|
+| 核心定义清晰 | 9/10 |
+| 操作流程完整 | 9/10 |
+| 触发机制准确 | 9.5/10 |
+| 文件结构规范 | 10/10 |
+| 测试用例完整 | 9/10 |
+| 无冲突 | 10/10 |
+| <strong>总分</strong> | <strong>9.3/10</strong> |</p>
+
+<strong>评级</strong>：✅ <strong>优秀及格</strong>
+
+<h2>部署位置</h2>
+
+<p>| 平台 | 路径 |
+|------|------|
+| <strong>WorkBuddy</strong> | <code>~/.workbuddy/skills/岗位智能体/</code> |
+| <strong>Obsidian</strong> | <code>D:/以观其妙书院知识库/观其妙书院/02-专业领域知识库矩阵/02-4 AI应用知识库/岗位智能体/</code> |
+| <strong>知识图谱</strong> | 知识图谱.md |</p>
+
+<h2>与龙心OS生态整合</h2>
+
+<p>| 关系类型 | Skills | 状态 |
+|----------|--------|------|
+| 前置依赖 | 五行人格总智能体 | ✅ |
+| 后置调用 | 知识学习、知行合一 | ✅ |
+| 并行协同 | 象思维、五色光思维 | ✅ |
+| 冲突检测 | 提示词工程专家 | ✅ 无冲突 |</p>
+
+<h2>核心金句</h2>
+
+<blockquote>"大模型的作用是增加效率，核心作用点在信息交汇点，需要大量人工判断的地方，就是AI使用的地方。"</blockquote>
+
+<blockquote>"结果指标用于考核，过程指标用于监控；过程驱动结果，结果验证过程。"</blockquote>
+
+<blockquote>"五行人格不是标签，而是理解自己、适配AI协作风格的钥匙。"</blockquote>
+
+<h2>使用方式</h2>
+
+<p>用户可以说：
+<li>"启动岗位智能体"</li>
+<li>"生成一个市场总监的提示词"</li>
+<li>"设计一个岗位AI方案"</li></p>
+
+<h2>关联记忆</h2>
+
+<li>五行人格心理学OS（ID: 17641130）</li>
+<li>五色光思维（ID: 37150886）</li>
+<li>象思维（ID: 19548432）</li>
+<li>Skill Builder v1.1（ID: 16338826）</li>
+
+<hr>
+
+<strong>记录时间</strong>: 2026-04-20 15:30  
+<strong>构建者</strong>: 龙龟神将  
+<strong>状态</strong>: 已部署，即刻可用
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
