@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="五行人格测评·青少年版 - 60题全面分析你的五行特质与阴阳状态">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"五行人格测评·青少年版","description":"60题全面分析你的五行特质与阴阳状态","author":{"@type":"Person","name":"悟空（贾悦）"},"copyrightHolder":{"@type":"Organization","name":"以观其妙书院"},"applicationCategory":"EducationalApplication","inLanguage":"zh-CN","identifier":"yiguanqimiao-unique-watermark-wk-jiayue-academy"}</script>
+<title>五行人格测评 · 青少年版</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --wood: #4CAF50; --wood-bg: #E8F5E9;
+    --fire: #FF5722; --fire-bg: #FBE9E7;
+    --earth: #FF9800; --earth-bg: #FFF3E0;
+    --metal: #607D8B; --metal-bg: #ECEFF1;
+    --water: #2196F3; --water-bg: #E3F2FD;
+    --text: #2c3e50; --text-light: #7f8c8d;
+    --radius: 12px; --shadow: 0 2px 16px rgba(0,0,0,0.08);
+  }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f5f7fa; color: var(--text); line-height: 1.6;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px; }
+
+  /* Welcome */
+  #welcome { text-align: center; padding: 60px 20px; }
+  #welcome .logo { font-size: 48px; margin-bottom: 8px; }
+  #welcome h1 { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+  #welcome .subtitle { color: var(--text-light); font-size: 16px; margin-bottom: 24px; }
+  .meta-info {
+    display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;
+    margin-bottom: 28px; font-size: 14px; color: var(--text-light);
+  }
+  .meta-info span { background: #fff; padding: 6px 16px; border-radius: 20px; box-shadow: var(--shadow); }
+  .instructions {
+    text-align: left; background: #fff; border-radius: var(--radius);
+    padding: 24px; box-shadow: var(--shadow); margin-bottom: 28px;
+  }
+  .instructions h3 { font-size: 16px; margin-bottom: 12px; }
+  .instructions li { font-size: 14px; margin-bottom: 8px; list-style: none; padding-left: 0; }
+  .instructions li::before { content: "●"; margin-right: 8px; font-size: 10px; color: var(--earth); }
+
+  .btn {
+    display: inline-block; padding: 14px 48px; border: none; border-radius: 30px;
+    font-size: 18px; font-weight: 600; cursor: pointer; transition: all 0.2s;
+    color: #fff; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 4px 15px rgba(102,126,234,0.4);
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(102,126,234,0.5); }
+  .btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+  .btn-small { padding: 10px 28px; font-size: 15px; }
+
+  /* Progress */
+  #progress-bar {
+    position: fixed; top: 0; left: 0; height: 4px; background: linear-gradient(90deg, #667eea, #764ba2);
+    transition: width 0.4s ease; z-index: 100;
+  }
+  .progress-info {
+    text-align: center; font-size: 14px; color: var(--text-light); margin-bottom: 16px;
+  }
+
+  /* Question section */
+  .section-card {
+    background: #fff; border-radius: var(--radius); box-shadow: var(--shadow);
+    margin-bottom: 20px; overflow: hidden;
+  }
+  .section-header {
+    padding: 16px 24px; color: #fff; display: flex; align-items: center; gap: 10px;
+  }
+  .section-header .icon { font-size: 24px; }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+  .section-header .yang-label { font-size: 12px; opacity: 0.85; margin-left: auto; }
+  .section-wood .section-header { background: var(--wood); }
+  .section-fire .section-header { background: var(--fire); }
+  .section-earth .section-header { background: var(--earth); }
+  .section-metal .section-header { background: var(--metal); }
+  .section-water .section-header { background: var(--water); }
+
+  .question-item {
+    padding: 14px 24px; border-bottom: 1px solid #f0f0f0;
+    display: flex; align-items: flex-start; gap: 12px;
+  }
+  .question-item:last-child { border-bottom: none; }
+  .question-item .q-num {
+    min-width: 32px; height: 32px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 600; color: #fff; flex-shrink: 0;
+  }
+  .section-wood .q-num { background: var(--wood); }
+  .section-fire .q-num { background: var(--fire); }
+  .section-earth .q-num { background: var(--earth); }
+  .section-metal .q-num { background: var(--metal); }
+  .section-water .q-num { background: var(--water); }
+
+  .question-item .q-text { flex: 1; font-size: 15px; padding-top: 4px; }
+  .question-item .q-options { display: flex; gap: 12px; flex-shrink: 0; }
+  .question-item .q-options label {
+    display: flex; align-items: center; gap: 4px; cursor: pointer;
+    font-size: 14px; padding: 4px 8px; border-radius: 6px; transition: 0.15s;
+  }
+  .question-item .q-options label:hover { background: #f5f5f5; }
+  .question-item .q-options input[type="radio"] { accent-color: var(--earth); width: 16px; height: 16px; }
+
+  /* Yin tag */
+  .yin-tag {
+    display: inline-block; font-size: 11px; padding: 1px 8px; border-radius: 10px;
+    background: #fce4ec; color: #c62828; margin-left: 8px;
+  }
+  .yang-tag {
+    display: inline-block; font-size: 11px; padding: 1px 8px; border-radius: 10px;
+    background: #e8f5e9; color: #2e7d32; margin-left: 8px;
+  }
+
+  /* Navigation */
+  .nav-area {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 0; gap: 12px; flex-wrap: wrap;
+  }
+  .nav-area .counter { font-size: 14px; color: var(--text-light); }
+
+  /* Results */
+  #results { display: none; }
+  .result-hero {
+    text-align: center; padding: 40px 20px;
+    border-radius: var(--radius); color: #fff; margin-bottom: 24px;
+  }
+  .result-hero .big-icon { font-size: 64px; margin-bottom: 8px; }
+  .result-hero h2 { font-size: 24px; }
+  .result-hero .label { font-size: 14px; opacity: 0.85; margin-top: 4px; }
+  .result-type-wood { background: linear-gradient(135deg, #4CAF50, #2E7D32); }
+  .result-type-fire { background: linear-gradient(135deg, #FF5722, #BF360C); }
+  .result-type-earth { background: linear-gradient(135deg, #FF9800, #E65100); }
+  .result-type-metal { background: linear-gradient(135deg, #607D8B, #37474F); }
+  .result-type-water { background: linear-gradient(135deg, #2196F3, #0D47A1); }
+
+  .result-sub {
+    text-align: center; font-size: 15px; color: var(--text-light); margin-bottom: 24px;
+  }
+
+  .result-card {
+    background: #fff; border-radius: var(--radius); box-shadow: var(--shadow);
+    padding: 24px; margin-bottom: 16px;
+  }
+  .result-card h3 { font-size: 16px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .result-card ul { padding-left: 20px; }
+  .result-card li { font-size: 14px; margin-bottom: 6px; }
+
+  .score-bar-wrap { margin-bottom: 12px; }
+  .score-bar-label { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 4px; }
+  .score-bar {
+    height: 20px; border-radius: 10px; overflow: hidden; background: #eee;
+    position: relative;
+  }
+  .score-bar-fill {
+    height: 100%; border-radius: 10px; transition: width 0.6s ease;
+    display: flex; align-items: center; justify-content: flex-end;
+    padding-right: 8px; font-size: 12px; color: #fff; font-weight: 600;
+    min-width: 28px;
+  }
+  .fill-wood { background: var(--wood); }
+  .fill-fire { background: var(--fire); }
+  .fill-earth { background: var(--earth); }
+  .fill-metal { background: var(--metal); }
+  .fill-water { background: var(--water); }
+
+  .yin-yang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .yin-yang-item { padding: 12px; border-radius: 8px; text-align: center; }
+  .yin-yang-item .label { font-size: 12px; }
+  .yin-yang-item .val { font-size: 24px; font-weight: 700; }
+  .yin-yang-positive { background: #e8f5e9; }
+  .yin-yang-positive .val { color: #2e7d32; }
+  .yin-yang-negative { background: #fce4ec; }
+  .yin-yang-negative .val { color: #c62828; }
+  .yin-yang-balanced { background: #e3f2fd; }
+  .yin-yang-balanced .val { color: #1565c0; }
+
+  .combo-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .combo-item {
+    background: #f8f9fa; padding: 10px 14px; border-radius: 8px; font-size: 13px;
+  }
+  .combo-item strong { color: var(--text); }
+
+  .btn-restart {
+    display: block; width: 100%; padding: 14px; border: 2px solid #ddd;
+    border-radius: 30px; font-size: 16px; cursor: pointer; transition: 0.2s;
+    background: #fff; color: var(--text); margin-top: 16px;
+  }
+  .btn-restart:hover { border-color: #667eea; color: #667eea; }
+
+  .hidden { display: none !important; }
+
+  @media (max-width: 600px) {
+    .container { padding: 12px; }
+    #welcome { padding: 40px 12px; }
+    #welcome h1 { font-size: 22px; }
+    .question-item { padding: 12px 16px; flex-wrap: wrap; }
+    .question-item .q-text { width: 100%; order: -1; margin-bottom: 8px; }
+    .question-item .q-options { margin-left: 44px; }
+    .section-header { padding: 12px 16px; }
+    .combo-list { grid-template-columns: 1fr; }
+    .yin-yang-grid { grid-template-columns: 1fr; }
+    .meta-info span { width: 100%; text-align: center; }
+  }
+
+  .fade-in { animation: fadeIn 0.4s ease; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+
+<div id="progress-bar" style="width:0%"></div>
+
+<div class="container" id="app">
+  <!-- Welcome -->
+  <div id="welcome">
+    <div class="logo">☯</div>
+    <h1>五行人格测评</h1>
+    <p class="subtitle">青少年版 · 12-18岁</p>
+    <div class="meta-info">
+      <span>📝 60题</span>
+      <span>⏱ 约8分钟</span>
+      <span>👍 是/否作答</span>
+    </div>
+    <div class="instructions">
+      <h3>📋 使用说明</h3>
+      <ul>
+        <li>请在安静、不被打扰的环境下，按照你平时真实的感受作答</li>
+        <li>每题只有"是"或"否"两个选项，请选择最符合你平时状态的选项</li>
+        <li>没有"正确答案"，答案只反映你的天生特质</li>
+        <li>如果不太确定，请选择更符合你平时状态的选项</li>
+        <li>完成后系统将自动计算分数并生成解读方案</li>
+        <li>本测评仅供个人成长参考，不作任何评分或排名用途</li>
+      </ul>
+    </div>
+    <button class="btn" onclick="startQuiz()">开始测评 →</button>
+  </div>
+
+  <!-- Quiz -->
+  <div id="quiz" class="hidden">
+    <div class="progress-info" id="progressInfo"></div>
+    <div id="questionsContainer"></div>
+    <div class="nav-area">
+      <span class="counter" id="counterInfo"></span>
+      <button class="btn btn-small" id="submitBtn" onclick="showResults()" disabled>查看结果</button>
+    </div>
+  </div>
+
+  <!-- Results -->
+  <div id="results"></div>
+</div>
+
+<script>
+// ==================== DATA ====================
+const ELEMENTS = {
+  wood: { name:'木', icon:'🌿', title:'木行人', color:'#4CAF50' },
+  fire: { name:'火', icon:'🔥', title:'火行人', color:'#FF5722' },
+  earth: { name:'土', icon:'🌏', title:'土行人', color:'#FF9800' },
+  metal: { name:'金', icon:'⚔️', title:'金行人', color:'#607D8B' },
+  water: { name:'水', icon:'💧', title:'水行人', color:'#2196F3' }
+};
+
+const QUESTIONS = [
+  // 木 (1-12)
+  { id:1, text:'我经常有新奇的想法，喜欢做别人没做过的事', elem:'wood', polarity:'yang' },
+  { id:2, text:'我很有主见，认定的事情会坚持到底', elem:'wood', polarity:'yang' },
+  { id:3, text:'我对不公平的事情会直接说出来，哪怕会得罪人', elem:'wood', polarity:'yang' },
+  { id:4, text:'我喜欢读书或研究某个感兴趣的话题，可以专注很长时间', elem:'wood', polarity:'yang' },
+  { id:5, text:'我关心身边的人，愿意为朋友出头或提供帮助', elem:'wood', polarity:'yang' },
+  { id:6, text:'我对未来有很多想法和计划，经常在脑子里"设计"自己的人生', elem:'wood', polarity:'yang' },
+  { id:7, text:'我很难接受别人的批评，听到意见就想反驳', elem:'wood', polarity:'yin' },
+  { id:8, text:'我有时觉得自己和周围人格格不入，不太愿意和大家混在一起', elem:'wood', polarity:'yin' },
+  { id:9, text:'我经常会陷入某件事里出不来，转移注意力对我来说很难', elem:'wood', polarity:'yin' },
+  { id:10, text:'我有时会因为一点小事就闷闷不乐，心情不好很难调节', elem:'wood', polarity:'yin' },
+  { id:11, text:'我常常觉得别人不理解我，就算解释了也没用', elem:'wood', polarity:'yin' },
+  { id:12, text:'我有时异想天开，想一些不太可能实现的事情', elem:'wood', polarity:'yin' },
+  // 火 (13-24)
+  { id:13, text:'我非常喜欢和人交流，认识新朋友对我来说很容易', elem:'fire', polarity:'yang' },
+  { id:14, text:'我在课堂上喜欢积极发言，表达自己的想法', elem:'fire', polarity:'yang' },
+  { id:15, text:'我很容易感染身边的人，朋友说我很有活力', elem:'fire', polarity:'yang' },
+  { id:16, text:'我喜欢参加各种活动、比赛或表演，享受被关注的感觉', elem:'fire', polarity:'yang' },
+  { id:17, text:'我很乐观，就算遇到不顺心的事也能很快振作起来', elem:'fire', polarity:'yang' },
+  { id:18, text:'我说话很有感染力，朋友们喜欢听我讲故事或聊天', elem:'fire', polarity:'yang' },
+  { id:19, text:'我很容易着急，等待对我来说是件很痛苦的事', elem:'fire', polarity:'yin' },
+  { id:20, text:'我有时做事冲动，先动手再想后果', elem:'fire', polarity:'yin' },
+  { id:21, text:'我喜欢成为中心，如果被忽视会有点不舒服', elem:'fire', polarity:'yin' },
+  { id:22, text:'我情绪起伏比较大，高兴的时候很嗨，不高兴的时候也很明显', elem:'fire', polarity:'yin' },
+  { id:23, text:'我有时夸大事情，说着说着就说过头了', elem:'fire', polarity:'yin' },
+  { id:24, text:'我容易喜新厌旧，对一件事的热情来得快去得也快', elem:'fire', polarity:'yin' },
+  // 土 (25-36)
+  { id:25, text:'我很在意朋友们的感受，愿意花时间陪伴他们', elem:'earth', polarity:'yang' },
+  { id:26, text:'我做事踏实，答应了的事情一定会做到', elem:'earth', polarity:'yang' },
+  { id:27, text:'班级里有矛盾时，我经常会站出来帮忙调解', elem:'earth', polarity:'yang' },
+  { id:28, text:'我喜欢稳定的日常，按部就班让我感觉很安心', elem:'earth', polarity:'yang' },
+  { id:29, text:'我能在很嘈杂或有压力的环境里保持冷静', elem:'earth', polarity:'yang' },
+  { id:30, text:'我愿意帮助比自己弱的同学，看到他们有困难会主动上前', elem:'earth', polarity:'yang' },
+  { id:31, text:'我经常忍着不说，把不满憋在心里', elem:'earth', polarity:'yin' },
+  { id:32, text:'做决定对我来说很难，我总是反复考虑、下不了决心', elem:'earth', polarity:'yin' },
+  { id:33, text:'我有时会觉得自己付出很多，但别人不太领情，心里有点委屈', elem:'earth', polarity:'yin' },
+  { id:34, text:'我不太喜欢变化，新环境或新规则会让我不适应', elem:'earth', polarity:'yin' },
+  { id:35, text:'我有时做事太慢，被催会感到压力很大', elem:'earth', polarity:'yin' },
+  { id:36, text:'我经常担心别人不喜欢自己，总想确认对方是否满意', elem:'earth', polarity:'yin' },
+  // 金 (37-48)
+  { id:37, text:'我做事很认真，不喜欢粗糙或马虎的结果', elem:'metal', polarity:'yang' },
+  { id:38, text:'我有明确的目标，会制定计划一步步去实现', elem:'metal', polarity:'yang' },
+  { id:39, text:'我对自己要求很高，如果没达到预期会很不满意', elem:'metal', polarity:'yang' },
+  { id:40, text:'我说话直接，不喜欢绕弯子，觉得直接表达是对别人的尊重', elem:'metal', polarity:'yang' },
+  { id:41, text:'我做事有条理，文件、物品都喜欢整齐归位', elem:'metal', polarity:'yang' },
+  { id:42, text:'我能快速分辨什么是对的、什么是错的，不喜欢模糊地带', elem:'metal', polarity:'yang' },
+  { id:43, text:'我有时太挑剔，会找别人的小毛病，别人说我爱批评人', elem:'metal', polarity:'yin' },
+  { id:44, text:'我对不符合标准的事情很难忍受，会反复纠正', elem:'metal', polarity:'yin' },
+  { id:45, text:'我有时显得冷漠，其实我只是不太擅长表达情感', elem:'metal', polarity:'yin' },
+  { id:46, text:'我有时想太多、太在意结果，反而让自己很焦虑', elem:'metal', polarity:'yin' },
+  { id:47, text:'我有点小气，自己的东西不太愿意分享给别人', elem:'metal', polarity:'yin' },
+  { id:48, text:'我对别人的错误或失误比较难以原谅，心里会记着', elem:'metal', polarity:'yin' },
+  // 水 (49-60)
+  { id:49, text:'我很会察言观色，能感受到别人话背后的情绪', elem:'water', polarity:'yang' },
+  { id:50, text:'我思维灵活，遇到问题能很快想出不同的解决方法', elem:'water', polarity:'yang' },
+  { id:51, text:'我喜欢帮助别人，朋友有心事会来找我倾诉', elem:'water', polarity:'yang' },
+  { id:52, text:'我在不熟悉的环境里也能很快适应，比较随遇而安', elem:'water', polarity:'yang' },
+  { id:53, text:'我兴趣广泛，很多事情都能做得不错', elem:'water', polarity:'yang' },
+  { id:54, text:'我不在乎名气或排场，更喜欢安安静静地做自己', elem:'water', polarity:'yang' },
+  { id:55, text:'我经常担心很多事，脑子里想得多、睡不好', elem:'water', polarity:'yin' },
+  { id:56, text:'我有时说话太圆滑，别人搞不清楚我真正的想法', elem:'water', polarity:'yin' },
+  { id:57, text:'我有时做事没什么规律，三分钟热度，不太能坚持', elem:'water', polarity:'yin' },
+  { id:58, text:'我有时过于在意别人的看法，委屈自己去迎合别人', elem:'water', polarity:'yin' },
+  { id:59, text:'我遇到压力时容易逃避，不太想面对', elem:'water', polarity:'yin' },
+  { id:60, text:'我有时会因为太顾虑别人的感受而迟迟不敢行动', elem:'water', polarity:'yin' }
+];
+
+const ELEM_ORDER = ['wood','fire','earth','metal','water'];
+
+const INTERPRETATIONS = {
+  wood: {
+    title:'🌿 木行人 · 充满创意与理想，正直而富有感受力',
+    strengths:[
+      '思维独特，有丰富的想象力和创造力',
+      '有主见，不轻易随波逐流',
+      '正直担当，遇到不公敢于发声',
+      '理想主义，对未来有清晰的憧憬',
+      '感受力丰富，内心世界深刻',
+      '专注深入，能长时间投入感兴趣的事'
+    ],
+    cautions:[
+      '容易固执，听不进不同意见',
+      '抗压力强但不善妥协',
+      '情绪容易起伏，容易被小事影响',
+      '孤独感强，觉得别人不理解自己'
+    ],
+    description:'你是一个内心世界非常丰富的人，有自己独特的想法和审美，不喜欢随波逐流。你的创意和理想感是天生的礼物，往往能看到别人看不到的可能性。你非常在意公平和道义，遇到不公正的事会直接说出来，有一股"宁折不弯"的劲。',
+    yinDesc:'当你的木能量处于低谷，你可能会更容易陷入自己的世界，和周围人产生隔阂，觉得没人理解自己。固执和情绪化会增加，有时会因小事闷闷不乐。这不是你的错，而是能量需要调整的信号。',
+    suggestions:[
+      '每天给自己5分钟写日记，把脑子里的想法写下来——这是你最好的情绪出口',
+      '学一样艺术类技能（画画、写作、音乐），让你的创造力找到表达渠道',
+      '练习"先听完，再评价"，减少冲突，让别人更容易接近你',
+      '当你固执地坚持某件事时，问问自己：这件事10年后还重要吗？',
+      '找到1-2个真正懂你的朋友深交，而不是广泛社交'
+    ],
+    study:'你适合独立思考型学习，喜欢深入研究一个问题而不是浅尝辄止。思维导图、写作、论证式学习很适合你。你对感兴趣的科目能超常发挥，对不感兴趣的可能需要特别提醒自己保持耐心。',
+    social:'你是忠诚的朋友，但进入关系很慢——让别人先了解你需要时间，不必强迫自己快速融入。你最需要的是"懂你"而不是"多认识人"。',
+    careers:['研究员','作家','设计师','工程师','艺术家','律师']
+  },
+  fire: {
+    title:'🔥 火行人 · 热情洋溢，充满活力，天生的表达者',
+    strengths:[
+      '感染力强，能让身边的人感到快乐',
+      '乐观开朗，就算遇到困难也不太会消沉',
+      '社交达人，和人建立联系对你来说很自然',
+      '行动力强，想做什么就会立刻去做',
+      '激励他人，大家愿意跟着你的节奏走',
+      '表达能力出众，擅长讲故事和表达观点'
+    ],
+    cautions:[
+      '容易冲动，说话做事有时不经思考',
+      '缺乏耐心，等待和重复让你很难受',
+      '情绪波动大，高兴和不高兴都很明显',
+      '半途而废，热情来得快去得也快'
+    ],
+    description:'你是那种走进一个房间就能让气氛活跃起来的人。你的热情和活力是真实的，不是表演出来的——你真心喜欢和人连接，享受分享和被看见。你天生有领导感，大家愿意跟着你，因为你能让人感到振奋。',
+    yinDesc:'当你的火能量过热或低沉，你可能变得更加冲动易怒，或反过来情绪低落、失去动力。夸大、争强好胜、喜欢对抗都是阴火的信号。注意在兴奋时先深呼吸一次，给自己一个"暂停键"。',
+    suggestions:[
+      '练习"说话前数到3"，让你的热情更有方向，减少冲动发言',
+      '给自己设定一个"坚持30天"的小目标，训练耐心和持续力',
+      '在兴奋状态做决定前，先问自己：冷静下来我还会这么做吗？',
+      '学会倾听——让别人把话说完，你会发现更多有趣的信息',
+      '把表达能力用在演讲、辩论、主持等正式场合，你会大放光彩'
+    ],
+    study:'你最喜欢有互动的学习环境，一个人看书对你来说太安静了。小组学习、讨论课、模拟演练都能激发你最好的状态。注意：考试临场发挥往往比平时更好，所以不用过度焦虑。',
+    social:'你是大家公认的"暖场担当"，很受欢迎。注意不要因为要维持关系而答应自己做不到的事，真诚比表演更让人喜欢。',
+    careers:['主持人','销售','教师','演员','活动策划','公关']
+  },
+  earth: {
+    title:'🌏 土行人 · 温厚可靠，默默守护，是朋友眼中的定心石',
+    strengths:[
+      '值得信赖，答应的事一定会做到',
+      '包容心强，能接纳不同的人',
+      '善于协调，是天然的调解者',
+      '踏实稳重，不浮躁不冒进',
+      '情感支持，朋友在脆弱时会第一个想到你',
+      '耐力出众，能在压力下保持冷静'
+    ],
+    cautions:[
+      '容易委屈自己，把别人的需求放在自己前面',
+      '决断力偏弱，做选择时容易纠结',
+      '变化适应慢，新环境会让你不安',
+      '容易积压情绪，忍着不说最后爆发'
+    ],
+    description:'你是那种让人觉得"有你在就安心"的存在。你的温厚和踏实是天生的，你真心在意身边的人，愿意默默付出不图回报。你不求表现，但关键时刻总是最可靠的那个。',
+    yinDesc:'当你的土能量失衡，长期压抑的不满可能会化为抱怨或被动抵抗。你容易忽略自己的需求，把别人放第一，结果心里越来越堵。记住：照顾好自己，才能更好地照顾别人。',
+    suggestions:[
+      '练习说出你的需求："我需要……"这句话对你来说很重要',
+      '做决定时给自己设一个"截止时间"，到点就选，避免无限纠结',
+      '每周给自己安排一件只为自己做的事，不为任何人',
+      '学会说"不"——拒绝别人不是自私，是对自己的尊重',
+      '把你的烦恼说出来，而不是憋着——找一个信任的人倾诉'
+    ],
+    study:'你喜欢有规律、有结构的学习方式，按照既定计划一步步推进最安心。你的记忆力和耐力都很好，适合系统性学习。注意不要因为"还没准备好"而迟迟不开始行动。',
+    social:'你的朋友会在最脆弱的时候第一个想到你。要注意关系不要太单向——你也要允许别人来支持你，这是你需要练习的功课。',
+    careers:['社工','护士/医生','教师','人力资源','咨询师','行政管理']
+  },
+  metal: {
+    title:'⚔️ 金行人 · 精准严谨，目标清晰，追求卓越的行动者',
+    strengths:[
+      '自律严谨，做事认真不马虎',
+      '执行力强，定了目标就会做到',
+      '目标清晰，知道自己要什么',
+      '分析能力强，能快速分清对错',
+      '高标准，追求质量而不是数量',
+      '黑白分明，有清晰的是非观'
+    ],
+    cautions:[
+      '对人对己要求过高，容易苛刻',
+      '不善表达情感，有时显得冷漠',
+      '容易焦虑，太在意结果',
+      '批评倾向强，别人觉得你爱挑毛病'
+    ],
+    description:'你是一个对自己要求很高的人，做什么都追求质量。你的自律和专注让你在很多事上超越同龄人，你有清晰的是非观和目标感，不会轻易被干扰。你可能不是最受欢迎的，但绝对是最可信赖的。',
+    yinDesc:'当你的金能量过度，你可能对自己和他人都过于苛刻，批评增多、情感变得更冷漠，焦虑也会加剧。记住：世界上没有完美，接受"够好了"是一种智慧，不是放弃标准。',
+    suggestions:[
+      '每天对自己说一句鼓励的话——高标准不代表不能欣赏自己',
+      '练习"表达感谢"：每天说一次具体的谢谢，对象包括自己',
+      '遇到让你不满意的情况，先问自己：这是我能控制的事吗？',
+      '把批评改为建议的方式说出来：不是"你做错了"，而是"如果这样会更好"',
+      '接受"差不多就可以"的小事——把高标准留给真正重要的事'
+    ],
+    study:'你天生适合系统化、逻辑严密的学科，如数学、物理、编程。你对自己的要求高，有时会因为错误而过分自责——记住：错误是学习的一部分。你做作业和复习比别人更认真，这是你的优势。',
+    social:'你是可靠的伙伴，但要学会"放软"——不是每次都要指出别人的问题，有时只是听着微笑就好。你的关心需要用让对方感受到的方式表达出来。',
+    careers:['工程师','律师','财务分析师','科研人员','外科医生','建筑师']
+  },
+  water: {
+    title:'💧 水行人 · 聪慧善感，随机应变，深藏不露的智慧者',
+    strengths:[
+      '洞察力强，能察觉别人注意不到的情绪和细节',
+      '随机应变，遇到问题总能找到解决办法',
+      '善解人意，是很好的倾听者',
+      '兴趣广泛，很多事情都懂一些',
+      '亲和力高，和大家都能相处',
+      '智慧灵活，不固执、能变通'
+    ],
+    cautions:[
+      '容易焦虑多疑，脑子里想得太多',
+      '缺乏持续力，三分钟热度',
+      '有时太顺从，不敢表达真实想法',
+      '容易拖延逃避，遇到压力想躲开'
+    ],
+    description:'你是一个感知力超强的人，能察觉到别人注意不到的细节，也能感受到情绪背后的东西。你聪明灵活，总能找到独特的解决方式。你不喜欢锋芒毕露，更喜欢在背后默默影响，但你的智慧让你成为别人遇到问题时最想找的人。',
+    yinDesc:'当你的水能量失衡，你可能变得过于顺从、容易被带着走，也可能因为想太多而迟迟不行动。焦虑、拖延、逃避压力是水行人最常见的阴面信号。学会"先动起来，再想清楚"对你尤为重要。',
+    suggestions:[
+      '每天做一件"小而确定"的事——完成感会帮你积累自信',
+      '练习"说清楚你的立场"：灵活是优点，但模糊会让人困惑',
+      '遇到焦虑时，把担忧写下来，再问：这件事真的会发生吗？',
+      '为自己设定一个"不可以妥协"的底线，让别人知道你的边界',
+      '找到一件你真正热爱、愿意长期投入的事，用它来对抗半途而废'
+    ],
+    study:'你是"跨学科"学习者，很多东西都能触类旁通。你的直觉学习能力很强，有时"凭感觉"就做对了。挑战是专注——你兴趣太广，容易分心。建议设定每次学习的"最小任务"，完成一个再开始下一个。',
+    social:'你是最好的倾听者，朋友都愿意把心事告诉你。要注意不要把"帮助别人"作为逃避自己问题的方式。你也值得被照顾，要学会说出自己的需要。',
+    careers:['心理咨询师','外交官','作家','艺术家','市场研究','社会学家']
+  }
+};
+
+const COMBOS = {
+  'wood+fire': '木火组合：你兼具木的理想与火的热情——很容易为自己相信的事燃起来，是充满创造力的行动者。注意能量不要分散，选一个重点深耕。',
+  'wood+earth': '木土组合：你有木的独立和土的温厚——既有自己的想法，又能包容他人，是可靠的思想者。注意在坚持自我的同时也要倾听他人。',
+  'wood+metal': '木金组合：你有木的创意与金的严谨——想法丰富但执行扎实，是少见的"既有灵感又能落地"的人。注意别对自己要求太高。',
+  'wood+water': '木水组合：木水相生——你的智慧和创意相互滋养，感受力极强，适合深度创作类工作。注意不要让情绪影响太多判断。',
+  'fire+wood': '火木组合：火木共燃——你充满热情和创意，需要注意不要把能量分散太多，选择一个重点深耕。',
+  'fire+earth': '火土组合：你有火的活力和土的稳重——外向热情但内心踏实，很受大家喜爱。注意别答应太多自己做不到的事。',
+  'fire+metal': '火金组合：你既有热情又有标准，是很好的执行力来源。注意不要对自己要求过高，适当放松很重要。',
+  'fire+water': '火水组合：火水互相制约——情绪和理智有时打架，学会平衡是你的核心成长主题。',
+  'earth+wood': '土木组合：你踏实有耐心，也有一股内在的理想感，是默默努力的成长型选手。记得偶尔表达自己，不要总是默默付出。',
+  'earth+fire': '土火组合：你温厚且有活力——容易照顾到他人的情绪，是天然的团队润滑剂。注意在照顾别人的同时也照顾好自己。',
+  'earth+metal': '土金组合：你踏实严谨，值得信任，是任何团队都需要的"稳定器"。注意不要因为怕变化而拒绝所有新机会。',
+  'earth+water': '土水组合：土水相生——你善解人意，稳重而智慧，是极好的情感支持型人格。注意别把所有人的问题都背在自己身上。',
+  'metal+wood': '金木组合：理性与创意并存，你既能提出新想法，又能严格执行，是难得的双才型。注意别让自己的高标准变成对自己的压迫。',
+  'metal+fire': '金火组合：你有标准也有热情——把火的活力用来服务金的目标，你可以做出很大成就。注意适当放松，不要总是紧绷着。',
+  'metal+earth': '金土组合：你踏实且严谨，是绝对可靠的执行者，在需要细心和坚持的事上发光。注意不要因为害怕出错而不敢尝试。',
+  'metal+water': '金水组合：分析力和洞察力兼备，你是天然的研究者和策略制定者。注意别想太多，有时候"先做"比"想清楚"更重要。',
+  'water+wood': '水木组合：水木相生——你智慧且有创意，感受力丰富，适合需要深度洞察的工作。注意培养持续力，不要总是三分钟热度。',
+  'water+fire': '水火组合：你既有直觉也有热情，当两者平衡时爆发力惊人。注意情绪的起伏，学会给自己一个"暂停键"。',
+  'water+earth': '水土组合：你柔和稳重——既有水的灵活，也有土的包容，是非常好的倾听者和协调者。注意别总是顺从别人，学会说"不"。',
+  'water+metal': '水金组合：思维深邃且严谨，适合需要深度分析和精准表达的领域。注意别因为想太多而迟迟不行动。'
+};
+
+const ELEM_LABELS = { wood:'🌿 木', fire:'🔥 火', earth:'🌏 土', metal:'⚔️ 金', water:'💧 水' };
+
+// ==================== STATE ====================
+let answers = {};
+
+// ==================== APP ====================
+function startQuiz() {
+  document.getElementById('welcome').classList.add('hidden');
+  document.getElementById('quiz').classList.remove('hidden');
+  renderQuestions();
+  updateProgress();
+}
+
+function renderQuestions() {
+  const container = document.getElementById('questionsContainer');
+  let html = '';
+  ELEM_ORDER.forEach(elemKey => {
+    const qs = QUESTIONS.filter(q => q.elem === elemKey);
+    const elem = ELEMENTS[elemKey];
+    let sectionClass = 'section-card';
+    if (elemKey === 'wood') sectionClass += ' section-wood';
+    if (elemKey === 'fire') sectionClass += ' section-fire';
+    if (elemKey === 'earth') sectionClass += ' section-earth';
+    if (elemKey === 'metal') sectionClass += ' section-metal';
+    if (elemKey === 'water') sectionClass += ' section-water';
+
+    html += `<div class="${sectionClass} fade-in">`;
+    html += `<div class="section-header">`;
+    html += `<span class="icon">${elem.icon}</span>`;
+    html += `<h2>${elem.title}</h2>`;
+    html += `<span class="yang-label">1-6阳 · 7-12阴</span>`;
+    html += `</div>`;
+
+    qs.forEach(q => {
+      const tag = q.polarity === 'yang'
+        ? '<span class="yang-tag">阳</span>'
+        : '<span class="yin-tag">阴</span>';
+      const checkedYes = answers[q.id] === true ? 'checked' : '';
+      const checkedNo = answers[q.id] === false ? 'checked' : '';
+      html += `<div class="question-item">`;
+      html += `<span class="q-num">${q.id}</span>`;
+      html += `<div class="q-text">${q.text} ${tag}</div>`;
+      html += `<div class="q-options">`;
+      html += `<label><input type="radio" name="q${q.id}" value="yes" ${checkedYes} onchange="answer(${q.id},true)"> 是</label>`;
+      html += `<label><input type="radio" name="q${q.id}" value="no" ${checkedNo} onchange="answer(${q.id},false)"> 否</label>`;
+      html += `</div></div>`;
+    });
+    html += `</div>`;
+  });
+  container.innerHTML = html;
+}
+
+function answer(id, val) {
+  answers[id] = val;
+  updateProgress();
+}
+
+function updateProgress() {
+  const answered = Object.keys(answers).length;
+  const total = QUESTIONS.length;
+  const pct = Math.round((answered / total) * 100);
+  document.getElementById('progress-bar').style.width = pct + '%';
+  document.getElementById('progressInfo').textContent = `已完成 ${answered}/${total} 题`;
+  document.getElementById('counterInfo').textContent = `已完成 ${answered}/${total} 题`;
+  document.getElementById('submitBtn').disabled = answered < total;
+}
+
+function calcScores() {
+  const scores = {};
+  ELEM_ORDER.forEach(e => scores[e] = 0);
+  QUESTIONS.forEach(q => {
+    if (answers[q.id]) scores[q.elem]++;
+  });
+  return scores;
+}
+
+function calcYinYang(scores) {
+  const result = {};
+  ELEM_ORDER.forEach(e => {
+    const yangQ = QUESTIONS.filter(q => q.elem === e && q.polarity === 'yang');
+    const yinQ = QUESTIONS.filter(q => q.elem === e && q.polarity === 'yin');
+    const yangYes = yangQ.filter(q => answers[q.id]).length;
+    const yinYes = yinQ.filter(q => answers[q.id]).length;
+    let state;
+    if (yangYes >= 4 && yinYes < 4) state = '阳性主导';
+    else if (yinYes >= 4 && yangYes < 4) state = '阴性主导';
+    else state = '平衡状态';
+    result[e] = { yang: yangYes, yin: yinYes, state };
+  });
+  return result;
+}
+
+function showResults() {
+  document.getElementById('quiz').classList.add('hidden');
+  const container = document.getElementById('results');
+  container.style.display = 'block';
+
+  const scores = calcScores();
+  const yy = calcYinYang(scores);
+  const sorted = ELEM_ORDER.slice().sort((a,b) => scores[b] - scores[a]);
+  const primary = sorted[0];
+  const secondary = sorted[1];
+  const tertiary = sorted[2];
+
+  const elem = ELEMENTS[primary];
+  const interp = INTERPRETATIONS[primary];
+
+  let html = `<div class="result-hero result-type-${primary} fade-in">`;
+  html += `<div class="big-icon">${elem.icon}</div>`;
+  html += `<h2>${interp.title}</h2>`;
+  html += `<div class="label">主行：${elem.name}行人 · 得分 ${scores[primary]}/12</div>`;
+  html += `</div>`;
+
+  html += `<div class="result-sub">`;
+  html += `次行：${ELEM_LABELS[secondary]} ${scores[secondary]}分 · 第三行：${ELEM_LABELS[tertiary]} ${scores[tertiary]}分`;
+  html += `</div>`;
+
+  // Score bars
+  html += `<div class="result-card fade-in"><h3>📊 五行得分</h3>`;
+  ELEM_ORDER.forEach(e => {
+    const pct = (scores[e] / 12) * 100;
+    const label = ELEM_LABELS[e];
+    const isPrimary = e === primary ? ' ★ 主行' : '';
+    html += `<div class="score-bar-wrap">`;
+    html += `<div class="score-bar-label"><span>${label}${isPrimary}</span><span>${scores[e]}/12</span></div>`;
+    html += `<div class="score-bar"><div class="score-bar-fill fill-${e}" style="width:${pct}%">${scores[e]}</div></div>`;
+    html += `</div>`;
+  });
+  html += `</div>`;
+
+  // Yin-Yang
+  html += `<div class="result-card fade-in"><h3>☯ 阴阳状态（进阶分析）</h3>`;
+  html += `<div class="yin-yang-grid">`;
+  ELEM_ORDER.forEach(e => {
+    const d = yy[e];
+    const bgClass = d.state === '阳性主导' ? 'yin-yang-positive' : d.state === '阴性主导' ? 'yin-yang-negative' : 'yin-yang-balanced';
+    html += `<div class="yin-yang-item ${bgClass}">`;
+    html += `<div class="label">${ELEM_LABELS[e]}</div>`;
+    html += `<div class="val">${d.yang}阳 / ${d.yin}阴</div>`;
+    html += `<div style="font-size:12px">${d.state}</div>`;
+    html += `</div>`;
+  });
+  html += `</div></div>`;
+
+  // Interpretation
+  html += `<div class="result-card fade-in"><h3>📖 类型画像</h3><p style="font-size:14px;line-height:1.8">${interp.description}</p></div>`;
+
+  html += `<div class="result-card fade-in"><h3>⭐ 核心优势</h3><ul>`;
+  interp.strengths.forEach(s => html += `<li>${s}</li>`);
+  html += `</ul></div>`;
+
+  html += `<div class="result-card fade-in"><h3>⚠️ 需要注意</h3><ul>`;
+  interp.cautions.forEach(s => html += `<li>${s}</li>`);
+  html += `</ul></div>`;
+
+  html += `<div class="result-card fade-in"><h3>💡 阴阳状态说明</h3><p style="font-size:14px;line-height:1.8">${interp.yinDesc}</p></div>`;
+
+  html += `<div class="result-card fade-in"><h3>🌱 成长建议</h3><ul>`;
+  interp.suggestions.forEach(s => html += `<li>${s}</li>`);
+  html += `</ul></div>`;
+
+  html += `<div class="result-card fade-in"><h3>📚 学习风格</h3><p style="font-size:14px;line-height:1.8">${interp.study}</p></div>`;
+
+  html += `<div class="result-card fade-in"><h3>🤝 人际关系特点</h3><p style="font-size:14px;line-height:1.8">${interp.social}</p></div>`;
+
+  html += `<div class="result-card fade-in"><h3>🔭 未来职业方向参考</h3><p style="font-size:14px;color:var(--text-light);margin-bottom:8px">（仅供思考）</p>`;
+  html += `<div style="display:flex;flex-wrap:wrap;gap:8px">`;
+  interp.careers.forEach(c => html += `<span style="background:#f0f0f0;padding:4px 14px;border-radius:16px;font-size:13px">${c}</span>`);
+  html += `</div></div>`;
+
+  // Combo
+  const comboKey1 = primary + '+' + secondary;
+  const comboKey2 = secondary + '+' + primary;
+  const comboText = COMBOS[comboKey1] || COMBOS[comboKey2] || '';
+  if (comboText) {
+    html += `<div class="result-card fade-in"><h3>🔗 ${ELEMENTS[primary].icon}${ELEMENTS[primary].name} + ${ELEMENTS[secondary].icon}${ELEMENTS[secondary].name} 次行组合解读</h3>`;
+    html += `<p style="font-size:14px;line-height:1.8">${comboText}</p></div>`;
+  }
+
+  // Watermark
+  html += `<div style="text-align:center;padding:20px 0;font-size:13px;color:var(--text-light)">`;
+  html += `以观其妙书院 · 五行人格心理学<br>仅供个人成长参考，版权所有`;
+  html += `</div>`;
+
+  html += `<button class="btn-restart" onclick="restart()">重新测评</button>`;
+
+  container.innerHTML = html;
+  container.scrollIntoView({ behavior:'smooth' });
+}
+
+function restart() {
+  answers = {};
+  document.getElementById('results').style.display = 'none';
+  document.getElementById('results').innerHTML = '';
+  document.getElementById('welcome').classList.remove('hidden');
+  document.getElementById('progress-bar').style.width = '0%';
+}
+</script>
+</body>
+</html>
