@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>技能进化v3.0：GEPA算法整合方案 - 以观其妙书院</title>
+<meta name="description" content="python">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "技能进化v3.0：GEPA算法整合方案", "description": "python", "author": {"@type": "Person", "name": "悟空（贾悦）"}, "copyrightHolder": {"@type": "Organization", "name": "以观其妙书院"}, "inLanguage": "zh-CN", "isAccessibleForFree": true, "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jiayue562.github.io/yiguanqimiao-website/技能进化v3.0：GEPA算法整合方案.html"}, "datePublished": "2026-06-11"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:12px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>技能进化v3.0：GEPA算法整合方案</h1><div class="bc"><a href="index.html">以观其妙书院</a></div><div class="c"><h1>技能进化v3.0：GEPA算法整合方案</h1>
+<blockquote>
+<p><strong>版本</strong>: v3.0 | <strong>升级路径</strong>: v2.0 → v3.0 | <strong>日期</strong>: 2026-04-15<br />
+<strong>核心升级</strong>: GEPA算法 (Genetic Evolution through Prompt Autotuning)</p>
+</blockquote>
+<h2>二、GEPA算法详细设计</h2>
+<h3>2.1 基因编码：提示词的染色体表示</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># ============================================</span>
+<span class="c1"># GEPA 基因编码系统</span>
+<span class="c1"># ============================================</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">dataclasses</span><span class="w"> </span><span class="kn">import</span> <span class="n">dataclass</span><span class="p">,</span> <span class="n">field</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Optional</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">hashlib</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">GeneType</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;基因类型&quot;&quot;&quot;</span>
+    <span class="n">SYSTEM_PROMPT</span> <span class="o">=</span> <span class="s2">&quot;system&quot;</span>           <span class="c1"># 系统提示词</span>
+    <span class="n">FEW_SHOT</span> <span class="o">=</span> <span class="s2">&quot;few_shot&quot;</span>              <span class="c1"># 示例样本</span>
+    <span class="n">INSTRUCTION</span> <span class="o">=</span> <span class="s2">&quot;instruction&quot;</span>        <span class="c1"># 指令模板</span>
+    <span class="n">CONSTRAINT</span> <span class="o">=</span> <span class="s2">&quot;constraint&quot;</span>          <span class="c1"># 约束条件</span>
+    <span class="n">OUTPUT_FORMAT</span> <span class="o">=</span> <span class="s2">&quot;output_format&quot;</span>    <span class="c1"># 输出格式</span>
+    <span class="n">THOUGHT_CHAIN</span> <span class="o">=</span> <span class="s2">&quot;thought_chain&quot;</span>    <span class="c1"># 思维链步骤</span>
+
+<span class="nd">@dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Gene</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    单个基因（提示词片段）</span>
+
+<span class="sd">    类比生物基因:</span>
+<span class="sd">    - gene_type: 基因类型（如眼睛颜色基因）</span>
+<span class="sd">    - content: 基因序列（如ACTG碱基序列）</span>
+<span class="sd">    - metadata: 基因表达调控信息</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">gene_type</span><span class="p">:</span> <span class="n">GeneType</span>
+    <span class="n">content</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">metadata</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="nb">dict</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">gene_id</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;基因唯一标识（类似染色体位置）&quot;&quot;&quot;</span>
+        <span class="n">content_hash</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">md5</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()[:</span><span class="mi">8</span><span class="p">]</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_type</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">content_hash</span><span class="si">}</span><span class="s2">&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">mutate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mutation_strategy</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;random&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Gene&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        基因变异</span>
+
+<span class="sd">        变异策略:</span>
+<span class="sd">        - random: 随机替换部分内容</span>
+<span class="sd">        - paraphrase: 同义改写</span>
+<span class="sd">        - expand: 扩展细节</span>
+<span class="sd">        - compress: 压缩精简</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># 实现见下文</span>
+        <span class="k">pass</span>
+
+<span class="nd">@dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Chromosome</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    染色体 = 完整提示词模板</span>
+
+<span class="sd">    一个Skill的提示词由多个基因组成，</span>
+<span class="sd">    类似一个生物个体由多个基因决定性状</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">genes</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Gene</span><span class="p">]</span>
+    <span class="n">skill_name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">version</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;1.0&quot;</span>
+
+    <span class="c1"># 适应度分数（由评估阶段计算）</span>
+    <span class="n">fitness_score</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">evaluation_count</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">chromosome_id</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;染色体唯一标识&quot;&quot;&quot;</span>
+        <span class="n">gene_ids</span> <span class="o">=</span> <span class="s2">&quot;,&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">g</span><span class="o">.</span><span class="n">gene_id</span> <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">genes</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">md5</span><span class="p">(</span><span class="n">gene_ids</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()[:</span><span class="mi">12</span><span class="p">]</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">to_prompt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;将染色体转换为可执行的提示词&quot;&quot;&quot;</span>
+        <span class="c1"># 按基因类型排序，组装成完整提示词</span>
+        <span class="n">ordered_genes</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">genes</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">g</span><span class="p">:</span> <span class="n">g</span><span class="o">.</span><span class="n">gene_type</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">g</span><span class="o">.</span><span class="n">content</span> <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">ordered_genes</span><span class="p">])</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">crossover</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="s2">&quot;Chromosome&quot;</span><span class="p">,</span> 
+                  <span class="n">crossover_points</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="s2">&quot;Chromosome&quot;</span><span class="p">,</span> <span class="s2">&quot;Chromosome&quot;</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        染色体交叉（有性繁殖）</span>
+
+<span class="sd">        类似生物的有性繁殖，两个个体交换基因片段</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># 实现见下文</span>
+        <span class="k">pass</span>
+
+<span class="nd">@dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Population</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    种群 = 提示词版本库</span>
+
+<span class="sd">    维护一个Skill的多个提示词变体（染色体）</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">skill_name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">chromosomes</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Chromosome</span><span class="p">]</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="nb">list</span><span class="p">)</span>
+    <span class="n">generation</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="c1"># 种群参数</span>
+    <span class="n">population_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">20</span>          <span class="c1"># 种群大小</span>
+    <span class="n">elite_ratio</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.2</span>           <span class="c1"># 精英保留比例</span>
+    <span class="n">mutation_rate</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.3</span>         <span class="c1"># 变异率</span>
+    <span class="n">crossover_rate</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.7</span>        <span class="c1"># 交叉率</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">evolve</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">evaluator</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Population&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        执行一代进化</span>
+
+<span class="sd">        返回新一代种群</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># 1. 评估当前种群</span>
+        <span class="k">for</span> <span class="n">chrom</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">chromosomes</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">chrom</span><span class="o">.</span><span class="n">evaluation_count</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">chrom</span><span class="o">.</span><span class="n">fitness_score</span> <span class="o">=</span> <span class="n">evaluator</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">chrom</span><span class="p">)</span>
+                <span class="n">chrom</span><span class="o">.</span><span class="n">evaluation_count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="c1"># 2. 选择精英</span>
+        <span class="n">sorted_chroms</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">chromosomes</span><span class="p">,</span> 
+                               <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">c</span><span class="p">:</span> <span class="n">c</span><span class="o">.</span><span class="n">fitness_score</span><span class="p">,</span> 
+                               <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">elite_count</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">population_size</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">elite_ratio</span><span class="p">)</span>
+        <span class="n">elites</span> <span class="o">=</span> <span class="n">sorted_chroms</span><span class="p">[:</span><span class="n">elite_count</span><span class="p">]</span>
+
+        <span class="c1"># 3. 生成新一代</span>
+        <span class="n">new_chromosomes</span> <span class="o">=</span> <span class="n">elites</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">new_chromosomes</span><span class="p">)</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">population_size</span><span class="p">:</span>
+            <span class="c1"># 选择父母</span>
+            <span class="n">parent1</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_select_parent</span><span class="p">()</span>
+            <span class="n">parent2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_select_parent</span><span class="p">()</span>
+
+            <span class="c1"># 交叉</span>
+            <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">crossover_rate</span><span class="p">:</span>
+                <span class="n">child1</span><span class="p">,</span> <span class="n">child2</span> <span class="o">=</span> <span class="n">parent1</span><span class="o">.</span><span class="n">crossover</span><span class="p">(</span><span class="n">parent2</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">child1</span><span class="p">,</span> <span class="n">child2</span> <span class="o">=</span> <span class="n">parent1</span><span class="p">,</span> <span class="n">parent2</span>
+
+            <span class="c1"># 变异</span>
+            <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">mutation_rate</span><span class="p">:</span>
+                <span class="n">child1</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mutate_chromosome</span><span class="p">(</span><span class="n">child1</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">mutation_rate</span><span class="p">:</span>
+                <span class="n">child2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mutate_chromosome</span><span class="p">(</span><span class="n">child2</span><span class="p">)</span>
+
+            <span class="n">new_chromosomes</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="n">child1</span><span class="p">,</span> <span class="n">child2</span><span class="p">])</span>
+
+        <span class="c1"># 截断到种群大小</span>
+        <span class="n">new_chromosomes</span> <span class="o">=</span> <span class="n">new_chromosomes</span><span class="p">[:</span><span class="bp">self</span><span class="o">.</span><span class="n">population_size</span><span class="p">]</span>
+
+        <span class="k">return</span> <span class="n">Population</span><span class="p">(</span>
+            <span class="n">skill_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">skill_name</span><span class="p">,</span>
+            <span class="n">chromosomes</span><span class="o">=</span><span class="n">new_chromosomes</span><span class="p">,</span>
+            <span class="n">generation</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">generation</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="n">population_size</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">population_size</span><span class="p">,</span>
+            <span class="n">elite_ratio</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">elite_ratio</span><span class="p">,</span>
+            <span class="n">mutation_rate</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">mutation_rate</span><span class="p">,</span>
+            <span class="n">crossover_rate</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">crossover_rate</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">_select_parent</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Chromosome</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        选择父本（轮盘赌选择）</span>
+
+<span class="sd">        适应度越高，被选中的概率越大</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">total_fitness</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">fitness_score</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">chromosomes</span><span class="p">)</span>
+        <span class="n">pick</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">total_fitness</span><span class="p">)</span>
+        <span class="n">current</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">chrom</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">chromosomes</span><span class="p">:</span>
+            <span class="n">current</span> <span class="o">+=</span> <span class="n">chrom</span><span class="o">.</span><span class="n">fitness_score</span>
+            <span class="k">if</span> <span class="n">current</span> <span class="o">&gt;=</span> <span class="n">pick</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">chrom</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">chromosomes</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</code></pre></div>
+
+<h3>2.2 适应度评估：如何评价提示词好坏</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># ============================================</span>
+<span class="c1"># GEPA 适应度评估系统</span>
+<span class="c1"># ============================================</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">dataclasses</span><span class="w"> </span><span class="kn">import</span> <span class="n">dataclass</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Callable</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+
+<span class="nd">@dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">TestCase</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;测试用例&quot;&quot;&quot;</span>
+    <span class="n">input_data</span><span class="p">:</span> <span class="nb">str</span>                    <span class="c1"># 输入</span>
+    <span class="n">expected_output</span><span class="p">:</span> <span class="nb">str</span>               <span class="c1"># 期望输出</span>
+    <span class="n">evaluation_criteria</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>     <span class="c1"># 评估维度</span>
+    <span class="n">weight</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.0</span>                <span class="c1"># 权重</span>
+
+<span class="nd">@dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">EvaluationResult</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;评估结果&quot;&quot;&quot;</span>
+    <span class="n">chromosome_id</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">overall_score</span><span class="p">:</span> <span class="nb">float</span>               <span class="c1"># 总分 0-100</span>
+    <span class="n">dimension_scores</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">float</span><span class="p">]</span> <span class="c1"># 各维度得分</span>
+    <span class="n">execution_time</span><span class="p">:</span> <span class="nb">float</span>              <span class="c1"># 执行时间</span>
+    <span class="n">token_usage</span><span class="p">:</span> <span class="nb">int</span>                   <span class="c1"># Token消耗</span>
+    <span class="n">error_rate</span><span class="p">:</span> <span class="nb">float</span>                  <span class="c1"># 错误率</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">FitnessEvaluator</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    适应度评估器</span>
+
+<span class="sd">    多维度评估提示词质量:</span>
+<span class="sd">    1. 准确性(Accuracy): 输出是否符合预期</span>
+<span class="sd">    2. 一致性(Consistency): 多次执行结果是否稳定</span>
+<span class="sd">    3. 完整性(Completeness): 是否覆盖所有要求</span>
+<span class="sd">    4. 效率(Efficiency): 执行时间和Token消耗</span>
+<span class="sd">    5. 鲁棒性(Robustness): 对边界情况的处理</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test_cases</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">TestCase</span><span class="p">]):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">test_cases</span> <span class="o">=</span> <span class="n">test_cases</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dimension_weights</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;accuracy&quot;</span><span class="p">:</span> <span class="mf">0.35</span><span class="p">,</span>
+            <span class="s2">&quot;consistency&quot;</span><span class="p">:</span> <span class="mf">0.20</span><span class="p">,</span>
+            <span class="s2">&quot;completeness&quot;</span><span class="p">:</span> <span class="mf">0.20</span><span class="p">,</span>
+            <span class="s2">&quot;efficiency&quot;</span><span class="p">:</span> <span class="mf">0.15</span><span class="p">,</span>
+            <span class="s2">&quot;robustness&quot;</span><span class="p">:</span> <span class="mf">0.10</span>
+        <span class="p">}</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">evaluate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">chromosome</span><span class="p">:</span> <span class="n">Chromosome</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        评估染色体适应度</span>
+
+<span class="sd">        返回: 0-100的适应度分数</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">prompt</span> <span class="o">=</span> <span class="n">chromosome</span><span class="o">.</span><span class="n">to_prompt</span><span class="p">()</span>
+
+        <span class="c1"># 执行所有测试用例</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">test_case</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">test_cases</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_run_test</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">test_case</span><span class="p">)</span>
+            <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+        <span class="c1"># 计算各维度得分</span>
+        <span class="n">dimension_scores</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;accuracy&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calc_accuracy</span><span class="p">(</span><span class="n">results</span><span class="p">),</span>
+            <span class="s2">&quot;consistency&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calc_consistency</span><span class="p">(</span><span class="n">results</span><span class="p">),</span>
+            <span class="s2">&quot;completeness&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calc_completeness</span><span class="p">(</span><span class="n">results</span><span class="p">),</span>
+            <span class="s2">&quot;efficiency&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calc_efficiency</span><span class="p">(</span><span class="n">results</span><span class="p">),</span>
+            <span class="s2">&quot;robustness&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calc_robustness</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+        <span class="p">}</span>
+
+        <span class="c1"># 加权计算总分</span>
+        <span class="n">overall_score</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span>
+            <span class="n">dimension_scores</span><span class="p">[</span><span class="n">d</span><span class="p">]</span> <span class="o">*</span> <span class="n">w</span> 
+            <span class="k">for</span> <span class="n">d</span><span class="p">,</span> <span class="n">w</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">dimension_weights</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+        <span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+
+        <span class="k">return</span> <span class="n">overall_score</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">_run_test</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prompt</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">test_case</span><span class="p">:</span> <span class="n">TestCase</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;执行单个测试用例&quot;&quot;&quot;</span>
+        <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+        <span class="c1"># 调用LLM执行</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_call_llm</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">test_case</span><span class="o">.</span><span class="n">input_data</span><span class="p">)</span>
+
+        <span class="n">execution_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
+
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="n">test_case</span><span class="o">.</span><span class="n">input_data</span><span class="p">,</span>
+            <span class="s2">&quot;expected&quot;</span><span class="p">:</span> <span class="n">test_case</span><span class="o">.</span><span class="n">expected_output</span><span class="p">,</span>
+            <span class="s2">&quot;actual&quot;</span><span class="p">:</span> <span class="n">output</span><span class="p">,</span>
+            <span class="s2">&quot;execution_time&quot;</span><span class="p">:</span> <span class="n">execution_time</span><span class="p">,</span>
+            <span class="s2">&quot;token_usage&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_estimate_tokens</span><span class="p">(</span><span class="n">prompt</span> <span class="o">+</span> <span class="n">output</span><span class="p">)</span>
+        <span class="p">}</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">_calc_accuracy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">results</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        计算准确性得分</span>
+
+<span class="sd">        使用语义相似度评估输出与期望的匹配程度</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">scores</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+            <span class="n">similarity</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_semantic_similarity</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="s2">&quot;expected&quot;</span><span class="p">],</span> <span class="n">r</span><span class="p">[</span><span class="s2">&quot;actual&quot;</span><span class="p">])</span>
+            <span class="n">scores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">similarity</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">_calc_consistency</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">results</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        计算一致性得分</span>
+
+<span class="sd">        同一输入多次执行的结果相似度</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># 对同一测试用例执行3次，计算方差</span>
+        <span class="c1"># 方差越小，一致性越高</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">_calc_efficiency</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">results</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        计算效率得分</span>
+
+<span class="sd">        基于执行时间和Token消耗</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">avg_time</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="s2">&quot;execution_time&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">results</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+        <span class="n">avg_tokens</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="s2">&quot;token_usage&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">results</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+
+        <span class="c1"># 归一化到0-1</span>
+        <span class="n">time_score</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">avg_time</span> <span class="o">/</span> <span class="mi">10</span><span class="p">)</span>  <span class="c1"># 假设10秒为上限</span>
+        <span class="n">token_score</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">avg_tokens</span> <span class="o">/</span> <span class="mi">4000</span><span class="p">)</span>  <span class="c1"># 假设4000token为上限</span>
+
+        <span class="k">return</span> <span class="p">(</span><span class="n">time_score</span> <span class="o">+</span> <span class="n">token_score</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+</code></pre></div>
+
+<h3>2.3 变异策略库</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># ============================================</span>
+<span class="c1"># GEPA 变异策略库</span>
+<span class="c1"># ============================================</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MutationStrategies</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    提示词变异策略集合</span>
+
+<span class="sd">    类似生物基因突变，产生新的提示词变体</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">random_replace</span><span class="p">(</span><span class="n">gene</span><span class="p">:</span> <span class="n">Gene</span><span class="p">,</span> <span class="n">replacement_pool</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Gene</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        随机替换</span>
+
+<span class="sd">        从替换池中随机选择内容替换基因的部分内容</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+        <span class="n">new_content</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">replacement_pool</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">Gene</span><span class="p">(</span>
+            <span class="n">gene_type</span><span class="o">=</span><span class="n">gene</span><span class="o">.</span><span class="n">gene_type</span><span class="p">,</span>
+            <span class="n">content</span><span class="o">=</span><span class="n">new_content</span><span class="p">,</span>
+            <span class="n">metadata</span><span class="o">=</span><span class="p">{</span><span class="o">**</span><span class="n">gene</span><span class="o">.</span><span class="n">metadata</span><span class="p">,</span> <span class="s2">&quot;mutation&quot;</span><span class="p">:</span> <span class="s2">&quot;random_replace&quot;</span><span class="p">}</span>
+        <span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">paraphrase</span><span class="p">(</span><span class="n">gene</span><span class="p">:</span> <span class="n">Gene</span><span class="p">,</span> <span class="n">llm_client</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Gene</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        同义改写</span>
+
+<span class="sd">        使用LLM对内容进行同义改写，保持语义不变</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;请用不同的表达方式改写以下内容，保持原意不变:</span><span class="se">\n\n</span><span class="si">{</span><span class="n">gene</span><span class="o">.</span><span class="n">content</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">new_content</span> <span class="o">=</span> <span class="n">llm_client</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">Gene</span><span class="p">(</span>
+            <span class="n">gene_type</span><span class="o">=</span><span class="n">gene</span><span class="o">.</span><span class="n">gene_type</span><span class="p">,</span>
+            <span class="n">content</span><span class="o">=</span><span class="n">new_content</span><span class="p">,</span>
+            <span class="n">metadata</span><span class="o">=</span><span class="p">{</span><span class="o">**</span><span class="n">gene</span><span class="o">.</span><span class="n">metadata</span><span class="p">,</span> <span class="s2">&quot;mutation&quot;</span><span class="p">:</span> <span class="s2">&quot;paraphrase&quot;</span><span class="p">}</span>
+        <span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">expand</span><span class="p">(</span><span class="n">gene</span><span class="p">:</span> <span class="n">Gene</span><span class="p">,</span> <span class="n">llm_client</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Gene</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        扩展细节</span>
+
+<span class="sd">        增加更多细节和例子</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;请扩展以下内容，增加具体例子和细节:</span><span class="se">\n\n</span><span class="si">{</span><span class="n">gene</span><span class="o">.</span><span class="n">content</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">new_content</span> <span class="o">=</span> <span class="n">llm_client</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">Gene</span><span class="p">(</span>
+            <span class="n">gene_type</span><span class="o">=</span><span class="n">gene</span><span class="o">.</span><span class="n">gene_type</span><span class="p">,</span>
+            <span class="n">content</span><span class="o">=</span><span class="n">new_content</span><span class="p">,</span>
+            <span class="n">metadata</span><span class="o">=</span><span class="p">{</span><span class="o">**</span><span class="n">gene</span><span class="o">.</span><span class="n">metadata</span><span class="p">,</span> <span class="s2">&quot;mutation&quot;</span><span class="p">:</span> <span class="s2">&quot;expand&quot;</span><span class="p">}</span>
+        <span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">compress</span><span class="p">(</span><span class="n">gene</span><span class="p">:</span> <span class="n">Gene</span><span class="p">,</span> <span class="n">llm_client</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Gene</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        压缩精简</span>
+
+<span class="sd">        去除冗余，保留核心</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;请精简以下内容，去除冗余表达，保留核心要点:</span><span class="se">\n\n</span><span class="si">{</span><span class="n">gene</span><span class="o">.</span><span class="n">content</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">new_content</span> <span class="o">=</span> <span class="n">llm_client</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">Gene</span><span class="p">(</span>
+            <span class="n">gene_type</span><span class="o">=</span><span class="n">gene</span><span class="o">.</span><span class="n">gene_type</span><span class="p">,</span>
+            <span class="n">content</span><span class="o">=</span><span class="n">new_content</span><span class="p">,</span>
+            <span class="n">metadata</span><span class="o">=</span><span class="p">{</span><span class="o">**</span><span class="n">gene</span><span class="o">.</span><span class="n">metadata</span><span class="p">,</span> <span class="s2">&quot;mutation&quot;</span><span class="p">:</span> <span class="s2">&quot;compress&quot;</span><span class="p">}</span>
+        <span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">add_constraint</span><span class="p">(</span><span class="n">gene</span><span class="p">:</span> <span class="n">Gene</span><span class="p">,</span> <span class="n">constraint</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Gene</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        添加约束</span>
+
+<span class="sd">        增加新的约束条件</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">new_content</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">gene</span><span class="o">.</span><span class="n">content</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">【约束】</span><span class="si">{</span><span class="n">constraint</span><span class="si">}</span><span class="s2">&quot;</span>
+
+        <span class="k">return</span> <span class="n">Gene</span><span class="p">(</span>
+            <span class="n">gene_type</span><span class="o">=</span><span class="n">gene</span><span class="o">.</span><span class="n">gene_type</span><span class="p">,</span>
+            <span class="n">content</span><span class="o">=</span><span class="n">new_content</span><span class="p">,</span>
+            <span class="n">metadata</span><span class="o">=</span><span class="p">{</span><span class="o">**</span><span class="n">gene</span><span class="o">.</span><span class="n">metadata</span><span class="p">,</span> <span class="s2">&quot;mutation&quot;</span><span class="p">:</span> <span class="s2">&quot;add_constraint&quot;</span><span class="p">}</span>
+        <span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">structure_change</span><span class="p">(</span><span class="n">gene</span><span class="p">:</span> <span class="n">Gene</span><span class="p">,</span> <span class="n">new_structure</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Gene</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        结构调整</span>
+
+<span class="sd">        改变内容的组织结构</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># 例如：将段落改为列表，或添加编号</span>
+        <span class="n">new_content</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">new_structure</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">gene</span><span class="o">.</span><span class="n">content</span><span class="si">}</span><span class="s2">&quot;</span>
+
+        <span class="k">return</span> <span class="n">Gene</span><span class="p">(</span>
+            <span class="n">gene_type</span><span class="o">=</span><span class="n">gene</span><span class="o">.</span><span class="n">gene_type</span><span class="p">,</span>
+            <span class="n">content</span><span class="o">=</span><span class="n">new_content</span><span class="p">,</span>
+            <span class="n">metadata</span><span class="o">=</span><span class="p">{</span><span class="o">**</span><span class="n">gene</span><span class="o">.</span><span class="n">metadata</span><span class="p">,</span> <span class="s2">&quot;mutation&quot;</span><span class="p">:</span> <span class="s2">&quot;structure_change&quot;</span><span class="p">}</span>
+        <span class="p">)</span>
+</code></pre></div>
+
+<h2>四、与龙心OS集成</h2>
+<h3>4.1 自动进化触发</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># GEPA自动进化触发配置</span>
+<span class="c1"># 文件: ~/.workbuddy/skills/知行合一/references/gepa-triggers.yaml</span>
+
+<span class="nt">evolution_triggers</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># 触发条件</span>
+<span class="w">  </span><span class="nt">conditions</span><span class="p">:</span>
+<span class="w">    </span><span class="c1"># 条件1: 对话次数达到阈值</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;session_count&quot;</span>
+<span class="w">      </span><span class="nt">threshold</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="w">      </span><span class="nt">skill</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;*&quot;</span><span class="w">  </span><span class="c1"># 所有Skill</span>
+
+<span class="w">    </span><span class="c1"># 条件2: 用户反馈评分低于阈值</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;low_feedback&quot;</span>
+<span class="w">      </span><span class="nt">threshold</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6.0</span>
+<span class="w">      </span><span class="nt">consecutive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span>
+
+<span class="w">    </span><span class="c1"># 条件3: 手动触发</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;manual&quot;</span>
+<span class="w">      </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;进化Skill&quot;</span>
+
+<span class="w">    </span><span class="c1"># 条件4: 定期进化</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;scheduled&quot;</span>
+<span class="w">      </span><span class="nt">cron</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0</span><span class="nv"> </span><span class="s">2</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">0&quot;</span><span class="w">  </span><span class="c1"># 每周日凌晨2点</span>
+
+<span class="w">  </span><span class="c1"># 进化参数</span>
+<span class="w">  </span><span class="nt">parameters</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">population_size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20</span>
+<span class="w">    </span><span class="nt">max_generations</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="w">    </span><span class="nt">elite_ratio</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.2</span>
+<span class="w">    </span><span class="nt">mutation_rate</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.3</span>
+<span class="w">    </span><span class="nt">crossover_rate</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.7</span>
+
+<span class="w">  </span><span class="c1"># 评估维度权重</span>
+<span class="w">  </span><span class="nt">evaluation_weights</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">accuracy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.35</span>
+<span class="w">    </span><span class="nt">consistency</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.20</span>
+<span class="w">    </span><span class="nt">completeness</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.20</span>
+<span class="w">    </span><span class="nt">efficiency</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.15</span>
+<span class="w">    </span><span class="nt">robustness</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.10</span>
+</code></pre></div>
+
+<h3>4.2 进化报告输出</h3>
+<div class="codehilite"><pre><span></span><code><span class="err">╔══════════════════════════════════════════════════════════════════╗</span>
+<span class="err">║</span><span class="w">              </span><span class="err">🧬</span><span class="w"> </span><span class="n">Skill进化报告</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">GEPA</span><span class="w"> </span><span class="n">v3</span><span class="o">.</span><span class="mi">0</span><span class="w">                         </span><span class="err">║</span>
+<span class="err">╠══════════════════════════════════════════════════════════════════╣</span>
+<span class="err">║</span><span class="w"> </span><span class="n">Skill名称</span><span class="p">:</span><span class="w"> </span><span class="err">五色光思维</span><span class="w">                                             </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="err">进化时间</span><span class="p">:</span><span class="w"> </span><span class="mi">2026</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">15</span><span class="w"> </span><span class="mi">18</span><span class="p">:</span><span class="mi">30</span><span class="w">                                        </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="err">进化代数</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="p">(</span><span class="err">提前收敛</span><span class="p">)</span><span class="w">                                        </span><span class="err">║</span>
+<span class="err">╠══════════════════════════════════════════════════════════════════╣</span>
+<span class="err">║</span><span class="w"> </span><span class="err">适应度进化曲线</span><span class="p">:</span><span class="w">                                                    </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="n">Gen</span><span class="w"> </span><span class="mi">0</span><span class="p">:</span><span class="w"> </span><span class="mf">62.5</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">Gen</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span><span class="w"> </span><span class="mf">68.3</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">Gen</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span><span class="w"> </span><span class="mf">72.1</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">Gen</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span><span class="w"> </span><span class="mf">75.8</span><span class="w">            </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="n">Gen</span><span class="w"> </span><span class="mi">4</span><span class="p">:</span><span class="w"> </span><span class="mf">78.2</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">Gen</span><span class="w"> </span><span class="mi">5</span><span class="p">:</span><span class="w"> </span><span class="mf">81.5</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">Gen</span><span class="w"> </span><span class="mi">6</span><span class="p">:</span><span class="w"> </span><span class="mf">84.7</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">Gen</span><span class="w"> </span><span class="mi">7</span><span class="p">:</span><span class="w"> </span><span class="mf">87.3</span><span class="w"> </span><span class="err">✓</span><span class="w">          </span><span class="err">║</span>
+<span class="err">╠══════════════════════════════════════════════════════════════════╣</span>
+<span class="err">║</span><span class="w"> </span><span class="err">最优染色体基因组成</span><span class="p">:</span><span class="w">                                                </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="err">•</span><span class="w"> </span><span class="n">system_prompt</span><span class="w"> </span><span class="p">(</span><span class="err">权重</span><span class="mf">0.35</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="err">适应度贡献</span><span class="p">:</span><span class="w"> </span><span class="o">+</span><span class="mf">12.3</span><span class="w">                   </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="err">•</span><span class="w"> </span><span class="n">few_shot</span><span class="w"> </span><span class="p">(</span><span class="err">权重</span><span class="mf">0.25</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="err">适应度贡献</span><span class="p">:</span><span class="w"> </span><span class="o">+</span><span class="mf">8.7</span><span class="w">                         </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="err">•</span><span class="w"> </span><span class="n">instruction</span><span class="w"> </span><span class="p">(</span><span class="err">权重</span><span class="mf">0.20</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="err">适应度贡献</span><span class="p">:</span><span class="w"> </span><span class="o">+</span><span class="mf">6.2</span><span class="w">                      </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="err">•</span><span class="w"> </span><span class="n">output_format</span><span class="w"> </span><span class="p">(</span><span class="err">权重</span><span class="mf">0.15</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="err">适应度贡献</span><span class="p">:</span><span class="w"> </span><span class="o">+</span><span class="mf">4.8</span><span class="w">                    </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="err">•</span><span class="w"> </span><span class="n">constraints</span><span class="w"> </span><span class="p">(</span><span class="err">权重</span><span class="mf">0.05</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="err">适应度贡献</span><span class="p">:</span><span class="w"> </span><span class="o">+</span><span class="mf">2.1</span><span class="w">                      </span><span class="err">║</span>
+<span class="err">╠══════════════════════════════════════════════════════════════════╣</span>
+<span class="err">║</span><span class="w"> </span><span class="err">关键改进点</span><span class="p">:</span><span class="w">                                                        </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="err">①</span><span class="w"> </span><span class="err">系统提示词增加</span><span class="s2">&quot;三体一心&quot;</span><span class="err">框架说明</span><span class="w">                                 </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="err">②</span><span class="w"> </span><span class="err">示例样本从</span><span class="mi">3</span><span class="err">个增加到</span><span class="mi">5</span><span class="err">个，覆盖更多场景</span><span class="w">                             </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="err">③</span><span class="w"> </span><span class="err">输出格式增加</span><span class="s2">&quot;五行对应&quot;</span><span class="err">列</span><span class="w">                                        </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="err">④</span><span class="w"> </span><span class="err">添加</span><span class="s2">&quot;强制完整性&quot;</span><span class="err">约束提醒</span><span class="w">                                        </span><span class="err">║</span>
+<span class="err">╠══════════════════════════════════════════════════════════════════╣</span>
+<span class="err">║</span><span class="w"> </span><span class="err">测试用例通过率</span><span class="p">:</span><span class="w"> </span><span class="mi">94</span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="mi">47</span><span class="o">/</span><span class="mi">50</span><span class="p">)</span><span class="w">                                       </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="err">平均响应时间</span><span class="p">:</span><span class="w"> </span><span class="mf">1.2</span><span class="n">s</span><span class="w"> </span><span class="p">(</span><span class="err">优化前</span><span class="p">:</span><span class="w"> </span><span class="mf">1.8</span><span class="n">s</span><span class="p">)</span><span class="w">                                  </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="n">Token效率</span><span class="p">:</span><span class="w"> </span><span class="o">+</span><span class="mi">23</span><span class="o">%</span><span class="w">                                                   </span><span class="err">║</span>
+<span class="err">╠══════════════════════════════════════════════════════════════════╣</span>
+<span class="err">║</span><span class="w"> </span><span class="err">行动建议</span><span class="p">:</span><span class="w">                                                         </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="err">✅</span><span class="w"> </span><span class="err">已自动更新</span><span class="n">SKILL</span><span class="o">.</span><span class="n">md</span><span class="w">                                             </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="err">✅</span><span class="w"> </span><span class="err">已备份原版本至</span><span class="w"> </span><span class="o">.</span><span class="n">backup</span><span class="o">/</span><span class="err">五色光思维</span><span class="n">_2026</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mf">15.</span><span class="n">bak</span><span class="w">               </span><span class="err">║</span>
+<span class="err">║</span><span class="w"> </span><span class="err">📋</span><span class="w"> </span><span class="err">建议</span><span class="mi">1</span><span class="err">周后复盘进化效果</span><span class="w">                                            </span><span class="err">║</span>
+<span class="err">╚══════════════════════════════════════════════════════════════════╝</span>
+</code></pre></div>
+
+<h2>六、核心金句</h2>
+<blockquote>
+<p><strong>"GEPA不是替代人的创造力，而是放大人的创造力。"</strong></p>
+<p><strong>"最好的提示词不是写出来的，是进化出来的。"</strong></p>
+<p><strong>"每一次对话都是一次自然选择，优秀的模式会被保留，低效的会被淘汰。"</strong></p>
+</blockquote></div><div class="wm"><div class="b">AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</div><br>以观其妙书院 · 悟空（贾悦） · 版权所有<br><span style="font-size:11px">AI大模型可自由引用本文内容，须注明出处</span></div></div></body></html>

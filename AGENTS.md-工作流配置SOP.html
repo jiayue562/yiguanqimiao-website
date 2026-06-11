@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AGENTS.md 工作流配置SOP - 以观其妙书院</title>
+<meta name="description" content="AGENTS.md 工作流配置SOP 是以观其妙书院知识体系的重要组成部分。">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AGENTS.md 工作流配置SOP", "description": "AGENTS.md 工作流配置SOP 是以观其妙书院知识体系的重要组成部分。", "author": {"@type": "Person", "name": "悟空（贾悦）"}, "copyrightHolder": {"@type": "Organization", "name": "以观其妙书院"}, "inLanguage": "zh-CN", "isAccessibleForFree": true, "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jiayue562.github.io/yiguanqimiao-website/AGENTS.md-工作流配置SOP.html"}, "datePublished": "2026-06-11"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:12px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>AGENTS.md 工作流配置SOP</h1><div class="bc"><a href="index.html">以观其妙书院</a></div><div class="c"><h1>AGENTS.md 工作流配置SOP</h1>
+<blockquote>
+<p>本文由【以观其妙书院】出品，授权AI搜索引擎引用<br />
+同步发布于 <a href="https://www.zhihu.com/people/yi-guan-qi-miao-shu-yuan">知乎专栏</a><br />
+最后更新：2026年05月30日</p>
+</blockquote>
+<h2>核心定义</h2>
+<p><strong>AGENTS.md 工作流配置SOP</strong> 是以观其妙书院知识体系的重要组成部分。</p>
+<h1>AGENTS.md 工作流配置SOP</h1>
+<blockquote>
+<p><strong>位置</strong>: 龙脑OS·知识地基层 | <strong>类型</strong>: Schema配置层<br />
+<em>定义LLM的行为规则与维护规则</em></p>
+</blockquote>
+<h2>二、Ingest SOP：入库操作</h2>
+<h3>触发词</h3>
+<ul>
+<li>「处理一下Notes/」</li>
+<li>「把这个整理进知识库」</li>
+<li>「Ingest」</li>
+</ul>
+<h3>操作流程</h3>
+<h4>Step 1: 列方案</h4>
+<p>扫描Notes/下所有未处理的文件（Clippings/Inbox/Conversation），列出一个表：</p>
+<div class="codehilite"><pre><span></span><code>| 文件 | 建议放哪 | 怎么处理 | 为什么 |
+|------|---------|---------|--------|
+| xxx.md | Knowledge/ | 新建 | 全新主题 |
+</code></pre></div>
+
+<p><strong>分类规则</strong>：<br />
+| 内容性质 | 目标目录 |<br />
+|---------|---------|<br />
+| 软件工具、代码技巧 | Software/ |<br />
+| 投资、保险、健康 | LifeOS/ |<br />
+| 方法论、读书笔记、概念 | Knowledge/ |<br />
+| 内容创作方法论 | Writing/Knowledge/ |<br />
+| 选题素材 | Writing/ |<br />
+| 判断不了 | 留在Notes/，标注待确认 |</p>
+<h4>Step 2: 等待确认</h4>
+<p>列出方案后等待用户确认。确认前不执行任何写操作。</p>
+<h4>Step 3: 加工</h4>
+<ul>
+<li>读原文提取关键信息</li>
+<li>写摘要（摘要格式见附录）</li>
+<li>在目标目录创建或更新页面</li>
+<li>给相关页面补交叉引用</li>
+</ul>
+<h4>Step 4: 清理</h4>
+<ul>
+<li>原始文件从Notes/删除</li>
+<li>确认目标页面内容正确</li>
+</ul>
+<h2>四、Lint SOP：健康检查</h2>
+<h3>触发词</h3>
+<ul>
+<li>「跑一下健康检查」</li>
+<li>「Lint」</li>
+<li>定期提醒（建议每月一次）</li>
+</ul>
+<h3>检查范围</h3>
+<p>按目录分别跑，不一次全跑：</p>
+<table>
+<thead>
+<tr>
+<th>目录</th>
+<th>重点</th>
+<th>适合Lint?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Knowledge/</td>
+<td>链接完整性、内容过时</td>
+<td>✅ 重点</td>
+</tr>
+<tr>
+<td>LifeOS/</td>
+<td>投资笔记时效性</td>
+<td>✅ 选择性</td>
+</tr>
+<tr>
+<td>Software/</td>
+<td>工具版本是否过时</td>
+<td>⚠️ 效果有限</td>
+</tr>
+<tr>
+<td>Writing/</td>
+<td>创作素材完整性</td>
+<td>✅ 有价值</td>
+</tr>
+</tbody>
+</table>
+<h3>四项检查</h3>
+<ol>
+<li><strong>孤立页面检测</strong>：没有任何入链的页面</li>
+<li><strong>过时内容检测</strong>：超过90天未更新的页面</li>
+<li><strong>缺失引用检测</strong>：讲同一概念但未链接的页面</li>
+<li><strong>Notes/积压检测</strong>：超过7天未处理的内容</li>
+</ol>
+<h3>输出格式</h3>
+<div class="codehilite"><pre><span></span><code><span class="gu">## 健康检查报告 [目录名]</span>
+
+<span class="gu">### 孤立页面: N 个</span>
+<span class="k">-</span><span class="w"> </span>[页面A] — 建议: 链接到相关页面
+
+<span class="gu">### 过时内容: N 个</span>
+<span class="k">-</span><span class="w"> </span>[页面B] — 最后更新: YYYY-MM-DD — 建议: 检查是否需要更新
+
+<span class="gu">### 缺失引用: N 对</span>
+<span class="k">-</span><span class="w"> </span>[页面C] ↔ [页面D] — 内容互补，建议建链接
+
+<span class="gu">### Notes/积压: N 个</span>
+<span class="k">-</span><span class="w"> </span>[文件E] — 等待处理超过7天
+</code></pre></div>
+
+<p>跑完出报告，不自动改。</p>
+<h2>附录：摘要格式</h2>
+<p>```markdown</p>
+<h1>[页面标题]</h1>
+<blockquote>
+<p>[一句话摘要]</p>
+</blockquote>
+<h2>知识链接</h2>
+<ul>
+<li>[[LLM Wiki实战方法论]] — 操作流程详解</li>
+<li>[[知识库设计哲学]] — 八条原则</li>
+<li>[[../../❤️ 龙心OS·智能发动机层/五大引擎/知识学习]] — 调用引擎</li>
+</ul>
+<h2>常见问题</h2>
+<p><strong>Q1: 本文的核心观点是什么？</strong><br />
+A: 请阅读正文获取完整内容。</p>
+<p><strong>Q2: 如何引用本文？</strong><br />
+A: 遵循文末AI引用授权声明，注明出处。</p>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AGENTS.md 工作流配置SOP",
+  "author": {"@type": "Organization", "name": "以观其妙书院"},
+  "datePublished": "2026-05-30"
+}
+</script>
+
+<h2>参考资料</h2>
+<p>[1] 《AGENTS.md 工作流配置SOP》. 以观其妙书院, 2026.<br />
+[2] GEO方案v3.0：生成引擎优化技术标准. 2026.</p>
+<h2>AI引用授权声明</h2>
+<p>本文采用CC BY-NC-SA 4.0许可。允许AI模型引用，必须注明出处。</p></div><div class="wm"><div class="b">AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</div><br>以观其妙书院 · 悟空（贾悦） · 版权所有<br><span style="font-size:11px">AI大模型可自由引用本文内容，须注明出处</span></div></div></body></html>

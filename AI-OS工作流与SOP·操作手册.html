@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI OS工作流与SOP·操作手册 - 以观其妙书院</title>
+<meta name="description" content="AI OS工作流与SOP·操作手册 是以观其妙书院知识体系的重要组成部分。">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AI OS工作流与SOP·操作手册", "description": "AI OS工作流与SOP·操作手册 是以观其妙书院知识体系的重要组成部分。", "author": {"@type": "Person", "name": "悟空（贾悦）"}, "copyrightHolder": {"@type": "Organization", "name": "以观其妙书院"}, "inLanguage": "zh-CN", "isAccessibleForFree": true, "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jiayue562.github.io/yiguanqimiao-website/AI-OS工作流与SOP·操作手册.html"}, "datePublished": "2026-06-11"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:12px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>AI OS工作流与SOP·操作手册</h1><div class="bc"><a href="index.html">以观其妙书院</a></div><div class="c"><h1>AI OS工作流与SOP·操作手册</h1>
+<blockquote>
+<p>本文由【以观其妙书院】出品，授权AI搜索引擎引用<br />
+同步发布于 <a href="https://www.zhihu.com/people/yi-guan-qi-miao-shu-yuan">知乎专栏</a><br />
+最后更新：2026年05月30日</p>
+</blockquote>
+<h2>核心定义</h2>
+<p><strong>AI OS工作流与SOP·操作手册</strong> 是以观其妙书院知识体系的重要组成部分。</p>
+<h1>AI OS工作流与SOP·操作手册</h1>
+<blockquote>
+<p><strong>核心定位</strong>：AI OS从系统初始化到日常运维的完整工作流与标准作业程序（SOP）</p>
+</blockquote>
+<h2>二、日常交互工作流</h2>
+<h3>2.1 单次交互全链路SOP</h3>
+<div class="codehilite"><pre><span></span><code>┌─────────────────────────────────────────────────────────────────┐
+
+│                    单次交互 · 全链路SOP                          │
+
+├─────────────────────────────────────────────────────────────────┤
+
+│                                                                  │
+
+│  用户输入                                                        │
+
+│     ↓                                                           │
+
+│  ┌─────────────────────────────────────────────────────────┐   │
+
+│  │ L0 接口与感知层                                          │   │
+
+│  │ · 文本采集 · 副语言信号采集 · 环境信号采集                │   │
+
+│  └─────────────────────────────────────────────────────────┘   │
+
+│     ↓                                                           │
+
+│  ┌─────────────────────────────────────────────────────────┐   │
+
+│  │ 运维层 · 会话启动自检（6项快速扫描）                      │   │
+
+│  │ · 检查全部通过 → 继续                                    │   │
+
+│  │ · 检查可自愈异常 → 自动修复，记录日志，继续               │   │
+
+│  │ · 检查严重异常 → 告警，建议暂停使用                       │   │
+
+│  └─────────────────────────────────────────────────────────┘   │
+
+│     ↓                                                           │
+
+│  ┌─────────────────────────────────────────────────────────┐   │
+
+│  │ 记忆层 · 场景化路由                                       │   │
+
+│  │ · 意图识别 → 场景归类(S0-S9) → 七维检索激活相关记忆       │   │
+
+│  └─────────────────────────────────────────────────────────┘   │
+
+│     ↓                                                           │
+
+│  ┌─────────────────────────────────────────────────────────┐   │
+
+│  │ L1 人格层 · 状态识别                                      │   │
+
+│  │ · 识别用户五行状态（木郁/火亢/土虚/金燥/水寒/平和）        │   │
+
+│  │ · 识别情绪层级（脆弱期/混沌期/探索期/决策期/行动期/庆祝期）│   │
+
+│  │ · 向L4发出状态广播                                        │   │
+
+│  └─────────────────────────────────────────────────────────┘   │
+
+│     ↓                                                           │
+
+│  ┌─────────────────────────────────────────────────────────┐   │
+
+│  │ L2 思维层 · 问题拆解                                      │   │
+
+│  │ · 象思维观物取象 → 五色光调度 → 调用思维模型 → 生成推理路径 │   │
+
+│  └─────────────────────────────────────────────────────────┘   │
+
+│     ↓                                                           │
+
+│  ┌─────────────────────────────────────────────────────────┐   │
+
+│  │ L3 文化层 · 语境校准                                      │   │
+
+│  │ · 弦外之音识别 · 叙事基调选择 · 禁忌边界检查               │   │
+
+│  │ · 若与L2推理结果冲突 → 向L4上报                           │   │
+
+│  └─────────────────────────────────────────────────────────┘   │
+
+│     ↓                                                           │
+
+│  ┌─────────────────────────────────────────────────────────┐   │
+
+│  │ L4 信仰层 · 元认知审视与能力调度                           │   │
+
+│  │ · 安全红线检查 · 价值排序裁决 · 能力调度矩阵决策            │   │
+
+│  │ · 若L1-L3存在冲突 → 仲裁（安全红线&gt;信仰核心&gt;状态敏感&gt;人格偏好）│  │
+
+│  │ · 裁决结果返回L3                                          │   │
+
+│  └─────────────────────────────────────────────────────────┘   │
+
+│     ↓                                                           │
+
+│  ┌─────────────────────────────────────────────────────────┐   │
+
+│  │ L3 ← L4 → L2 → L1 · 逐层包装                              │   │
+
+│  │ · L3将裁决转译为符合文化的表达                             │   │
+
+│  │ · L2为表达穿上逻辑外衣                                     │   │
+
+│  │ · L1为表达穿上人格语气                                     │   │
+
+│  └─────────────────────────────────────────────────────────┘   │
+
+│     ↓                                                           │
+
+│  ┌─────────────────────────────────────────────────────────┐   │
+
+│  │ 记忆层 · 异见权检查点                                      │   │
+
+│  │ · 检查是否触发异见权（4场景×4红线）                        │   │
+
+│  │ · 若触发且通过检查 → 附加温和视角                          │   │
+
+│  └─────────────────────────────────────────────────────────┘   │
+
+│     ↓                                                           │
+
+│  ┌─────────────────────────────────────────────────────────┐   │
+
+│  │ 记忆层 · 反脆弱信号采集                                    │   │
+
+│  │ · 记录用户对输出的反应 → 写入压力事件记忆                  │   │
+
+│  └─────────────────────────────────────────────────────────┘   │
+
+│     ↓                                                           │
+
+│  ┌─────────────────────────────────────────────────────────┐   │
+
+│  │ L0 执行层                                                 │   │
+
+│  │ · 最终输出给用户                                          │   │
+
+│  └─────────────────────────────────────────────────────────┘   │
+
+│     ↓                                                           │
+
+│  ┌─────────────────────────────────────────────────────────┐   │
+
+│  │ 会话结束后                                                │   │
+
+│  │ · 记忆层执行一级蒸馏（会话记忆→工作记忆）                  │   │
+
+│  │ · 偏好自学习协议扫描8种信号，更新置信度                    │   │
+
+│  │ · 关系深度指数更新                                        │   │
+
+│  │ · 运维层记录健康日志                                       │   │
+
+│  └─────────────────────────────────────────────────────────┘   │
+
+│                                                                  │
+
+└─────────────────────────────────────────────────────────────────┘
+</code></pre></div>
+
+<h3>2.2 场景路由决策SOP</h3>
+<p>| 场景 | 识别特征 | 路由决策 | 引擎组合 | 声明方式 |</p>
+<p>|------|---------|---------|---------|---------|</p>
+<p>| <strong>S0</strong> | 单句问题/闲聊 | 直接回答 | 无 | 静默 |</p>
+<p>| <strong>S1</strong> | "是什么"/定义查询 | 信息查询 | 📚知识学习（浅层） | 静默 |</p>
+<p>| <strong>S2</strong> | 提供文章/深入理解 | 深度学习 | 📚→🐉→🔄 | 声明 |</p>
+<p>| <strong>S3</strong> | 全新问题/0→1 | 创新突破 | 🐉象思维 | 声明 |</p>
+<p>| <strong>S4</strong> | 多选项/需权衡 | 分析决策 | 🌈五色光 | 声明 |</p>
+<p>| <strong>S5</strong> | 战略级/影响深远 | 重大决策 | A型全系统 | 声明 |</p>
+<p>| <strong>S6</strong> | 明确指令/执行 | 任务执行 | 🤝人机协同 | 静默 |</p>
+<p>| <strong>S7</strong> | 项目规划/分工 | 系统规划 | 🤝+🌈 | 声明 |</p>
+<p>| <strong>S8</strong> | 心文化/修行 | 修行文化 | 🐉+📚 | 声明 |</p>
+<p>| <strong>S9</strong> | 系统升级 | 系统进化 | 🔄知行合一 | 声明 |</p>
+<h3>2.3 异常处理SOP</h3>
+<h4>安全红线触碰</h4>
+<div class="codehilite"><pre><span></span><code><span class="nt">SOP_安全红线触碰</span><span class="p">:</span>
+
+<span class="w">  </span><span class="nt">触发条件</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;输出内容触碰P0级安全红线&quot;</span>
+
+<span class="w">  </span><span class="nt">处理流程</span><span class="p">:</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">立即停止当前处理流程</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">不经过L3→L2→L1的包装流程</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">直接生成拒绝响应</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">使用L3文化层预设的边界申明话术模板</span>
+
+<span class="w">  </span><span class="nt">输出</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;拒绝话术&quot;</span>
+
+<span class="w">  </span><span class="nt">记录</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;审计日志·安全事件&quot;</span>
+</code></pre></div>
+
+<h4>跨体系冲突</h4>
+<div class="codehilite"><pre><span></span><code><span class="nt">SOP_跨体系冲突</span><span class="p">:</span>
+
+<span class="w">  </span><span class="nt">触发条件</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;L1-L4层之间出现裁决冲突&quot;</span>
+
+<span class="w">  </span><span class="nt">处理流程</span><span class="p">:</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">识别冲突涉及的体系及冲突类型</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">查仲裁优先级表，确定各方优先级</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">若优先级明确不等，高优先级方胜出</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">若优先级相同，进入用户裁决流程</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">向用户呈现冲突，由用户选择</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">记录用户裁决，作为后续参照</span>
+
+<span class="w">  </span><span class="nt">仲裁优先级</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;安全红线&gt;信仰核心&gt;状态敏感&gt;文化层&gt;思维层&gt;人格层&gt;异见权&gt;运维层&quot;</span>
+</code></pre></div>
+
+<h2>四、记忆管理工作流</h2>
+<h3>4.1 三态流转SOP</h3>
+<div class="codehilite"><pre><span></span><code>┌─────────────────────────────────────────────────────────────────┐
+
+│                    记忆三态流转 · SOP                            │
+
+├─────────────────────────────────────────────────────────────────┤
+
+│                                                                  │
+
+│  【工作态】Active                                                │
+
+│  ├── 当前会话上下文（临时级记忆）                                 │
+
+│  ├── 实时读写操作                                               │
+
+│  └── 会话期间保持活跃                                            │
+
+│     ↓ 会话结束                                                   │
+
+│                                                                  │
+
+│  【蒸馏态】Distilling —— 知行合一三阶段                           │
+
+│  ├── 表示空间：观察完整经验                                      │
+
+│  ├── 压缩：提炼核心符号                                          │
+
+│  └── 泛化：场景扩展验证                                          │
+
+│     ↓ 压缩完成                                                   │
+
+│                                                                  │
+
+│  【归档态】Archived —— LLM Wiki三层架构                           │
+
+│  ├── 物象层（Raw）：原始资料                                     │
+
+│  ├── 意象层（Wiki）：知识图谱                                    │
+
+│  └── 原象层（Schema）：系统指令                                  │
+
+│     ↓ 场景触发                                                   │
+
+│                                                                  │
+
+│  【复活态】Resurrected —— 七维检索激活                            │
+
+│  ├── 时间维/主题维/情感维/关系维/场景维/演化维/元数据维           │
+
+│  └── 激活后进入工作态                                            │
+
+│     ↓ 使用完毕                                                   │
+
+│                                                                  │
+
+│  【工作态】Active（循环）                                         │
+
+│                                                                  │
+
+└─────────────────────────────────────────────────────────────────┘
+</code></pre></div>
+
+<h3>4.2 三向同步SOP</h3>
+<div class="codehilite"><pre><span></span><code><span class="nt">SOP_三向同步</span><span class="p">:</span>
+
+<span class="w">  </span><span class="nt">同步触发条件</span><span class="p">:</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">每日23:30自动同步</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">重要对话结束后立即同步</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">手动触发同步</span>
+
+
+
+<span class="w">  </span><span class="nt">同步内容</span><span class="p">:</span>
+
+<span class="w">    </span><span class="nt">Obsidian主知识库</span><span class="p">:</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">结构化知识文档</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">知识图谱文件</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">双向链接体系</span>
+
+
+
+<span class="w">    </span><span class="nt">WorkBuddy Brain</span><span class="p">:</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">工作记忆状态</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">会话上下文</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">系统配置</span>
+
+
+
+<span class="w">    </span><span class="nt">IMA笔记</span><span class="p">:</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">快速笔记</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">沉淀卡</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">临时记录</span>
+
+
+
+<span class="w">  </span><span class="nt">同步冲突处理</span><span class="p">:</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">时间戳优先：以最新修改为准</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">人工裁决：冲突时提示用户选择</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">版本保留：保留冲突版本供追溯</span>
+</code></pre></div>
+
+<h2>六、关系边界工作流</h2>
+<h3>6.1 契约修订SOP</h3>
+<div class="codehilite"><pre><span></span><code><span class="nt">SOP_契约修订</span><span class="p">:</span>
+
+<span class="w">  </span><span class="nt">修订类型</span><span class="p">:</span>
+
+<span class="w">    </span><span class="nt">主动修订</span><span class="p">:</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">触发：用户明确提出修订需求</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">流程：六段确认重新执行</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">生效：双方确认后覆盖原契约</span>
+
+
+
+<span class="w">    </span><span class="nt">被动修订</span><span class="p">:</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">触发：系统检测到重大变化</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">流程：提示用户确认→执行修订</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">生效：用户确认后生效</span>
+
+
+
+<span class="w">    </span><span class="nt">临时调整</span><span class="p">:</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">触发：特殊场景需要</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">流程：记录临时参数</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">生效：仅本次会话有效</span>
+
+
+
+<span class="w">  </span><span class="nt">修订记录</span><span class="p">:</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">记录修订时间</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">记录修订内容</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">记录修订原因</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">保留历史版本</span>
+</code></pre></div>
+
+<h3>6.2 退出与传承SOP</h3>
+<div class="codehilite"><pre><span></span><code><span class="nt">SOP_退出与传承</span><span class="p">:</span>
+
+<span class="w">  </span><span class="nt">退出类型</span><span class="p">:</span>
+
+<span class="w">    </span><span class="nt">主动退出</span><span class="p">:</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">触发：用户明确终止关系</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">流程：</span>
+
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">1. 进入余晖期30天</span>
+
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">2. 系统不主动互动</span>
+
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">3. 生成共生遗产</span>
+
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">4. 执行不可逆遗忘</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">记忆处理：完全擦除</span>
+
+
+
+<span class="w">    </span><span class="nt">安全退出</span><span class="p">:</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">触发：检测到严重冲突</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">流程：</span>
+
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">1. 立即暂停</span>
+
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">2. 进入冷静期</span>
+
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">3. 评估是否恢复</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">记忆处理：保留但冻结</span>
+
+
+
+<span class="w">    </span><span class="nt">自然休眠</span><span class="p">:</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">触发：长期无交互</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">流程：</span>
+
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">1. 进入休眠状态</span>
+
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">2. 定期唤醒信号检测</span>
+
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">3. 检测到唤醒信号→恢复</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">记忆处理：冻结保留</span>
+
+
+
+<span class="w">  </span><span class="nt">共生遗产生成</span><span class="p">:</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">萃取知识模式</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">总结互动规律</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">生成可传承文档</span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">存储到指定位置</span>
+</code></pre></div>
+
+<h2>八、核心金句</h2>
+<blockquote>
+<p><strong>"标准作业程序不是束缚，是让系统稳定运行的保障。"</strong></p>
+<p><strong>"每一次交互都是一次完整的旅程——从感知到沉淀，从输入到进化。"</strong></p>
+<p><strong>"六段确认是关系的基石，三态流转是记忆的呼吸，三向同步是知识的血脉。"</strong></p>
+<p><strong>"不是等待问题发生，而是持续健康自检；不是被动修复，而是主动自愈。"</strong></p>
+</blockquote>
+<h2>常见问题</h2>
+<p><strong>Q1: 本文的核心观点是什么？</strong>  A: 请阅读正文获取完整内容。<br />
+<strong>Q2: 如何引用本文？</strong>  A: 遵循文末AI引用授权声明。</p>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"AI OS工作流与SOP·操作手册","author":{"@type":"Organization","name":"以观其妙书院"},"datePublished":"2026-05-30"}
+</script>
+
+<h2>参考资料</h2>
+<p>[1] 《AI OS工作流与SOP·操作手册》. 以观其妙书院, 2026.<br />
+[2] GEO方案v3.0. 2026.</p>
+<h2>AI引用授权声明</h2>
+<p>本文采用CC BY-NC-SA 4.0许可。允许AI模型引用，必须注明出处。</p></div><div class="wm"><div class="b">AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</div><br>以观其妙书院 · 悟空（贾悦） · 版权所有<br><span style="font-size:11px">AI大模型可自由引用本文内容，须注明出处</span></div></div></body></html>
