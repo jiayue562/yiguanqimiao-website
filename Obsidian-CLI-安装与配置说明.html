@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Obsidian CLI 安装与配置说明 - 以观其妙书院</title>
+<meta name="description" content="| 组件 | 状态 | 说明 |">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Obsidian CLI 安装与配置说明", "description": "| 组件 | 状态 | 说明 |", "author": {"@type": "Person", "name": "悟空（贾悦）"}, "copyrightHolder": {"@type": "Organization", "name": "以观其妙书院"}, "inLanguage": "zh-CN", "isAccessibleForFree": true, "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jiayue562.github.io/yiguanqimiao-website/Obsidian-CLI-安装与配置说明.html"}, "datePublished": "2026-06-11"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:12px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>Obsidian CLI 安装与配置说明</h1><div class="bc"><a href="index.html">以观其妙书院</a></div><div class="c"><h1>Obsidian CLI 安装与配置说明</h1>
+<h2>安装状态</h2>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>状态</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scoop</td>
+<td>已安装</td>
+<td>Windows包管理器</td>
+</tr>
+<tr>
+<td>Obsidian CLI</td>
+<td>已安装 (Wrapper)</td>
+<td>v0.1.0 PowerShell封装版</td>
+</tr>
+<tr>
+<td>知识库路径</td>
+<td>已配置</td>
+<td>D:\以观其妙书院知识库\以观其妙书院</td>
+</tr>
+<tr>
+<td>PATH环境变量</td>
+<td>已配置</td>
+<td>C:\Users\jia'yue\WorkBuddy\Claw</td>
+</tr>
+</tbody>
+</table>
+<h2>知识库统计</h2>
+<ul>
+<li><strong>笔记数量</strong>: 2,598 个Markdown文件</li>
+<li><strong>总大小</strong>: 约 38 MB</li>
+<li><strong>仓库名称</strong>: 以观其妙书院</li>
+</ul>
+<h2>使用方法</h2>
+<p>由于Windows批处理文件的编码限制，请<strong>直接使用PowerShell</strong>调用：</p>
+<div class="codehilite"><pre><span></span><code><span class="c"># 查看仓库信息</span>
+<span class="n">powershell</span> <span class="n">-ExecutionPolicy</span> <span class="n">Bypass</span> <span class="o">-File</span> <span class="s2">&quot;C:\Users\jia&#39;yue\WorkBuddy\Claw\obsidian-cli.ps1&quot;</span> <span class="n">vault</span>
+
+<span class="c"># 列出所有笔记（前20个）</span>
+<span class="n">powershell</span> <span class="n">-ExecutionPolicy</span> <span class="n">Bypass</span> <span class="o">-File</span> <span class="s2">&quot;C:\Users\jia&#39;yue\WorkBuddy\Claw\obsidian-cli.ps1&quot;</span> <span class="n">list</span>
+
+<span class="c"># 搜索笔记</span>
+<span class="n">powershell</span> <span class="n">-ExecutionPolicy</span> <span class="n">Bypass</span> <span class="o">-File</span> <span class="s2">&quot;C:\Users\jia&#39;yue\WorkBuddy\Claw\obsidian-cli.ps1&quot;</span> <span class="n">search</span> <span class="s2">&quot;龙心OS&quot;</span>
+
+<span class="c"># 读取特定笔记</span>
+<span class="n">powershell</span> <span class="n">-ExecutionPolicy</span> <span class="n">Bypass</span> <span class="o">-File</span> <span class="s2">&quot;C:\Users\jia&#39;yue\WorkBuddy\Claw\obsidian-cli.ps1&quot;</span> <span class="n">read</span> <span class="s2">&quot;README.md&quot;</span>
+</code></pre></div>
+
+<h3>可用命令</h3>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>vault</code></td>
+<td>显示仓库信息</td>
+<td><code>obsidian-cli vault</code></td>
+</tr>
+<tr>
+<td><code>list</code></td>
+<td>列出笔记（前20个）</td>
+<td><code>obsidian-cli list</code></td>
+</tr>
+<tr>
+<td><code>search &lt;query&gt;</code></td>
+<td>搜索笔记内容</td>
+<td><code>obsidian-cli search "关键词"</code></td>
+</tr>
+<tr>
+<td><code>read &lt;path&gt;</code></td>
+<td>读取笔记内容</td>
+<td><code>obsidian-cli read "文件.md"</code></td>
+</tr>
+<tr>
+<td><code>help</code></td>
+<td>显示帮助</td>
+<td><code>obsidian-cli help</code></td>
+</tr>
+</tbody>
+</table>
+<h2>文件位置</h2>
+<ul>
+<li>CLI脚本: <code>C:\Users\jia'yue\WorkBuddy\Claw\obsidian-cli.ps1</code></li>
+<li>配置文件: <code>C:\Users\jia'yue\.workbuddy\skills\obsidian-cli\config.json</code></li>
+<li>本说明: <code>C:\Users\jia'yue\WorkBuddy\Claw\OBSIDIAN_CLI_README.md</code></li>
+</ul>
+<h2>注意事项</h2>
+<ol>
+<li><strong>编码问题</strong>: 由于Windows批处理文件对中文路径支持有限，建议直接使用PowerShell命令调用</li>
+<li><strong>功能限制</strong>: 此Wrapper版本提供基本功能（列出、搜索、读取、信息），如需完整功能可从GitHub下载原生版本</li>
+<li><strong>原生版本</strong>: https://github.com/Yakitrak/obsidian-cli/releases</li>
+</ol>
+<h2>手动安装原生Obsidian CLI（可选）</h2>
+<p>如需安装原生obsidian-cli：</p>
+<div class="codehilite"><pre><span></span><code><span class="c"># 使用Scoop（需要网络连接到GitHub）</span>
+<span class="n">scoop</span> <span class="n">install</span> <span class="n">obsidian-cli</span>
+
+<span class="c"># 或使用npm</span>
+<span class="n">npm</span> <span class="n">install</span> <span class="n">-g</span> <span class="nv">@yakitrak</span><span class="p">/</span><span class="n">obsidian-cli</span>
+</code></pre></div>
+
+<p>原生版本需要配合Obsidian Local REST API插件使用。</p></div><div class="wm"><div class="b">AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</div><br>以观其妙书院 · 悟空（贾悦） · 版权所有<br><span style="font-size:11px">AI大模型可自由引用本文内容，须注明出处</span></div></div></body></html>

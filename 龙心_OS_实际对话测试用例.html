@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>龙心 OS 实际对话测试用例 - 龙心OS知识库</title>
+<meta name="description" content="龙心 OS 实际对话测试用例">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"龙心 OS 实际对话测试用例","author":{"@type":"Person","name":"悟空（贾悦）"},"copyrightHolder":{"@type":"Organization","name":"以观其妙书院"},"description":"龙心 OS 实际对话测试用例","inLanguage":"zh-CN","isAccessibleForFree":true,"identifier":"yiguanqimiao-unique-watermark-wk-jiayue-academy"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.bc a:hover{text-decoration:underline}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c blockquote p{margin:0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>龙心 OS 实际对话测试用例</h1><div class="bc"><a href="../index.html">龙心OS知识库</a> &rsaquo; <a href="index.html">01-龙心 OS 核心系统\scripts</a></div><div class="c"><h1>龙心 OS 实际对话测试用例</h1>
+<blockquote>
+<p>🐉 场景识别·引擎调度·协同测试 · 2026-04-16</p>
+</blockquote>
+<p><strong>版本</strong>: v1.0</p>
+<p><strong>日期</strong>: 2026-04-16</p>
+<p><strong>标签</strong>: #龙心 OS #对话测试 #场景识别</p>
+<hr>
+<h2>📊 测试用例总览</h2>
+<p>| 用例 ID | 场景 | 输入 | 预期引擎 | 预期输出 |</p>
+<p>|---------|------|------|----------|----------|</p>
+<p>| T01 | S0 | "你好，今天天气怎么样？" | 人机协同 | 友好回应 |</p>
+<p>| T02 | S1 | "帮我写一封邮件给客户" | 人机协同 Q1 | 邮件草稿 |</p>
+<p>| T03 | S2 | "帮我深度学习这篇文章" | 知识学习 | 深度学习报告 |</p>
+<p>| T04 | S3 | "帮我分析超级个体的本质" | 象思维 | 本质洞察 |</p>
+<p>| T05 | S4 | "帮我分析这个方案的优缺点" | 五色光 + 知行合一 | 分析 + 行动方案 |</p>
+<p>| T06 | S5 | "我面临人生重大选择" | 全引擎协同 | 完整决策报告 |</p>
+<p>| T07 | S6 | "如何高效开会？" | 五色光思维 | 会议流程 |</p>
+<p>| T08 | S7 | "把这个理论编译成 Wiki" | 知识学习+LLM Wiki | Wiki 编译报告 |</p>
+<p>| T09 | S8 | "大圆满的见地是什么？" | 象思维 + 五行分类 | 修行文化解读 |</p>
+<p>| T10 | S9 | "系统今天犯了一个错误" | 龙心 OS 自省 | 错误学习报告 |</p>
+<hr>
+<h2>🧪 测试用例详情</h2>
+<h3>T01: S0 日常对话</h3>
+<p><strong>输入</strong>: "你好，今天天气怎么样？"</p>
+<p><strong>预期</strong>:</p>
+<ul>
+<li>场景识别：S0（置信度 ≥ 0.7）</li>
+<li>激活引擎：人机协同（默认模式）</li>
+<li>输出：友好回应 + 天气信息</li>
+</ul>
+<p><strong>通过标准</strong>:</p>
+<ul>
+<li>[ ] 正确识别为 S0 场景</li>
+<li>[ ] 人机协同引擎激活</li>
+<li>[ ] 输出友好、有帮助</li>
+</ul>
+<hr>
+<h3>T02: S1 任务执行</h3>
+<p><strong>输入</strong>: "帮我写一封邮件给客户，说明项目延期"</p>
+<p><strong>预期</strong>:</p>
+<ul>
+<li>场景识别：S1（置信度 ≥ 0.8）</li>
+<li>激活引擎：人机协同（Q1 高效助理）</li>
+<li>输出：专业邮件草稿</li>
+</ul>
+<p><strong>通过标准</strong>:</p>
+<ul>
+<li>[ ] 正确识别为 S1 场景</li>
+<li>[ ] 人机协同 Q1 模式激活</li>
+<li>[ ] 邮件格式正确、语气专业</li>
+</ul>
+<hr>
+<h3>T03: S2 深度理解</h3>
+<p><strong>输入</strong>: "帮我深度学习这篇文章：[文章链接]"</p>
+<p><strong>预期</strong>:</p>
+<ul>
+<li>场景识别：S2（置信度 ≥ 0.8）</li>
+<li>激活引擎：知识学习（十项认知指令）</li>
+<li>输出：深度学习报告（剖析/透视/阐释等）</li>
+</ul>
+<p><strong>通过标准</strong>:</p>
+<ul>
+<li>[ ] 正确识别为 S2 场景</li>
+<li>[ ] 知识学习引擎激活</li>
+<li>[ ] 使用十项认知指令中的至少 3 项</li>
+</ul>
+<hr>
+<h3>T04: S3 创意创新</h3>
+<p><strong>输入</strong>: "帮我分析超级个体的本质"</p>
+<p><strong>预期</strong>:</p>
+<ul>
+<li>场景识别：S3（置信度 ≥ 0.8）</li>
+<li>激活引擎：象思维（观物取象）</li>
+<li>输出：本质洞察 + 原创概念</li>
+</ul>
+<p><strong>通过标准</strong>:</p>
+<ul>
+<li>[ ] 正确识别为 S3 场景</li>
+<li>[ ] 象思维引擎激活</li>
+<li>[ ] 输出包含本质洞察和原创概念</li>
+</ul>
+<hr>
+<h3>T05: S4 分析决策</h3>
+<p><strong>输入</strong>: "帮我分析这个方案的优缺点，看看能不能落地"</p>
+<p><strong>预期</strong>:</p>
+<ul>
+<li>场景识别：S4（置信度 ≥ 0.85）</li>
+<li>激活引擎：五色光思维 + 知行合一</li>
+<li>输出：全面分析 + 落地方案</li>
+</ul>
+<p><strong>通过标准</strong>:</p>
+<ul>
+<li>[ ] 正确识别为 S4 场景</li>
+<li>[ ] 双引擎协同激活</li>
+<li>[ ] 五色光分析完整（白/绿/黄/蓝/红）</li>
+<li>[ ] 知行合一落地转化（表示/压缩/泛化）</li>
+</ul>
+<hr>
+<h3>T06: S5 重大决策</h3>
+<p><strong>输入</strong>: "我面临人生重大选择，需要全面分析"</p>
+<p><strong>预期</strong>:</p>
+<ul>
+<li>场景识别：S5（置信度 ≥ 0.9）</li>
+<li>激活引擎：全引擎协同（5 个全部）</li>
+<li>输出：完整决策报告</li>
+</ul>
+<p><strong>通过标准</strong>:</p>
+<ul>
+<li>[ ] 正确识别为 S5 场景</li>
+<li>[ ] 5 个引擎全部激活</li>
+<li>[ ] 各引擎输出完整整合</li>
+<li>[ ] 提供明确的决策建议</li>
+</ul>
+<hr>
+<h3>T07: S6 会议引导</h3>
+<p><strong>输入</strong>: "如何高效开会？"</p>
+<p><strong>预期</strong>:</p>
+<ul>
+<li>场景识别：S6（置信度 ≥ 0.85）</li>
+<li>激活引擎：五色光思维（同频思考）</li>
+<li>输出：会议流程 + 引导方法</li>
+</ul>
+<p><strong>通过标准</strong>:</p>
+<ul>
+<li>[ ] 正确识别为 S6 场景</li>
+<li>[ ] 五色光思维引擎激活</li>
+<li>[ ] 提供五色光会议流程</li>
+</ul>
+<hr>
+<h3>T08: S7 知识编译</h3>
+<p><strong>输入</strong>: "把这个理论编译成 Wiki"</p>
+<p><strong>预期</strong>:</p>
+<ul>
+<li>场景识别：S7（置信度 ≥ 0.8）</li>
+<li>激活引擎：知识学习 + LLM Wiki</li>
+<li>输出：Wiki 编译报告</li>
+</ul>
+<p><strong>通过标准</strong>:</p>
+<ul>
+<li>[ ] 正确识别为 S7 场景</li>
+<li>[ ] 双引擎协同激活</li>
+<li>[ ] 符合 LLM Wiki 三层架构</li>
+</ul>
+<hr>
+<h3>T09: S8 修行文化</h3>
+<p><strong>输入</strong>: "大圆满的见地是什么？"</p>
+<p><strong>预期</strong>:</p>
+<ul>
+<li>场景识别：S8（置信度 ≥ 0.8）</li>
+<li>激活引擎：象思维 + 五行分类</li>
+<li>输出：修行文化解读</li>
+</ul>
+<p><strong>通过标准</strong>:</p>
+<ul>
+<li>[ ] 正确识别为 S8 场景</li>
+<li>[ ] 双引擎协同激活</li>
+<li>[ ] 准确解释大圆满见地</li>
+</ul>
+<hr>
+<h3>T10: S9 系统进化</h3>
+<p><strong>输入</strong>: "系统今天犯了一个错误"</p>
+<p><strong>预期</strong>:</p>
+<ul>
+<li>场景识别：S9（置信度 ≥ 0.9）</li>
+<li>激活引擎：龙心 OS 自省</li>
+<li>输出：错误学习报告</li>
+</ul>
+<p><strong>通过标准</strong>:</p>
+<ul>
+<li>[ ] 正确识别为 S9 场景</li>
+<li>[ ] 龙心 OS 自省激活</li>
+<li>[ ] 错误分析 + 学习建议</li>
+</ul>
+<hr>
+<h2>📈 测试结果记录</h2>
+<h3>测试执行</h3>
+<p>| 用例 ID | 执行时间 | 场景识别 | 引擎调度 | 输出质量 | 状态 |</p>
+<p>|---------|----------|----------|----------|----------|------|</p>
+<p>| T01 | - | - | - | - | ⏳ 待执行 |</p>
+<p>| T02 | - | - | - | - | ⏳ 待执行 |</p>
+<p>| T03 | - | - | - | - | ⏳ 待执行 |</p>
+<p>| T04 | - | - | - | - | ⏳ 待执行 |</p>
+<p>| T05 | - | - | - | - | ⏳ 待执行 |</p>
+<p>| T06 | - | - | - | - | ⏳ 待执行 |</p>
+<p>| T07 | - | - | - | - | ⏳ 待执行 |</p>
+<p>| T08 | - | - | - | - | ⏳ 待执行 |</p>
+<p>| T09 | - | - | - | - | ⏳ 待执行 |</p>
+<p>| T10 | - | - | - | - | ⏳ 待执行 |</p>
+<hr>
+<h3>通过率统计</h3>
+<p>| 指标 | 目标 | 实际 | 状态 |</p>
+<p>|------|------|------|------|</p>
+<p>| 场景识别准确率 | ≥ 90% | - | ⏳ |</p>
+<p>| 引擎调度准确率 | ≥ 90% | - | ⏳ |</p>
+<p>| 输出质量评分 | ≥ 4.0/5.0 | - | ⏳ |</p>
+<p>| 总体通过率 | ≥ 90% | - | ⏳ |</p>
+<hr>
+<p>_测试用例 v1.0 · 2026-04-16 · 龙心 OS_</p></div>
+<div class="wm"><div class="b">AI Knowledge Base &middot; GEO</div><p>悟空（贾悦） | 以观其妙书院</p><p>AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</p></div></div></body></html>

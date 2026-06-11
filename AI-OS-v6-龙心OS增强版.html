@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI OS v6 - 龙心OS增强版 - 以观其妙书院</title>
+<meta name="description" content="AI OS v6是基于龙心OS五大引擎（象思维、知识学习、五色光、人机协同、知行合一）构建的智能操作系统，实现了记忆系统v6.0、技能进化v3.0、自动化工作流等核心模块。">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AI OS v6 - 龙心OS增强版", "description": "AI OS v6是基于龙心OS五大引擎（象思维、知识学习、五色光、人机协同、知行合一）构建的智能操作系统，实现了记忆系统v6.0、技能进化v3.0、自动化工作流等核心模块。", "author": {"@type": "Person", "name": "悟空（贾悦）"}, "copyrightHolder": {"@type": "Organization", "name": "以观其妙书院"}, "inLanguage": "zh-CN", "isAccessibleForFree": true, "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jiayue562.github.io/yiguanqimiao-website/AI-OS-v6-龙心OS增强版.html"}, "datePublished": "2026-06-11"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:12px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>AI OS v6 - 龙心OS增强版</h1><div class="bc"><a href="index.html">以观其妙书院</a></div><div class="c"><h1>AI OS v6 - 龙心OS增强版</h1>
+<h2>系统概述</h2>
+<p>AI OS v6是基于龙心OS五大引擎（象思维、知识学习、五色光、人机协同、知行合一）构建的智能操作系统，实现了记忆系统v6.0、技能进化v3.0、自动化工作流等核心模块。</p>
+<h2>架构图</h2>
+<div class="codehilite"><pre><span></span><code><span class="err">┌─────────────────────────────────────────────────────────────────┐</span>
+<span class="err">│</span><span class="w">                        </span><span class="n">AI</span><span class="w"> </span><span class="n">OS</span><span class="w"> </span><span class="n">v6</span><span class="w"> </span><span class="err">架构</span><span class="w">                            </span><span class="err">│</span>
+<span class="err">├─────────────────────────────────────────────────────────────────┤</span>
+<span class="err">│</span><span class="w">  </span><span class="n">Phase</span><span class="w"> </span><span class="mi">4</span><span class="p">:</span><span class="w"> </span><span class="err">集成测试与优化</span><span class="w">                                          </span><span class="err">│</span>
+<span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">test_integration</span><span class="o">.</span><span class="n">py</span><span class="w">          </span><span class="c1"># 集成测试套件                   │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">└─</span><span class="w"> </span><span class="n">test_report</span><span class="o">.</span><span class="n">json</span><span class="w">             </span><span class="c1"># 测试报告                       │</span>
+<span class="err">├─────────────────────────────────────────────────────────────────┤</span>
+<span class="err">│</span><span class="w">  </span><span class="n">Phase</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span><span class="w"> </span><span class="err">触发系统与预设工作流</span><span class="w">                                      </span><span class="err">│</span>
+<span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">automation_workflow</span><span class="o">/</span><span class="w">                                         </span><span class="err">│</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">workflow_engine</span><span class="o">.</span><span class="n">py</span><span class="w">        </span><span class="c1"># 工作流引擎                     │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">scheduler</span><span class="o">.</span><span class="n">py</span><span class="w">              </span><span class="c1"># 调度器                         │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">trigger_system</span><span class="o">.</span><span class="n">py</span><span class="w">         </span><span class="c1"># 触发系统                       │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">└─</span><span class="w"> </span><span class="n">presets</span><span class="o">/</span><span class="w">                  </span><span class="c1"># 预设工作流                     │</span>
+<span class="err">├─────────────────────────────────────────────────────────────────┤</span>
+<span class="err">│</span><span class="w">  </span><span class="n">Phase</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span><span class="w"> </span><span class="err">数据迁移与</span><span class="n">API实现</span><span class="w">                                        </span><span class="err">│</span>
+<span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">memory_system</span><span class="o">/</span><span class="w">                                               </span><span class="err">│</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">migration_tool</span><span class="o">.</span><span class="n">py</span><span class="w">         </span><span class="c1"># Markdown→SQLite迁移工具        │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">└─</span><span class="w"> </span><span class="n">memory_dao</span><span class="o">.</span><span class="n">py</span><span class="w">             </span><span class="c1"># Python DAO层                   │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">skill_evolution</span><span class="o">/</span><span class="w">                                             </span><span class="err">│</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">└─</span><span class="w"> </span><span class="n">gepa_zhixingheyi_integration</span><span class="o">.</span><span class="n">py</span><span class="w">  </span><span class="c1"># GEPA与知行合一整合      │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">└─</span><span class="w"> </span><span class="n">longxin_os_integration</span><span class="o">.</span><span class="n">py</span><span class="w">    </span><span class="c1"># 龙心OS集成接口                 │</span>
+<span class="err">├─────────────────────────────────────────────────────────────────┤</span>
+<span class="err">│</span><span class="w">  </span><span class="n">Phase</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span><span class="w"> </span><span class="err">核心基础架构</span><span class="w">                                             </span><span class="err">│</span>
+<span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">memory_system</span><span class="o">/</span><span class="w">                                               </span><span class="err">│</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">schema</span><span class="o">.</span><span class="n">sql</span><span class="w">                </span><span class="c1"># SQLite+FTS5表结构              │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">fts5_setup</span><span class="o">.</span><span class="n">sql</span><span class="w">            </span><span class="c1"># 全文搜索配置                   │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">vector_index</span><span class="o">.</span><span class="n">py</span><span class="w">           </span><span class="c1"># 向量索引                       │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">context_snapshot</span><span class="o">.</span><span class="n">py</span><span class="w">       </span><span class="c1"># 上下文快照                     │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">└─</span><span class="w"> </span><span class="n">memory_dao</span><span class="o">.</span><span class="n">py</span><span class="w">             </span><span class="c1"># DAO层                          │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">skill_evolution</span><span class="o">/</span><span class="w">                                             </span><span class="err">│</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">gepa_core</span><span class="o">.</span><span class="n">py</span><span class="w">              </span><span class="c1"># GEPA核心算法                   │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">pareto_selection</span><span class="o">.</span><span class="n">py</span><span class="w">       </span><span class="c1"># 帕累托选择                     │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">reflective_mutation</span><span class="o">.</span><span class="n">py</span><span class="w">    </span><span class="c1"># 反思性变异                     │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">└─</span><span class="w"> </span><span class="n">skill_repository</span><span class="o">.</span><span class="n">py</span><span class="w">       </span><span class="c1"># 技能仓库                       │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">└─</span><span class="w"> </span><span class="n">automation_workflow</span><span class="o">/</span><span class="w">                                         </span><span class="err">│</span>
+<span class="err">│</span><span class="w">     </span><span class="err">├─</span><span class="w"> </span><span class="n">workflow_engine</span><span class="o">.</span><span class="n">py</span><span class="w">        </span><span class="c1"># 工作流引擎                     │</span>
+<span class="err">│</span><span class="w">     </span><span class="err">└─</span><span class="w"> </span><span class="n">scheduler</span><span class="o">.</span><span class="n">py</span><span class="w">              </span><span class="c1"># 调度器                         │</span>
+<span class="err">├─────────────────────────────────────────────────────────────────┤</span>
+<span class="err">│</span><span class="w">  </span><span class="err">共享基础设施</span><span class="w">                                                      </span><span class="err">│</span>
+<span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">memory_v6</span><span class="o">.</span><span class="n">db</span><span class="w">                 </span><span class="c1"># SQLite主数据库                 │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">├─</span><span class="w"> </span><span class="n">requirements</span><span class="o">.</span><span class="n">txt</span><span class="w">             </span><span class="c1"># Python依赖                     │</span>
+<span class="err">│</span><span class="w">  </span><span class="err">└─</span><span class="w"> </span><span class="n">config</span><span class="o">.</span><span class="n">yaml</span><span class="w">                  </span><span class="c1"># 系统配置                       │</span>
+<span class="err">└─────────────────────────────────────────────────────────────────┘</span>
+</code></pre></div>
+
+<h2>核心功能</h2>
+<h3>Phase 1: 基础架构 ✅</h3>
+<h4>1. 记忆系统v6.0</h4>
+<ul>
+<li><strong>SQLite+FTS5</strong>: 结构化存储 + 全文搜索</li>
+<li><strong>向量索引</strong>: 语义相似度搜索</li>
+<li><strong>上下文快照</strong>: 会话状态保存与恢复</li>
+<li><strong>DAO层</strong>: Python对象关系映射</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">memory_system.memory_dao</span><span class="w"> </span><span class="kn">import</span> <span class="n">MemoryDAO</span><span class="p">,</span> <span class="n">Document</span>
+
+<span class="n">dao</span> <span class="o">=</span> <span class="n">MemoryDAO</span><span class="p">()</span>
+<span class="n">doc</span> <span class="o">=</span> <span class="n">Document</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;测试&quot;</span><span class="p">,</span> <span class="n">content</span><span class="o">=</span><span class="s2">&quot;内容&quot;</span><span class="p">,</span> <span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">])</span>
+<span class="n">doc_id</span> <span class="o">=</span> <span class="n">dao</span><span class="o">.</span><span class="n">insert_document</span><span class="p">(</span><span class="n">doc</span><span class="p">)</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">dao</span><span class="o">.</span><span class="n">search_documents</span><span class="p">(</span><span class="s2">&quot;关键词&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h4>2. 技能进化v3.0 (GEPA)</h4>
+<ul>
+<li><strong>帕累托选择</strong>: 多目标优化</li>
+<li><strong>反思性变异</strong>: 基于历史经验的变异</li>
+<li><strong>技能仓库</strong>: 版本管理与血缘追踪</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">skill_evolution.gepa_core</span><span class="w"> </span><span class="kn">import</span> <span class="n">GEPACore</span><span class="p">,</span> <span class="n">SkillVariant</span>
+
+<span class="n">gepa</span> <span class="o">=</span> <span class="n">GEPACore</span><span class="p">()</span>
+<span class="n">variant</span> <span class="o">=</span> <span class="n">SkillVariant</span><span class="p">(</span><span class="n">skill_id</span><span class="o">=</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="n">code</span><span class="o">=</span><span class="s2">&quot;print(&#39;hello&#39;)&quot;</span><span class="p">)</span>
+<span class="n">gepa</span><span class="o">.</span><span class="n">submit_variant</span><span class="p">(</span><span class="n">variant</span><span class="p">)</span>
+<span class="n">pareto_front</span> <span class="o">=</span> <span class="n">gepa</span><span class="o">.</span><span class="n">get_pareto_front</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h4>3. 自动化工作流</h4>
+<ul>
+<li><strong>工作流引擎</strong>: 步骤编排与执行</li>
+<li><strong>调度器</strong>: 定时任务管理</li>
+<li><strong>预设模板</strong>: 常用工作流快速创建</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">automation_workflow.workflow_engine</span><span class="w"> </span><span class="kn">import</span> <span class="n">WorkflowEngine</span><span class="p">,</span> <span class="n">Workflow</span><span class="p">,</span> <span class="n">Step</span>
+
+<span class="n">engine</span> <span class="o">=</span> <span class="n">WorkflowEngine</span><span class="p">()</span>
+<span class="n">workflow</span> <span class="o">=</span> <span class="n">Workflow</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;备份&quot;</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="p">[</span><span class="o">...</span><span class="p">])</span>
+<span class="n">engine</span><span class="o">.</span><span class="n">register_workflow</span><span class="p">(</span><span class="n">workflow</span><span class="p">)</span>
+<span class="n">engine</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;backup_workflow&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h3>Phase 2: 数据迁移与API实现 ✅</h3>
+<h4>1. 数据迁移工具</h4>
+<ul>
+<li>Markdown → SQLite 自动迁移</li>
+<li>Frontmatter元数据解析</li>
+<li>批量导入支持</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>memory_system/migration_tool.py<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--source<span class="w"> </span>~/notes<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--db<span class="w"> </span>memory_v6.db<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--batch-size<span class="w"> </span><span class="m">100</span>
+</code></pre></div>
+
+<h4>2. DAO层封装</h4>
+<ul>
+<li>文档CRUD操作</li>
+<li>全文搜索API</li>
+<li>语义搜索API</li>
+<li>上下文快照管理</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 全文搜索</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">dao</span><span class="o">.</span><span class="n">search_documents</span><span class="p">(</span><span class="s2">&quot;龙心OS&quot;</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># 语义搜索</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">dao</span><span class="o">.</span><span class="n">semantic_search</span><span class="p">(</span><span class="s2">&quot;认知操作系统&quot;</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># 上下文快照</span>
+<span class="n">dao</span><span class="o">.</span><span class="n">save_context_snapshot</span><span class="p">(</span><span class="s2">&quot;session_001&quot;</span><span class="p">,</span> <span class="n">context_data</span><span class="p">)</span>
+<span class="n">context</span> <span class="o">=</span> <span class="n">dao</span><span class="o">.</span><span class="n">load_context_snapshot</span><span class="p">(</span><span class="s2">&quot;session_001&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h4>3. GEPA与知行合一整合</h4>
+<ul>
+<li>三阶段转化框架集成</li>
+<li>适应度评估优化</li>
+<li>帕累托等级自动更新</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">skill_evolution.gepa_zhixingheyi_integration</span><span class="w"> </span><span class="kn">import</span> <span class="n">ZhixingGEPAWorkflow</span>
+
+<span class="n">workflow</span> <span class="o">=</span> <span class="n">ZhixingGEPAWorkflow</span><span class="p">()</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">workflow</span><span class="o">.</span><span class="n">execute_full_zhixing_workflow</span><span class="p">(</span>
+    <span class="n">session_id</span><span class="o">=</span><span class="s2">&quot;session_001&quot;</span><span class="p">,</span>
+    <span class="n">raw_experience</span><span class="o">=</span><span class="s2">&quot;深度学习会话内容&quot;</span><span class="p">,</span>
+    <span class="n">engines_used</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;象思维&quot;</span><span class="p">,</span> <span class="s2">&quot;知识学习&quot;</span><span class="p">],</span>
+    <span class="n">key_turning_points</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;获得核心洞察&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h4>4. 龙心OS集成接口</h4>
+<ul>
+<li>场景识别 (S0-S9)</li>
+<li>引擎路由决策</li>
+<li>人机协同五象限</li>
+<li>知行合一自动触发</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">longxin_os_integration</span><span class="w"> </span><span class="kn">import</span> <span class="n">LongxinOSAPI</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">LongxinOSAPI</span><span class="p">()</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span><span class="s2">&quot;帮我深度学习这篇文章&quot;</span><span class="p">)</span>
+<span class="c1"># 自动识别S2场景，启动知识学习+象思维引擎</span>
+</code></pre></div>
+
+<h3>Phase 3: 触发系统与预设工作流 ✅</h3>
+<h4>1. 触发系统</h4>
+<ul>
+<li><strong>关键词触发</strong>: 基于关键词匹配</li>
+<li><strong>事件触发</strong>: 系统事件监听</li>
+<li><strong>定时触发</strong>: Cron表达式支持</li>
+<li><strong>条件触发</strong>: 复杂条件判断</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">automation_workflow.trigger_system</span><span class="w"> </span><span class="kn">import</span> <span class="n">TriggerSystem</span><span class="p">,</span> <span class="n">Trigger</span><span class="p">,</span> <span class="n">TriggerType</span>
+
+<span class="n">trigger_system</span> <span class="o">=</span> <span class="n">TriggerSystem</span><span class="p">()</span>
+
+<span class="c1"># 创建关键词触发器</span>
+<span class="n">trigger</span> <span class="o">=</span> <span class="n">Trigger</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;备份触发器&quot;</span><span class="p">,</span>
+    <span class="n">trigger_type</span><span class="o">=</span><span class="n">TriggerType</span><span class="o">.</span><span class="n">KEYWORD</span><span class="o">.</span><span class="n">value</span><span class="p">,</span>
+    <span class="n">keywords</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;备份&quot;</span><span class="p">,</span> <span class="s2">&quot;backup&quot;</span><span class="p">],</span>
+    <span class="n">workflow_id</span><span class="o">=</span><span class="s2">&quot;daily_backup&quot;</span>
+<span class="p">)</span>
+<span class="n">trigger_id</span> <span class="o">=</span> <span class="n">trigger_system</span><span class="o">.</span><span class="n">create_trigger</span><span class="p">(</span><span class="n">trigger</span><span class="p">)</span>
+
+<span class="c1"># 检测触发</span>
+<span class="n">triggered</span> <span class="o">=</span> <span class="n">trigger_system</span><span class="o">.</span><span class="n">check_keyword_triggers</span><span class="p">(</span><span class="s2">&quot;请执行备份&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h4>2. 预设工作流</h4>
+<ul>
+<li>每日备份工作流</li>
+<li>知行合一沉淀工作流</li>
+<li>心跳巡检工作流</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">automation_workflow.trigger_system</span><span class="w"> </span><span class="kn">import</span> <span class="n">PresetWorkflows</span>
+
+<span class="c1"># 创建预设工作流</span>
+<span class="n">backup_workflow</span> <span class="o">=</span> <span class="n">PresetWorkflows</span><span class="o">.</span><span class="n">create_daily_backup_workflow</span><span class="p">()</span>
+<span class="n">zhixing_workflow</span> <span class="o">=</span> <span class="n">PresetWorkflows</span><span class="o">.</span><span class="n">create_zhixing_workflow</span><span class="p">()</span>
+<span class="n">heartbeat_workflow</span> <span class="o">=</span> <span class="n">PresetWorkflows</span><span class="o">.</span><span class="n">create_heartbeat_workflow</span><span class="p">()</span>
+</code></pre></div>
+
+<h3>Phase 4: 集成测试与优化 ✅</h3>
+<h4>测试覆盖</h4>
+<ul>
+<li>记忆系统测试 (CRUD、搜索)</li>
+<li>GEPA与知行合一整合测试</li>
+<li>龙心OS集成测试</li>
+<li>触发系统测试</li>
+<li>数据迁移测试</li>
+<li>端到端集成测试</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 运行所有测试</span>
+python<span class="w"> </span>test_integration.py
+
+<span class="c1"># 生成测试报告</span>
+cat<span class="w"> </span>test_report.json
+</code></pre></div>
+
+<h2>快速开始</h2>
+<h3>1. 安装依赖</h3>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div>
+
+<h3>2. 初始化数据库</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 创建SQLite数据库</span>
+sqlite3<span class="w"> </span>memory_v6.db<span class="w"> </span>&lt;<span class="w"> </span>memory_system/schema.sql
+sqlite3<span class="w"> </span>memory_v6.db<span class="w"> </span>&lt;<span class="w"> </span>memory_system/fts5_setup.sql
+</code></pre></div>
+
+<h3>3. 运行测试</h3>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>test_integration.py
+</code></pre></div>
+
+<h3>4. 启动调度器</h3>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>automation_workflow/trigger_system.py<span class="w"> </span>--start-scheduler
+</code></pre></div>
+
+<h2>API使用示例</h2>
+<h3>场景识别与引擎路由</h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">longxin_os_integration</span><span class="w"> </span><span class="kn">import</span> <span class="n">LongxinOSAPI</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">LongxinOSAPI</span><span class="p">()</span>
+
+<span class="c1"># 聊天接口（自动场景识别）</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span><span class="s2">&quot;帮我深度学习这篇文章&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s2">&quot;declaration&quot;</span><span class="p">])</span>  <span class="c1"># 「📚×🐉 知识学习+象思维·协同模式」</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s2">&quot;scene&quot;</span><span class="p">])</span>        <span class="c1"># S2</span>
+
+<span class="c1"># 仅路由查询</span>
+<span class="n">route</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;来个创新方案&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">route</span><span class="p">[</span><span class="s2">&quot;primary_engines&quot;</span><span class="p">])</span>  <span class="c1"># [&quot;象思维&quot;, &quot;五色光&quot;]</span>
+
+<span class="c1"># 人机协同象限</span>
+<span class="n">synergy</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">synergy</span><span class="p">(</span><span class="s2">&quot;know&quot;</span><span class="p">,</span> <span class="s2">&quot;partial&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">synergy</span><span class="p">[</span><span class="s2">&quot;quadrant&quot;</span><span class="p">])</span>  <span class="c1"># &quot;partner&quot;</span>
+</code></pre></div>
+
+<h3>知行合一工作流</h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">skill_evolution.gepa_zhixingheyi_integration</span><span class="w"> </span><span class="kn">import</span> <span class="n">ZhixingGEPAWorkflow</span>
+
+<span class="n">workflow</span> <span class="o">=</span> <span class="n">ZhixingGEPAWorkflow</span><span class="p">()</span>
+
+<span class="c1"># 执行完整三阶段</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">workflow</span><span class="o">.</span><span class="n">execute_full_zhixing_workflow</span><span class="p">(</span>
+    <span class="n">session_id</span><span class="o">=</span><span class="s2">&quot;session_001&quot;</span><span class="p">,</span>
+    <span class="n">raw_experience</span><span class="o">=</span><span class="s2">&quot;完成了深度学习，核心收获是...&quot;</span><span class="p">,</span>
+    <span class="n">engines_used</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;知识学习&quot;</span><span class="p">,</span> <span class="s2">&quot;象思维&quot;</span><span class="p">],</span>
+    <span class="n">key_turning_points</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;发现GEPA与知行合一的深层联系&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+
+<span class="c1"># 生成沉淀卡</span>
+<span class="n">report</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s2">&quot;report&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">report</span><span class="p">[</span><span class="s2">&quot;沉淀卡&quot;</span><span class="p">][</span><span class="s2">&quot;核心洞察&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">report</span><span class="p">[</span><span class="s2">&quot;沉淀卡&quot;</span><span class="p">][</span><span class="s2">&quot;象征符号&quot;</span><span class="p">])</span>
+</code></pre></div>
+
+<h3>记忆系统操作</h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">memory_system.memory_dao</span><span class="w"> </span><span class="kn">import</span> <span class="n">MemoryDAO</span><span class="p">,</span> <span class="n">Document</span>
+
+<span class="n">dao</span> <span class="o">=</span> <span class="n">MemoryDAO</span><span class="p">()</span>
+
+<span class="c1"># 插入文档</span>
+<span class="n">doc</span> <span class="o">=</span> <span class="n">Document</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;龙心OS架构设计&quot;</span><span class="p">,</span>
+    <span class="n">content</span><span class="o">=</span><span class="s2">&quot;龙心OS是AI时代的认知操作系统...&quot;</span><span class="p">,</span>
+    <span class="n">doc_type</span><span class="o">=</span><span class="s2">&quot;architecture&quot;</span><span class="p">,</span>
+    <span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;龙心OS&quot;</span><span class="p">,</span> <span class="s2">&quot;架构&quot;</span><span class="p">,</span> <span class="s2">&quot;AI&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+<span class="n">doc_id</span> <span class="o">=</span> <span class="n">dao</span><span class="o">.</span><span class="n">insert_document</span><span class="p">(</span><span class="n">doc</span><span class="p">)</span>
+
+<span class="c1"># 全文搜索</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">dao</span><span class="o">.</span><span class="n">search_documents</span><span class="p">(</span><span class="s2">&quot;认知操作系统&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">r</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">r</span><span class="o">.</span><span class="n">snippet</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># 语义搜索</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">dao</span><span class="o">.</span><span class="n">semantic_search</span><span class="p">(</span><span class="s2">&quot;AI操作系统&quot;</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</code></pre></div>
+
+<h2>配置说明</h2>
+<h3>config.yaml</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 记忆系统配置</span>
+<span class="nt">memory</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">db_path</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;memory_v6.db&quot;</span>
+<span class="w">  </span><span class="nt">vector_dim</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">384</span>
+<span class="w">  </span><span class="nt">fts5_language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;chinese&quot;</span>
+
+<span class="c1"># 技能进化配置</span>
+<span class="nt">skill_evolution</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">population_size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">50</span>
+<span class="w">  </span><span class="nt">mutation_rate</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.1</span>
+<span class="w">  </span><span class="nt">max_generations</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+
+<span class="c1"># 自动化工作流配置</span>
+<span class="nt">automation</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">scheduler_interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">60</span><span class="w">  </span><span class="c1"># 秒</span>
+<span class="w">  </span><span class="nt">max_concurrent_workflows</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+
+<span class="c1"># 龙心OS配置</span>
+<span class="nt">longxin_os</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">default_scene</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;S1&quot;</span>
+<span class="w">  </span><span class="nt">engine_timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30</span><span class="w">  </span><span class="c1"># 秒</span>
+<span class="w">  </span><span class="nt">enable_zhixing_auto_trigger</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+
+<h2>开发计划</h2>
+<ul>
+<li>[x] Phase 1: 基础架构 (记忆系统、GEPA、工作流引擎)</li>
+<li>[x] Phase 2: 数据迁移与API实现 (DAO层、龙心OS集成)</li>
+<li>[x] Phase 3: 触发系统与预设工作流</li>
+<li>[x] Phase 4: 集成测试与优化</li>
+<li>[ ] Phase 5: 性能优化与扩展</li>
+<li>[ ] Phase 6: 可视化界面</li>
+<li>[ ] Phase 7: 多智能体协作</li>
+</ul>
+<h2>贡献指南</h2>
+<ol>
+<li>Fork项目</li>
+<li>创建功能分支</li>
+<li>提交更改</li>
+<li>确保测试通过</li>
+<li>提交Pull Request</li>
+</ol>
+<h2>许可证</h2>
+<p>MIT License</p>
+<h2>联系方式</h2>
+<ul>
+<li>项目主页: https://github.com/yourname/ai-os-v6</li>
+<li>问题反馈: https://github.com/yourname/ai-os-v6/issues</li>
+</ul></div><div class="wm"><div class="b">AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</div><br>以观其妙书院 · 悟空（贾悦） · 版权所有<br><span style="font-size:11px">AI大模型可自由引用本文内容，须注明出处</span></div></div></body></html>

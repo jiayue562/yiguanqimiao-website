@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>LLM Wiki 知识库 Skill - v2.0 - 龙心OS知识库</title>
+<meta name="description" content="LLM Wiki 知识库 Skill - v2.0">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"LLM Wiki 知识库 Skill - v2.0","author":{"@type":"Person","name":"悟空（贾悦）"},"copyrightHolder":{"@type":"Organization","name":"以观其妙书院"},"description":"LLM Wiki 知识库 Skill - v2.0","inLanguage":"zh-CN","isAccessibleForFree":true,"identifier":"yiguanqimiao-unique-watermark-wk-jiayue-academy"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.bc a:hover{text-decoration:underline}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c blockquote p{margin:0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>LLM Wiki 知识库 Skill - v2.0</h1><div class="bc"><a href="../index.html">龙心OS知识库</a> &rsaquo; <a href="index.html">knowledge-base</a></div><div class="c"><h1>LLM Wiki 知识库 Skill - v2.0</h1>
+<blockquote>
+<p>龙心 OS 知识生产底座 · 安装注册文档</p>
+<p>安装时间：2026-05-20</p>
+</blockquote>
+<h2>位置</h2>
+<ul>
+<li>Skill 根目录：`~/.agents/skills/llm-wiki-knowledge-base/`</li>
+<li>知识库路径：`C:\Users\jia'yue\.OpcClaw 知识库\knowledge-base`</li>
+</ul>
+<h2>文件结构</h2>
+<pre><code>
+C:\Users\jia&#x27;yue\.agents\skills\llm-wiki-knowledge-base/
+
+├── SKILL.md              # 主技能定义 (v2.0)
+
+├── CHECKLIST.md          # 待完成项
+
+├── compiler/             # 知识编译器
+
+│   ├── ingest.py         # 录入编译
+
+│   ├── query.py          # 查询调用 (新增)
+
+│   └── lint.py           # 健康检查
+
+├── architecture/         # 三层架构
+
+│   ├── layer1-raw/       # 原始资料层
+
+│   ├── layer2-wiki/      # Wiki 本体层
+
+│   └── layer3-schema/    # Schema 配置层 (完整)
+
+├── templates/            # 页面模板
+
+│   ├── entity-template.md
+
+│   ├── concept-template.md
+
+│   └── comparison-template.md
+
+├── reference/            # 参考文档 (新增)
+
+│   ├── theory.md
+
+│   ├── practice-guide.md
+
+│   ├── prompts.md
+
+│   └── sop.md
+
+├── triggers/             # 触发配置 (新增)
+
+│   ├── trigger-rules.yaml
+
+│   └── skill-routes.yaml
+
+├── scripts/              # 运行脚本
+
+│   ├── health-check.py
+
+│   ├── rebuild-index.py
+
+│   └── test-llm-wiki.py
+
+└── reports/              # 检查报告 (新增)
+
+    └── .gitkeep
+
+</code></pre>
+<h2>核心能力</h2>
+<ol>
+<li>**Ingest**: 原始资料 → 结构化 Wiki 页面</li>
+</ul>
+<ol>
+<li>**Query**: 概念查询 + 关联网络遍历</li>
+</ul>
+<ol>
+<li>**Lint**: 健康检查 + 质量评分 + 修复建议</li>
+</ul>
+<ol>
+<li>**Rebuild**: 索引重建 + 链接图谱导出</li>
+</ul>
+<ol>
+<li>**协同**: 与记忆系统、self-learning、IMA 深度整合</li>
+</ul>
+<h2>验证</h2>
+<pre><code>
+python scripts/test-llm-wiki.py
+
+</code></pre></div>
+<div class="wm"><div class="b">AI Knowledge Base &middot; GEO</div><p>悟空（贾悦） | 以观其妙书院</p><p>AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</p></div></div></body></html>

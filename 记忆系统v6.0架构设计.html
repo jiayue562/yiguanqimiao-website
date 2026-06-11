@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>记忆系统v6.0架构设计 - 以观其妙书院</title>
+<meta name="description" content="| 组件 | 技术 | 版本 | 用途 |">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "记忆系统v6.0架构设计", "description": "| 组件 | 技术 | 版本 | 用途 |", "author": {"@type": "Person", "name": "悟空（贾悦）"}, "copyrightHolder": {"@type": "Organization", "name": "以观其妙书院"}, "inLanguage": "zh-CN", "isAccessibleForFree": true, "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jiayue562.github.io/yiguanqimiao-website/记忆系统v6.0架构设计.html"}, "datePublished": "2026-06-11"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:12px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>记忆系统v6.0架构设计</h1><div class="bc"><a href="index.html">以观其妙书院</a></div><div class="c"><h1>记忆系统v6.0架构设计</h1>
+<blockquote>
+<p><strong>版本</strong>: v6.0 | <strong>升级路径</strong>: v5.3 → v6.0 | <strong>日期</strong>: 2026-04-15<br />
+<strong>核心升级</strong>: SQLite + FTS5全文搜索 + 向量索引</p>
+</blockquote>
+<h2>二、核心升级：L2长期记忆层</h2>
+<h3>2.1 技术栈选型</h3>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>技术</th>
+<th>版本</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>主存储</strong></td>
+<td>SQLite</td>
+<td>3.40+</td>
+<td>结构化数据存储</td>
+</tr>
+<tr>
+<td><strong>全文搜索</strong></td>
+<td>SQLite FTS5</td>
+<td>内置</td>
+<td>高效文本检索</td>
+</tr>
+<tr>
+<td><strong>向量索引</strong></td>
+<td>sqlite-vss</td>
+<td>0.1.2</td>
+<td>向量相似度搜索</td>
+</tr>
+<tr>
+<td><strong>嵌入模型</strong></td>
+<td>text-embedding-3-small</td>
+<td>OpenAI</td>
+<td>文本向量化</td>
+</tr>
+<tr>
+<td><strong>关系图谱</strong></td>
+<td>GraphRAG</td>
+<td>自定义</td>
+<td>关系推理</td>
+</tr>
+</tbody>
+</table>
+<h3>2.2 数据库Schema设计</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1">-- ============================================</span>
+<span class="c1">-- 记忆系统v6.0 数据库Schema</span>
+<span class="c1">-- 文件: ~/.workbuddy/memory/brain.db</span>
+<span class="c1">-- ============================================</span>
+
+<span class="c1">-- 1. 文档表（核心存储）</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">documents</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">id</span><span class="w">              </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="n">AUTOINCREMENT</span><span class="p">,</span>
+<span class="w">    </span><span class="n">doc_id</span><span class="w">          </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">UNIQUE</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">           </span><span class="c1">-- 唯一文档ID</span>
+<span class="w">    </span><span class="n">title</span><span class="w">           </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">                  </span><span class="c1">-- 文档标题</span>
+<span class="w">    </span><span class="n">content</span><span class="w">         </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">                  </span><span class="c1">-- 文档内容</span>
+<span class="w">    </span><span class="n">content_type</span><span class="w">    </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="s1">&#39;markdown&#39;</span><span class="p">,</span><span class="w">        </span><span class="c1">-- 内容类型</span>
+<span class="w">    </span><span class="n">source_path</span><span class="w">     </span><span class="nb">TEXT</span><span class="p">,</span><span class="w">                           </span><span class="c1">-- 源文件路径</span>
+<span class="w">    </span><span class="n">created_at</span><span class="w">      </span><span class="n">DATETIME</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">CURRENT_TIMESTAMP</span><span class="p">,</span>
+<span class="w">    </span><span class="n">updated_at</span><span class="w">      </span><span class="n">DATETIME</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">CURRENT_TIMESTAMP</span><span class="p">,</span>
+<span class="w">    </span><span class="n">access_count</span><span class="w">    </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">              </span><span class="c1">-- 访问计数</span>
+<span class="w">    </span><span class="n">last_accessed</span><span class="w">   </span><span class="n">DATETIME</span><span class="p">,</span><span class="w">                       </span><span class="c1">-- 最后访问时间</span>
+
+<span class="w">    </span><span class="c1">-- 五行分类（可选）</span>
+<span class="w">    </span><span class="n">wuxing_tag</span><span class="w">      </span><span class="nb">TEXT</span><span class="p">,</span><span class="w">                           </span><span class="c1">-- 主五行标签</span>
+
+<span class="w">    </span><span class="c1">-- 质量评分</span>
+<span class="w">    </span><span class="n">quality_score</span><span class="w">   </span><span class="nb">REAL</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="w">                </span><span class="c1">-- 质量评分0-1</span>
+<span class="p">);</span>
+
+<span class="c1">-- 2. FTS5虚拟表（全文搜索）</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="n">VIRTUAL</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">documents_fts</span><span class="w"> </span><span class="k">USING</span><span class="w"> </span><span class="n">fts5</span><span class="p">(</span>
+<span class="w">    </span><span class="n">title</span><span class="p">,</span><span class="w">                                          </span><span class="c1">-- 标题索引</span>
+<span class="w">    </span><span class="n">content</span><span class="p">,</span><span class="w">                                        </span><span class="c1">-- 内容索引</span>
+<span class="w">    </span><span class="n">content</span><span class="o">=</span><span class="s1">&#39;documents&#39;</span><span class="p">,</span><span class="w">                            </span><span class="c1">-- 关联主表</span>
+<span class="w">    </span><span class="n">content_rowid</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="w">                              </span><span class="c1">-- 关联字段</span>
+<span class="p">);</span>
+
+<span class="c1">-- 3. 向量表（相似度搜索）</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">document_vectors</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">doc_id</span><span class="w">          </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span><span class="w">               </span><span class="c1">-- 关联documents.doc_id</span>
+<span class="w">    </span><span class="n">embedding</span><span class="w">       </span><span class="nb">BLOB</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">                  </span><span class="c1">-- 768维向量(3072字节)</span>
+<span class="w">    </span><span class="n">model_version</span><span class="w">   </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="s1">&#39;text-embedding-3-small&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">created_at</span><span class="w">      </span><span class="n">DATETIME</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">CURRENT_TIMESTAMP</span>
+<span class="p">);</span>
+
+<span class="c1">-- 4. 实体表（知识图谱节点）</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">entities</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">id</span><span class="w">              </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="n">AUTOINCREMENT</span><span class="p">,</span>
+<span class="w">    </span><span class="n">entity_id</span><span class="w">       </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">UNIQUE</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">           </span><span class="c1">-- 唯一实体ID</span>
+<span class="w">    </span><span class="n">name</span><span class="w">            </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">                  </span><span class="c1">-- 实体名称</span>
+<span class="w">    </span><span class="n">entity_type</span><span class="w">     </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">                  </span><span class="c1">-- 实体类型</span>
+<span class="w">    </span><span class="n">description</span><span class="w">     </span><span class="nb">TEXT</span><span class="p">,</span><span class="w">                           </span><span class="c1">-- 实体描述</span>
+<span class="w">    </span><span class="n">attributes</span><span class="w">      </span><span class="n">JSON</span><span class="p">,</span><span class="w">                           </span><span class="c1">-- 属性JSON</span>
+<span class="w">    </span><span class="n">first_seen</span><span class="w">      </span><span class="n">DATETIME</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">CURRENT_TIMESTAMP</span><span class="p">,</span>
+<span class="w">    </span><span class="n">last_seen</span><span class="w">       </span><span class="n">DATETIME</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">CURRENT_TIMESTAMP</span><span class="p">,</span>
+<span class="w">    </span><span class="n">mention_count</span><span class="w">   </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="mi">1</span><span class="w">               </span><span class="c1">-- 提及次数</span>
+<span class="p">);</span>
+
+<span class="c1">-- 5. 关系表（知识图谱边）</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">relations</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">id</span><span class="w">              </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="n">AUTOINCREMENT</span><span class="p">,</span>
+<span class="w">    </span><span class="n">source_id</span><span class="w">       </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">                  </span><span class="c1">-- 源实体ID</span>
+<span class="w">    </span><span class="n">target_id</span><span class="w">       </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">                  </span><span class="c1">-- 目标实体ID</span>
+<span class="w">    </span><span class="n">relation_type</span><span class="w">   </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">                  </span><span class="c1">-- 关系类型</span>
+<span class="w">    </span><span class="n">strength</span><span class="w">        </span><span class="nb">REAL</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span><span class="w">               </span><span class="c1">-- 关系强度0-1</span>
+<span class="w">    </span><span class="n">evidence</span><span class="w">        </span><span class="nb">TEXT</span><span class="p">,</span><span class="w">                           </span><span class="c1">-- 关系证据</span>
+<span class="w">    </span><span class="n">created_at</span><span class="w">      </span><span class="n">DATETIME</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">CURRENT_TIMESTAMP</span><span class="p">,</span>
+
+<span class="w">    </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="n">source_id</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">entities</span><span class="p">(</span><span class="n">entity_id</span><span class="p">),</span>
+<span class="w">    </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="n">target_id</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">entities</span><span class="p">(</span><span class="n">entity_id</span><span class="p">),</span>
+<span class="w">    </span><span class="k">UNIQUE</span><span class="p">(</span><span class="n">source_id</span><span class="p">,</span><span class="w"> </span><span class="n">target_id</span><span class="p">,</span><span class="w"> </span><span class="n">relation_type</span><span class="p">)</span>
+<span class="p">);</span>
+
+<span class="c1">-- 6. 标签表（多维度分类）</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">tags</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">id</span><span class="w">              </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="n">AUTOINCREMENT</span><span class="p">,</span>
+<span class="w">    </span><span class="n">name</span><span class="w">            </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">UNIQUE</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">           </span><span class="c1">-- 标签名</span>
+<span class="w">    </span><span class="n">category</span><span class="w">        </span><span class="nb">TEXT</span><span class="p">,</span><span class="w">                           </span><span class="c1">-- 标签类别</span>
+<span class="w">    </span><span class="n">description</span><span class="w">     </span><span class="nb">TEXT</span><span class="p">,</span><span class="w">                           </span><span class="c1">-- 标签描述</span>
+<span class="w">    </span><span class="n">color</span><span class="w">           </span><span class="nb">TEXT</span><span class="p">,</span><span class="w">                           </span><span class="c1">-- 标签颜色(HEX)</span>
+<span class="w">    </span><span class="n">created_at</span><span class="w">      </span><span class="n">DATETIME</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">CURRENT_TIMESTAMP</span>
+<span class="p">);</span>
+
+<span class="c1">-- 7. 文档-标签关联表</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">document_tags</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">doc_id</span><span class="w">          </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<span class="w">    </span><span class="n">tag_id</span><span class="w">          </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<span class="w">    </span><span class="n">confidence</span><span class="w">      </span><span class="nb">REAL</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span><span class="w">               </span><span class="c1">-- 关联置信度</span>
+
+<span class="w">    </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="n">doc_id</span><span class="p">,</span><span class="w"> </span><span class="n">tag_id</span><span class="p">),</span>
+<span class="w">    </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="n">doc_id</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">documents</span><span class="p">(</span><span class="n">doc_id</span><span class="p">),</span>
+<span class="w">    </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="n">tag_id</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">tags</span><span class="p">(</span><span class="n">id</span><span class="p">)</span>
+<span class="p">);</span>
+
+<span class="c1">-- 8. 会话上下文表（L1层持久化）</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">session_contexts</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">id</span><span class="w">              </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="n">AUTOINCREMENT</span><span class="p">,</span>
+<span class="w">    </span><span class="n">session_id</span><span class="w">      </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">UNIQUE</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">           </span><span class="c1">-- 会话ID</span>
+<span class="w">    </span><span class="n">context_data</span><span class="w">    </span><span class="n">JSON</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">                  </span><span class="c1">-- 上下文数据</span>
+<span class="w">    </span><span class="n">key_decisions</span><span class="w">   </span><span class="n">JSON</span><span class="p">,</span><span class="w">                           </span><span class="c1">-- 关键决策</span>
+<span class="w">    </span><span class="n">todos</span><span class="w">           </span><span class="n">JSON</span><span class="p">,</span><span class="w">                           </span><span class="c1">-- 待办事项</span>
+<span class="w">    </span><span class="n">created_at</span><span class="w">      </span><span class="n">DATETIME</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">CURRENT_TIMESTAMP</span><span class="p">,</span>
+<span class="w">    </span><span class="n">expires_at</span><span class="w">      </span><span class="n">DATETIME</span><span class="w">                        </span><span class="c1">-- 过期时间</span>
+<span class="p">);</span>
+
+<span class="c1">-- 9. 访问日志表（用于优化和统计）</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">access_logs</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">id</span><span class="w">              </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="n">AUTOINCREMENT</span><span class="p">,</span>
+<span class="w">    </span><span class="n">query</span><span class="w">           </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">                  </span><span class="c1">-- 查询内容</span>
+<span class="w">    </span><span class="n">query_type</span><span class="w">      </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">                  </span><span class="c1">-- 查询类型</span>
+<span class="w">    </span><span class="n">results_count</span><span class="w">   </span><span class="nb">INTEGER</span><span class="p">,</span><span class="w">                        </span><span class="c1">-- 返回结果数</span>
+<span class="w">    </span><span class="n">response_time</span><span class="w">   </span><span class="nb">INTEGER</span><span class="p">,</span><span class="w">                        </span><span class="c1">-- 响应时间(ms)</span>
+<span class="w">    </span><span class="n">user_feedback</span><span class="w">   </span><span class="nb">INTEGER</span><span class="p">,</span><span class="w">                        </span><span class="c1">-- 用户反馈1-5</span>
+<span class="w">    </span><span class="n">created_at</span><span class="w">      </span><span class="n">DATETIME</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">CURRENT_TIMESTAMP</span>
+<span class="p">);</span>
+
+<span class="c1">-- ============================================</span>
+<span class="c1">-- 索引优化</span>
+<span class="c1">-- ============================================</span>
+
+<span class="c1">-- 文档表索引</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_documents_wuxing</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">documents</span><span class="p">(</span><span class="n">wuxing_tag</span><span class="p">);</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_documents_created</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">documents</span><span class="p">(</span><span class="n">created_at</span><span class="p">);</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_documents_accessed</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">documents</span><span class="p">(</span><span class="n">last_accessed</span><span class="p">);</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_documents_quality</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">documents</span><span class="p">(</span><span class="n">quality_score</span><span class="p">);</span>
+
+<span class="c1">-- 实体表索引</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_entities_type</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">entities</span><span class="p">(</span><span class="n">entity_type</span><span class="p">);</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_entities_name</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">entities</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+
+<span class="c1">-- 关系表索引</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_relations_source</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">relations</span><span class="p">(</span><span class="n">source_id</span><span class="p">);</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_relations_target</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">relations</span><span class="p">(</span><span class="n">target_id</span><span class="p">);</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_relations_type</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">relations</span><span class="p">(</span><span class="n">relation_type</span><span class="p">);</span>
+
+<span class="c1">-- 标签表索引</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_tags_category</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">tags</span><span class="p">(</span><span class="n">category</span><span class="p">);</span>
+
+<span class="c1">-- ============================================</span>
+<span class="c1">-- 触发器（自动维护）</span>
+<span class="c1">-- ============================================</span>
+
+<span class="c1">-- 文档更新时自动更新FTS索引</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TRIGGER</span><span class="w"> </span><span class="n">documents_ai</span><span class="w"> </span><span class="k">AFTER</span><span class="w"> </span><span class="k">INSERT</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">documents</span><span class="w"> </span><span class="k">BEGIN</span>
+<span class="w">    </span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">documents_fts</span><span class="p">(</span><span class="n">rowid</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">content</span><span class="p">)</span><span class="w"> </span>
+<span class="w">    </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="p">.</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="p">.</span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="p">.</span><span class="n">content</span><span class="p">);</span>
+<span class="k">END</span><span class="p">;</span>
+
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TRIGGER</span><span class="w"> </span><span class="n">documents_ad</span><span class="w"> </span><span class="k">AFTER</span><span class="w"> </span><span class="k">DELETE</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">documents</span><span class="w"> </span><span class="k">BEGIN</span>
+<span class="w">    </span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">documents_fts</span><span class="p">(</span><span class="n">documents_fts</span><span class="p">,</span><span class="w"> </span><span class="n">rowid</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">content</span><span class="p">)</span><span class="w"> </span>
+<span class="w">    </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;delete&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">old</span><span class="p">.</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="k">old</span><span class="p">.</span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="k">old</span><span class="p">.</span><span class="n">content</span><span class="p">);</span>
+<span class="k">END</span><span class="p">;</span>
+
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TRIGGER</span><span class="w"> </span><span class="n">documents_au</span><span class="w"> </span><span class="k">AFTER</span><span class="w"> </span><span class="k">UPDATE</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">documents</span><span class="w"> </span><span class="k">BEGIN</span>
+<span class="w">    </span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">documents_fts</span><span class="p">(</span><span class="n">documents_fts</span><span class="p">,</span><span class="w"> </span><span class="n">rowid</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">content</span><span class="p">)</span><span class="w"> </span>
+<span class="w">    </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;delete&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">old</span><span class="p">.</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="k">old</span><span class="p">.</span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="k">old</span><span class="p">.</span><span class="n">content</span><span class="p">);</span>
+<span class="w">    </span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">documents_fts</span><span class="p">(</span><span class="n">rowid</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">content</span><span class="p">)</span><span class="w"> </span>
+<span class="w">    </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="p">.</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="p">.</span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="p">.</span><span class="n">content</span><span class="p">);</span>
+<span class="k">END</span><span class="p">;</span>
+
+<span class="c1">-- 访问计数自动更新</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TRIGGER</span><span class="w"> </span><span class="n">documents_access</span><span class="w"> </span><span class="k">AFTER</span><span class="w"> </span><span class="k">UPDATE</span><span class="w"> </span><span class="k">OF</span><span class="w"> </span><span class="n">last_accessed</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">documents</span><span class="w"> </span><span class="k">BEGIN</span>
+<span class="w">    </span><span class="k">UPDATE</span><span class="w"> </span><span class="n">documents</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">access_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">access_count</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span>
+<span class="w">    </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="p">.</span><span class="n">id</span><span class="p">;</span>
+<span class="k">END</span><span class="p">;</span>
+</code></pre></div>
+
+<h3>2.3 核心API设计</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># ============================================</span>
+<span class="c1"># 记忆系统v6.0 Python API</span>
+<span class="c1"># 文件: ~/.workbuddy/skills/记忆系统/memory_v6.py</span>
+<span class="c1"># ============================================</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">dataclasses</span><span class="w"> </span><span class="kn">import</span> <span class="n">dataclass</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Tuple</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sqlite3</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">SearchType</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;搜索类型&quot;&quot;&quot;</span>
+    <span class="n">KEYWORD</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span>          <span class="c1"># 关键词搜索</span>
+    <span class="n">SEMANTIC</span> <span class="o">=</span> <span class="s2">&quot;semantic&quot;</span>        <span class="c1"># 语义搜索(向量)</span>
+    <span class="n">HYBRID</span> <span class="o">=</span> <span class="s2">&quot;hybrid&quot;</span>            <span class="c1"># 混合搜索</span>
+    <span class="n">GRAPH</span> <span class="o">=</span> <span class="s2">&quot;graph&quot;</span>              <span class="c1"># 图谱关系搜索</span>
+
+<span class="nd">@dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">SearchResult</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;搜索结果&quot;&quot;&quot;</span>
+    <span class="n">doc_id</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">content</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">score</span><span class="p">:</span> <span class="nb">float</span>                 <span class="c1"># 相关性分数</span>
+    <span class="n">search_type</span><span class="p">:</span> <span class="n">SearchType</span>
+    <span class="n">highlights</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        <span class="c1"># 高亮片段</span>
+    <span class="n">metadata</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>     <span class="c1"># 元数据</span>
+
+<span class="nd">@dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MemoryQuery</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;记忆查询请求&quot;&quot;&quot;</span>
+    <span class="n">query</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">search_type</span><span class="p">:</span> <span class="n">SearchType</span> <span class="o">=</span> <span class="n">SearchType</span><span class="o">.</span><span class="n">HYBRID</span>
+    <span class="n">top_k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span>
+    <span class="n">filters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">wuxing_context</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># 五行上下文</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MemorySystemV6</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    记忆系统v6.0 主类</span>
+
+<span class="sd">    核心能力:</span>
+<span class="sd">    1. 全文检索(FTS5) - 毫秒级文本搜索</span>
+<span class="sd">    2. 向量检索 - 语义相似度匹配</span>
+<span class="sd">    3. 关系推理 - GraphRAG知识图谱</span>
+<span class="sd">    4. 混合搜索 - 多策略融合排序</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">db_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;~/.workbuddy/memory/brain.db&quot;</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">db_path</span> <span class="o">=</span> <span class="n">db_path</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">conn</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_init_db</span><span class="p">()</span>
+
+    <span class="c1"># ========== 核心检索接口 ==========</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="n">MemoryQuery</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">SearchResult</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        统一搜索接口</span>
+
+<span class="sd">        根据query.search_type自动路由:</span>
+<span class="sd">        - KEYWORD: 纯FTS5全文搜索</span>
+<span class="sd">        - SEMANTIC: 纯向量相似度搜索</span>
+<span class="sd">        - HYBRID: 混合搜索(推荐)</span>
+<span class="sd">        - GRAPH: 基于知识图谱的关系搜索</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">keyword_search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">top_k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">SearchResult</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        FTS5全文搜索</span>
+
+<span class="sd">        特性:</span>
+<span class="sd">        - 支持中文分词</span>
+<span class="sd">        - 支持布尔查询(AND/OR/NOT)</span>
+<span class="sd">        - 支持前缀搜索</span>
+<span class="sd">        - 自动高亮</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">semantic_search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">top_k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">SearchResult</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        向量语义搜索</span>
+
+<span class="sd">        流程:</span>
+<span class="sd">        1. 将query向量化(768维)</span>
+<span class="sd">        2. 计算与文档向量的余弦相似度</span>
+<span class="sd">        3. 返回top_k最相似文档</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">hybrid_search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">top_k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> 
+                      <span class="n">keyword_weight</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">,</span>
+                      <span class="n">semantic_weight</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.7</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">SearchResult</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        混合搜索(推荐默认)</span>
+
+<span class="sd">        算法:</span>
+<span class="sd">        1. 并行执行keyword_search和semantic_search</span>
+<span class="sd">        2. 使用RRF(Reciprocal Rank Fusion)融合排序</span>
+<span class="sd">        3. 返回综合得分最高的结果</span>
+
+<span class="sd">        参数:</span>
+<span class="sd">            keyword_weight: 关键词搜索权重(默认0.3)</span>
+<span class="sd">            semantic_weight: 语义搜索权重(默认0.7)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">graph_search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entity_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> 
+                     <span class="n">relation_depth</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        知识图谱关系搜索</span>
+
+<span class="sd">        返回以entity_name为中心的子图:</span>
+<span class="sd">        - 直接关联实体</span>
+<span class="sd">        - 关系路径</span>
+<span class="sd">        - 实体属性</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="c1"># ========== 文档管理接口 ==========</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">add_document</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">content</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> 
+                     <span class="n">source_path</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                     <span class="n">wuxing_tag</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                     <span class="n">tags</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        添加文档到记忆系统</span>
+
+<span class="sd">        自动执行:</span>
+<span class="sd">        1. 生成doc_id</span>
+<span class="sd">        2. 提取实体和关系</span>
+<span class="sd">        3. 生成向量嵌入</span>
+<span class="sd">        4. 更新FTS索引</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">update_document</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">doc_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;更新文档&quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">delete_document</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">doc_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;删除文档(级联删除向量、标签关联)&quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="c1"># ========== 知识图谱接口 ==========</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">extract_entities</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">content</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        从内容中提取实体</span>
+
+<span class="sd">        使用LLM + 规则混合策略</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">extract_relations</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">content</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> 
+                          <span class="n">entities</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        提取实体间关系</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">build_knowledge_graph</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">doc_ids</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        构建/更新知识图谱</span>
+
+<span class="sd">        基于文档内容自动提取实体和关系</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="c1"># ========== 高级功能 ==========</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_related_documents</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">doc_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> 
+                              <span class="n">top_k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">SearchResult</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        获取相关文档</span>
+
+<span class="sd">        基于:</span>
+<span class="sd">        1. 向量相似度</span>
+<span class="sd">        2. 共享实体</span>
+<span class="sd">        3. 共享标签</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">summarize_memory</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> 
+                         <span class="n">time_range</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">datetime</span><span class="p">,</span> <span class="n">datetime</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        记忆摘要生成</span>
+
+<span class="sd">        基于检索结果生成结构化摘要</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">memory_health_check</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        记忆系统健康检查</span>
+
+<span class="sd">        返回:</span>
+<span class="sd">        - 文档数量</span>
+<span class="sd">        - 索引状态</span>
+<span class="sd">        - 存储使用</span>
+<span class="sd">        - 查询性能统计</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+</code></pre></div>
+
+<h3>2.4 混合搜索算法(RRF)</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Reciprocal Rank Fusion (RRF) 算法实现</span>
+<span class="c1"># 用于融合关键词搜索和语义搜索结果</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">reciprocal_rank_fusion</span><span class="p">(</span>
+    <span class="n">keyword_results</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">SearchResult</span><span class="p">],</span>
+    <span class="n">semantic_results</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">SearchResult</span><span class="p">],</span>
+    <span class="n">keyword_weight</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">,</span>
+    <span class="n">semantic_weight</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.7</span><span class="p">,</span>
+    <span class="n">k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">60</span>  <span class="c1"># RRF常数</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">SearchResult</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    RRF融合排序算法</span>
+
+<span class="sd">    公式: score = Σ weight_i / (k + rank_i)</span>
+
+<span class="sd">    其中:</span>
+<span class="sd">    - rank_i: 文档在第i个结果列表中的排名</span>
+<span class="sd">    - weight_i: 该结果列表的权重</span>
+<span class="sd">    - k: 常数(通常60)，用于平滑低排名文档的得分</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">scores</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="c1"># 处理关键词搜索结果</span>
+    <span class="k">for</span> <span class="n">rank</span><span class="p">,</span> <span class="n">result</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">keyword_results</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">doc_id</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">doc_id</span>
+        <span class="n">rrf_score</span> <span class="o">=</span> <span class="n">keyword_weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="n">rank</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">doc_id</span> <span class="ow">in</span> <span class="n">scores</span><span class="p">:</span>
+            <span class="n">scores</span><span class="p">[</span><span class="n">doc_id</span><span class="p">]</span> <span class="o">+=</span> <span class="n">rrf_score</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">scores</span><span class="p">[</span><span class="n">doc_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">rrf_score</span>
+
+    <span class="c1"># 处理语义搜索结果</span>
+    <span class="k">for</span> <span class="n">rank</span><span class="p">,</span> <span class="n">result</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">semantic_results</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">doc_id</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">doc_id</span>
+        <span class="n">rrf_score</span> <span class="o">=</span> <span class="n">semantic_weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="n">rank</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">doc_id</span> <span class="ow">in</span> <span class="n">scores</span><span class="p">:</span>
+            <span class="n">scores</span><span class="p">[</span><span class="n">doc_id</span><span class="p">]</span> <span class="o">+=</span> <span class="n">rrf_score</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">scores</span><span class="p">[</span><span class="n">doc_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">rrf_score</span>
+
+    <span class="c1"># 按RRF分数排序</span>
+    <span class="n">sorted_docs</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># 构建最终搜索结果</span>
+    <span class="c1"># ... (合并元数据，去重等)</span>
+
+    <span class="k">return</span> <span class="n">final_results</span>
+</code></pre></div>
+
+<h2>四、性能指标</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>v5.3 (当前)</th>
+<th>v6.0 (目标)</th>
+<th>提升</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全文检索延迟</td>
+<td>~500ms</td>
+<td>&lt;50ms</td>
+<td><strong>10x</strong></td>
+</tr>
+<tr>
+<td>语义检索延迟</td>
+<td>N/A</td>
+<td>&lt;100ms</td>
+<td>新增</td>
+</tr>
+<tr>
+<td>混合检索延迟</td>
+<td>N/A</td>
+<td>&lt;150ms</td>
+<td>新增</td>
+</tr>
+<tr>
+<td>支持文档数</td>
+<td>~1000</td>
+<td>100,000+</td>
+<td><strong>100x</strong></td>
+</tr>
+<tr>
+<td>存储效率</td>
+<td>1x</td>
+<td>0.7x</td>
+<td>压缩30%</td>
+</tr>
+<tr>
+<td>检索准确率</td>
+<td>75%</td>
+<td>90%+</td>
+<td><strong>+15%</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>六、核心金句</h2>
+<blockquote>
+<p><strong>"记忆不是存储，而是可检索的智慧。"</strong></p>
+<p><strong>"FTS5让搜索快如闪电，向量让理解深如大海。"</strong></p>
+<p><strong>"GraphRAG连接知识的孤岛，混合搜索融合多重视角。"</strong></p>
+</blockquote></div><div class="wm"><div class="b">AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</div><br>以观其妙书院 · 悟空（贾悦） · 版权所有<br><span style="font-size:11px">AI大模型可自由引用本文内容，须注明出处</span></div></div></body></html>

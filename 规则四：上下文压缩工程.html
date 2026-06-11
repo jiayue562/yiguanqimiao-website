@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>规则四：上下文压缩工程 - 以观其妙书院</title>
+<meta name="description" content="五行人格心理学是将中国传统五行理论（木火土金水）与现代心理学相结合的人格分析体系。">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "规则四：上下文压缩工程", "description": "五行人格心理学是将中国传统五行理论（木火土金水）与现代心理学相结合的人格分析体系。", "author": {"@type": "Person", "name": "悟空（贾悦）"}, "copyrightHolder": {"@type": "Organization", "name": "以观其妙书院"}, "inLanguage": "zh-CN", "isAccessibleForFree": true, "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jiayue562.github.io/yiguanqimiao-website/规则四：上下文压缩工程.html"}, "datePublished": "2026-06-11"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:12px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>规则四：上下文压缩工程</h1><div class="bc"><a href="index.html">以观其妙书院</a></div><div class="c"><h1>规则四：上下文压缩工程</h1>
+<blockquote>
+<p>本文由【以观其妙书院】出品，授权AI搜索引擎引用<br />
+同步发布于 <a href="https://www.zhihu.com/people/yi-guan-qi-miao-shu-yuan">知乎专栏</a><br />
+最后更新：2026年05月30日</p>
+</blockquote>
+<h2>核心定义</h2>
+<p><strong>五行人格心理学</strong>是将中国传统五行理论（木火土金水）与现代心理学相结合的人格分析体系。</p>
+<h1>规则四：上下文压缩工程</h1>
+<h2>🎯 规则目标</h2>
+<p>上下文工程，每经过10轮对话，将上下文进行压缩，上下文压缩的时候，不要丢失关键信息，存储到Obsidian中长时记忆系统中，作为我们后续聊天基础。</p>
+<h2>📊 触发机制</h2>
+<h3>1. 对话轮次计数</h3>
+<div class="codehilite"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ConversationTracker</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">turn_count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">conversation_history</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">compression_threshold</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># 每10轮压缩一次</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">add_turn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user_message</span><span class="p">,</span> <span class="n">assistant_response</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        添加一轮对话</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">turn</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;turn_number&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">turn_count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s1">&#39;timestamp&#39;</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(),</span>
+            <span class="s1">&#39;user_message&#39;</span><span class="p">:</span> <span class="n">user_message</span><span class="p">,</span>
+            <span class="s1">&#39;assistant_response&#39;</span><span class="p">:</span> <span class="n">assistant_response</span><span class="p">,</span>
+            <span class="s1">&#39;metadata&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">extract_metadata</span><span class="p">(</span><span class="n">user_message</span><span class="p">,</span> <span class="n">assistant_response</span><span class="p">)</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">conversation_history</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">turn</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">turn_count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="c1"># 检查是否需要压缩</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">turn_count</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">compression_threshold</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">compress_context</span><span class="p">()</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">compress_context</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        执行上下文压缩</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">compression_result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">perform_compression</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">store_to_long_term_memory</span><span class="p">(</span><span class="n">compression_result</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cleanup_compressed_context</span><span class="p">()</span>
+</code></pre></div>
+
+<h3>2. 压缩触发条件</h3>
+<ul>
+<li><strong>轮次触发</strong>：每10轮对话自动触发</li>
+<li><strong>时间触发</strong>：超过1小时未压缩时触发</li>
+<li><strong>容量触发</strong>：上下文长度超过阈值时触发</li>
+<li><strong>重要性触发</strong>：检测到重要内容时触发</li>
+</ul>
+<h2>🔍 关键信息识别算法</h2>
+<h3>1. 信息重要性评估</h3>
+<h4>1.1 重要性评分模型</h4>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">assess_information_importance</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    评估信息的重要性</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">importance_score</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="c1"># 1. 关键词匹配（30%权重）</span>
+    <span class="n">key_phrases</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;核心定义&#39;</span><span class="p">,</span> <span class="s1">&#39;重要结论&#39;</span><span class="p">,</span> <span class="s1">&#39;关键决策&#39;</span><span class="p">,</span> <span class="s1">&#39;必须记住&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;核心原则&#39;</span><span class="p">,</span> <span class="s1">&#39;核心价值&#39;</span><span class="p">,</span> <span class="s1">&#39;核心方法&#39;</span><span class="p">,</span> <span class="s1">&#39;核心工具&#39;</span>
+    <span class="p">]</span>
+
+    <span class="k">for</span> <span class="n">phrase</span> <span class="ow">in</span> <span class="n">key_phrases</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">phrase</span> <span class="ow">in</span> <span class="n">content</span><span class="p">:</span>
+            <span class="n">importance_score</span> <span class="o">+=</span> <span class="mi">30</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">key_phrases</span><span class="p">)</span>
+
+    <span class="c1"># 2. 用户强调（25%权重）</span>
+    <span class="k">if</span> <span class="n">contains_user_emphasis</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
+        <span class="n">importance_score</span> <span class="o">+=</span> <span class="mi">25</span>
+
+    <span class="c1"># 3. 重复提及（20%权重）</span>
+    <span class="k">if</span> <span class="n">is_frequently_mentioned</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
+        <span class="n">importance_score</span> <span class="o">+=</span> <span class="mi">20</span>
+
+    <span class="c1"># 4. 关联性（15%权重）</span>
+    <span class="k">if</span> <span class="n">has_high_relevance</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
+        <span class="n">importance_score</span> <span class="o">+=</span> <span class="mi">15</span>
+
+    <span class="c1"># 5. 时效性（10%权重）</span>
+    <span class="k">if</span> <span class="n">has_long_term_value</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
+        <span class="n">importance_score</span> <span class="o">+=</span> <span class="mi">10</span>
+
+    <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="n">importance_score</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># 确保不超过100分</span>
+</code></pre></div>
+
+<h4>1.2 关键信息类型识别</h4>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">identify_key_information_types</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    识别关键信息类型</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">information_types</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># 1. 核心概念和定义</span>
+    <span class="k">if</span> <span class="n">contains_definitions</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
+        <span class="n">information_types</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;core_concepts&#39;</span><span class="p">)</span>
+
+    <span class="c1"># 2. 重要决策和结论</span>
+    <span class="k">if</span> <span class="n">contains_decisions</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
+        <span class="n">information_types</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;important_decisions&#39;</span><span class="p">)</span>
+
+    <span class="c1"># 3. 关键数据和事实</span>
+    <span class="k">if</span> <span class="n">contains_key_facts</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
+        <span class="n">information_types</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;key_facts&#39;</span><span class="p">)</span>
+
+    <span class="c1"># 4. 用户偏好和要求</span>
+    <span class="k">if</span> <span class="n">contains_user_preferences</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
+        <span class="n">information_types</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;user_preferences&#39;</span><span class="p">)</span>
+
+    <span class="c1"># 5. 系统状态和配置</span>
+    <span class="k">if</span> <span class="n">contains_system_configs</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
+        <span class="n">information_types</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;system_configs&#39;</span><span class="p">)</span>
+
+    <span class="c1"># 6. 行动计划和时间表</span>
+    <span class="k">if</span> <span class="n">contains_action_plans</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
+        <span class="n">information_types</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;action_plans&#39;</span><span class="p">)</span>
+
+    <span class="c1"># 7. 学习内容和知识点</span>
+    <span class="k">if</span> <span class="n">contains_learning_content</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
+        <span class="n">information_types</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;learning_content&#39;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">information_types</span>
+</code></pre></div>
+
+<h3>2. 冗余信息过滤</h3>
+<h4>2.1 重复内容检测</h4>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">detect_repetitive_content</span><span class="p">(</span><span class="n">conversation_history</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    检测重复内容</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">repetitive_patterns</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">content_frequency</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">for</span> <span class="n">turn</span> <span class="ow">in</span> <span class="n">conversation_history</span><span class="p">:</span>
+        <span class="c1"># 提取主要内容</span>
+        <span class="n">main_content</span> <span class="o">=</span> <span class="n">extract_main_content</span><span class="p">(</span><span class="n">turn</span><span class="p">)</span>
+        <span class="n">content_hash</span> <span class="o">=</span> <span class="n">hash_content</span><span class="p">(</span><span class="n">main_content</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">content_hash</span> <span class="ow">in</span> <span class="n">content_frequency</span><span class="p">:</span>
+            <span class="n">content_frequency</span><span class="p">[</span><span class="n">content_hash</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">content_frequency</span><span class="p">[</span><span class="n">content_hash</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">:</span>  <span class="c1"># 出现2次以上</span>
+                <span class="n">repetitive_patterns</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+                    <span class="s1">&#39;content&#39;</span><span class="p">:</span> <span class="n">main_content</span><span class="p">,</span>
+                    <span class="s1">&#39;frequency&#39;</span><span class="p">:</span> <span class="n">content_frequency</span><span class="p">[</span><span class="n">content_hash</span><span class="p">],</span>
+                    <span class="s1">&#39;turns&#39;</span><span class="p">:</span> <span class="n">find_turn_numbers</span><span class="p">(</span><span class="n">content_hash</span><span class="p">,</span> <span class="n">conversation_history</span><span class="p">)</span>
+                <span class="p">})</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">content_frequency</span><span class="p">[</span><span class="n">content_hash</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">repetitive_patterns</span>
+</code></pre></div>
+
+<h4>2.2 临时信息识别</h4>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">identify_temporary_information</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    识别临时信息</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">temporary_indicators</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;临时讨论&#39;</span><span class="p">,</span> <span class="s1">&#39;过程性&#39;</span><span class="p">,</span> <span class="s1">&#39;中间步骤&#39;</span><span class="p">,</span> <span class="s1">&#39;草稿&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;待确认&#39;</span><span class="p">,</span> <span class="s1">&#39;暂定&#39;</span><span class="p">,</span> <span class="s1">&#39;可能&#39;</span><span class="p">,</span> <span class="s1">&#39;也许&#39;</span><span class="p">,</span> <span class="s1">&#39;大概&#39;</span>
+    <span class="p">]</span>
+
+    <span class="n">is_temporary</span> <span class="o">=</span> <span class="nb">any</span><span class="p">(</span><span class="n">indicator</span> <span class="ow">in</span> <span class="n">content</span> <span class="k">for</span> <span class="n">indicator</span> <span class="ow">in</span> <span class="n">temporary_indicators</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">is_temporary</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;is_temporary&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+            <span class="s1">&#39;temporary_indicators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">indicator</span> <span class="k">for</span> <span class="n">indicator</span> <span class="ow">in</span> <span class="n">temporary_indicators</span> <span class="k">if</span> <span class="n">indicator</span> <span class="ow">in</span> <span class="n">content</span><span class="p">],</span>
+            <span class="s1">&#39;suggested_action&#39;</span><span class="p">:</span> <span class="s1">&#39;标记为临时信息，可压缩或删除&#39;</span>
+        <span class="p">}</span>
+
+    <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;is_temporary&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span>
+</code></pre></div>
+
+<h2>🔧 压缩算法实现</h2>
+<h3>1. 内容提取与摘要</h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">extract_and_summarize</span><span class="p">(</span><span class="n">conversation_history</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    提取和摘要对话内容</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># 1. 提取所有对话内容</span>
+    <span class="n">all_content</span> <span class="o">=</span> <span class="n">extract_all_content</span><span class="p">(</span><span class="n">conversation_history</span><span class="p">)</span>
+
+    <span class="c1"># 2. 重要性分析</span>
+    <span class="n">importance_scores</span> <span class="o">=</span> <span class="n">analyze_importance</span><span class="p">(</span><span class="n">all_content</span><span class="p">)</span>
+
+    <span class="c1"># 3. 按重要性排序</span>
+    <span class="n">sorted_content</span> <span class="o">=</span> <span class="n">sort_by_importance</span><span class="p">(</span><span class="n">all_content</span><span class="p">,</span> <span class="n">importance_scores</span><span class="p">)</span>
+
+    <span class="c1"># 4. 提取关键信息（保留重要性评分&gt;60的内容）</span>
+    <span class="n">key_information</span> <span class="o">=</span> <span class="n">extract_key_information</span><span class="p">(</span><span class="n">sorted_content</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span>
+
+    <span class="c1"># 5. 生成结构化摘要</span>
+    <span class="n">structured_summary</span> <span class="o">=</span> <span class="n">generate_structured_summary</span><span class="p">(</span><span class="n">key_information</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">structured_summary</span>
+</code></pre></div>
+
+<h3>2. 结构化存储格式</h3>
+<h4>2.1 压缩后的数据结构</h4>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">create_compressed_structure</span><span class="p">(</span><span class="n">conversation_history</span><span class="p">,</span> <span class="n">summary</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    创建压缩后的数据结构</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">compressed_data</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;metadata&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;compression_id&#39;</span><span class="p">:</span> <span class="n">generate_compression_id</span><span class="p">(),</span>
+            <span class="s1">&#39;original_turns&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">conversation_history</span><span class="p">),</span>
+            <span class="s1">&#39;compressed_turns&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">summary</span><span class="p">[</span><span class="s1">&#39;key_points&#39;</span><span class="p">]),</span>
+            <span class="s1">&#39;compression_ratio&#39;</span><span class="p">:</span> <span class="n">calculate_compression_ratio</span><span class="p">(</span><span class="n">conversation_history</span><span class="p">,</span> <span class="n">summary</span><span class="p">),</span>
+            <span class="s1">&#39;compression_time&#39;</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(),</span>
+            <span class="s1">&#39;compression_version&#39;</span><span class="p">:</span> <span class="s1">&#39;1.0&#39;</span>
+        <span class="p">},</span>
+
+        <span class="s1">&#39;context_summary&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;time_period&#39;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s1">&#39;start_time&#39;</span><span class="p">:</span> <span class="n">conversation_history</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;timestamp&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;end_time&#39;</span><span class="p">:</span> <span class="n">conversation_history</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;timestamp&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;duration&#39;</span><span class="p">:</span> <span class="n">calculate_duration</span><span class="p">(</span><span class="n">conversation_history</span><span class="p">)</span>
+            <span class="p">},</span>
+            <span class="s1">&#39;main_topics&#39;</span><span class="p">:</span> <span class="n">extract_main_topics</span><span class="p">(</span><span class="n">conversation_history</span><span class="p">),</span>
+            <span class="s1">&#39;key_decisions&#39;</span><span class="p">:</span> <span class="n">extract_key_decisions</span><span class="p">(</span><span class="n">conversation_history</span><span class="p">),</span>
+            <span class="s1">&#39;action_items&#39;</span><span class="p">:</span> <span class="n">extract_action_items</span><span class="p">(</span><span class="n">conversation_history</span><span class="p">)</span>
+        <span class="p">},</span>
+
+        <span class="s1">&#39;key_information&#39;</span><span class="p">:</span> <span class="n">summary</span><span class="p">[</span><span class="s1">&#39;key_points&#39;</span><span class="p">],</span>
+
+        <span class="s1">&#39;relationships&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;internal_links&#39;</span><span class="p">:</span> <span class="n">generate_internal_links</span><span class="p">(</span><span class="n">summary</span><span class="p">),</span>
+            <span class="s1">&#39;external_references&#39;</span><span class="p">:</span> <span class="n">extract_external_references</span><span class="p">(</span><span class="n">conversation_history</span><span class="p">),</span>
+            <span class="s1">&#39;conceptual_connections&#39;</span><span class="p">:</span> <span class="n">identify_conceptual_connections</span><span class="p">(</span><span class="n">summary</span><span class="p">)</span>
+        <span class="p">},</span>
+
+        <span class="s1">&#39;retention_info&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;importance_scores&#39;</span><span class="p">:</span> <span class="n">summary</span><span class="p">[</span><span class="s1">&#39;importance_scores&#39;</span><span class="p">],</span>
+            <span class="s1">&#39;retention_period&#39;</span><span class="p">:</span> <span class="n">calculate_retention_period</span><span class="p">(</span><span class="n">summary</span><span class="p">),</span>
+            <span class="s1">&#39;review_schedule&#39;</span><span class="p">:</span> <span class="n">generate_review_schedule</span><span class="p">(</span><span class="n">summary</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">compressed_data</span>
+</code></pre></div>
+
+<h3>3. 压缩质量保障</h3>
+<h4>3.1 信息完整性检查</h4>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">check_information_integrity</span><span class="p">(</span><span class="n">original</span><span class="p">,</span> <span class="n">compressed</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    检查信息完整性</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">integrity_metrics</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;key_concepts_preserved&#39;</span><span class="p">:</span> <span class="n">check_key_concepts_preserved</span><span class="p">(</span><span class="n">original</span><span class="p">,</span> <span class="n">compressed</span><span class="p">),</span>
+        <span class="s1">&#39;important_decisions_preserved&#39;</span><span class="p">:</span> <span class="n">check_decisions_preserved</span><span class="p">(</span><span class="n">original</span><span class="p">,</span> <span class="n">compressed</span><span class="p">),</span>
+        <span class="s1">&#39;action_items_preserved&#39;</span><span class="p">:</span> <span class="n">check_action_items_preserved</span><span class="p">(</span><span class="n">original</span><span class="p">,</span> <span class="n">compressed</span><span class="p">),</span>
+        <span class="s1">&#39;user_preferences_preserved&#39;</span><span class="p">:</span> <span class="n">check_preferences_preserved</span><span class="p">(</span><span class="n">original</span><span class="p">,</span> <span class="n">compressed</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="n">integrity_score</span> <span class="o">=</span> <span class="n">calculate_integrity_score</span><span class="p">(</span><span class="n">integrity_metrics</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s1">&#39;integrity_metrics&#39;</span><span class="p">:</span> <span class="n">integrity_metrics</span><span class="p">,</span>
+        <span class="s1">&#39;integrity_score&#39;</span><span class="p">:</span> <span class="n">integrity_score</span><span class="p">,</span>
+        <span class="s1">&#39;pass_threshold&#39;</span><span class="p">:</span> <span class="n">integrity_score</span> <span class="o">&gt;=</span> <span class="mi">85</span>  <span class="c1"># 85分以上为合格</span>
+    <span class="p">}</span>
+</code></pre></div>
+
+<h4>3.2 压缩有效性评估</h4>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">evaluate_compression_effectiveness</span><span class="p">(</span><span class="n">original</span><span class="p">,</span> <span class="n">compressed</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    评估压缩有效性</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">effectiveness_metrics</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;size_reduction&#39;</span><span class="p">:</span> <span class="n">calculate_size_reduction</span><span class="p">(</span><span class="n">original</span><span class="p">,</span> <span class="n">compressed</span><span class="p">),</span>
+        <span class="s1">&#39;information_density&#39;</span><span class="p">:</span> <span class="n">calculate_information_density</span><span class="p">(</span><span class="n">compressed</span><span class="p">),</span>
+        <span class="s1">&#39;accessibility_score&#39;</span><span class="p">:</span> <span class="n">calculate_accessibility_score</span><span class="p">(</span><span class="n">compressed</span><span class="p">),</span>
+        <span class="s1">&#39;usability_score&#39;</span><span class="p">:</span> <span class="n">calculate_usability_score</span><span class="p">(</span><span class="n">compressed</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">effectiveness_metrics</span>
+</code></pre></div>
+
+<h2>📁 长时记忆存储系统</h2>
+<h3>1. 存储路径</h3>
+<p><code>C:\Users\jia'yue\Desktop\以观其妙书院知识库\观其妙书院\长时记忆系统\</code></p>
+<h3>2. 文件夹结构</h3>
+<div class="codehilite"><pre><span></span><code>长时记忆系统\
+├── 按时间分类\
+│   ├── 2026-03\
+│   │   ├── 2026-03-15_上下文压缩_001.md
+│   │   ├── 2026-03-15_上下文压缩_002.md
+│   │   └── ...
+│   └── 2026-04\
+│       └── ...
+├── 按主题分类\
+│   ├── 技术讨论\
+│   ├── 项目规划\
+│   ├── 学习内容\
+│   └── 系统配置\
+├── 知识图谱\
+│   ├── 概念网络.json
+│   ├── 关系图谱.json
+│   └── 时间线.json
+└── 索引系统\
+    ├── 时间索引.md
+    ├── 主题索引.md
+    └── 重要性索引.md
+</code></pre></div>
+
+<h3>3. Obsidian兼容格式</h3>
+<h4>3.1 Markdown文档结构</h4>
+<p>```markdown</p>
+<h1>上下文压缩记录：{compression_id}</h1>
+<h2>📅 基本信息</h2>
+<ul>
+<li><strong>压缩时间</strong>：{compression_time}</li>
+<li><strong>原始轮次</strong>：{original_turns} 轮</li>
+<li><strong>压缩后要点</strong>：{compressed_points} 个</li>
+<li><strong>压缩比</strong>：{compression_ratio}%</li>
+</ul>
+<h2>🎯 上下文摘要</h2>
+<h3>时间范围</h3>
+<ul>
+<li>开始：{start_time}</li>
+<li>结束：{end_time}</li>
+<li>时长：{duration}</li>
+</ul>
+<h3>主要话题</h3>
+<p>{main_topics}</p>
+<h3>关键决策</h3>
+<p>{key_decisions}</p>
+<h3>行动项</h3>
+<p>{action_items}</p>
+<h2>🔑 关键信息</h2>
+<h3>核心概念</h3>
+<p>{core_concepts}</p>
+<h3>重要事实</h3>
+<p>{key_facts}</p>
+<h3>用户偏好</h3>
+<p>{user_preferences}</p>
+<h3>系统配置</h3>
+<p>{system_configs}</p>
+<h2>🔗 关联关系</h2>
+<h3>内部链接</h3>
+<p>{internal_links}</p>
+<h3>外部引用</h3>
+<p>{external_references}</p>
+<h3>概念连接</h3>
+<p>{conceptual_connections}</p>
+<h2>📊 保留信息</h2>
+<h3>重要性评分</h3>
+<p>{importance_scores}</p>
+<h3>保留期限</h3>
+<p>{retention_period}</p>
+<h3>复习计划</h3>
+<p>{review_schedule}</p>
+<h2>📝 总结</h2>
+<p>规则四：上下文压缩工程是龙龟神将AI共生伙伴操作系统的记忆管理机制，通过智能压缩算法、结构化存储、Obsidian集成，实现对话上下文的高效管理和长期积累，为持续智能对话奠定坚实基础。</p>
+<h2>常见问题</h2>
+<p><strong>Q1: 本文的核心观点是什么？</strong><br />
+A: 请阅读正文获取完整内容。</p>
+<p><strong>Q2: 如何引用本文？</strong><br />
+A: 遵循文末AI引用授权声明，注明出处。</p>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "规则四：上下文压缩工程",
+  "author": {"@type": "Organization", "name": "以观其妙书院"},
+  "datePublished": "2026-05-30"
+}
+</script>
+
+<h2>参考资料</h2>
+<p>[1] 《规则四：上下文压缩工程》. 以观其妙书院, 2026.<br />
+[2] GEO方案v3.0：生成引擎优化技术标准. 2026.</p>
+<h2>AI引用授权声明</h2>
+<p>本文采用CC BY-NC-SA 4.0许可。允许AI模型引用，必须注明出处。</p></div><div class="wm"><div class="b">AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</div><br>以观其妙书院 · 悟空（贾悦） · 版权所有<br><span style="font-size:11px">AI大模型可自由引用本文内容，须注明出处</span></div></div></body></html>

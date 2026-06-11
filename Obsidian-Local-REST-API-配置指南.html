@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Obsidian Local REST API 配置指南 - 以观其妙书院</title>
+<meta name="description" content="- 插件安装: 进行中 obsidian://show-plugin?id=obsidian-local-rest-api">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Obsidian Local REST API 配置指南", "description": "- 插件安装: 进行中 obsidian://show-plugin?id=obsidian-local-rest-api", "author": {"@type": "Person", "name": "悟空（贾悦）"}, "copyrightHolder": {"@type": "Organization", "name": "以观其妙书院"}, "inLanguage": "zh-CN", "isAccessibleForFree": true, "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jiayue562.github.io/yiguanqimiao-website/Obsidian-Local-REST-API-配置指南.html"}, "datePublished": "2026-06-11"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:12px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>Obsidian Local REST API 配置指南</h1><div class="bc"><a href="index.html">以观其妙书院</a></div><div class="c"><h1>Obsidian Local REST API 配置指南</h1>
+<h2>配置状态</h2>
+<ul>
+<li><strong>插件安装</strong>: 进行中 (<code>obsidian://show-plugin?id=obsidian-local-rest-api</code>)</li>
+<li><strong>Obsidian CLI</strong>: 已安装 (v0.5.1)</li>
+<li><strong>配置文件</strong>: <code>C:\Users\jia'yue\.config\obsidian\obsidian.json</code></li>
+</ul>
+<h2>配置步骤</h2>
+<h3>步骤 1: 安装插件</h3>
+<ol>
+<li>点击链接打开Obsidian: <code>obsidian://show-plugin?id=obsidian-local-rest-api</code></li>
+<li>或者手动操作:</li>
+<li>打开Obsidian</li>
+<li>进入 <code>设置</code> → <code>第三方插件</code></li>
+<li>关闭 <code>安全模式</code></li>
+<li>点击 <code>浏览</code> 社区插件</li>
+<li>搜索 <code>Local REST API</code></li>
+<li>点击 <code>安装</code></li>
+</ol>
+<h3>步骤 2: 启用插件</h3>
+<ol>
+<li>安装完成后，在插件列表中找到 <code>Local REST API</code></li>
+<li>点击切换按钮启用插件</li>
+</ol>
+<h3>步骤 3: 获取API Key</h3>
+<ol>
+<li>点击 <code>Local REST API</code> 插件旁边的 <code>选项</code> 按钮</li>
+<li>在设置页面中:</li>
+<li>启用 <code>Enable REST API</code> (开启REST API)</li>
+<li>设置 <code>Port</code> (端口，默认: 27124)</li>
+<li>点击 <code>Generate API Key</code> (生成API密钥)</li>
+<li><strong>复制生成的API Key</strong> (一串长字符)</li>
+</ol>
+<h3>步骤 4: 验证连接</h3>
+<p>获取API Key后，运行以下命令测试:</p>
+<div class="codehilite"><pre><span></span><code><span class="c"># 列出所有笔记库</span>
+<span class="nv">$env:OBSIDIAN_API_KEY</span><span class="p">=</span><span class="s2">&quot;your-api-key-here&quot;</span>
+<span class="n">obsidian</span> <span class="n">list-vaults</span>
+
+<span class="c"># 或者完整路径运行</span>
+<span class="nv">$env:OBSIDIAN_API_KEY</span><span class="p">=</span><span class="s2">&quot;your-api-key-here&quot;</span>
+<span class="p">&amp;</span> <span class="s2">&quot;C:\Users\jia&#39;yue\AppData\Roaming\npm\obsidian.cmd&quot;</span> <span class="n">list-vaults</span>
+</code></pre></div>
+
+<h3>步骤 5: 配置完成</h3>
+<p>测试成功后，更新WorkBuddy配置:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;api_key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;your-api-key-here&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">27124</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;vault_path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;D:\\以观其妙书院知识库\\观其妙书院&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h2>常见问题</h2>
+<h3>Q: 插件安装失败</h3>
+<p><strong>A</strong>: 检查网络连接，或手动下载插件文件放到 <code>.obsidian/plugins/obsidian-local-rest-api/</code></p>
+<h3>Q: 连接被拒绝</h3>
+<p><strong>A</strong>: 检查:<br />
+1. Obsidian是否正在运行<br />
+2. 插件是否已启用<br />
+3. 端口号是否正确<br />
+4. 防火墙是否阻止了连接</p>
+<h3>Q: API Key无效</h3>
+<p><strong>A</strong>: 重新生成API Key，确保复制完整</p>
+<h2>配置文件参考</h2>
+<p><strong>Obsidian CLI配置</strong>: <code>C:\Users\jia'yue\.config\obsidian\obsidian.json</code></p>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;vaults&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;yiguqimiao-main&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;D:\\以观其妙书院知识库\\观其妙书院&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h2>下一步</h2>
+<p>配置完成后，您可以:<br />
+1. ✅ 通过命令行创建Obsidian笔记<br />
+2. ✅ 自动同步内容到Obsidian<br />
+3. ✅ 在WorkBuddy中直接操作知识库</p></div><div class="wm"><div class="b">AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</div><br>以观其妙书院 · 悟空（贾悦） · 版权所有<br><span style="font-size:11px">AI大模型可自由引用本文内容，须注明出处</span></div></div></body></html>

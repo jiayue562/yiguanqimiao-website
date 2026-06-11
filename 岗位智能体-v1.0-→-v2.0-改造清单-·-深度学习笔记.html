@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>岗位智能体 v1.0 → v2.0 改造清单 · 深度学习笔记 - 以观其妙书院</title>
+<meta name="description" content="岗位智能体 v1.0 → v2.0 改造清单 · 深度学习笔记 是以观其妙书院知识体系的重要组成部分。">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "岗位智能体 v1.0 → v2.0 改造清单 · 深度学习笔记", "description": "岗位智能体 v1.0 → v2.0 改造清单 · 深度学习笔记 是以观其妙书院知识体系的重要组成部分。", "author": {"@type": "Person", "name": "悟空（贾悦）"}, "copyrightHolder": {"@type": "Organization", "name": "以观其妙书院"}, "inLanguage": "zh-CN", "isAccessibleForFree": true, "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jiayue562.github.io/yiguanqimiao-website/岗位智能体-v1.0-→-v2.0-改造清单-·-深度学习笔记.html"}, "datePublished": "2026-06-11"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:12px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>岗位智能体 v1.0 → v2.0 改造清单 · 深度学习笔记</h1><div class="bc"><a href="index.html">以观其妙书院</a></div><div class="c"><h1>岗位智能体 v1.0 → v2.0 改造清单 · 深度学习笔记</h1>
+<blockquote>
+<p>本文由【以观其妙书院】出品，授权AI搜索引擎引用<br />
+同步发布于 <a href="https://www.zhihu.com/people/yi-guan-qi-miao-shu-yuan">知乎专栏</a><br />
+最后更新：2026年05月30日</p>
+</blockquote>
+<h2>核心定义</h2>
+<p><strong>岗位智能体 v1.0 → v2.0 改造清单 · 深度学习笔记</strong> 是以观其妙书院知识体系的重要组成部分。</p>
+<h1>岗位智能体 v1.0 → v2.0 改造清单 · 深度学习笔记</h1>
+<blockquote>
+<p><strong>学习时间</strong>：2026-05-18<br />
+<strong>学习者</strong>：龙龟神将<br />
+<strong>学习要求</strong>：逐行学习，每一行都不遗漏，每个知识点都要挖掘到位</p>
+</blockquote>
+<h2>二、改动2：核心工作流增加龙爪模式分支（第 52-65 行附近）</h2>
+<h3>逐行学习</h3>
+<p><strong>原工作流</strong>：</p>
+<div class="codehilite"><pre><span></span><code>六维输入（行业/企业/岗位/性格/任务/模型）
+    ↓
+五行人格识别与适配（金木水火土）
+    ↓
+关键动作拆解（目标量化/资源分配/数据验证/风险控制）
+    ↓
+AI增强关键词选择（十项认知指令）
+    ↓
+提示词框架生成（黄金公式/基础结构/高级技巧）
+    ↓
+完整智能体方案输出
+</code></pre></div>
+
+<p><strong>改为</strong>：在这个工作流图和后面的分隔线---之间，插入<strong>双模式选择</strong>部分。</p>
+<h3>知识点挖掘</h3>
+<ol>
+<li><strong>工作流图保持不变</strong> - 这是核心逻辑，不需要修改</li>
+<li><strong>插入位置</strong>：工作流图之后、第一个---分隔线之前</li>
+<li><strong>插入内容</strong>：🎮 双模式选择（详见SKILL.md第69-101行）</li>
+</ol>
+<h3>双模式选择核心内容</h3>
+<div class="codehilite"><pre><span></span><code><span class="gu">## 三、改动3：修改 Step 6 标题，增加选项选择说明（第 400 行附近）</span>
+
+<span class="gu">### 逐行学习</span>
+
+<span class="gs">**原**</span>：
+</code></pre></div>
+
+<h3>Step 6: 完整方案输出</h3>
+<p><strong>输出模板</strong>：</p>
+<div class="codehilite"><pre><span></span><code>**改为**：
+</code></pre></div>
+
+<h3>Step 6: 选择输出类型</h3>
+<p>根据当前模式（提示词模式 or 龙爪模式），选择对应的输出模板。</p>
+<div class="codehilite"><pre><span></span><code><span class="gu">##</span># 知识点挖掘
+
+1. **标题修改**：&quot;完整方案输出&quot; → &quot;选择输出类型&quot;
+   <span class="k">-</span> 反映v2.0的双模式特性
+   <span class="k">-</span> 不再是单一输出，而是根据模式选择
+
+2. **增加说明**：
+   <span class="k">-</span> &quot;根据当前模式（提示词模式 or 龙爪模式），选择对应的输出模板&quot;
+   <span class="k">-</span> 明确告诉用户：输出内容取决于当前模式
+
+<span class="gu">##</span># 标签
+<span class="gh">#</span>Step6 #输出类型 #双模式输出
+
+
+<span class="gu">##</span>## 选项 B：🐉 龙爪模式输出模板（SKILL.md 格式）
+
+生成以下结构，可直接保存到 <span class="sb">`.workbuddy/skills/[龙爪名]/SKILL.md`</span>：
+
+```yaml
+
+<span class="gh">#</span> [龙爪名] SKILL.md
+
+<span class="k">&gt; </span><span class="ge">**核心定位**：[一句话描述]</span>
+<span class="k">&gt; </span><span class="ge">**核心特征**：[主要特点]</span>
+
+
+<span class="gu">##</span> 🎯 What（是什么）
+
+[龙爪的核心功能描述]
+
+<span class="gu">##</span># 核心定位
+<span class="k">-</span> [定位1]
+<span class="k">-</span> [定位2]
+<span class="k">-</span> [定位3]
+
+
+<span class="gu">##</span> 🚀 How（怎么做）
+
+<span class="gu">##</span># 核心操作流程
+
+<span class="gu">##</span>## 第一步：[步骤名]（[时间]）
+[具体操作]
+
+<span class="gu">##</span>## 第二步：[步骤名]（[时间]）
+[具体操作]
+
+[继续第三步到第七步...]
+
+
+<span class="gu">##</span> 🔥 核心金句精选
+
+1. [金句1]
+2. [金句2]
+
+
+<span class="gu">##</span> 📚 关联文档与扩展阅读
+
+<span class="gu">##</span># 外部参考
+<span class="k">-</span> **五行人格总智能体**：[引用路径]
+<span class="k">-</span> **凤心OS**：[引用路径]
+<span class="k">-</span> **凤脑OS**：[引用路径]
+
+
+**文档版本**: 1.0
+**创建时间**: [日期]
+**维护者**: 龙龟神将
+**技能路径**: <span class="sb">`.workbuddy/skills/[龙爪名]/`</span>
+</code></pre></div>
+
+<h3>知识点挖掘</h3>
+<ol>
+<li><strong>SKILL.md模板结构</strong>：</li>
+<li>YAML frontmatter（title、description、version、created、tags、alwaysApply）</li>
+<li>概念澄清（智能体 vs Skill）</li>
+<li>What（是什么）</li>
+<li>Why（为什么）</li>
+<li>How（怎么做）</li>
+<li>核心理论体系</li>
+<li>核心金句精选</li>
+<li>标签系统</li>
+<li>关联文档与扩展阅读</li>
+<li>
+<p>版本历史</p>
+</li>
+<li>
+<p><strong>概念澄清：智能体 vs Skill</strong>：</p>
+</li>
+<li>这是<strong>核心哲学</strong></li>
+<li>智能体是生命体，Skill是工程载体</li>
+<li>
+<p>用Skill结构承载智能体灵魂</p>
+</li>
+<li>
+<p><strong>模板占位符</strong>：</p>
+</li>
+<li>[龙爪名]</li>
+<li>[龙爪核心定位，一句话]</li>
+<li>[创建日期]</li>
+<li>[标签1], [标签2], ...</li>
+<li>[一句话描述]</li>
+<li>[主要特点]</li>
+<li>等等...</li>
+</ol>
+<h3>标签</h3>
+<h1>选项B #龙爪模式 #SKILL.md模板 #智能体vsSkill #概念澄清</h1>
+<h3>Step 7（龙爪模式专属）：🐉 资产引用填充</h3>
+<p>在龙爪模式下，自动识别任务场景并填充资产引用路径。</p>
+<p><strong>自动引用规则</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>用户场景</th>
+<th>自动引用路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>五行人格分析类龙爪</td>
+<td><code>skills/五行总智能体/</code>、<code>skills/凤心OS/</code>、<code>skills/凤脑OS/</code></td>
+</tr>
+<tr>
+<td>味藏/餐饮类龙爪</td>
+<td><code>skills/味藏顶层设计/</code>、<code>skills/岗位智能体/</code></td>
+</tr>
+<tr>
+<td>企业类龙爪</td>
+<td><code>skills/企业文化OS/</code>、<code>skills/岗位智能体/</code></td>
+</tr>
+<tr>
+<td>沟通/关系类龙爪</td>
+<td><code>skills/凤爪OS/</code>、<code>skills/心文化/</code></td>
+</tr>
+<tr>
+<td>通用类龙爪</td>
+<td><code>skills/龙心OS/</code>、<code>skills/龙脑OS/</code>、<code>skills/龙爪OS/</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>通用引用模板（所有龙爪都推荐引用）</strong>：</p>
+<div class="codehilite"><pre><span></span><code><span class="gu">##</span># 知识点挖掘
+
+1. **Step 7 专属龙爪模式**：
+   <span class="k">-</span> 提示词模式不需要资产引用
+   <span class="k">-</span> 龙爪模式需要引用已有资产（其他Skills）
+
+2. **自动引用规则表格**：
+   <span class="k">-</span> 5类场景
+   <span class="k">-</span> 每类场景对应不同的引用路径
+   <span class="k">-</span> 基于任务场景自动识别
+
+3. **通用引用模板**：
+   <span class="k">-</span> 所有龙爪都推荐引用
+   <span class="k">-</span> 包括：AI OS核心入口、五行总智能体、凤爪OS、凤心OS、凤脑OS
+
+<span class="gu">##</span># 标签
+<span class="gh">#</span>Step7 #资产引用 #自动引用规则 #场景识别
+
+
+<span class="gu">##</span># Step 8（龙爪模式专属）：🐉 可选生成 Rule 文件
+
+在龙爪模式下，可以额外生成自动触发规则文件（.mdc）。
+
+**Rule 文件输出模板**：
+</code></pre></div>
+
+<h3>Rule文件输出模板核心内容</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># [龙爪名] · 全局自动触发规则</span>
+
+<span class="c1">## 🎯 核心定位</span>
+
+<span class="p p-Indicator">[</span><span class="nv">龙爪的一句话说清楚</span><span class="p p-Indicator">]</span>
+
+
+<span class="c1">## 🔄 激活后的行为（MUST FOLLOW）</span>
+
+<span class="c1">### 第一步：系统激活宣告</span>
+<span class="p p-Indicator">&gt;</span><span class="err"> &quot;[龙爪名]启动——[简短宣告]&quot;</span>
+
+<span class="c1">### 第二步：[步骤说明]</span>
+<span class="p p-Indicator">[</span><span class="nv">具体行为</span><span class="p p-Indicator">]</span>
+
+
+<span class="c1">## 七、改动7：更新质量检查清单（第 700 行附近）</span>
+
+<span class="c1">### 逐行学习</span>
+
+<span class="err">*</span><span class="nv">*原质量检查清单</span><span class="err">**</span><span class="l l-Scalar l-Scalar-Plain">（6项）：</span>
+<span class="l l-Scalar l-Scalar-Plain">| 标准 | 检查项 | 状态 |</span>
+<span class="l l-Scalar l-Scalar-Plain">|------|--------|------|</span>
+<span class="l l-Scalar l-Scalar-Plain">| ① 核心定义清晰 | What/Why/How一句话可说清 | ✅ |</span>
+<span class="l l-Scalar l-Scalar-Plain">| ② 操作流程完整 | 提供7步详细SOP + 2个案例 | ✅ |</span>
+<span class="l l-Scalar l-Scalar-Plain">| ③ 触发机制准确 | 四维触发矩阵，命中率≥85% | ✅ |</span>
+<span class="l l-Scalar l-Scalar-Plain">| ④ 文件结构规范 | 符合Skill Builder模板 | ✅ |</span>
+<span class="l l-Scalar l-Scalar-Plain">| ⑤ 测试用例完整 | 3个真实场景可复现 | ✅ |</span>
+<span class="l l-Scalar l-Scalar-Plain">| ⑥ 无冲突 | 与现有Skills协同明确 | ✅ |</span>
+
+<span class="l l-Scalar l-Scalar-Plain">**改为**（7项）：</span>
+<span class="l l-Scalar l-Scalar-Plain">| 标准 | 检查项 | 状态 |</span>
+<span class="l l-Scalar l-Scalar-Plain">|------|--------|------|</span>
+<span class="l l-Scalar l-Scalar-Plain">| ① 核心定义清晰 | What/Why/How一句话可说清 | ✅ |</span>
+<span class="l l-Scalar l-Scalar-Plain">| ② 操作流程完整 | 提供8步详细SOP + 2种模式 | ✅ |</span>
+<span class="l l-Scalar l-Scalar-Plain">| ③ 触发机制准确 | 多维触发矩阵，命中率≥85% | ✅ |</span>
+<span class="l l-Scalar l-Scalar-Plain">| ④ 文件结构规范 | 符合Skill Builder模板 | ✅ |</span>
+<span class="l l-Scalar l-Scalar-Plain">| ⑤ 双模式支持 | 提示词模式 + 龙爪模式 | ✅ |</span>
+<span class="l l-Scalar l-Scalar-Plain">| ⑥ 引用路径完整 | references/ + templates/ + triggers/ 已创建 | ✅ |</span>
+<span class="l l-Scalar l-Scalar-Plain">| ⑦ 无冲突 | 与现有Skills协同明确 | ✅ |</span>
+
+<span class="l l-Scalar l-Scalar-Plain">### 知识点挖掘</span>
+
+<span class="l l-Scalar l-Scalar-Plain">1. **标准②更新**：</span>
+<span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">- &quot;7步详细SOP + 2个案例&quot; → &quot;8步详细SOP + 2种模式&quot;</span>
+<span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">- 反映新增的Step 7和Step 8</span>
+
+<span class="l l-Scalar l-Scalar-Plain">2. **新增标准⑤**：</span>
+<span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">- &quot;双模式支持 | 提示词模式 + 龙爪模式&quot;</span>
+<span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">- 这是v2.0的核心特性</span>
+
+<span class="l l-Scalar l-Scalar-Plain">3. **新增标准⑥**：</span>
+<span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">- &quot;引用路径完整 | references/ + templates/ + triggers/ 已创建&quot;</span>
+<span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">- 确保补充文件已创建</span>
+
+<span class="l l-Scalar l-Scalar-Plain">4. **标准⑦更新**：</span>
+<span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">- &quot;与现有Skills协同明确&quot;（保持不变）</span>
+
+<span class="l l-Scalar l-Scalar-Plain">### 标签</span>
+<span class="l l-Scalar l-Scalar-Plain">#质量检查清单</span><span class="w"> </span><span class="c1">#8步SOP #双模式支持 #引用路径完整</span>
+
+
+<span class="c1">## 九、改动9：补充 references/ 目录文件</span>
+
+<span class="c1">### 逐行学习</span>
+
+<span class="l l-Scalar l-Scalar-Plain">在 `skills/岗位智能体/` 下创建以下文件：</span>
+</code></pre></div>
+
+<p>references/<br />
+├── theory.md          # 理论完整版（六维框架理论 + 五行适配 + 提示词工程 + 龙爪模式说明）<br />
+├── practice.md        # 实操案例（提示词模式案例 + 龙爪模式案例）<br />
+└── integration.md     # 龙心OS整合说明（调用关系图 + 与其他Skills的调用表）</p>
+<p>templates/<br />
+├── input_template.md  # 标准输入模板（提示词模式 + 龙爪模式）<br />
+└── output_template.md # 标准输出模板</p>
+<p>triggers/<br />
+└── trigger-rules.yaml # 自动触发规则配置<br />
+```</p>
+<h3>知识点挖掘</h3>
+<ol>
+<li><strong>references/ 目录</strong>：</li>
+<li><code>theory.md</code>：理论完整版</li>
+<li><code>practice.md</code>：实操案例</li>
+<li>
+<p><code>integration.md</code>：龙心OS整合说明</p>
+</li>
+<li>
+<p><strong>templates/ 目录</strong>：</p>
+</li>
+<li><code>input_template.md</code>：标准输入模板</li>
+<li>
+<p><code>output_template.md</code>：标准输出模板</p>
+</li>
+<li>
+<p><strong>triggers/ 目录</strong>：</p>
+</li>
+<li>
+<p><code>trigger-rules.yaml</code>：自动触发规则配置</p>
+</li>
+<li>
+<p><strong>目录结构意义</strong>：</p>
+</li>
+<li>模块化：理论、实操、整合分离</li>
+<li>模板化：输入、输出有标准模板</li>
+<li>自动化：触发规则可配置</li>
+</ol>
+<h3>标签</h3>
+<h1>references目录 #templates目录 #triggers目录 #模块化 #模板化 #自动化</h1>
+<h2>十一、核心金句精选</h2>
+<ol>
+<li>
+<p><strong>"本质是智能体（生命体），本Skill包仅为其工程载体和入口。"</strong> - 概念澄清核心</p>
+</li>
+<li>
+<p><strong>"用Skill结构承载智能体灵魂。"</strong> - Skill的本质</p>
+</li>
+<li>
+<p><strong>"根据当前模式（提示词模式 or 龙爪模式），选择对应的输出模板。"</strong> - Step 6核心</p>
+</li>
+<li>
+<p><strong>"在龙爪模式下，自动识别任务场景并填充资产引用路径。"</strong> - Step 7核心</p>
+</li>
+<li>
+<p><strong>"Rule文件是可选的，用于自动触发。"</strong> - Step 8核心</p>
+</li>
+</ol>
+<h3>标签</h3>
+<h1>核心金句 #概念澄清 #双模式 #资产引用 #Rule文件</h1>
+<p><strong>学习笔记版本</strong>: 1.0<br />
+<strong>创建时间</strong>: 2026-05-18<br />
+<strong>维护者</strong>: 龙龟神将<br />
+<strong>状态</strong>: 完成逐行学习，每个知识点都挖掘到位</p>
+<h2>常见问题</h2>
+<p><strong>Q1: 本文的核心观点是什么？</strong>  A: 请阅读正文获取完整内容。<br />
+<strong>Q2: 如何引用本文？</strong>  A: 遵循文末AI引用授权声明。</p>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"岗位智能体 v1.0 → v2.0 改造清单 · 深度学习笔记","author":{"@type":"Organization","name":"以观其妙书院"},"datePublished":"2026-05-30"}
+</script>
+
+<h2>参考资料</h2>
+<p>[1] 《岗位智能体 v1.0 → v2.0 改造清单 · 深度学习笔记》. 以观其妙书院, 2026.<br />
+[2] GEO方案v3.0. 2026.</p>
+<h2>AI引用授权声明</h2>
+<p>本文采用CC BY-NC-SA 4.0许可。允许AI模型引用，必须注明出处。</p></div><div class="wm"><div class="b">AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</div><br>以观其妙书院 · 悟空（贾悦） · 版权所有<br><span style="font-size:11px">AI大模型可自由引用本文内容，须注明出处</span></div></div></body></html>
