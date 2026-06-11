@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>龙心 OS Framework 层 - 龙心OS知识库</title>
+<meta name="description" content="龙心 OS Framework 层">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"龙心 OS Framework 层","author":{"@type":"Person","name":"悟空（贾悦）"},"copyrightHolder":{"@type":"Organization","name":"以观其妙书院"},"description":"龙心 OS Framework 层","inLanguage":"zh-CN","isAccessibleForFree":true,"identifier":"yiguanqimiao-unique-watermark-wk-jiayue-academy"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.bc a:hover{text-decoration:underline}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c blockquote p{margin:0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>龙心 OS Framework 层</h1><div class="bc"><a href="../index.html">龙心OS知识库</a> &rsaquo; <a href="index.html">01-龙心 OS 核心系统\framework</a></div><div class="c"><h1>龙心 OS Framework 层</h1>
+<blockquote>
+<p>🧠 智能体核心架构 · 感知 - 决策 - 学习 · 2026-04-16</p>
+</blockquote>
+<p><strong>版本</strong>: v1.0</p>
+<p><strong>日期</strong>: 2026-04-16</p>
+<p><strong>标签</strong>: #Framework #智能体架构 #龙心 OS</p>
+<hr>
+<h2>🏗️ Framework 层定位</h2>
+<p>Framework 层是龙心 OS 的"大脑"，实现真正的智能体核心能力：</p>
+<ul>
+<li>**自主感知**: 读取上下文、理解意图</li>
+<li>**智能决策**: 场景识别、引擎路由</li>
+<li>**持续学习**: 反馈收集、权重优化</li>
+</ul>
+<hr>
+<h2>🌲 三层架构</h2>
+<pre><code>
+┌─────────────────────────────────────────┐
+
+│ 概念层 (Conceptual Layer)               │
+
+│ - SKILL.md 文档澄清                     │
+
+│ - 智能体 vs Skill 区分                  │
+
+└─────────────────────────────────────────┘
+
+              ↓
+
+┌─────────────────────────────────────────┐
+
+│ Framework 层 (核心智能层)                │
+
+│ - 场景识别矩阵 (S0-S9)                  │
+
+│ - 引擎路由决策树                        │
+
+│ - 反馈学习机制                          │
+
+└─────────────────────────────────────────┘
+
+              ↓
+
+┌─────────────────────────────────────────┐
+
+│ 载体层 (Carrier Layer)                  │
+
+│ - Skill 结构 (triggers/templates)       │
+
+│ - workbuddy 基础设施                    │
+
+└─────────────────────────────────────────┘
+
+</code></pre>
+<hr>
+<h2>🧠 核心模块</h2>
+<h3>1. 场景识别器 (Scene Classifier)</h3>
+<pre><code>
+class SceneClassifier:
+
+    def __init__(self):
+
+        self.scene_matrix = load_scene_matrix()
+
+        self.weights = load_weights()
+
+    
+
+    def classify(self, input_text, context):
+
+        features = self.extract_features(input_text, context)
+
+        scores = self.calculate_scores(features)
+
+        best_scene = self.select_best_scene(scores)
+
+        confidence = scores[best_scene]
+
+        return best_scene, confidence
+
+</code></pre>
+<hr>
+<h3>2. 引擎路由器 (Engine Router)</h3>
+<pre><code>
+class EngineRouter:
+
+    def __init__(self):
+
+        self.engine_map = load_engine_map()
+
+        self.sub_agents = load_sub_agents()
+
+    
+
+    def route(self, scene_code, confidence):
+
+        if confidence &gt;= 0.9:
+
+            return self.single_engine_route(scene_code)
+
+        elif confidence &gt;= 0.7:
+
+            return self.multi_engine_route(scene_code)
+
+        else:
+
+            return self.default_route()
+
+</code></pre>
+<hr>
+<h3>3. 反馈学习器 (Feedback Learner)</h3>
+<pre><code>
+class FeedbackLearner:
+
+    def __init__(self):
+
+        self.learning_rate = 0.1
+
+        self.feedback_history = []
+
+    
+
+    def learn(self, scene_code, feedback, outcome):
+
+        # 显式反馈
+
+        if feedback == &#x27;positive&#x27;:
+
+            self.adjust_weight(scene_code, +0.1)
+
+        elif feedback == &#x27;negative&#x27;:
+
+            self.adjust_weight(scene_code, -0.2)
+
+        
+
+        # 隐式反馈
+
+        if outcome == &#x27;continued&#x27;:
+
+            self.adjust_weight(scene_code, +0.05)
+
+        elif outcome == &#x27;abandoned&#x27;:
+
+            self.adjust_weight(scene_code, -0.1)
+
+</code></pre>
+<hr>
+<h2>📊 数据流</h2>
+<pre><code>
+用户输入
+
+    │
+
+    ↓
+
+┌─────────────────┐
+
+│ 上下文感知模块  │
+
+│ - 对话历史      │
+
+│ - 情感分析      │
+
+│ - 话题识别      │
+
+└────────┬────────┘
+
+         │
+
+         ↓
+
+┌─────────────────┐
+
+│ 场景识别器      │
+
+│ - 特征提取      │
+
+│ - 置信度评分    │
+
+│ - S0-S9 分类    │
+
+└────────┬────────┘
+
+         │
+
+         ↓
+
+┌─────────────────┐
+
+│ 引擎路由器      │
+
+│ - 单引擎        │
+
+│ - 多引擎协同    │
+
+│ - 全引擎        │
+
+└────────┬────────┘
+
+         │
+
+         ↓
+
+┌─────────────────┐
+
+│ 子智能体执行    │
+
+│ - 知行合一      │
+
+│ - 知识学习      │
+
+│ - 人机协同      │
+
+│ - 象思维        │
+
+│ - 五色光思维    │
+
+└────────┬────────┘
+
+         │
+
+         ↓
+
+┌─────────────────┐
+
+│ 反馈学习器      │
+
+│ - 收集反馈      │
+
+│ - 调整权重      │
+
+│ - 优化路由      │
+
+└─────────────────┘
+
+</code></pre>
+<hr>
+<h2>🔄 学习闭环</h2>
+<pre><code>
+┌─────────────────────────────────────────┐
+
+│           持续学习进化                  │
+
+│                                         │
+
+│  感知 → 决策 → 行动 → 反馈 → 学习      │
+
+│   ↑                              │      │
+
+│   └──────────────────────────────┘      │
+
+│                                         │
+
+│  每次交互都是学习机会                   │
+
+│  每次反馈都优化系统                     │
+
+└─────────────────────────────────────────┘
+
+</code></pre>
+<hr>
+<p>_Framework 层 v1.0 · 2026-04-16 · 龙心 OS_</p></div>
+<div class="wm"><div class="b">AI Knowledge Base &middot; GEO</div><p>悟空（贾悦） | 以观其妙书院</p><p>AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</p></div></div></body></html>

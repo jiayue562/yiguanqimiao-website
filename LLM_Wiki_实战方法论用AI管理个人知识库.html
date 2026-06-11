@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>LLM Wiki 实战方法论：用AI管理个人知识库 - 龙心OS知识库</title>
+<meta name="description" content="LLM Wiki 实战方法论：用AI管理个人知识库">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"LLM Wiki 实战方法论：用AI管理个人知识库","author":{"@type":"Person","name":"悟空（贾悦）"},"copyrightHolder":{"@type":"Organization","name":"以观其妙书院"},"description":"LLM Wiki 实战方法论：用AI管理个人知识库","inLanguage":"zh-CN","isAccessibleForFree":true,"identifier":"yiguanqimiao-unique-watermark-wk-jiayue-academy"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.bc a:hover{text-decoration:underline}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c blockquote p{margin:0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>LLM Wiki 实战方法论：用AI管理个人知识库</h1><div class="bc"><a href="../index.html">龙心OS知识库</a> &rsaquo; <a href="index.html">knowledge-base\AI-OS-知识库</a></div><div class="c"><h1>LLM Wiki 实战方法论：用AI管理个人知识库</h1>
+<blockquote>
+<p>**位置**: 龙脑OS·知识地基层 | **方法来源**: Andrej Karpathy + 个人实践</p>
+<p>_别让AI每次都从零开始，让它帮你把知识攒起来_</p>
+</blockquote>
+<hr>
+<h2>一、核心问题</h2>
+<p>同一个问题换个session问AI，它又从头推导一遍。之前聊过的上下文全丢了。</p>
+<p><strong>Karpathy的解法</strong>: 让LLM把每次对话中产生的知识沉淀成Markdown文件。下次再问，AI先翻已有的笔记，在这个基础上往前推。知识像滚雪球一样越攒越多，交叉引用越来越密，AI对你的领域理解越来越深。</p>
+<blockquote>
+<p>维护知识库最累的不是阅读和思考，而是记账。</p>
+</blockquote>
+<p>读文章、判断价值、决定方向 — 这些是人该干的事。但整理格式、更新链接、维护索引、检查哪篇过时了 — 这些bookkeeping的活，交给AI干最合适。</p>
+<hr>
+<h2>二、三层架构 vs 五层架构</h2>
+<h3>Karpathy的三层</h3>
+<p>| 层 | 干什么 | 谁管 |</p>
+<p>|----|--------|------|</p>
+<p>| Raw Sources | 原始资料丢进来，只读不改 | 人选材料 |</p>
+<p>| The Wiki | LLM生成的知识产物：摘要、概念页、对比页 | LLM维护 |</p>
+<p>| The Schema | 规则文件，告诉LLM该怎么干活 | 人和LLM一起维护 |</p>
+<h3>我的五层（Obsidian + OpenClaw + Claude Code）</h3>
+<pre><code>
+Notes/（输入层）
+
+  ├── Clippings/    网页剪藏
+
+  ├── Inbox/        碎片想法
+
+  └── Conversation/ 跟AI的有价值对话
+
+        ↓ Ingest 分发
+
+Knowledge/（知识层）    方法论、读书笔记、原创思考
+
+Software/（技能层）      工具技巧、开发思考、产品研发计划
+
+LifeOS/（行动层）        投资、健康、保险、联系人
+
+        ↓ 素材调用
+
+Writing/（产出层）       视频脚本、文章、运营SOP
+
+</code></pre>
+<p><strong>关键差异</strong>:</p>
+<ul>
+<li>Karpathy的Wiki是终点，知识沉淀下来就完了</li>
+<li>我做内容创作，知识存着不用等于没有 → 多了产出层</li>
+<li>行动层意味着知识要落地（投资笔记要指导交易决策）</li>
+<li>产出层意味着知识要变成产品（视频、文章、课程）</li>
+</ul>
+<hr>
+<h2>三、三大操作流程</h2>
+<h3>3.1 Ingest（入库）：先报计划，再执行</h3>
+<p>用户说「处理一下Notes/」，Agent就开始干活。</p>
+<p><strong>第一步：列方案。</strong> 扫描Notes/下所有未处理内容，列出表格：</p>
+<p>| 文件 | 建议放哪 | 怎么处理 | 为什么 |</p>
+<p>|------|---------|---------|--------|</p>
+<p>| xxx.md | Software/Skills/ | 合并到已有文件 | 内容跟现有文档重叠 |</p>
+<p>| yyy.md | Knowledge/ | 新建 | 全新主题 |</p>
+<p>| zzz.md | 留着 | 等补充 | 内容太短了 |</p>
+<p>等我确认后才执行。</p>
+<p><strong>第二步：分发。</strong> 按内容性质判断目标：</p>
+<ul>
+<li>软件工具、代码技巧 → Software/</li>
+<li>投资、保险、健康 → LifeOS/</li>
+<li>方法论、读书笔记 → Knowledge/</li>
+<li>内容创作方法论 → Writing/Knowledge/</li>
+<li>选题素材 → Writing/</li>
+<li>判断不了的 → 留在Notes/，等我定</li>
+</ul>
+<p><strong>第三步：加工。</strong> 读原文写摘要，创建或更新页面，补交叉引用。</p>
+<p><strong>第四步：清理。</strong> 原始文件从Notes/删掉。</p>
+<h3>3.2 Query（查询）：搜索 + 答案 + 反哺</h3>
+<p>用户提问，Agent在相关目录里搜索内容，综合多篇文件给答案。</p>
+<p><strong>关键在第三步 — 反哺</strong>：如果搜索过程中发现两篇文件内容互补但没互相链接，Agent会说出来，确认后就补上。</p>
+<blockquote>
+<p>示例：问「创业怎么找前1000个用户」，Agent找到了《头1000名用户》和《做产品的经验和感悟》。前者讲获客，后者讲产品打磨，互相补充但从来没链接过。发现这个关联后，补上了链接。</p>
+</blockquote>
+<p>Query的价值不只是回答问题，还在于暴露知识库的结构缺陷。</p>
+<h3>3.3 Lint（健康检查）：定期扫雷</h3>
+<p>四项检查：</p>
+<p>| 查什么 | 标准 |</p>
+<p>|--------|------|</p>
+<p>| 孤立页面 | 没有任何链接指向 |</p>
+<p>| 过时内容 | 超过90天没动过 |</p>
+<p>| 缺失引用 | 讲同一个概念但没互相链接 |</p>
+<p>| Notes/积压 | 超过7天没处理的输入 |</p>
+<p>跑完出报告，不自动改。</p>
+<p><strong>实践经验</strong>：按目录分别跑，不要一次全跑。Software/这种工具备忘目录，每篇本来就是独立的操作手册，报一堆「孤立页面」没意义。Knowledge/才是Lint真正能发挥价值的地方。</p>
+<hr>
+<h2>四、目录级索引</h2>
+<p>八个大类索引放在Workspace根目录：</p>
+<p>| 分类 | 子目录 | Vault |</p>
+<p>|------|--------|-------|</p>
+<p>| AI与技术 | AI工具经验、Claude Code、OpenClaw | Software/ |</p>
+<p>| 内容创作与IP | 创作方法论、运营SOP、会员内容 | Writing/ |</p>
+<p>| 投资与财经 | 宏观、个股、期权、加密 | LifeOS/ |</p>
+<p>| 管理与领导力 | 领导力、团队管理、职业发展 | Knowledge/ |</p>
+<p>| 创业 | 创业方法论 | Knowledge/ |</p>
+<p>| 个人成长 | 哲学思考、读书笔记 | Knowledge/ |</p>
+<p>| 生活管理 | 健身、英语、保险 | LifeOS/ |</p>
+<p>| 教育与回忆 | 亲子教育、个人回忆录 | Knowledge/ |</p>
+<p>只索引到目录级。文件级索引是维护噩梦 — 每加一篇文章就得更新，目录结构稳定后基本不用动。</p>
+<hr>
+<h2>五、两套方案对比</h2>
+<p>| 维度 | Karpathy | 我的方案 |</p>
+<p>|------|---------|---------|</p>
+<p>| 知识库定位 | 终点，沉淀就完了 | 弹药库，要变成产品 |</p>
+<p>| AI角色 | 全权管家，自主操作 | 参谋，提建议我拍板 |</p>
+<p>| 知识流向 | 单向：资料→Wiki | 多层：输入→沉淀→产出 |</p>
+<p>| Ingest | LLM自主分类更新 | 先列方案→确认→执行 |</p>
+<p>| Query | 查询→综合→自动反哺 | 搜索→综合→建议补链接 |</p>
+<p>| Lint | 检查矛盾过时孤立 | 四项检查+按目录分跑 |</p>
+<p>| 特殊文件 | index.md(文件级)+log.md | index.md(目录级) |</p>
+<p>| 操作规则 | CLAUDE.md | AGENTS.md(多Agent兼容) |</p>
+<p>| 对话沉淀 | 无 | Notes/Conversation/ |</p>
+<hr>
+<h2>知识链接</h2>
+<ul>
+<li>[[LLMification]] — Karpathy方法论概念定义</li>
+<li>[[知识编译]] — 编译思想详解</li>
+<li>[[知识活性]] — 知识活的五维度</li>
+<li>[[../../❤️ 龙心OS·智能发动机层/五大引擎/知识学习]] — 调用此方法论的引擎</li>
+</ul>
+<hr>
+<h2>🔗 关联文件</h2>
+<ul>
+<li>[[LLMification]]</li>
+<li>[[知识编译]]</li>
+<li>[[知识活性]]</li>
+<li>[[../../❤️ 龙心OS·智能发动机层/五大引擎/知识学习]]</li>
+</ul></div>
+<div class="wm"><div class="b">AI Knowledge Base &middot; GEO</div><p>悟空（贾悦） | 以观其妙书院</p><p>AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</p></div></div></body></html>
