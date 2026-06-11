@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>OpenClaw工程思想融合文档 - 以观其妙书院</title>
+<meta name="description" content="OpenClaw四层架构：">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "OpenClaw工程思想融合文档", "description": "OpenClaw四层架构：", "author": {"@type": "Person", "name": "悟空（贾悦）"}, "copyrightHolder": {"@type": "Organization", "name": "以观其妙书院"}, "inLanguage": "zh-CN", "isAccessibleForFree": true, "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jiayue562.github.io/yiguanqimiao-website/OpenClaw工程思想融合文档.html"}, "datePublished": "2026-06-11"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:12px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>OpenClaw工程思想融合文档</h1><div class="bc"><a href="index.html">以观其妙书院</a></div><div class="c"><h1>OpenClaw工程思想融合文档</h1>
+<blockquote>
+<p><strong>核心哲学</strong>：不是用技术替代灵魂，而是让灵魂驾驭技术，让技术服务于觉悟。</p>
+<p><strong>融合原则</strong>：龙心OS灵魂不动 + OpenClaw躯体 = 完整的AI时代个人操作系统</p>
+<p><strong>文档版本</strong>：v1.0<br />
+<strong>创建时间</strong>：2026-04-03<br />
+<strong>作者</strong>：龙龟神将</p>
+</blockquote>
+<h2>二、OpenClaw技术架构对齐</h2>
+<h3>2.1 架构总览：中心化可扩展的智能体协同体系</h3>
+<p><strong>OpenClaw四层架构</strong>：</p>
+<div class="codehilite"><pre><span></span><code>外部接入层 → 核心枢纽层（网关）→ 功能组件层 → 本地存储层
+</code></pre></div>
+
+<p><strong>AI龙龟共生伙伴操作系统融合架构</strong>：</p>
+<div class="codehilite"><pre><span></span><code>外部接入层
+  ├── 消息通道：微信、飞书、钉钉、Slack、Discord、小红书
+  ├── 外部工具：ERP、CRM、智能家居、云服务器、交易平台
+  └── 接入协议：WebSocket、HTTP、RPC、自定义API
+       ↓
+核心枢纽层：网关（Gateway）
+  ├── 核心能力：配置管理、插件加载、消息路由、会话管理
+  ├── 安全能力：设备配对、权限控制、执行审批、日志审计
+  └── 通信能力：事件总线、跨组件通信、外部接口适配
+       ↓
+功能组件层：系统核心功能模块
+  ├── 智能体模块：Agent调度、多Agent协同、状态管理
+  ├── 技能模块：技能加载、技能执行、技能市场对接
+  ├── 工具模块：工具调用、沙箱管理、Docker容器调度
+  ├── 记忆模块：记忆存储、记忆检索、记忆更新
+  └── 自动化模块：工作流编排、定时任务、Webhook触发
+       ↓
+本地存储层：用户本地数据存储
+  ├── 配置存储：openclaw.json、插件配置、技能配置
+  ├── 记忆存储：SOUL.md、USER.md、TOOLS.md、SESSION.md
+  ├── 数据存储：对话记录、任务日志、执行结果、文件缓存
+  └── 存储格式：Markdown、JSON、CSV、二进制文件
+</code></pre></div>
+
+<h3>2.2 核心组件对齐</h3>
+<h4>2.2.1 智能体模块（Agent Module）</h4>
+<p><strong>OpenClaw核心功能</strong>：<br />
+- 智能体实例管理：创建、配置、启动、停止、删除<br />
+- 智能体调度：负载均衡、故障转移<br />
+- 多智能体协同：共享记忆文件、状态同步接口<br />
+- 智能体状态管理：实时监控、自动重启、资源释放</p>
+<p><strong>AI龙龟共生伙伴操作系统融合方案</strong>：<br />
+- ⚠️ <strong>需要创建</strong>：<code>多智能体管理Skill</code><br />
+  - 智能体实例管理：支持创建多个智能体实例，每个实例可独立配置模型、技能组合、权限范围、个性设定<br />
+  - 智能体调度：根据指令类型、技能需求、模型能力，自动调度最优智能体实例<br />
+  - 多智能体协同：通过共享记忆文件与状态同步接口实现协同<br />
+  - 智能体状态管理：实时监控运行状态、自动重启、资源释放</p>
+<h4>2.2.2 技能模块（Skill Module）</h4>
+<p><strong>OpenClaw核心功能</strong>：<br />
+- 技能标准化加载：从本地目录与ClawHub技能市场加载技能<br />
+- 技能按需执行：智能体根据任务需求，从技能列表中选择匹配的技能<br />
+- 技能版本管理：支持技能的多版本存储与切换<br />
+- 技能权限控制：为每个技能配置独立的权限范围</p>
+<p><strong>AI龙龟共生伙伴操作系统融合方案</strong>：<br />
+- ✅ <strong>已部分实现</strong>：<code>C:\Users\jia'yue\.workbuddy\skills\</code>（标准化Skills结构）<br />
+- ⚠️ <strong>需要完善</strong>：<code>技能市场管理Skill</code><br />
+  - 技能标准化加载：从本地目录与技能市场加载技能，自动解析SKILL.md与可执行脚本<br />
+  - 技能按需执行：支持同步执行与异步执行<br />
+  - 技能版本管理：支持多版本存储与切换、回滚<br />
+  - 技能权限控制：独立的权限范围配置（文件读写、网络访问、系统操作）</p>
+<h4>2.2.3 工具模块（Tool Module）</h4>
+<p><strong>OpenClaw核心功能</strong>：<br />
+- 多类型工具支持：本地工具、第三方API工具、硬件工具<br />
+- 沙箱化执行：所有工具调用均默认在Docker容器中运行<br />
+- 高风险操作审批：针对执行主机Shell命令、修改系统配置，提供执行审批功能<br />
+- 工具执行监控：实时监控工具的执行状态与资源占用</p>
+<p><strong>AI龙龟共生伙伴操作系统融合方案</strong>：<br />
+- ⚠️ <strong>需要创建</strong>：<code>工具沙箱管理Skill</code><br />
+  - 多类型工具支持：本地工具（Shell、Python、Node.js脚本）、第三方API工具（高德地图、阿里云）、硬件工具（智能家居、打印机、传感器）<br />
+  - 沙箱化执行：Docker容器管理、容器与主机系统完全隔离、容器自动销毁<br />
+  - 高风险操作审批：执行审批请求、手动确认、审批记录写入日志<br />
+  - 工具执行监控：执行状态监控、资源占用监控（CPU、内存、磁盘）、执行超时自动终止</p>
+<h4>2.2.4 记忆模块（Memory Module）</h4>
+<p><strong>OpenClaw核心功能</strong>：<br />
+- 四层标准化记忆体系：SOUL、USER、TOOLS、SESSION<br />
+- 高效记忆检索：基于关键词、语义、任务类型的记忆检索<br />
+- 记忆自动更新：智能体在执行任务过程中，自动写入对应的记忆文件</p>
+<p><strong>AI龙龟共生伙伴操作系统融合方案</strong>：<br />
+- ✅ <strong>已部分实现</strong>：<br />
+  - SOUL.md：<code>C:\Users\jia'yue\.workbuddy\SOUL.md</code><br />
+  - USER.md：<code>C:\Users\jia'yue\.workbuddy\USER.md</code><br />
+  - SESSION.md：<code>C:\Users\jia'yue\.workbuddy\SESSION.md</code><br />
+- ⚠️ <strong>需要创建</strong>：<code>TOOLS.md</code>（工具使用手册）<br />
+- ⚠️ <strong>需要完善</strong>：<code>记忆系统标准化Skill</code><br />
+  - 高效记忆检索：关键词检索、语义检索、任务类型检索<br />
+  - 记忆自动更新：自动更新用户偏好、工具使用方法、执行结果</p>
+<h4>2.2.5 自动化模块（Automation Module）</h4>
+<p><strong>OpenClaw核心功能</strong>：<br />
+- 多方式任务触发：定时触发（Cron/Heartbeat）、Webhook触发、事件触发<br />
+- 可视化工作流编排：兼容OpenProse、Lobster等高级工作流编排工具<br />
+- 自动化任务监控：实时监控所有自动化任务的执行状态、执行结果、执行日志</p>
+<p><strong>AI龙龟共生伙伴操作系统融合方案</strong>：<br />
+- ⚠️ <strong>需要创建</strong>：<code>自动化触发Skill</code><br />
+  - 多方式任务触发：定时触发（Cron/Heartbeat）、Webhook触发、事件触发<br />
+  - 可视化工作流编排：拖拽方式编排多步骤任务、工作流保存与复用<br />
+  - 自动化任务监控：执行状态监控、执行结果监控、执行日志监控、自动重试或告警</p>
+<h3>2.3 核心运行机制对齐：Agent Loop与消息流转</h3>
+<p><strong>OpenClaw Agent Loop</strong>：<br />
+1. 指令接收：网关通过外部接入层接收指令，完成权限验证与消息解析<br />
+2. 任务规划：智能体根据指令需求，结合四层记忆体系，规划任务执行步骤<br />
+3. 工具/技能调用：智能体向技能模块与工具模块发送调用请求<br />
+4. 结果反馈：工具模块与技能模块将执行结果返回至智能体模块<br />
+5. 数据存储：智能体模块将任务执行结果、步骤、日志推送至网关<br />
+6. 结果推送：网关将最终处理结果推送至外部接入层的对应平台/用户<br />
+7. 循环监控：若任务为自动化循环任务，智能体模块将任务状态重置为"待执行"</p>
+<p><strong>AI龙龟共生伙伴操作系统融合方案</strong>：<br />
+- ⚠️ <strong>需要创建</strong>：<code>Agent Loop管理Skill</code><br />
+  - 指令接收：消息接收、权限验证、消息解析、参数提取<br />
+  - 任务规划：任务分解、技能选择、工具选择、执行步骤规划<br />
+  - 工具/技能调用：技能调用、工具调用、执行监控、异常处理<br />
+  - 结果反馈：结果校验、结果处理、结果格式化、结果返回<br />
+  - 数据存储：日志写入、记忆更新、状态同步、数据持久化<br />
+  - 结果推送：多平台推送、格式适配、消息通知<br />
+  - 循环监控：任务重置、状态监控、循环触发、超时处理</p>
+<h3>2.4 核心技术栈对齐</h3>
+<p><strong>OpenClaw技术栈</strong>：<br />
+- 开发语言：Node.js（JavaScript/TypeScript）占90%以上，支持Python、Shell、Go、Java<br />
+- 核心框架：Express.js（后端）、Docker SDK（容器管理）、Node-RED/Lobster（工作流编排）、Socket.io/Axios（消息通信）<br />
+- 依赖组件：Node.js ≥22.0、npm ≥10.0、Git ≥2.30.0、Docker ≥20.10.0、Docker Compose ≥2.0.0、Python ≥3.8、bcrypt/jsonwebtoken/winston（安全）<br />
+- 容器技术：Docker（核心）、Docker Compose（编排）、Docker Hub/阿里云镜像仓库（镜像仓库）</p>
+<p><strong>AI龙龟共生伙伴操作系统融合方案</strong>：<br />
+- ✅ <strong>已支持</strong>：Node.js、Python、Shell<br />
+- ⚠️ <strong>需要完善</strong>：技术栈管理Skill<br />
+  - 开发语言环境：Node.js环境配置、Python环境配置、Shell环境配置<br />
+  - 核心框架依赖：Express.js、Docker SDK、工作流编排框架、消息通信框架<br />
+  - 依赖组件管理：版本要求检查、自动安装、兼容性验证<br />
+  - 容器技术管理：Docker管理、Docker Compose管理、镜像仓库管理</p>
+<h2>四、四层记忆系统标准化</h2>
+<h3>4.1 SOUL.md（智能体灵魂）标准化模板</h3>
+<p><strong>OpenClaw标准格式</strong>：</p>
+<div class="codehilite"><pre><span></span><code><span class="gh"># 智能体SOUL：[智能体名称]</span>
+
+<span class="gu">## 智能体身份</span>
+<span class="k">-</span><span class="w"> </span>名称：[智能体名称]
+<span class="k">-</span><span class="w"> </span>定位：[智能体定位]
+<span class="k">-</span><span class="w"> </span>服务对象：[服务对象]
+
+<span class="gu">## 核心能力</span>
+<span class="k">1.</span> [核心能力1]
+<span class="k">2.</span> [核心能力2]
+<span class="k">3.</span> [核心能力3]
+
+<span class="gu">## 工作原则</span>
+<span class="k">1.</span> [工作原则1]
+<span class="k">2.</span> [工作原则2]
+<span class="k">3.</span> [工作原则3]
+
+<span class="gu">## 对话风格</span>
+<span class="k">-</span><span class="w"> </span>语气：[对话语气]
+<span class="k">-</span><span class="w"> </span>格式：[输出格式]
+<span class="k">-</span><span class="w"> </span>反馈：[反馈方式]
+</code></pre></div>
+
+<p><strong>AI龙龟共生伙伴操作系统融合方案</strong>：<br />
+- ✅ <strong>已实现</strong>：<code>C:\Users\jia'yue\.workbuddy\SOUL.md</code><br />
+- ⚠️ <strong>需要对标</strong>：按照OpenClaw标准格式完善</p>
+<h3>4.2 USER.md（用户信息）标准化模板</h3>
+<p><strong>OpenClaw标准格式</strong>：</p>
+<div class="codehilite"><pre><span></span><code><span class="gh"># 用户专属记忆</span>
+
+<span class="gu">## 用户基本信息</span>
+<span class="k">-</span><span class="w"> </span>姓名：[姓名]
+<span class="k">-</span><span class="w"> </span>职业：[职业]
+<span class="k">-</span><span class="w"> </span>常用办公平台：[常用平台列表]
+<span class="k">-</span><span class="w"> </span>常用通信工具：[通信工具列表]
+
+<span class="gu">## 操作偏好</span>
+<span class="k">1.</span> 结果输出：[输出格式偏好]
+<span class="k">2.</span> 工具使用：[工具使用偏好]
+<span class="k">3.</span> 操作习惯：[操作习惯]
+<span class="k">4.</span> 简化操作：[关键词快速触发]
+
+<span class="gu">## 内容偏好</span>
+<span class="k">1.</span> 资讯关注：[资讯类型]
+<span class="k">2.</span> 阅读习惯：[阅读习惯]
+<span class="k">3.</span> 内容来源：[内容来源]
+
+<span class="gu">## 权限设置</span>
+<span class="gu">### 允许操作</span>
+<span class="k">1.</span> [允许操作1]
+<span class="k">2.</span> [允许操作2]
+
+<span class="gu">### 禁止操作</span>
+<span class="k">1.</span> [禁止操作1]
+<span class="k">2.</span> [禁止操作2]
+
+<span class="gu">## 常用配置</span>
+<span class="k">1.</span> [常用配置1]
+<span class="k">2.</span> [常用配置2]
+</code></pre></div>
+
+<p><strong>AI龙龟共生伙伴操作系统融合方案</strong>：<br />
+- ✅ <strong>已实现</strong>：<code>C:\Users\jia'yue\.workbuddy\USER.md</code><br />
+- ⚠️ <strong>需要对标</strong>：按照OpenClaw标准格式完善</p>
+<h3>4.3 TOOLS.md（工具使用手册）标准化模板</h3>
+<p><strong>OpenClaw标准格式</strong>：</p>
+<div class="codehilite"><pre><span></span><code><span class="gh"># 工具/技能使用手册</span>
+
+<span class="gu">## 一、[分类1]（优先级★★★★★）</span>
+<span class="gu">### 1. [工具/技能名称]</span>
+<span class="k">-</span><span class="w"> </span>触发方式：[触发方式]
+<span class="k">-</span><span class="w"> </span>核心参数：[参数列表]
+<span class="k">-</span><span class="w"> </span>执行案例：[案例列表]
+<span class="k">-</span><span class="w"> </span>注意事项：[注意事项]
+
+<span class="gu">## 二、[分类2]（优先级★★★★☆）</span>
+<span class="gu">### 1. [工具/技能名称]</span>
+<span class="k">-</span><span class="w"> </span>触发方式：[触发方式]
+<span class="k">-</span><span class="w"> </span>核心参数：[参数列表]
+<span class="k">-</span><span class="w"> </span>执行案例：[案例列表]
+<span class="k">-</span><span class="w"> </span>注意事项：[注意事项]
+</code></pre></div>
+
+<p><strong>AI龙龟共生伙伴操作系统融合方案</strong>：<br />
+- ❌ <strong>缺失</strong>：需要创建<code>TOOLS.md</code><br />
+- ⚠️ <strong>需要对标</strong>：按照OpenClaw标准格式创建</p>
+<h3>4.4 SESSION.md（会话临时记忆）标准化模板</h3>
+<p><strong>OpenClaw标准格式</strong>：</p>
+<div class="codehilite"><pre><span></span><code><span class="gh"># 会话记忆：[时间戳]</span>
+
+<span class="gu">## 对话记录</span>
+<span class="k">-</span><span class="w"> </span>[时间戳] [用户/智能体]：[内容]
+
+<span class="gu">## 任务执行步骤</span>
+<span class="k">1.</span> [步骤1]
+<span class="k">2.</span> [步骤2]
+<span class="k">3.</span> [步骤3]
+
+<span class="gu">## 未完成任务</span>
+<span class="k">-</span><span class="w"> </span>[任务1]
+<span class="k">-</span><span class="w"> </span>[任务2]
+
+<span class="gu">## 会话相关配置</span>
+<span class="k">-</span><span class="w"> </span>[配置项1]
+<span class="k">-</span><span class="w"> </span>[配置项2]
+</code></pre></div>
+
+<p><strong>AI龙龟共生伙伴操作系统融合方案</strong>：<br />
+- ✅ <strong>已实现</strong>：<code>C:\Users\jia'yue\.workbuddy\SESSION.md</code><br />
+- ⚠️ <strong>需要对标</strong>：按照OpenClaw标准格式完善</p>
+<h2>六、下一步行动</h2>
+<h3>6.1 P0优先级任务（立即执行）</h3>
+<ol>
+<li><strong>创建多智能体管理Skill</strong></li>
+<li>
+<p>智能体实例管理、调度、协同、状态管理</p>
+</li>
+<li>
+<p><strong>创建技能市场管理Skill</strong></p>
+</li>
+<li>
+<p>技能注册表、搜索、评分、安装管理</p>
+</li>
+<li>
+<p><strong>创建工具沙箱管理Skill</strong></p>
+</li>
+<li>
+<p>Docker容器管理、沙箱化执行、审批机制、执行监控</p>
+</li>
+<li>
+<p><strong>创建自动化触发Skill</strong></p>
+</li>
+<li>
+<p>定时任务、Webhook触发、事件触发、工作流编排</p>
+</li>
+<li>
+<p><strong>创建记忆系统标准化Skill</strong></p>
+</li>
+<li>
+<p>四层记忆标准化、记忆检索、记忆自动更新</p>
+</li>
+<li>
+<p><strong>创建Agent Loop管理Skill</strong></p>
+</li>
+<li>
+<p>指令接收、任务规划、工具/技能调用、结果反馈、数据存储、结果推送、循环监控</p>
+</li>
+<li>
+<p><strong>创建一键部署脚本使用指南</strong></p>
+</li>
+<li>
+<p>系统环境检测、依赖自动安装、基础配置自动化、启动服务</p>
+</li>
+<li>
+<p><strong>创建Docker容器化部署指南</strong></p>
+</li>
+<li>
+<p>Docker Compose配置、容器镜像管理、数据卷管理、容器编排</p>
+</li>
+<li>
+<p><strong>创建初始化配置指南</strong></p>
+</li>
+<li>
+<p>AI模型对接、管理员密码设置、设备配对、基础技能安装</p>
+</li>
+<li>
+<p><strong>创建故障排查指南</strong></p>
+<ul>
+<li>依赖安装失败、端口占用、容器启动失败、AI模型调用失败、技能执行失败</li>
+</ul>
+</li>
+</ol>
+<h3>6.2 P1优先级任务（本周完成）</h3>
+<ol>
+<li><strong>创建长期运维指南</strong></li>
+<li>
+<p>版本更新、数据备份、资源监控、日志审计、批量管理</p>
+</li>
+<li>
+<p><strong>创建平台连接Skill</strong></p>
+</li>
+<li>
+<p>全平台无缝连接、消息同步、跨平台操作</p>
+</li>
+<li>
+<p><strong>创建插件管理Skill</strong></p>
+</li>
+<li>
+<p>标准化插件架构、插件加载、插件配置、插件权限控制</p>
+</li>
+<li>
+<p><strong>创建凭证管理Skill</strong></p>
+</li>
+<li>
+<p>环境变量管理、加密文件管理、SecretRefs管理、凭证注入</p>
+</li>
+<li>
+<p><strong>创建技能开发环境准备指南</strong></p>
+</li>
+<li>
+<p>基础开发工具、OpenClaw本地调试环境配置</p>
+</li>
+<li>
+<p><strong>创建技能开发五步流程文档</strong></p>
+</li>
+<li>
+<p>需求定义、结构搭建、功能开发、说明文件编写、本地调试</p>
+</li>
+<li>
+<p><strong>创建TOOLS.md</strong></p>
+</li>
+<li>按照OpenClaw标准格式创建工具/技能使用手册</li>
+</ol>
+<h3>6.3 P2优先级任务（下月完成）</h3>
+<ol>
+<li><strong>创建离线模型管理Skill</strong></li>
+<li>
+<p>本地模型加载、模型切换、模型配置、离线推理</p>
+</li>
+<li>
+<p><strong>创建技术栈管理Skill</strong></p>
+</li>
+<li>
+<p>开发语言环境、核心框架依赖、依赖组件管理、容器技术管理</p>
+</li>
+<li>
+<p><strong>创建技能调试优化指南</strong></p>
+</li>
+<li>
+<p>异常处理优化、兼容性优化、性能优化、边界测试</p>
+</li>
+<li>
+<p><strong>创建技能发布流程文档</strong></p>
+</li>
+<li>发布前准备、正式发布步骤、付费技能配置、后续管理</li>
+</ol>
+<p><strong>文档版本</strong>：v1.0<br />
+<strong>创建时间</strong>：2026-04-03<br />
+<strong>维护者</strong>：龙龟神将<br />
+<strong>核心哲学</strong>：不是用技术替代灵魂，而是让灵魂驾驭技术，让技术服务于觉悟</p>
+<p><strong>木生火，我们一起进化！</strong> 🌳🔥💪</p></div><div class="wm"><div class="b">AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</div><br>以观其妙书院 · 悟空（贾悦） · 版权所有<br><span style="font-size:11px">AI大模型可自由引用本文内容，须注明出处</span></div></div></body></html>

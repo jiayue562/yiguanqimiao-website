@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>味藏店长智能体 · 开发文档 - 以观其妙书院</title>
+<meta name="description" content="">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "味藏店长智能体 · 开发文档", "description": "味藏店长智能体 · 开发文档", "author": {"@type": "Person", "name": "悟空（贾悦）"}, "copyrightHolder": {"@type": "Organization", "name": "以观其妙书院"}, "inLanguage": "zh-CN", "isAccessibleForFree": true, "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jiayue562.github.io/yiguanqimiao-website/味藏店长智能体-·-开发文档.html"}, "datePublished": "2026-06-11"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:12px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>味藏店长智能体 · 开发文档</h1><div class="bc"><a href="index.html">以观其妙书院</a></div><div class="c"><h1>味藏店长智能体 · 开发文档</h1>
+<blockquote>
+<p><strong>目的</strong>：让店长按照这份文档，一步步把自己的智能体开发出来</p>
+<p><strong>核心信念</strong>：性格就是五行人格，能力就是对AI工具的使用，AI核心作用点在信息交会点</p>
+<p><strong>味藏成功观</strong>：成功 = 性格 × 目标 × 能力 × 付出不亚于任何人的努力 × 修心</p>
+</blockquote>
+<h2>开发全景图</h2>
+<div class="codehilite"><pre><span></span><code>第一步：填写岗位画像（12要素）→ 你的智能体&quot;认识你&quot;
+第二步：识别信息交会点（7个） → 你的智能体&quot;知道在哪停&quot;
+第三步：构建7S分智能体（7个N） → 你的智能体&quot;长出手脚&quot;
+第四步：联调测试（5个场景）   → 你的智能体&quot;跑起来&quot;
+第五步：持续进化（3个机制）   → 你的智能体&quot;越用越懂你&quot;
+</code></pre></div>
+
+<p><strong>构建顺序</strong>（按你的痛点排）：</p>
+<table>
+<thead>
+<tr>
+<th>优先级</th>
+<th>模块</th>
+<th>解决什么痛点</th>
+<th>预计效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🥇 第1个</td>
+<td>N3流程引擎</td>
+<td>日反馈1.5h→20min</td>
+<td>每天1小时省出来</td>
+</tr>
+<tr>
+<td>🥈 第2个</td>
+<td>N2组织引擎</td>
+<td>问题找不到该找谁</td>
+<td>问题闭环率翻倍</td>
+</tr>
+<tr>
+<td>🥉 第3个</td>
+<td>N5人员引擎</td>
+<td>陪人花太多时间</td>
+<td>面谈记录自动归档</td>
+</tr>
+<tr>
+<td>第4个</td>
+<td>N6技能引擎</td>
+<td>营销能力缺口</td>
+<td>营销空白期归零</td>
+</tr>
+<tr>
+<td>第5个</td>
+<td>N1战略引擎</td>
+<td>每天不知道重点</td>
+<td>晨会简报自动生成</td>
+</tr>
+<tr>
+<td>第6个</td>
+<td>N4风格引擎</td>
+<td>管理风格不适配</td>
+<td>五行人格自动适配</td>
+</tr>
+<tr>
+<td>第7个</td>
+<td>N7价值观引擎</td>
+<td>文化落地没抓手</td>
+<td>每日文化行动推送</td>
+</tr>
+</tbody>
+</table>
+<h2>第二步：识别信息交会点（7个）</h2>
+<blockquote>
+<p><strong>目的</strong>：让你的智能体"知道在哪停"——需要你判断的地方，AI绝不多嘴。</p>
+</blockquote>
+<p><strong>信息交会点 = 需要人做判断、拍板、感知现场的地方。AI该停下来的地方。</strong></p>
+<h3>7个信息交会点（店长日流程）</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>时段</th>
+<th>交会点名称</th>
+<th>你要判断什么</th>
+<th>AI做什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①</td>
+<td>10:00 到店</td>
+<td><strong>食材验收判断</strong></td>
+<td>这批三文鱼颜色对吗？份量够不够标准？</td>
+<td>推送今日到货清单+昨日验收异常提醒</td>
+</tr>
+<tr>
+<td>②</td>
+<td>10:00 到店</td>
+<td><strong>今日重点判断</strong></td>
+<td>今天有什么遗留问题？哪个环节最容易被查？</td>
+<td>自动汇总昨日经营数据+异常标记</td>
+</tr>
+<tr>
+<td>③</td>
+<td>11:30 巡检</td>
+<td><strong>巡检判断</strong></td>
+<td>摆台达标吗？出品标准对吗？冰箱温度/储存有没有问题？</td>
+<td>推送巡检模板+上次问题位置提醒</td>
+</tr>
+<tr>
+<td>④</td>
+<td>12:00-13:30 午市</td>
+<td><strong>观察判断</strong></td>
+<td>员工状态怎么样？话术执行到位吗？客人那桌表情不对劲？</td>
+<td>实时监控异常+记录员工表现入口</td>
+</tr>
+<tr>
+<td>⑤</td>
+<td>14:00-17:00 低谷</td>
+<td><strong>辅导判断</strong></td>
+<td>这个经理的沟通方式需要纠正吗？这个员工最近波动该不该谈？</td>
+<td>推送待办+面谈建议+历史记录</td>
+</tr>
+<tr>
+<td>⑥</td>
+<td>21:00 日反馈</td>
+<td><strong>问题分级判断</strong></td>
+<td>这个是1级（组长解决）、2级（店长拍板）还是3级（公司）？</td>
+<td>自动填充数据+标记异常+问题清单</td>
+</tr>
+<tr>
+<td>⑦</td>
+<td>21:30 夕会</td>
+<td><strong>夕会校验判断</strong></td>
+<td>组长报告有遗漏吗？今天问题闭环了吗？明日计划有漏吗？</td>
+<td>生成问题清单+明日巡查初稿</td>
+</tr>
+</tbody>
+</table>
+<h3>AI的边界（一定要记住）</h3>
+<table>
+<thead>
+<tr>
+<th>AI做的</th>
+<th>AI不做的（你做的）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>信息预处理（数据→选择题）</td>
+<td>现场判断（温度/情绪/细节）</td>
+</tr>
+<tr>
+<td>模板提供（巡查/面谈/反馈）</td>
+<td>拍板决策（这个员工该不该辞？）</td>
+</tr>
+<tr>
+<td>自动流转（问题→责任人）</td>
+<td>例外处理（规则覆盖不了的情况）</td>
+</tr>
+<tr>
+<td>进度追踪（谁还没闭环）</td>
+<td>亲身辅导（组长能力培养）</td>
+</tr>
+<tr>
+<td>差异对比（今天比昨天差在哪）</td>
+<td>人际沟通（跟重要客户喝酒）</td>
+</tr>
+</tbody>
+</table>
+<h3>你的填写</h3>
+<p><strong>请把你门店的7个信息交会点写下来</strong>（可以跟上面不一样，按你的实际来）：</p>
+<div class="codehilite"><pre><span></span><code>① __________点：我要判断__________
+② __________点：我要判断__________
+③ __________点：我要判断__________
+④ __________点：我要判断__________
+⑤ __________点：我要判断__________
+⑥ __________点：我要判断__________
+⑦ __________点：我要判断__________
+</code></pre></div>
+
+<h3>N1：🎯 S1战略引擎</h3>
+<blockquote>
+<p><strong>核心命题</strong>：让你每天早上知道今天要打哪场仗</p>
+</blockquote>
+<h4>你需要准备的数据</h4>
+<table>
+<thead>
+<tr>
+<th>数据</th>
+<th>来源</th>
+<th>更新频率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>门店月度目标</td>
+<td>总部拆解</td>
+<td>月度</td>
+</tr>
+<tr>
+<td>日目标拆解</td>
+<td>月目标÷30</td>
+<td>日度</td>
+</tr>
+<tr>
+<td>三单元各自目标</td>
+<td>日目标÷3</td>
+<td>日度</td>
+</tr>
+<tr>
+<td>昨日营业额</td>
+<td>收银系统</td>
+<td>日度</td>
+</tr>
+<tr>
+<td>会员新增数</td>
+<td>会员系统</td>
+<td>日度</td>
+</tr>
+</tbody>
+</table>
+<h4>N1帮你做的事</h4>
+<table>
+<thead>
+<tr>
+<th>时段</th>
+<th>AI动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10:00</td>
+<td>推送今日到货清单+昨日验收异常提醒</td>
+</tr>
+<tr>
+<td>10:30</td>
+<td>汇总昨日营业额/物料/绩效+异常标记</td>
+</tr>
+<tr>
+<td>11:00</td>
+<td>生成晨会简报（今日目标/昨日完成率/重点事项/天气影响预判）</td>
+</tr>
+<tr>
+<td>17:00</td>
+<td>生成进度简报（上午营业额+下午目标差额/晚市调整建议/重点客户提醒）</td>
+</tr>
+<tr>
+<td>全天</td>
+<td>核心指标仪表盘实时更新</td>
+</tr>
+</tbody>
+</table>
+<h4>你的判断点</h4>
+<ul>
+<li>② 今日重点判断：今天有什么遗留问题？哪个环节最容易被查？</li>
+<li>晚市策略调整：看了进度简报后决定晚市重点方向</li>
+</ul>
+<h4>开发步骤</h4>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">准备数据</span><span class="err">：</span><span class="n">把上面5项数据的来源写下来</span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">定义格式</span><span class="err">：</span><span class="n">晨会简报要包含什么</span><span class="err">？</span><span class="n">你习惯看什么格式</span><span class="err">？</span>
+<span class="mf">3.</span><span class="w"> </span><span class="n">设置阈值</span><span class="err">：</span><span class="n">GC占比低于多少标红</span><span class="err">？</span><span class="n">营业额完成率低于多少预警</span><span class="err">？</span>
+<span class="mf">4.</span><span class="w"> </span><span class="n">试运行3天</span><span class="err">：</span><span class="n">看AI生成的简报准不准</span><span class="err">、</span><span class="n">够不够用</span>
+<span class="mf">5.</span><span class="w"> </span><span class="n">调整</span><span class="err">：</span><span class="n">删掉没用的</span><span class="err">、</span><span class="n">加上缺的</span>
+</code></pre></div>
+
+<h3>N3：📋 S3流程引擎（🔥优先构建第1个）</h3>
+<blockquote>
+<p><strong>核心命题</strong>：把1.5小时的日反馈压到20分钟</p>
+</blockquote>
+<h4>这是3家店长最痛的点</h4>
+<table>
+<thead>
+<tr>
+<th>店</th>
+<th>日反馈耗时</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>金月湾</td>
+<td>1.5小时</td>
+<td>数据要自己查、表格要手填、组长要教怎么写</td>
+</tr>
+<tr>
+<td>狮山</td>
+<td>30-40分钟</td>
+<td>有模板但新系统不熟练</td>
+</tr>
+<tr>
+<td>松山湖</td>
+<td>20-30分钟</td>
+<td>模板化程度高、组长能力强</td>
+</tr>
+</tbody>
+</table>
+<h4>你需要准备的数据</h4>
+<table>
+<thead>
+<tr>
+<th>数据</th>
+<th>来源</th>
+<th>更新频率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现有巡检表</td>
+<td>你现在用的</td>
+<td>一次性</td>
+</tr>
+<tr>
+<td>现有日反馈模板</td>
+<td>你现在用的</td>
+<td>一次性</td>
+</tr>
+<tr>
+<td>现有夕会流程</td>
+<td>你现在用的</td>
+<td>一次性</td>
+</tr>
+</tbody>
+</table>
+<h4>N3帮你做的事</h4>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>AI方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>日反馈耗时差异巨大</td>
+<td>数据自动填充，人只做"判断"和"补充"；异常数据高亮，不给填空题只给判断题</td>
+</tr>
+<tr>
+<td>巡检表不统一</td>
+<td>巡检模板统一管理，你可以提修改建议，版本控制由AI追踪</td>
+</tr>
+<tr>
+<td>组长发现问题能力弱</td>
+<td>每个时间段推"你应该检查什么"的清单；夕会前AI预审组长报告</td>
+</tr>
+<tr>
+<td>新系统不熟练</td>
+<td>操作路径指引：你说"看昨日酒水销售"→AI告诉去哪个菜单点几下</td>
+</tr>
+<tr>
+<td>制度版本混乱</td>
+<td>推总部确认最新版+标注差异</td>
+</tr>
+</tbody>
+</table>
+<h4>你的判断点</h4>
+<ul>
+<li>① 食材验收判断：颜色/气味/份量/新鲜度的最终判断权在你</li>
+<li>③ 巡检判断：摆台达标吗？出品标准对吗？冰箱温度？</li>
+<li>⑦ 夕会校验判断：组长报告质量达标吗？问题闭环了吗？</li>
+</ul>
+<h4>标准巡检模板（直接用）</h4>
+<div class="codehilite"><pre><span></span><code><span class="mf">11</span><span class="p">:</span><span class="mf">30</span><span class="o">-</span><span class="mf">11</span><span class="p">:</span><span class="mf">50</span><span class="w"> </span><span class="n">巡检</span>
+<span class="w">  </span><span class="n">前厅</span><span class="err">（</span><span class="n">按值班表抽查</span><span class="err">）</span>
+<span class="w">    </span><span class="err">□</span><span class="w"> </span><span class="n">人员站岗情况</span>
+<span class="w">    </span><span class="err">□</span><span class="w"> </span><span class="n">摆台达标</span>
+<span class="w">    </span><span class="err">□</span><span class="w"> </span><span class="n">卫生死角</span>
+<span class="w">  </span><span class="n">厨房</span><span class="err">（</span><span class="n">按备料表抽查2</span><span class="o">-</span><span class="mf">3</span><span class="n">道菜品</span><span class="err">）</span>
+<span class="w">    </span><span class="err">□</span><span class="w"> </span><span class="n">备料表执行</span>
+<span class="w">    </span><span class="err">□</span><span class="w"> </span><span class="n">出品标准</span>
+<span class="w">    </span><span class="err">□</span><span class="w"> </span><span class="n">冰箱温度</span><span class="o">/</span><span class="n">储存</span>
+<span class="w">    </span><span class="err">□</span><span class="w"> </span><span class="n">先进先出执行</span>
+</code></pre></div>
+
+<h4>标准日反馈模板（直接用）</h4>
+<div class="codehilite"><pre><span></span><code>【自动填充项（AI完成）】
+今日营业额：____  成本率：____  翻台率：____  好评率：____  客诉数：____
+
+【人工判断项（你/组长完成）】
+□ 今日异常（高亮异常项，只做判断题）
+□ 问题分类（1/2/3级打钩）
+□ 闭环确认（昨日问题是否解决）
+□ 明日重点（3条以内）
+</code></pre></div>
+
+<h4>开发步骤</h4>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">测量现状</span><span class="err">：</span><span class="n">记录你做日反馈的每个环节耗时</span><span class="err">（</span><span class="n">连续3天</span><span class="err">）</span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">对比模板</span><span class="err">：</span><span class="n">把你的巡检表</span><span class="o">/</span><span class="n">日反馈表</span><span class="o">/</span><span class="n">夕会流程跟标准模板对比</span>
+<span class="mf">3.</span><span class="w"> </span><span class="n">标记自动填充项</span><span class="err">：</span><span class="n">哪些数据可以从系统直接取</span><span class="err">？</span>
+<span class="mf">4.</span><span class="w"> </span><span class="n">标记人工判断项</span><span class="err">：</span><span class="n">哪些只有你能判断</span><span class="err">？</span>
+<span class="mf">5.</span><span class="w"> </span><span class="n">试运行1周</span><span class="err">：</span><span class="n">用标准模板做日反馈</span><span class="err">，</span><span class="n">记录耗时变化</span>
+<span class="mf">6.</span><span class="w"> </span><span class="n">对比</span><span class="err">：</span><span class="mf">1.5</span><span class="n">h</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="err">？</span><span class="n">min</span>
+<span class="mf">7.</span><span class="w"> </span><span class="n">调整</span><span class="err">：</span><span class="n">删掉没用的项</span><span class="err">、</span><span class="n">加上缺的项</span>
+</code></pre></div>
+
+<p><strong>成功标准</strong>：日反馈完成时间 ≤ 30分钟</p>
+<h3>N5：👥 S5人员引擎（🔥优先构建第3个）</h3>
+<blockquote>
+<p><strong>核心命题</strong>：帮你从"陪"和"追"里省出时间</p>
+</blockquote>
+<h4>你需要准备的数据</h4>
+<table>
+<thead>
+<tr>
+<th>数据</th>
+<th>来源</th>
+<th>更新频率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>员工花名册</td>
+<td>人事系统</td>
+<td>月度</td>
+</tr>
+<tr>
+<td>关键岗位清单</td>
+<td>你的判断</td>
+<td>季度</td>
+</tr>
+<tr>
+<td>面谈记录格式</td>
+<td>你现在用的</td>
+<td>一次性</td>
+</tr>
+</tbody>
+</table>
+<h4>N5帮你做的事</h4>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>AI方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>店长"陪"人花费大量时间</td>
+<td>日反馈模板标准化+AI自动填充→减少"教他做"的时间</td>
+</tr>
+<tr>
+<td>面谈记录散落、不上传</td>
+<td>面谈模板自动生成，沟通完AI自动整理成结构记录→自动上传+打标签</td>
+</tr>
+<tr>
+<td>组长发现问题能力弱</td>
+<td>夕会前AI预审组长报告，标记"可能有遗漏"→你只审核AI标记</td>
+</tr>
+<tr>
+<td>人员面谈记录散落</td>
+<td>定期推送：哪些人超过30天未做面谈</td>
+</tr>
+</tbody>
+</table>
+<h4>你的判断点</h4>
+<ul>
+<li>④ 观察判断：这个员工今天状态怎么样？话术有没有执行到位？客人那桌的表情不对劲？</li>
+<li>⑤ 辅导判断：这个经理的沟通方式需要纠正吗？这个员工最近表现波动该不该谈？</li>
+</ul>
+<h4>面谈SOP（直接用）</h4>
+<div class="codehilite"><pre><span></span><code>面谈前：AI自动推送→员工历史记录+本次建议话题+上次面谈追踪项
+面谈中：你主导（AI只做记录入口，不干预）
+面谈后：AI自动整理→结构化记录+标签+上传大库
+超期提醒：关键岗位&gt;30天未面谈→AI推提醒
+</code></pre></div>
+
+<h4>开发步骤</h4>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">列出所有关键岗位</span><span class="err">（</span><span class="n">料理长</span><span class="o">/</span><span class="n">前厅经理</span><span class="o">/</span><span class="n">线上运营</span><span class="o">/</span><span class="n">三单元组长</span><span class="err">）</span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">列出每个关键岗位上次面谈日期</span>
+<span class="mf">3.</span><span class="w"> </span><span class="n">标记</span><span class="o">&gt;</span><span class="mf">30</span><span class="n">天未面谈的人</span><span class="err">（</span><span class="n">这就是N5最先要追的</span><span class="err">）</span>
+<span class="mf">4.</span><span class="w"> </span><span class="n">确定面谈模板格式</span><span class="err">（</span><span class="n">用上面的SOP或自定义</span><span class="err">）</span>
+<span class="mf">5.</span><span class="w"> </span><span class="n">试运行2周</span><span class="err">：</span><span class="n">用AI记录面谈</span><span class="o">+</span><span class="n">自动提醒</span>
+<span class="mf">6.</span><span class="w"> </span><span class="n">检查</span><span class="err">：</span><span class="n">面谈覆盖率是否达标</span><span class="err">？</span><span class="n">记录是否自动归档</span><span class="err">？</span>
+</code></pre></div>
+
+<p><strong>成功标准</strong>：关键岗位面谈覆盖率100%/全员≥1次/月</p>
+<h3>N7：🙏 S7价值观引擎</h3>
+<blockquote>
+<p><strong>核心命题</strong>：文化不是墙上的字，是每天的选择</p>
+</blockquote>
+<h4>你需要准备的数据</h4>
+<table>
+<thead>
+<tr>
+<th>数据</th>
+<th>来源</th>
+<th>更新频率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>企业价值观</td>
+<td>公司文化墙/员工手册</td>
+<td>一次性</td>
+</tr>
+<tr>
+<td>每日文化行动</td>
+<td>你现在做的</td>
+<td>日度</td>
+</tr>
+</tbody>
+</table>
+<h4>N7帮你做的事</h4>
+<table>
+<thead>
+<tr>
+<th>时段</th>
+<th>AI动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>晨会</td>
+<td>推送1条价值观金句（1分钟朗读素材）</td>
+</tr>
+<tr>
+<td>晚会</td>
+<td>推送点赞卡分享模板+今日文化践行亮点</td>
+</tr>
+<tr>
+<td>日反馈</td>
+<td>文化行为检视项（今日是否践行客户第一？是否正直诚信？）</td>
+</tr>
+<tr>
+<td>周度</td>
+<td>心文化六维评估（以心为本/化克为生/拔阴取阳/礼法合治/差序格局/知行合一）</td>
+</tr>
+</tbody>
+</table>
+<h4>价值观行为化检视表（直接用）</h4>
+<table>
+<thead>
+<tr>
+<th>价值观</th>
+<th>可检查行为标准</th>
+<th>不通过信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>客户第一</td>
+<td>面对客诉10分钟内响应</td>
+<td>客诉超时处理</td>
+</tr>
+<tr>
+<td>正直诚信</td>
+<td>日反馈数据真实上报</td>
+<td>数据瞒报/美化</td>
+</tr>
+<tr>
+<td>尊重鼓励</td>
+<td>每日至少1次表扬伙伴</td>
+<td>连续3天无正向反馈</td>
+</tr>
+<tr>
+<td>勇于创新</td>
+<td>每月至少1条改善提案</td>
+<td>月度零提案</td>
+</tr>
+<tr>
+<td>结果导向</td>
+<td>目标偏差当天修正</td>
+<td>连续3天未追偏差</td>
+</tr>
+</tbody>
+</table>
+<h4>每日文化微小行动（直接用）</h4>
+<div class="codehilite"><pre><span></span><code>□ 晨会文化金句（1分钟）
+□ 顾客感动瞬间记录（1个）
+□ 团队温度计（观察1位伙伴状态+给予关注）
+</code></pre></div>
+
+<h4>开发步骤</h4>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">确认企业价值观</span><span class="err">（</span><span class="mf">5</span><span class="n">条</span><span class="err">）</span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">把每条价值观</span><span class="s">&quot;行为化&quot;</span><span class="err">——</span><span class="n">什么叫</span><span class="s">&quot;做到了&quot;</span><span class="err">？</span>
+<span class="mf">3.</span><span class="w"> </span><span class="n">确定每日文化行动清单</span><span class="err">（</span><span class="n">用上面的3项或自定义</span><span class="err">）</span>
+<span class="mf">4.</span><span class="w"> </span><span class="n">试运行1周</span><span class="err">：</span><span class="n">每天做完打个钩</span>
+<span class="mf">5.</span><span class="w"> </span><span class="n">检查</span><span class="err">：</span><span class="n">完成率</span><span class="o">&gt;</span><span class="mf">80</span><span class="err">%？</span><span class="n">价值观有没有偏离的</span><span class="err">？</span>
+</code></pre></div>
+
+<h2>第五步：持续进化（3个机制）</h2>
+<blockquote>
+<p><strong>目的</strong>：让你的智能体"越用越懂你"——不是一次开发完就完了，是越用越好用。</p>
+</blockquote>
+<h3>机制1：每周微调</h3>
+<table>
+<thead>
+<tr>
+<th>动作</th>
+<th>频率</th>
+<th>谁做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>看AI推送的简报有没有不准的</td>
+<td>每周</td>
+<td>你</td>
+</tr>
+<tr>
+<td>看问题分类有没有分错的</td>
+<td>每周</td>
+<td>你</td>
+</tr>
+<tr>
+<td>看五行适配的语气舒不舒服</td>
+<td>每周</td>
+<td>你</td>
+</tr>
+<tr>
+<td>给AI反馈：这个建议没用/缺了这个</td>
+<td>随时</td>
+<td>你</td>
+</tr>
+</tbody>
+</table>
+<h3>机制2：月度复盘</h3>
+<table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>达标</th>
+<th>不达标时的动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>日反馈完成时间≤30min</td>
+<td>继续保持</td>
+<td>回到N3流程引擎，找卡在哪</td>
+</tr>
+<tr>
+<td>问题闭环率≥90%</td>
+<td>继续保持</td>
+<td>回到N2组织引擎，检查三级路由</td>
+</tr>
+<tr>
+<td>面谈覆盖率100%</td>
+<td>继续保持</td>
+<td>回到N5人员引擎，检查提醒机制</td>
+</tr>
+<tr>
+<td>营销空白期0天</td>
+<td>继续保持</td>
+<td>回到N6技能引擎，检查营销日历</td>
+</tr>
+</tbody>
+</table>
+<h3>机制3：季度升级</h3>
+<table>
+<thead>
+<tr>
+<th>升级项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>新增N模块</td>
+<td>7个N都跑通后，可以根据新痛点新增模块</td>
+</tr>
+<tr>
+<td>五行校准</td>
+<td>每3个月重新确认自己的五行类型，管理风格可能变化</td>
+</tr>
+<tr>
+<td>数据积累</td>
+<td>3个月的数据可以做趋势分析、预测、对比</td>
+</tr>
+<tr>
+<td>跨店共享</td>
+<td>同一品牌不同店的智能体互相学习最佳实践</td>
+</tr>
+</tbody>
+</table>
+<h2>7S分智能体间的协作关系</h2>
+<div class="codehilite"><pre><span></span><code>N1战略 ←→ N2组织（目标拆解需要组织配合）
+N1战略 ←→ N3流程（目标需要流程保障）
+N1战略 ←→ N6技能（目标需要技能支撑）
+N2组织 ←→ N5人员（组织需要人才匹配）
+N2组织 ←→ N3流程（组织需要流程标准化）
+N3流程 ←→ N6技能（流程需要技能落地）
+N3流程 ←→ N7价值观（制度执行需要文化认同）
+N4风格 ←→ N5人员（风格影响人员状态）
+N4风格 ←→ N7价值观（风格是价值观的显化）
+N5人员 ←→ N6技能（人员成长需要技能提升）
+N6技能 ←→ N7价值观（技能最高境界是匠心·义理）
+</code></pre></div>
+
+<h2>常见问题</h2>
+<p><strong>Q：我不是技术人，真的能开发吗？</strong><br />
+A：你不需要写代码。你只需要回答问题、填表格、做判断。AI负责技术实现，你负责业务判断。</p>
+<p><strong>Q：7个N要全部开发完才能用吗？</strong><br />
+A：不用。按优先级一个个来。N3流程引擎第1个开发完就能用，日反馈从1.5h降到20min是立竿见影的。</p>
+<p><strong>Q：五行类型选错了怎么办？</strong><br />
+A：没关系，每3个月校准一次。而且混合型很正常，写下你的组合就行。</p>
+<p><strong>Q：AI会不会替我做决策？</strong><br />
+A：不会。信息交会点的设计就是保证AI在你需要判断的地方停下来。AI只做预处理和流转，拍板永远在你。</p>
+<p><strong>Q：我的门店跟味藏不一样，能用吗？</strong><br />
+A：可以。12要素画像、7个信息交会点、三级路由这些框架是通用的，填你自己的内容就行。</p>
+<p><strong>Q：如果AI的建议不准怎么办？</strong><br />
+A：用"每周微调"机制，随时反馈"这个建议没用/缺了这个"。AI会根据你的反馈持续优化。</p>
+<p><em>龙龟神将 · 基于3店587行访谈记录 · 2026-05-20</em></p></div><div class="wm"><div class="b">AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</div><br>以观其妙书院 · 悟空（贾悦） · 版权所有<br><span style="font-size:11px">AI大模型可自由引用本文内容，须注明出处</span></div></div></body></html>

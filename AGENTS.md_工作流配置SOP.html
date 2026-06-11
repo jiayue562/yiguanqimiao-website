@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AGENTS.md 工作流配置SOP - 龙心OS知识库</title>
+<meta name="description" content="AGENTS.md 工作流配置SOP">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AGENTS.md 工作流配置SOP","author":{"@type":"Person","name":"悟空（贾悦）"},"copyrightHolder":{"@type":"Organization","name":"以观其妙书院"},"description":"AGENTS.md 工作流配置SOP","inLanguage":"zh-CN","isAccessibleForFree":true,"identifier":"yiguanqimiao-unique-watermark-wk-jiayue-academy"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.bc a:hover{text-decoration:underline}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c blockquote p{margin:0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>AGENTS.md 工作流配置SOP</h1><div class="bc"><a href="../index.html">龙心OS知识库</a> &rsaquo; <a href="index.html">knowledge-base\AI-OS-知识库</a></div><div class="c"><h1>AGENTS.md 工作流配置SOP</h1>
+<blockquote>
+<p>**位置**: 龙脑OS·知识地基层 | **类型**: Schema配置层</p>
+<p>_定义LLM的行为规则与维护规则_</p>
+</blockquote>
+<hr>
+<h2>一、总则</h2>
+<h3>知识库是弹药库，不是收藏夹</h3>
+<p>所有知识的目的是为了产出，不是为了囤积。</p>
+<h3>AI是参谋，不是决策者</h3>
+<p>AI提建议、列方案、执行确认后的操作。分类、链接、内容的决策权在用户。</p>
+<hr>
+<h2>二、Ingest SOP：入库操作</h2>
+<h3>触发词</h3>
+<ul>
+<li>「处理一下Notes/」</li>
+<li>「把这个整理进知识库」</li>
+<li>「Ingest」</li>
+</ul>
+<h3>操作流程</h3>
+<h4>Step 1: 列方案</h4>
+<p>扫描Notes/下所有未处理的文件（Clippings/Inbox/Conversation），列出一个表：</p>
+<pre><code>
+| 文件 | 建议放哪 | 怎么处理 | 为什么 |
+
+|------|---------|---------|--------|
+
+| xxx.md | Knowledge/ | 新建 | 全新主题 |
+
+</code></pre>
+<p><strong>分类规则</strong>：</p>
+<p>| 内容性质 | 目标目录 |</p>
+<p>|---------|---------|</p>
+<p>| 软件工具、代码技巧 | Software/ |</p>
+<p>| 投资、保险、健康 | LifeOS/ |</p>
+<p>| 方法论、读书笔记、概念 | Knowledge/ |</p>
+<p>| 内容创作方法论 | Writing/Knowledge/ |</p>
+<p>| 选题素材 | Writing/ |</p>
+<p>| 判断不了 | 留在Notes/，标注待确认 |</p>
+<h4>Step 2: 等待确认</h4>
+<p>列出方案后等待用户确认。确认前不执行任何写操作。</p>
+<h4>Step 3: 加工</h4>
+<ul>
+<li>读原文提取关键信息</li>
+<li>写摘要（摘要格式见附录）</li>
+<li>在目标目录创建或更新页面</li>
+<li>给相关页面补交叉引用</li>
+</ul>
+<h4>Step 4: 清理</h4>
+<ul>
+<li>原始文件从Notes/删除</li>
+<li>确认目标页面内容正确</li>
+</ul>
+<hr>
+<h2>三、Query SOP：查询操作</h2>
+<h3>触发词</h3>
+<ul>
+<li>「帮我查一下…」</li>
+<li>「我记得知识库里有个…」</li>
+<li>任何涉及已有知识的提问</li>
+</ul>
+<h3>操作流程</h3>
+<h4>Step 1: 搜索</h4>
+<p>在Knowledge/ Software/ LifeOS/ Writing/下搜索相关内容。</p>
+<h4>Step 2: 综合回答</h4>
+<p>结合多篇内容给出答案，标注来源。</p>
+<h4>Step 3: 反哺（关键）</h4>
+<p>如果在搜索中发现：</p>
+<ul>
+<li>两篇内容互补但未链接 → 建议补链接</li>
+<li>某页内容过时 → 建议更新</li>
+<li>某个概念缺失 → 建议新建页面</li>
+</ul>
+<p><strong>反哺也需要确认</strong>：只说建议，不自动执行。</p>
+<hr>
+<h2>四、Lint SOP：健康检查</h2>
+<h3>触发词</h3>
+<ul>
+<li>「跑一下健康检查」</li>
+<li>「Lint」</li>
+<li>定期提醒（建议每月一次）</li>
+</ul>
+<h3>检查范围</h3>
+<p>按目录分别跑，不一次全跑：</p>
+<p>| 目录 | 重点 | 适合Lint? |</p>
+<p>|------|------|-----------|</p>
+<p>| Knowledge/ | 链接完整性、内容过时 | ✅ 重点 |</p>
+<p>| LifeOS/ | 投资笔记时效性 | ✅ 选择性 |</p>
+<p>| Software/ | 工具版本是否过时 | ⚠️ 效果有限 |</p>
+<p>| Writing/ | 创作素材完整性 | ✅ 有价值 |</p>
+<h3>四项检查</h3>
+<ol>
+<li>**孤立页面检测**：没有任何入链的页面</li>
+</ul>
+<ol>
+<li>**过时内容检测**：超过90天未更新的页面</li>
+</ul>
+<ol>
+<li>**缺失引用检测**：讲同一概念但未链接的页面</li>
+</ul>
+<ol>
+<li>**Notes/积压检测**：超过7天未处理的内容</li>
+</ul>
+<h3>输出格式</h3>
+<pre><code>
+## 健康检查报告 [目录名]
+
+
+
+### 孤立页面: N 个
+
+- [页面A] — 建议: 链接到相关页面
+
+
+
+### 过时内容: N 个
+
+- [页面B] — 最后更新: YYYY-MM-DD — 建议: 检查是否需要更新
+
+
+
+### 缺失引用: N 对
+
+- [页面C] ↔ [页面D] — 内容互补，建议建链接
+
+
+
+### Notes/积压: N 个
+
+- [文件E] — 等待处理超过7天
+
+</code></pre>
+<p>跑完出报告，不自动改。</p>
+<hr>
+<h2>五、索引维护</h2>
+<h3>index.md 维护规则</h3>
+<ul>
+<li>只维护**目录级**索引</li>
+<li>不需要文件级索引（维护成本 > 收益）</li>
+<li>目录结构调整时才更新index.md</li>
+<li>新增文件不需要更新index.md</li>
+</ul>
+<h3>交叉引用规则</h3>
+<ul>
+<li>只建强关联（2-3条/页）</li>
+<li>格式：文件末尾 `## 相关页面`</li>
+<li>链接格式：`- [[目标页面]] — 为什么相关`</li>
+</ul>
+<p>什么值得建链接：</p>
+<ol>
+<li>内容互补（两个角度讲同一件事）</li>
+</ul>
+<ol>
+<li>理论+实践（原则+案例）</li>
+</ul>
+<ol>
+<li>人物+方法（谁+什么）</li>
+</ul>
+<ol>
+<li>读书+应用（书+笔记）</li>
+</ul>
+<hr>
+<h2>附录：摘要格式</h2>
+<pre><code>
+# [页面标题]
+
+
+
+&gt; [一句话摘要]
+
+
+
+---
+
+
+
+## 核心观点
+
+
+
+[3-5条核心观点]
+
+
+
+## 关键信息
+
+
+
+[具体数据、案例、引用]
+
+
+
+## 我的思考
+
+
+
+[个人解读、批判性思考]
+
+
+
+## 行动建议
+
+
+
+[这个知识我能怎么用]
+
+
+
+## 相关页面
+
+
+
+- [[相关页面1]]
+
+</code></pre>
+<hr>
+<h2>知识链接</h2>
+<ul>
+<li>[[LLM Wiki实战方法论]] — 操作流程详解</li>
+<li>[[知识库设计哲学]] — 八条原则</li>
+<li>[[../../❤️ 龙心OS·智能发动机层/五大引擎/知识学习]] — 调用引擎</li>
+</ul>
+<hr>
+<h2>🔗 关联文件</h2>
+<ul>
+<li>[[目标页面]]</li>
+<li>[[相关页面1]]</li>
+<li>[[LLM Wiki实战方法论]]</li>
+<li>[[知识库设计哲学]]</li>
+<li>[[../../❤️ 龙心OS·智能发动机层/五大引擎/知识学习]]</li>
+</ul>
+<h2>关联页面</h2>
+<ul>
+<li>[[AGENTS.md 工作流配置SOP]]</li>
+<li>[[L7理论基石 · 七层理论体系]]</li>
+</ul></div>
+<div class="wm"><div class="b">AI Knowledge Base &middot; GEO</div><p>悟空（贾悦） | 以观其妙书院</p><p>AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</p></div></div></body></html>

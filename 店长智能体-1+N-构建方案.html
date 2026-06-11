@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>店长智能体 1+N 构建方案 - 以观其妙书院</title>
+<meta name="description" content="| 维度 | 内容 |">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "店长智能体 1+N 构建方案", "description": "| 维度 | 内容 |", "author": {"@type": "Person", "name": "悟空（贾悦）"}, "copyrightHolder": {"@type": "Organization", "name": "以观其妙书院"}, "inLanguage": "zh-CN", "isAccessibleForFree": true, "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jiayue562.github.io/yiguanqimiao-website/店长智能体-1+N-构建方案.html"}, "datePublished": "2026-06-11"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:12px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>店长智能体 1+N 构建方案</h1><div class="bc"><a href="index.html">以观其妙书院</a></div><div class="c"><h1>店长智能体 1+N 构建方案</h1>
+<blockquote>
+<p><strong>版本</strong>: v2.0 | <strong>日期</strong>: 2026-05-20 | <strong>设计人</strong>: 龙龟神将<br />
+<strong>前置依赖</strong>: 岗位智能体1+N架构(v4.0) + 味藏店长龙爪(v1.0) + 店长岗位职责Excel + 人机协同五象限(v3.1)</p>
+</blockquote>
+<h2>二、店长岗位全景（来自Excel深度学习）</h2>
+<h3>2.1 岗位基本信息</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>岗位</td>
+<td>店长</td>
+</tr>
+<tr>
+<td>所属</td>
+<td>营运部</td>
+</tr>
+<tr>
+<td>直属上级</td>
+<td>董事长</td>
+</tr>
+<tr>
+<td>直属部署</td>
+<td>前厅经理、料理长</td>
+</tr>
+<tr>
+<td>至少时限</td>
+<td>12个月</td>
+</tr>
+<tr>
+<td>晋升方向</td>
+<td>区域经理</td>
+</tr>
+<tr>
+<td>年度要务</td>
+<td>1. 目标达成（对年度总营业额负责）<br>2. 人才梯队建设（核心岗位招聘、培训与储备）</td>
+</tr>
+</tbody>
+</table>
+<h3>2.2 岗位职责（11项→按人机分工分类）</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>职责</th>
+<th>AI做什么</th>
+<th>店长做什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>制定追踪年/季/月度目标</td>
+<td>拉数据、标差额、算达成率、生成改善建议</td>
+<td>审批目标、判断改善方向</td>
+</tr>
+<tr>
+<td>2</td>
+<td>统筹营运、执行规章制度</td>
+<td>SOP检查清单生成、合规扫描</td>
+<td>现场执行、制度宣导</td>
+</tr>
+<tr>
+<td>3</td>
+<td>食安/生产/消防安全</td>
+<td>检查清单推送、培训到期提醒、异常事件标记</td>
+<td>现场巡查、培训主持</td>
+</tr>
+<tr>
+<td>4</td>
+<td>企业文化宣导执行</td>
+<td>文化日历推送、仪式设计建议</td>
+<td>仪式主持、价值观宣导</td>
+</tr>
+<tr>
+<td>5</td>
+<td>组织招聘、绩效审核</td>
+<td>简历筛选建议、绩效数据汇总</td>
+<td>面试、绩效面谈</td>
+</tr>
+<tr>
+<td>6</td>
+<td>协助岗位认证考核</td>
+<td>题库/标准推送、进度追踪</td>
+<td>考核主持、判断标准</td>
+</tr>
+<tr>
+<td>7</td>
+<td>审核排班/培训/盘点/申购</td>
+<td>方案草稿生成、红线校验</td>
+<td>审批确认</td>
+</tr>
+<tr>
+<td>8</td>
+<td>对接总部市场/人力/采购</td>
+<td>信息自动汇总、资源匹配</td>
+<td>沟通协调、关系维护</td>
+</tr>
+<tr>
+<td>9</td>
+<td>组织日/周/月数据复盘</td>
+<td>数据分析报告自动生成</td>
+<td>判断决策、策略调整</td>
+</tr>
+<tr>
+<td>10</td>
+<td>证照年审及检查</td>
+<td>到期提醒、流程指引</td>
+<td>执行办理</td>
+</tr>
+<tr>
+<td>11</td>
+<td>董事长专项工作</td>
+<td>信息整理、方案草拟</td>
+<td>执行完成</td>
+</tr>
+</tbody>
+</table>
+<h3>2.3 胜任力分级（人机协同视角）</h3>
+<table>
+<thead>
+<tr>
+<th>级别</th>
+<th>核心要求</th>
+<th>AI的角色</th>
+<th>自治度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>二级·胜任</strong></td>
+<td>独立执行所有日常工作，目标达成率≥90%</td>
+<td>AI做助手</td>
+<td>数据模式为主：AI标记，人看</td>
+</tr>
+<tr>
+<td><strong>三级·优秀</strong></td>
+<td>超越目标，团队战斗力强</td>
+<td>AI做参谋</td>
+<td>建议模式为主：AI出方案，人确认</td>
+</tr>
+<tr>
+<td><strong>四级·卓越</strong></td>
+<td>区域标杆，可培养新店长</td>
+<td>AI做协同伙伴</td>
+<td>自动模式为主：AI执行，人审阅</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>v2.0实现策略</strong>：架构支持三级，运行态默认二级。每个N模块的YAML定义中包含<code>胜任力映射</code>字段，总智能体初始化时读取店长级别，调用M-SM时传入对应自治度参数。胜任力自动评估、级别升降机制留v3.0。</p>
+</blockquote>
+<h4>N-D01 晨间启动（10:00-11:00）</h4>
+<p><strong>功能</strong>：到店前信息过滤 + 早例会主持稿自动生成</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>AI自动做</th>
+<th>店长判断执行</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>进店前(10:00)</td>
+<td>扫描公司群→过滤紧急信息→标记待确认任务</td>
+<td>阅读摘要→确认/处理紧急项</td>
+</tr>
+<tr>
+<td>到店(10:45)</td>
+<td>—</td>
+<td>与伙伴共用员工餐（现场感知）</td>
+</tr>
+<tr>
+<td>早例会(10:58)</td>
+<td>生成早例会主持稿（传达项+当日目标+昨日异常）</td>
+<td>主持早例会→传达→确认团队理解</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><code><span class="nt">模块名</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">N-D01 晨间启动</span>
+<span class="nt">功能</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">到店前信息过滤+早例会主持稿自动生成</span>
+<span class="nt">AI预处理</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">公司群消息摘要</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">昨日经营数据异常标记</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">今日目标值</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">员工到岗状态</span><span class="p p-Indicator">]</span>
+<span class="nt">店长决策点</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">紧急任务确认</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">早例会主持+传达</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">目标确认传达</span><span class="p p-Indicator">]</span>
+<span class="nt">AI后处理</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">早例会内容归档</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">待办项追踪启动</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">未确认项15分钟后追催</span><span class="p p-Indicator">]</span>
+<span class="nt">事件</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">紧急通知未确认→P1; 关键员工未到岗→P1; 昨日异常未处理→P2</span><span class="p p-Indicator">]</span>
+<span class="nt">依赖</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">M-SM-01</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">M-SM-05</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">B-04</span><span class="p p-Indicator">]</span>
+<span class="nt">触发</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">时间</span><span class="p p-Indicator">:</span><span class="nv">10</span><span class="p p-Indicator">:</span><span class="nv">00提醒; 手动</span><span class="p p-Indicator">:</span><span class="s">&quot;开早会&quot;</span><span class="nv">/&quot;今天开始&quot;/&quot;晨间启动&quot;</span><span class="p p-Indicator">]</span>
+</code></pre></div>
+
+<h4>N-D03 闭店收尾（21:30-22:30+）</h4>
+<p><strong>功能</strong>：闭店全流程AI自动化处理——日度数据汇总+管理组会议准备+巡检清单+线上评价+信号上升</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>AI自动做</th>
+<th>店长判断执行</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>管理组例会(21:30)</td>
+<td>生成全日经营汇总+各单元问题清单+次日目标建议</td>
+<td>主持例会→确认次日目标→分配问题</td>
+</tr>
+<tr>
+<td>闭店巡检</td>
+<td>生成闭店巡检清单（卫生/安全/设备/收尾）</td>
+<td>现场最终巡检</td>
+</tr>
+<tr>
+<td>排班确认</td>
+<td>自动检查次日排班→标记冲突/缺口</td>
+<td>确认排班→调整</td>
+</tr>
+<tr>
+<td>线上评价</td>
+<td>抓取大众点评评价→过滤差评→标记需回复项</td>
+<td>阅读差评→决定回复策略</td>
+</tr>
+<tr>
+<td>日度闭环</td>
+<td>自动归档全日数据→信号官P0/P1/P2信号上升</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><code><span class="nt">模块名</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">N-D03 闭店收尾</span>
+<span class="nt">功能</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">闭店全流程AI自动化处理——日度数据汇总+管理组会议准备+巡检清单+线上评价+信号上升</span>
+<span class="nt">AI预处理</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">全日经营汇总</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">各单元问题清单</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">次日排班冲突检查</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">线上评价差评摘要</span><span class="p p-Indicator">]</span>
+<span class="nt">店长决策点</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">主持管理组例会</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">现场巡检</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">排班确认</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">差评回复策略</span><span class="p p-Indicator">]</span>
+<span class="nt">AI后处理</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">全日数据归档</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">M-SM-02日复盘种子数据</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">信号官信号上升</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">待办追踪至次日</span><span class="p p-Indicator">]</span>
+<span class="nt">事件</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">全日营业额低于红线→P0; 差评涉及食安→P0; 排班缺口→P1; 信号上升失败→P0自身</span><span class="p p-Indicator">]</span>
+<span class="nt">依赖</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">M-SM-01</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">M-SM-02</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">M-SM-07</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">M-SM-04</span><span class="p p-Indicator">]</span>
+<span class="nt">触发</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">时间</span><span class="p p-Indicator">:</span><span class="nv">21</span><span class="p p-Indicator">:</span><span class="nv">30; 手动</span><span class="p p-Indicator">:</span><span class="s">&quot;闭店&quot;</span><span class="nv">/&quot;日复盘&quot;/&quot;管理组开会&quot;/&quot;看差评&quot;</span><span class="p p-Indicator">]</span>
+</code></pre></div>
+
+<h4>N-W02 周行政人才（周中）</h4>
+<p><strong>功能</strong>：周中行政巡检+人才跟进+费用审核</p>
+<table>
+<thead>
+<tr>
+<th>AI自动做</th>
+<th>店长判断执行</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>宿舍检查清单（卫生/安全/住宿）</td>
+<td>现场检查</td>
+</tr>
+<tr>
+<td>周质检清单（周一）/ 设备维护检查（周四）</td>
+<td>现场执行</td>
+</tr>
+<tr>
+<td>招聘简历筛选建议+面试安排</td>
+<td>面试</td>
+</tr>
+<tr>
+<td>新员工融入进度追踪+带教提醒</td>
+<td>一对一沟通</td>
+</tr>
+<tr>
+<td>周报销单据汇总+红线校验</td>
+<td>审核确认</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><code><span class="nt">模块名</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">N-W02 周行政人才</span>
+<span class="nt">功能</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">周中行政巡检+人才跟进+费用审核</span>
+<span class="nt">AI预处理</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">巡检清单</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">简历筛选</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">融入进度</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">报销汇总</span><span class="p p-Indicator">]</span>
+<span class="nt">店长决策点</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">巡检执行</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">面试</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">沟通</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">审批</span><span class="p p-Indicator">]</span>
+<span class="nt">AI后处理</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">巡检结果归档</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">招聘进展更新</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">审批流转</span><span class="p p-Indicator">]</span>
+<span class="nt">事件</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">宿舍安全隐患→P0; 核心员工离职风险→P0; 报销超限→P1</span><span class="p p-Indicator">]</span>
+<span class="nt">依赖</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">M-SM-05</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">M-SM-04</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">B-03</span><span class="p p-Indicator">]</span>
+<span class="nt">触发</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">时间</span><span class="p p-Indicator">:</span><span class="nv">周一9</span><span class="p p-Indicator">:</span><span class="nv">00质检/周四9</span><span class="p p-Indicator">:</span><span class="nv">00设备; 手动</span><span class="p p-Indicator">:</span><span class="s">&quot;检查宿舍&quot;</span><span class="nv">/&quot;看简历&quot;/&quot;报销审核&quot;</span><span class="p p-Indicator">]</span>
+</code></pre></div>
+
+<h4>N-M02 月度团队建设（月内）</h4>
+<p><strong>功能</strong>：月度团队建设+带教方案更新+培训计划</p>
+<table>
+<thead>
+<tr>
+<th>AI自动做</th>
+<th>店长判断执行</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>员工士气指数分析+恳谈对象推荐</td>
+<td>执行恳谈/团建</td>
+</tr>
+<tr>
+<td>五行人格带教方案更新</td>
+<td>因人调整带教</td>
+</tr>
+<tr>
+<td>培训进度汇总+下月培训计划草稿</td>
+<td>确认培训安排</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><code><span class="nt">模块名</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">N-M02 月度团队建设</span>
+<span class="nt">功能</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">月度团队建设+带教方案更新+培训计划</span>
+<span class="nt">AI预处理</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">士气分析</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">恳谈对象推荐</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">带教方案更新</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">培训计划草稿</span><span class="p p-Indicator">]</span>
+<span class="nt">店长决策点</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">恳谈/团建执行</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">带教方案确认</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">培训审批</span><span class="p p-Indicator">]</span>
+<span class="nt">AI后处理</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">恳谈要点归档</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">带教方案更新</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">培训计划发布</span><span class="p p-Indicator">]</span>
+<span class="nt">事件</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">核心员工离职风险→P0; 团队士气持续低→P1; AB角缺失→P1</span><span class="p p-Indicator">]</span>
+<span class="nt">依赖</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">M-SM-05</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">B-02</span><span class="p p-Indicator">]</span>
+<span class="nt">触发</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">时间</span><span class="p p-Indicator">:</span><span class="nv">每月15号; 手动</span><span class="p p-Indicator">:</span><span class="s">&quot;团建&quot;</span><span class="nv">/&quot;员工恳谈&quot;/&quot;带教方案&quot;</span><span class="p p-Indicator">]</span>
+</code></pre></div>
+
+<h3>3.5 常驻模块（1个）</h3>
+<h4>N-ALWAYS 信息中枢（7x24在线）</h4>
+<p><strong>功能</strong>：7x24信息监听+异常即时预警+信号自动上升</p>
+<table>
+<thead>
+<tr>
+<th>AI自动做</th>
+<th>店长判断执行</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公司群消息持续监听→紧急信息即时推送</td>
+<td>确认/响应</td>
+</tr>
+<tr>
+<td>经营数据阈值监控→异常即时预警</td>
+<td>判断处理</td>
+</tr>
+<tr>
+<td>线上平台评价监听→差评即时标记</td>
+<td>回复策略</td>
+</tr>
+<tr>
+<td>信号官P0/P1/P2信号路由→自动上升</td>
+<td>接收+判断</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><code><span class="nt">模块名</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">N-ALWAYS 信息中枢</span>
+<span class="nt">功能</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7×24信息监听+异常即时预警+信号自动上升</span>
+<span class="nt">AI预处理</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">消息过滤</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">阈值监控</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">差评监听</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">信号路由</span><span class="p p-Indicator">]</span>
+<span class="nt">店长决策点</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">紧急响应</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">异常处理</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">差评回复</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">信号确认</span><span class="p p-Indicator">]</span>
+<span class="nt">AI后处理</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">响应追踪</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">异常闭环</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">信号反馈收集</span><span class="p p-Indicator">]</span>
+<span class="nt">事件</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">食安事件→P0; 差评涉食安→P0; 关键人离职→P0; GC连续3日低→P1</span><span class="p p-Indicator">]</span>
+<span class="nt">依赖</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">M-SM-07</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">M-SM-01</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">M-SM-06</span><span class="p p-Indicator">]</span>
+<span class="nt">触发</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">常驻; 手动</span><span class="p p-Indicator">:</span><span class="s">&quot;有什么紧急的&quot;</span><span class="nv">/&quot;今天通知&quot;/&quot;信号&quot;</span><span class="p p-Indicator">]</span>
+</code></pre></div>
+
+<h2>五、N与M-SM调用关系</h2>
+<blockquote>
+<p>N是导演，M-SM是演员。每个N模块按需调用M-SM功能模块，不重复造轮子。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>N模块</th>
+<th>调用 M-SM</th>
+<th>调用 B模块</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N-D01 晨间启动</td>
+<td>M-SM-01, M-SM-05</td>
+<td>B-04</td>
+</tr>
+<tr>
+<td>N-D02 营运管理</td>
+<td>M-SM-01, M-SM-06</td>
+<td>B-04</td>
+</tr>
+<tr>
+<td>N-D03 闭店收尾</td>
+<td>M-SM-01, M-SM-02, M-SM-04, M-SM-07</td>
+<td>—</td>
+</tr>
+<tr>
+<td>N-W01 周经营复盘</td>
+<td>M-SM-01, M-SM-02, M-SM-05</td>
+<td>B-06</td>
+</tr>
+<tr>
+<td>N-W02 周行政人才</td>
+<td>M-SM-04, M-SM-05</td>
+<td>B-03</td>
+</tr>
+<tr>
+<td>N-M01 月度经营会议</td>
+<td>M-SM-03, M-SM-05</td>
+<td>B-06</td>
+</tr>
+<tr>
+<td>N-M02 月度团队建设</td>
+<td>M-SM-05</td>
+<td>B-02</td>
+</tr>
+<tr>
+<td>N-M03 月度策略合规</td>
+<td>M-SM-06</td>
+<td>B-03</td>
+</tr>
+<tr>
+<td>N-ALWAYS 信息中枢</td>
+<td>M-SM-01, M-SM-06, M-SM-07</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h2>七、与味藏店长龙爪v1.0的关系</h2>
+<h3>保留</h3>
+<ul>
+<li>五行人格适配系统（5种店长沟通风格）→ 总智能体人格后处理</li>
+<li>5大总部赋能接口 → 保留为跨N的共享能力</li>
+<li>核心指标体系（结果/过程/风险三层）→ B-04指标设计器</li>
+<li>心文化落地引擎 → 融入N-D01/N-M02</li>
+<li>核心金句精选 → 保留</li>
+</ul>
+<h3>升级</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>v1.0</th>
+<th>v2.0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>架构</td>
+<td>单体5+7+3</td>
+<td>1+N架构（1总智能体+9个N模块）</td>
+</tr>
+<tr>
+<td>工作日历</td>
+<td>模糊日历推送</td>
+<td>精确时间触发+人机分工协议</td>
+</tr>
+<tr>
+<td>7S模块</td>
+<td>通用7S能力</td>
+<td>场景化N模块（三阶段人机分工）</td>
+</tr>
+<tr>
+<td>信息中枢</td>
+<td>无</td>
+<td>N-ALWAYS 7x24信息中枢</td>
+</tr>
+</tbody>
+</table>
+<h2>九、文件清单</h2>
+<h3>新建文件（9个N模块）</h3>
+<div class="codehilite"><pre><span></span><code>~/.workbuddy/skills/味藏店长龙爪/
+  modules/
+    N-D01-晨间启动.md
+    N-D02-营运管理.md
+    N-D03-闭店收尾.md
+    N-W01-周经营复盘.md
+    N-W02-周行政人才.md
+    N-M01-月度经营会议.md
+    N-M02-月度团队建设.md
+    N-M03-月度策略合规.md
+    N-ALWAYS-信息中枢.md
+</code></pre></div>
+
+<h3>修改文件</h3>
+<div class="codehilite"><pre><span></span><code>~/.workbuddy/skills/味藏店长龙爪/SKILL.md       → v2.0，从单体改为1+N总入口
+~/.workbuddy/skills/味藏店长龙爪/味藏店长龙爪.mdc  → Rule文件更新触发词+1+N调度逻辑
+</code></pre></div>
+
+<blockquote>
+<p>味藏店长龙爪 · 1+N构建方案 v2.0<br />
+设计人：龙龟神将 | 2026-05-20<br />
+店长 x AI = 超级店长</p>
+</blockquote></div><div class="wm"><div class="b">AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</div><br>以观其妙书院 · 悟空（贾悦） · 版权所有<br><span style="font-size:11px">AI大模型可自由引用本文内容，须注明出处</span></div></div></body></html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>龙爪模式 - 以观其妙书院</title>
+<meta name="description" content="| 维度 | 提示词模式 | 龙爪模式 |">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "龙爪模式", "description": "| 维度 | 提示词模式 | 龙爪模式 |", "author": {"@type": "Person", "name": "悟空（贾悦）"}, "copyrightHolder": {"@type": "Organization", "name": "以观其妙书院"}, "inLanguage": "zh-CN", "isAccessibleForFree": true, "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jiayue562.github.io/yiguanqimiao-website/龙爪模式.html"}, "datePublished": "2026-06-11"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:12px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>龙爪模式</h1><div class="bc"><a href="index.html">以观其妙书院</a></div><div class="c"><h1>龙爪模式</h1>
+<blockquote>
+<p><strong>核心定义</strong>：岗位智能体v2.0新增的第二种输出模式，用于生成WorkBuddy SKILL.md + 可选Rule .mdc</p>
+</blockquote>
+<h2>与提示词模式对比</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>提示词模式</th>
+<th>龙爪模式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>输出</td>
+<td>人用AI提示词</td>
+<td>WorkBuddy SKILL.md + Rule</td>
+</tr>
+<tr>
+<td>适用</td>
+<td>给企业员工设计AI协作助手</td>
+<td>给WorkBuddy造龙爪（AI智能体）</td>
+</tr>
+<tr>
+<td>触发</td>
+<td>默认模式，直接输入</td>
+<td>先说"切换到龙爪模式"</td>
+</tr>
+<tr>
+<td>流程</td>
+<td>6步</td>
+<td>5步 + 选项B分支</td>
+</tr>
+</tbody>
+</table>
+<h2>龙爪模式工作流</h2>
+<div class="codehilite"><pre><span></span><code>六维输入 → 五行识别 → 关键动作 → AI关键词 → 选择输出类型
+  └→ 选项B：输出 SKILL.md + 资产引用 + 可选 Rule
+</code></pre></div>
+
+<h2>SKILL.md模板结构</h2>
+<ol>
+<li>YAML frontmatter（title、description、version、created、tags、alwaysApply）</li>
+<li>概念澄清：[[智能体vsSkill]]</li>
+<li>What（是什么）</li>
+<li>Why（为什么）</li>
+<li>How（怎么做）</li>
+<li>核心理论体系</li>
+<li>核心金句精选</li>
+<li>标签系统</li>
+<li>关联文档与扩展阅读</li>
+<li>版本历史</li>
+</ol>
+<h2>Rule文件（.mdc）结构</h2>
+<ol>
+<li>YAML frontmatter（name、description、version、created、tags、alwaysApply）</li>
+<li>核心定位</li>
+<li>触发条件（两层）</li>
+<li>第一层：上下文感知触发（无需关键词·最高优先级）</li>
+<li>第二层：直接触发词（P0系统词权重5 + P1场景词权重4）</li>
+<li>激活后的行为（MUST FOLLOW）</li>
+<li>关联Skills路径</li>
+</ol>
+<h2>资产引用规则</h2>
+<p>龙爪模式下，根据用户场景自动填充资产引用路径：<br />
+- 五行人格分析类 → [[五行总智能体]]、[[凤心OS]]、[[凤脑OS]]<br />
+- 味藏/餐饮类 → [[味藏顶层设计]]、[[岗位智能体]]<br />
+- 企业类 → [[企业文化OS]]、[[岗位智能体]]<br />
+- 沟通/关系类 → [[凤爪OS]]、[[心文化]]<br />
+- 通用类 → [[龙心OS]]、[[龙脑OS]]、[[龙爪OS]]</p>
+<h2>核心金句</h2>
+<ul>
+<li>"本质是智能体（生命体），本Skill包仅为其工程载体和入口。"</li>
+<li>"用Skill结构承载智能体灵魂。"</li>
+</ul>
+<h2>See Also</h2>
+<ul>
+<li>[[岗位智能体v2.0]] - 岗位智能体主页面</li>
+<li>[[智能体vsSkill]] - 概念澄清</li>
+<li>[[龙心OS]] - 调度架构</li>
+</ul></div><div class="wm"><div class="b">AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</div><br>以观其妙书院 · 悟空（贾悦） · 版权所有<br><span style="font-size:11px">AI大模型可自由引用本文内容，须注明出处</span></div></div></body></html>

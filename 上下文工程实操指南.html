@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>上下文工程实操指南 - 龙心OS知识库</title>
+<meta name="description" content="上下文工程实操指南">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"上下文工程实操指南","author":{"@type":"Person","name":"悟空（贾悦）"},"copyrightHolder":{"@type":"Organization","name":"以观其妙书院"},"description":"上下文工程实操指南","inLanguage":"zh-CN","isAccessibleForFree":true,"identifier":"yiguanqimiao-unique-watermark-wk-jiayue-academy"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.bc a:hover{text-decoration:underline}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c blockquote p{margin:0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>上下文工程实操指南</h1><div class="bc"><a href="../index.html">龙心OS知识库</a> &rsaquo; <a href="index.html">skills\上下文工程\references</a></div><div class="c"><h1>上下文工程实操指南</h1>
+<blockquote>
+<p>🔧 从入门到精通的完整操作手册</p>
+</blockquote>
+<hr>
+<h2>🚀 快速开始</h2>
+<h3>第一次使用（3 分钟上手）</h3>
+<p><strong>Step 1: 保存你的第一个上下文</strong></p>
+<pre><code>
+用户：保存上下文，我明天继续做这个 Python 项目
+
+AI:  ✅ 上下文已保存
+
+      快照文件：context-20260414-0745.md
+
+      存储位置：~/.OpcCla 知识库/snapshots/
+
+</code></pre>
+<p><strong>Step 2: 恢复你的任务</strong></p>
+<pre><code>
+用户：恢复任务
+
+AI:  🔄 任务上下文已恢复
+
+      项目：Python 数据分析工具开发
+
+      已完成：3 项
+
+      待办：3 项
+
+      下一步建议：完成数据清洗模块的边界处理
+
+</code></pre>
+<p><strong>Step 3: 继续工作</strong></p>
+<pre><code>
+用户：好的，那我们开始做边界处理
+
+AI:  好的，从上次断点继续...
+
+</code></pre>
+<hr>
+<h2>📋 完整操作流程</h2>
+<h3>场景 1: 主动保存（推荐）</h3>
+<p><strong>何时使用</strong>: 你计划中断工作，下次继续</p>
+<p><strong>操作步骤</strong>:</p>
+<ol>
+<li>输入触发词：`保存上下文` 或 `生成快照`</li>
+</ul>
+<ol>
+<li>（可选）补充说明：`我明天继续做这个`</li>
+</ul>
+<ol>
+<li>AI 生成快照，告知存储位置</li>
+</ul>
+<ol>
+<li>确认快照内容（快速浏览）</li>
+</ul>
+<ol>
+<li>结束会话</li>
+</ul>
+<p><strong>示例对话</strong>:</p>
+<pre><code>
+你：保存上下文，这个研究报告还需要 2-3 次会话才能完成
+
+
+
+AI: ## ✅ 上下文已保存（长周期项目模式）
+
+    
+
+    **快照文件**: `context-20260414-0930.md`
+
+    **项目类型**: 长周期研究项目
+
+    **当前进度**: 第 2/5 次会话
+
+    
+
+    ### 保存摘要
+
+    - **项目**: AI 转型研究报告
+
+    - **已完成**: 文献综述、15 个案例收集
+
+    - **待办**: 继续收集案例 (目标 30 个)、搭建分析框架
+
+    
+
+    ### 下次恢复
+
+    下次会话时输入&quot;恢复任务&quot;即可继续
+
+</code></pre>
+<h3>场景 2: 自动提醒保存</h3>
+<p><strong>何时使用</strong>: 会话即将超时，或对话轮数过多</p>
+<p><strong>触发条件</strong>:</p>
+<ul>
+<li>对话轮数 >20 且任务未完成</li>
+<li>会话超时前 30 分钟</li>
+</ul>
+<p><strong>AI 主动提醒</strong>:</p>
+<pre><code>
+AI: 检测到这是一个长周期任务，当前已对话 22 轮。
+
+    
+
+    建议保存上下文快照，以便下次会话快速恢复。
+
+    是否需要我现在帮你生成快照？
+
+    
+
+    [是，保存上下文] [不，我快完成了]
+
+</code></pre>
+<h3>场景 3: 恢复任务</h3>
+<p><strong>何时使用</strong>: 新会话开始，继续之前的工作</p>
+<p><strong>操作步骤</strong>:</p>
+<ol>
+<li>输入触发词：`恢复任务` 或 `继续上次的项目`</li>
+</ul>
+<ol>
+<li>AI 查找最新快照</li>
+</ul>
+<ol>
+<li>AI 输出恢复摘要</li>
+</ul>
+<ol>
+<li>确认状态，开始继续工作</li>
+</ul>
+<p><strong>示例对话</strong>:</p>
+<pre><code>
+你：恢复任务
+
+
+
+AI: ## 🔄 任务上下文已恢复
+
+    
+
+    **项目**: AI 转型研究报告
+
+    **快照时间**: 2026-04-14 09:30
+
+    **中断至今**: 16 小时
+
+    
+
+    ### 已完成事项（5 项）
+
+    1. 文献综述（100%）
+
+    2. 案例收集（15/30 个）
+
+    3. ...
+
+    
+
+    ### 待办事项（4 项）
+
+    - 🔴 高优先级：继续收集案例 (还需 15 个)
+
+    - 🟡 中优先级：搭建分析框架
+
+    ...
+
+    
+
+    ### 💡 下一步建议
+
+    1. 先继续收集案例（目标 30 个，预计 1 小时）
+
+    2. 然后搭建分析框架（预计 2 小时）
+
+    
+
+    ---
+
+    *从快照恢复完成，可以开始继续工作了*
+
+    
+
+你：好的，那我们继续收集案例。目前已经收集了哪些行业的案例？
+
+</code></pre>
+<h3>场景 4: 管理多个快照</h3>
+<p><strong>何时使用</strong>: 有多个项目/多个版本的快照</p>
+<p><strong>操作命令</strong>:</p>
+<pre><code>
+列出所有快照：管理快照 list
+
+删除过期快照：管理快照 delete context-20260410-0930.md
+
+合并快照：管理快照 merge context-*.md
+
+导出备份：管理快照 export zip
+
+</code></pre>
+<p><strong>示例</strong>:</p>
+<pre><code>
+你：管理快照 list
+
+
+
+AI: ## 📋 可用快照列表
+
+    
+
+    | 文件名 | 项目 | 时间 | 大小 |
+
+    |--------|------|------|------|
+
+    | context-20260414-0930.md | AI 转型研究 | 2 天前 | 3.2KB |
+
+    | context-20260413-1545.md | Python 开发 | 3 天前 | 2.8KB |
+
+    | context-20260410-0930.md | 市场分析 | 6 天前 | 4.1KB |
+
+    
+
+    共 3 个快照，总大小 10.1KB
+
+    
+
+    需要恢复哪个？输入文件名或&quot;最新&quot;
+
+</code></pre>
+<hr>
+<h2>🎯 高级用法</h2>
+<h3>技巧 1: 快照命名约定</h3>
+<p><strong>推荐格式</strong>:</p>
+<pre><code>
+context-YYYYMMDD-HHMM-[项目缩写].md
+
+
+
+示例:
+
+context-20260414-0745-ai-research.md
+
+context-20260414-0930-python-dev.md
+
+</code></pre>
+<p><strong>好处</strong>:</p>
+<ul>
+<li>时间排序清晰</li>
+<li>项目识别快速</li>
+<li>便于搜索过滤</li>
+</ul>
+<h3>技巧 2: 快照内容优化</h3>
+<p><strong>保存前检查清单</strong>:</p>
+<ul>
+<li>[ ] 项目名称是否清晰？</li>
+<li>[ ] 已完成事项是否完整？</li>
+<li>[ ] 待办事项是否有优先级？</li>
+<li>[ ] 关键决策是否有依据？</li>
+<li>[ ] 相关文件路径是否正确？</li>
+<li>[ ] 下一步建议是否可执行？</li>
+</ul>
+<p><strong>人工 Review 示例</strong>:</p>
+<pre><code>
+AI: 快照已生成，请快速确认内容：
+
+    
+
+    ### 待确认事项
+
+    - 待办事项中的&quot;添加日志功能&quot;优先级是否正确？
+
+    - 相关文件路径是否需要更新？
+
+    - 是否有遗漏的关键信息？
+
+    
+
+    [确认保存] [修改后再保存]
+
+</code></pre>
+<h3>技巧 3: 多项目并行管理</h3>
+<p><strong>场景</strong>: 同时进行多个项目，需要分别保存上下文</p>
+<p><strong>策略</strong>:</p>
+<ol>
+<li>每个项目独立快照</li>
+</ul>
+<ol>
+<li>快照文件名包含项目标识</li>
+</ul>
+<ol>
+<li>恢复时明确指定项目</li>
+</ul>
+<p><strong>示例</strong>:</p>
+<pre><code>
+你：保存上下文，这是 Python 开发项目的进度
+
+
+
+AI: ✅ Python 开发项目上下文已保存
+
+    快照文件：context-20260414-0745-python-dev.md
+
+
+
+---
+
+
+
+（切换到另一个项目）
+
+
+
+你：保存上下文，这是 AI 研究报告的进度
+
+
+
+AI: ✅ AI 研究报告上下文已保存
+
+    快照文件：context-20260414-0930-ai-research.md
+
+
+
+---
+
+
+
+（恢复时）
+
+
+
+你：恢复 Python 项目的任务
+
+
+
+AI: 🔄 Python 开发项目上下文已恢复
+
+    ...
+
+</code></pre>
+<h3>技巧 4: 快照与长期记忆联动</h3>
+<p><strong>场景</strong>: 重要决策需要同时保存到快照和长期记忆</p>
+<p><strong>操作</strong>:</p>
+<pre><code>
+你：保存上下文，并把关键决策也保存到长期记忆
+
+
+
+AI: ✅ 上下文快照已保存
+
+    快照文件：context-20260414-0930.md
+
+    
+
+    ✅ 关键决策已保存到 MEMORY.md:
+
+    - 选择 pandas 而非 numpy（性能考虑）
+
+    - 采用 pytest 作为测试框架
+
+    - 项目架构采用模块化设计
+
+    
+
+    下次会话时：
+
+    - 快照用于恢复具体任务状态
+
+    - 长期记忆用于跨项目知识复用
+
+</code></pre>
+<hr>
+<h2>⚠️ 常见问题与解决方案</h2>
+<h3>Q1: 快照文件找不到了怎么办？</h3>
+<p><strong>原因</strong>: 存储路径变更、文件名记错</p>
+<p><strong>解决方案</strong>:</p>
+<pre><code>
+你：我找不到之前的快照了
+
+
+
+AI: 正在搜索所有快照文件...
+
+    
+
+    找到以下快照:
+
+    1. ~/.OpcCla 知识库/snapshots/context-20260414-0930.md
+
+    2. ~/.OpcCla 知识库/snapshots/context-20260413-1545.md
+
+    
+
+    需要恢复哪个？或者我帮你加载最新的？
+
+</code></pre>
+<h3>Q2: 快照内容不完整怎么办？</h3>
+<p><strong>原因</strong>: 保存时信息提取不完整</p>
+<p><strong>解决方案</strong>:</p>
+<pre><code>
+你：这个快照里缺少了 XXX 信息
+
+
+
+AI: 明白，我来补充这部分信息。
+
+    
+
+    请告诉我:
+
+    1. 缺少的具体信息是什么？
+
+    2. 这部分信息的重要性（高/中/低）？
+
+    
+
+    我会更新快照并重新保存。
+
+</code></pre>
+<h3>Q3: 多个快照如何选择？</h3>
+<p><strong>原因</strong>: 同一项目有多个版本的快照</p>
+<p><strong>解决方案</strong>:</p>
+<pre><code>
+你：这个项目有多个快照，应该用哪个？
+
+
+
+AI: 检测到该项目有 3 个快照:
+
+    
+
+    | 版本 | 时间 | 进度 | 建议 |
+
+    |------|------|------|------|
+
+    | v1 | 2 天前 | 30% | 已过时 |
+
+    | v2 | 1 天前 | 60% | 推荐 |
+
+    | v3 | 3 小时前 | 80% | 最新 |
+
+    
+
+    建议恢复 v3（最新），除非你需要回退到之前的状态。
+
+    需要我对比 v2 和 v3 的差异吗？
+
+</code></pre>
+<h3>Q4: 快照恢复后状态不一致怎么办？</h3>
+<p><strong>原因</strong>: 快照保存后手动完成了部分工作</p>
+<p><strong>解决方案</strong>:</p>
+<pre><code>
+你：恢复后我发现有些待办已经完成了
+
+
+
+AI: 明白，快照是上次保存时的状态。
+
+    
+
+    请告诉我:
+
+    1. 哪些待办已经完成了？
+
+    2. 是否有新的待办事项？
+
+    
+
+    我会更新当前状态，并可选地更新快照。
+
+</code></pre>
+<hr>
+<h2>📊 最佳实践清单</h2>
+<h3>保存时机</h3>
+<ul>
+<li>[ ] 每次会话结束前（即使只是短暂中断）</li>
+<li>[ ] 完成一个重要阶段后</li>
+<li>[ ] 做出关键决策后</li>
+<li>[ ] 会话超时前 30 分钟</li>
+</ul>
+<h3>快照质量</h3>
+<ul>
+<li>[ ] 项目名称清晰明确</li>
+<li>[ ] 已完成事项有进度百分比</li>
+<li>[ ] 待办事项有优先级标注</li>
+<li>[ ] 关键决策有依据说明</li>
+<li>[ ] 相关文件路径准确</li>
+<li>[ ] 下一步建议可执行</li>
+</ul>
+<h3>恢复流程</h3>
+<ul>
+<li>[ ] 确认快照版本（最新 or 特定版本）</li>
+<li>[ ] 快速浏览恢复摘要</li>
+<li>[ ] 确认待办事项优先级</li>
+<li>[ ] 更新状态变化（如有）</li>
+<li>[ ] 开始继续工作</li>
+</ul>
+<h3>长期维护</h3>
+<ul>
+<li>[ ] 每周清理过期快照（>30 天）</li>
+<li>[ ] 每月归档重要快照到长期记忆</li>
+<li>[ ] 定期备份快照目录</li>
+<li>[ ] 保持快照命名一致性</li>
+</ul>
+<hr>
+<h2>🎓 进阶：上下文工程思维</h2>
+<h3>从"被动保存"到"主动管理"</h3>
+<p><strong>Level 1: 被动保存</strong></p>
+<ul>
+<li>想起时才保存</li>
+<li>恢复时手动查找</li>
+<li>快照质量参差不齐</li>
+</ul>
+<p><strong>Level 2: 主动管理</strong></p>
+<ul>
+<li>每次会话结束自动保存</li>
+<li>快照命名规范统一</li>
+<li>定期清理和归档</li>
+</ul>
+<p><strong>Level 3: 系统思维</strong></p>
+<ul>
+<li>快照与长期记忆联动</li>
+<li>多项目并行管理</li>
+<li>快照内容持续优化</li>
+</ul>
+<h3>上下文工程的终极目标</h3>
+<pre><code>
+从&quot;每次重新开始解释&quot; → &quot;无缝接力继续工作&quot;
+
+     ↓                        ↓
+
+  浪费时间和 token          流畅高效体验
+
+  容易偏离主题              精准聚焦任务
+
+  重复劳动                  持续积累
+
+</code></pre>
+<hr>
+<p>_龙心 OS 上下文工程实操指南 v1.0 · 最后更新：2026-04-14_</p></div>
+<div class="wm"><div class="b">AI Knowledge Base &middot; GEO</div><p>悟空（贾悦） | 以观其妙书院</p><p>AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</p></div></div></body></html>

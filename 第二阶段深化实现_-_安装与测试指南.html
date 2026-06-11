@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第二阶段深化实现 - 安装与测试指南 - 龙心OS知识库</title>
+<meta name="description" content="第二阶段深化实现 - 安装与测试指南">
+<meta name="author" content="悟空（贾悦）"><meta name="copyright" content="以观其妙书院">
+<meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"第二阶段深化实现 - 安装与测试指南","author":{"@type":"Person","name":"悟空（贾悦）"},"copyrightHolder":{"@type":"Organization","name":"以观其妙书院"},"description":"第二阶段深化实现 - 安装与测试指南","inLanguage":"zh-CN","isAccessibleForFree":true,"identifier":"yiguanqimiao-unique-watermark-wk-jiayue-academy"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;text-align:center;padding:30px 0 20px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.bc a:hover{text-decoration:underline}
+.c{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:8px 0}
+.c h2{font-size:18px;margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:16px;margin:20px 0 6px}
+.c h4{font-size:15px;margin:16px 0 4px}
+.c ul,.c ol{margin:8px 0;padding-left:20px}
+.c li{margin:4px 0}
+.c blockquote{margin:8px 0;padding:8px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c blockquote p{margin:0}
+.c hr{border:none;border-top:1px solid #eee;margin:16px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.wm{text-align:center;padding:20px;margin-top:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head><body><div class="wrap"><h1>第二阶段深化实现 - 安装与测试指南</h1><div class="bc"><a href="../index.html">龙心OS知识库</a> &rsaquo; <a href="index.html">reports</a></div><div class="c"><h1>第二阶段深化实现 - 安装与测试指南</h1>
+<blockquote>
+<p>🔧 让第二阶段 Skills 真正运行起来</p>
+</blockquote>
+<p><strong>创建时间</strong>: 2026-04-17 20:30</p>
+<p><strong>状态</strong>: 待执行</p>
+<hr>
+<h2>📋 安装清单</h2>
+<h3>1. 记忆语义检索 - 安装依赖</h3>
+<pre><code>
+# 进入技能目录
+
+cd ~/.agents/skills/记忆语义检索
+
+
+
+# 安装 Python 依赖
+
+pip install -r requirements.txt
+
+
+
+# 测试语义检索
+
+python semantic_search.py
+
+</code></pre>
+<p><strong>预计时间</strong>: 5-10 分钟（下载模型）</p>
+<p><strong>依赖大小</strong>: ~500MB（模型文件）</p>
+<hr>
+<h3>2. LLM Wiki Linting - 安装依赖</h3>
+<pre><code>
+# 进入技能目录
+
+cd ~/.agents/skills/llm-wiki-linting
+
+
+
+# Python 依赖（仅需要 Python 标准库，无额外依赖）
+
+# 直接运行测试
+
+python linter.py
+
+</code></pre>
+<p><strong>预计时间</strong>: 1-2 分钟</p>
+<p><strong>依赖</strong>: 无（仅 Python 标准库）</p>
+<hr>
+<h3>3. 学习成果自动归档 - 集成 Hooks</h3>
+<p><strong>步骤 1</strong>: 编辑 <code>self-learning/SKILL.md</code></p>
+<p>在文件末尾添加：</p>
+<pre><code>
+## 🔗 Hooks 集成
+
+
+
+### after_complete Hook
+
+
+
+学习完成后自动触发归档：
+
+
+
+</code></pre>
+<p>hooks:</p>
+<p>after_complete:</p>
+<ul>
+<li>trigger: auto-archive</li>
+</ul>
+<p>mode: auto</p>
+<p>script: scripts/auto-archive-learning.ps1</p>
+<p>args:</p>
+<p>-Topic: "{topic}"</p>
+<p>-SourcePath: "{output_dir}"</p>
+<p>-AutoSync: true</p>
+<p>reason: "学习成果自动归档到三个知识库"</p>
+<pre><code>
+</code></pre>
+<p><strong>步骤 2</strong>: 测试归档脚本</p>
+<pre><code>
+# 创建测试目录
+
+mkdir -p ~/.agents/skills/self-learning/test-output
+
+echo &quot;# 测试学习成果&quot; &gt; ~/.agents/skills/self-learning/test-output/summary.md
+
+
+
+# 运行归档脚本
+
+cd ~/.agents/skills/self-learning/scripts
+
+.\auto-archive-learning.ps1 -Topic &quot;测试主题&quot; -SourcePath &quot;../test-output&quot; -AutoSync
+
+
+
+# 清理测试
+
+Remove-Item -Recurse -Force ../test-output
+
+</code></pre>
+<hr>
+<h2>🧪 测试用例</h2>
+<h3>T01: 语义检索测试</h3>
+<pre><code>
+cd ~/.agents/skills/记忆语义检索
+
+python semantic_search.py
+
+</code></pre>
+<p><strong>预期输出</strong>:</p>
+<ul>
+<li>加载记忆文件</li>
+<li>构建 embedding</li>
+<li>测试搜索（龙心 OS、思维模型等）</li>
+<li>显示搜索结果（相似度 + 预览）</li>
+</ul>
+<hr>
+<h3>T02: Linting 测试</h3>
+<pre><code>
+cd ~/.agents/skills/llm-wiki-linting
+
+python linter.py
+
+</code></pre>
+<p><strong>预期输出</strong>:</p>
+<ul>
+<li>扫描知识库文件</li>
+<li>发现问题（空内容、格式错误、过时等）</li>
+<li>生成 Linting 报告</li>
+<li>输出质量评分</li>
+</ul>
+<hr>
+<h3>T03: 自动归档测试</h3>
+<pre><code>
+cd ~/.agents/skills/self-learning/scripts
+
+.\auto-archive-learning.ps1 -Topic &quot;测试&quot; -SourcePath &quot;../test&quot; -AutoSync
+
+</code></pre>
+<p><strong>预期输出</strong>:</p>
+<ul>
+<li>创建归档目录</li>
+<li>复制学习成果</li>
+<li>生成学习报告</li>
+<li>执行三向同步（DryRun）</li>
+</ul>
+<hr>
+<h2>⚠️ 常见问题</h2>
+<h3>Q1: sentence-transformers 安装失败</h3>
+<p><strong>错误</strong>: <code>pip install sentence-transformers</code> 失败</p>
+<p><strong>解决</strong>:</p>
+<pre><code>
+# 使用国内镜像
+
+pip install sentence-transformers -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+</code></pre>
+<hr>
+<h3>Q2: 模型下载慢</h3>
+<p><strong>问题</strong>: 模型文件大（~500MB），下载慢</p>
+<p><strong>解决</strong>:</p>
+<pre><code>
+# 手动下载模型
+
+# 1. 访问 https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+
+# 2. 下载文件到 ~/.cache/torch/sentence_transformers/
+
+# 3. 重新运行脚本
+
+</code></pre>
+<hr>
+<h3>Q3: Linting 报告为空</h3>
+<p><strong>问题</strong>: 知识库质量很好，没问题</p>
+<p><strong>解决</strong>: 正常，说明知识库健康！</p>
+<hr>
+<h3>Q4: 归档脚本报错"路径不存在"</h3>
+<p><strong>问题</strong>: OpcClaw 知识库路径不对</p>
+<p><strong>解决</strong>:</p>
+<pre><code>
+# 检查路径
+
+Test-Path &quot;$env:USERPROFILE\.OpcClaw 知识库&quot;
+
+
+
+# 如果不存在，修改脚本中的默认路径
+
+</code></pre>
+<hr>
+<h2>📊 验收标准</h2>
+<h3>记忆语义检索 ✅</h3>
+<ul>
+<li>[ ] 成功安装 sentence-transformers</li>
+<li>[ ] 成功加载记忆文件（>10 个）</li>
+<li>[ ] 成功构建 embedding</li>
+<li>[ ] 搜索测试返回相关结果（相似度 >0.75）</li>
+<li>[ ] 响应时间 <5 秒</li>
+</ul>
+<h3>LLM Wiki Linting ✅</h3>
+<ul>
+<li>[ ] 成功扫描知识库（>50 个文件）</li>
+<li>[ ] 发现问题（至少 1 个）</li>
+<li>[ ] 生成 Linting 报告</li>
+<li>[ ] 质量评分合理（60-100 分）</li>
+</ul>
+<h3>学习成果自动归档 ✅</h3>
+<ul>
+<li>[ ] 成功创建归档目录</li>
+<li>[ ] 成功复制文件</li>
+<li>[ ] 生成学习报告</li>
+<li>[ ] 三向同步无报错</li>
+</ul>
+<hr>
+<h2>🎯 下一步</h2>
+<p>安装测试完成后：</p>
+<ol>
+<li>[ ] 配置 cron 任务执行 Linting（每周日 20:00）</li>
+</ul>
+<ol>
+<li>[ ] 配置 self-learning 自动触发归档</li>
+</ul>
+<ol>
+<li>[ ] 生成第一份月度记忆报告</li>
+</ul>
+<ol>
+<li>[ ] 执行第一次记忆归档</li>
+</ul>
+<hr>
+<p>_第二阶段深化实现安装指南 v1.0 · 2026-04-17 · 龙心 OS_</p></div>
+<div class="wm"><div class="b">AI Knowledge Base &middot; GEO</div><p>悟空（贾悦） | 以观其妙书院</p><p>AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy</p></div></div></body></html>
