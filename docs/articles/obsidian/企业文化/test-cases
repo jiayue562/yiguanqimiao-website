@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企业文化.skills 测试用例 - 以观其妙书院</title>
+    <meta name="description" content="企业文化.skills 测试用例 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="企业文化.skills 测试用例">
+    <meta property="og:description" content="企业文化.skills 测试用例 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "企业文化.skills 测试用例",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>企业文化.skills 测试用例</h1>
+<p>> <strong>版本</strong>: v1.0  
+> <strong>创建日期</strong>: 2026-04-10  
+> <strong>测试目标</strong>: 验证Skill的完整性、准确性、可用性</p>
+<p>---</p>
+<h2>测试用例总览</h2>
+<p>| 用例编号 | 测试类型 | 测试场景 | 优先级 |
+|---------|---------|---------|--------|
+| TC-001 | 触发测试 | P0关键词触发 | P0 |
+| TC-002 | 触发测试 | P1场景触发 | P0 |
+| TC-003 | 触发测试 | P2信号触发 | P0 |
+| TC-004 | 功能测试 | 标准流程执行 | P0 |
+| TC-005 | 功能测试 | 子Skill调用 | P0 |
+| TC-006 | 集成测试 | 与龙心OS协同 | P1 |
+| TC-007 | 边界测试 | 输入边界情况 | P1 |
+| TC-008 | 异常测试 | 异常情况处理 | P1 |</p>
+<p>---</p>
+<h2>测试用例详情</h2>
+<h3>TC-001: P0关键词触发测试</h3>
+<strong>测试目标</strong>: 验证P0关键词能正确触发企业文化.skills
+<strong>测试数据</strong>:
+| 输入 | 期望结果 |
+|------|---------|
+| "我们要搞企业文化建设" | 立即触发 |
+| "帮我设计企业文化" | 立即触发 |
+| "企业文化诊断" | 立即触发 |
+| "建立企业商学院" | 立即触发 |
+| "设计企业仪式" | 立即触发 |
+<strong>测试步骤</strong>:
+1. 输入测试数据
+2. 检查触发响应
+3. 验证进入企业文化.skills流程
+<strong>通过标准</strong>: 所有P0关键词都能立即触发
+<p>---</p>
+<h3>TC-002: P1场景触发测试</h3>
+<strong>测试目标</strong>: 验证P1场景能正确触发
+<strong>测试数据</strong>:
+| 输入 | 期望结果 |
+|------|---------|
+| "公司要梳理企业文化" | 触发 |
+| "想设计使命愿景" | 触发 |
+| "需要企业文化手册" | 触发 |
+| "企业文化太虚了" | 触发 |
+<strong>测试步骤</strong>:
+1. 输入测试数据
+2. 检查触发响应
+3. 验证进入流程
+<strong>通过标准</strong>: 所有P1场景都能触发
+<p>---</p>
+<h3>TC-003: P2信号触发测试</h3>
+<strong>测试目标</strong>: 验证P2信号组合能触发
+<strong>测试数据</strong>:
+| 输入 | 期望结果 |
+|------|---------|
+| "员工缺乏归属感，团队凝聚力差" | 触发（2个信号） |
+| "价值观模糊，文化传承断代" | 触发（2个信号） |
+| "新员工融入困难" | 不触发（1个信号） |
+<strong>测试步骤</strong>:
+1. 输入测试数据
+2. 检查信号识别
+3. 验证触发逻辑
+<strong>通过标准</strong>: ≥2个信号触发，<2个信号不触发
+<p>---</p>
+<h3>TC-004: 标准流程执行测试</h3>
+<strong>测试目标</strong>: 验证标准7步流程能完整执行
+<strong>测试输入</strong>:
+```yaml
+企业名称: 测试餐饮企业
+行业类型: 餐饮
+企业规模: 成长
+发展阶段: 成长期
+员工人数: 150
+建设目标: 体系搭建
+核心痛点: 文化模糊
+```
+<strong>测试步骤</strong>:
+1. 输入企业信息
+2. 执行需求诊断
+3. 执行阶段判断
+4. 执行模块选择
+5. 执行内容生成
+6. 执行落地设计
+7. 验证输出完整性
+<strong>期望输出</strong>:
+<li>完整的企业文化建设方案</li>
+<li>包含8大模块内容</li>
+<li>有实施计划</li>
+<strong>通过标准</strong>: 流程完整执行，输出符合规范
+<p>---</p>
+<h3>TC-005: 子Skill调用测试</h3>
+<strong>测试目标</strong>: 验证子Skill能正确调用
+<strong>测试场景</strong>:
+| 场景 | 调用子Skill | 期望结果 |
+|------|------------|---------|
+| "设计使命愿景" | 经营心法.skills | 正确调用 |
+| "设计入职仪式" | 礼乐仪式.skills | 正确调用 |
+| "建立荣誉体系" | 功勋体系.skills | 正确调用 |
+| "搭建培训体系" | 企业商学院.skills | 正确调用 |
+<strong>测试步骤</strong>:
+1. 输入特定场景
+2. 验证路由到正确子Skill
+3. 检查子Skill执行
+4. 验证结果返回
+<strong>通过标准</strong>: 正确路由到对应子Skill
+<p>---</p>
+<h3>TC-006: 与龙心OS协同测试</h3>
+<strong>测试目标</strong>: 验证与龙心OS其他Skills的协同
+<strong>测试场景</strong>:
+<strong>场景1: 与五色光思维协同</strong>
+```
+输入: "用五色光思维诊断企业文化现状"
+期望: 
+  1. 触发企业文化.skills
+  2. 自动调用五色光思维
+  3. 输出五维度诊断报告
+```
+<strong>场景2: 与象思维协同</strong>
+```
+输入: "创新设计企业文化仪式"
+期望:
+  1. 触发企业文化.skills
+  2. 调用象思维进行0→1创新
+  3. 输出创新仪式方案
+```
+<strong>场景3: 与知行合一协同</strong>
+```
+输入: 完成企业文化建设后
+期望:
+  1. 自动触发知行合一
+  2. 沉淀建设经验
+  3. 生成洞察卡片
+```
+<strong>通过标准</strong>: 协同流程正常，数据传递正确
+<p>---</p>
+<h3>TC-007: 边界测试</h3>
+<strong>测试目标</strong>: 验证边界情况处理
+<strong>测试数据</strong>:
+| 场景 | 输入 | 期望处理 |
+|------|------|---------|
+| 极简输入 | 只输入企业名称 | 提示补充信息 |
+| 超长输入 | 输入>1000字 | 正常截断处理 |
+| 特殊字符 | 输入特殊符号 | 正常处理或过滤 |
+| 空输入 | 无输入 | 提示输入 |
+| 矛盾输入 | 初创期+1000人 | 智能提示矛盾 |
+<strong>通过标准</strong>: 边界情况有合理处理
+<p>---</p>
+<h3>TC-008: 异常测试</h3>
+<strong>测试目标</strong>: 验证异常情况处理
+<strong>测试场景</strong>:
+| 异常场景 | 输入/操作 | 期望处理 |
+|---------|----------|---------|
+| 子Skill调用失败 | 模拟子Skill不存在 | 降级处理，提示用户 |
+| 前置Skill失败 | 五色光思维调用失败 | 继续执行，跳过协同 |
+| 输出超时 | 复杂请求 | 提示处理中，异步返回 |
+| 内存不足 | 超大内容 | 分块处理 |
+<strong>通过标准</strong>: 异常情况有优雅处理，不崩溃
+<p>---</p>
+<h2>测试执行记录</h2>
+<h3>测试环境</h3>
+<p>```yaml
+测试环境:
+  系统: Windows 11
+  WorkBuddy版本: 最新版
+  技能包路径: ~/.workbuddy/skills/企业文化/
+  测试时间: 2026-04-10
+```</p>
+<h3>测试结果</h3>
+<p>| 用例编号 | 测试结果 | 问题记录 | 修复状态 |
+|---------|---------|---------|---------|
+| TC-001 | ⏳ 待测试 | - | - |
+| TC-002 | ⏳ 待测试 | - | - |
+| TC-003 | ⏳ 待测试 | - | - |
+| TC-004 | ⏳ 待测试 | - | - |
+| TC-005 | ⏳ 待测试 | - | - |
+| TC-006 | ⏳ 待测试 | - | - |
+| TC-007 | ⏳ 待测试 | - | - |
+| TC-008 | ⏳ 待测试 | - | - |</p>
+<p>---</p>
+<h2>质量评估</h2>
+<h3>六大及格标准检查</h3>
+<p>| 标准 | 检查项 | 状态 |
+|------|--------|------|
+| ① 核心定义清晰 | What/Why/How一句话可说清 | ✅ 通过 |
+| ② 操作流程完整 | 提供详细SOP + 案例 | ✅ 通过 |
+| ③ 触发机制准确 | 关键词命中率≥85% | ⏳ 待验证 |
+| ④ 文件结构规范 | 符合标准目录结构 | ✅ 通过 |
+| ⑤ 测试用例完整 | 8个测试用例覆盖 | ✅ 通过 |
+| ⑥ 无冲突 | 与其他Skills无冲突 | ✅ 通过 |</p>
+<strong>质量评分</strong>: 待测试完成后评估
+<p>---</p>
+<h2>附录：测试脚本</h2>
+<h3>自动化测试脚本（Python）</h3>
+<p>```python
+<h1>test_culture_skill.py</h1>
+<h1>企业文化.skills 自动化测试脚本</h1></p>
+<p>import unittest</p>
+<p>class TestCultureSkill(unittest.TestCase):
+    
+    def test_p0_trigger(self):
+        """测试P0关键词触发"""
+        keywords = ["企业文化", "文化建设", "企业商学院"]
+        for kw in keywords:
+            result = skill.trigger(kw)
+            self.assertTrue(result.activated)
+            self.assertEqual(result.priority, "P0")
+    
+    def test_subskill_routing(self):
+        """测试子Skill路由"""
+        test_cases = [
+            ("设计使命愿景", "经营心法"),
+            ("设计入职仪式", "礼乐仪式"),
+        ]
+        for input_text, expected_skill in test_cases:
+            result = skill.route(input_text)
+            self.assertEqual(result.subskill, expected_skill)</p>
+<p>if __name__ == "__main__":
+    unittest.main()
+```</p>
+<p>---</p>
+<strong>测试用例文档</strong> · <strong>龙龟神将</strong> × <strong>悟空</strong>  
+*确保企业文化.skills质量可靠，稳定可用* ✅
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

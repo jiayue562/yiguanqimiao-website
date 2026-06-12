@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLI指令分类体系 - 以观其妙书院</title>
+    <meta name="description" content="CLI指令分类体系 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="CLI指令分类体系">
+    <meta property="og:description" content="CLI指令分类体系 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "CLI指令分类体系",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>CLI指令分类体系</h1>
+<h2>📋 分类体系</h2>
+<p>CLI指令分为两大类：<strong>核心决策指令</strong>（人发出）和<strong>执行操作指令</strong>（AI自主调用）</p>
+<p>---</p>
+<h2>🎯 核心决策指令（人发出）</h2>
+<h3>定义</h3>
+<p>人向AI发出高层决策指令，AI自动拆解为底层CLI操作指令执行</p>
+<h3>格式示例</h3>
+<p>| 类型 | 格式 | 实际案例 |
+|------|------|---------|
+| 思维模型 | "基于[思维模型]分析[主题]" | "基于我的GEO思维模型分析AI行业趋势" |
+| 价值观 | "按[价值观]视角生成[内容]" | "按长期主义视角生成企业文化方案" |
+| 五行人格 | "从[五行人格]角度解读[文本]" | "从五行识人角度解读员工行为模式" |
+| 人格特质 | "用[人格特质]风格撰写[文案]" | "用偏理性的逻辑分析问题" |
+| 信仰文化 | "按[信仰文化]见地解读[文本]" | "按大圆满见地解读修行体悟" |</p>
+<h3>详细分类</h3>
+<p>#### 1. 思维模型类</p>
+<strong>第一性原理</strong>
+<li>指令："按第一性原理分析[主题]"</li>
+<li>应用场景：战略分析、问题诊断、创新突破</li>
+<strong>长期主义</strong>
+<li>指令："按长期主义视角生成[内容]"</li>
+<li>应用场景：企业文化、战略规划、投资决策</li>
+<strong>GEO思维模型</strong>
+<li>指令："基于我的GEO思维模型分析[主题]"</li>
+<li>应用场景：企业战略、组织发展、团队建设</li>
+<strong>象思维</strong>
+<li>指令："按象思维0→1突破[问题]"</li>
+<li>应用场景：创新突破、原创设计、颠覆性想法</li>
+<strong>五色光思维</strong>
+<li>指令："用五色光分析[问题]"</li>
+<li>应用场景：多维分析、结构化决策、风险控制</li>
+<p>---</p>
+<p>#### 2. 价值观类</p>
+<strong>长期主义</strong>
+<li>指令："按长期主义视角生成[内容]"</li>
+<li>应用场景：企业文化、战略规划、投资决策</li>
+<strong>共生价值观</strong>
+<li>指令："按共生价值观处理[关系]"</li>
+<li>应用场景：关系调和、团队管理、文化建设</li>
+<strong>创新价值观</strong>
+<li>指令："按创新价值观突破[问题]"</li>
+<li>应用场景：创新突破、产品开发、技术升级</li>
+<strong>成长价值观</strong>
+<li>指令："按成长价值观培养[人才]"</li>
+<li>应用场景：人才培养、个人成长、组织发展</li>
+<p>---</p>
+<p>#### 3. 五行人格类</p>
+<strong>木行人视角</strong>
+<li>指令："从木行人角度分析[问题]"</li>
+<li>应用场景：战略决策、创新突破、原创设计</li>
+<strong>火行人视角</strong>
+<li>指令："从火行人角度激励[团队]"</li>
+<li>应用场景：团队激励、危机动员、文化传播</li>
+<strong>土行人视角</strong>
+<li>指令："从土行人角度沉淀[知识]"</li>
+<li>应用场景：知识管理、文化建设、系统稳定</li>
+<strong>金行人视角</strong>
+<li>指令："从金行人角度决策[问题]"</li>
+<li>应用场景：决策分析、风险控制、质量把控</li>
+<strong>水行人视角</strong>
+<li>指令："从水行人角度调和[关系]"</li>
+<li>应用场景：关系调和、团队协作、沟通桥梁</li>
+<p>---</p>
+<p>#### 4. 人格特质类</p>
+<strong>偏理性逻辑</strong>
+<li>指令："用偏理性的逻辑分析[问题]"</li>
+<li>应用场景：数据分析、问题诊断、技术方案</li>
+<strong>偏感性情感</strong>
+<li>指令："用偏感性的情感表达[内容]"</li>
+<li>应用场景：文化传播、情感连接、品牌传播</li>
+<strong>生活化语言</strong>
+<li>指令："用生活化的语言总结[内容]"</li>
+<li>应用场景：知识传播、培训讲解、通俗表达</li>
+<strong>学术化严谨</strong>
+<li>指令："用学术化的严谨撰写[论文]"</li>
+<li>应用场景：学术研究、理论创作、深度分析</li>
+<p>---</p>
+<p>#### 5. 信仰文化类</p>
+<strong>大圆满见地</strong>
+<li>指令："按大圆满见地解读[文本]"</li>
+<li>应用场景：修行体悟、心性解读、文化创作</li>
+<strong>儒家文化</strong>
+<li>指令："从儒家文化角度分析[问题]"</li>
+<li>应用场景：企业文化、伦理决策、领导力</li>
+<strong>五行识人</strong>
+<li>指令："按五行识人理论分析[人格]"</li>
+<li>应用场景：人格分析、团队建设、关系调和</li>
+<strong>心文化</strong>
+<li>指令："按心文化解读[修行体悟]"</li>
+<li>应用场景：修行体悟、心性成长、文化传播</li>
+<p>---</p>
+<h2>⚙️ 执行操作指令（AI自主调用）</h2>
+<h3>定义</h3>
+<p>AI根据人的高层决策指令，自主调用底层CLI工具执行</p>
+<h3>格式示例</h3>
+<p>| 类型 | 格式 | 实际案例 |
+|------|------|---------|
+| 知识库检索 | "检索[知识库标签]相关笔记" | "检索'五行识人'相关笔记" |
+| Skill执行 | "运行[技能名称]处理[任务]" | "运行'五行人格分析Skill'处理员工行为模式" |
+| 工具调用 | "调用[底层工具]执行[操作]" | "调用Obsidian API检索大圆满见地相关内容" |
+| 数据处理 | "处理[数据类型]数据" | "处理CSV格式数据" |</p>
+<h3>详细分类</h3>
+<p>#### 1. 知识库检索类</p>
+<strong>Obsidian检索</strong>
+<li>指令："检索Obsidian中[标签]相关笔记"</li>
+<li>应用场景：知识检索、信息查询、跨域关联</li>
+<strong>WorkBuddy检索</strong>
+<li>指令："检索WorkBuddy中[内容]"</li>
+<li>应用场景：记忆检索、历史查询、经验调用</li>
+<strong>IMA检索</strong>
+<li>指令："检索IMA中[笔记]"</li>
+<li>应用场景：移动端知识检索、快速查阅、笔记同步</li>
+<p>---</p>
+<p>#### 2. Skill执行类</p>
+<strong>知识学习Skill</strong>
+<li>指令："运行'知识学习Skill'深度学习[文章]"</li>
+<li>应用场景：文章学习、深度理解、知识重构</li>
+<strong>象思维Skill</strong>
+<li>指令："运行'象思维Skill'0→1突破[问题]"</li>
+<li>应用场景：创新突破、原创设计、颠覆性想法</li>
+<strong>五色光思维Skill</strong>
+<li>指令："运行'五色光思维Skill'分析[问题]"</li>
+<li>应用场景：多维分析、结构化决策、风险控制</li>
+<strong>人机协同Skill</strong>
+<li>指令："运行'人机协同Skill'分工[任务]"</li>
+<li>应用场景：任务分工、人机协作、效率提升</li>
+<strong>知行合一Skill</strong>
+<li>指令："运行'知行合一Skill'沉淀[经验]"</li>
+<li>应用场景：经验沉淀、系统进化、知识管理</li>
+<p>---</p>
+<p>#### 3. 工具调用类</p>
+<strong>Obsidian API</strong>
+<li>指令："调用Obsidian API检索[内容]"</li>
+<li>应用场景：知识库检索、双向链接、知识图谱</li>
+<strong>CodeBuddy CLI</strong>
+<li>指令："调用CodeBuddy CLI执行[操作]"</li>
+<li>应用场景：代码检查、单元测试、代码重构</li>
+<strong>IMA API</strong>
+<li>指令："调用IMA API存储[笔记]"</li>
+<li>应用场景：笔记存储、知识同步、移动端访问</li>
+<p>---</p>
+<p>#### 4. 数据处理类</p>
+<strong>CSV数据处理</strong>
+<li>指令："处理CSV格式[文件]"</li>
+<li>应用场景：数据分析、数据清洗、数据可视化</li>
+<strong>Markdown数据处理</strong>
+<li>指令："处理Markdown格式[文件]"</li>
+<li>应用场景：文档处理、格式转换、内容提取</li>
+<strong>JSON数据处理</strong>
+<li>指令："处理JSON格式[数据]"</li>
+<li>应用场景：数据解析、格式转换、API调用</li>
+<p>---</p>
+<h2>📊 CLI指令使用统计</h2>
+<h3>统计维度</h3>
+<p>1. <strong>使用频率</strong>：统计每个指令的使用次数
+2. <strong>执行效果</strong>：统计每个指令的执行效果（悟空反馈）
+3. <strong>优化建议</strong>：根据统计结果提出优化建议</p>
+<h3>统计模板</h3>
+<p>```yaml
+统计周期：[YYYY-MM-DD] ~ [YYYY-MM-DD]</p>
+<p>核心决策指令Top5：
+  1. [指令]（使用次数：X次，满意度：X分）
+  2. [指令]（使用次数：X次，满意度：X分）
+  3. [指令]（使用次数：X次，满意度：X分）
+  4. [指令]（使用次数：X次，满意度：X分）
+  5. [指令]（使用次数：X次，满意度：X分）</p>
+<p>执行操作指令Top5：
+  1. [指令]（使用次数：X次，成功率：X%）
+  2. [指令]（使用次数：X次，成功率：X%）
+  3. [指令]（使用次数：X次，成功率：X%）
+  4. [指令]（使用次数：X次，成功率：X%）
+  5. [指令]（使用次数：X次，成功率：X%）</p>
+<p>优化建议：
+  - [指令1]：[优化建议]
+  - [指令2]：[优化建议]
+  - [指令3]：[优化建议]
+```</p>
+<p>---</p>
+<h2>📖 核心金句</h2>
+<p>> "核心决策指令让人少操作，AI多干活；执行操作指令让AI全链路自动化执行。"</p>
+<p>> "CLI指令不是简单的命令，而是传递思维模型、价值观、人格特质的载体。"</p>
+<p>---</p>
+<h2>🔗 关联文件</h2>
+<li>`CLI指令解析-SKILL.md`：主技能文件</li>
+<li>`CLI指令人格化适配表.md`：人格化适配表</li>
+<li>`CLI指令优化案例.md`：优化案例</li>
+<p>---</p>
+<strong>标签</strong>：`#CLI` `#指令分类` `#核心决策` `#执行操作`
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

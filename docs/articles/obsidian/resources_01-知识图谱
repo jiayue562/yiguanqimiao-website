@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人机协同五象限 - 知识图谱 - 以观其妙书院</title>
+    <meta name="description" content="人机协同五象限 - 知识图谱 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="人机协同五象限 - 知识图谱">
+    <meta property="og:description" content="人机协同五象限 - 知识图谱 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "人机协同五象限 - 知识图谱",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>人机协同五象限 - 知识图谱</h1>
+<p>> 🕸️ 可视化展示各体系之间的关系</p>
+<p>---</p>
+<h2>🌐 核心关系图</h2>
+<p>```mermaid
+graph TB
+    subgraph 学术谱系
+        A[Johari Window 1955] --> B[SECI 模型 1995]
+        B --> C[延伸心智 1998]
+        C --> D[库恩范式 1962/1970]
+        D --> E[超级个体 2020s]
+        E --> F[人机协同五象限 v3.0 2026]
+    end
+    
+    subgraph 五象限模型
+        F --> Q1[效率协作者]
+        F --> Q2[知识拓展者]
+        F --> Q3[思辨对话者]
+        F --> Q4[协同探索者]
+        F --> Q5[未知共创者]
+    end
+    
+    subgraph 龙心 OS 协同
+        Q2 -.协同.-> G[知识学习 Skill]
+        Q3 -.协同.-> H[五色光思维 Skill]
+        Q4 -.落地.-> I[知行合一 Skill]
+        Q5 -.引擎.-> J[象思维 Skill]
+    end
+    
+    subgraph 东方智慧
+        K[天君臣佐使] --> F
+        L[易经思维] --> Q5
+        M[五行人格] --> F
+    end
+    
+    style Q5 fill:#ff6b6b,color:#fff
+    style F fill:#4ecdc4,color:#fff
+```</p>
+<p>---</p>
+<h2>📊 五象限价值递进图</h2>
+<p>```mermaid
+graph LR
+    Q1[效率协作者<br/>执行提效] --> Q2[知识拓展者<br/>认知扩展]
+    Q2 --> Q3[思辨对话者<br/>深度思考]
+    Q3 --> Q4[协同探索者<br/>共同求解]
+    Q4 --> Q5[未知共创者<br/>颠覆创新]
+    
+    style Q1 fill:#a8d5ba
+    style Q2 fill:#95c4e8
+    style Q3 fill:#f9d5a3
+    style Q4 fill:#e8a8a8
+    style Q5 fill:#ff6b6b,color:#fff
+```</p>
+<p>---</p>
+<h2>🔗 双向链接网络</h2>
+<p>```mermaid
+graph TD
+    subgraph 人机协同五象限
+        MAIN[00-INDEX<br/>总索引]
+        SKILL[SKILL.md<br/>主文档]
+        THEORY[theory.md<br/>理论文档]
+        PRACTICE[practice-guide.md<br/>实践指南]
+    end
+    
+    subgraph 上游理论
+        JOHARI[Johari Window]
+        SECI[SECI 模型]
+        EXTEND[延伸心智]
+        KUHN[库恩范式]
+    end
+    
+    subgraph 协同 Skills
+        KNOW[知识学习]
+        ACT[知行合一]
+        IMG[象思维]
+        COLOR[五色光]
+    end
+    
+    MAIN --> SKILL
+    MAIN --> THEORY
+    MAIN --> PRACTICE
+    
+    THEORY -.引用.-> JOHARI
+    THEORY -.引用.-> SECI
+    THEORY -.引用.-> EXTEND
+    THEORY -.引用.-> KUHN
+    
+    SKILL -.协同.-> KNOW
+    SKILL -.落地.-> ACT
+    SKILL -.引擎.-> IMG
+    SKILL -.多角度.-> COLOR
+    
+    style MAIN fill:#4ecdc4,color:#fff
+    style Q5 fill:#ff6b6b,color:#fff
+```</p>
+<p>---</p>
+<h2>🏷️ 标签体系</h2>
+<p>```mermaid
+graph TB
+    subgraph 核心标签
+        CORE1[#人机协同]
+        CORE2[#五象限]
+        CORE3[#超级个体]
+        CORE4[#象思维]
+    end
+    
+    subgraph 象限标签
+        Q1_TAG[#效率协作者]
+        Q2_TAG[#知识拓展者]
+        Q3_TAG[#思辨对话者]
+        Q4_TAG[#协同探索者]
+        Q5_TAG[#未知共创者]
+    end
+    
+    subgraph 应用标签
+        APP1[#个人成长]
+        APP2[#组织创新]
+        APP3[#AI 产品设计]
+    end
+    
+    CORE1 --> Q1_TAG
+    CORE1 --> Q2_TAG
+    CORE1 --> Q3_TAG
+    CORE1 --> Q4_TAG
+    CORE1 --> Q5_TAG
+    
+    CORE2 --> Q1_TAG
+    CORE2 --> Q2_TAG
+    CORE2 --> Q3_TAG
+    CORE2 --> Q4_TAG
+    CORE2 --> Q5_TAG
+    
+    Q5_TAG --> APP1
+    Q5_TAG --> APP2
+    Q5_TAG --> APP3
+    
+    style CORE4 fill:#ff6b6b,color:#fff
+    style Q5_TAG fill:#ff6b6b,color:#fff
+```</p>
+<p>---</p>
+<h2>📁 文件关系图</h2>
+<p>```mermaid
+graph TB
+    ROOT[人机协同五象限/]
+    
+    ROOT --> INDEX[00-INDEX.md<br/>总索引]
+    ROOT --> SKILL[SKILL.md<br/>主文档]
+    ROOT --> CHECK[CHECKLIST.md<br/>检查清单]
+    ROOT --> COMP[COMPLETION_REPORT.md<br/>完成报告]
+    
+    ROOT --> REF[references/]
+    REF --> THEORY[theory.md]
+    REF --> PRACTICE[practice-guide.md]
+    REF --> PROMPTS[prompts.md]
+    REF --> SOP[sop.md]
+    
+    ROOT --> TMP[templates/]
+    TMP --> IO[io-templates.md]
+    TMP --> WF[workflow-template.md]
+    
+    ROOT --> TRG[triggers/]
+    TRG --> RULES[trigger-rules.yaml]
+    TRG --> ROUTES[skill-routes.yaml]
+    TRG --> AUTO[auto-activate.json]
+    
+    style INDEX fill:#4ecdc4,color:#fff
+    style SKILL fill:#4ecdc4,color:#fff
+    style THEORY fill:#95c4e8
+    style Q5 fill:#ff6b6b,color:#fff
+```</p>
+<p>---</p>
+<h2>🎯 使用导航</h2>
+<h3>快速入口</h3>
+1. <strong>新手入门</strong> → [[00-INDEX]] → [[theory]]
+2. <strong>立即使用</strong> → [[SKILL]] → 触发词
+3. <strong>深度实践</strong> → [[practice-guide]] → [[prompts]]
+4. <strong>配置规则</strong> → [[trigger-rules]] → [[skill-routes]]
+<h3>学习路径</h3>
+```
+00-INDEX (总览)
+    ↓
+theory (理论完整理解)
+    ↓
+practice-guide (实践指南)
+    ↓
+prompts (提示词模板)
+    ↓
+io-templates (实战应用)
+```
+<p>---</p>
+<h2>🔄 知识流动</h2>
+<p>```mermaid
+graph LR
+    subgraph 三库同步
+        AGENTS[~/.agents/skills/]
+        OpcClaw[OpcClaw 知识库]
+        Obsidian[Obsidian Vault]
+        IMA[IMA 云端]
+    end
+    
+    AGENTS -->|Step 17| OpcClaw
+    AGENTS -->|Step 18| Obsidian
+    Obsidian -->|sync-all.ps1| IMA
+    
+    style AGENTS fill:#4ecdc4,color:#fff
+    style OpcClaw fill:#95c4e8
+    style Obsidian fill:#a8d5ba
+    style IMA fill:#f9d5a3
+```</p>
+<p>---</p>
+<p>_知识图谱完成 · 2026-04-16 · 龙心 OS 人机协同五象限 Skill v3.0_</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

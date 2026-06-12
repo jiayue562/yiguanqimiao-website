@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Skills - 以观其妙书院</title>
+    <meta name="description" content="Find Skills - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Find Skills">
+    <meta property="og:description" content="Find Skills - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Find Skills",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>Find Skills</h1>
+<p>This skill helps you discover and install skills from the open agent skills ecosystem.</p>
+<h2>When to Use This Skill</h2>
+<p>Use this skill when the user:</p>
+<li>Asks "how do I do X" where X might be a common task with an existing skill</li>
+<li>Says "find a skill for X" or "is there a skill for X"</li>
+<li>Asks "can you do X" where X is a specialized capability</li>
+<li>Expresses interest in extending agent capabilities</li>
+<li>Wants to search for tools, templates, or workflows</li>
+<li>Mentions they wish they had help with a specific domain (design, testing, deployment, etc.)</li>
+<h2>What is the Skills CLI?</h2>
+<p>The Skills CLI (`npx skills`) is the package manager for the open agent skills ecosystem. Skills are modular packages that extend agent capabilities with specialized knowledge, workflows, and tools.</p>
+<strong>Key commands:</strong>
+<li>`npx skills find [query]` - Search for skills interactively or by keyword</li>
+<li>`npx skills add <package>` - Install a skill from GitHub or other sources</li>
+<li>`npx skills check` - Check for skill updates</li>
+<li>`npx skills update` - Update all installed skills</li>
+<strong>Browse skills at:</strong> https://skills.sh/
+<h2>How to Help Users Find Skills</h2>
+<h3>Step 1: Understand What They Need</h3>
+<p>When a user asks for help with something, identify:</p>
+<p>1. The domain (e.g., React, testing, design, deployment)
+2. The specific task (e.g., writing tests, creating animations, reviewing PRs)
+3. Whether this is a common enough task that a skill likely exists</p>
+<h3>Step 2: Search for Skills</h3>
+<p>Run the find command with a relevant query:</p>
+<p>```bash
+npx skills find [query]
+```</p>
+<p>For example:</p>
+<li>User asks "how do I make my React app faster?" → `npx skills find react performance`</li>
+<li>User asks "can you help me with PR reviews?" → `npx skills find pr review`</li>
+<li>User asks "I need to create a changelog" → `npx skills find changelog`</li>
+<p>The command will return results like:</p>
+<p>```
+Install with npx skills add <owner/repo@skill></p>
+<p>vercel-labs/agent-skills@vercel-react-best-practices
+└ https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices
+```</p>
+<h3>Step 3: Present Options to the User</h3>
+<p>When you find relevant skills, present them to the user with:</p>
+<p>1. The skill name and what it does
+2. The install command they can run
+3. A link to learn more at skills.sh</p>
+<p>Example response:</p>
+<p>```
+I found a skill that might help! The "vercel-react-best-practices" skill provides
+React and Next.js performance optimization guidelines from Vercel Engineering.</p>
+<p>To install it:
+npx skills add vercel-labs/agent-skills@vercel-react-best-practices</p>
+<p>Learn more: https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices
+```</p>
+<h3>Step 4: Offer to Install</h3>
+<p>If the user wants to proceed, you can install the skill for them:</p>
+<p>```bash
+npx skills add <owner/repo@skill> -g -y
+```</p>
+<p>The `-g` flag installs globally (user-level) and `-y` skips confirmation prompts.</p>
+<h2>Common Skill Categories</h2>
+<p>When searching, consider these common categories:</p>
+<p>| Category        | Example Queries                          |
+| --------------- | ---------------------------------------- |
+| Web Development | react, nextjs, typescript, css, tailwind |
+| Testing         | testing, jest, playwright, e2e           |
+| DevOps          | deploy, docker, kubernetes, ci-cd        |
+| Documentation   | docs, readme, changelog, api-docs        |
+| Code Quality    | review, lint, refactor, best-practices   |
+| Design          | ui, ux, design-system, accessibility     |
+| Productivity    | workflow, automation, git                |</p>
+<h2>Tips for Effective Searches</h2>
+<p>1. <strong>Use specific keywords</strong>: "react testing" is better than just "testing"
+2. <strong>Try alternative terms</strong>: If "deploy" doesn't work, try "deployment" or "ci-cd"
+3. <strong>Check popular sources</strong>: Many skills come from `vercel-labs/agent-skills` or `ComposioHQ/awesome-claude-skills`</p>
+<h2>When No Skills Are Found</h2>
+<p>If no relevant skills exist:</p>
+<p>1. Acknowledge that no existing skill was found
+2. Offer to help with the task directly using your general capabilities
+3. Suggest the user could create their own skill with `npx skills init`</p>
+<p>Example:</p>
+<p>```
+I searched for skills related to "xyz" but didn't find any matches.
+I can still help you with this task directly! Would you like me to proceed?</p>
+<p>If this is something you do often, you could create your own skill:
+npx skills init my-xyz-skill
+```</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

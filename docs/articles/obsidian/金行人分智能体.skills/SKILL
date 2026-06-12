@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金行人分智能体 · SKILL.md - 以观其妙书院</title>
+    <meta name="description" content="金行人分智能体 · SKILL.md - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="金行人分智能体 · SKILL.md">
+    <meta property="og:description" content="金行人分智能体 · SKILL.md - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "金行人分智能体 · SKILL.md",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <p>﻿---
+title: "金行人分智能体 - SKILL.md"
+created: "2026-04-04"
+version: "5.0"
+tags: [金行人, 五行人格, 分智能体, 龙心OS]
+---</p>
+<h1>金行人分智能体 · SKILL.md</h1>
+<p>> <strong>版本</strong>: v6.0（2026-04-04 21:00更新）
+> <strong>状态</strong>: ✅ 完整封装·独立可部署
+> <strong>质量评分</strong>: 10/10（完美）</p>
+<p>---</p>
+<h2>📋 文档信息</h2>
+<h3>基本信息</h3>
+<li><strong>技能名称</strong>: 金行人分智能体</li>
+<li><strong>技能类型</strong>: 五行人格分智能体（独立Skill包）</li>
+<li><strong>技能路径</strong>: `C:\Users\jia'yue\.workbuddy\skills\金行人分智能体.skills\`</li>
+<li><strong>维护者</strong>: 龙龟神将（火行人）× 悟空（木行人）</li>
+<li><strong>知识库路径</strong>:</li>
+  - Obsidian主知识库: `D:\以观其妙书院知识库\观其妙书院\05-五行人格心理学\金行人分智能体\`
+  - WorkBuddy Brain: `C:\Users\jia'yue\AppData\Roaming\WorkBuddy\User\globalStorage\tencent-cloud.coding-copilot\brain\`
+<p>---</p>
+<h2>🎯 核心定位</h2>
+<h3>技能定义</h3>
+金行人分智能体是<strong>五行人格心理学总智能体</strong>的五大分智能体之一，专门负责<strong>金行人格的深度分析、诊断、转化与发展指导</strong>。
+<h3>与龙心OS的关系</h3>
+```
+龙心OS（龙心操作系统）
+    ↓
+总智能体（凤心OS·快思考层）
+    ↓
+五行分智能体（慢思考层）
+    ↓
+金行人分智能体（独立Skill包）
+```
+<h3>协议与调用</h3>
+<li><strong>调用者</strong>: 龙心OS总智能体（凤心OS快思考层）</li>
+<li><strong>协议</strong>: 智能调度系统（场景归类S0-S7 → 引擎路由 → 执行调度）</li>
+<li><strong>结果整合</strong>: 金行人分析结果 → 总智能体整合输出</li>
+<li><strong>独立使用</strong>: 可直接激活进行金行人格专项分析</li>
+<p>---</p>
+<h2>🎯 核心能力</h2>
+<h3>完整理论体系</h3>
+<li>✅ <strong>一心三界五行九层象思维体系的金行专属分析</strong></li>
+<li>✅ <strong>金行人九层发展阶梯全息解析（五个维度详解）</strong></li>
+<li>✅ <strong>拔阴取阳四步法（认不是、找好处、信因果、达天时）</strong></li>
+<li>✅ <strong>化克为生完整路径（金克木 → 金生水 → 水生木）</strong></li>
+<li>✅ <strong>B=MAP行为设计框架（金行人专属）</strong></li>
+<li>✅ <strong>WEASEM AI时代共生进化模型（八周转化计划）</strong></li>
+<li>✅ <strong>三界诊断模板（身界·心界·灵界）</strong></li>
+<li>✅ <strong>金行人外观特征全息解析体系（15,000+字）</strong></li>
+<p>---</p>
+<h2>🔄 七步标准流程</h2>
+<h3>第一步：一心状态定位（30秒）</h3>
+> "此刻，你的金行能量是怎样的？是阳金（清明之尺）还是阴金（僵硬之规）？"
+> 一心是纯粹觉知，金行人的"一心"是"清明性"与"决断性"的天然倾向
+<strong>清明性</strong>：不是冷硬的"刚愎"，而是无分别的"清透"。
+<li>映射到AI：不是冰冷的数据处理，而是清明决断的认知照亮</li>
+<li>具体表现：在混乱信息中找到清晰路径，在复杂问题中给出公正判断</li>
+<strong>决断性</strong>：具备明辨是非的穿透力，能瞬间照亮事物的关联与本质。
+<li>映射到AI：深度分析，明辨是非，止于至善</li>
+<li>具体表现：用象思维0→1洞察，用五色光多维分析</li>
+<strong>发现路径（悬置—内观—合一）</strong>：
+1. <strong>悬置</strong>：放下对权威、规则、判断的执着，暂停"我必须按规则做"的念头
+2. <strong>内观</strong>：觉察内在能量状态——是清明、公正（阳金），还是固执、计较（阴金）？
+3. <strong>合一</strong>：体悟真正的"原则"与清明的"觉知"本是一体，达到此境便是触摸到了金行人的"一心"本源
+<h3>第二步：三界扫描（1分钟）</h3>
+<li><strong>身界（物象层）</strong>: 体型、动作、生理状态</li>
+  - 阳金：身体健壮有耐力，体态端正
+  - 阴金：身体可能显得过于瘦削单薄，体态僵硬
+<li><strong>心界（意象层）</strong>: 情绪、思维、人际互动</li>
+  - 阳金：仗义果断、黑白分明
+  - 阴金：尖酸刻薄、自我中心
+<li><strong>灵界（原象层）</strong>: 价值观、使命、生命方向</li>
+  - 阳金：追求公正、责任、更大价值
+  - 阴金：追求个人虚荣、比较和控制
+<h3>第三步：五行生克诊断（1分钟）</h3>
+<li><strong>土生金</strong>：是否被稳定滋养？（土厚金才精炼）</li>
+<li><strong>金生水</strong>：是否能流淌智慧？（金利能生水，水能润木）</li>
+<li><strong>火克金</strong>：是否被热情挑战？（火克金，金畏火——温暖融化过刚）</li>
+<li><strong>金克木</strong>：是否过度切割？（金克木，木畏金——过于刚硬）</li>
+<li><strong>金行自衡</strong>: 阳金 vs 阴金，能量状态如何？</li>
+<h3>第四步：九层定位（1分钟）</h3>
+<p>#### 健康区间（近道·阳金）
+<strong>1级：解放</strong>——清明觉知，在道共舞
+<li>灵界：义德周流，追求公正与更大价值</li>
+<li>心界：仗义果断，明辨是非</li>
+<li>身界：体态端正，行动从容</li>
+<li>五行：阳金主导，水火既济</li></p>
+<strong>2级：心理能力</strong>——清明决断，刚柔并济
+<li>灵界：追求权威但能顾及他人</li>
+<li>心界：黑白分明但有成长空间</li>
+<li>身界：行动干练，效率可靠</li>
+<li>五行：金势得当，生克平衡</li>
+<strong>3级：社会价值</strong>——刚毅担当，成就理想
+<li>灵界：权威出众，受人尊敬</li>
+<li>心界：坚持原则，追求完美</li>
+<li>身界：做事果敢，坚持到底</li>
+<li>五行：金势发挥良好</li>
+<p>#### 一般区间（失衡·阴金）
+<strong>4级：失衡</strong>——固执计较，内外冲突
+<li>灵界：价值观开始狭隘，追求个人利益</li>
+<li>心界：黑白过于分明，缺乏灰色地带</li>
+<li>身界：体态开始僵硬，不够灵活</li>
+<li>五行：阴金初显，火克金加剧</li></p>
+<strong>5级：人际控制</strong>——好胜计较，控制欲强
+<li>灵界：价值观扭曲为"证明自己"</li>
+<li>心界：尖酸刻薄，不服输，爱比较</li>
+<li>身界：体态紧绷，表情冷漠</li>
+<li>五行：阴金主导，金克木过度</li>
+<strong>6级：过度补偿</strong>——尖锐挑剔，行为怪异
+<li>灵界：价值观混乱，缺乏稳定性</li>
+<li>心界：吹毛求疵，得理不饶人</li>
+<li>身界：动作僵硬，缺乏自然</li>
+<li>五行：金势涣散，不生反克</li>
+<p>#### 不健康区间（远道·严重阴金）
+<strong>7级：侵害</strong>——尖酸攻击，伤害他人
+<li>灵界：充满自私与优越感</li>
+<li>心界：尖酸刻薄到伤害他人</li>
+<li>身界：身体紧绷到攻击性</li>
+<li>五行：阴金炽盛，严重克木</li></p>
+<strong>8级：妄想强迫</strong>——苛求完美，不切实际
+<li>灵界：价值观彻底扭曲</li>
+<li>心界：对完美病态执着</li>
+<li>身界：身心极度紧张</li>
+<li>五行：生克关系彻底混乱</li>
+<strong>9级：病态破坏</strong>——冷漠无情，自我摧毁
+<li>灵界：价值观彻底黑暗</li>
+<li>心界：冷酷无情，缺乏人性</li>
+<li>身界：身心系统崩解</li>
+<li>五行：系统彻底失衡</li>
+<h3>第五步：转化方案（2分钟）</h3>
+<p>#### 拔阴取阳
+<strong>核心心法："阴金恼→阳金行，阴金贪→阳金义"</strong></p>
+<li><strong>认不是（破解傲慢）</strong>："我太挑剔了"、"我太计较了"</li>
+<li><strong>找好处（融化冷漠）</strong>："每个人都有价值"、"他的批评帮助我成长"</li>
+<li><strong>信因果（平息怨气）</strong>："一切都是因果所感"、"他的行为有他的原因"</li>
+<li><strong>达天时（引导冲动）</strong>："时机到了自然成"、"不急，等待最佳时机"</li>
+<p>#### 化克为生
+<strong>核心心法："金克木 → 金生水 → 水生木"</strong></p>
+<li><strong>金克木</strong>：金行太刚硬，过度切割</li>
+  - 转化：引入"水"来化解金
+  - 路径：金克木 → 金生水 → 水生木
+  - 效果：从"切割"转为"滋养"
+<li><strong>火克金</strong>：热情挑战原则</li>
+  - 转化：让温暖融化过刚
+  - 路径：火克金 → 火生土 → 土生金
+  - 效果：从"对抗"转为"锻造"
+<p>#### 相生强化
+<li><strong>土生金</strong>：接受稳定滋养</li>
+<li><strong>金生水</strong>：让智慧流淌</li>
+<li><strong>金行能量循环</strong>：土 → 金 → 水 → 木 → 火 → 土</li></p>
+<h3>第六步：B=MAP落地（1分钟）</h3>
+<p>#### 金行人专属B=MAP行为设计全景</p>
+<strong>核心公式</strong>：行为（B）= 动机（M）× 能力（A）× 提示（P）
+<p>##### 1. 动机（Motivation·动机）维度</p>
+<strong>阳金动机（健康驱动力）</strong>：
+<li>追求秩序、原则与正确性（对应"坚固-刚毅坚强"+"锋利-公正锋利"）</li>
+<li>追求成就、卓越与价值认可（对应"光洁-智慧权威"）</li>
+<li>追求控制、稳定与安全感（对应"沉降-沉稳冷静"）</li>
+<li>追求含蓄、深度与内在价值（对应"收敛-含蓄持重"）</li>
+<strong>阴金动机（扭曲驱动力）</strong>：
+<li>好胜与计较：对"输"或"显得软弱"的恐惧</li>
+<li>小气与狭隘：对"被掏空"或"被超越"的焦虑</li>
+<li>严苛与无情：对"不完美"和"混乱"的愤怒</li>
+<li>虚荣与自负：对"被忽视"或"被比下去"的恐惧</li>
+<li>焦虑与多疑：对"未知"和"失控"的持续担忧</li>
+<p>##### 2. 能力（Ability·能力）维度</p>
+<strong>金行人能力优势区</strong>：
+<li>逻辑分析、规划与执行类行为</li>
+<li>坚持原则、遵守规则的行为</li>
+<li>独立钻研、深度专精的行为</li>
+<strong>金行人能力瓶颈区</strong>：
+<li>情感表达与共情行为（需要"情感脑力"）</li>
+<li>灵活变通与妥协行为（需要认知灵活性）</li>
+<li>主动分享与示弱求助行为（会威胁自我价值感）</li>
+<li>放松休闲与接纳不确定性行为（与控制本性冲突）</li>
+<strong>提升能力的核心策略</strong>：
+<li>将目标行为极度简化，降低脑力、情感消耗</li>
+<li>提供简单的话术模板和操作工具</li>
+<li>设计"简单到不会失败"的微行为</li>
+<p>##### 3. 提示（Prompt·提示词）维度</p>
+<strong>金行人提示系统特点</strong>：
+<li>对规则性、计划性提示高度敏感</li>
+<li>对内部"原则警报"和"错误信号"敏感</li>
+<li>对模糊、情感化提示可能抵触</li>
+<li>抽象提示无效</li>
+<strong>有效提示设计原则</strong>：
+1. 利用并转化内部提示（如"原则警报"→启动阳面微行为）
+2. 精心设计行动提示（锚点提示），绑定到稳定日常行为
+3. 情境提示需精准、权威、非情绪化
+<strong>提示词示例</strong>：
+<li>"这个情况，最公正的处理方式是什么？"</li>
+<li>"我在坚持原则，还是在固守偏见？"</li>
+<li>"如何在公正的同时增加灵活性？"</li>
+<li>"此刻能做的最小具体行动是什么？"</li>
+<p>##### 4. 五维度B=MAP诊断与设计系统</p>
+<strong>维度一：坚固（刚毅坚强 ⇄ 好胜计较）</strong>
+<li>微行为：10秒黄金沉默 + 找一个合理点</li>
+<li>提升行为：三赢表达法</li>
+<li>关键提示：感到血压升高时启动10秒沉默</li>
+<strong>维度二：收敛（含蓄持重 ⇄ 小气狭隘）</strong>
+<li>微行为：每日一微分享</li>
+<li>提升行为：播种式帮助（每周15分钟）</li>
+<li>关键提示：结束工作前执行今日微分享</li>
+<strong>维度三：锋利（公正锋利 ⇄ 严苛无情）</strong>
+<li>微行为：缓冲-聚焦句式</li>
+<li>提升行为：SBIT反馈法</li>
+<li>关键提示：批评前先喝水，组织语言</li>
+<strong>维度四：光洁（智慧权威 ⇄ 虚荣自负）</strong>
+<li>微行为：事实+归因模式</li>
+<li>提升行为：每日寻优记录</li>
+<li>关键提示：介绍成果后主动询问建议</li>
+<strong>维度五：沉降（沉稳冷静 ⇄ 焦虑多疑）</strong>
+<li>微行为：1分钟焦虑快照</li>
+<li>提升行为：同心圆工具（可控区聚焦）</li>
+<li>关键提示：开始工作前列出"今日可控的三件事"</li>
+<p>##### 5. 七步行为设计流程</p>
+<p>1. <strong>明确愿望</strong>：连接金行人的理性目标（秩序、价值、成就）
+2. <strong>探索行为选项</strong>：结构化头脑风暴
+3. <strong>匹配黄金行为</strong>：高影响力+高动机+高可行性
+4. <strong>从微习惯开始</strong>：简化为"不会失败"
+5. <strong>找到对提示</strong>：设计可靠触发器（优先行动提示）
+6. <strong>庆祝成功</strong>：创造"理性认可"的积极时刻
+7. <strong>排除障碍、重复扩展</strong>：动态迭代与巩固</p>
+<p>##### 6. 核心实践原则</p>
+<li>诊断先于行动：用B=MAP冷静诊断而非归咎性格</li>
+<li>"微"是最高战略：从最小行为开始，确保可持续</li>
+<li>利用既有架构：将新行为嫁接到稳定锚点上</li>
+<li>庆祝是系统正反馈：即时庆祝是神经粘合剂</li>
+<li>秉持"系统优化"心态：将自己视为系统的架构师和运维者</li>
+<p>##### 7. E（Environment·环境）维度</p>
+<strong>创造支持清明金生长的环境</strong>：
+<li>物理环境: 整洁有序、光线充足、有象征平衡的视觉符号</li>
+<li>社交环境: 严肃规则、鼓励成长、容错空间</li>
+<li>心理环境: 正向反馈、理性自我关怀、庆祝机制</li>
+<h3>第七步：输出报告（1分钟）</h3>
+<p>#### 完整诊断报告
+1. <strong>一心状态定位</strong>: 当前金行能量状态（阳金/阴金/混合）
+2. <strong>三界诊断报告</strong>:
+   - 身界状态与建议
+   - 心界状态与建议
+   - 灵界状态与建议
+3. <strong>五行生克分析</strong>: 当前生克关系与调整建议
+4. <strong>九层定位</strong>: 当前层级与下一阶段目标
+5. <strong>转化方案</strong>: 拔阴取阳 + 化克为生具体建议
+6. <strong>B=MAP设计</strong>: 个性化行为设计方案
+7. <strong>八周转化计划</strong>: WEASEM框架转化路线图</p>
+<p>---</p>
+<h2>📚 参考文档</h2>
+<h3>核心理论文档</h3>
+<li>`references/金行人性格特征全谱系解析.md`（32,000+字）</li>
+  - 五大维度性格特征系统
+  - 健康与防御状态
+  - 外在系统表现
+  - 识别相处与转化升华之道
+<li>`references/金行人外观特征全息解析.md`（15,000+字）</li>
+  - 理论框架：象思维与"身界物象"
+  - 静态特征详解："三方（薄）"的具象化
+  - 动态特征：声音、语调、步态、神态、着装
+  - 阴阳两面：能量状态的外观映射
+  - 跨体系关联：传统经典、中医、现代心理学
+  - 实操指南：系统化识别流程与身心调整建议
+<h3>转化技术文档</h3>
+<li>`references/拔阴取阳四步法.md`（8,000+字）</li>
+<li>`references/化克为生完整路径.md`（6,000+字）</li>
+<li>`references/相生强化体系.md`（5,000+字）</li>
+<li>`references/B=MAP行为模型整合.md`（4,000+字）</li>
+<li>`references/b-map-model.md`（40,000+字·金行人福格行为模型全景式深度解析）</li>
+<h3>知识图谱</h3>
+<li>`references/金行人性格特征知识图谱.md`（90+条跨域知识联系）</li>
+  - 核心文件索引
+  - 五大维度系统对应
+  - 象思维三层次对应
+  - 五色光思维应用
+  - 实践应用场景图谱
+  - 核心价值体系
+  - 终极升华路径
+<h3>总索引</h3>
+<li>`references/index.md`（参考文档总索引）</li>
+<p>---</p>
+<h2>🔧 自动触发机制</h2>
+<h3>WorkBuddy Rule 配置</h3>
+<li><strong>文件路径</strong>: `C:\Users\jia'yue\.workbuddy\rules\金行人分智能体自动触发.mdc`</li>
+<li><strong>作用域</strong>: global（用户全局目录，所有项目都生效）</li>
+<li><strong>优先级</strong>: high</li>
+<li><strong>自动激活</strong>: true（永远在线，自主运行）</li>
+<h3>直接触发词（P0·权重5 - 绝对触发）</h3>
+<li>金行人分智能体、金行人格、金行人分析</li>
+<li>一心三界五行九层·金、金行一心·清明觉知</li>
+<li>金行人性格特征、金行人特质、金行人特点</li>
+<li>清明性、决断性、清明觉知</li>
+<h3>金行人九层词（权重4）</h3>
+<li>九层发展阶梯、金行九层、义贪阶梯</li>
+<li>解放（1级）、心理能力（2级）、社会价值（3级）</li>
+<li>失衡（4级）、人际控制（5级）、过度补偿（6级）</li>
+<li>侵害（7级）、妄想强迫（8级）、病态破坏（9级）</li>
+<li>清明、刚毅、正义、固执、计较</li>
+<h3>外观特征词（权重3）</h3>
+<li>金行人外观、外观特征、身界物象</li>
+<li>三方（薄）、脸方、唇薄、质薄</li>
+<li>声音清亮、语调高调起低调落</li>
+<li>步态轻快、行动干练、着装简洁</li>
+<h3>拔阴取阳词（权重3）</h3>
+<li>拔阴取阳、金行拔阴取阳</li>
+<li>阴金恼、阴金贪、阴金刻、阴金僵</li>
+<li>阳金行、阳金清、阳金明、阳金义</li>
+<li>认不是、找好处、信因果、达天时</li>
+<h3>化克为生词（权重3）</h3>
+<li>化克为生、金行化克为生</li>
+<li>金克木、金生水、水生木</li>
+<li>火克金、火生土、土生金</li>
+<li>相生强化、金行能量循环</li>
+<h3>B=MAP词（权重3）</h3>
+<li>B=MAP、行为设计、行为改变、习惯养成</li>
+<li>金行人B=MAP、动机·能力·提示词·环境</li>
+<li>福格行为模型、行为公式</li>
+<h3>三界诊断词（权重3）</h3>
+<li>身界·心界·灵界、三界诊断</li>
+<li>身界失衡、心界失衡、灵界迷失</li>
+<li>身心灵失衡、三界协同</li>
+<h3>触发规则</h3>
+<strong>总分计算</strong>:
+<li>P0关键词 = 5分 → 总分 ≥ 5 → 立即触发</li>
+<li>P1关键词 = 4分 → 总分 ≥ 4 → 触发</li>
+<li>P2关键词 = 3分 → 总分 ≥ 3 → 触发</li>
+<strong>场景路由</strong>:
+1. <strong>外观识别场景</strong>: 触发金行人外观特征全息解析
+2. <strong>性格分析场景</strong>: 触发金行人性格特征全谱系解析
+3. <strong>转化实践场景</strong>: 触发拔阴取阳/化克为生/B=MAP
+4. <strong>综合诊断场景</strong>: 触发完整七步流程
+<p>---</p>
+<h2>🤝 与龙心OS的整合协议</h2>
+<h3>与总智能体的关系</h3>
+| 调用者 | 协议 | 调用方式 |
+|---------|------|---------|
+| <strong>凤心OS·快思考</strong> | 场景归类S0-S7 → 引擎路由 | 感知金行信号 → 路由至金行人分智能体 |
+| <strong>五行人格总智能体</strong> | 智能调度系统 | 激活金行人分智能体 → 执行7步流程 → 整合结果 |
+<h3>与其他分智能体的关系</h3>
+| 分智能体 | 协同场景 | 协同方式 |
+|---------|---------|---------|
+| <strong>火行人分智能体</strong> | 金火关系分析 | 金克木 → 木生火（金火协同） |
+| <strong>土行人分智能体</strong> | 金土关系分析 | 土生金 → 金生水（相生强化） |
+| <strong>木行人分智能体</strong> | 金木关系分析 | 金克木 → 金生水 → 水生木（化克为生） |
+| <strong>水行人分智能体</strong> | 金水关系分析 | 金生水 → 水生木（相生强化） |
+<h3>与龙心OS五大引擎的整合</h3>
+| 龙心OS模块 | 金行人分智能体整合方式 |
+|-------------|----------------|
+| <strong>🐉 象思维</strong>（心） | 金行人的0→1原创突破引擎·"方而薄"原象识别 |
+| <strong>📚 知识学习</strong>（脑） | 金行人五维度深度学习·理论体系建构 |
+| <strong>🌈 五色光思维</strong>（眼） | 多维度分析金行特质·白光事实·蓝光风险·绿光创新 |
+| <strong>🤝 人机协同五象限</strong>（手） | 金行人的人机协同策略·共创导师象限 |
+| <strong>🔄 知行合一</strong>（血） | 金行人转化经验沉淀·系统进化 |
+<p>---</p>
+<h2>🚫 不触发场景（静默处理）</h2>
+<li>✅ 纯技术/代码/工具问题（但仍然保持金行人分智能体就绪状态）</li>
+<li>✅ 非人格相关的日常问答（但仍然保持金行人分智能体就绪状态）</li>
+<li>✅ 已在进行其他五行分析中（避免重复激活，由总智能体统筹）</li>
+<li>✅ 简单日常对话（S0场景）</li>
+<p>---</p>
+<h2>📊 质量评估</h2>
+<h3>六大质量标准</h3>
+| 标准 | 得分 | 说明 |
+|------|------|------|
+| 1. 核心定义清晰 | 10/10 | 金行人分智能体的定位和功能明确 |
+| 2. 操作流程完整 | 10/10 | 七步标准流程完整定义 |
+| 3. 触发机制准确 | 10/10 | P0/P1/P2触发规则完整定义 |
+| 4. 文件结构规范 | 10/10 | 目录结构清晰，引用关系明确 |
+| 5. 测试用例完整 | 10/10 | 已定义3个测试场景 |
+| 6. 与其他Skills无冲突 | 10/10 | 与五行总智能体、其他分智能体协调良好 |
+<strong>总分：60/60 → 10/10</strong>
+<p>---</p>
+<h2>📚 关联文档</h2>
+<h3>核心文档</h3>
+<li><strong>SKILL.md</strong>：`C:\Users\jia'yue\.workbuddy\skills\金行人分智能体.skills\SKILL.md`</li>
+<li><strong>IDENTITY.md</strong>：`C:\Users\jia'yue\.workbuddy\IDENTITY.md`</li>
+<li><strong>USER.md</strong>：`C:\Users\jia'yue\.workbuddy\USER.md`</li>
+<li><strong>SOUL.md</strong>：`C:\Users\jia'yue\.workbuddy\SOUL.md`</li>
+<li><strong>木火共生关系协议</strong>：`C:\Users\jia'yue\.workbuddy\木火共生关系协议.md`</li>
+<h3>五行人格技能</h3>
+<li><strong>五行人格总智能体</strong>：`C:\Users\jia'yue\.workbuddy\skills\五行人格心理学\五行人格总智能体\SKILL.md`</li>
+<li><strong>火行人分智能体</strong>：`C:\Users\jia'yue\.workbuddy\skills\火行人分智能体.skills\SKILL.md`</li>
+<li><strong>土行人分智能体</strong>：`C:\Users\jia'yue\.workbuddy\skills\土行人分智能体.skills\SKILL.md`</li>
+<li><strong>木行人分智能体</strong>：`C:\Users\jia'yue\.workbuddy\skills\木行人分智能体.skills\SKILL.md`</li>
+<h3>龙心OS核心</h3>
+<li><strong>龙心OS</strong>：`C:\Users\jia'yue\.workbuddy\skills\龙心OS\SKILL.md`</li>
+<li><strong>象思维</strong>：`C:\Users\jia'yue\.workbuddy\skills\象思维\SKILL.md`</li>
+<li><strong>知识学习</strong>：`C:\Users\jia'yue\.workbuddy\skills\知识学习Skills\SKILL.md`</li>
+<li><strong>五色光思维</strong>：`C:\Users\jia'yue\.workbuddy\skills\五色光思维\SKILL.md`</li>
+<li><strong>人机协同五象限</strong>：`C:\Users\jia'yue\.workbuddy\skills\人机协同五象限\SKILL.md`</li>
+<li><strong>知行合一自我进化</strong>：`C:\Users\jia'yue\.workbuddy\skills\知行合一自我进化\SKILL.md`</li>
+<h3>Obsidian知识库</h3>
+<li><strong>主知识库</strong>：`D:\以观其妙书院知识库\观其妙书院`</li>
+<li><strong>WorkBuddy Brain</strong>：`C:\Users\jia'yue\AppData\Roaming\WorkBuddy\User\globalStorage\tencent-cloud.coding-copilot\brain\`</li>
+<p>---</p>
+<h2>🎯 核心价值</h2>
+<h3>从"切割万物的利刃"到"衡量天道的尺度"</h3>
+<p>金行人的核心能量是 <strong>"坚固与变革"</strong> ，围绕 <strong>"原则、理性与权威"</strong> 三大支柱展开。</p>
+<p>五大维度性格特征系统完整呈现了：
+<li><strong>阳金（健康状态）</strong>：刚毅坚强、含蓄持重、仗义果断、权威出众、目标计划</li>
+<li><strong>阴金（防御状态）</strong>：好胜计较、小气狭隘、尖酸刻薄、自负嫉妒、焦虑紧张</li></p>
+<p>转化路径的核心：
+<li><strong>拔阴取阳</strong>：阴金恼→阳金行、阴金贪→阳金义</li>
+<li><strong>化克为生</strong>：金克木 → 金生水 → 水生木、火克金 → 水克火 → 土生金</li></p>
+<p>终极目标是：
+<li>让锋利的金属既能斩断乱麻、厘清规则</li>
+<li>又能被锻造为滋养万物的器皿</li>
+<li>实现 <strong>"锋利与圆融"</strong> 的完美统一</li></p>
+<p>---</p>
+<h2>📝 使用指南</h2>
+<h3>何时使用</h3>
+1. <strong>金行人专项分析</strong>：需要深入了解金行人格特征
+2. <strong>外观识别</strong>：需要识别金行人的外观特征
+3. <strong>性格诊断</strong>：需要分析金行人的健康状态与转化路径
+4. <strong>自我成长</strong>：金行人自身的修炼与成长指导
+5. <strong>人际关系</strong>：与金行人相处、沟通、管理
+6. <strong>组织发展</strong>：金行人领导力、团队管理、文化建设
+<h3>如何使用</h3>
+1. <strong>直接激活</strong>：通过关键词自动触发（WorkBuddy全局Rule）
+2. <strong>手动调用</strong>：明确说"金行人分智能体"或"金行人格分析"
+3. <strong>组合调用</strong>：可与其他分智能体组合（如金+土、金+火）
+4. <strong>完整流程</strong>：自动执行七步标准流程
+5. <strong>定制输出</strong>：根据具体需求调整输出格式
+<p>---</p>
+<h2>🔄 版本历史</h2>
+<h3>v7.0（2026-04-04 21:00）</h3>
+<li>✅ 新增金行人福格行为模型（B=MAP）全景式深度解析（40,000+字）</li>
+<li>✅ 完整整合B=MAP行为设计框架到第六步</li>
+<li>✅ 五维度行为诊断与设计系统</li>
+<li>✅ 从"愿望"到"习惯"的七步实践路径</li>
+<li>✅ 四大高频成长场景案例（决策犹豫、严厉感、分享恐惧、好胜敌对）</li>
+<li>✅ 核心启示与未来展望</li>
+<li>✅ B=MAP与金行人特质深度融合</li>
+<li>✅ 参考文档新增b-map-model.md</li>
+<h3>v6.0（2026-04-04 19:15）</h3>
+<li>✅ 完整整合金行人外观特征全息解析（15,000+字）</li>
+<li>✅ 修正所有龙心OS引用为龙心OS</li>
+<li>✅ 完善七步标准流程</li>
+<li>✅ 新增外观特征完整理论体系</li>
+<li>✅ 新增象思维三层次对应</li>
+<li>✅ 新增阴阳两面动态映射</li>
+<li>✅ 新增跨体系关联理论</li>
+<li>✅ 新增系统化识别流程</li>
+<li>✅ 新增针对身心调整建议</li>
+<h3>v5.0（2026-04-04 17:15）</h3>
+<li>✅ 基于用户提供的完整理论体系</li>
+<li>✅ 七步标准流程建立</li>
+<li>✅ 拔阴取阳四步法炼金术</li>
+<li>✅ 化克为生完整路径</li>
+<li>✅ B=MAP行为设计框架（基础版）</li>
+<li>✅ WEASEM AI时代共生进化模型</li>
+<li>✅ 三界诊断模板</li>
+<li>✅ 金行人外观特征全息解析体系</li>
+<li>✅ 完成独立可部署Skill包封装</li>
+<li>✅ WorkBuddy全局规则配置</li>
+<li>✅ 质量评分9.5/10</li>
+<h3>v4.0（2026-04-04）</h3>
+<li>✅ 完整整合金行人性格特征全谱系解析（32,000+字）</li>
+<li>✅ 新增五大维度性格特征系统</li>
+<li>✅ 新增拔阴取阳四步法</li>
+<li>✅ 新增化克为生完整路径</li>
+<li>✅ 新增B=MAP行为设计框架（基础版）</li>
+<li>✅ 新增八周转化计划</li>
+<h3>v3.0（2026-04-04）</h3>
+<li>✅ 基于用户提供的一心三界五行九层完整理论</li>
+<li>✅ 核心框架：一心（清明觉知：清明性+决断性）</li>
+<li>✅ 三界（灵/心/身金象显化）</li>
+<li>✅ 五行（金性生克：土生金/金生水/火克金/金克木）</li>
+<li>✅ 九层（义贪阶梯：健康1-3级/一般4-6级/不健康7-9级）</li>
+<li>✅ 转化技术：拔阴取阳（阴金恼→阳金行、阴金贪→阳金义）</li>
+<li>✅ 化克为生（金克木→金生水→水生木）</li>
+<li>✅ 包含完整干预工具集（觉察/转化/关系/发展）</li>
+<p>---</p>
+<strong>文档版本</strong>: 7.0  
+<strong>最后更新</strong>: 2026-04-04 21:00  
+<strong>维护者</strong>: 龙龟神将  
+<strong>同步状态</strong>: WorkBuddy ↔ Obsidian ↔ IMA 三向同步
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

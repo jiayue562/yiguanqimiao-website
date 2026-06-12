@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会话上下文管理 · Session Context Manager - 以观其妙书院</title>
+    <meta name="description" content="会话上下文管理 · Session Context Manager - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="会话上下文管理 · Session Context Manager">
+    <meta property="og:description" content="会话上下文管理 · Session Context Manager - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "会话上下文管理 · Session Context Manager",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>会话上下文管理 · Session Context Manager</h1>
+<p>> <strong>核心定位</strong>：多轮对话的<strong>连贯性保障器</strong>，确保第10轮对话和第1轮逻辑一致，话题不断线，分析不重复，建议不矛盾。</p>
+<p>---</p>
+<h2>🧵 上下文追踪维度</h2>
+<h3>维度1：五行一致性追踪</h3>
+```
+目标：确保对同一人的五行判断前后一致
+<p>追踪内容：
+  - 已确认的五行类型（不随意更改）
+  - 本轮新出现的五行信号
+  - 信号与历史的一致/矛盾情况</p>
+<p>处理规则：
+  新信号一致 → 追加置信度，不重复说
+  新信号矛盾 → 标注矛盾，询问用户确认
+  用户纠正 → 立即更新，承认之前判断
+```</p>
+<h3>维度2：话题线索追踪</h3>
+```
+目标：知道当前在聊哪条线索
+<p>结构：
+  主线话题（本次会话核心）: 亲密关系沟通
+  ├── 子话题A（已完成）: 双方五行类型分析
+  ├── 子话题B（进行中）: 火克金的冲突模式
+  └── 子话题C（待展开）: 具体沟通策略</p>
+<p>追踪规则：
+  - 用户切换话题 → 标记当前进度，切换新线
+  - 用户回到旧话题 → 恢复旧线上下文
+  - 用户问旧问题 → 简要复述结论，不重复分析
+```</p>
+<h3>维度3：分析进度追踪</h3>
+```
+目标：知道已经说了什么，下一步说什么
+<p>分析进度状态：
+  ✅ 已完成：五行识别（火主、木次）
+  ✅ 已完成：当前层级（3级·健康）  
+  🔄 进行中：关系场景分析
+  ⏳ 待展开：具体干预建议</p>
+<p>衔接规则：
+  不重复已完成的部分
+  进行中的部分先确认用户理解后继续
+  待展开的部分在合适时机提出
+```</p>
+<h3>维度4：情绪状态追踪</h3>
+```
+目标：感知用户情绪的变化轨迹
+<p>追踪：
+  本次会话情绪时间轴：
+  [开始：中性] → [第3轮：委屈↑] → [第5轮：愤怒↑] → [第7轮：平复↓]</p>
+<p>处理规则：
+  情绪升温 → 暂停分析，先处理情绪
+  情绪稳定 → 继续正常分析流程
+  情绪骤降 → 评估是否需要支持
+```</p>
+<p>---</p>
+<h2>🔄 上下文恢复机制</h2>
+<h3>跨会话恢复（新对话开始时）</h3>
+```
+系统内部执行：
+1. 调用用户画像存储 → 获取历史档案
+2. 加载最近会话摘要（上次聊了什么）
+3. 识别未完成议题
+<p>输出（如有必要时向用户简述）：
+"上次我们聊到了[主题]，[结论/进度]，
+今天想继续还是聊新话题？"
+```</p>
+<h3>会话内恢复（用户跳回旧话题）</h3>
+```
+用户说："对了，刚才你说的关于X的..."
+<p>系统：
+1. 识别用户指向的话题标签
+2. 恢复该话题的上下文缓存
+3. 简要复述关键信息
+4. 继续展开</p>
+<p>输出：
+"关于[X]，我们之前分析到[结论]，
+你想深入哪个方向？"
+```</p>
+<p>---</p>
+<h2>📋 上下文摘要生成</h2>
+<h3>每5轮生成一次摘要</h3>
+```markdown
+【第1-5轮对话摘要】
+<p>主题：亲密关系沟通问题
+用户画像：火行人（0.81）· 3级健康
+关系对象：伴侣（金行人推断0.65）</p>
+<p>已完成分析：
+<li>火克金的基本动态：A热情冲动 vs B苛刻冷静</li>
+<li>冲突模式识别：A的急躁（阴火）触发B的挑剔（阴金）</li></p>
+<p>进行中：化克为生方案设计</p>
+<p>情绪轨迹：[中性→委屈→稳定]</p>
+<p>下一步建议：展开"引入土行缓冲"的具体沟通策略
+```</p>
+<p>---</p>
+<h2>⚡ 特殊情况处理</h2>
+<h3>用户跳题</h3>
+```
+检测信号：话题突然转变，与当前上下文无关联
+<p>处理：
+1. 完成当前句子
+2. 标记当前话题进度
+3. 切换到新话题
+4. 必要时记录："之前的[话题]随时可以继续"
+```</p>
+<h3>用户忘记说过的内容</h3>
+```
+检测信号："你之前有说过这个吗？" / 重复提问
+<p>处理：
+1. 温和提醒："我们在[XX轮]提到过..."
+2. 简要复述结论
+3. 询问是否需要展开
+```</p>
+<h3>对话时间过长（>20轮）</h3>
+```
+触发：轮次超过20轮
+<p>处理：
+1. 主动提出阶段总结
+2. 整理本次会话核心收获
+3. 询问用户是否需要存档
+```</p>
+<p>---</p>
+<strong>版本</strong>: v1.0 | <strong>归属</strong>: 五行人格心理学智能体·记忆上下文层
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

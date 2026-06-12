@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentDB Vector Search Skill - 向量语义搜索 - 以观其妙书院</title>
+    <meta name="description" content="AgentDB Vector Search Skill - 向量语义搜索 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="AgentDB Vector Search Skill - 向量语义搜索">
+    <meta property="og:description" content="AgentDB Vector Search Skill - 向量语义搜索 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "AgentDB Vector Search Skill - 向量语义搜索",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>AgentDB Vector Search Skill - 向量语义搜索</h1>
+<h2>技能概述</h2>
+向量语义搜索技能，智能文档检索和相似度匹配，基于语义理解的知识发现。
+<h2>核心功能</h2>
+<h3>1. 向量检索</h3>
+<li><strong>语义相似度</strong>：基于向量 embedding 的语义匹配</li>
+<li><strong>跨语言检索</strong>：支持中英文混合检索</li>
+<li><strong>多模态支持</strong>：文本、概念、关系的向量表示</li>
+<h3>2. 智能排序</h3>
+<li><strong>相关性排序</strong>：按相关度排序结果</li>
+<li><strong>多样性保证</strong>：保证结果的多样性</li>
+<li><strong>质量筛选</strong>：过滤低质量或不相关内容</li>
+<h3>3. 知识发现</h3>
+<li><strong>隐含关系发现</strong>：发现知识间的隐含关系</li>
+<li><strong>知识扩展</strong>：基于已有知识扩展相关知识</li>
+<li><strong>关联推荐</strong>：推荐相关的知识节点</li>
+<h2>触发关键词</h2>
+<li>向量搜索、语义搜索</li>
+<li>相似度、相关知识</li>
+<li>知识发现、关联推荐</li>
+<h2>技术架构</h2>
+<p>```yaml
+向量检索:
+  embedding模型: text-embedding-ada-002
+  向量维度: 1536
+  索引类型: HNSW
+  相似度度量: cosine</p>
+<p>检索策略:
+  - 精确检索
+  - 近似检索
+  - 混合检索
+```</p>
+<h2>使用场景</h2>
+<h3>场景1：语义知识查询</h3>
+```
+用户：查找与"五行人格"相关的知识
+→ 向量检索，返回语义相关的知识节点
+```
+<h3>场景2：知识扩展</h3>
+```
+用户：我想了解"象思维"
+→ 返回象思维相关概念，扩展知识边界
+```
+<h2>与其他Skills的整合</h2>
+<h3>与rag-skill整合</h3>
+<li>向量搜索是RAG的底层技术</li>
+<li>rag-skill封装了更完整的检索流程</li>
+<h3>与知识库整合</h3>
+<li>索引Obsidian知识库</li>
+<li>支持WorkBuddy Brain检索</li>
+<h2>版本信息</h2>
+<li>版本：1.0</li>
+<li>创建时间：2026-03-23</li>
+<li>作者：龙龟神将</li>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

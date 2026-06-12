@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian知识库路径 - 以观其妙书院</title>
+    <meta name="description" content="Obsidian知识库路径 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Obsidian知识库路径">
+    <meta property="og:description" content="Obsidian知识库路径 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Obsidian知识库路径",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>Obsidian知识库路径</h1>
+<p>> <strong>凤脑OS与Obsidian主知识库的完整集成路径</strong> · 五行人格心理学OS v3.0 的知识存储层</p>
+<strong>核心定位</strong>：定义凤脑OS如何与Obsidian主知识库集成，确保知识一致性和双向链接。
+<p>---</p>
+<h2>📖 核心定位</h2>
+<h3>What（是什么）</h3>
+<p>凤脑OS的知识库集成模块定义了凤脑OS如何与Obsidian主知识库交互，包括：</p>
+<p>1. <strong>主知识库路径</strong>：`D:\以观其妙书院知识库\观其妙书院\`
+2. <strong>核心文件夹结构</strong>：05-五行人格心理学
+3. <strong>双向链接网络</strong>：基于Obsidian的`[[链接]]`语法
+4. <strong>知识同步机制</strong>：自动同步主知识库与凤脑OS</p>
+<h3>Why（为什么）</h3>
+<strong>问题背景</strong>：
+<li>凤脑OS作为知识地基层，需要访问主知识库</li>
+<li>17篇L7文章和130+条跨域联系分散在不同文件夹</li>
+<li>缺乏统一的访问路径导致知识查询效率低</li>
+<li>双向链接网络需要明确的维护机制</li>
+<strong>解决方案价值</strong>：
+<li>✅ <strong>统一访问</strong>：所有凤脑OS相关知识集中在05-五行人格心理学文件夹</li>
+<li>✅ <strong>快速检索</strong>：通过Obsidian双向链接快速跳转</li>
+<li>✅ <strong>知识一致性</strong>：确保凤脑OS知识与主知识库保持同步</li>
+<li>✅ <strong>完整备份</strong>：凤脑OS知识有完整的主知识库备份</li>
+<h3>How（怎么做）</h3>
+<strong>核心能力</strong>：
+<p>| 能力 | 操作方式 | 应用场景 |
+|------|---------|---------|
+| <strong>L7理论基石查询</strong> | 访问融合体系文件夹 | 凤心OS慢思考层调用 |
+| <strong>跨域联系检索</strong> | 查询知识图谱文件 | 凤心OS需要综合知识时 |
+| <strong>知识图谱导航</strong> | 使用Obsidian双向链接 | 快速定位相关理论 |
+| <strong>凤脑OS知识同步</strong> | 自动同步主知识库内容 | 保持知识一致性 |</p>
+<p>---</p>
+<h2>⚡ 触发条件</h2>
+<h3>直接触发词（P0·权重5 - 绝对触发）</h3>
+<strong>系统词</strong>：
+<li>Obsidian知识库、知识库路径、Obsidian路径</li>
+<li>双向链接、wikilinks、链接网络</li>
+<li>知识同步、库同步、知识库维护</li>
+<li>融合体系、L7理论、理论基石</li>
+<strong>操作词</strong>：
+<li>打开Obsidian、启动知识库、访问知识库</li>
+<li>搜索知识、查询理论、检索文章</li>
+<li>同步知识、更新知识、维护知识库</li>
+<li>双向跳转、链接跳转、快速导航</li>
+<h3>场景触发（智能识别）</h3>
+<strong>知识查询场景</strong>：
+<li>凤心OS需要查询L7理论基石内容</li>
+<li>需要检索跨域联系网络</li>
+<li>需要访问特定L7文章</li>
+<li>需要查询东西方认知科学对比</li>
+<strong>知识同步场景</strong>：
+<li>凤脑OS知识更新后需要同步到主知识库</li>
+<li>Obsidian主知识库更新后需要同步到凤脑OS</li>
+<li>定期知识库维护</li>
+<li>知识图谱更新</li>
+<strong>双向链接场景</strong>：
+<li>需要快速跳转到相关理论</li>
+<li>需要浏览知识图谱网络</li>
+<li>需要查看跨域联系</li>
+<li>需要导航到相关概念</li>
+<p>---</p>
+<h2>🔨 核心能力</h2>
+<h3>1. 主知识库路径</h3>
+<strong>主路径</strong>：`D:\以观其妙书院知识库\观其妙书院\`
+<strong>核心文件夹</strong>：
+```
+D:\以观其妙书院知识库\观其妙书院\
+├── 00-索引与导航\
+├── 01-核心独创Skills\
+├── 02-独创方法论\
+├── 03-信仰体系\
+├── 04-关系与共生\
+├── 05-五行人格心理学\
+│   ├── 融合体系\（17篇L7文章）
+│   ├── 知识图谱\（130+条跨域联系）
+│   ├── 凤脑OS\（凤脑OS知识地基层备份）
+│   ├── 凤爪OS\（凤爪OS应用接口层备份）
+│   └── 凤心OS\（凤心OS智能发动机层备份）
+├── 06-心文化\（五行识人、王凤仪化性谈）
+└── ...
+```
+<h3>2. L7理论基石访问</h3>
+<strong>路径</strong>：`D:\以观其妙书院知识库\观其妙书院\05-五行人格心理学\融合体系\`
+<strong>17篇L7文章</strong>：
+1. 一心即纯粹觉知.md（联系9-18）
+2. 三界理论全息阐释.md（联系10-12）
+3. 五行体系身心灵整合.md（联系13-15）
+4. 九层发展阶梯.md（联系19-23）
+5. 一心三界五行九层总论.md（联系24-27）
+6. 五行相生关系全息阐释.md（联系28-33）
+7. 五行相克关系全息阐释.md（联系34-40）
+8. 拔阴取阳技术体系全解.md（联系41-48）
+9. 化克为生技术体系全解.md（联系49-52）
+10. 相生强化·滋养阳面.md（联系53-58）
+11. 象思维·中国式认知深层密码.md（联系59-64）
+12. 福格行为模型B=MAP.md（联系65-70）
+13. 金行人格全谱系解析.md（联系71-76）
+14. 金行人外观特征全息解析.md（联系77-84）
+15. 五行总智能体系统梳理.md（联系90）
+16. 五行分类图谱与双向链接知识网络.md（联系91-97）
+17. 快慢思考融合体系.md（联系98-106）
+17-补. 快慢思考·第二轮深度补充.md（联系107-115）
+🌟L1. 一心·统摄·庄子三无人格体系.md（联系116-120）
+💎L1-2. 一心·统摄·觉性本体论与修证体系.md（联系121-130）
+<h3>3. 跨域联系网络访问</h3>
+<strong>路径</strong>：`D:\以观其妙书院知识库\观其妙书院\05-五行人格心理学\知识图谱\🌐 知识图谱.md`
+<strong>130+条跨域联系</strong>：
+<li>东西方认知科学握手</li>
+<li>五行体系整合</li>
+<li>心文化理论支撑</li>
+<li>现代心理学连接</li>
+<h3>4. 凤脑OS备份路径</h3>
+<strong>路径</strong>：`D:\以观其妙书院知识库\观其妙书院\05-五行人格心理学\凤脑OS\`
+<strong>备份内容</strong>：
+<li>凤脑OS主定义文档</li>
+<li>L7理论基石完整清单</li>
+<li>跨域联系网络</li>
+<li>Obsidian知识库路径</li>
+<li>知识查询模板</li>
+<h3>5. 双向链接使用</h3>
+<strong>Obsidian双向链接语法</strong>：
+```markdown
+[[链接名称]]  - 基本链接语法
+[[链接名称|显示文本]]  - 自定义显示文本
+[[链接名称#锚点]]  - 链接到文档内的锚点
+![[链接名称]]  - 嵌入链接到当前文档
+```
+<strong>使用示例</strong>：
+```markdown
+查看[[一心三界五行九层总论]]了解完整体系
+通过[[快慢思考融合体系]]学习东西方认知科学握手
+[[五行相克关系全息阐释]]解释制约即爱的道理
+```
+<p>---</p>
+<h2>🎯 使用流程</h2>
+<h3>场景1：凤心OS需要理论支撑</h3>
+<p>```
+凤心OS慢思考层激活
+    ↓
+需要L7理论基石？
+    ↓ 是
+调用凤脑OS知识库路径
+    ↓
+获取主知识库路径
+    ↓
+访问D:\以观其妙书院知识库\观其妙书院\05-五行人格心理学\融合体系\
+    ↓
+检索相关L7文章
+    ↓
+返回完整理论内容
+    ↓
+凤心OS继续分析
+```</p>
+<h3>场景2：需要跨域知识连接</h3>
+<p>```
+凤心OS需要综合知识
+    ↓
+调用凤脑OS跨域联系检索
+    ↓
+访问知识图谱
+    ↓
+查询130+条跨域联系
+    ↓
+获取相关跨域连接
+    ↓
+返回东西方认知科学对比
+    ↓
+凤心OS继续分析
+```</p>
+<h3>场景3：Obsidian双向链接导航</h3>
+<p>```
+需要查看相关理论
+    ↓
+点击Obsidian双向链接
+    ↓
+自动跳转到相关文档
+    ↓
+浏览双向链接网络
+    ↓
+快速定位所需知识
+    ↓
+返回分析结果
+```</p>
+<h3>场景4：知识同步</h3>
+<p>```
+凤脑OS知识更新
+    ↓
+检查Obsidian主知识库
+    ↓
+更新凤脑OS备份
+    ↓
+保持知识一致性
+    ↓
+完成同步
+```</p>
+<p>---</p>
+<h2>🔗 与其他Skills的协同</h2>
+<h3>前置Skills</h3>
+<p>| Skills | 触发条件 | 调用方式 |
+|--------|---------|---------|
+| <strong>凤心OS</strong> | 慢思考层需要深度知识支撑 | 自动调用凤脑OS知识库路径查询 |
+| <strong>五行分智能体</strong> | 需要L7理论基石内容 | 通过凤脑OS查询融合体系 |
+| <strong>L1·一心·统摄</strong> | 需要整体理论体系 | 调用凤脑OS获取完整知识图谱 |</p>
+<h3>后置Skills</h3>
+<p>| Skills | 触发条件 | 反馈方式 |
+|--------|---------|---------|
+| <strong>知行合一自我进化</strong> | 凤脑OS知识调用后产生新认知 | 自动执行三阶段沉淀 |
+| <strong>Obsidian</strong> | 知识库需要更新 | 自动同步凤脑OS备份 |</p>
+<h3>协同协议</h3>
+<strong>核心原则</strong>：
+<li>凤脑OS是<strong>知识提供者</strong>，不主动调用其他Skills</li>
+<li>凤心OS通过<strong>知识查询接口</strong>调用凤脑OS</li>
+<li>所有知识操作都通过Obsidian主知识库统一管理</li>
+<li>知识一致性通过双向链接网络保证</li>
+<p>---</p>
+<h2>📚 参考资料</h2>
+<h3>核心文档</h3>
+<li><strong>L7理论基石完整清单</strong>：`references/L7理论基石完整清单.md`</li>
+<li><strong>跨域联系网络</strong>：`references/跨域联系网络.md`</li>
+<li><strong>凤脑OS主定义</strong>：`SKILL.md`</li>
+<li><strong>Obsidian Skill主定义</strong>：`C:\Users\jia'yue\.workbuddy\skills\obsidian\SKILL.md`</li>
+<h3>Obsidian文档</h3>
+<li><strong>主知识库</strong>：`D:\以观其妙书院知识库\观其妙书院\`</li>
+<li><strong>融合体系文件夹</strong>：`05-五行人格心理学\融合体系\`</li>
+<li><strong>知识图谱</strong>：`05-五行人格心理学\知识图谱\🌐 知识图谱.md`</li>
+<li><strong>凤脑OS备份</strong>：`05-五行人格心理学\凤脑OS\`</li>
+<h3>快速访问</h3>
+<li><strong>L7理论基石</strong>：17篇完整文章列表</li>
+<li><strong>跨域联系</strong>：130+条隐秘联系网络</li>
+<li><strong>双向链接</strong>：基于Obsidian的完整链接网络</li>
+<p>---</p>
+<h2>🎯 核心价值</h2>
+<p>1. <strong>统一访问</strong>
+   - 所有凤脑OS相关知识集中在05-五行人格心理学文件夹
+   - 通过主知识库路径统一访问</p>
+<p>2. <strong>快速检索</strong>
+   - 通过Obsidian双向链接快速跳转
+   - 知识图谱提供130+条跨域联系
+   - L7理论基石提供17篇完整文章</p>
+<p>3. <strong>知识一致性</strong>
+   - 凤脑OS知识与主知识库保持同步
+   - 双向链接网络确保知识完整性
+   - 自动同步机制维护知识一致性</p>
+<p>4. <strong>完整备份</strong>
+   - 凤脑OS知识有完整的主知识库备份
+   - 支持凤心OS的深度分析需求
+   - 确保三层系统知识地基完整</p>
+<p>5. <strong>高效维护</strong>
+   - 统一的文件夹结构便于维护
+   - 双向链接网络便于导航
+   - 知识同步机制确保一致性</p>
+<p>---</p>
+<h2>🔄 持续进化</h2>
+<h3>知识库同步</h3>
+<li>定期同步Obsidian主知识库</li>
+<li>更新凤脑OS备份</li>
+<li>维护跨域联系网络</li>
+<h3>知识图谱优化</h3>
+<li>根据使用反馈优化检索效率</li>
+<li>补充新的跨域联系</li>
+<li>优化双向链接网络</li>
+<h3>系统协同优化</h3>
+<li>与凤心OS的调用接口优化</li>
+<li>与五行分智能体的知识支撑优化</li>
+<li>与L1·一心·统摄的知识整合优化</li>
+<p>---</p>
+<h2>📚 Obsidian知识库路径</h2>
+<h3>主知识库</h3>
+<strong>路径</strong>：`D:\以观其妙书院知识库\观其妙书院\`
+<h3>核心文件夹</h3>
+<p>| 文件夹 | 路径 | 内容 | 用途 |
+|--------|------|------|------|
+| 融合体系 | `05-五行人格心理学\融合体系\` | 17篇L7文章 | L7理论基石 |
+| 知识图谱 | `05-五行人格心理学\知识图谱\` | 130+条跨域联系 | 跨域连接网络 |
+| 凤脑OS | `05-五行人格心理学\凤脑OS\` | 凤脑OS备份 | 知识地基层备份 |
+| 凤爪OS | `05-五行人格心理学\凤爪OS\` | 凤爪OS备份 | 应用接口层备份 |
+| 凤心OS | `05-五行人格心理学\凤心OS\` | 凤心OS备份 | 智能发动机层备份 |</p>
+<h3>双向链接</h3>
+<strong>语法</strong>：`[[链接名称]]`
+<strong>示例</strong>：
+<li>`[[一心三界五行九层总论]]`</li>
+<li>`[[快慢思考融合体系]]`</li>
+<li>`[[五行相克关系全息阐释]]`</li>
+<p>---</p>
+<strong>Obsidian知识库路径 v1.0</strong> · <strong>凤脑OS与Obsidian主知识库的完整集成</strong>  
+<strong>核心价值</strong>：统一访问·快速检索·知识一致性·完整备份·高效维护  
+<strong>象征符号</strong>：📚 = 知识库集成·双向链接·快速检索
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

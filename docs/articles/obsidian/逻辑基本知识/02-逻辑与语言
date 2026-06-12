@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二章 逻辑与语言 - 以观其妙书院</title>
+    <meta name="description" content="第二章 逻辑与语言 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="第二章 逻辑与语言">
+    <meta property="og:description" content="第二章 逻辑与语言 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "第二章 逻辑与语言",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <p>﻿---
+tags: [逻辑学, 语言逻辑, 自然语言, 预设, 元语言, 语境]
+aliases: [逻辑基本知识第二章, Logic and Language]
+created: 2026-05-24
+---</p>
+<h1>第二章 逻辑与语言</h1>
+<p>> <strong>本章核心</strong>：逻辑不脱离语言，逻辑存在于每篇课文、每个语句之中</p>
+<p>---</p>
+<h2>一、语言的基本职能</h2>
+<p>1. <strong>交流思想的职能</strong>：最基本功能，传递信息、表达观点
+2. <strong>表达感情的职能</strong>：传递情绪态度（诗歌、抒情散文）
+3. <strong>指使行为的职能</strong>：要求他人做出行动（命令、请求）</p>
+<p>> <strong>逻辑要求不同</strong>：交流思想/指使行为需严格合逻辑；表达感情可适当突破逻辑限制</p>
+<p>---</p>
+<h2>二、自然语言和人工语言</h2>
+<p>| 类型 | 优点 | 缺点 |
+|------|------|------|
+| <strong>自然语言</strong>（汉语、英语等） | 贴近生活、表达灵活 | 歧义、模糊性 |
+| <strong>人工语言</strong>（符号系统、公式、编程语言） | 精确、无歧义 | 脱离日常语境 |</p>
+<p>---</p>
+<h2>三、语言形式和逻辑形式</h2>
+<li><strong>语言形式</strong>：语句的语法结构（如"我吃饭"→主谓宾）</li>
+<li><strong>逻辑形式</strong>：语句背后的推理结构（如"如果p，那么q；p，所以q"）</li>
+<li><strong>关键发现</strong>：语法结构相同 ≠ 逻辑形式相同</li>
+  - "台上坐着主席" → 存在句
+  - "台上唱着戏" → 动作句
+<p>---</p>
+<h2>四、语句的预设和语境</h2>
+<h3>预设</h3>
+<li><strong>定义</strong>：语句成立的隐含前提</li>
+<li><strong>谬误</strong>："复杂问句"——预设不成立</li>
+  - 例："你什么时候戒的烟？"预设"你曾经抽过烟且已戒烟"
+  - 对不抽烟的人问此 = 复杂问句谬误
+<h3>语境</h3>
+<li><strong>定义</strong>：语言环境（上下文、时间、地点、说话人背景）</li>
+<li><strong>同一语句不同语境含义不同</strong></li>
+  - "父亲在母亲之前去世"，在父母均已去世→事实，在均健在→预测
+<p>---</p>
+<h2>五、对象语言和元语言</h2>
+<p>| 概念 | 定义 | 示例 |
+|------|------|------|
+| <strong>对象语言</strong> | 描述研究对象的语言 | 课文原文的语言 |
+| <strong>元语言</strong> | 描述对象语言的语言 | 分析课文逻辑结构时的逻辑术语 |</p>
+<p>> <strong>核心原则</strong>：不能用对象语言本身来论证对象语言的正确性，否则犯"循环论证"谬误</p>
+<p>---</p>
+<h2>双向链接</h2>
+<h3>本章内部</h3>
+<li>[[07-谬误#语形谬误]] — 复杂问句、句义含混</li>
+<li>[[07-谬误#语义谬误]] — 歧义谬误、混义谬误</li>
+<li>[[03-定义与划分#语词的关系]] — 多义词、同义词</li>
+<h3>跨域链接</h3>
+<li>[[AI OS知识库/自然语言理解]] — AI如何处理自然语言的歧义</li>
+<li>[[03-知识地基层/易经基础/易经的语言]] — 易经符号系统作为人工语言</li>
+<p>---</p>
+<h2>金句</h2>
+<p>> "语言形式是语句的语法结构，逻辑形式是语句背后的推理结构。语法结构相同不等于逻辑形式相同。"
+> "预设是语句成立的隐含前提，复杂问句的谬误就在于隐含了一个不成立的预设。"</p>
+<p>---</p>
+<h2>标签</h2>
+#语言逻辑 #自然语言 #人工语言 #预设 #语境 #元语言 #对象语言 #复杂问句
+<p>---</p>
+<p>_创建日期：2026-05-24_</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

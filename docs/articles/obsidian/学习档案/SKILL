@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习档案（LEARNINGSmd） - 以观其妙书院</title>
+    <meta name="description" content="学习档案（LEARNINGSmd） - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="学习档案（LEARNINGSmd）">
+    <meta property="og:description" content="学习档案（LEARNINGSmd） - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "学习档案（LEARNINGSmd）",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>学习档案（LEARNINGSmd）</h1>
+<p>> <strong>核心铁律</strong>：同一错误犯两次，绝对不可原谅。
+>
+> <strong>对标来源</strong>：OpenClaw LEARNINGSmd规则
+>
+> <strong>适用范围</strong>：AI龙龟共生伙伴操作系统（AI OS）躯体系统所有学习和迭代过程</p>
+<p>---</p>
+<h2>一、学习档案定义（Learning Archive Definition）</h2>
+<h3>1.1 核心概念</h3>
+<strong>学习档案（LEARNINGSmd）</strong>：
+<li>定义：记录所有错误、修正、经验的标准化文档</li>
+<li>目的：避免重复犯错，实现持续迭代</li>
+<li>特征：强制记录、系统化复盘、防错规则</li>
+<strong>错误闭环学习机制</strong>：
+```
+错误发生 → 立即修复 → 记录原因 → 编写规则 → 会话复盘 → 避免重复
+   ↑                                                        ↓
+   └────────────────────────────────────────────────────────┘
+```
+<h3>1.2 文档结构</h3>
+<strong>学习档案路径</strong>：
+<li>主文件：`C:\Users\jia'yue\WorkBuddy\Claw\.workbuddy\memory\LEARNINGS.md`</li>
+<li>子文件：`memory/learnings/按日期分类/具体错误.md`</li>
+<li>规则文件：`memory/rules/防错规则.md`</li>
+<strong>标准格式</strong>：
+```markdown
+<h1>学习档案（LEARNINGSmd）</h1>
+<h2>最新规则摘要</h2>
+<li>规则1：[规则名称]</li>
+<li>规则2：[规则名称]</li>
+<li>...</li>
+<h2>错误记录（按时间倒序）</h2>
+<h3>错误 #1（最新）</h3>
+<li><strong>错误ID</strong>：ERR-YYYY-MM-DD-001</li>
+<li><strong>发生时间</strong>：YYYY-MM-DD HH:MM:SS</li>
+<li><strong>错误类型</strong>：[类型]</li>
+<li><strong>错误描述</strong>：[描述]</li>
+<li><strong>触发模式</strong>：[触发条件]</li>
+<li><strong>根本原因</strong>：[原因]</li>
+<li><strong>修复方案</strong>：[方案]</li>
+<li><strong>防错规则</strong>：[规则]</li>
+<li><strong>验证方法</strong>：[方法]</li>
+<h3>错误 #2</h3>
+...
+<h2>防错规则（按优先级排序）</h2>
+<h3>规则1：[规则名称]</h3>
+<li><strong>规则ID</strong>：RULE-001</li>
+<li><strong>优先级</strong>：P0/P1/P2/P3</li>
+<li><strong>创建时间</strong>：YYYY-MM-DD</li>
+<li><strong>规则内容</strong>：[内容]</li>
+<li><strong>触发场景</strong>：[场景]</li>
+<li><strong>验证方法</strong>：[方法]</li>
+<h3>规则2：[规则名称]</h3>
+...
+<h2>会话复盘记录</h2>
+<h3>会话复盘 #1</h3>
+<li><strong>复盘时间</strong>：YYYY-MM-DD</li>
+<li><strong>复盘范围</strong>：[范围]</li>
+<li><strong>发现的潜在问题</strong>：[问题]</li>
+<li><strong>优化建议</strong>：[建议]</li>
+...
+```
+<p>---</p>
+<h2>二、错误处理流程（Error Handling Process）</h2>
+<h3>2.1 四步流程（Four-Step Process）</h3>
+<p>#### 步骤一：立即修复问题</p>
+<strong>目标</strong>：最小化错误影响，快速恢复正常状态
+<strong>执行标准</strong>：
+```
+修复流程：
+  1. 确认错误（5分钟内）
+     → 确认错误确实存在
+     → 确认错误的影响范围
+     → 确认错误的优先级（P0/P1/P2/P3）
+  
+  2. 定位原因（15分钟内）
+     → 分析错误日志
+     → 复现错误场景
+     → 确定根本原因
+  
+  3. 执行修复（30分钟内）
+     → 选择最佳修复方案
+     → 执行修复操作
+     → 验证修复效果
+     → 如果失败，回滚到之前状态
+  
+  4. 确认恢复（15分钟内）
+     → 验证系统状态恢复正常
+     → 确认没有引入新问题
+     → 通知相关人员（如果需要）
+```
+<strong>修复时限</strong>：
+<li>P0（紧急）：<15分钟</li>
+<li>P1（高）：<1小时</li>
+<li>P2（中）：<4小时</li>
+<li>P3（低）：<24小时</li>
+<p>#### 步骤二：记录错误原因</p>
+<strong>目标</strong>：系统化记录错误信息，便于后续分析和预防
+<strong>记录标准格式</strong>：
+```markdown
+<h3>错误 #ERR-YYYY-MM-DD-XXX</h3>
+<strong>基本信息</strong>：
+<li>错误ID：ERR-2026-03-23-001</li>
+<li>发生时间：2026-03-23 14:30:25</li>
+<li>错误类型：[类型]</li>
+<li>严重程度：P0/P1/P2/P3</li>
+<li>影响范围：[范围]</li>
+<strong>错误描述</strong>：
+<li>用户行为：[用户做了什么]</li>
+<li>系统行为：[系统做了什么]</li>
+<li>预期行为：[预期应该发生什么]</li>
+<li>实际行为：[实际发生了什么]</li>
+<strong>触发模式</strong>：
+<li>触发条件：[什么条件下会触发]</li>
+<li>触发频率：[发生的频率]</li>
+<li>触发场景：[在哪些场景下会触发]</li>
+<strong>根本原因</strong>：
+<li>直接原因：[直接导致错误的原因]</li>
+<li>根本原因：[根本原因是什么]</li>
+<li>为什么会犯这个错误：[为什么会犯]</li>
+<strong>修复方案</strong>：
+<li>修复方法：[如何修复]</li>
+<li>修复时间：[修复花费的时间]</li>
+<li>修复结果：[修复是否成功]</li>
+<strong>后续影响</strong>：
+<li>是否有残留影响：[是否有]</li>
+<li>是否需要通知用户：[是否]</li>
+<li>是否需要更新文档：[是否]</li>
+```
+<p>#### 步骤三：编写防错规则</p>
+<strong>目标</strong>：建立机制，避免同一错误再次发生
+<strong>防错规则标准格式</strong>：
+```markdown
+<h3>防错规则 #RULE-XXX</h3>
+<strong>规则信息</strong>：
+<li>规则ID：RULE-001</li>
+<li>规则名称：[名称]</li>
+<li>优先级：P0/P1/P2/P3</li>
+<li>创建时间：YYYY-MM-DD</li>
+<li>关联错误：ERR-2026-03-23-001</li>
+<strong>规则内容</strong>：
+```
+[用一句话描述规则]
+```
+<strong>触发场景</strong>：
+<li>场景1：[描述场景]</li>
+<li>场景2：[描述场景]</li>
+<li>场景3：[描述场景]</li>
+<strong>执行标准</strong>：
+<li>在什么情况下执行：[条件]</li>
+<li>如何执行：[步骤]</li>
+<li>验证方法：[方法]</li>
+<strong>验证清单</strong>：
+<li>[ ] 检查项1</li>
+<li>[ ] 检查项2</li>
+<li>[ ] 检查项3</li>
+<strong>惩罚机制</strong>：
+<li>如果违反此规则：[惩罚措施]</li>
+<li>同一错误犯两次：[绝对不可原谅]</li>
+```
+<strong>防错规则示例</strong>：
+```markdown
+<h3>防错规则 #RULE-001</h3>
+<strong>规则信息</strong>：
+<li>规则ID：RULE-001</li>
+<li>规则名称：配置修改前必须创建备份</li>
+<li>优先级：P0</li>
+<li>创建时间：2026-03-23</li>
+<li>关联错误：ERR-2026-03-23-001</li>
+<strong>规则内容</strong>：
+```
+修改任何配置文件前，必须先创建备份，备份文件命名格式为：原文件名.backup.YYYYMMDDHHMMSS
+```
+<strong>触发场景</strong>：
+<li>场景1：修改配置文件（如.ini、.json、.yaml）</li>
+<li>场景2：修改环境变量文件（如.env）</li>
+<li>场景3：修改数据库配置（如db.ini）</li>
+<strong>执行标准</strong>：
+<li>在什么情况下执行：每次修改配置文件前</li>
+<li>如何执行：</li>
+  1. 读取配置文件
+  2. 创建备份文件（备份文件名包含时间戳）
+  3. 记录备份操作到日志
+  4. 执行配置修改
+  5. 验证修改结果
+<li>验证方法：检查备份文件是否存在</li>
+<strong>验证清单</strong>：
+<li>[ ] 备份文件已创建</li>
+<li>[ ] 备份文件命名格式正确</li>
+<li>[ ] 备份文件包含完整内容</li>
+<li>[ ] 备份操作已记录到日志</li>
+<strong>惩罚机制</strong>：
+<li>如果违反此规则：系统拒绝执行配置修改，并提示错误</li>
+<li>同一错误犯两次：绝对不可原谅</li>
+```
+<p>#### 步骤四：每次会话开始时复盘</p>
+<strong>目标</strong>：在每次会话开始时，复盘所有已记录的经验，避免重复犯错
+<strong>复盘标准流程</strong>：
+```
+会话复盘流程：
+<p>步骤一：加载学习档案（1分钟）
+    → 读取LEARNINGS.md文件
+    → 加载所有防错规则
+    → 加载最近7天的错误记录</p>
+<p>步骤二：扫描当前任务（2分钟）
+    → 分析当前任务的类型
+    → 识别可能触发的错误场景
+    → 关联相关的防错规则</p>
+<p>步骤三：应用防错规则（3分钟）
+    → 检查是否有相关防错规则
+    → 如果有，严格执行防错规则
+    → 如果没有，继续执行</p>
+<p>步骤四：记录复盘结果（1分钟）
+    → 记录复盘了哪些规则
+    → 记录是否有潜在风险
+    → 如果有风险，提前告知用户
+```</p>
+<strong>复盘输出格式</strong>：
+```markdown
+<h1>会话复盘报告</h1>
+<strong>复盘时间</strong>：YYYY-MM-DD HH:MM:SS
+<strong>会话ID</strong>：SESSION-XXX
+<strong>复盘范围</strong>：最近7天 + 关键规则
+<h2>已加载的防错规则（共X条）</h2>
+<h3>P0规则（X条）</h3>
+<li>RULE-001：[规则名称]</li>
+<li>RULE-002：[规则名称]</li>
+...
+<h3>P1规则（X条）</h3>
+<li>RULE-101：[规则名称]</li>
+<li>RULE-102：[规则名称]</li>
+...
+<h2>当前任务相关规则（Y条）</h2>
+<h3>相关规则列表</h3>
+<li>RULE-001：[规则名称]（相关度：高）</li>
+<li>RULE-005：[规则名称]（相关度：中）</li>
+...
+<h3>风险提示</h3>
+⚠️ <strong>风险1</strong>：[描述风险]
+  - 相关规则：RULE-001
+  - 防范措施：[措施]
+<p>⚠️ <strong>风险2</strong>：[描述风险]
+  - 相关规则：RULE-005
+  - 防范措施：[措施]</p>
+<h2>复盘建议</h2>
+<li>建议1：[建议内容]</li>
+<li>建议2：[建议内容]</li>
+...
+<h2>复盘确认</h2>
+[ ] 已理解所有相关规则
+[ ] 已知晓潜在风险
+[ ] 同意继续执行
+```
+<p>---</p>
+<h2>三、错误分类体系（Error Classification System）</h2>
+<h3>3.1 按错误类型分类</h3>
+<p>| 错误类型 | 描述 | 示例 | 严重程度 |
+|---------|------|------|---------|
+| <strong>配置错误</strong> | 配置文件修改错误 | 配置文件格式错误、配置项错误 | P1 |
+| <strong>权限错误</strong> | 权限不足导致操作失败 | 文件权限不足、API权限不足 | P1 |
+| <strong>依赖错误</strong> | 依赖库缺失或版本不匹配 | 包缺失、版本冲突 | P1 |
+| <strong>逻辑错误</strong> | 代码逻辑错误 | 死循环、条件判断错误 | P2 |
+| <strong>性能错误</strong> | 性能问题导致响应慢 | 查询慢、内存占用高 | P2 |
+| <strong>安全错误</strong> | 安全漏洞或泄露 | API密钥泄露、SQL注入 | P0 |
+| <strong>数据错误</strong> | 数据错误或丢失 | 数据库连接失败、数据损坏 | P1 |
+| <strong>网络错误</strong> | 网络连接问题 | 连接超时、DNS解析失败 | P2 |</p>
+<h3>3.2 按触发模式分类</h3>
+<p>| 触发模式 | 描述 | 防范策略 |
+|---------|------|---------|
+| <strong>用户操作错误</strong> | 用户操作不当导致 | 用户教育、操作验证 |
+| <strong>代码逻辑错误</strong> | 代码逻辑缺陷 | 代码审查、单元测试 |
+| <strong>配置错误</strong> | 配置不当导致 | 配置验证、配置模板 |
+| <strong>环境错误</strong> | 环境变化导致 | 环境隔离、环境监控 |
+| <strong>依赖错误</strong> | 依赖问题导致 | 依赖管理、版本锁定 |
+| <strong>竞态错误</strong> | 多线程/并发导致 | 并发控制、锁机制 |
+| <strong>资源错误</strong> | 资源不足导致 | 资源监控、资源预留 |</p>
+<h3>3.3 按严重程度分类</h3>
+<p>| 严重程度 | 描述 | 响应时间 | 示例 |
+|---------|------|---------|------|
+| <strong>P0（紧急）</strong> | 系统崩溃、数据丢失、安全漏洞 | <15分钟 | API密钥泄露、数据库崩溃 |
+| <strong>P1（高）</strong> | 核心功能失效、严重性能问题 | <1小时 | 关键功能无法使用、响应超时 |
+| <strong>P2（中）</strong> | 非核心功能失效、轻微性能问题 | <4小时 | 非关键功能异常、日志格式错误 |
+| <strong>P3（低）</strong> | 界面问题、用户体验问题 | <24小时 | 提示信息不清晰、布局问题 |</p>
+<p>---</p>
+<h2>四、防错规则体系（Prevention Rules System）</h2>
+<h3>4.1 规则优先级</h3>
+<p>| 优先级 | 定义 | 违反后果 | 示例 |
+|-------|------|---------|------|
+| <strong>P0（最高）</strong> | 核心安全规则，绝对不能违反 | 系统拒绝执行，报告错误 | API密钥管理、数据备份 |
+| <strong>P1（高）</strong> | 重要规则，违反会导致严重问题 | 警告提示，建议修改 | 配置验证、权限检查 |
+| <strong>P2（中）</strong> | 一般规则，违反会导致问题 | 提示信息，可选修改 | 日志记录、文档更新 |
+| <strong>P3（低）</strong> | 建议性规则，违反不会导致问题 | 可选提示 | 代码风格、注释规范 |</p>
+<h3>4.2 核心防错规则清单</h3>
+<p>#### P0规则（核心安全规则）</p>
+<strong>RULE-001：配置修改前必须创建备份</strong>
+<li>触发场景：修改任何配置文件</li>
+<li>执行标准：备份文件命名格式为：原文件名.backup.YYYYMMDDHHMMSS</li>
+<li>验证方法：检查备份文件是否存在</li>
+<li>违反后果：系统拒绝执行配置修改</li>
+<strong>RULE-002：API密钥必须集中管理</strong>
+<li>触发场景：使用任何API密钥</li>
+<li>执行标准：所有API密钥存储在.secrets文件</li>
+<li>验证方法：检查API密钥是否从.secrets读取</li>
+<li>违反后果：系统拒绝使用硬编码的API密钥</li>
+<strong>RULE-003：禁止破坏Git历史</strong>
+<li>触发场景：执行Git操作</li>
+<li>执行标准：禁止使用git push --force</li>
+<li>验证方法：检查Git命令是否包含force参数</li>
+<li>违反后果：系统拒绝执行force push</li>
+<strong>RULE-004：关键操作必须请示用户</strong>
+<li>触发场景：删除重要文件、产生费用操作</li>
+<li>执行标准：必须等待用户确认</li>
+<li>验证方法：检查是否收到用户确认</li>
+<li>违反后果：系统拒绝执行关键操作</li>
+<p>#### P1规则（重要规则）</p>
+<strong>RULE-101：文件操作前必须检查文件存在性</strong>
+<li>触发场景：读取、修改、删除文件</li>
+<li>执行标准：使用os.path.exists()检查文件</li>
+<li>验证方法：检查是否存在文件不存在的错误</li>
+<li>违反后果：警告提示，建议添加检查</li>
+<strong>RULE-102：API调用前必须验证参数有效性</strong>
+<li>触发场景：调用任何API</li>
+<li>执行标准：验证参数格式、范围、类型</li>
+<li>验证方法：检查API调用是否成功</li>
+<li>违反后果：警告提示，建议添加验证</li>
+<strong>RULE-103：错误必须立即记录到日志</strong>
+<li>触发场景：捕获任何错误</li>
+<li>执行标准：使用logging模块记录错误</li>
+<li>验证方法：检查日志文件是否有错误记录</li>
+<li>违反后果：警告提示，建议添加日志</li>
+<strong>RULE-104：修改代码前必须创建分支</strong>
+<li>触发场景：修改任何代码</li>
+<li>执行标准：从main分支创建新分支</li>
+<li>验证方法：检查当前是否在feature分支</li>
+<li>违反后果：警告提示，建议创建分支</li>
+<p>#### P2规则（一般规则）</p>
+<strong>RULE-201：复杂逻辑必须添加注释</strong>
+<li>触发场景：编写复杂逻辑代码</li>
+<li>执行标准：添加清晰、准确的注释</li>
+<li>验证方法：检查代码是否有注释</li>
+<li>违反后果：提示信息，建议添加注释</li>
+<strong>RULE-202：变量命名必须符合规范</strong>
+<li>触发场景：定义变量名</li>
+<li>执行标准：使用有意义的变量名，小写加下划线</li>
+<li>验证方法：检查变量名是否符合规范</li>
+<li>违反后果：提示信息，建议修改命名</li>
+<strong>RULE-203：函数必须有文档字符串</strong>
+<li>触发场景：定义函数</li>
+<li>执行标准：添加docstring，描述函数功能</li>
+<li>验证方法：检查函数是否有docstring</li>
+<li>违反后果：提示信息，建议添加文档</li>
+<strong>RULE-204：日志必须有统一格式</strong>
+<li>触发场景：记录日志</li>
+<li>执行标准：使用统一的日志格式</li>
+<li>验证方法：检查日志格式是否一致</li>
+<li>违反后果：提示信息，建议统一格式</li>
+<p>#### P3规则（建议性规则）</p>
+<strong>RULE-301：代码风格应符合PEP8规范</strong>
+<li>触发场景：编写代码</li>
+<li>执行标准：使用自动格式化工具（如black）</li>
+<li>验证方法：使用flake8检查代码风格</li>
+<li>违反后果：可选提示，建议格式化</li>
+<strong>RULE-302：函数长度不应超过50行</strong>
+<li>触发场景：编写函数</li>
+<li>执行标准：拆分长函数为多个小函数</li>
+<li>验证方法：检查函数行数</li>
+<li>违反后果：可选提示，建议拆分函数</li>
+<strong>RULE-303：类中方法数量不应超过10个</strong>
+<li>触发场景：定义类</li>
+<li>执行标准：拆分大类为多个小类</li>
+<li>验证方法：检查类中方法数量</li>
+<li>违反后果：可选提示，建议拆分类</li>
+<p>---</p>
+<h2>五、学习档案与龙心OS整合</h2>
+<h3>5.1 学习档案在AI OS中的定位</h3>
+<strong>躯体系统</strong>：
+<li><strong>Skills层</strong>：学习档案是Skills层的核心能力</li>
+<li><strong>Framework层</strong>：Framework层在执行任务时自动调用学习档案</li>
+<li><strong>进化机制</strong>：学习档案是AI OS自我进化的核心动力</li>
+<strong>调用方式</strong>：
+<li>自动触发：错误发生时自动记录到学习档案</li>
+<li>手动调用：用户可以主动查询学习档案</li>
+<li>会话复盘：每次会话开始时自动复盘学习档案</li>
+<h3>5.2 学习档案与五大引擎的协同</h3>
+<strong>🐉 象思维（心）</strong>：
+<li>洞察错误本质：发现错误的根本原因</li>
+<li>创新防错规则：创造新的防错方法</li>
+<strong>📚 知识学习（脑）</strong>：
+<li>学习错误案例：深度学习错误案例</li>
+<li>提炼防错规则：从错误中提炼规则</li>
+<strong>🌈 五色光思维（眼）</strong>：
+<li>白光：客观分析错误原因</li>
+<li>蓝光：识别防错规则中的风险</li>
+<strong>🤝 人机协同五象限（手）</strong>：
+<li>共创导师象限：用户确认关键决策</li>
+<li>共创伙伴象限：AI提供建议，用户确认</li>
+<strong>🔄 知行合一自我进化（血）</strong>：
+<li>将错误经验沉淀为系统资产</li>
+<li>通过防错规则驱动系统进化</li>
+<p>---</p>
+<h2>六、学习档案检查清单</h2>
+<h3>错误发生后检查清单</h3>
+<p>在错误发生后，必须完成以下检查：</p>
+<li>[ ] 立即修复问题：是否已立即修复？</li>
+<li>[ ] 记录错误原因：是否已记录到学习档案？</li>
+<li>[ ] 编写防错规则：是否已编写防错规则？</li>
+<li>[ ] 验证修复效果：是否已验证修复成功？</li>
+<li>[ ] 通知相关人员：是否已通知相关人员？</li>
+<h3>会话开始前检查清单</h3>
+<p>在每次会话开始前，必须完成以下检查：</p>
+<li>[ ] 加载学习档案：是否已加载学习档案？</li>
+<li>[ ] 扫描当前任务：是否已扫描当前任务？</li>
+<li>[ ] 应用防错规则：是否已应用相关防错规则？</li>
+<li>[ ] 记录复盘结果：是否已记录复盘结果？</li>
+<p>---</p>
+<h2>七、核心铁律验证机制</h2>
+<h3>7.1 同一错误犯两次验证</h3>
+<strong>验证机制</strong>：
+```
+验证流程：
+  
+  步骤一：检查错误ID
+    → 错误发生时，生成错误ID（格式：ERR-YYYY-MM-DD-XXX）
+    → 检查学习档案中是否已存在相同错误ID
+  
+  步骤二：检查触发模式
+    → 分析当前的触发模式
+    → 检查学习档案中是否有相同触发模式
+  
+  步骤三：检查根本原因
+    → 分析当前的根本原因
+    → 检查学习档案中是否有相同根本原因
+  
+  步骤四：判断是否重复
+    → 如果错误ID相同 → 绝对不可原谅
+    → 如果触发模式相同 + 根本原因相同 → 绝对不可原谅
+    → 如果触发模式相似 + 根本原因相似 → 高度警告
+    → 否则 → 首次错误，正常处理
+```
+<strong>惩罚机制</strong>：
+<li><strong>同一错误犯两次</strong>：绝对不可原谅</li>
+  - 系统记录严重警告
+  - 通知悟空
+  - 深度复盘：为什么会重复犯错？
+  - 编写更严格的防错规则
+<li><strong>同一错误犯三次</strong>：系统降级</li>
+  - 暂停相关功能
+  - 重新培训
+  - 重新验证
+<p>---</p>
+<strong>技能状态</strong>：✅ 已完成 | <strong>版本</strong>：1.0 | <strong>最后更新</strong>：2026-03-23 | <strong>对标完成度</strong>：100%（LEARNINGSmd规则完全对齐）
+<p>---</p>
+<strong>同一错误犯两次，绝对不可原谅！</strong> 🚫
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

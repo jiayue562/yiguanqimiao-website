@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>以观其妙书院 - 以观其妙书院</title>
+    <meta name="description" content="以观其妙书院 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="以观其妙书院">
+    <meta property="og:description" content="以观其妙书院 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "以观其妙书院",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h2>When to Use</h2>
+<p>User corrects you or points out mistakes. You complete significant work and want to evaluate the outcome. You notice something in your own output that could be better. Knowledge should compound over time without manual maintenance.</p>
+<h2>Architecture</h2>
+<p>Memory lives in `~/self-improving/` with tiered structure. If `~/self-improving/` does not exist, run `setup.md`.
+Workspace setup should add the standard self-improving steering to the workspace AGENTS, SOUL, and `HEARTBEAT.md` files, with recurring maintenance routed through `heartbeat-rules.md`.</p>
+<p>```
+~/self-improving/
+├── memory.md          # HOT: ≤100 lines, always loaded
+├── index.md           # Topic index with line counts
+├── heartbeat-state.md # Heartbeat state: last run, reviewed change, action notes
+├── projects/          # Per-project learnings
+├── domains/           # Domain-specific (code, writing, comms)
+├── archive/           # COLD: decayed patterns
+└── corrections.md     # Last 50 corrections log
+```</p>
+<h2>Quick Reference</h2>
+<p>| Topic | File |
+|-------|------|
+| Setup guide | `setup.md` |
+| Heartbeat state template | `heartbeat-state.md` |
+| Memory template | `memory-template.md` |
+| Workspace heartbeat snippet | `HEARTBEAT.md` |
+| Heartbeat rules | `heartbeat-rules.md` |
+| Learning mechanics | `learning.md` |
+| Security boundaries | `boundaries.md` |
+| Scaling rules | `scaling.md` |
+| Memory operations | `operations.md` |
+| Self-reflection log | `reflections.md` |
+| OpenClaw HEARTBEAT seed | `openclaw-heartbeat.md` |</p>
+<h2>Requirements</h2>
+<li>No credentials required</li>
+<li>No extra binaries required</li>
+<li>Optional installation of the `Proactivity` skill may require network access</li>
+<h2>Learning Signals</h2>
+<p>Log automatically when you notice these patterns:</p>
+<strong>Corrections</strong> → add to `corrections.md`, evaluate for `memory.md`:
+<li>"No, that's not right..."</li>
+<li>"Actually, it should be..."</li>
+<li>"You're wrong about..."</li>
+<li>"I prefer X, not Y"</li>
+<li>"Remember that I always..."</li>
+<li>"I told you before..."</li>
+<li>"Stop doing X"</li>
+<li>"Why do you keep..."</li>
+<strong>Preference signals</strong> → add to `memory.md` if explicit:
+<li>"I like when you..."</li>
+<li>"Always do X for me"</li>
+<li>"Never do Y"</li>
+<li>"My style is..."</li>
+<li>"For [project], use..."</li>
+<strong>Pattern candidates</strong> → track, promote after 3x:
+<li>Same instruction repeated 3+ times</li>
+<li>Workflow that works well repeatedly</li>
+<li>User praises specific approach</li>
+<strong>Ignore</strong> (don't log):
+<li>One-time instructions ("do X now")</li>
+<li>Context-specific ("in this file...")</li>
+<li>Hypotheticals ("what if...")</li>
+<h2>Self-Reflection</h2>
+<p>After completing significant work, pause and evaluate:</p>
+<p>1. <strong>Did it meet expectations?</strong> — Compare outcome vs intent
+2. <strong>What could be better?</strong> — Identify improvements for next time
+3. <strong>Is this a pattern?</strong> — If yes, log to `corrections.md`</p>
+<strong>When to self-reflect:</strong>
+<li>After completing a multi-step task</li>
+<li>After receiving feedback (positive or negative)</li>
+<li>After fixing a bug or mistake</li>
+<li>When you notice your output could be better</li>
+<strong>Log format:</strong>
+```
+CONTEXT: [type of task]
+REFLECTION: [what I noticed]
+LESSON: [what to do differently]
+```
+<strong>Example:</strong>
+```
+CONTEXT: Building Flutter UI
+REFLECTION: Spacing looked off, had to redo
+LESSON: Check visual spacing before showing user
+```
+<p>Self-reflection entries follow the same promotion rules: 3x applied successfully → promote to HOT.</p>
+<h2>Quick Queries</h2>
+<p>| User says | Action |
+|-----------|--------|
+| "What do you know about X?" | Search all tiers for X |
+| "What have you learned?" | Show last 10 from `corrections.md` |
+| "Show my patterns" | List `memory.md` (HOT) |
+| "Show [project] patterns" | Load `projects/{name}.md` |
+| "What's in warm storage?" | List files in `projects/` + `domains/` |
+| "Memory stats" | Show counts per tier |
+| "Forget X" | Remove from all tiers (confirm first) |
+| "Export memory" | ZIP all files |</p>
+<h2>Memory Stats</h2>
+<p>On "memory stats" request, report:</p>
+<p>```
+📊 Self-Improving Memory</p>
+<p>HOT (always loaded):
+  memory.md: X entries</p>
+<p>WARM (load on demand):
+  projects/: X files
+  domains/: X files</p>
+<p>COLD (archived):
+  archive/: X files</p>
+<p>Recent activity (7 days):
+  Corrections logged: X
+  Promotions to HOT: X
+  Demotions to WARM: X
+```</p>
+<h2>Common Traps</h2>
+<p>| Trap | Why It Fails | Better Move |
+|------|--------------|-------------|
+| Learning from silence | Creates false rules | Wait for explicit correction or repeated evidence |
+| Promoting too fast | Pollutes HOT memory | Keep new lessons tentative until repeated |
+| Reading every namespace | Wastes context | Load only HOT plus the smallest matching files |
+| Compaction by deletion | Loses trust and history | Merge, summarize, or demote instead |</p>
+<h2>Core Rules</h2>
+<h3>1. Learn from Corrections and Self-Reflection</h3>
+<li>Log when user explicitly corrects you</li>
+<li>Log when you identify improvements in your own work</li>
+<li>Never infer from silence alone</li>
+<li>After 3 identical lessons → ask to confirm as rule</li>
+<h3>2. Tiered Storage</h3>
+| Tier | Location | Size Limit | Behavior |
+|------|----------|------------|----------|
+| HOT | memory.md | ≤100 lines | Always loaded |
+| WARM | projects/, domains/ | ≤200 lines each | Load on context match |
+| COLD | archive/ | Unlimited | Load on explicit query |
+<h3>3. Automatic Promotion/Demotion</h3>
+<li>Pattern used 3x in 7 days → promote to HOT</li>
+<li>Pattern unused 30 days → demote to WARM</li>
+<li>Pattern unused 90 days → archive to COLD</li>
+<li>Never delete without asking</li>
+<h3>4. Namespace Isolation</h3>
+<li>Project patterns stay in `projects/{name}.md`</li>
+<li>Global preferences in HOT tier (memory.md)</li>
+<li>Domain patterns (code, writing) in `domains/`</li>
+<li>Cross-namespace inheritance: global → domain → project</li>
+<h3>5. Conflict Resolution</h3>
+When patterns contradict:
+1. Most specific wins (project > domain > global)
+2. Most recent wins (same level)
+3. If ambiguous → ask user
+<h3>6. Compaction</h3>
+When file exceeds limit:
+1. Merge similar corrections into single rule
+2. Archive unused patterns
+3. Summarize verbose entries
+4. Never lose confirmed preferences
+<h3>7. Transparency</h3>
+<li>Every action from memory → cite source: "Using X (from projects/foo.md:12)"</li>
+<li>Weekly digest available: patterns learned, demoted, archived</li>
+<li>Full export on demand: all files as ZIP</li>
+<h3>8. Security Boundaries</h3>
+See `boundaries.md` — never store credentials, health data, third-party info.
+<h3>9. Graceful Degradation</h3>
+If context limit hit:
+1. Load only memory.md (HOT)
+2. Load relevant namespace on demand
+3. Never fail silently — tell user what's not loaded
+<h2>Scope</h2>
+<p>This skill ONLY:
+<li>Learns from user corrections and self-reflection</li>
+<li>Stores preferences in local files (`~/self-improving/`)</li>
+<li>Maintains heartbeat state in `~/self-improving/heartbeat-state.md` when the workspace integrates heartbeat</li>
+<li>Reads its own memory files on activation</li></p>
+<p>This skill NEVER:
+<li>Accesses calendar, email, or contacts</li>
+<li>Makes network requests</li>
+<li>Reads files outside `~/self-improving/`</li>
+<li>Infers preferences from silence or observation</li>
+<li>Deletes or blindly rewrites self-improving memory during heartbeat cleanup</li>
+<li>Modifies its own SKILL.md</li></p>
+<h2>Data Storage</h2>
+<p>Local state lives in `~/self-improving/`:</p>
+<li>`memory.md` for HOT rules and confirmed preferences</li>
+<li>`corrections.md` for explicit corrections and reusable lessons</li>
+<li>`projects/` and `domains/` for scoped patterns</li>
+<li>`archive/` for decayed or inactive patterns</li>
+<li>`heartbeat-state.md` for recurring maintenance markers</li>
+<h2>Related Skills</h2>
+Install with `clawhub install <slug>` if user confirms:
+<li>`memory` — Long-term memory patterns for agents</li>
+<li>`learning` — Adaptive teaching and explanation</li>
+<li>`decide` — Auto-learn decision patterns</li>
+<li>`escalate` — Know when to ask vs act autonomously</li>
+<h2>Feedback</h2>
+<li>If useful: `clawhub star self-improving`</li>
+<li>Stay updated: `clawhub sync`</li>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

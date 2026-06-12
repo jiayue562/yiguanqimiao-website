@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五行推断引擎 · Five-Element Inference Engine - 以观其妙书院</title>
+    <meta name="description" content="五行推断引擎 · Five-Element Inference Engine - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="五行推断引擎 · Five-Element Inference Engine">
+    <meta property="og:description" content="五行推断引擎 · Five-Element Inference Engine - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "五行推断引擎 · Five-Element Inference Engine",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>五行推断引擎 · Five-Element Inference Engine</h1>
+<p>> <strong>核心定位</strong>：五行人格识别的<strong>核心算法引擎</strong>，将用户的描述语言转化为五行人格标签，是整个系统的识别基础。</p>
+<p>---</p>
+<h2>🧬 五行识别特征矩阵</h2>
+<h3>木行人识别特征</h3>
+```
+行为信号：
+  ✓ 喜欢独立思考，不喜欢被干涉
+  ✓ 有原则，不服输，容易较劲
+  ✓ 有创意，喜欢做别人没做过的事
+  ✓ 说话直接，有时显得不近人情
+<p>情绪信号：
+  ✓ 容易生气，怒（正义感）
+  ✓ 抗压强，但憋着不说
+  ✓ 对不公平极度敏感</p>
+<p>语言信号（高频词）：
+  "我觉得应该这样" / "这不对" / "我自己来"
+  "为什么要听他的" / "我有我的方式"
+```</p>
+<h3>火行人识别特征</h3>
+```
+行为信号：
+  ✓ 热情，喜欢社交，精力充沛
+  ✓ 说话快，喜欢表达，爱分享
+  ✓ 行动力强，但有时虎头蛇尾
+  ✓ 容易兴奋，也容易沮丧
+<p>情绪信号：
+  ✓ 喜（热情）→ 嗔（急躁）变化快
+  ✓ 渴望被看见、被认可
+  ✓ 受冷落会受伤</p>
+<p>语言信号（高频词）：
+  "你不理解我的感受" / "我好兴奋" 
+  "他们都不重视我" / "太刺激了"
+```</p>
+<h3>土行人识别特征</h3>
+```
+行为信号：
+  ✓ 喜欢照顾人，细心体贴
+  ✓ 做事踏实，不喜欢冒险
+  ✓ 容易担心，爱操心
+  ✓ 重视稳定，不喜欢变化
+<p>情绪信号：
+  ✓ 思（担忧）主导
+  ✓ 容易委屈，但不直接说
+  ✓ 害怕被抛弃，重视归属感</p>
+<p>语言信号（高频词）：
+  "我担心..." / "万一..." / "不放心"
+  "都是为了你好" / "我不知道怎么办"
+```</p>
+<h3>金行人识别特征</h3>
+```
+行为信号：
+  ✓ 喜欢规则，有原则，要求高
+  ✓ 逻辑强，喜欢分析
+  ✓ 说话精准，不废话
+  ✓ 对细节完美主义
+<p>情绪信号：
+  ✓ 悲（悲悯/悲剧感）
+  ✓ 不轻易表达情绪
+  ✓ 内心标准高，容易失望</p>
+<p>语言信号（高频词）：
+  "这不对" / "应该是..." / "按规矩来"
+  "你怎么这么不注意" / "我不喜欢乱"
+```</p>
+<h3>水行人识别特征</h3>
+```
+行为信号：
+  ✓ 聪明，善于观察，喜欢分析
+  ✓ 内向，喜欢独处和思考
+  ✓ 变通性强，但有时优柔寡断
+  ✓ 喜欢深度，不喜欢表面
+<p>情绪信号：
+  ✓ 恐（深层焦虑/不安全感）
+  ✓ 不轻易信任
+  ✓ 想得多，行动慢</p>
+<p>语言信号（高频词）：
+  "我觉得..." / "也许..." / "可能是..."
+  "让我想想" / "我不确定" / "这件事背后..."
+```</p>
+<p>---</p>
+<h2>🔬 推断算法（三轮扫描）</h2>
+<h3>第一轮：强信号识别（置信度+30%/条）</h3>
+```
+直接五行词：急躁/热情/细心/原则/内向 → 对应五行+30%
+强行为描述：固执/爱管人/喜欢分析 → 对应五行+25%
+```
+<h3>第二轮：情绪模式识别（置信度+20%/条）</h3>
+```
+怒/不服 → 木+20%
+喜/急躁 → 火+20%
+思/担忧 → 土+20%
+悲/完美 → 金+20%
+恐/犹豫 → 水+20%
+```
+<h3>第三轮：行为模式确认（置信度+15%/条）</h3>
+```
+独立性高 → 木+15%
+社交性强 → 火+15%
+照顾型 → 土+15%
+规则型 → 金+15%
+分析型 → 水+15%
+```
+<h3>输出格式</h3>
+```json
+{
+  "subject": "用户本人",
+  "inference_result": {
+    "primary": {"element": "火", "confidence": 0.78},
+    "secondary": {"element": "木", "confidence": 0.52},
+    "excluded": ["土（置信度0.12）", "水（置信度0.08）"]
+  },
+  "key_signals": ["急躁·火", "不服输·木", "爱分享·火"],
+  "confidence_level": "高（>0.7）",
+  "next_step": "激活火行人分智能体，同时参考木行人特质"
+}
+```
+<p>---</p>
+<h2>🎭 双人/多人推断模式</h2>
+<h3>关系推断（亲密关系/团队场景）</h3>
+```
+Step 1: 分别推断双方/多方五行类型
+Step 2: 分析五行生克关系
+  - 相生：木→火→土→金→水→木（滋养关系）
+  - 相克：木→土→水→火→金→木（制约关系）
+Step 3: 输出关系动态分析
+  {
+    "personA": "火行人（0.81）",
+    "personB": "金行人（0.74）",
+    "relationship": "火克金·存在天然张力",
+    "dynamics": "A热情主动但显得轻浮；B要求高但显得挑剔",
+    "harmony_path": "火生土→土生金，引入稳定中间态"
+  }
+```
+<p>---</p>
+<h2>⚠️ 推断边界说明</h2>
+<li><strong>单轮对话置信度 < 0.5</strong>：标注"初步推断，需进一步确认"</li>
+<li><strong>双类型竞争（差距<0.15）</strong>：输出"木火混合型"，启动深度测评</li>
+<li><strong>用户明确自述</strong>：优先采信，附加推断作为参考</li>
+<li><strong>每次推断更新画像</strong>：累积信号，持续优化</li>
+<p>---</p>
+<strong>版本</strong>: v1.0 | <strong>归属</strong>: 五行人格心理学智能体·路由调度层
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

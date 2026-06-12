@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>象思维 Skill 输入输出模板 - 以观其妙书院</title>
+    <meta name="description" content="象思维 Skill 输入输出模板 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="象思维 Skill 输入输出模板">
+    <meta property="og:description" content="象思维 Skill 输入输出模板 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "象思维 Skill 输入输出模板",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>象思维 Skill 输入输出模板</h1>
+<p>> 📝 标准化输入输出格式 · 确保分析质量</p>
+<p>---</p>
+<h2>📥 输入模板</h2>
+<h3>完整流程输入</h3>
+<p>```markdown
+【问题类型】创造性问题/探索性问题/复杂性问题</p>
+<p>【问题描述】
+[详细描述问题情境]</p>
+<p>【背景信息】
+<li>当前状态：</li>
+<li>已尝试方案：</li>
+<li>约束条件：</li>
+<li>期望结果：</li></p>
+<p>【特殊要求】
+[如有特定需求，请说明]
+```</p>
+<p>---</p>
+<h3>单步触发输入</h3>
+<p>#### 观物取象
+```markdown
+【指令】观物取象</p>
+<p>【问题情境】
+[描述需要观察的问题或现象]</p>
+<p>【已知信息】
+[已有背景知识]
+```</p>
+<p>#### 立象尽意
+```markdown
+【指令】立象尽意</p>
+<p>【现象描述】
+[来自 Step 1 的输出]</p>
+<p>【关键特征】
+<li>特征 1</li>
+<li>特征 2</li>
+```</p>
+<p>#### 取象比类
+```markdown
+【指令】取象比类</p>
+<p>【核心意象】
+[来自 Step 2 的输出]</p>
+<p>【联想方向】
+[希望联想的领域，如：自然界/商业/历史/艺术等]
+```</p>
+<p>#### 观象制器
+```markdown
+【指令】观象制器</p>
+<p>【创新洞见】
+[来自 Step 3 的输出]</p>
+<p>【资源约束】
+<li>时间：</li>
+<li>人力：</li>
+<li>资金：</li>
+<li>其他：</li>
+```</p>
+<p>---</p>
+<h2>📤 输出模板</h2>
+<h3>完整流程输出</h3>
+<p>```markdown
+<h1>象思维分析报告</h1></p>
+<h2>🌀 问题重述</h2>
+[用象思维视角重新表述问题]
+<p>---</p>
+<h2>Step 1: 观物取象（感知层）</h2>
+<h3>现象描述</h3>
+[整体情境描述]
+<h3>关键特征</h3>
+<li>特征 1</li>
+<li>特征 2</li>
+<li>特征 3</li>
+<h3>直觉感受</h3>
+[直觉印象]
+<p>---</p>
+<h2>Step 2: 立象尽意（提炼层）</h2>
+<h3>核心意象</h3>
+[1-3 个核心意象词]
+<h3>象征意义</h3>
+[意象的深层含义]
+<h3>意象 - 问题关联</h3>
+[意象如何映射到问题]
+<p>---</p>
+<h2>Step 3: 取象比类（推理层）</h2>
+<h3>跨域联想</h3>
+<li><strong>自然界</strong>: [联想内容]</li>
+<li><strong>商业界</strong>: [联想内容]</li>
+<li><strong>历史文化</strong>: [联想内容]</li>
+<li><strong>其他领域</strong>: [联想内容]</li>
+<h3>共同模式</h3>
+[提取的跨领域共同模式]
+<h3>创新洞见</h3>
+[基于类比产生的新理解]
+<p>---</p>
+<h2>Step 4: 观象制器（创造层）</h2>
+<h3>创意方案</h3>
+[方案的核心描述]
+<h3>关键要素</h3>
+<li>要素 1</li>
+<li>要素 2</li>
+<li>要素 3</li>
+<h3>行动计划</h3>
+1. [第一步] - [时间]
+2. [第二步] - [时间]
+3. [第三步] - [时间]
+<h3>验证方式</h3>
+[如何检验方案有效性]
+<p>---</p>
+<h2>🏷️ 标签</h2>
+#象思维 #[核心意象] #[问题领域] #0→1 原创
+<p>---</p>
+<h2>💡 元认知</h2>
+[本次分析的思维过程反思]
+<h3>关键转折点</h3>
+[分析过程中的关键洞察时刻]
+<h3>潜在盲区</h3>
+[可能忽略的角度]
+<h3>后续建议</h3>
+[是否需要其他 Skill 协同]
+```
+<p>---</p>
+<h3>单步输出模板</h3>
+<p>#### 观物取象输出
+```markdown
+<h2>🌀 观物取象报告</h2></p>
+<h3>整体情境</h3>
+[描述]
+<h3>关键现象</h3>
+<li>现象 1</li>
+<li>现象 2</li>
+<li>现象 3</li>
+<h3>直觉捕捉</h3>
+[直觉感受]
+<h3>下一步建议</h3>
+[建议进入 Step 2 或补充信息]
+```
+<p>#### 立象尽意输出
+```markdown
+<h2>🎯 立象尽意报告</h2></p>
+<h3>核心意象</h3>
+[意象词]
+<h3>象征解读</h3>
+[深层含义]
+<h3>问题映射</h3>
+[如何关联到原问题]
+<h3>下一步建议</h3>
+[建议进入 Step 3]
+```
+<p>#### 取象比类输出
+```markdown
+<h2>🔗 取象比类报告</h2></p>
+<h3>跨域联想</h3>
+<li>领域 1: [内容]</li>
+<li>领域 2: [内容]</li>
+<h3>模式提取</h3>
+[共同模式]
+<h3>创新洞见</h3>
+[新理解]
+<h3>下一步建议</h3>
+[建议进入 Step 4 或深化联想]
+```
+<p>#### 观象制器输出
+```markdown
+<h2>🛠️ 观象制器报告</h2></p>
+<h3>创意方案</h3>
+[方案描述]
+<h3>执行要素</h3>
+<li>要素 1</li>
+<li>要素 2</li>
+<h3>行动步骤</h3>
+1. [步骤 1]
+2. [步骤 2]
+<h3>风险提示</h3>
+[潜在风险]
+<h3>协同建议</h3>
+[是否需要知行合一 Skill 协助落地]
+```
+<p>---</p>
+<h2>🔄 迭代优化</h2>
+<h3>用户反馈模板</h3>
+```markdown
+【反馈类型】□ 理解确认 □ 方案调整 □ 深化分析 □ 其他
+<p>【具体反馈】
+[用户的具体意见]</p>
+<p>【调整方向】
+[需要调整的部分]</p>
+<p>【继续/停止】
+□ 继续下一步  □ 重新分析  □ 停止
+```</p>
+<p>---</p>
+<h3>质量评分模板</h3>
+```markdown
+【质量评分】(1-5 分)
+<li>原创性：□1 □2 □3 □4 □5</li>
+<li>启发性：□1 □2 □3 □4 □5</li>
+<li>可执行性：□1 □2 □3 □4 □5</li>
+<li>整体满意度：□1 □2 □3 □4 □5</li>
+<p>【改进建议】
+[用户建议]
+```</p>
+<p>---</p>
+<p>_输入输出模板 · 象思维 Skill · 龙心 OS · 2026-04-17_</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

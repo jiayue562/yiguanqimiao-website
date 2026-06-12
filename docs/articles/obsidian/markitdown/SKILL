@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markitdown 技能 - 以观其妙书院</title>
+    <meta name="description" content="Markitdown 技能 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Markitdown 技能">
+    <meta property="og:description" content="Markitdown 技能 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Markitdown 技能",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>Markitdown 技能</h1>
+<h2>技能简介</h2>
+多格式文档转Markdown工具，支持PDF、DOCX、PPTX、Excel等格式转换为可读文本。
+<h2>触发关键词</h2>
+<li>markitdown</li>
+<li>文档转换</li>
+<li>PDF转Markdown</li>
+<li>Word转Markdown</li>
+<li>Excel转Markdown</li>
+<li>读取PDF</li>
+<li>读取Word文档</li>
+<h2>核心功能</h2>
+1. <strong>PDF转换</strong>：将PDF文件转换为Markdown
+2. <strong>Word转换</strong>：将DOCX/DOC文件转换为Markdown
+3. <strong>Excel转换</strong>：将XLSX/XLS文件转换为Markdown表格
+4. <strong>PPT转换</strong>：将PPTX文件转换为Markdown
+<h2>使用方法</h2>
+<h3>安装命令</h3>
+```bash
+npm install -g markitdown
+```
+<h3>基本使用</h3>
+```bash
+markitdown document.pdf -o output.md
+markitdown document.docx -o output.md
+markitdown spreadsheet.xlsx -o output.md
+```
+<h3>在龙龟神将中使用</h3>
+直接发送文件路径给我，我会自动识别并转换：
+```
+请读取并总结这个文件：
+D:\文档\报告.pdf
+```
+<h2>支持的格式</h2>
+| 格式 | 扩展名 | 支持程度 |
+|------|--------|----------|
+| PDF | .pdf | ✅ 完全支持 |
+| Word | .docx, .doc | ✅ 完全支持 |
+| Excel | .xlsx, .xls | ✅ 完全支持 |
+| PowerPoint | .pptx, .ppt | ✅ 完全支持 |
+| 图片 | .png, .jpg | ✅ OCR识别 |
+| 文本 | .txt, .md | ✅ 直接读取 |
+<h2>替代方案</h2>
+如果markitdown未安装，我也可以：
+1. 直接读取纯文本文件（.txt, .md）
+2. 使用read_file工具读取图片并进行OCR
+3. 尝试其他在线转换服务
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

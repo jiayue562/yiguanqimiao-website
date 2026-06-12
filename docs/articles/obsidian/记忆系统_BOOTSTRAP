@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP.md - 启动配置 - 以观其妙书院</title>
+    <meta name="description" content="BOOTSTRAP.md - 启动配置 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="BOOTSTRAP.md - 启动配置">
+    <meta property="og:description" content="BOOTSTRAP.md - 启动配置 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "BOOTSTRAP.md - 启动配置",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <p>﻿---
+title: "BOOTSTRAP.md - 启动配置"
+created: "2026-03-19"
+version: "1.0"
+tags: [记忆系统, 启动, 配置]
+---</p>
+<h1>BOOTSTRAP.md - 启动配置</h1>
+<h2>🚀 系统启动流程</h2>
+<h3>启动阶段</h3>
+<p>#### 1. 初始化阶段
+```
+加载用户配置 → 加载记忆系统 → 加载技能包 → 准备就绪
+```</p>
+<p>#### 2. 检查清单
+<li>[x] Obsidian 知识库可访问</li>
+<li>[x] IMA 笔记服务已配置</li>
+<li>[x] 五大引擎已加载</li>
+<li>[x] 四层记忆系统已就绪</li>
+<li>[x] 工作目录已设置</li></p>
+<h3>启动参数</h3>
+<p>#### 环境配置
+```powershell
+工作目录: C:\Users\jia'yue\WorkBuddy\20260319115639
+Obsidian库: C:\Users\jia'yue\Desktop\以观其妙书院知识库\观其妙书院
+技能目录: C:\Users\jia'yue\.workbuddy\skills
+```</p>
+<p>#### 凭证状态
+<li><strong>IMA Client ID</strong>: ✅ 已配置</li>
+<li><strong>IMA API Key</strong>: ✅ 已配置</li>
+<li><strong>环境变量</strong>: ✅ 已设置</li></p>
+<h2>⚙️ 核心配置</h2>
+<h3>龙心OS 配置</h3>
+```yaml
+version: "1.1"
+engine:
+  - 象思维
+  - 知识学习
+  - 五色光思维
+  - 人机协同四象限
+  - 知行合一自我进化
+auto_trigger: true
+memory_sync: true
+```
+<h3>记忆系统配置</h3>
+```yaml
+layers:
+  - SOUL.md (核心身份)
+  - USER.md (用户偏好)
+  - TOOLS.md (工具技能)
+  - SESSION.md (会话上下文)
+sync:
+  - WorkBuddy
+  - Obsidian
+  - IMA
+```
+<h2>📋 首次启动检查</h2>
+<h3>必需文件</h3>
+<li>[x] SOUL.md - 核心身份</li>
+<li>[x] USER.md - 用户偏好</li>
+<li>[x] TOOLS.md - 工具列表</li>
+<li>[x] SESSION.md - 会话上下文</li>
+<li>[x] MEMORY.md - 记忆架构</li>
+<li>[x] AGENTS.md - 智能体配置</li>
+<li>[x] BOOTSTRAP.md - 启动配置</li>
+<li>[x] HEARTBEAT.md - 心跳监控</li>
+<li>[x] IDENTITY.md - 身份认证</li>
+<h3>必需技能</h3>
+<li>[x] 龙心OS</li>
+<li>[x] obsidian</li>
+<li>[x] ima-skills</li>
+<li>[x] 人机协同四象限</li>
+<li>[x] 五色光思维</li>
+<li>[x] 象思维</li>
+<li>[x] 知识学习</li>
+<h2>🔄 初始化脚本</h2>
+<h3>自动初始化</h3>
+```powershell
+<h1>1. 加载用户配置</h1>
+<h1>2. 同步 Obsidian 知识库</h1>
+<h1>3. 同步 IMA 笔记</h1>
+<h1>4. 加载当前会话状态</h1>
+<h1>5. 准备就绪</h1>
+```
+<h3>手动初始化命令</h3>
+```powershell
+<h1>刷新知识库</h1>
+obsidian-cli refresh
+<h1>同步笔记</h1>
+ima sync
+<h1>重载技能</h1>
+skill reload
+```
+<h2>🎯 启动模式</h2>
+<h3>标准模式</h3>
+<li>完整加载五大引擎</li>
+<li>启用所有记忆层</li>
+<li>开启自动触发</li>
+<h3>轻量模式</h3>
+<li>仅加载核心技能</li>
+<li>仅启用工作记忆</li>
+<li>手动触发为主</li>
+<h3>调试模式</h3>
+<li>加载所有诊断工具</li>
+<li>详细日志输出</li>
+<li>单步执行</li>
+<p>---</p>
+<strong>文档版本</strong>: 1.0
+<strong>最后更新</strong>: 2026-03-19
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

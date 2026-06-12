@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Finding: &lt;title&gt; - 以观其妙书院</title>
+    <meta name="description" content="Secret Finding: &lt;title&gt; - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Secret Finding: &lt;title&gt;">
+    <meta property="og:description" content="Secret Finding: &lt;title&gt; - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Secret Finding: &lt;title&gt;",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Secret Finding: <title></h1>
+<h2>Metadata</h2>
+<li><strong>ID</strong>: <finding_id></li>
+<li><strong>Type</strong>: secret</li>
+<li><strong>Rule</strong>: <rule_name></li>
+<li><strong>Rule ID</strong>: <rule_id></li>
+<li><strong>Severity</strong>: <high|medium|low></li>
+<li><strong>Status</strong>: unverified</li>
+<h2>Location</h2>
+<li><strong>File</strong>: <relative/path/to/file></li>
+<li><strong>Line</strong>: <line_number></li>
+<h2>Description</h2>
+<2-4 sentences describing the leaked secret and its risk. Explain what type of secret this is, what service it grants access to, and the potential impact if compromised.>
+<h2>Secret Details</h2>
+<li><strong>Value</strong>: <redacted value - NEVER include the full secret></li>
+<li><strong>Secret Type</strong>: <e.g., API Key, Database Password, Private Key, OAuth Token></li>
+<li><strong>Entropy</strong>: <entropy value></li>
+<h2>Context</h2>
+```<language>
+<5-10 lines of code surrounding the secret, with the secret line highlighted>
+```
+<h2>Risk Assessment</h2>
+| Factor | Assessment |
+|--------|------------|
+| Real Secret | Yes - <brief evidence> |
+| Hardcoded | Yes - <is it a literal value or from env/config?> |
+| Production Code Path | Yes - <is this test code or production code?> |
+| Exposure Evidence | <description of how/where the secret is exposed> |
+<h2>Remediation</h2>
+<2-4 sentences with specific actions to remediate this finding:>
+<p>1. <strong>Rotate the secret immediately</strong> - The exposed credential should be considered compromised
+2. <strong>Remove from source code</strong> - Move the secret to environment variables or a secrets manager
+3. <strong>Scrub git history</strong> - If the secret was ever committed, it remains in git history
+4. <strong>Audit access logs</strong> - Check if the secret was used by unauthorized parties</p>
+<h2>References</h2>
+<li>Rule documentation: <link if available></li>
+<li>CWE-798: Use of Hard-coded Credentials</li>
+<li>CWE-259: Use of Hard-coded Password</li>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

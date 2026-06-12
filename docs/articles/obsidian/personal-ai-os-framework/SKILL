@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人AI OS框架 Skill - 以观其妙书院</title>
+    <meta name="description" content="个人AI OS框架 Skill - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="个人AI OS框架 Skill">
+    <meta property="og:description" content="个人AI OS框架 Skill - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "个人AI OS框架 Skill",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>个人AI OS框架 Skill</h1>
+<h2>核心定位</h2>
+<p>个人AI OS的<strong>工程化运行底座</strong>，封装记忆管理、任务拆解、推理决策、Skills调度、人机交互等核心能力。</p>
+<p>> 核心理念：让"人定方向、AI做执行"的共生逻辑落地为可运行的工程体系。</p>
+<p>---</p>
+<h2>触发条件</h2>
+<li>用户提到"框架"、"运行底座"、"工程化"</li>
+<li>需要调度多个Skills完成复杂任务</li>
+<li>需要管理个人知识库和记忆系统</li>
+<li>需要AI自动学习和进化</li>
+<p>---</p>
+<h2>五大核心模块</h2>
+<h3>1. 记忆管理模块</h3>
+<strong>功能</strong>：存储和管理个人的核心数据
+<p>| 数据类型 | 存储位置 | 用途 |
+|---------|---------|------|
+| 信仰/文化 | SOUL.md | 核心价值观支撑 |
+| 思维模型 | 思维模型库 | 分析决策框架 |
+| 人格特质 | USER.md | 个性化执行参数 |
+| 使用习惯 | SESSION.md | 上下文感知 |
+| 知识资产 | Obsidian知识库 | 长期记忆 |</p>
+<strong>调用接口</strong>：
+```python
+def load_personalization_data():
+    """加载个性化数据"""
+    soul = read_file("SOUL.md")
+    user = read_file("USER.md")
+    return {soul, user}
+```
+<h3>2. 任务拆解与推理模块</h3>
+<strong>功能</strong>：接收高层指令，拆解为可执行子任务
+<strong>流程</strong>：
+```
+高层指令 → 意图识别 → 任务拆解 → Skills匹配 → 执行计划
+```
+<strong>核心算法</strong>：
+```python
+def decompose_task(instruction):
+    # 1. 解析个性化参数
+    personalization = parse_personalization(instruction)
+    
+    # 2. 拆解为子任务
+    subtasks = split_into_subtasks(instruction)
+    
+    # 3. 匹配Skills
+    skills = match_skills(subtasks)
+    
+    # 4. 生成执行计划
+    plan = generate_execution_plan(skills, personalization)
+    
+    return plan
+```
+<h3>3. Skills与CLI调度模块</h3>
+<strong>功能</strong>：统一调度全系统的Skills和CLI工具
+<strong>调度策略</strong>：
+<li><strong>串行调度</strong>：子任务有依赖关系</li>
+<li><strong>并行调度</strong>：独立子任务同时执行</li>
+<li><strong>条件调度</strong>：根据执行结果动态调整</li>
+<strong>调用示例</strong>：
+```python
+async def execute_with_skills(plan):
+    results = []
+    for task in plan.tasks:
+        skill = load_skill(task.skill_name)
+        result = await skill.execute(
+            task.input,
+            task.personalization
+        )
+        results.append(result)
+    return merge_results(results)
+```
+<h3>4. 人机交互模块</h3>
+<strong>功能</strong>：处理多模态人机交互
+<strong>支持入口</strong>：
+<li>CLI文本输入</li>
+<li>语音输入（未来扩展）</li>
+<li>文件输入</li>
+<strong>输出格式</strong>：
+```python
+def format_response(result, personalization):
+    return {
+        "content": result.content,
+        "reasoning": result.reasoning,
+        "confidence": result.confidence,
+        "references": result.references,
+        "style": personalization.tone,
+        "cultural_tags": personalization.cultural_dna
+    }
+```
+<h3>5. 进化与优化模块</h3>
+<strong>功能</strong>：记录交互数据，自动优化执行策略
+<strong>学习维度</strong>：
+| 维度 | 学习内容 | 优化目标 |
+|------|---------|---------|
+| 指令偏好 | 什么样的指令效果最好 | 提升指令解析准确率 |
+| Skills效果 | 哪些Skills组合最优 | 优化Skills调用策略 |
+| 人格匹配 | 什么样的输出风格更受欢迎 | 调整人格参数 |
+| 知识调用 | 哪些知识最常被使用 | 优化知识检索优先级 |
+<strong>进化接口</strong>：
+```python
+def learn_from_interaction(interaction_data):
+    # 1. 记录交互
+    log_interaction(interaction_data)
+    
+    # 2. 分析反馈
+    feedback = analyze_feedback(interaction_data.feedback)
+    
+    # 3. 更新参数
+    if feedback.is_positive:
+        reinforce_parameters(feedback)
+    else:
+        adjust_parameters(feedback)
+```
+<p>---</p>
+<h2>与其他Skills协同</h2>
+<p>| 协同Skill | 协同方式 |
+|-----------|---------|
+| CLI指令体系 | 接收高层指令输入 |
+| MCP协议 | 使用标准协议通信 |
+| Skills库 | 调度执行单元 |
+| 知识学习 | 提供知识获取能力 |
+| 知行合一 | 触发进化学习 |</p>
+<p>---</p>
+<h2>四大技术栈协同流程</h2>
+<p>```
+┌─────────────────────────────────────────────────────────┐
+│                    Framework框架                         │
+│  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐    │
+│  │ 记忆管理 │→│ 任务拆解 │→│ Skills  │→│ 人机交互 │    │
+│  └─────────┘  └─────────┘  └─────────┘  └─────────┘    │
+│       ↑                                    │           │
+│       └─────────── 进化优化 ←──────────────┘           │
+└─────────────────────────────────────────────────────────┘
+                          ↑
+┌─────────────────────────────────────────────────────────┐
+│                     CLI指令体系                          │
+│  人发出高层决策指令（带个性化参数）                       │
+└─────────────────────────────────────────────────────────┘
+                          ↑
+┌─────────────────────────────────────────────────────────┐
+│                      MCP协议                             │
+│  标准化协同语言，打通所有模块                             │
+└─────────────────────────────────────────────────────────┘
+```</p>
+<p>---</p>
+<h2>存储位置</h2>
+<li><strong>框架配置</strong>: `C:\Users\jia'yue\.workbuddy\skills\personal-ai-os-framework\`</li>
+<li><strong>模块实现</strong>: `08-工具与脚本\AI-OS框架\`</li>
+<li><strong>运行日志</strong>: `05-系统配置\框架运行日志.md`</li>
+<p>---</p>
+<h2>核心原则</h2>
+<p>1. <strong>工程化</strong> - 从概念到可运行代码
+2. <strong>个性化</strong> - 记忆管理承载信仰/文化/思维模型
+3. <strong>进化性</strong> - 越用越聪明，持续进化
+4. <strong>轻量化</strong> - 适配个人端资源需求
+5. <strong>可定制</strong> - 开放参数调整入口</p>
+<p>---</p>
+<h2>与龙心OS的关系</h2>
+<p>Framework是龙心OS的<strong>工程化实现</strong>：</p>
+<p>| 龙心OS引擎 | Framework模块 |
+|--------------|--------------|
+| 象思维 | 任务拆解模块（0→1创新） |
+| 知识学习 | 记忆管理模块 |
+| 五色光思维 | 推理决策模块 |
+| 人机协同五象限 | 人机交互模块 |
+| 知行合一 | 进化优化模块 |</p>
+<p>---</p>
+<p>*个人AI OS框架 Skill v1.0 · 2026-03-19*</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>
