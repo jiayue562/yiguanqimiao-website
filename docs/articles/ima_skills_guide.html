@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ima_Skills_Guide - 以观其妙书院</title>
+    <meta name="description" content="IMA Skills 完整使用指南最后更新: 2026-04-20API版本: 1.1.2---📋 配置信息配置项  值-------------Client ID  87e4c9978e1b50b3918e20313b7084edAPI Key  gep8bpF4dsT/7rN32p61y6r2KN0RPZADIWm+HBx7ce2UT7f6lUUuBd3hJCmojQ1aHPjZMOL6vA=">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="Ima_Skills_Guide">
+    <meta property="og:description" content="IMA Skills 完整使用指南最后更新: 2026-04-20API版本: 1.1.2---📋 配置信息配置项  值-------------Client ID  87e4c9978e1b50b3918e20313b7084edAPI Key  gep8bpF4dsT/7rN32p61y6r2KN0RPZADIWm+HBx7ce2UT7f6lUUuBd3hJCmojQ1aHPjZMOL6vA=">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/ima_skills_guide.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/ima_skills_guide.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Ima_Skills_Guide",
+      "description": "IMA Skills 完整使用指南最后更新: 2026-04-20API版本: 1.1.2---📋 配置信息配置项  值-------------Client ID  87e4c9978e1b50b3918e20313b7084edAPI Key  gep8bpF4dsT/7rN32p61y6r2KN0RPZADIWm+HBx7ce2UT7f6lUUuBd3hJCmojQ1aHPjZMOL6vA=",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-06-12",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>Ima_Skills_Guide</h1>
+            <div class="meta">
+                <span>📅 2026-06-12</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            Ima_Skills_Guide...
+        </div>
+        
+        <article>
+<h1>IMA Skills 完整使用指南</h1>
+
+<blockquote>最后更新: 2026-04-20</blockquote>
+<blockquote>API版本: 1.1.2</blockquote>
+
+<hr>
+
+<h2>📋 配置信息</h2>
+
+<p>| 配置项 | 值 |
+|--------|-----|
+| Client ID | <code>87e4c9978e1b50b3918e20313b7084ed</code> |
+| API Key | <code>gep8bpF4dsT/7rN32p61y6r2KN0RPZADIWm+HBx7ce2UT7f6lUUuBd3hJCmojQ1aHPjZMOL6vA==</code> |
+| Base URL | <code>https://ima.qq.com</code> |
+| 状态 | ✅ 已验证有效 |</p>
+
+<strong>配置文件位置</strong>: <code>~/.workbuddy/skills/ima-skills/config.json</code>
+
+<hr>
+
+<h2>🚀 快速开始</h2>
+
+<h3>1. 笔记模块操作</h3>
+
+<pre><code>from ima_skills_demo import IMAClient
+
+<p>client = IMAClient(
+    client_id='87e4c9978e1b50b3918e20313b7084ed',
+    api_key='gep8bpF4dsT/7rN32p61y6r2KN0RPZADIWm+HBx7ce2UT7f6lUUuBd3hJCmojQ1aHPjZMOL6vA=='
+)</p>
+
+<h1>列出笔记本</h1>
+result = client.list_notebooks()
+
+<h1>列出笔记</h1>
+result = client.list_notes()
+
+<h1>搜索笔记</h1>
+result = client.search_notes('关键词')
+
+<h1>创建笔记</h1>
+result = client.create_note(
+    title='笔记标题',
+    content='笔记内容'
+)
+
+<h1>读取笔记</h1>
+doc_id = 'xxx'
+result = client.get_note_content(doc_id)
+
+<h1>追加内容</h1>
+result = client.append_to_note(doc_id, '追加的内容')
+</code></pre>
+
+<h3>2. 知识库模块操作</h3>
+
+<pre><code><h1>列出知识库</h1>
+result = client.list_knowledge_bases()
+
+<h1>搜索知识库内容</h1>
+kb_id = 'xxx'
+result = client.search_knowledge(kb_id, '关键词')
+
+<h1>列出知识库条目</h1>
+result = client.list_knowledge_items(kb_id)
+
+<h1>添加网页到知识库</h1>
+result = client.add_url_to_kb(
+    kb_id=kb_id,
+    urls=['https://example.com/article']
+)
+</code></pre>
+
+<hr>
+
+<h2>📚 API 接口列表</h2>
+
+<h3>笔记模块 (openapi/note/v1)</h3>
+
+<p>| 功能 | 接口 | 方法 |
+|------|------|------|
+| 列出笔记本 | <code>list_note_folder_by_cursor</code> | POST |
+| 列出笔记 | <code>list_note_by_folder_id</code> | POST |
+| 搜索笔记 | <code>search_note_book</code> | POST |
+| 获取笔记内容 | <code>get_doc_content</code> | POST |
+| 创建笔记 | <code>import_doc</code> | POST |
+| 追加笔记内容 | <code>append_doc</code> | POST |</p>
+
+<h3>知识库模块 (openapi/wiki/v1)</h3>
+
+<p>| 功能 | 接口 | 方法 |
+|------|------|------|
+| 列出知识库 | <code>search_knowledge_base</code> | POST |
+| 获取知识库信息 | <code>get_knowledge_base</code> | POST |
+| 搜索知识库内容 | <code>search_knowledge</code> | POST |
+| 列出知识库条目 | <code>get_knowledge_list</code> | POST |
+| 添加网页URL | <code>import_urls</code> | POST |</p>
+
+<hr>
+
+<h2>🔧 实用脚本</h2>
+
+<h3>运行演示</h3>
+
+<pre><code>python "c:\Users\jia'yue\WorkBuddy\Claw\ima_skills_demo.py"
+</code></pre>
+
+<h3>验证配置</h3>
+
+<pre><code>python "c:\Users\jia'yue\WorkBuddy\Claw\ima_config_verify.py"
+</code></pre>
+
+<hr>
+
+<h2>⚠️ 注意事项</h2>
+
+<p>1. <strong>编码问题</strong>: 笔记内容必须使用 UTF-8 编码
+2. <strong>图片限制</strong>: 笔记接口不支持本地图片，仅支持网络图片链接
+3. <strong>文件上传</strong>: 知识库支持 PDF/Word/Excel/PPT/图片等格式
+4. <strong>视频限制</strong>: 不支持 Bilibili/YouTube 视频链接</p>
+
+<hr>
+
+<h2>📁 相关文件</h2>
+
+<p>| 文件 | 路径 | 说明 |
+|------|------|------|
+| 主Skill文档 | <code>~/.workbuddy/skills/ima-skills/ima-skill/SKILL.md</code> | 完整API文档 |
+| 笔记模块 | <code>~/.workbuddy/skills/ima-skills/ima-skill/notes/SKILL.md</code> | 笔记操作指南 |
+| 知识库模块 | <code>~/.workbuddy/skills/ima-skills/ima-skill/knowledge-base/SKILL.md</code> | 知识库操作指南 |
+| 演示脚本 | <code>~/WorkBuddy/Claw/ima_skills_demo.py</code> | 功能演示 |
+| 验证脚本 | <code>~/WorkBuddy/Claw/ima_config_verify.py</code> | 配置验证 |
+| 使用指南 | <code>~/WorkBuddy/Claw/ima_skills_guide.md</code> | 本指南 |</p>
+
+<hr>
+
+<h2>✅ 当前状态</h2>
+
+<li>[x] API 凭证配置完成</li>
+<li>[x] 连接验证通过</li>
+<li>[x] 笔记模块就绪</li>
+<li>[x] 知识库模块就绪</li>
+<li>[ ] 实际数据需要在使用中积累</li>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

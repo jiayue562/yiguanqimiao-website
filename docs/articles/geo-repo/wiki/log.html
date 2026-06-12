@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log - 以观其妙书院</title>
+    <meta name="description" content="﻿---title: Wiki Operation Logtype: logcreated: 2026-05-15---Wiki Operation Log2026-05-29 system_init  自主进化闭环正式启动创建EVOLUTION.md（进化状态机）+ GAPS.md（知识缺口清单）+ CONNECTIONS.md（跨域连接队列）+ LINT_BACKLOG.md（健康检查待办）。">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="Log">
+    <meta property="og:description" content="﻿---title: Wiki Operation Logtype: logcreated: 2026-05-15---Wiki Operation Log2026-05-29 system_init  自主进化闭环正式启动创建EVOLUTION.md（进化状态机）+ GAPS.md（知识缺口清单）+ CONNECTIONS.md（跨域连接队列）+ LINT_BACKLOG.md（健康检查待办）。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/log.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/log.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Log",
+      "description": "﻿---title: Wiki Operation Logtype: logcreated: 2026-05-15---Wiki Operation Log2026-05-29 system_init  自主进化闭环正式启动创建EVOLUTION.md（进化状态机）+ GAPS.md（知识缺口清单）+ CONNECTIONS.md（跨域连接队列）+ LINT_BACKLOG.md（健康检查待办）。",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-06-12",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>Log</h1>
+            <div class="meta">
+                <span>📅 2026-06-12</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            Log...
+        </div>
+        
+        <article>
+<p>﻿---
+title: Wiki Operation Log
+type: log
+created: 2026-05-15
+<hr></p>
+
+<h1>Wiki Operation Log</h1>
+
+<h2>[2026-05-29] system_init | 自主进化闭环正式启动</h2>
+创建EVOLUTION.md（进化状态机）+ GAPS.md（知识缺口清单）+ CONNECTIONS.md（跨域连接队列）+ LINT_BACKLOG.md（健康检查待办）。五层架构（对话/WB-KB/Wiki/Obsidian/IMA）分工明确。能力成熟度首次评分。更新index.md新增"自主进化系统"分类。今日对话关键词已索引至EVOLUTION.md供conversation_search回溯。
+
+<h2>[2026-05-29] ingest | 音乐与AI的本质联结——从音符到智能的涌现</h2>
+悟空原创跨学科理论建构文章（约8000字），论证音乐创作与AI大模型在预测架构、复杂度阈值、涌现机制上的深层结构同构性。核心洞见："情感是预测误差的副产品"。8章完整架构，15+标签，10条跨域知识连接。新增wiki页面 + 更新index.md跨学科理论与认知科学类别。Obsidian主文档已同步至<code>03-知识地基层/</code>，IMA上传待重试。
+
+<h2>[2026-05-25] ingest | 五行人格测评题·174题完整体系</h2>
+深度学习悟空原创「五行人格测评题·完整174题体系（含阴阳子维度）」全文（约15万字级体系）。五大部分：心理30题（20%）+身体23题（30%）+灵性10题（15%）+阴阳子维度140题（30%）+社会掩饰10题（5%）=174题完整测评系统。核心创新：①阴阳子维度140题精准判定健康区/不健康区 ②社会掩饰10题本土化测谎机制 ③五维加权计分算法 ④五大隐秘知识发现（情绪-臓腑全息/体质三连问/声音三维锁定/身材四重验证/灵性三重境界）。已同步至Obsidian知识库、凤爪OS scene-mapping v3.0、凤脑OS知识库v2.0、WorkBuddy LLM Wiki四端。
+
+<h2>[2026-05-25] ingest | 五行信任模型</h2>
+深度学习悟空原创「五行信任模型：从静态公式到动态生态的信任构建方法论」全文（约10万字级体系）。以五行五常为哲学根基，融合成交公式、麦肯锡信任公式、双维信任模型、信任阶梯模型、信任五波模型五大西方理论，构建五维信任体系（木仁立场共鸣/火礼标准可视/土信持续兑现/金义顾虑前置/水智结果实证）+ 五行相生循环 + VDT信任指数量化工具。案例验证：胖东来（复购率92%）、张雪机车。已同步至Obsidian知识库、IMA云端、WorkBuddy LLM Wiki三端。
+
+<h2>[2026-05-18] ingest | 味藏AI应用·岗位提示词体系</h2>
+深度学习3份味藏AI提示词文档（高客单销售+高盈利演练+高盈利设计方案），8岗位×3版本，12要素提示词结构，五行×岗位映射矩阵，提示词迭代三定律。
+<li>创建味藏AI应用岗位提示词体系概念页面（8岗位五行映射+12要素结构+迭代三定律+8条隐秘联系）</li>
+<li>Obsidian已存储深度学习文档+知识图谱（2份，<code>01-核心体系/</code>）</li>
+<li>IMA上传待执行（DNS间歇性异常）</li>
+<li>关联：岗位智能体v3.0（提示词→SKILL.md映射）、去总部化理论（AB角→信号协议冗余）</li>
+
+<h2>[2026-05-19] ingest | 企业文化顶层设计</h2>
+深度学习7020行企业文化文档（GBK→UTF-8），五层递进（金剖析→火透视→水推演→木溯源→土启发），提取138个知识点(P0×63+P1×45+P2×30)，构建五行标签体系+双向链接+知识图谱。
+<li>创建企业文化顶层设计概念页面（9大板块+5核心概念+8项龙心OS映射+5级成熟度模型）</li>
+<li>Obsidian已存储深度学习文档+知识图谱（2份）</li>
+<li>IMA上传失败（DNS间歇性异常），待补传</li>
+<li>关联：去总部化理论（AI赋能四层→去总部化技术基础）</li>
+
+<h2>[2026-05-18] ingest | 去总部化理论</h2>
+基于龙爪实测反推修改文档（13项修改7P0+4P1+2P2），更新岗位智能体从v2.0→v3.0。核心升级：SOP 8步→10步，输出类型2种→3种（提示词/B1复盘画布/B2组织诊断），新增7S评分/复盘画布/五行阴阳面/指标分层/龙爪断语/HTML视觉规范。
+
+<h2>[2026-05-15] ingest | MIT学霸超前学习法</h2>
+深度学习用户手打稿全文（逐行逐字），创建结构化知识文档体系。
+<li>创建MIT学霸超前学习法总纲（含核心三角模型、执行流程、效率机制）</li>
+<li>创建6个核心概念页面（整体性学习法、费曼技巧、NotebookLM、元认知理论、凋零效应等）</li>
+<li>建立双向链接体系（30+双向链接）</li>
+<li>同步至Obsidian知识库（D:\以观其妙书院知识库\以观其妙书院\07-学习档案\）</li>
+
+<h2>[2026-05-18] ingest | 岗位智能体v2.0改造清单</h2>
+逐行学习岗位智能体v1.0到v2.0改造清单（9个改动点），每个知识点挖掘到位。
+<li>创建岗位智能体v2.0概念页面（含双模式、8步SOP、资产引用规则）</li>
+<li>创建龙爪模式概念页面（SKILL.md模板+Rule文件+资产引用规则）</li>
+<li>创建智能体vsSkill概念澄清页面（三维对比+设计哲学）</li>
+<li>同步至Obsidian知识库（D:\以观其妙书院知识库\以观其妙书院\岗位智能体v2.0\）</li>
+<li>IMA知识库上传失败（DNS解析失败，间歇性异常）</li>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

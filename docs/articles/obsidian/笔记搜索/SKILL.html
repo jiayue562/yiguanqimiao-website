@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qmd - Quick Markdown Search - 以观其妙书院</title>
+    <meta name="description" content="qmd - Quick Markdown Search - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="qmd - Quick Markdown Search">
+    <meta property="og:description" content="qmd - Quick Markdown Search - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "qmd - Quick Markdown Search",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>qmd - Quick Markdown Search</h1>
+<p>Local search engine for Markdown notes, docs, and knowledge bases. Index once, search fast.</p>
+<h2>When to use (trigger phrases)</h2>
+<li>"search my notes / docs / knowledge base"</li>
+<li>"find related notes"</li>
+<li>"retrieve a markdown document from my collection"</li>
+<li>"search local markdown files"</li>
+<h2>Default behavior (important)</h2>
+<li>Prefer `qmd search` (BM25). It's typically instant and should be the default.</li>
+<li>Use `qmd vsearch` only when keyword search fails and you need semantic similarity (can be very slow on a cold start).</li>
+<li>Avoid `qmd query` unless the user explicitly wants the highest quality hybrid results and can tolerate long runtimes/timeouts.</li>
+<h2>Prerequisites</h2>
+<li>Bun >= 1.0.0</li>
+<li>macOS: `brew install sqlite` (SQLite extensions)</li>
+<li>Ensure PATH includes: `$HOME/.bun/bin`</li>
+<p>Install Bun (macOS): `brew install oven-sh/bun/bun`</p>
+<h2>Install</h2>
+<p>`bun install -g https://github.com/tobi/qmd`</p>
+<h2>Setup</h2>
+<p>```bash
+qmd collection add /path/to/notes --name notes --mask "**/*.md"
+qmd context add qmd://notes "Description of this collection"  # optional
+qmd embed  # one-time to enable vector + hybrid search
+```</p>
+<h2>What it indexes</h2>
+<li>Intended for Markdown collections (commonly `**/*.md`).</li>
+<li>In our testing, "messy" Markdown is fine: chunking is content-based (roughly a few hundred tokens per chunk), not strict heading/structure based.</li>
+<li>Not a replacement for code search; use code search tools for repositories/source trees.</li>
+<h2>Search modes</h2>
+<li>`qmd search` (default): fast keyword match (BM25)</li>
+<li>`qmd vsearch` (last resort): semantic similarity (vector). Often slow due to local LLM work before the vector lookup.</li>
+<li>`qmd query` (generally skip): hybrid search + LLM reranking. Often slower than `vsearch` and may timeout.</li>
+<h2>Performance notes</h2>
+<li>`qmd search` is typically instant.</li>
+<li>`qmd vsearch` can be ~1 minute on some machines because query expansion may load a local model (e.g., Qwen3-1.7B) into memory per run; the vector lookup itself is usually fast.</li>
+<li>`qmd query` adds LLM reranking on top of `vsearch`, so it can be even slower and less reliable for interactive use.</li>
+<li>If you need repeated semantic searches, consider keeping the process/model warm (e.g., a long-lived qmd/MCP server mode if available in your setup) rather than invoking a cold-start LLM each time.</li>
+<h2>Common commands</h2>
+<p>```bash
+qmd search "query"             # default
+qmd vsearch "query"
+qmd query "query"
+qmd search "query" -c notes     # Search specific collection
+qmd search "query" -n 10        # More results
+qmd search "query" --json       # JSON output
+qmd search "query" --all --files --min-score 0.3
+```</p>
+<h2>Useful options</h2>
+<li>`-n <num>`: number of results</li>
+<li>`-c, --collection <name>`: restrict to a collection</li>
+<li>`--all --min-score <num>`: return all matches above a threshold</li>
+<li>`--json` / `--files`: agent-friendly output formats</li>
+<li>`--full`: return full document content</li>
+<h2>Retrieve</h2>
+<p>```bash
+qmd get "path/to/file.md"       # Full document
+qmd get "#docid"                # By ID from search results
+qmd multi-get "journals/2025-05*.md"
+qmd multi-get "doc1.md, doc2.md, #abc123" --json
+```</p>
+<h2>Maintenance</h2>
+<p>```bash
+qmd status                      # Index health
+qmd update                      # Re-index changed files
+qmd embed                       # Update embeddings
+```</p>
+<h2>Keeping the index fresh</h2>
+<p>Automate indexing so results stay current as you add/edit notes.</p>
+<li>For keyword search (`qmd search`), `qmd update` is usually enough (fast).</li>
+<li>If you rely on semantic/hybrid search (`vsearch`/`query`), you may also want `qmd embed`, but it can be slow.</li>
+<p>Example schedules (cron):</p>
+<p>```bash
+<h1>Hourly incremental updates (keeps BM25 fresh):</h1>
+0 * * * * export PATH="$HOME/.bun/bin:$PATH" && qmd update</p>
+<h1>Optional: nightly embedding refresh (can be slow):</h1>
+0 5 * * * export PATH="$HOME/.bun/bin:$PATH" && qmd embed
+```
+<p>If your Clawdbot/agent environment supports a built-in scheduler, you can run the same commands there instead of system cron.</p>
+<h2>Models and cache</h2>
+<li>Uses local GGUF models; first run auto-downloads them.</li>
+<li>Default cache: `~/.cache/qmd/models/` (override with `XDG_CACHE_HOME`).</li>
+<h2>Relationship to Clawdbot memory search</h2>
+<li>`qmd` searches *your local files* (notes/docs) that you explicitly index into collections.</li>
+<li>Clawdbot's `memory_search` searches *agent memory* (saved facts/context from prior interactions).</li>
+<li>Use both: `memory_search` for "what did we decide/learn before?", `qmd` for "what's in my notes/docs on disk?".</li>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

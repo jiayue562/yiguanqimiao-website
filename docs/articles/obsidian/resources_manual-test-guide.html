@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMA API 手动测试指南 - 以观其妙书院</title>
+    <meta name="description" content="IMA API 手动测试指南 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="IMA API 手动测试指南">
+    <meta property="og:description" content="IMA API 手动测试指南 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "IMA API 手动测试指南",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>IMA API 手动测试指南</h1>
+<h2>准备工作</h2>
+<h3>1. 获取 API 凭证（悟空已提供）</h3>
+<li><strong>Client ID</strong>: `59a1edb848ec905552c0fbc8041213bf`</li>
+<li><strong>API Key</strong>: `NmwwfdyB2ytuws6jeStZlZcouyijpDYiWSLNAS/fzSRKeGAJ1ZILYXK35G9M2CzVMEGepxc88A==`</li>
+<h3>2. 准备测试工具</h3>
+你可以使用以下任意一种工具：
+<li><strong>Postman</strong> (推荐，图形界面)</li>
+<li><strong>cURL</strong> (命令行)</li>
+<li><strong>PowerShell</strong> (Windows 内置)</li>
+<li><strong>Python</strong> (需要安装 requests 库)</li>
+<h2>方法一：使用 Postman 测试</h2>
+<h3>步骤：</h3>
+1. 打开 Postman
+2. 新建一个 POST 请求
+3. 设置 URL: `https://ima.qq.com/openapi/note/v1/list_note_folder_by_cursor`
+4. 设置 Headers：
+   - `Content-Type`: `application/json`
+   - `X-OpenApi-ClientId`: `59a1edb848ec905552c0fbc8041213bf`
+   - `X-OpenApi-Sign`: `NmwwfdyB2ytuws6jeStZlZcouyijpDYiWSLNAS/fzSRKeGAJ1ZILYXK35G9M2CzVMEGepxc88A==`
+5. 设置 Body (raw, JSON):
+   ```json
+   {
+     "cursor": "0"
+   }
+   ```
+6. 点击 Send
+<h3>预期响应：</h3>
+```json
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "folders": [
+      {
+        "id": "xxx",
+        "name": "笔记本名称",
+        "notes_count": 10
+      }
+    ]
+  }
+}
+```
+<h2>方法二：使用 cURL 测试</h2>
+<p>打开命令行，执行以下命令：</p>
+<p>```bash
+curl -X POST "https://ima.qq.com/openapi/note/v1/list_note_folder_by_cursor" \
+  -H "Content-Type: application/json" \
+  -H "X-OpenApi-ClientId: 59a1edb848ec905552c0fbc8041213bf" \
+  -H "X-OpenApi-Sign: NmwwfdyB2ytuws6jeStZlZcouyijpDYiWSLNAS/fzSRKeGAJ1ZILYXK35G9M2CzVMEGepxc88A==" \
+  -d '{"cursor":"0"}'
+```</p>
+<h2>方法三：使用 PowerShell 测试</h2>
+<p>打开 PowerShell，执行以下命令：</p>
+<p>```powershell
+$ClientID = "59a1edb848ec905552c0fbc8041213bf"
+$ApiKey = "NmwwfdyB2ytuws6jeStZlZcouyijpDYiWSLNAS/fzSRKeGAJ1ZILYXK35G9M2CzVMEGepxc88A=="
+$headers = @{
+    "Content-Type" = "application/json"
+    "X-OpenApi-ClientId" = $ClientID
+    "X-OpenApi-Sign" = $ApiKey
+}
+$body = '{"cursor":"0"}'
+$response = Invoke-RestMethod -Uri "https://ima.qq.com/openapi/note/v1/list_note_folder_by_cursor" -Method Post -Headers $headers -Body $body
+Write-Host "响应: $($response | ConvertTo-Json -Depth 10)"
+```</p>
+<h2>方法四：使用 Python 测试</h2>
+<p>创建 `test.py` 文件：</p>
+<p>```python
+import requests
+import json</p>
+<p>client_id = "59a1edb848ec905552c0fbc8041213bf"
+api_key = "NmwwfdyB2ytuws6jeStZlZcouyijpDYiWSLNAS/fzSRKeGAJ1ZILYXK35G9M2CzVMEGepxc88A=="</p>
+<p>url = "https://ima.qq.com/openapi/note/v1/list_note_folder_by_cursor"
+headers = {
+    "Content-Type": "application/json",
+    "X-OpenApi-ClientId": client_id,
+    "X-OpenApi-Sign": api_key
+}
+data = {
+    "cursor": "0"
+}</p>
+<p>response = requests.post(url, headers=headers, json=data)
+print(f"状态码: {response.status_code}")
+print(f"响应内容: {response.text}")</p>
+<p>if response.status_code == 200:
+    result = response.json()
+    if result.get("code") == 0:
+        print("✅ API 连接成功！")
+        folders = result.get("data", {}).get("folders", [])
+        print(f"📁 发现 {len(folders)} 个笔记本")
+        for folder in folders:
+            print(f"  - {folder.get('name')} (ID: {folder.get('id')}, 笔记数: {folder.get('notes_count')})")
+    else:
+        print(f"⚠️ API 返回错误: 代码 {result.get('code')}, 消息: {result.get('message')}")
+else:
+    print(f"❌ 请求失败: HTTP {response.status_code}")
+```</p>
+<p>运行：
+```bash
+python test.py
+```</p>
+<h2>测试结果解读</h2>
+<h3>✅ 连接成功的表现</h3>
+1. HTTP 状态码 200
+2. 响应 JSON 中 `code` 字段为 0
+3. `message` 字段为 "success"
+4. `data.folders` 包含笔记本列表
+<h3>❌ 常见错误</h3>
+1. <strong>HTTP 403/401</strong>: API 凭证无效
+2. <strong>HTTP 404</strong>: 接口地址错误
+3. <strong>HTTP 500</strong>: 服务器内部错误
+4. <strong>响应中 code ≠ 0</strong>: API 逻辑错误
+<h3>🔧 故障排查</h3>
+1. <strong>检查网络连接</strong>: 确保可以访问 `ima.qq.com`
+2. <strong>验证凭证</strong>: 确认 Client ID 和 API Key 正确
+3. <strong>检查请求格式</strong>: 确保 Headers 和 Body 格式正确
+4. <strong>查看错误信息</strong>: 根据返回的错误码和消息排查
+<h2>技能使用说明</h2>
+<p>一旦测试成功，IMA 技能就可以正常使用。技能会自动触发，当你说到以下内容时：
+<li>"查看我的笔记"</li>
+<li>"搜索关于XX的笔记"</li>
+<li>"创建一篇新笔记"</li>
+<li>"列出我的笔记本"</li>
+<li>"在笔记里添加内容"</li></p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

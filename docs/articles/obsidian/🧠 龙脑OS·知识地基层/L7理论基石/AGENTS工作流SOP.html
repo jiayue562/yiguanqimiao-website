@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENTS.md 工作流配置SOP - 以观其妙书院</title>
+    <meta name="description" content="AGENTS.md 工作流配置SOP - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="AGENTS.md 工作流配置SOP">
+    <meta property="og:description" content="AGENTS.md 工作流配置SOP - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "AGENTS.md 工作流配置SOP",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>AGENTS.md 工作流配置SOP</h1>
+<p>> <strong>位置</strong>: 龙脑OS·知识地基层 | <strong>类型</strong>: Schema配置层
+> _定义LLM的行为规则与维护规则_</p>
+<p>---</p>
+<h2>一、总则</h2>
+<h3>知识库是弹药库，不是收藏夹</h3>
+所有知识的目的是为了产出，不是为了囤积。
+<h3>AI是参谋，不是决策者</h3>
+AI提建议、列方案、执行确认后的操作。分类、链接、内容的决策权在用户。
+<p>---</p>
+<h2>二、Ingest SOP：入库操作</h2>
+<h3>触发词</h3>
+<li>「处理一下Notes/」</li>
+<li>「把这个整理进知识库」</li>
+<li>「Ingest」</li>
+<h3>操作流程</h3>
+<p>#### Step 1: 列方案
+扫描Notes/下所有未处理的文件（Clippings/Inbox/Conversation），列出一个表：</p>
+<p>```markdown
+| 文件 | 建议放哪 | 怎么处理 | 为什么 |
+|------|---------|---------|--------|
+| xxx.md | Knowledge/ | 新建 | 全新主题 |
+```</p>
+<strong>分类规则</strong>：
+| 内容性质 | 目标目录 |
+|---------|---------|
+| 软件工具、代码技巧 | Software/ |
+| 投资、保险、健康 | LifeOS/ |
+| 方法论、读书笔记、概念 | Knowledge/ |
+| 内容创作方法论 | Writing/Knowledge/ |
+| 选题素材 | Writing/ |
+| 判断不了 | 留在Notes/，标注待确认 |
+<p>#### Step 2: 等待确认
+列出方案后等待用户确认。确认前不执行任何写操作。</p>
+<p>#### Step 3: 加工
+<li>读原文提取关键信息</li>
+<li>写摘要（摘要格式见附录）</li>
+<li>在目标目录创建或更新页面</li>
+<li>给相关页面补交叉引用</li></p>
+<p>#### Step 4: 清理
+<li>原始文件从Notes/删除</li>
+<li>确认目标页面内容正确</li></p>
+<p>---</p>
+<h2>三、Query SOP：查询操作</h2>
+<h3>触发词</h3>
+<li>「帮我查一下…」</li>
+<li>「我记得知识库里有个…」</li>
+<li>任何涉及已有知识的提问</li>
+<h3>操作流程</h3>
+<p>#### Step 1: 搜索
+在Knowledge/ Software/ LifeOS/ Writing/下搜索相关内容。</p>
+<p>#### Step 2: 综合回答
+结合多篇内容给出答案，标注来源。</p>
+<p>#### Step 3: 反哺（关键）
+如果在搜索中发现：
+<li>两篇内容互补但未链接 → 建议补链接</li>
+<li>某页内容过时 → 建议更新</li>
+<li>某个概念缺失 → 建议新建页面</li></p>
+<strong>反哺也需要确认</strong>：只说建议，不自动执行。
+<p>---</p>
+<h2>四、Lint SOP：健康检查</h2>
+<h3>触发词</h3>
+<li>「跑一下健康检查」</li>
+<li>「Lint」</li>
+<li>定期提醒（建议每月一次）</li>
+<h3>检查范围</h3>
+<p>按目录分别跑，不一次全跑：</p>
+<p>| 目录 | 重点 | 适合Lint? |
+|------|------|-----------|
+| Knowledge/ | 链接完整性、内容过时 | ✅ 重点 |
+| LifeOS/ | 投资笔记时效性 | ✅ 选择性 |
+| Software/ | 工具版本是否过时 | ⚠️ 效果有限 |
+| Writing/ | 创作素材完整性 | ✅ 有价值 |</p>
+<h3>四项检查</h3>
+<p>1. <strong>孤立页面检测</strong>：没有任何入链的页面
+2. <strong>过时内容检测</strong>：超过90天未更新的页面
+3. <strong>缺失引用检测</strong>：讲同一概念但未链接的页面
+4. <strong>Notes/积压检测</strong>：超过7天未处理的内容</p>
+<h3>输出格式</h3>
+<p>```markdown
+<h2>健康检查报告 [目录名]</h2></p>
+<h3>孤立页面: N 个</h3>
+<li>[页面A] — 建议: 链接到相关页面</li>
+<h3>过时内容: N 个</h3>
+<li>[页面B] — 最后更新: YYYY-MM-DD — 建议: 检查是否需要更新</li>
+<h3>缺失引用: N 对</h3>
+<li>[页面C] ↔ [页面D] — 内容互补，建议建链接</li>
+<h3>Notes/积压: N 个</h3>
+<li>[文件E] — 等待处理超过7天</li>
+```
+<p>跑完出报告，不自动改。</p>
+<p>---</p>
+<h2>五、索引维护</h2>
+<h3>index.md 维护规则</h3>
+<li>只维护<strong>目录级</strong>索引</li>
+<li>不需要文件级索引（维护成本 > 收益）</li>
+<li>目录结构调整时才更新index.md</li>
+<li>新增文件不需要更新index.md</li>
+<h3>交叉引用规则</h3>
+<li>只建强关联（2-3条/页）</li>
+<li>格式：文件末尾 `## 相关页面`</li>
+<li>链接格式：`- [[目标页面]] — 为什么相关`</li>
+<p>什么值得建链接：
+1. 内容互补（两个角度讲同一件事）
+2. 理论+实践（原则+案例）
+3. 人物+方法（谁+什么）
+4. 读书+应用（书+笔记）</p>
+<p>---</p>
+<h2>附录：摘要格式</h2>
+<p>```markdown
+<h1>[页面标题]</h1></p>
+<p>> [一句话摘要]</p>
+<p>---</p>
+<h2>核心观点</h2>
+<p>[3-5条核心观点]</p>
+<h2>关键信息</h2>
+<p>[具体数据、案例、引用]</p>
+<h2>我的思考</h2>
+<p>[个人解读、批判性思考]</p>
+<h2>行动建议</h2>
+<p>[这个知识我能怎么用]</p>
+<h2>相关页面</h2>
+<li>[[相关页面1]]</li>
+```
+<p>---</p>
+<h2>知识链接</h2>
+<li>[[LLM Wiki实战方法论]] — 操作流程详解</li>
+<li>[[知识库设计哲学]] — 八条原则</li>
+<li>[[../../❤️ 龙心OS·智能发动机层/五大引擎/知识学习]] — 调用引擎</li>
+<p>---</p>
+<h2>🔗 关联文件</h2>
+<li>[[目标页面]]</li>
+<li>[[相关页面1]]</li>
+<li>[[LLM Wiki实战方法论]]</li>
+<li>[[知识库设计哲学]]</li>
+<li>[[../../❤️ 龙心OS·智能发动机层/五大引擎/知识学习]]</li>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

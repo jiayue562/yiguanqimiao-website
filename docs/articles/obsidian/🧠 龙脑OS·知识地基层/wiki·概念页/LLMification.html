@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLMification（知识编译方法论） - 以观其妙书院</title>
+    <meta name="description" content="LLMification（知识编译方法论） - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="LLMification（知识编译方法论）">
+    <meta property="og:description" content="LLMification（知识编译方法论） - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "LLMification（知识编译方法论）",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>LLMification（知识编译方法论）</h1>
+<p>> <strong>类型</strong>: 方法论概念
+> <strong>提出者</strong>: Andrej Karpathy
+> <strong>核心思想</strong>: 让LLM将原始资料编译为结构化、可迭代、LLM原生的Markdown知识库</p>
+<p>---</p>
+<h2>核心定义</h2>
+<p>将知识管理从「人类编写、机器检索」转变为「机器编译、人类审核」的方法论。</p>
+<h2>与传统RAG的区别</h2>
+<p>| 维度 | 传统RAG | LLMification |
+|------|---------|-------------|
+| 知识处理 | PDF压平一维文本流 | 深度结构化解析 |
+| 记忆方式 | 每次检索重新挖掘 | 一次编译持续复用 |
+| 知识形态 | 检索片段 | 结构化Markdown |
+| 更新方式 | 重新索引 | 增量编译融合 |
+| 质量保障 | 依赖检索排名 | 依赖编译质量 |</p>
+<h2>三层架构</h2>
+<p>1. <strong>原始资料层(raw/)</strong>：只读材料，事实来源不可篡改
+2. <strong>Wiki本体层(wiki/)</strong>：LLM维护的结构化知识集合（摘要/概念/实体/对比/综合）
+3. <strong>Schema配置层(schema/)</strong>：LLM的操作规则（AGENTS.md/CLAUDE.md）</p>
+<h2>三大操作</h2>
+<p>| 操作 | 功能 | 频率 |
+|------|------|------|
+| 录入(Ingest) | 增量编译与知识融合 | 有新资料时 |
+| 查询(Query) | Wiki检索+交叉验证 | 每次对话 |
+| 检查(Lint) | 一致性校验+完整性补全 | 定期（建议每月） |</p>
+<h2>两个特殊文件</h2>
+<p>| 文件 | 用途 |
+|------|------|
+| index.md | 按主题做全局目录 |
+| log.md | 记录时间线/变更历史 |</p>
+<p>---</p>
+<h2>实战对比：Karpathy vs 个人知识库</h2>
+<p>| 维度 | Karpathy方案 | 个人知识库方案 |
+|------|-------------|---------------|
+| 架构 | 三层（Raw→Wiki→Schema） | 五层（Notes+Knowledge+Software+LifeOS+Writing） |
+| AI角色 | 全权操作 | 参谋，提建议用户拍板 |
+| Ingest | LLM自主分类更新 | 先列方案→确认→执行 |
+| Query | 自动反哺Wiki | 建议补链接，确认后执行 |
+| Lint | 自动修复 | 出报告不自动改 |
+| 链接密度 | 密集 | 2-3条强关联 |
+| 索引粒度 | 文件级 | 目录级 |
+| 对话处理 | 无 | Notes/Conversation/ |</p>
+<p>---</p>
+<h2>关键洞察</h2>
+<p>> 分类反映的是你自己的思维结构。AI可以建议，但最终得你来定。</p>
+<p>> 知识库的终极检验标准不是内容多少，而是它有没有帮你产出过东西。</p>
+<p>---</p>
+<h2>知识链接</h2>
+<li>[[知识编译]] — 编译思想详解</li>
+<li>[[../象思维·原象库/LLM Wiki实战方法论]] — 实战操作流程</li>
+<li>[[知识活性]] — 知识的五维活性评估</li>
+<li>[[../../❤️ 龙心OS·智能发动机层/五大引擎/知识学习]] — 调用引擎</li>
+<p>---</p>
+<h2>🔗 关联文件</h2>
+<li>[[知识编译]]</li>
+<li>[[../象思维·原象库/LLM Wiki实战方法论]]</li>
+<li>[[知识活性]]</li>
+<li>[[../../❤️ 龙心OS·智能发动机层/五大引擎/知识学习]]</li>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

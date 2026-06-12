@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Browser Skill - 以观其妙书院</title>
+    <meta name="description" content="Agent Browser Skill - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Agent Browser Skill">
+    <meta property="og:description" content="Agent Browser Skill - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Agent Browser Skill",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>Agent Browser Skill</h1>
+<p>Fast browser automation using accessibility tree snapshots with refs for deterministic element selection.</p>
+<h2>Why Use This Over Built-in Browser Tool</h2>
+<strong>Use agent-browser when:</strong>
+<li>Automating multi-step workflows</li>
+<li>Need deterministic element selection</li>
+<li>Performance is critical</li>
+<li>Working with complex SPAs</li>
+<li>Need session isolation</li>
+<strong>Use built-in browser tool when:</strong>
+<li>Need screenshots/PDFs for analysis</li>
+<li>Visual inspection required</li>
+<li>Browser extension integration needed</li>
+<h2>Core Workflow</h2>
+<p>```bash
+<h1>1. Navigate and snapshot</h1>
+agent-browser open https://example.com
+agent-browser snapshot -i --json</p>
+<h1>2. Parse refs from JSON, then interact</h1>
+agent-browser click @e2
+agent-browser fill @e3 "text"
+<h1>3. Re-snapshot after page changes</h1>
+agent-browser snapshot -i --json
+```
+<h2>Key Commands</h2>
+<h3>Navigation</h3>
+```bash
+agent-browser open <url>
+agent-browser back | forward | reload | close
+```
+<h3>Snapshot (Always use -i --json)</h3>
+```bash
+agent-browser snapshot -i --json          # Interactive elements, JSON output
+agent-browser snapshot -i -c -d 5 --json  # + compact, depth limit
+agent-browser snapshot -s "#main" -i      # Scope to selector
+```
+<h3>Interactions (Ref-based)</h3>
+```bash
+agent-browser click @e2
+agent-browser fill @e3 "text"
+agent-browser type @e3 "text"
+agent-browser hover @e4
+agent-browser check @e5 | uncheck @e5
+agent-browser select @e6 "value"
+agent-browser press "Enter"
+agent-browser scroll down 500
+agent-browser drag @e7 @e8
+```
+<h3>Get Information</h3>
+```bash
+agent-browser get text @e1 --json
+agent-browser get html @e2 --json
+agent-browser get value @e3 --json
+agent-browser get attr @e4 "href" --json
+agent-browser get title --json
+agent-browser get url --json
+agent-browser get count ".item" --json
+```
+<h3>Check State</h3>
+```bash
+agent-browser is visible @e2 --json
+agent-browser is enabled @e3 --json
+agent-browser is checked @e4 --json
+```
+<h3>Wait</h3>
+```bash
+agent-browser wait @e2                    # Wait for element
+agent-browser wait 1000                   # Wait ms
+agent-browser wait --text "Welcome"       # Wait for text
+agent-browser wait --url "**/dashboard"   # Wait for URL
+agent-browser wait --load networkidle     # Wait for network
+agent-browser wait --fn "window.ready === true"
+```
+<h3>Sessions (Isolated Browsers)</h3>
+```bash
+agent-browser --session admin open site.com
+agent-browser --session user open site.com
+agent-browser session list
+<h1>Or via env: AGENT_BROWSER_SESSION=admin agent-browser ...</h1>
+```
+<h3>State Persistence</h3>
+```bash
+agent-browser state save auth.json        # Save cookies/storage
+agent-browser state load auth.json        # Load (skip login)
+```
+<h3>Screenshots & PDFs</h3>
+```bash
+agent-browser screenshot page.png
+agent-browser screenshot --full page.png
+agent-browser pdf page.pdf
+```
+<h3>Network Control</h3>
+```bash
+agent-browser network route "**/ads/*" --abort           # Block
+agent-browser network route "**/api/*" --body '{"x":1}'  # Mock
+agent-browser network requests --filter api              # View
+```
+<h3>Cookies & Storage</h3>
+```bash
+agent-browser cookies                     # Get all
+agent-browser cookies set name value
+agent-browser storage local key           # Get localStorage
+agent-browser storage local set key val
+```
+<h3>Tabs & Frames</h3>
+```bash
+agent-browser tab new https://example.com
+agent-browser tab 2                       # Switch to tab
+agent-browser frame @e5                   # Switch to iframe
+agent-browser frame main                  # Back to main
+```
+<h2>Snapshot Output Format</h2>
+<p>```json
+{
+  "success": true,
+  "data": {
+    "snapshot": "...",
+    "refs": {
+      "e1": {"role": "heading", "name": "Example Domain"},
+      "e2": {"role": "button", "name": "Submit"},
+      "e3": {"role": "textbox", "name": "Email"}
+    }
+  }
+}
+```</p>
+<h2>Best Practices</h2>
+<p>1. <strong>Always use `-i` flag</strong> - Focus on interactive elements
+2. <strong>Always use `--json`</strong> - Easier to parse
+3. <strong>Wait for stability</strong> - `agent-browser wait --load networkidle`
+4. <strong>Save auth state</strong> - Skip login flows with `state save/load`
+5. <strong>Use sessions</strong> - Isolate different browser contexts
+6. <strong>Use `--headed` for debugging</strong> - See what's happening</p>
+<h2>Example: Search and Extract</h2>
+<p>```bash
+agent-browser open https://www.google.com
+agent-browser snapshot -i --json
+<h1>AI identifies search box @e1</h1>
+agent-browser fill @e1 "AI agents"
+agent-browser press Enter
+agent-browser wait --load networkidle
+agent-browser snapshot -i --json
+<h1>AI identifies result refs</h1>
+agent-browser get text @e3 --json
+agent-browser get attr @e4 "href" --json
+```</p>
+<h2>Example: Multi-Session Testing</h2>
+<p>```bash
+<h1>Admin session</h1>
+agent-browser --session admin open app.com
+agent-browser --session admin state load admin-auth.json
+agent-browser --session admin snapshot -i --json</p>
+<h1>User session (simultaneous)</h1>
+agent-browser --session user open app.com
+agent-browser --session user state load user-auth.json
+agent-browser --session user snapshot -i --json
+```
+<h2>Installation</h2>
+<p>```bash
+npm install -g agent-browser
+agent-browser install                     # Download Chromium
+agent-browser install --with-deps         # Linux: + system deps
+```</p>
+<h2>Credits</h2>
+<p>Skill created by Yossi Elkrief ([@MaTriXy](https://github.com/MaTriXy))</p>
+<p>agent-browser CLI by [Vercel Labs](https://github.com/vercel-labs/agent-browser)</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

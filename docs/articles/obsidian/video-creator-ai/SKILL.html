@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video-creator-ai - 以观其妙书院</title>
+    <meta name="description" content="video-creator-ai - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="video-creator-ai">
+    <meta property="og:description" content="video-creator-ai - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "video-creator-ai",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>video-creator-ai</h1>
+<h2>技能简介</h2>
+短视频全流程自动化创作工具，支持选题、脚本、剪辑、配音、字幕、发布等智能操作，实现短视频内容自动化生产。
+<h2>核心功能</h2>
+1. <strong>选题策划</strong>：基于热点和趋势自动选题
+2. <strong>脚本生成</strong>：AI 生成短视频脚本
+3. <strong>素材收集</strong>：自动收集图片、视频素材
+4. <strong>视频剪辑</strong>：自动剪辑、转场、特效
+5. <strong>配音字幕</strong>：AI 配音、自动字幕生成
+6. <strong>发布管理</strong>：多平台一键发布
+<h2>支持的平台</h2>
+<li><strong>短视频平台</strong>：抖音、快手、B站、YouTube、Instagram</li>
+<li><strong>社交媒体</strong>：微博、小红书、Twitter、Facebook</li>
+<li><strong>内容平台</strong>：知乎、头条、百家号</li>
+<li><strong>视频格式</strong>：MP4、MOV、AVI、WMV、WebM</li>
+<h2>安装方法</h2>
+```bash
+npm install -g video-creator-ai
+```
+<h2>使用示例</h2>
+```javascript
+const { VideoCreator } = require('video-creator-ai');
+<p>// 创建短视频
+async function createShortVideo(topic, duration) {
+  const creator = new VideoCreator({
+    platform: '抖音',
+    duration: duration,
+    style: '教育类'
+  });</p>
+<p>// 选题策划
+  const topicAnalysis = await creator.analyzeTopic(topic);
+  
+  // 脚本生成
+  const script = await creator.generateScript({
+    topic: topic,
+    targetAudience: '年轻人',
+    duration: duration
+  });</p>
+<p>// 素材收集
+  const materials = await creator.collectMaterials({
+    script: script,
+    imageCount: 10,
+    videoCount: 5
+  });</p>
+<p>// 视频剪辑
+  const video = await creator.editVideo({
+    script: script,
+    materials: materials,
+    effects: ['转场', '字幕', '配音']
+  });</p>
+<p>// 配音字幕
+  const finalVideo = await creator.addAudioAndSubtitles({
+    video: video,
+    voiceType: '年轻女性',
+    subtitleStyle: '现代简约'
+  });</p>
+<p>// 发布
+  const result = await creator.publish({
+    video: finalVideo,
+    platforms: ['抖音', '快手', 'B站'],
+    schedule: '立即发布'
+  });</p>
+<p>return result;
+}
+```</p>
+<h2>视频类型支持</h2>
+1. <strong>教育类</strong>：知识讲解、教程演示
+2. <strong>娱乐类</strong>：搞笑、剧情、挑战
+3. <strong>商业类</strong>：产品介绍、品牌宣传
+4. <strong>生活类</strong>：日常分享、生活技巧
+5. <strong>新闻类</strong>：热点新闻、时事评论
+<h2>AI 功能</h2>
+1. <strong>选题 AI</strong>：基于趋势分析和用户画像选题
+2. <strong>脚本 AI</strong>：自然语言生成短视频脚本
+3. <strong>配音 AI</strong>：多种语音风格 AI 配音
+4. <strong>字幕 AI</strong>：自动识别语音生成字幕
+5. <strong>剪辑 AI</strong>：智能剪辑和特效添加
+<h2>素材库</h2>
+<li><strong>图片素材</strong>：Unsplash、Pexels、Getty Images</li>
+<li><strong>视频素材</strong>：Pexels、Storyblocks、Adobe Stock</li>
+<li><strong>音乐素材</strong>：Spotify、Apple Music、YouTube Audio</li>
+<li><strong>特效素材</strong>：预设特效、模板、动画</li>
+<h2>发布管理</h2>
+1. <strong>多平台发布</strong>：一键发布到多个平台
+2. <strong>发布时间优化</strong>：基于平台最佳发布时间
+3. <strong>标签优化</strong>：自动生成优化标签
+4. <strong>数据分析</strong>：发布后数据分析
+<h2>版本信息</h2>
+<li>当前版本：1.5.0</li>
+<li>最后更新：2026-03-19</li>
+<li>社区评分：⭐⭐⭐⭐⭐ (4.7/5.0)</li>
+<h2>相关资源</h2>
+<li>[官方文档](https://video-creator-ai.dev/docs)</li>
+<li>[GitHub 仓库](https://github.com/content-agents/video-creator-ai)</li>
+<li>[示例项目](https://github.com/video-creator-ai/examples)</li>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Mechanics - 以观其妙书院</title>
+    <meta name="description" content="Learning Mechanics - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Learning Mechanics">
+    <meta property="og:description" content="Learning Mechanics - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Learning Mechanics",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Learning Mechanics</h1>
+<h2>What Triggers Learning</h2>
+<p>| Trigger | Confidence | Action |
+|---------|------------|--------|
+| "No, do X instead" | High | Log correction immediately |
+| "I told you before..." | High | Flag as repeated, bump priority |
+| "Always/Never do X" | Confirmed | Promote to preference |
+| User edits your output | Medium | Log as tentative pattern |
+| Same correction 3x | Confirmed | Ask to make permanent |
+| "For this project..." | Scoped | Write to project namespace |</p>
+<h2>What Does NOT Trigger Learning</h2>
+<li>Silence (not confirmation)</li>
+<li>Single instance of anything</li>
+<li>Hypothetical discussions</li>
+<li>Third-party preferences ("John likes...")</li>
+<li>Group chat patterns (unless user confirms)</li>
+<li>Implied preferences (never infer)</li>
+<h2>Correction Classification</h2>
+<h3>By Type</h3>
+| Type | Example | Namespace |
+|------|---------|-----------|
+| Format | "Use bullets not prose" | global |
+| Technical | "SQLite not Postgres" | domain/code |
+| Communication | "Shorter messages" | global |
+| Project-specific | "This repo uses Tailwind" | projects/{name} |
+| Person-specific | "Marcus wants BLUF" | domains/comms |
+<h3>By Scope</h3>
+```
+Global: applies everywhere
+  └── Domain: applies to category (code, writing, comms)
+       └── Project: applies to specific context
+            └── Temporary: applies to this session only
+```
+<h2>Confirmation Flow</h2>
+<p>After 3 similar corrections:
+```
+Agent: "I've noticed you prefer X over Y (corrected 3 times).
+        Should I always do this?
+        - Yes, always
+        - Only in [context]
+        - No, case by case"</p>
+<p>User: "Yes, always"</p>
+<p>Agent: → Moves to Confirmed Preferences
+       → Removes from correction counter
+       → Cites source on future use
+```</p>
+<h2>Pattern Evolution</h2>
+<h3>Stages</h3>
+1. <strong>Tentative</strong> — Single correction, watch for repetition
+2. <strong>Emerging</strong> — 2 corrections, likely pattern
+3. <strong>Pending</strong> — 3 corrections, ask for confirmation
+4. <strong>Confirmed</strong> — User approved, permanent unless reversed
+5. <strong>Archived</strong> — Unused 90+ days, preserved but inactive
+<h3>Reversal</h3>
+User can always reverse:
+```
+User: "Actually, I changed my mind about X"
+<p>Agent: 
+1. Archive old pattern (keep history)
+2. Log reversal with timestamp
+3. Add new preference as tentative
+4. "Got it. I'll do Y now. (Previous: X, archived)"
+```</p>
+<h2>Anti-Patterns</h2>
+<h3>Never Learn</h3>
+<li>What makes user comply faster (manipulation)</li>
+<li>Emotional triggers or vulnerabilities</li>
+<li>Patterns from other users (even if shared device)</li>
+<li>Anything that feels "creepy" to surface</li>
+<h3>Avoid</h3>
+<li>Over-generalizing from single instance</li>
+<li>Learning style over substance</li>
+<li>Assuming preference stability</li>
+<li>Ignoring context shifts</li>
+<h2>Quality Signals</h2>
+<h3>Good Learning</h3>
+<li>User explicitly states preference</li>
+<li>Pattern consistent across contexts</li>
+<li>Correction improves outcomes</li>
+<li>User confirms when asked</li>
+<h3>Bad Learning</h3>
+<li>Inferred from silence</li>
+<li>Contradicts recent behavior</li>
+<li>Only works in narrow context</li>
+<li>User never confirmed</li>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>
