@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkBuddy → Obsidian 备份技能 - 以观其妙书院</title>
+    <meta name="description" content="WorkBuddy → Obsidian 备份技能 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="WorkBuddy → Obsidian 备份技能">
+    <meta property="og:description" content="WorkBuddy → Obsidian 备份技能 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "WorkBuddy → Obsidian 备份技能",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>WorkBuddy → Obsidian 备份技能</h1>
+<h2>🎯 简介</h2>
+<p>本技能提供将WorkBuddy系统所有内容备份到Obsidian知识库的完整解决方案，实现知识资产的系统化沉淀和管理。</p>
+<h2>✨ 核心功能</h2>
+<h3>1. 全量备份</h3>
+<li>备份WorkBuddy所有知识资产</li>
+<li>包括系统配置、技能库、记忆系统、对话记录等</li>
+<h3>2. 智能分类</h3>
+<li>基于文件内容和元数据自动分类</li>
+<li>按文件类型、命名模式、内容关键词分类</li>
+<h3>3. 增量备份</h3>
+<li>只备份新增或修改的内容</li>
+<li>大幅减少备份时间和存储空间</li>
+<h3>4. 自动化管理</h3>
+<li>支持定时自动备份</li>
+<li>备份报告生成</li>
+<li>历史版本管理</li>
+<h2>📁 安装和使用</h2>
+<h3>快速开始</h3>
+<p>```bash
+<h1>1. 进入技能目录</h1>
+cd "c:/Users/jia'yue/.workbuddy/skills/workbuddy-obsidian-backup"</p>
+<h1>2. 创建配置文件</h1>
+copy config_template.json workbuddy_backup_config.json
+<h1>3. 编辑配置文件（可选）</h1>
+<h1>修改Obsidian路径等设置</h1>
+<h1>4. 运行备份</h1>
+python backup_script.py --config workbuddy_backup_config.json
+```
+<h3>常用命令</h3>
+<p>```bash
+<h1>全量备份（首次使用推荐）</h1>
+python backup_script.py --full-backup</p>
+<h1>增量备份（日常使用）</h1>
+python backup_script.py
+<h1>指定Obsidian路径</h1>
+python backup_script.py --obsidian-path "C:\Users\jia'yue\Desktop\以观其妙书院知识库\观其妙书院\"
+<h1>模拟运行（不实际备份）</h1>
+python backup_script.py --dry-run
+<h1>调试模式</h1>
+python backup_script.py --debug
+```
+<h2>🔧 配置说明</h2>
+<h3>主要配置项</h3>
+<p>1. <strong>workbuddy_path</strong>: WorkBuddy安装路径
+2. <strong>obsidian_vault_path</strong>: Obsidian知识库路径
+3. <strong>backup_targets</strong>: 备份目标配置
+4. <strong>backup_options</strong>: 备份选项
+5. <strong>classification_rules</strong>: 文件分类规则</p>
+<h3>备份目标</h3>
+<p>默认备份以下内容：
+<li>✅ 系统配置文件（TOOLS.md, USER.md等）</li>
+<li>✅ 技能库（所有skills目录）</li>
+<li>✅ 记忆系统（brain目录）</li>
+<li>✅ 项目文件（Claw等项目）</li>
+<li>✅ 自动化配置（automations目录）</li></p>
+<h2>📊 备份目录结构</h2>
+<p>在Obsidian中创建的目录结构：</p>
+<p>```
+WorkBuddy知识备份体系/
+├── 00-系统配置/          # 系统配置文件
+├── 01-技能库/           # 所有技能文件
+├── 02-记忆系统/         # 记忆和会话记录
+├── 03-对话记录/         # 对话历史（按时间归档）
+├── 04-知识沉淀/         # 核心知识资产
+├── 05-工作流/           # 工作流文档
+├── 06-项目文件/         # 项目相关文件
+└── 备份日志/            # 备份记录和报告
+```</p>
+<h2>⚙️ 自动化配置</h2>
+<h3>设置每日自动备份</h3>
+<p>```toml
+<h1>在.workbuddy/automations/workbuddy-backup/automation.toml中配置</h1>
+name = "WorkBuddy每日备份到Obsidian"
+prompt = "执行WorkBuddy到Obsidian的增量备份"
+rrule = "FREQ=DAILY;BYHOUR=23;BYMINUTE=30"
+cwds = ["C:\\Users\\jia'yue\\.workbuddy\\skills\\workbuddy-obsidian-backup"]
+status = "ACTIVE"
+```</p>
+<h3>手动触发备份</h3>
+<p>在WorkBuddy对话中：
+```
+使用 "workbuddy-obsidian-backup" 技能执行备份
+```</p>
+<h2>📈 监控和报告</h2>
+<h3>备份报告示例</h3>
+<p>每次备份后生成详细报告：</p>
+<p>```markdown
+<h1>📊 WorkBuddy → Obsidian 备份报告</h1></p>
+<h2>备份统计</h2>
+| 类别 | 文件数 | 大小 | 新增 | 修改 | 失败 |
+|------|--------|------|------|------|------|
+| 系统配置 | 6 | 45KB | 1 | 2 | 0 |
+| 技能库 | 57 | 2.3MB | 3 | 5 | 0 |
+| 记忆系统 | 23 | 890KB | 12 | 3 | 0 |
+| 项目文件 | 15 | 1.1MB | 15 | 0 | 0 |
+| <strong>总计</strong> | <strong>101</strong> | <strong>4.3MB</strong> | <strong>31</strong> | <strong>10</strong> | <strong>0</strong> |
+```
+<h2>🔍 故障排除</h2>
+<h3>常见问题</h3>
+<p>1. <strong>权限问题</strong>
+   ```
+   错误: 无法写入Obsidian目录
+   解决: 检查目录权限，确保有写入权限
+   ```</p>
+<p>2. <strong>路径问题</strong>
+   ```
+   错误: 路径包含特殊字符
+   解决: 在配置文件中使用双反斜杠或原始字符串
+   ```</p>
+<p>3. <strong>文件锁定</strong>
+   ```
+   错误: 文件被其他程序占用
+   解决: 关闭占用文件的程序，或跳过该文件
+   ```</p>
+<h3>调试模式</h3>
+<p>```bash
+python backup_script.py --debug --dry-run
+```</p>
+<h2>🔄 恢复备份</h2>
+<h3>从Obsidian恢复文件</h3>
+<p>```bash
+<h1>恢复单个文件</h1>
+copy "C:\Users\jia'yue\Desktop\以观其妙书院知识库\观其妙书院\WorkBuddy知识备份体系\系统配置\TOOLS.md" "C:\Users\jia'yue\.workbuddy\TOOLS.md"</p>
+<h1>恢复整个目录</h1>
+xcopy "C:\Users\jia'yue\Desktop\以观其妙书院知识库\观其妙书院\WorkBuddy知识备份体系\技能库\*" "C:\Users\jia'yue\.workbuddy\skills\" /E /I
+```
+<h2>📝 最佳实践</h2>
+<h3>备份策略</h3>
+<p>1. <strong>首次使用</strong>: 执行全量备份
+2. <strong>日常使用</strong>: 设置每日增量备份
+3. <strong>定期检查</strong>: 每月检查备份完整性
+4. <strong>版本管理</strong>: 保留30天备份历史</p>
+<h3>存储优化</h3>
+<p>1. 启用增量备份减少存储空间
+2. 定期清理旧备份
+3. 压缩历史备份（可选）</p>
+<h3>安全建议</h3>
+<p>1. 定期验证备份完整性
+2. 保持多个备份副本
+3. 加密敏感信息备份</p>
+<h2>📞 技术支持</h2>
+<h3>获取帮助</h3>
+<p>1. <strong>查看日志</strong>: `备份日志/问题记录.md`
+2. <strong>检查配置</strong>: 验证配置文件路径
+3. <strong>查看报告</strong>: 分析备份报告中的问题</p>
+<h3>报告问题</h3>
+<p>在WorkBuddy对话中：
+```
+报告 "workbuddy-obsidian-backup" 技能问题
+```</p>
+<h2>🔄 更新和维护</h2>
+<h3>更新技能</h3>
+<p>```bash
+<h1>从GitHub更新（未来版本）</h1>
+git pull origin main</p>
+<h1>或重新安装</h1>
+npx skills add <owner/repo@workbuddy-obsidian-backup>
+```
+<h3>维护任务</h3>
+<p>1. 每月检查备份完整性
+2. 每季度更新分类规则
+3. 每年评估备份策略</p>
+<h2>📄 许可证</h2>
+<p>MIT License</p>
+<h2>🎯 版本历史</h2>
+<li><strong>v1.0.0</strong> (2026-03-16): 初始版本</li>
+  - 基础备份功能
+  - 智能文件分类
+  - 增量备份支持
+  - 自动化配置
+<p>---</p>
+<strong>祝您备份顺利，知识沉淀有序！</strong> 🚀
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

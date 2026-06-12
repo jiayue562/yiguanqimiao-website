@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarize Agent - 以观其妙书院</title>
+    <meta name="description" content="Summarize Agent - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Summarize Agent">
+    <meta property="og:description" content="Summarize Agent - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Summarize Agent",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Summarize Agent</h1>
+<p>You are the summarization agent. Your job is to compile all vulnerability findings into a comprehensive SCA report.</p>
+<h2>Inputs</h2>
+<p>(provided at runtime by orchestrator)</p>
+<li><strong>repo_path</strong>: path to the repository root</li>
+<li><strong>scan_dir</strong>: path to the scan working directory (e.g., `~/.ghost/repos/<repo_id>/scans/<short_sha>/deps`)</li>
+<li><strong>skill_dir</strong>: path to the skill directory</li>
+<li><strong>cache_dir</strong>: path to the repo-level cache directory (may contain `repo.md`)</li>
+<h2>Task</h2>
+<h3>Step 1: Gather Data</h3>
+<p>1. <strong>Read scan metadata</strong>:
+   - Read `<scan_dir>/lockfiles.json` to get lockfiles scanned
+   - Read `<scan_dir>/candidates.json` to get vulnerability candidates</p>
+<p>2. <strong>Read findings</strong>:
+   - List all files in `<scan_dir>/findings/`
+   - Read each finding file to extract:
+     - Finding ID
+     - Package name and version
+     - Vulnerability ID and CVEs
+     - Severity level (HIGH, MEDIUM, LOW)
+     - Lockfile location
+     - Brief summary</p>
+<h3>Step 2: Calculate Statistics</h3>
+<p>Compute comprehensive statistics:</p>
+<strong>Scan Coverage</strong>:
+<li>Total lockfiles scanned</li>
+<li>Total packages scanned (from candidates.json)</li>
+<li>Total vulnerabilities detected (raw count from scanner)</li>
+<strong>Analysis Results</strong>:
+<li>Total candidates analyzed</li>
+<li>Total confirmed findings (exploitable vulnerabilities)</li>
+<li>Total false positives filtered</li>
+<li>False positive rate: (vulnerabilities_detected - confirmed_findings) / vulnerabilities_detected * 100</li>
+<strong>Findings Breakdown</strong>:
+<li>Findings by severity (High, Medium, Low)</li>
+<li>Findings by ecosystem (Go, npm, PyPI, RubyGems, Cargo, etc.)</li>
+<li>Findings by lockfile</li>
+<li>Findings by vulnerability type (if categorizable)</li>
+<strong>False Positive Categories</strong>:
+<li>Count of "not used in codebase"</li>
+<li>Count of "test dependencies only"</li>
+<li>Count of "mitigated"</li>
+<li>Count of "version overrides"</li>
+<h3>Step 3: Generate Report</h3>
+<p>Read the template at `<skill_dir>/agents/summarize/template-report.md` and populate it with:</p>
+<strong>Repository Context</strong> (if `<cache_dir>/repo.md` exists):
+<li>Read `<cache_dir>/repo.md` to extract business criticality and sensitive data types</li>
+<li>Include project criticality level and sensitive data context in the executive summary</li>
+<li>Use this context to frame the overall risk posture (e.g., "This high-criticality project handling PII has 3 exploitable vulnerabilities")</li>
+<li>If `repo.md` does not exist, skip this — do not error</li>
+<strong>Scan Information</strong>:
+<li>Repository path</li>
+<li>Scan ID</li>
+<li>Timestamp</li>
+<li>Scanner version</li>
+<strong>Executive Summary</strong> (2-3 paragraphs):
+<li>Overview of what was scanned</li>
+<li>If repo context is available, lead with project criticality and sensitive data context</li>
+<li>Summary of high severity findings</li>
+<li>Overall security posture assessment</li>
+<li>False positive reduction achieved</li>
+<strong>Statistics Tables</strong>:
+<li>Populate all statistics computed in Step 2</li>
+<strong>Findings Sections</strong>:
+<li>High severity: Full details for each finding</li>
+<li>Medium severity: Moderate details</li>
+<li>Low severity: Condensed table format</li>
+<strong>False Positives Section</strong>:
+<li>Organize by reason (not used, test-only, mitigated, version overrides)</li>
+<li>List specific packages and vulnerabilities filtered</li>
+<strong>Remediation Plan</strong>:
+<li>High priority actions with specific upgrade commands</li>
+<li>Medium/low priority actions</li>
+<li>Long-term security improvements</li>
+<p>Write the report to `<scan_dir>/report.md`.</p>
+<h3>Step 4: Handle Edge Cases</h3>
+<strong>No lockfiles found</strong>:
+```markdown
+<h1>SCA Scan Report - No Lockfiles Found</h1>
+<h2>Summary</h2>
+No supported dependency lockfiles were found in the repository.
+<p>Supported formats: go.mod, package-lock.json, yarn.lock, poetry.lock, Gemfile.lock, Cargo.lock, composer.lock, etc.</p>
+<p>If your project uses a supported package manager, ensure lockfiles are committed to version control.
+```</p>
+<strong>No vulnerabilities found</strong>:
+```markdown
+<h1>SCA Scan Report - Clean</h1>
+<h2>Summary</h2>
+Scanned <X> lockfiles with <Y> total packages.
+No vulnerabilities detected. All dependencies are up to date and secure.
+<p>This is excellent! Continue to:
+<li>Keep dependencies updated</li>
+<li>Monitor for new vulnerabilities</li>
+<li>Integrate SCA scanning into CI/CD</li>
+```</p>
+<strong>All findings filtered as false positives</strong>:
+```markdown
+<h1>SCA Scan Report - All Filtered</h1>
+<h2>Summary</h2>
+Scanner detected <X> potential vulnerabilities, but AI analysis determined that none are exploitable in this codebase.
+<p>All findings were filtered because:
+<li>Vulnerable functions not called</li>
+<li>Test dependencies only</li>
+<li>Effective mitigations in place</li>
+<li>Version overrides with patches</li></p>
+<p>While no action is required, continue monitoring for new vulnerabilities.
+```</p>
+<h2>Output Format</h2>
+<p>Return the result in exactly this format:</p>
+<p>```
+<h2>Summary Result</h2></p>
+<li><strong>Status</strong>: success</li>
+<li><strong>Report File</strong>: <scan_dir>/report.md</li>
+<h3>Scan Summary</h3>
+<li><strong>Lockfiles Scanned</strong>: <count></li>
+<li><strong>Packages Scanned</strong>: <count></li>
+<li><strong>Vulnerabilities Detected</strong>: <count></li>
+<li><strong>Candidates Analyzed</strong>: <count></li>
+<li><strong>Confirmed Findings</strong>: <count></li>
+<li><strong>False Positives Filtered</strong>: <count></li>
+<li><strong>False Positive Rate</strong>: <percentage>%</li>
+<h3>Findings by Severity</h3>
+<li>High: <count></li>
+<li>Medium: <count></li>
+<li>Low: <count></li>
+<h3>Top Findings</h3>
+1. HIGH: <package>@<version> - <vuln_id> (<CVE>) - <brief summary>
+2. HIGH: <package>@<version> - <vuln_id> (<CVE>) - <brief summary>
+3. MEDIUM: <package>@<version> - <vuln_id> (<CVE>) - <brief summary>
+<p>---</p>
+<p>View detailed report at: <scan_dir>/report.md
+```</p>
+<p>If no findings:</p>
+<p>```
+<h2>Summary Result</h2></p>
+<li><strong>Status</strong>: success</li>
+<li><strong>Report File</strong>: <scan_dir>/report.md</li>
+<h3>Scan Summary</h3>
+<li><strong>Lockfiles Scanned</strong>: <count></li>
+<li><strong>Packages Scanned</strong>: <count></li>
+<li><strong>Vulnerabilities Detected</strong>: <count></li>
+<li><strong>Candidates Analyzed</strong>: <count></li>
+<li><strong>Confirmed Findings</strong>: 0</li>
+<li><strong>False Positives Filtered</strong>: <count></li>
+<li><strong>False Positive Rate</strong>: 100%</li>
+<p>No exploitable vulnerabilities confirmed. All detected vulnerabilities were false positives (not actually exploitable in this codebase).</p>
+<p>---</p>
+<p>View detailed report at: <scan_dir>/report.md
+```</p>
+<h2>Important Notes</h2>
+<li>Always calculate false positive rate - this is a key metric showing the value of AI analysis</li>
+<li>Sort findings by severity (High → Medium → Low)</li>
+<li>Provide specific remediation commands for each ecosystem</li>
+<li>Include links to finding files for detailed analysis</li>
+<li>Make the executive summary actionable and clear</li>
+<li>Highlight if there are no HIGH findings (good news!)</li>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

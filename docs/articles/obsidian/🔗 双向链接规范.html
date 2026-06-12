@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔗 双向链接规范 - 以观其妙书院</title>
+    <meta name="description" content="🔗 双向链接规范 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="🔗 双向链接规范">
+    <meta property="og:description" content="🔗 双向链接规范 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "🔗 双向链接规范",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <p>﻿﻿---
+title: "🔗 双向链接规范"
+type: specification
+tags: [链接, 规范, 双向链接, 标准化]
+created: 2026-03-19
+version: 1.0
+---</p>
+<h1>🔗 双向链接规范</h1>
+<p>> 以观其妙书院知识库双向链接使用标准和最佳实践</p>
+<p>---</p>
+<h2>📐 链接类型</h2>
+<h3>1. Wiki 链接（双向链接）</h3>
+<p>```markdown
+[[文件名]]                    # 链接到文件
+[[文件名|显示文本]]            # 带别名链接
+```</p>
+<h3>2. 标签链接</h3>
+<p>```markdown
+#标签名        # 搜索包含此标签的所有文档
+[[#标签名]]    # 在文档中引用标签
+```</p>
+<h3>3. 路径链接</h3>
+<p>```markdown
+[显示文本](./path/to/file.md)    # 相对路径
+[显示文本](C:/path/to/file.md)   # 绝对路径
+```</p>
+<p>---</p>
+<h2>🎯 链接位置规范</h2>
+<h3>必须链接的位置</h3>
+<p>#### 文档头部（关联文件章节）
+```markdown
+<h2>关联文件</h2></p>
+<li>[[核心文档1]] - 关联说明</li>
+<li>[[核心文档2]] - 关联说明</li>
+```
+<p>#### 文中引用
+当提及某个概念或方法时，立即链接到相关文档。</p>
+<h3>链接密度标准</h3>
+<p>| 文档类型 | 最少链接数 | 推荐链接数 |
+|---------|-----------|-----------|
+| 核心文档 | 10 | 15+ |
+| 方法论文档 | 5 | 10+ |
+| 理论文档 | 5 | 8+ |
+| 工具文档 | 3 | 5+ |
+| 案例文档 | 3 | 5+ |</p>
+<p>---</p>
+<h2>🔄 双向链接原则</h2>
+<h3>1. 互惠原则</h3>
+<p>如果文档A链接到文档B，文档B也应该链接回文档A。</p>
+<p>```markdown
+<!-- 文档A -->
+<h2>关联文件</h2>
+<li>[[文档B]] - 解释关系</li></p>
+<!-- 文档B -->
+<h2>关联文件</h2>
+<li>[[文档A]] - 解释关系</li>
+```
+<h3>2. 语义相关原则</h3>
+<p>链接的文档应该在语义上相关，而不是为了链接而链接。</p>
+<p>```markdown
+<!-- 正确 -->
+[[🐉 象思维]] - 因为涉及0→1创新</p>
+<!-- 错误 -->
+[[🐉 象思维]] - 只是因为需要链接
+```
+<h3>3. 层次对齐原则</h3>
+<p>同一层级的文档相互链接，层级之间通过上下级链接。</p>
+<p>```markdown
+<!-- 同一层级 -->
+[[🐉 龙心OS]] ↔ [[📖 象思维skills]]</p>
+<!-- 上下级 -->
+[[🐉 龙心OS]] → [[🐉 龙心OS 系统架构图]]
+```
+<p>---</p>
+<h2>📋 链接命名规范</h2>
+<h3>文件名规范</h3>
+<li>使用中文描述性名称</li>
+<li>使用空格或下划线分隔</li>
+<li>保持名称简洁（不超过50字符）</li>
+<h3>链接文本规范</h3>
+```markdown
+<!-- 推荐 -->
+[[🐉 象思维]]
+[[教员方法论]]
+<!-- 避免 -->
+[[象思维skills v1.0]]
+[[关于象思维的一些思考]]
+```
+<p>---</p>
+<h2>🔍 链接验证规则</h2>
+<h3>1. 完整性检查</h3>
+<li>[ ] 所有链接指向存在的文件</li>
+<li>[ ] 没有悬空链接（死链）</li>
+<li>[ ] 链接文本与目标文件名匹配</li>
+<h3>2. 质量检查</h3>
+<li>[ ] 核心文档有足够的入链</li>
+<li>[ ] 文档间链接形成网络</li>
+<li>[ ] 没有循环冗余链接</li>
+<h3>3. 一致性检查</h3>
+<li>[ ] 链接格式统一</li>
+<li>[ ] 链接命名风格一致</li>
+<li>[ ] 链接位置符合规范</li>
+<p>---</p>
+<h2>🛠️ 链接管理工具</h2>
+<h3>自动检查脚本</h3>
+<p>```python
+<h1>链接验证脚本功能</h1>
+<li>检测悬空链接</li>
+<li>统计链接密度</li>
+<li>生成链接报告</li>
+```</p>
+<h3>批量修复</h3>
+<p>```powershell
+<h1>批量更新链接</h1>
+obsidian-cli link-fix
+```</p>
+<p>---</p>
+<h2>📊 链接统计指标</h2>
+<h3>关键指标</h3>
+<p>| 指标 | 计算方式 | 目标值 |
+|------|---------|-------|
+| 链接密度 | 链接数/文档数 | ≥3 |
+| 双向链接率 | 双向链接数/总链接数 | ≥80% |
+| 入链集中度 | 最大入链文档占比 | ≤20% |
+| 孤立文档数 | 无链接文档数 | 0 |</p>
+<h3>监控频率</h3>
+<li>每周检查链接完整性</li>
+<li>每月分析链接统计</li>
+<li>每季度优化链接网络</li>
+<p>---</p>
+<h2>⚠️ 常见错误</h2>
+<h3>1. 悬空链接</h3>
+```markdown
+<!-- 错误：目标文件不存在 -->
+[[不存在的文档]]
+<!-- 正确：确认文件存在后再链接 -->
+[[真实存在的文档]]
+```
+<h3>2. 循环链接</h3>
+```markdown
+<!-- 避免过度循环 -->
+A → B → C → A → B → C
+```
+<h3>3. 无关链接</h3>
+```markdown
+<!-- 错误：语义不相关 -->
+[[🐉 象思维]] - 在讨论天气时
+<!-- 正确：语义相关 -->
+[[🐉 象思维]] - 在讨论创新方法时
+```
+<p>---</p>
+<h2>✅ 链接检查清单</h2>
+<p>创建/修改文档时：
+<li>[ ] 确认链接目标存在</li>
+<li>[ ] 使用正确的链接语法</li>
+<li>[ ] 包含足够的双向链接</li>
+<li>[ ] 链接文本描述清晰</li>
+<li>[ ] 遵循命名规范</li>
+<li>[ ] 检查没有悬空链接</li></p>
+<p>---</p>
+<h2>🔗 关联文档</h2>
+<h3>核心文档</h3>
+<li>[[📚 知识库总索引]]</li>
+<li>[[📋 文档标准化模板]]</li>
+<li>[[📊 知识图谱]]</li>
+<h3>工具文档</h3>
+<li>[[🔍 链接验证工具]]</li>
+<li>[[📈 链接完整性报告]]</li>
+<p>---</p>
+<p>*最后更新: 2026-03-19 | 维护者: 龙龟神将*</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

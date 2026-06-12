@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLMification 输入模板 - 以观其妙书院</title>
+    <meta name="description" content="LLMification 输入模板 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="LLMification 输入模板">
+    <meta property="og:description" content="LLMification 输入模板 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "LLMification 输入模板",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>LLMification 输入模板</h1>
+<p>> <strong>用途</strong>：标准化LLMification Knowledge Builder的输入格式
+> <strong>版本</strong>：v1.0</p>
+<p>---</p>
+<h2>📋 基本信息</h2>
+<p>| 字段 | 说明 | 示例 |
+|------|------|------|
+| <strong>知识库名称</strong> | 知识库的标识名称 | "企业产品知识库" |
+| <strong>作用域</strong> | global（全局）或 specific（特定） | "corporate" |
+| <strong>知识库路径</strong> | 知识库的根目录 | `D:\knowledge-base\` |
+| <strong>版本</strong> | 知识库版本号 | "v1.0" |</p>
+<p>---</p>
+<h2>📂 文件夹结构</h2>
+<p>```
+{知识库路径}/
+├── raw/                  # Raw Layer - 原始资料（只读）
+│   ├── 手册/
+│   │   ├── 产品手册-v1.0.pdf
+│   │   └── 员工手册.pdf
+│   ├── 文档/
+│   │   ├── 技术文档.md
+│   │   └── 流程说明.md
+│   ├── 网页/
+│   │   ├── 官网介绍.html
+│   │   └── API文档.html
+│   └── 其他/
+│       ├── 会议记录.docx
+│       └── 培训材料.pptx
+│
+├── wiki/                 # Wiki Layer - 结构化知识（LLM维护）
+│   ├── 核心概念/
+│   ├── 操作指南/
+│   ├── 常见问题/
+│   └── 参考资料/
+│
+└── schema/               # Schema Layer - 机器行为规则
+    ├── CLAUDE.md
+    └── AGENTS.md
+```</p>
+<p>---</p>
+<h2>📄 Raw Layer 输入规范</h2>
+<h3>原始资料清单</h3>
+<p>| 文件名 | 类型 | 路径 | 描述 |
+|--------|------|------|------|
+| 示例文件.pdf | PDF | `raw/手册/` |  |
+| 示例文档.docx | DOCX | `raw/文档/` |  |
+| 示例网页.html | HTML | `raw/网页/` |  |
+| 示例笔记.md | Markdown | `raw/文档/` |  |</p>
+<h3>原始资料元数据</h3>
+<p>```yaml
+raw_material:
+  file_name: "文件名"
+  file_path: "raw/子文件夹/文件名.扩展名"
+  file_type: "pdf/docx/html/text"
+  encoding: "utf-8"
+  language: "zh-CN/en-US"
+  created_at: "ISO8601"
+  updated_at: "ISO8601"
+  lifecycle_stage: "pending/compiled"
+```</p>
+<p>---</p>
+<h2>📝 Wiki Layer 输入规范</h2>
+<h3>编译参数</h3>
+<p>```yaml
+compilation_params:
+  llm_model: "gpt-4/claude-3.5-sonnet"
+  temperature: 0.3
+  max_tokens: 4000
+  output_format: "markdown"
+  preserve_structure: true
+  add_metadata: true
+  create_links: true
+```</p>
+<h3>Wiki 文档规范</h3>
+<p>```yaml
+wiki_document:
+  path: "wiki/子文件夹/文件名.md"
+  title: "文档标题"
+  tags: ["#标签1", "#标签2", "#标签3"]
+  references: ["[[相关文档1]]", "[[相关文档2]]"]
+  metadata:
+    created_at: "ISO8601"
+    updated_at: "ISO8601"
+    lifecycle_stage: "draft/published"
+    source_raw: "raw/原始文件名"
+    version: "v1.0"
+    author: "作者名"
+```</p>
+<p>---</p>
+<h2>🔒 Schema Layer 输入规范</h2>
+<h3>Schema 定义</h3>
+<p>```yaml
+schema_definition:
+  scope: "global/specific"
+  version: "1.0"
+  rules:
+    file_naming: "kebab-case/snake_case"
+    tag_format: "#tag"
+    reference_format: "[[document_name]]"
+    metadata_format: "YAML frontmatter"
+    max_heading_level: 6
+    max_file_size: 50000  # 字符数
+    allowed_formats: ["md"]
+  compilation_constraints:
+    - "保留原始资料的核心信息"
+    - "使用LLM原生表达（Markdown+Mermaid+代码块）"
+    - "建立双向链接网络"
+    - "添加元数据标签"
+```</p>
+<h3>行为规则示例</h3>
+<p>#### CLAUDE.md</p>
+<p>```yaml
+claud_behavior:
+  style: "technical/concise"
+  tone: "professional/friendly"
+  response_format: "structured"
+  max_context_length: 4000
+  code_examples: true
+  mermaid_diagrams: true
+```</p>
+<p>#### AGENTS.md</p>
+<p>```yaml
+agent_behavior:
+  default_model: "gpt-4"
+  fallback_model: "gpt-3.5-turbo"
+  max_retries: 3
+  timeout: 30
+  cache_enabled: true
+  cache_ttl: 3600
+```</p>
+<p>---</p>
+<h2>🔄 生命周期管理</h2>
+<h3>编译状态</h3>
+<p>```yaml
+lifecycle:
+  raw_to_wiki:
+    status: "pending/in_progress/completed/failed"
+    started_at: "ISO8601"
+    completed_at: "ISO8601"
+    error_message: "错误信息（如有）"
+  
+  wiki_validation:
+    status: "pending/in_progress/completed/failed"
+    validation_results:
+      schema_compliance: "pass/fail"
+      link_integrity: "pass/fail"
+      tag_consistency: "pass/fail"
+      orphan_detection: "pass/fail"
+  
+  knowledge_check:
+    status: "pending/in_progress/completed"
+    check_timestamp: "ISO8601"
+    violation_count: 0
+    orphan_count: 0
+    repair_count: 0
+```</p>
+<p>---</p>
+<h2>📊 质量指标</h2>
+<h3>编译质量指标</h3>
+<p>| 指标 | 说明 | 目标值 |
+|------|------|--------|
+| 结构完整性 | 标题层级、段落结构清晰 | 100% |
+| 内容保留度 | 保留原始资料核心信息比例 | ≥ 95% |
+| LLM原生性 | Markdown、代码块、Mermaid图表使用 | 100% |
+| 元数据完整度 | YAML frontmatter、标签、引用 | 100% |
+| 链接完整性 | 双向链接、引用文档存在 | 100% |</p>
+<h3>一致性检查指标</h3>
+<p>| 指标 | 说明 | 目标值 |
+|------|------|--------|
+| Schema符合度 | 符合Schema Layer规则的比例 | 100% |
+| 链接有效性 | 所有链接指向存在的文档 | 100% |
+| 标签一致性 | 标签格式和分类一致 | 100% |
+| 孤岛检测 | 未被引用的文档数量 | 0 |</p>
+<p>---</p>
+<h2>🎯 编译请求模板</h2>
+<h3>批量编译请求</h3>
+<p>```yaml
+batch_compile_request:
+  knowledge_base: "知识库名称"
+  scope: "corporate"
+  sources:
+    - "raw/手册/*.pdf"
+    - "raw/文档/*.docx"
+    - "raw/网页/*.html"
+  compilation_params:
+    llm_model: "gpt-4"
+    temperature: 0.3
+    max_tokens: 4000
+  schema_definition: "schema/config.yaml"
+  output_path: "wiki/"
+  notification:
+    on_success: "email/webhook"
+    on_failure: "email/webhook"
+```</p>
+<h3>增量更新请求</h3>
+<p>```yaml
+incremental_update_request:
+  knowledge_base: "知识库名称"
+  action: "merge"
+  sources:
+    - "raw/新文档.pdf"
+  target_topic: "主题关键词"
+  update_strategy: "append/merge/replace"
+  validation_required: true
+```</p>
+<p>---</p>
+<h2>🔍 查询输入格式</h2>
+<h3>自然语言查询</h3>
+<p>```yaml
+query_request:
+  user_query: "自然语言查询问题"
+  scope: "global/specific"
+  max_results: 5
+  include_references: true
+  response_format: "markdown/code/json"
+  context_length: 2000
+```</p>
+<h3>查询优化建议</h3>
+<p>| 查询类型 | 示例 | 优化建议 |
+|-----------|------|-----------|
+| 事实查询 | "产品的核心功能是什么？" | 使用具体的关键词 |
+| 流程查询 | "如何创建用户账户？" | 分步骤描述流程 |
+| 对比查询 | "功能A和功能B的区别是什么？" | 明确对比维度 |
+| 示例查询 | "给我一个代码示例" | 指定编程语言和场景 |</p>
+<p>---</p>
+<h2>⚠️ 错误处理</h2>
+<h3>常见错误类型</h3>
+<p>| 错误类型 | 说明 | 解决方案 |
+|-----------|------|---------|
+| 文件格式错误 | 原始文件格式不支持 | 转换为支持的格式（PDF/DOCX/HTML/Text） |
+| 编码错误 | 文件编码问题 | 统一使用UTF-8编码 |
+| Schema违规 | Wiki文档不符合Schema规则 | 根据Schema Layer规则修正 |
+| 链接失效 | 引用的文档不存在 | 检查文档路径或创建缺失文档 |
+| 编译失败 | LLM编译过程失败 | 检查LLM API连接和参数配置 |</p>
+<h3>错误恢复流程</h3>
+<p>```yaml
+error_recovery:
+  step1: "记录错误日志"
+  step2: "分析错误原因"
+  step3: "提供修复建议"
+  step4: "自动修复（如可能）"
+  step5: "人工审核（自动修复失败时）"
+```</p>
+<p>---</p>
+<h2>📈 性能监控</h2>
+<h3>编译性能指标</h3>
+<p>| 指标 | 说明 | 记录频率 |
+|------|------|---------|
+| 编译耗时 | 单个文档编译时间 | 每次编译 |
+| 编译成功率 | 成功编译文档比例 | 每日汇总 |
+| LLM调用次数 | LLM API调用总次数 | 每日汇总 |
+| Token消耗 | 编译过程消耗的Token数 | 每日汇总 |
+| 错误率 | 编译失败比例 | 每日汇总 |</p>
+<h3>查询性能指标</h3>
+<p>| 指标 | 说明 | 记录频率 |
+|------|------|---------|
+| 查询响应时间 | 从查询到响应的时间 | 每次查询 |
+| 检索准确率 | 相关文档在前5结果中的比例 | 每周汇总 |
+| 答案质量评分 | 用户对答案质量的评分 | 每周汇总 |
+| 缓存命中率 | 从缓存获取答案的比例 | 每周汇总 |</p>
+<p>---</p>
+<strong>输入模板版本</strong>：v1.0  
+<strong>最后更新</strong>：2026-04-08  
+<strong>维护者</strong>：龙龟神将
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

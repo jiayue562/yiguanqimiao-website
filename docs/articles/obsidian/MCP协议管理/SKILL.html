@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP 协议管理 Skill v2.0 - 以观其妙书院</title>
+    <meta name="description" content="MCP 协议管理 Skill v2.0 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="MCP 协议管理 Skill v2.0">
+    <meta property="og:description" content="MCP 协议管理 Skill v2.0 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "MCP 协议管理 Skill v2.0",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>MCP 协议管理 Skill v2.0</h1>
+<p>> <strong>核心升级</strong>：双向MCP + 子Agent协同协议
+> <strong>版本</strong>：v2.0 | <strong>升级日期</strong>：2026-04-15 | <strong>维护者</strong>：龙龟神将</p>
+<p>---</p>
+<h2>一、核心升级：从单向到双向</h2>
+<h3>v1.0 vs v2.0 对比</h3>
+<p>| 维度 | v1.0 | v2.0 |
+|------|-------|------|
+| <strong>通信方向</strong> | 单向（人→AI、 主→从） | 双向（双向MCP + 子Agent反馈） |
+| <strong>Agent架构</strong> | 主从模式 | 1+5并行模式 |
+| <strong>协议层数</strong> | 3层 | 5层（含嵌套协议） |
+| <strong>协同能力</strong> | 顺序调用 | 并行+串行混合 |
+| <strong>反馈机制</strong> | 无 | 双向确认 + 结果聚合 |</p>
+<p>---</p>
+<h2>二、核心定义</h2>
+<h3>什么是双向MCP？</h3>
+<p>双向MCP是支持<strong>双向通信</strong>的机器控制协议：
+<li><strong>正向通道</strong>：主Agent → 子Agent（指令下发）</li>
+<li><strong>反向通道</strong>：子Agent → 主Agent（结果反馈 + 状态上报）</li>
+<li><strong>横向通道</strong>：子Agent ↔ 子Agent（并行协作）</li></p>
+<h3>什么是子Agent协同？</h3>
+<p>子Agent协同是<strong>1+5并行模式</strong>的实现基础：
+<li><strong>1个主Agent</strong>：负责任务分解、调度、结果整合</li>
+<li><strong>5个子Agent</strong>：并行执行、横向通信、结果上报</li></p>
+<p>---</p>
+<h2>三、五层MCP协议体系（v2.0）</h2>
+<h3>第一层：人机协同协议（保留+增强）</h3>
+<p>```yaml
+<h1>人 → AI 指令格式（保留v1.0）</h1>
+指令格式:
+  command: "操作命令"
+  parameters:
+    - key: "参数名"
+      value: "参数值"
+      type: "参数类型"
+    - key: "personalization"
+      value:
+        personality_traits: ["人格特质"]
+        cultural_context: "文化背景"
+        thinking_model: "思维模型"
+        faith_background: "信仰根基"
+  context:
+    - conversation_id: "对话ID"
+      history: ["历史上下文"]
+      preferences: "个人偏好"</p>
+<h1>AI → 人 反馈格式（保留v1.0）</h1>
+反馈格式:
+  status: "success|partial|failed|in_progress"
+  progress: 0-100
+  result:
+    - data: "结果数据"
+      explanation: "执行逻辑说明"
+      reasoning: "决策推理过程"
+  errors:
+    - code: "错误代码"
+      message: "错误信息"
+      suggestion: "建议修复方案"
+  next_actions:
+    - action: "建议下一步操作"
+      requires_confirmation: true|false
+```
+<p>---</p>
+<h3>第二层：主Agent → 子Agent 协议（新增）</h3>
+<p>```yaml
+<h1>主Agent调度协议</h1>
+调度格式:
+  dispatcher: "主Agent名称"
+  task_id: "任务ID"
+  sub_agent_id: "目标子Agent ID"
+  call_id: "调用唯一ID"
+  
+  # 任务定义
+  task:
+    type: "parallel|sequential"
+    description: "任务描述"
+    priority: 1-10
+    timeout: "超时时间(ms)"
+    
+  # 输入数据
+  input:
+    data: "任务数据"
+    format: "json|markdown|yaml"
+    personalization: 
+      personality_traits: ["人格特质"]
+      thinking_model: "思维模型"
+    
+  # 约束条件
+  constraints:
+    max_retries: 3
+    fallback_enabled: true
+    parallel_wait: true|false
+```</p>
+<p>---</p>
+<h3>第三层：子Agent → 主Agent 协议（核心新增）</h3>
+<p>```yaml
+<h1>子Agent结果上报协议</h1>
+上报格式:
+  reporter: "子Agent名称"
+  task_id: "任务ID"
+  call_id: "对应调度call_id"
+  
+  # 执行状态
+  execution:
+    status: "success|partial|failed|running"
+    progress: 0-100
+    start_time: "ISO8601时间戳"
+    end_time: "ISO8601时间戳"
+    duration_ms: "执行耗时"
+    
+  # 结果数据
+  result:
+    data: "结果数据"
+    format: "json|markdown|yaml"
+    confidence: 0.0-1.0
+    explanation: "结果说明"
+    
+  # 状态上报（新增）
+  status_report:
+    agent_id: "子Agent ID"
+    health: "healthy|degraded|faulty"
+    load: 0-100
+    capabilities_used: ["使用的技能列表"]
+    blockers: ["阻塞因素"]
+    
+  # 横向协作（新增）
+  lateral:
+    peers_contacted: ["协作的子Agent列表"]
+    shared_insights: ["共享洞察"]
+    dependencies_resolved: ["已解决的依赖"]
+    
+  # 错误信息（如有）
+  errors:
+    - code: "错误代码"
+      message: "错误信息"
+      recoverable: true|false
+      retry_count: 0
+```</p>
+<p>---</p>
+<h3>第四层：子Agent ↔ 子Agent 横向协议（新增）</h3>
+<p>```yaml
+<h1>子Agent横向协作协议</h1>
+横向协作格式:
+  protocol_version: "2.0"
+  transaction_id: "事务ID"
+  
+  # 发送方
+  sender:
+    agent_id: "发送方Agent ID"
+    agent_type: "木|火|土|金|水"
+    
+  # 接收方
+  receiver:
+    agent_id: "接收方Agent ID"
+    agent_type: "木|火|土|金|水"
+    
+  # 消息类型
+  message_type: 
+    # 请求类
+    | data_request      # 数据请求
+    | capability_query  # 能力查询
+    | dependency_ready # 依赖就绪
+    | status_check     # 状态检查
+    # 响应类
+    | data_response    # 数据响应
+    | capability_answer # 能力回答
+    | acknowledgment   # 确认
+    | result_sharing  # 结果共享
+    
+  # 消息内容
+  payload:
+    subject: "消息主题"
+    content: "消息内容"
+    priority: 1-5
+    
+  # 上下文
+  context:
+    task_id: "关联任务ID"
+    correlation_id: "关联ID（用于追踪）"
+    chain_depth: 1-n
+```</p>
+<p>---</p>
+<h3>第五层：多层嵌套协议（新增）</h3>
+<p>```yaml
+<h1>嵌套任务协议（主Agent → 子Agent → 孙Agent）</h1>
+嵌套调度格式:
+  dispatcher: "主Agent"
+  depth: 3  # 最大嵌套深度
+  
+  layers:
+    - layer_id: 1
+      agent: "主Agent"
+      role: "coordinator"
+      children:
+        - layer_id: 2
+          agent: "木行子Agent"
+          role: "executor"
+          children:
+            - layer_id: 3
+              agent: "具体执行Agent"
+              role: "worker"
+              
+  # 数据流定义
+  data_flow:
+    direction: "top-down|bottom-up|both"
+    transformation:
+      - from: "父层"
+        to: "子层"
+        transform: "数据转换规则"
+        
+  # 结果聚合策略
+  aggregation:
+    strategy: "all|any|majority|custom"
+    custom_rule: "自定义聚合规则（如有）"
+```</p>
+<p>---</p>
+<h2>四、1+5并行模式协议</h2>
+<h3>主Agent调度协议</h3>
+<p>```yaml
+<h1>主Agent并行调度</h1>
+主Agent调度:
+  coordinator: "主Agent ID"
+  mode: "parallel"  # 核心：并行模式
+  
+  # 任务分解
+  decomposition:
+    strategy: "equal|weighted|dynamic"
+    parts: 5  # 分解为5个子任务
+    
+  # 子Agent分配
+  assignments:
+    - agent_id: "木行Agent"
+      task_type: "growth|innovation|planning"
+      weight: 1.0
+      
+    - agent_id: "火行Agent"
+      task_type: "passion|action|transformation"
+      weight: 1.0
+      
+    - agent_id: "土行Agent"
+      task_type: "stability|integration|grounding"
+      weight: 1.0
+      
+    - agent_id: "金行Agent"
+      task_type: "precision|decision|analysis"
+      weight: 1.0
+      
+    - agent_id: "水行Agent"
+      task_type: "wisdom|flow|adaptation"
+      weight: 1.0
+      
+  # 并行控制
+  parallel_control:
+    wait_for_all: true  # 是否等待所有子Agent完成
+    timeout: 60000  # ms
+    partial_results: true  # 是否接受部分结果
+    
+  # 结果整合
+  integration:
+    strategy: "merge|concatenate|hierarchy|custom"
+    conflict_resolution: "latest|highest_confidence|vote"
+```</p>
+<p>---</p>
+<h2>五、双向确认机制</h2>
+<h3>调度确认（正向）</h3>
+<p>```yaml
+<h1>主Agent → 子Agent 调度确认</h1>
+调度确认:
+  call_id: "唯一调度ID"
+  acknowledged: true|false
+  accepted: true|false
+  start_time_estimate: "预计开始时间"
+  
+  # 如拒绝
+  rejection:
+    reason: "拒绝原因"
+    alternative_suggestion: "替代建议"
+```</p>
+<h3>结果确认（反向）</h3>
+<p>```yaml
+<h1>子Agent → 主Agent 结果确认</h1>
+结果确认:
+  call_id: "对应调度call_id"
+  result_hash: "结果哈希值"
+  integrity_check: "passed|failed"
+  
+  # 主Agent确认
+  main_agent_confirmation:
+    received: true
+    valid: true
+    integrated: true
+    integration_time: "整合时间戳"
+```</p>
+<p>---</p>
+<h2>六、子Agent状态上报协议</h2>
+<h3>实时状态上报</h3>
+<p>```yaml
+<h1>子Agent定期上报</h1>
+状态上报:
+  agent_id: "子Agent ID"
+  timestamp: "ISO8601"
+  
+  # 健康指标
+  health:
+    status: "healthy|degraded|faulty|unknown"
+    cpu_usage: 0-100
+    memory_usage: 0-100
+    error_rate: 0-1
+    
+  # 任务指标
+  tasks:
+    pending: 数量
+    running: 数量
+    completed: 数量
+    failed: 数量
+    
+  # 能力状态
+  capabilities:
+    - name: "技能名"
+      available: true|false
+      load: 0-100
+      
+  # 阻塞因素
+  blockers:
+    - type: "dependency|resource|error"
+      description: "描述"
+      blocked_since: "开始阻塞时间"
+```</p>
+<p>---</p>
+<h2>七、协同示例</h2>
+<h3>场景：五行并行分析</h3>
+<p>```yaml
+<h1>1. 人 → 主Agent</h1>
+{
+  "command": "analyze",
+  "parameters": {
+    "target": "市场机会",
+    "mode": "parallel"
+  },
+  "personalization": {
+    "personality_traits": ["火行人"],
+    "thinking_model": ["五色光思维"]
+  }
+}</p>
+<h1>2. 主Agent → 5个子Agent（并行）</h1>
+{
+  "coordinator": "main_agent",
+  "mode": "parallel",
+  "assignments": [
+    {"agent_id": "wood_agent", "task": "木行分析：创新机会"},
+    {"agent_id": "fire_agent", "task": "火行分析：热情驱动力"},
+    {"agent_id": "earth_agent", "task": "土行分析：稳定基础"},
+    {"agent_id": "metal_agent", "task": "金行分析：精准评估"},
+    {"agent_id": "water_agent", "task": "水行分析：风险流动"}
+  ]
+}
+<h1>3. 子Agent横向协作（如需要）</h1>
+{
+  "sender": "wood_agent",
+  "receiver": "fire_agent",
+  "message_type": "result_sharing",
+  "payload": {
+    "subject": "创新机会洞察",
+    "content": "发现X方向...",
+    "priority": 2
+  }
+}
+<h1>4. 子Agent → 主Agent（并行上报）</h1>
+{
+  "reporter": "wood_agent",
+  "status": "success",
+  "result": {"data": "木行分析结果", "confidence": 0.92}
+}
+{
+  "reporter": "fire_agent",
+  "status": "success", 
+  "result": {"data": "火行分析结果", "confidence": 0.88}
+}
+... (其他3个子Agent类似)
+<h1>5. 主Agent → 人（整合结果）</h1>
+{
+  "status": "success",
+  "result": {
+    "integrated_analysis": "五行综合分析",
+    "sub_results": {
+      "木": {...},
+      "火": {...},
+      "土": {...},
+      "金": {...},
+      "水": {...}
+    }
+  },
+  "explanation": "基于五行并行分析的综合洞察..."
+}
+```
+<p>---</p>
+<h2>八、与龙心OS的协同</h2>
+<h3>人机协同五象限整合</h3>
+<p>| 象限 | MCP v2.0支持 | 说明 |
+|------|-------------|------|
+| <strong>未知探索域（第五象限）</strong> | 嵌套协议支持 | 1→多→更多 的深度探索 |
+| <strong>共创伙伴（第三象限）</strong> | 横向协议 | 子Agent↔子Agent 横向协作 |
+| <strong>共创导师（第四象限）</strong> | 双向确认 | 主Agent↔子Agent 双向反馈 |</p>
+<h3>五大引擎协同</h3>
+<p>| 引擎 | MCP v2.0整合 |
+|------|-------------|
+| 🐉 象思维 | 嵌套协议实现0→1的深层探索 |
+| 📚 知识学习 | 多源数据并行获取 |
+| 🌈 五色光思维 | 五行并行分析 |
+| 🤝 人机协同 | 双向MCP支撑1+5模式 |
+| 🔄 知行合一 | 结果沉淀反馈 |</p>
+<p>---</p>
+<h2>九、版本历史</h2>
+<h3>v2.0（2026-04-15）</h3>
+<li>✅ 新增双向MCP协议（正向+反向通道）</li>
+<li>✅ 新增子Agent协同协议</li>
+<li>✅ 新增子Agent↔子Agent横向协议</li>
+<li>✅ 新增多层嵌套协议</li>
+<li>✅ 新增1+5并行模式协议</li>
+<li>✅ 新增双向确认机制</li>
+<li>✅ 新增实时状态上报协议</li>
+<h3>v1.0（2026-04-03）</h3>
+<li>✅ 三大核心协议（人机/机内/系统扩展）</li>
+<li>✅ 轻量化设计</li>
+<li>✅ 个性化参数体系</li>
+<p>---</p>
+<strong>版本</strong>: 2.0
+<strong>升级日期</strong>: 2026-04-15
+<strong>维护者</strong>: 龙龟神将
+<strong>核心升级</strong>: 双向MCP + 子Agent协同 + 1+5并行模式
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

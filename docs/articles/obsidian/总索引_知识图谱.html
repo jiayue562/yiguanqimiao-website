@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识图谱可视化指南 - 以观其妙书院</title>
+    <meta name="description" content="知识图谱可视化指南 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="知识图谱可视化指南">
+    <meta property="og:description" content="知识图谱可视化指南 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "知识图谱可视化指南",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>知识图谱可视化指南</h1>
+<p>> 🗺️ 以观其妙书院知识库 · 知识网络可视化使用指南</p>
+<p>---</p>
+<h2>📋 什么是知识图谱</h2>
+<p>知识图谱（Graph View）是 Obsidian 对双向链接网络的可视化呈现，让知识网络从抽象变为直观。</p>
+<p>| 特性 | 说明 |
+|------|------|
+| <strong>节点</strong> | 每个文件显示为一个点 |
+| <strong>连线</strong> | 双向链接显示为线 |
+| <strong>颜色</strong> | 可按标签/分类区分 |
+| <strong>大小</strong> | 链接越多节点越大 |</p>
+<p>---</p>
+<h2>🎨 五行配色方案</h2>
+<h3>推荐配色</h3>
+<p>| 五行 | 颜色 | 标签 | RGB |
+|------|------|------|-----|
+| <strong>木</strong> | 绿色 | #wood | 76, 175, 80 |
+| <strong>火</strong> | 红色 | #fire | 244, 67, 54 |
+| <strong>土</strong> | 黄色 | #earth | 255, 193, 7 |
+| <strong>金</strong> | 白色 | #metal | 250, 250, 250 |
+| <strong>水</strong> | 黑色 | #water | 33, 33, 33 |</p>
+<h3>设置方法</h3>
+<p>1. 打开 Obsidian 设置
+2. 进入"外观" → "图谱"
+3. 添加颜色组：
+   - 组名：木属性
+   - 颜色：#4CAF50
+   - 匹配：标签包含 `wood`</p>
+<p>---</p>
+<h2>🔍 图谱查看模式</h2>
+<h3>全局图谱</h3>
+<strong>用途</strong>: 查看整个知识库的网络结构
+<strong>操作</strong>:
+1. 点击左侧菜单"图谱"
+2. 选择"全局图谱"
+3. 使用鼠标滚轮缩放
+4. 拖拽查看不同区域
+<strong>适用场景</strong>:
+<li>审视知识库整体结构</li>
+<li>发现知识空白区域</li>
+<li>识别核心节点</li>
+<h3>本地图谱</h3>
+<strong>用途</strong>: 查看当前文件的直接关联
+<strong>操作</strong>:
+1. 打开任意文件
+2. 点击右侧面板"本地图谱"
+3. 查看 1-2 层关联节点
+<strong>适用场景</strong>:
+<li>理解单个文件的上下文</li>
+<li>发现相关概念</li>
+<li>浏览知识网络</li>
+<p>---</p>
+<h2>📊 图谱分析指标</h2>
+<h3>网络密度</h3>
+<p>```
+网络密度 = (实际链接数 / 最大可能链接数) × 100%
+```</p>
+<p>| 密度 | 说明 | 建议 |
+|------|------|------|
+| <5% | 链接稀疏 | 增加双向链接 |
+| 5-10% | 中等密度 | 继续优化 |
+| >10% | 链接丰富 | 保持并精选 |</p>
+<h3>核心节点</h3>
+<strong>识别方法</strong>: 节点越大，链接越多
+<strong>Top 核心节点</strong> (目标):
+1. [[象思维总论]]
+2. [[五行分类图谱]]
+3. [[阴阳原理]]
+4. [[易经基础]]
+5. [[总索引]]
+<h3>孤立节点</h3>
+<strong>识别方法</strong>: 无连线的小节点
+<strong>处理建议</strong>:
+<li>添加相关双向链接</li>
+<li>合并到相关主题</li>
+<li>或删除无用内容</li>
+<p>---</p>
+<h2>🎯 图谱优化技巧</h2>
+<h3>1. 筛选显示</h3>
+<p>```
+按标签筛选：#wood OR #fire
+按目录筛选：path:"03-知识地基层"
+按链接数筛选：links:>5
+```</p>
+<h3>2. 深度控制</h3>
+<p>| 深度 | 说明 | 适用 |
+|------|------|------|
+| 1 层 | 直接关联 | 本地图谱 |
+| 2 层 | 关联的关联 | 局部浏览 |
+| 全部 | 完整网络 | 全局审视 |</p>
+<h3>3. 节点分组</h3>
+<strong>按五行分组</strong>:
+<li>木属性节点：绿色</li>
+<li>火属性节点：红色</li>
+<li>土属性节点：黄色</li>
+<li>金属性节点：白色</li>
+<li>水属性节点：黑色</li>
+<strong>按层级分组</strong>:
+<li>能量层 (A 层): 最大节点</li>
+<li>时空层 (B 层): 中等节点</li>
+<li>实践层 (C 层): 较小节点</li>
+<p>---</p>
+<h2>📈 知识网络健康检查</h2>
+<h3>检查清单</h3>
+<li>[ ] 无孤立节点（或<5%）</li>
+<li>[ ] 网络密度>10%</li>
+<li>[ ] 核心节点清晰可辨</li>
+<li>[ ] 五行分布均衡</li>
+<li>[ ] 三层结构可见</li>
+<h3>运行验证</h3>
+<p>```bash
+<h1>运行链接验证脚本</h1>
+python scripts/verify_links.py
+```</p>
+<strong>查看输出</strong>:
+<li>总文件数</li>
+<li>总链接数</li>
+<li>网络密度</li>
+<li>断裂链接</li>
+<li>孤立文件</li>
+<p>---</p>
+<h2>🎨 高级可视化</h2>
+<h3>使用 Juggl 插件</h3>
+<strong>安装</strong>:
+1. 设置 → 社区插件 → 浏览
+2. 搜索"Juggl"
+3. 安装并启用
+<strong>功能</strong>:
+<li>交互式图谱编辑</li>
+<li>动态节点展开</li>
+<li>自定义样式</li>
+<li>导出图谱图片</li>
+<h3>使用 Dataview 插件</h3>
+<strong>安装</strong>:
+1. 设置 → 社区插件 → 浏览
+2. 搜索"Dataview"
+3. 安装并启用
+<strong>功能</strong>:
+<li>查询知识网络</li>
+<li>动态生成列表</li>
+<li>统计链接数据</li>
+<strong>示例查询</strong>:
+```dataview
+TABLE file.links as 链接数
+FROM "03-知识地基层"
+SORT length(file.links) DESC
+```
+<p>---</p>
+<h2>📝 图谱使用场景</h2>
+<h3>场景 1: 新知识入库</h3>
+<p>```
+1. 创建新笔记
+2. 添加双向链接到相关笔记
+3. 查看本地图谱确认关联
+4. 查看全局图谱确认位置
+```</p>
+<h3>场景 2: 发现知识空白</h3>
+<p>```
+1. 查看全局图谱
+2. 识别稀疏区域
+3. 分析是否需要补充
+4. 创建新笔记填补空白
+```</p>
+<h3>场景 3: 复习与回顾</h3>
+<p>```
+1. 打开核心节点
+2. 查看本地图谱
+3. 遍历关联笔记
+4. 更新过时内容
+```</p>
+<h3>场景 4: 创作与输出</h3>
+<p>```
+1. 确定主题
+2. 查看相关节点
+3. 整合关联内容
+4. 生成新的创作
+```</p>
+<p>---</p>
+<h2>🔗 相关页面</h2>
+<li>[[总索引]]</li>
+<li>[[使用指南]]</li>
+<li>[[双向链接使用指南]]</li>
+<li>[[五行分类图谱]]</li>
+<p>---</p>
+<p>_知识图谱可视化指南 v1.0 · 最后更新：2026-04-13 · 龙心 OS_</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

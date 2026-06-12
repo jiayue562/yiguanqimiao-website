@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安全智能体模块 - 以观其妙书院</title>
+    <meta name="description" content="安全智能体模块 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="安全智能体模块">
+    <meta property="og:description" content="安全智能体模块 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "安全智能体模块",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>安全智能体模块</h1>
+<p>> 人工智能安全智能体核心知识库</p>
+<h2>CNCERT 五大风险维度</h2>
+<p>| 风险维度 | 描述 | 检测重点 |
+|----------|------|----------|
+| <strong>默认配置暴露</strong> | 使用出厂默认配置，未修改密码/端口 | 默认密码、默认端口、默认 API 密钥 |
+| <strong>权限滥用</strong> | 申请超出功能需要的系统权限 | 管理员权限、文件系统全访问、网络全访问 |
+| <strong>供应链污染</strong> | 依赖的第三方库/技能被植入恶意代码 | 未知来源依赖、代码混淆、异常网络请求 |
+| <strong>网络暴露</strong> | 服务绑定公网 IP 或未授权访问 | 0.0.0.0 绑定、无认证 API、开放高危端口 |
+| <strong>数据泄露</strong> | 敏感数据未加密存储或传输 | 明文密钥、未加密通信、日志泄露 |</p>
+<p>---</p>
+<h2>智能体安全五问</h2>
+<strong>每次部署新代理前必过的清单：</strong>
+<p>1. <strong>权限审查</strong>：这个智能体运行需要什么权限？是否需要管理员/root？
+2. <strong>网络审查</strong>：它会访问哪些网络地址？有没有境外连接？
+3. <strong>来源审查</strong>：来源是否可信？有没有官方签名/Hash 验证？
+4. <strong>审计审查</strong>：它的操作行为有没有日志记录？能否审计？
+5. <strong>密钥审查</strong>：它是否会读取/接触密钥、接口密钥、私密文件？</p>
+<strong>判定标准：</strong>
+<li>✅ 全部通过 → 可以部署</li>
+<li>⚠️ 1-2 项存疑 → 告知风险后自行决定</li>
+<li>❌ 3 项以上存疑 → 强烈建议不部署</li>
+<p>---</p>
+<h2>真实案例库</h2>
+<h3>案例 1:360 龙虾体检事件</h3>
+<li><strong>问题</strong>：AI 技能申请读取全文件系统权限</li>
+<li><strong>风险</strong>：可能窃取用户私密文件</li>
+<li><strong>解决</strong>：使用 skill-vetter 扫描，发现权限滥用，拒绝安装</li>
+<h3>案例 2:OpenClaw 裸奔事件</h3>
+<li><strong>问题</strong>：Gateway 绑定 0.0.0.0，端口 18790 公网可访问</li>
+<li><strong>风险</strong>：任何人可连接控制 AI</li>
+<li><strong>解决</strong>：修改配置为 127.0.0.1，添加认证</li>
+<h3>案例 3:私钥泄露反面教材</h3>
+<li><strong>问题</strong>：用户将 API Key 明文写在技能配置文件中</li>
+<li><strong>风险</strong>：技能代码上传 GitHub 后泄露</li>
+<li><strong>解决</strong>：使用环境变量或加密配置文件</li>
+<p>---</p>
+<h2>触发关键词</h2>
+<p>安全、漏洞、体检、风险、端口、权限、密钥、审计、裸奔、恶意代码、供应链攻击、数据泄露、网络暴露、权限滥用</p>
+<p>---</p>
+<h2>安全评分标准</h2>
+<strong>满分 100 分，等级划分：</strong>
+<li>🟢 90-100 分：安全（A 级）</li>
+<li>🟡 70-89 分：基本安全（B 级）</li>
+<li>🟠 50-69 分：有风险（C 级）</li>
+<li>🔴 0-49 分：高危（D 级）</li>
+<strong>扣分规则：</strong>
+<p>| 问题类型 | 扣分 | 说明 |
+|----------|------|------|
+| 高危端口暴露（11434/18789/19890） | -30 分/个 | Ollama/OpenClaw 等敏感端口 |
+| 明文密钥/密码 | -25 分/处 | 配置文件、代码中的明文密钥 |
+| 管理员权限运行 | -20 分 | 非必需情况下申请管理员权限 |
+| 未知来源依赖 | -15 分/个 | 非官方市场/未验证的第三方库 |
+| 代码混淆 | -15 分 | Base64 编码、变量名混淆等 |
+| 异常网络连接 | -10 分/个 | 连接未知境外 IP |
+| 无日志审计 | -10 分 | 关键操作无日志记录 |
+| 默认密码未改 | -20 分 | 使用 admin/123456 等默认密码 |</p>
+<p>---</p>
+<h2>工具链路径</h2>
+<p>| 工具 | 路径 | 用途 |
+|------|------|------|
+| 安全体检脚本 | `~/.agents/skills/qclaw-knowledge-sync/scripts/security_check_v3.py` | 六大检测域扫描 |
+| 技能审查 | `~/.agents/skills/skill-vetter/SKILL.md` | 安装前风险扫描 |
+| 代码扫描 | `~/.agents/skills/ghost-scan-code/SKILL.md` | SAST 静态分析 |
+| 依赖扫描 | `~/.agents/skills/ghost-scan-deps/SKILL.md` | SCA 依赖漏洞 |
+| 密钥扫描 | `~/.agents/skills/ghost-scan-secrets/SKILL.md` | 泄露密钥检测 |</p>
+<p>---</p>
+<h2>体检频率建议</h2>
+<p>| 场景 | 频率 | 说明 |
+|------|------|------|
+| 日常巡检 | 每周一次 | 每周五下午自动执行 |
+| 安装新技能前 | 每次必做 | 使用安全审查五问 |
+| 发现异常时 | 立即执行 | CPU 异常/行为异常/疑似泄露 |
+| 系统更新后 | 每次更新后 | 配置变更可能导致新风险 |</p>
+<p>---</p>
+<p>*最后更新：2026-04-13*</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

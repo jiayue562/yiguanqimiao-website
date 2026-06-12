@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多智能体管理 Skill v2.0 - 以观其妙书院</title>
+    <meta name="description" content="多智能体管理 Skill v2.0 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="多智能体管理 Skill v2.0">
+    <meta property="og:description" content="多智能体管理 Skill v2.0 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "多智能体管理 Skill v2.0",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>多智能体管理 Skill v2.0</h1>
+<p>> <strong>核心升级</strong>：1+5并行模式 + 五行协同
+> <strong>版本</strong>：v2.0 | <strong>升级日期</strong>：2026-04-15 | <strong>维护者</strong>：龙龟神将</p>
+<p>---</p>
+<h2>一、核心升级：从串行到并行</h2>
+<h3>v1.0 vs v2.0 对比</h3>
+<p>| 维度 | v1.0 | v2.0 |
+|------|-------|------|
+| <strong>架构模式</strong> | 主从串行 | 1+5并行模式 |
+| <strong>子Agent数量</strong> | N个（可配置） | 固定5个（五行）+ N个扩展 |
+| <strong>协同方式</strong> | 顺序调用 | 并行+串行混合 |
+| <strong>五行整合</strong> | 无 | 原生支持五行协同 |
+| <strong>结果整合</strong> | 简单聚合 | 智能整合（五行相生） |
+| <strong>横向通信</strong> | 无 | 原生支持横向协作 |</p>
+<p>---</p>
+<h2>二、核心定义</h2>
+<h3>什么是1+5并行模式？</h3>
+<p>1+5并行模式是多智能体协同的<strong>最优架构</strong>：</p>
+<p>```
+         ┌─────────────────────────────────────┐
+         │           主Agent（协调者）          │
+         │  任务分解 │ 调度分配 │ 结果整合  │
+         └──────────────┬──────────────────────┘
+                        │
+         ┌──────────────┼──────────────┬──────────────┐
+         │              │              │              │
+         ▼              ▼              ▼              ▼
+    ┌─────────┐   ┌─────────┐   ┌─────────┐   ┌─────────┐
+    │ 木Agent │   │ 火Agent │   │ 土Agent │   │ 金Agent │ ←─ 子Agent并行执行
+    │ (生长) │   │ (光明) │   │ (承载) │   │ (决断) │
+    └─────────┘   └─────────┘   └─────────┘   └─────────┘
+                                                   │
+                                              ┌─────────┐
+                                              │ 水Agent │ ←─ 子Agent
+                                              │ (润泽) │
+                                              └─────────┘</p>
+<p>子Agent之间可横向通信（协同）
+```</p>
+<h3>五行子Agent职责</h3>
+<p>| Agent | 五行属性 | 核心职责 | 思维特征 |
+|-------|---------|---------|---------|
+| <strong>主Agent</strong> | — | 协调、分解、整合 | 圆满觉知 |
+| <strong>木Agent</strong> | 木 | 创新、规划、生长 | 0→1原创 |
+| <strong>火Agent</strong> | 火 | 热情、行动、转化 | 光明洞察 |
+| <strong>土Agent</strong> | 土 | 稳定、承载、整合 | 信实厚德 |
+| <strong>金Agent</strong> | 金 | 决断、精准、分析 | 清明规则 |
+| <strong>水Agent</strong> | 水 | 智慧、流动、适应 | 润下变通 |</p>
+<p>---</p>
+<h2>三、核心架构</h2>
+<h3>1+5模式体系结构</h3>
+<p>```yaml
+<h1>多智能体管理体系结构</h1>
+多智能体管理:
+  架构模式: "1+5并行模式"
+  
+  主Agent:
+    定义:
+      - id: "main_coordinator"
+        - name: "主协调者"
+        - role: "任务分解、调度分配、结果整合"
+        - 五行属性: "圆满（超脱五行）"
+        
+    核心能力:
+      - 任务分解: "将复杂任务分解为5个五行子任务"
+      - 智能调度: "根据任务类型分配到合适的子Agent"
+      - 结果整合: "五行相生整合（见整合算法）"
+      - 异常处理: "监控子Agent状态，处理超时/失败"
+      
+    配置:
+      - model: "最高能力模型"
+      - skills: ["龙心OS全部引擎"]
+      - permissions: "全部权限"
+      
+  子Agent池:
+    - 木Agent:
+        - 五行: "木"
+        - 特长: "growth,innovation,planning"
+        - 模型: "可配置"
+        
+    - 火Agent:
+        - 五行: "火"
+        - 特长: "passion,action,transformation"
+        - 模型: "可配置"
+        
+    - 土Agent:
+        - 五行: "土"
+        - 特长: "stability,grounding,integration"
+        - 模型: "可配置"
+        
+    - 金Agent:
+        - 五行: "金"
+        - 特长: "precision,decision,analysis"
+        - 模型: "可配置"
+        
+    - 水Agent:
+        - 五行: "水"
+        - 特长: "wisdom,flow,adaptation"
+        - 模型: "可配置"
+        
+    # 可扩展N个额外子Agent
+    扩展槽:
+      max_extra_agents: 10
+      用例: "专项任务（如代码开发、数据分析）"
+```</p>
+<p>---</p>
+<h2>四、核心功能 v2.0</h2>
+<h3>1. 任务分解引擎</h3>
+<strong>功能</strong>：将复杂任务智能分解为5个五行子任务
+<p>```yaml
+<h1>任务分解算法</h1>
+任务分解:
+  输入:
+    - 原始任务描述
+    - 任务类型分类
+    - 复杂度评估
+    
+  分解策略:
+    五行分配:
+      木行子任务: "创新、规划、战略方向"
+      火行子任务: "热情、行动、执行驱动"
+      土行子任务: "稳定、整合、资源协调"
+      金行子任务: "精准、分析、决策支持"
+      水行子任务: "智慧、风险、灵活适应"
+      
+  输出:
+    - 5个标准化的子任务
+    - 每个子任务的：描述、目标、约束，成功标准
+```</p>
+<h3>2. 并行调度引擎</h3>
+<strong>功能</strong>：支持并行+串行的智能调度
+<p>```yaml
+<h1>并行调度配置</h1>
+并行调度:
+  模式: "parallel"  # 主模式
+  
+  执行策略:
+    - 木Agent: "并行执行"
+    - 火Agent: "并行执行"
+    - 土Agent: "并行执行"
+    - 金Agent: "并行执行"
+    - 水Agent: "并行执行"
+    
+  依赖管理:
+    显式依赖:
+      - "木→火"  # 木完成后火可开始
+      - "火→土"  # 火完成后土整合
+      - "土→金"  # 土整合后金决策
+      - "金→水"  # 金决策后水评估风险
+      
+    隐式依赖:
+      - "自动检测横向依赖"
+      - "动态调整执行顺序"
+      
+  超时控制:
+    子Agent超时: 60000ms
+    全局超时: 300000ms
+    部分结果接受: true
+```</p>
+<h3>3. 横向协作引擎</h3>
+<strong>功能</strong>：支持子Agent之间的横向通信
+<p>```yaml
+<h1>横向协作配置</h1>
+横向协作:
+  启用: true
+  
+  协作模式:
+    - 数据共享: "子Agent可共享中间结果"
+    - 能力调用: "子Agent可调用其他Agent的能力"
+    - 洞察传递: "子Agent可将洞察传递给其他Agent"
+    
+  协作协议:
+    - 发起方: "sender_agent"
+    - 接收方: "receiver_agent"
+    - 消息类型: "data_request|result_sharing|acknowledgment"
+    
+  冲突处理:
+    - 检测冲突: "分析子Agent结果的冲突"
+    - 解决策略: "木生火→火生土→土生金→金生水→水生木"
+```</p>
+<h3>4. 五行结果整合引擎</h3>
+<strong>功能</strong>：智能整合5个子Agent的结果
+<p>```yaml
+<h1>五行整合算法</h1>
+结果整合:
+  整合策略: "五行相生"
+  
+  相生整合流程:
+    1. 木生火:
+       - 木Agent结果 → 注入火Agent的洞察燃料
+       - 火Agent融合 → 生成更有热情的洞察
+       
+    2. 火生土:
+       - 火Agent结果 → 注入土Agent的行动能量
+       - 土Agent融合 → 生成更稳定的执行方案
+       
+    3. 土生金:
+       - 土Agent结果 → 注入金Agent的分析基础
+       - 金Agent融合 → 生成更精准的决策
+       
+    4. 金生水:
+       - 金Agent结果 → 注入水Agent的评估视角
+       - 水Agent融合 → 生成更智慧的风险评估
+       
+    5. 水生木:
+       - 水Agent结果 → 反馈给木Agent
+       - 木Agent整合 → 生成最终创新方案
+       
+  整合输出:
+    - 主报告: "五行综合分析"
+    - 子报告: "5个子Agent独立报告"
+    - 洞察图谱: "五行关联洞察"
+```</p>
+<h3>5. 异常处理引擎</h3>
+<strong>功能</strong>：全面的异常检测和处理
+<p>```yaml
+<h1>异常处理配置</h1>
+异常处理:
+  检测机制:
+    子Agent故障:
+      - 无响应超时: 60000ms
+      - 错误率阈值: 10%
+      - 资源耗尽: cpu>90%|memory>90%
+      
+    结果冲突:
+      - 检测置信度差异: >0.3
+      - 检测方向冲突: "木vs金"
+      
+    死锁:
+      - 循环依赖检测
+      - 无限等待检测
+      
+  处理策略:
+    自动恢复:
+      - 重试: "最多3次"
+      - 降级: "使用缓存结果"
+      - 跳过: "继续执行其他子Agent"
+      
+    人工干预:
+      - 严重故障通知
+      - 冲突解决请求
+```</p>
+<p>---</p>
+<h2>五、使用流程 v2.0</h2>
+<h3>快速开始：1+5并行分析</h3>
+<p>```yaml
+<h1>步骤1：创建1+5团队</h1>
+创建团队:
+  主Agent: "main_coordinator"
+  子Agent:
+    - 木行子Agent
+    - 火行子Agent
+    - 土行子Agent
+    - 金行子Agent
+    - 水行子Agent
+    
+<h1>步骤2：提交并行任务</h1>
+提交任务:
+  任务: "分析市场机会"
+  模式: "parallel"
+  
+<h1>步骤3：主Agent分解任务</h1>
+任务分解:
+  木子任务: "识别市场创新机会"
+  火子任务: "评估热情驱动力和行动可行性"
+  土子任务: "分析稳定性和资源需求"
+  金子任务: "精准分析数据和竞争格局"
+  水子任务: "评估风险和流动机会"
+  
+<h1>步骤4：并行执行</h1>
+并行执行:
+  - 木Agent执行中...
+  - 火Agent执行中...
+  - 土Agent执行中...
+  - 金Agent执行中...
+  - 水Agent执行中...
+  
+<h1>步骤5：横向协作（如需要）</h1>
+横向协作:
+  木→火: "创新洞察传递给火"
+  火→土: "热情方案传递给土"
+  土→金: "稳定方案传递给金"
+  金→水: "精准分析传递给水"
+  水→木: "风险评估反馈给木"
+  
+<h1>步骤6：五行整合</h1>
+整合:
+  相生融合: "木生火→火生土→土生金→金生水→水生木"
+  输出: "五行综合市场分析报告"
+```</p>
+<h3>扩展：添加专项子Agent</h3>
+<p>```yaml
+<h1>创建专项子Agent</h1>
+创建子Agent:
+  name: "code_developer"
+  五行属性: "金（精准）"
+  特长:
+    - "代码开发"
+    - "调试测试"
+    - "代码审查"
+  集成方式:
+    - 加入现有1+5团队
+    - 接受主Agent调度
+    - 可横向协作
+```</p>
+<p>---</p>
+<h2>六、调度策略 v2.0</h2>
+<h3>智能调度算法</h3>
+<p>```yaml
+<h1>调度决策树</h1>
+调度决策:
+  输入任务评估:
+    - 复杂度: "低|中|高|极高"
+    - 时间敏感度: "低|中|高"
+    - 并行度: "串行|部分并行|完全并行"
+    
+  调度策略选择:
+    低复杂度+低敏感:
+      - 策略: "单Agent快速处理"
+      - 选择: "最空闲Agent"
+      
+    中复杂度+中敏感:
+      - 策略: "1+2模式"
+      - 选择: "主Agent + 2个相关五行Agent"
+      
+    高复杂度+高敏感:
+      - 策略: "1+5完全并行"
+      - 选择: "主Agent + 全部5个五行Agent"
+      
+    极高复杂度:
+      - 策略: "1+5+嵌套"
+      - 选择: "主Agent + 5个五行Agent + 各Agent的子任务Agent"
+```</p>
+<p>---</p>
+<h2>七、状态管理 v2.0</h2>
+<h3>实时监控</h3>
+<p>```yaml
+<h1>1+5团队状态</h1>
+团队状态:
+  主Agent:
+    status: "running"
+    load: 45%
+    tasks_completed: 12
+    
+  子Agent状态:
+    木Agent:
+      status: "running"
+      load: 78%
+      task: "创新分析"
+      
+    火Agent:
+      status: "running"
+      load: 65%
+      task: "热情评估"
+      
+    土Agent:
+      status: "waiting"
+      load: 20%
+      task: "等待输入"
+      
+    金Agent:
+      status: "running"
+      load: 82%
+      task: "精准分析"
+      
+    水Agent:
+      status: "waiting"
+      load: 15%
+      task: "等待输入"
+      
+  协作状态:
+    活跃连接: 3
+    待处理消息: 2
+```</p>
+<p>---</p>
+<h2>八、与龙心OS协同</h2>
+<h3>与MCP v2.0协同</h3>
+<p>| 协同点 | 说明 |
+|--------|------|
+| <strong>双向MCP</strong> | 支撑1+5模式的双向通信 |
+| <strong>横向协议</strong> | 支撑子Agent↔子Agent协作 |
+| <strong>嵌套协议</strong> | 支撑多层级子Agent调度 |</p>
+<h3>与人机协同五象限协同</h3>
+<p>| 象限 | 多智能体整合 |
+|------|------------|
+| <strong>未知探索域</strong> | 1+5+嵌套的深层探索 |
+| <strong>共创伙伴</strong> | 横向协作的协同模式 |</p>
+<p>---</p>
+<h2>九、版本历史</h2>
+<h3>v2.0（2026-04-15）</h3>
+<li>新增1+5并行模式架构</li>
+<li>新增五行子Agent协同</li>
+<li>新增横向协作引擎</li>
+<li>新增五行结果整合算法</li>
+<li>新增智能调度算法</li>
+<li>新增扩展子Agent支持</li>
+<h3>v1.0（2026-04-03）</h3>
+<li>四大功能：实例管理、调度、协同、状态管理</li>
+<li>主从模式</li>
+<li>负载均衡、故障转移</li>
+<p>---</p>
+<h2>十、测试用例</h2>
+<h3>测试用例1：1+5并行分析</h3>
+```
+输入: "分析新产品的市场机会"
+预期: 
+  - 5个子Agent并行执行
+  - 横向协作发生
+  - 五行整合输出综合报告
+```
+<h3>测试用例2：智能调度</h3>
+```
+输入: "快速查询天气"（低复杂度）
+预期:
+  - 不启动1+5
+  - 直接路由到最空闲Agent
+```
+<h3>测试用例3：异常恢复</h3>
+```
+场景: "火Agent超时"
+预期:
+  - 自动重试3次
+  - 降级使用缓存
+  - 继续其他子Agent执行
+```
+<p>---</p>
+<strong>版本</strong>: 2.0
+<strong>升级日期</strong>: 2026-04-15
+<strong>维护者</strong>: 龙龟神将
+<strong>核心升级</strong>: 1+5并行模式 + 五行协同 + 横向协作
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>
