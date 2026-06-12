@@ -1,6 +1,6 @@
 # Cloudflare Pages Redirects
-# 将Clean URL内部重写到.html文件 (200 = 内部重写, 无重定向, 浏览器URL不变)
-/articles/wechat-articles/:splat /articles/wechat-articles/:splat.html 200
-/articles/obsidian/:splat /articles/obsidian/:splat.html 200
-/articles/geo-repo/:splat /articles/geo-repo/:splat.html 200
-/articles/:splat /articles/:splat.html 200
+# 使用 * 作为通配符（匹配任何内容），:splat 作为反向引用
+/articles/wechat-articles/* /articles/wechat-articles/:splat.html 200
+/articles/obsidian/* /articles/obsidian/:splat.html 200
+/articles/geo-repo/* /articles/geo-repo/:splat.html 200
+/articles/* /articles/:splat.html 200
