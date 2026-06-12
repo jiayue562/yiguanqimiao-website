@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP协议配置 Skill - 以观其妙书院</title>
+    <meta name="description" content="MCP协议配置 Skill - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="MCP协议配置 Skill">
+    <meta property="og:description" content="MCP协议配置 Skill - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "MCP协议配置 Skill",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>MCP协议配置 Skill</h1>
+<h2>核心定位</h2>
+<p>个人AI OS的<strong>通用协同语言</strong>，打通人机、机机的共生联动链路。</p>
+<p>> 核心理念：MCP是"协同总线"，解决异构系统的信息孤岛问题。</p>
+<p>---</p>
+<h2>触发条件</h2>
+<li>用户提到"MCP"、"协同协议"、"系统联动"</li>
+<li>需要配置多个Skills/工具的协同</li>
+<li>需要定义人机协同的数据格式</li>
+<li>需要扩展外部工具/服务接入</li>
+<p>---</p>
+<h2>三大核心MCP协议</h2>
+<h3>1. 人机协同协议</h3>
+<strong>定义</strong>：规范人向AI发出的决策指令、AI向人反馈的执行结果的格式
+<p>```json
+{
+  "protocol": "human-ai-collaboration",
+  "version": "1.0",
+  "instruction": {
+    "type": "decision | query | task",
+    "content": "指令内容",
+    "personalization": {
+      "thinking_model": "第一性原理/长期主义/GEO...",
+      "cultural_tag": "儒家/佛学/道家...",
+      "personality": "理性/感性/专业/生活化",
+      "values": ["核心价值观1", "核心价值观2"]
+    }
+  },
+  "response": {
+    "type": "result | explanation | question",
+    "content": "返回内容",
+    "reasoning": "推理过程说明",
+    "confidence": 0.95,
+    "references": ["参考文档1", "参考文档2"]
+  }
+}
+```</p>
+<h3>2. 机内协同协议</h3>
+<strong>定义</strong>：规范AI与Skills、AI与Skills之间的调用规则、数据同步格式
+<p>```json
+{
+  "protocol": "intra-system-collaboration",
+  "version": "1.0",
+  "task": {
+    "id": "task-uuid",
+    "parent_id": "父任务ID",
+    "description": "任务描述",
+    "required_skills": ["skill1", "skill2"],
+    "input_data": {},
+    "output_schema": {}
+  },
+  "skill_chain": [
+    {
+      "skill": "skill-name",
+      "input": {},
+      "output": {},
+      "status": "pending|running|completed|failed"
+    }
+  ],
+  "data_flow": {
+    "from": "skill-a",
+    "to": "skill-b",
+    "transform": "数据转换规则"
+  }
+}
+```</p>
+<h3>3. 系统扩展协议</h3>
+<strong>定义</strong>：规范外部工具/服务接入AI OS的通信规则
+<p>```json
+{
+  "protocol": "system-extension",
+  "version": "1.0",
+  "service": {
+    "name": "服务名称",
+    "type": "tool|skill|api|knowledge_base",
+    "endpoint": "接入地址",
+    "capabilities": ["能力1", "能力2"],
+    "authentication": {
+      "type": "api_key|oauth|token",
+      "credentials": "加密存储"
+    }
+  },
+  "integration": {
+    "mcp_config": "MCP配置文件",
+    "capability_mapping": "能力映射",
+    "fallback_strategy": "降级策略"
+  }
+}
+```</p>
+<p>---</p>
+<h2>个性化参数嵌入</h2>
+<p>所有MCP协议都嵌入个性化参数字段：</p>
+<p>```json
+{
+  "personalization": {
+    "thinking_model": "思维模型标识",
+    "cultural_dna": "文化DNA标签",
+    "personality_params": {
+      "tone": "语气偏好",
+      "detail_level": "详细程度",
+      "response_style": "回复风格"
+    },
+    "values_alignment": ["核心价值1", "价值2"]
+  }
+}
+```</p>
+<p>---</p>
+<h2>现有MCP配置</h2>
+<h3>WorkBuddy MCP服务器</h3>
+<p>位置：`C:\Users\jia'yue\.workbuddy\mcp.json`</p>
+<p>```json
+{
+  "mcpServers": {
+    "ima-knowledge": {
+      "command": "npx",
+      "args": ["@clawhub/ima-mcp-server"],
+      "env": {
+        "IMA_API_KEY": "已配置",
+        "IMA_CLIENT_ID": "59a1edb848ec905552c0fbc8041213bf"
+      }
+    }
+  }
+}
+```</p>
+<p>---</p>
+<h2>与其他Skills协同</h2>
+<p>| 协同Skill | 协同方式 |
+|-----------|---------|
+| CLI指令体系 | 解析指令中的个性化参数 |
+| Skills管理 | 提供Skills调用的标准协议 |
+| Framework | 作为框架的通信底层 |
+| 人机协同五象限 | 支撑分工协作的数据传递 |</p>
+<p>---</p>
+<h2>协议验证工具</h2>
+<h3>验证命令</h3>
+<p>```bash
+<h1>验证人机协同协议</h1>
+python mcp_validator.py --protocol human-ai --file instruction.json</p>
+<h1>验证机内协同协议</h1>
+python mcp_validator.py --protocol intra-system --file task.json
+<h1>验证系统扩展协议</h1>
+python mcp_validator.py --protocol extension --file service.json
+```
+<p>---</p>
+<h2>存储位置</h2>
+<li><strong>协议配置</strong>: `C:\Users\jia'yue\Desktop\以观其妙书院知识库\观其妙书院\05-系统配置\MCP协议\`</li>
+<li><strong>验证工具</strong>: `08-工具与脚本\MCP验证\`</li>
+<li><strong>使用日志</strong>: `05-系统配置\MCP协议\使用日志.md`</li>
+<p>---</p>
+<h2>核心原则</h2>
+<p>1. <strong>标准化</strong> - 所有协同通过协议规范
+2. <strong>个性化嵌入</strong> - 默认携带信仰/文化/思维模型参数
+3. <strong>轻量化</strong> - 适配个人场景，极简高效
+4. <strong>可扩展</strong> - 新工具无缝接入</p>
+<p>---</p>
+<p>*MCP协议配置 Skill v1.0 · 2026-03-19*</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

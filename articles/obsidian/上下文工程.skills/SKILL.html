@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上下文工程.skills - 以观其妙书院</title>
+    <meta name="description" content="上下文工程.skills - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="上下文工程.skills">
+    <meta property="og:description" content="上下文工程.skills - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "上下文工程.skills",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>上下文工程.skills</h1>
+<p>> 会话上下文的优化、注入和质量评估 · 跨 Skills 上下文协同</p>
+<strong>版本</strong>: v1.0
+<strong>创建</strong>: 2026-05-20
+<strong>标签</strong>: #上下文 #会话管理 #Prompt 工程 #跨 Skill 协同
+<strong>归属</strong>: 龙爪 OS 子技能
+<strong>粒度</strong>: 生态 Skill（依赖 agent-memory-systems / LLM Wiki / knowledge-base-manager）
+<p>---</p>
+<h2>What / Why / How</h2>
+<p>| | 描述 |
+|---|------|
+| <strong>What</strong> | 上下文的优化、注入、优先级排序和质量评估 |
+| <strong>Why</strong> | 大模型会话中上下文窗口有限，必须高效管理；跨 Skills 调用时上下文需要统一协议 |
+| <strong>How</strong> | 4 个核心模块（session-context / prompt-context / cross-skill-context / quality-assessment）+ 2 个脚本 |</p>
+<p>---</p>
+<h2>核心能力</h2>
+<p>| 模块 | 能力 | 说明 |
+|------|------|------|
+| <strong>session-context</strong> | 上下文优化/摘要/优先级 | 管理单次会话的上下文窗口 |
+| <strong>prompt-context</strong> | 模板注入/A/B 测试 | 管理 Prompt 维度的上下文 |
+| <strong>cross-skill-context</strong> | 统一协议/共享存储/依赖追踪 | 跨 Skills 上下文协同 |
+| <strong>quality-assessment</strong> | 质量评分/健康检查/优化建议 | 上下文质量的持续改进 |</p>
+<p>---</p>
+<h2>触发条件</h2>
+<h3>直接触发词（P0-权重 5）</h3>
+<li>上下文优化、上下文注入、上下文摘要</li>
+<li>会话管理、Prompt 管理、跨 Skill 上下文</li>
+<h3>场景触发词（P1-权重 4）</h3>
+<li>"上下文太长了帮我优化"</li>
+<li>"跨 Skill 调用上下文"</li>
+<li>"帮我总结当前会话上下文"</li>
+<h3>信号触发（P2-权重 3）</h3>
+<li>会话超过 30 轮（上下文窗口可能溢出）</li>
+<li>跨 Skills 链式调用（需要统一上下文协议）</li>
+<li>质量评分低于阈值</li>
+<p>---</p>
+<h2>行为流程</h2>
+<p>```
+输入触发信号
+  ↓
+session-context/prioritizer.py -> 优先级排序
+  ↓
+session-context/summarizer.py -> 上下文摘要
+  ↓
+prompt-context/injector.py -> 注入到 Prompt
+  ↓
+cross-skill-context/protocol.md -> 跨 Skills 协议
+  ↓
+quality-assessment/scorer.py -> 质量评分
+  ↓
+输出优化后的上下文
+```</p>
+<p>---</p>
+<h2>核心原则</h2>
+<h3>必须</h3>
+<li>所有上下文变更必须记录日志</li>
+<li>跨 Skills 调用必须遵守 protocol.md</li>
+<li>质量评分必须 >= 60 分才能输出</li>
+<h3>禁止</h3>
+<li>不丢失关键上下文（优先级 Top-3 必须保留）</li>
+<li>不注入未经验证的上下文</li>
+<li>不破坏其他 Skills 的上下文空间</li>
+<p>---</p>
+<h2>与其他 Skills 协同</h2>
+<p>| Skill | 协同方式 |
+|-------|----------|
+| agent-memory-systems | 使用记忆系统作为上下文持久化存储 |
+| LLM Wiki 知识库 | 从 Wiki 获取知识上下文增强 Prompt |
+| knowledge-base-manager | 同步三库上下文（Obsidian/OpcCla/IMA） |
+| self-improving-agent | 学习上下文优化策略和效果反馈 |
+| super-save/search | 快速保存/检索上下文快照 |</p>
+<p>---</p>
+<h2>标准输入输出</h2>
+<h3>输入格式</h3>
+```json
+{"session_id": "str", "context_items": [], "max_tokens": 4096}
+```
+<h3>输出格式</h3>
+```json
+{"optimized_context": [], "summary": "str", "quality_score": 0-100}
+```
+<p>---</p>
+<h2>异常处理</h2>
+<p>| 异常 | 处理 |
+|------|------|
+| 上下文为空 | 返回空列表 + WARN 日志 |
+| 优先级冲突 | 按 priority 降序排序，同优先级按时间倒序 |
+| 跨 Skills 协议不匹配 | 降级为本地上下文处理 + ERROR 日志 |
+| 质量评分偏低 | 截断低优先级项直至 >= 60 分 |</p>
+<p>---</p>
+<h2>文件结构</h2>
+<p>```
+上下文工程.skills/
+├── SKILL.md
+├── session-context/      # 会话上下文管理
+├── prompt-context/       # Prompt 上下文
+├── cross-skill-context/  # 跨 Skills 上下文
+├── quality-assessment/   # 质量评估
+├── scripts/              # 脚本
+├── templates/            # 模板
+├── triggers/             # 触发配置
+└── references/           # 参考文档
+```</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

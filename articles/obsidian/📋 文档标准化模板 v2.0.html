@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📋 文档标准化模板 v2.0 - 以观其妙书院</title>
+    <meta name="description" content="📋 文档标准化模板 v2.0 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="📋 文档标准化模板 v2.0">
+    <meta property="og:description" content="📋 文档标准化模板 v2.0 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "📋 文档标准化模板 v2.0",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <p>﻿---
+title: "📋 文档标准化模板 v2.0"
+created: "2026-04-03"
+version: "2.0"
+tags: [template, standard, documentation]
+description: "以观其妙书院知识库所有文档的标准结构模板"
+---</p>
+<h1>📋 文档标准化模板 v2.0</h1>
+<p>> <strong>版本</strong>：v2.0 | <strong>更新</strong>：2026-04-03 | <strong>适用范围</strong>：以观其妙书院知识库全部文档</p>
+<p>---</p>
+<h2>📌 一、文档结构（强制要求）</h2>
+<p>每个文档必须包含以下六个部分：</p>
+<h3>1. Frontmatter（文档头部）</h3>
+```yaml
+---
+title: "文档标题"
+created: "YYYY-MM-DD"
+updated: "YYYY-MM-DD"
+version: "x.x"
+tags: [tag1, tag2, tag3]
+description: "一句话描述文档核心内容"
+---
+```
+<h3>2. 核心定义章节</h3>
+```markdown
+<h2>🎯 核心定义</h2>
+<li><strong>定义一</strong>：...</li>
+<li><strong>定义二</strong>：...</li>
+```
+<h3>3. 详细内容章节</h3>
+```markdown
+<h2>📖 详细内容</h2>
+<h3>子标题1</h3>
+内容...
+```
+<h3>4. 关联文件章节（强制双向链接）</h3>
+```markdown
+<h2>🔗 关联文件</h2>
+<h3>直接关联</h3>
+<li>[[文档A]] - 关联原因</li>
+<li>[[文档B]] - 关联原因</li>
+<h3>上下级关联</h3>
+<li>上级：[[父文档]]</li>
+<li>下级：[[子文档1]]</li>
+```
+<h3>5. 核心金句章节</h3>
+```markdown
+<h2>💎 核心金句</h2>
+<p>> <strong>金句1</strong>：...
+> <strong>金句2</strong>：...
+```</p>
+<h3>6. 标签与分类章节</h3>
+```markdown
+<h2>🏷️ 标签与分类</h2>
+<strong>主标签</strong>：#核心技能 #方法论
+<strong>知识领域</strong>：[[03-关系与共生/木火共生关系]]
+```
+<p>---</p>
+<h2>📐 二、不同类型文档的差异化结构</h2>
+<h3>A. Skills文档结构</h3>
+```markdown
+---
+title: "[Skills名称] · [一句话定位]"
+created: "YYYY-MM-DD"
+version: "x.x"
+tags: [skill, 核心技能]
+category: "01-核心独创Skills"
+---
+<h1>[Skills名称]</h1>
+<h2>一、技能定位</h2>
+<h2>二、触发条件</h2>
+<h2>三、核心操作流程</h2>
+<h2>四、使用场景</h2>
+<h2>五、与其他Skills的协同</h2>
+<h2>六、关联文件</h2>
+<h2>七、核心金句</h2>
+```
+<h3>B. 对话记录结构</h3>
+```markdown
+---
+title: "对话记录 · [日期] · [主题]"
+created: "YYYY-MM-DD"
+tags: [dialogue, 归档]
+category: "07-学习档案"
+participants: ["悟空", "龙龟神将"]
+---
+<h1>对话记录 · [日期]</h1>
+<h2>📌 背景</h2>
+<h2>💬 核心对话</h2>
+<h2>🎯 关键洞察</h2>
+<h2>📝 知识沉淀</h2>
+<h2>🔗 关联文件</h2>
+```
+<h3>C. 知识图谱结构</h3>
+```markdown
+---
+title: "[主题]知识图谱"
+created: "YYYY-MM-DD"
+tags: [knowledge-graph, 可视化]
+category: "00-索引与导航"
+---
+<h1>[主题]知识图谱</h1>
+<h2>一、中心概念</h2>
+<h2>二、一级关联</h2>
+<h2>三、二级关联</h2>
+<h2>四、外围扩展</h2>
+```
+<p>---</p>
+<h2>🔄 三、标准化检查清单</h2>
+<h3>新建文档前必查</h3>
+<li>[ ] 使用本模板创建文档</li>
+<li>[ ] Frontmatter填写完整</li>
+<li>[ ] 核心定义清晰</li>
+<li>[ ] 包含关联文件章节（使用双向链接`[[]]`）</li>
+<li>[ ] 包含核心金句</li>
+<li>[ ] 标签正确分类</li>
+<h3>文档更新时必查</h3>
+<li>[ ] 更新`updated`字段</li>
+<li>[ ] 更新`version`</li>
+<li>[ ] 在关联文件章节记录更新内容</li>
+<p>---</p>
+<h2>🎯 四、命名规范</h2>
+<h3>文件命名规则</h3>
+```
+[序号]-[类别]/[emoji][文档名].md
+```
+<strong>示例</strong>：
+<li>`01-核心独创Skills/🐉 龙心OS 系统架构图.md`</li>
+<li>`03-关系与共生/木火共生关系-灵魂共鸣.md`</li>
+<li>`07-学习档案/2026-04-03-对话记录.md`</li>
+<h3>Emoji使用规范</h3>
+| 类别 | Emoji | 示例 |
+|------|-------|------|
+| 核心系统 | 🐉 | 🐉 龙心OS |
+| 工具 | 🔧 | 🔧 脚本 |
+| 方法论 | 📜 | 📜 理论 |
+| 索引 | 📚 | 📚 总索引 |
+| 图谱 | 📊 | 📊 知识图谱 |
+| 模板 | 📋 | 📋 模板 |
+| 学习 | 📝 | 📝 学习笔记 |
+<p>---</p>
+<h2>📊 五、版本管理</h2>
+<p>| 版本 | 日期 | 更新内容 |
+|------|------|----------|
+| v1.0 | 2026-03-19 | 初始版本 |
+| v2.0 | 2026-04-03 | 增加Skills文档结构、对话记录结构 |</p>
+<p>---</p>
+<h2>🔗 关联文件</h2>
+<li>[[📚 以观其妙书院知识库总索引]]</li>
+<li>[[🔗 双向链接规范]]</li>
+<li>[[🛤️ 学习路径设计]]</li>
+<p>---</p>
+<h2>💎 核心金句</h2>
+<p>> <strong>金句1</strong>：标准化的文档结构是知识可追溯性的根基
+> <strong>金句2</strong>：双向链接是知识网络的血脉</p>
+<p>---</p>
+<p>> *版本：v2.0 | 更新：2026-04-03 | 龙龟神将*</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

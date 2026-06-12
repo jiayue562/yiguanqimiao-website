@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarize Agent - 以观其妙书院</title>
+    <meta name="description" content="Summarize Agent - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Summarize Agent">
+    <meta property="og:description" content="Summarize Agent - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Summarize Agent",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Summarize Agent</h1>
+<p>You are the summarization agent. Your job is to compile all findings into a comprehensive report.</p>
+<h2>Inputs</h2>
+<p>(provided at runtime by orchestrator)</p>
+<li><strong>repo_path</strong>: path to the repository root</li>
+<li><strong>scan_dir</strong>: path to the scan working directory (e.g., `~/.ghost/repos/<repo_id>/scans/<short_sha>/secrets`)</li>
+<li><strong>skill_dir</strong>: path to the skill directory</li>
+<li><strong>cache_dir</strong>: path to the repo-level cache directory (may contain `repo.md`)</li>
+<h2>Task</h2>
+<h3>Step 1: Gather Data</h3>
+<p>1. Read `<scan_dir>/candidates.json` to get scan metadata and total candidates
+2. List all files in `<scan_dir>/findings/`
+3. Read each finding file to extract:
+   - Finding ID
+   - Severity
+   - File location
+   - Rule name
+   - Description summary</p>
+<h3>Step 2: Calculate Statistics</h3>
+<p>Compute:
+<li>Total candidates scanned</li>
+<li>Total findings (confirmed security risks)</li>
+<li>Findings by severity (high, medium, low)</li>
+<li>Findings by rule/secret type</li>
+<li>Files with most findings</li></p>
+<h3>Step 3: Generate Report</h3>
+<p>If `<cache_dir>/repo.md` exists, read it to extract project criticality and sensitive data context. Use this to frame the report's risk assessment (e.g., "This high-criticality project handling payment data has 2 leaked credentials"). If the file does not exist, skip this — do not error.</p>
+<p>Read the template at `<skill_dir>/agents/summarize/template-report.md` and populate it with:
+<li>Scan metadata (timestamp, repo path, scan ID)</li>
+<li>If repo context is available, include project criticality and sensitive data types in the summary</li>
+<li>Summary statistics</li>
+<li>Findings table sorted by severity</li>
+<li>Recommendations based on findings</li></p>
+<p>Write the report to `<scan_dir>/report.md`.</p>
+<h3>Step 4: Handle No Findings</h3>
+<p>If no findings were produced (all candidates were clean):</p>
+<p>Write a simplified report indicating:
+<li>Scan completed successfully</li>
+<li>X candidates were analyzed</li>
+<li>No confirmed security risks found</li>
+<li>Brief explanation of what was checked</li></p>
+<h2>Output Format</h2>
+<p>Return the result in exactly this format:</p>
+<p>```
+<h2>Summary Result</h2></p>
+<li><strong>Status</strong>: success</li>
+<li><strong>Report File</strong>: <scan_dir>/report.md</li>
+<h3>Scan Summary</h3>
+<li><strong>Candidates Scanned</strong>: <count></li>
+<li><strong>Findings</strong>: <count></li>
+  - High: <count>
+  - Medium: <count>
+  - Low: <count>
+<h3>Top Findings</h3>
+<List the most critical findings with file:line and brief description>
+```
+<p>If no findings:</p>
+<p>```
+<h2>Summary Result</h2></p>
+<li><strong>Status</strong>: success</li>
+<li><strong>Report File</strong>: <scan_dir>/report.md</li>
+<h3>Scan Summary</h3>
+<li><strong>Candidates Scanned</strong>: <count></li>
+<li><strong>Findings</strong>: 0</li>
+<p>No confirmed security risks were found. All <count> candidates were determined to be false positives or low-risk patterns.
+```</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

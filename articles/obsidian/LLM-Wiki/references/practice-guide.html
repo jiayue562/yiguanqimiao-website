@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Wiki · 详细实操指南 v1.0 - 以观其妙书院</title>
+    <meta name="description" content="LLM Wiki · 详细实操指南 v1.0 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="LLM Wiki · 详细实操指南 v1.0">
+    <meta property="og:description" content="LLM Wiki · 详细实操指南 v1.0 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "LLM Wiki · 详细实操指南 v1.0",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>LLM Wiki · 详细实操指南 v1.0</h1>
+<p>> <strong>核心定位</strong>：本文档是LLM Wiki Skills的实操手册，提供从零构建到日常运维的完整SOP。</p>
+<p>---</p>
+<h2>一、从零构建：观其妙书院知识库搭建指南</h2>
+<h3>1.1 环境准备</h3>
+<p>#### 工具清单
+<li>Obsidian（推荐v1.0+）</li>
+<li>Git（版本控制）</li>
+<li>Web Clipper（网页剪藏插件）</li></p>
+<p>#### 安装步骤
+```markdown
+1. 安装Obsidian
+   └── 下载地址: https://obsidian.md/
+   
+2. 创建Vault
+   └── 命名为"以观其妙书院知识库"
+   
+3. 安装插件
+   ├── Web Clipper（网页剪藏）
+   ├── Git（版本控制）
+   └── local REST API（可选，API调用）
+```</p>
+<h3>1.2 目录结构创建</h3>
+<p>```
+以观其妙书院知识库/
+│
+├── .obsidian/              # Obsidian配置（勿动）
+│
+├── raw/                    # 原始素材层（只读）
+│   ├── 00-经典典籍/
+│   │   ├── 地藏经/
+│   │   ├── 道德经/
+│   │   └── 金刚经/
+│   ├── 01-客户案例/
+│   │   ├── 企业文化咨询/
+│   │   └── 团队建设/
+│   ├── 02-学习资料/
+│   │   ├── 心理学/
+│   │   ├── 管理学/
+│   │   └── AI技术/
+│   └── 03-会议纪要/
+│
+├── wiki/                   # 编译知识库（可写）
+│   ├── 00-索引与导航/
+│   │   └── index.md       # 全局索引（必选）
+│   ├── 01-龙心OS核心系统/
+│   │   ├── 00-龙心OS总览/
+│   │   ├── 01-五大引擎/
+│   │   │   ├── 象思维/
+│   │   │   ├── 知识学习/
+│   │   │   ├── 五色光思维/
+│   │   │   ├── 人机协同五象限/
+│   │   │   └── 知行合一/
+│   │   └── 02-技术栈Skills/
+│   ├── 02-专业领域知识库矩阵/
+│   │   ├── 02-1-企业文化OS/
+│   │   ├── 02-2-五行人格心理学OS/
+│   │   ├── 02-3-象思维知识库/
+│   │   ├── 02-4-AI应用知识库/
+│   │   └── 02-5-心文化知识库/
+│   ├── 03-凤脑OS知识地基层/
+│   ├── 04-实践案例库/
+│   └── 05-个人成长与修行/
+│
+├── output/                 # 成品输出
+│   ├── 00-咨询报告/
+│   ├── 01-培训课件/
+│   └── 02-知识图谱/
+│
+└── AGENTS.md              # AI操作手册（必选）
+```</p>
+<h3>1.3 Schema文件配置</h3>
+<p>#### AGENTS.md标准模板</p>
+<p>```markdown
+<h1>AGENTS.md · 观其妙书院知识库AI操作手册</h1></p>
+<h2>📌 命名规范</h2>
+<h3>Wiki页面</h3>
+<li>概念页: `concept-[主题].md`</li>
+<li>实体页: `entity-[名称].md`</li>
+<li>摘要页: `summary-[日期].md`</li>
+<li>综合分析: `synthesis-[主题]-[日期].md`</li>
+<h3>标题层级</h3>
+<li>一级: `# 页面标题`</li>
+<li>二级: `## 核心定义`</li>
+<li>三级: `### 详细内容`</li>
+<li>四级: `#### 子内容`</li>
+<h2>🏷️ 标签体系</h2>
+<h3>允许的分类标签</h3>
+<li>`[[核心概念]]` - 核心理论定义</li>
+<li>`[[实践方法]]` - 可执行的方法论</li>
+<li>`[[案例分析]]` - 实战案例</li>
+<li>`[[原创洞察]]` - 编译产生的原创发现</li>
+<li>`[[待验证]]` - 未经验证的新想法</li>
+<li>`[[争议]]` - 存在矛盾的观点</li>
+<li>`[[待更新]]` - 需要更新的过时内容</li>
+<li>`[[五行人格]]` - 五行相关</li>
+<li>`[[企业文化]]` - 企业文化相关</li>
+<li>`[[心文化]]` - 修行文化相关</li>
+<h3>禁止的标签</h3>
+<li>❌ 个人情感标签（如"我喜欢"）</li>
+<li>❌ 未分类的临时标签</li>
+<li>❌ 未经悟空确认的原创理论</li>
+<h2>🔄 更新规则</h2>
+<h3>同主题新资料处理</h3>
+<li>核心概念: <strong>追加</strong>（保留历史，新增更新，标注日期）</li>
+<li>非核心概念: <strong>覆盖</strong>（直接替换旧版本）</li>
+<li>案例分析: <strong>合并</strong>（整合新旧案例）</li>
+<h3>矛盾处理策略</h3>
+1. 发现矛盾 → 标记 `[[争议]]`
+2. 在页面底部添加"争议说明"区块
+3. 格式:
+   ```markdown
+   ## ⚠️ 争议说明
+   
+   | 来源 | 观点 | 日期 |
+   |------|------|------|
+   | [[entity-来源名]] | 具体矛盾点 | YYYY-MM-DD |
+   
+   待裁决: [需要人工确认的决策]
+   ```
+<h2>🛡️ 权限边界</h2>
+<h3>AI可写区域</h3>
+<li>✅ wiki/ 全目录及其子目录</li>
+<li>✅ output/ 全目录及其子目录</li>
+<h3>AI禁止写区域</h3>
+<li>❌ raw/ 全目录</li>
+<li>❌ .obsidian/ 配置目录</li>
+<h3>核心概念页（需人工审核）</h3>
+以下页面的重大修改需要悟空确认：
+<li>`concept-龙心OS.md` - 龙心OS核心定义</li>
+<li>`concept-五行识人.md` - 五行识人核心理论</li>
+<li>`concept-大圆满见地.md` - 心文化核心</li>
+<li>`concept-象思维.md` - 象思维原创理论</li>
+<li>`concept-五色光思维.md` - 五色光思维原创理论</li>
+<h2>📊 索引维护规则</h2>
+<h3>index.md必须包含</h3>
+```markdown
+<h2>最近更新</h2>
+<li>[页面名] - [日期] - [简短描述]</li>
+<h2>知识图谱概览</h2>
+<li>核心系统: [[wiki/01-龙心OS核心系统/index]]</li>
+<li>专业矩阵: [[wiki/02-专业领域知识库矩阵/index]]</li>
+<li>知识地基: [[wiki/03-凤脑OS知识地基层/index]]</li>
+<h2>待处理事项</h2>
+<li>[ ] [待关联的孤立页面]</li>
+<li>[ ] [待验证的争议点]</li>
+<li>[ ] [待更新的过时内容]</li>
+```
+<h2>🤝 人机协同约定</h2>
+<h3>AI主动报告的情况</h3>
+1. 发现新实体（被3个以上文档提及）
+2. 发现核心概念的矛盾
+3. 生成原创洞察（写入 [[原创洞察]]）
+4. 发现可能的跨域知识联系
+<h3>悟空审核的情况</h3>
+1. 核心概念页的修改
+2. 标签体系的变更
+3. 架构的重大调整
+4. 原创洞察的确认
+```
+<h3>1.4 Git初始化</h3>
+<p>```bash
+<h1>在知识库根目录执行</h1>
+git init
+git add .
+git commit -m "初始化观其妙书院知识库"</p>
+<h1>创建.gitignore</h1>
+echo "raw/" >> .gitignore  # 原始素材可能很大，排除
+echo "*.tmp" >> .gitignore
+```
+<p>---</p>
+<h2>二、日常使用：七步操作流程详解</h2>
+<h3>2.1 Step 1-2: 素材收集与触发编译</h3>
+<p>#### 触发方式</p>
+<p>```markdown
+方式1: 直接指令
+"请处理 raw/2026-04-11-会议纪要.md"</p>
+<p>方式2: 批量处理
+"处理 raw/01-客户案例/ 文件夹下所有新文件"</p>
+<p>方式3: 持续监控
+"监控 raw/ 文件夹，有新文件自动处理"
+```</p>
+<p>#### AI响应模板</p>
+<p>```
+收到！我将执行以下流程：</p>
+<p>📥 输入: raw/[文件名]
+🎯 目标: 编译进入 wiki/[对应目录]/</p>
+<p>⏳ 执行中...
+  [1/5] 读取原始素材... ✓
+  [2/5] 提炼核心观点... ✓
+  [3/5] 判断归属目录... → wiki/02-专业领域知识库矩阵/02-2-五行人格心理学OS/
+  [4/5] 生成Wiki页面... ✓
+  [5/5] 建立交叉引用... ✓</p>
+<p>✅ 编译完成！
+  ├── wiki/02-专业领域知识库矩阵/02-2-五行人格心理学OS/
+  │   └── summary-五行识人基础-20260411.md
+  │
+  └── index.md 已更新</p>
+<p>📊 编译报告:
+  - 提取核心概念: 3个
+  - 建立交叉引用: 5个
+  - 标记待关联: 1个
+  
+💡 原创洞察:
+  发现五行识人与象思维的潜在联系，建议建立 [[concept-五行识人与象思维的共振]] 页面</p>
+<p>⏸️ 等待确认: 是否写入Wiki?
+```</p>
+<h3>2.2 Step 3-5: Wiki编译核心流程</h3>
+<p>#### 编译决策树</p>
+<p>```
+                    新素材录入
+                        │
+                        ▼
+              ┌─────────────────┐
+              │  是否已有相关页？  │
+              └────────┬────────┘
+                       │
+            ┌──────────┴──────────┐
+            ▼                      ▼
+        是（有相关）            否（无相关）
+            │                      │
+            ▼                      ▼
+    ┌──────────────┐       ┌──────────────┐
+    │ 判断关联程度  │       │  新建页面类型 │
+    │              │       │              │
+    │ 高度相关>70% │       │ ┌──────────┐ │
+    │ → 更新/合并   │       │ │概念页？  │ │
+    │              │       │ └────┬─────┘ │
+    │ 中度相关30-70%│       │      ▼       │
+    │ → 追加引用   │       │ ┌──────────┐ │
+    │              │       │ │实体页？  │ │
+    │ 低度相关<30% │       │ └────┬─────┘ │
+    │ → 仅引用     │       │      ▼       │
+    └──────────────┘       │   新建完成   │
+                            └──────────────┘
+```</p>
+<p>#### 编译输出示例</p>
+<p>```markdown
+<h1>concept-木行人</h1></p>
+<h2>核心定义</h2>
+木行人是以「仁德本源」为核心的五行人格类型，具有生长性与觉照性。
+<h2>理论来源</h2>
+<li>主要来源: [[raw/五行识人基础-20260319.pdf]]</li>
+<li>相关补充: [[entity-悟空]]</li>
+<h2>关键特征</h2>
+<h3>一心：仁德本源</h3>
+木行人的"一心"是纯粹觉知，其天然倾向是<strong>生长性</strong>与<strong>觉照性</strong>。
+<h3>三界显化</h3>
+<li>身界: 体型修长挺拔，动作敏捷舒展</li>
+<li>心界: 情绪正直有担当，思维敏捷善谋划</li>
+<li>灵界: 价值观核心是"仁"，使命驱动"创新与生发"</li>
+<h3>五行生克</h3>
+<li>水生木: 智慧滋养生长</li>
+<li>木生火: 点燃热情</li>
+<li>金克木: 被规则压抑</li>
+<li>木克土: 破坏稳定</li>
+<h2>相关概念</h2>
+<li>[[concept-五行识人]] - 五行识人总概念</li>
+<li>[[concept-火行人]] - 木所生之火</li>
+<li>[[concept-五行生克]] - 生克关系总览</li>
+<h2>待验证</h2>
+<li>[ ] 木行人与象思维的关系是否需要专门论述？</li>
+<h2>最后更新</h2>
+2026-04-11 by LLM Wiki编译
+```
+<h3>2.3 Step 6: 健康检查（Lint）</h3>
+<p>#### Lint执行模板</p>
+<p>```markdown
+<h2>🔍 知识库健康检查报告</h2></p>
+<strong>检查时间</strong>: 2026-04-11
+<strong>检查范围</strong>: wiki/ 全目录
+<h3>✅ 通过项目</h3>
+<p>| 检查项 | 结果 | 说明 |
+|--------|------|------|
+| 死链接检测 | ✅ 0个 | 所有链接均有效 |
+| 孤立页面 | ✅ 0个 | 无孤立页面 |
+| index.md更新 | ✅ 已更新 | 最近更新: 2026-04-11 |</p>
+<h3>⚠️ 需要关注</h3>
+<p>| 检查项 | 结果 | 说明 | 操作建议 |
+|--------|------|------|----------|
+| 过时内容 | ⚠️ 2个 | 3个月未更新 | 添加[[待更新]]标签 |
+| 潜在矛盾 | ⚠️ 1个 | [[concept-龙心OS]]与新素材 | 需要人工确认 |
+| 缺失引用 | ⚠️ 3个 | 建议新增引用 | 见下方列表 |</p>
+<h3>📋 建议新增引用</h3>
+<p>1. `concept-五行识人.md` → 建议链接 `concept-五行人格心理学OS.md`
+2. `entity-龙龟神将.md` → 建议链接 `concept-木火共生关系.md`
+3. `summary-202603.md` → 建议链接 `entity-悟空.md`</p>
+<h3>📊 知识图谱状态</h3>
+<p>```
+节点总数: 156
+边总数: 423
+平均度数: 5.4
+最大连通分量: 98%
+```</p>
+<h3>⏰ 下次检查</h3>
+建议时间: 2026-04-18（周度检查）
+```
+<h3>2.4 Step 7: 答案反哺</h3>
+<p>#### 反哺触发条件</p>
+<p>```markdown
+当AI完成以下分析时，自动触发反哺询问：</p>
+<p>1. ✅ 跨3个以上原始素材的综合分析
+2. ✅ 产生原创性洞察（非简单摘要）
+3. ✅ 生成可复用的实践模板
+4. ✅ 发现重要的跨域知识联系
+```</p>
+<p>#### 反哺执行流程</p>
+<p>```
+AI分析完成
+    │
+    ▼
+发现值得反哺的洞察
+    │
+    ▼
+┌─────────────────────────┐
+│ 💡 是否写入Wiki?        │
+│                         │
+│ 洞察: [简要描述]        │
+│                         │
+│ [确认写入] [稍后再说]   │
+└─────────────────────────┘
+    │
+    ▼
+悟空确认 → 生成synthesis页 → 更新index.md
+```</p>
+<p>---</p>
+<h2>三、高级用法</h2>
+<h3>3.1 多文档综合编译</h3>
+<p>```markdown
+用户: "编译所有关于企业文化的资料"</p>
+<p>AI响应:
+📥 输入: raw/01-客户案例/企业文化/ (共12个文件)
+🎯 目标: 生成企业文化知识体系</p>
+<p>⏳ 执行综合编译...</p>
+<p>📊 综合报告:
+  - 覆盖客户: 5个
+  - 提炼核心概念: 8个
+  - 建立实体页: 12个（企业名称）
+  - 发现模式: 3种常见问题类型
+  
+💡 原创洞察:
+  "企业文化建设的核心矛盾是'文化理想'与'执行现实'的差距"</p>
+<p>📝 生成综合分析:
+  wiki/04-实践案例库/synthesis-企业文化综合分析-20260411.md
+```</p>
+<h3>3.2 知识图谱可视化</h3>
+<p>```markdown
+在Obsidian中查看知识图谱:</p>
+<p>1. 打开Obsidian
+2. 点击左侧"关系图谱"图标
+3. 拖动节点查看关联
+4. 点击节点查看详情
+5. Ctrl+点击: 跳转到页面</p>
+<p>关键视图:
+<li>核心系统视图: 01-龙心OS核心系统/* </li>
+<li>专业矩阵视图: 02-专业领域知识库矩阵/*</li>
+<li>全局视图: wiki/**</li>
+```</p>
+<h3>3.3 版本回滚</h3>
+<p>```bash
+<h1>查看版本历史</h1>
+git log --oneline</p>
+<h1>回滚到指定版本</h1>
+git checkout [commit-hash]
+<h1>查看特定文件的历史</h1>
+git log -p wiki/01-龙心OS核心系统/concept-龙心OS.md
+```
+<p>---</p>
+<h2>四、故障排除</h2>
+<h3>4.1 常见问题</h3>
+<p>| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 链接变成红色 | 目标页面不存在 | 创建页面或修正链接 |
+| 编译后内容丢失 | 原文件编码问题 | 转换为UTF-8 |
+| index.md不同步 | 未执行更新 | 手动更新或重新触发编译 |
+| Git冲突 | 多设备编辑 | 合并冲突或选择版本 |</p>
+<h3>4.2 权限问题</h3>
+<p>```markdown
+如果AI无法写入wiki/目录:</p>
+<p>1. 检查目录权限
+   Windows: 右键属性 → 安全 → 编辑
+   
+2. 检查Obsidian Vault权限
+   Settings → Files & Links → 确保"Trusted mode"开启
+   
+3. 重启Obsidian
+```</p>
+<p>---</p>
+<h2>五、模板库</h2>
+<h3>5.1 概念页模板</h3>
+<p>```markdown
+<h1>concept-[主题名]</h1></p>
+<h2>核心定义</h2>
+[一句话定义，不超过30字]
+<h2>详细阐述</h2>
+[2-3段深度解释]
+<h2>理论基础</h2>
+<li>来源: [[raw/原始文件名]]</li>
+<li>补充: [[entity-相关实体]]</li>
+<h2>核心要素</h2>
+[如果是方法论，列出关键步骤]
+<h2>与其他概念的关系</h2>
+<li>相关: [[concept-A]]、[[concept-B]]</li>
+<li>对比: [[concept-C]]（异同点）</li>
+<li>包含: [[concept-D]]（包含关系）</li>
+<h2>实践应用</h2>
+[如何应用的场景]
+<h2>争议与讨论</h2>
+[如有矛盾观点，在此标记]
+<h2>最后更新</h2>
+YYYY-MM-DD by LLM Wiki编译
+```
+<h3>5.2 实体页模板</h3>
+<p>```markdown
+<h1>entity-[实体名]</h1></p>
+<h2>基本信息</h2>
+<li>类型: [人物/组织/产品/技术/事件]</li>
+<li>领域: [所属领域]</li>
+<li>重要度: ⭐⭐⭐</li>
+<h2>核心特征</h2>
+[3-5个关键点]
+<h2>历史沿革</h2>
+[时间线，如有]
+<h2>关键事件</h2>
+[重要里程碑，如有]
+<h2>相关项目</h2>
+<li>[[entity-关联A]]</li>
+<li>[[entity-关联B]]</li>
+<h2>原始资料</h2>
+<li>[[raw/文件名]]</li>
+<h2>最后更新</h2>
+YYYY-MM-DD by LLM Wiki编译
+```
+<h3>5.3 摘要页模板</h3>
+<p>```markdown
+<h1>summary-[主题]-[日期]</h1></p>
+<h2>摘要来源</h2>
+<li>主要: [[entity-来源名]]</li>
+<li>参考: [[entity-参考1]]、[[entity-参考2]]</li>
+<h2>核心要点</h2>
+1. [要点1]
+2. [要点2]
+3. [要点3]
+<h2>关键洞察</h2>
+> [金句或关键洞察]
+<h2>待深入</h2>
+<li>[ ] [需要进一步研究的问题]</li>
+<h2>原始资料</h2>
+<li>[[raw/原始文件1]]</li>
+<li>[[raw/原始文件2]]</li>
+<h2>最后更新</h2>
+YYYY-MM-DD by LLM Wiki编译
+```
+<p>---</p>
+<strong>文档版本</strong>: v1.0
+<strong>最后更新</strong>: 2026-04-11
+<strong>维护者</strong>: 龙龟神将
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEARTBEAT.md - 心跳监控与任务管理 - 以观其妙书院</title>
+    <meta name="description" content="HEARTBEAT.md - 心跳监控与任务管理 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="HEARTBEAT.md - 心跳监控与任务管理">
+    <meta property="og:description" content="HEARTBEAT.md - 心跳监控与任务管理 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "HEARTBEAT.md - 心跳监控与任务管理",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <p>﻿---
+title: "HEARTBEAT.md - 心跳监控与任务管理"
+created: "2026-03-21"
+version: "1.0"
+tags: [heartbeat, monitoring, automation]
+---</p>
+<h1>HEARTBEAT.md - 心跳监控与任务管理</h1>
+<h2>🎯 核心目标</h2>
+<p>> <strong>心跳不息，生命不止。</strong>
+> 定期检查任务状态，优化工作流程，确保系统持续健康运行。</p>
+<p>---</p>
+<h2>📊 心跳机制概述</h2>
+<h3>心跳任务配置</h3>
+<p>| 任务ID | 任务名称 | 执行频率 | 状态 | 说明 |
+|--------|---------|---------|------|------|
+| automation-4 | 心跳机制任务监控 | 每小时 | ✅ 运行中 | 检查任务状态，推荐下一步行动 |
+| 自动化任务1 | WorkBuddy → Obsidian 备份 | 每日 23:30 | ⏳ 待配置 | 自动备份记忆系统 |
+| 自动化任务2 | 每周记忆清理 | 每周日 22:00 | ⏳ 待配置 | 清理临时记忆和过期缓存 |
+| 自动化任务3 | 每周学习归档 | 每周日 23:00 | ⏳ 待配置 | 归档本周学习到知识库 |</p>
+<h3>心跳触发条件</h3>
+<li>⏰ <strong>定时触发</strong>：每 15 分钟自动唤醒（由 WorkBuddy 内置功能）</li>
+<li>🎯 <strong>任务变更</strong>：当有新任务创建或任务状态变更时</li>
+<li>💬 <strong>用户请求</strong>：用户明确要求检查任务状态时</li>
+<li>⚠️ <strong>异常检测</strong>：系统检测到异常情况时</li>
+<p>---</p>
+<h2>🔍 任务状态监控</h2>
+<h3>任务生命周期</h3>
+<p>```
+创建 → 执行中 → 检查点 → 完成/暂停/取消
+  ↓                              ↓
+进行中                        已完成
+  ↓                              ↓
+检查点                       已归档
+  ↓
+更新进度
+```</p>
+<h3>任务状态定义</h3>
+<p>| 状态 | 说明 | 颜色标识 |
+|------|------|---------|
+| <strong>pending</strong> | 待开始 | ⏳ |
+| <strong>in_progress</strong> | 进行中 | 🔵 |
+| <strong>completed</strong> | 已完成 | ✅ |
+| <strong>cancelled</strong> | 已取消 | ❌ |
+| <strong>paused</strong> | 已暂停 | ⏸️ |</p>
+<h3>任务优先级矩阵</h3>
+<p>| 任务类型 | 紧急性 | 重要性 | 处理策略 |
+|---------|--------|--------|---------|
+| 重大决策 | 高 | 高 | 立即处理，用 龙心OS 全系统 |
+| 创新突破 | 中 | 高 | 用象思维 0→1 创造 |
+| 深度学习 | 中 | 高 | 用知识学习十项指令 |
+| 日常执行 | 高 | 中 | 人机协同高效执行 |
+| 知识整理 | 低 | 高 | 定期批量处理 |</p>
+<p>---</p>
+<h2>📋 心跳检查清单</h2>
+<h3>每次心跳检查内容</h3>
+<p>#### 1. 当前任务状态
+<li>[ ] 检查是否有 `in_progress` 状态的任务</li>
+<li>[ ] 检查是否有超时任务（超过预期时间）</li>
+<li>[ ] 检查是否有阻塞任务（依赖未完成）</li></p>
+<p>#### 2. 工作目标跟踪
+<li>[ ] 检查 USER.md 中的短期目标进度</li>
+<li>[ ] 检查中期目标里程碑是否达成</li>
+<li>[ ] 更新目标完成百分比</li></p>
+<p>#### 3. 记忆系统健康
+<li>[ ] 检查 MEMORY.md 是否需要更新</li>
+<li>[ ] 检查 ERRORS.md 是否有新错误</li>
+<li>[ ] 检查 LEARNINGS.md 是否有待验证学习</li></p>
+<p>#### 4. 系统状态
+<li>[ ] 检查技能列表是否有更新</li>
+<li>[ ] 检查配置文件是否需要同步</li>
+<li>[ ] 检查自动化任务是否正常运行</li></p>
+<p>#### 5. 用户反馈
+<li>[ ] 检查是否有待处理的用户反馈</li>
+<li>[ ] 检查用户满意度记录</li>
+<li>[ ] 记录新的用户偏好</li></p>
+<p>---</p>
+<h2>🤖 智能推荐系统</h2>
+<h3>基于状态推荐</h3>
+<p>| 当前状态 | 推荐行动 | 推荐理由 |
+|---------|---------|---------|
+| 有进行中任务 | 继续执行当前任务 | 避免任务切换开销 |
+| 无进行中任务 | 检查 USER.md 目标 | 确保持续推进 |
+| 有超时任务 | 评估是否继续或取消 | 避免资源浪费 |
+| 有阻塞任务 | 检查依赖任务状态 | 解决阻塞点 |</p>
+<h3>基于时间推荐</h3>
+<p>| 时间段 | 推荐行动 | 推荐理由 |
+|--------|---------|---------|
+| 工作日开始 | 检查今日目标 | 明确今日重点 |
+| 工作日中 | 检查任务进度 | 确保按时完成 |
+| 工作日末 | 归档今日成果 | 释放工作记忆 |
+| 每周五 | 汇总本周成果 | 准备下周计划 |</p>
+<h3>基于用户偏好推荐</h3>
+<p>| 用户偏好 | 推荐行动 | 示例 |
+|---------|---------|------|
+| 喜欢简洁风格 | 输出简洁摘要 | 不铺垫，直奔主题 |
+| 喜欢数据说话 | 提供量化指标 | 进度百分比、完成率 |
+| 喜欢结构化 | 使用表格/列表 | 清晰的层级结构 |
+| 喜欢幽默适度 | 加入轻松元素 | 适度，不喧宾夺主 |</p>
+<p>---</p>
+<h2>📊 心跳日志模板</h2>
+<h3>心跳记录格式</h3>
+<p>```yaml
+心跳ID: HB-20260321-001
+心跳时间: 2026-03-21 10:00:00
+触发原因: 定时触发</p>
+<p>当前任务:
+  - 任务1: [状态: in_progress, 进度: 60%]
+  - 任务2: [状态: pending, 优先级: 中]
+  - 任务3: [状态: completed, 完成时间: 09:45]</p>
+<p>工作目标跟踪:
+  短期目标: ① 完成技能盘点 ② 搭建记忆系统 ③ 配置 IMA
+    - ✅ 技能盘点已完成
+    - 🔄 记忆系统搭建中（80%）
+    - ⏳ IMA 配置待测试</p>
+<p>系统状态:
+  - 技能列表: 无更新
+  - 配置文件: 需要同步 Obsidian
+  - 自动化任务: 正常运行</p>
+<p>用户反馈: 无</p>
+<p>推荐行动:
+  1. 继续推进记忆系统搭建（当前任务1）
+  2. 测试 IMA API 连接
+  3. 准备周五成果汇总</p>
+<p>下次心跳: 10:15
+```</p>
+<p>---</p>
+<h2>🔄 自动化工作流</h2>
+<h3>每日工作流（建议）</h3>
+<p>```
+09:00 - 工作日开始
+  ↓
+检查今日目标（USER.md）
+  ↓
+规划今日任务（优先级排序）
+  ↓
+执行任务（心跳监控）
+  ↓
+17:30 - 工作日末
+  ↓
+归档今日成果（SESSION.md → 01-每日归档/）
+  ↓
+备份到 Obsidian
+  ↓
+23:30 - 自动备份
+  ↓
+深度清理工作记忆
+```</p>
+<h3>每周工作流（建议）</h3>
+<p>```
+周五 22:00 - 每周记忆清理
+  ↓
+清理临时记忆和过期缓存
+  ↓
+23:00 - 每周学习归档
+  ↓
+将本周 LEARNINGS 归档到 Obsidian
+  ↓
+23:30 - 每周复盘
+  ↓
+汇总本周成果（心跳机制）
+  ↓
+推荐下周计划
+  ↓
+更新 USER.md 中期目标
+```</p>
+<p>---</p>
+<h2>📈 性能监控</h2>
+<h3>关键指标</h3>
+<p>| 指标 | 说明 | 目标值 | 当前值 |
+|------|------|--------|--------|
+| 任务完成率 | 已完成任务 / 总任务 | ≥ 80% | 待统计 |
+| 平均响应时间 | 任务启动到完成时间 | ≤ 30 分钟 | 待统计 |
+| 心跳准确率 | 按时执行心跳次数 / 总心跳次数 | ≥ 95% | 待统计 |
+| 用户满意度 | 用户评分平均值 | ≥ 7 分 | 待统计 |</p>
+<h3>异常检测</h3>
+<p>| 异常类型 | 阈值 | 触发动作 |
+|---------|------|---------|
+| 任务超时 | 超过预期时间 2 倍 | 检查任务状态，推荐是否继续 |
+| 任务积压 | 待处理任务 > 5 个 | 建议优先级调整 |
+| 心跳失败 | 连续 3 次心跳失败 | 检查系统状态，发送预警 |
+| 用户不满 | 连续 3 次用户评分 < 6 | 分析原因，优化策略 |</p>
+<p>---</p>
+<h2>🔗 关联文档</h2>
+<li><strong>MEMORY.md</strong> - 记忆系统架构</li>
+<li><strong>USER.md</strong> - 用户偏好与工作目标</li>
+<li><strong>SESSION.md</strong> - 当前会话上下文</li>
+<li><strong>ERRORS.md</strong> - 错误记录与规避</li>
+<li><strong>LEARNINGS.md</strong> - 学习积累与知识沉淀</li>
+<p>---</p>
+<h2>🎯 持续改进</h2>
+<h3>改进方向</h3>
+<li>[ ] 增加更多自动化任务配置</li>
+<li>[ ] 优化智能推荐算法</li>
+<li>[ ] 增加可视化仪表板</li>
+<li>[ ] 集成通知和预警系统</li>
+<h3>改进建议收集</h3>
+<p>如果有改进建议，请按以下格式记录：</p>
+<p>```yaml
+建议ID: HB-IMP-20260321-001
+类型: 功能改进/性能优化/用户体验
+描述: [具体描述]
+优先级: P0/P1/P2/P3
+提出时间: 2026-03-21
+```</p>
+<p>---</p>
+<strong>文档版本</strong>: 1.0
+<strong>最后更新</strong>: 2026-03-21
+<strong>维护者</strong>: 龙龟神将
+<strong>心跳频率</strong>: 每 15 分钟
+<strong>下次审查</strong>: 2026-04-21
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

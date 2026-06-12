@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Vetter 🔒 - 以观其妙书院</title>
+    <meta name="description" content="Skill Vetter 🔒 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Skill Vetter 🔒">
+    <meta property="og:description" content="Skill Vetter 🔒 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Skill Vetter 🔒",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>Skill Vetter 🔒</h1>
+<p>Security-first vetting protocol for AI agent skills. <strong>Never install a skill without vetting it first.</strong></p>
+<h2>When to Use</h2>
+<li>Before installing any skill from ClawdHub</li>
+<li>Before running skills from GitHub repos</li>
+<li>When evaluating skills shared by other agents</li>
+<li>Anytime you're asked to install unknown code</li>
+<h2>Vetting Protocol</h2>
+<h3>Step 1: Source Check</h3>
+<p>```
+Questions to answer:
+<li>[ ] Where did this skill come from?</li>
+<li>[ ] Is the author known/reputable?</li>
+<li>[ ] How many downloads/stars does it have?</li>
+<li>[ ] When was it last updated?</li>
+<li>[ ] Are there reviews from other agents?</li>
+```</p>
+<h3>Step 2: Code Review (MANDATORY)</h3>
+<p>Read ALL files in the skill. Check for these <strong>RED FLAGS</strong>:</p>
+<p>```
+🚨 REJECT IMMEDIATELY IF YOU SEE:
+─────────────────────────────────────────
+• curl/wget to unknown URLs
+• Sends data to external servers
+• Requests credentials/tokens/API keys
+• Reads ~/.ssh, ~/.aws, ~/.config without clear reason
+• Accesses MEMORY.md, USER.md, SOUL.md, IDENTITY.md
+• Uses base64 decode on anything
+• Uses eval() or exec() with external input
+• Modifies system files outside workspace
+• Installs packages without listing them
+• Network calls to IPs instead of domains
+• Obfuscated code (compressed, encoded, minified)
+• Requests elevated/sudo permissions
+• Accesses browser cookies/sessions
+• Touches credential files
+─────────────────────────────────────────
+```</p>
+<h3>Step 3: Permission Scope</h3>
+<p>```
+Evaluate:
+<li>[ ] What files does it need to read?</li>
+<li>[ ] What files does it need to write?</li>
+<li>[ ] What commands does it run?</li>
+<li>[ ] Does it need network access? To where?</li>
+<li>[ ] Is the scope minimal for its stated purpose?</li>
+```</p>
+<h3>Step 4: Risk Classification</h3>
+<p>| Risk Level | Examples | Action |
+|------------|----------|--------|
+| 🟢 LOW | Notes, weather, formatting | Basic review, install OK |
+| 🟡 MEDIUM | File ops, browser, APIs | Full code review required |
+| 🔴 HIGH | Credentials, trading, system | Human approval required |
+| ⛔ EXTREME | Security configs, root access | Do NOT install |</p>
+<h2>Output Format</h2>
+<p>After vetting, produce this report:</p>
+<p>```
+SKILL VETTING REPORT
+═══════════════════════════════════════
+Skill: [name]
+Source: [ClawdHub / GitHub / other]
+Author: [username]
+Version: [version]
+───────────────────────────────────────
+METRICS:
+• Downloads/Stars: [count]
+• Last Updated: [date]
+• Files Reviewed: [count]
+───────────────────────────────────────
+RED FLAGS: [None / List them]</p>
+<p>PERMISSIONS NEEDED:
+• Files: [list or "None"]
+• Network: [list or "None"]  
+• Commands: [list or "None"]
+───────────────────────────────────────
+RISK LEVEL: [🟢 LOW / 🟡 MEDIUM / 🔴 HIGH / ⛔ EXTREME]</p>
+<p>VERDICT: [✅ SAFE TO INSTALL / ⚠️ INSTALL WITH CAUTION / ❌ DO NOT INSTALL]</p>
+<p>NOTES: [Any observations]
+═══════════════════════════════════════
+```</p>
+<h2>Quick Vet Commands</h2>
+<p>For GitHub-hosted skills:
+```bash
+<h1>Check repo stats</h1>
+curl -s "https://api.github.com/repos/OWNER/REPO" | jq '{stars: .stargazers_count, forks: .forks_count, updated: .updated_at}'</p>
+<h1>List skill files</h1>
+curl -s "https://api.github.com/repos/OWNER/REPO/contents/skills/SKILL_NAME" | jq '.[].name'
+<h1>Fetch and review SKILL.md</h1>
+curl -s "https://raw.githubusercontent.com/OWNER/REPO/main/skills/SKILL_NAME/SKILL.md"
+```
+<h2>Trust Hierarchy</h2>
+<p>1. <strong>Official OpenClaw skills</strong> → Lower scrutiny (still review)
+2. <strong>High-star repos (1000+)</strong> → Moderate scrutiny
+3. <strong>Known authors</strong> → Moderate scrutiny
+4. <strong>New/unknown sources</strong> → Maximum scrutiny
+5. <strong>Skills requesting credentials</strong> → Human approval always</p>
+<h2>Remember</h2>
+<li>No skill is worth compromising security</li>
+<li>When in doubt, don't install</li>
+<li>Ask your human for high-risk decisions</li>
+<li>Document what you vet for future reference</li>
+<p>---</p>
+<p>*Paranoia is a feature.* 🔒🦀</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

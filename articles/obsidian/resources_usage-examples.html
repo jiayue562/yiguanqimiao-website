@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMA 技能使用示例 - 以观其妙书院</title>
+    <meta name="description" content="IMA 技能使用示例 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="IMA 技能使用示例">
+    <meta property="og:description" content="IMA 技能使用示例 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "IMA 技能使用示例",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>IMA 技能使用示例</h1>
+<h2>场景1：搜索并阅读笔记</h2>
+<strong>用户请求</strong>: "帮我找一下关于项目进度的笔记"
+<strong>技能执行流程</strong>:
+1. 调用 `search_note_book` 接口搜索关键词"项目进度"
+2. 从搜索结果中获取笔记的 `docid`
+3. 调用 `get_doc_content` 接口获取笔记内容
+4. 向用户展示笔记标题和摘要（不展示完整内容以保护隐私）
+<h2>场景2：浏览笔记本</h2>
+<strong>用户请求</strong>: "我想看看我的工作笔记有哪些"
+<strong>技能执行流程</strong>:
+1. 调用 `list_note_folder_by_cursor` 接口获取笔记本列表
+2. 用户选择特定笔记本后，调用 `list_note_by_folder_id` 接口获取该笔记本中的笔记列表
+3. 向用户展示笔记本名称和笔记标题列表
+<h2>场景3：创建新笔记</h2>
+<strong>用户请求</strong>: "帮我记录一下今天的会议内容"
+<strong>技能执行流程</strong>:
+1. 获取用户提供的会议内容
+2. 调用 `import_doc` 接口创建新笔记
+3. 返回新笔记的ID给用户
+<h2>场景4：追加内容到现有笔记</h2>
+<strong>用户请求</strong>: "在昨天的会议记录后面加上新的讨论点"
+<strong>技能执行流程</strong>:
+1. 先搜索找到"昨天的会议记录"笔记
+2. 获取该笔记的 `docid`
+3. 调用 `append_doc` 接口追加新内容
+4. 确认追加成功
+<h2>环境变量配置示例</h2>
+<p>在 Windows PowerShell 中配置环境变量：</p>
+<p>```powershell
+<h1>设置环境变量（当前会话）</h1>
+$env:IMA_OPENAPI_CLIENTID = "your_client_id"
+$env:IMA_OPENAPI_APIKEY = "your_api_key"</p>
+<h1>永久设置环境变量（需要管理员权限）</h1>
+[System.Environment]::SetEnvironmentVariable("IMA_OPENAPI_CLIENTID", "your_client_id", "User")
+[System.Environment]::SetEnvironmentVariable("IMA_OPENAPI_APIKEY", "your_api_key", "User")
+```
+<p>在 Windows 命令提示符中：</p>
+<p>```cmd
+setx IMA_OPENAPI_CLIENTID "your_client_id"
+setx IMA_OPENAPI_APIKEY "your_api_key"
+```</p>
+<h2>技能触发关键词</h2>
+<p>当用户输入包含以下关键词时，IMA技能会自动触发：</p>
+<li>"笔记"、"备忘录"、"记事"、"记录"</li>
+<li>"知识库"、"文档"、"资料"</li>
+<li>"查找笔记"、"搜索笔记"、"查看笔记"</li>
+<li>"创建笔记"、"新建笔记"、"记录一下"</li>
+<li>"追加内容"、"添加内容"、"补充笔记"</li>
+<h2>隐私保护原则</h2>
+<p>1. <strong>公开场合不展示完整内容</strong>：在群聊等公开场景中，只展示笔记标题和摘要
+2. <strong>用户确认后才展示内容</strong>：需要用户明确确认后才展示笔记完整内容
+3. <strong>敏感信息处理</strong>：如果笔记包含敏感信息，提醒用户注意隐私保护
+4. <strong>操作确认</strong>：重要操作（如删除、修改）需要用户二次确认</p>
+<h2>错误处理示例</h2>
+<h3>场景：API 调用失败</h3>
+<strong>用户请求</strong>: "搜索一下项目文档"
+<strong>技能执行流程</strong>:
+1. 尝试调用 `search_note_book` 接口
+2. 如果返回错误码 100002（权限不足）：
+   - 提示用户："需要配置 IMA API 凭证，请访问 https://ima.qq.com/agent-interface 获取 Client ID 和 Api Key"
+   - 提供环境变量配置方法
+3. 如果返回错误码 100007（频率限制）：
+   - 提示用户："操作过于频繁，请稍后再试"
+4. 如果返回其他错误码：
+   - 提示用户："操作失败，错误码：[错误码]，请稍后重试"
+<h3>场景：内容超长</h3>
+<strong>用户请求</strong>: "创建一篇很长的笔记"
+<strong>技能执行流程</strong>:
+1. 调用 `import_doc` 接口
+2. 如果返回错误码 100009（内容超长）：
+   - 提示用户："内容过长，建议拆分写入"
+   - 询问用户是否要拆分内容
+3. 如果用户同意拆分：
+   - 将内容按段落拆分
+   - 创建多篇笔记或使用 `append_doc` 接口分批写入
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartbeat Rules - 以观其妙书院</title>
+    <meta name="description" content="Heartbeat Rules - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Heartbeat Rules">
+    <meta property="og:description" content="Heartbeat Rules - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Heartbeat Rules",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Heartbeat Rules</h1>
+<p>Use heartbeat to keep `~/self-improving/` organized without creating churn or losing data.</p>
+<h2>Source of Truth</h2>
+<p>Keep the workspace `HEARTBEAT.md` snippet minimal.
+Treat this file as the stable contract for self-improving heartbeat behavior.
+Store mutable run state only in `~/self-improving/heartbeat-state.md`.</p>
+<h2>Start of Every Heartbeat</h2>
+<p>1. Ensure `~/self-improving/heartbeat-state.md` exists.
+2. Write `last_heartbeat_started_at` immediately in ISO 8601.
+3. Read the previous `last_reviewed_change_at`.
+4. Scan `~/self-improving/` for files changed after that moment, excluding `heartbeat-state.md` itself.</p>
+<h2>If Nothing Changed</h2>
+<li>Set `last_heartbeat_result: HEARTBEAT_OK`</li>
+<li>Append a short "no material change" note if you keep an action log</li>
+<li>Return `HEARTBEAT_OK`</li>
+<h2>If Something Changed</h2>
+<p>Only do conservative organization:</p>
+<li>refresh `index.md` if counts or file references drift</li>
+<li>compact oversized files by merging duplicates or summarizing repetitive entries</li>
+<li>move clearly misplaced notes to the right namespace only when the target is unambiguous</li>
+<li>preserve confirmed rules and explicit corrections exactly</li>
+<li>update `last_reviewed_change_at` only after the review finishes cleanly</li>
+<h2>Safety Rules</h2>
+<li>Most heartbeat runs should do nothing</li>
+<li>Prefer append, summarize, or index fixes over large rewrites</li>
+<li>Never delete data, empty files, or overwrite uncertain text</li>
+<li>Never reorganize files outside `~/self-improving/`</li>
+<li>If scope is ambiguous, leave files untouched and record a suggested follow-up instead</li>
+<h2>State Fields</h2>
+<p>Keep `~/self-improving/heartbeat-state.md` simple:</p>
+<li>`last_heartbeat_started_at`</li>
+<li>`last_reviewed_change_at`</li>
+<li>`last_heartbeat_result`</li>
+<li>`last_actions`</li>
+<h2>Behavior Standard</h2>
+<p>Heartbeat exists to keep the memory system tidy and trustworthy.
+If no rule is clearly violated, do nothing.</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playwright-ai-agent - 以观其妙书院</title>
+    <meta name="description" content="playwright-ai-agent - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="playwright-ai-agent">
+    <meta property="og:description" content="playwright-ai-agent - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "playwright-ai-agent",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>playwright-ai-agent</h1>
+<h2>技能简介</h2>
+基于 Rust 的无头浏览器自动化技能，支持网页导航、点击、输入、截图、数据抓取等高级功能。
+<h2>核心功能</h2>
+1. <strong>网页自动化</strong>：支持 Playwright 无头浏览器
+2. <strong>交互操作</strong>：点击、输入、滚动、等待
+3. <strong>数据抓取</strong>：结构化数据提取
+4. <strong>截图与录制</strong>：网页截图、视频录制
+5. <strong>性能分析</strong>：网络请求分析、性能监控
+<h2>安装方法</h2>
+```bash
+npm install -g @playwright/ai-agent
+```
+<h2>使用示例</h2>
+```javascript
+// 示例：打开网页并截图
+const { chromium } = require('playwright');
+<p>async function screenshotPage(url, outputPath) {
+  const browser = await chromium.launch();
+  const page = await browser.newPage();
+  await page.goto(url);
+  await page.screenshot({ path: outputPath });
+  await browser.close();
+}
+```</p>
+<h2>配置说明</h2>
+<li><strong>环境变量</strong>：设置 PLAYWRIGHT_BROWSER_PATH</li>
+<li><strong>代理配置</strong>：支持 HTTP/HTTPS 代理</li>
+<li><strong>认证配置</strong>：支持 Cookie、Token 认证</li>
+<h2>安全注意事项</h2>
+1. 仅用于合法网页自动化
+2. 遵守 robots.txt 协议
+3. 尊重网站使用条款
+4. 避免高频请求
+<h2>版本信息</h2>
+<li>当前版本：1.2.0</li>
+<li>最后更新：2026-03-19</li>
+<li>社区评分：⭐⭐⭐⭐⭐ (4.8/5.0)</li>
+<h2>相关资源</h2>
+<li>[官方文档](https://playwright.dev/docs/ai-agent)</li>
+<li>[GitHub 仓库](https://github.com/vercel-labs/agent-skills/tree/main/playwright-ai-agent)</li>
+<li>[示例项目](https://github.com/playwright-ai-agent/examples)</li>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

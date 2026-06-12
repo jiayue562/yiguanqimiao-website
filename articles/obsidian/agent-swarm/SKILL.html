@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Swarm Skill - 多代理并行任务执行 - 以观其妙书院</title>
+    <meta name="description" content="Agent Swarm Skill - 多代理并行任务执行 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Agent Swarm Skill - 多代理并行任务执行">
+    <meta property="og:description" content="Agent Swarm Skill - 多代理并行任务执行 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Agent Swarm Skill - 多代理并行任务执行",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Agent Swarm Skill - 多代理并行任务执行</h1>
+<h2>技能概述</h2>
+多代理并行任务执行技能，支持同时调度多个子代理协同完成复杂任务。
+<h2>核心功能</h2>
+<h3>1. 任务并行化</h3>
+<li><strong>并行执行</strong>：同时启动多个子代理执行独立任务</li>
+<li><strong>任务分发</strong>：将复杂任务分解为可并行的子任务</li>
+<li><strong>负载均衡</strong>：智能分配任务给空闲代理</li>
+<h3>2. 子代理管理</h3>
+<li><strong>代理池管理</strong>：维护可用代理列表和状态</li>
+<li><strong>生命周期管理</strong>：代理的创建、监控、销毁</li>
+<li><strong>资源调度</strong>：控制并发数量，避免资源过载</li>
+<h3>3. 结果聚合</h3>
+<li><strong>结果收集</strong>：收集各子代理的执行结果</li>
+<li><strong>冲突处理</strong>：处理并行任务的结果冲突</li>
+<li><strong>最终整合</strong>：将分散结果整合为统一输出</li>
+<h2>触发关键词</h2>
+<li>并行执行、多代理</li>
+<li>同时进行、分布式</li>
+<li>代理池、任务分发</li>
+<h2>使用场景</h2>
+<h3>场景1：多个独立任务并行</h3>
+```
+用户：帮我查一下最近的经济新闻、行业动态、科技趋势
+→ 同时启动3个代理分别查询，最后聚合结果
+```
+<h3>场景2：复杂任务分解并行</h3>
+```
+用户：分析这个项目的市场前景
+→ 分解为：市场分析+技术评估+竞品分析+风险评估，并行执行
+```
+<h2>配置参数</h2>
+<p>```yaml
+并发配置:
+  max_concurrent: 5  # 最大并发数
+  timeout: 300       # 单任务超时时间(秒)
+  retry: 2          # 失败重试次数</p>
+<p>代理配置:
+  default_agent: gpt-4
+  specialized_agents:
+    - research: gpt-4
+    - code: claude
+    - analysis: gpt-4
+```</p>
+<h2>与其他Skills的整合</h2>
+<h3>与agent-orchestrator整合</h3>
+<li>作为编排的下层执行层</li>
+<li>接收分解后的子任务并执行</li>
+<h3>与task-router整合</h3>
+<li>根据任务类型选择合适的执行模式</li>
+<h2>版本信息</h2>
+<li>版本：1.0</li>
+<li>创建时间：2026-03-23</li>
+<li>作者：龙龟神将</li>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

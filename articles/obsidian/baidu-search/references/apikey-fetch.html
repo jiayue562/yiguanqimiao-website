@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baidu API Key Setup Guide (OpenClaw) - 以观其妙书院</title>
+    <meta name="description" content="Baidu API Key Setup Guide (OpenClaw) - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Baidu API Key Setup Guide (OpenClaw)">
+    <meta property="og:description" content="Baidu API Key Setup Guide (OpenClaw) - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Baidu API Key Setup Guide (OpenClaw)",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Baidu API Key Setup Guide (OpenClaw)</h1>
+<h2>BAIDU_API_KEY Not Configured</h2>
+<p>When the `BAIDU_API_KEY` environment variable is not set, follow these steps:</p>
+<h3>1. Get API Key</h3>
+Visit: <strong>https://console.bce.baidu.com/ai-search/qianfan/ais/console/apiKey</strong>
+<li>Log in to your Baidu Cloud account</li>
+<li>Create an application or view existing API keys</li>
+<li>Copy your <strong>API Key</strong> (only API Key is needed)</li>
+<h3>2. Configure OpenClaw</h3>
+Edit the OpenClaw configuration file: `~/.openclaw/openclaw.json`
+<p>Add or merge the following structure:</p>
+<p>```json
+{
+  "skills": {
+    "entries": {
+      "baidu-search": {
+        "env": {
+          "BAIDU_API_KEY": "your_actual_api_key_here"
+        }
+      }
+    }
+  }
+}
+```</p>
+<p>Replace `"your_actual_api_key_here"` with your actual API key.</p>
+<h3>3. Verify Configuration</h3>
+```bash
+<h1>Check JSON format</h1>
+cat ~/.openclaw/openclaw.json | python -m json.tool
+```
+<h3>4. Restart OpenClaw</h3>
+```bash
+openclaw gateway restart
+```
+<h3>5. Test</h3>
+```bash
+cd ~/.openclaw/workspace/skills/baidu-search
+python3 scripts/search.py '{"query": "test search"}'
+```
+<h2>Troubleshooting</h2>
+<li>Ensure `~/.openclaw/openclaw.json` exists with correct JSON format</li>
+<li>Confirm API key is valid and Baidu AI Search service is activated</li>
+<li>Check account balance on Baidu Cloud</li>
+<li>Restart OpenClaw after configuration changes</li>
+<strong>Recommended</strong>: Use OpenClaw configuration file for centralized management
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>
