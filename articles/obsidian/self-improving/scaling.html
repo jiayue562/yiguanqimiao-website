@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scaling Patterns - 以观其妙书院</title>
+    <meta name="description" content="Scaling Patterns - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Scaling Patterns">
+    <meta property="og:description" content="Scaling Patterns - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Scaling Patterns",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Scaling Patterns</h1>
+<h2>Volume Thresholds</h2>
+<p>| Scale | Entries | Strategy |
+|-------|---------|----------|
+| Small | <100 | Single memory.md, no namespacing |
+| Medium | 100-500 | Split into domains/, basic indexing |
+| Large | 500-2000 | Full namespace hierarchy, aggressive compaction |
+| Massive | >2000 | Archive yearly, summary-only HOT tier |</p>
+<h2>When to Split</h2>
+<p>Create new namespace file when:
+<li>Single file exceeds 200 lines</li>
+<li>Topic has 10+ distinct corrections</li>
+<li>User explicitly separates contexts ("for work...", "in this project...")</li></p>
+<h2>Compaction Rules</h2>
+<h3>Merge Similar Corrections</h3>
+```
+BEFORE (3 entries):
+<li>[02-01] Use tabs not spaces</li>
+<li>[02-03] Indent with tabs</li>
+<li>[02-05] Tab indentation please</li>
+<p>AFTER (1 entry):
+<li>Indentation: tabs (confirmed 3x, 02-01 to 02-05)</li>
+```</p>
+<h3>Summarize Verbose Patterns</h3>
+```
+BEFORE:
+<li>When writing emails to Marcus, use bullet points, keep under 5 items,</li>
+  no jargon, bottom-line first, he prefers morning sends
+<p>AFTER:
+<li>Marcus emails: bullets ≤5, no jargon, BLUF, AM preferred</li>
+```</p>
+<h3>Archive with Context</h3>
+When moving to COLD:
+```
+<h2>Archived 2026-02</h2>
+<h3>Project: old-app (inactive since 2025-08)</h3>
+<li>Used Vue 2 patterns</li>
+<li>Preferred Vuex over Pinia</li>
+<li>CI on Jenkins (deprecated)</li>
+<p>Reason: Project completed, patterns unlikely to apply
+```</p>
+<h2>Index Maintenance</h2>
+<p>`index.md` tracks all namespaces:
+```markdown
+<h1>Memory Index</h1></p>
+<h2>HOT (always loaded)</h2>
+<li>memory.md: 87 lines, updated 2026-02-15</li>
+<h2>WARM (load on match)</h2>
+<li>projects/current-app.md: 45 lines</li>
+<li>projects/side-project.md: 23 lines</li>
+<li>domains/code.md: 112 lines</li>
+<li>domains/writing.md: 34 lines</li>
+<h2>COLD (archive)</h2>
+<li>archive/2025.md: 234 lines</li>
+<li>archive/2024.md: 189 lines</li>
+<p>Last compaction: 2026-02-01
+Next scheduled: 2026-03-01
+```</p>
+<h2>Multi-Project Patterns</h2>
+<h3>Inheritance Chain</h3>
+```
+global (memory.md)
+  └── domain (domains/code.md)
+       └── project (projects/app.md)
+```
+<h3>Override Syntax</h3>
+In project file:
+```markdown
+<h2>Overrides</h2>
+<li>indentation: spaces (overrides global tabs)</li>
+<li>Reason: Project eslint config requires spaces</li>
+```
+<h3>Conflict Detection</h3>
+When loading, check for conflicts:
+1. Build inheritance chain
+2. Detect contradictions
+3. Most specific wins
+4. Log conflict for later review
+<h2>User Type Adaptations</h2>
+<p>| User Type | Memory Strategy |
+|-----------|-----------------|
+| Power user | Aggressive learning, minimal confirmation |
+| Casual | Conservative learning, frequent confirmation |
+| Team shared | Per-user namespaces, shared project space |
+| Privacy-focused | Local-only, explicit consent per category |</p>
+<h2>Recovery Patterns</h2>
+<h3>Context Lost</h3>
+If agent loses context mid-session:
+1. Re-read memory.md
+2. Check index.md for relevant namespaces
+3. Load active project namespace
+4. Continue with restored patterns
+<h3>Corruption Recovery</h3>
+If memory file corrupted:
+1. Check archive/ for recent backup
+2. Rebuild from corrections.md
+3. Ask user to re-confirm critical preferences
+4. Log incident for debugging
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

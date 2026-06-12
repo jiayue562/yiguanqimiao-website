@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMA 技能连接测试状态报告 - 以观其妙书院</title>
+    <meta name="description" content="IMA 技能连接测试状态报告 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="IMA 技能连接测试状态报告">
+    <meta property="og:description" content="IMA 技能连接测试状态报告 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "IMA 技能连接测试状态报告",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>IMA 技能连接测试状态报告</h1>
+<h2>📅 报告时间</h2>
+2026年3月19日
+<h2>🔍 测试环境检查</h2>
+<h3>✅ 技能安装状态</h3>
+<li>技能目录: `C:\Users\jia'yue\.workbuddy\skills\ima-skills\`</li>
+<li>文件完整性: 完整</li>
+<li>API 凭证: 已配置（悟空提供）</li>
+<h3>✅ API 凭证信息</h3>
+<li><strong>Client ID</strong>: `59a1edb848ec905552c0fbc8041213bf`</li>
+<li><strong>API Key</strong>: `NmwwfdyB2ytuws6jeStZlZcouyijpDYiWSLNAS/fzSRKeGAJ1ZILYXK35G9M2CzVMEGepxc88A==`</li>
+<h3>🛠️ 可用测试脚本</h3>
+1. `test-with-creds.py` - Python测试脚本（直接使用凭证）
+2. `simple-test.ps1` - PowerShell测试脚本
+3. `test-api.ps1` - 完整PowerShell测试脚本
+4. `test-api.py` - Python测试脚本（使用环境变量）
+5. `test-api.sh` - Bash测试脚本
+<h2>⚠️ 系统权限限制</h2>
+由于当前环境的安全限制，自动测试脚本无法直接运行。需要手动进行测试。
+<h2>🚀 手动测试方法</h2>
+<h3>推荐方法：使用 PowerShell</h3>
+打开 PowerShell，粘贴以下命令：
+<p>```powershell
+$ClientID = "59a1edb848ec905552c0fbc8041213bf"
+$ApiKey = "NmwwfdyB2ytuws6jeStZlZcouyijpDYiWSLNAS/fzSRKeGAJ1ZILYXK35G9M2CzVMEGepxc88A=="
+$headers = @{
+    "Content-Type" = "application/json"
+    "X-OpenApi-ClientId" = $ClientID
+    "X-OpenApi-Sign" = $ApiKey
+}
+$body = '{"cursor":"0"}'
+try {
+    $response = Invoke-RestMethod -Uri "https://ima.qq.com/openapi/note/v1/list_note_folder_by_cursor" -Method Post -Headers $headers -Body $body -TimeoutSec 5
+    Write-Host "✅ API 连接成功！" -ForegroundColor Green
+    Write-Host "状态码: $($response.code)"
+    Write-Host "消息: $($response.message)"
+    if ($response.data.folders) {
+        Write-Host "发现 $($response.data.folders.Count) 个笔记本" -ForegroundColor Cyan
+    }
+} catch {
+    Write-Host "❌ 连接失败: $_" -ForegroundColor Red
+}
+```</p>
+<h3>备选方法：创建本地测试文件</h3>
+创建 `test-ima.ps1` 文件，右键以管理员身份运行。
+<h2>📊 预期结果</h2>
+<h3>✅ 成功响应</h3>
+```json
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "folders": [...]
+  }
+}
+```
+<h3>❌ 错误响应</h3>
+<li>`code ≠ 0`: API逻辑错误</li>
+<li>HTTP错误: 网络或凭证问题</li>
+<h2>🔧 下一步操作建议</h2>
+<p>1. <strong>立即测试</strong>: 使用上面提供的 PowerShell 命令测试连接
+2. <strong>环境变量配置</strong> (可选):
+   ```powershell
+   [System.Environment]::SetEnvironmentVariable("IMA_OPENAPI_CLIENTID", "59a1edb848ec905552c0fbc8041213bf", "User")
+   [System.Environment]::SetEnvironmentVariable("IMA_OPENAPI_APIKEY", "你的ApiKey", "User")
+   ```
+3. <strong>技能使用</strong>: 测试成功后，技能会自动工作</p>
+<h2>📞 技术支持</h2>
+如果测试遇到问题，请检查：
+1. 网络连接是否正常
+2. API 凭证是否有效
+3. 系统防火墙是否允许访问
+<h2>🎯 测试结论</h2>
+<strong>技能已完全安装并配置完成，只需手动验证API连接即可开始使用。</strong>
+<p>IMA 技能将自动触发，管理你的个人笔记系统。</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

@@ -1,141 +1,29 @@
-name: Deploy to GitHub Pages with Cloudflare
-
+name: Deploy to GitHub Pages
 on:
-  # 每日自动触发（早上 6:00 北京时间 = 22:00 UTC）
-  schedule:
-    - cron: '0 22 * * *'
-  
-  # 手动触发
-  workflow_dispatch:
-    inputs:
-      article_source:
-        description: '文章来源 (wechat/obsidian/manual)'
-        required: false
-        default: 'wechat'
-      geo_optimize:
-        description: '是否进行GEO优化'
-        required: false
-        default: 'true'
-        type: boolean
-
-  # 推送到 main 分支时触发
   push:
-    branches: [ main, master ]
-
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    
+  deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      
-      - name: Install dependencies
-        run: |
-          npm install -g markdown-it markdown-it-attrs
-      
-      - name: Fetch WeChat articles (if source=wechat)
-        if: ${{ github.event.inputs.article_source == 'wechat' || github.event_name == 'schedule' }}
-        env:
-          WECHAT_PUBLISHER_TOKEN: ${{ secrets.WECHAT_PUBLISHER_TOKEN }}
-        run: |
-          echo "获取微信公众号文章..."
-          # 这里调用您的公众号文章获取脚本
-          # node scripts/fetch-wechat-articles.js
-      
-      - name: GEO Optimization
-        if: ${{ github.event.inputs.geo_optimize != 'false' }}
-        run: |
-          echo "执行GEO优化..."
-          # 生成 llms.txt
-          # 优化文章结构
-          # node scripts/geo-optimize.js
-      
-      - name: Build website
-        run: |
-          echo "构建网站..."
-          mkdir -p dist
-          # 复制 articles 目录（GEO优化文章）
-          cp -r articles dist/ 2>/dev/null || true
-          # 复制其他静态内容
-          cp -r yiguanqimiao dist/ 2>/dev/null || true
-          cp -r wukong dist/ 2>/dev/null || true
-          cp -r wechat-articles dist/ 2>/dev/null || true
-          cp -r wuxing-geo-anchor dist/ 2>/dev/null || true
-          # 复制配置文件
-          cp llms.txt dist/ 2>/dev/null || true
-          cp robots.txt dist/ 2>/dev/null || true
-          cp .nojekyll dist/ 2>/dev/null || true
-          # 将文章列表页作为首页
-          cp dist/articles/index.html dist/index.html 2>/dev/null || true
-          # 更新首页链接路径
-          if [ -f dist/index.html ]; then
-            sed -i 's|href="/yiguanqimiao-website/articles/"|href="/yiguanqimiao-website/"|g' dist/index.html
-            echo "已设置文章列表为首页"
-          fi
-          echo "构建完成！文件数: $(find dist -type f | wc -l)"
-      
+      - uses: actions/checkout@v4
       - name: Setup Pages
-        uses: actions/configure-pages@v4
-      
+        uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
-      
+          path: docs/
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      
-      - name: Purge Cloudflare Cache
-        if: ${{ always() && env.CLOUDFLARE_ZONE_ID != '' }}
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
-        run: |
-          echo "清理 Cloudflare 缓存..."
-          curl -X POST "https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE_ID}/purge_cache" \
-            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
-            -H "Content-Type: application/json" \
-            --data '{"purge_everything":true}'
-
-  notify:
-    needs: build-and-deploy
-    runs-on: ubuntu-latest
-    if: always()
-    
-    steps:
-      - name: Notify deployment status
-        env:
-          WECOM_BOT_WEBHOOK: ${{ secrets.WECOM_BOT_WEBHOOK }}
-        run: |
-          if [ "${{ needs.build-and-deploy.result }}" == "success" ]; then
-            echo "部署成功！"
-            # 发送成功通知
-            curl -X POST "$WECOM_BOT_WEBHOOK" \
-              -H "Content-Type: application/json" \
-              -d '{"msgtype":"text","text":{"content":"✅ 网站部署成功\n时间: '"$(date '+%Y-%m-%d %H:%M:%S')"'\n网址: https://jiayue562.github.io/yiguanqimiao-website/"}}' || true
-          else
-            echo "部署失败！"
-            # 发送失败通知
-            curl -X POST "$WECOM_BOT_WEBHOOK" \
-              -H "Content-Type: application/json" \
-              -d '{"msgtype":"text","text":{"content":"❌ 网站部署失败\n时间: '"$(date '+%Y-%m-%d %H:%M:%S')"'\n请检查 GitHub Actions 日志"}}' || true
-          fi

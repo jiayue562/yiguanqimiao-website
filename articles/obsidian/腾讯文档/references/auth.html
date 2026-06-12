@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>腾讯文档鉴权检查 - 以观其妙书院</title>
+    <meta name="description" content="腾讯文档鉴权检查 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="腾讯文档鉴权检查">
+    <meta property="og:description" content="腾讯文档鉴权检查 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "腾讯文档鉴权检查",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>腾讯文档鉴权检查</h1>
+<p>腾讯文档授权流程，<strong>必须按以下步骤执行</strong>：</p>
+<p>> 💡 <strong>说明</strong>：授权成功后，Token 会同时配置到 `tencent-docs` 、 `tencent-docengine`、`tencent-sheetengine` 三个服务，无需为 tencent-docengine和tencent-sheetengine 单独授权。</p>
+<h2>第一步：检查状态（立即返回）</h2>
+<p>```bash
+bash ./setup.sh tdoc_check_and_start_auth
+```</p>
+<p>| 输出 | 处理方式 |
+|------|---------|
+| `READY` | ✅ 直接执行用户任务，<strong>无需后续步骤</strong> |
+| `AUTH_REQUIRED:<url>` | 向用户展示授权链接（见下方模板），<strong>等待用户回复"已完成授权"后再执行第二步</strong> |
+| `ERROR:*` | 告知用户具体错误信息，并引导走<strong>第三步人工兜底</strong>手动设置 Token |</p>
+<p>> ⛔ <strong>严格禁止</strong>：收到 `AUTH_REQUIRED` 后，必须先向用户展示授权链接，<strong>等待用户发送新消息确认已完成授权</strong>，才能进行第二步。</p>
+<h2>第二步：用户确认已完成授权后，主动查询 Token</h2>
+<p>> ✅ <strong>触发条件</strong>：用户在新消息中明确回复"已授权"、"完成了"、"已完成授权"、"授权好了"等确认信息后，<strong>才执行本步骤</strong>。</p>
+<p>```bash
+bash ./setup.sh tdoc_fetch_token
+```</p>
+<p>| 输出 | 处理方式 |
+|------|---------|
+| `TOKEN_READY` | ✅ 授权成功，继续执行用户任务 |
+| `ERROR:not_authorized` | 告知用户：「您尚未完成授权，请在浏览器中完成后回复我。」（<strong>不要重新生成链接</strong>，等用户再次确认后重试本步骤） |
+| `ERROR:expired` | 告知用户：「您的腾讯文档 Token 已过期，请访问 [获取新 Token](https://docs.qq.com/scenario/open-claw.html) 重新获取，然后告诉我新的 Token，我来帮您重置。」（引导用户走<strong>第三步人工兜底</strong>手动设置 Token） |
+| `ERROR:token_invalid` | 告知用户：「Token 已失效，请重新授权。」（需重新执行第一步） |
+| `ERROR:vip_required` | 告知用户：「当前操作需要腾讯文档 VIP 权限，请立即升级 VIP：[点击购买 VIP](https://docs.qq.com/vip?immediate_buy=1?part_aid=persnlspace_mcp)」 |
+| `ERROR:*` | 告知用户具体错误信息（错误码+描述），并引导走<strong>第三步人工兜底</strong>手动设置 Token |</p>
+<h2>第三步：人工兜底</h2>
+<p>🔑 <strong>检查 Token 配置</strong>：可访问 [https://docs.qq.com/scenario/open-claw.html](https://docs.qq.com/scenario/open-claw.html) 获取 Token，再执行以下命令来设置mcporter:
+```bash
+<h1>使用传入的 Token 写入 mcporter 配置（tencent-docs）</h1>
+mcporter config add tencent-docs "https://docs.qq.com/openapi/mcp" \
+    --header "Authorization=$Token" \
+    --transport http \
+    --scope home</p>
+<h1>同时配置 tencent-docengine（复用相同 Token）</h1>
+mcporter config add tencent-docengine "https://docs.qq.com/api/v6/doc/mcp" \
+    --header "Authorization=$Token" \
+    --transport http \
+    --scope home
+<h1>同时配置 tencent-sheetengine（复用相同 Token）</h1>
+mcporter config add tencent-sheetengine "https://docs.qq.com/api/v6/sheet/mcp" \
+    --header "Authorization=$Token" \
+    --transport http \
+    --scope home
+```
+<h2>授权链接展示模板</h2>
+<p>当第一步输出 `AUTH_REQUIRED:<url>` 时，向用户展示：</p>
+<p>> 🔑 <strong>需要先完成腾讯文档授权</strong>
+>
+> 请在<strong>浏览器</strong>中打开以下链接完成授权：<strong>[点击授权腾讯文档]({url})</strong>
+>
+> ⚠️ 请使用 <strong>QQ 或微信</strong> 扫码 / 登录授权
+>
+> ⏰ <strong>授权链接有效期为 5 分钟</strong>，请尽快完成授权，超时后需重新发起请求
+>
+> ✅ <strong>完成授权后，请回复我「已完成授权」，我会继续帮您完成操作</strong></p>
+<p>> ⛔ <strong>AI 注意</strong>：展示上方授权链接后，<strong>必须停止等待</strong>，不得自动调用 `tdoc_fetch_token` 或任何其他工具。只有当用户在下一条新消息中明确回复确认后，才能继续执行第二步。</p>
+<h2>错误说明</h2>
+<p>| 错误 | 含义 |
+|------|------|
+| `ERROR:mcporter_not_found` | 缺少依赖，请先安装 Node.js |
+| `ERROR:not_authorized` | 用户尚未在浏览器完成授权，等待用户确认后重试 |
+| `ERROR:expired` | 授权码已过期，重新执行第一步 |
+| `ERROR:token_invalid` | Token 鉴权失败（400006），重新授权 |
+| `ERROR:vip_required` | VIP 权限不足（400007），引导用户升级 VIP：https://docs.qq.com/vip?immediate_buy=1?part_aid=persnlspace_mcp |
+| `ERROR:save_token_failed` | Token 写入配置失败 |
+| `ERROR:no_code` | 未找到授权码，需重新执行第一步 |
+| `ERROR:network` | 网络请求失败，检查网络后重试 |</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

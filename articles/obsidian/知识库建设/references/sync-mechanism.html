@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>同步机制与自动化脚本 - 以观其妙书院</title>
+    <meta name="description" content="同步机制与自动化脚本 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="同步机制与自动化脚本">
+    <meta property="og:description" content="同步机制与自动化脚本 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "同步机制与自动化脚本",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>同步机制与自动化脚本</h1>
+<p>> <strong>核心定位</strong>：三库协同的技术实现方案</p>
+<p>---</p>
+<h2>一、同步机制总览</h2>
+<h3>1.1 同步策略矩阵</h3>
+<p>| 流向 | 同步频率 | 同步方式 | 技术方案 |
+|------|---------|---------|---------|
+| IMA → Obsidian | 每周 | 批量导出 | Python脚本 + IMA API |
+| Obsidian → WorkBuddy | 实时/触发 | 文件监控 | Python watchdog |
+| WorkBuddy → Obsidian | 每次对话后 | 自动沉淀 | 知行合一机制 |
+| IMA ↔ WorkBuddy | 实时 | API调用 | IMA OpenAPI |</p>
+<h3>1.2 同步触发条件</h3>
+<p>```yaml
+同步触发:
+  时间触发:
+    - 每日凌晨2:00: 全库健康检查
+    - 每周日22:00: IMA批量整理
+    - 每月1日: 知识库审计
+  
+  事件触发:
+    - Obsidian文件变更: 实时同步到WorkBuddy
+    - 深度对话完成: 自动沉淀到Obsidian
+    - IMA新增笔记: 实时同步到WorkBuddy上下文
+  
+  手动触发:
+    - 用户指令: "立即同步知识库"
+    - 快捷键: Ctrl+Shift+S (自定义)
+```</p>
+<p>---</p>
+<h2>二、自动化脚本</h2>
+<h3>2.1 IMA定期整理脚本</h3>
+<p>```python
+#!/usr/bin/env python3
+<h1>ima_sync.py - IMA定期整理脚本</h1></p>
+<p>import json
+import requests
+from datetime import datetime, timedelta
+import os</p>
+<p>class IMASync:
+    def __init__(self):
+        self.client_id = "your-client-id"
+        self.api_key = "your-api-key"
+        self.base_url = "https://ima.qq.com/agent-interface"
+        self.obsidian_path = "D:/以观其妙书院知识库/观其妙书院/04-个人成长/闪念整理"
+    
+    def fetch_ima_notes(self, days=7):
+        """获取最近N天的IMA笔记"""
+        url = f"{self.base_url}/notes/search"
+        headers = {
+            "X-Client-Id": self.client_id,
+            "X-Api-Key": self.api_key
+        }
+        
+        # 获取最近一周的笔记
+        since = (datetime.now() - timedelta(days=days)).isoformat()
+        
+        response = requests.get(url, headers=headers, params={
+            "since": since,
+            "limit": 100
+        })
+        
+        return response.json().get("notes", [])
+    
+    def categorize_notes(self, notes):
+        """按标签/主题分类笔记"""
+        categories = {
+            "灵感": [],
+            "待办": [],
+            "学习": [],
+            "其他": []
+        }
+        
+        for note in notes:
+            tags = note.get("tags", [])
+            if "灵感" in tags:
+                categories["灵感"].append(note)
+            elif "待办" in tags:
+                categories["待办"].append(note)
+            elif "学习" in tags:
+                categories["学习"].append(note)
+            else:
+                categories["其他"].append(note)
+        
+        return categories
+    
+    def convert_to_markdown(self, note):
+        """将IMA笔记转换为Markdown格式"""
+        title = note.get("title", "无标题")
+        content = note.get("content", "")
+        created_at = note.get("created_at", "")
+        tags = note.get("tags", [])
+        
+        md_content = f"""---
+title: {title}
+date: {created_at}
+tags: {json.dumps(tags)}
+source: IMA
+---</p>
+<h1>{title}</h1>
+<p>{content}</p>
+<p>---
+*从IMA自动整理*
+"""
+        return md_content
+    
+    def save_to_obsidian(self, category, notes):
+        """保存到Obsidian对应目录"""
+        folder_path = os.path.join(self.obsidian_path, category)
+        os.makedirs(folder_path, exist_ok=True)
+        
+        for note in notes:
+            md_content = self.convert_to_markdown(note)
+            filename = f"{note.get('id', 'unknown')}.md"
+            filepath = os.path.join(folder_path, filename)
+            
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(md_content)
+        
+        print(f"已保存 {len(notes)} 条笔记到 {folder_path}")
+    
+    def run(self):
+        """执行同步"""
+        print(f"开始IMA同步: {datetime.now()}")
+        
+        # 1. 获取笔记
+        notes = self.fetch_ima_notes()
+        print(f"获取到 {len(notes)} 条笔记")
+        
+        # 2. 分类
+        categories = self.categorize_notes(notes)
+        
+        # 3. 保存到Obsidian
+        for category, notes_list in categories.items():
+            if notes_list:
+                self.save_to_obsidian(category, notes_list)
+        
+        print(f"同步完成: {datetime.now()}")</p>
+<p>if __name__ == "__main__":
+    sync = IMASync()
+    sync.run()
+```</p>
+<h3>2.2 Obsidian→WorkBuddy同步脚本</h3>
+<p>```python
+#!/usr/bin/env python3
+<h1>obsidian_to_workbuddy.py - Obsidian到WorkBuddy同步</h1></p>
+<p>import os
+import shutil
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler</p>
+<p>class ObsidianSyncHandler(FileSystemEventHandler):
+    def __init__(self):
+        self.obsidian_skills_path = "D:/以观其妙书院知识库/观其妙书院/01-核心体系"
+        self.workbuddy_skills_path = "C:/Users/jia'yue/.workbuddy/skills"
+    
+    def on_modified(self, event):
+        if event.is_directory:
+            return
+        
+        if event.src_path.endswith('.md'):
+            self.sync_file(event.src_path)
+    
+    def sync_file(self, filepath):
+        """同步单个文件"""
+        # 判断是否是Skills相关文件
+        if 'Skills' in filepath or 'Skill' in filepath:
+            # 提取文件名
+            filename = os.path.basename(filepath)
+            
+            # 确定目标Skills目录
+            if '五行' in filename:
+                target_dir = os.path.join(self.workbuddy_skills_path, "五行人格心理学")
+            elif '象思维' in filename:
+                target_dir = os.path.join(self.workbuddy_skills_path, "象思维")
+            elif '五色光' in filename:
+                target_dir = os.path.join(self.workbuddy_skills_path, "五色光思维")
+            else:
+                return
+            
+            # 复制文件
+            target_path = os.path.join(target_dir, "references", filename)
+            if os.path.exists(target_dir):
+                shutil.copy2(filepath, target_path)
+                print(f"已同步: {filename} -> {target_path}")</p>
+<p>def start_monitoring():
+    """启动文件监控"""
+    path = "D:/以观其妙书院知识库/观其妙书院/01-核心体系"
+    event_handler = ObsidianSyncHandler()
+    observer = Observer()
+    observer.schedule(event_handler, path, recursive=True)
+    observer.start()
+    
+    print(f"开始监控: {path}")
+    
+    try:
+        while True:
+            import time
+            time.sleep(1)
+    except KeyboardInterrupt:
+        observer.stop()
+    
+    observer.join()</p>
+<p>if __name__ == "__main__":
+    start_monitoring()
+```</p>
+<h3>2.3 知识库健康检查脚本</h3>
+<p>```python
+#!/usr/bin/env python3
+<h1>health_check.py - 知识库健康检查</h1></p>
+<p>import os
+import re
+from collections import defaultdict
+from datetime import datetime, timedelta</p>
+<p>class KnowledgeBaseHealthCheck:
+    def __init__(self):
+        self.obsidian_path = "D:/以观其妙书院知识库/观其妙书院"
+        self.report = defaultdict(list)
+    
+    def check_orphaned_pages(self):
+        """检查孤立页面（没有入链的页面）"""
+        all_files = []
+        all_links = set()
+        
+        # 收集所有文件和链接
+        for root, dirs, files in os.walk(self.obsidian_path):
+            for file in files:
+                if file.endswith('.md'):
+                    filepath = os.path.join(root, file)
+                    all_files.append(filepath)
+                    
+                    with open(filepath, 'r', encoding='utf-8') as f:
+                        content = f.read()
+                        # 提取双向链接 [[链接]]
+                        links = re.findall(r'\[\[(.*?)\]\]', content)
+                        all_links.update(links)
+        
+        # 检查孤立页面
+        for filepath in all_files:
+            filename = os.path.basename(filepath).replace('.md', '')
+            if filename not in all_links and len(all_files) > 10:
+                self.report['orphaned_pages'].append(filename)
+        
+        return len(self.report['orphaned_pages'])
+    
+    def check_broken_links(self):
+        """检查断链"""
+        all_files = set()
+        
+        # 收集所有文件
+        for root, dirs, files in os.walk(self.obsidian_path):
+            for file in files:
+                if file.endswith('.md'):
+                    filepath = os.path.join(root, file)
+                    all_files.add(os.path.basename(file).replace('.md', ''))
+        
+        # 检查断链
+        for root, dirs, files in os.walk(self.obsidian_path):
+            for file in files:
+                if file.endswith('.md'):
+                    filepath = os.path.join(root, file)
+                    
+                    with open(filepath, 'r', encoding='utf-8') as f:
+                        content = f.read()
+                        links = re.findall(r'\[\[(.*?)\]\]', content)
+                        
+                        for link in links:
+                            if link not in all_files:
+                                self.report['broken_links'].append({
+                                    'file': file,
+                                    'link': link
+                                })
+        
+        return len(self.report['broken_links'])
+    
+    def check_outdated_content(self, days=90):
+        """检查过期内容"""
+        cutoff_date = datetime.now() - timedelta(days=days)
+        
+        for root, dirs, files in os.walk(self.obsidian_path):
+            for file in files:
+                if file.endswith('.md'):
+                    filepath = os.path.join(root, file)
+                    mtime = datetime.fromtimestamp(os.path.getmtime(filepath))
+                    
+                    if mtime < cutoff_date:
+                        self.report['outdated_content'].append({
+                            'file': file,
+                            'last_modified': mtime.strftime('%Y-%m-%d')
+                        })
+        
+        return len(self.report['outdated_content'])
+    
+    def generate_report(self):
+        """生成健康检查报告"""
+        print("=" * 60)
+        print("知识库健康检查报告")
+        print("=" * 60)
+        print(f"检查时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"知识库路径: {self.obsidian_path}")
+        print()
+        
+        # 孤立页面
+        orphaned = len(self.report['orphaned_pages'])
+        print(f"📄 孤立页面: {orphaned} 个")
+        if orphaned > 0:
+            for page in self.report['orphaned_pages'][:5]:
+                print(f"   - {page}")
+            if orphaned > 5:
+                print(f"   ... 还有 {orphaned - 5} 个")
+        print()
+        
+        # 断链
+        broken = len(self.report['broken_links'])
+        print(f"🔗 断链: {broken} 个")
+        if broken > 0:
+            for item in self.report['broken_links'][:5]:
+                print(f"   - {item['file']} -> [[{item['link']}]]")
+            if broken > 5:
+                print(f"   ... 还有 {broken - 5} 个")
+        print()
+        
+        # 过期内容
+        outdated = len(self.report['outdated_content'])
+        print(f"⏰ 过期内容(>90天未更新): {outdated} 个")
+        if outdated > 0:
+            for item in self.report['outdated_content'][:5]:
+                print(f"   - {item['file']} (最后更新: {item['last_modified']})")
+            if outdated > 5:
+                print(f"   ... 还有 {outdated - 5} 个")
+        print()
+        
+        # 总体评估
+        total_issues = orphaned + broken + outdated
+        print("=" * 60)
+        if total_issues == 0:
+            print("✅ 知识库健康状况: 优秀")
+        elif total_issues < 10:
+            print("⚠️ 知识库健康状况: 良好，建议优化")
+        else:
+            print("❌ 知识库健康状况: 需要维护")
+        print("=" * 60)
+    
+    def run(self):
+        """执行健康检查"""
+        print("开始知识库健康检查...")
+        
+        self.check_orphaned_pages()
+        self.check_broken_links()
+        self.check_outdated_content()
+        
+        self.generate_report()</p>
+<p>if __name__ == "__main__":
+    checker = KnowledgeBaseHealthCheck()
+    checker.run()
+```</p>
+<p>---</p>
+<h2>三、定时任务配置</h2>
+<h3>3.1 Windows任务计划程序</h3>
+<p>```powershell
+<h1>创建每周IMA同步任务</h1>
+$action = New-ScheduledTaskAction -Execute "python.exe" -Argument "C:\Scripts\ima_sync.py"
+$trigger = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Sunday -At "22:00"
+$settings = New-ScheduledTaskSettingsSet
+Register-ScheduledTask -TaskName "IMA_Sync_Weekly" -Action $action -Trigger $trigger -Settings $settings</p>
+<h1>创建每日健康检查任务</h1>
+$action = New-ScheduledTaskAction -Execute "python.exe" -Argument "C:\Scripts\health_check.py"
+$trigger = New-ScheduledTaskTrigger -Daily -At "02:00"
+Register-ScheduledTask -TaskName "KB_Health_Check" -Action $action -Trigger $trigger -Settings $settings
+```
+<h3>3.2 自动化工作流配置</h3>
+<p>```yaml
+<h1>automation-workflow.yaml</h1>
+workflows:
+  daily:
+    - name: 实时同步检查
+      script: check_realtime_sync.py
+      schedule: "*/5 * * * *"  # 每5分钟
+    
+    - name: 对话沉淀
+      trigger: "after_deep_conversation"
+      action: "zhixingheyi_sync"
+  
+  weekly:
+    - name: IMA批量整理
+      script: ima_sync.py
+      schedule: "0 22 * * 0"  # 每周日22:00
+      
+    - name: 生成使用报告
+      script: generate_report.py
+      schedule: "0 23 * * 0"  # 每周日23:00
+  
+  monthly:
+    - name: 知识库健康检查
+      script: health_check.py
+      schedule: "0 2 1 * *"  # 每月1日2:00
+      
+    - name: 孤立页面清理
+      script: cleanup_orphaned.py
+      schedule: "0 3 1 * *"  # 每月1日3:00
+      
+    - name: 知识图谱更新
+      script: update_graph.py
+      schedule: "0 4 1 * *"  # 每月1日4:00
+```</p>
+<p>---</p>
+<h2>四、监控与告警</h2>
+<h3>4.1 监控指标</h3>
+<p>| 指标 | 正常范围 | 告警阈值 |
+|------|---------|---------|
+| 同步成功率 | >95% | <90% |
+| 同步延迟 | <5分钟 | >30分钟 |
+| 孤立页面比例 | <5% | >10% |
+| 断链数量 | <10 | >20 |
+| 知识库大小增长率 | 5-15%/月 | >30%/月 |</p>
+<h3>4.2 告警机制</h3>
+<p>```python
+<h1>alert_system.py</h1>
+import smtplib
+from email.mime.text import MIMEText</p>
+<p>def send_alert(subject, message):
+    """发送告警通知"""
+    msg = MIMEText(message)
+    msg['Subject'] = subject
+    msg['From'] = "alert@system.com"
+    msg['To'] = "user@example.com"
+    
+    # 可以集成到IMA/WorkBuddy通知
+    print(f"[ALERT] {subject}: {message}")</p>
+<p>def check_sync_health():
+    """检查同步健康状态"""
+    # 检查最后一次同步时间
+    last_sync = get_last_sync_time()
+    if datetime.now() - last_sync > timedelta(hours=1):
+        send_alert("同步延迟告警", "知识库同步已超过1小时未完成")
+```</p>
+<p>---</p>
+<h2>五、故障恢复</h2>
+<h3>5.1 常见故障处理</h3>
+<p>| 故障类型 | 症状 | 处理方案 |
+|---------|------|---------|
+| IMA API失效 | 无法获取笔记 | 检查API Key，重新配置 |
+| Obsidian目录变更 | 同步失败 | 更新路径配置 |
+| 文件冲突 | 同步冲突 | 手动合并，保留最新版本 |
+| 磁盘空间不足 | 同步中断 | 清理旧版本，归档历史数据 |
+| 网络中断 | 实时同步失败 | 切换到离线模式，恢复后批量同步 |</p>
+<h3>5.2 备份策略</h3>
+<p>```yaml
+backup_strategy:
+  frequency:
+    - 实时: Git自动提交
+    - 每日: 增量备份到云端
+    - 每周: 全量备份到外部存储
+  
+  retention:
+    - 本地: 保留30天
+    - 云端: 保留90天
+    - 外部: 保留1年
+  
+  recovery:
+    - RTO: 1小时（恢复时间目标）
+    - RPO: 1天（恢复点目标）
+```</p>
+<p>---</p>
+<strong>核心金句</strong>：
+<p>> "自动化不是目的，而是让知识持续进化的手段"</p>
+<p>> "定期健康检查，让知识库永葆活力"</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>
