@@ -1,7 +1,6 @@
 # Cloudflare Pages Redirects
-# 修复Clean URL - 将不带.html的URL内部映射到.html文件
-# 使用200状态码（内部重写，不重定向）
-
+# 将Clean URL内部重写到.html文件 (200 = 内部重写, 无重定向, 浏览器URL不变)
 /articles/wechat-articles/:splat /articles/wechat-articles/:splat.html 200
 /articles/obsidian/:splat /articles/obsidian/:splat.html 200
 /articles/geo-repo/:splat /articles/geo-repo/:splat.html 200
+/articles/:splat /articles/:splat.html 200
