@@ -103,7 +103,7 @@
                 let count = 0;
                 links.forEach(a => {
                     if (count >= maxItems) return;
-                    const href = a.getAttribute('href').replace(/\\.html$/, '');
+                    const href = a.getAttribute('href'); // 保留.html（Clean URL已禁用）
                     const li = document.createElement('li');
                     li.className = 'article-item';
                     const a2 = document.createElement('a');
