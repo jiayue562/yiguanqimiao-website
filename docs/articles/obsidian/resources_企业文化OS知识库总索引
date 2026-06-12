@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企业文化OS知识库 · 总索引 - 以观其妙书院</title>
+    <meta name="description" content="企业文化OS知识库 · 总索引 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="企业文化OS知识库 · 总索引">
+    <meta property="og:description" content="企业文化OS知识库 · 总索引 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "企业文化OS知识库 · 总索引",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>企业文化OS知识库 · 总索引</h1>
+<p>> <strong>版本</strong>: v2.0 | <strong>创建日期</strong>: 2026-04-10 | <strong>最后更新</strong>: 2026-04-10 22:05 | <strong>维护者</strong>: 龙龟神将  
+> <strong>来源</strong>: 7021行企业文化顶层设计原文 + XX企业文化手册（两大部分·十一维度）  
+> <strong>架构</strong>: LLM Wiki五层架构</p>
+<p>---</p>
+<h2>知识库定位</h2>
+<p>企业文化OS知识库是<strong>龙脑OS知识库</strong>的专业子库，采用LLM Wiki五层架构：</p>
+<p>```
+Notes层（输入）→ Knowledge层（知识）→ Software层（技能）→ LifeOS层（行动）→ Writing层（产出）
+```</p>
+<strong>核心价值</strong>: 为企业文化建设提供完整理论支撑，与龙心OS五大引擎深度整合。
+<p>---</p>
+<h2>快速导航</h2>
+<h3>按模块导航</h3>
+<p>| 模块 | 内容 | 路径 |
+|------|------|------|
+| <strong>前言</strong> | 企业文化OS知识库定位与使用指南 | [[企业文化理论体系]]#前言 |
+| <strong>企业家</strong> | 企业家精神本质、价值构成 | [[企业文化理论体系]]#一企业家 |
+| <strong>文化觉醒</strong> | 企业文化定义、本质、与品牌/战略关系 | [[企业文化理论体系]]#二文化觉醒 |
+| <strong>跨学科理论</strong> | 沙因模型、组织三体论、五行识人、心文化 | [[企业文化理论体系]]#三跨学科理论支撑 |
+| <strong>诊断定位</strong> | 企业文化诊断方法、定位策略 | [[企业文化理论体系]]#四诊断定位篇 |
+| <strong>搭建篇</strong> | 文化理念、视觉、行为体系构建 | [[企业文化理论体系]]#五企业文化搭建 |
+| <strong>第四部分</strong> | 组织三体论·三重脑·全息三维框架·宇宙观 | [[企业文化搭建第四部分-完整学习笔记]] |
+| <strong>实施落地</strong> | 文化落地路径、传播策略 | [[企业文化理论体系]]#六实施落地 |
+| <strong>持续改进</strong> | 文化评估、迭代优化 | [[企业文化理论体系]]#七持续改进 |
+| <strong>AI赋能</strong> | AI在文化建设中的应用 | [[企业文化理论体系]]#八AI赋能与悟空方法论 |</p>
+<h3>按功能导航</h3>
+<p>| <strong>功能</strong> | <strong>文档</strong> | <strong>说明</strong> |
+|------|------|------|
+| <strong>理论体系</strong> | [[企业文化理论体系]] | 9大模块完整内容 |
+| <strong>实施落地</strong> | [[企业文化实施与落地]] | 文化落地完整路径·共创流程·社会认同理论（v1.0） |
+| <strong>实施图谱</strong> | [[企业文化实施与落地-知识图谱]] | 实施与落地知识可视化·创新框架·评估矩阵（v1.0） |
+| <strong>文化安全</strong> | [[文化安全三层防护]] | 信息体×能量体×物质体三层防护（v1.0·新增） |
+| <strong>五行协同</strong> | [[五行协同文化落地]] | 木火土金水×文化角色分工（v1.0·新增） |
+| <strong>知行融合</strong> | [[知行合一×社会认同融合]] | 价值观内化完整路径（v1.0·新增） |
+| <strong>第四部分笔记</strong> | [[企业文化搭建第四部分-完整学习笔记]] | 组织三体论·三重脑·全息三维框架·宇宙观（v2.0） |
+| <strong>知识图谱</strong> | [[企业文化知识图谱]] | 156+知识联系可视化（v2.0+15条新增） |
+| <strong>实战SOP</strong> | [[企业文化诊断SOP]] | 七步诊断法模板 |
+| <strong>原始文档</strong> | [[企业文化顶层设计原文]] | 7021行原文存档 |
+| <strong>整合协议</strong> | [[企业文化与龙心OS整合协议]] | 与五大引擎协同 |
+| <strong>XX文化手册</strong> | [[XX企业文化手册·深度学习]] | XX企业文化手册逐行深度学习（v1.0·新增） |
+| <strong>XX知识图谱</strong> | [[XX企业文化·知识图谱]] | 68条跨域知识联系（v1.0·新增） |
+| <strong>迪尔全息</strong> | [[企业文化全息体系-迪尔理论沙因框架东方智慧]] | 迪尔五要素×沙因三层次×东方智慧融合体系（v2.0·新增） |
+| <strong>迪尔深度</strong> | [[迪尔理论深度解析-五要素与四种文化类型]] | 迪尔五要素与四种文化类型完整解析（v2.0·新增） |</p>
+<p>---</p>
+<h2>核心金句</h2>
+<p>> "人类因梦想而伟大，企业因文化而繁荣。"</p>
+<p>> "文化是企业'立'之根本，'兴'之源泉。"</p>
+<p>> "企业文化是'心文化'的载体，是企业的灵魂。"</p>
+<p>> "以食载道，将'心文化'融入饮食。"</p>
+<p>---</p>
+<h2>标签体系</h2>
+<h3>核心标签</h3>
+<p>#企业文化 #组织文化 #企业文化建设 #企业家精神</p>
+<h3>理论标签</h3>
+<p>#沙因文化模型 #迪尔五要素 #迪尔文化类型 #组织三体论 #五行识人 #心文化 #大圆满 #社会认同理论 #文化安全</p>
+<h3>实战标签</h3>
+<p>#文化诊断 #文化落地 #24节气营销 #行为经济学 #RAG #五行协同 #知行合一</p>
+<h3>系统标签</h3>
+<p>#龙脑OS知识库 #LLMWiki #SkillBuilder #龙心OS整合</p>
+<p>---</p>
+<h2>双向链接</h2>
+<h3>链接到本文档</h3>
+<li>[[企业文化理论体系]] → 理论体系完整版</li>
+<li>[[企业文化知识图谱]] → 知识图谱可视化</li>
+<li>[[企业文化诊断SOP]] → 实战操作模板</li>
+<li>[[企业文化顶层设计原文]] → 7021行原文</li>
+<li>[[XX企业文化手册·深度学习]] → XX企业文化手册深度学习（v2.0新增）</li>
+<li>[[XX企业文化·知识图谱]] → 68条跨域知识联系（v2.0新增）</li>
+<li>[[企业文化全息体系-迪尔理论沙因框架东方智慧]] → 迪尔×沙因×东方智慧融合体系（v2.0新增）</li>
+<li>[[迪尔理论深度解析-五要素与四种文化类型]] → 迪尔五要素与四种文化类型完整解析（v2.0新增）</li>
+<h3>本文档链接到</h3>
+<li>[[龙心OS v5.0 总览]] → 认知操作系统</li>
+<li>[[五行人格心理学OS]] → 人格分析系统</li>
+<li>[[象思维]] → 0→1原创引擎</li>
+<li>[[知识学习]] → 深度学习引擎</li>
+<li>[[五色光思维]] → 多维决策引擎</li>
+<p>---</p>
+<h2>使用指南</h2>
+<h3>场景1: 理论查询</h3>
+<strong>需求</strong>: 了解沙因文化三层次  
+<strong>操作</strong>: 打开[[企业文化理论体系]] → 跳转"三跨学科理论支撑" → 查看"沙因文化模型"  
+<strong>预期</strong>: 获得人工制品层→价值层→基本假设层的完整解释
+<h3>场景2: 知识图谱探索</h3>
+<strong>需求</strong>: 探索企业文化与五行识人的关系  
+<strong>操作</strong>: 打开[[企业文化知识图谱]] → 查看"隐秘知识联系#3"  
+<strong>预期</strong>: 理解人格化文化落地的整合路径
+<h3>场景3: 实战应用</h3>
+<strong>需求</strong>: 进行企业文化诊断  
+<strong>操作</strong>: 打开[[企业文化诊断SOP]] → 按七步法执行  
+<strong>预期</strong>: 完成从目标明确到报告撰写的完整诊断
+<h3>场景4: 深度学习</h3>
+<strong>需求</strong>: 系统学习7021行原文  
+<strong>操作</strong>: 打开[[企业文化顶层设计原文]] → 配合知识学习的十项认知指令  
+<strong>预期</strong>: 实现跨域关联和创新生成
+<p>---</p>
+<h2>系统整合</h2>
+<h3>与龙心OS五大引擎整合</h3>
+<p>| 引擎 | 整合方式 | 应用场景 |
+|------|---------|---------|
+| <strong>知识学习</strong> | 十项认知指令深度学习 | 7021行原文系统学习 |
+| <strong>象思维</strong> | 0→1原创洞察 | 企业文化本质创新 |
+| <strong>五色光思维</strong> | 五维度分析 | 文化现状评估 |
+| <strong>人机协同五象限</strong> | 分工协作 | 文化战略×执行落地 |
+| <strong>知行合一</strong> | 经验沉淀 | 文化实践转化为系统资产 |</p>
+<p>---</p>
+<h2>版本历史</h2>
+<h3>v2.1（2026-04-10 23:16）</h3>
+<strong>新增特性</strong>:
+<li>✅ 企业文化全息体系·迪尔理论×沙因框架×东方智慧（6大章节完整结构化）</li>
+<li>✅ 迪尔理论深度解析·五要素与四种文化类型（完整五行映射表）</li>
+<li>✅ 迪尔五要素×五行映射：企业环境↔土/核心价值观↔火/英雄人物↔木/仪式典礼↔金/文化网络↔水</li>
+<li>✅ 迪尔文化审计六步法本土化融合</li>
+<li>✅ 总索引同步更新</li>
+<h3>v2.0（2026-04-10 22:05）</h3>
+<strong>新增特性</strong>:
+<li>✅ XX企业文化手册逐行深度学习（两大部分·十一维度）</li>
+<li>✅ 68条跨域知识联系建立</li>
+<li>✅ 五行全息结构发现（十一个维度=五行多维显化）</li>
+<li>✅ 与五行人格心理学、象思维、知行合一、教员方法论、企业家精神深度整合</li>
+<h3>v1.0（2026-04-10）</h3>
+<strong>核心特性</strong>:
+<li>✅ 7021行原文完整保存</li>
+<li>✅ 9大知识模块结构化</li>
+<li>✅ 五层架构（LLM Wiki）实现</li>
+<li>✅ 156+知识联系建立</li>
+<li>✅ 与龙心OS深度整合</li>
+<strong>文件清单</strong>:
+<li>SKILL.md主文档</li>
+<li>references/theory.md理论体系</li>
+<li>references/knowledge-graph.md知识图谱</li>
+<li>references/integration.md整合协议</li>
+<li>triggers/trigger-rules.yaml触发规则</li>
+<li>templates/SOP模板.md实战模板</li>
+<li>raw/企业文化顶层设计原文.md原始文档</li>
+<li>test-cases.md测试用例</li>
+<p>---</p>
+<strong>最后更新</strong>: 2026-04-10  
+<strong>维护者</strong>: 龙龟神将  
+<strong>同步状态</strong>: WorkBuddy ↔ Obsidian ↔ IMA 三向同步
+<p>---</p>
+<h2>新增文档清单（v2.2）</h2>
+<p>| 文档名 | 路径 | 内容概要 |
+|--------|------|---------|
+| [[企业文化体系-中西融合AI赋能与文化裂变全景构建]] | `05-企业文化/01-企业文化OS知识库/` | 文化裂变全景构建完整体系（8大章节·100+知识点） |
+| [[企业文化体系-文化裂变知识图谱]] | `05-企业文化/01-企业文化OS知识库/` | 文化裂变知识图谱与关联网络（v1.0） |</p>
+<p>---</p>
+<h2>新增文档清单（v2.1）</h2>
+<p>| 文档名 | 路径 | 内容概要 |
+|--------|------|---------|
+| [[企业文化全息体系-迪尔理论沙因框架东方智慧]] | `05-企业文化/01-企业文化OS知识库/` | 迪尔五要素×沙因三层次×东方智慧融合，6大章节完整结构化 |
+| [[迪尔理论深度解析-五要素与四种文化类型]] | `05-企业文化/01-企业文化OS知识库/` | 迪尔五要素+四种文化类型完整解析，五行映射表 |</p>
+
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

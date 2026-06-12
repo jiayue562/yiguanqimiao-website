@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龙脑OS · 龙心OS调用协议 - 以观其妙书院</title>
+    <meta name="description" content="龙脑OS · 龙心OS调用协议 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="龙脑OS · 龙心OS调用协议">
+    <meta property="og:description" content="龙脑OS · 龙心OS调用协议 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "龙脑OS · 龙心OS调用协议",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>龙脑OS · 龙心OS调用协议</h1>
+<p>> <strong>协议版本</strong>：v1.0  
+> <strong>创建日期</strong>：2026-04-09  
+> <strong>维护者</strong>：龙龟神将  
+> <strong>核心关系</strong>：龙心OS（调度中枢）→ 龙脑OS（知识库智能体）</p>
+<p>---</p>
+<h2>📡 调用协议</h2>
+<h3>请求格式</h3>
+<p>```yaml
+调用请求:
+  from: "龙心OS"
+  to: "龙脑OS"
+  
+  必需参数:
+    scene_type: "场景类型（S0-S9）"
+    user_need: "用户需求描述"
+    
+  可选参数:
+    target_knowledge_base: "目标知识库（思维模型库/五行人格/麦肯锡框架）"
+    specific_model: "具体模型（如SWOT、波特五力等）"
+    combination_needed: "是否需要组合（布尔值）"
+    depth_level: "分析深度（快速/标准/深度）"
+    
+  上下文信息:
+    conversation_history: "对话历史"
+    user_preferences: "用户偏好"
+    previous_analysis: "之前的分析结果"
+```</p>
+<h3>响应格式</h3>
+<p>```yaml
+调用响应:
+  from: "龙脑OS"
+  to: "龙心OS"
+  
+  核心结果:
+    knowledge_base: "调用的知识库名称"
+    model_used: "使用的具体模型"
+    analysis_result: "分析结果（结构化数据）"
+    
+  建议输出:
+    recommendations: "行动建议列表"
+    next_steps: "后续步骤建议"
+    related_models: "相关模型推荐"
+    
+  元数据:
+    execution_time: "执行时间"
+    confidence_score: "置信度评分"
+    feedback_request: "是否需要反馈"
+```</p>
+<p>---</p>
+<h2>🔄 调用流程</h2>
+<h3>标准调用流程</h3>
+<p>```
+┌─────────────────────────────────────────────────────────────┐
+│ 1. 龙心OS场景识别                                            │
+│    - 识别S0-S9场景类型                                       │
+│    - 判断是否需要知识库                                      │
+└─────────────────────────────────────────────────────────────┘
+                            ↓
+┌─────────────────────────────────────────────────────────────┐
+│ 2. 构建调用请求                                              │
+│    - 封装场景信息                                            │
+│    - 传递用户需求                                            │
+│    - 添加上下文                                              │
+└─────────────────────────────────────────────────────────────┘
+                            ↓
+┌─────────────────────────────────────────────────────────────┐
+│ 3. 龙脑OS智能路由                                            │
+│    - 解析请求                                                │
+│    - 选择知识库                                              │
+│    - 匹配模型                                                │
+└─────────────────────────────────────────────────────────────┘
+                            ↓
+┌─────────────────────────────────────────────────────────────┐
+│ 4. 知识库执行分析                                            │
+│    - 调用具体模型                                            │
+│    - 执行分析流程                                            │
+│    - 生成结果                                                │
+└─────────────────────────────────────────────────────────────┘
+                            ↓
+┌─────────────────────────────────────────────────────────────┐
+│ 5. 结果返回与整合                                            │
+│    - 格式化结果                                              │
+│    - 返回龙心OS                                              │
+│    - 整合输出                                                │
+└─────────────────────────────────────────────────────────────┘
+```</p>
+<p>---</p>
+<h2>📊 知识库路由决策表</h2>
+<p>| 场景类型 | 场景特征 | 推荐知识库 | 推荐模型 |
+|---------|---------|-----------|---------|
+| <strong>S1 信息查询</strong> | 简单信息获取 | 思维模型库 | 快速查询 |
+| <strong>S2 深度理解</strong> | 理论深度学习 | 思维模型库 + 知识学习 | 十项认知指令 |
+| <strong>S3 创意创新</strong> | 0→1原创突破 | 思维模型库 + 象思维 | 第一性原理、MVP |
+| <strong>S4 分析决策</strong> | 多维度分析 | 思维模型库 + 麦肯锡框架 | SWOT、五色光 |
+| <strong>S5 重大决策</strong> | 复杂决策 | 多知识库组合 | SWOT + 五行 + 五色光 |
+| <strong>S6 任务执行</strong> | 执行落地 | 思维模型库 | IPO模型、SOP |
+| <strong>S7 系统规划</strong> | 系统级规划 | 麦肯锡框架 + 思维模型库 | 金字塔 + 系统化 |
+| <strong>S8 修行文化</strong> | 心性成长 | 五行人格心理学OS | 一心三界五行九层 |</p>
+<p>---</p>
+<h2>🎯 场景路由示例</h2>
+<h3>示例1：商业分析场景</h3>
+<p>```yaml
+场景:
+  user_input: "用SWOT分析一下我的副业项目"
+  scene_type: "S4分析决策"</p>
+<p>龙心OS决策:
+  need_knowledge_base: true
+  target: "龙脑OS"</p>
+<p>龙脑OS路由:
+  knowledge_base: "思维模型库"
+  model: "SWOT分析"
+  
+执行结果:
+  analysis_result: "SWOT四象限分析"
+  recommendations: "基于分析的行动建议"
+```</p>
+<h3>示例2：人格分析场景</h3>
+<p>```yaml
+场景:
+  user_input: "分析一下我的五行特征"
+  scene_type: "S2深度理解"</p>
+<p>龙心OS决策:
+  need_knowledge_base: true
+  target: "龙脑OS"</p>
+<p>龙脑OS路由:
+  knowledge_base: "五行人格心理学OS"
+  model: "五行总智能体"
+  
+执行结果:
+  analysis_result: "一心三界五行九层分析"
+  recommendations: "人格转化建议"
+```</p>
+<h3>示例3：多知识库组合</h3>
+<p>```yaml
+场景:
+  user_input: "我要做一个重大决策，需要全面分析"
+  scene_type: "S5重大决策"</p>
+<p>龙心OS决策:
+  need_knowledge_base: true
+  target: "龙脑OS"
+  combination: true</p>
+<p>龙脑OS路由:
+  knowledge_bases: 
+    - "思维模型库"
+    - "五行人格心理学OS"
+  models:
+    - "SWOT分析"
+    - "五色光思维"
+    - "五行分析"
+  
+执行结果:
+  analysis_result: "多维度综合分析报告"
+  recommendations: "综合决策建议"
+```</p>
+<p>---</p>
+<h2>🔧 错误处理</h2>
+<h3>错误类型与处理</h3>
+<p>| 错误类型 | 错误代码 | 处理方式 | 返回信息 |
+|---------|---------|---------|---------|
+| 知识库未找到 | KB404 | 返回可用知识库列表 | "未找到指定知识库，可用知识库：..." |
+| 模型未找到 | MD404 | 返回知识库内可用模型 | "未找到指定模型，可用模型：..." |
+| 场景不匹配 | SC400 | 返回推荐场景 | "当前场景不匹配，推荐场景：..." |
+| 参数缺失 | PM400 | 返回必需参数列表 | "缺少必需参数：..." |
+| 执行超时 | EX504 | 返回部分结果 | "分析超时，返回部分结果：..." |</p>
+<p>---</p>
+<h2>📈 性能指标</h2>
+<h3>目标性能</h3>
+<p>| 指标 | 目标值 | 说明 |
+|------|--------|------|
+| 路由响应时间 | < 100ms | 从接收请求到返回知识库选择 |
+| 分析执行时间 | < 5s | 标准分析流程 |
+| 准确率 | > 90% | 知识库匹配准确率 |
+| 可用性 | > 99% | 系统可用性 |</p>
+<p>---</p>
+<strong>龙脑OS调用协议 v1.0</strong> · <strong>龙龟神将</strong>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

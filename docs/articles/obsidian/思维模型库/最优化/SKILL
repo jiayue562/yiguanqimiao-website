@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最优化 · SKILL.md - 以观其妙书院</title>
+    <meta name="description" content="最优化 · SKILL.md - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="最优化 · SKILL.md">
+    <meta property="og:description" content="最优化 · SKILL.md - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "最优化 · SKILL.md",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>最优化 · SKILL.md</h1>
+<h2>元数据</h2>
+<li><strong>模型编号</strong>: 37</li>
+<li><strong>模型名称</strong>: 最优化</li>
+<li><strong>所属领域</strong>: 数学</li>
+<li><strong>难度等级</strong>: ⭐⭐⭐⭐</li>
+<li><strong>一句话描述</strong>: 在约束条件下寻找最优解的系统方法</li>
+<p>---</p>
+<h2>核心定义</h2>
+<h3>What：什么是最优化？</h3>
+最优化是数学的一个分支，研究在给定<strong>约束条件</strong>下，如何找到使<strong>目标函数</strong>达到最大或最小值的解。
+<strong>标准形式</strong>:
+```
+最小化（或最大化）：f(x)
+约束条件：
+  g_i(x) ≤ 0,  i = 1, ..., m
+  h_j(x) = 0,  j = 1, ..., p
+<p>其中：
+<li>f(x) = 目标函数</li>
+<li>g_i(x) = 不等式约束</li>
+<li>h_j(x) = 等式约束</li>
+```</p>
+<strong>主要分类</strong>:
+<li><strong>线性规划</strong>：目标函数和约束都是线性的</li>
+<li><strong>非线性规划</strong>：包含非线性成分</li>
+<li><strong>整数规划</strong>：变量必须是整数</li>
+<li><strong>动态规划</strong>：多阶段决策问题</li>
+<li><strong>凸优化</strong>：目标函数是凸函数（局部最优即全局最优）</li>
+<h3>Why：为什么重要？</h3>
+1. <strong>资源分配</strong>：在有限资源下最大化产出
+2. <strong>决策科学</strong>：提供系统化的决策框架
+3. <strong>机器学习</strong>：训练模型就是优化损失函数
+4. <strong>工程 design</strong>：结构设计、路径规划、调度问题
+<h3>How：如何应用？</h3>
+<strong>核心操作流程</strong>:
+1. <strong>定义目标</strong>：明确要最大化或最小化什么
+2. <strong>识别约束</strong>：列出所有限制条件
+3. <strong>建立模型</strong>：将问题转化为数学形式
+4. <strong>选择算法</strong>：根据问题类型选择求解方法
+5. <strong>求解验证</strong>：获得解并验证可行性
+<p>---</p>
+<h2>应用场景</h2>
+<h3>场景1：供应链管理</h3>
+<strong>情境</strong>：如何在多个仓库和门店之间分配库存？
+<strong>应用</strong>：
+<li>目标：最小化总成本（运输+库存+缺货）</li>
+<li>约束：仓库容量、运输能力、需求满足</li>
+<li>方法：线性规划或整数规划</li>
+<li><strong>关键洞察</strong>：最优解往往在约束的边界上</li>
+<h3>场景2：投资组合优化</h3>
+<strong>情境</strong>：如何配置资产以平衡收益和风险？
+<strong>应用</strong>：
+<li>目标：在给定风险水平下最大化收益（或反之）</li>
+<li>约束：资金总额、投资比例限制</li>
+<li>方法：马科维茨均值-方差优化</li>
+<li><strong>关键洞察</strong>：分散投资可以降低非系统性风险</li>
+<h3>场景3：机器学习训练</h3>
+<strong>情境</strong>：如何训练神经网络？
+<strong>应用</strong>：
+<li>目标：最小化损失函数（预测误差）</li>
+<li>约束：模型复杂度、计算资源</li>
+<li>方法：梯度下降及其变体</li>
+<li><strong>关键洞察</strong>：优化算法的选择影响收敛速度和最终性能</li>
+<p>---</p>
+<h2>常见误区</h2>
+<p>| 误区 | 正确理解 |
+|------|---------|
+| 追求全局最优 | 很多问题NP-hard，近似解往往更实用 |
+| 忽视约束 | 无约束最优解可能在现实中不可行 |
+| 过度拟合 | 在训练数据上最优≠在真实数据上最优 |
+| 静态思维 | 实际环境变化，需要动态优化 |</p>
+<p>---</p>
+<h2>关联模型</h2>
+<li><strong>博弈论</strong> (38)：多主体互动的优化</li>
+<li><strong>网络效应</strong> (39)：平台最优策略</li>
+<li><strong>随机游走</strong> (36)：随机环境下的优化</li>
+<p>---</p>
+<h2>核心金句</h2>
+<p>> "最优化不是追求完美，而是在约束中寻找平衡。"</p>
+<p>> "最优解往往在边界上，人生的突破也常常在舒适区的边缘。"</p>
+<p>---</p>
+<h2>标签</h2>
+#最优化 #线性规划 #凸优化 #梯度下降 #运筹学
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

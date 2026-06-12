@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识图谱：《逻辑基本知识》 - 以观其妙书院</title>
+    <meta name="description" content="知识图谱：《逻辑基本知识》 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="知识图谱：《逻辑基本知识》">
+    <meta property="og:description" content="知识图谱：《逻辑基本知识》 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "知识图谱：《逻辑基本知识》",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <p>﻿---
+tags: [逻辑学, 知识图谱, 概念关系, 可视化]
+aliases: [逻辑基本知识知识图谱, Logic Knowledge Graph]
+created: 2026-05-24
+---</p>
+<h1>知识图谱：《逻辑基本知识》</h1>
+<p>> 本文档展示《逻辑基本知识》全书的概念关系图谱</p>
+<p>---</p>
+<h2>一、核心概念体系</h2>
+<p>```
+                    ┌─────────────────────────────┐
+                    │       逻辑学 Logic          │
+                    │    研究思维形式及其规律      │
+                    └─────────────┬───────────────┘
+                                  │
+            ┌─────────────────────┼─────────────────────┐
+            │                     │                     │
+    ┌───────┴───────┐    ┌───────┴───────┐    ┌───────┴───────┐
+    │  思维形式      │    │  逻辑类型      │    │  思维规律      │
+    │                │    │               │    │               │
+    │ · 概念         │    │ · 形式逻辑    │    │ · 同一律      │
+    │ · 判断         │    │ · 非形式逻辑  │    │ · 不矛盾律    │
+    │ · 推理         │    │ · 演绎逻辑    │    │ · 排中律      │
+    │                │    │ · 归纳逻辑    │    │ · 充足理由律  │
+    └───────┬───────┘    └───────┬───────┘    └───────┬───────┘
+            │                     │                     │
+            └─────────────────────┼─────────────────────┘
+                                  │
+                    ┌─────────────┴─────────────┐
+                    │      三大推理类型          │
+                    │                           │
+                    │ · 演绎推理（必然性）       │
+                    │ · 归纳推理（或然性）       │
+                    │ · 类比推理（或然性）       │
+                    └───────────────────────────┘
+```</p>
+<p>---</p>
+<h2>二、演绎推理体系</h2>
+<p>```
+                   ┌─────────── 演绎推理 ───────────┐
+                   │                                  │
+         ┌─────────┴─────────┐           ┌───────────┴───────────┐
+         │    简单命题推理    │           │    复合命题推理       │
+         │                    │           │                       │
+         │ · 三段论          │           │ · 联言推理            │
+         │ · 关系推理        │           │ · 选言推理（相容/不相容）│
+         │                   │           │ · 假言推理（充分/必要） │
+         │                   │           │ · 二难推理            │
+         └──────────────────┘           └───────────────────────┘
+```</p>
+<p>---</p>
+<h2>三、归纳推理体系</h2>
+<p>```
+                   ┌─────────── 归纳推理 ────────────┐
+                   │                                  │
+         ┌─────────┴─────────┐           ┌───────────┴───────────┐
+         │    完全归纳        │           │    不完全归纳         │
+         │    （必然真）      │           │    （或然性）         │
+         └──────────────────┘           └───────────┬───────────┘
+                                                      │
+                                          ┌───────────┴───────────┐
+                                          │                       │
+                                  ┌───────┴───────┐       ┌──────┴──────┐
+                                  │  简单枚举归纳  │       │  科学归纳   │
+                                  └───────────────┘       └─────────────┘
+                                                      │
+                                          ┌───────────┴───────────┐
+                                          │    穆勒五法            │
+                                          │                       │
+                                          │ · 求同法              │
+                                          │ · 求异法              │
+                                          │ · 求同求异并用法      │
+                                          │ · 共变法              │
+                                          │ · 剩余法              │
+                                          └───────────────────────┘
+```</p>
+<p>---</p>
+<h2>四、谬误分类体系</h2>
+<p>```
+                   ┌────────────── 谬误 ──────────────┐
+                   │                                   │
+         ┌─────────┴────────┐     ┌─────────┴────────┐
+         │    语形谬误      │     │    语义谬误      │
+         │    (语法结构)    │     │    (语词意义)    │
+         │                  │     │                   │
+         │ · 句义含混      │     │ · 歧义谬误       │
+         │ · 复杂问句      │     │ · 混义谬误       │
+         │ · 断章取义      │     │ · 语义不明       │
+         └──────────────────┘     └──────────────────┘
+                                           │
+                   ┌───────────────────────┴───────────────────────┐
+                   │                  语用谬误                     │
+                   │              (交际语境)                      │
+                   │                                               │
+                   │ · 人身攻击  · 诉诸权威  · 滑坡谬误           │
+                   │ · 语境混淆  · 预设错误                       │
+                   └───────────────────────────────────────────────┘
+```</p>
+<p>---</p>
+<h2>五、跨域关联图谱</h2>
+<p>```
+  ┌──────────────────────┐
+  │  易经·象思维体系      │ ←──────── 类比推理 ⊃ 取象比类
+  │  (东方思维)          │ ←──────── 卦变推理 ⊃ 演绎推理
+  └──────┬───────────────┘
+         │
+         ▼
+  ┌──────────────────────┐
+  │  形式逻辑（本书）    │ ←─────── 同一律/矛盾律 ↔ 阴阳对立统一
+  │  (西方逻辑体系)     │ ←─────── 穆勒五法 ↔ 五行生克推理
+  └──────┬───────────────┘
+         │
+         ▼
+  ┌──────────────────────┐
+  │  五行人格心理学       │ ←─────── 定义划分 → 五行分类
+  │  (应用体系)          │ ←─────── 推理规则 → 五行推断引擎
+  └──────────────────────┘
+```</p>
+<p>---</p>
+<h2>六、核心金句关系图</h2>
+<p>```
+"逻辑不脱离语言，逻辑存在于每篇课文、每个语句之中"
+         │
+         ├── 自然语言是逻辑的载体（02-逻辑与语言）
+         │
+"所有S都是P" ─────────────── 逻辑形式>思维内容（01-绪论）
+         │
+         ├── 同一律→不矛盾律→排中律（思维确定性）
+         │
+"概念内涵越多→外延越小" ─── 反变关系（03-定义与划分）
+         │
+         ├── 三段论规则→演绎必然性（04-演绎推理）
+         │
+"穆勒五法" ────────────────── 探求因果联系（05-归纳推理）
+         │
+         ├── 同一律：A是A → 防止偷换概念（06-思维规律）
+         │
+"人身攻击/滑坡谬误" ──────── 日常思维陷阱（07-谬误）
+         │
+         ├── 课文分析→理论实践结合（08-附录）
+```</p>
+<p>---</p>
+<h2>七十二、总概念数量统计</h2>
+<p>| 类别 | 核心概念数 | 关键方法数 |
+|------|-----------|-----------|
+| 逻辑基础 | 12 | 4 |
+| 演绎推理 | 8 | 10（推理规则）|
+| 归纳推理 | 6 | 5（穆勒五法）|
+| 逻辑规律 | 4 | 4 |
+| 谬误 | 10 | 10 |
+| 课文分析 | 2 | 4 |
+| <strong>合计</strong> | <strong>42</strong> | <strong>37</strong> |</p>
+<p>---</p>
+<p>_创建日期：2026-05-24 | 总计概念：42个核心概念 + 37个关键方法_</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

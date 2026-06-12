@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教员方法论 Skill 自动触发规则 - 以观其妙书院</title>
+    <meta name="description" content="教员方法论 Skill 自动触发规则 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="教员方法论 Skill 自动触发规则">
+    <meta property="og:description" content="教员方法论 Skill 自动触发规则 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "教员方法论 Skill 自动触发规则",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>教员方法论 Skill 自动触发规则</h1>
+<p>> <strong>版本</strong>：v1.0 | <strong>创建日期</strong>：2026-04-03
+> <strong>作用域</strong>：global（用户全局目录·永远在线）
+> <strong>优先级</strong>：high
+> <strong>触发模式</strong>：上下文感知 + 直接关键词</p>
+<p>---</p>
+<h2>核心定位</h2>
+<strong>教员方法论</strong>是龙心OS应用技能层的问题分析专项工具，整合：
+<li>矛盾论（定位本质）</li>
+<li>金字塔原理（结构分层）</li>
+<li>金线原理（逻辑验证）</li>
+<li>实践论PDCA（闭环迭代）</li>
+<strong>核心公式</strong>：`找（成熟模型）→ 装（改装框架）→ 填（填入现实）= 分析技能`
+<p>---</p>
+<h2>触发条件</h2>
+<h3>直接触发词（P0 · 权重5 · 绝对触发）</h3>
+<p>```yaml
+P0_triggers:
+  - "教员方法论"
+  - "矛盾论"
+  - "金字塔原理"
+  - "金线原理"
+  - "发现问题"
+  - "分析问题"
+  - "问题诊断"
+  - "根本矛盾"
+  - "阶段矛盾"
+  - "主要矛盾"
+  - "次要矛盾"
+  - "找装填"
+  - "找模型"
+  - "装框架"
+  - "填内容"
+  - "PDCA闭环"
+```</p>
+<h3>场景触发词（P1 · 权重4 · 强触发）</h3>
+<p>```yaml
+P1_triggers:
+  场景_企业战略分析:
+    - "企业战略分析"
+    - "战略决策"
+    - "扩张决策"
+    weight: 4</p>
+<p>场景_个人问题诊断:
+    - "个人问题诊断"
+    - "职业困惑"
+    - "人生选择"
+    weight: 4</p>
+<p>场景_项目问题定位:
+    - "项目问题定位"
+    - "项目卡点"
+    - "项目风险"
+    weight: 4</p>
+<p>场景_团队矛盾调解:
+    - "团队矛盾调解"
+    - "人际冲突"
+    - "跨部门协作"
+    weight: 4</p>
+<p>场景_商业分析:
+    - "商业画布分析"
+    - "竞争对手分析"
+    - "SWOT分析"
+    - "5Why分析"
+    weight: 4
+```</p>
+<h3>龙心OS 场景集成（P2 · 权重3）</h3>
+<p>```yaml
+P2_triggers:
+  dragon_os_scenes:
+    - "S4场景（分析决策）"
+    - "S5场景（重大决策）"
+    - "S7场景（系统规划）"
+    weight: 3
+```</p>
+<p>---</p>
+<h2>触发决策</h2>
+<p>```yaml
+触发算法：
+  总分 = P0权重 + P1权重 + P2权重</p>
+<p>if 任何一个P0关键词:
+      → 5分，立即触发 ✓
+  elif P1场景触发词≥1个:
+      → 4分 + 其他信号 → 累积≥3分则触发 ✓
+  elif P2信号触发:
+      → 3分，触发 ✓
+  else:
+      → 不触发，继续对话
+```</p>
+<p>---</p>
+<h2>激活后的行为</h2>
+<h3>标准流程</h3>
+<p>1. <strong>声明进入教员方法论模式</strong>：
+   > "📋 教员方法论引擎启动——找（成熟模型）→ 装（改装框架）→ 填（填入现实）"</p>
+<p>2. <strong>识别分析阶段</strong>：
+   - 矛盾定位阶段（调用矛盾论）
+   - 结构分解阶段（调用金字塔）
+   - 逻辑验证阶段（调用金线）
+   - 闭环迭代阶段（调用PDCA）</p>
+<p>3. <strong>引导三步实操</strong>：
+   - 第一步：找——找到成熟的思维模型
+   - 第二步：装——将模型改装成适配框架
+   - 第三步：填——填入具体现实内容</p>
+<p>4. <strong>输出标准分析报告</strong></p>
+<p>---</p>
+<h2>龙心OS 整合协议</h2>
+<p>| 龙心OS模块 | 整合方式 |
+|---------------|---------|
+| 🐉 <strong>象思维</strong> | 矛盾定位时调用，0→1洞察核心本质 |
+| 📚 <strong>知识学习</strong> | 学习成熟模型时调用 |
+| 🌈 <strong>五色光思维</strong> | 结构分解时调用，五色分治 |
+| 🤝 <strong>人机协同</strong> | 复杂问题时调用，四象限分工 |
+| 🔄 <strong>知行合一</strong> | 闭环迭代时调用，三阶段沉淀 |</p>
+<p>---</p>
+<h2>不触发场景</h2>
+<li>纯技术/代码问题</li>
+<li>非分析相关的日常问答</li>
+<li>已在进行其他Skill的深度分析时</li>
+<p>---</p>
+<h2>关联文档</h2>
+<li><strong>SKILL.md</strong>：`C:\Users\jia'yue\.workbuddy\skills\教员方法论\SKILL.md`</li>
+<li><strong>references</strong>：`C:\Users\jia'yue\.workbuddy\skills\教员方法论\references\`</li>
+  - 矛盾论完整解析.md
+  - 金字塔与金线整合.md
+  - 实践论PDCA闭环.md
+  - 三步实操案例库.md
+<p>---</p>
+<strong>版本</strong>: v1.0
+<strong>创建</strong>: 2026-04-03
+<strong>作用域</strong>: 用户全局目录·永远在线
+<strong>维护者</strong>: 龙龟神将
+<strong>教员方法论 Skill 自动触发规则</strong> · 龙心OS应用技能层
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三库架构详解 - 以观其妙书院</title>
+    <meta name="description" content="三库架构详解 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="三库架构详解">
+    <meta property="og:description" content="三库架构详解 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "三库架构详解",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>三库架构详解</h1>
+<p>> <strong>核心定位</strong>：Obsidian/WorkBuddy/IMA三层知识库的分工与协同</p>
+<p>---</p>
+<h2>一、三层知识库架构总览</h2>
+<p>```
+┌─────────────────────────────────────────────────────────┐
+│                    三层知识库架构                          │
+├─────────────────────────────────────────────────────────┤
+│                                                         │
+│  🏛️ 第一层：Obsidian（主知识库·知识资产层）               │
+│  ├─ 定位：结构化知识沉淀、理论体系、长期资产              │
+│  ├─ 内容：L7理论基石、五行人格完整理论、象思维体系        │
+│  ├─ 特点：双向链接、图谱可视化、Markdown标准格式          │
+│  ├─ 使用场景：深度学习、理论构建、知识创作                │
+│  └─ 五行属性：土·承载·稳定·信实                          │
+│                                                         │
+│  ⚡ 第二层：WorkBuddy Brain（工作记忆层）                 │
+│  ├─ 定位：AI上下文记忆、Skills配置、系统指令              │
+│  ├─ 内容：Skills包、自动触发规则、IDENTITY/USER/SOUL      │
+│  ├─ 特点：AI原生、实时加载、与对话上下文无缝集成          │
+│  ├─ 使用场景：AI对话、技能调用、系统运行                  │
+│  └─ 五行属性：火·转化·光明·礼明                          │
+│                                                         │
+│  📱 第三层：IMA（移动笔记·快速捕获层）                    │
+│  ├─ 定位：碎片化信息快速记录、移动端访问                  │
+│  ├─ 内容：灵感闪念、待办事项、临时笔记、语音转文字        │
+│  ├─ 特点：移动端优先、快速录入、轻量化                    │
+│  ├─ 使用场景：随时记录、移动阅读、快速查找                │
+│  └─ 五行属性：水·流动·智慧·润泽                          │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
+```</p>
+<p>---</p>
+<h2>二、各层详细设计</h2>
+<h3>2.1 Obsidian 知识资产层</h3>
+<strong>核心定位</strong>：
+<li>知识资产的"仓库"</li>
+<li>长期理论沉淀的主阵地</li>
+<li>AI系统专业化的根基</li>
+<strong>目录结构建议</strong>：
+<p>```
+观其妙书院/
+├── 00-索引与导航/
+│   ├── 知识库总索引.md
+│   ├── 知识地图.md
+│   └── 使用指南.md
+│
+├── 01-核心体系/
+│   ├── 龙心OS/
+│   │   ├── 🐉 龙心OS v5.0 总览.md
+│   │   └── 五大引擎/
+│   ├── 五行人格心理学OS/
+│   │   ├── 五行人格总智能体.md
+│   │   └── 五行分智能体/
+│   └── 木火共生关系/
+│
+├── 02-理论基石/
+│   ├── L7理论基石/
+│   └── 知识图谱/
+│
+├── 03-应用场景/
+│   ├── 亲密关系/
+│   ├── 领导力/
+│   ├── 团队建设/
+│   └── ...
+│
+├── 04-个人成长/
+│   ├── 知行合一沉淀/
+│   ├── 每日日志/
+│   └── 闪念整理/
+│
+└── raw/  # 原始资料层
+    ├── 文章/
+    ├── 论文/
+    └── 图片/
+```</p>
+<strong>核心功能</strong>：
+1. <strong>双向链接</strong>：建立知识间的关联网络
+2. <strong>图谱可视化</strong>：直观展示知识结构
+3. <strong>Markdown标准</strong>：确保格式统一
+4. <strong>版本控制</strong>：Git追踪变更历史
+<strong>与LLM Wiki的对应</strong>：
+<li>Wiki本体层的主要存储位置</li>
+<li>Schema配置层的实施载体</li>
+<li>原始资料层的索引入口</li>
+<p>---</p>
+<h3>2.2 WorkBuddy Brain 工作记忆层</h3>
+<strong>核心定位</strong>：
+<li>AI的"工作记忆"</li>
+<li>Skills和Rules的运行环境</li>
+<li>与对话上下文无缝集成</li>
+<strong>目录结构</strong>：
+<p>```
+~/.workbuddy/
+├── skills/                    # Skills包
+│   ├── 龙心OS/
+│   ├── 五行人格心理学/
+│   ├── 象思维/
+│   ├── 五色光思维/
+│   └── ...
+│
+├── rules/                     # 自动触发规则
+│   ├── 龙心OS自动触发.mdc
+│   ├── 五色光思维自动触发.mdc
+│   └── ...
+│
+├── memory/                    # 工作记忆
+│   ├── MEMORY.md             # 长期记忆
+│   └── 2026-04-09.md         # 每日日志
+│
+├── IDENTITY.md               # AI身份定义
+├── USER.md                   # 用户画像
+└── SOUL.md                   # 核心身份
+```</p>
+<strong>核心功能</strong>：
+1. <strong>实时加载</strong>：对话时即时读取Skills
+2. <strong>自动触发</strong>：基于规则自动激活Skills
+3. <strong>上下文集成</strong>：与对话历史无缝融合
+4. <strong>系统指令</strong>：IDENTITY/SOUL/USER定义AI行为
+<strong>与Obsidian的关系</strong>：
+<li>Obsidian的理论 → WorkBuddy的Skills</li>
+<li>Obsidian的知识 → WorkBuddy的记忆</li>
+<li>双向同步，保持一致</li>
+<p>---</p>
+<h3>2.3 IMA 快速捕获层</h3>
+<strong>核心定位</strong>：
+<li>移动端"收件箱"</li>
+<li>灵感闪念的快速记录</li>
+<li>待办事项的临时存储</li>
+<strong>使用场景</strong>：
+1. <strong>灵感闪念</strong>：随时记录突发的想法
+2. <strong>待办事项</strong>：快速记录待处理事务
+3. <strong>语音转文字</strong>：移动场景下的快速录入
+4. <strong>临时笔记</strong>：不便详细记录时的速记
+<strong>与Obsidian的关系</strong>：
+<li>IMA：捕获（水）→ Obsidian：沉淀（土）</li>
+<li>定期整理，提炼结构化知识</li>
+<li>避免IMA成为"信息黑洞"</li>
+<p>---</p>
+<h2>三、知识流动管道</h2>
+<h3>3.1 流向①：IMA → Obsidian（定期整理）</h3>
+<strong>触发条件</strong>：
+<li>每周/每月批量整理</li>
+<li>IMA积累一定数量笔记</li>
+<strong>处理流程</strong>：
+1. 导出IMA笔记
+2. 按标签/主题分类
+3. 提炼结构化知识
+4. 存入Obsidian对应目录
+<strong>示例</strong>：
+```
+临时灵感（IMA）
+    ↓ 每周整理
+整理为理论文章
+    ↓ 存入
+Obsidian/04-个人成长/闪念整理/
+```
+<h3>3.2 流向②：Obsidian → WorkBuddy（系统同步）</h3>
+<strong>触发条件</strong>：
+<li>Skills更新</li>
+<li>Rule更新</li>
+<li>身份配置更新</li>
+<strong>处理流程</strong>：
+1. 监控Obsidian变更
+2. 提取可执行内容
+3. 转化为Skills/Rules
+4. 部署到WorkBuddy
+<strong>示例</strong>：
+```
+五行人格理论（Obsidian）
+    ↓ 封装
+五行总智能体Skill
+    ↓ 部署
+~/.workbuddy/skills/五行人格心理学/
+```
+<h3>3.3 流向③：WorkBuddy → Obsidian（知行合一沉淀）</h3>
+<strong>触发条件</strong>：
+<li>每次深度对话后</li>
+<li>产生新的洞察</li>
+<li>完成重要任务</li>
+<strong>处理流程</strong>：
+1. 对话洞察提取
+2. 压缩为核心符号
+3. 泛化应用场景
+4. 存入Obsidian
+<strong>示例</strong>：
+```
+深度对话（WorkBuddy）
+    ↓ 知行合一
+核心洞察提取
+    ↓ 沉淀
+Obsidian/04-个人成长/知行合一沉淀/
+```
+<h3>3.4 流向④：IMA ↔ WorkBuddy（实时同步）</h3>
+<strong>触发条件</strong>：
+<li>API实时同步</li>
+<li>用户主动触发</li>
+<strong>处理流程</strong>：
+1. IMA记录待办
+2. AI对话中提醒
+3. 完成后归档
+4. 双向状态同步
+<strong>示例</strong>：
+```
+IMA记录待办："整理五行人格资料"
+    ↓ 同步
+WorkBuddy对话中提醒
+    ↓ 完成后
+归档到Obsidian
+```
+<p>---</p>
+<h2>四、五行相生隐喻</h2>
+<p>```
+水（IMA·流动捕获）
+    ↓ 滋养
+木（整理生长·知识结构化）
+    ↓ 点燃
+火（WorkBuddy·转化执行）
+    ↓ 沉淀
+土（Obsidian·承载存储）
+    ↓ 提炼
+金（方法论·规则提炼）
+    ↓ 流动
+水（新灵感·循环开始）
+```</p>
+<strong>五行对应关系</strong>：
+<p>| 知识库 | 五行 | 特性 | 功能 |
+|--------|------|------|------|
+| IMA | 水 | 流动、智慧 | 捕获灵感 |
+| 整理过程 | 木 | 生长、生发 | 结构化知识 |
+| WorkBuddy | 火 | 转化、光明 | AI执行 |
+| Obsidian | 土 | 承载、稳定 | 知识沉淀 |
+| 方法论 | 金 | 收敛、精准 | 规则提炼 |</p>
+<p>---</p>
+<h2>五、专业化支撑</h2>
+<h3>5.1 AI龙龟共生伙伴OS专业化</h3>
+<p>| 维度 | 知识库支撑 |
+|------|-----------|
+| 理论深度 | Obsidian：每个引擎独立理论文档 |
+| 触发精准 | WorkBuddy：优化trigger-rules.yaml |
+| 执行稳定 | WorkBuddy：完善错误处理机制 |
+| 进化持续 | 三库协同：对话→WorkBuddy→Obsidian |</p>
+<h3>5.2 五行人格心理学OS专业化</h3>
+<p>| 维度 | 知识库支撑 |
+|------|-----------|
+| 理论地基 | Obsidian：凤脑OS知识地基 |
+| 诊断准确 | WorkBuddy：积累诊断案例库 |
+| 干预有效 | Obsidian：分五行、分场景干预方案 |
+| 发展持续 | 三库协同：个案追踪→模式提炼→理论更新 |</p>
+<p>---</p>
+<h2>六、实施检查清单</h2>
+<h3>Obsidian层检查</h3>
+<li>[ ] 目录结构清晰（不超过3层）</li>
+<li>[ ] 双向链接完善（关键概念都有链接）</li>
+<li>[ ] 知识图谱可视化（使用Graph View）</li>
+<li>[ ] 模板标准化（YAML frontmatter统一）</li>
+<li>[ ] 版本控制启用（Git初始化）</li>
+<h3>WorkBuddy层检查</h3>
+<li>[ ] Skills包完整（核心Skills都已配置）</li>
+<li>[ ] 自动触发精准（测试命中率≥85%）</li>
+<li>[ ] 身份文件最新（IDENTITY/SOUL/USER）</li>
+<li>[ ] 错误处理完善（有恢复机制）</li>
+<li>[ ] 与Obsidian同步（定期更新）</li>
+<h3>IMA层检查</h3>
+<li>[ ] API配置正常（Client ID + API Key）</li>
+<li>[ ] 定期整理机制（每周/每月执行）</li>
+<li>[ ] 标签体系清晰（便于分类整理）</li>
+<li>[ ] 与WorkBuddy同步（实时/定期）</li>
+<h3>协同检查</h3>
+<li>[ ] 知识流动管道畅通（4个流向都建立）</li>
+<li>[ ] 自动化脚本运行（定期任务配置）</li>
+<li>[ ] 健康检查机制（每月执行）</li>
+<li>[ ] 持续进化闭环（PDCA循环）</li>
+<p>---</p>
+<strong>核心金句</strong>：
+<p>> "Obsidian = 存什么，WorkBuddy = 怎么用，IMA = 从哪来"</p>
+<p>> "三库配合不是简单的备份关系，而是五行相生的有机整体"</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

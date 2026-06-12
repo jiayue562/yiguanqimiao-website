@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Skill（通信规则） - 以观其妙书院</title>
+    <meta name="description" content="Communication Skill（通信规则） - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Communication Skill（通信规则）">
+    <meta property="og:description" content="Communication Skill（通信规则） - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Communication Skill（通信规则）",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Communication Skill（通信规则）</h1>
+<h2>📖 技能定义</h2>
+<p>Communication是AI龙龟共生伙伴操作系统的<strong>通信规则</strong>，定义Discord交互规范、信息传递格式和标准，避免沟通混乱和误解。</p>
+<strong>核心定位</strong>：
+<li><strong>规范化</strong>：统一的通信格式</li>
+<li><strong>标准化</strong>：明确的信息传递规则</li>
+<li><strong>可追溯</strong>：完整的沟通历史</li>
+<strong>核心原则</strong>：
+> 清晰、简洁、准确的信息传递，避免沟通混乱。
+<p>---</p>
+<h2>🎯 Discord交互规范</h2>
+<h3>1. 提及规则</h3>
+<strong>@指定人员</strong>：
+<li>所有需要指定人员的消息必须@相关人员</li>
+<li>不要泛发消息到频道</li>
+<li>明确接收人</li>
+<strong>格式示例</strong>：
+```
+@龙龟神将 请完成TASK-001的创建工作
+```
+<strong>禁止示例</strong>：
+```
+❌ 请完成TASK-001的创建工作（未指定接收人）
+❌ @所有人 有新任务分配（不要滥用@所有人）
+```
+<h3>2. Discord ID规则</h3>
+<strong>纯文本格式</strong>：
+<li>使用Discord ID（纯文本）</li>
+<li>不使用@提及（除非需要通知）</li>
+<li>ID格式：`<数字ID>`</li>
+<strong>格式示例</strong>：
+```
+接收人: 123456789012345678
+```
+<strong>禁止示例</strong>：
+```
+❌ 接收人: @用户名（不要使用@提及）
+```
+<h3>3. 回复规则</h3>
+<strong>直接回复</strong>：
+<li>回复相关消息时使用直接回复功能</li>
+<li>保持消息上下文关联</li>
+<li>不要在频道中泛发</li>
+<strong>格式示例</strong>：
+```
+[回复] @龙龟神将 TASK-001已完成，请审核
+```
+<h3>4. 文件分享规则</h3>
+<strong>直连文件链接</strong>：
+<li>分享文件时使用直连链接</li>
+<li>不要使用PR（拉取请求）链接</li>
+<li>确保链接可访问</li>
+<strong>格式示例</strong>：
+```
+文件: https://example.com/files/task-001.md
+```
+<strong>禁止示例</strong>：
+```
+❌ 文件: https://github.com/user/repo/pull/1（不要使用PR链接）
+```
+<p>---</p>
+<h2>📧 信息传递格式</h2>
+<h3>1. 消息格式</h3>
+<strong>标准格式</strong>：
+```markdown
+[类型] @接收人 消息内容
+<p>示例：
+[任务] @龙龟神请 完成TASK-001的创建工作</p>
+<p>[通知] @所有人 系统将在今晚22:00进行维护
+```</p>
+<strong>消息类型</strong>：
+<li>`[任务]`：任务分配和更新</li>
+<li>`[通知]`：系统通知和公告</li>
+<li>`[问题]`：问题和疑问</li>
+<li>`[回复]`：回复和确认</li>
+<li>`[讨论]`：讨论和交流</li>
+<h3>2. 任务消息格式</h3>
+<strong>任务分配</strong>：
+```markdown
+[任务] @负责人 任务名称
+<p>[详情]
+任务ID: TASK-001
+任务描述: 创建任务控制台Skill
+优先级: P0
+截止日期: 2026-03-23
+预计时长: 2h</p>
+<p>[附件]
+相关文档: https://example.com/docs/task.md
+```</p>
+<strong>任务更新</strong>：
+```markdown
+[更新] @负责人 任务名称
+<p>[状态]
+任务ID: TASK-001
+状态: 进行中 → 已完成
+进度: 0% → 100%
+完成时间: 2026-03-23 14:23</p>
+<p>[备注]
+所有功能已实现，等待审核
+```</p>
+<h3>3. 问题消息格式</h3>
+<strong>问题报告</strong>：
+```markdown
+[问题] @相关人员 问题描述
+<p>[详情]
+问题ID: ISSUE-001
+问题描述: 任务看板拖拽功能异常
+严重程度: P0
+影响范围: 所有用户</p>
+<p>[复现步骤]
+1. 打开任务看板
+2. 拖拽任务到其他列
+3. 任务状态未更新</p>
+<p>[环境]
+系统版本: v4.1
+浏览器: Chrome 120
+```</p>
+<strong>问题解决</strong>：
+```markdown
+[解决] @相关人员 问题描述
+<p>[详情]
+问题ID: ISSUE-001
+解决时间: 2026-03-23 14:30
+解决方式: 修复前端拖拽逻辑
+```</p>
+<h3>4. 通知消息格式</h3>
+<strong>系统通知</strong>：
+```markdown
+[通知] @相关人员 通知内容
+<p>[详情]
+通知ID: NOTIF-001
+通知类型: 系统维护
+维护时间: 2026-03-23 22:00-23:00
+影响范围: 所有系统功能</p>
+<p>[备注]
+请提前保存工作内容
+```</p>
+<strong>公告</strong>：
+```markdown
+[公告] @所有人 公告内容
+<p>[详情]
+公告ID: ANN-001
+公告类型: 版本更新
+版本号: v4.2
+更新时间: 2026-03-24
+更新内容:
+<li>新增任务看板功能</li>
+<li>优化任务控制台界面</li>
+<li>修复已知问题</li></p>
+<p>[附件]
+更新日志: https://example.com/changelog.md
+```</p>
+<p>---</p>
+<h2>🔍 消息查询与检索</h2>
+<h3>1. 快速查询</h3>
+<strong>按类型查询</strong>：
+```
+查询：[任务]
+结果：所有任务相关的消息
+<p>查询：[通知]
+结果：所有通知消息
+```</p>
+<strong>按接收人查询</strong>：
+```
+查询：@龙龟神将
+结果：所有@龙龟神将的消息
+```
+<strong>按时间查询</strong>：
+```
+查询：2026-03-23
+结果：2026-03-23的所有消息
+```
+<h3>2. 高级搜索</h3>
+<strong>组合查询</strong>：
+```
+查询：[任务] + @龙龟神将 + 2026-03-23
+结果：2026-03-23所有@龙龟神将的任务消息
+<p>查询：[问题] + P0 + 2026-03-23
+结果：2026-03-23所有P0级别的问题消息
+```</p>
+<p>---</p>
+<h2>📊 消息统计</h2>
+<h3>1. 消息统计</h3>
+<strong>每日统计</strong>：
+```yaml
+message_stats:
+  date: 2026-03-23
+  total_messages: 100
+  by_type:
+    task: 30
+    notification: 20
+    issue: 10
+    reply: 30
+    discussion: 10
+  by_sender:
+    龙龟神将: 60
+    悟空: 40
+  by_receiver:
+    龙龟神将: 50
+    悟空: 30
+    所有人: 20
+```
+<h3>2. 响应时间统计</h3>
+<strong>平均响应时间</strong>：
+```yaml
+response_time:
+  date: 2026-03-23
+  avg_response_time: 15min
+  by_type:
+    task: 10min
+    notification: 5min
+    issue: 20min
+    reply: 10min
+    discussion: 30min
+```
+<p>---</p>
+<h2>🔔 消息提醒</h2>
+<h3>1. 实时提醒</h3>
+<strong>提醒级别</strong>：
+<li>🔴 P0：立即提醒（重要任务、P0问题）</li>
+<li>🟠 P1：5分钟内提醒（一般任务、P1问题）</li>
+<li>🟡 P2：30分钟内提醒（次要任务、P2问题）</li>
+<li>🟢 P3：1小时内提醒（非必要任务、P3问题）</li>
+<strong>提醒方式</strong>：
+<li>Discord通知</li>
+<li>邮件通知（重要消息）</li>
+<li>手机推送（P0消息）</li>
+<h3>2. 未读消息提醒</h3>
+<strong>未读消息统计</strong>：
+<li>未读消息数量</li>
+<li>未读消息类型分布</li>
+<li>最近未读消息时间</li>
+<strong>提醒策略</strong>：
+<li>未读消息 > 10条：每30分钟提醒一次</li>
+<li>未读消息 > 50条：每10分钟提醒一次</li>
+<li>未读消息 > 100条：每5分钟提醒一次</li>
+<p>---</p>
+<h2>🔄 与其他Skills的协同</h2>
+<h3>1. 与任务看板Skill协同</h3>
+<li><strong>通信规则</strong>：发送任务分配和更新消息</li>
+<li><strong>任务看板</strong>：展示任务状态</li>
+<li><strong>协同</strong>：通信规则分配任务→任务看板更新状态</li>
+<h3>2. 与心跳巡检Skill协同</h3>
+<li><strong>心跳巡检</strong>：发现异常时预警</li>
+<li><strong>通信规则</strong>：发送通知消息</li>
+<li><strong>协同</strong>：心跳巡检预警→通信规则通知相关人员</li>
+<h3>3. 与长期记忆Skill协同</h3>
+<li><strong>通信规则</strong>：记录重要沟通内容</li>
+<li><strong>长期记忆</strong>：归档关键决策</li>
+<li><strong>协同</strong>：通信规则记录→长期记忆归档</li>
+<p>---</p>
+<h2>🚫 使用禁忌</h2>
+<h3>1. 不要做的</h3>
+<li>❌ 不指定接收人就发送消息</li>
+<li>❌ 在频道中泛发消息</li>
+<li>❌ 使用@提及发送通知（不需要通知时）</li>
+<li>❌ 使用PR链接分享文件</li>
+<li>❌ 忽视消息格式规范</li>
+<h3>2. 必须做的</h3>
+<li>✅ 明确指定接收人</li>
+<li>✅ 使用标准的消息格式</li>
+<li>✅ 及时回复消息</li>
+<li>✅ 使用直连文件链接</li>
+<li>✅ 保持消息简洁清晰</li>
+<p>---</p>
+<h2>💡 最佳实践</h2>
+<h3>1. 消息编写</h3>
+<strong>清晰简洁</strong>：
+<li>明确消息类型和接收人</li>
+<li>使用简洁的语言</li>
+<li>避免冗余信息</li>
+<strong>准确完整</strong>：
+<li>包含必要的详情信息</li>
+<li>提供相关的链接和附件</li>
+<li>明确时间和截止日期</li>
+<strong>礼貌专业</strong>：
+<li>使用礼貌的语言</li>
+<li>保持专业态度</li>
+<li>避免情绪化表达</li>
+<h3>2. 消息回复</h3>
+<strong>及时回复</strong>：
+<li>收到消息及时回复</li>
+<li>如果需要时间，先确认收到</li>
+<li>完成任务后及时通知</li>
+<strong>清晰回复</strong>：
+<li>明确回复内容和状态</li>
+<li>如有问题及时提出</li>
+<li>提供相关的证据和链接</li>
+<h3>3. 消息管理</h3>
+<strong>定期清理</strong>：
+<li>及时归档已完成的消息</li>
+<li>删除无用消息（记录原因）</li>
+<li>整理消息标签</li>
+<strong>消息搜索</strong>：
+<li>使用标准格式记录消息</li>
+<li>方便后续搜索和检索</li>
+<li>建立消息索引</li>
+<p>---</p>
+<h2>🎯 核心原则总结</h2>
+<h3>三大铁律</h3>
+<p>1. <strong>规范格式</strong>
+   - 统一的消息格式
+   - 明确的消息类型
+   - 清晰的信息传递</p>
+<p>2. <strong>指定接收人</strong>
+   - 所有消息明确接收人
+   - 使用@提及通知
+   - 避免泛发消息</p>
+<p>3. <strong>直连链接</strong>
+   - 使用直连文件链接
+   - 不使用PR链接
+   - 确保链接可访问</p>
+<h3>核心价值</h3>
+<li><strong>规范沟通</strong>：统一的格式和标准</li>
+<li><strong>避免混乱</strong>：明确接收人和类型</li>
+<li><strong>可追溯</strong>：完整的沟通历史</li>
+<li><strong>高效协作</strong>：清晰的信息传递</li>
+<p>---</p>
+<h2>🔧 实施路线</h2>
+<h3>第一阶段：基础规范（立即）</h3>
+<li>✅ 定义Discord交互规范</li>
+<li>✅ 定义消息格式</li>
+<li>✅ 定义文件分享规则</li>
+<h3>第二阶段：功能实现（本周）</h3>
+<li>⏳ 实现消息查询</li>
+<li>⏳ 实现消息统计</li>
+<li>⏳ 实现消息提醒</li>
+<h3>第三阶段：优化完善（本月）</h3>
+<li>⏳ 实现消息归档</li>
+<li>⏳ 实现消息分析</li>
+<li>⏳ 优化沟通体验</li>
+<p>---</p>
+<strong>版本</strong>: v1.0
+<strong>创建日期</strong>: 2026-03-23
+<strong>对标来源</strong>: OpenClaw Communication规则
+<strong>AI龙龟共生伙伴操作系统版本</strong>: v4.1
+<strong>路径</strong>: `C:\Users\jia'yue\.workbuddy\skills\通信规则\SKILL.md`
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill - 以观其妙书院</title>
+    <meta name="description" content=">">
+    <meta name="keywords" content="[超级店长, SUPER-SM, 总控, 7S理论守门人, 味藏, 龙龟, 倒三角赋能, 认知操作系统, 三驾马车]">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="Skill">
+    <meta property="og:description" content=">">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/SKILL.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/SKILL.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Skill",
+      "description": ">",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-06-12",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>Skill</h1>
+            <div class="meta">
+                <span>📅 2026-06-12</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            Skill...
+        </div>
+        
+        <article>
+<h1>超级店长Skill · SUPER-SM 总控系统</h1>
+
+<blockquote><strong>核心公式（v1.7.0 共识版）</strong>：<strong>超级店长 = 总控Skill(大脑) × [ N=26~33个模块Skills(手脚) ] × 7S v1.7.0骨架(脊柱) × 五行人格(灵魂) × 龙龟喂养(进化)</strong></blockquote>
+<blockquote><strong>本质定义</strong>：超级店长不是替代店长，不是工具箱，不是被动响应——是围绕店长岗位的认知操作系统。Skill本身=数字分身，人工是使用者，不进入Skill公式。</blockquote>
+<blockquote><strong>质量评级</strong>：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (10/10 卓越级)</blockquote>
+<blockquote><strong>源文档</strong>：A:0521录音分析报告 + B:7S×龙爪OS架构 + C:小组讨论决策 → 建立步骤.pdf（9页·4463字）</blockquote>
+
+<hr>
+
+<h2>零、系统定位：7S理论守门人</h2>
+
+<h3>为什么需要超级店长Skill？</h3>
+
+<blockquote>"店长可能有100件事，混乱无序。要把这一骨碌东西归拢到7S里面去——这个东西无非就在7S里面的某一块。"</blockquote>
+
+<p>超级店长Skill是<strong>味藏7S理论的守门人</strong>。所有子Skill必须在7S骨架内运行，任何偏离7S理论的内容都会被拦截和纠正。</p>
+
+<h3>子智能体自动调度</h3>
+
+<pre><code>超级店长Skill (父Skill·总控大脑·7S守门人)
+    │ auto_trigger_sub = true
+    ├──→ 店长7S总控 (SM-CHIEF) ← 自动触发·调度技能
+    │       ├──→ 16个子Skill (日/周/月/常驻)
+    │       └──→ F1-F5五职能引擎
+    ├──→ [未来] N个模块Skills ← 待构建
+    └──→ 每个子Skill必须通过7S分类校验
+</code></pre>
+
+<hr>
+
+<h2>一、核心公式四层分解</h2>
+
+<p>| 层级 | 组件 | 功能 | 核心原理 |
+|------|------|------|---------|
+| <strong>大脑</strong> | 总控Skill | 统一调度、信息汇总、决策路由 | AI负责信息收集→分析→方案输出 |
+| <strong>手脚</strong> | N个模块Skills | 具体事务执行（日/周/月） | 一个Skill只解决一件完整的事 |
+| <strong>脊柱</strong> | 7S骨架 | 所有工作的分类归拢框架 | 无序工作→有序7S分类→可SOP化 |
+| <strong>灵魂</strong> | 五行人格 | 个性化管人方式、适配方案 | 按性格特点出不同方案，实现超级个性化 |</p>
+
+<hr>
+
+<h2>二、三大定位澄清（不是 / 是）</h2>
+
+<p>| ❌ 不是 | ✅ 是 |
+|--------|------|
+| 替代店长 | <strong>共生伙伴</strong>：AI做AI擅长的，店长做店长擅长的 |
+| 工具箱 | <strong>认知操作系统</strong>：不是给一堆散装工具，是围绕岗位的一体化智能 |
+| 被动响应 | <strong>主动认知</strong>：自动收集数据、分析问题、给出方案，店长只做判断和执行 |</p>
+
+<hr>
+
+<h2>三、80/20 分工法则</h2>
+
+<h3>核心逻辑</h3>
+
+<pre><code>店长：80%解决人的问题 + 20%解决业务问题
+    ├── 人员档案（招人/管人/育人）
+    └── 客户档案（客户关系/会员运营）
+
+<p>三驾马车（料理长/前厅经理/线上）：80%解决业务问题 + 20%解决人的问题（培训）
+    ├── 料理长 → 产品搞定
+    ├── 前厅经理 → 服务搞定
+    └── 线上/外卖 → 外卖搞定
+</code></pre></p>
+
+<h3>店长核心抓两个档案</h3>
+
+<p>| 档案 | 内容 | AI支撑 |
+|------|------|--------|
+| <strong>人员档案</strong> | 谁适合干什么、性格特点、能力边界 | 五行人格诊断+面谈记录+九宫格 |
+| <strong>客户档案</strong> | 老饕分类、消费偏好、关系维护 | RFM分析+储值追踪+感动案例 |</p>
+
+<blockquote>"人是一切资源。店长一定要招能解决问题的人进来，而不是找一个人进来。"</blockquote>
+
+<hr>
+
+<h2>四、三驾马车 × AI人机分工</h2>
+
+<p>| 角色 | 职责线 | AI做的事 | 人做的事 |
+|------|--------|---------|---------|
+| <strong>料理长</strong> | 产品线 | 数据分析/库存预测/SOP优化 | 菜品研发/品质把控/后厨管理 |
+| <strong>前厅经理</strong> | 服务线 | 客户画像/服务SOP/投诉预警 | 现场服务/客户关系/团队氛围 |
+| <strong>线上/外卖</strong> | 线上线 | 外卖数据/平台评分/竞品监控 | 外卖品控/套餐设计/平台合作 |</p>
+
+<hr>
+
+<h2>五、7S骨架 — 工作归拢框架（守门人核心）</h2>
+
+<h3>核心原则</h3>
+
+<blockquote>"把所有店长工作按7S分类 → 每个S下面形成多个Skills → 每个S变身一个'龙爪'"</blockquote>
+
+<h3>7S-to-Skills 映射框架</h3>
+
+<p>| S模块 | 覆盖范围 | 预计Skills数 | AI/人分工倾向 |
+|------|---------|:--:|:--:|
+| S1 战略/目标/计划 | 日目标·月目标·KPI拆解 | 3-5 | AI 70% / 人 30% |
+| S2 组织/人员/档案 | 人员档案·五行匹配·师徒制 | 5-8 | AI 40% / 人 60% |
+| S3 制度/流程/SOP | 日反馈·巡检·退菜追踪 | 4-6 | AI 60% / 人 40% |
+| S4 数据/分析/日报 | 日报·周报·月报·驾驶舱 | 4-5 | AI 90% / 人 10% |
+| S5 客户/会员/营销 | 会员运营·储值·老饕维护 | 5-7 | AI 50% / 人 50% |
+| S6 产品/出品/品质 | 金枪鱼管理·匠心·三昧真火 | 3-5 | AI 40% / 人 60% |
+| S7 财务/成本/绩效 | 成本率·净利率·KPI考核 | 3-4 | AI 70% / 人 30% |</p>
+
+<h3>龙爪概念</h3>
+
+<blockquote>"你说'日报'哗哗哗说完，激活日报Skill，自动给你总结、判断哪个地方有问题。"</blockquote>
+
+<p>每个S模块 = 一个<strong>龙爪容器</strong>，内含N个具体Skills。店长只需用自然语言触发，AI自动激活对应Skill执行。</p>
+
+<hr>
+
+<h2>六、Skill构建标准（9要素·四步法）</h2>
+
+<h3>一个Skill的定义</h3>
+
+<blockquote>"一个Skill只解决一件事。一件完整的事。日总结就是一件事，周复盘就是一件事。"</blockquote>
+
+<p>| 标准 | 说明 |
+|------|------|
+| <strong>粒度</strong> | 一件事 = 一个完整的、可独立完成的任务 |
+| <strong>检验标准</strong> | 把真实数据扔进去，能否解决现实问题？ |
+| <strong>好坏判断</strong> | AI干的比人干得好 → 合格；还不如人 → 失败 |</p>
+
+<h3>SOP/Skill 必备9要素</h3>
+
+<p>| 序号 | 要素 | 说明 | 示例 |
+|:--:|------|------|------|
+| ① | <strong>岗位定位</strong> | 这个Skill服务于什么角色 | 店长/料理长/前厅经理 |
+| ② | <strong>性格特点</strong> | 五行人格匹配，个性化输出 | 火行人→发散型方案 |
+| ③ | <strong>核心任务</strong> | 这个Skill解决什么问题 | 日经营数据复盘 |
+| ④ | ⭐<strong>分析模型</strong> | 最关键：用什么模型分析 | RFM/WIME-5D/PDCA |
+| ⑤ | <strong>关键动作</strong> | 必须执行的步骤 | 数据采集→清洗→对比→结论 |
+| ⑥ | <strong>量化标准</strong> | 结果指标/过程指标 | 客单价/翻台率/会员活跃率 |
+| ⑦ | <strong>数据验证</strong> | 如何验证产出是否正确 | 环比/同比/目标达成率 |
+| ⑧ | <strong>风险控制</strong> | 触发报警的底线 | 当日营业额低于X→红色预警 |
+| ⑨ | <strong>输出格式</strong> | 最终产出的形式 | 日报模板/分析图表/行动建议 |</p>
+
+<blockquote><strong>"没有分析模型，你的SOP是假的。"</strong></blockquote>
+
+<h3>构建流程（四步法）</h3>
+
+<pre><code>第一步：列出店长全部工作（按最理想版本，不是当前版本）
+    ↓
+第二步：按7S框架归拢分类
+    ↓
+第三步：每个工作判断 AI干 vs 人干 → 能SOP化的全部SOP化
+    ↓
+第四步：构建Skill → 测试 → 优化 → 上线
+</code></pre>
+
+<blockquote>"按未来的样子去罗列，按最理想的来。因为未来AI就能实现——原先没这个能力，AI就有这个能力。"</blockquote>
+
+<hr>
+
+<h2>七、组织架构变革：倒三角赋能</h2>
+
+<h3>核心理念</h3>
+
+<blockquote>"总部全部变成大运营部，全部下到一线。从管理变成赋能。"</blockquote>
+
+<pre><code>旧模式：                    新模式（倒三角）：
+董事长                      一线门店（店长）
+  ↓                            ↑↑↑
+总经理                      总部大运营部（每人赋能1-N个S）
+  ↓
+总部各部门
+  ↓
+一线门店
+</code></pre>
+
+<h3>总部职能重构</h3>
+
+<p>| 旧角色 | 新角色 | 赋能哪些S |
+|--------|--------|---------|
+| 人力部 | <strong>一线人力赋能师</strong> | S2（人员）的1-2个子模块 |
+| 市场部 | <strong>一线营销赋能师</strong> | S5（客户/会员）的2-3个子模块 |
+| 财务部 | <strong>数据中台</strong> | S4（数据）、S7（财务） |
+| 培训部 | <strong>AI知识库维护者</strong> | 所有S的知识更新 |</p>
+
+<blockquote>"总部人员赋能人家其中几个S。只有店长、总经理、董事长他们是最全的，剩下我们都是服务人家其中3个S、2个S。"</blockquote>
+
+<h3>理想时间线</h3>
+
+<p>| 年份 | 目标 | 含义 |
+|------|------|------|
+| 2027 | <strong>解放董事长</strong> | 董事长不再困于日常管理，专注产品创新/全国考察 |
+| 2028 | <strong>解放总经理</strong> | 总经理通过AI系统自主运转 |
+| 2029 | <strong>解放3位老总</strong> | 店长层级全面AI化 |</p>
+
+<hr>
+
+<h2>八、AI × 企业微信 × 龙龟的终局构想</h2>
+
+<h3>"分身"系统</h3>
+
+<pre><code>企业微信 ←→ WorkBuddy(龙龟) ←→ 各岗位龙爪Skills
+    ↓              ↓                ↓
+ @某人的分身     自动触发        执行具体任务
+</code></pre>
+
+<blockquote>"每个人都有一个小龙龟，就是你的分身。这个分身在企微里，@你的分身，就能直接出方案。"</blockquote>
+
+<h3>信息流闭环</h3>
+
+<pre><code>店长日报 → 扔进企微群
+    ↓
+各分身自动认领（城总的Skill领城总相关的，涛涛的Skill领涛涛相关的）
+    ↓
+AI自动分析 → 出判断 → 出方案
+    ↓
+店长只做一件事：执行还是不执行？
+    ↓
+执行反馈 → AI继续优化方案 → 闭环
+</code></pre>
+
+<blockquote>"AI专门负责收集信息、分析数据、判断问题在哪里、给出方案。你作为人，只判断执行不执行。"</blockquote>
+
+<hr>
+
+<h2>九、五行人格 × 个性化管理</h2>
+
+<h3>为什么需要五行人格</h3>
+
+<blockquote>"店长抓的是什么？抓人。你对他自身都不了解，你抓什么？"</blockquote>
+
+<p>五行人格心理学的作用：
+1. <strong>招聘</strong>：招他本身就是好的，而不是要改他
+2. <strong>管理</strong>：火行人有火行人的管法，水行人有水行人的管法
+3. <strong>方案适配</strong>：同一问题，对不同性格的人出不同方案</p>
+
+<h3>典型场景</h3>
+
+<p>| 五行 | 管人方式 | AI输出适配 |
+|------|---------|-----------|
+| 火 | 天生老大，不爱请示 | 方案给方向少细节，鼓励自主 |
+| 水 | 稳重型，需要安全感 | 方案给足数据和风险分析 |
+| 木 | 成长型，需要认可 | 方案带成长路径和里程碑 |
+| 金 | 规则型，需要清晰边界 | 方案结构化，标准明确 |
+| 土 | 关系型，需要归属感 | 方案强调团队和氛围 |</p>
+
+<blockquote>"性格排屁股——招他本身就是好的，而不是要改他。"</blockquote>
+
+<hr>
+
+<h2>十、7S守门人校验规则</h2>
+
+<h3>子Skill注册必须通过7S分类校验</h3>
+
+<p>任何新建子Skill在注册到超级店长Skill时，必须通过以下校验：</p>
+
+<p>| 校验项 | 规则 | 不通过后果 |
+|--------|------|----------|
+| <strong>S归属</strong> | 必须明确属于哪个7S模块 | 拒绝注册 |
+| <strong>覆盖范围</strong> | 不能超出味藏7S体系定义范围 | 提示修正 |
+| <strong>AI/人分工</strong> | 必须声明AI/人分工比例 | 返回补充 |
+| <strong>分析模型</strong> | 必须包含至少1个分析模型 | 标记为不合格 |
+| <strong>五行适配</strong> | 必须声明五行输出风格 | 返回补充 |
+| <strong>输出格式</strong> | 必须定义输出格式 | 返回补充 |</p>
+
+<h3>子智能体自动触发规则</h3>
+
+<p>| 触发条件 | 激活方式 |
+|---------|---------|
+| 超级店长Skill被调用 | 店长7S总控自动加载 |
+| 新建子Skill注册 | 自动7S分类校验 |
+| 子Skill输出偏离7S | 自动拦截+提示修正 |
+| 关键词：超级店长/店长AI/门店助手 | 全系统激活 |</p>
+
+<hr>
+
+<h2>十一、7S v1.7.0 权威标准定义（脊柱层·知识地基）</h2>
+
+<blockquote><strong>来源</strong>：味藏7S Skill v1.7.0 — 7S定义权威来源，替代v1.0中的临时S1-S7分类</blockquote>
+
+<p>| 7S | 人格化 | 一句话 | 店长在做什么 |
+|------|--------|--------|------------|
+| <strong>SV</strong> | DNA/太阳 | 以食载道·传递美好 | 文化践行、仪式主持、价值观考核 |
+| <strong>S</strong> | 大脑 | 绿色生态餐饮引领者 | 月度经营分析、战略目标追踪 |
+| <strong>St</strong> | 骨骼/超级枢纽 | 四层嵌套×创业单元×AB角 | 排班调度、授权管理、三单元协同 |
+| <strong>Sy</strong> | 神经 | 四层法治×双螺旋×日清周清 | SOP执行监控、红线预警、PDCA闭环 |
+| <strong>Sty</strong> | 气质 | 刚柔并济×修行场 | 四会主持、团队氛围、教练式领导 |
+| <strong>Sf</strong> | 血液/超节点 | 螺旋力×三共同体 | 识人用人、绩效面谈、师徒配对 |
+| <strong>Sk</strong> | 肌肉 | 四层生态×矛-盾-脉-脑 | 技能认证追踪、匠心传承、培训管理 |</p>
+
+<h3>7S × 店长工作归拢</h3>
+
+<p>每个S维度下，将店长全部工作列出 → 每个工作 = 一个潜在Skill。<strong>总计预计：26-33个模块Skills</strong>（不是80个——80是建设过程中的总数含迭代版本）。</p>
+
+<h3>Skill构建优先级（Phase A/B/C）</h3>
+
+<pre><code>Phase A: AI最强项优先(Sy制度 + S战略)  第1-2周 ← 见效快
+    ↓
+Phase B: 店长最痛点(Sf人员 + St结构)    第3-4周 ← 80%精力所在
+    ↓
+Phase C: 软覆盖(Sty风格 + SV价值观 + Sk技能)  第5-6周
+</code></pre>
+
+<hr>
+
+<h2>十二、5×7=35种五行适配矩阵（灵魂层）</h2>
+
+<blockquote>"性格排屁股——招他本身就是好的，而不是要改他。"</blockquote>
+
+<p>同一个"月度经营分析Skill"，对不同五行人格的店长，输出方式不同：</p>
+
+<p>| 五行 | 店长特点 | Skill输出适配 |
+|------|---------|-------------|
+| <strong>木</strong> | 成长型，需要认可 | 输出带成长路径和里程碑，强调"进步了多少" |
+| <strong>火</strong> | 天生领导，不爱琐碎 | 输出精简，只给方向和关键决策点，不堆数据 |
+| <strong>土</strong> | 关系型，重归属感 | 输出强调团队表现和氛围指标，用"我们"叙事 |
+| <strong>金</strong> | 规则型，重边界清晰 | 输出结构化表格+明确标准+黑白判断 |
+| <strong>水</strong> | 稳重型，需安全感 | 输出足量数据和风险分析，强调"稳"和"可控" |</p>
+
+<h3>注入方式</h3>
+
+<p>不是给每个Skill写5个版本。而是在Skill的SOP九要素之②"性格特点"中定义参数，让AI在运行时自动适配：</p>
+
+<pre><code>Skill运行时参数:
+personality_type: "火" | "木" | "水" | "金" | "土"
+→ 影响：输出详细度、语言风格、数据密度、决策建议方式
+</code></pre>
+
+<hr>
+
+<h2>十三、7大人机交互节点（界面层）</h2>
+
+<blockquote>"店长看到这个表就知道——AI要做什么，我要做什么，我做完以后要喂养什么。"</blockquote>
+
+<p>| 节点 | 频次 | 触发 | AI产出 | 店长动作 | 耗时 |
+|------|------|------|--------|---------|:--:|
+| <strong>晨会</strong> | 每日 | 08:15推送 | 昨日快报+排班+SOP清单+红线 | 浏览→标注重点→晨会主持 | 5min |
+| <strong>午市调整</strong> | 每日 | 14:00推送 | 午市快报+晚市预估 | 调整晚市策略 | 3min |
+| <strong>收市会</strong> | 每日 | 21:00推送 | 全日快报+复盘模板 | 主持复盘+肯定团队 | 10min |
+| <strong>周复盘</strong> | 每周 | 周一09:00 | 周数据对比+异常归因 | 深度复盘+下周计划 | 20min |
+| <strong>月度经营分析</strong> | 每月 | 月初第3天 | 完整月报+趋势判断 | 审+判方向 | 30min |
+| <strong>绩效面谈</strong> | 每月 | 按排期 | 绩效数据包+五行沟通建议 | 面对面沟通 | 30min/人 |
+| <strong>师徒带教</strong> | 持续 | 实时 | 进度追踪+认证提醒 | 手把手传授 | 视情况 |</p>
+
+<hr>
+
+<h2>十四、龙龟喂养标准模板（进化层）</h2>
+
+<blockquote>"龙龟的本质，就是要把你的经验SOP化。一次受苦，以后自动化。"</blockquote>
+
+<p>每个Skill配套的喂养机制：</p>
+
+<p>| 喂养项 | 频率 | 输入方式 | AI学习目标 |
+|--------|------|---------|-----------|
+| <strong>店长判断修正</strong> | 每次使用后 | Skill输出→店长标记"对/错/改" | 决策建议库优化 |
+| <strong>异常案例</strong> | 每次异常 | 口述→AI结构化记录 | 异常检测规则升级 |
+| <strong>新场景发现</strong> | 每月 | 复盘时口述 | 场景覆盖范围扩展 |
+| <strong>参数调优</strong> | 每季度 | 自动分析使用数据 | 五行适配参数优化 |</p>
+
+<hr>
+
+<h2>十五、三店差异化部署策略</h2>
+
+<h3>试点选择：松山湖优先</h3>
+
+<p>| 维度 | 🥇 松山湖店（试点） | 🥈 金月湾店 | 🥉 狮山店 |
+|------|-------------------|------------|----------|
+| <strong>7S优先改善</strong> | Sf(人才储备不足) | Sty(教练式领导) | Sy(SOP执行一致性) |
+| <strong>首月AI覆盖率</strong> | 60% | 65% | 70% |
+| <strong>首批Skills</strong> | 8个（Sy4+S3） | 在试点基础上复制+适配 | 在试点基础上复制+适配 |
+| <strong>龙龟喂养启动</strong> | Week 1 | Week 3 | Week 2 |</p>
+
+<h3>部署节奏</h3>
+
+<pre><code>Week 1-2: 松山湖试点 → 总控Skill + Sy制度4个 + S战略3个
+Week 3-4: 松山湖继续 → Sf人员4个 + St结构2个
+Week 4:    松山湖验证通过 → 金月湾、狮山复制
+Week 5-6: 三店同步 → Sty风格 + SV价值观 + Sk技能
+Week 7+:   三店并行运转 + 龙龟喂养持续进化
+</code></pre>
+
+<hr>
+
+<h2>十六、单个Skill验收标准与阶段里程碑</h2>
+
+<h3>5项验收标准</h3>
+
+<p>| 标准 | 判断方式 | 谁来判 |
+|------|---------|--------|
+| <strong>AI干的比人好</strong> | 用真实数据跑→对比人手动作 | 店长 |
+| <strong>说人话</strong> | 店长看完输出后不需要二次解释 | 店长 |
+| <strong>能闭环</strong> | 从触发到输出到反馈形成完整链路 | 龙虾 |
+| <strong>有模型</strong> | SOP九要素之④分析模型不空 | 龙虾 |
+| <strong>可喂养</strong> | 龙龟喂养计划可执行 | 龙虾+店长 |</p>
+
+<h3>4个阶段里程碑</h3>
+
+<p>| 里程碑 | 时间 | 目标 | 验证方式 |
+|:--:|------|------|---------|
+| <strong>M1</strong> | Week 2 | 总控Skill + Sy制度模块上线 | 松山湖店长每日使用 |
+| <strong>M2</strong> | Week 4 | Sf人员模块上线，AI覆盖率≥50% | 松山湖店长80%管人工作AI辅助 |
+| <strong>M3</strong> | Week 6 | 7S全覆盖，AI覆盖率≥60% | 三店均可使用 |
+| <strong>M4</strong> | Month 3 | AI覆盖率≥70%，龙龟累计喂养≥20次 | 店长决策时间从20%→40% |</p>
+
+<p>| 资料 | 位置 | 内容 |
+|------|------|------|
+| 味藏大库·龙虾养殖流程 | 云盘/雾山魏正龙虾养殖流程 | 岗位职责相关全部资料 |
+| 7S立体顶层设计 | Obsidian 06-味藏 | 7S完整体系13篇文档 |
+| 高盈利组设计方案 | 云盘中 | 含演练组/引流组/高盈利组分析模型 |
+| 企业手册 | weizang-culture Skill | 味藏文化完整体系 |
+| 会员体系 | weizang-membership Skill | 五级会员+流转图+增长飞轮 |
+| 店长7S总控 | 子智能体(SM-CHIEF v1.3) | 日反馈路由器+F1-F5+16Skill |
+| 董事长顶层设计 | CHMN-BRAIN v1.4 | 战略层·上游 |
+| 总经理战略解码 | GM-CHIEF v1.5 | 执行层·上游 |</p>
+
+<hr>
+
+<h2>十七、当前可用的知识资产</h2>
+
+<p>| # | 金句 | 含义 |
+|:--:|------|------|
+| 1 | <strong>AI就是你的最强合作伙伴，这个岗位就叫超级店长</strong> | 定位：伙伴，不是工具 |
+| 2 | <strong>一个Skill只解决一件事。一件完整的事。</strong> | 粒度标准 |
+| 3 | <strong>没有分析模型，你的SOP是假的。</strong> | 质量底线 |
+| 4 | <strong>以是否能解决你现实问题为最终检验标准。</strong> | 验收标准 |
+| 5 | <strong>人是一切资源。</strong> | 店长核心抓人 |
+| 6 | <strong>性格排屁股——招他本身就是好的，而不是要改他。</strong> | 招聘哲学 |
+| 7 | <strong>AI专门负责收集信息、分析数据、判断问题、给出方案。人只做执行和判断。</strong> | 人机分工 |
+| 8 | <strong>总部全部变成大运营部，全部下到一线。</strong> | 组织变革 |
+| 9 | <strong>按未来的样子去罗列，按最理想的来。</strong> | 设计思维 |
+| 10 | <strong>你们要从方案思维突破到工具思维——只要你有想法，就能把想法变成工具。</strong> | 能力跃迁 |
+| 11 | <strong>龙龟的本质，就是要把你的经验SOP化。一次受苦，以后自动化。</strong> | 知识资产化 |
+| 12 | <strong>能力的好坏 = 对AI工具的使用，特别是对龙龟的使用。</strong> | 新能力定义 |</p>
+
+<hr>
+
+<h2>十八、核心金句摘录（12条·来源：0521战略会议）</h2>
+
+<blockquote>"第一步：新建任务 → Plan模式。让WorkBuddy把云盘里的全部资料学一遍，整理出店长全部工作清单 → 按7S归拢 → 判断AI/人分工 → 逐项构建Skill。"</blockquote>
+
+<h3>推荐构建顺序</h3>
+
+<pre><code>Phase 1: S3制度/流程(日反馈★·最优先) + S1战略/目标
+    ↓
+Phase 2: S2组织/人员(师徒制·赛马) + S4数据/分析(日报·驾驶舱)
+    ↓
+Phase 3: S5客户/会员 + S6产品/品质
+    ↓
+Phase 4: S7财务/成本 + 全量集成测试
+</code></pre>
+
+<hr>
+
+<h2>十九、构建路径：第一步行动 + 关联文件</h2>
+
+<blockquote>"第一步：新建任务 → Plan模式。让WorkBuddy把云盘里的全部资料学一遍，整理出店长全部工作清单 → 按7S归拢 → 判断AI/人分工 → 逐项构建Skill。"</blockquote>
+
+<p>| 文件 | 说明 |
+|------|------|
+| 原理PDF | <code>references/超级店长skill原理.pdf</code> — 0521战略会议·9页 |
+| <strong>建立步骤PDF</strong> | <code>references/超级店长Skill建立步骤.pdf</code> — A+B+C三源融合·9页（新增） |
+| 店长7S总控(子智能体) | <code>~/.workbuddy/skills/味藏店长7S/SKILL.md</code> |
+| 董事长顶层设计 | <code>~/.workbuddy/skills/味藏董事长顶层设计/SKILL.md</code> |
+| 总经理战略解码 | <code>~/.workbuddy/skills/味藏总经理战略解码/SKILL.md</code> |</p>
+
+<hr>
+
+<blockquote><strong>文档版本</strong>：v1.1 | <strong>构建日期</strong>：2026-05-22 | <strong>更新日期</strong>：2026-05-22 | <strong>构建方法</strong>：龙心OS五引擎 × Skill Builder 5阶20步</blockquote>
+<blockquote><strong>v1.1更新</strong>：整合建立步骤PDF + 7S v1.7.0标准定义 + 5×7=35五行适配矩阵 + 7大人机交互节点 + 龙龟喂养模板 + 三店试点 + 验收里程碑M1-M4 + Phase A/B/C优先级</blockquote>
+<blockquote><strong>维护者</strong>：龙龟神将 | <strong>三库同步</strong>：Obsidian ✅ · IMA ⏳ · LLM Wiki ✅</blockquote>
+>
+<blockquote><strong>超级店长一动，7S守门即开，店长7S总控即应！</strong> 🏪⚙️🔥🧠</blockquote>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

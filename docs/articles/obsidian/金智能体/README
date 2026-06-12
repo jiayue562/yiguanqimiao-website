@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚔️ 金智能体.skills v1.7 使用指南 - 以观其妙书院</title>
+    <meta name="description" content="⚔️ 金智能体.skills v1.7 使用指南 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="⚔️ 金智能体.skills v1.7 使用指南">
+    <meta property="og:description" content="⚔️ 金智能体.skills v1.7 使用指南 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "⚔️ 金智能体.skills v1.7 使用指南",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>⚔️ 金智能体.skills v1.7 使用指南</h1>
+<p>> <strong>版本</strong>：v1.7（2026-03-27）
+> <strong>核心定位</strong>：金行人全息生命能量认知与动态成长实践系统</p>
+<p>---</p>
+<h2>一、技能包概述</h2>
+<p>金智能体.skills是一套基于"一心三界五行九层"象思维体系的完整金行人分析与发展工具包，包含以下核心内容：</p>
+<h3>1.1 四大转化技术体系</h3>
+<p>| 维度 | 技术名称 | 核心功能 |
+|:-----|:--------|:---------|
+| <strong>①</strong> | 拔阴取阳 | 内在价值观转化（阴金恼→阳金行，阴金贪→阳金义） |
+| <strong>②</strong> | 化克为生 | 关系调节（金克木→金生水→水生木） |
+| <strong>③</strong> | 相生强化 | 能量滋养（土生金→信实，金生水→智慧） |
+| <strong>④</strong> | 福格B=M×A×P | 行为设计（动机×能力×提示）⭐【v1.7新增】 |</p>
+<h3>1.2 技能包结构</h3>
+<p>```
+金智能体.skills/
+├── SKILL.md                        # 主技能文件（v1.7）⭐
+├── auto-trigger.json               # 自动触发配置（v1.7）⭐【100+关键词】
+├── README.md                       # 使用指南（v1.7）
+└── references/                     # 参考文档（11个）
+    ├── 金行人理论体系完整版.md
+    ├── 金行人三界详解.md
+    ├── 金行人五行调适手册.md
+    ├── 金行人九层修炼地图.md
+    ├── 金行人外观特征全息解析.md
+    ├── 金行人九层发展层级全息解析.md
+    ├── 金行人生克规律全息解析.md
+    ├── 金行人拔阴取阳体系全解.md
+    ├── 金行人化克为生体系全息解析.md
+    ├── 金行人相生强化体系全息解析.md
+    └── 金行人福格行为模型全息解析.md ⭐【v1.7核心】
+```</p>
+<p>---</p>
+<h2>二、核心体系框架</h2>
+<h3>2.1 一心三界五行九层核心逻辑</h3>
+<p>```
+⚔️ 金行人「一心三界五行九层」象思维体系</p>
+<p>一心（清明本源）
+  ↓ 显化
+三界（金象显化）
+  ├── 身界（物象层）：方正体态、干脆动作、肺气充沛
+  ├── 心界（意象层）：悲恼情绪、逻辑思维、追求精确
+  └── 灵界（原象层）：义理价值观、定义革新使命
+  ↓ 规律
+五行（金性生克）
+  └── 土生金 → 金生水 → 火克金 → 金克木
+  ↓ 量化
+九层（义贪阶梯）
+  └── 1-3健康（义）→ 4-6一般（交战）→ 7-9不健康（贪）
+  ↓ 升华
+回归一心（义理圆融）
+  └── 从"切割万物的利刃" → "衡量天道的尺度"
+```</p>
+<h3>2.2 哲学参照</h3>
+<p>| 哲学体系 | 金行对应 | 说明 |
+|---------|---------|------|
+| 康德哲学 | 纯粹理性 | 立法与划界，确立清晰范畴 |
+| 藏传大圆满 | 明分 | 妙观察智与成所作智的源头 |
+| 儒家 | 义 | 义者，宜也——事物本然之恰当 |
+| 王凤仪 | 找好处 | 金行人核心修炼法门 |</p>
+<p>---</p>
+<h2>三、核心功能模块</h2>
+<h3>3.1 拔阴取阳（转化技术一）</h3>
+<strong>核心口诀</strong>：阴金恼转阳金行 + 阴金贪转阳金义
+<p>| 转化层级 | 阴面（问题） | 阳面（目标） | 实践问句 |
+|:--------|:----------|:-----------|:---------|
+| 心界 | 恼（烦躁挑剔） | 行（冷静分析） | "规则哪需完善？我能做些什么？" |
+| 灵界 | 贪（狭隘自私） | 义（公正原则） | "见到利先问是否合道？" |</p>
+<strong>四步法术</strong>：
+1. 觉察（看阴面）——问："我是'恼'还是'行'？"
+2. 认不是（面对阴面）——承认："我又在用挑剔掩盖不安全感。"
+3. 找好处（转阳面）——行动："我能为这件事找到什么价值？"
+4. 明因果（升维）——智慧："这是'义'还是'贪'在主导？"
+<h3>3.2 化克为生（转化技术二）</h3>
+<strong>金木失衡</strong>：金克木过度 → 金生水（智慧沟通）→ 水生木（滋养创意）
+<strong>火金失衡</strong>：火克金过度 → 水克火（冷静反思）→ 土生金（稳固抗压）
+<h3>3.3 相生强化（转化技术三）</h3>
+<p>| 关系 | 强化实践 |
+|:-----|:---------|
+| 土生金 | 夯实基础、建立诚信、获取稳定支持 |
+| 金生水 | 将原则转化为智慧沟通与灵活变通 |</p>
+<h3>3.4 福格行为模型 B=M×A×P（转化技术四）⭐【v1.7新增】</h3>
+<strong>公式</strong>：B = M（动机）× A（能力）× P（提示）
+<strong>金行人五维度黄金微行为</strong>：
+<p>| 维度 | 阴面问题 | 阳面目标 | 微习惯配方 |
+|:-----|:--------|:--------|:---------|
+| ⚔️ 清明 | 挑剔批判 | 洞察辨识 | "静默30秒法"——评判前等待30秒 |
+| 🔍 决断 | 优柔寡断 | 果断行动 | "两选项决策"——先选出前两个方案 |
+| 🏛️ 条理 | 刻板僵化 | 灵活秩序 | "例外清单"——主动列3个例外场景 |
+| 🤝 公正 | 计较得失 | 仗义疏财 | "主动分享"——每天分享一条有用信息 |
+| 💎 精炼 | 繁琐冗余 | 去芜存菁 | "三删法则"——删减30%文字 |</p>
+<p>---</p>
+<h2>四、使用方式</h2>
+<h3>4.1 自动触发</h3>
+<p>本技能包已配置自动触发规则，当检测到相关关键词时自动激活。</p>
+<h3>4.2 手动调用</h3>
+<p>| 调用方式 | 示例 |
+|:--------|:-----|
+| 诊断分析 | "帮我分析一下我的金行特质" |
+| 层级定位 | "我处于金行九层的哪一级？" |
+| 转化指导 | "金行人如何转化刻薄？" |
+| 发展建议 | "金行人如何修炼成长？" |</p>
+<p>---</p>
+<h2>五、关联技能包</h2>
+<p>| 智能体 | 关系 | 路径 |
+|:------|:-----|:-----|
+| 🔥火智能体 | 共生协同 | `~/.workbuddy/skills/火智能体/` |
+| 🪨土智能体 | 共生协同 | `~/.workbuddy/skills/土智能体/` |
+| 🌳木智能体 | 木克土→土生金 | `~/.workbuddy/skills/木智能体/` |
+| 💧水智能体 | 金生水→水生木 | `~/.workbuddy/skills/水智能体/` |
+| 五行总智能体 | 总调度 | `~/.workbuddy/skills/五行人格心理学/` |</p>
+<p>---</p>
+<h2>六、版本信息</h2>
+<p>| 版本 | 日期 | 更新内容 |
+|:-----|:-----|:---------|
+| <strong>v1.7</strong> | 2026-03-27 | ⭐转化技术四维度全整合，新增福格行为模型B=M×A×P |
+| v2.0 | 2026-03-19 | 基于一心三界五行九层体系升级 |
+| v1.0 | 2026-03-16 | 初始版本 |</p>
+<p>---</p>
+<p>> ⚔️ <strong>金智能体核心理念</strong>：以义为镜，以清为衡，从利刃到尺度。</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

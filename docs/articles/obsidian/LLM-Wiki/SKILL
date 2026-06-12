@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Wiki Skills · 活体维基知识编译系统 v1.0 - 以观其妙书院</title>
+    <meta name="description" content="LLM Wiki Skills · 活体维基知识编译系统 v1.0 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="LLM Wiki Skills · 活体维基知识编译系统 v1.0">
+    <meta property="og:description" content="LLM Wiki Skills · 活体维基知识编译系统 v1.0 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "LLM Wiki Skills · 活体维基知识编译系统 v1.0",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>LLM Wiki Skills · 活体维基知识编译系统 v1.0</h1>
+<p>> <strong>核心定位</strong>：LLM Wiki 是基于卡帕西(Karpathy)「活体维基」体系的知识编译系统，将知识管理从"被动检索"升级为"主动编译"。
+> 
+> <strong>版本</strong>：v1.0 | <strong>创建日期</strong>：2026-04-11 | <strong>维护者</strong>：龙龟神将
+> 
+> <strong>核心哲学</strong>："知识不是被检索的，而是被编译的；知识库不是静态仓库，而是活的生命体"</p>
+<p>---</p>
+<h2>📖 核心定义</h2>
+<h3>What（是什么）</h3>
+<p>LLM Wiki Skills 是一套将<strong>原始素材</strong>通过AI编译为<strong>结构化知识网络</strong>的系统化方法，实现：
+<li>✅ 知识越用越聪明（复利增长）</li>
+<li>✅ 查询无需向量检索（直接读Wiki）</li>
+<li>✅ 全生命周期AI自动化（编译→纠错→反哺）</li></p>
+<h3>Why（为什么）</h3>
+<strong>传统RAG的三大死穴</strong>：
+| 死穴 | 表现 | 后果 |
+|------|------|------|
+| 🔴 即时编译 | 每次提问都要重新读原始素材 | Token消耗爆炸 |
+| 🔴 碎片断裂 | Chunk之间无逻辑关联 | 输出割裂不连贯 |
+| 🔴 零沉淀 | 关闭对话知识清零 | 无复利效应 |
+<strong>LLM Wiki的三大突破</strong>：
+| 突破 | 原理 | 效果 |
+|------|------|------|
+| ✅ 提前编译 | 知识被预编译为Wiki摘要 | Token消耗降低70%+ |
+| ✅ 网状结构 | 双向链接天然关联 | 逻辑连贯一致 |
+| ✅ 答案反哺 | 优质答案写回Wiki | 越用越聪明 |
+<h3>How（怎么做）</h3>
+<strong>一句话工作流</strong>：
+```
+原始素材 → [AI编译] → Wiki结构化知识 → [查询] → 高质量答案 → [反哺] → 更聪明的Wiki
+```
+<p>---</p>
+<h2>🏗️ 三级知识架构</h2>
+<h3>架构概览</h3>
+<p>```
+AI OS知识库
+│
+├── 00-总索引与导航（总入口）
+│
+├── 01-龙心OS核心系统（底层支撑·所有专业的根基）
+│   ├── 龙心OS操作系统
+│   ├── 五大引擎（象思维、知识学习、五色光、人机协同五象限、知行合一）
+│   └── 技术栈Skills（CLI、MCP、Framework等）
+│
+├── 02-专业领域知识库矩阵（应用层·平列关系）
+│   ├── 02-1 企业文化OS知识库
+│   ├── 02-2 五行人格心理学OS知识库
+│   ├── 02-3 象思维及思维模型知识库
+│   ├── 02-4 AI应用知识库
+│   └── 02-5 心文化知识库
+│
+├── 03-凤脑OS知识地基层
+├── 04-实践案例库
+└── 05-个人成长与修行
+```</p>
+<h3>三层职责</h3>
+<p>| 层级 | 目录 | 职责 | LLM权限 |
+|------|------|------|---------|
+| <strong>Raw层</strong> | raw/ | 原始素材存储 | 只读❌不可写 |
+| <strong>Wiki层</strong> | wiki/ | 编译后知识网络 | 可写✅完全拥有 |
+| <strong>Output层</strong> | output/ | 成品输出展示 | 可写✅ |</p>
+<p>---</p>
+<h2>⚙️ 七步核心操作流程</h2>
+<h3>Step 1: 三目录体系建立</h3>
+<strong>目标</strong>：创建raw/wiki/output三目录结构
+<p>```markdown
+<h2>操作清单</h2></p>
+<h3>1.1 创建主目录结构</h3>
+obsidian-vault/
+├── raw/                    # 原始素材（只读）
+│   ├── pdf/               # PDF文档
+│   ├── web/               # 网页剪藏
+│   ├── doc/               # Word/文档
+│   └── notes/             # 速记素材
+│
+├── wiki/                   # 编译知识库（可写）
+│   ├── index.md           # 全局索引（必选）
+│   ├── concepts/          # 概念页
+│   ├── entities/          # 实体页
+│   ├── summaries/         # 摘要页
+│   └── references/        # 交叉引用
+│
+└── output/                 # 成品输出
+    ├── reports/           # 分析报告
+    ├── slides/            # 幻灯片
+    └── charts/            # 图表可视化
+```
+<strong>检验标准</strong>：
+<li>✅ 三目录齐全</li>
+<li>✅ 权限配置正确（raw只读，wiki/output可写）</li>
+<li>✅ index.md存在</li>
+<p>---</p>
+<h3>Step 2: Schema配置部署</h3>
+<strong>目标</strong>：部署AGENTS.md规则文件，控制AI操作边界
+<p>```markdown
+<h2>AGENTS.md 标准模板</h2></p>
+<h1>知识库Schema · AI操作手册</h1>
+<h2>📌 结构规范</h2>
+<h3>命名约定</h3>
+<li>概念页: `concept-[主题].md`</li>
+<li>实体页: `entity-[名称].md`</li>
+<li>摘要页: `summary-[日期].md`</li>
+<h3>标题层级</h3>
+```
+<h1>页面标题（页面名）</h1>
+<h2>核心定义</h2>
+<h3>详细内容</h3>
+#### 子内容
+```
+<h2>🏷️ 标签体系</h2>
+<h3>允许的分类标签</h3>
+<li>`[[核心概念]]` - 核心理论定义</li>
+<li>`[[实践方法]]` - 可执行的方法论</li>
+<li>`[[案例分析]]` - 实战案例</li>
+<li>`[[待验证]]` - 未经验证的新想法</li>
+<li>`[[争议]]` - 存在矛盾的观点</li>
+<h3>禁止的标签</h3>
+<li>❌ 个人情感标签</li>
+<li>❌ 未分类的临时标签</li>
+<h2>🔄 更新规则</h2>
+<h3>同主题新资料处理</h3>
+<li>核心概念: <strong>追加</strong>（保留历史，新增更新）</li>
+<li>非核心概念: <strong>覆盖</strong>（直接替换）</li>
+<li>案例分析: <strong>合并</strong>（整合新旧案例）</li>
+<h3>矛盾处理策略</h3>
+<li>发现矛盾 → 标记 `[[争议]]`</li>
+<li>在页面底部添加"争议说明"区块</li>
+<li>等待人工确认后决定保留哪个</li>
+<h2>🛡️ 权限边界</h2>
+<h3>AI可写区域</h3>
+<li>✅ wiki/ 全目录</li>
+<li>✅ output/ 全目录</li>
+<h3>AI禁止写区域</h3>
+<li>❌ raw/ 全目录</li>
+<li>❌ 核心概念页（需人工审核）</li>
+<h3>核心概念页（需人工审核）</h3>
+<li>`concept-五行识人.md`</li>
+<li>`concept-大圆满见地.md`</li>
+<li>`concept-龙心OS.md`</li>
+```
+<p>---</p>
+<h3>Step 3: Ingest原始资料录入</h3>
+<strong>目标</strong>：将新素材录入raw/，触发编译流程
+<p>```markdown
+<h2>Ingest操作流程</h2></p>
+<h3>3.1 素材收集</h3>
+1. 使用Obsidian Web Clipper抓取网页
+2. 下载PDF到raw/pdf/
+3. 手动放入doc/文件夹
+<h3>3.2 触发编译</h3>
+向AI发送指令：
+> "请处理 raw/[文件名]，编译进入wiki/"
+<h3>3.3 AI执行</h3>
+1. 读取原始素材全文
+2. 提炼核心观点
+3. 判断归属目录
+4. 生成/更新Wiki页面
+5. 建立交叉引用
+```
+<p>---</p>
+<h3>Step 4: Wiki编译生成</h3>
+<strong>目标</strong>：AI将原始素材编译为结构化Markdown
+<p>```markdown
+<h2>编译输出模板</h2></p>
+<h3>概念页模板</h3>
+```markdown
+<h1>concept-[主题名]</h1>
+<h2>核心定义</h2>
+[一句话定义，不超过30字]
+<h2>详细阐述</h2>
+[2-3段深度解释]
+<h2>与其他概念的关系</h2>
+<li>相关: [[概念A]]、[[概念B]]</li>
+<li>对比: [[概念C]]（异同点）</li>
+<h2>实践应用</h2>
+[如何应用的场景]
+<h2>争议与讨论</h2>
+[如有矛盾观点，在此标记]
+<h2>参考来源</h2>
+<li>[[原始素材文件名]]</li>
+```
+<h3>实体页模板</h3>
+```markdown
+<h1>entity-[实体名]</h1>
+<h2>基本信息</h2>
+<li>类型: [人物/产品/技术/事件]</li>
+<li>领域: [所属领域]</li>
+<li>重要度: ⭐⭐⭐</li>
+<h2>核心特征</h2>
+[3-5个关键点]
+<h2>历史沿革</h2>
+[时间线，如有]
+<h2>相关项目</h2>
+<li>[[关联实体A]]</li>
+<li>[[关联实体B]]</li>
+<h2>原始资料</h2>
+<li>[[raw/原始文件名]]</li>
+```
+<p>---</p>
+<h3>Step 5: 交叉引用构建</h3>
+<strong>目标</strong>：建立实体页/概念页之间的双向链接
+<p>```markdown
+<h2>引用构建规则</h2></p>
+<h3>5.1 实体页关联</h3>
+当多个文档提及同一实体时：
+1. 生成统一的entity-[实体名].md
+2. 在各相关页面添加 [[entity-实体名]]
+3. 确保实体页包含所有引用片段
+<h3>5.2 概念页关联</h3>
+当概念之间存在逻辑关系时：
+<li>因果关系: A导致B → [[A]]→[[B]]</li>
+<li>对比关系: A vs B → [[A]]与[[B]]对比</li>
+<li>包含关系: A包含B → [[A]]包含[[B]]</li>
+<h3>5.3 索引更新</h3>
+每次新增引用后，更新 index.md：
+```markdown
+<h2>最近更新</h2>
+<li>[[entity-新实体]] - [日期]</li>
+<li>[[concept-新概念]] - [日期]</li>
+<h2>知识图谱概览</h2>
+[用列表展示顶层分类]
+```
+```
+<p>---</p>
+<h3>Step 6: 健康检查维护</h3>
+<strong>目标</strong>：定期Lint扫描，保持知识库健康
+<p>```markdown
+<h2>健康检查清单</h2></p>
+<h3>6.1 死链接检测</h3>
+<li>扫描所有 [[链接]]</li>
+<li>确认目标页面存在</li>
+<li>标记孤立页面</li>
+<h3>6.2 矛盾检测</h3>
+<li>扫描 [[争议]] 标签</li>
+<li>检查同一主题的多个版本</li>
+<li>标记需要人工裁决的冲突</li>
+<h3>6.3 过时标记</h3>
+<li>检查6个月未更新的页面</li>
+<li>添加 [[待更新]] 标签</li>
+<li>在index.md中显示"可能过时"</li>
+<h3>6.4 链接建议</h3>
+<li>扫描孤立页面</li>
+<li>建议可能的关联对象</li>
+<li>生成"待关联"清单</li>
+<h2>Lint执行频率</h2>
+<li>增量检查: 每次Ingest后</li>
+<li>全面检查: 每周一次</li>
+```
+<p>---</p>
+<h3>Step 7: 答案反哺归档</h3>
+<strong>目标</strong>：优质答案回写Wiki，实现复利增长
+<p>```markdown
+<h2>反哺机制</h2></p>
+<h3>7.1 什么答案值得反哺？</h3>
+<li>跨3个以上原始素材的综合分析</li>
+<li>原创性洞察（非简单摘要）</li>
+<li>可复用的实践模板</li>
+<h3>7.2 反哺格式</h3>
+```markdown
+<h1>synthesis-[主题]-[日期]</h1>
+<h2>原创洞察</h2>
+[来自这次分析的独特发现]
+<h2>综合来源</h2>
+<li>[[entity-实体A]]</li>
+<li>[[entity-实体B]]</li>
+<li>[[concept-概念C]]</li>
+<h2>应用建议</h2>
+[如何应用到实践中]
+<h2>原创者</h2>
+LLM Wiki编译 · [日期]
+```
+<h3>7.3 反哺流程</h3>
+1. 分析完成后，询问"是否写入Wiki?"
+2. 用户确认 → 生成synthesis页
+3. 自动更新index.md
+4. 记录为一次"知识复利"
+```
+<p>---</p>
+<h2>🐉 LLM Wiki × 龙心OS 整合</h2>
+<h3>整合架构</h3>
+<p>```yaml
+龙心OS五大引擎 × LLM Wiki:</p>
+<p>🐉 象思维:
+  用途: 概念页编译时的0→1原创框架
+  调用时机: 概念提炼阶段
+  
+📚 知识学习:
+  用途: 原始素材的深度理解
+  调用时机: Ingest后、编译前
+  
+🌈 五色光思维:
+  用途: 知识分类的多维分析
+  调用时机: 判断归属目录时
+  
+🤝 人机协同五象限:
+  用途: 编译任务的分工设计
+  调用时机: 复杂项目时
+  
+🔄 知行合一:
+  用途: 编译经验沉淀
+  调用时机: 每次编译完成后
+```</p>
+<h3>AI OS知识库·观其妙书院版</h3>
+<p>```
+观其妙书院知识库
+├── raw/                        # 原始素材（只读）
+│   ├── 经典典籍/
+│   ├── 客户案例/
+│   └── 学习资料/
+│
+├── wiki/                       # 编译知识库
+│   ├── 00-索引与导航/
+│   ├── 01-龙心OS核心系统/
+│   │   ├── 00-龙心OS总览/
+│   │   ├── 01-五大引擎/
+│   │   └── 02-技术栈Skills/
+│   ├── 02-专业领域知识库矩阵/
+│   │   ├── 02-1-企业文化OS/
+│   │   ├── 02-2-五行人格心理学OS/
+│   │   ├── 02-3-象思维知识库/
+│   │   ├── 02-4-AI应用知识库/
+│   │   └── 02-5-心文化知识库/
+│   ├── 03-凤脑OS知识地基层/
+│   ├── 04-实践案例库/
+│   └── 05-个人成长与修行/
+│
+└── output/                     # 成品输出
+    ├── 咨询报告/
+    ├── 培训课件/
+    └── 知识图谱/
+```</p>
+<p>---</p>
+<h2>📊 效能对比</h2>
+<p>| 指标 | 传统RAG | LLM Wiki |
+|------|---------|----------|
+| Token消耗 | 🔴 极高（每次重读） | ✅ 降低70%+（读Wiki摘要） |
+| 响应速度 | 🔴 慢（检索-重排-推理） | ✅ 实时（索引定位+短文本） |
+| 知识一致性 | 🔴 差（碎片断裂） | ✅ 版本可控（双向链接+Lint） |
+| 维护成本 | 🔴 人工（打标签清死链） | ✅ AI自动化（全流程编译） |
+| 知识增长 | 🔴 线性消耗（用完即弃） | ✅ 复利增长（答案回写） |</p>
+<p>---</p>
+<h2>🚀 快速使用</h2>
+<h3>启动LLM Wiki</h3>
+<p>```
+用户: "我有个PDF要编译进知识库"
+AI: "请把PDF放入 raw/pdf/，然后说'编译[文件名]'"</p>
+<p>用户: "编译知识管理.pdf"
+AI: [执行7步编译流程]
+```</p>
+<h3>查询知识库</h3>
+<p>```
+用户: "关于五行识人，知识库里有什么?"
+AI: [读取index.md定位→阅读相关Wiki→综合回答]
+```</p>
+<h3>健康检查</h3>
+<p>```
+用户: "检查一下知识库"
+AI: [执行Lint扫描→报告死链接/矛盾/过时→建议修复]
+```</p>
+<p>---</p>
+<h2>📚 关联文档</h2>
+<h3>核心文件</h3>
+<li>`references/theory.md` - 卡帕西体系完整理论</li>
+<li>`references/practice-guide.md` - 详细实操指南</li>
+<li>`references/integration-notes.md` - 龙心OS整合笔记</li>
+<h3>模板文件</h3>
+<li>`templates/wiki-template.md` - Wiki页面模板</li>
+<li>`templates/schema-template.md` - Schema配置模板</li>
+<li>`templates/lint-checklist.md` - 健康检查清单</li>
+<h3>测试用例</h3>
+<li>`test-cases.md` - 3个完整测试场景</li>
+<p>---</p>
+<h2>🔄 版本历史</h2>
+<p>| 版本 | 日期 | 改动点 |
+|------|------|--------|
+| v1.0 | 2026-04-11 | 初始版本：基于卡帕西体系的LLM Wiki Skills |</p>
+<p>---</p>
+<strong>LLM Wiki Skills v1.0</strong> · <strong>龙龟神将</strong>
+*让知识编译驱动智慧增长，让知识库成为活的生命体* 🐉
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

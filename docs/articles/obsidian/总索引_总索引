@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>以观其妙书院知识库总索引 - 以观其妙书院</title>
+    <meta name="description" content="以观其妙书院知识库总索引 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="以观其妙书院知识库总索引">
+    <meta property="og:description" content="以观其妙书院知识库总索引 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "以观其妙书院知识库总索引",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>以观其妙书院知识库总索引</h1>
+<p>> 📚 龙心 OS 知识库 · 五行双向链接知识网络 · 总入口</p>
+<p>---</p>
+<h2>📋 快速导航</h2>
+<p>| 层级 | 说明 | 核心文件 |
+|------|------|----------|
+| <strong>00-总索引与导航</strong> | 全局入口、模板、使用指南 | [[使用指南]] [[知识图谱]] |
+| <strong>01-龙心 OS 核心系统</strong> | 底层支撑·所有专业的根基 | [[龙心 OS 操作系统]] [[五大引擎]] |
+| <strong>02-专业领域知识库矩阵</strong> | 应用层·平列关系 | [[五行人格]] [[象思维]] [[AI 应用]] |
+| <strong>03-知识地基层</strong> | 理论支撑·东方智慧 | [[象思维总论]] [[五行分类图谱]] [[阴阳原理]] |
+| <strong>04-实践案例库</strong> | 实战案例·经验沉淀 | [待填充] |
+| <strong>05-个人成长与修行</strong> | 个人修养·心性提升 | [待填充] |</p>
+<p>---</p>
+<h2>🏛️ 知识库架构</h2>
+<p>```
+以观其妙书院知识库/
+│
+├── 00-总索引与导航/
+│   ├── 总索引.md (本文件)
+│   ├── 使用指南.md
+│   ├── 知识图谱.md
+│   └── 模板/
+│       └── 标准文档模板.md
+│
+├── 01-龙心 OS 核心系统/
+│   ├── 龙心 OS 操作系统/
+│   ├── 五大引擎/
+│   │   ├── 象思维引擎.md
+│   │   ├── 知识学习引擎.md
+│   │   ├── 五色光引擎.md
+│   │   ├── 人机协同五象限.md
+│   │   └── 知行合一引擎.md
+│   └── 技术栈 Skills/
+│
+├── 02-专业领域知识库矩阵/
+│   ├── 02-1 企业文化 OS 知识库/
+│   ├── 02-2 五行人格心理学 OS 知识库/
+│   ├── 02-3 象思维及思维模型知识库/
+│   ├── 02-4 AI 应用知识库/
+│   └── 02-5 心文化知识库/
+│
+├── 03-知识地基层/
+│   ├── 象思维体系/
+│   ├── 五行分类图谱/
+│   ├── 阴阳原理/
+│   ├── 易经基础/
+│   ├── 中医藏象/
+│   ├── 道家思想/
+│   └── 儒家思想/
+│
+├── 04-实践案例库/
+│
+├── 05-个人成长与修行/
+│
+├── Notes/                    # 输入层
+│   ├── Clippings/           # 网页剪藏
+│   ├── Inbox/               # 碎片想法
+│   └── Conversation/        # AI 对话沉淀
+│
+├── Knowledge/                # 知识层
+│   ├── 方法论/
+│   └── 读书笔记/
+│
+├── Software/                 # 技能层
+│   └── 工具技巧/
+│
+├── LifeOS/                   # 行动层
+│   └── 投资/
+│
+└── Writing/                  # 产出层
+    └── 视频脚本/
+```</p>
+<p>---</p>
+<h2>🔗 双向链接网络</h2>
+<h3>核心链接关系</h3>
+<p>| 源文件 | 链接类型 | 目标文件 | 关系说明 |
+|--------|----------|----------|----------|
+| [[象思维总论]] | 理论基础 | [[五行分类图谱]] | 象思维是五行的认知基础 |
+| [[五行分类图谱]] | 应用展开 | [[五行人格]] | 五行在人格心理学的应用 |
+| [[阴阳原理]] | 基础理论 | [[五行分类图谱]] | 阴阳是五行的基础 |
+| [[易经基础]] | 元典支撑 | [[象思维总论]] | 易经是象思维的元典 |</p>
+<h3>链接密度统计</h3>
+<p>| 指标 | 数值 | 目标 |
+|------|------|------|
+| 总文件数 | - | 100+ |
+| 平均链接数/文件 | - | 5+ |
+| 孤立文件数 | - | 0 |
+| 核心节点数 | - | 10+ |</p>
+<p>---</p>
+<h2>📖 学习路径设计</h2>
+<h3>入门路径（新手）</h3>
+<p>```
+1. [[使用指南]] → 2. [[象思维总论]] → 3. [[阴阳原理]] → 4. [[五行分类图谱]]
+```</p>
+<p>| 步骤 | 文件 | 预计时间 | 目标 |
+|------|------|----------|------|
+| 1 | [[使用指南]] | 30 分钟 | 了解知识库使用方法 |
+| 2 | [[象思维总论]] | 2 小时 | 掌握象思维核心概念 |
+| 3 | [[阴阳原理]] | 1 小时 | 理解阴阳二元关系模型 |
+| 4 | [[五行分类图谱]] | 3 小时 | 掌握五行系统分类 |</p>
+<h3>进阶路径（深度学习）</h3>
+<p>```
+1. [[易经基础]] → 2. [[中医藏象]] → 3. [[道家思想]] → 4. [[儒家思想]]
+```</p>
+<h3>应用路径（实践导向）</h3>
+<p>```
+1. [[五行人格]] → 2. [[象思维应用]] → 3. [[AI 应用]] → 4. [[实践案例]]
+```</p>
+<p>---</p>
+<h2>🗺️ 知识图谱可视化</h2>
+<h3>核心节点</h3>
+<p>| 节点 | 类型 | 链接数 | 重要性 |
+|------|------|--------|--------|
+| [[象思维总论]] | 理论基础 | - | ⭐⭐⭐⭐⭐ |
+| [[五行分类图谱]] | 核心框架 | - | ⭐⭐⭐⭐⭐ |
+| [[阴阳原理]] | 基础理论 | - | ⭐⭐⭐⭐ |
+| [[易经基础]] | 元典支撑 | - | ⭐⭐⭐⭐ |</p>
+<h3>图谱查看方式</h3>
+<p>1. <strong>Obsidian 图谱视图</strong>: 点击左侧菜单"图谱"查看全局知识网络
+2. <strong>颜色筛选</strong>: 按标签筛选不同五行属性的节点
+3. <strong>本地图谱</strong>: 右键文件查看局部关联</p>
+<p>---</p>
+<h2>🤖 自动化工具</h2>
+<h3>验证脚本</h3>
+<p>| 脚本 | 功能 | 路径 |
+|------|------|------|
+| verify_links.py | 验证双向链接完整性 | `scripts/verify_links.py` |
+| backup_incremental.py | 增量备份 | `scripts/backup_incremental.py` |
+| classify_files.py | 智能文件分类 | `scripts/classify_files.py` |</p>
+<h3>使用方法</h3>
+<p>```bash
+<h1>验证链接完整性</h1>
+python scripts/verify_links.py</p>
+<h1>增量备份</h1>
+python scripts/backup_incremental.py
+<h1>智能分类</h1>
+python scripts/classify_files.py
+```
+<p>---</p>
+<h2>📊 知识库统计</h2>
+<p>| 指标 | 数值 | 更新日期 |
+|------|------|----------|
+| 总文件数 | - | - |
+| 总字数 | - | - |
+| 平均链接数 | - | - |
+| 本周新增 | - | - |
+| 本周更新 | - | - |</p>
+<p>---</p>
+<h2>🔄 更新日志</h2>
+<p>| 日期 | 更新内容 | 作者 |
+|------|----------|------|
+| 2026-04-13 | 创建总索引、文件夹体系、模板 | 龙龟 |</p>
+<p>---</p>
+<h2>🔗 相关页面</h2>
+<li>[[使用指南]]</li>
+<li>[[知识图谱]]</li>
+<li>[[标准文档模板]]</li>
+<p>---</p>
+<p>_以观其妙书院知识库总索引 v1.0 · 最后更新：2026-04-13 · 龙心 OS_</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

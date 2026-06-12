@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麦肯锡思考框架 · 理论体系完整版 - 以观其妙书院</title>
+    <meta name="description" content="麦肯锡思考框架 · 理论体系完整版 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="麦肯锡思考框架 · 理论体系完整版">
+    <meta property="og:description" content="麦肯锡思考框架 · 理论体系完整版 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "麦肯锡思考框架 · 理论体系完整版",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>麦肯锡思考框架 · 理论体系完整版</h1>
+<p>> <strong>文档定位</strong>: 麦肯锡六大类框架的完整理论解析  
+> <strong>版本</strong>: v1.0  
+> <strong>创建</strong>: 2026-04-09</p>
+<p>---</p>
+<h2>一、战略规划与管理类框架详解</h2>
+<h3>1.1 SWOT分析</h3>
+<strong>定义</strong>: 对企业内外部环境进行系统性评估的经典框架。
+<strong>四个维度</strong>:
+<li><strong>S (Strengths) 优势</strong>: 内部积极因素，如核心竞争力、资源优势</li>
+<li><strong>W (Weaknesses) 劣势</strong>: 内部消极因素，如资源短板、能力缺陷</li>
+<li><strong>O (Opportunities) 机会</strong>: 外部积极因素，如市场增长、政策支持</li>
+<li><strong>T (Threats) 威胁</strong>: 外部消极因素，如竞争加剧、技术变革</li>
+<strong>分析矩阵</strong>:
+```
+              积极              消极
+        ┌─────────────┬─────────────┐
+   内部 │   优势(S)    │   劣势(W)    │
+        │             │             │
+        ├─────────────┼─────────────┤
+   外部 │   机会(O)    │   威胁(T)    │
+        │             │             │
+        └─────────────┴─────────────┘
+```
+<strong>策略组合</strong>:
+<li>SO策略: 利用优势抓住机会（增长型）</li>
+<li>WO策略: 克服劣势抓住机会（扭转型）</li>
+<li>ST策略: 利用优势规避威胁（多元化）</li>
+<li>WT策略: 减少劣势规避威胁（防御型）</li>
+<strong>使用步骤</strong>:
+1. 列出所有内部优势
+2. 列出所有内部劣势
+3. 列出所有外部机会
+4. 列出所有外部威胁
+5. 构建SWOT矩阵
+6. 制定策略组合
+<p>---</p>
+<h3>1.2 BCG矩阵（波士顿矩阵）</h3>
+<strong>定义</strong>: 用于业务组合分析和资源分配决策的工具。
+<strong>两个维度</strong>:
+<li><strong>市场增长率</strong>（纵轴）: 高/低</li>
+<li><strong>相对市场份额</strong>（横轴）: 高/低</li>
+<strong>四类产品</strong>:
+```
+        高市场增长率
+              │
+    ┌─────────┼─────────┐
+    │  问题类  │  明星类  │
+    │(Question)│  (Star)  │
+    │  选择性  │  投资发展 │
+低市├─────────┼─────────┤高市
+场份│  瘦狗类  │  金牛类  │场份
+额  │  (Dog)   │  (Cash)  │额
+    │  淘汰/收割│  维持/收割│
+    └─────────┴─────────┘
+        低市场增长率
+```
+<strong>策略建议</strong>:
+<li><strong>明星类</strong>: 加大投资，保持领先地位</li>
+<li><strong>金牛类</strong>: 维持地位，收割现金流</li>
+<li><strong>问题类</strong>: 选择性投资，转化为明星或淘汰</li>
+<li><strong>瘦狗类</strong>: 逐步淘汰或收割</li>
+<p>---</p>
+<h3>1.3 PEST分析</h3>
+<strong>定义</strong>: 宏观环境扫描工具，分析影响企业的外部因素。
+<strong>四个维度</strong>:
+<li><strong>P (Political) 政治</strong>: 政策、法规、政治稳定性、政府态度</li>
+<li><strong>E (Economic) 经济</strong>: GDP、利率、通胀、汇率、消费能力</li>
+<li><strong>S (Social) 社会</strong>: 人口结构、文化习惯、生活方式、价值观</li>
+<li><strong>T (Technological) 技术</strong>: 技术发展趋势、创新速度、技术替代</li>
+<strong>扩展版PESTLE</strong>:
+<li><strong>+L (Legal) 法律</strong>: 劳动法、环保法、知识产权法</li>
+<li><strong>+E (Environmental) 环境</strong>: 环保要求、可持续发展、气候变化</li>
+<strong>使用要点</strong>:
+<li>每个维度列出3-5个关键因素</li>
+<li>评估每个因素的影响程度（高/中/低）</li>
+<li>评估每个因素的变化趋势（正向/负向/稳定）</li>
+<li>识别关键机会和威胁</li>
+<p>---</p>
+<h3>1.4 STP模型</h3>
+<strong>定义</strong>: 市场细分、目标市场选择、定位的经典营销框架。
+<strong>三个步骤</strong>:
+<strong>S (Segmentation) 市场细分</strong>:
+<li>地理细分: 区域、城市、气候</li>
+<li>人口细分: 年龄、性别、收入、教育</li>
+<li>心理细分: 生活方式、价值观、个性</li>
+<li>行为细分: 使用频率、品牌忠诚度、购买动机</li>
+<strong>T (Targeting) 目标市场选择</strong>:
+<li>无差异营销: 整个市场</li>
+<li>差异化营销: 多个细分市场</li>
+<li>集中营销: 单一细分市场</li>
+<li>微营销: 特定个体/地区</li>
+<strong>P (Positioning) 定位</strong>:
+<li>确定差异化优势</li>
+<li>选择定位策略（领导者/挑战者/跟随者/利基）</li>
+<li>构建定位陈述</li>
+<li>传播定位信息</li>
+<strong>定位陈述模板</strong>:
+> 对于[目标市场]，我们的[产品/品牌]是[品类]中，能够提供[关键利益]的[差异化特征]，因为[支持理由]。
+<p>---</p>
+<h3>1.5 安索夫矩阵</h3>
+<strong>定义</strong>: 用于制定增长战略的工具，分析产品和市场的组合。
+<strong>两个维度</strong>:
+<li><strong>产品</strong>: 现有产品 / 新产品</li>
+<li><strong>市场</strong>: 现有市场 / 新市场</li>
+<strong>四种增长策略</strong>:
+```
+              现有产品          新产品
+        ┌─────────────┬─────────────┐
+        │   市场渗透   │   产品开发   │
+  现有  │  (Penetrate) │  (Product)   │
+  市场  │             │             │
+        ├─────────────┼─────────────┤
+        │   市场开发   │   多元化    │
+  新市场 │  (Market)    │ (Diversify) │
+        │             │             │
+        └─────────────┴─────────────┘
+```
+<strong>策略详解</strong>:
+<li><strong>市场渗透</strong>: 现有产品+现有市场 → 提高市场份额</li>
+<li><strong>市场开发</strong>: 现有产品+新市场 → 地理扩张/新细分市场</li>
+<li><strong>产品开发</strong>: 新产品+现有市场 → 产品创新/升级</li>
+<li><strong>多元化</strong>: 新产品+新市场 → 相关多元化/非相关多元化</li>
+<strong>风险等级</strong>: 市场渗透 < 市场开发 ≈ 产品开发 < 多元化
+<p>---</p>
+<h2>二、项目管理与执行类框架详解</h2>
+<h3>2.1 七步问题解决法</h3>
+<strong>定义</strong>: 麦肯锡经典的问题解决流程，系统化、结构化处理问题。
+<strong>七个步骤</strong>:
+<strong>步骤1: 界定问题</strong>
+<li>明确问题的范围和边界</li>
+<li>区分症状与根本原因</li>
+<li>确定问题的紧迫性和重要性</li>
+<strong>步骤2: 分解问题</strong>
+<li>使用逻辑树或议题树拆解</li>
+<li>遵循MECE原则</li>
+<li>识别关键子问题</li>
+<strong>步骤3: 优先排序</strong>
+<li>评估各子问题的影响程度</li>
+<li>评估解决难度</li>
+<li>确定优先解决的子问题</li>
+<strong>步骤4: 分析计划</strong>
+<li>确定分析方法</li>
+<li>明确数据来源</li>
+<li>制定时间计划</li>
+<strong>步骤5: 关键分析</strong>
+<li>收集数据</li>
+<li>进行深入分析</li>
+<li>验证假设</li>
+<strong>步骤6: 综合建议</strong>
+<li>整合分析结果</li>
+<li>形成结论</li>
+<li>提出具体建议</li>
+<strong>步骤7: 沟通实施</strong>
+<li>准备汇报材料</li>
+<li>使用金字塔结构表达</li>
+<li>推动实施落地</li>
+<p>---</p>
+<h3>2.2 逻辑树</h3>
+<strong>定义</strong>: 将复杂问题分解为可管理子问题的层级结构工具。
+<strong>三种类型</strong>:
+<strong>议题树 (Issue Tree)</strong>:
+<li>用于: 问题分解、假设生成</li>
+<li>结构: 问题 → 子议题 → 具体议题</li>
+<li>特点: 开放式，探索性</li>
+<strong>假设树 (Hypothesis Tree)</strong>:
+<li>用于: 假设验证、快速决策</li>
+<li>结构: 假设 → 子假设 → 验证点</li>
+<li>特点: 结论先行，验证导向</li>
+<strong>决策树 (Decision Tree)</strong>:
+<li>用于: 方案选择、风险评估</li>
+<li>结构: 决策点 → 选项 → 结果</li>
+<li>特点: 量化评估，概率分析</li>
+<strong>MECE原则</strong>:
+<li><strong>M (Mutually Exclusive) 相互独立</strong>: 各分支不重叠</li>
+<li><strong>CE (Collectively Exhaustive) 完全穷尽</strong>: 全覆盖无遗漏</li>
+<strong>构建步骤</strong>:
+1. 明确核心问题
+2. 确定分解维度
+3. 逐层分解至可执行
+4. 检查MECE原则
+5. 标注优先级
+<p>---</p>
+<h3>2.3 重要度/紧急度矩阵</h3>
+<strong>定义</strong>: 任务优先级排序工具，又称艾森豪威尔矩阵。
+<strong>四个象限</strong>:
+```
+              紧急
+              │
+    ┌─────────┼─────────┐
+    │  第一象限 │  第二象限 │
+    │ 重要且紧急│ 重要不紧急│
+    │  立即做   │  计划做   │
+高重├─────────┼─────────┤低重
+要度│  第三象限 │  第四象限 │要度
+    │ 紧急不重要│ 不重要不紧急│
+    │  委托做   │  不做     │
+    └─────────┴─────────┘
+              不紧急
+```
+<strong>策略建议</strong>:
+<li><strong>第一象限</strong>: 立即处理，但尽量减少</li>
+<li><strong>第二象限</strong>: 重点投入，预防第一象限</li>
+<li><strong>第三象限</strong>: 委托他人或快速处理</li>
+<li><strong>第四象限</strong>: 消除或减少</li>
+<p>---</p>
+<h3>2.4 假设思考</h3>
+<strong>定义</strong>: 基于假设快速推进，通过数据验证或证伪的分析方法。
+<strong>核心流程</strong>:
+<strong>生成假设</strong>:
+<li>基于经验和直觉快速形成假设</li>
+<li>假设应该可验证、可证伪</li>
+<li>通常生成3-5个 competing hypotheses</li>
+<strong>定义验证标准</strong>:
+<li>明确验证假设需要的数据</li>
+<li>确定证明/证伪的标准</li>
+<li>评估数据获取难度</li>
+<strong>快速验证</strong>:
+<li>优先验证关键假设</li>
+<li>使用80/20原则</li>
+<li>快速迭代调整</li>
+<strong>形成结论</strong>:
+<li>整合验证结果</li>
+<li>接受/拒绝/修正假设</li>
+<li>形成最终建议</li>
+<strong>适用场景</strong>:
+<li>时间紧迫的决策</li>
+<li>信息不完整的分析</li>
+<li>创新性问题解决</li>
+<p>---</p>
+<h2>三、逻辑思考与结构化分析类框架详解</h2>
+<h3>3.1 MECE原则</h3>
+<strong>定义</strong>: 结构化思维的核心原则，确保分析的完整性和独立性。
+<strong>核心要义</strong>:
+<li><strong>相互独立 (Mutually Exclusive)</strong>: 各分类之间无重叠</li>
+<li><strong>完全穷尽 (Collectively Exhaustive)</strong>: 所有分类加起来全覆盖</li>
+<strong>常见分解方法</strong>:
+<strong>公式法</strong>:
+<li>利润 = 收入 - 成本</li>
+<li>收入 = 价格 × 数量</li>
+<strong>流程法</strong>:
+<li>按时间顺序分解</li>
+<li>按业务流程分解</li>
+<strong>要素法</strong>:
+<li>按组成部分分解</li>
+<li>按影响因素分解</li>
+<strong>矩阵法</strong>:
+<li>两个维度交叉</li>
+<li>形成分类矩阵</li>
+<strong>检查清单</strong>:
+<li>是否有重叠? → 调整分类边界</li>
+<li>是否有遗漏? → 补充遗漏项</li>
+<li>是否在同一层级? → 调整层级关系</li>
+<p>---</p>
+<h3>3.2 金字塔结构</h3>
+<strong>定义</strong>: 结论先行的逻辑表达结构，适用于汇报、写作、沟通。
+<strong>核心原则</strong>:
+<strong>结论先行</strong>:
+<li>先给出核心观点</li>
+<li>再展开支持论据</li>
+<li>符合听众认知习惯</li>
+<strong>以上统下</strong>:
+<li>上层是下层的概括</li>
+<li>下层是上层的支撑</li>
+<li>层级关系清晰</li>
+<strong>归类分组</strong>:
+<li>同组内容属于同一范畴</li>
+<li>按逻辑顺序排列</li>
+<li>遵循MECE原则</li>
+<strong>逻辑递进</strong>:
+<li>时间顺序: 步骤、流程</li>
+<li>结构顺序: 空间、组成</li>
+<li>程度顺序: 重要性、优先级</li>
+<strong>金字塔结构图示</strong>:
+```
+              ┌─────────┐
+              │  核心观点 │  ← 结论先行
+              │ (G: Goal)│
+              └────┬────┘
+                   │
+       ┌───────────┼───────────┐
+       │           │           │
+   ┌───┴───┐   ┌───┴───┐   ┌───┴───┐
+   │ 论据A  │   │ 论据B  │   │ 论据C  │  ← 以上统下
+   │       │   │       │   │       │
+   └───┬───┘   └───┬───┘   └───┬───┘
+       │           │           │
+   ┌───┴───┐   ┌───┴───┐   ┌───┴───┐
+   │支撑A1 │   │支撑B1 │   │支撑C1 │  ← 归类分组
+   │支撑A2 │   │支撑B2 │   │支撑C2 │
+   └───────┘   └───────┘   └───────┘
+```
+<strong>SCQA序言结构</strong>:
+<li><strong>S (Situation) 情境</strong>: 背景信息</li>
+<li><strong>C (Complication) 冲突</strong>: 存在的问题</li>
+<li><strong>Q (Question) 问题</strong>: 核心疑问</li>
+<li><strong>A (Answer) 答案</strong>: 核心观点</li>
+<p>---</p>
+<h3>3.3 五色光思维（原六顶思考帽）</h3>
+<strong>定义</strong>: 悟空独创的结构化、同频化集体思考与决策系统，与六顶思考帽高度同构。
+<strong>六顶帽子</strong>:
+<p>| 颜色 | 思维方向 | 关键问题 | 五色光对应 |
+|------|---------|---------|-----------|
+| ⬜ 白帽 | 客观事实 | 我们知道什么? 需要什么信息? | ⬜ 白光 |
+| 🔴 红帽 | 直觉感受 | 我的直觉是什么? 有什么预感? | 🔴 红光 |
+| 🟡 黄帽 | 积极价值 | 有什么好处? 价值在哪里? | 🟡 黄光 |
+| 🟢 绿帽 | 创新方案 | 还有什么可能性? 如何创新? | 🟢 绿光 |
+| 🔵 黑帽 | 风险控制 | 风险是什么? 有什么问题? | 🔵 蓝光 |
+| 🔵 蓝帽 | 过程控制 | 我们思考到哪里了? 下一步是什么? | 🎯 主持人 |</p>
+<strong>使用方式</strong>:
+<li><strong>单独使用</strong>: 特定阶段聚焦特定思维</li>
+<li><strong>序列使用</strong>: 按顺序切换不同帽子</li>
+<li><strong>团队使用</strong>: 不同成员戴不同帽子</li>
+<strong>经典序列</strong>:
+<li>白→绿→黄→黑→红→蓝（全面分析）</li>
+<li>蓝→白→绿→黄→黑→红→蓝（结构化讨论）</li>
+<p>---</p>
+<h2>四、创意与问题解决类框架详解</h2>
+<h3>4.1 SCAMPER法</h3>
+<strong>定义</strong>: 系统性创新检查清单，用于改进现有产品/流程。
+<strong>七个检查点</strong>:
+<p>| 字母 | 英文 | 中文 | 关键问题 |
+|------|------|------|---------|
+| S | Substitute | 替代 | 什么可以替代? 谁可以替代? |
+| C | Combine | 组合 | 可以组合什么? 如何组合? |
+| A | Adapt | 适应 | 可以适应什么? 借鉴什么? |
+| M | Modify | 修改 | 可以修改什么? 放大/缩小? |
+| P | Put to other uses | 他用 | 还有什么用途? 新场景? |
+| E | Eliminate | 消除 | 可以消除什么? 简化什么? |
+| R | Reverse/Rearrange | 逆转/重排 | 可以逆转什么? 重新排列? |</p>
+<strong>使用步骤</strong>:
+1. 选择改进对象
+2. 依次检查7个维度
+3. 记录所有想法
+4. 评估可行性
+5. 形成改进方案
+<p>---</p>
+<h3>4.2 曼陀罗思考法</h3>
+<strong>定义</strong>: 九宫格联想拓展工具，用于创意发散和系统思考。
+<strong>结构</strong>:
+```
+┌─────┬─────┬─────┐
+│  8  │  1  │  2  │
+├─────┼─────┼─────┤
+│  7  │  主题 │  3  │
+├─────┼─────┼─────┤
+│  6  │  5  │  4  │
+└─────┴─────┴─────┘
+```
+<strong>使用方式</strong>:
+1. 中心填写核心主题
+2. 周围8格填写相关要素
+3. 每个要素可再扩展为新的曼陀罗
+4. 形成多层次思考网络
+<strong>应用场景</strong>:
+<li>创意发散</li>
+<li>计划制定</li>
+<li>问题分析</li>
+<li>学习整理</li>
+<p>---</p>
+<h3>4.3 决策矩阵</h3>
+<strong>定义</strong>: 多方案量化评估工具，用于复杂决策。
+<strong>构建步骤</strong>:
+<strong>确定评估标准</strong>:
+<li>列出所有相关标准（5-8个）</li>
+<li>确定标准权重（总和100%）</li>
+<li>确保标准MECE</li>
+<strong>列出备选方案</strong>:
+<li>收集所有可行方案</li>
+<li>确保方案互斥</li>
+<li>考虑创新方案</li>
+<strong>评分</strong>:
+<li>每个方案在每个标准上评分（1-5或1-10）</li>
+<li>可使用多专家评分取平均</li>
+<li>记录评分依据</li>
+<strong>计算加权得分</strong>:
+```
+方案总分 = Σ(标准得分 × 标准权重)
+```
+<strong>决策</strong>:
+<li>比较各方案总分</li>
+<li>考虑敏感性分析</li>
+<li>结合直觉判断</li>
+<li>做出最终决策</li>
+<strong>示例矩阵</strong>:
+| 标准 | 权重 | 方案A | 方案B | 方案C |
+|------|------|-------|-------|-------|
+| 成本 | 30% | 4 | 3 | 5 |
+| 效果 | 40% | 5 | 4 | 3 |
+| 风险 | 20% | 3 | 5 | 4 |
+| 速度 | 10% | 4 | 3 | 4 |
+| <strong>加权总分</strong> | | <strong>4.1</strong> | <strong>3.9</strong> | <strong>3.8</strong> |
+<p>---</p>
+<h2>五、框架选择决策树</h2>
+<p>```
+                    开始
+                     │
+         ┌───────────┼───────────┐
+         │           │           │
+      战略问题    分析问题    执行问题
+         │           │           │
+    ┌────┴────┐   ┌──┴──┐   ┌───┴───┐
+    │         │   │     │   │       │
+  竞争分析  业务组合  根因   优先级  项目管理 流程优化
+    │         │     │     │     │       │
+    ↓         ↓     ↓     ↓     ↓       ↓
+  SWOT    BCG矩阵  逻辑树 重要度  七步法  流程图
+  五力分析  安索夫        紧急度
+  PEST</p>
+<p>┌───────────┼───────────┐
+         │           │           │
+      营销问题    表达问题    创新问题
+         │           │           │
+    ┌────┴────┐   ┌──┴──┐   ┌───┴───┐
+    │         │   │     │   │       │
+  市场定位  客户分析  结构化  多维度  产品    方案
+    │         │     │     │   创新    生成
+    ↓         ↓     ↓     ↓     ↓       ↓
+  STP模型  客户旅程  金字塔 六顶帽 SCAMPER 头脑风暴
+  3C分析   用户画像  MECE   议题树 曼陀罗
+```</p>
+<p>---</p>
+<h2>六、与东方思维的融合</h2>
+<h3>6.1 麦肯锡框架 vs 象思维</h3>
+<p>| 维度 | 麦肯锡框架 | 象思维 |
+|------|-----------|--------|
+| 起点 | 结构化分解 | 整体直觉 |
+| 过程 | 逻辑推演 | 观物取象 |
+| 终点 | 量化结论 | 悟道明理 |
+| 优势 | 1→N规模化 | 0→1原创性 |
+| 适用 | 已知问题 | 未知问题 |</p>
+<strong>融合方式</strong>:
+1. 象思维洞察本质（0→1）
+2. 麦肯锡框架展开（1→N）
+3. 五色光验证完善
+<h3>6.2 麦肯锡框架 vs 五行人格</h3>
+<p>| 五行 | 擅长框架类型 | 应用优势 |
+|------|-------------|---------|
+| 木 | 创新类（SCAMPER、头脑风暴） | 创意发散、突破常规 |
+| 火 | 表达类（金字塔、五色光思维） | 感染力强、推动共识 |
+| 土 | 执行类（七步法、流程图） | 落地稳健、持续跟进 |
+| 金 | 分析类（MECE、逻辑树） | 逻辑严谨、精准切割 |
+| 水 | 洞察类（SWOT、五力分析） | 深度洞察、预见趋势 |</p>
+<p>---</p>
+<h2>七、核心金句</h2>
+<p>> "麦肯锡框架是西方商业思维的手术刀，精准、系统、可复现；象思维是东方智慧的悟道镜，整体、直觉、通神明。两者合璧，方能应对复杂世界的多元挑战。"</p>
+<p>> "MECE原则不仅是分析技巧，更是一种思维方式——追求完整而不冗余，独立而不遗漏。"</p>
+<p>> "金字塔结构的核心不是形式，而是'以终为始'——先想清楚结论，再组织论据。"</p>
+<p>> "五色光思维与六顶思考帽，东西方智慧在'分色思考'上殊途同归。"</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

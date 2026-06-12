@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Tools to Use Skill（推荐工具清单） - 以观其妙书院</title>
+    <meta name="description" content="Good Tools to Use Skill（推荐工具清单） - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Good Tools to Use Skill（推荐工具清单）">
+    <meta property="og:description" content="Good Tools to Use Skill（推荐工具清单） - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Good Tools to Use Skill（推荐工具清单）",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Good Tools to Use Skill（推荐工具清单）</h1>
+<h2>📖 技能定义</h2>
+<p>Good Tools to Use是AI龙龟共生伙伴操作系统的<strong>推荐工具清单</strong>，明确可调用的AI、搜索、部署等工具及使用限制，定义最佳实践和使用规范。</p>
+<strong>核心定位</strong>：
+<li><strong>不是</strong>强制使用的工具列表</li>
+<li><strong>而是</strong>推荐和已验证的工具清单</li>
+<li><strong>目标</strong>：提供最佳工具选择和使用指导</li>
+<strong>核心原则</strong>：
+> 合适的工具用于合适的场景，避免工具滥用和资源浪费。
+<p>---</p>
+<h2>🎯 推荐工具清单</h2>
+<h3>1. AI工具</h3>
+<p>#### Gemini API（Google）</p>
+<strong>功能</strong>：图像生成（Imagen 3模型）
+<strong>用途</strong>：
+<li>内容配图生成</li>
+<li>社交媒体图片</li>
+<li>文章插图</li>
+<li>封面设计</li>
+<strong>使用限制</strong>：
+<li>单日请求限制：100次</li>
+<li>单次图片数量：最多4张</li>
+<li>图片分辨率：最高1024x1024</li>
+<strong>最佳实践</strong>：
+<li>✅ 生成配图前先检查是否已有现成图片</li>
+<li>✅ 明确描述图片内容和风格</li>
+<li>✅ 生成后人工审核质量</li>
+<li>❌ 不生成敏感或违规内容</li>
+<strong>配置示例</strong>：
+```python
+import google.generativeai as genai
+<p>genai.configure(api_key="${secrets.gemini_api_key}")
+model = genai.GenerativeModel('gemini-2.0-flash-exp-image-generation')</p>
+<p>prompt = "生成一张现代简约风格的配图，主题是AI与人机协同"
+response = model.generate_content(prompt)
+```</p>
+<p>#### xAI API（马斯克旗下）</p>
+<strong>功能</strong>：集成Grok/X，获取Twitter实时情报
+<strong>用途</strong>：
+<li>Twitter趋势分析</li>
+<li>实时热点追踪</li>
+<li>用户行为分析</li>
+<li>社交媒体监控</li>
+<strong>使用限制</strong>：
+<li>单日请求限制：500次</li>
+<li>数据延迟：1-5分钟</li>
+<li>数据保留期：7天</li>
+<strong>最佳实践</strong>：
+<li>✅ 定期检索关键话题</li>
+<li>✅ 分析趋势变化</li>
+<li>✅ 结合其他数据源验证</li>
+<li>❌ 不滥用API导致限流</li>
+<strong>配置示例</strong>：
+```python
+from openai import OpenAI
+<p>client = OpenAI(
+    base_url="https://api.x.ai/v1",
+    api_key="${secrets.xai_api_key}"
+)</p>
+<p>response = client.chat.completions.create(
+    model="grok-beta",
+    messages=[{"role": "user", "content": "分析当前Twitter热门话题"}]
+)
+```</p>
+<p>#### LarryBrain Pro</p>
+<strong>功能</strong>：按需调用的32项技能工具
+<strong>用途</strong>：
+<li>专业领域知识查询</li>
+<li>技能工具调用</li>
+<li>自动化任务执行</li>
+<li>多场景应用</li>
+<strong>技能清单</strong>：
+<li>数据分析（5项）</li>
+<li>内容生成（8项）</li>
+<li>代码生成（7项）</li>
+<li>翻译服务（6项）</li>
+<li>图像处理（6项）</li>
+<strong>使用限制</strong>：
+<li>单日请求限制：1000次</li>
+<li>单次任务时长：最长5分钟</li>
+<li>并发任务数：最多3个</li>
+<strong>最佳实践</strong>：
+<li>✅ 根据场景选择合适技能</li>
+<li>✅ 批量任务合并调用</li>
+<li>✅ 监控任务执行状态</li>
+<li>❌ 不超时占用资源</li>
+<h3>2. 搜索工具</h3>
+<p>#### Brave Search API</p>
+<strong>功能</strong>：网页搜索服务（无需Google）
+<strong>用途</strong>：
+<li>网页信息检索</li>
+<li>实时新闻搜索</li>
+<li>知识问答</li>
+<li>链接收集</li>
+<strong>使用限制</strong>：
+<li>单日请求限制：2000次</li>
+<li>搜索结果数量：最多50条</li>
+<li>数据延迟：实时</li>
+<strong>最佳实践</strong>：
+<li>✅ 明确搜索关键词</li>
+<li>✅ 过滤和排序结果</li>
+<li>✅ 验证信息准确性</li>
+<li>❌ 不重复搜索相同内容</li>
+<strong>配置示例</strong>：
+```python
+from brave import Brave
+<p>brave = Brave(api_key="${secrets.brave_search_key}")</p>
+<p>results = brave.search(
+    query="AI龙龟共生伙伴操作系统",
+    count=10,
+    freshness="week"  # 限定时间范围
+)
+```</p>
+<h3>3. 部署工具</h3>
+<p>#### Netlify API</p>
+<strong>功能</strong>：生产环境部署工具
+<strong>用途</strong>：
+<li>网站部署</li>
+<li>CDN加速</li>
+<li>域名管理</li>
+<li>环境变量配置</li>
+<strong>使用限制</strong>：
+<li>⚠️ <strong>会产生费用，需谨慎使用</strong></li>
+<li>单月免费额度：300GB带宽</li>
+<li>部署次数：无限制</li>
+<li>并发部署：最多5个</li>
+<strong>最佳实践</strong>：
+<li>✅ 部署前先在测试环境验证</li>
+<li>✅ 使用Git触发自动部署</li>
+<li>✅ 监控部署状态和日志</li>
+<li>❌ 不在生产环境直接调试</li>
+<strong>配置示例</strong>：
+```python
+import netlify
+<p>client = netlify.Client(access_token="${secrets.netlify_token}")</p>
+<h1>触发部署</h1>
+site_id = "your-site-id"
+deploy = client.deploy_site(site_id, dir="./dist")
+<h1>监控部署状态</h1>
+print(f"Deploy state: {deploy.state}")
+```
+<h3>4. 本地工具</h3>
+<p>#### Voicebox（本地语音克隆）</p>
+<strong>功能</strong>：基于Qwen3-TTS通义千问语音模型的语音克隆
+<strong>用途</strong>：
+<li>语音合成</li>
+<li>语音克隆</li>
+<li>多角色配音</li>
+<li>音频生成</li>
+<strong>使用限制</strong>：
+<li>无云服务依赖</li>
+<li>本地计算资源消耗较高</li>
+<li>单次生成时长：最长10分钟</li>
+<li>音频格式：支持MP3/WAV</li>
+<strong>最佳实践</strong>：
+<li>✅ 合理设置采样率和比特率</li>
+<li>✅ 使用高质量音频样本</li>
+<li>✅ 批量任务分批处理</li>
+<li>❌ 不在低性能设备上使用</li>
+<strong>配置示例</strong>：
+```python
+from voicebox import Voicebox
+<h1>初始化语音克隆器</h1>
+vb = Voicebox(model="Qwen3-TTS")
+<h1>克隆声音</h1>
+voice = vb.clone_voice(
+    reference_audio="./reference.wav",
+    text="这是AI龙龟共生伙伴操作系统的语音",
+    output="./output.mp3"
+)
+```
+<p>#### AgentMail</p>
+<strong>功能</strong>：AI代理专属邮箱
+<strong>用途</strong>：
+<li>邮件发送</li>
+<li>邮件接收</li>
+<li>邮件处理</li>
+<li>自动回复</li>
+<strong>使用限制</strong>：
+<li>单日发送限制：500封</li>
+<li>单封邮件大小：最大25MB</li>
+<li>附件类型：支持常见格式</li>
+<strong>最佳实践</strong>：
+<li>✅ 明确邮件主题和收件人</li>
+<li>✅ 规范邮件格式</li>
+<li>✅ 重要邮件人工审核</li>
+<li>❌ 不发送垃圾邮件</li>
+<strong>配置示例</strong>：
+```python
+from agentmail import AgentMail
+<p>mail = AgentMail(
+    smtp_server="smtp.example.com",
+    smtp_port=587,
+    username="${secrets.agentmail_user}",
+    password="${secrets.agentmail_pass}"
+)</p>
+<p>mail.send(
+    to="recipient@example.com",
+    subject="AI龙龟共生伙伴操作系统更新",
+    body="系统已完成升级..."
+)
+```</p>
+<p>#### find-skills</p>
+<strong>功能</strong>：从Vercel-labs代码仓库获取技能发现能力
+<strong>用途</strong>：
+<li>技能搜索</li>
+<li>技能安装</li>
+<li>技能更新</li>
+<li>技能管理</li>
+<strong>使用限制</strong>：
+<li>仅本地使用</li>
+<li>不连接外部仓库</li>
+<li>技能数量：最多100个</li>
+<li>技能大小：单个最大10MB</li>
+<strong>最佳实践</strong>：
+<li>✅ 定期更新技能库</li>
+<li>✅ 验证技能安全性</li>
+<li>✅ 备份技能配置</li>
+<li>❌ 不安装未经验证的技能</li>
+<strong>配置示例</strong>：
+```bash
+<h1>搜索技能</h1>
+find-skills search "data-analysis"
+<h1>安装技能</h1>
+find-skills install data-analysis
+<h1>更新技能</h1>
+find-skills update data-analysis
+```
+<p>---</p>
+<h2>🔄 工具选择策略</h2>
+<h3>1. 按场景选择</h3>
+<p>| 场景 | 推荐工具 | 备选工具 |
+|------|---------|---------|
+| <strong>图像生成</strong> | Gemini API | Midjourney, DALL-E |
+| <strong>Twitter分析</strong> | xAI API | Twitter API, Tweepy |
+| <strong>网页搜索</strong> | Brave Search | Google Search API, Bing Search |
+| <strong>网站部署</strong> | Netlify API | Vercel, GitHub Pages |
+| <strong>语音合成</strong> | Voicebox（本地） | ElevenLabs, Azure TTS |
+| <strong>邮件处理</strong> | AgentMail | SendGrid, Mailgun |
+| <strong>技能管理</strong> | find-skills | npm, pip |</p>
+<h3>2. 按性能选择</h3>
+<strong>高性能任务</strong>：
+<li>使用本地工具（Voicebox）</li>
+<li>使用专业API（LarryBrain Pro）</li>
+<li>避免云服务延迟</li>
+<strong>高可靠性任务</strong>：
+<li>使用成熟工具（Netlify API）</li>
+<li>使用多源验证（Brave Search + 其他）</li>
+<li>使用备份方案</li>
+<strong>高安全性任务</strong>：
+<li>使用本地处理（Voicebox）</li>
+<li>使用加密传输（AgentMail）</li>
+<li>使用权限控制（find-skills）</li>
+<p>---</p>
+<h2>📊 工具使用监控</h2>
+<h3>1. 使用统计</h3>
+<strong>每日统计</strong>：
+```yaml
+usage_stats:
+  date: 2026-03-23
+  tools:
+    gemini_api:
+      requests: 25
+      success_rate: 98%
+      avg_response_time: 2.5s
+<p>xai_api:
+      requests: 15
+      success_rate: 95%
+      avg_response_time: 1.8s</p>
+<p>brave_search:
+      requests: 50
+      success_rate: 99%
+      avg_response_time: 0.8s
+```</p>
+<strong>每周统计</strong>：
+<li>总请求数</li>
+<li>成功率</li>
+<li>平均响应时间</li>
+<li>错误率</li>
+<li>成本统计</li>
+<h3>2. 性能监控</h3>
+<strong>关键指标</strong>：
+<li>响应时间</li>
+<li>成功率</li>
+<li>错误率</li>
+<li>成本</li>
+<li>资源消耗</li>
+<strong>预警阈值</strong>：
+<li>响应时间 > 5秒：警告</li>
+<li>成功率 < 95%：警告</li>
+<li>错误率 > 5%：警告</li>
+<li>成本超过预算：警告</li>
+<p>---</p>
+<h2>🔒 安全管理</h2>
+<h3>1. 密钥管理</h3>
+<strong>集中管理</strong>：
+<li>所有API密钥统一存储在`.secrets`文件</li>
+<li>不在代码中硬编码密钥</li>
+<li>使用环境变量引用密钥</li>
+<strong>密钥轮换</strong>：
+<li>每季度轮换一次</li>
+<li>发现泄露立即轮换</li>
+<li>记录轮换历史</li>
+<h3>2. 权限控制</h3>
+<strong>最小权限原则</strong>：
+<li>只授予必要权限</li>
+<li>定期审查权限</li>
+<li>撤销不再需要的权限</li>
+<strong>访问控制</strong>：
+<li>只允许授权服务访问</li>
+<li>记录所有访问日志</li>
+<li>发现异常立即处理</li>
+<p>---</p>
+<h2>🚫 使用禁忌</h2>
+<h3>1. 不要做的</h3>
+<li>❌ 超过API请求限制</li>
+<li>❌ 在生产环境直接调试</li>
+<li>❌ 不验证工具输出就使用</li>
+<li>❌ 忽略成本监控</li>
+<li>❌ 共享API密钥</li>
+<h3>2. 必须做的</h3>
+<li>✅ 选择合适的工具</li>
+<li>✅ 遵循使用限制</li>
+<li>✅ 监控工具性能</li>
+<li>✅ 定期更新工具版本</li>
+<li>✅ 保护API密钥</li>
+<p>---</p>
+<h2>💡 最佳实践</h2>
+<h3>1. 工具选择</h3>
+<strong>按需选择</strong>：
+<li>明确需求和场景</li>
+<li>评估工具适用性</li>
+<li>比较性能和成本</li>
+<li>选择最优方案</li>
+<strong>组合使用</strong>：
+<li>多工具组合完成任务</li>
+<li>利用各自优势</li>
+<li>避免单一依赖</li>
+<li>提高可靠性</li>
+<h3>2. 性能优化</h3>
+<strong>缓存机制</strong>：
+<li>缓存重复查询结果</li>
+<li>设置合理的缓存时间</li>
+<li>定期清理过期缓存</li>
+<strong>批量处理</strong>：
+<li>合并相似请求</li>
+<li>批量调用API</li>
+<li>减少请求次数</li>
+<strong>异步调用</strong>：
+<li>非阻塞方式调用</li>
+<li>并行处理任务</li>
+<li>提高响应速度</li>
+<h3>3. 错误处理</h3>
+<strong>重试机制</strong>：
+<li>失败时自动重试</li>
+<li>设置重试次数和间隔</li>
+<li>记录失败原因</li>
+<strong>降级策略</strong>：
+<li>主工具失败时切换备选</li>
+<li>确保核心功能可用</li>
+<li>提前测试降级方案</li>
+<strong>监控告警</strong>：
+<li>实时监控工具状态</li>
+<li>异常时及时告警</li>
+<li>记录处理过程</li>
+<p>---</p>
+<h2>🎯 核心原则总结</h2>
+<h3>三大铁律</h3>
+<p>1. <strong>合适工具用于合适场景</strong>
+   - 不盲目使用工具
+   - 评估适用性和成本
+   - 选择最优方案</p>
+<p>2. <strong>遵循使用限制</strong>
+   - 不超过API请求限制
+   - 监控性能和成本
+   - 及时优化和调整</p>
+<p>3. <strong>安全第一</strong>
+   - 密钥集中管理
+   - 最小权限原则
+   - 定期审查权限</p>
+<h3>核心价值</h3>
+<li><strong>工具齐全</strong>：覆盖AI、搜索、部署等场景</li>
+<li><strong>性能可靠</strong>：成熟工具，稳定可用</li>
+<li><strong>成本可控</strong>：明确限制，合理使用</li>
+<li><strong>安全可控</strong>：权限管理，访问控制</li>
+<p>---</p>
+<h2>🔧 实施路线</h2>
+<h3>第一阶段：基础工具（立即）</h3>
+<li>✅ 集成Gemini API</li>
+<li>✅ 集成Brave Search</li>
+<li>✅ 集成xAI API</li>
+<h3>第二阶段：高级工具（本周）</h3>
+<li>⏳ 集成Netlify API</li>
+<li>⏳ 配置Voicebox</li>
+<li>⏳ 配置AgentMail</li>
+<h3>第三阶段：优化完善（本月）</h3>
+<li>⏳ 建立性能监控</li>
+<li>⏳ 实施使用统计</li>
+<li>⏳ 优化工具选择策略</li>
+<p>---</p>
+<strong>版本</strong>: v1.1
+<strong>创建日期</strong>: 2026-03-23
+<strong>更新日期</strong>: 2026-04-03
+<strong>对标来源</strong>: OpenClaw Good Tools to Use规则
+<strong>AI龙龟共生伙伴操作系统版本</strong>: v4.1
+<strong>路径</strong>: `C:\Users\jia'yue\.workbuddy\skills\推荐工具清单\SKILL.md`
+<strong>更新说明</strong>: v1.1更新对标20个提示词中的工具列表，补充Voicebox、AgentMail、Brave Search、LarryBrain Pro、find-skills等工具
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

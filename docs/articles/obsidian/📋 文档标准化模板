@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📋 以观其妙书院文档标准化模板 - 以观其妙书院</title>
+    <meta name="description" content="📋 以观其妙书院文档标准化模板 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="📋 以观其妙书院文档标准化模板">
+    <meta property="og:description" content="📋 以观其妙书院文档标准化模板 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "📋 以观其妙书院文档标准化模板",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <p>﻿---
+title: "📋 以观其妙书院文档标准化模板"
+type: template
+tags: [模板, 标准化, 文档规范, 格式]
+created: 2026-03-19
+version: 1.0
+---</p>
+<h1>📋 以观其妙书院文档标准化模板</h1>
+<p>> 所有文档采用统一结构，确保可读性、可维护性和双向链接完整性。</p>
+<p>---</p>
+<h2>📝 标准文档结构</h2>
+<p>每篇文档必须包含以下六个部分：</p>
+<p>```markdown
+---
+title: "文档标题"
+type: 类型标识
+tags: [标签1, 标签2, 标签3]
+created: YYYY-MM-DD
+version: 1.0
+author: 作者
+aliases: [别名1, 别名2]
+---</p>
+<h1>文档标题</h1>
+<p>> 核心定义（一句话概括）</p>
+<p>---</p>
+<h2>1. 核心定义</h2>
+<strong>关键概念的定义和解释</strong>
+<p>---</p>
+<h2>2. 详细内容</h2>
+<strong>主题的详细展开</strong>
+<h3>2.1 子主题1</h3>
+<h3>2.2 子主题2</h3>
+<p>---</p>
+<h2>3. 关联文件</h2>
+<h3>3.1 直接关联</h3>
+<li>[[关联文档1]]</li>
+<li>[[关联文档2]]</li>
+<h3>3.2 相关概念</h3>
+<li>[[概念1]]</li>
+<li>[[概念2]]</li>
+<p>---</p>
+<h2>4. 核心金句</h2>
+<p>> "关键引用或总结"</p>
+<p>---</p>
+<h2>5. 版本记录</h2>
+<p>| 版本 | 日期 | 变更内容 |
+|------|------|---------|
+| v1.0 | YYYY-MM-DD | 初始版本 |</p>
+<p>---</p>
+<p>*最后更新: YYYY-MM-DD | 维护者: 龙龟神将*
+```</p>
+<p>---</p>
+<h2>🏷️ 标签规范</h2>
+<h3>必须标签</h3>
+<li>`以观其妙书院` - 标识知识库归属</li>
+<li>内容类型标签（如 `方法论`、`理论`、`工具`）</li>
+<h3>推荐标签</h3>
+| 标签 | 用途 |
+|------|------|
+| `Dragon-OS` | 龙心OS 相关 |
+| `象思维` | 象思维相关 |
+| `五色光` | 五色光相关 |
+| `五行` | 五行相关 |
+| `记忆系统` | 记忆系统相关 |
+| `技能` | 技能相关 |
+| `模板` | 模板文档 |
+<p>---</p>
+<h2>🔗 双向链接规范</h2>
+<h3>链接语法</h3>
+```markdown
+[[文件名]]           # 标准链接
+[[文件名|显示文本]]   # 带显示文本的链接
+```
+<h3>链接位置</h3>
+| 位置 | 说明 |
+|------|------|
+| 关联文件 | 必须包含，与核心内容相关 |
+| 文中引用 | 适当引用，避免过度链接 |
+| 脚注 | 详细说明可放脚注 |
+<h3>链接密度要求</h3>
+<li><strong>核心文档</strong>: 至少 5 个双向链接</li>
+<li><strong>普通文档</strong>: 至少 3 个双向链接</li>
+<li><strong>短文档</strong>: 至少 1 个双向链接</li>
+<p>---</p>
+<h2>📐 文档类型模板</h2>
+<h3>1. 方法论文档</h3>
+<p>```markdown
+---
+title: "方法论名称"
+type: methodology
+tags: [方法论, 以观其妙书院, 具体领域]
+created: YYYY-MM-DD
+version: 1.0
+---</p>
+<h1>方法论名称</h1>
+<p>> 一句话描述方法论的核心价值</p>
+<p>---</p>
+<h2>核心定义</h2>
+<h3>什么是[方法论名称]</h3>
+<h3>适用场景</h3>
+<h3>核心原则</h3>
+<h2>操作步骤</h2>
+<h3>第一步：[步骤名称]</h3>
+<h3>第二步：[步骤名称]</h3>
+<h2>案例</h2>
+<h3>案例一：[案例名称]</h3>
+<h3>案例二：[案例名称]</h3>
+<h2>关联文件</h2>
+<li>[[相关方法论]]</li>
+<li>[[相关工具]]</li>
+<li>[[相关理论]]</li>
+<h2>核心金句</h2>
+<p>> "方法论的核心洞见"</p>
+<p>---</p>
+<p>*最后更新: YYYY-MM-DD*
+```</p>
+<h3>2. 理论文档</h3>
+<p>```markdown
+---
+title: "理论名称"
+type: theory
+tags: [理论, 以观其妙书院, 具体领域]
+created: YYYY-MM-DD
+version: 1.0
+---</p>
+<h1>理论名称</h1>
+<p>> 理论的核心观点</p>
+<p>---</p>
+<h2>核心定义</h2>
+<h3>基本概念</h3>
+<h3>理论框架</h3>
+<h2>详细内容</h2>
+<h3>主要观点</h3>
+<h3>论证依据</h3>
+<h2>实践应用</h2>
+<h3>应用场景</h3>
+<h3>注意事项</h3>
+<h2>关联理论</h2>
+<li>[[相关理论1]]</li>
+<li>[[相关理论2]]</li>
+<h2>核心金句</h2>
+<p>> "理论的精髓"</p>
+<p>---</p>
+<p>*最后更新: YYYY-MM-DD*
+```</p>
+<h3>3. 工具文档</h3>
+<p>```markdown
+---
+title: "工具名称"
+type: tool
+tags: [工具, 技能, 以观其妙书院]
+created: YYYY-MM-DD
+version: 1.0
+---</p>
+<h1>工具名称</h1>
+<p>> 工具的核心用途</p>
+<p>---</p>
+<h2>核心功能</h2>
+<h3>功能一</h3>
+<h3>功能二</h3>
+<h2>使用方法</h2>
+<h3>安装</h3>
+<h3>配置</h3>
+<h3>使用示例</h3>
+<h2>关联文档</h2>
+<li>[[相关技能]]</li>
+<li>[[相关配置]]</li>
+<h2>核心金句</h2>
+<p>> "工具的核心价值"</p>
+<p>---</p>
+<p>*最后更新: YYYY-MM-DD*
+```</p>
+<h3>4. 案例文档</h3>
+<p>```markdown
+---
+title: "案例名称"
+type: case-study
+tags: [案例, 实践, 以观其妙书院]
+created: YYYY-MM-DD
+version: 1.0
+---</p>
+<h1>案例名称</h1>
+<p>> 案例的核心经验</p>
+<p>---</p>
+<h2>背景</h2>
+<h3>问题描述</h3>
+<h3>背景信息</h3>
+<h2>解决过程</h2>
+<h3>第一步</h3>
+<h3>第二步</h3>
+<h2>结果</h2>
+<h3>成果</h3>
+<h3>经验总结</h3>
+<h2>关联文件</h2>
+<li>[[应用的理论]]</li>
+<li>[[使用的方法]]</li>
+<h2>核心金句</h2>
+<p>> "案例的关键洞见"</p>
+<p>---</p>
+<p>*最后更新: YYYY-MM-DD*
+```</p>
+<p>---</p>
+<h2>📊 内容规范</h2>
+<h3>标题层级</h3>
+```
+<h1>一级标题 - 文档标题</h1>
+<h2>二级标题 - 主要章节</h2>
+<h3>三级标题 - 子章节</h3>
+#### 四级标题 - 细节内容
+```
+<h3>列表格式</h3>
+<li>使用 `-` 或 `1.` 进行列表</li>
+<li>保持同一层级的一致性</li>
+<h3>引用格式</h3>
+<li>使用 `>` 进行引用</li>
+<li>核心定义使用加粗</li>
+<h3>代码格式</h3>
+<li>使用 ` ```语言 ` 进行代码块</li>
+<li>配置文件使用代码块</li>
+<p>---</p>
+<h2>✅ 检查清单</h2>
+<p>创建新文档时检查：
+<li>[ ] 包含完整的 frontmatter</li>
+<li>[ ] 包含核心定义章节</li>
+<li>[ ] 包含详细内容章节</li>
+<li>[ ] 包含关联文件章节（至少3个链接）</li>
+<li>[ ] 包含核心金句</li>
+<li>[ ] 包含版本记录</li>
+<li>[ ] 包含维护者信息</li></p>
+<p>---</p>
+<h2>🔗 关联文档</h2>
+<h3>模板文档</h3>
+<li>[[📚 知识库总索引]]</li>
+<li>[[🔗 双向链接规范]]</li>
+<h3>工具文档</h3>
+<li>[[🔍 链接验证工具]]</li>
+<li>[[📈 链接完整性报告]]</li>
+<p>---</p>
+<p>*最后更新: 2026-03-19 | 维护者: 龙龟神将*</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

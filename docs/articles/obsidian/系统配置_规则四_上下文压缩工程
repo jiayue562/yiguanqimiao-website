@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>规则四：上下文压缩工程 - 以观其妙书院</title>
+    <meta name="description" content="规则四：上下文压缩工程 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="规则四：上下文压缩工程">
+    <meta property="og:description" content="规则四：上下文压缩工程 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "规则四：上下文压缩工程",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>规则四：上下文压缩工程</h1>
+<h2>🎯 规则目标</h2>
+上下文工程，每经过10轮对话，将上下文进行压缩，上下文压缩的时候，不要丢失关键信息，存储到Obsidian中长时记忆系统中，作为我们后续聊天基础。
+<h2>📊 触发机制</h2>
+<h3>1. 对话轮次计数</h3>
+```python
+class ConversationTracker:
+    def __init__(self):
+        self.turn_count = 0
+        self.conversation_history = []
+        self.compression_threshold = 10  # 每10轮压缩一次
+    
+    def add_turn(self, user_message, assistant_response):
+        """
+        添加一轮对话
+        """
+        turn = {
+            'turn_number': self.turn_count + 1,
+            'timestamp': datetime.now(),
+            'user_message': user_message,
+            'assistant_response': assistant_response,
+            'metadata': self.extract_metadata(user_message, assistant_response)
+        }
+        
+        self.conversation_history.append(turn)
+        self.turn_count += 1
+        
+        # 检查是否需要压缩
+        if self.turn_count % self.compression_threshold == 0:
+            self.compress_context()
+    
+    def compress_context(self):
+        """
+        执行上下文压缩
+        """
+        compression_result = self.perform_compression()
+        self.store_to_long_term_memory(compression_result)
+        self.cleanup_compressed_context()
+```
+<h3>2. 压缩触发条件</h3>
+<li><strong>轮次触发</strong>：每10轮对话自动触发</li>
+<li><strong>时间触发</strong>：超过1小时未压缩时触发</li>
+<li><strong>容量触发</strong>：上下文长度超过阈值时触发</li>
+<li><strong>重要性触发</strong>：检测到重要内容时触发</li>
+<h2>🔍 关键信息识别算法</h2>
+<h3>1. 信息重要性评估</h3>
+<p>#### 1.1 重要性评分模型
+```python
+def assess_information_importance(content):
+    """
+    评估信息的重要性
+    """
+    importance_score = 0
+    
+    # 1. 关键词匹配（30%权重）
+    key_phrases = [
+        '核心定义', '重要结论', '关键决策', '必须记住',
+        '核心原则', '核心价值', '核心方法', '核心工具'
+    ]
+    
+    for phrase in key_phrases:
+        if phrase in content:
+            importance_score += 30 / len(key_phrases)
+    
+    # 2. 用户强调（25%权重）
+    if contains_user_emphasis(content):
+        importance_score += 25
+    
+    # 3. 重复提及（20%权重）
+    if is_frequently_mentioned(content):
+        importance_score += 20
+    
+    # 4. 关联性（15%权重）
+    if has_high_relevance(content):
+        importance_score += 15
+    
+    # 5. 时效性（10%权重）
+    if has_long_term_value(content):
+        importance_score += 10
+    
+    return min(importance_score, 100)  # 确保不超过100分
+```</p>
+<p>#### 1.2 关键信息类型识别
+```python
+def identify_key_information_types(content):
+    """
+    识别关键信息类型
+    """
+    information_types = []
+    
+    # 1. 核心概念和定义
+    if contains_definitions(content):
+        information_types.append('core_concepts')
+    
+    # 2. 重要决策和结论
+    if contains_decisions(content):
+        information_types.append('important_decisions')
+    
+    # 3. 关键数据和事实
+    if contains_key_facts(content):
+        information_types.append('key_facts')
+    
+    # 4. 用户偏好和要求
+    if contains_user_preferences(content):
+        information_types.append('user_preferences')
+    
+    # 5. 系统状态和配置
+    if contains_system_configs(content):
+        information_types.append('system_configs')
+    
+    # 6. 行动计划和时间表
+    if contains_action_plans(content):
+        information_types.append('action_plans')
+    
+    # 7. 学习内容和知识点
+    if contains_learning_content(content):
+        information_types.append('learning_content')
+    
+    return information_types
+```</p>
+<h3>2. 冗余信息过滤</h3>
+<p>#### 2.1 重复内容检测
+```python
+def detect_repetitive_content(conversation_history):
+    """
+    检测重复内容
+    """
+    repetitive_patterns = []
+    content_frequency = {}
+    
+    for turn in conversation_history:
+        # 提取主要内容
+        main_content = extract_main_content(turn)
+        content_hash = hash_content(main_content)
+        
+        if content_hash in content_frequency:
+            content_frequency[content_hash] += 1
+            if content_frequency[content_hash] >= 2:  # 出现2次以上
+                repetitive_patterns.append({
+                    'content': main_content,
+                    'frequency': content_frequency[content_hash],
+                    'turns': find_turn_numbers(content_hash, conversation_history)
+                })
+        else:
+            content_frequency[content_hash] = 1
+    
+    return repetitive_patterns
+```</p>
+<p>#### 2.2 临时信息识别
+```python
+def identify_temporary_information(content):
+    """
+    识别临时信息
+    """
+    temporary_indicators = [
+        '临时讨论', '过程性', '中间步骤', '草稿',
+        '待确认', '暂定', '可能', '也许', '大概'
+    ]
+    
+    is_temporary = any(indicator in content for indicator in temporary_indicators)
+    
+    if is_temporary:
+        return {
+            'is_temporary': True,
+            'temporary_indicators': [indicator for indicator in temporary_indicators if indicator in content],
+            'suggested_action': '标记为临时信息，可压缩或删除'
+        }
+    
+    return {'is_temporary': False}
+```</p>
+<h2>🔧 压缩算法实现</h2>
+<h3>1. 内容提取与摘要</h3>
+```python
+def extract_and_summarize(conversation_history):
+    """
+    提取和摘要对话内容
+    """
+    # 1. 提取所有对话内容
+    all_content = extract_all_content(conversation_history)
+    
+    # 2. 重要性分析
+    importance_scores = analyze_importance(all_content)
+    
+    # 3. 按重要性排序
+    sorted_content = sort_by_importance(all_content, importance_scores)
+    
+    # 4. 提取关键信息（保留重要性评分>60的内容）
+    key_information = extract_key_information(sorted_content, threshold=60)
+    
+    # 5. 生成结构化摘要
+    structured_summary = generate_structured_summary(key_information)
+    
+    return structured_summary
+```
+<h3>2. 结构化存储格式</h3>
+<p>#### 2.1 压缩后的数据结构
+```python
+def create_compressed_structure(conversation_history, summary):
+    """
+    创建压缩后的数据结构
+    """
+    compressed_data = {
+        'metadata': {
+            'compression_id': generate_compression_id(),
+            'original_turns': len(conversation_history),
+            'compressed_turns': len(summary['key_points']),
+            'compression_ratio': calculate_compression_ratio(conversation_history, summary),
+            'compression_time': datetime.now(),
+            'compression_version': '1.0'
+        },
+        
+        'context_summary': {
+            'time_period': {
+                'start_time': conversation_history[0]['timestamp'],
+                'end_time': conversation_history[-1]['timestamp'],
+                'duration': calculate_duration(conversation_history)
+            },
+            'main_topics': extract_main_topics(conversation_history),
+            'key_decisions': extract_key_decisions(conversation_history),
+            'action_items': extract_action_items(conversation_history)
+        },
+        
+        'key_information': summary['key_points'],
+        
+        'relationships': {
+            'internal_links': generate_internal_links(summary),
+            'external_references': extract_external_references(conversation_history),
+            'conceptual_connections': identify_conceptual_connections(summary)
+        },
+        
+        'retention_info': {
+            'importance_scores': summary['importance_scores'],
+            'retention_period': calculate_retention_period(summary),
+            'review_schedule': generate_review_schedule(summary)
+        }
+    }
+    
+    return compressed_data
+```</p>
+<h3>3. 压缩质量保障</h3>
+<p>#### 3.1 信息完整性检查
+```python
+def check_information_integrity(original, compressed):
+    """
+    检查信息完整性
+    """
+    integrity_metrics = {
+        'key_concepts_preserved': check_key_concepts_preserved(original, compressed),
+        'important_decisions_preserved': check_decisions_preserved(original, compressed),
+        'action_items_preserved': check_action_items_preserved(original, compressed),
+        'user_preferences_preserved': check_preferences_preserved(original, compressed)
+    }
+    
+    integrity_score = calculate_integrity_score(integrity_metrics)
+    
+    return {
+        'integrity_metrics': integrity_metrics,
+        'integrity_score': integrity_score,
+        'pass_threshold': integrity_score >= 85  # 85分以上为合格
+    }
+```</p>
+<p>#### 3.2 压缩有效性评估
+```python
+def evaluate_compression_effectiveness(original, compressed):
+    """
+    评估压缩有效性
+    """
+    effectiveness_metrics = {
+        'size_reduction': calculate_size_reduction(original, compressed),
+        'information_density': calculate_information_density(compressed),
+        'accessibility_score': calculate_accessibility_score(compressed),
+        'usability_score': calculate_usability_score(compressed)
+    }
+    
+    return effectiveness_metrics
+```</p>
+<h2>📁 长时记忆存储系统</h2>
+<h3>1. 存储路径</h3>
+`C:\Users\jia'yue\Desktop\以观其妙书院知识库\观其妙书院\长时记忆系统\`
+<h3>2. 文件夹结构</h3>
+```
+长时记忆系统\
+├── 按时间分类\
+│   ├── 2026-03\
+│   │   ├── 2026-03-15_上下文压缩_001.md
+│   │   ├── 2026-03-15_上下文压缩_002.md
+│   │   └── ...
+│   └── 2026-04\
+│       └── ...
+├── 按主题分类\
+│   ├── 技术讨论\
+│   ├── 项目规划\
+│   ├── 学习内容\
+│   └── 系统配置\
+├── 知识图谱\
+│   ├── 概念网络.json
+│   ├── 关系图谱.json
+│   └── 时间线.json
+└── 索引系统\
+    ├── 时间索引.md
+    ├── 主题索引.md
+    └── 重要性索引.md
+```
+<h3>3. Obsidian兼容格式</h3>
+<p>#### 3.1 Markdown文档结构
+```markdown
+<h1>上下文压缩记录：{compression_id}</h1></p>
+<h2>📅 基本信息</h2>
+<li><strong>压缩时间</strong>：{compression_time}</li>
+<li><strong>原始轮次</strong>：{original_turns} 轮</li>
+<li><strong>压缩后要点</strong>：{compressed_points} 个</li>
+<li><strong>压缩比</strong>：{compression_ratio}%</li>
+<h2>🎯 上下文摘要</h2>
+<h3>时间范围</h3>
+<li>开始：{start_time}</li>
+<li>结束：{end_time}</li>
+<li>时长：{duration}</li>
+<h3>主要话题</h3>
+{main_topics}
+<h3>关键决策</h3>
+{key_decisions}
+<h3>行动项</h3>
+{action_items}
+<h2>🔑 关键信息</h2>
+<h3>核心概念</h3>
+{core_concepts}
+<h3>重要事实</h3>
+{key_facts}
+<h3>用户偏好</h3>
+{user_preferences}
+<h3>系统配置</h3>
+{system_configs}
+<h2>🔗 关联关系</h2>
+<h3>内部链接</h3>
+{internal_links}
+<h3>外部引用</h3>
+{external_references}
+<h3>概念连接</h3>
+{conceptual_connections}
+<h2>📊 保留信息</h2>
+<h3>重要性评分</h3>
+{importance_scores}
+<h3>保留期限</h3>
+{retention_period}
+<h3>复习计划</h3>
+{review_schedule}
+<p>---
+<strong>标签</strong>：#上下文压缩 #长时记忆 #{date_tag} #{topic_tags}
+<strong>关联文件</strong>：[[相关文件1]] [[相关文件2]]
+```</p>
+<p>#### 3.2 双向链接生成
+```python
+def generate_obsidian_links(compressed_data):
+    """
+    生成Obsidian双向链接
+    """
+    links = []
+    
+    # 1. 时间链接
+    date_str = compressed_data['metadata']['compression_time'].strftime('%Y-%m-%d')
+    links.append(f'[[{date_str}_对话记录]]')
+    
+    # 2. 主题链接
+    for topic in compressed_data['context_summary']['main_topics']:
+        topic_slug = topic.replace(' ', '_')
+        links.append(f'[[主题_{topic_slug}]]')
+    
+    # 3. 项目链接
+    if 'project_name' in compressed_data['context_summary']:
+        project_slug = compressed_data['context_summary']['project_name'].replace(' ', '_')
+        links.append(f'[[项目_{project_slug}]]')
+    
+    # 4. 人物链接
+    if 'participants' in compressed_data['context_summary']:
+        for participant in compressed_data['context_summary']['participants']:
+            links.append(f'[[人物_{participant}]]')
+    
+    return links
+```</p>
+<h2>🚀 应用机制</h2>
+<h3>1. 后续聊天基础</h3>
+```python
+def load_context_for_chat(chat_session):
+    """
+    为聊天加载上下文
+    """
+    # 1. 分析当前聊天主题
+    current_topic = analyze_current_topic(chat_session)
+    
+    # 2. 从长时记忆加载相关上下文
+    relevant_contexts = load_relevant_contexts(current_topic)
+    
+    # 3. 合并上下文
+    merged_context = merge_contexts(relevant_contexts)
+    
+    # 4. 优化上下文长度
+    optimized_context = optimize_context_length(merged_context)
+    
+    return optimized_context
+```
+<h3>2. 智能上下文检索</h3>
+```python
+def intelligent_context_retrieval(query, current_session):
+    """
+    智能上下文检索
+    """
+    # 1. 理解查询意图
+    intent = understand_query_intent(query)
+    
+    # 2. 检索相关长时记忆
+    relevant_memories = retrieve_relevant_memories(intent)
+    
+    # 3. 结合当前会话上下文
+    combined_context = combine_with_current_session(relevant_memories, current_session)
+    
+    # 4. 生成上下文摘要
+    context_summary = generate_context_summary(combined_context)
+    
+    return context_summary
+```
+<h2>📊 监控与优化</h2>
+<h3>1. 压缩质量监控</h3>
+<li><strong>完整性监控</strong>：关键信息保留率</li>
+<li><strong>有效性监控</strong>：压缩比和检索效率</li>
+<li><strong>实用性监控</strong>：后续应用效果</li>
+<h3>2. 系统性能监控</h3>
+<li><strong>压缩时间</strong>：每次压缩耗时</li>
+<li><strong>存储空间</strong>：长时记忆占用空间</li>
+<li><strong>检索速度</strong>：上下文检索速度</li>
+<h3>3. 用户反馈机制</h3>
+<li><strong>满意度调查</strong>：压缩质量满意度</li>
+<li><strong>问题报告</strong>：压缩导致的问题</li>
+<li><strong>改进建议</strong>：用户改进建议</li>
+<h2>🎯 规则价值</h2>
+<h3>1. 技术价值</h3>
+<li><strong>上下文管理</strong>：高效的上下文管理</li>
+<li><strong>信息密度</strong>：提高信息密度</li>
+<li><strong>长期记忆</strong>：建立长期记忆系统</li>
+<h3>2. 效率价值</h3>
+<li><strong>减少冗余</strong>：消除重复和冗余信息</li>
+<li><strong>快速检索</strong>：快速检索历史上下文</li>
+<li><strong>智能应用</strong>：智能应用历史知识</li>
+<h3>3. 成长价值</h3>
+<li><strong>知识积累</strong>：持续积累对话知识</li>
+<li><strong>智慧传承</strong>：个人智慧的传承</li>
+<li><strong>持续学习</strong>：系统的持续学习能力</li>
+<h2>🔄 优化与改进</h2>
+<h3>1. 算法优化</h3>
+<li><strong>智能压缩</strong>：基于机器学习的智能压缩</li>
+<li><strong>个性化设置</strong>：基于用户习惯的个性化压缩</li>
+<li><strong>动态调整</strong>：基于效果的动态参数调整</li>
+<h3>2. 存储优化</h3>
+<li><strong>分层存储</strong>：重要性分层的存储策略</li>
+<li><strong>压缩优化</strong>：更高效的压缩算法</li>
+<li><strong>索引优化</strong>：更快的检索索引</li>
+<h3>3. 应用优化</h3>
+<li><strong>上下文推荐</strong>：智能上下文推荐</li>
+<li><strong>知识发现</strong>：从历史中发现新知识</li>
+<li><strong>预测应用</strong>：预测未来需要的上下文</li>
+<p>---</p>
+<h2>📝 总结</h2>
+<p>规则四：上下文压缩工程是龙龟神将AI共生伙伴操作系统的记忆管理机制，通过智能压缩算法、结构化存储、Obsidian集成，实现对话上下文的高效管理和长期积累，为持续智能对话奠定坚实基础。</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

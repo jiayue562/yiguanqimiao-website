@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotebookLM（Google证据驱动型学习AI） - 以观其妙书院</title>
+    <meta name="description" content="NotebookLM由Gemini 1.5 Pro驱动、以"你的资料"为核心的科研与学习AI核心定义基于用户提供的材料进行推理，所有结论可溯源，自动标注引用来源，从根本上避免AI"无根据幻觉"。与通用LLM区别- 基于用户材料推理（非凭空生成）- 自动标注引用来源- 跨文献分析能力- 多源整合（PDF/Doc/网页/YouTube）- 证据驱动型推理（非幻觉型生成）核心功能1. 音频概览：AI播客">
+    <meta name="keywords" content="[AI工具, Google, Gemini, 学习工具, 知识整合, 证据驱动, 幻觉防御]">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="NotebookLM（Google证据驱动型学习AI）">
+    <meta property="og:description" content="NotebookLM由Gemini 1.5 Pro驱动、以"你的资料"为核心的科研与学习AI核心定义基于用户提供的材料进行推理，所有结论可溯源，自动标注引用来源，从根本上避免AI"无根据幻觉"。与通用LLM区别- 基于用户材料推理（非凭空生成）- 自动标注引用来源- 跨文献分析能力- 多源整合（PDF/Doc/网页/YouTube）- 证据驱动型推理（非幻觉型生成）核心功能1. 音频概览：AI播客">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/NotebookLM.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/NotebookLM.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "NotebookLM（Google证据驱动型学习AI）",
+      "description": "NotebookLM由Gemini 1.5 Pro驱动、以"你的资料"为核心的科研与学习AI核心定义基于用户提供的材料进行推理，所有结论可溯源，自动标注引用来源，从根本上避免AI"无根据幻觉"。与通用LLM区别- 基于用户材料推理（非凭空生成）- 自动标注引用来源- 跨文献分析能力- 多源整合（PDF/Doc/网页/YouTube）- 证据驱动型推理（非幻觉型生成）核心功能1. 音频概览：AI播客",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-06-12",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>NotebookLM（Google证据驱动型学习AI）</h1>
+            <div class="meta">
+                <span>📅 2026-06-12</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            NotebookLM（Google证据驱动型学习AI）...
+        </div>
+        
+        <article>
+<h1>NotebookLM</h1>
+
+<blockquote>由Gemini 1.5 Pro驱动、以"你的资料"为核心的科研与学习AI</blockquote>
+
+<h2>核心定义</h2>
+基于用户提供的材料进行推理，所有结论可溯源，自动标注引用来源，从根本上避免AI"无根据幻觉"。
+
+<h2>与通用LLM区别</h2>
+<li>基于用户材料推理（非凭空生成）</li>
+<li>自动标注引用来源</li>
+<li>跨文献分析能力</li>
+<li>多源整合（PDF/Doc/网页/YouTube）</li>
+<li>证据驱动型推理（非幻觉型生成）</li>
+
+<h2>核心功能</h2>
+1. <strong>音频概览</strong>：AI播客，支持倍速，降低认知阻力
+2. <strong>思维导图</strong>：自动生成可交互知识图谱
+3. <strong>测验生成</strong>：自动抽取问题+答案解析+关键术语
+4. <strong>跨文献分析</strong>：定位页码、比较观点、识别缺失
+5. <strong>笔记循环</strong>：理解→提取→再整合的自适应复习
+
+<h2>高阶应用</h2>
+<li>知识框架可视化（时间线/树状图）</li>
+<li>概念关联自动化发掘（跨域高速公路）</li>
+<li>学习进度追踪（知识漏洞追踪笔记）</li>
+
+<h2>关联页面</h2>
+<li>[[MIT学霸超前学习法]]</li>
+<li>[[整体性学习法]]</li>
+<li>[[Gemini 1.5 Pro]]</li>
+<li>[[三问驱动框架]]</li>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Creator - 以观其妙书院</title>
+    <meta name="description" content="Skill Creator - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Skill Creator">
+    <meta property="og:description" content="Skill Creator - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Skill Creator",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>Skill Creator</h1>
+<p>This skill provides guidance for creating effective skills.</p>
+<h2>About Skills</h2>
+<p>Skills are modular, self-contained packages that extend capabilities by providing specialized knowledge, workflows, and tools.</p>
+<h3>What Skills Provide</h3>
+<p>1. Specialized workflows - Multi-step procedures for specific domains
+2. Tool integrations - Instructions for working with specific file formats or APIs
+3. Domain expertise - Company-specific knowledge, schemas, business logic
+4. Bundled resources - Scripts, references, and assets for complex tasks</p>
+<h2>Core Principles</h2>
+<h3>Concise is Key</h3>
+<p>The context window is a public good. Only add context the model doesn't already have.</p>
+<h3>Anatomy of a Skill</h3>
+<p>```
+skill-name/
+├── SKILL.md (required)
+│   ├── YAML frontmatter (name + description)
+│   └── Markdown instructions
+└── Bundled Resources (optional)
+    ├── scripts/       - Executable code
+    ├── references/    - Documentation for context
+    └── assets/        - Files used in output
+```</p>
+<h3>Progressive Disclosure</h3>
+<p>1. <strong>Metadata (name + description)</strong> - Always in context
+2. <strong>SKILL.md body</strong> - When skill triggers
+3. <strong>Bundled resources</strong> - As needed</p>
+<h2>Skill Creation Process</h2>
+<p>1. Understand the skill with concrete examples
+2. Plan reusable skill contents (scripts, references, assets)
+3. Initialize the skill (run init_skill.py)
+4. Edit the skill (implement resources and write SKILL.md)
+5. Package the skill (run package_skill.py)
+6. Iterate based on real usage</p>
+<h3>Step 3: Initializing</h3>
+<p>```bash
+scripts/init_skill.py <skill-name> --path <output-directory>
+```</p>
+<h3>Step 5: Packaging</h3>
+<p>```bash
+scripts/package_skill.py <path/to/skill-folder>
+```</p>
+<h2>References</h2>
+<li>`references/workflows.md` - Sequential workflows and conditional logic</li>
+<li>`references/output-patterns.md` - Template and example patterns</li>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>以观其妙书院 - 以观其妙书院</title>
+    <meta name="description" content="以观其妙书院 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="以观其妙书院">
+    <meta property="og:description" content="以观其妙书院 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "以观其妙书院",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <p>﻿# IMA 技能快速使用指南</p>
+<h2>📋 技能已安装完成</h2>
+<p>IMA 技能已成功安装到你的 WorkBuddy 系统中。以下是完整的配置和使用指南：</p>
+<h3>✅ 安装状态</h3>
+<li><strong>技能位置</strong>: `C:\Users\jia'yue\.workbuddy\skills\ima-skills\`</li>
+<li><strong>API 凭证</strong>: 已配置完成</li>
+  - Client ID: `59a1edb848ec905552c0fbc8041213bf`
+  - API Key: `NmwwfdyB2ytuws6jeStZlZcouyijpDYiWSLNAS/fzSRKeGAJ1ZILYXK35G9M2CzVMEGepxc88A==`
+<li><strong>技能文件</strong>: 已创建完整</li>
+  - `SKILL.md` - 主技能描述文件
+  - `references/api.md` - API接口文档
+  - `references/usage-examples.md` - 使用示例
+  - `references/quick-start.md` - 快速使用指南
+  - `scripts/test-with-creds.py` - Python测试脚本（直接使用凭证）
+  - `scripts/test-api.py` - Python测试脚本（使用环境变量）
+  - `scripts/test-api.sh` - Bash测试脚本
+  - `scripts/test-api.ps1` - PowerShell测试脚本
+  - `scripts/configure.ps1` - PowerShell配置脚本
+  - `scripts/set-env.cmd` - CMD环境变量设置脚本
+<h2>🔧 环境变量配置</h2>
+<h3>方法1：临时设置（当前会话）</h3>
+打开 PowerShell 或 CMD，运行：
+```powershell
+$env:IMA_OPENAPI_CLIENTID = "59a1edb848ec905552c0fbc8041213bf"
+$env:IMA_OPENAPI_APIKEY = "NmwwfdyB2ytuws6jeStZlZcouyijpDYiWSLNAS/fzSRKeGAJ1ZILYXK35G9M2CzVMEGepxc88A=="
+```
+<h3>方法2：永久设置（系统环境变量）</h3>
+打开 PowerShell（管理员权限），运行：
+```powershell
+[System.Environment]::SetEnvironmentVariable("IMA_OPENAPI_CLIENTID", "59a1edb848ec905552c0fbc8041213bf", "User")
+[System.Environment]::SetEnvironmentVariable("IMA_OPENAPI_APIKEY", "NmwwfdyB2ytuws6jeStZlZcouyijpDYiWSLNAS/fzSRKeGAJ1ZILYXK35G9M2CzVMEGepxc88A==", "User")
+```
+<p>或者使用 CMD（管理员权限）：
+```cmd
+setx IMA_OPENAPI_CLIENTID "59a1edb848ec905552c0fbc8041213bf"
+setx IMA_OPENAPI_APIKEY "NmwwfdyB2ytuws6jeStZlZcouyijpDYiWSLNAS/fzSRKeGAJ1ZILYXK35G9M2CzVMEGepxc88A=="
+```</p>
+<h2>🧪 测试连接</h2>
+<h3>使用已配置的凭证测试</h3>
+```bash
+python C:\Users\jia'yue\.workbuddy\skills\ima-skills\scripts\test-with-creds.py
+```
+<h3>使用环境变量测试</h3>
+```bash
+python C:\Users\jia'yue\.workbuddy\skills\ima-skills\scripts\test-api.py
+```
+<h2>🚀 如何使用技能</h2>
+<p>IMA 技能会自动触发，当你说到以下关键词时：</p>
+<h3>触发关键词</h3>
+<li>"笔记"、"备忘录"、"记事"、"记录"</li>
+<li>"知识库"、"文档"、"资料"</li>
+<li>"查找笔记"、"搜索笔记"、"查看笔记"</li>
+<li>"创建笔记"、"新建笔记"、"记录一下"</li>
+<li>"追加内容"、"添加内容"、"补充笔记"</li>
+<h3>常用命令示例</h3>
+1. <strong>查看笔记本列表</strong>
+   ```
+   "列出我的笔记本"
+   ```
+<p>2. <strong>搜索笔记</strong>
+   ```
+   "搜索关于AI的笔记"
+   ```</p>
+<p>3. <strong>创建新笔记</strong>
+   ```
+   "创建一篇关于龙心OS的笔记"
+   ```</p>
+<p>4. <strong>读取笔记内容</strong>
+   ```
+   "查看我的会议记录笔记"
+   ```</p>
+<p>5. <strong>追加内容到笔记</strong>
+   ```
+   "在我的学习笔记中添加新的内容"
+   ```</p>
+<h2>📁 技能文件结构</h2>
+<p>```
+ima-skills/
+├── SKILL.md                    # 主技能描述文件
+├── references/
+│   ├── api.md                  # API接口文档
+│   ├── usage-examples.md       # 使用示例
+│   └── quick-start.md          # 快速使用指南
+├── scripts/
+│   ├── test-with-creds.py      # Python测试脚本（直接使用凭证）
+│   ├── test-api.py             # Python测试脚本（使用环境变量）
+│   ├── test-api.sh             # Bash测试脚本
+│   ├── test-api.ps1            # PowerShell测试脚本
+│   ├── configure.ps1           # PowerShell配置脚本
+│   └── set-env.cmd             # CMD环境变量设置脚本
+```</p>
+<h2>⚠️ 注意事项</h2>
+<p>1. <strong>隐私保护</strong>: 在公开场合，技能只展示笔记标题和摘要，不会直接显示完整内容
+2. <strong>操作确认</strong>: 重要操作（如删除、修改）需要二次确认
+3. <strong>编码要求</strong>: 所有文本内容必须使用 UTF-8 编码
+4. <strong>API 限制</strong>: IMA API 可能有调用频率限制，请合理使用</p>
+<h2>🔄 技能更新</h2>
+<p>如果需要更新技能，可以通过以下方式：
+1. 访问原仓库：https://clawhub.ai/iampennyli/ima-skills
+2. 查看最新版本和更新说明
+3. 手动更新技能文件</p>
+<h2>📞 技术支持</h2>
+<p>如果遇到问题：
+1. 检查环境变量是否正确设置
+2. 运行测试脚本验证连接
+3. 查看 API 文档了解接口详情
+4. 联系 IMA 官方技术支持</p>
+<p>---</p>
+<strong>IMA 技能已安装完成，现在你可以开始使用它来管理你的个人笔记了！</strong>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

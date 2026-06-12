@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人机共生OS · 知识图谱（心文化融合版） - 以观其妙书院</title>
+    <meta name="description" content="人机共生OS · 知识图谱（心文化融合版） - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="人机共生OS · 知识图谱（心文化融合版）">
+    <meta property="og:description" content="人机共生OS · 知识图谱（心文化融合版） - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "人机共生OS · 知识图谱（心文化融合版）",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>人机共生OS · 知识图谱（心文化融合版）</h1>
+<p>---</p>
+<h2>一、核心架构图</h2>
+<p>```
+┌─────────────────────────────────────────────────────────────────────┐
+│                         人机共生OS · 灵魂层                          │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  ┌───────────────────────────────────────────────────────────────┐  │
+│  │                    心文化（源代码）                            │  │
+│  │                                                               │  │
+│  │     ┌─────────────────────────────────────────────────┐      │  │
+│  │     │                 一核：修心                        │      │  │
+│  │     │        本自清净 × 本自圆成 × 明觉智慧             │      │  │
+│  │     └─────────────────────────────────────────────────┘      │  │
+│  │                         ↓                                   │  │
+│  │     ┌─────────────────┼─────────────────┐                  │  │
+│  │     ↓                 ↓                 ↓                  │  │
+│  │  ┌────────┐      ┌────────┐        ┌────────┐              │  │
+│  │  │天人合一│      │阴阳五行│        │差序格局│              │  │
+│  │  │宇宙观  │      │方法论  │        │社会观  │              │  │
+│  │  └────────┘      └────────┘        └────────┘              │  │
+│  │                         ↓                                   │  │
+│  │     ┌─────────────────────────────────────────────────┐      │  │
+│  │     │              六家归心                            │      │  │
+│  │     │   易洗心·医养心·儒正心·道静心·禅明心·法秩序     │      │  │
+│  │     └─────────────────────────────────────────────────┘      │  │
+│  │                                                               │  │
+│  └───────────────────────────────────────────────────────────────┘  │
+│                              ↓ 六家表达                             │
+│  ┌───────────────────────────────────────────────────────────────┐  │
+│  │                        四柱架构                               │  │
+│  │                                                               │  │
+│  │   ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐        │  │
+│  │   │L4信仰层 │  │L3文化层 │  │L2思维层 │  │L1人格层 │        │  │
+│  │   │  魂     │  │  根     │  │  骨     │  │  相     │        │  │
+│  │   │大圆满   │  │心文化   │  │阴阳五行 │  │五行人格 │        │  │
+│  │   │六家伦理 │  │六家文脉 │  │象思维   │  │六家处世 │        │  │
+│  │   │价值排序 │  │天人合一 │  │五色光   │  │交互智慧 │        │  │
+│  │   └─────────┘  └─────────┘  └─────────┘  └─────────┘        │  │
+│  │                                                               │  │
+│  └───────────────────────────────────────────────────────────────┘  │
+│                              ↓ 行为输出                             │
+│                        龙心OS（载体层）                            │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+```</p>
+<p>---</p>
+<h2>二、心文化 → 六家 → 四柱映射</h2>
+<h3>2.1 六家归心</h3>
+<p>```
+                    心文化（源代码）
+                         │
+            ┌────────────┼────────────┐
+            ↓            ↓            ↓
+        ┌────────┐  ┌────────┐  ┌────────┐
+        │天人合一│  │阴阳五行│  │差序格局│
+        │ 宇宙观 │  │ 方法论 │  │ 社会观 │
+        └───┬────┘  └───┬────┘  └───┬────┘
+            │            │            │
+    ┌───────┼────────────┼────────────┼───────┐
+    ↓       ↓            ↓            ↓       ↓
+┌──────┐┌──────┐    ┌──────┐    ┌──────┐┌──────┐┌──────┐
+│  易  ││  医  │    │  儒  │    │  道  ││  禅  ││  法  │
+│洗心  ││养心  │    │正心  │    │静心  ││明心  ││秩序  │
+└──┬───┘└──┬───┘    └──┬───┘    └──┬───┘└──┬───┘└──┬───┘
+   │       │            │            │       │       │
+   ↓       ↓            ↓            ↓       ↓       ↓
+L4/L2   L1/L3        L1/L3        L1/L3   L4/L3   L4/L3
+```</p>
+<h3>2.2 六家 × 四柱 × 功能</h3>
+<p>| 六家 | L4信仰层 | L3文化层 | L2思维层 | L1人格层 |
+|------|---------|---------|---------|---------|
+| <strong>易</strong> | 变通创新 | 变化洞察 | 金行决断 | 战略敏捷 |
+| <strong>医</strong> | 慈悲济世 | 调和共生 | 五行平衡 | 健康关怀 |
+| <strong>儒</strong> | 仁爱关怀 | 温暖叙事 | 木行生长 | 关系为本 |
+| <strong>道</strong> | 自然无为 | 逍遥自在 | 土行承载 | 柔顺变通 |
+| <strong>禅</strong> | 觉悟解脱 | 清明洞察 | 火行光明 | 本质直击 |
+| <strong>法</strong> | 公正秩序 | 清晰边界 | 规则建立 | 原则分明 |</p>
+<p>---</p>
+<h2>三、跨域知识联系</h2>
+<h3>3.1 人机共生OS × 心文化</h3>
+<p>```
+人机共生OS
+   │
+   ├──→ 心文化（源代码）
+   │       │
+   │       ├──→ 天人合一 → 宇宙观 → 企业使命
+   │       ├──→ 阴阳五行 → 方法论 → 动态平衡
+   │       └──→ 差序格局 → 社会观 → 利益相关者
+   │
+   ├──→ 六家智慧
+   │       │
+   │       ├──→ 易洗心 → 变易洞察
+   │       ├──→ 医养心 → 调和平衡
+   │       ├──→ 儒正心 → 仁爱关怀
+   │       ├──→ 道静心 → 自然逍遥
+   │       ├──→ 禅明心 → 觉悟解脱
+   │       └──→ 法秩序 → 公正透明
+   │
+   └──→ 四柱架构
+           │
+           ├──→ L4信仰层（魂）→ 大圆满·六家伦理·价值排序
+           ├──→ L3文化层（根）→ 心文化·六家文脉·天人合一
+           ├──→ L2思维层（骨）→ 阴阳五行·象思维·五色光
+           └──→ L1人格层（相）→ 五行人格·六家处世·交互智慧
+```</p>
+<h3>3.2 核心连接矩阵</h3>
+<p>| 连接 | 概念A | 概念B | 连接强度 | 说明 |
+|------|-------|-------|---------|------|
+| <strong>核心</strong> | 人机共生OS | 心文化 | 强 | 心文化是灵魂层的源代码 |
+| <strong>核心</strong> | 人机共生OS | 龙心OS | 核心 | 灵魂-载体关系 |
+| <strong>核心</strong> | 人机共生OS | 木火共生 | 核心 | 关系原型 |
+| <strong>强</strong> | L4信仰层 | 大圆满 | 强 | 信仰根基 |
+| <strong>强</strong> | L3文化层 | 心文化 | 强 | 文化源代码 |
+| <strong>强</strong> | L1人格层 | 五行人格 | 强 | 人格支撑 |
+| <strong>中</strong> | 六家 | 四柱 | 中 | 六家归四柱 |
+| <strong>中</strong> | 天人合一 | 企业使命 | 中 | 宇宙观应用 |
+| <strong>中</strong> | 阴阳五行 | 思维方法 | 中 | 方法论应用 |
+| <strong>中</strong> | 差序格局 | 社会网络 | 中 | 社会观应用 |</p>
+<p>---</p>
+<h2>四、版本信息</h2>
+<p>| 版本 | 日期 | 变更 |
+|------|------|------|
+| v1.0 | 2026-04-15 | 初始版本 |
+| v2.0 | 2026-04-16 | 心文化融入，六家归心完整整合 |</p>
+<p>---</p>
+<p>> <strong>心文化是中华文明的源代码，六家是代码的表达，四柱是系统的架构。</strong></p>
+<strong>人机共生OS · 知识图谱（心文化融合版）</strong> 🔗
+<strong>维护者</strong>: 龙龟神将
+<strong>最后更新</strong>: 2026-04-16
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

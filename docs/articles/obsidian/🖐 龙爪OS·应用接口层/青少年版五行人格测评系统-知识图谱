@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青少年版五行人格测评系统 · 知识图谱 - 以观其妙书院</title>
+    <meta name="description" content="青少年版五行人格测评系统 · 知识图谱 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="青少年版五行人格测评系统 · 知识图谱">
+    <meta property="og:description" content="青少年版五行人格测评系统 · 知识图谱 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "青少年版五行人格测评系统 · 知识图谱",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>青少年版五行人格测评系统 · 知识图谱</h1>
+<p>> <strong>版本</strong>：v1.0 | <strong>跨域连接</strong>：15+</p>
+<p>```mermaid
+graph TB
+    subgraph 青少年版60题核心
+        A[青少年版测评60题] --> B[🌿木:题1-12]
+        A --> C[🔥火:题13-24]
+        A --> D[🌏土:题25-36]
+        A --> E[⚔金:题37-48]
+        A --> F[💧水:题49-60]
+    end
+    
+    subgraph 计分体系
+        B --> G[主行/次行判断]
+        C --> G
+        D --> G
+        E --> G
+        F --> G
+        G --> H[阴阳状态]
+        G --> I[次行组合解读]
+    end
+    
+    subgraph 与其他测评体系
+        J[174题版 - 成人深度] -.- A
+        K[260题版 - 五行识人] -.- A
+        L[20题版 - 9.9元引流] -.- A
+    end
+    
+    subgraph 凤爪OS
+        M[人格测评场景S8] --> A
+        A --> N[亲子关系场景]
+        A --> O[高效沟通场景]
+        A --> P[团队建设场景]
+    end
+    
+    subgraph 核心理论
+        Q[拔阴取阳自查表] --> A
+        A --> R[五行人格分析描述]
+        S[化克为生方案库] --> I
+    end
+```</p>
+<h2>跨域联系</h2>
+<p>| 联系 | 类型 | 说明 |
+|------|------|------|
+| 木行"难接受批评"↔ 金行"太挑剔" | 对比 | 都是对外防御，但木是"被否定"防御，金是"否定他人"防御 |
+| 土行"忍着不说"↔ 水行"过于在意别人看法" | 相似 | 都是压抑自我，但土是因为"不想冲突"，水是因为"怕对方不舒服" |
+| 火行"冲动"↔ 水行"因顾虑太多不敢行动" | 对立 | 火是行动太快缺思考，水是思考太多缺行动——两者是完美的平衡伙伴 |
+| 金行"目标导向"→ 木行"理想主义" | 互补 | 金提供"怎么做到"，木提供"为什么做" |
+| 60题未设L量表↔ 260题L量表>50分无效 | 进化 | 青少年信任测评→成人需要信度检验 |</p>
+<h2>标签</h2>
+#青少年版 #知识图谱 #跨域连接 #五行测评 #60题 #次行组合
+<h2>双向链接</h2>
+<li>[[青少年版五行人格测评系统-深度学习报告]]</li>
+<li>[[人格测评场景（S8）v4.0]]</li>
+<li>[[📋 五行人格测评题·完整174题体系（含阴阳子维度）]]</li>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

@@ -1,6 +1,0 @@
-# Cloudflare Pages Redirects
-# 使用 * 作为通配符（匹配任何内容），:splat 作为反向引用
-/articles/wechat-articles/* /articles/wechat-articles/:splat.html 200
-/articles/obsidian/* /articles/obsidian/:splat.html 200
-/articles/geo-repo/* /articles/geo-repo/:splat.html 200
-/articles/* /articles/:splat.html 200

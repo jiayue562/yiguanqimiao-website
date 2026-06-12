@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCA Finding: &lt;vuln_id&gt; in &lt;package_name&gt; - 以观其妙书院</title>
+    <meta name="description" content="SCA Finding: &lt;vuln_id&gt; in &lt;package_name&gt; - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="SCA Finding: &lt;vuln_id&gt; in &lt;package_name&gt;">
+    <meta property="og:description" content="SCA Finding: &lt;vuln_id&gt; in &lt;package_name&gt; - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "SCA Finding: &lt;vuln_id&gt; in &lt;package_name&gt;",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>SCA Finding: <vuln_id> in <package_name></h1>
+<h2>Metadata</h2>
+<li><strong>ID</strong>: <finding_id></li>
+<li><strong>Type</strong>: sca-vulnerability</li>
+<li><strong>Package</strong>: <package_name>@<version></li>
+<li><strong>Ecosystem</strong>: <ecosystem></li>
+<li><strong>Vulnerability ID</strong>: <vuln_id></li>
+<li><strong>CVEs</strong>: <cve_list></li>
+<li><strong>Severity</strong>: <high|medium|low></li>
+<li><strong>Status</strong>: confirmed-exploitable</li>
+<h2>Location</h2>
+<li><strong>Lockfile</strong>: <relative/path/to/lockfile></li>
+<li><strong>Package</strong>: <package_name>@<version></li>
+<li><strong>Ecosystem</strong>: <ecosystem></li>
+<h2>Vulnerability Summary</h2>
+<Copy the vulnerability summary from the OSV database. This should be 2-4 sentences describing what the vulnerability is, what it affects, and the potential impact.>
+<h2>Exploitability Analysis</h2>
+<h3>Usage Context</h3>
+<Describe where and how this package is used in the codebase>
+<strong>Files Using Package</strong>: <count>
+<li><file1>: <brief description of usage></li>
+<li><file2>: <brief description of usage></li>
+<li><file3>: <brief description of usage></li>
+<strong>Vulnerable Functions Called</strong>:
+<li><vulnerable_function> at <file>:<line></li>
+<li><vulnerable_function2> at <file>:<line></li>
+<h3>Attack Vector</h3>
+<Describe step-by-step how an attacker could exploit this vulnerability in the context of this application>
+<strong>Entry Point</strong>: <where attacker input enters - e.g., HTTP POST /api/endpoint>
+<strong>Data Flow</strong>: <how attacker data reaches the vulnerable code>
+<strong>Exploit Payload</strong>: <example of malicious input if applicable>
+<strong>Impact</strong>: <what the attacker achieves - RCE, data theft, etc.>
+<h3>Exploitability Assessment</h3>
+<p>| Factor | Assessment | Evidence |
+|--------|------------|----------|
+| Package Used | Yes/No | <Import locations or "Not imported"> |
+| Vulnerable Function Called | Yes/No | <Call sites or "Function not used"> |
+| User Input Reaches Vuln | Yes/No | <Data flow description> |
+| Input Validation | Yes/No | <Validation details or "None"> |
+| Authentication Required | Yes/No | <Auth requirements - public, user, admin> |
+| Production Code | Yes/No | <Production/test/dev> |
+| Mitigations | None/Partial/Full | <Mitigation details if any> |</p>
+<h3>Severity Justification</h3>
+<strong>Base CVSS Score</strong>: <base_score> (<cvss_vector_string>)
+<strong>Contextual Severity</strong>: <high|medium|low>
+<strong>Adjustment Reasoning</strong>: <Explain why severity was adjusted up or down from base score based on exploitability context>
+<strong>Attack Complexity</strong>: <low|medium|high>
+<strong>Privileges Required</strong>: <none|low|high>
+<strong>User Interaction</strong>: <none|required>
+<strong>Scope</strong>: <unchanged|changed>
+<h2>CVE Details</h2>
+<For each CVE associated with this vulnerability:>
+<h3><CVE-ID></h3>
+<li><strong>Published</strong>: <publication_date></li>
+<li><strong>Modified</strong>: <last_modified_date></li>
+<li><strong>CVSS Score</strong>: <cvss_score></li>
+<li><strong>Description</strong>: <cve_description></li>
+<li><strong>References</strong>:</li>
+  - <reference_url_1>
+  - <reference_url_2>
+<h2>Remediation</h2>
+<h3>Immediate Action</h3>
+<Specific steps to fix this vulnerability>
+<p>1. <strong>Upgrade Package</strong>
+   ```bash
+   # <ecosystem-specific command to upgrade>
+   # Go:
+   go get <package>@<fixed_version>
+   go mod tidy</p>
+<p># npm:
+   npm install <package>@<fixed_version></p>
+<p># Python (poetry):
+   poetry add <package>@<fixed_version></p>
+<p># Python (pip):
+   pip install <package>==<fixed_version>
+   pip freeze > requirements.txt</p>
+<p># Ruby:
+   bundle update <package></p>
+<p># Rust:
+   cargo update <package>
+   ```
+   Target version: `<package>@<fixed_version>`</p>
+<p>2. <strong>Verify Fix</strong>
+   ```bash
+   wraith scan <lockfile>
+   ```
+   Confirm that the vulnerability no longer appears in scan results.</p>
+<p>3. <strong>Test Application</strong>
+   - <Test area 1 - functionality that uses this package>
+   - <Test area 2 - integration tests>
+   - <Test area 3 - end-to-end tests></p>
+<h3>Alternative Remediation (if upgrade not possible)</h3>
+<strong>If breaking changes prevent immediate upgrade:</strong>
+<li><strong>Option 1: Apply mitigation controls</strong></li>
+  - <Specific mitigation - e.g., add input validation wrapper>
+  - <Configuration change to disable vulnerable feature>
+<li><strong>Option 2: Use version overrides</strong></li>
+  - Go: Add `replace` directive in go.mod
+  - npm: Add `resolutions` in package.json
+  - Backport security patch to current version
+<li><strong>Option 3: Remove dependency</strong></li>
+  - If package is not critical, consider removing it
+  - Replace with alternative package without this vulnerability
+<h3>Estimated Effort</h3>
+<li><strong>Upgrade</strong>: <hours/days></li>
+<li><strong>Testing</strong>: <hours/days></li>
+<li><strong>Total</strong>: <hours/days></li>
+<h2>References</h2>
+<li>OSV Entry: https://osv.dev/vulnerability/<vuln_id></li>
+<li><CVE links from aliases></li>
+<li><Advisory links from references></li>
+<li><Vendor security advisory links></li>
+<h2>Code Context</h2>
+<h3>Import Statement</h3>
+```<language>
+<import statement from codebase showing how package is imported>
+```
+<h3>Vulnerable Usage</h3>
+```<language>
+<5-10 lines of code showing the vulnerable function being called>
+```
+<h3>Data Flow</h3>
+```<language>
+<Code showing how user input flows to the vulnerable function>
+```
+<p>---</p>
+<p>*Finding generated by Ghost Security SCA Scanner*
+*Exploitability confirmed by AI analysis on <timestamp>*</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

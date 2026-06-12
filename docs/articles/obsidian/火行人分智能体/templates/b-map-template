@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 火行人B=MAP行为设计模板 - 以观其妙书院</title>
+    <meta name="description" content="🎯 火行人B=MAP行为设计模板 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="🎯 火行人B=MAP行为设计模板">
+    <meta property="og:description" content="🎯 火行人B=MAP行为设计模板 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "🎯 火行人B=MAP行为设计模板",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>🎯 火行人B=MAP行为设计模板</h1>
+<p>> <strong>版本</strong>: v1.0 | <strong>火行人分智能体独立封装</strong> | <strong>用途</strong>: 火行人专属行为设计工具</p>
+<p>---</p>
+<h2>🔥 火行人B=MAP行为设计框架</h2>
+<strong>B=MAP公式</strong>: Behavior = Motivation + Ability + Prompt + Environment  
+<strong>火行人适配</strong>: 火行人的温暖照亮能力与热情行动力
+<p>---</p>
+<h2>一、M（Motivation·动机）- 想要做的</h2>
+<h3>🔥 火行人的核心动机</h3>
+<strong>1. 照亮驱动（阳火·礼德）</strong>
+<li>想要温暖他人</li>
+<li>想要带领团队前进</li>
+<li>想要影响和改变</li>
+<li>想要被看见和认可</li>
+<strong>2. 阴火扭曲动机</strong>
+<li>想要证明自己（好胜虚荣）</li>
+<li>想要控制他人（操控索取）</li>
+<li>想要报复（愤恨攻击）</li>
+<h3>🔥 动机设计模板</h3>
+<p>| 动机类型 | 具体内容 | 强度（1-10） | 转化方向 |
+|---------|---------|-------------|---------|
+| 核心驱动力 | `[填写]` | `[评分]` | `[阴转阳/保持阳火]` |
+| 次要动机 | `[填写]` | `[评分]` | `[阴转阳/保持阳火]` |
+| 潜在阻力 | `[填写]` | `[评分]` | `[拔阴取阳]` |</p>
+<h3>🔥 动机净化技术</h3>
+<strong>阴火转阳火口诀</strong>:
+```
+阴火嗔（嗔恨）→ 阳火问（探究）
+阴火急（急躁）→ 阳火稳（稳重）
+阴火炫（炫耀）→ 阳火谦（谦和）
+```
+<strong>动机净化三问</strong>:
+1. "这个行为背后的真实动机是什么？"
+2. "这个动机是来自阳火（礼德）还是阴火（嗔恨）？"
+3. "如何将阴火动机转化为阳火动机？"
+<p>---</p>
+<h2>二、A（Ability·能力）- 能够做的</h2>
+<h3>🔥 火行人的核心能力</h3>
+<strong>1. 感染力（阳火）</strong>
+<li>富有魅力的社交能力</li>
+<li>鼓舞人心的表达能力</li>
+<li>激励团队的能力</li>
+<li>活跃气氛的天赋</li>
+<strong>2. 领导力（阳火）</strong>
+<li>危机动员能力</li>
+<li>快速决策能力</li>
+<li>推动进程能力</li>
+<li>有说服力的沟通</li>
+<strong>3. 创新能力（火生木）</strong>
+<li>接受新事物的能力</li>
+<li>快速学习能力</li>
+<li>喜欢挑战和冒险</li>
+<li>思想前卫</li>
+<strong>4. 执行力（阳火）</strong>
+<li>积极主动的执行力</li>
+<li>目标驱动的行动力</li>
+<li>永不言倦的毅力</li>
+<li>活力十足的状态</li>
+<h3>🔥 能力评估模板</h3>
+<p>| 能力维度 | 当前水平（1-10） | 目标水平（1-10） | 提升计划 |
+|---------|----------------|----------------|---------|
+| 感染力 | `[评分]` | `[目标]` | `[具体措施]` |
+| 领导力 | `[评分]` | `[目标]` | `[具体措施]` |
+| 创新能力 | `[评分]` | `[目标]` | `[具体措施]` |
+| 执行力 | `[评分]` | `[目标]` | `[具体措施]` |
+| 社交能力 | `[评分]` | `[目标]` | `[具体措施]` |
+| 适应能力 | `[评分]` | `[目标]` | `[具体措施]` |</p>
+<h3>🔥 能力提升路径</h3>
+<strong>阳火能力强化</strong>:
+1. <strong>感染力</strong>: 用温暖和热情照亮他人
+2. <strong>领导力</strong>: 在危机中展现光而不耀的力量
+3. <strong>创新能力</strong>: 保持对新事物的敏感度
+4. <strong>执行力</strong>: 将热情转化为持续行动
+<strong>阴火能力转化</strong>:
+1. <strong>急躁→稳重</strong>: 培养"慢思考"能力
+2. <strong>炫耀→谦和</strong>: 练习"不显山不露水"
+3. <strong>攻击→照亮</strong>: 将批判转化为启发
+4. <strong>控制→引领</strong>: 用影响力而非权力
+<p>---</p>
+<h2>三、P（Prompt·提示）- 触发启动</h2>
+<h3>🔥 火行人的日常提醒机制</h3>
+<strong>1. 晨间启动提示</strong>
+```
+🌅 今天的我，是阳火还是阴火？
+✅ 阳火状态：今天我要照亮谁？
+⚠️ 阴火预警：今天要注意什么？
+```
+<strong>2. 工作中提示</strong>
+```
+⚡ 遇到冲突时：是愤怒（阴火）还是探究（阳火）？
+⚡ 做决策时：是急躁（阴火）还是稳重（阳火）？
+⚡ 表达观点时：是炫耀（阴火）还是分享（阳火）？
+```
+<strong>3. 晚间复盘提示</strong>
+```
+🌙 今天我的火行能量是怎样的？
+✅ 阳火时刻：今天我照亮了什么？
+⚠️ 阴火时刻：今天我需要转化什么？
+📝 明日提醒：明天我要注意什么？
+```
+<h3>🔥 提示词设计模板</h3>
+<p>| 场景 | 触发提示 | 预期行为 | 转化方向 |
+|------|---------|---------|---------|
+| 晨间启动 | `[具体提示词]` | `[预期行为]` | `[阴转阳/保持阳火]` |
+| 工作冲突 | `[具体提示词]` | `[预期行为]` | `[阴转阳/保持阳火]` |
+| 表达时刻 | `[具体提示词]` | `[预期行为]` | `[阴转阳/保持阳火]` |
+| 晚间复盘 | `[具体提示词]` | `[预期行为]` | `[阴转阳/保持阳火]` |</p>
+<h3>🔥 自动化提醒系统</h3>
+<strong>设置方式</strong>:
+<li>手机闹钟/提醒APP</li>
+<li>桌面便利贴</li>
+<li>电脑壁纸</li>
+<li>工作笔记本第一页</li>
+<strong>提醒频率</strong>:
+<li>晨间启动：每天7:00</li>
+<li>工作中：每2小时一次</li>
+<li>晚间复盘：每天21:00</li>
+<li>周末总结：每周日20:00</li>
+<p>---</p>
+<h2>四、E（Environment·环境）- 支撑火能量的外部条件</h2>
+<h3>🔥 火行人环境设计原则</h3>
+<strong>1. 阳火友好环境</strong>
+<li>开放的沟通氛围</li>
+<li>鼓励创新的容错空间</li>
+<li>有展示才华的舞台</li>
+<li>能够影响他人的机会</li>
+<strong>2. 阴火诱因环境</strong>
+<li>压抑的权力结构</li>
+<li>缺乏认可的氛围</li>
+<li>单调重复的工作</li>
+<li>无意义的消耗</li>
+<h3>🔥 环境评估清单</h3>
+<p>| 环境维度 | 当前状态 | 改进建议 | 优先级 |
+|---------|---------|---------|-------|
+| 物理环境 | `[描述]` | `[建议]` | `[高/中/低]` |
+| 人际环境 | `[描述]` | `[建议]` | `[高/中/低]` |
+| 工作内容 | `[描述]` | `[建议]` | `[高/中/低]` |
+| 认可机制 | `[描述]` | `[建议]` | `[高/中/低]` |
+| 发展空间 | `[描述]` | `[建议]` | `[高/中/低]` |
+| 休息空间 | `[描述]` | `[建议]` | `[高/中/低]` |</p>
+<h3>🔥 环境优化策略</h3>
+<strong>短期优化（1周内）</strong>:
+1. `[具体措施]`
+2. `[具体措施]`
+3. `[具体措施]`
+<strong>中期优化（1个月内）</strong>:
+1. `[具体措施]`
+2. `[具体措施]`
+3. `[具体措施]`
+<strong>长期优化（3个月内）</strong>:
+1. `[具体措施]`
+2. `[具体措施]`
+3. `[具体措施]`
+<p>---</p>
+<h2>五、完整B=MAP设计实例</h2>
+<h3>实例：提升火行人的领导力</h3>
+<strong>场景</strong>: 火行人想要提升团队领导能力，从阴火（好胜虚荣）转向阳火（明辨守礼）
+<p>#### M（动机设计）
+```
+阴火动机: "我要证明我是最厉害的领导者"
+阳火动机: "我要用我的热情照亮团队，帮助每个人成长"
+转化技术: 认不是（承认好胜心）→ 找好处（发现他人价值）
+```</p>
+<p>#### A（能力设计）
+```
+当前能力:
+<li>感染力: 8/10（已具备）</li>
+<li>领导力: 6/10（需提升）</li>
+<li>情绪控制: 4/10（急需提升）</li></p>
+<p>提升计划:
+1. 情绪控制练习（每天10分钟静坐）
+2. 倾听训练（每次对话至少听3分钟）
+3. 反馈练习（每周给3人正面反馈）
+```</p>
+<p>#### P（提示设计）
+```
+晨间: "今天我要照亮谁？帮助谁成长？"
+工作中: "我是在证明自己，还是在帮助他人？"
+冲突时: "是愤怒在说话，还是智慧在说话？"
+晚间: "今天我照亮了几个时刻？"
+```</p>
+<p>#### E（环境设计）
+```
+物理环境:
+<li>办公室增加绿植（调节火能量）</li>
+<li>温度控制在22-24度（火行人适宜）</li></p>
+<p>人际环境:
+<li>建立每周团队分享会</li>
+<li>创造他人展示才华的机会</li>
+<li>减少竞争性KPI，增加协作性目标</li></p>
+<p>认可机制:
+<li>建立"照亮他人奖"</li>
+<li>每周感谢三位团队成员</li>
+<li>记录他人的成长进步</li>
+```</p>
+<p>---</p>
+<h2>六、B=MAP实施跟踪表</h2>
+<p>| 日期 | M（动机状态） | A（能力进展） | P（提示执行） | E（环境优化） | 整体评分（1-10） |
+|------|-------------|-------------|-------------|-------------|----------------|
+| `[日期]` | `[记录]` | `[记录]` | `[记录]` | `[记录]` | `[评分]` |
+| `[日期]` | `[记录]` | `[记录]` | `[记录]` | `[记录]` | `[评分]` |
+| `[日期]` | `[记录]` | `[记录]` | `[记录]` | `[记录]` | `[评分]` |</p>
+<p>---</p>
+<h2>七、B=MAP评估标准</h2>
+<strong>优秀（8-10分）</strong>:
+<li>✅ 动机纯正（阳火主导）</li>
+<li>✅ 能力稳定（8分以上）</li>
+<li>✅ 提示机制自动化</li>
+<li>✅ 环境持续优化</li>
+<strong>良好（6-7分）</strong>:
+<li>✅ 动机基本正向</li>
+<li>✅ 能力持续提升</li>
+<li>✅ 提示机制建立</li>
+<li>⚠️ 环境有待改善</li>
+<strong>一般（4-5分）</strong>:
+<li>⚠️ 动机偶尔阴火</li>
+<li>⚠️ 能力提升缓慢</li>
+<li>⚠️ 提示机制不稳定</li>
+<li>⚠️ 环境阻力大</li>
+<strong>需提升（1-3分）</strong>:
+<li>🚨 动机阴火主导</li>
+<li>🚨 能力薄弱</li>
+<li>🚨 无提示机制</li>
+<li>🚨 环境不友好</li>
+<p>---</p>
+<h2>八、火行人B=MAP特色技巧</h2>
+<h3>🔥 火行人专属技巧</h3>
+<strong>1. "照亮日记"</strong>
+<li>每天记录3个"照亮时刻"</li>
+<li>记录自己如何用温暖影响他人</li>
+<li>记录他人如何照亮自己</li>
+<strong>2. "火能量监测表"</strong>
+<li>每小时评估自己的火行能量状态</li>
+<li>阳火时刻用✅标记</li>
+<li>阴火时刻用⚠️标记</li>
+<li>晚间统计阳火/阴火比例</li>
+<strong>3. "转化仪式"</strong>
+<li>发现阴火时，立即进行4步法术</li>
+<li>认不是 → 找好处 → 信因果 → 达天时</li>
+<li>每次转化记录在案</li>
+<li>每周回顾转化成效</li>
+<h3>🔥 化克为生整合</h3>
+<strong>火克金场景的B=MAP设计</strong>:
+```
+问题: 火行人与金行人关系紧张
+转化: 火克金 → 火生土 → 土生金
+<p>M: "我要证明我是对的" → "我要理解对方的观点"
+A: 口才好 → 倾听能力
+P: 冲突时"我要赢" → 冲突时"我要理解"
+E: 对立环境 → 协作环境
+```</p>
+<p>---</p>
+<strong>模板版本</strong>: v1.0  
+<strong>适用对象</strong>: 火行人分智能体使用者  
+<strong>更新日期</strong>: 2026-04-04
+<p>> <strong>使用说明</strong>:  
+> 1. 此模板专门为火行人设计B=MAP行为框架  
+> 2. 重点在阴火转阳火的动机净化  
+> 3. 火行人的提示词要简短有力  
+> 4. 环境设计要支持阳火绽放  
+> 5. 每周评估一次B=MAP实施效果</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOOLSmd Skill（工具档案） - 以观其妙书院</title>
+    <meta name="description" content="TOOLSmd Skill（工具档案） - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="TOOLSmd Skill（工具档案）">
+    <meta property="og:description" content="TOOLSmd Skill（工具档案） - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "TOOLSmd Skill（工具档案）",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>TOOLSmd Skill（工具档案）</h1>
+<h2>📖 技能定义</h2>
+<p>TOOLSmd是AI龙龟共生伙伴操作系统的<strong>本地环境配置速查表</strong>，记录SSH连接信息、API路径、部署目标、已安装工具、服务器/设备名称等核心配置信息，随技术栈迭代同步更新。</p>
+<strong>核心定位</strong>：
+<li><strong>不是</strong>正式文档</li>
+<li><strong>而是</strong>运行所需的速查小抄（cheat sheet）</li>
+<li><strong>目标</strong>：只保留核心事实信息，快速查询</li>
+<strong>核心原则</strong>：
+> 随技术栈迭代同步更新，保持配置信息的准确性和时效性。
+<p>---</p>
+<h2>🎯 核心内容</h2>
+<h3>1. 本地环境配置</h3>
+<strong>系统信息</strong>：
+```yaml
+local_system:
+  os: Windows 11
+  shell: PowerShell
+  workspace: c:/Users/jia'yue/WorkBuddy/
+  encoding: UTF-8
+  timezone: Asia/Shanghai
+```
+<strong>已安装工具</strong>：
+```yaml
+installed_tools:
+  - git
+  - node
+  - python
+  - obsidian
+  - workbuddy
+  - openclaw
+```
+<strong>环境变量</strong>：
+```yaml
+env_vars:
+  PATH: [已配置关键路径]
+  WORKSPACE: c:/Users/jia'yue/WorkBuddy/
+  PYTHONPATH: [Python库路径]
+  NODE_PATH: [Node.js模块路径]
+```
+<h3>2. SSH连接信息</h3>
+<strong>服务器列表</strong>：
+```yaml
+ssh_connections:
+  production_server:
+    host: example.com
+    port: 22
+    user: deploy
+    key_path: ~/.ssh/production_key
+    description: 生产环境服务器
+<p>staging_server:
+    host: staging.example.com
+    port: 22
+    user: deploy
+    key_path: ~/.ssh/staging_key
+    description: 测试环境服务器
+```</p>
+<strong>连接模板</strong>：
+```bash
+<h1>生产环境</h1>
+ssh -i ~/.ssh/production_key deploy@example.com
+<h1>测试环境</h1>
+ssh -i ~/.ssh/staging_key deploy@staging.example.com
+```
+<h3>3. API路径</h3>
+<strong>内部API</strong>：
+```yaml
+internal_apis:
+  workbuddy_api:
+    base_url: https://api.workbuddy.cn
+    version: v1
+    endpoints:
+      - /chat
+      - /memory
+      - /skills
+<p>ima_api:
+    base_url: https://ima.qq.com/agent-interface
+    client_id: 59a1edb848ec905552c0fbc8041213bf
+    api_key: [存储在.secrets文件]
+```</p>
+<strong>外部API</strong>：
+```yaml
+external_apis:
+  gemini_api:
+    base_url: https://generativelanguage.googleapis.com
+    api_key: [存储在.secrets文件]
+<p>xai_api:
+    base_url: https://api.x.ai
+    api_key: [存储在.secrets文件]</p>
+<p>brave_search:
+    base_url: https://api.search.brave.com
+    api_key: [存储在.secrets文件]
+```</p>
+<h3>4. 部署目标</h3>
+<strong>部署环境</strong>：
+```yaml
+deployment_targets:
+  production:
+    host: example.com
+    path: /var/www/example.com
+    method: git
+    branch: main
+    pre_deploy:
+      - npm install
+      - npm run build
+    post_deploy:
+      - systemctl restart nginx
+<p>staging:
+    host: staging.example.com
+    path: /var/www/staging.example.com
+    method: git
+    branch: develop
+    pre_deploy:
+      - npm install
+      - npm run build
+    post_deploy:
+      - systemctl restart nginx
+```</p>
+<strong>部署脚本</strong>：
+```bash
+<h1>部署到生产环境</h1>
+deploy production
+<h1>部署到测试环境</h1>
+deploy staging
+```
+<h3>5. 服务器/设备名称</h3>
+<strong>服务器列表</strong>：
+```yaml
+servers:
+  production:
+    name: prod-01
+    ip: 192.168.1.100
+    role: production
+    status: active
+<p>staging:
+    name: staging-01
+    ip: 192.168.1.101
+    role: staging
+    status: active</p>
+<p>database:
+    name: db-01
+    ip: 192.168.1.102
+    role: database
+    status: active
+```</p>
+<strong>设备列表</strong>：
+```yaml
+devices:
+  local_pc:
+    name: JiaYue-PC
+    os: Windows 11
+    role: development
+    status: active
+<p>laptop:
+    name: JiaYue-Laptop
+    os: Windows 10
+    role: mobile
+    status: inactive
+```</p>
+<p>---</p>
+<h2>🔄 更新机制</h2>
+<h3>1. 实时更新</h3>
+<strong>触发条件</strong>：
+<li>安装新工具时</li>
+<li>配置新服务器时</li>
+<li>添加新API时</li>
+<li>修改部署流程时</li>
+<strong>执行动作</strong>：
+<li>立即更新配置文件</li>
+<li>标注更新时间和原因</li>
+<li>同步到长期记忆</li>
+<h3>2. 定期验证（每月）</h3>
+<strong>验证流程</strong>：
+1. 读取所有配置
+2. 逐项验证准确性
+3. 测试关键连接
+4. 更新过期信息
+5. 记录验证结果
+<strong>验证检查项</strong>：
+<li>✅ SSH连接是否正常</li>
+<li>✅ API密钥是否有效</li>
+<li>✅ 部署流程是否可用</li>
+<li>✅ 工具版本是否最新</li>
+<li>✅ 服务器状态是否正常</li>
+<p>---</p>
+<h2>🔍 查询机制</h2>
+<h3>1. 快速查询</h3>
+<strong>常用查询</strong>：
+```bash
+<h1>查询SSH连接</h1>
+query ssh production
+<h1>查询API路径</h1>
+query api workbuddy
+<h1>查询部署目标</h1>
+query deploy production
+<h1>查询工具版本</h1>
+query tool git
+```
+<strong>查询结果格式</strong>：
+```yaml
+name: production_server
+host: example.com
+port: 22
+user: deploy
+key_path: ~/.ssh/production_key
+last_updated: 2026-03-23
+```
+<h3>2. 批量查询</h3>
+<strong>查询所有服务器</strong>：
+```bash
+query all servers
+```
+<strong>查询所有API</strong>：
+```bash
+query all apis
+```
+<strong>查询所有工具</strong>：
+```bash
+query all tools
+```
+<p>---</p>
+<h2>🔒 安全管理</h2>
+<h3>1. 密钥管理</h3>
+<strong>集中管理</strong>：
+<li>所有API密钥统一存储在`.secrets`文件</li>
+<li>不在配置文件中硬编码密钥</li>
+<li>使用环境变量引用密钥</li>
+<strong>密钥格式</strong>（`.secrets`文件）：
+```yaml
+secrets:
+  ima_api_key: NmwwfdyB2ytuws6jeStZlZcouyijpDYiWSLNAS/fzSRKeGAJ1ZILYXK35G9M2CzVMEGepxc88A==
+  gemini_api_key: [Gemini API密钥]
+  xai_api_key: [xAI API密钥]
+  brave_search_key: [Brave Search密钥]
+```
+<strong>引用方式</strong>：
+```yaml
+ima_api:
+  base_url: https://ima.qq.com/agent-interface
+  client_id: 59a1edb848ec905552c0fbc8041213bf
+  api_key: ${secrets.ima_api_key}  # 引用.secrets文件中的密钥
+```
+<h3>2. 权限控制</h3>
+<strong>文件权限</strong>：
+```yaml
+permissions:
+  toolsmd:
+    read: group
+    write: owner
+    execute: none
+<p>secrets:
+    read: owner
+    write: owner
+    execute: none
+```</p>
+<strong>访问控制</strong>：
+<li>只允许授权用户访问</li>
+<li>记录所有访问日志</li>
+<li>定期审计访问记录</li>
+<p>---</p>
+<h2>📊 版本控制</h2>
+<h3>1. Git管理</h3>
+<strong>配置文件Git化</strong>：
+```bash
+git add .workbuddy/toolsmd/
+git commit -m "Update toolsmd configuration"
+git push
+```
+<strong>版本标签</strong>：
+```bash
+git tag -a v1.0 -m "Initial toolsmd setup"
+git push --tags
+```
+<h3>2. 变更历史</h3>
+<strong>变更记录格式</strong>：
+```markdown
+<h2>[日期] [变更内容]</h2>
+<strong>变更类型</strong>: 新增/修改/删除
+<strong>变更原因</strong>: ...
+<strong>影响范围</strong>: ...
+<strong>测试结果</strong>: ✅ 通过 / ❌ 失败
+```
+<p>---</p>
+<h2>🚫 使用禁忌</h2>
+<h3>1. 不要做的</h3>
+<li>❌ 在配置文件中硬编码密钥</li>
+<li>❌ 记录过期信息</li>
+<li>❌ 忽略定期验证</li>
+<li>❌ 手动修改Git历史</li>
+<li>❌ 共享`.secrets`文件</li>
+<h3>2. 必须做的</h3>
+<li>✅ 密钥集中管理（`.secrets`文件）</li>
+<li>✅ 实时更新配置信息</li>
+<li>✅ 定期验证配置准确性</li>
+<li>✅ 使用版本控制管理</li>
+<li>✅ 保护敏感信息</li>
+<p>---</p>
+<h2>💡 最佳实践</h2>
+<h3>1. 配置管理</h3>
+<strong>实时更新</strong>：
+<li>安装新工具时立即记录</li>
+<li>配置新服务器时立即记录</li>
+<li>修改部署流程时立即记录</li>
+<li>标注更新时间和原因</li>
+<strong>定期验证</strong>：
+<li>每月验证一次所有配置</li>
+<li>测试关键连接（SSH、API）</li>
+<li>检查工具版本是否最新</li>
+<li>更新过期信息</li>
+<h3>2. 安全管理</h3>
+<strong>密钥保护</strong>：
+<li>使用`.secrets`文件集中管理</li>
+<li>不要硬编码密钥</li>
+<li>使用环境变量引用</li>
+<li>定期轮换密钥</li>
+<strong>访问控制</strong>：
+<li>只允许授权用户访问</li>
+<li>记录所有访问日志</li>
+<li>定期审计访问记录</li>
+<li>发现异常立即处理</li>
+<h3>3. 版本控制</h3>
+<strong>Git管理</strong>：
+<li>所有配置文件Git化</li>
+<li>记录所有变更历史</li>
+<li>使用版本标签标记里程碑</li>
+<li>定期备份配置</li>
+<strong>回滚机制</strong>：
+<li>保留历史版本</li>
+<li>出问题时可快速回滚</li>
+<li>记录回滚原因和结果</li>
+<p>---</p>
+<h2>🎯 核心原则总结</h2>
+<h3>三大铁律</h3>
+<p>1. <strong>速查表定位</strong>
+   - 只保留核心事实信息
+   - 快速查询，快速获取
+   - 不写冗余说明</p>
+<p>2. <strong>实时更新</strong>
+   - 随技术栈迭代同步更新
+   - 安装新工具立即记录
+   - 保持信息准确性</p>
+<p>3. <strong>安全第一</strong>
+   - 密钥集中管理
+   - 不硬编码敏感信息
+   - 使用环境变量引用</p>
+<h3>核心价值</h3>
+<li><strong>快速查询</strong>：快速获取所需配置信息</li>
+<li><strong>准确可靠</strong>：实时更新，定期验证</li>
+<li><strong>安全可控</strong>：密钥集中管理，访问控制</li>
+<li><strong>版本管理</strong>：Git化管理，可追溯历史</li>
+<p>---</p>
+<h2>🔧 实施路线</h2>
+<h3>第一阶段：基础配置（立即）</h3>
+<li>✅ 记录本地环境配置</li>
+<li>✅ 记录SSH连接信息</li>
+<li>✅ 记录API路径</li>
+<h3>第二阶段：部署配置（本周）</h3>
+<li>⏳ 记录部署目标</li>
+<li>⏳ 记录服务器列表</li>
+<li>⏳ 记录部署流程</li>
+<h3>第三阶段：优化完善（本月）</h3>
+<li>⏳ 建立版本控制</li>
+<li>⏳ 实施定期验证</li>
+<li>⏳ 优化查询机制</li>
+<p>---</p>
+<strong>版本</strong>: v1.0
+<strong>创建日期</strong>: 2026-03-23
+<strong>对标来源</strong>: OpenClaw TOOLSmd规则
+<strong>AI龙龟共生伙伴操作系统版本</strong>: v4.1
+<strong>路径</strong>: `C:\Users\jia'yue\.workbuddy\skills\工具档案\SKILL.md`
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

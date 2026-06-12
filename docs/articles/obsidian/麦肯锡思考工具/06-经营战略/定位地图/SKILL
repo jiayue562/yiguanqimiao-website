@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位地图 · 竞争定位可视化分析 - 以观其妙书院</title>
+    <meta name="description" content="定位地图 · 竞争定位可视化分析 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="定位地图 · 竞争定位可视化分析">
+    <meta property="og:description" content="定位地图 · 竞争定位可视化分析 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "定位地图 · 竞争定位可视化分析",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>定位地图 · 竞争定位可视化分析</h1>
+<h2>🎯 一、核心定义</h2>
+<strong>定位地图（Positioning Map）</strong>是一种可视化分析工具，通过两个或多个维度展示市场中各竞争者的定位，帮助识别定位空间和差异化机会。
+<h3>1.1 定位地图结构</h3>
+<p>```
+定位地图示例（价格×品质）：
+                  高品质
+                    │
+         品牌A ●    │    ● 品牌B
+                    │
+         品牌D ●    │    ● 品牌C
+                    │
+                    └────────────→ 高价格
+              低品质        高价格
+```</p>
+<h3>1.2 定位地图维度</h3>
+<p>| 类型 | 示例维度 |
+|------|---------|
+| <strong>功能维度</strong> | 价格/品质、功能/便利性 |
+| <strong>情感维度</strong> | 年轻/成熟、高端/大众 |
+| <strong>使用维度</strong> | 专业/入门、便携/桌面 |
+| <strong>价值维度</strong> | 性价比/品牌溢价 |</p>
+<h3>1.3 定位地图的战略价值</h3>
+<p>```
+定位地图价值：
+┌─────────────────────────────────────┐
+│  可视化   →  直观看到竞争格局        │
+│  空间识别 →  发现定位空白           │
+│  差异化   →  找到差异化方向         │
+│  决策支持 →  支持定位战略选择       │
+└─────────────────────────────────────┘
+```</p>
+<p>---</p>
+<h2>📊 二、定位地图制作</h2>
+<h3>2.1 维度选择</h3>
+<p>| 选择原则 | 说明 |
+|----------|------|
+| <strong>消费者关注</strong> | 消费者真正关心的维度 |
+| <strong>区分度</strong> | 维度能区分不同品牌 |
+| <strong>可测量</strong> | 维度可以客观衡量 |
+| <strong>战略相关</strong> | 维度与战略选择相关 |</p>
+<h3>2.2 维度组合推荐</h3>
+<p>| 定位类型 | 维度1 | 维度2 |
+|----------|-------|-------|
+| <strong>功能定位</strong> | 价格 | 品质/功能 |
+| <strong>情感定位</strong> | 高端 | 大众 |
+| <strong>使用定位</strong> | 专业度 | 易用性 |
+| <strong>价值定位</strong> | 性价比 | 品牌 |</p>
+<h3>2.3 定位地图制作流程</h3>
+<p>```
+定位地图制作流程：
+步骤1：确定分析维度
+       - 消费者调研
+       - 竞品分析
+       ↓
+步骤2：收集定位数据
+       - 消费者感知数据
+       - 客观属性数据
+       ↓
+步骤3：绘制定位地图
+       - 标注各品牌位置
+       - 标注目标位置
+       ↓
+步骤4：分析定位空间
+       - 识别空白区域
+       - 分析拥挤区域
+```</p>
+<p>---</p>
+<h2>🎯 三、定位分析</h2>
+<h3>3.1 定位空间分析</h3>
+<p>```
+定位空间分析：
+                  维度A
+                    │
+         拥挤区   │    机会区
+         (红海)    │   (蓝海)
+          ●●●      │
+          ●●●      │
+          ●●●      │
+低维度B ────────────┼─────────── 高维度B
+                    │
+```</p>
+<h3>3.2 定位机会识别</h3>
+<p>| 机会类型 | 说明 |
+|----------|------|
+| <strong>空白定位</strong> | 没有品牌占据的位置 |
+| <strong>边缘定位</strong> | 现有定位的边缘区域 |
+| <strong>重新定位</strong> | 重新定义竞争维度 |
+| <strong>分众定位</strong> | 针对特定细分群体 |</p>
+<h3>3.3 定位拥挤度分析</h3>
+<p>| 拥挤度 | 品牌数量 | 策略建议 |
+|--------|---------|----------|
+| <strong>高度拥挤</strong> | >5个品牌 | 避免正面竞争 |
+| <strong>中度拥挤</strong> | 3-5个品牌 | 差异化定位 |
+| <strong>低度拥挤</strong> | 1-2个品牌 | 可进入或加强 |
+| <strong>空白</strong> | 无品牌 | 创新定位机会 |</p>
+<p>---</p>
+<h2>📋 四、定位地图模板</h2>
+<h3>4.1 定位地图分析报告</h3>
+<p>```markdown
+<h1>定位地图分析报告</h1></p>
+<h2>一、维度选择</h2>
+<li>维度1：[维度名称]</li>
+<li>维度2：[维度名称]</li>
+<li>选择理由：[为什么选择这两个维度]</li>
+<h2>二、定位地图</h2>
+[绘制定位地图]
+<h2>三、竞争分析</h2>
+| 品牌 | 位置 | 竞争优势 | 劣势 |
+|------|------|---------|------|
+| | | | |
+<h2>四、机会识别</h2>
+<li>空白区域：</li>
+<li>边缘机会：</li>
+<li>重新定位机会：</li>
+<h2>五、定位建议</h2>
+<li>目标定位：</li>
+<li>定位策略：</li>
+<li>行动要点：</li>
+```
+<h3>4.2 多维定位矩阵</h3>
+<p>```
+多维定位矩阵：
+              高端
+                │
+      品牌A    │    品牌B
+      ●        │        ●
+                │
+低时尚 ─────────┼───────── 高时尚
+                │
+      品牌C    │    品牌D
+      ●        │        ●
+                │
+              大众
+```</p>
+<p>---</p>
+<h2>🔄 五、定位地图应用</h2>
+<h3>5.1 新品牌定位</h3>
+<p>| 应用 | 说明 |
+|------|------|
+| <strong>空白进入</strong> | 进入没有品牌的定位区域 |
+| <strong>边缘切入</strong> | 从现有品牌的边缘进入 |
+| <strong>重新定义</strong> | 创造新的维度打破现有格局 |
+| <strong>细分定位</strong> | 针对特定小众人群 |</p>
+<h3>5.2 品牌重新定位</h3>
+<p>| 应用 | 说明 |
+|------|------|
+| <strong>差异化</strong> | 从拥挤区域移动到差异化区域 |
+| <strong>升级</strong> | 向高端定位升级 |
+| <strong>扩展</strong> | 向空白区域扩展 |
+| <strong>收缩</strong> | 聚焦特定定位 |</p>
+<h3>5.3 定位地图监测</h3>
+<p>| 监测内容 | 频率 |
+|----------|------|
+| 竞争对手位置变化 | 季度 |
+| 消费者感知变化 | 半年度 |
+| 新进入者 | 实时 |
+| 市场空白出现 | 持续 |</p>
+<p>---</p>
+<h2>🔗 六、与龙心OS的整合</h2>
+<h3>6.1 与五色光思维的整合</h3>
+<p>| 五色光 | 定位地图整合点 |
+|--------|---------------|
+| ⬜ 白光 | 定位数据、坐标分析 |
+| 🟥 红光 | 消费者感知、情感定位 |
+| 🟨 黄光 | 价值定位、差异化价值 |
+| 🟩 绿光 | 创新定位、空白发现 |
+| 🟦 蓝光 | 竞争风险、进入风险 |</p>
+<h3>6.2 与五行人格的整合</h3>
+<p>| 五行 | 定位地图应用 |
+|------|-------------|
+| 木行人 | 创新定位、差异化 |
+| 火行人 | 情感定位、高端定位 |
+| 土行人 | 主流定位、稳固定位 |
+| 金行人 | 精准定位、效率定位 |
+| 水行人 | 细分定位、灵活定位 |</p>
+<p>---</p>
+<h2>💡 七、核心金句</h2>
+<p>1. <strong>"定位地图让我们'看见'竞争格局。"</strong>
+2. <strong>"最好的定位机会往往在空白区域。"</strong>
+3. <strong>"定位不是在哪里，而是让消费者认为你在哪里。"</strong>
+4. <strong>"定位地图是起点，找到差异化方向才是目的。"</strong>
+5. <strong>"定位需要定期更新，因为市场在持续变化。"</strong></p>
+<p>---</p>
+<h2>📚 关联知识图谱</h2>
+<h3>向上关联</h3>
+<li><strong>[[04-市场营销战略/STP分析]]</strong> - STP是定位的战略基础</li>
+<li><strong>[[06-经营战略/SWOT分析]]</strong> - SWOT支持定位决策</li>
+<h3>向下关联</h3>
+<li><strong>[[04-市场营销战略/品牌资产]]</strong> - 品牌是定位的载体</li>
+<li><strong>[[06-经营战略/波特三大基本战略]]</strong> - 定位决定战略选择</li>
+<h3>跨域关联</h3>
+<li><strong>[[04-市场营销战略/3C分析]]</strong> - 3C分析支持定位</li>
+<li><strong>[[04-市场营销战略/用户画像分析]]</strong> - 用户画像决定定位维度</li>
+<p>---</p>
+<strong>版本</strong>: v1.0
+<strong>创建</strong>: 2026-04-10
+<strong>维护者</strong>: 龙龟神将
+<strong>知识库路径</strong>: `C:\Users\jia'yue\.workbuddy\skills\麦肯锡思考工具\06-经营战略\定位地图\`
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>凤脑OS · 医学心理学×五行人格——深度学习笔记 - 以观其妙书院</title>
+    <meta name="description" content="凤脑OS · 医学心理学×五行人格——深度学习笔记 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="凤脑OS · 医学心理学×五行人格——深度学习笔记">
+    <meta property="og:description" content="凤脑OS · 医学心理学×五行人格——深度学习笔记 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "凤脑OS · 医学心理学×五行人格——深度学习笔记",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <p>﻿---
+title: "凤脑OS·医学心理学×五行人格"
+created: "2026-05-26"
+version: "1.0"
+tags: [凤脑OS, 深度学习, 医学心理学, 五行人格, L7理论基石]
+related_docs:
+  - "[[🔧 凤脑OS·理论架构深度学习笔记]]"
+  - "[[🔧 凤脑OS·生理心理学×五行人格-深度学习笔记]]"
+  - "[[🔧 凤脑OS·变态心理学×五行人格-深度学习笔记]]"
+  - "[[📜 凤脑OS知识地基-32篇核心文档索引]]"
+---</p>
+<h1>凤脑OS · 医学心理学×五行人格——深度学习笔记</h1>
+<strong>学习时间</strong>：2026-05-26
+<strong>核心桥接</strong>：五行三界平衡↔生物-心理-社会健康模型；五行能量失衡↔心身疾病形成机制
+<p>---</p>
+<h2>一、核心对应</h2>
+<p>| 五行识人 | 医学心理学对应 |
+|---------|--------------|
+| 一心(纯粹觉知) | 健康核心自我 |
+| 三界(身·心·灵) | 生理-心理-社会功能 |
+| 五行(生克平衡) | 心身反应类型+疾病易感性 |
+| 拔阴取阳 | 心理干预+健康促进 |</p>
+<p>---</p>
+<h2>二、心身反应类型 × 五行</h2>
+<p>| 五行 | 心身反应类型 | 应激模式 | 易感疾病 | 行为类型 |
+|-----|------------|---------|---------|---------|
+| 木行 | 创新-紧张型 | 交感兴奋+皮质醇↑ | 高血压、偏头痛 | 接近A型 |
+| 火行 | 冲动-爆发型 | 肾上腺素骤升 | 冠心病、心律失常 | 典型A型 |
+| 土行 | 压抑-躯体化型 | 自主神经紊乱+HPA慢性激活 | 消化性溃疡、肠易激 | 压抑型 |
+| 金行 | 控制-紧张型 | 肌肉紧张+GABA敏感 | 紧张性头痛、慢性疼痛 | A型(完美主义) |
+| 水行 | 退缩-耗竭型 | HPA过度激活+免疫抑制 | 自身免疫病、慢性疲劳 | B型(被动退缩) |</p>
+<p>---</p>
+<h2>三、心理应激 × 五行</h2>
+<strong>应激源偏好</strong>：木行=创新受阻、火行=认同缺乏、土行=人际冲突、金行=规则破坏、水行=安全威胁
+<strong>应对策略</strong>（Lazarus & Folkman）：
+<p>| 五行 | 应对策略 |
+|-----|---------|
+| 木行 | 问题聚焦(主动创新解决) |
+| 火行 | 情绪聚焦(发泄+寻求支持) |
+| 土行 | 回避应对(压抑+忍耐) |
+| 金行 | 问题聚焦(严格按规则) |
+| 水行 | 情绪聚焦(沉思+回避) |</p>
+<p>---</p>
+<h2>四、三位一体整合干预</h2>
+<p>| 五行 | 心身问题 | 传统调节 | 现代心理干预 | 生理调节 |
+|-----|---------|---------|------------|---------|
+| 木行 | 焦虑性高血压 | 阴木杀→阳木温 | CBT+放松训练 | 降压药+生物反馈 |
+| 火行 | 冲动性冠心病 | 阴火色→阳火良 | DBT情绪调节 | β阻滞剂+HRV训练 |
+| 土行 | 消化性溃疡 | 阴土气→阳土恭 | 接纳疗法+压力管理 | 抗酸药+自主神经调节 |
+| 金行 | 紧张性头痛 | 阴金贪→阳金俭 | ERP暴露+渐进放松 | 肌松药+针灸 |
+| 水行 | 慢性疲劳 | 阴水酒→阳水让 | 行为激活+社交支持 | 抗抑郁药+光疗 |</p>
+<p>---</p>
+<h2>五、三级预防体系</h2>
+<strong>一级预防</strong>(能量平衡)：月度五行自评+依五行特性调节作息/饮食/运动+匹配环境
+<strong>二级预防</strong>(早期识别)：季度阴面行为筛查+心身症状监测+阴面初显即启动干预
+<strong>三级预防</strong>(康复回归)：五行配伍康复方案+三界协同评估+社会功能回归训练
+<p>---</p>
+<h2>六、核心价值</h2>
+<p>1. 为五行识人补充心身医学实证支撑——心理因素→NEI网络→躯体健康完整路径
+2. 建立"五行心身反应类型"评估体系(传统观象+现代量表+生理指标)
+3. 提供"拔阴取阳+心理干预+生理调节"三位一体整合方案</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

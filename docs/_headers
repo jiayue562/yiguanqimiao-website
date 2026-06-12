@@ -1,0 +1,5 @@
+# Cloudflare Pages Headers
+# 为所有无扩展名的HTML文件设置正确的Content-Type
+/articles/*
+  Content-Type: text/html
+  X-Content-Type-Options: nosniff

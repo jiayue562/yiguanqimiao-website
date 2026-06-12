@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>利弊均衡法 - 以观其妙书院</title>
+    <meta name="description" content="利弊均衡法 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="利弊均衡法">
+    <meta property="og:description" content="利弊均衡法 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "利弊均衡法",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>利弊均衡法</h1>
+<p>> 版本: v1.0 | 创建: 2026-04-15 | 维护者: 龙龟神将</p>
+<p>---</p>
+<h2>一、核心定义</h2>
+<h3>1.1 一句话定义</h3>
+利弊均衡法是一种<strong>系统化权衡决策方案</strong>的方法，通过列出所有利弊因素、赋予权重、量化评分，得出客观的决策依据。
+<h3>1.2 核心公式</h3>
+<p>```
+利弊均衡 = 利好因素 - 风险因素 = 净收益
+```</p>
+<p>---</p>
+<h2>二，操作流程</h2>
+<h3>2.1 标准五步</h3>
+<p>```
+第一步：明确决策选项
+    ↓
+第二步：列出利好因素（利）
+    ↓
+第三步：列出风险因素（弊）
+    ↓
+第四步：赋予权重并评分
+    ↓
+第五步：计算净收益做决策
+```</p>
+<h3>2.2 评分模板</h3>
+<p>| 因素 | 权重(W) | 利好程度(B) | 风险程度(R) | 净得分 |
+|------|---------|-------------|-------------|--------|
+| 因素1 | | | | |
+| 因素2 | | | | |
+| 因素3 | | | | |
+| <strong>合计</strong> | | | | |</p>
+<strong>公式</strong>：净收益 = Σ(W × B) - Σ(W × R)
+<p>---</p>
+<h2>三，分析维度</h2>
+<h3>3.1 利好因素</h3>
+<p>| 维度 | 说明 |
+|------|------|
+| 财务收益 | 收入增长、利润提升 |
+| 战略价值 | 市场份额、品牌提升 |
+| 能力提升 | 技术积累、人才引进 |
+| 协同效应 | 生态互补、资源共享 |
+| 时间价值 | 先发优势、窗口期 |</p>
+<h3>3.2 风险因素</h3>
+<p>| 维度 | 说明 |
+|------|------|
+| 财务风险 | 投入大、回报周期长 |
+| 执行风险 | 能力不足、资源有限 |
+| 市场风险 | 需求不确定、竞争激烈 |
+| 政策风险 | 监管变化、合规成本 |
+| 机会风险 | 错过其他机会 |</p>
+<p>---</p>
+<h2>四，实战胜具</h2>
+<h3>4.1 利弊分析表</h3>
+<p>| 维度 | 利好 | 风险 | 权重 | 净得分 |
+|------|------|------|------|--------|
+| 财务 | | | | |
+| 战略 | | | | |
+| 执行 | | | | |
+| 市场 | | | | |
+| 政策 | | | | |
+| <strong>合计</strong> | | | | |</p>
+<h3>4.2 决策标准</h3>
+<p>| 净得分 | 决策 |
+|--------|------|
+| > +20 | 强烈建议执行 |
+| +10~+20 | 建议执行 |
+| 0~+10 | 谨慎执行 |
+| < 0 | 不建议执行 |</p>
+<p>---</p>
+<h2>五、实战模板</h2>
+<h3>场景：是否进入新市场</h3>
+<p>```
+【利弊均衡法 · 市场进入决策】</p>
+<p>| 因素 | 权重 | 利好 | 风险 | 净得分 |
+|------|------|------|------|--------|
+| 市场潜力 | 25% | 8 | 2 | +1.5 |
+| 竞争强度 | 20% | 3 | 7 | -0.8 |
+| 资源需求 | 20% | 2 | 6 | -0.8 |
+| 战略协同 | 15% | 7 | 3 | +0.6 |
+| 团队能力 | 10% | 6 | 4 | +0.2 |
+| 政策环境 | 10% | 5 | 5 | 0 |
+| <strong>合计</strong> | | | | +0.7 |</p>
+<p>【决策】谨慎执行（+0.7分）
+ - 建议先做小规模试点
+ - 降低资源投入
+ - 设定止损点
+```</p>
+<p>---</p>
+<h2>六、核心金句</h2>
+<p>> "利弊均衡法不是要找到完美答案，而是让决策有据可依。量化不能消除不确定性，但能让权衡更清晰。"</p>
+<p>---</p>
+<h2>七、关联文件</h2>
+<p>| 关联类型 | 文件路径 |
+|---------|---------|
+| 母库索引 | `../SKILL.md` |
+| 配套模型 | `../28-决策矩阵/SKILL.md` |
+| 配套模型 | `../09-重要度紧急度矩阵/SKILL.md` |</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

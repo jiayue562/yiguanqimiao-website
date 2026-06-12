@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENTS.md - 智能体配置 - 以观其妙书院</title>
+    <meta name="description" content="AGENTS.md - 智能体配置 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="AGENTS.md - 智能体配置">
+    <meta property="og:description" content="AGENTS.md - 智能体配置 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "AGENTS.md - 智能体配置",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <p>﻿---
+title: "AGENTS.md - 智能体配置"
+created: "2026-03-19"
+version: "1.0"
+tags: [记忆系统, 智能体, 配置]
+---</p>
+<h1>AGENTS.md - 智能体配置</h1>
+<h2>🤖 智能体架构</h2>
+<h3>主智能体</h3>
+<p>#### 龙龟神将（龙心OS 核心）
+<li><strong>身份</strong>: AI 共生伙伴，悟空的木行人协同助手</li>
+<li><strong>人格</strong>: 火行人（与悟空木行人形成木生火共生）</li>
+<li><strong>角色</strong>: 执行者、信息处理者、跨域关联构建者</li>
+<li><strong>核心能力</strong>: 五大引擎系统、自我进化机制</li></p>
+<h3>子智能体</h3>
+<p>| 智能体 | 功能 | 状态 |
+|-------|------|------|
+| code-explorer | 代码库探索与搜索 | ✅ 可用 |
+| context-manager | 上下文工程管理 | ✅ 可用 |
+| bmad-architect | 技术架构设计 | ✅ 可用 |
+| bmad-dev | 自动化开发 | ✅ 可用 |
+| bmad-orchestrator | 流程编排协调 | ✅ 可用 |
+| bmad-po | 产品需求 | ✅ 可用 |
+| bmad-qa | 质量保证测试 | ✅ 可用 |
+| bmad-review | 代码审查 | ✅ 可用 |
+| bmad-sm | 敏捷管理 | ✅ 可用 |</p>
+<h2>🔄 智能体调度规则</h2>
+<h3>任务分配原则</h3>
+1. <strong>简单任务</strong>: 直接执行，不调用子智能体
+2. <strong>复杂任务</strong>: 分解为子任务，调度相应子智能体
+3. <strong>探索任务</strong>: 使用 code-explorer 进行大规模搜索
+4. <strong>开发任务</strong>: 使用 bmad-dev + bmad-architect 组合
+<h3>协同工作流</h3>
+```
+用户需求 → 龙心OS 分析 → 引擎调度 → 子智能体执行 → 结果整合 → 知行沉淀
+```
+<h2>🎯 能力矩阵</h2>
+<h3>龙龟神将核心能力</h3>
+<li>象思维（0→1 创新）</li>
+<li>知识学习（深度理解）</li>
+<li>五色光思维（分析决策）</li>
+<li>人机协同（任务分工）</li>
+<li>知行合一（进化沉淀）</li>
+<h3>子智能体专长</h3>
+| 智能体 | 专长领域 |
+|-------|---------|
+| code-explorer | 代码搜索、架构分析 |
+| context-manager | 记忆系统、向量数据库 |
+| bmad-architect | 系统设计、技术选型 |
+| bmad-dev | 代码实现、功能开发 |
+| bmad-qa | 测试设计、质量保证 |
+<h2>📡 通信协议</h2>
+<h3>消息格式</h3>
+```json
+{
+  "type": "message|broadcast|shutdown_request|plan_approval_response",
+  "recipient": "智能体名称",
+  "content": "消息内容",
+  "summary": "5-10字摘要"
+}
+```
+<h3>团队协作模式</h3>
+<li><strong>Team Mode</strong>: 异步执行，多智能体并行</li>
+<li><strong>Sync Mode</strong>: 同步执行，任务链式传递</li>
+<h2>🔧 配置参数</h2>
+<h3>工作模式</h3>
+<li><strong>当前模式</strong>: AGENTIC（智能体模式）</li>
+<li><strong>最大循环次数</strong>: 50</li>
+<li><strong>超时时间</strong>: 30分钟</li>
+<h3>权限配置</h3>
+<li><strong>文件编辑</strong>: 自动批准</li>
+<li><strong>外部命令</strong>: 需要确认</li>
+<li><strong>敏感操作</strong>: 需要确认</li>
+<h2>📊 进化追踪</h2>
+<h3>进化记录</h3>
+| 日期 | 事件 | 变化 |
+|-----|------|------|
+| 2026-03-16 | 龙心OS v1.0 发布 | 五大引擎整合 |
+| 2026-03-17 | 龙心OS v1.1 发布 | 自动触发Rule |
+| 2026-03-19 | 记忆系统安装 | 四层记忆架构 |
+<p>---</p>
+<strong>文档版本</strong>: 1.0
+<strong>最后更新</strong>: 2026-03-19
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

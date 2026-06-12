@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>归纳与演绎法 - 以观其妙书院</title>
+    <meta name="description" content="归纳与演绎法 - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="归纳与演绎法">
+    <meta property="og:description" content="归纳与演绎法 - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "归纳与演绎法",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        
+<h1>归纳与演绎法</h1>
+<p>> 版本: v1.0 | 创建: 2026-04-15 | 维护者: 龙龟神将</p>
+<p>---</p>
+<h2>一、核心定义</h2>
+<h3>1.1 一句话定义</h3>
+归纳法从个别到一般（从事实提炼规律），演绎法从一般到个别（从规律推演事实），两者是逻辑思维的基石。
+<h3>1.2 核心公式</h3>
+<p>```
+归纳法：事实1 + 事实2 + 事实3 → 规律
+演绎法：规律 → 事实推演
+```</p>
+<p>---</p>
+<h2>二、归纳法 (Induction)</h2>
+<h3>2.1 定义</h3>
+从个别实例中总结出一般规律
+<h3>2.2 逻辑结构</h3>
+<p>```
+观察1：A公司战略成功 → 案例1
+观察2：B公司战略成功 → 案例2
+观察3：C公司战略成功 → 案例3
+━━━━━━━━━━━━━━━
+归纳：此类战略普遍有效 → 规律
+```</p>
+<h3>2.3 归纳类型</h3>
+<p>| 类型 | 定义 | 示例 |
+|------|------|------|
+| 枚举归纳 | 数量积累 | 观察100只天鹅都是白的，归纳"天鹅都是白的" |
+| 排除归纳 | 排除不可能 | 所有可能原因都被排除，剩下就是答案 |
+| 类比归纳 | 相似性推理 | A和B在X、Y上相似，B还有Z特性，推测A也有Z |</p>
+<p>---</p>
+<h2>三、演绎法 (Deduction)</h2>
+<h3>3.1 定义</h3>
+从一般规律推导个别结论
+<h3>3.2 逻辑结构</h3>
+<p>```
+大前提：规律/原则 → 所有天鹅都是白的
+小前提：事实/情况 → 这是一只天鹅
+━━━━━━━━━━━━━━━
+演绎：结论 → 这只天鹅是白的
+```</p>
+<h3>3.2 三段论结构</h3>
+<p>```
+大前提：所有M都是P
+小前提：所有S都是M
+━━━━━━━━━━━━━━━
+结论：所有S都是P
+```</p>
+<p>---</p>
+<h2>四、归纳vs演绎</h2>
+<p>| 维度 | 归纳法 | 演绎法 |
+|------|--------|--------|
+| 方向 | 个别→一般 | 一般→个别 |
+| 结论 | 或然性（可能对） | 必然性（一定对） |
+| 用途 | 发现规律 | 验证/应用规律 |
+| 风险 | 过度归纳 | 前提可能错误 |</p>
+<p>---</p>
+<h2>五、应用场景</h2>
+<h3>5.1 归纳法应用</h3>
+<p>```
+市场调研：
+ - 访谈30位用户，80%提到同样痛点
+ - 归纳：这是目标用户的核心痛点</p>
+<p>竞品分析：
+ - 分析5个成功竞品，都有相同功能
+ - 归纳：这个功能是成功的关键因素
+```</p>
+<h3>5.2 演绎法应用</h3>
+<p>```
+战略推导：
+ - 大前提：行业趋势是智能化
+ - 小前提：我们的行业正在智能化
+ - 结论：我们需要智能化战略</p>
+<p>问题诊断：
+ - 大前提：客户流失是因为服务不好
+ - 小前提：这个客户流失了
+ - 结论：可能服务出了问题
+```</p>
+<p>---</p>
+<h2>六、常见错误</h2>
+<h3>归纳谬误</h3>
+<p>| 错误类型 | 示例 |
+|---------|------|
+| 过度归纳 | 只看3个案例就得出普遍规律 |
+| 幸存者偏差 | 只看成功案例忽略失败案例 |
+| 错误类比 | 表面相似但本质不同 |</p>
+<h3>演绎谬误</h3>
+<p>| 错误类型 | 示例 |
+|---------|------|
+| 大前提错误 | 前提本身就不成立 |
+| 小前提错误 | 事实判断失误 |
+| 概念混淆 | 偷换概念 |</p>
+<p>---</p>
+<h2>七、核心金句</h2>
+<p>> "归纳与演绎是思考的两翼。归纳让我们从现象中发现规律，演绎让我们用规律指导行动。两者结合，才是完整的逻辑思维。"</p>
+<p>---</p>
+<h2>八、关联文件</h2>
+<p>| 关联类型 | 文件路径 |
+|---------|---------|
+| 母库索引 | `../SKILL.md` |
+| 配套模型 | `../07-逻辑树/SKILL.md` |
+| 配套模型 | `../19-MECE原则/SKILL.md` |</p>
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>

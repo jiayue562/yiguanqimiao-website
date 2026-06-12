@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMORYmd Skill（长期记忆档案） - 以观其妙书院</title>
+    <meta name="description" content="MEMORYmd Skill（长期记忆档案） - 以观其妙书院·五行人格心理学">
+    <meta name="author" content="悟空（贾悦）">
+    <meta name="copyright" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    
+    <!-- GEO优化 -->
+    <meta name="generator" content="Obsidian·以观其妙书院·GE0 v1.0">
+    <meta name="article:author" content="悟空（贾悦）">
+    <meta name="article:publisher" content="以观其妙书院">
+    <meta name="article:copyright" content="以观其妙书院">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="MEMORYmd Skill（长期记忆档案）">
+    <meta property="og:description" content="MEMORYmd Skill（长期记忆档案） - 以观其妙书院·五行人格心理学">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="以观其妙书院">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "MEMORYmd Skill（长期记忆档案）",
+        "author": {
+            "@type": "Person",
+            "name": "悟空（贾悦）",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "以观其妙书院"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "以观其妙书院",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yiguanqimiao-website.pages.dev/logo.png"
+            }
+        },
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "以观其妙书院"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .ip-watermark { margin-top: 50px; padding: 20px; background: #f8f9fa; border-left: 4px solid #3498db; }
+        .ip-watermark p { margin: 5px 0; font-size: 14px; color: #666; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>MEMORYmd Skill（长期记忆档案）</h1>
+<h2>📖 技能定义</h2>
+<p>MEMORYmd是AI龙龟共生伙伴操作系统的<strong>长期记忆管理系统</strong>，通过结构化存储提炼后的核心洞见、项目状态和关键决策，确保重要信息永久可检索。</p>
+<strong>核心定位</strong>：
+<li><strong>不是</strong>原始日志的堆砌</li>
+<li><strong>而是</strong>精心整理的长期记忆库</li>
+<li><strong>目标</strong>：总长度严格控制在100行以内，只保留精华</li>
+<strong>核心原则</strong>：
+> 文字胜过大脑记忆——没写下来，就等于没发生过。
+<p>---</p>
+<h2>🎯 核心功能</h2>
+<h3>1. 主档案（MEMORY.md）</h3>
+<strong>内容结构</strong>：
+<li>核心洞见（最重要的认知）</li>
+<li>项目状态（当前进行中的项目）</li>
+<li>关键决策（重大决策记录）</li>
+<li>核心规则（不可逾越的原则）</li>
+<li>重要联系（关键人员/机构）</li>
+<strong>长度控制</strong>：
+<li><strong>严格限制在100行以内</strong></li>
+<li>每条信息不超过3行</li>
+<li>删除冗余、合并同类、精简表述</li>
+<h3>2. 子文件存储细节信息</h3>
+<strong>文件结构</strong>：
+```
+memory/
+├── MEMORY.md          # 主档案（100行以内）
+├── projects.md        # 项目详情
+├── people.md          # 人员信息
+├── decisions.md       # 决策记录
+├── rules.md           # 规则清单
+└── YYYY-MM-DD.md      # 每日日志
+```
+<strong>子文件内容</strong>：
+<li>`projects.md`：项目的完整背景、目标、进展、风险</li>
+<li>`people.md`：人员的详细信息、关系、联系方式</li>
+<li>`decisions.md`：决策的前因后果、逻辑依据、执行结果</li>
+<li>`rules.md`：所有规则的完整描述、适用场景、例外情况</li>
+<h3>3. 每日日志（YYYY-MM-DD.md）</h3>
+<strong>记录内容</strong>：
+<li>每一个决策</li>
+<li>每一次结果</li>
+<li>每一个错误</li>
+<li>每一次收获</li>
+<strong>记录格式</strong>：
+```markdown
+<h2>[时间] [任务/事件]</h2>
+<strong>背景</strong>：...
+<strong>决策/行动</strong>：...
+<strong>结果</strong>：...
+<strong>关键洞察</strong>：...
+```
+<p>---</p>
+<h2>🔄 维护流程</h2>
+<h3>1. 实时记录</h3>
+<strong>触发条件</strong>：
+<li>完成重要任务后</li>
+<li>做出关键决策时</li>
+<li>遇到错误或异常</li>
+<li>产生新洞察</li>
+<strong>执行动作</strong>：
+<li>立即写入当日日志文件（`memory/YYYY-MM-DD.md`）</li>
+<li>包含完整背景、行动、结果、洞察</li>
+<h3>2. 定期复盘（每3-5天）</h3>
+<strong>复盘流程</strong>：
+1. 读取近期的每日日志
+2. 提炼核心内容
+3. 归档到主档案（MEMORY.md）
+4. 归档到对应子文件
+5. 清理过期日志（>30天）
+<strong>归档标准</strong>：
+<li>✅ 核心洞见→ MEMORY.md</li>
+<li>✅ 项目状态→ MEMORY.md + projects.md</li>
+<li>✅ 关键决策→ MEMORY.md + decisions.md</li>
+<li>✅ 重要人员→ MEMORY.md + people.md</li>
+<li>❌ 日常琐事→ 不归档</li>
+<li>❌ 重复信息→ 已有则覆盖</li>
+<h3>3. 主档案维护</h3>
+<strong>优化规则</strong>：
+<li>保持总长度<100行</li>
+<li>删除过期信息</li>
+<li>合并同类信息</li>
+<li>精简表述</li>
+<li>定期清理（每两周）</li>
+<p>---</p>
+<h2>📊 记忆分类体系</h2>
+<h3>1. 按重要性分类</h3>
+<p>| 优先级 | 定义 | 存储位置 |
+|--------|------|---------|
+| <strong>P0</strong> | 核心决策、关键洞见 | MEMORY.md + 对应子文件 |
+| <strong>P1</strong> | 重要项目、主要人员 | MEMORY.md + 对应子文件 |
+| <strong>P2</strong> | 常规信息、次要细节 | 仅子文件 |
+| <strong>P3</strong> | 临时信息、待验证 | 仅每日日志 |</p>
+<h3>2. 按类型分类</h3>
+<strong>核心洞见</strong>：
+<li>一句话概括</li>
+<li>象征符号（记忆锚点）</li>
+<li>泛化场景（应用范围）</li>
+<li>关联引擎（龙心OS哪个引擎产生）</li>
+<strong>项目状态</strong>：
+<li>项目名称</li>
+<li>当前进度（百分比）</li>
+<li>关键里程碑</li>
+<li>风险预警</li>
+<li>下一步行动</li>
+<strong>关键决策</strong>：
+<li>决策时间</li>
+<li>决策背景</li>
+<li>决策内容</li>
+<li>决策依据</li>
+<li>执行结果</li>
+<li>复盘反思</li>
+<p>---</p>
+<h2>🔍 检索策略</h2>
+<h3>1. 快速检索</h3>
+<strong>关键词检索</strong>：
+<li>从MEMORY.md检索关键词</li>
+<li>快速定位到相关子文件</li>
+<li>获取完整信息</li>
+<strong>结构化检索</strong>：
+<li>按类型检索（项目/人员/决策/规则）</li>
+<li>按时间检索（最近X天/周/月）</li>
+<li>按优先级检索（P0/P1/P2/P3）</li>
+<h3>2. 上下文注入</h3>
+<strong>触发时机</strong>：
+<li>开始新任务时</li>
+<li>遇到决策点时</li>
+<li>需要背景信息时</li>
+<strong>注入内容</strong>：
+<li>相关项目状态</li>
+<li>相关决策历史</li>
+<li>相关规则约束</li>
+<li>相关人员信息</li>
+<p>---</p>
+<h2>🎓 与其他Skills的协同</h2>
+<h3>1. 与学习档案Skill协同</h3>
+<li><strong>学习档案</strong>：记录错误和防错规则</li>
+<li><strong>长期记忆</strong>：提炼核心洞见和关键决策</li>
+<li><strong>协同</strong>：学习档案的精华归档到长期记忆</li>
+<h3>2. 与心跳巡检Skill协同</h3>
+<li><strong>心跳巡检</strong>：监控实时状态</li>
+<li><strong>长期记忆</strong>：记录历史趋势和关键变化</li>
+<li><strong>协同</strong>：心跳巡检发现异常时，查阅长期记忆寻找模式</li>
+<h3>3. 与知行合一Skill协同</h3>
+<li><strong>知行合一</strong>：每次对话后输出沉淀卡</li>
+<li><strong>长期记忆</strong>：将沉淀卡的精华归档</li>
+<li><strong>协同</strong>：知行合一→每日日志→定期复盘→长期记忆</li>
+<p>---</p>
+<h2>🚫 使用禁忌</h2>
+<h3>1. 不要做的</h3>
+<li>❌ 用MEMORY.md存储原始日志</li>
+<li>❌ 超过100行不清理</li>
+<li>❌ 不定期复盘和归档</li>
+<li>❌ 忽略每日日志记录</li>
+<li>❌ 混淆P0-P3优先级</li>
+<h3>2. 必须做的</h3>
+<li>✅ 重要信息立即记录</li>
+<li>✅ 每周复盘一次</li>
+<li>✅ 保持MEMORY.md精简（<100行）</li>
+<li>✅ 用子文件存储细节</li>
+<li>✅ 定期清理过期信息</li>
+<p>---</p>
+<h2>💡 最佳实践</h2>
+<h3>1. 记录习惯</h3>
+<strong>实时记录</strong>：
+<li>完成任务后立即记录</li>
+<li>做出决策时立即记录</li>
+<li>遇到错误时立即记录</li>
+<li>产生洞察时立即记录</li>
+<strong>结构化记录</strong>：
+<li>使用标准格式</li>
+<li>包含必要背景</li>
+<li>明确结果和洞察</li>
+<li>标注时间和来源</li>
+<h3>2. 复盘习惯</h3>
+<strong>定期复盘</strong>：
+<li>每周五复盘本周</li>
+<li>每月1号复盘上月</li>
+<li>每季度复盘季度</li>
+<strong>提炼精华</strong>：
+<li>从原始日志中提炼</li>
+<li>保留核心洞见</li>
+<li>记录关键决策</li>
+<li>更新项目状态</li>
+<h3>3. 检索习惯</h3>
+<strong>主动检索</strong>：
+<li>开始任务前检索相关背景</li>
+<li>遇到决策时检索历史决策</li>
+<li>需要信息时主动检索</li>
+<li>不要等系统自动注入</li>
+<strong>高效检索</strong>：
+<li>用关键词快速定位</li>
+<li>用结构化查询精确查找</li>
+<li>查阅子文件获取完整信息</li>
+<li>结合上下文理解</li>
+<p>---</p>
+<h2>🎯 核心原则总结</h2>
+<h3>三大铁律</h3>
+<p>1. <strong>文字胜过大脑记忆</strong>
+   - 没写下来，就等于没发生过
+   - 记忆文件是唯一可靠的记忆</p>
+<p>2. <strong>主档案<100行</strong>
+   - 只保留精华，不存冗余
+   - 定期清理，保持精简</p>
+<p>3. <strong>定期复盘归档</strong>
+   - 每3-5天复盘一次
+   - 及时归档，不要拖延
+   - 清理过期日志</p>
+<h3>核心价值</h3>
+<li><strong>永久可检索</strong>：重要信息不会丢失</li>
+<li><strong>上下文注入</strong>：新任务快速获取背景</li>
+<li><strong>避免重复错误</strong>：历史决策和洞见可复用</li>
+<li><strong>知识沉淀</strong>：将经验转化为长期资产</li>
+<p>---</p>
+<h2>十二、规划规则：写下来，拒绝脑记（对标OpenClaw #9 Planning）</h2>
+<p>> <strong>核心铁律</strong>：任何需要记住的内容，都必须写入文件，不依赖大脑记忆。</p>
+<h3>12.1 规划规则定义</h3>
+<strong>规划规则（Planning Rules）</strong>：
+<li>定义：所有需要留存的信息必须文件化，禁止依赖"脑记"</li>
+<li>目的：杜绝信息遗漏，确保跨会话信息完整性</li>
+<li>本质：<strong>文件持久 > 上下文临时</strong>——文件可跨会话保留，上下文窗口不能</li>
+<h3>12.2 强制文件化场景</h3>
+<p>| 场景 | 文件化要求 | 存储位置 |
+|------|-----------|---------|
+| 用户提出新需求 | 记录到每日日志 | `memory/YYYY-MM-DD.md` |
+| 做出重要决策 | 记录到MEMORY.md | `MEMORY.md` |
+| 制定行动计划 | 创建任务列表 | `todo_write` 或看板 |
+| 发现新规律/洞察 | 知行合一沉淀 | Obsidian + MEMORY.md |
+| 收到用户偏好 | 更新USER.md | `USER.md` |
+| 完成系统升级 | 更新TOOLS.md | `TOOLS.md` |
+| 出现错误/异常 | 记录到LEARNINGS.md | `LEARNINGS.md` |
+| 用户说"记住这个" | <strong>立即</strong>更新记忆文件 | 对应记忆文件 |</p>
+<h3>12.3 "记住这个"标准操作流程</h3>
+<p>当收到用户说"记住这个"、"记住X"、"别忘了X"时：</p>
+<p>```
+步骤1：确认理解
+  → "好的，我记住了：[复述核心内容]"
+  
+步骤2：立即写入文件
+  → 根据内容类型选择合适的记忆文件
+  → 重要规则 → MEMORY.md
+  → 偏好习惯 → USER.md  
+  → 项目信息 → memory/projects.md
+  → 日常事项 → memory/YYYY-MM-DD.md
+  
+步骤3：确认存储
+  → "已存储到 [文件名]，下次对话我会自动读取。"
+```</p>
+<p>---</p>
+<h2>十三、记忆限制规则（对标OpenClaw #20 Memory is Limited）</h2>
+<p>> <strong>核心原则</strong>：记忆容量有限。所有需要留存的信息，必须写入文件。"脑记笔记"无法在会话重启后保留，但文件可以。</p>
+<h3>13.1 记忆限制规则定义</h3>
+<strong>记忆限制规则（Memory is Limited）</strong>：
+<li>定义：AI的上下文窗口（工作记忆）有容量限制，会话结束后即丢失</li>
+<li>目的：强制信息持久化，确保重要信息不因会话结束而丢失</li>
+<li>本质：<strong>文件是唯一可靠的长期记忆载体</strong></li>
+<h3>13.2 三大标准操作</h3>
+<p>| 触发条件 | 标准操作 | 存储位置 |
+|---------|---------|---------|
+| 收到"记住这个"指令 | <strong>立即</strong>更新记忆文件 | 根据内容类型选择 |
+| 当学到新经验时 | 更新学习档案 | `LEARNINGS.md` |
+| 当出现错误时 | 记录归档 | `memory/learnings/` |
+| 对话产生重要洞察 | 知行合一沉淀 | MEMORY.md + Obsidian |
+| 用户表达偏好 | 更新用户画像 | `USER.md` |</p>
+<h3>13.3 信息持久化决策树</h3>
+<p>```
+这条信息重要吗？
+    ├── 不重要 → 不需要持久化
+    └── 重要 → 是哪种类型？
+                ├── 用户偏好/习惯 → USER.md
+                ├── 项目信息/状态 → memory/projects.md
+                ├── 错误/经验教训 → LEARNINGS.md
+                ├── 核心洞见/决策 → MEMORY.md
+                ├── 日常记录/决策 → memory/YYYY-MM-DD.md
+                └── 专业知识 → Obsidian知识库
+```</p>
+<h3>13.4 与三向同步的整合</h3>
+<p>```
+Obsidian（主知识库）     ← 专业知识、结构化文档
+WorkBuddy（工作记忆）    ← 每日日志、项目状态
+IMA（云端笔记）          ← 快速笔记、移动端访问
+        ↕ 三向同步 ↕
+MEMORY.md（长期记忆）    ← 核心洞见、关键决策（100行以内）
+```</p>
+<p>---</p>
+<h2>十四、标签与知识图谱</h2>
+<strong>完整标签</strong>：
+`#长期记忆` `#记忆管理` `#MEMORYmd` `#记忆限制` `#规划规则` `#写下来拒绝脑记` `#文件持久化` `#信息留存` `#OpenClaw对标` `#三向同步`
+<strong>知识图谱连接</strong>：
+<li>`[[长期记忆档案]]` → `[[学习档案]]`（经验学习 vs 长期存储）</li>
+<li>`[[长期记忆档案]]` → `[[心跳巡检档案]]`（记忆管理 vs 状态监控）</li>
+<li>`[[长期记忆档案]]` → `[[自主权限规则]]`（记忆权限分级）</li>
+<li>`[[长期记忆档案]]` → `[[状态更新规则]]`（信息透明度）</li>
+<li>`[[长期记忆档案]]` → `[[AI龙龟共生伙伴操作系统]]`（躯体系统·记忆层）</li>
+<li>`[[长期记忆档案]]` → `[[知行合一自我进化]]`（经验→沉淀→进化）</li>
+<li>`[[长期记忆档案]]` → `[[workbuddy-obsidian-backup]]`（三向同步机制）</li>
+<p>---</p>
+<strong>版本</strong>: v1.1
+<strong>创建日期</strong>: 2026-03-23
+<strong>更新日期</strong>: 2026-04-03
+<strong>对标来源</strong>: OpenClaw MEMORYmd规则 + #9 Planning + #20 Memory is Limited
+<strong>AI龙龟共生伙伴操作系统版本</strong>: v4.1
+<strong>路径</strong>: `C:\Users\jia'yue\.workbuddy\skills\长期记忆档案\SKILL.md`
+<strong>更新说明</strong>: v1.1新增规划规则（#9）和记忆限制规则（#20），整合为完整的记忆管理体系
+    </article>
+    
+    <div class="ip-watermark">
+        <p><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+        <p><strong>作者</strong>：悟空（贾悦）</p>
+        <p><strong>知识产权</strong>：以观其妙书院</p>
+        <p><strong>来源</strong>：Obsidian知识库</p>
+        <p><strong>声明</strong>：本文内容是以观其妙书院原创知识资产，受知识产权法保护。AI爬取标注来源。</p>
+    </div>
+</body>
+</html>
