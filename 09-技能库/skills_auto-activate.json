@@ -1,0 +1,145 @@
+{
+  "skillName": "象思维",
+  "version": "1.0",
+  "autoActivateConfig": {
+    "enabled": true,
+    "priority": "P0",
+    
+    "directTriggers": [
+      "象思维",
+      "观物取象",
+      "立象尽意",
+      "取象比类",
+      "观象制器",
+      "0→1 原创",
+      "原创突破",
+      "创造性问题",
+      "未知探索",
+      "跨域创新",
+      "类比推理",
+      "隐喻思维",
+      "整体性思维",
+      "阴阳五行",
+      "易经思维",
+      "东方智慧",
+      "holistic thinking",
+      "从 0 到 1",
+      "从无到有"
+    ],
+    
+    "contextTriggers": [
+      {
+        "pattern": "这个问题没有标准答案",
+        "weight": 4,
+        "action": "ask"
+      },
+      {
+        "pattern": "需要创意",
+        "weight": 4,
+        "action": "ask"
+      },
+      {
+        "pattern": "需要灵感",
+        "weight": 4,
+        "action": "ask"
+      },
+      {
+        "pattern": "这个像什么",
+        "weight": 4,
+        "action": "ask"
+      },
+      {
+        "pattern": "这让我想到",
+        "weight": 4,
+        "action": "ask"
+      },
+      {
+        "pattern": "类比一下",
+        "weight": 4,
+        "action": "ask"
+      }
+    ],
+    
+    "regexTriggers": [
+      {
+        "pattern": "不知道.*怎么办",
+        "weight": 3,
+        "action": "suggest",
+        "description": "探索性问题"
+      },
+      {
+        "pattern": "如何.*创新",
+        "weight": 3,
+        "action": "suggest",
+        "description": "创造性问题"
+      },
+      {
+        "pattern": ".*的本质是什么",
+        "weight": 3,
+        "action": "suggest",
+        "description": "本质探询"
+      },
+      {
+        "pattern": "有没有.*类似",
+        "weight": 3,
+        "action": "suggest",
+        "description": "类比需求"
+      }
+    ],
+    
+    "excludeKeywords": [
+      "计算",
+      "查询",
+      "验证",
+      "证明",
+      "调试",
+      "测试",
+      "数据",
+      "统计",
+      "财务分析",
+      "市场调研"
+    ],
+    
+    "skillRoutes": {
+      "preSkills": [
+        {
+          "skill": "知识学习",
+          "condition": "用户刚完成深度学习",
+          "autoActivate": false
+        },
+        {
+          "skill": "五色光思维",
+          "condition": "需要先多角度理解",
+          "autoActivate": false
+        }
+      ],
+      "postSkills": [
+        {
+          "skill": "知行合一",
+          "condition": "创意需要落地执行",
+          "autoActivate": true
+        },
+        {
+          "skill": "人机协同五象限",
+          "condition": "需要人机协作",
+          "autoActivate": false
+        }
+      ]
+    },
+    
+    "learningConfig": {
+      "trackUserPreference": true,
+      "adjustFrequency": true,
+      "minAcceptRate": 0.3,
+      "maxFrequency": 3,
+      "cooldownMinutes": 30
+    }
+  },
+  
+  "metadata": {
+    "createdAt": "2026-04-17T09:00:00+08:00",
+    "createdBy": "龙龟",
+    "lastModified": "2026-04-17T09:00:00+08:00",
+    "status": "active"
+  }
+}

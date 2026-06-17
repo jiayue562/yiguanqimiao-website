@@ -1,0 +1,21 @@
+{
+  "rules": [
+    {
+      "condition": "session_rounds >= 30",
+      "module": "session-context/optimizer",
+      "priority": "high"
+    },
+    {
+      "condition": "skills_chain_length >= 2",
+      "module": "cross-skill-context/shared-store",
+      "priority": "high"
+    },
+    {
+      "condition": "quality_score < 60",
+      "module": "quality-assessment/optimizer",
+      "priority": "medium"
+    }
+  ],
+  "cooldown_seconds": 30,
+  "max_chain_depth": 5
+}
