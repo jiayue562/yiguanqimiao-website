@@ -1,0 +1,242 @@
+{
+  "main": {
+    "id": "f7335448bb3b6c48",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d8e3b17cc96a091",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "940d58f7ba89e907",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3bb4fdc2b6589d1d",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe1da9d86c1b872a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "183ae78b24038d0e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "cbaee681f0c9ea5f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#二",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "c43f1a0e18f6e64d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "8cc47c09fb5bc17f",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "970c5f3b7dd269a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "280dd7220f966848",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "215b6633e1dbdc50",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "749d0d6546c87355",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "70ddd8d9dd7b1beb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "ecb63f6d4d2acbdb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "025b2c63cc3d7c49",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "dfd1503f4c7852d5",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "callout-manager:Insert Callout": false,
+      "obsidian-read-it-later:ReadItLater: Create from clipboard": false,
+      "obsidian-weread-plugin:同步微信读书笔记": false,
+      "copilot:Open Copilot Chat": false
+    }
+  },
+  "active": "940d58f7ba89e907",
+  "lastOpenFiles": [
+    "未命名.md",
+    "未命名 2",
+    "未命名 1",
+    "未命名",
+    "Processing（加工层）/超级个体",
+    "copilot/memory/Recent Conversations.md",
+    "copilot/memory",
+    "copilot/copilot-conversations/总结一下这里面的内容@20260115_101104.md",
+    "copilot/copilot-conversations",
+    "copilot",
+    "Output（输出层）",
+    "心文化.md",
+    "Processing（加工层）/超级个体/从心文化到AI应用，超级个体的系统进化.md",
+    "Input（输入层）/Obsidian 进阶篇：如何用 Obsidian + AI 打造一个专属知识库？.md",
+    "未命名.base",
+    "未命名 1.base",
+    "未命名.canvas",
+    "Pasted image 20260114201958.png",
+    "Processing（加工层）/超级个体/超级个体.md",
+    "Input（输入层）/Obsidian 实践篇初级篇.md",
+    "Input（输入层）/Obsidian 实践篇：如何将碎片化信息内化成自己的知识？.md",
+    "Processing（加工层）/超级个体/关于超级个体的想法.md",
+    "Processing（加工层）/超级个体/超级个体公式公开：AI +一人公司+个人IP.md",
+    "一人公司.md",
+    "知识库学习/刻意练习.md",
+    "知识库学习/Pasted image 20260113162723.png",
+    "知识库学习/Pasted image 20260113162628.png",
+    "知识库学习/Pasted image 20260113162451.png",
+    "知识库学习/Pasted image 20260113162404.png",
+    "知识库学习/Pasted image 20260113162224.png",
+    "知识库学习/Pasted image 20260113162102.png",
+    "知识库学习/Pasted image 20260113161226.png",
+    "知识库学习/Pasted image 20260113160900.png",
+    "知识库学习/Pasted image 20260113160637.png",
+    "知识库学习/高光时刻.md",
+    "欢迎.md"
+  ]
+}

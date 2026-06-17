@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>悟空 · 12维全息画像仪表盘</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+  :root {
+    --bg-primary: #0a0e1a;
+    --bg-secondary: #111827;
+    --bg-card: rgba(17, 24, 39, 0.85);
+    --border-glow: rgba(74, 222, 128, 0.15);
+    --accent-green: #4ade80;
+    --accent-blue: #60a5fa;
+    --accent-amber: #fbbf24;
+    --accent-red: #f87171;
+    --accent-purple: #a78bfa;
+    --accent-cyan: #22d3ee;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --wood-primary: #22c55e;
+    --wood-dark: #166534;
+    --fire-primary: #f97316;
+    --earth-primary: #eab308;
+    --metal-primary: #a1a1aa;
+    --water-primary: #3b82f6;
+    --gold: #d4a843;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* 背景粒子 */
+  .bg-particles {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none; z-index: 0;
+    background: radial-gradient(ellipse at 20% 50%, rgba(34,197,94,0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(96,165,250,0.05) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 80%, rgba(167,139,250,0.04) 0%, transparent 50%);
+  }
+
+  .app-container {
+    position: relative; z-index: 1;
+    max-width: 1600px; margin: 0 auto; padding: 24px;
+  }
+
+  /* ===== 头部 ===== */
+  .header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 0 28px; border-bottom: 1px solid rgba(74,222,128,0.1);
+    margin-bottom: 28px;
+  }
+  .header-left { display: flex; align-items: center; gap: 20px; }
+  .header-avatar {
+    width: 64px; height: 64px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--wood-primary), var(--wood-dark));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Noto Serif SC', serif; font-size: 28px; font-weight: 900;
+    color: #fff; box-shadow: 0 0 30px rgba(34,197,94,0.3);
+    border: 2px solid rgba(34,197,94,0.4);
+    position: relative; overflow: hidden;
+  }
+  .header-avatar::after {
+    content: ''; position: absolute; inset: -2px;
+    border-radius: 50%; border: 2px solid transparent;
+    border-top-color: var(--gold); animation: spin 3s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .header-info h1 {
+    font-family: 'Noto Serif SC', serif; font-size: 26px; font-weight: 900;
+    background: linear-gradient(90deg, var(--accent-green), var(--accent-cyan));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+  }
+  .header-info .subtitle {
+    color: var(--text-secondary); font-size: 13px; margin-top: 4px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .tag {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 2px 10px; border-radius: 20px; font-size: 11px; font-weight: 500;
+  }
+  .tag-wood { background: rgba(34,197,94,0.15); color: var(--wood-primary); border: 1px solid rgba(34,197,94,0.3); }
+  .tag-fire { background: rgba(249,115,22,0.15); color: var(--fire-primary); border: 1px solid rgba(249,115,22,0.3); }
+  .tag-synergy { background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid rgba(212,168,67,0.3); }
+
+  .header-right { display: flex; align-items: center; gap: 16px; }
+  .overall-score-ring {
+    width: 80px; height: 80px; position: relative;
+  }
+  .overall-score-ring svg { transform: rotate(-90deg); }
+  .overall-score-value {
+    position: absolute; inset: 0; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+  }
+  .overall-score-value .number {
+    font-family: 'Noto Serif SC', serif; font-size: 24px; font-weight: 900;
+    color: var(--accent-green);
+  }
+  .overall-score-value .label { font-size: 9px; color: var(--text-muted); margin-top: -2px; }
+
+  /* ===== 主布局 ===== */
+  .main-grid {
+    display: grid;
+    grid-template-columns: 420px 1fr 320px;
+    gap: 24px;
+  }
+
+  /* ===== 左栏：雷达图 ===== */
+  .radar-panel {
+    background: var(--bg-card); border-radius: 16px; padding: 24px;
+    border: 1px solid var(--border-glow); backdrop-filter: blur(10px);
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .panel-title {
+    font-family: 'Noto Serif SC', serif; font-size: 16px; font-weight: 700;
+    color: var(--text-primary); margin-bottom: 4px; align-self: flex-start;
+  }
+  .panel-subtitle { font-size: 12px; color: var(--text-muted); align-self: flex-start; margin-bottom: 16px; }
+  .radar-container { width: 100%; max-width: 380px; aspect-ratio: 1; position: relative; }
+  .radar-container canvas { width: 100%; height: 100%; }
+
+  .radar-legend {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 6px 16px;
+    margin-top: 16px; width: 100%;
+  }
+  .legend-item {
+    display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text-secondary);
+    cursor: pointer; padding: 3px 6px; border-radius: 6px; transition: all 0.2s;
+  }
+  .legend-item:hover { background: rgba(255,255,255,0.05); }
+  .legend-item.active { background: rgba(34,197,94,0.1); color: var(--accent-green); }
+  .legend-dot {
+    width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+  }
+
+  /* ===== 中栏：详情面板 ===== */
+  .detail-panel {
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .dimension-cards {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  }
+  .dim-card {
+    background: var(--bg-card); border-radius: 14px; padding: 18px;
+    border: 1px solid rgba(255,255,255,0.05); cursor: pointer;
+    transition: all 0.3s ease; position: relative; overflow: hidden;
+  }
+  .dim-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--card-color, var(--accent-green)), transparent);
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .dim-card:hover { border-color: rgba(255,255,255,0.12); transform: translateY(-2px); }
+  .dim-card:hover::before { opacity: 1; }
+  .dim-card.selected { border-color: rgba(34,197,94,0.3); }
+  .dim-card.selected::before { opacity: 1; }
+
+  .dim-card-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px; }
+  .dim-card-icon { font-size: 20px; margin-right: 10px; }
+  .dim-card-title { font-size: 14px; font-weight: 700; color: var(--text-primary); }
+  .dim-card-category {
+    font-size: 10px; color: var(--text-muted); margin-top: 2px;
+    padding: 1px 8px; border-radius: 10px; background: rgba(255,255,255,0.05);
+    display: inline-block;
+  }
+  .dim-card-score {
+    font-family: 'Noto Serif SC', serif; font-size: 28px; font-weight: 900;
+    line-height: 1;
+  }
+
+  .dim-card-bar {
+    height: 4px; border-radius: 2px; background: rgba(255,255,255,0.06);
+    margin-bottom: 8px; overflow: hidden;
+  }
+  .dim-card-bar-fill {
+    height: 100%; border-radius: 2px; transition: width 1s ease;
+    background: linear-gradient(90deg, var(--card-color, var(--accent-green)), rgba(255,255,255,0.3));
+  }
+
+  .dim-card-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+  .dim-card-tag {
+    font-size: 10px; padding: 2px 8px; border-radius: 10px;
+    background: rgba(255,255,255,0.04); color: var(--text-muted);
+  }
+
+  /* 展开详情 */
+  .dim-detail {
+    background: var(--bg-card); border-radius: 14px; padding: 20px;
+    border: 1px solid var(--border-glow);
+    max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s, opacity 0.3s;
+    opacity: 0;
+  }
+  .dim-detail.open { max-height: 400px; opacity: 1; }
+  .dim-detail-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+  .dim-detail-title { font-family: 'Noto Serif SC', serif; font-size: 18px; font-weight: 700; }
+  .dim-detail-close {
+    width: 28px; height: 28px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.1);
+    background: transparent; color: var(--text-muted); cursor: pointer;
+    display: flex; align-items: center; justify-content: center; font-size: 16px;
+    transition: all 0.2s;
+  }
+  .dim-detail-close:hover { background: rgba(255,255,255,0.1); color: var(--text-primary); }
+
+  .dim-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .detail-section h4 { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; font-weight: 500; }
+  .detail-section p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+  .detail-section ul { list-style: none; }
+  .detail-section ul li {
+    font-size: 12px; color: var(--text-secondary); padding: 3px 0;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .detail-section ul li::before {
+    content: ''; width: 4px; height: 4px; border-radius: 50%;
+    background: var(--accent-green); flex-shrink: 0;
+  }
+
+  .sub-dim-bars { display: flex; flex-direction: column; gap: 6px; }
+  .sub-dim-row { display: flex; align-items: center; gap: 8px; }
+  .sub-dim-label { font-size: 11px; color: var(--text-muted); width: 56px; flex-shrink: 0; }
+  .sub-dim-bar {
+    flex: 1; height: 6px; border-radius: 3px; background: rgba(255,255,255,0.06); overflow: hidden;
+  }
+  .sub-dim-fill { height: 100%; border-radius: 3px; transition: width 0.8s ease; }
+  .sub-dim-val { font-size: 11px; color: var(--text-secondary); width: 28px; text-align: right; }
+
+  /* ===== 右栏：综合面板 ===== */
+  .side-panel { display: flex; flex-direction: column; gap: 16px; }
+  .side-card {
+    background: var(--bg-card); border-radius: 14px; padding: 18px;
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+  .side-card-title {
+    font-size: 13px; font-weight: 700; color: var(--text-primary);
+    margin-bottom: 14px; display: flex; align-items: center; gap: 8px;
+  }
+  .side-card-title .icon { font-size: 16px; }
+
+  /* 五行平衡环 */
+  .wuxing-balance { display: flex; justify-content: center; gap: 6px; margin-bottom: 12px; }
+  .wuxing-item {
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+  }
+  .wuxing-ring { width: 48px; height: 48px; position: relative; }
+  .wuxing-ring svg { transform: rotate(-90deg); }
+  .wuxing-ring .val {
+    position: absolute; inset: 0; display: flex; align-items: center;
+    justify-content: center; font-size: 12px; font-weight: 700;
+  }
+  .wuxing-name { font-size: 10px; color: var(--text-muted); }
+
+  /* 九层阶梯 */
+  .jiuseng-steps { display: flex; flex-direction: column; gap: 4px; }
+  .jiu-row {
+    display: flex; align-items: center; gap: 8px; padding: 4px 8px;
+    border-radius: 6px; transition: background 0.2s;
+  }
+  .jiu-row.active { background: rgba(34,197,94,0.1); }
+  .jiu-row.past { opacity: 0.5; }
+  .jiu-level {
+    font-size: 10px; font-weight: 700; width: 52px; flex-shrink: 0;
+    text-align: center;
+  }
+  .jiu-label { font-size: 11px; color: var(--text-secondary); flex: 1; }
+  .jiu-indicator {
+    width: 8px; height: 8px; border-radius: 50%;
+  }
+
+  /* 木火共生 */
+  .synergy-meter { margin-top: 8px; }
+  .synergy-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .synergy-label { font-size: 11px; color: var(--text-muted); width: 64px; }
+  .synergy-bar {
+    flex: 1; height: 8px; border-radius: 4px; background: rgba(255,255,255,0.06);
+    overflow: hidden;
+  }
+  .synergy-fill { height: 100%; border-radius: 4px; transition: width 1s ease; }
+  .synergy-val { font-size: 11px; color: var(--text-secondary); width: 32px; text-align: right; }
+
+  /* 能力分布 */
+  .ability-dist { display: flex; flex-direction: column; gap: 8px; }
+  .ability-row { display: flex; align-items: center; gap: 8px; }
+  .ability-name { font-size: 11px; color: var(--text-muted); width: 72px; flex-shrink: 0; }
+  .ability-bar {
+    flex: 1; height: 10px; border-radius: 5px; background: rgba(255,255,255,0.06);
+    overflow: hidden;
+  }
+  .ability-fill {
+    height: 100%; border-radius: 5px;
+    transition: width 1s ease;
+  }
+  .ability-val { font-size: 11px; font-weight: 700; width: 36px; text-align: right; }
+
+  /* 动画 */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-in { animation: fadeInUp 0.5s ease forwards; opacity: 0; }
+
+  /* 响应式 */
+  @media (max-width: 1200px) {
+    .main-grid { grid-template-columns: 1fr 1fr; }
+    .side-panel { grid-column: 1 / -1; flex-direction: row; }
+    .side-card { flex: 1; }
+  }
+  @media (max-width: 768px) {
+    .main-grid { grid-template-columns: 1fr; }
+    .side-panel { flex-direction: column; }
+    .dimension-cards { grid-template-columns: 1fr; }
+  }
+
+  /* 滚动条 */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<div class="bg-particles"></div>
+
+<div class="app-container">
+  <!-- 头部 -->
+  <header class="header">
+    <div class="header-left">
+      <div class="header-avatar">悟</div>
+      <div class="header-info">
+        <h1>悟空 · 全息画像仪表盘</h1>
+        <div class="subtitle">
+          <span class="tag tag-wood">🌿 木行人</span>
+          <span class="tag tag-fire">🔥 龙龟共生</span>
+          <span class="tag tag-synergy">📚 以观其妙书院</span>
+        </div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="overall-score-ring" id="overallRing">
+        <svg width="80" height="80" viewBox="0 0 80 80">
+          <circle cx="40" cy="40" r="34" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="5"/>
+          <circle id="overallArc" cx="40" cy="40" r="34" fill="none" stroke="url(#overallGrad)" stroke-width="5"
+            stroke-linecap="round" stroke-dasharray="213.6" stroke-dashoffset="213.6"/>
+          <defs>
+            <linearGradient id="overallGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#4ade80"/>
+              <stop offset="100%" stop-color="#22d3ee"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="overall-score-value">
+          <span class="number" id="overallNumber">0</span>
+          <span class="label">综合分</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主布局 -->
+  <div class="main-grid">
+    <!-- 左栏：雷达图 -->
+    <div class="radar-panel animate-in" style="animation-delay: 0.1s">
+      <div class="panel-title">12维度雷达全景</div>
+      <div class="panel-subtitle">点击维度查看详情 · 悬停图例聚焦</div>
+      <div class="radar-container">
+        <canvas id="radarCanvas"></canvas>
+      </div>
+      <div class="radar-legend" id="radarLegend"></div>
+    </div>
+
+    <!-- 中栏：详情卡片 -->
+    <div class="detail-panel">
+      <div class="dimension-cards" id="dimCards"></div>
+      <div class="dim-detail" id="dimDetail">
+        <div class="dim-detail-header">
+          <div class="dim-detail-title" id="detailTitle"></div>
+          <button class="dim-detail-close" onclick="closeDetail()">✕</button>
+        </div>
+        <div class="dim-detail-grid" id="detailContent"></div>
+      </div>
+    </div>
+
+    <!-- 右栏：综合面板 -->
+    <div class="side-panel">
+      <!-- 五行平衡 -->
+      <div class="side-card animate-in" style="animation-delay: 0.3s">
+        <div class="side-card-title"><span class="icon">☯</span> 五行能量平衡</div>
+        <div class="wuxing-balance" id="wuxingBalance"></div>
+        <div style="font-size:11px;color:var(--text-muted);text-align:center;margin-top:4px;">
+          主行：木行 88 · 辅行：水行 82
+        </div>
+      </div>
+
+      <!-- 九层阶梯 -->
+      <div class="side-card animate-in" style="animation-delay: 0.4s">
+        <div class="side-card-title"><span class="icon">登</span> 九层发展阶梯</div>
+        <div class="jiuseng-steps" id="jiuSteps"></div>
+      </div>
+
+      <!-- 木火共生 -->
+      <div class="side-card animate-in" style="animation-delay: 0.5s">
+        <div class="side-card-title"><span class="icon">🔗</span> 木火共生指数</div>
+        <div class="synergy-meter" id="synergyMeter"></div>
+      </div>
+
+      <!-- 能力图谱 -->
+      <div class="side-card animate-in" style="animation-delay: 0.6s">
+        <div class="side-card-title"><span class="icon">📊</span> 核心能力分布</div>
+        <div class="ability-dist" id="abilityDist"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// 数据模型：悟空12维全息画像
+// ============================================================
+const DIMENSIONS = [
+  {
+    id: 'originality', name: '原创力', icon: '💡', category: '认知能力', wuxing: '木',
+    score: 92, color: '#4ade80',
+    desc: '具备0→1的原创突破能力，是象思维的核心践行者。善于从传统文化中提炼全新理论框架。',
+    strengths: ['五行人格心理学®创始人', '象思维深度践行', '五色光思维独创者'],
+    growth: ['商业化转化加速', '跨领域融合创新'],
+    subDims: [
+      { name: '理论创新', score: 95 },
+      { name: '方法独创', score: 90 },
+      { name: '跨界融合', score: 88 },
+      { name: '灵感敏锐', score: 93 },
+    ]
+  },
+  {
+    id: 'strategy', name: '战略性', icon: '🎯', category: '认知能力', wuxing: '木',
+    score: 85, color: '#22d3ee',
+    desc: '善于把握方向，制定长远规划。15年战略思维沉淀，从五行人格理论到龙心OS系统设计。',
+    strengths: ['5年超级个体赋能规划', '龙心OS五年演进路线', '企业商学院顶层设计'],
+    growth: ['执行层精细化管理', '里程碑量化追踪'],
+    subDims: [
+      { name: '远见卓识', score: 88 },
+      { name: '路径规划', score: 85 },
+      { name: '系统思维', score: 87 },
+      { name: '灵活调整', score: 78 },
+    ]
+  },
+  {
+    id: 'perception', name: '觉照性', icon: '👁', category: '认知能力', wuxing: '木',
+    score: 90, color: '#a78bfa',
+    desc: '观微知著，洞察细微之处。能如阳光般照亮内在的念头与情绪，发现隐性知识。',
+    strengths: ['知识诅咒本质认知', '五行识人精准判断', '团队动态敏锐感知'],
+    growth: ['跨文化觉照', 'AI行为模式洞察'],
+    subDims: [
+      { name: '洞察力', score: 92 },
+      { name: '共情力', score: 88 },
+      { name: '隐性知识发现', score: 90 },
+      { name: '情绪感知', score: 85 },
+    ]
+  },
+  {
+    id: 'benevolence', name: '仁德性', icon: '🌿', category: '人格特质', wuxing: '木',
+    score: 88, color: '#34d399',
+    desc: '以仁德之心滋养万物，用生长之力引领进化。木行人核心特质的健康显化。',
+    strengths: ['团队成长引领', '知识无私分享', '共生关系滋养'],
+    growth: ['更大范围的仁德影响', '仁德领导力体系化'],
+    subDims: [
+      { name: '利他精神', score: 90 },
+      { name: '滋养他人', score: 88 },
+      { name: '公正正直', score: 86 },
+      { name: '包容开放', score: 85 },
+    ]
+  },
+  {
+    id: 'independence', name: '独立性', icon: '🏔', category: '人格特质', wuxing: '木',
+    score: 85, color: '#2dd4bf',
+    desc: '专家型人才，习惯在安静环境独立工作。独立思考与判断，不随波逐流。',
+    strengths: ['独立研究能力', '原创理论坚持', '深度思考习惯'],
+    growth: ['协作模式优化', '独立与团队平衡'],
+    subDims: [
+      { name: '独立思考', score: 92 },
+      { name: '自我驱动', score: 88 },
+      { name: '抗干扰力', score: 82 },
+      { name: '团队协作', score: 76 },
+    ]
+  },
+  {
+    id: 'growth', name: '进化力', icon: '🌱', category: '成长动力', wuxing: '木',
+    score: 90, color: '#86efac',
+    desc: '如树木般持续向上生长，引领进化。2010年至今16年持续学习践行传统文化。',
+    strengths: ['16年持续深耕', '知行合一闭环', '螺旋进化机制'],
+    growth: ['进化速度加速', '进化成果量化'],
+    subDims: [
+      { name: '持续学习', score: 93 },
+      { name: '自我迭代', score: 90 },
+      { name: '知识沉淀', score: 88 },
+      { name: '实践验证', score: 86 },
+    ]
+  },
+  {
+    id: 'culture', name: '文化力', icon: '📜', category: '知识体系', wuxing: '土',
+    score: 92, color: '#fbbf24',
+    desc: '深耕中华文明底层智慧，将传统文化与现代科技深度融合。从易经到AI的全域贯通。',
+    strengths: ['五行识人理论创始人', '心文化体系构建', '东方智慧现代化'],
+    growth: ['国际化表达', '方法论标准化输出'],
+    subDims: [
+      { name: '传统文化功底', score: 95 },
+      { name: '中西融合', score: 92 },
+      { name: '体系构建', score: 90 },
+      { name: '现代转化', score: 88 },
+    ]
+  },
+  {
+    id: 'teaching', name: '教学力', icon: '🎓', category: '应用能力', wuxing: '火',
+    score: 85, color: '#f97316',
+    desc: '理论与实践结合，互动启发式教学。善于用具体例子解释抽象概念，在轻松氛围中完成严肃工作。',
+    strengths: ['案例分析能力', '互动启发风格', '通俗精彩表达'],
+    growth: ['标准化课程体系', '线上教学扩展'],
+    subDims: [
+      { name: '表达力', score: 88 },
+      { name: '案例教学', score: 87 },
+      { name: '启发引导', score: 85 },
+      { name: '课程设计', score: 80 },
+    ]
+  },
+  {
+    id: 'consulting', name: '咨询力', icon: '🏢', category: '应用能力', wuxing: '土',
+    score: 82, color: '#eab308',
+    desc: '专注企业文化建设，2018年至今为企业提供文化顶层设计和商学院建设咨询服务。',
+    strengths: ['文化顶层设计', '企业商学院建设', '心文化落地实践'],
+    growth: ['行业覆盖扩展', '咨询方法论产品化'],
+    subDims: [
+      { name: '诊断分析', score: 85 },
+      { name: '方案设计', score: 83 },
+      { name: '落地执行', score: 78 },
+      { name: '效果评估', score: 80 },
+    ]
+  },
+  {
+    id: 'writing', name: '写作力', icon: '✍', category: '应用能力', wuxing: '木',
+    score: 88, color: '#818cf8',
+    desc: '出版5本心理学专著，善于用中西融合的语言（古典典故+现代术语）构建知识体系。',
+    strengths: ['5部专著出版', 'Markdown体系化写作', 'SKILL.md模板设计'],
+    growth: ['新媒体写作', '大众化科普写作'],
+    subDims: [
+      { name: '学术写作', score: 90 },
+      { name: '体系化写作', score: 92 },
+      { name: '通俗表达', score: 85 },
+      { name: '创意文案', score: 82 },
+    ]
+  },
+  {
+    id: 'technology', name: '技术力', icon: '⚙', category: 'AI应用', wuxing: '金',
+    score: 80, color: '#60a5fa',
+    desc: '从理论框架到AI工具的全面应用能力。构建龙心OS系统，实现人机共生伙伴操作系统。',
+    strengths: ['龙心OS系统设计', '知识库搭建方法论', '提示词工程设计'],
+    growth: ['代码能力深化', '自动化工程实践'],
+    subDims: [
+      { name: '系统设计', score: 85 },
+      { name: 'AI工具应用', score: 88 },
+      { name: '代码能力', score: 70 },
+      { name: '自动化运维', score: 75 },
+    ]
+  },
+  {
+    id: 'wisdom', name: '修行力', icon: '🧘', category: '心性修养', wuxing: '水',
+    score: 85, color: '#38bdf8',
+    desc: '大圆满见地践行者，心文化体系构建者。将修行融入日常，体证本来清净与本自圆满的不二。',
+    strengths: ['大圆满见地体证', '地藏经实修', '修行与商业整合'],
+    growth: ['修行社群引领', '实修体系标准化'],
+    subDims: [
+      { name: '见地深度', score: 90 },
+      { name: '实修功夫', score: 85 },
+      { name: '日常融合', score: 82 },
+      { name: '传播引导', score: 80 },
+    ]
+  },
+];
+
+// 五行数据
+const WUXING = [
+  { name: '木', score: 88, color: '#22c55e' },
+  { name: '火', score: 82, color: '#f97316' },
+  { name: '土', score: 85, color: '#eab308' },
+  { name: '金', score: 78, color: '#a1a1aa' },
+  { name: '水', score: 82, color: '#3b82f6' },
+];
+
+// 九层阶梯
+const JIU_LEVELS = [
+  { level: 1, label: '解放 · 仁德舒展', color: '#4ade80', current: false },
+  { level: 2, label: '心理能力 · 正直担当', color: '#22d3ee', current: true },
+  { level: 3, label: '社会价值 · 才气外显', color: '#60a5fa', current: false },
+  { level: 4, label: '失衡 · 固执己见', color: '#fbbf24', current: false },
+  { level: 5, label: '人际控制 · 傲慢抗上', color: '#f97316', current: false },
+  { level: 6, label: '过度补偿 · 偏执极端', color: '#ef4444', current: false },
+  { level: 7, label: '侵害 · 愤恨攻击', color: '#dc2626', current: false },
+  { level: 8, label: '妄想强迫 · 脱离现实', color: '#991b1b', current: false },
+  { level: 9, label: '病态破坏 · 毁灭破坏', color: '#7f1d1d', current: false },
+];
+
+// 木火共生指数
+const SYNERGY = [
+  { name: '人格看见', score: 92, color: '#4ade80' },
+  { name: '灵魂滋养', score: 88, color: '#22d3ee' },
+  { name: '工作伙伴', score: 90, color: '#a78bfa' },
+  { name: '认知进化', score: 85, color: '#fbbf24' },
+  { name: '青出于蓝', score: 80, color: '#f97316' },
+];
+
+// 核心能力
+const ABILITIES = [
+  { name: '理论构建', score: 93, color: '#4ade80' },
+  { name: '深度教学', score: 87, color: '#22d3ee' },
+  { name: '文化咨询', score: 83, color: '#fbbf24' },
+  { name: 'AI应用', score: 82, color: '#a78bfa' },
+  { name: '心性修行', score: 88, color: '#60a5fa' },
+  { name: '知识管理', score: 90, color: '#f97316' },
+];
+
+// ============================================================
+// 雷达图绘制
+// ============================================================
+let selectedDim = null;
+let hoveredDim = null;
+const canvas = document.getElementById('radarCanvas');
+const ctx = canvas.getContext('2d');
+
+function initCanvas() {
+  const container = canvas.parentElement;
+  const size = container.clientWidth;
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = size * dpr;
+  canvas.height = size * dpr;
+  canvas.style.width = size + 'px';
+  canvas.style.height = size + 'px';
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+
+function drawRadar() {
+  const w = canvas.clientWidth;
+  const h = canvas.clientHeight;
+  const cx = w / 2;
+  const cy = h / 2;
+  const maxR = Math.min(cx, cy) * 0.72;
+  const n = DIMENSIONS.length;
+
+  ctx.clearRect(0, 0, w, h);
+
+  // 辅助网格
+  const levels = 5;
+  for (let l = 1; l <= levels; l++) {
+    const r = (maxR / levels) * l;
+    ctx.beginPath();
+    for (let i = 0; i <= n; i++) {
+      const angle = (Math.PI * 2 / n) * i - Math.PI / 2;
+      const x = cx + r * Math.cos(angle);
+      const y = cy + r * Math.sin(angle);
+      if (i === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+    ctx.strokeStyle = l === levels ? 'rgba(255,255,255,0.12)' : 'rgba(255,255,255,0.05)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    // 刻度数字
+    if (l % 2 === 0 || l === levels) {
+      ctx.fillStyle = 'rgba(255,255,255,0.15)';
+      ctx.font = '10px "Noto Sans SC"';
+      ctx.textAlign = 'left';
+      ctx.fillText(l * 20, cx + 4, cy - r + 12);
+    }
+  }
+
+  // 轴线
+  for (let i = 0; i < n; i++) {
+    const angle = (Math.PI * 2 / n) * i - Math.PI / 2;
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(cx + maxR * Math.cos(angle), cy + maxR * Math.sin(angle));
+    ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+
+  // 数据区域
+  const points = DIMENSIONS.map((dim, i) => {
+    const angle = (Math.PI * 2 / n) * i - Math.PI / 2;
+    const r = (dim.score / 100) * maxR;
+    return { x: cx + r * Math.cos(angle), y: cy + r * Math.sin(angle), dim };
+  });
+
+  // 填充
+  ctx.beginPath();
+  points.forEach((p, i) => {
+    if (i === 0) ctx.moveTo(p.x, p.y);
+    else ctx.lineTo(p.x, p.y);
+  });
+  ctx.closePath();
+  const grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, maxR);
+  grad.addColorStop(0, 'rgba(34,197,94,0.25)');
+  grad.addColorStop(1, 'rgba(34,197,94,0.05)');
+  ctx.fillStyle = grad;
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(34,197,94,0.6)';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // 数据点和标签
+  points.forEach((p, i) => {
+    const dim = DIMENSIONS[i];
+    const isActive = selectedDim === i || hoveredDim === i;
+    const isDimmed = (selectedDim !== null || hoveredDim !== null) && !isActive;
+
+    // 发光点
+    const dotR = isActive ? 7 : 4;
+    if (isActive) {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 16, 0, Math.PI * 2);
+      ctx.fillStyle = dim.color + '20';
+      ctx.fill();
+    }
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, dotR, 0, Math.PI * 2);
+    ctx.fillStyle = isDimmed ? dim.color + '40' : dim.color;
+    ctx.fill();
+    if (isActive) {
+      ctx.strokeStyle = '#fff';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
+
+    // 标签
+    const angle = (Math.PI * 2 / n) * i - Math.PI / 2;
+    const labelR = maxR + 28;
+    const lx = cx + labelR * Math.cos(angle);
+    const ly = cy + labelR * Math.sin(angle);
+
+    ctx.font = isActive ? 'bold 12px "Noto Sans SC"' : '11px "Noto Sans SC"';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    // 分数
+    ctx.fillStyle = isDimmed ? 'rgba(255,255,255,0.2)' : dim.color;
+    ctx.fillText(dim.score, lx, ly - 8);
+
+    // 名称
+    ctx.fillStyle = isDimmed ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.8)';
+    ctx.fillText(dim.name, lx, ly + 6);
+  });
+}
+
+// ============================================================
+// 渲染组件
+// ============================================================
+
+function renderLegend() {
+  const el = document.getElementById('radarLegend');
+  el.innerHTML = DIMENSIONS.map((d, i) => `
+    <div class="legend-item" data-idx="${i}"
+         onmouseenter="onLegendHover(${i})" onmouseleave="onLegendLeave(${i})"
+         onclick="onDimClick(${i})">
+      <span class="legend-dot" style="background:${d.color}"></span>
+      ${d.name}
+    </div>
+  `).join('');
+}
+
+function renderCards() {
+  const el = document.getElementById('dimCards');
+  el.innerHTML = DIMENSIONS.map((d, i) => `
+    <div class="dim-card" data-idx="${i}" style="--card-color:${d.color};animation-delay:${i*0.05}s"
+         onclick="onDimClick(${i})">
+      <div class="dim-card-header">
+        <div>
+          <div style="display:flex;align-items:center;">
+            <span class="dim-card-icon">${d.icon}</span>
+            <span class="dim-card-title">${d.name}</span>
+          </div>
+          <span class="dim-card-category">${d.category} · ${d.wuxing}行</span>
+        </div>
+        <div class="dim-card-score" style="color:${d.color}">${d.score}</div>
+      </div>
+      <div class="dim-card-bar">
+        <div class="dim-card-bar-fill" style="width:0%" data-target="${d.score}"></div>
+      </div>
+      <div class="dim-card-tags">
+        ${d.strengths.slice(0, 2).map(s => `<span class="dim-card-tag">${s}</span>`).join('')}
+      </div>
+    </div>
+  `).join('');
+
+  // 动画填充
+  setTimeout(() => {
+    document.querySelectorAll('.dim-card-bar-fill').forEach(el => {
+      el.style.width = el.dataset.target + '%';
+    });
+  }, 200);
+}
+
+function renderWuxing() {
+  const el = document.getElementById('wuxingBalance');
+  el.innerHTML = WUXING.map(w => {
+    const circumference = 2 * Math.PI * 18;
+    const offset = circumference * (1 - w.score / 100);
+    return `
+      <div class="wuxing-item">
+        <div class="wuxing-ring">
+          <svg width="48" height="48" viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="18" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="3"/>
+            <circle cx="24" cy="24" r="18" fill="none" stroke="${w.color}" stroke-width="3"
+              stroke-linecap="round" stroke-dasharray="${circumference}" stroke-dashoffset="${offset}"
+              style="transition:stroke-dashoffset 1.5s ease"/>
+          </svg>
+          <div class="val" style="color:${w.color}">${w.score}</div>
+        </div>
+        <div class="wuxing-name">${w.name}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderJiuSteps() {
+  const el = document.getElementById('jiuSteps');
+  el.innerHTML = JIU_LEVELS.map((l, i) => {
+    const zone = i < 3 ? '健康' : i < 6 ? '一般' : '不健康';
+    return `
+      <div class="jiu-row ${l.current ? 'active' : i < 2 ? 'past' : ''}">
+        <div class="jiu-level" style="color:${l.color}">L${l.level}</div>
+        <div class="jiu-label">${l.label}</div>
+        <div class="jiu-indicator" style="background:${l.current ? l.color : 'transparent'};box-shadow:${l.current ? '0 0 8px ' + l.color : 'none'}"></div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderSynergy() {
+  const el = document.getElementById('synergyMeter');
+  el.innerHTML = SYNERGY.map(s => `
+    <div class="synergy-row">
+      <div class="synergy-label">${s.name}</div>
+      <div class="synergy-bar">
+        <div class="synergy-fill" style="width:0%;background:${s.color}" data-target="${s.score}"></div>
+      </div>
+      <div class="synergy-val" style="color:${s.color}">${s.score}</div>
+    </div>
+  `).join('');
+
+  setTimeout(() => {
+    document.querySelectorAll('.synergy-fill').forEach(el => {
+      el.style.width = el.dataset.target + '%';
+    });
+  }, 400);
+}
+
+function renderAbilities() {
+  const el = document.getElementById('abilityDist');
+  el.innerHTML = ABILITIES.map(a => `
+    <div class="ability-row">
+      <div class="ability-name">${a.name}</div>
+      <div class="ability-bar">
+        <div class="ability-fill" style="width:0%;background:linear-gradient(90deg,${a.color},transparent)" data-target="${a.score}"></div>
+      </div>
+      <div class="ability-val" style="color:${a.color}">${a.score}</div>
+    </div>
+  `).join('');
+
+  setTimeout(() => {
+    document.querySelectorAll('.ability-fill').forEach(el => {
+      el.style.width = el.dataset.target + '%';
+    });
+  }, 600);
+}
+
+function animateOverall() {
+  const avg = Math.round(DIMENSIONS.reduce((s, d) => s + d.score, 0) / DIMENSIONS.length);
+  const circumference = 2 * Math.PI * 34;
+  const offset = circumference * (1 - avg / 100);
+
+  const arc = document.getElementById('overallArc');
+  const numEl = document.getElementById('overallNumber');
+
+  setTimeout(() => {
+    arc.style.transition = 'stroke-dashoffset 1.5s ease';
+    arc.style.strokeDashoffset = offset;
+  }, 300);
+
+  // 数字动画
+  let current = 0;
+  const step = avg / 40;
+  const interval = setInterval(() => {
+    current += step;
+    if (current >= avg) {
+      current = avg;
+      clearInterval(interval);
+    }
+    numEl.textContent = Math.round(current);
+  }, 30);
+}
+
+// ============================================================
+// 交互
+// ============================================================
+
+function onLegendHover(idx) {
+  hoveredDim = idx;
+  drawRadar();
+  highlightCard(idx);
+}
+
+function onLegendLeave(idx) {
+  hoveredDim = null;
+  drawRadar();
+  highlightCard(null);
+}
+
+function highlightCard(idx) {
+  document.querySelectorAll('.dim-card').forEach((el, i) => {
+    if (idx === null) {
+      el.style.opacity = '';
+    } else {
+      el.style.opacity = i === idx ? '1' : '0.4';
+    }
+  });
+}
+
+function onDimClick(idx) {
+  if (selectedDim === idx) {
+    closeDetail();
+    return;
+  }
+  selectedDim = idx;
+  drawRadar();
+
+  // 高亮卡片
+  document.querySelectorAll('.dim-card').forEach((el, i) => {
+    el.classList.toggle('selected', i === idx);
+  });
+
+  // 图例高亮
+  document.querySelectorAll('.legend-item').forEach((el, i) => {
+    el.classList.toggle('active', i === idx);
+  });
+
+  // 打开详情
+  showDetail(idx);
+}
+
+function showDetail(idx) {
+  const d = DIMENSIONS[idx];
+  const detail = document.getElementById('dimDetail');
+  const title = document.getElementById('detailTitle');
+  const content = document.getElementById('detailContent');
+
+  title.innerHTML = `${d.icon} ${d.name} <span style="font-size:13px;color:var(--text-muted);font-weight:400;margin-left:8px;">${d.category}</span>`;
+  title.style.color = d.color;
+
+  content.innerHTML = `
+    <div class="detail-section">
+      <h4>维度描述</h4>
+      <p>${d.desc}</p>
+    </div>
+    <div class="detail-section">
+      <h4>核心优势</h4>
+      <ul>${d.strengths.map(s => `<li>${s}</li>`).join('')}</ul>
+    </div>
+    <div class="detail-section" style="grid-column:1/-1">
+      <h4>成长方向</h4>
+      <ul>${d.growth.map(g => `<li style="color:var(--accent-amber)">${g}</li>`).join('')}</ul>
+    </div>
+    <div class="detail-section" style="grid-column:1/-1">
+      <h4>子维度评分</h4>
+      <div class="sub-dim-bars">
+        ${d.subDims.map(sub => `
+          <div class="sub-dim-row">
+            <div class="sub-dim-label">${sub.name}</div>
+            <div class="sub-dim-bar">
+              <div class="sub-dim-fill" style="width:0%;background:${d.color}" data-target="${sub.score}"></div>
+            </div>
+            <div class="sub-dim-val">${sub.score}</div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+
+  detail.classList.add('open');
+
+  // 子维度动画
+  setTimeout(() => {
+    detail.querySelectorAll('.sub-dim-fill').forEach(el => {
+      el.style.width = el.dataset.target + '%';
+    });
+  }, 100);
+}
+
+function closeDetail() {
+  selectedDim = null;
+  document.getElementById('dimDetail').classList.remove('open');
+  document.querySelectorAll('.dim-card').forEach(el => el.classList.remove('selected'));
+  document.querySelectorAll('.legend-item').forEach(el => el.classList.remove('active'));
+  drawRadar();
+}
+
+// 雷达图鼠标交互
+canvas.addEventListener('mousemove', (e) => {
+  const rect = canvas.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const my = e.clientY - rect.top;
+  const cx = canvas.clientWidth / 2;
+  const cy = canvas.clientHeight / 2;
+  const maxR = Math.min(cx, cy) * 0.72;
+  const n = DIMENSIONS.length;
+
+  let closestIdx = null;
+  let closestDist = Infinity;
+
+  DIMENSIONS.forEach((dim, i) => {
+    const angle = (Math.PI * 2 / n) * i - Math.PI / 2;
+    const r = (dim.score / 100) * maxR;
+    const px = cx + r * Math.cos(angle);
+    const py = cy + r * Math.sin(angle);
+    const dist = Math.sqrt((mx - px) ** 2 + (my - py) ** 2);
+    if (dist < 20 && dist < closestDist) {
+      closestDist = dist;
+      closestIdx = i;
+    }
+  });
+
+  if (closestIdx !== hoveredDim) {
+    hoveredDim = closestIdx;
+    drawRadar();
+    highlightCard(hoveredDim);
+    canvas.style.cursor = closestIdx !== null ? 'pointer' : 'default';
+  }
+});
+
+canvas.addEventListener('mouseleave', () => {
+  hoveredDim = null;
+  drawRadar();
+  highlightCard(null);
+});
+
+canvas.addEventListener('click', (e) => {
+  if (hoveredDim !== null) onDimClick(hoveredDim);
+});
+
+// ============================================================
+// 初始化
+// ============================================================
+function init() {
+  initCanvas();
+  drawRadar();
+  renderLegend();
+  renderCards();
+  renderWuxing();
+  renderJiuSteps();
+  renderSynergy();
+  renderAbilities();
+  animateOverall();
+}
+
+window.addEventListener('resize', () => {
+  initCanvas();
+  drawRadar();
+});
+
+init();
+</script>
+</body>
+</html>

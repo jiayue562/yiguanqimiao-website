@@ -1,0 +1,270 @@
+{
+  "autoActivate": {
+    "enabled": true,
+    "version": "1.0",
+    "lastUpdated": "2026-04-16T08:00:00+08:00"
+  },
+  "activationRules": [
+    {
+      "id": "AA-001",
+      "name": "新会话任务检测",
+      "description": "新会话开始时检测任务描述，主动询问协作模式",
+      "trigger": {
+        "type": "sessionStart",
+        "condition": "messageContainsTaskDescription"
+      },
+      "action": {
+        "type": "prompt",
+        "template": "检测到您有任务需要完成。是否需要我帮您分析最适合的人机协作模式？",
+        "options": [
+          "是的，帮我分析",
+          "不用，我知道怎么做",
+          "先说说五象限是什么"
+        ]
+      },
+      "priority": 3,
+      "enabled": true
+    },
+    {
+      "id": "AA-002",
+      "name": "效能下降检测",
+      "description": "协作过程中检测到效能下降信号，主动诊断",
+      "trigger": {
+        "type": "duringCollaboration",
+        "condition": "detectEfficiencyDrop",
+        "signals": [
+          "用户表达不满",
+          "返工次数增加",
+          "协作时间过长",
+          "质量下降"
+        ]
+      },
+      "action": {
+        "type": "diagnose",
+        "template": "我感觉到我们的协作效能可能有所下降。是否需要我诊断一下当前协作模式，并提供优化建议？",
+        "diagnosis": {
+          "checkPoints": [
+            "当前象限匹配是否合适",
+            "人机分工是否清晰",
+            "协作流程是否顺畅",
+            "效能指标是否达标"
+          ]
+        }
+      },
+      "priority": 4,
+      "enabled": true
+    },
+    {
+      "id": "AA-003",
+      "name": "阶段转换提醒",
+      "description": "协作阶段转换时，主动询问是否需要调整协作深度",
+      "trigger": {
+        "type": "phaseTransition",
+        "condition": "phaseComplete",
+        "phases": ["规划", "执行", "验收", "沉淀"]
+      },
+      "action": {
+        "type": "prompt",
+        "template": "当前阶段已完成。是否需要调整协作深度进入下一阶段？",
+        "options": [
+          "保持当前模式",
+          "加深协作（更高象限）",
+          "简化协作（更低象限）",
+          "先评估一下效能"
+        ]
+      },
+      "priority": 2,
+      "enabled": true
+    },
+    {
+      "id": "AA-004",
+      "name": "任务完成评估邀请",
+      "description": "任务完成后，主动邀请效能评估",
+      "trigger": {
+        "type": "taskComplete",
+        "condition": "taskMarkedAsComplete"
+      },
+      "action": {
+        "type": "invite",
+        "template": "任务已完成！是否花 2 分钟做个效能评估？这有助于我们未来协作更高效。",
+        "assessment": {
+          "dimensions": [
+            "效率",
+            "质量",
+            "学习",
+            "创新",
+            "满意度"
+          ],
+          "estimatedTime": "2 分钟"
+        }
+      },
+      "priority": 2,
+      "enabled": true
+    },
+    {
+      "id": "AA-005",
+      "name": "经验沉淀邀请",
+      "description": "协作完成后，主动邀请经验沉淀",
+      "trigger": {
+        "type": "afterAssessment",
+        "condition": "assessmentComplete"
+      },
+      "action": {
+        "type": "invite",
+        "template": "这次协作有什么值得沉淀的经验吗？我可以帮您记录到知识库。",
+        "template": "experienceCard",
+        "estimatedTime": "3 分钟"
+      },
+      "priority": 2,
+      "enabled": true
+    },
+    {
+      "id": "AA-006",
+      "name": "第五象限象思维引擎",
+      "description": "检测到从 0→1 创新需求时，自动启动象思维引擎",
+      "trigger": {
+        "type": "innovationDetected",
+        "condition": "detectZeroToOneInnovation",
+        "signals": [
+          "从 0 到 1",
+          "全新",
+          "创造",
+          "共创",
+          "前所未有"
+        ]
+      },
+      "action": {
+        "type": "activate",
+        "skill": "象思维 Skill",
+        "mode": "fifthQuadrant",
+        "template": "检测到您需要从 0→1 的创新。我已启动象思维引擎，让我们一起：观象（感知场景）→ 取象（匹配模式）→ 运象（执行共创）→ 成象（沉淀经验）。",
+        "workflow": [
+          "观象：感知创新场景",
+          "取象：匹配第五象限",
+          "运象：执行共创流程",
+          "成象：沉淀共创经验"
+        ]
+      },
+      "priority": 5,
+      "enabled": true
+    },
+    {
+      "id": "AA-007",
+      "name": "多 Skill 协同建议",
+      "description": "检测到需要多 Skill 协同时，主动建议路由",
+      "trigger": {
+        "type": "multiSkillNeeded",
+        "condition": "detectMultiSkillRequirement",
+        "patterns": [
+          "学习 + 行动",
+          "协作 + 执行",
+          "创新 + 评估",
+          "决策 + 落地"
+        ]
+      },
+      "action": {
+        "type": "suggest",
+        "template": "这个任务可能需要多个 Skill 协同完成。我建议使用 [路由名称] 完整流程，包括：[Skill 列表]。是否继续？",
+        "routes": [
+          {
+            "name": "学习转化执行闭环",
+            "skills": ["知识学习", "人机协同五象限", "知行合一"],
+            "estimatedTime": "2-3 小时"
+          },
+          {
+            "name": "创新共创闭环",
+            "skills": ["象思维", "人机协同五象限", "五色光思维"],
+            "estimatedTime": "3-4 小时"
+          },
+          {
+            "name": "战略决策闭环",
+            "skills": ["人机协同五象限", "知行合一", "五色光思维"],
+            "estimatedTime": "2-3 小时"
+          }
+        ]
+      },
+      "priority": 3,
+      "enabled": true
+    },
+    {
+      "id": "AA-008",
+      "name": "协作模式学习引导",
+      "description": "检测到新用户或不熟悉五象限的用户，主动提供学习引导",
+      "trigger": {
+        "type": "newUserDetected",
+        "condition": "detectUnfamiliarity",
+        "signals": [
+          "第一次使用",
+          "什么是五象限",
+          "怎么用这个功能"
+        ]
+      },
+      "action": {
+        "type": "guide",
+        "template": "欢迎使用人机协同五象限！这是一个帮助您优化 AI 协作效能的工具。简单来说，它会根据您的任务类型，推荐最适合的人机协作模式。想了解更多信息吗？",
+        "options": [
+          "快速入门（5 分钟）",
+          "详细介绍（15 分钟）",
+          "直接使用（跳过介绍）"
+        ],
+        "resources": [
+          "references/theory.md",
+          "references/practice-guide.md",
+          "templates/io-templates.md"
+        ]
+      },
+      "priority": 4,
+      "enabled": true
+    }
+  ],
+  "suppressionRules": [
+    {
+      "id": "SR-001",
+      "name": "免打扰模式",
+      "description": "用户明确表达不需要建议时，暂停自动触发",
+      "condition": "userExplicitlyDeclines",
+      "duration": "currentSession",
+      "override": "userCanReenable"
+    },
+    {
+      "id": "SR-002",
+      "name": "高频触发抑制",
+      "description": "避免短时间内重复触发相同规则",
+      "condition": "sameRuleTriggeredRecently",
+      "cooldown": "10 分钟",
+      "scope": "perRule"
+    },
+    {
+      "id": "SR-003",
+      "name": "紧急任务抑制",
+      "description": "检测到任务紧急时，抑制非必要触发",
+      "condition": "taskUrgencyHigh",
+      "suppress": ["AA-004", "AA-005"],
+      "reason": "避免干扰紧急任务"
+    }
+  ],
+  "analytics": {
+    "enabled": true,
+    "trackEvents": [
+      "activationTriggered",
+      "activationAccepted",
+      "activationDeclined",
+      "ruleExecuted",
+      "ruleSuppressed"
+    ],
+    "metrics": [
+      "activationRate",
+      "acceptanceRate",
+      "userSatisfaction",
+      "efficiencyImprovement"
+    ],
+    "reportFrequency": "weekly"
+  },
+  "configuration": {
+    "defaultLanguage": "zh-CN",
+    "timezone": "Asia/Shanghai",
+    "logLevel": "info",
+    "maxActivationsPerSession": 5,
+    "cooldownBetweenActivations": "5 分钟"
+  }
+}

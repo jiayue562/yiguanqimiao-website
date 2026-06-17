@@ -1,0 +1,116 @@
+# 知识学习触发规则配置
+
+---
+
+## 🎯 触发词权重表
+
+### P0 直接触发（权重 5）
+
+```yaml
+direct_triggers:
+  weight: 5
+  keywords:
+    - 知识学习
+    - 深度学习这篇文章
+    - 帮我剖析
+    - 帮我透视
+    - 帮我解构
+    - 帮我阐释
+    - 帮我推演
+    - 帮我思辨
+    - 帮我溯源
+    - 帮我融合
+    - 帮我启发
+    - 十项认知指令
+    - 认知操作
+    - LLM Wiki
+    - 知识编译
+```
+
+---
+
+### P1 场景触发（权重 4）
+
+```yaml
+scenario_triggers:
+  weight: 4
+  keywords:
+    - 深入理解这篇文章
+    - 这篇文章的核心观点
+    - 帮我分析论证逻辑
+    - 跨文章关联
+    - 知识综合
+    - 构建理论框架
+    - 识别研究空白
+```
+
+---
+
+### P2 信号触发（权重 3）
+
+```yaml
+signal_triggers:
+  weight: 3
+  patterns:
+    - "用户提供文章.*帮我学习"
+    - "用户提供文档.*提取核心"
+    - "知道.*但想深入理解"
+```
+
+---
+
+## 🔗 协同路由
+
+```yaml
+skill_routes:
+  # 前置 Skill
+  prerequisites:
+    - skill: 象思维 Skill
+      condition: "需要先观象再深度学习"
+      action: "象思维→知识学习"
+  
+  # 协同 Skill
+  collaborators:
+    - skill: 五色光思维 Skill
+      condition: "需要多角度深度理解"
+      action: "五色光→知识学习"
+  
+  # 后置 Skill
+  followups:
+    - skill: 知行合一 Skill
+      condition: "学习成果需要落地"
+      action: "知识学习→知行合一"
+    
+    - skill: 人机协同五象限 Skill
+      condition: "学习成果需要执行"
+      action: "知识学习→五象限"
+```
+
+---
+
+## ⚙️ 自动触发规则
+
+```yaml
+auto_activate:
+  conditions:
+    - pattern: "帮我深入.*这篇文章"
+      action: "直接激活"
+    
+    - pattern: ".*的核心观点.*是什么"
+      action: "直接激活"
+  
+  require_confirm:
+    - pattern: ".*学习.*"
+      reason: "确认学习深度和目标"
+  
+  exclude:
+    - pattern: ".*简单.*看看"
+      reason: "浅层阅读不适合知识学习"
+    
+    - pattern: ".*快速.*浏览"
+      reason: "快速浏览不需要深度学习"
+```
+
+---
+
+_龙心 OS 知识学习触发配置 v1.0 · 2026-04-15_

@@ -1,0 +1,424 @@
+# 知识库验证系统配置文件
+# 版本: v1.0
+# 最后更新: 2026-03-16
+
+# ========== 基本配置 ==========
+knowledge_base:
+  # 知识库根路径
+  path: "C:/Users/jia'yue/Desktop/以观其妙书院知识库/观其妙书院/"
+  
+  # 要跳过的目录模式
+  skip_patterns:
+    - node_modules
+    - .git
+    - .obsidian
+    - 备份
+    - templates
+  
+  # 要包含的文件扩展名
+  include_extensions:
+    - .md
+    - .yaml
+    - .yml
+    - .json
+
+# ========== 验证配置 ==========
+validation:
+  # 文档验证配置
+  document:
+    # 必选章节
+    required_sections:
+      - 文档标题
+      - 核心定义
+      - 详细内容
+      - 标签系统
+    
+    # 建议章节
+    recommended_sections:
+      - 关联文件
+      - 核心金句
+      - 参考资源
+      - 实践案例
+    
+    # 内容质量要求
+    content_quality:
+      minimum_words: 500
+      recommended_words: 1000
+      excellent_words: 2000
+      
+    # 验证规则权重
+    weights:
+      structure: 0.4
+      content: 0.3
+      links: 0.2
+      formatting: 0.1
+
+  # 链接验证配置
+  links:
+    # 链接密度标准
+    density_standards:
+      excellent: 10.0
+      good: 5.0
+      fair: 3.0
+      poor: 1.0
+    
+    # 网络质量标准
+    network_standards:
+      connectivity:
+        excellent: 0.1
+        good: 0.3
+        fair: 0.5
+      clustering_coefficient:
+        excellent: 0.5
+        good: 0.3
+        fair: 0.2
+    
+    # 问题阈值
+    problem_thresholds:
+      dead_links_warning: 5
+      orphan_docs_warning: 3
+      circular_refs_warning: 2
+
+  # 学习路径验证配置
+  learning_paths:
+    # 路径发现模式
+    discovery_patterns:
+      - "*学习路径*"
+      - "*学习指南*"
+      - "*学习路线*"
+      - "*学习计划*"
+    
+    # 可行性评分标准
+    feasibility_standards:
+      excellent: 90
+      good: 80
+      fair: 70
+      poor: 60
+    
+    # 阶段要求
+    stage_requirements:
+      minimum_stages: 3
+      recommended_stages: 5
+      
+      # 每个阶段的要求
+      per_stage:
+        title: required
+        topics: required
+        resources: recommended
+        activities: recommended
+        duration: optional
+    
+    # 时长合理性检查
+    duration_check:
+      minimum_total_hours: 20
+      maximum_total_hours: 200
+      stage_hours_imbalance_warning: 3.0
+
+# ========== 报告配置 ==========
+reporting:
+  # 报告输出
+  output:
+    directory: "./验证报告"
+    format: "markdown"  # markdown, html, json, all
+    
+    # 文件命名
+    filename_pattern: "知识库验证报告_%Y%m%d_%H%M%S"
+    
+    # 保存原始数据
+    save_raw_data: true
+    raw_data_format: "json"
+  
+  # 报告内容
+  content:
+    # 包含的部分
+    sections:
+      - executive_summary
+      - document_quality
+      - link_network
+      - learning_paths
+      - overall_score
+      - recommendations
+      - detailed_data
+    
+    # 详细程度
+    detail_level: "detailed"  # summary, detailed, full
+    
+    # 图表生成
+    generate_charts: true
+    chart_formats: ["mermaid", "markdown_table"]
+
+# ========== 系统配置 ==========
+system:
+  # 性能设置
+  performance:
+    max_workers: 4
+    chunk_size: 100
+    memory_limit_mb: 1024
+    
+  # 日志设置
+  logging:
+    level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+    file: "./logs/validation.log"
+    max_size_mb: 10
+    backup_count: 5
+    
+  # 缓存设置
+  cache:
+    enabled: true
+    directory: "./cache"
+    ttl_hours: 24
+    
+  # 错误处理
+  error_handling:
+    continue_on_error: true
+    max_errors: 100
+    error_log: "./logs/errors.log"
+
+# ========== 自动化配置 ==========
+automation:
+  # 定期验证
+  scheduled_validation:
+    enabled: true
+    
+    # 执行频率
+    frequency: "daily"  # daily, weekly, monthly
+    
+    # 执行时间
+    schedule:
+      daily: "02:00"
+      weekly:
+        day: "Monday"
+        time: "02:00"
+      monthly:
+        day: 1
+        time: "02:00"
+    
+    # 通知设置
+    notifications:
+      enabled: true
+      on_success: false
+      on_failure: true
+      on_warning: true
+      
+      # 通知方式
+      methods:
+        - email
+        - webhook
+        
+      # 收件人
+      recipients:
+        - admin@example.com
+    
+  # 自动修复
+  auto_fix:
+    enabled: false
+    
+    # 修复操作
+    operations:
+      # 死链处理
+      dead_links:
+        action: "warn"  # warn, remove, replace
+        
+        # 替换规则
+        replacement_rules:
+          - pattern: "旧文档名"
+            replacement: "新文档名"
+      
+      # 孤立文档处理
+      orphan_documents:
+        action: "suggest"  # suggest, merge, tag
+        
+        # 建议规则
+        suggestion_rules:
+          - min_in_links: 0
+            max_in_links: 2
+            action: "suggest_links"
+          - min_in_links: 3
+            max_in_links: 10
+            action: "keep"
+
+# ========== 扩展配置 ==========
+extensions:
+  # 插件配置
+  plugins:
+    # 启用插件
+    enabled:
+      - structure_validator
+      - content_validator
+      - link_validator
+      - path_validator
+      - report_generator
+    
+    # 插件路径
+    plugin_path: "./plugins"
+    
+  # API配置
+  api:
+    enabled: false
+    host: "localhost"
+    port: 8000
+    auth_required: true
+    
+  # 集成配置
+  integrations:
+    # Obsidian集成
+    obsidian:
+      enabled: true
+      vault_path: "C:/Users/jia'yue/Desktop/以观其妙书院知识库/观其妙书院/"
+      
+      # 验证后操作
+      post_validation:
+        create_graph_view: true
+        update_graph: true
+        create_backlinks: true
+    
+    # WorkBuddy集成
+    workbuddy:
+      enabled: true
+      api_key: ""
+      project_id: ""
+      
+      # 同步设置
+      sync:
+        documents: true
+        links: true
+        reports: true
+
+# ========== 阈值配置 ==========
+thresholds:
+  # 质量阈值
+  quality:
+    excellent: 90
+    good: 80
+    fair: 70
+    poor: 60
+    
+  # 问题阈值
+  problems:
+    critical:
+      dead_links: 10
+      orphan_documents: 5
+      circular_references: 3
+      structure_issues: 20
+    
+    warning:
+      dead_links: 5
+      orphan_documents: 3
+      circular_references: 2
+      structure_issues: 10
+    
+  # 性能阈值
+  performance:
+    max_validation_time_seconds: 300
+    max_memory_usage_percent: 80
+    max_cpu_usage_percent: 90
+
+# ========== 自定义规则 ==========
+custom_rules:
+  # 文档规则
+  documents:
+    # 标题规则
+    title:
+      min_length: 5
+      max_length: 100
+      required_chars: []
+      forbidden_chars: ["@", "#", "$", "%"]
+    
+    # 内容规则
+    content:
+      min_sections: 3
+      max_sections: 20
+      required_keywords: []
+      forbidden_keywords: []
+    
+    # 格式规则
+    formatting:
+      max_line_length: 100
+      min_paragraphs: 2
+      code_block_style: "fenced"  # fenced, indented
+      
+  # 链接规则
+  links:
+    # 链接格式
+    formats:
+      internal: "[[文档名]]"
+      external: "[标题](URL)"
+      
+    # 链接强度
+    strength:
+      required: ["核心概念", "关键方法", "主要案例"]
+      recommended: ["背景知识", "扩展阅读", "相关领域"]
+      optional: ["趣味阅读", "深度探索", "历史背景"]
+    
+    # 链接密度
+    density:
+      min_per_document: 3
+      max_per_document: 50
+      recommended_per_document: 10
+
+# ========== 通知配置 ==========
+notifications:
+  # 邮件通知
+  email:
+    enabled: false
+    smtp_server: "smtp.example.com"
+    smtp_port: 587
+    username: ""
+    password: ""
+    from_address: "validator@example.com"
+    use_tls: true
+    
+  # Webhook通知
+  webhook:
+    enabled: false
+    urls:
+      - "https://example.com/webhook/validation"
+    headers:
+      Content-Type: "application/json"
+      Authorization: "Bearer YOUR_TOKEN"
+    
+  # 控制台通知
+  console:
+    enabled: true
+    show_progress: true
+    show_summary: true
+    show_details: false
+
+# ========== 备份配置 ==========
+backup:
+  # 启用备份
+  enabled: true
+  
+  # 备份位置
+  location: "./backups"
+  
+  # 备份频率
+  frequency: "weekly"  # daily, weekly, monthly
+  
+  # 保留策略
+  retention:
+    daily_backups: 7
+    weekly_backups: 4
+    monthly_backups: 12
+    
+  # 备份内容
+  content:
+    config: true
+    reports: true
+    logs: true
+    cache: false
+
+# ========== 示例配置结束 ==========
+
+# 使用说明:
+# 1. 将知识库路径修改为实际路径
+# 2. 根据需求调整验证配置
+# 3. 启用或禁用特定功能
+# 4. 保存配置文件
+# 5. 运行验证工具: python main_validator.py --config config.yaml
+
+# 注意事项:
+# - 使用绝对路径避免问题
+# - 定期备份配置文件
+# - 修改配置后重新启动验证工具
+# - 查看日志文件了解运行情况
