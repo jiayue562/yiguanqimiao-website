@@ -1,0 +1,14 @@
+# Obsidian
+.obsidian/workspace
+.obsidian/cache
+.obsidian/plugins/
+.trash/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temp
+_backups/
+*.tmp
+*.log
