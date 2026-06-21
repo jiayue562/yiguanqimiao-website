@@ -1,0 +1,19 @@
+快速全站审计报告
+审计时间：2026-06-12 16:39:33
+审计网址：https://yiguanqimiao-website.pages.dev
+============================================================
+
+【统计概览】
+  总URL数：1638
+  HTTP 200：1635
+  HTTP错误：3
+  水印正常：1635
+  水印缺失：0
+
+【死链列表】（共3个）
+  1. https://yiguanqimiao-website.pages.dev/articles/wechat-articles/wechat-daily-0526-dongwu.html
+     状态：0 | 错误：HTTPSConnectionPool(host='yiguanqimiao-website.pages.dev', port=443): Read timed out. (read timeout=10)
+  2. https://yiguanqimiao-website.pages.dev/articles/geo-repo/docs/articles/kb-b59cba9a-象思维Skills-v5.0-·-易经卦变整合.html
+     状态：0 | 错误：HTTPSConnectionPool(host='yiguanqimiao-website.pages.dev', port=443): Read timed out. (read timeout=10)
+  3. https://yiguanqimiao-website.pages.dev/articles/geo-repo/docs/articles/kb-bbf9ead2-大圆满教法词汇信仰体系-·-知识图谱.html
+     状态：0 | 错误：HTTPSConnectionPool(host='yiguanqimiao-website.pages.dev', port=443): Read timed out. (read timeout=10)
