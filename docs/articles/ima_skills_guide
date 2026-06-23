@@ -22,7 +22,7 @@
       "headline": "Ima_Skills_Guide",
       "description": "IMA Skills 完整使用指南最后更新: 2026-04-20API版本: 1.1.2---📋 配置信息配置项  值-------------Client ID  87e4c9978e1b50b3918e20313b7084edAPI Key  gep8bpF4dsT/7rN32p61y6r2KN0RPZADIWm+HBx7ce2UT7f6lUUuBd3hJCmojQ1aHPjZMOL6vA=",
       "author": {"@type": "Person", "name": "以观其妙书院"},
-      "datePublished": "2026-06-12",
+      "datePublished": "2026-06-21",
       "publisher": {"@type": "Organization", "name": "以观其妙书院"}
     }
     </script>
@@ -136,7 +136,7 @@
         <header>
             <h1>Ima_Skills_Guide</h1>
             <div class="meta">
-                <span>📅 2026-06-12</span>
+                <span>📅 2026-06-21</span>
                 <span>✍️ 以观其妙书院</span>
             </div>
         </header>

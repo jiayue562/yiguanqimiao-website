@@ -22,7 +22,7 @@
       "headline": "店长智能体1+N构建方案V2.0",
       "description": "店长智能体 1+N 构建方案版本: v2.0  日期: 2026-05-20  设计人: 龙龟神将前置依赖: 岗位智能体1+N架构(v4.0) + 味藏店长龙爪(v1.0) + 店长岗位职责Excel + 人机协同五象限(v3.1)---一、核心设计哲学1.1 一句话定位店长智能体 = 店长 x AI，不是"AI帮店长"，是"店长+AI=超级店长"。1.2 人机分工原则"不要问'AI能做什么'，而",
       "author": {"@type": "Person", "name": "以观其妙书院"},
-      "datePublished": "2026-06-12",
+      "datePublished": "2026-06-21",
       "publisher": {"@type": "Organization", "name": "以观其妙书院"}
     }
     </script>
@@ -136,7 +136,7 @@
         <header>
             <h1>店长智能体1+N构建方案V2.0</h1>
             <div class="meta">
-                <span>📅 2026-06-12</span>
+                <span>📅 2026-06-21</span>
                 <span>✍️ 以观其妙书院</span>
             </div>
         </header>

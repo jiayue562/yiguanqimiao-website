@@ -1,15 +1,58 @@
 # Cloudflare Pages Headers
-# 为Clean URL文件（无扩展名）设置正确的Content-Type
-# 窄路径规则，避免影响路由
+# 生成时间: 2026-06-23 17:38
+# Clean URL文件（无扩展名）→ Content-Type: text/html
+# 规则：精确目录路径，避免路由异常
 
-/articles/obsidian/*
+/articles/00-系统配置/*
   Content-Type: text/html
 
-/articles/wechat-articles/*
+/articles/01-知识库/*
+  Content-Type: text/html
+
+/articles/01-系统配置/*
+  Content-Type: text/html
+
+/articles/02-专业领域知识库矩阵/*
+  Content-Type: text/html
+
+/articles/02-工作流/*
+  Content-Type: text/html
+
+/articles/02-知识库/*
+  Content-Type: text/html
+
+/articles/03-个人成长/*
+  Content-Type: text/html
+
+/articles/03-知识地基层/*
+  Content-Type: text/html
+
+/articles/04-实践案例库/*
+  Content-Type: text/html
+
+/articles/05-个人成长与修行/*
+  Content-Type: text/html
+
+/articles/_temp_ima2/*
+  Content-Type: text/html
+
+/articles/ai_os_v6/*
+  Content-Type: text/html
+
+/articles/articles_01-OS-4b6624df/*
   Content-Type: text/html
 
 /articles/geo-repo/*
   Content-Type: text/html
 
-/articles/geo-repo/docs/articles/*
+/articles/obsidian/*
+  Content-Type: text/html
+
+/articles/temp/*
+  Content-Type: text/html
+
+/articles/wechat-articles/*
+  Content-Type: text/html
+
+/articles/wuxing-geo-anchor/anchor-site/articles/*
   Content-Type: text/html
