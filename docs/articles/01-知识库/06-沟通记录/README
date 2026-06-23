@@ -22,7 +22,7 @@
       "headline": "Readme",
       "description": "06-沟通记录本目录用于存储悟空与龙龟神将的日常沟通记录归档。归档规范- 文件格式：沟通记录_YYYY-MM-DD.md- 内容结构：- 日期时间- 对话主题摘要- 核心内容（按主题分段）- 关键决策/结论- 待办事项（如有）- 归档频率：每日 23:30 自动归档历史记录日期  文件名  主要内容------------------------2026-04-15  沟通记录_2026-04-1",
       "author": {"@type": "Person", "name": "以观其妙书院"},
-      "datePublished": "2026-06-12",
+      "datePublished": "2026-06-21",
       "publisher": {"@type": "Organization", "name": "以观其妙书院"}
     }
     </script>
@@ -136,7 +136,7 @@
         <header>
             <h1>Readme</h1>
             <div class="meta">
-                <span>📅 2026-06-12</span>
+                <span>📅 2026-06-21</span>
                 <span>✍️ 以观其妙书院</span>
             </div>
         </header>
