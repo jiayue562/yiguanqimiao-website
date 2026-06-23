@@ -273,12 +273,12 @@ def step4_create_headers():
     with open(DOCS_DIR / '_headers', 'w', encoding='utf-8') as f:
         f.write('\n'.join(headers_lines))
     
-    log(f"✅ _headers 已更新: {len(article_subdirs)} 条规则")
-    if article_subdirs:
-        for d in article_subdirs[:5]:
+    log(f"✅ _headers 已更新: {len(article_dirs)} 条规则")
+    if article_dirs:
+        for d in article_dirs[:5]:
             log(f"   ├─ /{d}/*")
-        if len(article_subdirs) > 5:
-            log(f"   └─ ... 共 {len(article_subdirs)} 条")
+        if len(article_dirs) > 5:
+            log(f"   └─ ... 共 {len(article_dirs)} 条")
     return True
 
 # ============================================================
@@ -473,7 +473,7 @@ def step7_verify():
   ① 同步 articles/ → docs/     ✅
   ② 中文名 → ASCII重命名       ✅
   ③ 无扩展名副本创建           ✅
-  ④ _headers精确路径规则       ✅/{len([d for d in content_dirs if d.startswith('articles/')])}条
+  ④ _headers精确路径规则       ✅/{len([d for d in headers_content_dirs if d.startswith('articles/')])}条
   ⑤ 索引页面重建               ✅
   ⑥ Git + Cloudflare部署       ✅
 
