@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 执行层路由规则 - 以观其妙书院</title>
+    <meta name="description" content="执行层路由规则 v1.0定位：L4执行层核心——定义任务如何自动路由到正确的智能体，以及AI原生组织工作流的三分类标注(AI/人/⇄)在味藏场景中的具体映射。与AI原生组织工作流Skill的关系：本文件是组织级路由规则，AI原生组织工作流Skill是本能的执行工具。两者互补。---一、任务→智能体路由表按场景自动路由场景触发词  目标智能体  P值  五象限  标注模式--------------">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="04 执行层路由规则">
+    <meta property="og:description" content="执行层路由规则 v1.0定位：L4执行层核心——定义任务如何自动路由到正确的智能体，以及AI原生组织工作流的三分类标注(AI/人/⇄)在味藏场景中的具体映射。与AI原生组织工作流Skill的关系：本文件是组织级路由规则，AI原生组织工作流Skill是本能的执行工具。两者互补。---一、任务→智能体路由表按场景自动路由场景触发词  目标智能体  P值  五象限  标注模式--------------">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/04-执行层路由规则.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/04-执行层路由规则.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "04 执行层路由规则",
+      "description": "执行层路由规则 v1.0定位：L4执行层核心——定义任务如何自动路由到正确的智能体，以及AI原生组织工作流的三分类标注(AI/人/⇄)在味藏场景中的具体映射。与AI原生组织工作流Skill的关系：本文件是组织级路由规则，AI原生组织工作流Skill是本能的执行工具。两者互补。---一、任务→智能体路由表按场景自动路由场景触发词  目标智能体  P值  五象限  标注模式--------------",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-06-24",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>04 执行层路由规则</h1>
+            <div class="meta">
+                <span>📅 2026-06-24</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            04 执行层路由规则...
+        </div>
+        
+        <article>
+<h1>执行层路由规则 v1.0</h1>
+
+<blockquote><strong>定位</strong>：L4执行层核心——定义任务如何自动路由到正确的智能体，以及AI原生组织工作流的三分类标注([AI]/[人]/[⇄])在味藏场景中的具体映射。</blockquote>
+<blockquote><strong>与AI原生组织工作流Skill的关系</strong>：本文件是组织级路由规则，AI原生组织工作流Skill是本能的执行工具。两者互补。</blockquote>
+
+<hr>
+
+<h2>一、任务→智能体路由表</h2>
+
+<h3>按场景自动路由</h3>
+
+<p>| 场景触发词 | 目标智能体 | P值 | 五象限 | 标注模式 |
+|-----------|-----------|-----|--------|---------|
+| "昨天营业额多少""今日数据" | P-01 日反馈智能体 | 94 | Q1·效率协作者 | 🟢[AI]全部 |
+| "排班""考勤""请假" | HR-MGR 人事经理 | 95 | Q1→🟡确认 | 🟢[AI]出方案→🔴[人]确认 |
+| "采购""下单""供应商" | PUR-MGR 采购经理 | 95 | Q1→🟡确认 | 🟢[AI]出清单→🔴[人]确认 |
+| "菜单""菜品""上新" | KC-LFY/KC-WZH 料理长 | 90 | Q3·思辨 | 🟢[AI]方案→🟡[⇄]试菜→🔴[人]决定 |
+| "促销""活动""引流" | MKT-MGR 市场经理 | 95 | Q2→Q3 | 🟢[AI]方案→🔴[人]创意判断 |
+| "培训""新人""考核" | TR-SUP 培训主管 | 95 | Q2·知识拓展 | 🟢[AI]内容→🔴[人]审核 |
+| "财务""成本""利润" | FIN-MGR 财务经理 | 95 | Q2·知识拓展 | 🟢[AI]分析→🔴[人]判断 |
+| "招聘""面试""录用" | HRD 人力资源总监 | 95 | Q3→Q4 | 🟢[AI]筛选→🔴[人]面试→🔴[人]决定 |
+| "绩效""KPI""评分" | PERF-MGR 绩效考核 | 95 | Q1→🟡确认 | 🟢[AI]数据准备→🔴[人]面谈 |
+| "投诉""差评""客诉" | SM-JYT/SM-SS/SM-SSH 店长 | 90 | B级→D级 | 🟢[AI]分析→🔴[人]处理 |
+| "设备""维修""故障" | SM-CHIEF 店长总控 | 92 | Q1·效率 | 🟢[AI]下单→🔴[人]确认紧急度 |
+| "战略""明年""方向" | GM-CHIEF 总经理 | 97 | Q3·思辨 | 🟡[⇄]悟空方向→🟢[AI]拆解 |
+| "品牌""价值观""文化" | CHMN-BRAIN 董事长 | 98 | Q4·协同 | 🔴[人]输出→🟢[AI]整理 |
+| "跨店""协调""Gate" | 超级店长 | 96 | Gate编排 | 🟢[AI]分析→🟡[⇄]Gate→路由 |</p>
+
+<h3>按五象限自动路由</h3>
+
+<p>| 五象限 | 味藏典型任务 | 主要智能体 | 路由策略 |
+|--------|------------|-----------|---------|
+| <strong>Q1·效率协作者</strong> | 日报/数据查询/库存预警/排班检测 | P-01/PUR-MGR/HR-MGR | 直达，无需确认 |
+| <strong>Q2·知识拓展者</strong> | 竞品分析/行业趋势/财务分析/培训内容 | FIN-MGR/MKT-MGR/TR-SUP | AI输出→人审阅 |
+| <strong>Q3·思辨对话者</strong> | 菜单创新/问题诊断/促销策略/绩效方案 | GM-CHIEF/KC/PERF-MGR | 人给方向→AI发散→人筛选 |
+| <strong>Q4·协同探索者</strong> | 文化传承/经验沉淀/品牌叙事/人才战略 | CHMN-BRAIN/HRD | 人输出隐性知识→AI结构化 |
+| <strong>Q5·未知共创者</strong> | 新业态探索/颠覆性创新 | 悟空+龙龟（象思维） | 共同探索→直觉判断 |</p>
+
+<hr>
+
+<h2>二、三分类标注自动化规则</h2>
+
+<h3>🟢 [AI] 自动标注的条件</h3>
+
+<p>以下任务类型<strong>无需人工确认</strong>，直接标记为🟢[AI]，执行后汇报结果：</p>
+
+<p>| 条件 | 示例 |
+|------|------|
+| 数据查询（纯检索，无判断） | "昨天营收多少""本月毛利率" |
+| 标准化报告生成 | "生成上周经营周报" |
+| 库存/考勤异常检测 | "检查库存预警""生成考勤异常报告" |
+| 信息整理/对比 | "对比三家门店上周营收" |
+| 文档格式转换 | "把这份数据转成表格" |
+| 跨库知识检索 | "搜索相关知识并整理" |</p>
+
+<h3>🔴 [人] 强制标注的条件</h3>
+
+<p>以下任务类型<strong>AI绝对不能单独执行</strong>，必须标记为🔴[人]并等待：</p>
+
+<p>| 条件 | 示例 |
+|------|------|
+| 涉及金额>5,000元的支出决策 | "采购5,000元以上的物料" |
+| 涉及人员去留/晋升的决策 | "录取/辞退/晋升某人" |
+| 涉及品牌对外表态 | "发布公众号/社交媒体内容" |
+| 涉及食品安全判断 | "判断食材是否可继续使用" |
+| 涉及法律合规判断 | "判断某操作是否合法" |
+| 涉及文化/价值观判断 | "这样做符合味藏文化吗" |
+| 新领域/无先例的探索 | "从来没有做过的事" |</p>
+
+<h3>🟡 [⇄] 串联瓶颈标注的条件</h3>
+
+<p>以下任务类型<strong>AI可以先做，但中间必须等人确认</strong>：</p>
+
+<p>| 条件 | 示例 |
+|------|------|
+| 方案类产出 | AI出方案→人选择→AI细化 |
+| 内容创作类 | AI出草稿→人审核→AI修改→人确认 |
+| 数据分析+建议类 | AI出分析→人判断→AI深化 |
+| 排班/调度类 | AI出方案→人调整→人确认 |
+| 采购建议类 | AI出清单→人确认→AI下单 |
+| 复杂问题诊断 | AI出分析→人给方向→AI深入 |</p>
+
+<hr>
+
+<h2>三、工作流模板库</h2>
+
+<h3>模板W1：日报生成（Q1·效率协作者·全自动）</h3>
+
+<pre><code>🟢[AI] P-01日反馈智能体采集昨日数据
+🟢[AI] 生成日报（营收/客流/客单/TOP菜品/异常标记）
+🟢[AI] 异常检测（同比/环比偏离>15%自动标记）
+🟢[AI] 推送至对应店长工作群
+🔴[人] 店长晨会参考数据
+
+<p>标注模式：🟢🟢🟢🟢 → 🔴（后置阅读）
+瓶颈率：0%（无人-AI等待点）
+</code></pre></p>
+
+<h3>模板W2：排班调整（Q1→Q3·半自动）</h3>
+
+<pre><code>🟢[AI] HR-MGR根据客流预测生成排班草案
+🟡[⇄] 推送店长确认/调整（2小时内）
+🔴[人] 店长审核、处理特殊情况
+🟢[AI] 冲突检测 → 如有冲突重新建议
+🟢[AI] 确认后排班发布
+
+<p>标注模式：🟢 → 🟡[⇄] → 🔴 → 🟢 → 🟢
+瓶颈率：20%（只在店长确认时等待）
+</code></pre></p>
+
+<h3>模板W3：菜单创新（Q3·思辨对话者·深度协作）</h3>
+
+<pre><code>🟡[⇄] 悟空/店长给出创新方向（降本/差异化/时令）
+🟢[AI] KC料理长分析现有菜单数据（销量/毛利/趋势）
+🟢[AI] PUR-MGR提供食材供应信息（时令/成本/稳定性）
+🟢[AI] MKT-MGR提供竞品菜单分析
+🟢[AI] 生成3-5个候选方案（含成本/毛利/供应链可行性）
+🟡[⇄] 推送决策层讨论
+🔴[人] 试菜 → 文化判断 → 最终选择
+🟢[AI] KC生成标准SOP → TR-SUP生成培训内容
+
+<p>标注模式：🟡 → 🟢🟢🟢🟢 → 🟡[⇄] → 🔴 → 🟢
+瓶颈率：22%（方向确认+最终选择两个握手点）
+</code></pre></p>
+
+<h3>模板W4：客户投诉处理（B级→D级·分层响应）</h3>
+
+<pre><code>🟢[AI] P-01检测投诉（评分≤2星自动标记）
+🟢[AI] 分析投诉类型 + 客户历史 + 建议赔偿方案
+🟡[⇄] 推送对应店长（一般投诉：4h内/紧急投诉：15min内）
+🔴[人] 店长判断严重性 + 决定处理方式
+
+<p>若严重（评分1星/社交媒体曝光）：
+  🟢[AI] 升级至GM-CHIEF + CHMN-BRAIN
+  🔴[人] 决策层紧急判断
+  🟢[AI] 生成对外沟通话术
+  🔴[人] 悟空最终审定</p>
+
+<p>标注模式（一般）：🟢 → 🟢 → 🟡[⇄] → 🔴
+标注模式（严重）：🟢 → 🟢 → 🟡[⇄] → 🔴 → 🟢 → 🟡[⇄] → 🟢 → 🔴
+瓶颈率（一般）：25% | 瓶颈率（严重）：43%
+</code></pre></p>
+
+<h3>模板W5：月度绩效考核（B级·人主持AI辅助）</h3>
+
+<pre><code>🟢[AI] PERF-MGR准备考核数据（完成率/满意度/出勤/7S评分）
+🟢[AI] FIN-MGR补充财务维度数据
+🟢[AI] HRD生成综合评分 + 个人发展建议
+🟡[⇄] 推送各店长审阅（3天内）
+🔴[人] 店长逐一面谈（30分钟/人）
+🔴[人] 店长确认最终评分 + 下月目标
+🟢[AI] PERF-MGR归档 + 更新Trust Score
+
+<p>标注模式：🟢🟢🟢 → 🟡[⇄] (3天) → 🔴🔴 → 🟢
+瓶颈率：20%（面谈是人必须做的，不可压缩）
+</code></pre></p>
+
+<hr>
+
+<h2>四、路由优先级与冲突处理</h2>
+
+<h3>优先级排序</h3>
+
+<pre><code>P=99 味藏总智能体 > P=98 董事长 > P=97 总经理 > P=96 超级店长Gate 
+<blockquote>P=95 赋能层 > P=94 日反馈 > P=92 SM-CHIEF > P=90 执行层</blockquote>
+</code></pre>
+
+<h3>冲突处理规则</h3>
+
+<p>| 冲突类型 | 处理规则 |
+|---------|---------|
+| 两个智能体同时响应同一任务 | Gate介入，按职责边界仲裁 |
+| 紧急任务中断常规任务 | P=94日反馈发出中断信号→当前智能体保存状态→响应紧急任务 |
+| 任务路由到Trust Score<50的智能体 | 自动降级路由到备选智能体或升级一级 |
+| 人直接下达的指令vs AI自动路由 | 人直接下达的指令优先（方向盘在人手中） |</p>
+
+<h3>路由失败处理</h3>
+
+<pre><code>任务路由失败
+  ├─ 智能体离线 → 标记+通知维护 + 备选智能体接管
+  ├─ 职责边界模糊 → Gate仲裁 + 临时分配 + 事后补充规则
+  ├─ 首次出现的新任务类型 → 默认路由到超级店长Gate + 事后注册
+  └─ 所有智能体都不匹配 → 升级至GM-CHIEF(总经理) + 建立新路由规则
+</code></pre>
+
+<hr>
+
+<h2>五、AI原生组织工作流Skill整合</h2>
+
+<h3>整合协议</h3>
+
+<p>本路由规则与 <code>AI原生组织工作流Skill</code> 的关系：</p>
+
+<p>| 维度 | 本路由规则 | AI原生组织工作流Skill |
+|------|----------|---------------------|
+| <strong>层级</strong> | 组织级（味藏专属） | 个人协作级（悟空×龙龟通用） |
+| <strong>范围</strong> | 味藏26智能体间的任务路由 | 悟空与龙龟所有协作任务 |
+| <strong>输出</strong> | 具体智能体名称 + 路由路径 | [AI]/[人]/[⇄] 标注 |
+| <strong>触发</strong> | 味藏场景关键词 | 任何悟空下达的任务 |</p>
+
+<h3>双引擎协作</h3>
+
+<pre><code>悟空下达任务
+    │
+    ├─ 若是味藏场景 → 本路由规则 → 指定智能体 → AI原生组织工作流标注
+    │
+    └─ 若是其他场景 → AI原生组织工作流Skill → 通用三分类标注
+</code></pre>
+
+<hr>
+
+<h2>六、每日执行节奏</h2>
+
+<pre><code>07:00  P-01触发日报生成 → 店长群推送（全自动 🟢）
+09:00  P-01异常标记汇总 → 推送店长（🟡 需要人确认异常）
+10:00  PUR-MGR库存预警 → 生成采购清单（🟡 等待人确认）
+11:30  午市前检查（KC-LFY厨房备货 → 🟢 自动检查）
+14:00  午市数据汇总（P-01 → 🟢 自动）
+17:00  晚市前检查（同午市）
+21:00  全日数据汇总（P-01 → 🟢 自动）
+23:30  组织心跳写入（自动化 → 🟢）
+</code></pre>
+
+<hr>
+
+<strong>关联文件</strong>：
+<li><code>00-组织宪法.md</code> — 五层架构总纲</li>
+<li><code>01-决策协议矩阵.md</code> — 决策等级S/A/B/C/D</li>
+<li><code>02-人机握手协议.md</code> — 交接点标准</li>
+<li><code>C:\Users\jia'yue\.workbuddy\skills\AI原生组织工作流\SKILL.md</code> — 三分类标注执行工具</li>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,9 +1,16 @@
 #!/usr/bin/env python
 """生成docs/下所有目录的索引页面，使用Clean URL（无.html后缀）"""
 import os
+import sys
 import html
 from pathlib import Path
 from datetime import datetime
+
+# 修复Windows GBK编码下emoji导致的UnicodeEncodeError
+if sys.stdout.encoding != 'utf-8':
+    sys.stdout.reconfigure(encoding='utf-8')
+if sys.stderr.encoding != 'utf-8':
+    sys.stderr.reconfigure(encoding='utf-8')
 
 DOCS_DIR = Path("C:/Users/jia'yue/WorkBuddy/yiguanqimiao-website/docs")
 SITE_URL = "https://yiguanqimiao-website.pages.dev"

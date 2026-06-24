@@ -296,15 +296,18 @@ def step5_generate_indexes():
     result = subprocess.run(
         [sys.executable, str(script_path)],
         cwd=str(BASE_DIR),
-        capture_output=True, text=True, timeout=120
+        capture_output=True, text=True, timeout=120,
+        env={**os.environ, "PYTHONIOENCODING": "utf-8"}
     )
     
     if result.returncode == 0:
-        for line in result.stdout.strip().split('\n'):
-            log(line)
+        output = (result.stdout or '') + (result.stderr or '')
+        for line in output.strip().split('\n'):
+            if line.strip():
+                log(line)
         log("✅ 索引页面已重新生成")
     else:
-        log(f"❌ 索引生成失败: {result.stderr[:500]}", "ERROR")
+        log(f"❌ 索引生成失败: {(result.stderr or result.stdout or '')[:500]}", "ERROR")
         return False
     
     return True
@@ -367,7 +370,8 @@ def step6_deploy():
         )
         
         if result.returncode == 0:
-            for line in result.stdout.strip().split('\n'):
+            output = (result.stdout or '') + (result.stderr or '')
+            for line in output.strip().split('\n'):
                 if 'Deployment complete' in line or 'Uploaded' in line:
                     log(f"  {line.strip()}")
             log("✅ Cloudflare Pages 部署成功")
