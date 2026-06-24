@@ -1,9 +1,45 @@
 # Cloudflare Pages Headers
-# 生成时间: 2026-06-24 12:14
+# 生成时间: 2026-06-24 17:36
 # Clean URL文件（无扩展名）→ Content-Type: text/html
 # 规则：精确目录路径，避免路由异常
 
+/articles/00-系统配置/*
+  Content-Type: text/html
+
+/articles/01-知识库/*
+  Content-Type: text/html
+
+/articles/01-系统配置/*
+  Content-Type: text/html
+
+/articles/02-专业领域知识库矩阵/*
+  Content-Type: text/html
+
+/articles/02-工作流/*
+  Content-Type: text/html
+
+/articles/02-知识库/*
+  Content-Type: text/html
+
+/articles/03-个人成长/*
+  Content-Type: text/html
+
+/articles/03-知识地基层/*
+  Content-Type: text/html
+
+/articles/04-实践案例库/*
+  Content-Type: text/html
+
+/articles/05-个人成长与修行/*
+  Content-Type: text/html
+
 /articles/_temp_ima2/*
+  Content-Type: text/html
+
+/articles/ai_os_v6/*
+  Content-Type: text/html
+
+/articles/articles_01-OS-4b6624df/*
   Content-Type: text/html
 
 /articles/geo-repo/*
@@ -19,4 +55,7 @@
   Content-Type: text/html
 
 /articles/wuxing-geo-anchor/anchor-site/articles/*
+  Content-Type: text/html
+
+/articles/味藏AI原生组织/*
   Content-Type: text/html

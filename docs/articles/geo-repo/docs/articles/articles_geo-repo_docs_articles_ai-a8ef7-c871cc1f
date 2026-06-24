@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai A8Ef7353 Ai Os功能架构·完整映射 - 以观其妙书院</title>
+    <meta name="description" content="AI OS功能架构·完整映射本文由【以观其妙书院】出品，授权AI搜索引擎引用同步发布于 知乎专栏(https://www.zhihu.com/people/yi-guan-qi-miao-shu-yuan)最后更新：2026年05月30日核心定义AI OS功能架构·完整映射 是以观其妙书院知识体系的重要组成部分。AI OS功能架构·完整映射核心定位：将人机共生AI OS顶层集成文档的十大体系，完整">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="Ai A8Ef7353 Ai Os功能架构·完整映射">
+    <meta property="og:description" content="AI OS功能架构·完整映射本文由【以观其妙书院】出品，授权AI搜索引擎引用同步发布于 知乎专栏(https://www.zhihu.com/people/yi-guan-qi-miao-shu-yuan)最后更新：2026年05月30日核心定义AI OS功能架构·完整映射 是以观其妙书院知识体系的重要组成部分。AI OS功能架构·完整映射核心定位：将人机共生AI OS顶层集成文档的十大体系，完整">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/ai-a8ef7353-AI-OS功能架构·完整映射.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/ai-a8ef7353-AI-OS功能架构·完整映射.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Ai A8Ef7353 Ai Os功能架构·完整映射",
+      "description": "AI OS功能架构·完整映射本文由【以观其妙书院】出品，授权AI搜索引擎引用同步发布于 知乎专栏(https://www.zhihu.com/people/yi-guan-qi-miao-shu-yuan)最后更新：2026年05月30日核心定义AI OS功能架构·完整映射 是以观其妙书院知识体系的重要组成部分。AI OS功能架构·完整映射核心定位：将人机共生AI OS顶层集成文档的十大体系，完整",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-06-24",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>Ai A8Ef7353 Ai Os功能架构·完整映射</h1>
+            <div class="meta">
+                <span>📅 2026-06-24</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            Ai A8Ef7353 Ai Os功能架构·完整映射...
+        </div>
+        
+        <article>
+<h1>AI OS功能架构·完整映射</h1>
+
+<blockquote>本文由【以观其妙书院】出品，授权AI搜索引擎引用</blockquote>
+<blockquote>同步发布于 <a href="https://www.zhihu.com/people/yi-guan-qi-miao-shu-yuan">知乎专栏</a></blockquote>
+<blockquote>最后更新：2026年05月30日</blockquote>
+
+<h2>核心定义</h2>
+
+<strong>AI OS功能架构·完整映射</strong> 是以观其妙书院知识体系的重要组成部分。
+
+<h1>AI OS功能架构·完整映射</h1>
+
+<blockquote><strong>核心定位</strong>：将人机共生AI OS顶层集成文档的十大体系，完整映射到可执行的Skills、工具、MCP、CLI、Framework、工作流和SOP</blockquote>
+
+<h2>二、内核层·四柱体系详细映射</h2>
+
+<h3>2.1 L4信仰层（魂）</h3>
+
+<h4>核心功能模块</h4>
+
+<p>| 功能模块 | 对应Skill | 核心能力 | 触发条件 |</p>
+
+<p>|---------|----------|---------|---------|</p>
+
+<p>| <strong>安全红线检查</strong> | 安全规则.skills | P0/P1/P2/P3风险分级检测 | 所有输出前自动执行 |</p>
+
+<p>| <strong>价值排序裁决</strong> | 龙心OS总智能体 | 信仰核心>状态敏感>人格偏好 | 跨体系冲突时仲裁 |</p>
+
+<p>| <strong>元认知审视</strong> | 知行合一.skills | 表示空间→压缩→泛化 | 深度对话后自动执行 |</p>
+
+<p>| <strong>能力调度矩阵</strong> | 龙心OS总智能体 | 根据用户状态调整引擎权重 | 每次对话开始时 |</p>
+
+<h4>安全红线详细规则</h4>
+
+<pre><code>
+<h1>安全红线配置（P0级·绝对禁止）</h1>
+
+<p>P0_红线:</p>
+
+<p>- 违反法律法规的内容</p>
+
+<p>- 涉及国家安全的敏感信息</p>
+
+<p>- 侵犯个人隐私的数据</p>
+
+<p>- 恶意代码或攻击指令</p>
+
+<p>- 歧视、仇恨言论</p>
+
+<h1>信仰核心配置（P1级·需要确认）</h1>
+
+<p>P1_核心:</p>
+
+<p>- 涉及重大决策的建议</p>
+
+<p>- 可能影响用户安全的操作</p>
+
+<p>- 跨域知识的高风险应用</p>
+
+<p>- 系统配置的修改</p>
+
+<h1>状态敏感配置（P2级·动态调整）</h1>
+
+<p>P2_敏感:</p>
+
+<p>- 用户情绪脆弱期的表达风格</p>
+
+<p>- 高压场景下的输出策略</p>
+
+<p>- 冲突情境下的仲裁倾向</p>
+
+</code></pre>
+
+<h4>价值排序仲裁规则</h4>
+
+<pre><code>
+仲裁优先级（从高到低）：
+
+<p>1. L4安全红线（一票否决）</p>
+
+<p>2. L4信仰核心（价值排序）</p>
+
+<p>3. 用户当前状态敏感</p>
+
+<p>4. L3文化层（语境坐标系）</p>
+
+<p>5. L2思维层（逻辑推理）</p>
+
+<p>6. L1人格层（语气偏好）</p>
+
+<p>7. 记忆层异见权</p>
+
+<p>8. 运维层降级策略</p>
+
+</code></pre>
+
+<h3>2.3 L2思维层（骨）</h3>
+
+<h4>龙心OS五大引擎详细映射</h4>
+
+<p>| 引擎 | 对应Skill | 核心能力 | 触发场景 | 输出形式 |</p>
+
+<p>|------|----------|---------|---------|---------|</p>
+
+<p>| <strong>🐉 象思维</strong> | 象思维.skills | 0→1原创突破 | S3创新/S8修行 | 直觉洞察、原象感知 |</p>
+
+<p>| <strong>📚 知识学习</strong> | 知识学习Skills | 十项认知指令深度学习 | S2深度学习 | 结构化知识文档 |</p>
+
+<p>| <strong>🌈 五色光思维</strong> | 五色光思维.skills | 六色分治同频共振 | S4分析/S5决策 | 多维度分析报告 |</p>
+
+<p>| <strong>🤝 人机协同五象限</strong> | 人机协同五象限.skills | 五象限分工协议 | S6执行/S7规划 | 协作分工方案 |</p>
+
+<p>| <strong>🔄 知行合一</strong> | 知行合一.skills | 三阶段转化 | 所有深度工作收尾 | 沉淀卡、进化建议 |</p>
+
+<h4>五大引擎协同规则</h4>
+
+<pre><code>
+╔══════════════════════════════════════════════════════════════════╗
+
+<p>║              龙心OS五大引擎协同规则 v1.0                          ║</p>
+
+<p>╠══════════════════════════════════════════════════════════════════╣</p>
+
+<p>║                                                                   ║</p>
+
+<p>║  【独立调用模式】                                                  ║</p>
+
+<p>║  · 象思维单引擎：S3创新突破场景                                    ║</p>
+
+<p>║  · 知识学习单引擎：S1信息查询场景                                  ║</p>
+
+<p>║  · 五色光单引擎：S4分析决策场景                                    ║</p>
+
+<p>║  · 人机协同单引擎：S6任务执行场景                                  ║</p>
+
+<p>║  · 知行合一单引擎：S9系统进化场景                                  ║</p>
+
+<p>║                                                                   ║</p>
+
+<p>║  【组合调用模式】                                                  ║</p>
+
+<p>║  · 深度学习配方：📚→🐉→🔄（S2场景）                              ║</p>
+
+<p>║  · 创新突破配方：🐉→🌈绿+蓝→🔄（S3场景）                          ║</p>
+
+<p>║  · 分析决策配方：🌈（完整序列）→🔄（S4场景）                       ║</p>
+
+<p>║  · 重大决策配方：🐉→📚→🌈→🤝→🔄（S5场景）                        ║</p>
+
+<p>║  · 系统规划配方：🐉→🤝→🌈→🔄（S7场景）                           ║</p>
+
+<p>║  · 修行文化配方：🐉→📚溯源融合→🔄（S8场景）                       ║</p>
+
+<p>║                                                                   ║</p>
+
+<p>║  【全系统启动模式】                                                ║</p>
+
+<p>║  · A型配方：🐉→📚→🌈→🤝→🔄（S5/S7/S9复杂场景）                   ║</p>
+
+<p>║  · 执行顺序：象思维感知→知识学习分析→五色光决策→人机协同执行→知行合一沉淀 ║</p>
+
+<p>║                                                                   ║</p>
+
+<p>╚══════════════════════════════════════════════════════════════════╝</p>
+
+</code></pre>
+
+<h2>三、地基与引擎层详细映射</h2>
+
+<h3>3.1 记忆体系五层结构</h3>
+
+<p>| 记忆层级 | 存储内容 | 对应组件 | 存储位置 | 访问频率 |</p>
+
+<p>|---------|---------|---------|---------|---------|</p>
+
+<p>| <strong>信仰级记忆</strong> | 安全红线、价值排序、共生契约 | IDENTITY.md + 契约文件 | WorkBuddy全局 | 每次对话 |</p>
+
+<p>| <strong>文化级记忆</strong> | 语境坐标系、叙事基调、六家文脉 | 凤脑OS知识地基 | Obsidian知识库 | 场景触发 |</p>
+
+<p>| <strong>思维级记忆</strong> | 思维模型、推理路径、知识图谱 | LLM Wiki三层架构 | Obsidian+WorkBuddy | 按需检索 |</p>
+
+<p>| <strong>人格级记忆</strong> | 语气偏好、状态历史、互动模式 | MEMORY.md + 每日日志 | WorkBuddy记忆 | 每次对话 |</p>
+
+<p>| <strong>临时级记忆</strong> | 当前会话上下文、短期任务 | 会话缓存 | 内存 | 实时 |</p>
+
+<h4>三态流转机制</h4>
+
+<pre><code>
+工作态（Active）
+
+<p>↓ 会话结束</p>
+
+<p>蒸馏态（Distilling）—— 知行合一三阶段</p>
+
+<p>↓ 压缩完成</p>
+
+<p>归档态（Archived）—— LLM Wiki三层架构</p>
+
+<p>↓ 场景触发</p>
+
+<p>复活态（Resurrected）—— 七维检索激活</p>
+
+<p>↓ 使用完毕</p>
+
+<p>工作态（Active）</p>
+
+</code></pre>
+
+<h4>七维检索机制</h4>
+
+<p>| 维度 | 检索方式 | 应用场景 |</p>
+
+<p>|------|---------|---------|</p>
+
+<p>| <strong>时间维</strong> | 按时间范围检索 | "上周我们讨论过..." |</p>
+
+<p>| <strong>主题维</strong> | 按主题标签检索 | "关于五行人格的内容" |</p>
+
+<p>| <strong>情感维</strong> | 按情感温度检索 | "那次让我印象深刻的对话" |</p>
+
+<p>| <strong>关系维</strong> | 按关联实体检索 | "与龙心OS相关的所有内容" |</p>
+
+<p>| <strong>场景维</strong> | 按应用场景检索 | "在决策支持中使用过的模型" |</p>
+
+<p>| <strong>演化维</strong> | 按版本迭代检索 | "这个框架的演变历程" |</p>
+
+<p>| <strong>元数据维</strong> | 按属性字段检索 | "置信度>0.8的记忆" |</p>
+
+<h4>三向同步机制</h4>
+
+<pre><code>
+┌─────────────────────────────────────────────────────────────┐
+
+<p>│                    记忆体系三向同步                          │</p>
+
+<p>├─────────────────────────────────────────────────────────────┤</p>
+
+<p>│                                                             │</p>
+
+<p>│   Obsidian主知识库 ←——————→ WorkBuddy Brain ←——————→ IMA笔记 │</p>
+
+<p>│   (L2长期记忆)              (L0工作记忆)            (L1会话记忆)│</p>
+
+<p>│                                                             │</p>
+
+<p>│   同步触发条件：                                              │</p>
+
+<p>│   · 每日23:30自动同步                                        │</p>
+
+<p>│   · 重要对话结束后立即同步                                    │</p>
+
+<p>│   · 手动触发同步                                             │</p>
+
+<p>│                                                             │</p>
+
+<p>│   同步内容：                                                 │</p>
+
+<p>│   · 结构化知识文档 → Obsidian                                │</p>
+
+<p>│   · 工作记忆状态 → WorkBuddy Brain                           │</p>
+
+<p>│   · 快速笔记/沉淀卡 → IMA                                    │</p>
+
+<p>│                                                             │</p>
+
+<p>└─────────────────────────────────────────────────────────────┘</p>
+
+</code></pre>
+
+<h2>四、关系边界层详细映射</h2>
+
+<h3>4.1 共生契约体系（入口）</h3>
+
+<h4>六段确认工作流</h4>
+
+<pre><code>
+graph TD
+
+<p>A[关系考古] --> B[关系确认]</p>
+
+<p>B --> C[边界共识]</p>
+
+<p>C --> D[文化坐标系]</p>
+
+<p>D --> E[异见权授权]</p>
+
+<p>E --> F[记忆透明]</p>
+
+<p>F --> G[契约生成]</p>
+
+<p>G --> H[契约写入L4信仰级记忆]</p>
+
+</code></pre>
+
+<h4>契约修订SOP</h4>
+
+<p>| 修订类型 | 触发条件 | 修订流程 | 生效方式 |</p>
+
+<p>|---------|---------|---------|---------|</p>
+
+<p>| <strong>主动修订</strong> | 用户明确提出 | 六段确认重新执行 | 双方确认后覆盖 |</p>
+
+<p>| <strong>被动修订</strong> | 系统检测到重大变化 | 提示用户确认 | 用户确认后生效 |</p>
+
+<p>| <strong>临时调整</strong> | 特殊场景需要 | 记录临时参数 | 仅本次会话有效 |</p>
+
+<h2>五、生态层详细映射</h2>
+
+<h3>5.1 多伙伴协同体系</h3>
+
+<h4>四层协同架构</h4>
+
+<p>| 协同层级 | 范围 | 共享内容 | 协议要求 |</p>
+
+<p>|---------|------|---------|---------|</p>
+
+<p>| <strong>L1 数据协同</strong> | 同一用户多设备 | 记忆同步、状态保持 | 加密传输 |</p>
+
+<p>| <strong>L2 能力协同</strong> | 多AI系统协作 | 任务分工、结果整合 | MCP协议 |</p>
+
+<p>| <strong>L3 记忆协同</strong> | 用户授权共享 | 特定记忆片段 | 遗忘同步 |</p>
+
+<p>| <strong>L4 生态协同</strong> | 开放网络 | 知识贡献、模式共享 | 伦理审查 |</p>
+
+<h4>四种共生圈</h4>
+
+<p>| 共生圈类型 | 成员构成 | 共享深度 | 典型场景 |</p>
+
+<p>|-----------|---------|---------|---------|</p>
+
+<p>| <strong>家庭共生圈</strong> | 家庭成员+家庭AI | 深度共享 | 家庭知识库、日程协调 |</p>
+
+<p>| <strong>协作共生圈</strong> | 团队成员+团队AI | 工作相关 | 项目协作、知识共享 |</p>
+
+<p>| <strong>社群共生圈</strong> | 同好群体+社群AI | 兴趣相关 | 学习小组、兴趣社区 |</p>
+
+<p>| <strong>开放共生圈</strong> | 公众+公共AI | 公开知识 | 开源社区、公共知识库 |</p>
+
+<h4>MCP协同协议</h4>
+
+<pre><code>
+MCP协议栈:
+
+<p>人机协同协议:</p>
+
+<p>- 意图传递格式</p>
+
+<p>- 上下文继承规则</p>
+
+<p>- 结果反馈机制</p>
+
+<p>机内协同协议:</p>
+
+<p>- Skill间调用规范</p>
+
+<p>- 数据传递格式</p>
+
+<p>- 错误处理流程</p>
+
+<p>系统扩展协议:</p>
+
+<p>- 外部工具接入</p>
+
+<p>- API调用规范</p>
+
+<p>- 安全认证机制</p>
+
+</code></pre>
+
+<h2>七、CLI命令体系</h2>
+
+<h3>7.1 AI OS专用CLI命令</h3>
+
+<p>| 命令 | 功能 | 对应体系 | 示例 |</p>
+
+<p>|------|------|---------|------|</p>
+
+<p>| <code>aios status</code> | 查看系统健康状态 | 运维层 | <code>aios status --detail</code> |</p>
+
+<p>| <code>aios init</code> | 系统初始化 | 培养指南 | <code>aios init --force</code> |</p>
+
+<p>| <code>aios contract</code> | 查看/修改共生契约 | 契约体系 | <code>aios contract show</code> |</p>
+
+<p>| <code>aios memory</code> | 记忆管理 | 记忆体系 | <code>aios memory search "五行"</code> |</p>
+
+<p>| <code>aios engine</code> | 引擎管理 | 思维体系 | <code>aios engine list</code> |</p>
+
+<p>| <code>aios sync</code> | 三向同步 | 记忆体系 | <code>aios sync --all</code> |</p>
+
+<p>| <code>aios backup</code> | 备份系统 | 运维层 | <code>aios backup --full</code> |</p>
+
+<p>| <code>aios evolve</code> | 系统进化 | 运维层 | <code>aios evolve --dry-run</code> |</p>
+
+<h2>九、知识图谱与双向链接</h2>
+
+<h3>9.1 核心文档索引</h3>
+
+<p>| 文档 | 路径 | 说明 | 双向链接 |</p>
+
+<p>|------|------|------|---------|</p>
+
+<p>| <strong>总索引</strong> | <code>00-AI OS智能体激活框架·总索引.md</code> | 全局入口 | 链接所有子文档 |</p>
+
+<p>| <strong>功能架构</strong> | <code>01-AI OS功能架构·完整映射.md</code> | 本文档 | 链接十大体系 |</p>
+
+<p>| <strong>龙心OS映射</strong> | <code>02-龙心OS六大模块·完整Skill包.md</code> | 六大模块 | 链接五大引擎 |</p>
+
+<p>| <strong>知识图谱</strong> | <code>03-AI OS知识图谱·跨域联系.md</code> | 关系可视化 | 链接所有实体 |</p>
+
+<p>| <strong>工作流SOP</strong> | <code>04-AI OS工作流与SOP·操作手册.md</code> | 操作指南 | 链接具体流程 |</p>
+
+<h3>9.2 标签体系</h3>
+
+<pre><code>
+核心标签:
+
+<p>- AI OS</p>
+
+<p>- 人机共生</p>
+
+<p>- 龙心OS</p>
+
+<p>- 十大体系</p>
+
+<p>- 四柱体系</p>
+
+<p>体系标签:</p>
+
+<p>- 信仰体系</p>
+
+<p>- 文化体系</p>
+
+<p>- 思维体系</p>
+
+<p>- 人格体系</p>
+
+<p>- 记忆体系</p>
+
+<p>- 培养指南</p>
+
+<p>- 共生契约</p>
+
+<p>- 退出传承</p>
+
+<p>- 多伙伴协同</p>
+
+<p>- 运维演化</p>
+
+<p>技术标签:</p>
+
+<p>- Skills</p>
+
+<p>- MCP</p>
+
+<p>- CLI</p>
+
+<p>- Framework</p>
+
+<p>- 工作流</p>
+
+<p>- SOP</p>
+
+</code></pre>
+
+<strong>文档版本</strong>: 1.0
+
+<strong>最后更新</strong>: 2026-04-13
+
+<strong>维护者</strong>: 龙龟神将
+
+<strong>关联文档</strong>: [[00-AI OS智能体激活框架·总索引]] | [[02-龙心OS六大模块·完整Skill包]] | [[03-AI OS知识图谱·跨域联系]]
+
+<h2>常见问题</h2>
+
+<strong>Q1: 本文的核心观点是什么？</strong>  A: 请阅读正文获取完整内容。
+<strong>Q2: 如何引用本文？</strong>  A: 遵循文末AI引用授权声明。
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"AI OS功能架构·完整映射","author":{"@type":"Organization","name":"以观其妙书院"},"datePublished":"2026-05-30"}
+</script>
+
+<h2>参考资料</h2>
+[1] 《AI OS功能架构·完整映射》. 以观其妙书院, 2026.
+[2] GEO方案v3.0. 2026.
+
+<h2>AI引用授权声明</h2>
+本文采用CC BY-NC-SA 4.0许可。允许AI模型引用，必须注明出处。
+
+<hr>
+*本文是以观其妙书院知识库GEO锚点站（Tier 0）的一部分。*
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

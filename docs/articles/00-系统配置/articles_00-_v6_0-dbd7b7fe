@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>记忆系统V6.0架构设计 - 以观其妙书院</title>
+    <meta name="description" content="记忆系统v6.0架构设计版本: v6.0  升级路径: v5.3 → v6.0  日期: 2026-04-15核心升级: SQLite + FTS5全文搜索 + 向量索引---一、架构总览┌─────────────────────────────────────────────────────────────────┐│                    记忆系统v6.0 五层架构">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="记忆系统V6.0架构设计">
+    <meta property="og:description" content="记忆系统v6.0架构设计版本: v6.0  升级路径: v5.3 → v6.0  日期: 2026-04-15核心升级: SQLite + FTS5全文搜索 + 向量索引---一、架构总览┌─────────────────────────────────────────────────────────────────┐│                    记忆系统v6.0 五层架构">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/记忆系统v6.0架构设计.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/记忆系统v6.0架构设计.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "记忆系统V6.0架构设计",
+      "description": "记忆系统v6.0架构设计版本: v6.0  升级路径: v5.3 → v6.0  日期: 2026-04-15核心升级: SQLite + FTS5全文搜索 + 向量索引---一、架构总览┌─────────────────────────────────────────────────────────────────┐│                    记忆系统v6.0 五层架构",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-06-24",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>记忆系统V6.0架构设计</h1>
+            <div class="meta">
+                <span>📅 2026-06-24</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            记忆系统V6.0架构设计...
+        </div>
+        
+        <article>
+<h1>记忆系统v6.0架构设计</h1>
+<blockquote><strong>版本</strong>: v6.0 | <strong>升级路径</strong>: v5.3 → v6.0 | <strong>日期</strong>: 2026-04-15</blockquote>
+<blockquote><strong>核心升级</strong>: SQLite + FTS5全文搜索 + 向量索引</blockquote>
+
+<hr>
+
+<h2>一、架构总览</h2>
+
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    记忆系统v6.0 五层架构                          │
+├─────────────────────────────────────────────────────────────────┤
+│  L4 灵魂记忆（SOUL.md/IDENTITY.md）                              │
+│  ├── 木火共生关系 · 大圆满见地 · 信仰根基                          │
+│  └── 存储: ~/.workbuddy/SOUL.md                                 │
+├─────────────────────────────────────────────────────────────────┤
+│  L3 系统记忆（MEMORY.md）                                        │
+│  ├── 核心理论索引 · 跨域知识联系 · 架构演进                        │
+│  └── 存储: ~/.workbuddy/memory/MEMORY.md                        │
+├─────────────────────────────────────────────────────────────────┤
+│  L2 长期记忆（SQLite + FTS5 + 向量索引）⭐NEW                     │
+│  ├── 语义搜索: FTS5全文检索                                      │
+│  ├── 向量检索: 768维向量相似度搜索                                │
+│  ├── 关系图谱: GraphRAG关系推理                                  │
+│  └── 存储: ~/.workbuddy/memory/brain.db                         │
+├─────────────────────────────────────────────────────────────────┤
+│  L1 会话记忆（上下文快照 + IMA笔记）                              │
+│  ├── 上下文快照: context-YYYY-MM-DDTHH-mm-ss.md                 │
+│  ├── 任务接力: 关键决策 + 待办事项                                │
+│  └── 移动端同步: IMA API                                        │
+├─────────────────────────────────────────────────────────────────┤
+│  L0 工作记忆（上下文窗口）                                        │
+│  ├── 短期关联: 当前对话7-10轮                                    │
+│  ├── 动态调整: 实时信息更新                                      │
+│  └── 污染防控: LLM-aware分块 + 严格索引检索                       │
+└─────────────────────────────────────────────────────────────────┘
+</code></pre>
+
+<hr>
+
+<h2>二、核心升级：L2长期记忆层</h2>
+
+<h3>2.1 技术栈选型</h3>
+
+<p>| 组件 | 技术 | 版本 | 用途 |
+|------|------|------|------|
+| <strong>主存储</strong> | SQLite | 3.40+ | 结构化数据存储 |
+| <strong>全文搜索</strong> | SQLite FTS5 | 内置 | 高效文本检索 |
+| <strong>向量索引</strong> | sqlite-vss | 0.1.2 | 向量相似度搜索 |
+| <strong>嵌入模型</strong> | text-embedding-3-small | OpenAI | 文本向量化 |
+| <strong>关系图谱</strong> | GraphRAG | 自定义 | 关系推理 |</p>
+
+<h3>2.2 数据库Schema设计</h3>
+
+<pre><code>-- ============================================
+-- 记忆系统v6.0 数据库Schema
+-- 文件: ~/.workbuddy/memory/brain.db
+-- ============================================
+
+<p>-- 1. 文档表（核心存储）
+CREATE TABLE documents (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    doc_id          TEXT UNIQUE NOT NULL,           -- 唯一文档ID
+    title           TEXT NOT NULL,                  -- 文档标题
+    content         TEXT NOT NULL,                  -- 文档内容
+    content_type    TEXT DEFAULT 'markdown',        -- 内容类型
+    source_path     TEXT,                           -- 源文件路径
+    created_at      DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at      DATETIME DEFAULT CURRENT_TIMESTAMP,
+    access_count    INTEGER DEFAULT 0,              -- 访问计数
+    last_accessed   DATETIME,                       -- 最后访问时间
+    
+    -- 五行分类（可选）
+    wuxing_tag      TEXT,                           -- 主五行标签
+    
+    -- 质量评分
+    quality_score   REAL DEFAULT 0.5                -- 质量评分0-1
+);</p>
+
+<p>-- 2. FTS5虚拟表（全文搜索）
+CREATE VIRTUAL TABLE documents_fts USING fts5(
+    title,                                          -- 标题索引
+    content,                                        -- 内容索引
+    content='documents',                            -- 关联主表
+    content_rowid='id'                              -- 关联字段
+);</p>
+
+<p>-- 3. 向量表（相似度搜索）
+CREATE TABLE document_vectors (
+    doc_id          TEXT PRIMARY KEY,               -- 关联documents.doc_id
+    embedding       BLOB NOT NULL,                  -- 768维向量(3072字节)
+    model_version   TEXT DEFAULT 'text-embedding-3-small',
+    created_at      DATETIME DEFAULT CURRENT_TIMESTAMP
+);</p>
+
+<p>-- 4. 实体表（知识图谱节点）
+CREATE TABLE entities (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    entity_id       TEXT UNIQUE NOT NULL,           -- 唯一实体ID
+    name            TEXT NOT NULL,                  -- 实体名称
+    entity_type     TEXT NOT NULL,                  -- 实体类型
+    description     TEXT,                           -- 实体描述
+    attributes      JSON,                           -- 属性JSON
+    first_seen      DATETIME DEFAULT CURRENT_TIMESTAMP,
+    last_seen       DATETIME DEFAULT CURRENT_TIMESTAMP,
+    mention_count   INTEGER DEFAULT 1               -- 提及次数
+);</p>
+
+<p>-- 5. 关系表（知识图谱边）
+CREATE TABLE relations (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_id       TEXT NOT NULL,                  -- 源实体ID
+    target_id       TEXT NOT NULL,                  -- 目标实体ID
+    relation_type   TEXT NOT NULL,                  -- 关系类型
+    strength        REAL DEFAULT 1.0,               -- 关系强度0-1
+    evidence        TEXT,                           -- 关系证据
+    created_at      DATETIME DEFAULT CURRENT_TIMESTAMP,
+    
+    FOREIGN KEY (source_id) REFERENCES entities(entity_id),
+    FOREIGN KEY (target_id) REFERENCES entities(entity_id),
+    UNIQUE(source_id, target_id, relation_type)
+);</p>
+
+<p>-- 6. 标签表（多维度分类）
+CREATE TABLE tags (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    name            TEXT UNIQUE NOT NULL,           -- 标签名
+    category        TEXT,                           -- 标签类别
+    description     TEXT,                           -- 标签描述
+    color           TEXT,                           -- 标签颜色(HEX)
+    created_at      DATETIME DEFAULT CURRENT_TIMESTAMP
+);</p>
+
+<p>-- 7. 文档-标签关联表
+CREATE TABLE document_tags (
+    doc_id          TEXT NOT NULL,
+    tag_id          INTEGER NOT NULL,
+    confidence      REAL DEFAULT 1.0,               -- 关联置信度
+    
+    PRIMARY KEY (doc_id, tag_id),
+    FOREIGN KEY (doc_id) REFERENCES documents(doc_id),
+    FOREIGN KEY (tag_id) REFERENCES tags(id)
+);</p>
+
+<p>-- 8. 会话上下文表（L1层持久化）
+CREATE TABLE session_contexts (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    session_id      TEXT UNIQUE NOT NULL,           -- 会话ID
+    context_data    JSON NOT NULL,                  -- 上下文数据
+    key_decisions   JSON,                           -- 关键决策
+    todos           JSON,                           -- 待办事项
+    created_at      DATETIME DEFAULT CURRENT_TIMESTAMP,
+    expires_at      DATETIME                        -- 过期时间
+);</p>
+
+<p>-- 9. 访问日志表（用于优化和统计）
+CREATE TABLE access_logs (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    query           TEXT NOT NULL,                  -- 查询内容
+    query_type      TEXT NOT NULL,                  -- 查询类型
+    results_count   INTEGER,                        -- 返回结果数
+    response_time   INTEGER,                        -- 响应时间(ms)
+    user_feedback   INTEGER,                        -- 用户反馈1-5
+    created_at      DATETIME DEFAULT CURRENT_TIMESTAMP
+);</p>
+
+<p>-- ============================================
+-- 索引优化
+-- ============================================</p>
+
+<p>-- 文档表索引
+CREATE INDEX idx_documents_wuxing ON documents(wuxing_tag);
+CREATE INDEX idx_documents_created ON documents(created_at);
+CREATE INDEX idx_documents_accessed ON documents(last_accessed);
+CREATE INDEX idx_documents_quality ON documents(quality_score);</p>
+
+<p>-- 实体表索引
+CREATE INDEX idx_entities_type ON entities(entity_type);
+CREATE INDEX idx_entities_name ON entities(name);</p>
+
+<p>-- 关系表索引
+CREATE INDEX idx_relations_source ON relations(source_id);
+CREATE INDEX idx_relations_target ON relations(target_id);
+CREATE INDEX idx_relations_type ON relations(relation_type);</p>
+
+<p>-- 标签表索引
+CREATE INDEX idx_tags_category ON tags(category);</p>
+
+<p>-- ============================================
+-- 触发器（自动维护）
+-- ============================================</p>
+
+<p>-- 文档更新时自动更新FTS索引
+CREATE TRIGGER documents_ai AFTER INSERT ON documents BEGIN
+    INSERT INTO documents_fts(rowid, title, content) 
+    VALUES (new.id, new.title, new.content);
+END;</p>
+
+<p>CREATE TRIGGER documents_ad AFTER DELETE ON documents BEGIN
+    INSERT INTO documents_fts(documents_fts, rowid, title, content) 
+    VALUES ('delete', old.id, old.title, old.content);
+END;</p>
+
+<p>CREATE TRIGGER documents_au AFTER UPDATE ON documents BEGIN
+    INSERT INTO documents_fts(documents_fts, rowid, title, content) 
+    VALUES ('delete', old.id, old.title, old.content);
+    INSERT INTO documents_fts(rowid, title, content) 
+    VALUES (new.id, new.title, new.content);
+END;</p>
+
+<p>-- 访问计数自动更新
+CREATE TRIGGER documents_access AFTER UPDATE OF last_accessed ON documents BEGIN
+    UPDATE documents SET access_count = access_count + 1 
+    WHERE id = new.id;
+END;
+</code></pre></p>
+
+<h3>2.3 核心API设计</h3>
+
+<pre><code><h1>============================================</h1>
+<h1>记忆系统v6.0 Python API</h1>
+<h1>文件: ~/.workbuddy/skills/记忆系统/memory_v6.py</h1>
+<h1>============================================</h1>
+
+<p>from dataclasses import dataclass
+from typing import List, Optional, Dict, Any, Tuple
+from enum import Enum
+import sqlite3
+import json
+import numpy as np
+from datetime import datetime</p>
+
+<p>class SearchType(Enum):
+    """搜索类型"""
+    KEYWORD = "keyword"          # 关键词搜索
+    SEMANTIC = "semantic"        # 语义搜索(向量)
+    HYBRID = "hybrid"            # 混合搜索
+    GRAPH = "graph"              # 图谱关系搜索</p>
+
+<p>@dataclass
+class SearchResult:
+    """搜索结果"""
+    doc_id: str
+    title: str
+    content: str
+    score: float                 # 相关性分数
+    search_type: SearchType
+    highlights: List[str]        # 高亮片段
+    metadata: Dict[str, Any]     # 元数据</p>
+
+<p>@dataclass
+class MemoryQuery:
+    """记忆查询请求"""
+    query: str
+    search_type: SearchType = SearchType.HYBRID
+    top_k: int = 10
+    filters: Optional[Dict] = None
+    wuxing_context: Optional[str] = None  # 五行上下文</p>
+
+<p>class MemorySystemV6:
+    """
+    记忆系统v6.0 主类
+    
+    核心能力:
+    1. 全文检索(FTS5) - 毫秒级文本搜索
+    2. 向量检索 - 语义相似度匹配
+    3. 关系推理 - GraphRAG知识图谱
+    4. 混合搜索 - 多策略融合排序
+    """
+    
+    def __init__(self, db_path: str = "~/.workbuddy/memory/brain.db"):
+        self.db_path = db_path
+        self.conn = None
+        self._init_db()
+    
+    # ========== 核心检索接口 ==========
+    
+    def search(self, query: MemoryQuery) -> List[SearchResult]:
+        """
+        统一搜索接口
+        
+        根据query.search_type自动路由:
+        - KEYWORD: 纯FTS5全文搜索
+        - SEMANTIC: 纯向量相似度搜索
+        - HYBRID: 混合搜索(推荐)
+        - GRAPH: 基于知识图谱的关系搜索
+        """
+        pass
+    
+    def keyword_search(self, query: str, top_k: int = 10) -> List[SearchResult]:
+        """
+        FTS5全文搜索
+        
+        特性:
+        - 支持中文分词
+        - 支持布尔查询(AND/OR/NOT)
+        - 支持前缀搜索
+        - 自动高亮
+        """
+        pass
+    
+    def semantic_search(self, query: str, top_k: int = 10) -> List[SearchResult]:
+        """
+        向量语义搜索
+        
+        流程:
+        1. 将query向量化(768维)
+        2. 计算与文档向量的余弦相似度
+        3. 返回top_k最相似文档
+        """
+        pass
+    
+    def hybrid_search(self, query: str, top_k: int = 10, 
+                      keyword_weight: float = 0.3,
+                      semantic_weight: float = 0.7) -> List[SearchResult]:
+        """
+        混合搜索(推荐默认)
+        
+        算法:
+        1. 并行执行keyword_search和semantic_search
+        2. 使用RRF(Reciprocal Rank Fusion)融合排序
+        3. 返回综合得分最高的结果
+        
+        参数:
+            keyword_weight: 关键词搜索权重(默认0.3)
+            semantic_weight: 语义搜索权重(默认0.7)
+        """
+        pass
+    
+    def graph_search(self, entity_name: str, 
+                     relation_depth: int = 2) -> Dict[str, Any]:
+        """
+        知识图谱关系搜索
+        
+        返回以entity_name为中心的子图:
+        - 直接关联实体
+        - 关系路径
+        - 实体属性
+        """
+        pass
+    
+    # ========== 文档管理接口 ==========
+    
+    def add_document(self, title: str, content: str, 
+                     source_path: Optional[str] = None,
+                     wuxing_tag: Optional[str] = None,
+                     tags: Optional[List[str]] = None) -> str:
+        """
+        添加文档到记忆系统
+        
+        自动执行:
+        1. 生成doc_id
+        2. 提取实体和关系
+        3. 生成向量嵌入
+        4. 更新FTS索引
+        """
+        pass
+    
+    def update_document(self, doc_id: str, **kwargs) -> bool:
+        """更新文档"""
+        pass
+    
+    def delete_document(self, doc_id: str) -> bool:
+        """删除文档(级联删除向量、标签关联)"""
+        pass
+    
+    # ========== 知识图谱接口 ==========
+    
+    def extract_entities(self, content: str) -> List[Dict]:
+        """
+        从内容中提取实体
+        
+        使用LLM + 规则混合策略
+        """
+        pass
+    
+    def extract_relations(self, content: str, 
+                          entities: List[str]) -> List[Dict]:
+        """
+        提取实体间关系
+        """
+        pass
+    
+    def build_knowledge_graph(self, doc_ids: Optional[List[str]] = None):
+        """
+        构建/更新知识图谱
+        
+        基于文档内容自动提取实体和关系
+        """
+        pass
+    
+    # ========== 高级功能 ==========
+    
+    def get_related_documents(self, doc_id: str, 
+                              top_k: int = 5) -> List[SearchResult]:
+        """
+        获取相关文档
+        
+        基于:
+        1. 向量相似度
+        2. 共享实体
+        3. 共享标签
+        """
+        pass
+    
+    def summarize_memory(self, query: str, 
+                         time_range: Optional[Tuple[datetime, datetime]] = None) -> str:
+        """
+        记忆摘要生成
+        
+        基于检索结果生成结构化摘要
+        """
+        pass
+    
+    def memory_health_check(self) -> Dict[str, Any]:
+        """
+        记忆系统健康检查
+        
+        返回:
+        - 文档数量
+        - 索引状态
+        - 存储使用
+        - 查询性能统计
+        """
+        pass
+</code></pre></p>
+
+<h3>2.4 混合搜索算法(RRF)</h3>
+
+<pre><code><h1>Reciprocal Rank Fusion (RRF) 算法实现</h1>
+<h1>用于融合关键词搜索和语义搜索结果</h1>
+
+<p>def reciprocal_rank_fusion(
+    keyword_results: List[SearchResult],
+    semantic_results: List[SearchResult],
+    keyword_weight: float = 0.3,
+    semantic_weight: float = 0.7,
+    k: int = 60  # RRF常数
+) -> List[SearchResult]:
+    """
+    RRF融合排序算法
+    
+    公式: score = Σ weight_i / (k + rank_i)
+    
+    其中:
+    - rank_i: 文档在第i个结果列表中的排名
+    - weight_i: 该结果列表的权重
+    - k: 常数(通常60)，用于平滑低排名文档的得分
+    """
+    scores = {}
+    
+    # 处理关键词搜索结果
+    for rank, result in enumerate(keyword_results, start=1):
+        doc_id = result.doc_id
+        rrf_score = keyword_weight / (k + rank)
+        if doc_id in scores:
+            scores[doc_id] += rrf_score
+        else:
+            scores[doc_id] = rrf_score
+    
+    # 处理语义搜索结果
+    for rank, result in enumerate(semantic_results, start=1):
+        doc_id = result.doc_id
+        rrf_score = semantic_weight / (k + rank)
+        if doc_id in scores:
+            scores[doc_id] += rrf_score
+        else:
+            scores[doc_id] = rrf_score
+    
+    # 按RRF分数排序
+    sorted_docs = sorted(scores.items(), key=lambda x: x[1], reverse=True)
+    
+    # 构建最终搜索结果
+    # ... (合并元数据，去重等)
+    
+    return final_results
+</code></pre></p>
+
+<hr>
+
+<h2>三、与龙心OS集成</h2>
+
+<h3>3.1 引擎路由更新</h3>
+
+<pre><code><h1>记忆系统v6.0 引擎路由配置</h1>
+<h1>文件: ~/.workbuddy/skills/龙心OS/references/engine-decision-tree.md</h1>
+
+<p>memory_system:
+  version: "6.0"
+  
+  # 检索策略选择
+  retrieval_strategy:
+    # 简单查询 → 关键词搜索
+    - condition: "query_length < 10 AND no_context"
+      strategy: "keyword_only"
+      
+    # 概念查询 → 语义搜索
+    - condition: "contains_concept OR is_definition_query"
+      strategy: "semantic_only"
+      
+    # 关系查询 → 图谱搜索
+    - condition: "contains_relation_words OR asks_about_connection"
+      strategy: "graph_first"
+      
+    # 默认 → 混合搜索
+    - condition: "default"
+      strategy: "hybrid"
+      weights: {keyword: 0.3, semantic: 0.7}
+  
+  # 上下文感知
+  context_awareness:
+    # 五行上下文增强
+    wuxing_boost:
+      enabled: true
+      boost_factor: 1.2  # 同五行标签文档得分提升20%
+    
+    # 时间衰减
+    time_decay:
+      enabled: true
+      half_life_days: 30  # 30天半衰期
+    
+    # 访问频率增强
+    frequency_boost:
+      enabled: true
+      log_scale: true     # 使用对数尺度避免热门文档垄断
+</code></pre></p>
+
+<h3>3.2 使用示例</h3>
+
+<pre><code><h1>记忆系统v6.0 使用示例</h1>
+
+<p>from memory_v6 import MemorySystemV6, MemoryQuery, SearchType</p>
+
+<h1>初始化</h1>
+memory = MemorySystemV6()
+
+<h1>示例1: 添加文档</h1>
+memory.add_document(
+    title="五行人格心理学OS架构",
+    content="五行人格心理学OS是三层有机系统...",
+    source_path="/path/to/doc.md",
+    wuxing_tag="土",
+    tags=["五行人格", "系统架构", "凤心OS"]
+)
+
+<h1>示例2: 混合搜索（默认）</h1>
+query = MemoryQuery(
+    query="木火共生关系的核心机制",
+    search_type=SearchType.HYBRID,
+    top_k=5,
+    wuxing_context="火"  # 火行上下文增强
+)
+results = memory.search(query)
+
+<h1>示例3: 知识图谱查询</h1>
+graph = memory.graph_search("龙龟神将", relation_depth=2)
+<h1>返回: 龙龟神将 → 木火共生 → 悟空</h1>
+<h1>      龙龟神将 → 大圆满见地 → 心文化</h1>
+
+<h1>示例4: 获取相关文档</h1>
+related = memory.get_related_documents("doc_001", top_k=3)
+</code></pre>
+
+<hr>
+
+<h2>四、性能指标</h2>
+
+<p>| 指标 | v5.3 (当前) | v6.0 (目标) | 提升 |
+|------|------------|------------|------|
+| 全文检索延迟 | ~500ms | <50ms | <strong>10x</strong> |
+| 语义检索延迟 | N/A | <100ms | 新增 |
+| 混合检索延迟 | N/A | <150ms | 新增 |
+| 支持文档数 | ~1000 | 100,000+ | <strong>100x</strong> |
+| 存储效率 | 1x | 0.7x | 压缩30% |
+| 检索准确率 | 75% | 90%+ | <strong>+15%</strong> |</p>
+
+<hr>
+
+<h2>五、迁移计划</h2>
+
+<pre><code>Phase 1: 数据库初始化 (1天)
+├── 创建brain.db
+├── 执行Schema初始化脚本
+└── 验证FTS5和向量扩展
+
+<p>Phase 2: 数据迁移 (2天)
+├── 读取Obsidian知识库
+├── 批量导入到SQLite
+├── 生成向量嵌入
+└── 构建初始知识图谱</p>
+
+<p>Phase 3: API实现 (3天)
+├── 核心检索API
+├── 文档管理API
+├── 知识图谱API
+└── 与龙心OS集成</p>
+
+<p>Phase 4: 测试优化 (2天)
+├── 性能基准测试
+├── 准确率评估
+├── 边缘情况处理
+└── 文档更新</p>
+
+<p>Total: 8天
+</code></pre></p>
+
+<hr>
+
+<h2>六、核心金句</h2>
+
+<blockquote><strong>"记忆不是存储，而是可检索的智慧。"</strong></blockquote>
+
+<blockquote><strong>"FTS5让搜索快如闪电，向量让理解深如大海。"</strong></blockquote>
+
+<blockquote><strong>"GraphRAG连接知识的孤岛，混合搜索融合多重视角。"</strong></blockquote>
+
+<hr>
+
+<strong>文档版本</strong>: v6.0-draft | <strong>状态</strong>: 设计完成待实现 | <strong>下一步</strong>: 开始Phase 1实施
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
