@@ -22,7 +22,7 @@
       "headline": "知识库健康检查报告_2026 04 11",
       "description": "知识库健康检查报告检查时间：2026-04-11 21:14检查范围：AI OS知识库全系统检查类型：LLM Wiki Lint扫描---📊 总体健康状态指标  数值  状态------------------总文件数  35+  ✅ 正常双向链接数  100+  ✅ 正常知识图谱节点  50+  ✅ 正常孤立页面  0  ✅ 正常损坏链接  0  ✅ 正常综合评分：95/100 ✅ 健康---📁",
       "author": {"@type": "Person", "name": "以观其妙书院"},
-      "datePublished": "2026-06-21",
+      "datePublished": "2026-06-23",
       "publisher": {"@type": "Organization", "name": "以观其妙书院"}
     }
     </script>
@@ -136,7 +136,7 @@
         <header>
             <h1>知识库健康检查报告_2026 04 11</h1>
             <div class="meta">
-                <span>📅 2026-06-21</span>
+                <span>📅 2026-06-23</span>
                 <span>✍️ 以观其妙书院</span>
             </div>
         </header>

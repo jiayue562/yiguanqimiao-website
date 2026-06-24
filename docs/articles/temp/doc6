@@ -22,7 +22,7 @@
       "headline": "Doc6",
       "description": "贾老师补充首先是人机协同的问题，其次是寻求资源的问题。例如人与AI协同，我需要先让你人工理清一级目录，因为AI无法知道你的需求，所以你让AI给你出一级目录，他们随便胡说。这时候有一集一级目录4部，第二步AI补充内容之后紧接着又是4个，又是人否定了。因为有些填入的内容不符合要求，所以你需要把详细的人才画像等理清楚，告诉他们才可以继续补利用。第四点是否有深意？野生是每个人在Ai中都需要进行细化，如果你",
       "author": {"@type": "Person", "name": "以观其妙书院"},
-      "datePublished": "2026-06-21",
+      "datePublished": "2026-06-23",
       "publisher": {"@type": "Organization", "name": "以观其妙书院"}
     }
     </script>
@@ -136,7 +136,7 @@
         <header>
             <h1>Doc6</h1>
             <div class="meta">
-                <span>📅 2026-06-21</span>
+                <span>📅 2026-06-23</span>
                 <span>✍️ 以观其妙书院</span>
             </div>
         </header>
