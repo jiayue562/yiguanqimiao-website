@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept 象思维 - 以观其妙书院</title>
+    <meta name="description" content="concept-象思维核心定义：中国传统文化的底层思维，负责0→1原创突破的直觉洞察方法版本：v1.0  创建日期：2026-04-11来源：象思维与五行识人的深度共振（2026-04-04深度学习）---核心定义象思维是中国传统文化的底层思维，与西方思维模型形成共生关系：- 象思维：负责0→1的事情（原创性、从无到有、灵感源泉）- 西方思维模型：负责1→N的事情（规模化、逻辑验证、执行落地）核心">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="Concept 象思维">
+    <meta property="og:description" content="concept-象思维核心定义：中国传统文化的底层思维，负责0→1原创突破的直觉洞察方法版本：v1.0  创建日期：2026-04-11来源：象思维与五行识人的深度共振（2026-04-04深度学习）---核心定义象思维是中国传统文化的底层思维，与西方思维模型形成共生关系：- 象思维：负责0→1的事情（原创性、从无到有、灵感源泉）- 西方思维模型：负责1→N的事情（规模化、逻辑验证、执行落地）核心">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/concept-象思维.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/concept-象思维.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Concept 象思维",
+      "description": "concept-象思维核心定义：中国传统文化的底层思维，负责0→1原创突破的直觉洞察方法版本：v1.0  创建日期：2026-04-11来源：象思维与五行识人的深度共振（2026-04-04深度学习）---核心定义象思维是中国传统文化的底层思维，与西方思维模型形成共生关系：- 象思维：负责0→1的事情（原创性、从无到有、灵感源泉）- 西方思维模型：负责1→N的事情（规模化、逻辑验证、执行落地）核心",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-06-24",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>Concept 象思维</h1>
+            <div class="meta">
+                <span>📅 2026-06-24</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            Concept 象思维...
+        </div>
+        
+        <article>
+<h1>concept-象思维</h1>
+
+<blockquote><strong>核心定义</strong>：中国传统文化的底层思维，负责0→1原创突破的直觉洞察方法</blockquote>
+<blockquote><strong>版本</strong>：v1.0 | <strong>创建日期</strong>：2026-04-11</blockquote>
+<blockquote><strong>来源</strong>：象思维与五行识人的深度共振（2026-04-04深度学习）</blockquote>
+
+<hr>
+
+<h2>核心定义</h2>
+
+<p>象思维是中国传统文化的底层思维，与西方思维模型形成共生关系：
+<li><strong>象思维</strong>：负责0→1的事情（原创性、从无到有、灵感源泉）</li>
+<li><strong>西方思维模型</strong>：负责1→N的事情（规模化、逻辑验证、执行落地）</li></p>
+
+<strong>核心公式</strong>：象思维（0→1）+ 西方思维模型（1→N）= 最优认知系统
+
+<hr>
+
+<h2>三层次结构</h2>
+
+<h3>1. 物象（具体形象）</h3>
+
+<strong>定义</strong>：感官可及的具体形象，是象思维的基础层。
+
+<strong>特征</strong>：
+<li>可直观感知</li>
+<li>具体、形象、生动</li>
+<li>是象思维的起点</li>
+
+<strong>实例</strong>：
+<li>看到一棵树（木之象）</li>
+<li>看到火焰（火之象）</li>
+<li>看到水流（水之象）</li>
+
+<h3>2. 意象（抽象内涵）</h3>
+
+<strong>定义</strong>：主客融合的象征形象，是象思维的核心层。
+
+<strong>特征</strong>：
+<li>超越具体形象</li>
+<li>蕴含抽象意义</li>
+<li>主客不二</li>
+
+<strong>实例</strong>：
+<li>木之象 → 生长、生发、条达（意象）</li>
+<li>火之象 → 光明、热情、炎上（意象）</li>
+<li>水之象 → 智慧、流动、润下（意象）</li>
+
+<h3>3. 原象（本质原型/道象）</h3>
+
+<strong>定义</strong>：超越形象的终极本质，是象思维的最高境界。
+
+<strong>特征</strong>：
+<li>超越语言</li>
+<li>不可言说</li>
+<li>只可意会</li>
+<li>近乎"道"的层面</li>
+
+<strong>实例</strong>：
+<li>木之原象 → 生生之仁（仁德本源）</li>
+<li>火之原象 → 光明觉知（礼明照世）</li>
+<li>水之原象 → 智慧本源（智德深潜）</li>
+
+<hr>
+
+<h2>六非两核心</h2>
+
+<h3>六非（本质特征）</h3>
+
+<p>| 特征 | 内涵 | 与西方思维对比 |
+|------|------|----------------|
+| <strong>非实体性</strong> | 非具体物质 | 西方追求原子论、元素论 |
+| <strong>非对象性</strong> | 主客不二 | 西方主客二分 |
+| <strong>非现成性</strong> | 动态生成 | 西方追求静态真理 |
+| <strong>前语言性</strong> | 语言之前 | 西方依赖语言逻辑 |
+| <strong>前逻辑性</strong> | 逻辑之前 | 西方依赖形式逻辑 |
+| <strong>非确定性</strong> | 开放多元 | 西方追求确定性 |</p>
+
+<h3>两核心（根本特性）</h3>
+
+<p>| 核心 | 内涵 | 实践意义 |
+|------|------|----------|
+| <strong>整体直观性</strong> | 整体把握，不分析拆解 | 一眼看透本质 |
+| <strong>悟性</strong> | 直觉洞察，超越推理 | 0→1原创突破 |</p>
+
+<hr>
+
+<h2>象思维与五行识人的同构关系</h2>
+
+<h3>三界对应</h3>
+
+<p>| 象思维 | 五行识人 | 内涵 |
+|--------|----------|------|
+| <strong>物象</strong> | <strong>身界</strong> | 可直观感知的"形" |
+| <strong>意象</strong> | <strong>心界</strong> | 心理层面的"象" |
+| <strong>原象</strong> | <strong>灵界</strong> | 终极价值的"道" |</p>
+
+<h3>阴面特质的本质</h3>
+
+<strong>核心洞察</strong>：阴面特质的本质是"被概念固化的象"，而非传统意义上的"负面"。
+
+<strong>拔阴取阳 = 去概念化，回归原创性本真</strong>
+
+<p>| 五行 | 阴面（概念固化） | 阳面（原创性本真） |
+|------|------------------|-------------------|
+| <strong>木</strong> | 傲慢、固执（概念化的"我"） | 仁德、生长（生生的原创性） |
+| <strong>火</strong> | 急躁、虚荣（概念化的"表现"） | 光明、礼明（觉知的原创性） |
+| <strong>土</strong> | 怨疑、依赖（概念化的"安全"） | 信实、承载（稳定的原创性） |
+| <strong>金</strong> | 挑剔、刻板（概念化的"正确"） | 义理、决断（清明的原创性） |
+| <strong>水</strong> | 恐惧、多思（概念化的"未来"） | 智慧、润泽（流动的原创性） |</p>
+
+<hr>
+
+<h2>象思维的应用</h2>
+
+<h3>在人机协同体系中的定位</h3>
+
+<strong>第五象限（未知探索域）的专属引擎</strong>：
+<li>人和AI都没有答案的问题</li>
+<li>需要颠覆性创新或突破性创意</li>
+<li>0→1原创突破</li>
+
+<h3>与知识学习的整合</h3>
+
+<strong>第五层（启发+映射）专属调用象思维</strong>：
+1. 剖析+解构（第一层）→ 结构分析
+2. 透视+阐释（第二层）→ 深层意义
+3. 推演+思辨（第三层）→ 批判性思考
+4. 溯源+融合（第四层）→ 跨域整合
+5. <strong>启发+映射（第五层）→ 调用象思维完成0→1</strong>
+
+<h3>与知行合一的整合</h3>
+
+<strong>表示空间阶段的直觉感知由象思维驱动</strong>：
+<li>观察完整经验时，用象思维的整体直观性</li>
+<li>压缩阶段提炼核心洞察</li>
+<li>泛化阶段扩展应用场景</li>
+
+<hr>
+
+<h2>历史演进三阶段</h2>
+
+<h3>1. 纯象阶段</h3>
+
+<strong>特征</strong>：
+<li>以象为主，无文字</li>
+<li>直接观象悟道</li>
+<li>如伏羲观天象地象画八卦</li>
+
+<h3>2. 象辞结合阶段</h3>
+
+<strong>特征</strong>：
+<li>象与文字结合</li>
+<li>以象为主，以辞为辅</li>
+<li>如《周易》的卦象+卦辞</li>
+
+<h3>3. 纯辞阶段</h3>
+
+<strong>特征</strong>：
+<li>以文字逻辑为主</li>
+<li>象被边缘化</li>
+<li>现代西方思维的主导模式</li>
+
+<strong>回归</strong>：象思维的复兴，是回归原创之思，从"辞"回到"象"。
+
+<hr>
+
+<h2>实践方法</h2>
+
+<h3>悬置→观象→直觉→固化</h3>
+
+<p>1. <strong>悬置</strong>：放下既有概念和判断
+2. <strong>观象</strong>：观察事物的"象"（物象→意象→原象）
+3. <strong>直觉</strong>：整体直观，顿悟本质
+4. <strong>固化</strong>：将直觉转化为可表达的形式</p>
+
+<h3>与西方思维模型的配合</h3>
+
+<strong>先象思维，后西方模型</strong>：
+1. 用象思维完成0→1的原创突破
+2. 用西方思维模型进行1→N的验证和扩展
+3. 两者交替使用，螺旋上升
+
+<hr>
+
+<h2>与其他概念的关系</h2>
+
+<li><strong>相关</strong>：[[concept-五行分类图谱]]、[[concept-一心三界]]</li>
+<li><strong>应用</strong>：[[concept-拔阴取阳]]、[[concept-化克为生]]</li>
+<li><strong>整合</strong>：[[知识学习Skills]]、[[人机协同五象限]]、[[知行合一]]</li>
+
+<hr>
+
+<h2>核心金句</h2>
+
+<blockquote>"象思维负责0→1，西方思维模型负责1→N，两者不是取代关系，而是共生关系。"</blockquote>
+
+<blockquote>"阴面特质的本质是'被概念固化的象'，拔阴取阳就是去概念化，回归原创性本真。"</blockquote>
+
+<blockquote>"象思维是AI时代人类不可替代性的最终护城河。"</blockquote>
+
+<hr>
+
+<strong>标签</strong>：[[核心概念]] [[象思维]] [[原创性]] [[五行]] [[认知体系]]
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
