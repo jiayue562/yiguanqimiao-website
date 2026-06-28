@@ -22,7 +22,7 @@
       "headline": "Obsidian_Rest_Api_Setup",
       "description": "Obsidian Local REST API 配置指南配置状态- 插件安装: 进行中 (obsidian://show-plugin?id=obsidian-local-rest-api)- Obsidian CLI: 已安装 (v0.5.1)- 配置文件: C:\Users\jia'yue\.config\obsidian\obsidian.json配置步骤步骤 1: 安装插件1. 点击链接打",
       "author": {"@type": "Person", "name": "以观其妙书院"},
-      "datePublished": "2026-06-24",
+      "datePublished": "2026-06-25",
       "publisher": {"@type": "Organization", "name": "以观其妙书院"}
     }
     </script>
@@ -136,7 +136,7 @@
         <header>
             <h1>Obsidian_Rest_Api_Setup</h1>
             <div class="meta">
-                <span>📅 2026-06-24</span>
+                <span>📅 2026-06-25</span>
                 <span>✍️ 以观其妙书院</span>
             </div>
         </header>
