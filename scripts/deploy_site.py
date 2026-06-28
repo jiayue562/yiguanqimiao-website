@@ -356,6 +356,7 @@ def step6_deploy():
     try:
         env = os.environ.copy()
         env["CLOUDFLARE_API_TOKEN"] = CLOUDFLARE_TOKEN
+        env["CLOUDFLARE_ACCOUNT_ID"] = CLOUDFLARE_ACCOUNT
         
         # 使用 managed node 的 npx
         npx_path = r"C:\Users\jia'yue\.workbuddy\binaries\node\versions\22.22.2\npx.cmd"
