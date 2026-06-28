@@ -22,7 +22,7 @@
       "headline": "Unified 木行人分智能体 V4.0",
       "description": "木行人分智能体 v4.0版本: v4.0（统一合并版）创建日期: 2026-04-04更新日期: 2026-05-31维护者: 龙龟神将所属系统: 五行人格心理学总智能体（1+5模式）合并来源: 木行人分智能体（完整版） + 木智能体（对话风格版）---一、元数据yamlname: 木行人分智能体alias: 木行人格深度诊断与成长系统description:木行人专属人格分析智能体，基于一心三界",
       "author": {"@type": "Person", "name": "以观其妙书院"},
-      "datePublished": "2026-06-24",
+      "datePublished": "2026-06-25",
       "publisher": {"@type": "Organization", "name": "以观其妙书院"}
     }
     </script>
@@ -136,7 +136,7 @@
         <header>
             <h1>Unified 木行人分智能体 V4.0</h1>
             <div class="meta">
-                <span>📅 2026-06-24</span>
+                <span>📅 2026-06-25</span>
                 <span>✍️ 以观其妙书院</span>
             </div>
         </header>
