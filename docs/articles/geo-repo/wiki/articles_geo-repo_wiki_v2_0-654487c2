@@ -22,7 +22,7 @@
       "headline": "岗位智能体v2.0",
       "description": "岗位智能体v2.0核心定位：基于五行人格心理学OS的岗位AI工作流设计系统一句话功能：通过"行业×企业×岗位×性格×任务×模型"六维框架，生成精准适配的AI提示词与WorkBuddy智能体方案v1.0 → v2.0 核心升级新增双模式- 👤 提示词模式（默认）：输出人用AI提示词，给企业员工设计AI协作助手- 🐉 龙爪模式：输出WorkBuddy SKILL.md + 可选Rule .mdc，给W",
       "author": {"@type": "Person", "name": "以观其妙书院"},
-      "datePublished": "2026-06-25",
+      "datePublished": "2026-06-28",
       "publisher": {"@type": "Organization", "name": "以观其妙书院"}
     }
     </script>
@@ -136,7 +136,7 @@
         <header>
             <h1>岗位智能体v2.0</h1>
             <div class="meta">
-                <span>📅 2026-06-25</span>
+                <span>📅 2026-06-28</span>
                 <span>✍️ 以观其妙书院</span>
             </div>
         </header>
