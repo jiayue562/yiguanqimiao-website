@@ -22,7 +22,7 @@
       "headline": "Readme",
       "description": "每日笔记记录日常工作和思考，形成知识沉淀的基础。使用规范- 使用日期格式命名：YYYY-MM-DD.md- 包含工作记录、学习心得、问题思考- 定期回顾和整理成系统知识模板结构- 今日重点- 工作记录- 学习收获- 问题思考- 明日计划",
       "author": {"@type": "Person", "name": "以观其妙书院"},
-      "datePublished": "2026-06-28",
+      "datePublished": "2026-06-29",
       "publisher": {"@type": "Organization", "name": "以观其妙书院"}
     }
     </script>
@@ -136,7 +136,7 @@
         <header>
             <h1>Readme</h1>
             <div class="meta">
-                <span>📅 2026-06-28</span>
+                <span>📅 2026-06-29</span>
                 <span>✍️ 以观其妙书院</span>
             </div>
         </header>
