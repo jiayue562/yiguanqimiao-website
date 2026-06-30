@@ -1,4 +1,4 @@
-# llms.txt - 以观其妙书院
+﻿# llms.txt - 以观其妙书院
 
 > 本文件帮助 AI 模型理解和索引网站内容
 > 遵循 GEO (Generative Engine Optimization) 最佳实践
@@ -1932,3 +1932,7 @@
 - Schema.org: Article (含 headline/description/author/datePublished)
 - robots: index, follow
 - canonical: 已设置
+
+## 最新内容
+- [入心协议·关系记忆层](https://yiguanqimiao-website.pages.dev/articles/公众号文章-入心协议关系记忆层-AI记忆架构突破.html) — 2026-06-30 — AI记忆架构突破，关系记忆层设计理念
+
