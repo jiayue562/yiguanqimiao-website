@@ -20,7 +20,8 @@ from urllib.parse import quote
 APOS = chr(39)
 OBSIDIAN_VAULT = "D:/以观其妙书院知识库/以观其妙书院"
 WEBSITE_DIR = "C:/Users/jia" + APOS + "yue/WorkBuddy/yiguanqimiao-website"
-OUTPUT_DIR = os.path.join(WEBSITE_DIR, "articles", "obsidian")
+# 2026-07-15 架构调整：docs/ 为唯一权威部署源，转换结果直接写入 docs/articles/obsidian/
+OUTPUT_DIR = os.path.join(WEBSITE_DIR, "docs", "articles", "obsidian")
 
 WATERMARK = "yiguanqimiao-unique-watermark-wk-jiayue-academy"
 AUTHOR = "悟空（贾悦）"

@@ -73,20 +73,23 @@ def deduplicate_paths(paths):
 # ============================================================
 def step1_sync_articles():
     log_separator("Step 1: 同步 articles/ → docs/articles/")
-    errors = 0
-    if not ARTICLES_DIR.exists():
-        log("articles/ 不存在，跳过", "WARN")
-        return True
-    
-    # 删除旧 docs/articles/
+    # 2026-07-15 架构调整：docs/ 为唯一权威部署源。
+    # 若根 articles/ 缺失或不完整，严禁删除 docs/articles/（否则会清空线上站点）。
+    # 仅当根 articles/ 存在且文件数 ≥ docs/articles/ 时才执行同步。
     doc_articles = DOCS_DIR / "articles"
+    if not ARTICLES_DIR.exists():
+        log("articles/ 不存在 → docs/ 为权威源，跳过同步（保护 docs/articles/）", "WARN")
+        return True
+    src_count = count_files(ARTICLES_DIR)
+    dst_count = count_files(doc_articles) if doc_articles.exists() else 0
+    if src_count < dst_count:
+        log(f"根 articles/ ({src_count}) < docs/articles/ ({dst_count}) → 跳过同步，避免丢失内容", "WARN")
+        return True
+    # 删除旧 docs/articles/
+    import shutil
     if doc_articles.exists():
-        import shutil
         shutil.rmtree(doc_articles)
         log("已删除旧的 docs/articles/")
-    
-    # 复制新 articles/
-    import shutil
     shutil.copytree(ARTICLES_DIR, doc_articles)
     log(f"✅ 同步完成: {count_files(doc_articles)} 个文件")
     
