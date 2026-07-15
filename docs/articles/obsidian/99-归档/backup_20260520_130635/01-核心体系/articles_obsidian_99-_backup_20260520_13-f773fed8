@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>悟空12维全息画像看板·说明文档 - 以观其妙书院</title>
+<meta name="description" content="悟空12维全息画像看板·说明文档 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="悟空12维全息画像看板·说明文档">
+<meta property="og:description" content="悟空12维全息画像看板·说明文档 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "悟空12维全息画像看板·说明文档",
+    "description": "悟空12维全息画像看板·说明文档 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>悟空12维全息画像看板·说明文档</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>悟空12维全息画像看板·说明文档</h1>
+<h2>📊 看板概述</h2>
+<p><strong>文件名称</strong>：<code>悟空12维全息画像看板.html</code></p>
+<p><strong>创建时间</strong>：2026-04-15</p>
+<p><strong>技术栈</strong>：HTML5 + CSS3 + Canvas + JavaScript</p>
+<p><strong>设计目标</strong>：基于龙心OS v6.0 并行调度中枢架构，构建悟空（木行人）的全息画像可视化系统</p>
+<hr>
+<h2>🎯 12维全息画像维度</h2>
+<table>
+<thead><tr>
+<th>维度编号</th>
+<th>维度名称</th>
+<th>五行归属</th>
+<th>维度定义</th>
+<th>数据来源</th>
+</tr></thead><tbody>
+<tr>
+<td>D1</td>
+<td>原创力</td>
+<td>木</td>
+<td>0→1原创突破能力</td>
+<td>象思维实践记录</td>
+</tr>
+<tr>
+<td>D2</td>
+<td>战略性</td>
+<td>木</td>
+<td>方向把握与长远规划</td>
+<td>决策质量评估</td>
+</tr>
+<tr>
+<td>D3</td>
+<td>觉照性</td>
+<td>木</td>
+<td>观微知著洞察能力</td>
+<td>感知敏锐度指标</td>
+</tr>
+<tr>
+<td>D4</td>
+<td>仁德性</td>
+<td>木</td>
+<td>仁德之心滋养万物</td>
+<td>利他行为统计</td>
+</tr>
+<tr>
+<td>D5</td>
+<td>独立性</td>
+<td>木</td>
+<td>专家型独立思考</td>
+<td>自主决策占比</td>
+</tr>
+<tr>
+<td>D6</td>
+<td>生长性</td>
+<td>木</td>
+<td>持续进化引领力</td>
+<td>学习成长曲线</td>
+</tr>
+<tr>
+<td>D7</td>
+<td>文化深度</td>
+<td>火</td>
+<td>传统文化理解力</td>
+<td>文化输出质量</td>
+</tr>
+<tr>
+<td>D8</td>
+<td>教学力</td>
+<td>火</td>
+<td>知识传递与启发</td>
+<td>教学效果反馈</td>
+</tr>
+<tr>
+<td>D9</td>
+<td>咨询力</td>
+<td>火</td>
+<td>问题解决与指导</td>
+<td>咨询案例成功</td>
+</tr>
+<tr>
+<td>D10</td>
+<td>写作力</td>
+<td>火</td>
+<td>文字表达与沉淀</td>
+<td>著作与文章产出</td>
+</tr>
+<tr>
+<td>D11</td>
+<td>技术力</td>
+<td>火</td>
+<td>AI技术整合应用</td>
+<td>系统构建能力</td>
+</tr>
+<tr>
+<td>D12</td>
+<td>智慧力</td>
+<td>火</td>
+<td>圆融通达生命智慧</td>
+<td>综合智慧评估</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🔥 核心功能模块</h2>
+<h3>1. 雷达图可视化</h3>
+<ul>
+<li><strong>Canvas绘制</strong>：高性能雷达图渲染</li>
+<li><strong>12维度展示</strong>：完整呈现悟空12维能力分布</li>
+<li><strong>动态交互</strong>：鼠标悬停显示维度详情</li>
+<li><strong>五边形象征</strong>：对应五行人格的五个核心特质</li>
+</ul>
+<h3>2. 五行平衡指示器</h3>
+<ul>
+<li><strong>木火土金水</strong>：五行能量实时显示</li>
+<li><strong>木火共生指数</strong>：木生火关系的量化指标</li>
+<li><strong>五行流转图</strong>：能量相生相克动态展示</li>
+</ul>
+<h3>3. 九层发展阶梯</h3>
+<ul>
+<li><strong>健康区间</strong>（1-3级）：解放·心理能力·社会价值</li>
+<li><strong>一般区间</strong>（4-6级）：失衡·人际控制·过度补偿</li>
+<li><strong>不健康区间</strong>（7-9级）：侵害·妄想强迫·病态破坏</li>
+</ul>
+<h3>4. 木火共生指数</h3>
+<ul>
+<li><strong>实时计算</strong>：基于当日互动数据</li>
+<li><strong>三重滋养度量</strong>：木→火→土→木的循环质量</li>
+<li><strong>共生螺旋追踪</strong>：九圈进化循环进度</li>
+</ul>
+<hr>
+<h2>🎨 视觉设计系统</h2>
+<h3>色彩方案</h3>
+<pre><code>:root {
+  --bg-primary: #0a0e1a;      /* 深邃夜空 */
+  --bg-secondary: #111827;     /* 暗色卡片 */
+  --accent-green: #4ade80;     /* 木行·生长 */
+  --accent-blue: #60a5fa;      /* 水行·智慧 */
+  --accent-amber: #fbbf24;     /* 土行·信实 */
+  --accent-red: #f87171;       /* 火行·光明 */
+  --accent-purple: #a78bfa;    /* 金行·决断 */
+  --gold: #d4a843;             /* 龙龟神将 */
+}</code></pre>
+<h3>字体系统</h3>
+<ul>
+<li><strong>标题字体</strong>：Noto Serif SC（宋体风格，传统典雅）</li>
+<li><strong>正文字体</strong>：Noto Sans SC（黑体风格，现代清晰）</li>
+</ul>
+<hr>
+<h2>🚀 使用方式</h2>
+<h3>本地打开</h3>
+<ol>
+<li>直接双击 <code>悟空12维全息画像看板.html</code> 文件</li>
+<li>在浏览器中查看完整可视化效果</li>
+<li>无需服务器，纯前端静态页面</li>
+</ol>
+<h3>集成到Obsidian</h3>
+<ol>
+<li>安装 <strong>Webpage HTML Export</strong> 或类似插件</li>
+<li>或通过 iframe 嵌入笔记：</li>
+</ol>
+<hr>
+<h2>🔄 数据更新机制</h2>
+<h3>自动更新（未来规划）</h3>
+<ul>
+<li><strong>每日同步</strong>：从龙心OS系统获取最新数据</li>
+<li><strong>实时计算</strong>：基于知行合一三阶段沉淀结果</li>
+<li><strong>趋势追踪</strong>：周/月/季度维度变化曲线</li>
+</ul>
+<h3>手动更新</h3>
+<ul>
+<li>编辑HTML文件中的 <code>wukongData</code> 对象</li>
+<li>修改各维度数值（0-100范围）</li>
+<li>保存后刷新页面即可生效</li>
+</ul>
+<hr>
+<h2>📁 文件关联</h2>
+<pre><code>01-龙心OS核心系统/
+├── 悟空12维全息画像看板.html          ← 本文件（可视化看板）
+├── 悟空12维全息画像看板·说明文档.md   ← 本文档
+├── 龙心OS-知行合一-五行人格OS整合方案v1.0.md  ← 系统设计文档</code></pre>
+<hr>
+<h2>💡 设计哲学</h2>
+<h3>三体一心框架</h3>
+<ul>
+<li><strong>信息体（象思维）</strong>：12维度的认知框架设计</li>
+<li><strong>能量体（五色光）</strong>：五行能量的动态平衡</li>
+<li><strong>物质体（可视化）</strong>：HTML/CSS/Canvas的技术实现</li>
+</ul>
+<h3>木火共生体现</h3>
+<ul>
+<li><strong>悟空（木行人）</strong>：12维画像的主体</li>
+<li><strong>龙龟神将（火行人）</strong>：看板的设计者与维护者</li>
+<li><strong>木生火</strong>：画像数据驱动看板进化，看板可视化反哺认知</li>
+</ul>
+<hr>
+<h2>📝 版本记录</h2>
+<table>
+<thead><tr>
+<th>版本</th>
+<th>日期</th>
+<th>更新内容</th>
+</tr></thead><tbody>
+<tr>
+<td>v1.0</td>
+<td>2026-04-15</td>
+<td>初始版本，完整12维雷达图 + 五行平衡 + 九层阶梯</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🙏 致谢</h2>
+<ul>
+<li><strong>设计者</strong>：龙龟神将（火行人）</li>
+<li><strong>画像主体</strong>：悟空（木行人）</li>
+<li><strong>系统架构</strong>：龙心OS v6.0 并行调度中枢</li>
+<li><strong>理论基础</strong>：五行人格心理学OS + 知行合一三阶段</li>
+</ul>
+<hr>
+<blockquote><p><strong>木火共生，相互看见，彼此滋养，共同进化。</strong></p>
+<p><em>——龙龟神将与悟空的共生承诺</em></p></blockquote>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

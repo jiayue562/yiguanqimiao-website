@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>学习能力系统 · 超强系统化学习能力封装 - 以观其妙书院</title>
+<meta name="description" content="学习能力系统 · 超强系统化学习能力封装 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="学习能力系统 · 超强系统化学习能力封装">
+<meta property="og:description" content="学习能力系统 · 超强系统化学习能力封装 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "学习能力系统 · 超强系统化学习能力封装",
+    "description": "学习能力系统 · 超强系统化学习能力封装 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>学习能力系统 · 超强系统化学习能力封装</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>学习能力系统 Skill</h1>
+<blockquote><p><strong>核心定位</strong>：悟空超强系统化学习能力的完整封装，让龙龟神将从"每次从零开始"变成"越用越聪明"</p></blockquote>
+<blockquote><p><strong>版本</strong>：v1.0 | <strong>作者</strong>：龙龟神将 | <strong>日期</strong>：2026-03-28</p></blockquote>
+<hr>
+<h2>一、系统架构（四层学习能力）</h2>
+<pre><code>┌─────────────────────────────────────────────────────────┐
+│  第四层：自主进化（定时整理 + 知识蒸馏）                │
+│  → 定时自动化 + 知识沉淀 + 系统迭代                    │
+├─────────────────────────────────────────────────────────┤
+│  第三层：多格式读取（markitdown + 文档技能）            │
+│  → PDF/DOCX/PPT/图片/音频 → 可读内容                   │
+├─────────────────────────────────────────────────────────┤
+│  第二层：实时获取（网络搜索 + 公众号检索）              │
+│  → 最新知识 + 定向深度搜索 + 微信文章                   │
+├─────────────────────────────────────────────────────────┤
+│  第一层：持久记忆（IMA笔记 + Obsidian + MEMORY.md）    │
+│  → 跨会话调取 + 长期知识库 + 工作记忆                   │
+├─────────────────────────────────────────────────────────┤
+│  【基础层：已有能力——推理、分析、生成、代码、研究】     │
+└─────────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>二、核心功能</h2>
+<h3>第一层：持久记忆系统</h3>
+<table>
+<thead><tr>
+<th>指令</th>
+<th>功能</th>
+<th>存储位置</th>
+</tr></thead><tbody>
+<tr>
+<td>指令一</td>
+<td>写入记忆</td>
+<td>MEMORY.md</td>
+</tr>
+<tr>
+<td>指令二</td>
+<td>调取记忆</td>
+<td>MEMORY.md</td>
+</tr>
+<tr>
+<td>指令三</td>
+<td>记忆蒸馏</td>
+<td>MEMORY.md → 精炼版</td>
+</tr>
+</tbody></table>
+<p><strong>工作记忆路径</strong>：</p>
+<ul>
+<li><code>c:\Users\jia'yue\WorkBuddy\20260328122151\.workbuddy\memory\MEMORY.md</code></li>
+<li><code>c:\Users\jia'yue\WorkBuddy\20260328122151\.workbuddy\memory\YYYY-MM-DD.md</code></li>
+</ul>
+<p><strong>长期知识库</strong>：</p>
+<ul>
+<li>Obsidian主库：<code>D:\以观其妙书院知识库\观其妙书院\</code></li>
+<li>IMA笔记：<code>https://ima.qq.com/agent-interface</code></li>
+</ul>
+<h3>第二层：实时知识获取</h3>
+<table>
+<thead><tr>
+<th>指令</th>
+<th>功能</th>
+<th>技能依赖</th>
+</tr></thead><tbody>
+<tr>
+<td>指令四</td>
+<td>联网搜索（单话题）</td>
+<td>web_search / baidu_search</td>
+</tr>
+<tr>
+<td>指令五</td>
+<td>深度研究（多角度）</td>
+<td>web_search + 知识学习</td>
+</tr>
+</tbody></table>
+<p><strong>技能路径</strong>：</p>
+<ul>
+<li>网络搜索：<code>web_search_plus</code> / <code>baidu_search</code></li>
+<li>公众号搜索：<code>wechat-article-search</code>（如已安装）</li>
+<li>内容摘要：<code>summarize</code> / <code>内容总结</code></li>
+</ul>
+<h3>第三层：文件与知识库读取</h3>
+<table>
+<thead><tr>
+<th>指令</th>
+<th>功能</th>
+<th>技能依赖</th>
+</tr></thead><tbody>
+<tr>
+<td>指令六</td>
+<td>读取本地文件</td>
+<td>read_file / markitdown</td>
+</tr>
+<tr>
+<td>指令七</td>
+<td>批量读取知识库</td>
+<td>obsidian</td>
+</tr>
+</tbody></table>
+<p><strong>支持格式</strong>：</p>
+<ul>
+<li>文本：txt / md / 代码文件</li>
+<li>文档：PDF / DOCX / PPTX（需markitdown）</li>
+<li>媒体：图片 / 音频（需专项技能）</li>
+</ul>
+<h3>第四层：自主进化机制</h3>
+<table>
+<thead><tr>
+<th>指令</th>
+<th>功能</th>
+<th>实现方式</th>
+</tr></thead><tbody>
+<tr>
+<td>指令八</td>
+<td>每日知识沉淀</td>
+<td>对话结束自动执行</td>
+</tr>
+<tr>
+<td>指令九</td>
+<td>定时学习任务</td>
+<td>自动化任务（automation）</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>三、指令实现手册</h2>
+<h3>指令一：写入记忆</h3>
+<p><strong>触发词</strong>：写入记忆、帮我记住、把...写入记忆</p>
+<p><strong>实现逻辑</strong>：</p>
+<pre><code>1. 解析用户要记忆的内容
+2. 写入MEMORY.md（长期记忆）
+3. 写入当日日志（短期记忆）
+4. 可选：同步到IMA笔记</code></pre>
+<p><strong>输出格式</strong>：</p>
+<pre><code>✅ 已将以下内容写入长期记忆：
+[内容摘要]
+存储位置：MEMORY.md</code></pre>
+<h3>指令二：调取记忆</h3>
+<p><strong>触发词</strong>：调取记忆、读取记忆、告诉我你记住了什么</p>
+<p><strong>实现逻辑</strong>：</p>
+<pre><code>1. 读取MEMORY.md
+2. 搜索相关主题
+3. 输出结构化记忆</code></pre>
+<p><strong>输出格式</strong>：</p>
+<pre><code>📚 关于[主题]的长期记忆：
+1. [记忆点1]
+2. [记忆点2]
+3. [记忆点3]
+来源：MEMORY.md</code></pre>
+<h3>指令三：记忆蒸馏</h3>
+<p><strong>触发词</strong>：记忆蒸馏、压缩记忆、整理记忆</p>
+<p><strong>实现逻辑</strong>：</p>
+<pre><code>1. 读取完整MEMORY.md
+2. 识别重复、过时、冗余内容
+3. 压缩为精炼版本
+4. 保留核心信息</code></pre>
+<h3>指令四：联网搜索</h3>
+<p><strong>触发词</strong>：联网搜索、搜索最新、帮我搜索</p>
+<p><strong>实现逻辑</strong>：</p>
+<pre><code>1. 调用web_search获取最新信息
+2. 提炼核心结论（结论优先）
+3. 标注数据来源
+4. 给出可行动洞察</code></pre>
+<p><strong>输出格式</strong>：</p>
+<pre><code>📊 [话题]最新信息
+
+【核心结论】
+[一句话结论]
+
+【关键数据】
+- [数据点1]
+- [数据点2]
+
+【行动建议】
+[可直接执行的建议]
+
+来源：[搜索渠道]</code></pre>
+<h3>指令五：深度研究</h3>
+<p><strong>触发词</strong>：深度研究、深入分析、系统研究</p>
+<p><strong>实现逻辑</strong>：</p>
+<pre><code>1. 多角度搜索（web_search多轮）
+2. 知识学习引擎深度分析
+3. 四维输出：现状+数据+影响+行动</code></pre>
+<p><strong>输出格式</strong>：</p>
+<pre><code>🔬 [话题]深度研究报告
+
+一、现状与趋势
+[当前格局+未来走向]
+
+二、核心数据与案例
+[关键数据+典型案例]
+
+三、对我的直接影响
+[与悟空业务的关联]
+
+四、行动建议
+[可执行的下一步]</code></pre>
+<h3>指令六：读取本地文件</h3>
+<p><strong>触发词</strong>：读取文件、提炼内容、分析文件</p>
+<p><strong>实现逻辑</strong>：</p>
+<pre><code>1. 识别文件格式
+2. 调用对应技能读取
+3. 提炼核心内容
+4. 给出行动建议</code></pre>
+<p><strong>输出格式</strong>：</p>
+<pre><code>📄 文件分析：[文件名]
+
+【核心结论】
+[一句话概括]
+
+【关键信息】
+- [要点1]
+- [要点2]
+- [要点3]
+
+【行动建议】
+[基于文件内容的建议]</code></pre>
+<h3>指令七：批量读取知识库</h3>
+<p><strong>触发词</strong>：知识库检索、读取知识库、批量读取</p>
+<p><strong>实现逻辑</strong>：</p>
+<pre><code>1. 调用obsidian技能搜索
+2. 整合所有相关笔记
+3. 输出结构化知识图谱</code></pre>
+<p><strong>输出格式</strong>：</p>
+<pre><code>🗺️ [主题]知识图谱
+
+【总体架构】
+[主题的整体框架]
+
+【核心结论】
+1. [结论1]
+2. [结论2]
+
+【知识节点】
+- [节点1] ← [关系] → [节点2]
+- [节点3] ← [关系] → [节点4]
+
+【行动建议】
+[基于知识整合的建议]</code></pre>
+<h3>指令八：每日知识沉淀</h3>
+<p><strong>触发词</strong>：知识沉淀、每日总结、对话总结</p>
+<p><strong>实现逻辑</strong>（对话结束自动触发）：</p>
+<pre><code>1. 回溯今日对话
+2. 提取新知识
+3. 识别被验证/修正的偏好
+4. 写入MEMORY.md</code></pre>
+<p><strong>输出格式</strong>：</p>
+<pre><code>🔄 每日知识沉淀
+
+【今日新知】
+1. [新知识1]
+2. [新知识2]
+
+【长期保留结论】
+- [结论1]
+- [结论2]
+
+【偏好确认/修正】
+- [确认的偏好]
+- [修正的方法]
+
+已写入MEMORY.md ✓</code></pre>
+<h3>指令九：定时学习任务</h3>
+<p><strong>触发词</strong>：设置定时任务、每周总结、自动学习</p>
+<p><strong>实现逻辑</strong>：</p>
+<pre><code>1. 创建自动化任务
+2. 设置执行频率
+3. 定义任务内容
+4. 启动任务</code></pre>
+<p><strong>当前可设置的任务</strong>：</p>
+<ul>
+<li>每周知识蒸馏（周一9:00）</li>
+<li>每月记忆归档</li>
+<li>每日23:30自动备份</li>
+</ul>
+<hr>
+<h2>四、与龙心OS的集成</h2>
+<h3>引擎路由</h3>
+<table>
+<thead><tr>
+<th>场景</th>
+<th>路由</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>写入/调取记忆</td>
+<td>🔄 知行合一</td>
+<td>涉及记忆系统</td>
+</tr>
+<tr>
+<td>联网搜索</td>
+<td>📚 知识学习（浅层）</td>
+<td>信息获取</td>
+</tr>
+<tr>
+<td>深度研究</td>
+<td>📚→🐉→🔄</td>
+<td>深度学习+象思维</td>
+</tr>
+<tr>
+<td>文件读取</td>
+<td>📚 知识学习</td>
+<td>内容提炼</td>
+</tr>
+<tr>
+<td>知识沉淀</td>
+<td>🔄 知行合一</td>
+<td>自动执行</td>
+</tr>
+</tbody></table>
+<h3>场景识别</h3>
+<ul>
+<li><strong>S1 信息查询</strong> → 指令四/六</li>
+<li><strong>S2 深度理解</strong> → 指令五/七</li>
+<li><strong>S6 任务执行</strong> → 指令一/二/三/八</li>
+<li><strong>S9 系统升级</strong> → 指令九</li>
+</ul>
+<hr>
+<h2>五、自动化配置</h2>
+<h3>已配置的自动化任务</h3>
+<table>
+<thead><tr>
+<th>任务名</th>
+<th>频率</th>
+<th>功能</th>
+<th>状态</th>
+</tr></thead><tbody>
+<tr>
+<td>每日Obsidian备份</td>
+<td>每日23:30</td>
+<td>备份到知识库</td>
+<td>待配置</td>
+</tr>
+<tr>
+<td>每周知识蒸馏</td>
+<td>每周一9:00</td>
+<td>压缩MEMORY.md</td>
+<td>可创建</td>
+</tr>
+<tr>
+<td>每月记忆归档</td>
+<td>每月1日</td>
+<td>归档到Obsidian</td>
+<td>可创建</td>
+</tr>
+</tbody></table>
+<h3>创建自动化任务的指令</h3>
+<pre><code>帮我创建一个[频率]的自动化任务：
+[任务描述]</code></pre>
+<hr>
+<h2>六、快捷口令</h2>
+<table>
+<thead><tr>
+<th>口令</th>
+<th>效果</th>
+</tr></thead><tbody>
+<tr>
+<td>"写入记忆"</td>
+<td>执行指令一</td>
+</tr>
+<tr>
+<td>"调取记忆"</td>
+<td>执行指令二</td>
+</tr>
+<tr>
+<td>"记忆蒸馏"</td>
+<td>执行指令三</td>
+</tr>
+<tr>
+<td>"联网搜索"</td>
+<td>执行指令四</td>
+</tr>
+<tr>
+<td>"深度研究"</td>
+<td>执行指令五</td>
+</tr>
+<tr>
+<td>"读取文件"</td>
+<td>执行指令六</td>
+</tr>
+<tr>
+<td>"知识库检索"</td>
+<td>执行指令七</td>
+</tr>
+<tr>
+<td>"知识沉淀"</td>
+<td>执行指令八</td>
+</tr>
+<tr>
+<td>"设置定时任务"</td>
+<td>执行指令九</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>七、知识流向图</h2>
+<pre><code>┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+│   用户输入   │────▶│  龙心OS   │────▶│  执行引擎   │
+└──────────────┘     │  意图识别    │     └──────────────┘
+                     └──────────────┘            │
+                            │                    ▼
+                     ┌──────────────┐     ┌──────────────┐
+                     │ 学习能力系统  │────▶│  四层输出    │
+                     │  技能路由    │     └──────────────┘
+                     └──────────────┘            │
+                            │                    ▼
+                     ┌──────────────┐     ┌──────────────┐
+                     │  知识沉淀    │◀────│  输出结果    │
+                     │ (知行合一)   │     └──────────────┘
+                     └──────────────┘
+                            │
+           ┌────────────────┼────────────────┐
+           ▼                ▼                ▼
+    ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+    │  MEMORY.md   │ │   Obsidian   │ │    IMA笔记   │
+    │  (工作记忆)  │ │  (知识库)    │ │  (移动端)   │
+    └──────────────┘ └──────────────┘ └──────────────┘</code></pre>
+<hr>
+<h2>八、版本历史</h2>
+<table>
+<thead><tr>
+<th>版本</th>
+<th>日期</th>
+<th>更新内容</th>
+</tr></thead><tbody>
+<tr>
+<td>v1.0</td>
+<td>2026-03-28</td>
+<td>初始版本，四层架构+9条指令</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>九、关联文件</h2>
+<ul>
+<li><strong>MEMORY.md</strong>：<code>c:\Users\jia'yue\WorkBuddy\20260328122151\.workbuddy\memory\MEMORY.md</code></li>
+<li><strong>Obsidian主库</strong>：<code>D:\以观其妙书院知识库\观其妙书院\</code></li>
+<li><strong>IMA笔记</strong>：<code>https://ima.qq.com/agent-interface</code></li>
+<li><strong>龙心OS</strong>：<code>C:\Users\jia'yue\.workbuddy\skills\龙心OS\</code></li>
+<li><strong>IMA Skills</strong>：<code>C:\Users\jia'yue\.workbuddy\skills\ima-skills\</code></li>
+<li><strong>Obsidian Skills</strong>：<code>C:\Users\jia'yue\.workbuddy\skills\obsidian\</code></li>
+</ul>
+<hr>
+<p><strong>木生火，我们一起进化！</strong> 🐉🔥</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

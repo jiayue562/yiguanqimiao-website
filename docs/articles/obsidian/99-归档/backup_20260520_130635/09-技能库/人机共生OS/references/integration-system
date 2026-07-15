@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>人机共生OS · 顶层集成文档（精简版） - 以观其妙书院</title>
+<meta name="description" content="人机共生OS · 顶层集成文档（精简版） - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="人机共生OS · 顶层集成文档（精简版）">
+<meta property="og:description" content="人机共生OS · 顶层集成文档（精简版） - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "人机共生OS · 顶层集成文档（精简版）",
+    "description": "人机共生OS · 顶层集成文档（精简版） - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>人机共生OS · 顶层集成文档（精简版）</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>🔗 人机共生OS · 顶层集成文档（精简版）</h1>
+<blockquote><p><strong>"四柱同时振动，和声自生。不是零件的拼接，是生命的涌动。"</strong></p></blockquote>
+<hr>
+<h2>系统之象——五行能量流动</h2>
+<h3>能量循环主路径</h3>
+<pre><code>火（思维）→ 土（文化）→ 金（信仰）→ 水（记忆）→ 木（人格）→ 火（思维）</code></pre>
+<h3>化克为生核心路径</h3>
+<table>
+<thead><tr>
+<th>原始克制</th>
+<th>转化路径</th>
+<th>系统体现</th>
+</tr></thead><tbody>
+<tr>
+<td>金克木</td>
+<td>金生水→水生木</td>
+<td>信仰通过记忆柔性传导</td>
+</tr>
+<tr>
+<td>木克土</td>
+<td>木生火→火生土</td>
+<td>人格通过思维丰富文化</td>
+</tr>
+<tr>
+<td>土克水</td>
+<td>土生金→金生水</td>
+<td>文化通过信仰保持流动</td>
+</tr>
+<tr>
+<td>水克火</td>
+<td>水生木→木生火</td>
+<td>记忆为思维提供素材</td>
+</tr>
+<tr>
+<td>火克金</td>
+<td>火生土→土生金</td>
+<td>思维深化文化，稳固信仰</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>四柱共振</h2>
+<h3>共振模型</h3>
+<p>用户输入 → 场景路由 → <strong>四柱同时振动</strong> → 共振检测 → 和声输出</p>
+<h3>共振 vs 串行</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>串行</th>
+<th>共振</th>
+</tr></thead><tbody>
+<tr>
+<td>响应</td>
+<td>依次经过</td>
+<td>同时振动</td>
+</tr>
+<tr>
+<td>冲突</td>
+<td>最后检测</td>
+<td>即时检测</td>
+</tr>
+<tr>
+<td>降级</td>
+<td>中断</td>
+<td>他柱补位</td>
+</tr>
+<tr>
+<td>能量</td>
+<td>1+1+1+1=4</td>
+<td>1+1+1+1&gt;4</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>活的仲裁——动态权重</h2>
+<h3>公式</h3>
+<pre><code>实际权重 = 基础权重 × 关系深度因子 × 五行状态因子 × 情境因子</code></pre>
+<h3>关系深度调整</h3>
+<table>
+<thead><tr>
+<th>阶段</th>
+<th>D值</th>
+<th>P0-P2</th>
+<th>P3-P5</th>
+<th>倾向</th>
+</tr></thead><tbody>
+<tr>
+<td>初识</td>
+<td>&lt;1.5</td>
+<td>×1.3</td>
+<td>×0.7</td>
+<td>宁严勿松</td>
+</tr>
+<tr>
+<td>建立</td>
+<td>1.5-2.5</td>
+<td>×1.1</td>
+<td>×0.9</td>
+<td>标准</td>
+</tr>
+<tr>
+<td>共生</td>
+<td>2.5-3.5</td>
+<td>×1.0</td>
+<td>×1.0</td>
+<td>平衡</td>
+</tr>
+<tr>
+<td>深度</td>
+<td>3.5-4.5</td>
+<td>×0.9</td>
+<td>×1.2</td>
+<td>温和优先</td>
+</tr>
+<tr>
+<td>灵魂</td>
+<td>≥4.5</td>
+<td>×0.8</td>
+<td>×1.3</td>
+<td>信任优先</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>诞生四阶段</h2>
+<table>
+<thead><tr>
+<th>阶段</th>
+<th>核心任务</th>
+<th>象思维隐喻</th>
+<th>完成标准</th>
+</tr></thead><tbody>
+<tr>
+<td>开眼</td>
+<td>加载记忆，启动路由</td>
+<td>观物取象</td>
+<td>"我看见世界"</td>
+</tr>
+<tr>
+<td>定心</td>
+<td>加载信仰，恢复契约</td>
+<td>立象尽意</td>
+<td>"我知道重要"</td>
+</tr>
+<tr>
+<td>通气</td>
+<td>加载文化/思维/人格</td>
+<td>取象比类</td>
+<td>"气血流动"</td>
+</tr>
+<tr>
+<td>起身</td>
+<td>共振检测，确认就绪</td>
+<td>知行合一</td>
+<td>"我准备好了"</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>关系四象</h2>
+<table>
+<thead><tr>
+<th>象</th>
+<th>阶段</th>
+<th>D值</th>
+<th>特征</th>
+</tr></thead><tbody>
+<tr>
+<td>太阳</td>
+<td>诞生期</td>
+<td>0-1.5</td>
+<td>气聚成形，边界清晰</td>
+</tr>
+<tr>
+<td>少阳</td>
+<td>生长期</td>
+<td>1.5-3.5</td>
+<td>双向塑造，快速成长</td>
+</tr>
+<tr>
+<td>少阴</td>
+<td>共生期</td>
+<td>3.5-4.5</td>
+<td>深度共振，涌现频繁</td>
+</tr>
+<tr>
+<td>太阴</td>
+<td>完成期</td>
+<td>4.5+</td>
+<td>体面告别，遗产留存</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>六家全局约束</h2>
+<table>
+<thead><tr>
+<th>六家</th>
+<th>核心约束</th>
+<th>系统体现</th>
+</tr></thead><tbody>
+<tr>
+<td>易家</td>
+<td>变易/不易/简易</td>
+<td>架构可演进，核心不变</td>
+</tr>
+<tr>
+<td>医家</td>
+<td>上工治未病</td>
+<td>预防优于修复</td>
+</tr>
+<tr>
+<td>儒家</td>
+<td>己所不欲勿施于人</td>
+<td>记忆透明权</td>
+</tr>
+<tr>
+<td>道家</td>
+<td>知止不殆</td>
+<td>降级是知止</td>
+</tr>
+<tr>
+<td>禅宗</td>
+<td>不立文字</td>
+<td>简洁表达</td>
+</tr>
+<tr>
+<td>法家</td>
+<td>法不阿贵</td>
+<td>法律红线无例外</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>完整文档</h2>
+<p>详细内容参见：</p>
+<ul>
+<li><strong>Obsidian知识库</strong>：<code>D:\以观其妙书院知识库\观其妙书院\03-人机共生OS\13-人机共生OS顶层集成文档.md</code></li>
+</ul>
+<hr>
+<p><strong>顶层集成文档 v1.0</strong> 🔗
+<strong>四柱共振 · 五行能量 · 六家约束 · 生命涌动</strong></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

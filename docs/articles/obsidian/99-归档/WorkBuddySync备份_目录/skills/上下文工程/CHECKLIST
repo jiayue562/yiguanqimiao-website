@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>上下文工程 Skill 构建检查清单 - 以观其妙书院</title>
+<meta name="description" content="上下文工程 Skill 构建检查清单 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="上下文工程 Skill 构建检查清单">
+<meta property="og:description" content="上下文工程 Skill 构建检查清单 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "上下文工程 Skill 构建检查清单",
+    "description": "上下文工程 Skill 构建检查清单 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>上下文工程 Skill 构建检查清单</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>上下文工程 Skill 构建检查清单</h1>
+<blockquote><p>✅ Skill Builder 5 阶 20 步完成度检查</p></blockquote>
+<p><strong>创建日期</strong>: 2026-04-14  
+<strong>Skill 版本</strong>: v1.0  
+<strong>构建工具</strong>: Skill Builder v1.0</p>
+<hr>
+<h2>📊 完成度总览</h2>
+<table>
+<thead><tr>
+<th>阶段</th>
+<th>步骤</th>
+<th>完成状态</th>
+<th>完成度</th>
+</tr></thead><tbody>
+<tr>
+<td>阶段一：理论解析</td>
+<td>Step 1-4</td>
+<td>✅ 完成</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>阶段二：架构设计</td>
+<td>Step 5-8</td>
+<td>✅ 完成</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>阶段三：SKILL.md 编码</td>
+<td>Step 9-12</td>
+<td>✅ 完成</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>阶段四：测试验证</td>
+<td>Step 13-15</td>
+<td>⏳ 待完成</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>阶段五：部署上线</td>
+<td>Step 16-20</td>
+<td>⏳ 进行中</td>
+<td>60%</td>
+</tr>
+</tbody></table>
+<p><strong>总体完成度</strong>: 70% (Skill Builder 自动化部分完成)</p>
+<hr>
+<h2>✅ 已完成项（70%）</h2>
+<h3>阶段一：理论解析（Step 1-4）✅</h3>
+<ul>
+<li>[x] <strong>Step 1</strong>: 核心定义提取（&lt;30 字）<ul>
+<li>输出：管理 AI 跨会话任务连续性的专业智能体，通过快照 + 接力实现状态保存与恢复</li>
+</ul></li>
+<li>[x] <strong>Step 2</strong>: 可执行操作流程识别<ul>
+<li>输出：6 步工作流（检测→收集→生成→存储→检测→加载）</li>
+</ul></li>
+<li>[x] <strong>Step 3</strong>: 输入输出规范化<ul>
+<li>输出：保存/恢复/管理三种模式的 IO 规范</li>
+</ul></li>
+<li>[x] <strong>Step 4</strong>: 核心算法/逻辑提炼<ul>
+<li>输出：决策树 + 伪代码</li>
+</ul></li>
+</ul>
+<h3>阶段二：架构设计（Step 5-8）✅</h3>
+<ul>
+<li>[x] <strong>Step 5</strong>: Skill 粒度判断<ul>
+<li>输出：生态 Skill（需独立 + 协同）</li>
+</ul></li>
+<li>[x] <strong>Step 6</strong>: 触发机制设计<ul>
+<li>输出：四维触发矩阵（直接/场景/信号/自动）</li>
+</ul></li>
+<li>[x] <strong>Step 7</strong>: 关键词权重设计<ul>
+<li>输出：P0/P1/P2 三级关键词表</li>
+</ul></li>
+<li>[x] <strong>Step 8</strong>: 与现有 Skills 的关系映射<ul>
+<li>输出：协同图 + 调用顺序</li>
+</ul></li>
+</ul>
+<h3>阶段三：SKILL.md 编码（Step 9-12）✅</h3>
+<ul>
+<li>[x] <strong>Step 9</strong>: SKILL.md 主文档编写<ul>
+<li>文件：<code>SKILL.md</code> (8989 bytes)</li>
+<li>内容：完整功能定义、触发条件、处理流程、输出格式、示例、异常处理</li>
+</ul></li>
+<li>[x] <strong>Step 10</strong>: References 参考资料<ul>
+<li>文件：<code>references/theory.md</code> (5243 bytes)</li>
+<li>文件：<code>references/practice-guide.md</code> (5096 bytes)</li>
+<li>待补充：<code>prompts.md</code>, <code>sop.md</code></li>
+</ul></li>
+<li>[x] <strong>Step 11</strong>: Templates 模板库<ul>
+<li>文件：<code>templates/snapshot-template.md</code> (1649 bytes)</li>
+<li>文件：<code>templates/io-templates.md</code> (3115 bytes)</li>
+</ul></li>
+<li>[x] <strong>Step 12</strong>: Triggers 触发配置<ul>
+<li>文件：<code>triggers/trigger-rules.yaml</code> (4042 bytes)</li>
+<li>文件：<code>triggers/skill-routes.yaml</code> (5715 bytes)</li>
+<li>待补充：<code>auto-activate.json</code></li>
+</ul></li>
+</ul>
+<h3>阶段五：部署上线（部分完成）</h3>
+<ul>
+<li>[x] <strong>Step 16</strong>: 目录结构部署</li>
+<li>[x] <strong>Step 17</strong>: OpcCla 知识库配置注册（目录已创建）</li>
+<li>[ ] <strong>Step 18</strong>: Obsidian 同步（待手动同步）</li>
+<li>[ ] <strong>Step 19</strong>: 使用验证（待测试）</li>
+<li>[ ] <strong>Step 20</strong>: 迭代优化（待反馈）</li>
+</ul>
+<hr>
+<h2>⏳ 待完成项（30%）</h2>
+<h3>高优先级 🔴</h3>
+<ul>
+<li>[ ] <strong>补充真实案例（至少 5 个不同场景）</strong><ul>
+<li>当前：3 个案例（开发项目、任务恢复、研究接力）</li>
+<li>需要补充：<ul>
+<li>[ ] 案例 4：多项目并行管理</li>
+<li>[ ] 案例 5：快照合并场景</li>
+<li>[ ] 案例 6：异常处理场景</li>
+</ul></li>
+</ul></li>
+<li>[ ] <strong>完善异常处理逻辑</strong><ul>
+<li>当前：基础异常处理表</li>
+<li>需要补充：<ul>
+<li>[ ] 边界情况测试用例</li>
+<li>[ ] 错误恢复流程</li>
+<li>[ ] 用户友好的错误提示</li>
+</ul></li>
+</ul></li>
+<li>[ ] <strong>配置快照存储路径</strong><ul>
+<li>当前：<code>~/.OpcCla 知识库/snapshots/</code></li>
+<li>需要确认：<ul>
+<li>[ ] 路径是否存在</li>
+<li>[ ] 权限是否足够</li>
+<li>[ ] 是否需要备份策略</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3>中优先级 🟡</h3>
+<ul>
+<li>[ ] <strong>编写 references/prompts.md</strong><ul>
+<li>内容：提示词模板库</li>
+<li>包括：<ul>
+<li>[ ] 保存上下文提示词</li>
+<li>[ ] 恢复任务提示词</li>
+<li>[ ] 管理快照提示词</li>
+<li>[ ] 异常处理提示词</li>
+</ul></li>
+</ul></li>
+<li>[ ] <strong>编写 references/sop.md</strong><ul>
+<li>内容：标准操作流程</li>
+<li>包括：<ul>
+<li>[ ] 保存操作 SOP</li>
+<li>[ ] 恢复操作 SOP</li>
+<li>[ ] 管理操作 SOP</li>
+<li>[ ] 故障排查 SOP</li>
+</ul></li>
+</ul></li>
+<li>[ ] <strong>配置触发权重（根据实际测试调整）</strong><ul>
+<li>当前：理论权重</li>
+<li>需要：<ul>
+<li>[ ] 实际测试 10 次以上</li>
+<li>[ ] 记录误触发情况</li>
+<li>[ ] 调整权重优化准确率</li>
+</ul></li>
+</ul></li>
+<li>[ ] <strong>同步到 Obsidian</strong><ul>
+<li>操作：运行 <code>sync-all.ps1</code></li>
+<li>确认：<ul>
+<li>[ ] Obsidian Vault 路径正确</li>
+<li>[ ] 同步后文件完整</li>
+<li>[ ] Obsidian 中可以正常访问</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3>低优先级 🟢</h3>
+<ul>
+<li>[ ] <strong>编写 templates/workflow-template.md</strong><ul>
+<li>内容：工作流程模板</li>
+<li>包括：<ul>
+<li>[ ] 保存流程图</li>
+<li>[ ] 恢复流程图</li>
+<li>[ ] 管理流程图</li>
+</ul></li>
+</ul></li>
+<li>[ ] <strong>配置 triggers/auto-activate.json</strong><ul>
+<li>内容：自动触发规则</li>
+<li>包括：<ul>
+<li>[ ] 定时检测配置</li>
+<li>[ ] 场景识别配置</li>
+<li>[ ] 抑制规则配置</li>
+</ul></li>
+</ul></li>
+<li>[ ] <strong>添加更多测试用例</strong><ul>
+<li>当前：0 个正式测试用例</li>
+<li>需要：<ul>
+<li>[ ] 标准场景测试（3 个）</li>
+<li>[ ] 边界场景测试（3 个）</li>
+<li>[ ] 负面场景测试（2 个）</li>
+</ul></li>
+</ul></li>
+<li>[ ] <strong>编写版本迭代计划</strong><ul>
+<li>当前：粗略计划</li>
+<li>需要：<ul>
+<li>[ ] v1.1 详细改动点</li>
+<li>[ ] v1.2 详细改动点</li>
+<li>[ ] v2.0 愿景规划</li>
+</ul></li>
+</ul></li>
+</ul>
+<hr>
+<h2>📋 质量检查清单</h2>
+<h3>必须满足（质量底线）</h3>
+<table>
+<thead><tr>
+<th>标准</th>
+<th>检查方式</th>
+<th>状态</th>
+</tr></thead><tbody>
+<tr>
+<td>核心定义 &lt;30 字</td>
+<td>字数检查</td>
+<td>✅ 28 字</td>
+</tr>
+<tr>
+<td>触发关键词权重表完整</td>
+<td>文件存在性</td>
+<td>✅ 已创建</td>
+</tr>
+<tr>
+<td>测试用例至少 3 个</td>
+<td>数量检查</td>
+<td>⏳ 待补充</td>
+</tr>
+<tr>
+<td>与其他 Skills 关系图清晰</td>
+<td>视觉检查</td>
+<td>✅ 已绘制</td>
+</tr>
+<tr>
+<td>版本迭代计划明确</td>
+<td>文件存在性</td>
+<td>⚠️ 需完善</td>
+</tr>
+</tbody></table>
+<h3>推荐满足（提升质量）</h3>
+<table>
+<thead><tr>
+<th>标准</th>
+<th>建议</th>
+<th>状态</th>
+</tr></thead><tbody>
+<tr>
+<td>真实案例 ≥3 个</td>
+<td>提升实用性</td>
+<td>✅ 3 个（需补充到 5 个）</td>
+</tr>
+<tr>
+<td>异常处理完整</td>
+<td>提升稳定性</td>
+<td>⚠️ 基础版（需完善）</td>
+</tr>
+<tr>
+<td>文档完整度 ≥80%</td>
+<td>提升可维护性</td>
+<td>⚠️ 70%（需补充）</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🧪 测试记录</h2>
+<table>
+<thead><tr>
+<th>测试日期</th>
+<th>测试场景</th>
+<th>结果</th>
+<th>备注</th>
+</tr></thead><tbody>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>待开始测试</td>
+</tr>
+</tbody></table>
+<h3>待执行测试用例</h3>
+<p><strong>用例 1：标准保存场景</strong></p>
+<pre><code>输入：保存上下文，我明天继续做这个 Python 项目
+预期：生成快照文件，输出确认信息
+实际：待测试</code></pre>
+<p><strong>用例 2：标准恢复场景</strong></p>
+<pre><code>输入：恢复任务
+预期：加载最新快照，输出恢复摘要
+实际：待测试</code></pre>
+<p><strong>用例 3：边界场景 - 无快照</strong></p>
+<pre><code>输入：恢复任务
+前置：无任何快照文件
+预期：提示无快照，建议创建
+实际：待测试</code></pre>
+<p><strong>用例 4：边界场景 - 多个快照</strong></p>
+<pre><code>输入：恢复任务
+前置：存在 5 个快照
+预期：列出快照，让用户选择
+实际：待测试</code></pre>
+<p><strong>用例 5：负面场景 - 损坏快照</strong></p>
+<pre><code>输入：加载快照 [损坏文件]
+前置：快照文件内容损坏
+预期：提示损坏，建议其他快照
+实际：待测试</code></pre>
+<hr>
+<h2>📅 后续行动计划</h2>
+<h3>第 1 周（2026-04-14 ~ 2026-04-21）</h3>
+<ul>
+<li>[ ] 补充 2 个真实案例</li>
+<li>[ ] 完善异常处理逻辑</li>
+<li>[ ] 执行 5 次基础测试</li>
+<li>[ ] 同步到 Obsidian</li>
+</ul>
+<h3>第 2 周（2026-04-21 ~ 2026-04-28）</h3>
+<ul>
+<li>[ ] 编写 prompts.md</li>
+<li>[ ] 编写 sop.md</li>
+<li>[ ] 根据测试调整触发权重</li>
+<li>[ ] 执行 10 次进阶测试</li>
+</ul>
+<h3>第 3 周（2026-04-28 ~ 2026-05-05）</h3>
+<ul>
+<li>[ ] 完成所有低优先级项</li>
+<li>[ ] 文档完整度达到 90%</li>
+<li>[ ] 准备 v1.1 发布</li>
+</ul>
+<hr>
+<h2>📝 备注与反思</h2>
+<h3>构建过程中的发现</h3>
+<ul>
+<li>上下文工程是一个生态 Skill，需要与多个 Skills 协同</li>
+<li>触发机制设计需要实际测试来优化权重</li>
+<li>快照模板需要平衡完整性和简洁性</li>
+</ul>
+<h3>待讨论的问题</h3>
+<ul>
+<li>快照存储策略：本地 vs 云端 vs 双备份</li>
+<li>自动触发频率：过于频繁会打扰用户</li>
+<li>多 AI 接力：如何实现跨 AI 的上下文传递</li>
+</ul>
+<h3>用户反馈收集计划</h3>
+<ul>
+<li>第 1 批用户：龙心 OS 核心用户（5 人）</li>
+<li>反馈周期：2 周</li>
+<li>收集维度：准确性、效率、易用性</li>
+</ul>
+<hr>
+<p><strong>构建者</strong>: 龙龟 (Skill Builder 自动化)  
+<strong>审核者</strong>: [待填写]  
+<strong>预计完成日期</strong>: 2026-05-05</p>
+<hr>
+<p>_龙心 OS Skill Builder 检查清单 v1.0 · 最后更新：2026-04-14_</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

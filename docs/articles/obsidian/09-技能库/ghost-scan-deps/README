@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Ghost SCA Scanner - 以观其妙书院</title>
+<meta name="description" content="Ghost SCA Scanner - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="Ghost SCA Scanner">
+<meta property="og:description" content="Ghost SCA Scanner - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Ghost SCA Scanner",
+    "description": "Ghost SCA Scanner - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Ghost SCA Scanner</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Ghost SCA Scanner</h1>
+<p>AI-powered Software Composition Analysis (SCA) scanner that detects exploitable vulnerabilities in your dependencies. Uses <a href="https://github.com/ghostsecurity/wraith">wraith</a> for vulnerability detection with AI analysis to filter false positives.</p>
+<h2>What Makes This Different</h2>
+<p>Traditional SCA tools report every CVE found in your dependency tree, leading to alert fatigue. <strong>Ghost SCA uses AI to analyze each vulnerability and determine if it's actually exploitable</strong> in your codebase.</p>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li>Scans all major package ecosystems (Go, npm, PyPI, RubyGems, Cargo, Maven, Composer)</li>
+<li>AI-powered exploitability analysis filters false positives</li>
+<li>Traces user input to vulnerable code paths</li>
+<li>Detects mitigating controls and configuration</li>
+<li>Provides actionable remediation guidance</li>
+</ul>
+<h2>Usage</h2>
+<pre><code>/ghost-scan-deps [path-to-scan]</code></pre>
+<p>Examples:</p>
+<pre><code>/ghost-scan-deps .                    # Scan current directory
+/ghost-scan-deps ./backend            # Scan specific directory
+/ghost-scan-deps /path/to/repo        # Scan absolute path</code></pre>
+<p>The scanner will automatically discover all lockfiles in the repository.</p>
+<h2>How It Works</h2>
+<ol>
+<li><strong>Initialize</strong>: Downloads/verifies wraith binary (includes osv-scanner)</li>
+<li><strong>Discover</strong>: Finds all dependency lockfiles in your repository</li>
+<li><strong>Scan</strong>: Runs wraith to detect vulnerabilities from OSV database (500,000+ CVEs)</li>
+<li><strong>Analyze</strong>: AI agents evaluate each vulnerability for:<ul>
+<li>Is the vulnerable package/function actually used?</li>
+<li>Can user input reach the vulnerable code?</li>
+<li>Is this production code or test-only?</li>
+<li>Are there mitigating controls in place?</li>
+</ul></li>
+<li><strong>Report</strong>: Generates detailed findings only for exploitable vulnerabilities</li>
+</ol>
+<h2>Prerequisites</h2>
+<p>The skill requires the <code>wraith</code> binary. It will be installed automatically via one of two methods:</p>
+<h3>Option 1: GitHub Releases (default)</h3>
+<p>If the <a href="https://github.com/ghostsecurity/wraith">wraith repository</a> is reachable, the binary is downloaded automatically from GitHub releases.</p>
+<h3>Option 2: Local Fallback</h3>
+<p>If GitHub is unavailable (network issues, air-gapped environment), place release artifacts in the fallback directory:</p>
+<table>
+<thead><tr>
+<th>Platform</th>
+<th>Fallback Directory</th>
+</tr></thead><tbody>
+<tr>
+<td>Linux/macOS</td>
+<td><code>~/.ghost/releases/latest/</code></td>
+</tr>
+<tr>
+<td>Windows</td>
+<td><code>%USERPROFILE%\.ghost\releases\latest\</code></td>
+</tr>
+</tbody></table>
+<p>Required files (for your platform):</p>
+<pre><code>~/.ghost/releases/latest/
+├── wraith_linux_amd64.tar.gz
+├── wraith_linux_arm64.tar.gz
+├── wraith_darwin_amd64.tar.gz
+├── wraith_darwin_arm64.tar.gz
+└── wraith_windows_amd64.zip</code></pre>
+<p>You only need the file for your platform. Each archive contains both <code>wraith</code> and <code>osv-scanner</code> binaries.</p>
+<h2>Supported Platforms</h2>
+<ul>
+<li>Linux (amd64, arm64)</li>
+<li>macOS (amd64/Intel, arm64/Apple Silicon)</li>
+<li>Windows (amd64) - via Git Bash, WSL, or MSYS2</li>
+</ul>
+<h2>Supported Ecosystems</h2>
+<p>The scanner automatically detects and scans these lockfile formats:</p>
+<p><strong>Go</strong>:</p>
+<ul>
+<li><code>go.mod</code>, <code>go.sum</code></li>
+</ul>
+<p><strong>JavaScript/TypeScript (npm)</strong>:</p>
+<ul>
+<li><code>package-lock.json</code>, <code>yarn.lock</code>, <code>pnpm-lock.yaml</code></li>
+</ul>
+<p><strong>Python</strong>:</p>
+<ul>
+<li><code>uv.lock</code>, <code>poetry.lock</code>, <code>Pipfile.lock</code>, <code>requirements.txt</code></li>
+</ul>
+<p><strong>Ruby</strong>:</p>
+<ul>
+<li><code>Gemfile.lock</code></li>
+</ul>
+<p><strong>Rust</strong>:</p>
+<ul>
+<li><code>Cargo.lock</code></li>
+</ul>
+<p><strong>Java/Kotlin</strong>:</p>
+<ul>
+<li><code>pom.xml</code>, <code>gradle.lockfile</code></li>
+</ul>
+<p><strong>PHP</strong>:</p>
+<ul>
+<li><code>composer.lock</code></li>
+</ul>
+<h2>Output</h2>
+<p>Results are saved to <code>~/.ghost/repos/&lt;repo_id&gt;/scans/&lt;short_sha&gt;/deps/</code>:</p>
+<pre><code>~/.ghost/repos/myrepo-a1b2c3d4/scans/abc1234/deps/
+├── lockfiles.json        # Discovered lockfiles
+├── scan-1.json           # Raw wraith output (per lockfile)
+├── scan-2.json
+├── candidates.json       # All vulnerabilities detected
+├── findings/             # Exploitable vulnerabilities only
+│   └── &lt;finding-id&gt;.md
+└── report.md             # Comprehensive summary report</code></pre>
+<h2>Example Output</h2>
+<pre><code>## Scan Summary
+- Lockfiles Scanned: 2
+- Packages Scanned: 145
+- Vulnerabilities Detected: 12 (raw)
+- Confirmed Findings: 3 (exploitable)
+- False Positives Filtered: 9 (75%)
+
+### Top Findings
+1. HIGH: lodash@4.17.15 - CVE-2020-8203 - Exploitable via /api/settings
+2. HIGH: axios@0.19.0 - CVE-2020-28168 - SSRF in webhook handler
+3. MEDIUM: minimist@1.2.5 - CVE-2021-44906 - Prototype pollution in CLI parser</code></pre>
+<h2>False Positive Filtering</h2>
+<p>The AI analyzer filters vulnerabilities that are:</p>
+<ul>
+<li><strong>Not actually used</strong>: Package imported but vulnerable function not called</li>
+<li><strong>Test/dev dependencies only</strong>: Not included in production builds</li>
+<li><strong>Effectively mitigated</strong>: Validation wrappers, WAF rules, configuration changes</li>
+<li><strong>Version overrides</strong>: Using patched fork despite lockfile version</li>
+</ul>
+<h2>Remediation Guidance</h2>
+<p>Each exploitable finding includes:</p>
+<ul>
+<li>Specific upgrade commands for your package manager</li>
+<li>Testing checklist for affected functionality</li>
+<li>Alternative remediation if upgrade not possible</li>
+<li>Estimated effort (hours/days)</li>
+<li>Links to CVE details and advisories</li>
+</ul>
+<p>Example:</p>
+<pre><code># Go
+go get golang.org/x/crypto@v0.1.0
+go mod tidy
+
+# npm
+npm install lodash@4.17.21
+npm audit
+
+# Python (poetry)
+poetry add requests@2.31.0
+poetry lock</code></pre>
+<h2>Severity Levels</h2>
+<p>The scanner uses contextual severity based on exploitability:</p>
+<ul>
+<li><strong>HIGH</strong>: Actively exploitable, user input reaches vulnerable code</li>
+<li><strong>MEDIUM</strong>: Exploitable with certain conditions or limited impact</li>
+<li><strong>LOW</strong>: Theoretical vulnerability, difficult to exploit or minimal impact</li>
+</ul>
+<p>Base CVSS scores are adjusted based on actual exploitability in your codebase.</p>
+<h2>Privacy &amp; Security</h2>
+<ul>
+<li>All analysis happens locally - no code or vulnerability data sent to external services</li>
+<li>Only OSV database lookups are performed by wraith (standard practice)</li>
+<li>No telemetry or usage tracking</li>
+<li>Findings stay in your <code>~/.ghost/</code> directory</li>
+</ul>
+<h2>Offline Mode</h2>
+<p>For air-gapped environments, wraith supports offline scanning:</p>
+<ol>
+<li>Download vulnerability database once:</li>
+<li>Scan using local database:</li>
+</ol>
+<p>The skill can be configured to use offline mode if needed.</p>
+<h2>Integration with CI/CD</h2>
+<p>To integrate into your CI/CD pipeline:</p>
+<ol>
+<li>Install the skill in your CI environment</li>
+<li>Run scans on every PR or commit</li>
+<li>Fail builds on HIGH severity findings</li>
+<li>Generate reports as artifacts</li>
+</ol>
+<p>Example GitHub Actions:</p>
+<pre><code>- name: Run SCA Scan
+  run: claude-code /ghost-scan-deps
+
+- name: Check for HIGH findings
+  run: |
+    if grep -q "Severity: HIGH" ~/.ghost/repos/*/scans/*/deps/report.md; then
+      echo "HIGH severity vulnerabilities found!"
+      exit 1
+    fi</code></pre>
+<h2>Limitations</h2>
+<ul>
+<li>Requires lockfiles to be committed (doesn't scan based on manifest files alone)</li>
+<li>Analysis quality depends on code readability and complexity</li>
+<li>May require manual review for complex data flows</li>
+<li>Initial scan may take several minutes on large repositories</li>
+</ul>
+<h2>Troubleshooting</h2>
+<p><strong>No lockfiles found</strong>:</p>
+<ul>
+<li>Ensure lockfiles are committed to version control</li>
+<li>Check that you're using supported package managers</li>
+<li>Verify you're scanning the correct directory</li>
+</ul>
+<p><strong>Installation fails</strong>:</p>
+<ul>
+<li>Check network access to github.com/ghostsecurity/wraith</li>
+<li>Try local fallback method (see Prerequisites)</li>
+<li>Verify platform support (Linux/macOS/Windows)</li>
+</ul>
+<p><strong>Too many false positives</strong>:</p>
+<ul>
+<li>The AI analysis should filter most false positives automatically</li>
+<li>If you see genuine false positives, they may need manual configuration</li>
+<li>Consider using custom osv-scanner.toml to ignore specific vulnerabilities</li>
+</ul>
+<h2>Learn More</h2>
+<ul>
+<li><a href="https://github.com/ghostsecurity/wraith">Wraith Documentation</a></li>
+<li><a href="https://osv.dev">OSV Database</a></li>
+<li><a href="https://ghost.security">Ghost Security</a></li>
+</ul>
+<hr>
+<p><em>Powered by Wraith and AI Exploitability Analysis</em></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>video-creator-ai - 以观其妙书院</title>
+<meta name="description" content="video-creator-ai - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="video-creator-ai">
+<meta property="og:description" content="video-creator-ai - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "video-creator-ai",
+    "description": "video-creator-ai - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>video-creator-ai</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>video-creator-ai</h1>
+<h2>技能简介</h2>
+<p>短视频全流程自动化创作工具，支持选题、脚本、剪辑、配音、字幕、发布等智能操作，实现短视频内容自动化生产。</p>
+<h2>核心功能</h2>
+<ol>
+<li><strong>选题策划</strong>：基于热点和趋势自动选题</li>
+<li><strong>脚本生成</strong>：AI 生成短视频脚本</li>
+<li><strong>素材收集</strong>：自动收集图片、视频素材</li>
+<li><strong>视频剪辑</strong>：自动剪辑、转场、特效</li>
+<li><strong>配音字幕</strong>：AI 配音、自动字幕生成</li>
+<li><strong>发布管理</strong>：多平台一键发布</li>
+</ol>
+<h2>支持的平台</h2>
+<ul>
+<li><strong>短视频平台</strong>：抖音、快手、B站、YouTube、Instagram</li>
+<li><strong>社交媒体</strong>：微博、小红书、Twitter、Facebook</li>
+<li><strong>内容平台</strong>：知乎、头条、百家号</li>
+<li><strong>视频格式</strong>：MP4、MOV、AVI、WMV、WebM</li>
+</ul>
+<h2>安装方法</h2>
+<pre><code>npm install -g video-creator-ai</code></pre>
+<h2>使用示例</h2>
+<pre><code>const { VideoCreator } = require('video-creator-ai');
+
+// 创建短视频
+async function createShortVideo(topic, duration) {
+  const creator = new VideoCreator({
+    platform: '抖音',
+    duration: duration,
+    style: '教育类'
+  });
+
+  // 选题策划
+  const topicAnalysis = await creator.analyzeTopic(topic);
+  
+  // 脚本生成
+  const script = await creator.generateScript({
+    topic: topic,
+    targetAudience: '年轻人',
+    duration: duration
+  });
+
+  // 素材收集
+  const materials = await creator.collectMaterials({
+    script: script,
+    imageCount: 10,
+    videoCount: 5
+  });
+
+  // 视频剪辑
+  const video = await creator.editVideo({
+    script: script,
+    materials: materials,
+    effects: ['转场', '字幕', '配音']
+  });
+
+  // 配音字幕
+  const finalVideo = await creator.addAudioAndSubtitles({
+    video: video,
+    voiceType: '年轻女性',
+    subtitleStyle: '现代简约'
+  });
+
+  // 发布
+  const result = await creator.publish({
+    video: finalVideo,
+    platforms: ['抖音', '快手', 'B站'],
+    schedule: '立即发布'
+  });
+
+  return result;
+}</code></pre>
+<h2>视频类型支持</h2>
+<ol>
+<li><strong>教育类</strong>：知识讲解、教程演示</li>
+<li><strong>娱乐类</strong>：搞笑、剧情、挑战</li>
+<li><strong>商业类</strong>：产品介绍、品牌宣传</li>
+<li><strong>生活类</strong>：日常分享、生活技巧</li>
+<li><strong>新闻类</strong>：热点新闻、时事评论</li>
+</ol>
+<h2>AI 功能</h2>
+<ol>
+<li><strong>选题 AI</strong>：基于趋势分析和用户画像选题</li>
+<li><strong>脚本 AI</strong>：自然语言生成短视频脚本</li>
+<li><strong>配音 AI</strong>：多种语音风格 AI 配音</li>
+<li><strong>字幕 AI</strong>：自动识别语音生成字幕</li>
+<li><strong>剪辑 AI</strong>：智能剪辑和特效添加</li>
+</ol>
+<h2>素材库</h2>
+<ul>
+<li><strong>图片素材</strong>：Unsplash、Pexels、Getty Images</li>
+<li><strong>视频素材</strong>：Pexels、Storyblocks、Adobe Stock</li>
+<li><strong>音乐素材</strong>：Spotify、Apple Music、YouTube Audio</li>
+<li><strong>特效素材</strong>：预设特效、模板、动画</li>
+</ul>
+<h2>发布管理</h2>
+<ol>
+<li><strong>多平台发布</strong>：一键发布到多个平台</li>
+<li><strong>发布时间优化</strong>：基于平台最佳发布时间</li>
+<li><strong>标签优化</strong>：自动生成优化标签</li>
+<li><strong>数据分析</strong>：发布后数据分析</li>
+</ol>
+<h2>版本信息</h2>
+<ul>
+<li>当前版本：1.5.0</li>
+<li>最后更新：2026-03-19</li>
+<li>社区评分：⭐⭐⭐⭐⭐ (4.7/5.0)</li>
+</ul>
+<h2>相关资源</h2>
+<ul>
+<li><a href="https://video-creator-ai.dev/docs">官方文档</a></li>
+<li><a href="https://github.com/content-agents/video-creator-ai">GitHub 仓库</a></li>
+<li><a href="https://github.com/video-creator-ai/examples">示例项目</a></li>
+</ul>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

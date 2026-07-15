@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>象思维 Skill 输入输出模板 - 以观其妙书院</title>
+<meta name="description" content="象思维 Skill 输入输出模板 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="象思维 Skill 输入输出模板">
+<meta property="og:description" content="象思维 Skill 输入输出模板 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "象思维 Skill 输入输出模板",
+    "description": "象思维 Skill 输入输出模板 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>象思维 Skill 输入输出模板</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>象思维 Skill 输入输出模板</h1>
+<blockquote><p>📝 标准化输入输出格式 · 确保分析质量</p></blockquote>
+<hr>
+<h2>📥 输入模板</h2>
+<h3>完整流程输入</h3>
+<pre><code>【问题类型】创造性问题/探索性问题/复杂性问题
+
+【问题描述】
+[详细描述问题情境]
+
+【背景信息】
+- 当前状态：
+- 已尝试方案：
+- 约束条件：
+- 期望结果：
+
+【特殊要求】
+[如有特定需求，请说明]</code></pre>
+<hr>
+<h3>单步触发输入</h3>
+<h4>观物取象</h4>
+<pre><code>【指令】观物取象
+
+【问题情境】
+[描述需要观察的问题或现象]
+
+【已知信息】
+[已有背景知识]</code></pre>
+<h4>立象尽意</h4>
+<pre><code>【指令】立象尽意
+
+【现象描述】
+[来自 Step 1 的输出]
+
+【关键特征】
+- 特征 1
+- 特征 2</code></pre>
+<h4>取象比类</h4>
+<pre><code>【指令】取象比类
+
+【核心意象】
+[来自 Step 2 的输出]
+
+【联想方向】
+[希望联想的领域，如：自然界/商业/历史/艺术等]</code></pre>
+<h4>观象制器</h4>
+<pre><code>【指令】观象制器
+
+【创新洞见】
+[来自 Step 3 的输出]
+
+【资源约束】
+- 时间：
+- 人力：
+- 资金：
+- 其他：</code></pre>
+<hr>
+<h2>📤 输出模板</h2>
+<h3>完整流程输出</h3>
+<pre><code># 象思维分析报告
+
+## 🌀 问题重述
+[用象思维视角重新表述问题]
+
+---
+
+## Step 1: 观物取象（感知层）
+
+### 现象描述
+[整体情境描述]
+
+### 关键特征
+- 特征 1
+- 特征 2
+- 特征 3
+
+### 直觉感受
+[直觉印象]
+
+---
+
+## Step 2: 立象尽意（提炼层）
+
+### 核心意象
+[1-3 个核心意象词]
+
+### 象征意义
+[意象的深层含义]
+
+### 意象 - 问题关联
+[意象如何映射到问题]
+
+---
+
+## Step 3: 取象比类（推理层）
+
+### 跨域联想
+- **自然界**: [联想内容]
+- **商业界**: [联想内容]
+- **历史文化**: [联想内容]
+- **其他领域**: [联想内容]
+
+### 共同模式
+[提取的跨领域共同模式]
+
+### 创新洞见
+[基于类比产生的新理解]
+
+---
+
+## Step 4: 观象制器（创造层）
+
+### 创意方案
+[方案的核心描述]
+
+### 关键要素
+- 要素 1
+- 要素 2
+- 要素 3
+
+### 行动计划
+1. [第一步] - [时间]
+2. [第二步] - [时间]
+3. [第三步] - [时间]
+
+### 验证方式
+[如何检验方案有效性]
+
+---
+
+## 🏷️ 标签
+#象思维 #[核心意象] #[问题领域] #0→1 原创
+
+---
+
+## 💡 元认知
+[本次分析的思维过程反思]
+
+### 关键转折点
+[分析过程中的关键洞察时刻]
+
+### 潜在盲区
+[可能忽略的角度]
+
+### 后续建议
+[是否需要其他 Skill 协同]</code></pre>
+<hr>
+<h3>单步输出模板</h3>
+<h4>观物取象输出</h4>
+<pre><code>## 🌀 观物取象报告
+
+### 整体情境
+[描述]
+
+### 关键现象
+- 现象 1
+- 现象 2
+- 现象 3
+
+### 直觉捕捉
+[直觉感受]
+
+### 下一步建议
+[建议进入 Step 2 或补充信息]</code></pre>
+<h4>立象尽意输出</h4>
+<pre><code>## 🎯 立象尽意报告
+
+### 核心意象
+[意象词]
+
+### 象征解读
+[深层含义]
+
+### 问题映射
+[如何关联到原问题]
+
+### 下一步建议
+[建议进入 Step 3]</code></pre>
+<h4>取象比类输出</h4>
+<pre><code>## 🔗 取象比类报告
+
+### 跨域联想
+- 领域 1: [内容]
+- 领域 2: [内容]
+
+### 模式提取
+[共同模式]
+
+### 创新洞见
+[新理解]
+
+### 下一步建议
+[建议进入 Step 4 或深化联想]</code></pre>
+<h4>观象制器输出</h4>
+<pre><code>## 🛠️ 观象制器报告
+
+### 创意方案
+[方案描述]
+
+### 执行要素
+- 要素 1
+- 要素 2
+
+### 行动步骤
+1. [步骤 1]
+2. [步骤 2]
+
+### 风险提示
+[潜在风险]
+
+### 协同建议
+[是否需要知行合一 Skill 协助落地]</code></pre>
+<hr>
+<h2>🔄 迭代优化</h2>
+<h3>用户反馈模板</h3>
+<pre><code>【反馈类型】□ 理解确认 □ 方案调整 □ 深化分析 □ 其他
+
+【具体反馈】
+[用户的具体意见]
+
+【调整方向】
+[需要调整的部分]
+
+【继续/停止】
+□ 继续下一步  □ 重新分析  □ 停止</code></pre>
+<hr>
+<h3>质量评分模板</h3>
+<pre><code>【质量评分】(1-5 分)
+
+- 原创性：□1 □2 □3 □4 □5
+- 启发性：□1 □2 □3 □4 □5
+- 可执行性：□1 □2 □3 □4 □5
+- 整体满意度：□1 □2 □3 □4 □5
+
+【改进建议】
+[用户建议]</code></pre>
+<hr>
+<p>_输入输出模板 · 象思维 Skill · 龙心 OS · 2026-04-17_</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

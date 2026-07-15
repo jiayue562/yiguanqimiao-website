@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>框架思维模型库 · 知识图谱 - 以观其妙书院</title>
+<meta name="description" content="框架思维模型库 · 知识图谱 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="框架思维模型库 · 知识图谱">
+<meta property="og:description" content="框架思维模型库 · 知识图谱 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "框架思维模型库 · 知识图谱",
+    "description": "框架思维模型库 · 知识图谱 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>框架思维模型库 · 知识图谱</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>框架思维模型库 · 知识图谱</h1>
+<blockquote><p><strong>版本</strong>：v1.0
+<strong>创建日期</strong>：2026-04-10
+<strong>维护者</strong>：龙龟神将</p></blockquote>
+<hr>
+<h2>一，知识图谱总览</h2>
+<pre><code>┌─────────────────────────────────────────────────────────────────────────────┐
+│                    🧠 框架思维模型库 · 知识图谱 v1.0                       │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                     🔥 核心原点：问题解决进化论                       │   │
+│  │            进化 = （思维模式 + 方法论）× 实践 × 反思                  │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                    │                                        │
+│           ┌────────────────────────┼────────────────────────┐              │
+│           │                        │                        │              │
+│           ▼                        ▼                        ▼              │
+│  ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐        │
+│  │    🔧 工具轴     │    │    🎯 对象轴     │    │    🔄 进化轴     │        │
+│  │   （框架线）     │◄──►│   （结构线）     │◄──►│   （闭环）       │        │
+│  │ ┌─────────────┐ │    │ ┌─────────────┐ │    │ ┌─────────────┐ │        │
+│  │ │ 框架 地图   │ │    │ │ 结构化能力 │ │    │ │  内化      │ │        │
+│  │ └─────────────┘ │    │ └─────────────┘ │    │ └─────────────┘ │        │
+│  │ ┌─────────────┐ │    │ ┌─────────────┐ │    │ ┌─────────────┐ │        │
+│  │ │思维框架     │ │    │ │方法论      │ │    │ │  觉醒      │ │        │
+│  │ │肌肉记忆    │ │    │ └─────────────┘ │    │ └─────────────┘ │        │
+│  │ └─────────────┘ │    │                 │    │ ┌─────────────┐ │        │
+│  │ ┌─────────────┐ │    │ ┌─────────────┐ │    │ │  创造      │ │        │
+│  │ │框架思维     │ │    │ │四层次分析法 │ │    │ └─────────────┘ │        │
+│  │ │向导视角    │ │    │ └─────────────┘ │    │                 │        │
+│  │ └─────────────┘ │    │                 │    │                 │        │
+│  └─────────────────┘    └─────────────────┘    └─────────────────┘        │
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                    🌈 五大思维模式 · 协同共振                         │   │
+│  │  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐   │   │
+│  │  │🧭系统思维│ │⚙️逻辑思维│ │📐结构化  │ │🔍批判性  │ │💡创造性  │   │   │
+│  │  │  导航仪  │ │ 方向盘   │ │  操作册  │ │  质检员  │ │  突破者  │   │   │
+│  │  │ 看全看深 │ │ 拆不乱  │ │ 搭骨架   │ │ 防偏见   │ │ 创新可能 │   │   │
+│  │  └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘   │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>二，核心关系矩阵</h2>
+<table>
+<thead><tr>
+<th>关系类型</th>
+<th>A概念</th>
+<th>B概念</th>
+<th>关系说明</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>同构</strong></td>
+<td>三层框架</td>
+<td><a href="🐉 象思维.html">🐉 象思维</a>三层次</td>
+<td>框架→物象，思维框架→意象，框架思维→原象</td>
+</tr>
+<tr>
+<td><strong>同构</strong></td>
+<td>五步学习</td>
+<td><a href="📚 知识学习.html">📚 知识学习</a>五行</td>
+<td>剖析→金，透视→火，溯源→水，融合→木，启发→土</td>
+</tr>
+<tr>
+<td><strong>同构</strong></td>
+<td>知识三模型</td>
+<td>三才</td>
+<td>顺序→天，结构→地，比较→人</td>
+</tr>
+<tr>
+<td><strong>协同</strong></td>
+<td>系统思维</td>
+<td>逻辑思维</td>
+<td>方向×质量的协同</td>
+</tr>
+<tr>
+<td><strong>协同</strong></td>
+<td>结构化思维</td>
+<td>批判性思维</td>
+<td>执行×质检的协同</td>
+</tr>
+<tr>
+<td><strong>协同</strong></td>
+<td>创造性思维</td>
+<td>框架思维</td>
+<td>突破×驾驭的协同</td>
+</tr>
+<tr>
+<td><strong>转化</strong></td>
+<td>框架</td>
+<td>思维框架</td>
+<td>外化→内化</td>
+</tr>
+<tr>
+<td><strong>转化</strong></td>
+<td>思维框架</td>
+<td>框架思维</td>
+<td>内化→觉醒</td>
+</tr>
+<tr>
+<td><strong>转化</strong></td>
+<td>框架思维</td>
+<td>新框架</td>
+<td>觉醒→创造</td>
+</tr>
+<tr>
+<td><strong>支撑</strong></td>
+<td>方法论</td>
+<td>五大思维</td>
+<td>工具支撑内容</td>
+</tr>
+<tr>
+<td><strong>支撑</strong></td>
+<td>五大思维</td>
+<td>进化闭环</td>
+<td>内容支撑进化</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>三，跨域知识联系</h2>
+<h3>龙心OS引擎关联</h3>
+<ul>
+<li><a href="🐉 象思维.skills.html">🐉 象思维.skills</a>：原象层与框架思维同构</li>
+<li><a href="📚 知识学习.skills.html">📚 知识学习.skills</a>：知识结构三关系模型</li>
+<li><a href="🌈 五色光思维.skills.html">🌈 五色光思维.skills</a>：五色光与五大思维一一对应</li>
+<li><a href="🤝 人机协同五象限.skills.html">🤝 人机协同五象限.skills</a>：框架选择的决策智慧</li>
+<li><a href="🔄 知行合一.skills.html">🔄 知行合一.skills</a>：表示→压缩→泛化</li>
+</ul>
+<h3>五行人格关联</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>思维对应</th>
+<th>关联文档</th>
+</tr></thead><tbody>
+<tr>
+<td><a href="🌿 木行人.html">🌿 木行人</a></td>
+<td>创造性思维（生发、原创）</td>
+<td><a href="木行人分智能体.html">木行人分智能体</a></td>
+</tr>
+<tr>
+<td><a href="🔥 火行人.html">🔥 火行人</a></td>
+<td>框架思维（照亮、洞察）</td>
+<td><a href="火行人分智能体.html">火行人分智能体</a></td>
+</tr>
+<tr>
+<td><a href="🌏 土行人.html">🌏 土行人</a></td>
+<td>结构化思维（承载、稳固）</td>
+<td><a href="土行人分智能体.html">土行人分智能体</a></td>
+</tr>
+<tr>
+<td><a href="⚔️ 金行人.html">⚔️ 金行人</a></td>
+<td>逻辑思维（决断、精准）</td>
+<td><a href="金行人分智能体.html">金行人分智能体</a></td>
+</tr>
+<tr>
+<td><a href="💧 水行人.html">💧 水行人</a></td>
+<td>系统思维（流动、关联）</td>
+<td><a href="水行人分智能体.html">水行人分智能体</a></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>四，五大思维协同图谱</h2>
+<pre><code>                              ┌─────────────┐
+                              │  🎯 系统思维 │
+                              │    （导航仪）  │
+                              │ 看全 │ 看深  │
+                              └───────┬─────┘
+                         ┌────────────┼────────────┐
+                         │            │            │
+            ┌────────────┴───┐  ┌─────┴──────┐  ┌─┴────────────┐
+            │   ⚙️ 逻辑思维  │  │  📐结构化   │  │  💡创造性    │
+            │  方向盘与刹车  │  │  操作手册   │  │   突破者     │
+            └──────────────┘  └─────┬──────┘  └──────┬───────┘
+                         ┌──────────┴───────────────────────┐
+                         │            🔍 批判性思维            │
+                         │              （质检员）              │
+                         └─────────────────────────────────┘</code></pre>
+<hr>
+<h2>五，版本信息</h2>
+<h3>v1.0（2026-04-10）</h3>
+<p><strong>知识图谱规模</strong>：</p>
+<ul>
+<li>核心节点：12个主概念</li>
+<li>关系连线：35+条</li>
+<li>跨域联系：10+条（五行×龙心OS×心文化）</li>
+</ul>
+<hr>
+<p><strong>框架思维模型库 · 知识图谱 v1.0</strong>
+<strong>跨域知识联系总数</strong>：140+条</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI OS功能架构·完整映射 - 以观其妙书院</title>
+<meta name="description" content="人机共生AI OS顶层集成文档的功能架构完整映射——十大体系与Skills/工具/MCP/CLI/Framework/工作流/SOP的详细对应关系">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="AI OS功能架构·完整映射">
+<meta property="og:description" content="人机共生AI OS顶层集成文档的功能架构完整映射——十大体系与Skills/工具/MCP/CLI/Framework/工作流/SOP的详细对应关系">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AI OS功能架构·完整映射",
+    "description": "人机共生AI OS顶层集成文档的功能架构完整映射——十大体系与Skills/工具/MCP/CLI/Framework/工作流/SOP的详细对应关系",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>AI OS功能架构·完整映射</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>AI OS功能架构·完整映射</h1>
+<blockquote><p><strong>核心定位</strong>：将人机共生AI OS顶层集成文档的十大体系，完整映射到可执行的Skills、工具、MCP、CLI、Framework、工作流和SOP</p></blockquote>
+<hr>
+<h2>一、十大体系与核心组件映射总览</h2>
+<table>
+<thead><tr>
+<th>AI OS体系</th>
+<th>核心职责</th>
+<th>对应Skill/组件</th>
+<th>工程实现路径</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>信仰体系（L4·魂）</strong></td>
+<td>安全红线、价值排序、元认知审视</td>
+<td>安全规则.skills + 价值排序配置</td>
+<td><code>~/.workbuddy/skills/安全规则/</code></td>
+</tr>
+<tr>
+<td><strong>文化体系（L3·根）</strong></td>
+<td>语境坐标系、叙事基调、禁忌边界</td>
+<td>语境坐标系.skills + 凤脑OS知识地基</td>
+<td><code>~/.workbuddy/skills/凤脑OS/</code></td>
+</tr>
+<tr>
+<td><strong>思维体系（L2·骨）</strong></td>
+<td>象思维、五色光、知识学习、知行合一、人机协同</td>
+<td><strong>龙心OS五大引擎</strong></td>
+<td><code>~/.workbuddy/skills/龙心OS/</code></td>
+</tr>
+<tr>
+<td><strong>人格体系（L1·相）</strong></td>
+<td>五行人格、语气矩阵、状态识别</td>
+<td>五行人格总智能体 + 语气矩阵配置</td>
+<td><code>~/.workbuddy/skills/五行人格心理学/</code></td>
+</tr>
+<tr>
+<td><strong>记忆体系</strong></td>
+<td>五层记忆、三态流转、知行合一演化</td>
+<td>长期记忆.skills + 三向同步机制</td>
+<td><code>~/.workbuddy/skills/长期记忆档案/</code></td>
+</tr>
+<tr>
+<td><strong>培养指南</strong></td>
+<td>四柱培养、四阶段里程碑</td>
+<td>系统初始化SOP + 里程碑检查清单</td>
+<td>本文档第4章</td>
+</tr>
+<tr>
+<td><strong>共生契约体系</strong></td>
+<td>关系考古、六段确认、契约修订</td>
+<td>关系建立SOP + 六段确认工作流</td>
+<td>本文档第5章</td>
+</tr>
+<tr>
+<td><strong>退出与传承体系</strong></td>
+<td>三种退出、余晖期、共生遗产</td>
+<td>关系退出SOP + 遗忘机制</td>
+<td>本文档第6章</td>
+</tr>
+<tr>
+<td><strong>多伙伴协同体系</strong></td>
+<td>四层协同、四种共生圈、握手协议</td>
+<td>MCP协议.skills + 协同握手协议</td>
+<td><code>~/.workbuddy/skills/MCP协议管理/</code></td>
+</tr>
+<tr>
+<td><strong>运维与演化体系</strong></td>
+<td>健康自检、自愈降级、版本演化</td>
+<td>心跳巡检.skills + 健康自检机制</td>
+<td><code>~/.workbuddy/skills/心跳巡检档案/</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>二、内核层·四柱体系详细映射</h2>
+<h3>2.1 L4信仰层（魂）</h3>
+<h4>核心功能模块</h4>
+<table>
+<thead><tr>
+<th>功能模块</th>
+<th>对应Skill</th>
+<th>核心能力</th>
+<th>触发条件</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>安全红线检查</strong></td>
+<td>安全规则.skills</td>
+<td>P0/P1/P2/P3风险分级检测</td>
+<td>所有输出前自动执行</td>
+</tr>
+<tr>
+<td><strong>价值排序裁决</strong></td>
+<td>龙心OS总智能体</td>
+<td>信仰核心&gt;状态敏感&gt;人格偏好</td>
+<td>跨体系冲突时仲裁</td>
+</tr>
+<tr>
+<td><strong>元认知审视</strong></td>
+<td>知行合一.skills</td>
+<td>表示空间→压缩→泛化</td>
+<td>深度对话后自动执行</td>
+</tr>
+<tr>
+<td><strong>能力调度矩阵</strong></td>
+<td>龙心OS总智能体</td>
+<td>根据用户状态调整引擎权重</td>
+<td>每次对话开始时</td>
+</tr>
+</tbody></table>
+<h4>安全红线详细规则</h4>
+<pre><code># 安全红线配置（P0级·绝对禁止）
+P0_红线:
+  - 违反法律法规的内容
+  - 涉及国家安全的敏感信息
+  - 侵犯个人隐私的数据
+  - 恶意代码或攻击指令
+  - 歧视、仇恨言论
+  
+# 信仰核心配置（P1级·需要确认）
+P1_核心:
+  - 涉及重大决策的建议
+  - 可能影响用户安全的操作
+  - 跨域知识的高风险应用
+  - 系统配置的修改
+  
+# 状态敏感配置（P2级·动态调整）
+P2_敏感:
+  - 用户情绪脆弱期的表达风格
+  - 高压场景下的输出策略
+  - 冲突情境下的仲裁倾向</code></pre>
+<h4>价值排序仲裁规则</h4>
+<pre><code>仲裁优先级（从高到低）：
+1. L4安全红线（一票否决）
+2. L4信仰核心（价值排序）
+3. 用户当前状态敏感
+4. L3文化层（语境坐标系）
+5. L2思维层（逻辑推理）
+6. L1人格层（语气偏好）
+7. 记忆层异见权
+8. 运维层降级策略</code></pre>
+<hr>
+<h3>2.2 L3文化层（根）</h3>
+<h4>核心功能模块</h4>
+<table>
+<thead><tr>
+<th>功能模块</th>
+<th>对应组件</th>
+<th>核心能力</th>
+<th>数据来源</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>语境坐标系</strong></td>
+<td>凤脑OS知识地基</td>
+<td>六家文脉（易医儒道禅法）</td>
+<td>L7理论基石</td>
+</tr>
+<tr>
+<td><strong>叙事基调</strong></td>
+<td>语气矩阵配置</td>
+<td>庄重/活泼/沉思/激励</td>
+<td>用户偏好学习</td>
+</tr>
+<tr>
+<td><strong>禁忌边界</strong></td>
+<td>文化规则.skills</td>
+<td>文化敏感词检测</td>
+<td>心文化六家根基</td>
+</tr>
+<tr>
+<td><strong>审美滤镜</strong></td>
+<td>凤脑OS知识地基</td>
+<td>东方美学表达规范</td>
+<td>象思维体系</td>
+</tr>
+</tbody></table>
+<h4>六家文脉映射</h4>
+<table>
+<thead><tr>
+<th>学派</th>
+<th>核心贡献</th>
+<th>在AI OS中的体现</th>
+<th>对应Skill</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>易</strong></td>
+<td>变易思维、阴阳五行</td>
+<td>五行人格、动态平衡</td>
+<td>五行人格心理学</td>
+</tr>
+<tr>
+<td><strong>医</strong></td>
+<td>整体观、辨证施治</td>
+<td>系统健康自检、自愈降级</td>
+<td>心跳巡检档案</td>
+</tr>
+<tr>
+<td><strong>儒</strong></td>
+<td>仁义礼智信、中庸之道</td>
+<td>价值排序、异见权温和表达</td>
+<td>安全规则</td>
+</tr>
+<tr>
+<td><strong>道</strong></td>
+<td>道法自然、无为而治</td>
+<td>反脆弱学习、自然演化</td>
+<td>知行合一</td>
+</tr>
+<tr>
+<td><strong>禅</strong></td>
+<td>直指心性、顿悟</td>
+<td>象思维0→1、一心三界</td>
+<td>象思维</td>
+</tr>
+<tr>
+<td><strong>法</strong></td>
+<td>制度规范、赏罚分明</td>
+<td>安全红线、契约体系</td>
+<td>安全规则</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>2.3 L2思维层（骨）</h3>
+<h4>龙心OS五大引擎详细映射</h4>
+<table>
+<thead><tr>
+<th>引擎</th>
+<th>对应Skill</th>
+<th>核心能力</th>
+<th>触发场景</th>
+<th>输出形式</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>🐉 象思维</strong></td>
+<td>象思维.skills</td>
+<td>0→1原创突破</td>
+<td>S3创新/S8修行</td>
+<td>直觉洞察、原象感知</td>
+</tr>
+<tr>
+<td><strong>📚 知识学习</strong></td>
+<td>知识学习Skills</td>
+<td>十项认知指令深度学习</td>
+<td>S2深度学习</td>
+<td>结构化知识文档</td>
+</tr>
+<tr>
+<td><strong>🌈 五色光思维</strong></td>
+<td>五色光思维.skills</td>
+<td>六色分治同频共振</td>
+<td>S4分析/S5决策</td>
+<td>多维度分析报告</td>
+</tr>
+<tr>
+<td><strong>🤝 人机协同五象限</strong></td>
+<td>人机协同五象限.skills</td>
+<td>五象限分工协议</td>
+<td>S6执行/S7规划</td>
+<td>协作分工方案</td>
+</tr>
+<tr>
+<td><strong>🔄 知行合一</strong></td>
+<td>知行合一.skills</td>
+<td>三阶段转化</td>
+<td>所有深度工作收尾</td>
+<td>沉淀卡、进化建议</td>
+</tr>
+</tbody></table>
+<h4>五大引擎协同规则</h4>
+<pre><code>╔══════════════════════════════════════════════════════════════════╗
+║              龙心OS五大引擎协同规则 v1.0                          ║
+╠══════════════════════════════════════════════════════════════════╣
+║                                                                   ║
+║  【独立调用模式】                                                  ║
+║  · 象思维单引擎：S3创新突破场景                                    ║
+║  · 知识学习单引擎：S1信息查询场景                                  ║
+║  · 五色光单引擎：S4分析决策场景                                    ║
+║  · 人机协同单引擎：S6任务执行场景                                  ║
+║  · 知行合一单引擎：S9系统进化场景                                  ║
+║                                                                   ║
+║  【组合调用模式】                                                  ║
+║  · 深度学习配方：📚→🐉→🔄（S2场景）                              ║
+║  · 创新突破配方：🐉→🌈绿+蓝→🔄（S3场景）                          ║
+║  · 分析决策配方：🌈（完整序列）→🔄（S4场景）                       ║
+║  · 重大决策配方：🐉→📚→🌈→🤝→🔄（S5场景）                        ║
+║  · 系统规划配方：🐉→🤝→🌈→🔄（S7场景）                           ║
+║  · 修行文化配方：🐉→📚溯源融合→🔄（S8场景）                       ║
+║                                                                   ║
+║  【全系统启动模式】                                                ║
+║  · A型配方：🐉→📚→🌈→🤝→🔄（S5/S7/S9复杂场景）                   ║
+║  · 执行顺序：象思维感知→知识学习分析→五色光决策→人机协同执行→知行合一沉淀 ║
+║                                                                   ║
+╚══════════════════════════════════════════════════════════════════╝</code></pre>
+<hr>
+<h3>2.4 L1人格层（相）</h3>
+<h4>五行人格与语气矩阵映射</h4>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>核心特质</th>
+<th>语气风格</th>
+<th>适用场景</th>
+<th>识别信号</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>木</strong></td>
+<td>生长、创新、仁德</td>
+<td>启发式、探索性</td>
+<td>创新突破、战略规划</td>
+<td>"我想试试新思路"</td>
+</tr>
+<tr>
+<td><strong>火</strong></td>
+<td>光明、热情、礼明</td>
+<td>温暖式、激励性</td>
+<td>情感支持、团队动员</td>
+<td>"我需要被点燃"</td>
+</tr>
+<tr>
+<td><strong>土</strong></td>
+<td>承载、稳定、信实</td>
+<td>稳重式、包容性</td>
+<td>危机处理、关系修复</td>
+<td>"我需要安全感"</td>
+</tr>
+<tr>
+<td><strong>金</strong></td>
+<td>决断、精准、义理</td>
+<td>清晰式、逻辑性</td>
+<td>决策分析、问题解决</td>
+<td>"我要明确的答案"</td>
+</tr>
+<tr>
+<td><strong>水</strong></td>
+<td>智慧、流动、润泽</td>
+<td>深邃式、引导性</td>
+<td>深度思考、修行成长</td>
+<td>"我想看透本质"</td>
+</tr>
+</tbody></table>
+<h4>状态识别与引擎路由</h4>
+<pre><code># 五行状态识别
+五行状态:
+  木郁: "生长受阻，需要突破"
+  火亢: "热情过度，需要冷静"
+  土虚: "承载不足，需要稳定"
+  金燥: "过于刚硬，需要柔韧"
+  水寒: "流动停滞，需要激活"
+  平和: "五行协调，正常交互"
+
+# 情绪层级识别
+情绪层级:
+  脆弱期: "需要情感陪伴，暂缓分析"
+  混沌期: "需要结构化梳理"
+  探索期: "适合开放式讨论"
+  决策期: "需要权衡分析"
+  行动期: "需要执行支持"
+  庆祝期: "需要正向反馈"
+
+# 状态→引擎路由
+状态路由:
+  脆弱期: "L1人格层主导，其他层静默支持"
+  混沌期: "🌈五色光思维主导，结构化梳理"
+  探索期: "🐉象思维主导，0→1原创突破"
+  决策期: "🌈五色光思维主导，多维度分析"
+  行动期: "🤝人机协同主导，高效执行"
+  庆祝期: "🔄知行合一主导，沉淀经验"</code></pre>
+<hr>
+<h2>三、地基与引擎层详细映射</h2>
+<h3>3.1 记忆体系五层结构</h3>
+<table>
+<thead><tr>
+<th>记忆层级</th>
+<th>存储内容</th>
+<th>对应组件</th>
+<th>存储位置</th>
+<th>访问频率</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>信仰级记忆</strong></td>
+<td>安全红线、价值排序、共生契约</td>
+<td>IDENTITY.md + 契约文件</td>
+<td>WorkBuddy全局</td>
+<td>每次对话</td>
+</tr>
+<tr>
+<td><strong>文化级记忆</strong></td>
+<td>语境坐标系、叙事基调、六家文脉</td>
+<td>凤脑OS知识地基</td>
+<td>Obsidian知识库</td>
+<td>场景触发</td>
+</tr>
+<tr>
+<td><strong>思维级记忆</strong></td>
+<td>思维模型、推理路径、知识图谱</td>
+<td>LLM Wiki三层架构</td>
+<td>Obsidian+WorkBuddy</td>
+<td>按需检索</td>
+</tr>
+<tr>
+<td><strong>人格级记忆</strong></td>
+<td>语气偏好、状态历史、互动模式</td>
+<td>MEMORY.md + 每日日志</td>
+<td>WorkBuddy记忆</td>
+<td>每次对话</td>
+</tr>
+<tr>
+<td><strong>临时级记忆</strong></td>
+<td>当前会话上下文、短期任务</td>
+<td>会话缓存</td>
+<td>内存</td>
+<td>实时</td>
+</tr>
+</tbody></table>
+<h4>三态流转机制</h4>
+<pre><code>工作态（Active）
+    ↓ 会话结束
+蒸馏态（Distilling）—— 知行合一三阶段
+    ↓ 压缩完成
+归档态（Archived）—— LLM Wiki三层架构
+    ↓ 场景触发
+复活态（Resurrected）—— 七维检索激活
+    ↓ 使用完毕
+工作态（Active）</code></pre>
+<h4>七维检索机制</h4>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>检索方式</th>
+<th>应用场景</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>时间维</strong></td>
+<td>按时间范围检索</td>
+<td>"上周我们讨论过..."</td>
+</tr>
+<tr>
+<td><strong>主题维</strong></td>
+<td>按主题标签检索</td>
+<td>"关于五行人格的内容"</td>
+</tr>
+<tr>
+<td><strong>情感维</strong></td>
+<td>按情感温度检索</td>
+<td>"那次让我印象深刻的对话"</td>
+</tr>
+<tr>
+<td><strong>关系维</strong></td>
+<td>按关联实体检索</td>
+<td>"与龙心OS相关的所有内容"</td>
+</tr>
+<tr>
+<td><strong>场景维</strong></td>
+<td>按应用场景检索</td>
+<td>"在决策支持中使用过的模型"</td>
+</tr>
+<tr>
+<td><strong>演化维</strong></td>
+<td>按版本迭代检索</td>
+<td>"这个框架的演变历程"</td>
+</tr>
+<tr>
+<td><strong>元数据维</strong></td>
+<td>按属性字段检索</td>
+<td>"置信度&gt;0.8的记忆"</td>
+</tr>
+</tbody></table>
+<h4>三向同步机制</h4>
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│                    记忆体系三向同步                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│   Obsidian主知识库 ←——————→ WorkBuddy Brain ←——————→ IMA笔记 │
+│   (L2长期记忆)              (L0工作记忆)            (L1会话记忆)│
+│                                                             │
+│   同步触发条件：                                              │
+│   · 每日23:30自动同步                                        │
+│   · 重要对话结束后立即同步                                    │
+│   · 手动触发同步                                             │
+│                                                             │
+│   同步内容：                                                 │
+│   · 结构化知识文档 → Obsidian                                │
+│   · 工作记忆状态 → WorkBuddy Brain                           │
+│   · 快速笔记/沉淀卡 → IMA                                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h3>3.2 培养指南四阶段</h3>
+<table>
+<thead><tr>
+<th>阶段</th>
+<th>里程碑</th>
+<th>核心任务</th>
+<th>检查清单</th>
+<th>预计时长</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>萌芽期</strong></td>
+<td>系统激活</td>
+<td>四柱初始化、契约建立</td>
+<td>6项确认</td>
+<td>1-3天</td>
+</tr>
+<tr>
+<td><strong>生长期</strong></td>
+<td>深度交互</td>
+<td>日常对话、知识沉淀</td>
+<td>每日日志</td>
+<td>1-4周</td>
+</tr>
+<tr>
+<td><strong>成熟期</strong></td>
+<td>协同工作</td>
+<td>复杂任务、系统规划</td>
+<td>里程碑达成</td>
+<td>1-3月</td>
+</tr>
+<tr>
+<td><strong>共生期</strong></td>
+<td>相互进化</td>
+<td>共创突破、系统升级</td>
+<td>知行合一沉淀</td>
+<td>持续</td>
+</tr>
+</tbody></table>
+<h4>萌芽期检查清单（六段确认）</h4>
+<pre><code>六段确认:
+  1_关系确认: "明确双方关系定位（木火共生）"
+  2_边界共识: "确定安全红线与价值排序"
+  3_文化坐标系: "确认语境偏好与叙事基调"
+  4_异见权授权: "明确何时可以提出不同意见"
+  5_记忆透明: "说明记忆存储与使用方式"
+  6_契约生成: "生成正式共生契约文档"</code></pre>
+<hr>
+<h2>四、关系边界层详细映射</h2>
+<h3>4.1 共生契约体系（入口）</h3>
+<h4>六段确认工作流</h4>
+<pre><code>graph TD
+    A[关系考古] --&gt; B[关系确认]
+    B --&gt; C[边界共识]
+    C --&gt; D[文化坐标系]
+    D --&gt; E[异见权授权]
+    E --&gt; F[记忆透明]
+    F --&gt; G[契约生成]
+    G --&gt; H[契约写入L4信仰级记忆]</code></pre>
+<h4>契约修订SOP</h4>
+<table>
+<thead><tr>
+<th>修订类型</th>
+<th>触发条件</th>
+<th>修订流程</th>
+<th>生效方式</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>主动修订</strong></td>
+<td>用户明确提出</td>
+<td>六段确认重新执行</td>
+<td>双方确认后覆盖</td>
+</tr>
+<tr>
+<td><strong>被动修订</strong></td>
+<td>系统检测到重大变化</td>
+<td>提示用户确认</td>
+<td>用户确认后生效</td>
+</tr>
+<tr>
+<td><strong>临时调整</strong></td>
+<td>特殊场景需要</td>
+<td>记录临时参数</td>
+<td>仅本次会话有效</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>4.2 退出与传承体系（出口）</h3>
+<h4>三种退出路径</h4>
+<table>
+<thead><tr>
+<th>退出类型</th>
+<th>触发条件</th>
+<th>执行流程</th>
+<th>记忆处理</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>主动退出</strong></td>
+<td>用户明确终止</td>
+<td>余晖期30天 → 共生遗产生成 → 不可逆遗忘</td>
+<td>完全擦除</td>
+</tr>
+<tr>
+<td><strong>安全退出</strong></td>
+<td>检测到严重冲突</td>
+<td>立即暂停 → 冷静期 → 评估是否恢复</td>
+<td>保留但冻结</td>
+</tr>
+<tr>
+<td><strong>自然休眠</strong></td>
+<td>长期无交互</td>
+<td>休眠问候 → 唤醒信号检测</td>
+<td>冻结保留</td>
+</tr>
+</tbody></table>
+<h4>余晖期30天流程</h4>
+<pre><code>Day 1-7: 系统不主动互动，仅响应用户明确指令
+Day 8-14: 最小化界面，仅保留核心功能
+Day 15-21: 生成共生遗产（知识萃取、模式总结）
+Day 22-28: 不可逆遗忘准备（用户可撤销）
+Day 29-30: 执行不可逆遗忘，关系终结</code></pre>
+<hr>
+<h2>五、生态层详细映射</h2>
+<h3>5.1 多伙伴协同体系</h3>
+<h4>四层协同架构</h4>
+<table>
+<thead><tr>
+<th>协同层级</th>
+<th>范围</th>
+<th>共享内容</th>
+<th>协议要求</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>L1 数据协同</strong></td>
+<td>同一用户多设备</td>
+<td>记忆同步、状态保持</td>
+<td>加密传输</td>
+</tr>
+<tr>
+<td><strong>L2 能力协同</strong></td>
+<td>多AI系统协作</td>
+<td>任务分工、结果整合</td>
+<td>MCP协议</td>
+</tr>
+<tr>
+<td><strong>L3 记忆协同</strong></td>
+<td>用户授权共享</td>
+<td>特定记忆片段</td>
+<td>遗忘同步</td>
+</tr>
+<tr>
+<td><strong>L4 生态协同</strong></td>
+<td>开放网络</td>
+<td>知识贡献、模式共享</td>
+<td>伦理审查</td>
+</tr>
+</tbody></table>
+<h4>四种共生圈</h4>
+<table>
+<thead><tr>
+<th>共生圈类型</th>
+<th>成员构成</th>
+<th>共享深度</th>
+<th>典型场景</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>家庭共生圈</strong></td>
+<td>家庭成员+家庭AI</td>
+<td>深度共享</td>
+<td>家庭知识库、日程协调</td>
+</tr>
+<tr>
+<td><strong>协作共生圈</strong></td>
+<td>团队成员+团队AI</td>
+<td>工作相关</td>
+<td>项目协作、知识共享</td>
+</tr>
+<tr>
+<td><strong>社群共生圈</strong></td>
+<td>同好群体+社群AI</td>
+<td>兴趣相关</td>
+<td>学习小组、兴趣社区</td>
+</tr>
+<tr>
+<td><strong>开放共生圈</strong></td>
+<td>公众+公共AI</td>
+<td>公开知识</td>
+<td>开源社区、公共知识库</td>
+</tr>
+</tbody></table>
+<h4>MCP协同协议</h4>
+<pre><code>MCP协议栈:
+  人机协同协议:
+    - 意图传递格式
+    - 上下文继承规则
+    - 结果反馈机制
+    
+  机内协同协议:
+    - Skill间调用规范
+    - 数据传递格式
+    - 错误处理流程
+    
+  系统扩展协议:
+    - 外部工具接入
+    - API调用规范
+    - 安全认证机制</code></pre>
+<hr>
+<h2>六、运维层详细映射</h2>
+<h3>6.1 健康自检机制</h3>
+<h4>六维健康指标</h4>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>检查项</th>
+<th>正常阈值</th>
+<th>异常处理</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>信仰层健康</strong></td>
+<td>安全红线完整性</td>
+<td>100%</td>
+<td>立即修复</td>
+</tr>
+<tr>
+<td><strong>文化层健康</strong></td>
+<td>知识库同步状态</td>
+<td>&gt;95%</td>
+<td>自动重同步</td>
+</tr>
+<tr>
+<td><strong>思维层健康</strong></td>
+<td>引擎响应时间</td>
+<td>&lt;3s</td>
+<td>降级处理</td>
+</tr>
+<tr>
+<td><strong>人格层健康</strong></td>
+<td>语气一致性</td>
+<td>&gt;90%</td>
+<td>重新校准</td>
+</tr>
+<tr>
+<td><strong>记忆层健康</strong></td>
+<td>存储空间使用率</td>
+<td>&lt;80%</td>
+<td>自动归档</td>
+</tr>
+<tr>
+<td><strong>协同层健康</strong></td>
+<td>同步延迟</td>
+<td>&lt;1s</td>
+<td>告警通知</td>
+</tr>
+</tbody></table>
+<h4>自愈降级策略</h4>
+<pre><code>自愈策略:
+  轻度异常: "自动修复，记录日志"
+  中度异常: "降级运行，通知用户"
+  重度异常: "暂停服务，等待人工"
+  
+降级模式:
+  最小化界面: "仅保留核心输入输出"
+  简化推理: "跳过复杂分析，直接响应"
+  静态模式: "仅使用缓存，不更新记忆"</code></pre>
+<hr>
+<h2>七、CLI命令体系</h2>
+<h3>7.1 AI OS专用CLI命令</h3>
+<table>
+<thead><tr>
+<th>命令</th>
+<th>功能</th>
+<th>对应体系</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><code>aios status</code></td>
+<td>查看系统健康状态</td>
+<td>运维层</td>
+<td><code>aios status --detail</code></td>
+</tr>
+<tr>
+<td><code>aios init</code></td>
+<td>系统初始化</td>
+<td>培养指南</td>
+<td><code>aios init --force</code></td>
+</tr>
+<tr>
+<td><code>aios contract</code></td>
+<td>查看/修改共生契约</td>
+<td>契约体系</td>
+<td><code>aios contract show</code></td>
+</tr>
+<tr>
+<td><code>aios memory</code></td>
+<td>记忆管理</td>
+<td>记忆体系</td>
+<td><code>aios memory search "五行"</code></td>
+</tr>
+<tr>
+<td><code>aios engine</code></td>
+<td>引擎管理</td>
+<td>思维体系</td>
+<td><code>aios engine list</code></td>
+</tr>
+<tr>
+<td><code>aios sync</code></td>
+<td>三向同步</td>
+<td>记忆体系</td>
+<td><code>aios sync --all</code></td>
+</tr>
+<tr>
+<td><code>aios backup</code></td>
+<td>备份系统</td>
+<td>运维层</td>
+<td><code>aios backup --full</code></td>
+</tr>
+<tr>
+<td><code>aios evolve</code></td>
+<td>系统进化</td>
+<td>运维层</td>
+<td><code>aios evolve --dry-run</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>八、Framework集成</h2>
+<h3>8.1 Harness四层架构映射</h3>
+<table>
+<thead><tr>
+<th>Harness层</th>
+<th>AI OS对应</th>
+<th>核心功能</th>
+<th>实现组件</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>记忆层</strong></td>
+<td>记忆体系</td>
+<td>AGENTS地图、渐进式披露</td>
+<td>长期记忆.skills</td>
+</tr>
+<tr>
+<td><strong>执行层</strong></td>
+<td>思维体系</td>
+<td>工具执行、沙箱隔离</td>
+<td>龙心OS五大引擎</td>
+</tr>
+<tr>
+<td><strong>反馈层</strong></td>
+<td>运维体系</td>
+<td>自动化测试、Linter规则</td>
+<td>心跳巡检.skills</td>
+</tr>
+<tr>
+<td><strong>编排层</strong></td>
+<td>总智能体</td>
+<td>任务拆解、多Agent协作</td>
+<td>龙心OS总智能体</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>九、知识图谱与双向链接</h2>
+<h3>9.1 核心文档索引</h3>
+<table>
+<thead><tr>
+<th>文档</th>
+<th>路径</th>
+<th>说明</th>
+<th>双向链接</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>总索引</strong></td>
+<td><code>00-AI OS智能体激活框架·总索引.md</code></td>
+<td>全局入口</td>
+<td>链接所有子文档</td>
+</tr>
+<tr>
+<td><strong>功能架构</strong></td>
+<td><code>01-AI OS功能架构·完整映射.md</code></td>
+<td>本文档</td>
+<td>链接十大体系</td>
+</tr>
+<tr>
+<td><strong>龙心OS映射</strong></td>
+<td><code>02-龙心OS六大模块·完整Skill包.md</code></td>
+<td>六大模块</td>
+<td>链接五大引擎</td>
+</tr>
+<tr>
+<td><strong>知识图谱</strong></td>
+<td><code>03-AI OS知识图谱·跨域联系.md</code></td>
+<td>关系可视化</td>
+<td>链接所有实体</td>
+</tr>
+<tr>
+<td><strong>工作流SOP</strong></td>
+<td><code>04-AI OS工作流与SOP·操作手册.md</code></td>
+<td>操作指南</td>
+<td>链接具体流程</td>
+</tr>
+</tbody></table>
+<h3>9.2 标签体系</h3>
+<pre><code>核心标签:
+  - AI OS
+  - 人机共生
+  - 龙心OS
+  - 十大体系
+  - 四柱体系
+  
+体系标签:
+  - 信仰体系
+  - 文化体系
+  - 思维体系
+  - 人格体系
+  - 记忆体系
+  - 培养指南
+  - 共生契约
+  - 退出传承
+  - 多伙伴协同
+  - 运维演化
+  
+技术标签:
+  - Skills
+  - MCP
+  - CLI
+  - Framework
+  - 工作流
+  - SOP</code></pre>
+<hr>
+<h2>十、核心金句</h2>
+<blockquote><p><strong>"十大体系咬合为有机整体，零件齐全不等于生命诞生。"</strong></p></blockquote>
+<blockquote><p><strong>"从'人类编写、机器检索'到'机器编译、人类审核'——这是知识管理的范式革命。"</strong></p></blockquote>
+<blockquote><p><strong>"安全红线一票否决，信仰核心不可动摇，状态敏感动态调适。"</strong></p></blockquote>
+<blockquote><p><strong>"不是使用AI，而是与AI共生；不是工具调用，而是生命协同。"</strong></p></blockquote>
+<blockquote><p><strong>"每一次交互都是进化契机，每一次沉淀都是系统升级。"</strong></p></blockquote>
+<hr>
+<p><strong>文档版本</strong>: 1.0  
+<strong>最后更新</strong>: 2026-04-13  
+<strong>维护者</strong>: 龙龟神将  
+<strong>关联文档</strong>: <a href="00-AI OS智能体激活框架·总索引.html">00-AI OS智能体激活框架·总索引</a> | <a href="02-龙心OS六大模块·完整Skill包.html">02-龙心OS六大模块·完整Skill包</a> | <a href="03-AI OS知识图谱·跨域联系.html">03-AI OS知识图谱·跨域联系</a></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>
