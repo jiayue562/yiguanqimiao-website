@@ -22,7 +22,7 @@
       "headline": "00 总索引与导航",
       "description": "AI OS P0功能增强 - 完成总览日期: 2026-04-15  状态: ✅ 设计完成  实施周期: 26天---✅ P0功能全部完成设计序号  功能  版本  核心升级  文档路径--------------------------------------1  记忆系统  v5.3 → v6.0  SQLite + FTS5 + 向量索引  00-系统配置/记忆系统v6.0架构设计.md2",
       "author": {"@type": "Person", "name": "以观其妙书院"},
-      "datePublished": "2026-06-29",
+      "datePublished": "2026-06-30",
       "publisher": {"@type": "Organization", "name": "以观其妙书院"}
     }
     </script>
@@ -136,7 +136,7 @@
         <header>
             <h1>00 总索引与导航</h1>
             <div class="meta">
-                <span>📅 2026-06-29</span>
+                <span>📅 2026-06-30</span>
                 <span>✍️ 以观其妙书院</span>
             </div>
         </header>

@@ -22,7 +22,7 @@
       "headline": "Readme",
       "description": "知识库目录主要知识资产存储区域，按照知识类型进行分类管理。分类结构- 01-概念知识/ - 理论知识、概念定义- 02-实践知识/ - 操作指南、实践经验- 03-项目知识/ - 项目相关文档和经验- 04-工具知识/ - 工具使用方法和技巧- 05-参考资料/ - 外部资料和文献使用规范- 每个笔记都需要添加适当的标签和元数据- 定期进行知识梳理和更新- 确保知识间的关联性",
       "author": {"@type": "Person", "name": "以观其妙书院"},
-      "datePublished": "2026-06-29",
+      "datePublished": "2026-06-30",
       "publisher": {"@type": "Organization", "name": "以观其妙书院"}
     }
     </script>
@@ -136,7 +136,7 @@
         <header>
             <h1>Readme</h1>
             <div class="meta">
-                <span>📅 2026-06-29</span>
+                <span>📅 2026-06-30</span>
                 <span>✍️ 以观其妙书院</span>
             </div>
         </header>

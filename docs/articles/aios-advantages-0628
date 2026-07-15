@@ -22,7 +22,7 @@
       "headline": "Aios Advantages 0628",
       "description": "你的AI还在"调用工具"，这个系统已经"活"了——AIOS的八个独特优点2024年底，一个朋友问我："你们做的AI操作系统，和ChatGPT的Plugin、Claude的Tool Use有什么本质区别？不都是让AI调用外部能力吗？"我愣了一下。不是因为答不上来。而是因为这个问题本身，暴露了大多数人对"AI系统"的理解还停留在2023年——以为AI能力的上限，就是它能调用多少工具、能串联多少API。",
       "author": {"@type": "Person", "name": "以观其妙书院"},
-      "datePublished": "2026-06-29",
+      "datePublished": "2026-06-30",
       "publisher": {"@type": "Organization", "name": "以观其妙书院"}
     }
     </script>
@@ -136,7 +136,7 @@
         <header>
             <h1>Aios Advantages 0628</h1>
             <div class="meta">
-                <span>📅 2026-06-29</span>
+                <span>📅 2026-06-30</span>
                 <span>✍️ 以观其妙书院</span>
             </div>
         </header>
