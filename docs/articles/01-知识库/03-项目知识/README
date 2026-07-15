@@ -22,7 +22,7 @@
       "headline": "Readme",
       "description": "项目知识存储项目相关文档、经验和教训。分类结构- 项目文档/ - 项目计划和文档- 项目经验/ - 项目过程中的经验总结- 技术方案/ - 技术选型和架构设计- 复盘总结/ - 项目复盘和教训使用规范- 按项目分类存储知识- 记录项目全生命周期的经验- 建立项目间的知识关联",
       "author": {"@type": "Person", "name": "以观其妙书院"},
-      "datePublished": "2026-06-29",
+      "datePublished": "2026-06-30",
       "publisher": {"@type": "Organization", "name": "以观其妙书院"}
     }
     </script>
@@ -136,7 +136,7 @@
         <header>
             <h1>Readme</h1>
             <div class="meta">
-                <span>📅 2026-06-29</span>
+                <span>📅 2026-06-30</span>
                 <span>✍️ 以观其妙书院</span>
             </div>
         </header>

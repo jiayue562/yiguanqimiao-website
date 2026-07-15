@@ -22,7 +22,7 @@
       "headline": "Readme",
       "description": "02-4 AI应用知识库定位：AI技术、应用方法论、工具集核心功能：AI时代外部脑、人机协同、智能工具箱核心理念：AI是共生伙伴，不是替代工具---AI技术体系基础理论- 机器学习 - 监督学习/无监督学习/强化学习- 深度学习 - 神经网络/反向传播/优化算法- 自然语言处理 - Transformer/大语言模型/提示工程- 计算机视觉 - CNN/图像识别/生成模型- 多模态AI - 跨模态",
       "author": {"@type": "Person", "name": "以观其妙书院"},
-      "datePublished": "2026-06-29",
+      "datePublished": "2026-06-30",
       "publisher": {"@type": "Organization", "name": "以观其妙书院"}
     }
     </script>
@@ -136,7 +136,7 @@
         <header>
             <h1>Readme</h1>
             <div class="meta">
-                <span>📅 2026-06-29</span>
+                <span>📅 2026-06-30</span>
                 <span>✍️ 以观其妙书院</span>
             </div>
         </header>
