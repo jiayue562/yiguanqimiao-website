@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>IMA知识库 API - 以观其妙书院</title>
+<meta name="description" content="IMA知识库 API - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="IMA知识库 API">
+<meta property="og:description" content="IMA知识库 API - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "IMA知识库 API",
+    "description": "IMA知识库 API - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>IMA知识库 API</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>IMA知识库 API</h1>
+<h2>⚠️ 必读约束</h2>
+<h3>🌐 服务信息</h3>
+<ul>
+<li><strong>Base URL </strong>：<code>https://ima.qq.com</code></li>
+<li><strong>Base Path</strong>：<code>/openapi/wiki/v1</code></li>
+<li><strong>协议</strong>：HTTP POST，JSON body</li>
+<li><strong>完整示例</strong>：<code>POST https://ima.qq.com/openapi/wiki/v1/get_knowledge_base</code></li>
+</ul>
+<h3>🔒 认证</h3>
+<p>所有请求必须携带 Header：</p>
+<table>
+<thead><tr>
+<th>Header</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>ima-openapi-clientid</code></td>
+<td>Client ID</td>
+</tr>
+<tr>
+<td><code>ima-openapi-apikey</code></td>
+<td>API Key</td>
+</tr>
+<tr>
+<td><code>Content-Type</code></td>
+<td><code>application/json</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>快速决策</h2>
+<table>
+<thead><tr>
+<th>用户意图</th>
+<th>接口</th>
+</tr></thead><tbody>
+<tr>
+<td>「上传文件到知识库」</td>
+<td><code>check_repeated_names</code> → <code>create_media</code> → COS Upload → <code>add_knowledge</code></td>
+</tr>
+<tr>
+<td>「上传文件到指定文件夹」</td>
+<td>先定位文件夹 → 同上（传入 <code>folder_id</code>）</td>
+</tr>
+<tr>
+<td>「添加网页/微信文章到知识库」</td>
+<td><code>import_urls</code></td>
+</tr>
+<tr>
+<td>「获取知识库信息」</td>
+<td><code>get_knowledge_base</code></td>
+</tr>
+<tr>
+<td>「浏览知识库内容 / 浏览文件夹」</td>
+<td><code>get_knowledge_list</code>（可传 <code>folder_id</code> 进入子文件夹）</td>
+</tr>
+<tr>
+<td>「在知识库中搜索」</td>
+<td><code>search_knowledge</code></td>
+</tr>
+<tr>
+<td>「搜索知识库列表」</td>
+<td><code>search_knowledge_base</code></td>
+</tr>
+<tr>
+<td>「获取可添加的知识库列表」</td>
+<td><code>get_addable_knowledge_base_list</code></td>
+</tr>
+<tr>
+<td>「检查文件名是否重复」</td>
+<td><code>check_repeated_names</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>数据结构</h2>
+<h3>KnowledgeBaseInfo（知识库信息）</h3>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>string</td>
+<td>知识库唯一 ID</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>知识库名称</td>
+</tr>
+<tr>
+<td><code>cover_url</code></td>
+<td>string</td>
+<td>封面图 URL</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>string</td>
+<td>描述</td>
+</tr>
+<tr>
+<td><code>recommended_questions</code></td>
+<td>string[]</td>
+<td>推荐问题列表</td>
+</tr>
+</tbody></table>
+<h3>KnowledgeInfo（知识条目）</h3>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>media_id</code></td>
+<td>string</td>
+<td>媒体 ID</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td>标题</td>
+</tr>
+<tr>
+<td><code>parent_folder_id</code></td>
+<td>string</td>
+<td>所属文件夹 ID</td>
+</tr>
+</tbody></table>
+<h3>FolderInfo（文件夹条目）</h3>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>folder_id</code></td>
+<td>string</td>
+<td>文件夹 ID</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>文件夹名称</td>
+</tr>
+<tr>
+<td><code>file_number</code></td>
+<td>int64</td>
+<td>文件数</td>
+</tr>
+<tr>
+<td><code>folder_number</code></td>
+<td>int64</td>
+<td>子文件夹数</td>
+</tr>
+<tr>
+<td><code>parent_folder_id</code></td>
+<td>string</td>
+<td>父文件夹 ID</td>
+</tr>
+<tr>
+<td><code>is_top</code></td>
+<td>bool</td>
+<td>是否置顶</td>
+</tr>
+</tbody></table>
+<h3>AddableKnowledgeBaseInfo（可添加的知识库信息）</h3>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>string</td>
+<td>知识库 ID</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>知识库名称</td>
+</tr>
+</tbody></table>
+<h3>SearchedKnowledgeBaseInfo（搜索到的知识库信息）</h3>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>string</td>
+<td>知识库 ID</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>知识库名称</td>
+</tr>
+<tr>
+<td><code>cover_url</code></td>
+<td>string</td>
+<td>封面图 URL</td>
+</tr>
+</tbody></table>
+<h3>SearchedKnowledgeInfo（搜索到的知识条目）</h3>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>media_id</code></td>
+<td>string</td>
+<td>媒体 ID</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td>标题</td>
+</tr>
+<tr>
+<td><code>parent_folder_id</code></td>
+<td>string</td>
+<td>所属文件夹 ID</td>
+</tr>
+<tr>
+<td><code>highlight_content</code></td>
+<td>string</td>
+<td>高亮内容（内容匹配时返回）</td>
+</tr>
+</tbody></table>
+<h3>ContentInfo（内容信息）</h3>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>content_id</code></td>
+<td>string</td>
+<td>内容 ID（网页时为 URL）</td>
+</tr>
+</tbody></table>
+<h3>ImportURLData（URL 导入结果）</h3>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>url</code></td>
+<td>string</td>
+<td>导入的 URL</td>
+</tr>
+<tr>
+<td><code>ret_code</code></td>
+<td>int32</td>
+<td>0=成功，非 0=失败</td>
+</tr>
+<tr>
+<td><code>media_id</code></td>
+<td>string</td>
+<td>导入成功后返回的媒体 ID</td>
+</tr>
+</tbody></table>
+<h3>FileInfo（文件信息）</h3>
+<p><code>add_knowledge</code> 文件上传时使用：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>cos_key</code></td>
+<td>string</td>
+<td>COS 对象 Key</td>
+</tr>
+<tr>
+<td><code>file_size</code></td>
+<td>uint64</td>
+<td>文件大小（字节）</td>
+</tr>
+<tr>
+<td><code>last_modify_time</code></td>
+<td>int64</td>
+<td>最后修改时间（秒级时间戳）</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>string</td>
+<td>文件密码（如有）</td>
+</tr>
+<tr>
+<td><code>file_name</code></td>
+<td>string</td>
+<td>文件名称</td>
+</tr>
+</tbody></table>
+<h3>Credential（COS 上传凭证）</h3>
+<p><code>create_media</code> 返回，用于上传文件到腾讯云 COS：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>token</code></td>
+<td>string</td>
+<td>临时 TOKEN</td>
+</tr>
+<tr>
+<td><code>secret_id</code></td>
+<td>string</td>
+<td>临时 Secret ID</td>
+</tr>
+<tr>
+<td><code>secret_key</code></td>
+<td>string</td>
+<td>临时 Secret Key</td>
+</tr>
+<tr>
+<td><code>start_time</code></td>
+<td>int64</td>
+<td>凭证开始时间（秒级时间戳）</td>
+</tr>
+<tr>
+<td><code>expired_time</code></td>
+<td>int64</td>
+<td>凭证过期时间（秒级时间戳）</td>
+</tr>
+<tr>
+<td><code>appid</code></td>
+<td>string</td>
+<td>COS AppID</td>
+</tr>
+<tr>
+<td><code>bucket_name</code></td>
+<td>string</td>
+<td>COS 桶名称</td>
+</tr>
+<tr>
+<td><code>region</code></td>
+<td>string</td>
+<td>COS 桶所在区域</td>
+</tr>
+<tr>
+<td><code>custom_domain</code></td>
+<td>string</td>
+<td>自定义域名</td>
+</tr>
+<tr>
+<td><code>cos_key</code></td>
+<td>string</td>
+<td>COS 对象 Key</td>
+</tr>
+</tbody></table>
+<h3>MediaType（媒体类型枚举）</h3>
+<table>
+<thead><tr>
+<th>值</th>
+<th>名称</th>
+<th>content_type / 说明</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>PDF</td>
+<td><code>application/pdf</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>网页</td>
+<td>N/A（直接 AddKnowledge，<code>web_info.content_id=&lt;url&gt;</code>）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Word</td>
+<td><code>application/msword</code> / <code>application/vnd.openxmlformats-officedocument.wordprocessingml.document</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>PPT</td>
+<td><code>application/vnd.ms-powerpoint</code> / <code>application/vnd.openxmlformats-officedocument.presentationml.presentation</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Excel</td>
+<td><code>application/vnd.ms-excel</code> / <code>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</code> / <code>text/csv</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td>微信公众号文章</td>
+<td>N/A（直接 AddKnowledge，<code>web_info.content_id=&lt;url&gt;</code>，URL 匹配 <code>mp.weixin.qq.com/s</code>）</td>
+</tr>
+<tr>
+<td>7</td>
+<td>MarkDown</td>
+<td><code>text/markdown</code> / <code>text/x-markdown</code> / <code>application/md</code> / <code>application/markdown</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td>图片</td>
+<td><code>image/png</code>, <code>image/jpeg</code>, <code>image/webp</code></td>
+</tr>
+<tr>
+<td>11</td>
+<td>笔记</td>
+<td>N/A（直接 AddKnowledge，<code>note_info.content_id=&lt;doc_id&gt;</code>）</td>
+</tr>
+<tr>
+<td>12</td>
+<td>AI会话</td>
+<td>N/A（直接 AddKnowledge，<code>session_info.content_id=&lt;session_id&gt;</code>）</td>
+</tr>
+<tr>
+<td>13</td>
+<td>TXT</td>
+<td><code>text/plain</code></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Xmind</td>
+<td><code>application/x-xmind</code> / <code>application/vnd.xmind.workbook</code> / <code>application/zip</code></td>
+</tr>
+<tr>
+<td>15</td>
+<td>录音</td>
+<td><code>audio/mpeg</code>(mp3), <code>audio/x-m4a</code>(m4a), <code>audio/wav</code>(wav), <code>audio/aac</code>(aac)</td>
+</tr>
+<tr>
+<td>16</td>
+<td>视频解析</td>
+<td><strong>不支持通过 skill 添加</strong>。Bilibili/YouTube/本地HTML等仅支持在 ima 桌面端内添加进知识库</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>接口详情</h2>
+<h3>1. 创建媒体</h3>
+<p>POST /openapi/wiki/v1/create_media</p>
+<p><strong>触发场景</strong>：上传文件到知识库的第一步，获取 COS 上传凭证。</p>
+<h4>请求参数</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_name</code></td>
+<td>string</td>
+<td>是</td>
+<td>文件名称（最长 1024 字符）</td>
+</tr>
+<tr>
+<td><code>file_size</code></td>
+<td>uint64</td>
+<td>是</td>
+<td>文件大小（字节）</td>
+</tr>
+<tr>
+<td><code>content_type</code></td>
+<td>string</td>
+<td>是</td>
+<td>MIME 类型</td>
+</tr>
+<tr>
+<td><code>knowledge_base_id</code></td>
+<td>string</td>
+<td>是</td>
+<td>知识库 ID</td>
+</tr>
+<tr>
+<td><code>file_ext</code></td>
+<td>string</td>
+<td>是</td>
+<td>文件后缀名（无点号，如 <code>pdf</code>）</td>
+</tr>
+</tbody></table>
+<h4>返回字段</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>media_id</code></td>
+<td>string</td>
+<td>媒体 ID</td>
+</tr>
+<tr>
+<td><code>cos_credential</code></td>
+<td>Credential</td>
+<td>COS 上传凭证</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>2. 添加知识</h3>
+<p>POST /openapi/wiki/v1/add_knowledge</p>
+<p><strong>触发场景</strong>：上传文件到知识库的最后一步，或直接添加网页 URL。</p>
+<h4>请求参数</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>media_type</code></td>
+<td>int32</td>
+<td>是</td>
+<td>媒体类型</td>
+</tr>
+<tr>
+<td><code>media_id</code></td>
+<td>string</td>
+<td>否</td>
+<td>文件上传时必填，CreateMedia 返回的 ID</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td>是</td>
+<td>标题</td>
+</tr>
+<tr>
+<td><code>knowledge_base_id</code></td>
+<td>string</td>
+<td>是</td>
+<td>知识库 ID</td>
+</tr>
+<tr>
+<td><code>folder_id</code></td>
+<td>string</td>
+<td>否</td>
+<td>文件夹 ID（省略则添加到根目录）</td>
+</tr>
+<tr>
+<td><code>note_info</code></td>
+<td>ContentInfo</td>
+<td>否</td>
+<td>笔记内容信息</td>
+</tr>
+<tr>
+<td><code>web_info</code></td>
+<td>ContentInfo</td>
+<td>否</td>
+<td>网页内容信息（media_type=2 时必填）</td>
+</tr>
+<tr>
+<td><code>web_info.content_id</code></td>
+<td>string</td>
+<td>条件必填</td>
+<td>网页 URL（media_type=2 时必填）</td>
+</tr>
+<tr>
+<td><code>session_info</code></td>
+<td>ContentInfo</td>
+<td>否</td>
+<td>会话内容信息</td>
+</tr>
+<tr>
+<td><code>file_info</code></td>
+<td>FileInfo</td>
+<td>否</td>
+<td>文件信息（文件上传时必填，见 FileInfo）</td>
+</tr>
+</tbody></table>
+<h4>返回字段</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>media_id</code></td>
+<td>string</td>
+<td>媒体 ID</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>3. 获取知识库信息</h3>
+<p>POST /openapi/wiki/v1/get_knowledge_base</p>
+<h4>请求参数</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>ids</code></td>
+<td>string[]</td>
+<td>是</td>
+<td>知识库 ID 列表（1-20 个，不重复）</td>
+</tr>
+</tbody></table>
+<h4>返回字段</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>infos</code></td>
+<td>map\&lt;string, KnowledgeBaseInfo\&gt;</td>
+<td>知识库信息映射</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>4. 浏览知识库内容</h3>
+<p>POST /openapi/wiki/v1/get_knowledge_list</p>
+<h4>请求参数</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>cursor</code></td>
+<td>string</td>
+<td>是</td>
+<td>游标，首次传空字符串</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>uint64</td>
+<td>是</td>
+<td>数量限制（1-50）</td>
+</tr>
+<tr>
+<td><code>knowledge_base_id</code></td>
+<td>string</td>
+<td>是</td>
+<td>知识库 ID</td>
+</tr>
+<tr>
+<td><code>folder_id</code></td>
+<td>string</td>
+<td>否</td>
+<td>文件夹 ID（省略则列出根目录）</td>
+</tr>
+</tbody></table>
+<h4>返回字段</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>knowledge_list</code></td>
+<td>KnowledgeInfo[]</td>
+<td>知识条目列表</td>
+</tr>
+<tr>
+<td><code>is_end</code></td>
+<td>bool</td>
+<td>是否到达列表末尾</td>
+</tr>
+<tr>
+<td><code>next_cursor</code></td>
+<td>string</td>
+<td>下页游标</td>
+</tr>
+<tr>
+<td><code>current_path</code></td>
+<td>FolderInfo[]</td>
+<td>当前路径</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>5. 搜索知识库内容</h3>
+<p>POST /openapi/wiki/v1/search_knowledge</p>
+<h4>请求参数</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>query</code></td>
+<td>string</td>
+<td>是</td>
+<td>搜索关键词</td>
+</tr>
+<tr>
+<td><code>cursor</code></td>
+<td>string</td>
+<td>是</td>
+<td>游标，首次传空字符串</td>
+</tr>
+<tr>
+<td><code>knowledge_base_id</code></td>
+<td>string</td>
+<td>是</td>
+<td>知识库 ID</td>
+</tr>
+</tbody></table>
+<h4>返回字段</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>info_list</code></td>
+<td>SearchedKnowledgeInfo[]</td>
+<td>搜索结果（<code>media_id</code>, <code>title</code>, <code>parent_folder_id</code>, <code>highlight_content</code>）</td>
+</tr>
+<tr>
+<td><code>is_end</code></td>
+<td>bool</td>
+<td>是否到达列表末尾</td>
+</tr>
+<tr>
+<td><code>next_cursor</code></td>
+<td>string</td>
+<td>下页游标</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>6. 搜索知识库列表</h3>
+<p>POST /openapi/wiki/v1/search_knowledge_base</p>
+<h4>请求参数</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>query</code></td>
+<td>string</td>
+<td>是</td>
+<td>搜索关键词</td>
+</tr>
+<tr>
+<td><code>cursor</code></td>
+<td>string</td>
+<td>是</td>
+<td>游标，首次传空字符串</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>uint64</td>
+<td>是</td>
+<td>数量限制（1-50）</td>
+</tr>
+</tbody></table>
+<h4>返回字段</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>info_list</code></td>
+<td>SearchedKnowledgeBaseInfo[]</td>
+<td>搜索结果（<code>id</code>, <code>name</code>, <code>cover_url</code>）</td>
+</tr>
+<tr>
+<td><code>is_end</code></td>
+<td>bool</td>
+<td>是否到达列表末尾</td>
+</tr>
+<tr>
+<td><code>next_cursor</code></td>
+<td>string</td>
+<td>下页游标</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>7. 获取可添加的知识库列表</h3>
+<p>POST /openapi/wiki/v1/get_addable_knowledge_base_list</p>
+<p><strong>触发场景</strong>：用户想上传文件或添加内容到知识库，但不确定可以添加到哪些知识库时，列出当前用户有权限添加内容的知识库。</p>
+<h4>请求参数</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>cursor</code></td>
+<td>string</td>
+<td>是</td>
+<td>游标，首次传空字符串</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>uint64</td>
+<td>是</td>
+<td>数量限制（1-50）</td>
+</tr>
+</tbody></table>
+<h4>返回字段</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>addable_knowledge_base_list</code></td>
+<td>AddableKnowledgeBaseInfo[]</td>
+<td>可添加内容的知识库列表</td>
+</tr>
+<tr>
+<td><code>next_cursor</code></td>
+<td>string</td>
+<td>下页游标</td>
+</tr>
+<tr>
+<td><code>is_end</code></td>
+<td>bool</td>
+<td>是否到达列表末尾</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>8. 检查文件名重复</h3>
+<p>POST /openapi/wiki/v1/check_repeated_names</p>
+<p><strong>触发场景</strong>：上传文件到知识库前，检查目标知识库（及文件夹）中是否已存在同名文件。仅用于文件类型（media_type 1/3/4/5/7/9/13/14），不用于网页（2/6）、笔记（11）等。</p>
+<h4>请求参数</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>params</code></td>
+<td>CheckRepeatedNamesParam[]</td>
+<td>是</td>
+<td>待检查的文件列表（1-2000 个）</td>
+</tr>
+<tr>
+<td><code>knowledge_base_id</code></td>
+<td>string</td>
+<td>是</td>
+<td>知识库 ID</td>
+</tr>
+<tr>
+<td><code>folder_id</code></td>
+<td>string</td>
+<td>否</td>
+<td>文件夹 ID（省略则检查根目录）</td>
+</tr>
+</tbody></table>
+<p><strong>CheckRepeatedNamesParam：</strong></p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>文件名称</td>
+</tr>
+<tr>
+<td><code>media_type</code></td>
+<td>int32</td>
+<td>媒体类型（见 MediaType 枚举）</td>
+</tr>
+</tbody></table>
+<h4>返回字段</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>results</code></td>
+<td>CheckRepeatedNamesResult[]</td>
+<td>检查结果</td>
+</tr>
+</tbody></table>
+<p><strong>CheckRepeatedNamesResult：</strong></p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>文件名称</td>
+</tr>
+<tr>
+<td><code>is_repeated</code></td>
+<td>bool</td>
+<td><code>true</code> 表示同名文件已存在</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>9. 导入 URL</h3>
+<p>POST /openapi/wiki/v1/import_urls</p>
+<p><strong>触发场景</strong>：添加网页或微信公众号文章到知识库。替代 <code>add_knowledge</code> 的 <code>media_type=2/6</code> 用法，支持批量导入，服务端自动识别 URL 类型。</p>
+<h4>请求参数</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>knowledge_base_id</code></td>
+<td>string</td>
+<td>是</td>
+<td>知识库 ID</td>
+</tr>
+<tr>
+<td><code>folder_id</code></td>
+<td>string</td>
+<td>是</td>
+<td>文件夹 ID</td>
+</tr>
+<tr>
+<td><code>urls</code></td>
+<td>string[]</td>
+<td>是</td>
+<td>URL 列表（1-10 个，每个非空字符串）</td>
+</tr>
+</tbody></table>
+<h4>返回字段</h4>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>results</code></td>
+<td>map\&lt;string, ImportURLData\&gt;</td>
+<td>URL→结果映射（含 <code>ret_code</code>、<code>media_id</code>）</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>文件夹说明</h2>
+<p>知识库内容以文件夹层级结构组织。文件夹是一种特殊的知识条目：</p>
+<ul>
+<li><code>get_knowledge_list</code> 返回结果中同时包含 <strong>文件</strong>（<code>KnowledgeInfo</code>）和 <strong>文件夹</strong>（<code>FolderInfo</code>），通过 <code>current_path</code> 字段可获取当前路径的面包屑信息</li>
+<li><code>search_knowledge</code> 搜索结果中也会包含匹配的文件夹</li>
+<li>所有支持 <code>folder_id</code> 参数的接口（<code>add_knowledge</code>、<code>import_urls</code>、<code>get_knowledge_list</code>、<code>check_repeated_names</code>），省略 <code>folder_id</code> 则操作根目录。<strong>根目录的 folder_id 等于 knowledge_base_id</strong>，当接口要求 <code>folder_id</code> 必填时（如 <code>import_urls</code>），传 <code>knowledge_base_id</code> 的值即可表示根目录</li>
+<li><strong>定位文件夹</strong>：当用户只提供文件夹名称时，使用 <code>search_knowledge</code> 按名称搜索，或用 <code>get_knowledge_list</code> 逐级浏览，从返回结果中找到目标文件夹的 ID</li>
+</ul>
+<hr>
+<h2>文件大小限制</h2>
+<p>上传前必须校验文件大小，超限文件应在上传前拦截：</p>
+<table>
+<thead><tr>
+<th>文件类型</th>
+<th>media_type</th>
+<th>最大大小</th>
+</tr></thead><tbody>
+<tr>
+<td>Excel、TXT、Xmind、Markdown</td>
+<td>5/13/14/7</td>
+<td>10 MB</td>
+</tr>
+<tr>
+<td>图片</td>
+<td>9</td>
+<td>30 MB</td>
+</tr>
+<tr>
+<td>PDF、Word、PPT、音频及其他</td>
+<td>1/3/4/15 等</td>
+<td>200 MB</td>
+</tr>
+</tbody></table>
+<p>网页（2/6）、笔记（11）等非文件类型无大小限制。音频文件额外限制：最长 2 小时。</p>
+<hr>
+<h2>响应格式</h2>
+<p>所有 API 返回统一结构：</p>
+<pre><code>{
+  "retcode": 0,
+  "errmsg": "成功",
+  "data": { ... }
+}</code></pre>
+<ul>
+<li><code>retcode=0</code>：成功，从 <code>data</code> 提取业务字段</li>
+<li><code>retcode≠0</code>：失败，<strong>直接将 <code>errmsg</code> 展示给用户</strong>，无需自行翻译错误码</li>
+</ul>
+<hr>
+<h2>游标翻页使用规范</h2>
+<ol>
+<li><strong>首次请求</strong>：<code>cursor</code> 传空字符串 <code>""</code></li>
+<li>检查返回的 <code>is_end</code>：<code>false</code> 表示还有更多数据</li>
+<li>将返回的 <code>next_cursor</code> 作为下次请求的 <code>cursor</code></li>
+<li><code>is_end = true</code> 时停止翻页</li>
+</ol>
+<hr>
+<h2>错误码</h2>
+<table>
+<thead><tr>
+<th>错误码</th>
+<th>说明</th>
+<th>建议处理</th>
+</tr></thead><tbody>
+<tr>
+<td>0</td>
+<td>成功</td>
+<td>—</td>
+</tr>
+<tr>
+<td>110001</td>
+<td>参数非法</td>
+<td>检查请求参数（详见 errmsg）</td>
+</tr>
+<tr>
+<td>110002</td>
+<td>配置非法</td>
+<td>检查服务配置</td>
+</tr>
+<tr>
+<td>110010</td>
+<td>下游网络错误</td>
+<td>可重试</td>
+</tr>
+<tr>
+<td>110011</td>
+<td>下游逻辑错误</td>
+<td>不可重试，详见 errmsg</td>
+</tr>
+<tr>
+<td>110012</td>
+<td>接口无效</td>
+<td>检查接口路径</td>
+</tr>
+<tr>
+<td>110013</td>
+<td>客户端取消</td>
+<td>检查请求是否超时</td>
+</tr>
+<tr>
+<td>110020</td>
+<td>安全打击</td>
+<td>检查内容是否违规</td>
+</tr>
+<tr>
+<td>110021</td>
+<td>请求频控</td>
+<td>降低请求频率后重试</td>
+</tr>
+<tr>
+<td>110030</td>
+<td>无权限</td>
+<td>确认操作权限</td>
+</tr>
+</tbody></table>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

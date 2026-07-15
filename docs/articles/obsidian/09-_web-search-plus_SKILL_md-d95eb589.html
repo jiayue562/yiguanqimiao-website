@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Web Search Plus - 以观其妙书院</title>
+<meta name="description" content="Web Search Plus - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="Web Search Plus">
+<meta property="og:description" content="Web Search Plus - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Web Search Plus",
+    "description": "Web Search Plus - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Web Search Plus</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Web Search Plus</h1>
+<p><strong>Stop choosing search providers. Let the skill do it for you.</strong></p>
+<p>This skill connects you to 7 search providers (Serper, Tavily, Querit, Exa, Perplexity, You.com, SearXNG) and automatically picks the best one for each query. Shopping question? → Google results. Research question? → Deep research engine. Need a direct answer? → AI-synthesized with citations. Want privacy? → Self-hosted option.</p>
+<hr>
+<h2>✨ What Makes This Different?</h2>
+<ul>
+<li><strong>Just search</strong> — No need to think about which provider to use</li>
+<li><strong>Smart routing</strong> — Analyzes your query and picks the best provider automatically</li>
+<li><strong>7 providers, 1 interface</strong> — Google results, research engines, neural search, AI answers with citations, RAG-optimized, and privacy-first all in one</li>
+<li><strong>Works with just 1 key</strong> — Start with any single provider, add more later</li>
+<li><strong>Free options available</strong> — SearXNG is completely free (self-hosted)</li>
+</ul>
+<hr>
+<h2>🚀 Quick Start</h2>
+<pre><code># Interactive setup (recommended for first run)
+python3 scripts/setup.py
+
+# Or manual: copy config and add your keys
+cp config.example.json config.json</code></pre>
+<p>The wizard explains each provider, collects API keys, and configures defaults.</p>
+<hr>
+<h2>🔑 API Keys</h2>
+<p>You only need <strong>ONE</strong> key to get started. Add more providers later for better coverage.</p>
+<table>
+<thead><tr>
+<th>Provider</th>
+<th>Free Tier</th>
+<th>Best For</th>
+<th>Sign Up</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Serper</strong></td>
+<td>2,500/mo</td>
+<td>Shopping, prices, local, news</td>
+<td>[serper.dev](https://serper.dev)</td>
+</tr>
+<tr>
+<td><strong>Tavily</strong></td>
+<td>1,000/mo</td>
+<td>Research, explanations, academic</td>
+<td>[tavily.com](https://tavily.com)</td>
+</tr>
+<tr>
+<td><strong>Querit</strong></td>
+<td>Contact sales/free tier varies</td>
+<td>Multilingual AI search, international updates</td>
+<td>[querit.ai](https://querit.ai)</td>
+</tr>
+<tr>
+<td><strong>Exa</strong></td>
+<td>1,000/mo</td>
+<td>"Similar to X", startups, papers</td>
+<td>[exa.ai](https://exa.ai)</td>
+</tr>
+<tr>
+<td><strong>Perplexity</strong></td>
+<td>Via Kilo</td>
+<td>Direct answers with citations</td>
+<td>[kilo.ai](https://kilo.ai)</td>
+</tr>
+<tr>
+<td><strong>You.com</strong></td>
+<td>Limited</td>
+<td>Real-time info, AI/RAG context</td>
+<td>[api.you.com](https://api.you.com)</td>
+</tr>
+<tr>
+<td><strong>SearXNG</strong></td>
+<td><strong>FREE</strong> ✅</td>
+<td>Privacy, multi-source, $0 cost</td>
+<td>Self-hosted</td>
+</tr>
+</tbody></table>
+<p><strong>Setting your keys:</strong></p>
+<pre><code># Option A: .env file (recommended)
+export SERPER_API_KEY="your-key"
+export TAVILY_API_KEY="your-key"
+export QUERIT_API_KEY="your-key"
+
+# Option B: config.json
+{ "serper": { "api_key": "your-key" } }</code></pre>
+<hr>
+<h2>🎯 When to Use Which Provider</h2>
+<table>
+<thead><tr>
+<th>I want to...</th>
+<th>Provider</th>
+<th>Example Query</th>
+</tr></thead><tbody>
+<tr>
+<td>Find product prices</td>
+<td><strong>Serper</strong></td>
+<td>"iPhone 16 Pro Max price"</td>
+</tr>
+<tr>
+<td>Find restaurants/stores nearby</td>
+<td><strong>Serper</strong></td>
+<td>"best pizza near me"</td>
+</tr>
+<tr>
+<td>Understand how something works</td>
+<td><strong>Tavily</strong></td>
+<td>"how does HTTPS encryption work"</td>
+</tr>
+<tr>
+<td>Do deep research</td>
+<td><strong>Tavily</strong></td>
+<td>"climate change research 2024"</td>
+</tr>
+<tr>
+<td>Search across languages / international updates</td>
+<td><strong>Querit</strong></td>
+<td>"latest AI policy updates in Germany"</td>
+</tr>
+<tr>
+<td>Find companies like X</td>
+<td><strong>Exa</strong></td>
+<td>"startups similar to Notion"</td>
+</tr>
+<tr>
+<td>Find research papers</td>
+<td><strong>Exa</strong></td>
+<td>"transformer architecture papers"</td>
+</tr>
+<tr>
+<td>Get a direct answer with sources</td>
+<td><strong>Perplexity</strong></td>
+<td>"events in Berlin this weekend"</td>
+</tr>
+<tr>
+<td>Know the current status of something</td>
+<td><strong>Perplexity</strong></td>
+<td>"what is the status of Ethereum upgrades"</td>
+</tr>
+<tr>
+<td>Get real-time info</td>
+<td><strong>You.com</strong></td>
+<td>"latest AI regulation news"</td>
+</tr>
+<tr>
+<td>Search without being tracked</td>
+<td><strong>SearXNG</strong></td>
+<td>anything, privately</td>
+</tr>
+</tbody></table>
+<p><strong>Pro tip:</strong> Just search normally! Auto-routing handles most queries correctly. Override with <code>-p provider</code> when needed.</p>
+<hr>
+<h2>🧠 How Auto-Routing Works</h2>
+<p>The skill looks at your query and picks the best provider:</p>
+<pre><code>"iPhone 16 price"              → Serper (shopping keywords)
+"how does quantum computing work" → Tavily (research question)
+"latest AI policy updates in Germany" → Querit (multilingual + recency)
+"companies like stripe.com"    → Exa (URL detected, similarity)
+"events in Graz this weekend"  → Perplexity (local + direct answer)
+"latest news on AI"            → You.com (real-time intent)
+"search privately"             → SearXNG (privacy keywords)</code></pre>
+<p><strong>What if it picks wrong?</strong> Override it: <code>python3 scripts/search.py -p tavily -q "your query"</code></p>
+<p><strong>Debug routing:</strong> <code>python3 scripts/search.py --explain-routing -q "your query"</code></p>
+<hr>
+<h2>📖 Usage Examples</h2>
+<h3>Let Auto-Routing Choose (Recommended)</h3>
+<pre><code>python3 scripts/search.py -q "Tesla Model 3 price"
+python3 scripts/search.py -q "explain machine learning"
+python3 scripts/search.py -q "latest AI policy updates in Germany"
+python3 scripts/search.py -q "startups like Figma"</code></pre>
+<h3>Force a Specific Provider</h3>
+<pre><code>python3 scripts/search.py -p serper -q "weather Berlin"
+python3 scripts/search.py -p tavily -q "quantum computing" --depth advanced
+python3 scripts/search.py -p querit -q "latest AI policy updates in Germany"
+python3 scripts/search.py -p exa --similar-url "https://stripe.com" --category company
+python3 scripts/search.py -p you -q "breaking tech news" --include-news
+python3 scripts/search.py -p searxng -q "linux distros" --engines "google,bing"</code></pre>
+<hr>
+<h2>⚙ Configuration</h2>
+<pre><code>{
+  "auto_routing": {
+    "enabled": true,
+    "fallback_provider": "serper",
+    "confidence_threshold": 0.3,
+    "disabled_providers": []
+  },
+  "serper": {"country": "us", "language": "en"},
+  "tavily": {"depth": "advanced"},
+  "exa": {"type": "neural"},
+  "you": {"country": "US", "include_news": true},
+  "searxng": {"instance_url": "https://your-instance.example.com"}
+}</code></pre>
+<hr>
+<h2>📊 Provider Comparison</h2>
+<table>
+<thead><tr>
+<th>Feature</th>
+<th>Serper</th>
+<th>Tavily</th>
+<th>Exa</th>
+<th>Perplexity</th>
+<th>You.com</th>
+<th>SearXNG</th>
+</tr></thead><tbody>
+<tr>
+<td>Speed</td>
+<td>⚡⚡⚡</td>
+<td>⚡⚡</td>
+<td>⚡⚡</td>
+<td>⚡⚡</td>
+<td>⚡⚡⚡</td>
+<td>⚡⚡</td>
+</tr>
+<tr>
+<td>Direct Answers</td>
+<td>✗</td>
+<td>✗</td>
+<td>✗</td>
+<td>✓✓</td>
+<td>✗</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>Citations</td>
+<td>✗</td>
+<td>✗</td>
+<td>✗</td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>Factual Accuracy</td>
+<td>⭐⭐⭐</td>
+<td>⭐⭐⭐</td>
+<td>⭐⭐</td>
+<td>⭐⭐⭐</td>
+<td>⭐⭐⭐</td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td>Semantic Understanding</td>
+<td>⭐</td>
+<td>⭐⭐</td>
+<td>⭐⭐⭐</td>
+<td>⭐⭐⭐</td>
+<td>⭐⭐</td>
+<td>⭐</td>
+</tr>
+<tr>
+<td>Full Page Content</td>
+<td>✗</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>Shopping/Local</td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+<td>✗</td>
+<td>✗</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Find Similar Pages</td>
+<td>✗</td>
+<td>✗</td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>RAG-Optimized</td>
+<td>✗</td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+<td>✓✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>Privacy-First</td>
+<td>✗</td>
+<td>✗</td>
+<td>✗</td>
+<td>✗</td>
+<td>✗</td>
+<td>✓✓</td>
+</tr>
+<tr>
+<td>API Cost</td>
+<td>$$</td>
+<td>$$</td>
+<td>$$</td>
+<td>Via Kilo</td>
+<td>$</td>
+<td><strong>FREE</strong></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>❓ Common Questions</h2>
+<h3>Do I need API keys for all providers?</h3>
+<p><strong>No.</strong> You only need keys for providers you want to use. Start with one (Serper recommended), add more later.</p>
+<h3>Which provider should I start with?</h3>
+<p><strong>Serper</strong> — fastest, cheapest, largest free tier (2,500 queries/month), and handles most queries well.</p>
+<h3>What if I run out of free queries?</h3>
+<p>The skill automatically falls back to your other configured providers. Or switch to SearXNG (unlimited, self-hosted).</p>
+<h3>How much does this cost?</h3>
+<ul>
+<li><strong>Free tiers:</strong> 2,500 (Serper) + 1,000 (Tavily) + 1,000 (Exa) = 4,500+ free searches/month</li>
+<li><strong>SearXNG:</strong> Completely free (just ~$5/mo if you self-host on a VPS)</li>
+<li><strong>Paid plans:</strong> Start around $10-50/month depending on provider</li>
+</ul>
+<h3>Is SearXNG really private?</h3>
+<p><strong>Yes, if self-hosted.</strong> You control the server, no tracking, no profiling. Public instances depend on the operator's policy.</p>
+<h3>How do I set up SearXNG?</h3>
+<pre><code># Docker (5 minutes)
+docker run -d -p 8080:8080 searxng/searxng</code></pre>
+<p>Then enable JSON API in <code>settings.yml</code>. See [docs.searxng.org](https://docs.searxng.org/admin/installation.html).</p>
+<h3>Why did it route my query to the "wrong" provider?</h3>
+<p>Sometimes queries are ambiguous. Use <code>--explain-routing</code> to see why, then override with <code>-p provider</code> if needed.</p>
+<hr>
+<h2>🔄 Automatic Fallback</h2>
+<p>If one provider fails (rate limit, timeout, error), the skill automatically tries the next provider. You'll see <code>routing.fallback_used: true</code> in the response when this happens.</p>
+<hr>
+<h2>📤 Output Format</h2>
+<pre><code>{
+  "provider": "serper",
+  "query": "iPhone 16 price",
+  "results": [{"title": "...", "url": "...", "snippet": "...", "score": 0.95}],
+  "routing": {
+    "auto_routed": true,
+    "provider": "serper",
+    "confidence": 0.78,
+    "confidence_level": "high"
+  }
+}</code></pre>
+<hr>
+<h2>⚠ Important Note</h2>
+<p><strong>Tavily, Serper, and Exa are NOT core OpenClaw providers.</strong></p>
+<p>❌ Don't modify <code>~/.openclaw/openclaw.json</code> for these  
+✅ Use this skill's scripts — keys auto-load from <code>.env</code></p>
+<hr>
+<h2>🔒 Security</h2>
+<p><strong>SearXNG SSRF Protection:</strong> The SearXNG instance URL is validated with defense-in-depth:</p>
+<ul>
+<li>Enforces <code>http</code>/<code>https</code> schemes only</li>
+<li>Blocks cloud metadata endpoints (169.254.169.254, metadata.google.internal)</li>
+<li>Resolves hostnames and blocks private/internal IPs (loopback, RFC1918, link-local, reserved)</li>
+<li>Operators who intentionally self-host on private networks can set <code>SEARXNG_ALLOW_PRIVATE=1</code></li>
+</ul>
+<h2>📚 More Documentation</h2>
+<ul>
+<li><strong><a href="09-_web-search-plus_FAQ_md-045a2b52.html">FAQ.md</a></strong> — Detailed answers to more questions</li>
+<li><strong><a href="09-_web-search-plus_TROUBLESHOOTING_md-7bcde643.html">TROUBLESHOOTING.md</a></strong> — Fix common errors</li>
+<li><strong><a href="README_md-04c6e90f.html">README.md</a></strong> — Full technical reference</li>
+</ul>
+<hr>
+<h2>🔗 Quick Links</h2>
+<ul>
+<li>[Serper](https://serper.dev) — Google Search API</li>
+<li>[Tavily](https://tavily.com) — AI Research Search</li>
+<li>[Exa](https://exa.ai) — Neural Search</li>
+<li>[Perplexity](https://www.perplexity.ai) — AI-Synthesized Answers (via [Kilo Gateway](https://kilo.ai))</li>
+<li>[You.com](https://api.you.com) — RAG/Real-time Search</li>
+<li>[SearXNG](https://docs.searxng.org) — Privacy-First Meta-Search</li>
+</ul>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

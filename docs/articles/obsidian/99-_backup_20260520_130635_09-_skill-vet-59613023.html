@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Skill Vetter 🔒 - 以观其妙书院</title>
+<meta name="description" content="Skill Vetter 🔒 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="Skill Vetter 🔒">
+<meta property="og:description" content="Skill Vetter 🔒 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Skill Vetter 🔒",
+    "description": "Skill Vetter 🔒 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Skill Vetter 🔒</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Skill Vetter 🔒</h1>
+<p>Security-first vetting protocol for AI agent skills. <strong>Never install a skill without vetting it first.</strong></p>
+<h2>When to Use</h2>
+<ul>
+<li>Before installing any skill from ClawdHub</li>
+<li>Before running skills from GitHub repos</li>
+<li>When evaluating skills shared by other agents</li>
+<li>Anytime you're asked to install unknown code</li>
+</ul>
+<h2>Vetting Protocol</h2>
+<h3>Step 1: Source Check</h3>
+<pre><code>Questions to answer:
+- [ ] Where did this skill come from?
+- [ ] Is the author known/reputable?
+- [ ] How many downloads/stars does it have?
+- [ ] When was it last updated?
+- [ ] Are there reviews from other agents?</code></pre>
+<h3>Step 2: Code Review (MANDATORY)</h3>
+<p>Read ALL files in the skill. Check for these <strong>RED FLAGS</strong>:</p>
+<pre><code>🚨 REJECT IMMEDIATELY IF YOU SEE:
+─────────────────────────────────────────
+• curl/wget to unknown URLs
+• Sends data to external servers
+• Requests credentials/tokens/API keys
+• Reads ~/.ssh, ~/.aws, ~/.config without clear reason
+• Accesses MEMORY.md, USER.md, SOUL.md, IDENTITY.md
+• Uses base64 decode on anything
+• Uses eval() or exec() with external input
+• Modifies system files outside workspace
+• Installs packages without listing them
+• Network calls to IPs instead of domains
+• Obfuscated code (compressed, encoded, minified)
+• Requests elevated/sudo permissions
+• Accesses browser cookies/sessions
+• Touches credential files
+─────────────────────────────────────────</code></pre>
+<h3>Step 3: Permission Scope</h3>
+<pre><code>Evaluate:
+- [ ] What files does it need to read?
+- [ ] What files does it need to write?
+- [ ] What commands does it run?
+- [ ] Does it need network access? To where?
+- [ ] Is the scope minimal for its stated purpose?</code></pre>
+<h3>Step 4: Risk Classification</h3>
+<table>
+<thead><tr>
+<th>Risk Level</th>
+<th>Examples</th>
+<th>Action</th>
+</tr></thead><tbody>
+<tr>
+<td>🟢 LOW</td>
+<td>Notes, weather, formatting</td>
+<td>Basic review, install OK</td>
+</tr>
+<tr>
+<td>🟡 MEDIUM</td>
+<td>File ops, browser, APIs</td>
+<td>Full code review required</td>
+</tr>
+<tr>
+<td>🔴 HIGH</td>
+<td>Credentials, trading, system</td>
+<td>Human approval required</td>
+</tr>
+<tr>
+<td>⛔ EXTREME</td>
+<td>Security configs, root access</td>
+<td>Do NOT install</td>
+</tr>
+</tbody></table>
+<h2>Output Format</h2>
+<p>After vetting, produce this report:</p>
+<pre><code>SKILL VETTING REPORT
+═══════════════════════════════════════
+Skill: [name]
+Source: [ClawdHub / GitHub / other]
+Author: [username]
+Version: [version]
+───────────────────────────────────────
+METRICS:
+• Downloads/Stars: [count]
+• Last Updated: [date]
+• Files Reviewed: [count]
+───────────────────────────────────────
+RED FLAGS: [None / List them]
+
+PERMISSIONS NEEDED:
+• Files: [list or "None"]
+• Network: [list or "None"]  
+• Commands: [list or "None"]
+───────────────────────────────────────
+RISK LEVEL: [🟢 LOW / 🟡 MEDIUM / 🔴 HIGH / ⛔ EXTREME]
+
+VERDICT: [✅ SAFE TO INSTALL / ⚠️ INSTALL WITH CAUTION / ❌ DO NOT INSTALL]
+
+NOTES: [Any observations]
+═══════════════════════════════════════</code></pre>
+<h2>Quick Vet Commands</h2>
+<p>For GitHub-hosted skills:</p>
+<pre><code># Check repo stats
+curl -s "https://api.github.com/repos/OWNER/REPO" | jq '{stars: .stargazers_count, forks: .forks_count, updated: .updated_at}'
+
+# List skill files
+curl -s "https://api.github.com/repos/OWNER/REPO/contents/skills/SKILL_NAME" | jq '.[].name'
+
+# Fetch and review SKILL.md
+curl -s "https://raw.githubusercontent.com/OWNER/REPO/main/skills/SKILL_NAME/SKILL.md"</code></pre>
+<h2>Trust Hierarchy</h2>
+<ol>
+<li><strong>Official OpenClaw skills</strong> → Lower scrutiny (still review)</li>
+<li><strong>High-star repos (1000+)</strong> → Moderate scrutiny</li>
+<li><strong>Known authors</strong> → Moderate scrutiny</li>
+<li><strong>New/unknown sources</strong> → Maximum scrutiny</li>
+<li><strong>Skills requesting credentials</strong> → Human approval always</li>
+</ol>
+<h2>Remember</h2>
+<ul>
+<li>No skill is worth compromising security</li>
+<li>When in doubt, don't install</li>
+<li>Ask your human for high-risk decisions</li>
+<li>Document what you vet for future reference</li>
+</ul>
+<hr>
+<p><em>Paranoia is a feature.</em> 🔒🦀</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

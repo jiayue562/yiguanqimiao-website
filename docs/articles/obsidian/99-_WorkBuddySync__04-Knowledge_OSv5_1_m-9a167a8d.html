@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>五行人格心理学 OS · 标准搭建手册 v5.1 - 以观其妙书院</title>
+<meta name="description" content="五行人格心理学 OS · 标准搭建手册 v5.1 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="五行人格心理学 OS · 标准搭建手册 v5.1">
+<meta property="og:description" content="五行人格心理学 OS · 标准搭建手册 v5.1 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "五行人格心理学 OS · 标准搭建手册 v5.1",
+    "description": "五行人格心理学 OS · 标准搭建手册 v5.1 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>五行人格心理学 OS · 标准搭建手册 v5.1</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>五行人格心理学 OS · 标准搭建手册 v5.1</h1>
+<blockquote><p><strong>版本</strong>：v5.1（质量改进版）
+<strong>发布日期</strong>：2026-03-31
+<strong>基于</strong>：v5.0深度质量评审（15个gap修复 + 3大创新集成）
+<strong>目标周期</strong>：Day 0-14（14天完整搭建）
+<strong>验收标准</strong>：SMART质量度量 + 三层融合协议显式化</p></blockquote>
+<hr>
+<h2>系统总体设计</h2>
+<h3>三层架构定位</h3>
+<pre><code>🧠 L7·凤脑OS（知识地基层·知识学习Engine）
+    ↓ 信息流向：17篇文章 + 130+知识连接 + 象思维图谱
+    
+💫 L4·凤心OS（智能发动机层·1+5快慢思考）
+    ├─ 快思考层：总调度 + 场景路由 + 引擎调度
+    └─ 慢思考层：木/火/土/金/水五分体深度分析
+    ↓ 信息流向：五行分布式诊断 + 冲突检测与融合
+    
+👁️ L1·L1·一心·统摄（应用接待层·觉知陪伴）
+    └─ 握手包分发 + 八大应用场景路由
+
+三层融合：信息体(L7) → 能量体(L4) → 物质体(L1)</code></pre>
+<h3>设计哲学</h3>
+<ul>
+<li><strong>从知识→到智能→到应用</strong>：L7承载<strong>结构化知识</strong>，L4转化为<strong>智能决策</strong>，L1落地为<strong>用户体验</strong></li>
+<li><strong>快慢思考协同</strong>：快速路由（&lt;100ms）vs 深度分析（可选慢思考）vs 实时融合</li>
+<li><strong>分布式容错</strong>：单个分体故障不影响其他分体，自动降级到其他分体组合</li>
+<li><strong>版本同步</strong>：L7/L4/L1三层版本号同步，冲突时以L7知识版本为source of truth</li>
+</ul>
+<hr>
+<h2>第一部分：环境准备 · Day 0</h2>
+<p><strong>目标</strong>：搭建稳定的研发/验证基础设施，确保后续14天顺利进行</p>
+<h3>1.1 权限矩阵定义</h3>
+<table>
+<thead><tr>
+<th>角色</th>
+<th>权限</th>
+<th>L7修改</th>
+<th>L4修改</th>
+<th>L1修改</th>
+<th>冲突仲裁</th>
+<th>风险预控</th>
+</tr></thead><tbody>
+<tr>
+<td>PM</td>
+<td>规划+验收</td>
+<td>✓(需tech review)</td>
+<td>✓(需tech review)</td>
+<td>✓(需QA)</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Tech Lead</td>
+<td>架构+实施</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓(主)</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>QA</td>
+<td>验收+测试</td>
+<td>✗</td>
+<td>✗</td>
+<td>✓(仅验收)</td>
+<td>✗</td>
+<td>✓(辅)</td>
+</tr>
+<tr>
+<td>Developer</td>
+<td>执行</td>
+<td>✓(含文章)</td>
+<td>✓(分体逻辑)</td>
+<td>✓(集成逻辑)</td>
+<td>✗</td>
+<td>✓(执行)</td>
+</tr>
+</tbody></table>
+<p><strong>修改流程</strong>：</p>
+<ul>
+<li>L7文章修改：Developer编写 → PM/Tech Lead review → 17篇文章评审会 → 合并</li>
+<li>L4逻辑修改：Developer实现 → Tech Lead review → 冲突检测 → 合并</li>
+<li>L1集成修改：Developer集成 → QA测试 → 功能验收 → 合并</li>
+</ul>
+<h3>1.2 三层融合协议（显式化）</h3>
+<p><strong>信息流向</strong>：</p>
+<ul>
+<li>L7 → L4：知识库变化 → 触发L4场景识别更新</li>
+<li>L4 → L1：分体诊断结果 → 触发L1握手包重构</li>
+<li>L1 → L7：用户反馈 → 触发L7知识补充和更新</li>
+</ul>
+<p><strong>版本同步规则</strong>：</p>
+<pre><code>L7版本: v5.1-K01~K17 (17篇知识文章)
+L4版本: v5.1-I01~I05 (5个分智能体)
+L1版本: v5.1-A01~A08 (8大应用场景)
+
+同步节点:
+  Day 0: L7v5.1-K01 ready → L4无需更新 → L1预留接口
+  Day 7: L7v5.1-K17 ready → L4v5.1-I01~I05 all ready → L1v5.1-A01~A04 ready
+  Day 12: 三层融合完整验证</code></pre>
+<p><strong>冲突仲裁逻辑</strong>：</p>
+<ul>
+<li>同一概念在三层有差异 → 以L7知识版本为准，L4/L1跟进</li>
+<li>多个分体建议冲突（如土行vs金行对某场景的判断不同） → Tech Lead协调，输出融合建议</li>
+<li>L4/L1集成冲突 → PM+Tech Lead联合决策，记录冲突日志</li>
+</ul>
+<h3>1.3 SMART质量验收标准</h3>
+<table>
+<thead><tr>
+<th>阶段</th>
+<th>时间</th>
+<th>Specific</th>
+<th>Measurable</th>
+<th>Achievable</th>
+<th>Relevant</th>
+<th>Time-bound</th>
+</tr></thead><tbody>
+<tr>
+<td>Day 0</td>
+<td>环境准备</td>
+<td>权限/协议/框架完整</td>
+<td>权限矩阵100%定义</td>
+<td>现有资源充分</td>
+<td>支撑后续14天</td>
+<td>1天完成</td>
+</tr>
+<tr>
+<td>Day 1-7</td>
+<td>L7知识地基</td>
+<td>17篇文章 + 130+知识连接</td>
+<td>文章覆盖率100%</td>
+<td>基于现有理论</td>
+<td>支撑L4理解</td>
+<td>7天完成</td>
+</tr>
+<tr>
+<td>Day 6-9</td>
+<td>L4智能发动机</td>
+<td>5分体+快慢思考+冲突检测</td>
+<td>分体响应&lt;100ms</td>
+<td>5分体逻辑完善</td>
+<td>支撑L1调度</td>
+<td>4天完成</td>
+</tr>
+<tr>
+<td>Day 8-10</td>
+<td>L1统摄接待</td>
+<td>感知/决策/执行三层 + 降级</td>
+<td>握手包准确率&gt;95%</td>
+<td>前置L7/L4就绪</td>
+<td>支撑用户体验</td>
+<td>3天完成</td>
+</tr>
+<tr>
+<td>Day 11-12</td>
+<td>系统集成</td>
+<td>三层融合+回归+稳定性</td>
+<td>冲突率&lt;2%</td>
+<td>完整测试数据</td>
+<td>系统整体就绪</td>
+<td>2天完成</td>
+</tr>
+<tr>
+<td>Day 13-14</td>
+<td>运维升级</td>
+<td>压力测试+安全+文档</td>
+<td>吞吐量&gt;100req/s</td>
+<td>成熟的工程体系</td>
+<td>支撑长期运维</td>
+<td>2天完成</td>
+</tr>
+</tbody></table>
+<h3>1.4 P0/P1/P2风险预控表</h3>
+<p><strong>P0级风险</strong>（致命·必须day 0解决）：</p>
+<table>
+<thead><tr>
+<th>风险ID</th>
+<th>风险描述</th>
+<th>影响</th>
+<th>预控措施</th>
+<th>Owner</th>
+<th>检查点</th>
+</tr></thead><tbody>
+<tr>
+<td>P0-001</td>
+<td>L7知识库不完整导致后续全链路失效</td>
+<td>系统无法启动</td>
+<td>Day 1-7前必须确认17篇文章清单+连接图</td>
+<td>Tech Lead</td>
+<td>Day 0下午</td>
+</tr>
+<tr>
+<td>P0-002</td>
+<td>L4五分体逻辑冲突导致诊断错误</td>
+<td>决策质量&lt;50%</td>
+<td>建立冲突检测框架 + 融合仲裁流程</td>
+<td>Tech Lead</td>
+<td>Day 6</td>
+</tr>
+<tr>
+<td>P0-003</td>
+<td>L1感知层无法准确识别用户意图</td>
+<td>错误分发&gt;50%</td>
+<td>建立意图识别验证集(50+case) + Day 8测试</td>
+<td>QA</td>
+<td>Day 8</td>
+</tr>
+<tr>
+<td>P0-004</td>
+<td>三层版本不同步导致cascade failure</td>
+<td>系统雪崩</td>
+<td>Day 0定义同步协议 + Day 12验证</td>
+<td>Tech Lead</td>
+<td>Day 0/12</td>
+</tr>
+</tbody></table>
+<p><strong>P1级风险</strong>（重要）：5个风险，见下表</p>
+<p><strong>P2级风险</strong>（警告）：7个风险，见附录</p>
+<h3>1.5 测试框架初始化</h3>
+<pre><code>单元测试:
+  L7: 文章内容 + 知识连接 + 象思维图谱
+  L4: 单分体逻辑 + 快思考路由 + 冲突检测
+  L1: 感知准确度 + 握手包构建 + 降级逻辑
+
+集成测试:
+  L7+L4: 知识→诊断转化准确率
+  L4+L1: 诊断→握手包分发准确率
+  L7+L4+L1: 端到端用户体验 (Day 12)
+
+压力测试 (Day 13):
+  并发用户数: 100→1000→5000
+  响应时间p99: &lt;1秒
+  冲突率: &lt;2%
+  系统可用率: &gt;99.9%</code></pre>
+<hr>
+<h2>第二部分：L7 知识地基 · Day 1-7</h2>
+<p><strong>目标</strong>：建立完整的知识库体系（17篇文章 + 130+知识连接 + 象思维图谱）</p>
+<h3>2.1 17篇文章清单与进度</h3>
+<table>
+<thead><tr>
+<th>Day</th>
+<th>篇章</th>
+<th>标题</th>
+<th>内容焦点</th>
+<th>知识连接</th>
+<th>Owner</th>
+<th>状态</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>1-2</td>
+<td>一心·纯粹觉知 + 三界五行九层体系总论</td>
+<td>象思维基础 + 五行体系框架</td>
+<td>10+</td>
+<td>Dev</td>
+<td>Day 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3-4</td>
+<td>木行人格体系 完整版 + 木行生克</td>
+<td>木行人特质 + 生克规律</td>
+<td>15+</td>
+<td>Dev</td>
+<td>Day 2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>5-6</td>
+<td>火行人格体系 完整版 + 火行生克</td>
+<td>火行人特质 + 生克规律</td>
+<td>15+</td>
+<td>Dev</td>
+<td>Day 3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>7-8</td>
+<td>土行人格体系 完整版 + 土行生克</td>
+<td>土行人特质 + 生克规律</td>
+<td>15+</td>
+<td>Dev</td>
+<td>Day 4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>9-10</td>
+<td>金行人格体系 完整版 + 金行生克</td>
+<td>金行人特质 + 生克规律</td>
+<td>15+</td>
+<td>Dev</td>
+<td>Day 5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>11-12</td>
+<td>水行人格体系 完整版 + 水行生克</td>
+<td>水行人特质 + 生克规律</td>
+<td>15+</td>
+<td>Dev</td>
+<td>Day 6</td>
+</tr>
+<tr>
+<td>7</td>
+<td>13-17</td>
+<td>拔阴取阳四步法 + 化克为生实战 + 关系修复 + 企业应用 + 五行识人场景库</td>
+<td>转化理论 + 实战应用</td>
+<td>30+</td>
+<td>Dev</td>
+<td>Day 7</td>
+</tr>
+</tbody></table>
+<p><strong>知识连接目标</strong>：</p>
+<ul>
+<li>同行五行之间：5-8条连接（相生/相克/转化）</li>
+<li>跨行五行之间：20+条连接（通关点/共生机制/反制规律）</li>
+<li>与象思维的连接：30+条（物象→意象→原象映射）</li>
+<li><strong>总计</strong>: 130+条知识连接构建完整知识图谱</li>
+</ul>
+<h3>2.2 Day 1-7 验证清单</h3>
+<pre><code>✓ Day 1: 文章1-2 完成 + 初始10+连接 + 知识评审(PM+Tech Lead)
+✓ Day 2: 文章3-4 完成 + 连接更新至30+ + 木行体系一致性检查
+✓ Day 3: 文章5-6 完成 + 连接更新至45+ + 火行体系一致性检查
+✓ Day 4: 文章7-8 完成 + 连接更新至60+ + 土行体系一致性检查
+✓ Day 5: 文章9-10 完成 + 连接更新至75+ + 金行体系一致性检查
+✓ Day 6: 文章11-12 完成 + 连接更新至90+ + 水行体系一致性检查
+✓ Day 7: 文章13-17 完成 + 连接更新至130+ + 第二次知识评审(全review)</code></pre>
+<hr>
+<h2>第三部分：L4 智能发动机 · Day 6-9</h2>
+<p><strong>目标</strong>：构建快慢思考协同系统 + 冲突检测与融合机制</p>
+<h3>3.1 快思考层（总调度）</h3>
+<p><strong>三维打分矩阵</strong>（响应时间&lt;100ms）：</p>
+<pre><code>快思考诊断流程:
+  Step 1: 情绪信号识别 (10ms)
+    - 阴木信号(顶撞/不服): 8分
+    - 阴火信号(急躁/嗔恨): 8分
+    - 阴土信号(猜疑/依赖): 8分
+    - 阴金信号(挑剔/完美主义): 8分
+    - 阴水信号(恐惧/拖延): 8分
+  
+  Step 2: 行为信号识别 (10ms)
+    - 性格/行为模式描述: +4分
+    - 诉求类型明确: +2分
+    - 多角色冲突: +3分
+  
+  Step 3: 场景归类 (20ms)
+    - S0 (无信号) → 不激活或追问
+    - S1 (单行信号) → 直接分发单行分体
+    - S2 (双行信号) → 启动双行并行分析
+    - S3+ (复杂信号) → 启动全系统并行分析
+  
+  Step 4: 引擎调度 (60ms)
+    - 总分 ≥10 → 精准慢思考
+    - 总分 7-9 → 双行分析
+    - 总分 5-6 → 全面诊断
+    - 总分 ≤4 → 追问1个精准问题再分发
+
+响应时间: &lt;100ms (p99)</code></pre>
+<h3>3.2 慢思考层（五分体并行）</h3>
+<p><strong>5个分智能体架构</strong>：</p>
+<pre><code>凤心OS 1+5模式:
+
+📊 快思考总调度 (Tech Lead控制)
+    ↓ 根据信号打分和场景分类
+    
+🌿 木行分体  │  🔥 火行分体  │  🌏 土行分体  │  ⚔️ 金行分体  │  💧 水行分体
+(规划/成长)  │  (热情/行动)  │  (包容/实现)  │  (准则/执行)  │  (智慧/流动)
+
+各分体标准7步流程:
+  ① 一心状态定位 → ② 三界扫描 → ③ 五行生克诊断
+  → ④ 九层定位 → ⑤ 转化方案 → ⑥ B=MAP落地 → ⑦ 输出报告</code></pre>
+<p><strong>性能SLA</strong>：</p>
+<ul>
+<li>单分体响应: &lt;300ms</li>
+<li>并行5分体: &lt;500ms (p99)</li>
+<li>冲突检测: &lt;100ms</li>
+<li>融合建议: &lt;200ms</li>
+</ul>
+<h3>3.3 冲突检测与融合机制</h3>
+<p><strong>冲突识别规则</strong>：</p>
+<pre><code>冲突类型:
+  Type A - 诊断不同
+    场景: 土行建议"包容等待"，金行建议"立即决策"
+    检测: 建议向量余弦相似度 &lt; 0.5
+    融合: 按用户五行主型权重融合 + Tech Lead override
+    记录: 冲突日志 + 用户满意度反馈
+  
+  Type B - 优先级不同
+    场景: 木行优先"成长"，土行优先"稳定"
+    检测: 优先级打分差&gt;3分
+    融合: "成长+稳定"的平衡方案
+  
+  Type C - 阶段建议不同
+    场景: 金行第一步"明确目标"，水行第一步"深入思考"
+    检测: 步骤顺序不同
+    融合: 按逻辑依赖关系排序
+
+融合策略:
+  - 置信度最高的分体意见权重提升40%
+  - 次要分体意见作为"补充视角"标注
+  - 冲突存在时，输出"融合建议"而非单一答案
+  - 记录所有冲突便于后续优化</code></pre>
+<h3>3.4 Day 6-9 验证清单</h3>
+<pre><code>✓ Day 6: 快思考总调度系统完成 + &lt;100ms性能验证
+✓ Day 7: 木/火/土/金/水五分体各自完成7步流程
+✓ Day 8: 冲突检测框架完成 + 50+冲突case测试
+✓ Day 9: 融合建议机制完成 + 端到端并行验证 (5个分体&lt;500ms)</code></pre>
+<hr>
+<h2>第四部分：L1 统摄接待 · Day 8-10</h2>
+<p><strong>目标</strong>：构建用户感知/决策/执行的完整闭环 + 降级预案</p>
+<h3>4.1 感知层（觉知陪伴）</h3>
+<p><strong>多模态信号识别</strong>（基于L4快思考矩阵）：</p>
+<pre><code>信号源:
+  ✓ 语言信号: 关键词/情感词/行为描述
+  ✓ 情绪信号: 阴阳属性识别 (L4完成)
+  ✓ 隐性信号: 未明说的诉求 (基于象思维猜测)
+  ✓ 场景信号: 用户所处场景类型
+
+握手包构成:
+  [场景] × [五行线索] × [情感温度] × [优先级]
+  例: (工作+亲密关系冲突) × (土行猜疑线索) × (中等痛苦) × (高)</code></pre>
+<h3>4.2 决策层（智能路由）</h3>
+<p><strong>四象限分工原则</strong>（基于信息掌握度）：</p>
+<pre><code>高效助理 (人知AI知)
+  → 清晰指令 + 高效执行
+
+学习伙伴 (人不知AI知)
+  → 结构化提问 + 知识整合
+
+共创伙伴 (人部分知AI部分知)
+  → 创意种子 + 发散筛选
+
+共创导师 (人知AI不知)
+  → 隐性知识外化 + 定制生成
+  → 【五行人格应用的终极护城河】
+
+未知探索 (双不知)
+  → 象思维0→1 + 共同创新</code></pre>
+<h3>4.3 执行层（分发与跟进）</h3>
+<p><strong>握手包分发逻辑</strong>：</p>
+<pre><code>握手包内容:
+  ① 觉知陪伴词 (20-30字·温暖·非冷冰冰)
+  ② 场景诊断 (5行·告诉用户我们看见了什么)
+  ③ 五行分析 (基于L4分体结果·可选详细/简洁)
+  ④ 转化建议 (拔阴取阳/化克为生/关系修复)
+  ⑤ 下一步行动 (1-3项可立即执行的行动)
+  ⑥ 反馈邀请 ("这个建议有帮助吗? 有什么修改建议?")
+
+分发路由:
+  单行问题 → 分发对应分体结果 + L1温暖包装
+  复杂问题 → 分发融合建议 + L1协调叙述
+  冲突问题 → 分发"多视角建议" + L1说明各自适用条件</code></pre>
+<h3>4.4 降级预案（容错）</h3>
+<p><strong>5个降级场景</strong>：</p>
+<table>
+<thead><tr>
+<th>故障场景</th>
+<th>触发条件</th>
+<th>降级策略</th>
+<th>可用性</th>
+</tr></thead><tbody>
+<tr>
+<td>L7故障（知识库无法访问）</td>
+<td>知识连接检索失败</td>
+<td>使用缓存的核心规则 + 降级为L4/L1直接诊断</td>
+<td>70%</td>
+</tr>
+<tr>
+<td>L4单个分体故障</td>
+<td>木/火/土/金/水某个分体响应超时</td>
+<td>使用其他分体补充诊断 + 标注"部分分析"</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>L4全体故障（智能发动机瘫痪）</td>
+<td>快思考/五分体全部失效</td>
+<td>降级为L1规则引擎 + 提供通用建议</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>L1感知故障（无法理解用户意图）</td>
+<td>意图识别准确率&lt;50%</td>
+<td>返回"我没理解，能再说一遍吗?" + 重试</td>
+<td>60%</td>
+</tr>
+<tr>
+<td>并发过高（响应时间&gt;5秒）</td>
+<td>并发用户&gt;500</td>
+<td>启用简化模式 + 仅返回L1握手包 + 排队</td>
+<td>90%</td>
+</tr>
+</tbody></table>
+<p><strong>降级触发与恢复</strong>：</p>
+<pre><code>自动降级规则:
+  - 检测L7连接失败 → 立即切换缓存规则
+  - 检测分体响应&gt;300ms → 标注"降级模式" + 启用其他分体
+  - 检测并发&gt;阈值 → 启用简化握手包 + 排队通知
+
+恢复条件:
+  - 故障源修复 → 自动切回正常模式
+  - 缓存更新成功 → 切回最新知识
+  - 并发下降&lt;阈值 → 回复完整功能
+
+监控指标:
+  - 降级率 &lt;5% (正常运维)
+  - 平均降级时长 &lt;10分钟
+  - 用户体验评分 &gt;4.0/5.0 (即使降级)</code></pre>
+<h3>4.5 Day 8-10 验证清单</h3>
+<pre><code>✓ Day 8: 感知层完成 + 意图识别准确率&gt;90%
+✓ Day 9: 决策层+执行层完成 + 握手包构建测试50+case
+✓ Day 10: 降级预案全部验证 + 故障恢复&lt;5分钟</code></pre>
+<hr>
+<h2>第五部分：系统集成 · Day 11-12</h2>
+<p><strong>目标</strong>：三层融合完整验证 + 回归测试 + 稳定性测试</p>
+<h3>5.1 三层融合验证（Day 11）</h3>
+<p><strong>端到端场景测试</strong>：</p>
+<pre><code>Scenario 1: 简单单行问题
+  用户输入: "我是火行人，工作上太急躁，怎么办？"
+  预期路径: L1感知 → L4快思考(火行单体) → 火行分体诊断 → L1握手包
+  验收标准: 响应&lt;500ms, 建议相关度&gt;95%, 用户满意度&gt;4.5/5
+
+Scenario 2: 复杂跨行问题
+  用户输入: "我既是火行的老板，又要照顾土行的家人，两边压力都很大"
+  预期路径: L1感知 → L4快思考(火+土双行) → 火/土并行诊断 → 融合建议 → L1握手包
+  验收标准: 响应&lt;800ms, 冲突处理准确&gt;90%, 融合建议相关&gt;85%
+
+Scenario 3: 深度创新问题
+  用户输入: "我想设计一个完全新的工作方式，但不知道怎么开始"
+  预期路径: L1感知(不知+需创新) → L4快思考(未知探索) → 象思维0→1 → L1握手包
+  验收标准: 响应&lt;1000ms, 创新度&gt;4/5, 可实操性&gt;3.5/5
+
+Scenario 4: 故障恢复验证
+  故障注入: L7知识库故障 | L4某分体故障 | 并发&gt;阈值
+  预期: 自动降级 → 用户仍得到有用建议 → 故障恢复后自动切回
+  验收标准: 降级检测&lt;1s, 恢复&lt;5min, 用户体验不低于3/5</code></pre>
+<h3>5.2 回归测试（Day 11-12）</h3>
+<p><strong>自动化测试套件</strong>：</p>
+<pre><code>单元测试 (Day 11早):
+  ✓ L7: 17篇文章完整性 + 130+连接验证 + 象思维正确性
+  ✓ L4: 五分体逻辑正确性 + 快思考性能 + 冲突检测准确度
+  ✓ L1: 握手包质量 + 路由准确度 + 降级机制
+
+集成测试 (Day 11中):
+  ✓ L7→L4: 知识→诊断转化准确率 &gt;95%
+  ✓ L4→L1: 诊断→握手包转化准确率 &gt;90%
+  ✓ L7+L4+L1: 端到端(4个scenario)通过率 100%
+
+性能测试 (Day 11下):
+  ✓ 单请求响应: &lt;1s (p99)
+  ✓ 并发100用户: &lt;500ms (p99)
+  ✓ 内存使用: &lt;500MB
+  ✓ 错误率: &lt;0.1%</code></pre>
+<h3>5.3 稳定性测试（Day 12）</h3>
+<p><strong>生产级验证</strong>：</p>
+<pre><code>长时间运行测试:
+  - 持续8小时运行 + 每小时100个随机请求
+  - 监控内存泄漏/连接泄漏/死锁
+  - 预期: 无crash, 内存稳定, 响应时间无退化
+
+实际用户反馈测试:
+  - 邀请5-10个实际用户试用
+  - 收集满意度评分 + 建议
+  - 预期: 平均满意度 ≥4.2/5.0, 无critical bug
+
+数据一致性验证:
+  - 并发修改同一用户数据 + 验证最终一致性
+  - L7/L4/L1版本号同步验证
+  - 预期: 一致性&gt;99.9%, 版本同步0延迟
+
+故障恢复演练:
+  - 模拟各类故障 + 验证自动降级与恢复
+  - 预期: 所有故障恢复&lt;5分钟</code></pre>
+<h3>5.4 Day 11-12 验证清单</h3>
+<pre><code>✓ Day 11: 
+  - 4个Scenario端到端测试通过率 100%
+  - 自动化回归测试通过率 100%
+  - 性能基准达成 (响应&lt;1s, 并发&lt;500ms, 错误&lt;0.1%)
+  
+✓ Day 12:
+  - 8小时稳定性测试无异常
+  - 实际用户满意度 ≥4.2/5.0
+  - 数据一致性验证 &gt;99.9%
+  - 故障恢复演练全部通过</code></pre>
+<hr>
+<h2>第六部分：三层融合协议（核心治理）</h2>
+<h3>6.1 信息流向与同步机制</h3>
+<pre><code>实时信息流:
+
+用户输入
+  ↓
+L1 感知层 (接收 + 意图识别)
+  ↓ (握手包初始化)
+L4 智能发动机 (快思考分流 + 选择分体)
+  ↓ (诊断请求)
+L7 知识地基 (知识查询 + 象思维关联)
+  ↓ (返回诊断结果)
+L4 冲突检测 + 融合 (多分体结果融合)
+  ↓ (最终诊断)
+L1 握手包分发 (温暖包装 + 执行层)
+  ↓
+用户反馈
+
+同步周期:
+  - 实时: L1→L4→L7 (诊断流程)
+  - 近实时: L7更新→L4感知(秒级)
+  - 异步: 用户反馈→L7优化(分钟级)</code></pre>
+<h3>6.2 版本管理与冲突仲裁</h3>
+<p><strong>三层版本号方案</strong>：</p>
+<pre><code>L7知识版本:
+  v5.1-K01: 一心·纯粹觉知 (Day 1)
+  v5.1-K02: 三界五行九层 (Day 1)
+  ...
+  v5.1-K17: 场景库 (Day 7)
+  
+L4智能版本:
+  v5.1-I01~I05: 五个分体 (Day 6-9)
+  v5.1-R01: 冲突检测与融合 (Day 9)
+  
+L1应用版本:
+  v5.1-A01~A08: 八大应用场景 (Day 8-10)
+  v5.1-D01~D05: 五个降级预案 (Day 10)
+
+同步点:
+  Day 0: 协议定义完成
+  Day 7: L7全部K01-K17就绪
+  Day 9: L4全部I01-I05就绪
+  Day 10: L1全部A01-A08就绪
+  Day 12: 三层融合验证 (所有版本号同步)
+
+冲突仲裁规则:
+  IF 同一概念在L7/L4/L1有差异
+    THEN L7版本为source of truth
+         L4/L1follow up within 1 hour
+    RECORD: 冲突日志 + 为什么不同 + 最终统一方式
+  
+  IF 多分体建议冲突
+    THEN 输出"融合建议" + 标注"分体差异"
+         记录冲突 + 用户反馈
+         Day 12后优化分体权重</code></pre>
+<h3>6.3 KPI监控与优化</h3>
+<p><strong>核心KPI</strong>：</p>
+<pre><code>可用性KPI:
+  - 系统可用率: ≥99.9% (Day 12+)
+  - 平均响应时间: &lt;800ms (p99)
+  - 错误率: &lt;0.1%
+  - 降级率: &lt;5%
+
+质量KPI:
+  - 用户满意度: ≥4.2/5.0
+  - 握手包相关度: ≥90%
+  - 诊断准确度: ≥95% (评审打分)
+  - 冲突率: &lt;2%
+
+业务KPI:
+  - 日活跃用户: (Day 13+统计)
+  - 重复使用率: (Day 13+统计)
+  - 推荐度: (Day 13+统计)
+
+监控频率:
+  - 实时: 可用性KPI (毫秒级告警)
+  - 小时级: 响应时间/错误率
+  - 日级: 用户满意度/冲突率
+  - 周级: 业务KPI + 优化建议</code></pre>
+<hr>
+<h2>第七部分：质量验收标准 SMART</h2>
+<h3>7.1 Day 0 - 环境准备</h3>
+<table>
+<thead><tr>
+<th>项目</th>
+<th>Specific</th>
+<th>Measurable</th>
+<th>Achievable</th>
+<th>Relevant</th>
+<th>Time-Bound</th>
+</tr></thead><tbody>
+<tr>
+<td>权限矩阵</td>
+<td>定义4个角色、6个权限级别、修改流程</td>
+<td>矩阵100%完成</td>
+<td>基于现有角色</td>
+<td>支撑后续14天</td>
+<td>1天</td>
+</tr>
+<tr>
+<td>三层协议</td>
+<td>明确L7/L4/L1信息流向、版本同步、冲突仲裁</td>
+<td>协议完成3个章节</td>
+<td>现有框架</td>
+<td>治理三层融合</td>
+<td>1天</td>
+</tr>
+<tr>
+<td>SMART标准</td>
+<td>为Day 1-14每个阶段定义量化标准</td>
+<td>6个阶段×5个维度</td>
+<td>基于历史数据</td>
+<td>指导验收</td>
+<td>1天</td>
+</tr>
+<tr>
+<td>预控表</td>
+<td>P0×4, P1×4, P2×7共15个风险</td>
+<td>100%识别Owner</td>
+<td>基于质评报告</td>
+<td>防范风险</td>
+<td>1天</td>
+</tr>
+</tbody></table>
+<h3>7.2 Day 1-7 - L7知识地基</h3>
+<table>
+<thead><tr>
+<th>检查点</th>
+<th>标准</th>
+<th>验收方式</th>
+<th>Owner</th>
+</tr></thead><tbody>
+<tr>
+<td>文章完整性</td>
+<td>17篇文章全部交付</td>
+<td>人工检查</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>知识连接</td>
+<td>130+连接正确性&gt;95%</td>
+<td>自动化检验</td>
+<td>Tech Lead</td>
+</tr>
+<tr>
+<td>内容质量</td>
+<td>经过2轮评审 (Day 7完成)</td>
+<td>PM/Tech Lead评分</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>象思维图谱</td>
+<td>物象→意象→原象映射完整</td>
+<td>可视化验证</td>
+<td>Dev</td>
+</tr>
+</tbody></table>
+<h3>7.3 Day 6-9 - L4智能发动机</h3>
+<table>
+<thead><tr>
+<th>检查点</th>
+<th>标准</th>
+<th>验收方式</th>
+<th>Owner</th>
+</tr></thead><tbody>
+<tr>
+<td>快思考性能</td>
+<td>&lt;100ms (p99)</td>
+<td>性能基准</td>
+<td>Tech Lead</td>
+</tr>
+<tr>
+<td>五分体逻辑</td>
+<td>各分体7步流程正确</td>
+<td>代码审查 + 单元测试</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>冲突检测</td>
+<td>检测准确率&gt;95%</td>
+<td>50+case测试</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>融合建议</td>
+<td>融合建议相关&gt;85%</td>
+<td>用户满意度评分</td>
+<td>QA</td>
+</tr>
+</tbody></table>
+<h3>7.4 Day 8-10 - L1统摄接待</h3>
+<table>
+<thead><tr>
+<th>检查点</th>
+<th>标准</th>
+<th>验收方式</th>
+<th>Owner</th>
+</tr></thead><tbody>
+<tr>
+<td>意图识别</td>
+<td>准确率&gt;90%</td>
+<td>50+case测试</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>握手包质量</td>
+<td>相关度&gt;90%</td>
+<td>用户评分</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>四象限分工</td>
+<td>分工准确率&gt;85%</td>
+<td>路由准确度验证</td>
+<td>Tech Lead</td>
+</tr>
+<tr>
+<td>降级预案</td>
+<td>5个降级场景全部验证</td>
+<td>故障注入测试</td>
+<td>QA</td>
+</tr>
+</tbody></table>
+<h3>7.5 Day 11-12 - 系统集成</h3>
+<table>
+<thead><tr>
+<th>检查点</th>
+<th>标准</th>
+<th>验收方式</th>
+<th>Owner</th>
+</tr></thead><tbody>
+<tr>
+<td>4 Scenario</td>
+<td>端到端通过率100%</td>
+<td>自动化脚本</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>回归测试</td>
+<td>自动化套件通过率100%</td>
+<td>持续集成</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>性能基准</td>
+<td>响应&lt;1s, 并发&lt;500ms, 错误&lt;0.1%</td>
+<td>性能测试</td>
+<td>Tech Lead</td>
+</tr>
+<tr>
+<td>稳定性</td>
+<td>8小时无crash, 内存稳定</td>
+<td>长时间运行</td>
+<td>Tech Lead</td>
+</tr>
+</tbody></table>
+<h3>7.6 Day 13-14 - 运维升级</h3>
+<table>
+<thead><tr>
+<th>检查点</th>
+<th>标准</th>
+<th>验收方式</th>
+<th>Owner</th>
+</tr></thead><tbody>
+<tr>
+<td>压力测试</td>
+<td>100→1000→5000并发</td>
+<td>负载测试</td>
+<td>Tech Lead</td>
+</tr>
+<tr>
+<td>安全审计</td>
+<td>无critical/high风险</td>
+<td>安全扫描</td>
+<td>Tech Lead</td>
+</tr>
+<tr>
+<td>文档完整</td>
+<td>API/运维/故障处理文档100%</td>
+<td>文档检查</td>
+<td>PM</td>
+</tr>
+<tr>
+<td>知识转移</td>
+<td>运维团队培训完成</td>
+<td>培训评分&gt;80%</td>
+<td>PM</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>第八部分：15个风险预控详解</h2>
+<h3>P0级风险 (4个)</h3>
+<p><strong>P0-001: L7知识库不完整导致后续全链路失效</strong></p>
+<ul>
+<li>风险描述: 17篇文章缺失、知识连接不足、象思维图谱残缺</li>
+<li>发生概率: 低 (有清单指导)</li>
+<li>影响程度: 致命 (系统无法启动)</li>
+<li>预控措施:<ul>
+<li>Day 0定义17篇文章清单 + 所有者分配</li>
+<li>Day 1-7每日review检查进度</li>
+<li>Day 7进行完整的知识库评审</li>
+</ul></li>
+<li>Owner: Tech Lead</li>
+<li>检查点: Day 0下午、Day 7晚</li>
+</ul>
+<p><strong>P0-002: L4五分体逻辑冲突导致诊断错误</strong></p>
+<ul>
+<li>风险描述: 木火土金水分体对同一场景诊断差异&gt;50%</li>
+<li>发生概率: 中 (理论融合复杂)</li>
+<li>影响程度: 致命 (用户不信任)</li>
+<li>预控措施:<ul>
+<li>Day 6建立冲突检测框架</li>
+<li>Day 8-9进行50+case冲突演练</li>
+<li>建立融合仲裁逻辑 (以L7知识为准)</li>
+</ul></li>
+<li>Owner: Tech Lead</li>
+<li>检查点: Day 6、Day 9</li>
+</ul>
+<p><strong>P0-003: L1感知层无法准确识别用户意图</strong></p>
+<ul>
+<li>风险描述: 意图识别准确率&lt;70%, 握手包错误分发&gt;30%</li>
+<li>发生概率: 中 (多模态识别复杂)</li>
+<li>影响程度: 致命 (用户体验崩溃)</li>
+<li>预控措施:<ul>
+<li>Day 0建立意图识别验证集 (50+case)</li>
+<li>Day 8进行单独测试 (准确率&gt;90%才通过)</li>
+<li>Day 10进行实用户反馈收集</li>
+</ul></li>
+<li>Owner: QA</li>
+<li>检查点: Day 8、Day 10</li>
+</ul>
+<p><strong>P0-004: 三层版本不同步导致cascade failure</strong></p>
+<ul>
+<li>风险描述: L7更新但L4/L1未跟进 → 诊断基于过期知识</li>
+<li>发生概率: 中 (多系统同步困难)</li>
+<li>影响程度: 致命 (系统雪崩)</li>
+<li>预控措施:<ul>
+<li>Day 0定义版本同步协议 + 自动检测</li>
+<li>Day 12进行完整的版本同步验证</li>
+<li>建立自动告警机制 (版本不同步&gt;1小时)</li>
+</ul></li>
+<li>Owner: Tech Lead</li>
+<li>检查点: Day 0、Day 12</li>
+</ul>
+<h3>P1级风险 (4个)</h3>
+<table>
+<thead><tr>
+<th>风险</th>
+<th>描述</th>
+<th>预控</th>
+<th>Owner</th>
+</tr></thead><tbody>
+<tr>
+<td>P1-001</td>
+<td>知识连接不足(&lt;100)</td>
+<td>Day 5补充, Day 7验收</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>P1-002</td>
+<td>分体响应时间&gt;300ms</td>
+<td>Day 9性能优化</td>
+<td>Tech Lead</td>
+</tr>
+<tr>
+<td>P1-003</td>
+<td>冲突检测遗漏(准确率&lt;90%)</td>
+<td>Day 8-9强化测试</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>P1-004</td>
+<td>并发&gt;100时降级质量&lt;3/5</td>
+<td>Day 12压力测试</td>
+<td>Tech Lead</td>
+</tr>
+</tbody></table>
+<h3>P2级风险 (7个)</h3>
+<p>[汇总表，详见本章末尾]</p>
+<hr>
+<h2>第九部分：运维与升级 · Day 13-14</h2>
+<p><strong>目标</strong>：压力测试 + 安全审计 + 文档交付 + 知识转移</p>
+<h3>9.1 Day 13 - 压力测试</h3>
+<p><strong>负载测试方案</strong>：</p>
+<pre><code>阶段1: 100并发用户
+  - 持续1小时
+  - 监控KPI: 响应时间、错误率、内存使用
+  - 预期通过标准: p99&lt;800ms, 错误&lt;0.1%
+
+阶段2: 500并发用户
+  - 持续30分钟
+  - 关键监控: 是否触发降级, 降级质量如何
+  - 预期通过标准: p99&lt;1000ms, 降级率&lt;5%
+
+阶段3: 1000+ 并发用户
+  - 持续10分钟 (极限测试)
+  - 观察: 系统上限在哪里, 优雅降级是否生效
+  - 预期通过标准: 无crash, 恢复&lt;5分钟
+
+分析:
+  - 构建性能曲线 (并发数 vs 响应时间)
+  - 识别瓶颈 (L7? L4? L1? 网络? 存储?)
+  - 输出优化建议</code></pre>
+<h3>9.2 Day 13 - 安全审计</h3>
+<pre><code>代码审查:
+  - 检查输入验证是否完整 (防止注入)
+  - 检查权限控制是否严格
+  - 检查日志是否敏感信息脱敏
+
+依赖检查:
+  - 扫描已知漏洞 (CVE)
+  - 更新过期依赖
+
+数据安全:
+  - 用户数据加密传输
+  - 敏感数据存储加密
+  - 备份恢复机制验证
+
+预期输出:
+  - 0个critical风险
+  - 所有high风险已修复
+  - 安全审计报告</code></pre>
+<h3>9.3 Day 14 - 文档交付 + 知识转移</h3>
+<pre><code>文档输出:
+  ✓ API文档 (所有L4/L1接口)
+  ✓ 运维手册 (故障排查、日常维护)
+  ✓ 故障处理SOP (15个常见故障处理流程)
+  ✓ 架构设计文档 (三层融合协议详解)
+  ✓ 扩展指南 (如何新增分体、新增应用场景)
+
+知识转移:
+  ✓ 运维团队培训 (4小时)
+  ✓ 开发团队培训 (6小时)
+  ✓ 产品团队培训 (2小时)
+  ✓ 知识库搭建完成 (所有文档归档)
+
+验收:
+  - 文档完整性100%
+  - 培训评分≥80%
+  - 接班团队可独立维护</code></pre>
+<hr>
+<h2>附录：v5.0 → v5.1 变更清单</h2>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>变更项</th>
+<th>v5.0</th>
+<th>v5.1</th>
+<th>理由</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>MVP时间表</td>
+<td>Day 5/8/11</td>
+<td>Day 7/10/12</td>
+<td>降低风险，增加缓冲</td>
+</tr>
+<tr>
+<td>2</td>
+<td>三层融合协议</td>
+<td>隐式</td>
+<td>显式化（6章节）</td>
+<td>减少歧义，清晰治理</td>
+</tr>
+<tr>
+<td>3</td>
+<td>版本同步</td>
+<td>无</td>
+<td>自动检测+告警</td>
+<td>防cascade failure</td>
+</tr>
+<tr>
+<td>4</td>
+<td>质量标准</td>
+<td>定性</td>
+<td>SMART量化</td>
+<td>可验证、可审查</td>
+</tr>
+<tr>
+<td>5</td>
+<td>风险管理</td>
+<td>5个</td>
+<td>15个(P0/P1/P2分级)</td>
+<td>更完善的预控</td>
+</tr>
+<tr>
+<td>6</td>
+<td>权限矩阵</td>
+<td>无</td>
+<td>显式4角色×6权限</td>
+<td>明确修改流程</td>
+</tr>
+<tr>
+<td>7</td>
+<td>SMART标准</td>
+<td>无</td>
+<td>6个阶段的标准表</td>
+<td>量化验收</td>
+</tr>
+<tr>
+<td>8</td>
+<td>降级预案</td>
+<td>3个</td>
+<td>5个(详细恢复逻辑)</td>
+<td>故障恢复&lt;5分钟</td>
+</tr>
+<tr>
+<td>9</td>
+<td>冲突检测</td>
+<td>无</td>
+<td>完整框架+50case</td>
+<td>多分体融合质量保证</td>
+</tr>
+<tr>
+<td>10</td>
+<td>性能SLA</td>
+<td>模糊</td>
+<td>明确&lt;1s/p99/冲突&lt;2%</td>
+<td>清晰的技术指标</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>快速参考：Day 0-14 Timeline</h2>
+<pre><code>Day 0   │ 环境准备         │ 权限/协议/预案完整
+Day 1-2 │ L7 知识地基      │ 文章1-4完成
+Day 3-4 │ L7 知识地基      │ 文章5-8完成
+Day 5-6 │ L7+L4 并行       │ 文章9-12完成 + 快思考就绪
+Day 7   │ L7 完成 + L4深化  │ 文章13-17完成 + 五分体就绪
+Day 8-9 │ L4+L1 并行       │ 冲突检测+感知层完成
+Day 10  │ L1 完成          │ 降级预案完成
+Day 11  │ 系统集成 验收    │ 4 Scenario通过 + 回归测试
+Day 12  │ 系统集成 稳定性  │ 8小时运行 + 实用户反馈
+Day 13  │ 运维准备         │ 压力测试 + 安全审计
+Day 14  │ 知识交付         │ 文档 + 培训 + 交接</code></pre>
+<hr>
+<p><strong>v5.1 标准搭建手册正式发布</strong>  
+<strong>版本</strong>: v5.1（质量改进版）  
+<strong>发布日期</strong>: 2026-03-31  
+<strong>验收责任人</strong>: PM + Tech Lead  
+<strong>生效日期</strong>: 即刻开始 Day 0 准备</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>贝叶斯定理 · SKILL.md - 以观其妙书院</title>
+<meta name="description" content="贝叶斯定理 · SKILL.md - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="贝叶斯定理 · SKILL.md">
+<meta property="og:description" content="贝叶斯定理 · SKILL.md - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "贝叶斯定理 · SKILL.md",
+    "description": "贝叶斯定理 · SKILL.md - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>贝叶斯定理 · SKILL.md</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>贝叶斯定理 · SKILL.md</h1>
+<h2>元数据</h2>
+<ul>
+<li><strong>模型编号</strong>: 32</li>
+<li><strong>模型名称</strong>: 贝叶斯定理</li>
+<li><strong>所属领域</strong>: 数学</li>
+<li><strong>难度等级</strong>: ⭐⭐⭐</li>
+<li><strong>一句话描述</strong>: 在不确定性中更新信念的数学法则</li>
+</ul>
+<hr>
+<h2>核心定义</h2>
+<h3>What：什么是贝叶斯定理？</h3>
+<p>贝叶斯定理是概率论中描述<strong>条件概率</strong>如何随新证据而更新的数学公式。它告诉我们：当获得新信息时，应该如何<strong>理性地修正</strong>我们对某个假设的信念程度。</p>
+<p><strong>数学公式</strong>:</p>
+<pre><code>P(H|E) = P(E|H) × P(H) / P(E)
+
+其中：
+- P(H|E) = 后验概率（看到证据后假设成立的概率）
+- P(E|H) = 似然度（假设成立时看到该证据的概率）
+- P(H) = 先验概率（看到证据前假设成立的概率）
+- P(E) = 证据概率（看到该证据的总概率）</code></pre>
+<h3>Why：为什么重要？</h3>
+<ol>
+<li><strong>反直觉决策</strong>：人类大脑天生是"频率主义者"，贝叶斯思维帮助我们克服认知偏差</li>
+<li><strong>信息价值量化</strong>：告诉我们新信息到底改变了多少我们的判断</li>
+<li><strong>动态学习框架</strong>：提供了一套持续更新认知的数学方法</li>
+<li><strong>预测与解释</strong>：既能预测未来，也能解释过去</li>
+</ol>
+<h3>How：如何应用？</h3>
+<p><strong>核心操作流程</strong>:</p>
+<ol>
+<li><strong>确定先验</strong>：在获得新证据前，你对假设的初始信念程度</li>
+<li><strong>评估似然</strong>：如果假设为真，观察到当前证据的可能性</li>
+<li><strong>计算后验</strong>：结合先验和似然，得出更新后的信念</li>
+<li><strong>迭代更新</strong>：将新的后验作为下一次的先验，持续学习</li>
+</ol>
+<hr>
+<h2>应用场景</h2>
+<h3>场景1：医学检测解读</h3>
+<p><strong>情境</strong>：体检显示某项指标异常，医生说要进一步检查
+<strong>应用</strong>：</p>
+<ul>
+<li>先验概率：该病在人群中的发病率（如1%）</li>
+<li>似然度：患者患病时检测呈阳性的概率（如95%）</li>
+<li>假阳性率：健康人检测呈阳性的概率（如5%）</li>
+<li><strong>关键洞察</strong>：即使检测准确率95%，如果疾病罕见，假阳性可能多于真阳性</li>
+</ul>
+<h3>场景2：投资决策</h3>
+<p><strong>情境</strong>：创业公司CEO非常优秀，是否值得投资？
+<strong>应用</strong>：</p>
+<ul>
+<li>先验：创业公司整体成功率（如10%）</li>
+<li>似然：成功公司CEO优秀的概率（如80%）</li>
+<li>对比：失败公司CEO优秀的概率（如30%）</li>
+<li><strong>关键洞察</strong>：优秀CEO提高了成功概率，但不能忽视基础概率</li>
+</ul>
+<h3>场景3：招聘筛选</h3>
+<p><strong>情境</strong>：候选人面试表现极佳，是否录用？
+<strong>应用</strong>：</p>
+<ul>
+<li>先验：该岗位候选人的整体合格率</li>
+<li>似然：合格候选人在面试中表现优秀的概率</li>
+<li>对比：不合格候选人在面试中表现优秀的概率</li>
+<li><strong>关键洞察</strong>：面试表现需要结合岗位基础合格率来解读</li>
+</ul>
+<hr>
+<h2>常见误区</h2>
+<table>
+<thead><tr>
+<th>误区</th>
+<th>正确理解</th>
+</tr></thead><tbody>
+<tr>
+<td>忽视先验</td>
+<td>基础概率（先验）往往比新证据更重要</td>
+</tr>
+<tr>
+<td>确认偏误</td>
+<td>只关注支持自己观点的证据</td>
+</tr>
+<tr>
+<td>过度反应</td>
+<td>一次新证据不应完全颠覆原有信念</td>
+</tr>
+<tr>
+<td>忽视假阳性</td>
+<td>高准确率≠高阳性预测值</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>关联模型</h2>
+<ul>
+<li><strong>正态分布</strong> (33)：贝叶斯推断中常用的先验分布</li>
+<li><strong>幂律分布</strong> (34)：某些场景下的先验分布选择</li>
+<li><strong>复利数学</strong> (35)：信念更新的累积效应</li>
+<li><strong>最优化</strong> (37)：贝叶斯优化算法</li>
+</ul>
+<hr>
+<h2>核心金句</h2>
+<blockquote><p>"信念不是非黑即白，而是在证据流动中不断更新的概率分布。"</p></blockquote>
+<blockquote><p>"在不确定性中，贝叶斯思维是我们最可靠的导航仪。"</p></blockquote>
+<hr>
+<h2>标签</h2>
+<p>#贝叶斯定理 #条件概率 #决策科学 #认知更新 #数学思维</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>
