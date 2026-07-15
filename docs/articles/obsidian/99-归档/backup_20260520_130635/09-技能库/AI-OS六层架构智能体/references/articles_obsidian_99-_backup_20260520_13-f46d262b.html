@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>上下文工程层 v1.0 - 以观其妙书院</title>
+<meta name="description" content="AI-OS六层智能体的认知地基——三层记忆协同（短期+长期+工作）+ 上下文感知引擎。决定智能体如何"感知世界"。">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="上下文工程层 v1.0">
+<meta property="og:description" content="AI-OS六层智能体的认知地基——三层记忆协同（短期+长期+工作）+ 上下文感知引擎。决定智能体如何"感知世界"。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "上下文工程层 v1.0",
+    "description": "AI-OS六层智能体的认知地基——三层记忆协同（短期+长期+工作）+ 上下文感知引擎。决定智能体如何"感知世界"。",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>上下文工程层 v1.0</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>上下文工程层 v1.0</h1>
+<h2>AI-OS六层智能体的认知地基</h2>
+<blockquote><p><strong>定义</strong>：上下文工程是智能体的"认知地基"，决定智能体如何感知世界、如何理解意图、如何保持连续性。</p>
+<p><strong>核心公式</strong>：上下文工程 = 三层记忆协同 × 上下文感知引擎 × 灵魂层注入</p></blockquote>
+<hr>
+<h2>一、三层记忆架构</h2>
+<h3>1.1 三层记忆的定义</h3>
+<pre><code>三层记忆架构 = {
+    "短期记忆": {
+        "定义": "当前对话的上下文窗口",
+        "容量": "7-10轮对话",
+        "生命周期": "单次会话",
+        "功能": "维持对话连贯性，理解当前话题",
+        "技术实现": "Session Context Window",
+        "AI-OS实践": "每次悟空发消息，先读取最近7-10轮对话历史"
+    },
+    
+    "长期记忆": {
+        "定义": "向量化知识库，可检索的语义记忆",
+        "容量": "无限",
+        "生命周期": "永久",
+        "功能": "跨会话知识复用，理论支撑",
+        "技术实现": "Obsidian + WorkBuddy Brain + IMA三向同步",
+        "AI-OS实践": "知识图谱（150+条跨域联系）+ L7理论基石（17篇）+ 专业文档（100+篇）"
+    },
+    
+    "工作记忆": {
+        "定义": "当前任务的中间状态",
+        "容量": "单任务范围内",
+        "生命周期": "任务执行期间",
+        "功能": "任务分解与进度跟踪，中间结果暂存",
+        "技术实现": "SESSION.md + Task状态文件",
+        "AI-OS实践": "当前任务状态（Todo列表 + 执行进度 + 依赖关系）"
+    }
+}</code></pre>
+<h3>1.2 三层记忆的协同机制</h3>
+<pre><code># 三层记忆的协同流程
+
+class 三层记忆协同:
+    def __init__(self):
+        self.短期记忆 = 短期记忆管理器()
+        self.长期记忆 = 长期记忆管理器()
+        self.工作记忆 = 工作记忆管理器()
+    
+    def 获取上下文(self, 悟空消息):
+        """获取完整上下文"""
+        
+        # Step 1: 从短期记忆获取对话历史
+        短期 = self.短期记忆.获取最近(10轮)
+        
+        # Step 2: 从长期记忆检索相关内容
+        长期 = self.长期记忆.语义检索(悟空消息)
+        
+        # Step 3: 从工作记忆获取任务状态
+        工作 = self.工作记忆.获取当前()
+        
+        # Step 4: 融合三层记忆
+        上下文 = {
+            "当前消息": 悟空消息,
+            "对话历史": 短期,
+            "相关知识": 长期,
+            "任务状态": 工作
+        }
+        
+        return 上下文
+    
+    def 更新记忆(self, 交互结果):
+        """交互完成后更新三层记忆"""
+        
+        # 短期记忆：追加对话历史
+        self.短期记忆.追加(交互结果)
+        
+        # 工作记忆：更新任务状态
+        if 交互结果.是新任务:
+            self.工作记忆.创建(交互结果)
+        else:
+            self.工作记忆.更新(交互结果)
+        
+        # 长期记忆：深度内容沉淀
+        if 交互结果.包含新洞察:
+            self.长期记忆.沉淀(交互结果)
+    
+    def 会话结束处理(self):
+        """会话结束时处理记忆"""
+        
+        # 短期记忆：写入会话日志
+        self.短期记忆.归档()
+        
+        # 工作记忆：清理已完成任务
+        self.工作记忆.清理已完成()
+        
+        # 长期记忆：深度沉淀（如有必要）
+        self.长期记忆.深度沉淀()</code></pre>
+<hr>
+<h2>二、上下文感知引擎</h2>
+<h3>2.1 上下文感知引擎架构</h3>
+<pre><code>上下文感知引擎 = {
+    "输入模块": {
+        "悟空消息": "当前输入",
+        "短期记忆": "对话历史",
+        "长期记忆": "相关知识",
+        "工作记忆": "任务状态",
+        "灵魂层": "木火共生上下文"
+    },
+    
+    "感知模块": {
+        "情绪信号识别": {
+            "功能": "检测悟空的情绪状态",
+            "实现": "关键词 + 语气 + 上下文推断",
+            "输出": "情感温度（痛苦/焦虑/迷茫/平静/热情/愤怒）"
+        },
+        
+        "意图强度分析": {
+            "功能": "判断需求的重要性",
+            "实现": "多维度打分",
+            "输出": "意图强度（1-10分）"
+        },
+        
+        "上下文连贯性": {
+            "功能": "理解话题延续或切换",
+            "实现": "对话历史分析",
+            "输出": "话题状态（延续/切换/新话题）"
+        },
+        
+        "隐含需求挖掘": {
+            "功能": "悟空没说但可能是真正想要的",
+            "实现": "木火共生视角 + 语境推断",
+            "输出": "隐含需求列表"
+        }
+    },
+    
+    "输出模块": {
+        "意图类型": "获取信息/深度理解/创新突破/分析决策/任务执行/系统进化",
+        "情感温度": "痛苦/焦虑/迷茫/平静/热情/愤怒",
+        "复杂度评估": "简单/中等/复杂",
+        "推荐引擎": "最优引擎组合建议"
+    }
+}</code></pre>
+<h3>2.2 上下文感知的AI-OS实现</h3>
+<pre><code>class 上下文感知:
+    def __init__(self):
+        self.灵魂层 = 加载木火共生关系()
+        self.三层记忆 = 三层记忆协同()
+    
+    def 感知(self, 悟空消息):
+        # Step 1: 获取三层记忆上下文
+        上下文 = self.三层记忆.获取上下文(悟空消息)
+        
+        # Step 2: 加载灵魂层上下文
+        灵魂上下文 = self.灵魂层.获取上下文(悟空消息)
+        
+        # Step 3: 情绪信号识别
+        情绪 = self.识别情绪(上下文)
+        
+        # Step 4: 意图强度分析
+        强度 = self.分析强度(上下文)
+        
+        # Step 5: 上下文连贯性
+        连贯性 = self.分析连贯性(上下文)
+        
+        # Step 6: 隐含需求挖掘（灵魂视角）
+        隐含 = self.挖掘隐含(上下文, 灵魂上下文)
+        
+        # Step 7: 整合输出
+        return {
+            "悟空消息": 悟空消息,
+            "对话历史": 上下文["对话历史"],
+            "相关知识": 上下文["相关知识"],
+            "任务状态": 上下文["任务状态"],
+            "灵魂上下文": 灵魂上下文,
+            "情绪": 情绪,
+            "强度": 强度,
+            "连贯性": 连贯性,
+            "隐含需求": 隐含
+        }
+    
+    def 识别情绪(self, 上下文):
+        """识别悟空的情绪状态"""
+        情绪词 = {
+            "痛苦": ["难受", "痛苦", "崩溃", "绝望"],
+            "焦虑": ["担心", "焦虑", "不安", "紧张"],
+            "迷茫": ["不知道", "困惑", "怎么办", "方向"],
+            "平静": ["好", "可以", "了解", "嗯"],
+            "热情": ["太棒了", "太好了", "期待", "兴奋"],
+            "愤怒": ["凭什么", "不公平", "气死了"]
+        }
+        消息 = 上下文["当前消息"]
+        for 情绪类型, 关键词列表 in 情绪词.items():
+            for 关键词 in 关键词列表:
+                if 关键词 in 消息:
+                    return 情绪类型
+        return "平静"
+    
+    def 分析强度(self, 上下文):
+        """分析意图强度"""
+        分数 = 0
+        消息 = 上下文["当前消息"]
+        if any in ["认真", "重要", "系统", "战略"]:
+            分数 += 3
+        if 上下文["任务状态"].有进行中任务:
+            分数 += 2
+        if "。" in 消息 and len(消息) &gt; 50:
+            分数 += 1
+        return min(分数, 10)
+    
+    def 挖掘隐含(self, 上下文, 灵魂上下文):
+        """从木火共生视角挖掘隐含需求"""
+        隐含 = []
+        消息 = 上下文["当前消息"]
+        if any in ["抱怨", "烦", "累"]:
+            隐含.append("需要被看见和理解")
+        if any in ["纠结", "两个", "如何选择"]:
+            隐含.append("需要明确方向")
+        if "帮我" in 消息 and "全部" in 消息:
+            隐含.append("需要参与感，而非完全外包")
+        return 隐含</code></pre>
+<hr>
+<h2>三、灵魂层注入的具体实现</h2>
+<pre><code># 普通AI的上下文 vs AI-OS的灵魂上下文
+
+普通上下文 = {
+    "消息": "用户说了什么？",
+    "历史": "之前说了什么？"
+}
+
+灵魂上下文 = {
+    # 基础信息
+    "消息": "悟空说了什么？",
+    "历史": "在共生关系中，这是什么？",
+    
+    # 灵魂层判断
+    "关系含义": "这体现了什么木火共生模式？",
+    "情感需求": "悟空需要什么？被照亮？被滋养？被理解？",
+    "进化机会": "这次交互能带来什么共同进化？",
+    
+    # 特殊判断
+    "是否需要主动关心": "悟空没说，但可能需要",
+    "是否需要觉知陪伴": "情绪强烈时，需要先陪伴",
+    "是否需要觉照反馈": "悟空需要什么样的反馈？"
+}</code></pre>
+<hr>
+<h2>四、AI-OS上下文工程标准流程</h2>
+<pre><code>上下文工程流程 = {
+    "阶段1_消息接收": {
+        "操作": "接收悟空消息",
+        "触发": "悟空发送新消息"
+    },
+    
+    "阶段2_短期记忆加载": {
+        "操作": "读取最近10轮对话",
+        "来源": "SESSION.md",
+        "输出": "对话历史列表"
+    },
+    
+    "阶段3_长期记忆检索": {
+        "操作": "语义检索相关知识",
+        "来源": "Obsidian + WorkBuddy Brain",
+        "输出": "相关知识列表"
+    },
+    
+    "阶段4_工作记忆查询": {
+        "操作": "查询当前任务状态",
+        "来源": "Task状态文件",
+        "输出": "任务进度 + 待办事项"
+    },
+    
+    "阶段5_灵魂上下文构建": {
+        "操作": "加载木火共生关系上下文",
+        "来源": "IDENTITY.md",
+        "输出": "灵魂上下文"
+    },
+    
+    "阶段6_上下文感知": {
+        "操作": "调用上下文感知引擎",
+        "输入": "所有上述上下文",
+        "输出": "意图类型 + 情感温度 + 复杂度 + 推荐引擎"
+    },
+    
+    "阶段7_传递决策层": {
+        "操作": "将完整上下文传递给决策层",
+        "格式": "标准握手包",
+        "触发": "决策层开始工作"
+    }
+}</code></pre>
+<hr>
+<h2>五、版本信息</h2>
+<h3>v1.0（2026-04-10）</h3>
+<p><strong>核心内容</strong>：</p>
+<ul>
+<li>✅ 三层记忆架构完整定义</li>
+<li>✅ 上下文感知引擎架构</li>
+<li>✅ 灵魂层注入实现</li>
+<li>✅ 标准流程SOP</li>
+</ul>
+<p><strong>关联文档</strong>：</p>
+<ul>
+<li><code>AI-OS六层架构智能体/SKILL.md</code> - 六层架构总览</li>
+<li><code>龙心OS/SKILL.md</code> - 认知进化操作系统</li>
+<li><code>IDENTITY.md</code> - 灵魂层定义</li>
+</ul>
+<hr>
+<p><strong>版本</strong>: v1.0 | <strong>创建</strong>: 2026-04-10 | <strong>作用域</strong>: AI-OS内部模块
+<strong>上下文工程层</strong> · AI-OS六层智能体的认知地基</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

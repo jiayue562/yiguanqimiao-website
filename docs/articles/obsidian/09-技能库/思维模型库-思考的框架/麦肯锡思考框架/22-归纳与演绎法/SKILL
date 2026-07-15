@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>归纳与演绎法 · 麦肯锡思维模型 - 以观其妙书院</title>
+<meta name="description" content="归纳与演绎法 · 麦肯锡思维模型 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="归纳与演绎法 · 麦肯锡思维模型">
+<meta property="og:description" content="归纳与演绎法 · 麦肯锡思维模型 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "归纳与演绎法 · 麦肯锡思维模型",
+    "description": "归纳与演绎法 · 麦肯锡思维模型 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>归纳与演绎法 · 麦肯锡思维模型</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>归纳与演绎法</h1>
+<blockquote><p>版本: v1.0 | 创建: 2026-04-15 | 维护者: 龙龟神将</p></blockquote>
+<hr>
+<h2>一、核心定义</h2>
+<h3>1.1 一句话定义</h3>
+<p>归纳法从个别到一般（从事实提炼规律），演绎法从一般到个别（从规律推演事实），两者是逻辑思维的基石。</p>
+<h3>1.2 核心公式</h3>
+<pre><code>归纳法：事实1 + 事实2 + 事实3 → 规律
+演绎法：规律 → 事实推演</code></pre>
+<hr>
+<h2>二、归纳法 (Induction)</h2>
+<h3>2.1 定义</h3>
+<p>从个别实例中总结出一般规律</p>
+<h3>2.2 逻辑结构</h3>
+<pre><code>观察1：A公司战略成功 → 案例1
+观察2：B公司战略成功 → 案例2
+观察3：C公司战略成功 → 案例3
+━━━━━━━━━━━━━━━
+归纳：此类战略普遍有效 → 规律</code></pre>
+<h3>2.3 归纳类型</h3>
+<table>
+<thead><tr>
+<th>类型</th>
+<th>定义</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td>枚举归纳</td>
+<td>数量积累</td>
+<td>观察100只天鹅都是白的，归纳"天鹅都是白的"</td>
+</tr>
+<tr>
+<td>排除归纳</td>
+<td>排除不可能</td>
+<td>所有可能原因都被排除，剩下就是答案</td>
+</tr>
+<tr>
+<td>类比归纳</td>
+<td>相似性推理</td>
+<td>A和B在X、Y上相似，B还有Z特性，推测A也有Z</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>三、演绎法 (Deduction)</h2>
+<h3>3.1 定义</h3>
+<p>从一般规律推导个别结论</p>
+<h3>3.2 逻辑结构</h3>
+<pre><code>大前提：规律/原则 → 所有天鹅都是白的
+小前提：事实/情况 → 这是一只天鹅
+━━━━━━━━━━━━━━━
+演绎：结论 → 这只天鹅是白的</code></pre>
+<h3>3.2 三段论结构</h3>
+<pre><code>大前提：所有M都是P
+小前提：所有S都是M
+━━━━━━━━━━━━━━━
+结论：所有S都是P</code></pre>
+<hr>
+<h2>四、归纳vs演绎</h2>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>归纳法</th>
+<th>演绎法</th>
+</tr></thead><tbody>
+<tr>
+<td>方向</td>
+<td>个别→一般</td>
+<td>一般→个别</td>
+</tr>
+<tr>
+<td>结论</td>
+<td>或然性（可能对）</td>
+<td>必然性（一定对）</td>
+</tr>
+<tr>
+<td>用途</td>
+<td>发现规律</td>
+<td>验证/应用规律</td>
+</tr>
+<tr>
+<td>风险</td>
+<td>过度归纳</td>
+<td>前提可能错误</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>五、应用场景</h2>
+<h3>5.1 归纳法应用</h3>
+<pre><code>市场调研：
+ - 访谈30位用户，80%提到同样痛点
+ - 归纳：这是目标用户的核心痛点
+
+竞品分析：
+ - 分析5个成功竞品，都有相同功能
+ - 归纳：这个功能是成功的关键因素</code></pre>
+<h3>5.2 演绎法应用</h3>
+<pre><code>战略推导：
+ - 大前提：行业趋势是智能化
+ - 小前提：我们的行业正在智能化
+ - 结论：我们需要智能化战略
+
+问题诊断：
+ - 大前提：客户流失是因为服务不好
+ - 小前提：这个客户流失了
+ - 结论：可能服务出了问题</code></pre>
+<hr>
+<h2>六、常见错误</h2>
+<h3>归纳谬误</h3>
+<table>
+<thead><tr>
+<th>错误类型</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td>过度归纳</td>
+<td>只看3个案例就得出普遍规律</td>
+</tr>
+<tr>
+<td>幸存者偏差</td>
+<td>只看成功案例忽略失败案例</td>
+</tr>
+<tr>
+<td>错误类比</td>
+<td>表面相似但本质不同</td>
+</tr>
+</tbody></table>
+<h3>演绎谬误</h3>
+<table>
+<thead><tr>
+<th>错误类型</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td>大前提错误</td>
+<td>前提本身就不成立</td>
+</tr>
+<tr>
+<td>小前提错误</td>
+<td>事实判断失误</td>
+</tr>
+<tr>
+<td>概念混淆</td>
+<td>偷换概念</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>七、核心金句</h2>
+<blockquote><p>"归纳与演绎是思考的两翼。归纳让我们从现象中发现规律，演绎让我们用规律指导行动。两者结合，才是完整的逻辑思维。"</p></blockquote>
+<hr>
+<h2>八、关联文件</h2>
+<table>
+<thead><tr>
+<th>关联类型</th>
+<th>文件路径</th>
+</tr></thead><tbody>
+<tr>
+<td>母库索引</td>
+<td><code>../SKILL.md</code></td>
+</tr>
+<tr>
+<td>配套模型</td>
+<td><code>../07-逻辑树/SKILL.md</code></td>
+</tr>
+<tr>
+<td>配套模型</td>
+<td><code>../19-MECE原则/SKILL.md</code></td>
+</tr>
+</tbody></table>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

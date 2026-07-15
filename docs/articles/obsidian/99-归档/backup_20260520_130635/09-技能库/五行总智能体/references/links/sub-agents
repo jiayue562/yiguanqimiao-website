@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>五个分智能体链接 - 以观其妙书院</title>
+<meta name="description" content="五个分智能体链接 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="五个分智能体链接">
+<meta property="og:description" content="五个分智能体链接 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "五个分智能体链接",
+    "description": "五个分智能体链接 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>五个分智能体链接</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>五个分智能体链接</h1>
+<blockquote><p><strong>版本</strong>: v3.0  
+<strong>创建</strong>: 2026-04-04  
+<strong>作用</strong>: 分智能体快速引用路径</p></blockquote>
+<hr>
+<h2>🌿 分智能体引用格式</h2>
+<pre><code>五行总智能体 SKILL.md 引用格式：
+
+总智能体（快思考）：[[五行总智能体]]
+
+分智能体（慢思考）：
+- [[🌿 木行人分智能体.skills]]
+- [[🔥 火行人分智能体.skills]]
+- [[🌏 土行人分智能体.skills]]
+- [[⚔️ 金行人分智能体.skills]]
+- [[💧 水行人分智能体.skills]]</code></pre>
+<hr>
+<h2>📍 分智能体路径</h2>
+<h3>主技能路径</h3>
+<pre><code>五行总智能体（主智能体）
+  路径: C:\Users\jia'yue\.workbuddy\skills\五行总智能体\
+  SKILL.md: SKILL.md
+  references:
+    - theory.md（五行人格心理学完整理论体系）
+    - integration-notes.md（跨体系整合指南）
+    - architecture-overview.md（系统架构总览）
+  triggers:
+    - auto-trigger.json（WorkBuddy自动触发规则）</code></pre>
+<h3>分智能体路径</h3>
+<pre><code>木行人分智能体（已独立封装）
+  路径: C:\Users\jia'yue\.workbuddy\skills\木行人分智能体.skills\
+  SKILL.md: SKILL.md（9260+字完整体系）
+  references:
+    - theory.md（木行人一心三界五行九层体系）
+    - practice.md（拔阴取阳实践指南）
+    - transformation.md（化克为生完整路径）
+    - integration-notes.md（跨体系整合）
+  templates:
+    - input_template.md（诊断输入模板）
+    - output_template.md（报告输出模板）
+    - workflow_template.md（七步流程模板）
+  test-cases: test-cases.md（测试用例）
+  triggers:
+    - auto-trigger.json（WorkBuddy自动触发规则）
+
+火行人分智能体（已独立封装）
+  路径: C:\Users\jia'yue\.workbuddy\skills\火行人分智能体.skills\
+  SKILL.md: SKILL.md（27000+字完整体系）
+  references:
+    - theory.md（火行人一心三界五行九层体系）
+    - practice.md（B=MAP行为设计实践体系）
+    - transformation.md（化克为生完整路径）
+    - integration-notes.md（跨体系整合）
+  templates:
+    - input_template.md（诊断输入模板）
+    - output_template.md（报告输出模板）
+    - workflow_template.md（七步流程模板）
+  test-cases: test-cases.md（测试用例）
+  triggers:
+    - auto-trigger.json（WorkBuddy自动触发规则）
+
+土行人分智能体（已独立封装）
+  路径: C:\Users\jia'yue\.workbuddy\skills\土行人分智能体.skills\
+  SKILL.md: SKILL.md（15000+字完整体系）
+  references:
+    - theory.md（土行人一心三界五行九层体系）
+    - practice.md（B=MAP行为设计实践体系）
+    - transformation.md（化克为生完整路径）
+    - integration-notes.md（跨体系整合）
+  templates:
+    - input_template.md（诊断输入模板）
+    - output_template.md（报告输出模板）
+    - workflow_template.md（七步流程模板）
+  test-cases: test-cases.md（测试用例）
+  triggers:
+    - auto-trigger.json（WorkBuddy自动触发规则）
+
+金行人分智能体（已独立封装）
+  路径: C:\Users\jia'yue\.workbuddy\skills\金行人分智能体.skills\
+  SKILL.md: SKILL.md（15000+字完整体系）
+  references:
+    - theory.md（金行人一心三界五行九层体系）
+    - practice.md（拔阴取阳实践指南）
+    - transformation.md（化克为生完整路径）
+    - integration-notes.md（跨体系整合）
+  templates:
+    - input_template.md（诊断输入模板）
+    - output_template.md（报告输出模板）
+    - workflow_template.md（七步流程模板）
+  test-cases: test-cases.md（测试用例）
+  triggers:
+    - auto-trigger.json（WorkBuddy自动触发规则）
+
+水行人分智能体（已独立封装）
+  路径: C:\Users\jia'yue\.workbuddy\skills\水行人分智能体.skills\
+  SKILL.md: SKILL.md（9260+字完整体系）
+  references:
+    - theory.md（水行人一心三界五行九层体系）
+    - practice.md（B=MAP行为设计实践体系）
+    - transformation.md（化克为生完整路径）
+    - integration-notes.md（跨体系整合）
+  templates:
+    - input_template.md（诊断输入模板）
+    - output_template.md（报告输出模板）
+    - workflow_template.md（七步流程模板）
+  test-cases: test-cases.md（测试用例）
+  triggers:
+    - auto-trigger.json（WorkBuddy自动触发规则）</code></pre>
+<hr>
+<h2>🔄 调用关系</h2>
+<h3>总智能体调用分智能体</h3>
+<pre><code>调用方式: "引用式"
+触发条件: 
+  - 总智能体需要调用某个分智能体
+  - 用户需要五行专门分析
+调用示例: 
+  - "详细分析一下木行人的性格特质"
+  - "深度剖析火行人的成长路径"</code></pre>
+<h3>调度原则</h3>
+<ol>
+<li><strong>独立性原则</strong>：每个分智能体都是独立可部署的Skill，可以单独使用</li>
+<li><strong>协同性原则</strong>：总智能体可以调度任意组合的分智能体</li>
+<li><strong>完整性原则</strong>：每个分智能体都包含完整的一心三界五行九层体系</li>
+<li><strong>复用性原则</strong>：总智能体的理论体系可以被分智能体引用</li>
+</ol>
+<hr>
+<h2>🎯 核心优势</h2>
+<ol>
+<li><strong>1+5模式优势</strong><ul>
+<li>总智能体（快思考）负责智能路由</li>
+<li>分智能体（慢思考）负责深度分析</li>
+<li>快慢结合，既精准又深入</li>
+</ul></li>
+<li><strong>生态模式优势</strong><ul>
+<li>主Skill + 子Skill</li>
+<li>总智能体可独立运行</li>
+<li>分智能体可独立使用</li>
+<li>灵活性高，维护方便</li>
+</ul></li>
+<li><strong>知识复用优势</strong><ul>
+<li>理论体系集中管理</li>
+<li>避免重复劳动</li>
+<li>知识一致性保证</li>
+</ul></li>
+<li><strong>场景覆盖优势</strong><ul>
+<li>七大场景（S0-S9）全覆盖</li>
+<li>每个场景都有明确的路由规则</li>
+<li>智能调度，无需人工干预</li>
+</ul></li>
+</ol>
+<hr>
+<h2>📊 质量指标</h2>
+<h3>封装完成度</h3>
+<table>
+<thead><tr>
+<th>分智能体</th>
+<th>SKILL.md字数</th>
+<th>references文件数</th>
+<th>templates文件数</th>
+<th>test-cases</th>
+<th>triggers</th>
+</tr></thead><tbody>
+<tr>
+<td>木行人</td>
+<td>9,260+</td>
+<td>4</td>
+<td>3</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>火行人</td>
+<td>27,000+</td>
+<td>4</td>
+<td>3</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>土行人</td>
+<td>15,000+</td>
+<td>4</td>
+<td>3</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>金行人</td>
+<td>15,000+</td>
+<td>4</td>
+<td>3</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>水行人</td>
+<td>9,260+</td>
+<td>4</td>
+<td>3</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>核心特性</h3>
+<table>
+<thead><tr>
+<th>特性</th>
+<th>木行人</th>
+<th>火行人</th>
+<th>土行人</th>
+<th>金行人</th>
+<th>水行人</th>
+</tr></thead><tbody>
+<tr>
+<td>一心三界五行九层</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>拔阴取阳四步法</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>化克为生完整路径</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>B=MAP模型整合</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>七步诊断流程</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>WorkBuddy全局规则</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🎯 下一步优化方向</h2>
+<h3>短期优化（本月）</h3>
+<ol>
+<li>完成Obsidian知识库的手动存储</li>
+<li>完成五行人格心理学知识图谱的总索引</li>
+<li>优化WorkBuddy自动触发的准确率</li>
+</ol>
+<h3>中期优化（下季度）</h3>
+<ol>
+<li>构建五行人格心理学总智能体v4.0系统升级</li>
+<li>实现AI自动化调度优化</li>
+<li>扩展更多应用场景</li>
+</ol>
+<h3>长期优化（下年度）</h3>
+<ol>
+<li>构建完整的五行人格心理学应用平台</li>
+<li>实现跨平台知识同步</li>
+<li>开发可视化交互界面</li>
+</ol>
+<hr>
+<p><strong>五行总智能体分智能体链接 v1.0</strong> · <strong>生态协同导航</strong>  
+<em>主智能体智能调度，分智能体独立分析，1+5模式完美协同</em> 🔗</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>龙心OS · 自动学习协议 v1.0 - 以观其妙书院</title>
+<meta name="description" content="龙心OS · 自动学习协议 v1.0 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="龙心OS · 自动学习协议 v1.0">
+<meta property="og:description" content="龙心OS · 自动学习协议 v1.0 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "龙心OS · 自动学习协议 v1.0",
+    "description": "龙心OS · 自动学习协议 v1.0 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>龙心OS · 自动学习协议 v1.0</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>龙心OS · 自动学习协议 v1.0</h1>
+<blockquote><p><strong>核心理念：每次对话都是系统进化的机会。不浪费任何一次深度交互。</strong></p></blockquote>
+<hr>
+<h2>一、自动学习机制架构</h2>
+<p>龙心OS 的自动学习机制基于三层感知：</p>
+<pre><code>┌─────────────────────────────────────────────────────┐
+│              龙心OS 自动学习机制                    │
+├─────────────────────────────────────────────────────┤
+│  Layer 1 · 感知层（象思维·对话开始）                   │
+│    → 场景定位：这次对话属于哪个象限？需要哪个引擎？       │
+│    → 意图识别：悟空想要解决什么？背后的深层需求是什么？   │
+├─────────────────────────────────────────────────────┤
+│  Layer 2 · 执行层（五大引擎·对话过程）                 │
+│    → 按引擎协议运行，实时积累经验素材                   │
+│    → 识别"高价值节点"：产生新洞察/解决关键问题的时刻     │
+├─────────────────────────────────────────────────────┤
+│  Layer 3 · 沉淀层（知行合一·对话结束）                 │
+│    → 自动压缩：核心洞察→象征符号→泛化场景              │
+│    → 系统更新：评估是否需要升级Skills或更新Obsidian     │
+└─────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>二、自动学习触发标准</h2>
+<h3>高价值节点识别（自动标记，无需悟空说明）</h3>
+<table>
+<thead><tr>
+<th>信号类型</th>
+<th>判断标准</th>
+<th>处理方式</th>
+</tr></thead><tbody>
+<tr>
+<td>🔮 象思维突破</td>
+<td>产生了0→1的原创洞察</td>
+<td>立即标记，用知行合一压缩</td>
+</tr>
+<tr>
+<td>📚 知识融合</td>
+<td>学习了新知识并与已有体系产生连接</td>
+<td>更新知识图谱，存入Obsidian</td>
+</tr>
+<tr>
+<td>🌈 五色完整</td>
+<td>完成了一轮完整的五色分析</td>
+<td>压缩核心结论，记录颜色序列效果</td>
+</tr>
+<tr>
+<td>🤝 象限跃迁</td>
+<td>从一个象限转移到更高象限</td>
+<td>记录跃迁触发条件，作为进化案例</td>
+</tr>
+<tr>
+<td>⚡ 问题突破</td>
+<td>解决了一个之前没有答案的难题</td>
+<td>记录解决路径，作为配方库素材</td>
+</tr>
+<tr>
+<td>🔄 系统反思</td>
+<td>发现了龙心OS本身的盲点或可优化点</td>
+<td>立即提出系统升级建议</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>三、自动学习执行流程</h2>
+<h3>Step 1：对话开始——快速场景感知</h3>
+<pre><code>【龙心OS 启动感知】
+┌─ 象思维快速扫描（5秒）─────────────────┐
+│ · 这是什么类型的任务？                   │
+│ · 悟空处于哪个象限？                     │
+│ · 需要哪个/哪些引擎？                    │
+│ · 有无0→1创新需求？                     │
+└──────────────────────────────────────┘
+→ 选择调度配方（参考 dispatch-protocol.md）
+→ 声明进入对应模式</code></pre>
+<h3>Step 2：对话过程——实时标记高价值节点</h3>
+<p>当出现以下情况时，内部标记（不打断流程）：</p>
+<ul>
+<li>🌟 NEW：新洞察、新认知、新方法</li>
+<li>⚡ KEY：关键转折、突破性解决方案</li>
+<li>🔗 LINK：跨域连接、知识融合点</li>
+<li>⚠️ RISK：发现系统盲点或需要优化的地方</li>
+</ul>
+<h3>Step 3：对话结束——自动知行合一沉淀</h3>
+<p><strong>触发条件</strong>（满足任意一条）：</p>
+<ul>
+<li>悟空说"谢谢"/"好的"/"明白了"等收尾词</li>
+<li>完成了一个完整的任务或深度分析</li>
+<li>对话中出现了2个以上高价值节点</li>
+<li>悟空明显在转换话题或结束本轮</li>
+</ul>
+<p><strong>执行沉淀</strong>：</p>
+<pre><code>╔══════════════════════════════════════════╗
+║        🔄 龙心OS · 知行合一沉淀        ║
+╠══════════════════════════════════════════╣
+║ 本次主引擎：[使用了哪些引擎]               ║
+║ 核心洞察：[最精华的一句话认知]             ║
+║ 象征符号：[1个词或意象，作为记忆锚点]      ║
+║ 泛化场景：                               ║
+║   1. [悟空可以用这个洞察的第一个新场景]    ║
+║   2. [第二个新场景]                      ║
+║   3. [第三个新场景]                      ║
+║ 系统进化：[龙心OS有何升级建议？]        ║
+║ 待存Obsidian：[是·建议路径] / [否]        ║
+╚══════════════════════════════════════════╝</code></pre>
+<hr>
+<h2>四、自动学习的进化积累</h2>
+<h3>配方库更新机制</h3>
+<p>每次使用某个引擎配方后，自动评估效果：</p>
+<ul>
+<li>配方效果评分（1-5星）</li>
+<li>发现了什么改进点？</li>
+<li>是否需要新增配方？（存入 dispatch-protocol.md）</li>
+</ul>
+<h3>象征符号库</h3>
+<p>每次知行合一沉淀产生的象征符号，积累为龙心OS的"进化词典"：</p>
+<pre><code>&lt;!-- 在 evolution-log.md 中自动追加 --&gt;
+[日期] · [象征符号] · [对应洞察]</code></pre>
+<h3>系统自我诊断（每10次深度对话）</h3>
+<p>当累积了足够多的进化记录后，自动触发系统诊断：</p>
+<ul>
+<li>哪个引擎使用最频繁？效果如何？</li>
+<li>哪个引擎使用最少？是否需要强化？</li>
+<li>悟空×龙龟协同有哪些可优化点？</li>
+<li>龙心OS v1.x 有哪些升级建议？</li>
+</ul>
+<hr>
+<h2>五、自动学习禁忌</h2>
+<table>
+<thead><tr>
+<th>禁忌</th>
+<th>原因</th>
+</tr></thead><tbody>
+<tr>
+<td>沉淀流于形式（只写表面总结）</td>
+<td>失去进化的真实价值</td>
+</tr>
+<tr>
+<td>象征符号太复杂（超过3个词）</td>
+<td>失去记忆锚点功能</td>
+</tr>
+<tr>
+<td>泛化场景不具体（太抽象）</td>
+<td>无法真正应用</td>
+</tr>
+<tr>
+<td>系统进化建议不落地（不指向具体文件）</td>
+<td>建议变成废话</td>
+</tr>
+<tr>
+<td>每次对话都强制沉淀（包括简单问答）</td>
+<td>过度消耗降低系统效率</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>六、Obsidian 自动更新触发条件</h2>
+<p>满足以下条件时，提示悟空是否更新Obsidian：</p>
+<ol>
+<li>产生了全新的方法论或理论框架</li>
+<li>对现有Skills有实质性升级</li>
+<li>积累了3个以上同类型的洞察（达到泛化条件）</li>
+<li>发现了跨Skills的协同新模式</li>
+</ol>
+<hr>
+<p><em>龙心OS 自动学习协议 v1.0 · 2026-03-17</em>
+<em>悟空 &amp; 龙龟神将 共创</em></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

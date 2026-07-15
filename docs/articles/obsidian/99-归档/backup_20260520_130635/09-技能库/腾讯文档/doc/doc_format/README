@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>文本格式化模块 - 以观其妙书院</title>
+<meta name="description" content="文本格式化模块 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="文本格式化模块">
+<meta property="og:description" content="文本格式化模块 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "文本格式化模块",
+    "description": "文本格式化模块 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>文本格式化模块</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>文本格式化模块</h1>
+<p>纯文本 → 结构化 XML → 样式美化的工程化流程。</p>
+<hr>
+<h2>文件结构</h2>
+<pre><code>doc_format/
+├── prompt/
+│   ├── scenario_recognition_prompt.txt    # 场景识别 Prompt
+│   ├── pure_text_system_prompt.txt        # 文本转 XML Prompt
+│   └── style_customization_prompt.txt     # 样式解析 Prompt
+└── templates/
+    ├── general.json                        # 通用场景模板
+    ├── paper.json                          # 学术论文模板
+    ├── contract.json                       # 合同模板
+    ├── essay.json                          # 作文模板
+    ├── government.json                     # 公文模板</code></pre>
+<hr>
+<h2>工作流程</h2>
+<p>你需要按照以下步骤完成文本美化任务：</p>
+<h3>步骤 1: 场景识别与标题生成</h3>
+<p>分析用户提供的文本内容，识别所属场景并生成文档标题。</p>
+<p><strong>参考规则：</strong> <code>prompt/scenario_recognition_prompt.txt</code></p>
+<p><strong>你必须输出给用户：</strong></p>
+<pre><code>{
+  "scenario": "场景标识",
+  "title": "生成的标题（2-25字符）"
+}</code></pre>
+<hr>
+<h3>步骤 2: 样式自定义（可选）</h3>
+<p><strong>仅当用户明确提出样式要求时执行此步骤</strong>，例如：</p>
+<ul>
+<li>"标题用初号黑体"</li>
+<li>"正文改成小四"</li>
+<li>"标题居中显示"</li>
+</ul>
+<p><strong>允许样式：</strong> 参考 <code>templates/{scenario}.json</code> 中的 <code>schema.children[].structure</code> 字段，必须为叶节点的样式。
+<strong>参考规则：</strong> <code>prompt/style_customization_prompt.txt</code></p>
+<p><strong>你必须输出给用户（JSON 数组格式）：</strong></p>
+<pre><code>[
+  {
+    "structureName": "Title",
+    "fontSize": 42,
+    "fontFamily": "黑体",
+    "fontColor": "AE2E19",
+    "alignment": 2,
+    "lineSpacing": 1.5
+  }
+]</code></pre>
+<p>如果用户没有样式要求，此步骤不输出。</p>
+<hr>
+<h3>步骤 3: 文本转 XML 结构化</h3>
+<p>根据识别的场景，加载对应模板，将纯文本转换为结构化 XML。</p>
+<p><strong>模板位置：</strong> <code>templates/{scenario}.json</code></p>
+<p><strong>参考规则：</strong> <code>prompt/pure_text_system_prompt.txt</code></p>
+<p><strong>你必须输出给用户：</strong></p>
+<pre><code>{
+  "xml": "&lt;root&gt;...&lt;/root&gt;"
+}</code></pre>
+<hr>
+<h3>步骤 4: 调用套用 MCP 工具</h3>
+<p>使用 <code>tencent-docs</code> MCP Server 对应的 MCP 工具 <code>doc.ai_format_pure_text</code> 调用套用 API，传入前面步骤的结果，生成在线腾讯文档链接。</p>
+<p><strong>MCP 工具参数：</strong></p>
+<ul>
+<li><code>title</code>: 文档标题（步骤 1 的输出）</li>
+<li><code>xml</code>: 格式套用后的文档 XML 结构（步骤 3 的输出）</li>
+<li><code>scenario</code>: 模板场景（步骤 1 的输出）</li>
+<li><code>customStyles</code>: 对文档的自定义样式（步骤 2 的输出，可选，需序列化为 JSON 字符串）</li>
+</ul>
+<p><strong>最终输出文档链接给用户。</strong></p>
+<h2>注意事项</h2>
+<h3>JSON 序列化</h3>
+<p>文本中的引号必须正确转义：</p>
+<p>❌ 错误：</p>
+<pre><code>{"text": "合同（以下简称"本合同"）"}</code></pre>
+<p>✅ 正确：</p>
+<pre><code>{"text": "合同（以下简称\"本合同\"）"}</code></pre>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

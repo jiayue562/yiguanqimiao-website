@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Web Search Plus - 以观其妙书院</title>
+<meta name="description" content="Web Search Plus - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="Web Search Plus">
+<meta property="og:description" content="Web Search Plus - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Web Search Plus",
+    "description": "Web Search Plus - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Web Search Plus</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Web Search Plus</h1>
+<blockquote><p>Unified multi-provider web search with <strong>Intelligent Auto-Routing</strong> — uses multi-signal analysis to automatically select between <strong>Serper</strong>, <strong>Tavily</strong>, <strong>Querit</strong>, <strong>Exa</strong>, <strong>Perplexity (Sonar Pro)</strong>, <strong>You.com</strong>, and <strong>SearXNG</strong> with confidence scoring.</p></blockquote>
+<p><a href="https://clawhub.ai"><img src="https://img.shields.io/badge/ClawHub-web--search--plus-blue" alt="ClawHub" style="max-width:100%"></a>
+<a href="https://clawhub.ai"><img src="https://img.shields.io/badge/version-2.9.0-green" alt="Version" style="max-width:100%"></a>
+<a href="https://github.com/robbyczgw-cla/web-search-plus"><img src="https://img.shields.io/badge/GitHub-web--search--plus-blue" alt="GitHub" style="max-width:100%"></a></p>
+<hr>
+<h2>🧠 Features (v2.9.0)</h2>
+<p><strong>Intelligent Multi-Signal Routing</strong> — The skill uses sophisticated query analysis:</p>
+<ul>
+<li><strong>Intent Classification</strong>: Shopping vs Research vs Discovery vs RAG/Real-time vs Privacy</li>
+<li><strong>Linguistic Patterns</strong>: "how much" (price) vs "how does" (research) vs "privately" (privacy)</li>
+<li><strong>Entity Detection</strong>: Product+brand combos, URLs, domains</li>
+<li><strong>Complexity Analysis</strong>: Long queries favor research providers</li>
+<li><strong>Confidence Scoring</strong>: Know how reliable the routing decision is</li>
+</ul>
+<pre><code>python3 scripts/search.py -q "how much does iPhone 16 cost"     # → Serper (68% confidence)
+python3 scripts/search.py -q "how does quantum entanglement work"  # → Tavily (86% HIGH)
+python3 scripts/search.py -q "startups similar to Notion"       # → Exa (76% HIGH)
+python3 scripts/search.py -q "companies like stripe.com"        # → Exa (100% HIGH - URL detected)
+python3 scripts/search.py -q "summarize key points on AI"       # → You.com (68% MEDIUM - RAG intent)
+python3 scripts/search.py -q "search privately without tracking" # → SearXNG (74% HIGH - privacy intent)</code></pre>
+<hr>
+<h2>🔍 When to Use Which Provider</h2>
+<h3>Built-in Brave Search (OpenClaw default)</h3>
+<ul>
+<li>✅ General web searches</li>
+<li>✅ Privacy-focused</li>
+<li>✅ Quick lookups</li>
+<li>✅ Default fallback</li>
+</ul>
+<h3>Serper (Google Results)</h3>
+<ul>
+<li>🛍 <strong>Product specs, prices, shopping</strong></li>
+<li>📍 <strong>Local businesses, places</strong></li>
+<li>🎯 <strong>"Google it" - explicit Google results</strong></li>
+<li>📰 <strong>Shopping/images needed</strong></li>
+<li>🏆 <strong>Knowledge Graph data</strong></li>
+</ul>
+<h3>Tavily (AI-Optimized Research)</h3>
+<ul>
+<li>📚 <strong>Research questions, deep dives</strong></li>
+<li>🔬 <strong>Complex multi-part queries</strong></li>
+<li>📄 <strong>Need full page content</strong> (not just snippets)</li>
+<li>🎓 <strong>Academic/technical research</strong></li>
+<li>🔒 <strong>Domain filtering</strong> (trusted sources)</li>
+</ul>
+<h3>Querit (Multilingual AI Search)</h3>
+<ul>
+<li>🌏 <strong>Multilingual AI search</strong> across 10+ languages</li>
+<li>⚡ <strong>Fast real-time answers</strong> with ~400ms latency</li>
+<li>🗺️ <strong>International / cross-language queries</strong></li>
+<li>📰 <strong>Recency-aware results</strong> for current information</li>
+<li>🤖 <strong>Good fit for AI workflows</strong> with clean metadata</li>
+</ul>
+<h3>Exa (Neural Semantic Search)</h3>
+<ul>
+<li>🔗 <strong>Find similar pages</strong></li>
+<li>🏢 <strong>Company/startup discovery</strong></li>
+<li>📝 <strong>Research papers</strong></li>
+<li>💻 <strong>GitHub projects</strong></li>
+<li>📅 <strong>Date-specific content</strong></li>
+</ul>
+<h3>Perplexity (Sonar Pro via Kilo Gateway)</h3>
+<ul>
+<li>⚡ <strong>Direct answers</strong> (great for “who/what/define”)</li>
+<li>🧾 <strong>Cited, answer-first output</strong></li>
+<li>🕒 <strong>Current events / “as of” questions</strong></li>
+<li>🔑 Auth via <code>KILOCODE_API_KEY</code> (routes to <code>https://api.kilo.ai</code>)</li>
+</ul>
+<h3>You.com (RAG/Real-time)</h3>
+<ul>
+<li>🤖 <strong>RAG applications</strong> (LLM-ready snippets)</li>
+<li>📰 <strong>Combined web + news</strong> (single API call)</li>
+<li>⚡ <strong>Real-time information</strong> (current events)</li>
+<li>📋 <strong>Summarization context</strong> ("What's the latest...")</li>
+<li>🔄 <strong>Live crawling</strong> (full page content on demand)</li>
+</ul>
+<h3>SearXNG (Privacy-First/Self-Hosted)</h3>
+<ul>
+<li>🔒 <strong>Privacy-preserving search</strong> (no tracking)</li>
+<li>🌐 <strong>Multi-source aggregation</strong> (70+ engines)</li>
+<li>💰 <strong>$0 API cost</strong> (self-hosted)</li>
+<li>🎯 <strong>Diverse perspectives</strong> (results from multiple engines)</li>
+<li>🏠 <strong>Self-hosted environments</strong> (full control)</li>
+</ul>
+<hr>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#quick-start">Quick Start</a></li>
+<li><a href="#smart-auto-routing">Smart Auto-Routing</a></li>
+<li><a href="#configuration-guide">Configuration Guide</a></li>
+<li><a href="#provider-deep-dives">Provider Deep Dives</a></li>
+<li><a href="#usage-examples">Usage Examples</a></li>
+<li><a href="#workflow-examples">Workflow Examples</a></li>
+<li><a href="#optimization-tips">Optimization Tips</a></li>
+<li><a href="#faq--troubleshooting">FAQ &amp; Troubleshooting</a></li>
+<li><a href="#api-reference">API Reference</a></li>
+</ul>
+<hr>
+<h2>Quick Start</h2>
+<h3>Option A: Interactive Setup (Recommended)</h3>
+<pre><code># Run the setup wizard - it guides you through everything
+python3 scripts/setup.py</code></pre>
+<p>The wizard explains each provider, collects your API keys, and creates <code>config.json</code> automatically.</p>
+<h3>Option B: Manual Setup</h3>
+<pre><code># 1. Set up at least one API key (or SearXNG instance)
+export SERPER_API_KEY="your-key"   # https://serper.dev
+export TAVILY_API_KEY="your-key"   # https://tavily.com
+export QUERIT_API_KEY="your-key"   # https://querit.ai
+export EXA_API_KEY="your-key"      # https://exa.ai
+export KILOCODE_API_KEY="your-key" # enables Perplexity Sonar Pro via https://api.kilo.ai
+export YOU_API_KEY="your-key"      # https://api.you.com
+export SEARXNG_INSTANCE_URL="https://your-instance.example.com"  # Self-hosted
+
+# 2. Run a search (auto-routed!)
+python3 scripts/search.py -q "best laptop 2024"</code></pre>
+<h3>Run a Search</h3>
+<pre><code># Auto-routed to best provider
+python3 scripts/search.py -q "best laptop 2024"
+
+# Or specify a provider explicitly
+python3 scripts/search.py -p serper -q "iPhone 16 specs"
+python3 scripts/search.py -p tavily -q "quantum computing explained" --depth advanced
+python3 scripts/search.py -p querit -q "latest AI policy updates in Germany"
+python3 scripts/search.py -p exa -q "AI startups 2024" --category company
+python3 scripts/search.py -p perplexity -q "Who is the president of Austria?"</code></pre>
+<hr>
+<h2>Smart Auto-Routing</h2>
+<h3>How It Works</h3>
+<p>When you don't specify a provider, the skill analyzes your query and routes it to the best provider:</p>
+<table>
+<thead><tr>
+<th>Query Contains</th>
+<th>Routes To</th>
+<th>Example</th>
+</tr></thead><tbody>
+<tr>
+<td>"price", "buy", "shop", "cost"</td>
+<td><strong>Serper</strong></td>
+<td>"iPhone 16 price"</td>
+</tr>
+<tr>
+<td>"near me", "restaurant", "hotel"</td>
+<td><strong>Serper</strong></td>
+<td>"pizza near me"</td>
+</tr>
+<tr>
+<td>"weather", "news", "latest"</td>
+<td><strong>Serper</strong></td>
+<td>"weather Berlin"</td>
+</tr>
+<tr>
+<td>"how does", "explain", "what is"</td>
+<td><strong>Tavily</strong></td>
+<td>"how does TCP work"</td>
+</tr>
+<tr>
+<td>"research", "study", "analyze"</td>
+<td><strong>Tavily</strong></td>
+<td>"climate research"</td>
+</tr>
+<tr>
+<td>"tutorial", "guide", "learn"</td>
+<td><strong>Tavily</strong></td>
+<td>"python tutorial"</td>
+</tr>
+<tr>
+<td>multilingual, current status, latest updates</td>
+<td><strong>Querit</strong></td>
+<td>"latest AI policy updates in Germany"</td>
+</tr>
+<tr>
+<td>"similar to", "companies like"</td>
+<td><strong>Exa</strong></td>
+<td>"companies like Stripe"</td>
+</tr>
+<tr>
+<td>"startup", "Series A"</td>
+<td><strong>Exa</strong></td>
+<td>"AI startups Series A"</td>
+</tr>
+<tr>
+<td>"github", "research paper"</td>
+<td><strong>Exa</strong></td>
+<td>"LLM papers arxiv"</td>
+</tr>
+<tr>
+<td>"private", "anonymous", "no tracking"</td>
+<td><strong>SearXNG</strong></td>
+<td>"search privately"</td>
+</tr>
+<tr>
+<td>"multiple sources", "aggregate"</td>
+<td><strong>SearXNG</strong></td>
+<td>"results from all engines"</td>
+</tr>
+</tbody></table>
+<h3>Examples</h3>
+<pre><code># These are all auto-routed to the optimal provider:
+python3 scripts/search.py -q "MacBook Pro M3 price"           # → Serper
+python3 scripts/search.py -q "how does HTTPS work"            # → Tavily
+python3 scripts/search.py -q "latest AI policy updates in Germany" # → Querit
+python3 scripts/search.py -q "startups like Notion"           # → Exa
+python3 scripts/search.py -q "best sushi restaurant near me"  # → Serper
+python3 scripts/search.py -q "explain attention mechanism"    # → Tavily
+python3 scripts/search.py -q "alternatives to Figma"          # → Exa
+python3 scripts/search.py -q "search privately without tracking" # → SearXNG</code></pre>
+<h3>Result Caching (introduced in v2.7.x)</h3>
+<p>Search results are <strong>automatically cached</strong> for 1 hour to save API costs:</p>
+<pre><code># First request: fetches from API ($)
+python3 scripts/search.py -q "AI startups 2024"
+
+# Second request: uses cache (FREE!)
+python3 scripts/search.py -q "AI startups 2024"
+# Output includes: "cached": true
+
+# Bypass cache (force fresh results)
+python3 scripts/search.py -q "AI startups 2024" --no-cache
+
+# View cache stats
+python3 scripts/search.py --cache-stats
+
+# Clear all cached results
+python3 scripts/search.py --clear-cache
+
+# Custom TTL (in seconds, default: 3600 = 1 hour)
+python3 scripts/search.py -q "query" --cache-ttl 7200</code></pre>
+<p><strong>Cache location:</strong> <code>.cache/</code> in skill directory (override with <code>WSP_CACHE_DIR</code> environment variable)</p>
+<h3>Debug Auto-Routing</h3>
+<p>See exactly why a provider was selected:</p>
+<pre><code>python3 scripts/search.py --explain-routing -q "best laptop to buy"</code></pre>
+<p>Output:</p>
+<pre><code>{
+  "query": "best laptop to buy",
+  "selected_provider": "serper",
+  "reason": "matched_keywords (score=2)",
+  "matched_keywords": ["buy", "best"],
+  "available_providers": ["serper", "tavily", "exa"]
+}</code></pre>
+<h3>Routing Info in Results</h3>
+<p>Every search result includes routing information:</p>
+<pre><code>{
+  "provider": "serper",
+  "query": "iPhone 16 price",
+  "results": [...],
+  "routing": {
+    "auto_routed": true,
+    "selected_provider": "serper",
+    "reason": "matched_keywords (score=1)",
+    "matched_keywords": ["price"]
+  }
+}</code></pre>
+<hr>
+<h2>Configuration Guide</h2>
+<h3>Environment Variables</h3>
+<p>Create a <code>.env</code> file or set these in your shell:</p>
+<pre><code># Required: Set at least one
+export SERPER_API_KEY="your-serper-key"
+export TAVILY_API_KEY="your-tavily-key"
+export EXA_API_KEY="your-exa-key"</code></pre>
+<h3>Config File (config.json)</h3>
+<p>The <code>config.json</code> file lets you customize auto-routing and provider defaults:</p>
+<pre><code>{
+  "defaults": {
+    "provider": "serper",
+    "max_results": 5
+  },
+  
+  "auto_routing": {
+    "enabled": true,
+    "fallback_provider": "serper",
+    "provider_priority": ["serper", "tavily", "exa"],
+    "disabled_providers": [],
+    "keyword_mappings": {
+      "serper": ["price", "buy", "shop", "cost", "deal", "near me", "weather"],
+      "tavily": ["how does", "explain", "research", "what is", "tutorial"],
+      "exa": ["similar to", "companies like", "alternatives", "startup", "github"]
+    }
+  },
+  
+  "serper": {
+    "country": "us",
+    "language": "en"
+  },
+  
+  "tavily": {
+    "depth": "basic",
+    "topic": "general"
+  },
+  
+  "exa": {
+    "type": "neural"
+  }
+}</code></pre>
+<h3>Configuration Examples</h3>
+<h4>Example 1: Disable Exa (Only Use Serper + Tavily)</h4>
+<pre><code>{
+  "auto_routing": {
+    "disabled_providers": ["exa"]
+  }
+}</code></pre>
+<h4>Example 2: Make Tavily the Default</h4>
+<pre><code>{
+  "auto_routing": {
+    "fallback_provider": "tavily"
+  }
+}</code></pre>
+<h4>Example 3: Add Custom Keywords</h4>
+<pre><code>{
+  "auto_routing": {
+    "keyword_mappings": {
+      "serper": [
+        "price", "buy", "shop", "amazon", "ebay", "walmart",
+        "deal", "discount", "coupon", "sale", "cheap"
+      ],
+      "tavily": [
+        "how does", "explain", "research", "what is",
+        "coursera", "udemy", "learn", "course", "certification"
+      ],
+      "exa": [
+        "similar to", "companies like", "competitors",
+        "YC company", "funded startup", "Series A", "Series B"
+      ]
+    }
+  }
+}</code></pre>
+<h4>Example 4: German Locale for Serper</h4>
+<pre><code>{
+  "serper": {
+    "country": "de",
+    "language": "de"
+  }
+}</code></pre>
+<h4>Example 5: Disable Auto-Routing</h4>
+<pre><code>{
+  "auto_routing": {
+    "enabled": false
+  },
+  "defaults": {
+    "provider": "serper"
+  }
+}</code></pre>
+<h4>Example 6: Research-Heavy Config</h4>
+<pre><code>{
+  "auto_routing": {
+    "fallback_provider": "tavily",
+    "provider_priority": ["tavily", "serper", "exa"]
+  },
+  "tavily": {
+    "depth": "advanced",
+    "include_raw_content": true
+  }
+}</code></pre>
+<hr>
+<h2>Provider Deep Dives</h2>
+<h3>Serper (Google Search API)</h3>
+<p><strong>What it is:</strong> Direct access to Google Search results via API — the same results you'd see on google.com.</p>
+<h4>Strengths</h4>
+<table>
+<thead><tr>
+<th>Strength</th>
+<th>Description</th>
+</tr></thead><tbody>
+<tr>
+<td>🎯 <strong>Accuracy</strong></td>
+<td>Google's search quality, knowledge graph, featured snippets</td>
+</tr>
+<tr>
+<td>🛒 <strong>Shopping</strong></td>
+<td>Product prices, reviews, shopping results</td>
+</tr>
+<tr>
+<td>📍 <strong>Local</strong></td>
+<td>Business listings, maps, places</td>
+</tr>
+<tr>
+<td>📰 <strong>News</strong></td>
+<td>Real-time news with Google News integration</td>
+</tr>
+<tr>
+<td>🖼 <strong>Images</strong></td>
+<td>Google Images search</td>
+</tr>
+<tr>
+<td>⚡ <strong>Speed</strong></td>
+<td>Fastest response times (~200-400ms)</td>
+</tr>
+</tbody></table>
+<h4>Best Use Cases</h4>
+<ul>
+<li>✅ Product specifications and comparisons</li>
+<li>✅ Shopping and price lookups</li>
+<li>✅ Local business searches ("restaurants near me")</li>
+<li>✅ Quick factual queries (weather, conversions, definitions)</li>
+<li>✅ News headlines and current events</li>
+<li>✅ Image searches</li>
+<li>✅ When you need "what Google shows"</li>
+</ul>
+<h4>Getting Your API Key</h4>
+<ol>
+<li>Go to <a href="https://serper.dev">serper.dev</a></li>
+<li>Sign up with email or Google</li>
+<li>Copy your API key from the dashboard</li>
+<li>Set <code>SERPER_API_KEY</code> environment variable</li>
+</ol>
+<hr>
+<h3>Tavily (Research Search)</h3>
+<p><strong>What it is:</strong> AI-optimized search engine built for research and RAG applications — returns synthesized answers plus full content.</p>
+<h4>Strengths</h4>
+<table>
+<thead><tr>
+<th>Strength</th>
+<th>Description</th>
+</tr></thead><tbody>
+<tr>
+<td>📚 <strong>Research Quality</strong></td>
+<td>Optimized for comprehensive, accurate research</td>
+</tr>
+<tr>
+<td>💬 <strong>AI Answers</strong></td>
+<td>Returns synthesized answers, not just links</td>
+</tr>
+<tr>
+<td>📄 <strong>Full Content</strong></td>
+<td>Can return complete page content (raw_content)</td>
+</tr>
+<tr>
+<td>🎯 <strong>Domain Filtering</strong></td>
+<td>Include/exclude specific domains</td>
+</tr>
+<tr>
+<td>🔬 <strong>Deep Mode</strong></td>
+<td>Advanced search for thorough research</td>
+</tr>
+<tr>
+<td>📰 <strong>Topic Modes</strong></td>
+<td>Specialized for general vs news content</td>
+</tr>
+</tbody></table>
+<h4>Best Use Cases</h4>
+<ul>
+<li>✅ Research questions requiring synthesized answers</li>
+<li>✅ Academic or technical deep dives</li>
+<li>✅ When you need actual page content (not just snippets)</li>
+<li>✅ Multi-source information comparison</li>
+<li>✅ Domain-specific research (filter to authoritative sources)</li>
+<li>✅ News research with context</li>
+<li>✅ RAG/LLM applications</li>
+</ul>
+<h4>Getting Your API Key</h4>
+<ol>
+<li>Go to <a href="https://tavily.com">tavily.com</a></li>
+<li>Sign up and verify email</li>
+<li>Navigate to API Keys section</li>
+<li>Generate and copy your key</li>
+<li>Set <code>TAVILY_API_KEY</code> environment variable</li>
+</ol>
+<hr>
+<h3>Exa (Neural Search)</h3>
+<p><strong>What it is:</strong> Neural/semantic search engine that understands meaning, not just keywords — finds conceptually similar content.</p>
+<h4>Strengths</h4>
+<table>
+<thead><tr>
+<th>Strength</th>
+<th>Description</th>
+</tr></thead><tbody>
+<tr>
+<td>🧠 <strong>Semantic Understanding</strong></td>
+<td>Finds results by meaning, not keywords</td>
+</tr>
+<tr>
+<td>🔗 <strong>Similar Pages</strong></td>
+<td>Find pages similar to a reference URL</td>
+</tr>
+<tr>
+<td>🏢 <strong>Company Discovery</strong></td>
+<td>Excellent for finding startups, companies</td>
+</tr>
+<tr>
+<td>📑 <strong>Category Filters</strong></td>
+<td>Filter by type (company, paper, tweet, etc.)</td>
+</tr>
+<tr>
+<td>📅 <strong>Date Filtering</strong></td>
+<td>Precise date range searches</td>
+</tr>
+<tr>
+<td>🎓 <strong>Academic</strong></td>
+<td>Great for research papers and technical content</td>
+</tr>
+</tbody></table>
+<h4>Best Use Cases</h4>
+<ul>
+<li>✅ Conceptual queries ("companies building X")</li>
+<li>✅ Finding similar companies or pages</li>
+<li>✅ Startup and company discovery</li>
+<li>✅ Research paper discovery</li>
+<li>✅ Finding GitHub projects</li>
+<li>✅ Date-filtered searches for recent content</li>
+<li>✅ When keyword matching fails</li>
+</ul>
+<h4>Getting Your API Key</h4>
+<ol>
+<li>Go to <a href="https://exa.ai">exa.ai</a></li>
+<li>Sign up with email or Google</li>
+<li>Navigate to API section in dashboard</li>
+<li>Copy your API key</li>
+<li>Set <code>EXA_API_KEY</code> environment variable</li>
+</ol>
+<hr>
+<h3>SearXNG (Privacy-First Meta-Search)</h3>
+<p><strong>What it is:</strong> Open-source, self-hosted meta-search engine that aggregates results from 70+ search engines without tracking.</p>
+<h4>Strengths</h4>
+<table>
+<thead><tr>
+<th>Strength</th>
+<th>Description</th>
+</tr></thead><tbody>
+<tr>
+<td>🔒 <strong>Privacy-First</strong></td>
+<td>No tracking, no profiling, no data collection</td>
+</tr>
+<tr>
+<td>🌐 <strong>Multi-Engine</strong></td>
+<td>Aggregates Google, Bing, DuckDuckGo, and 70+ more</td>
+</tr>
+<tr>
+<td>💰 <strong>Free</strong></td>
+<td>$0 API cost (self-hosted, unlimited queries)</td>
+</tr>
+<tr>
+<td>🎯 <strong>Diverse Results</strong></td>
+<td>Get perspectives from multiple search engines</td>
+</tr>
+<tr>
+<td>⚙ <strong>Customizable</strong></td>
+<td>Choose which engines to use, SafeSearch, language</td>
+</tr>
+<tr>
+<td>🏠 <strong>Self-Hosted</strong></td>
+<td>Full control over your search infrastructure</td>
+</tr>
+</tbody></table>
+<h4>Best Use Cases</h4>
+<ul>
+<li>✅ Privacy-sensitive searches (no tracking)</li>
+<li>✅ When you want diverse results from multiple engines</li>
+<li>✅ Budget-conscious (no API fees)</li>
+<li>✅ Self-hosted/air-gapped environments</li>
+<li>✅ Fallback when paid APIs are rate-limited</li>
+<li>✅ When "aggregate everything" is the goal</li>
+</ul>
+<h4>Setting Up Your Instance</h4>
+<pre><code># Docker (recommended, 5 minutes)
+docker run -d -p 8080:8080 searxng/searxng
+
+# Enable JSON API in settings.yml:
+# search:
+#   formats: [html, json]</code></pre>
+<ol>
+<li>See <a href="https://docs.searxng.org/admin/installation.html">docs.searxng.org</a></li>
+<li>Deploy via Docker, pip, or your preferred method</li>
+<li>Enable JSON format in <code>settings.yml</code></li>
+<li>Set <code>SEARXNG_INSTANCE_URL</code> environment variable</li>
+</ol>
+<hr>
+<h2>Usage Examples</h2>
+<h3>Auto-Routed Searches (Recommended)</h3>
+<pre><code># Just search — the skill picks the best provider
+python3 scripts/search.py -q "Tesla Model 3 price"
+python3 scripts/search.py -q "how do neural networks learn"
+python3 scripts/search.py -q "YC startups like Stripe"
+python3 scripts/search.py -q "search privately without tracking"</code></pre>
+<h3>Serper Options</h3>
+<pre><code># Different search types
+python3 scripts/search.py -p serper -q "gaming monitor" --type shopping
+python3 scripts/search.py -p serper -q "coffee shop" --type places
+python3 scripts/search.py -p serper -q "AI news" --type news
+
+# With time filter
+python3 scripts/search.py -p serper -q "OpenAI news" --time-range day
+
+# Include images
+python3 scripts/search.py -p serper -q "iPhone 16 Pro" --images
+
+# Different locale
+python3 scripts/search.py -p serper -q "Wetter Wien" --country at --language de</code></pre>
+<h3>Tavily Options</h3>
+<pre><code># Deep research mode
+python3 scripts/search.py -p tavily -q "quantum computing applications" --depth advanced
+
+# With full page content
+python3 scripts/search.py -p tavily -q "transformer architecture" --raw-content
+
+# Domain filtering
+python3 scripts/search.py -p tavily -q "AI research" --include-domains arxiv.org nature.com</code></pre>
+<h3>Exa Options</h3>
+<pre><code># Category filtering
+python3 scripts/search.py -p exa -q "AI startups Series A" --category company
+python3 scripts/search.py -p exa -q "attention mechanism" --category "research paper"
+
+# Date filtering
+python3 scripts/search.py -p exa -q "YC companies" --start-date 2024-01-01
+
+# Find similar pages
+python3 scripts/search.py -p exa --similar-url "https://stripe.com" --category company</code></pre>
+<h3>SearXNG Options</h3>
+<pre><code># Basic search
+python3 scripts/search.py -p searxng -q "linux distros"
+
+# Specific engines only
+python3 scripts/search.py -p searxng -q "AI news" --engines "google,bing,duckduckgo"
+
+# SafeSearch (0=off, 1=moderate, 2=strict)
+python3 scripts/search.py -p searxng -q "privacy tools" --searxng-safesearch 2
+
+# With time filter
+python3 scripts/search.py -p searxng -q "open source projects" --time-range week
+
+# Custom instance URL
+python3 scripts/search.py -p searxng -q "test" --searxng-url "http://localhost:8080"</code></pre>
+<hr>
+<h2>Workflow Examples</h2>
+<h3>🛒 Product Research Workflow</h3>
+<pre><code># Step 1: Get product specs (auto-routed to Serper)
+python3 scripts/search.py -q "MacBook Pro M3 Max specs"
+
+# Step 2: Check prices (auto-routed to Serper)
+python3 scripts/search.py -q "MacBook Pro M3 Max price comparison"
+
+# Step 3: In-depth reviews (auto-routed to Tavily)
+python3 scripts/search.py -q "detailed MacBook Pro M3 Max review"</code></pre>
+<h3>📚 Academic Research Workflow</h3>
+<pre><code># Step 1: Understand the topic (auto-routed to Tavily)
+python3 scripts/search.py -q "explain transformer architecture in deep learning"
+
+# Step 2: Find recent papers (Exa)
+python3 scripts/search.py -p exa -q "transformer improvements" --category "research paper" --start-date 2024-01-01
+
+# Step 3: Find implementations (Exa)
+python3 scripts/search.py -p exa -q "transformer implementation" --category github</code></pre>
+<h3>🏢 Competitive Analysis Workflow</h3>
+<pre><code># Step 1: Find competitors (auto-routed to Exa)
+python3 scripts/search.py -q "companies like Notion"
+
+# Step 2: Find similar products (Exa)
+python3 scripts/search.py -p exa --similar-url "https://notion.so" --category company
+
+# Step 3: Deep dive comparison (Tavily)
+python3 scripts/search.py -p tavily -q "Notion vs Coda comparison" --depth advanced</code></pre>
+<hr>
+<h2>Optimization Tips</h2>
+<h3>Cost Optimization</h3>
+<table>
+<thead><tr>
+<th>Tip</th>
+<th>Savings</th>
+</tr></thead><tbody>
+<tr>
+<td>Use SearXNG for routine queries</td>
+<td><strong>$0 API cost</strong></td>
+</tr>
+<tr>
+<td>Use auto-routing (defaults to Serper, cheapest paid)</td>
+<td>Best value</td>
+</tr>
+<tr>
+<td>Use Tavily <code>basic</code> before <code>advanced</code></td>
+<td>~50% cost reduction</td>
+</tr>
+<tr>
+<td>Set appropriate <code>max_results</code></td>
+<td>Linear cost savings</td>
+</tr>
+<tr>
+<td>Use Exa only for semantic queries</td>
+<td>Avoid waste</td>
+</tr>
+</tbody></table>
+<h3>Performance Optimization</h3>
+<table>
+<thead><tr>
+<th>Tip</th>
+<th>Impact</th>
+</tr></thead><tbody>
+<tr>
+<td>Serper is fastest (~200ms)</td>
+<td>Use for time-sensitive queries</td>
+</tr>
+<tr>
+<td>Tavily <code>basic</code> faster than <code>advanced</code></td>
+<td>~2x faster</td>
+</tr>
+<tr>
+<td>Lower <code>max_results</code> = faster response</td>
+<td>Linear improvement</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>FAQ &amp; Troubleshooting</h2>
+<h3>General Questions</h3>
+<p><strong>Q: Do I need API keys for all three providers?</strong></p>
+<blockquote><p>No. You only need keys for providers you want to use. Auto-routing skips providers without keys.</p></blockquote>
+<p><strong>Q: Which provider should I start with?</strong></p>
+<blockquote><p>Serper — it's the fastest, cheapest, and has the largest free tier (2,500 queries).</p></blockquote>
+<p><strong>Q: Can I use multiple providers in one workflow?</strong></p>
+<blockquote><p>Yes! That's the recommended approach. See <a href="#workflow-examples">Workflow Examples</a>.</p></blockquote>
+<p><strong>Q: How do I reduce API costs?</strong></p>
+<blockquote><p>Use auto-routing (defaults to cheapest), start with lower <code>max_results</code>, use Tavily <code>basic</code> before <code>advanced</code>.</p></blockquote>
+<h3>Auto-Routing Questions</h3>
+<p><strong>Q: Why did my query go to the wrong provider?</strong></p>
+<blockquote><p>Use <code>--explain-routing</code> to debug. Add custom keywords to config.json if needed.</p></blockquote>
+<p><strong>Q: Can I add my own keywords?</strong></p>
+<blockquote><p>Yes! Edit <code>config.json</code> → <code>auto_routing.keyword_mappings</code>.</p></blockquote>
+<p><strong>Q: How does keyword scoring work?</strong></p>
+<blockquote><p>Multi-word phrases get higher weights. "companies like" (2 words) scores higher than "like" (1 word).</p></blockquote>
+<p><strong>Q: What if no keywords match?</strong></p>
+<blockquote><p>Uses the fallback provider (default: Serper).</p></blockquote>
+<p><strong>Q: Can I force a specific provider?</strong></p>
+<blockquote><p>Yes, use <code>-p serper</code>, <code>-p tavily</code>, or <code>-p exa</code>.</p></blockquote>
+<h3>Troubleshooting</h3>
+<p><strong>Error: "Missing API key"</strong></p>
+<pre><code># Check if key is set
+echo $SERPER_API_KEY
+
+# Set it
+export SERPER_API_KEY="your-key"</code></pre>
+<p><strong>Error: "API Error (401)"</strong></p>
+<blockquote><p>Your API key is invalid or expired. Generate a new one.</p></blockquote>
+<p><strong>Error: "API Error (429)"</strong></p>
+<blockquote><p>Rate limited. Wait and retry, or upgrade your plan.</p></blockquote>
+<p><strong>Empty results?</strong></p>
+<blockquote><p>Try a different provider, broaden your query, or remove restrictive filters.</p></blockquote>
+<p><strong>Slow responses?</strong></p>
+<blockquote><p>Reduce <code>max_results</code>, use Tavily <code>basic</code>, or use Serper (fastest).</p></blockquote>
+<hr>
+<h2>API Reference</h2>
+<h3>Output Format</h3>
+<p>All providers return unified JSON:</p>
+<pre><code>{
+  "provider": "serper|tavily|exa",
+  "query": "original search query",
+  "results": [
+    {
+      "title": "Page Title",
+      "url": "https://example.com/page",
+      "snippet": "Content excerpt...",
+      "score": 0.95,
+      "date": "2024-01-15",
+      "raw_content": "Full page content (Tavily only)"
+    }
+  ],
+  "images": ["url1", "url2"],
+  "answer": "Synthesized answer",
+  "knowledge_graph": { },
+  "routing": {
+    "auto_routed": true,
+    "selected_provider": "serper",
+    "reason": "matched_keywords (score=1)",
+    "matched_keywords": ["price"]
+  }
+}</code></pre>
+<h3>CLI Options Reference</h3>
+<table>
+<thead><tr>
+<th>Option</th>
+<th>Providers</th>
+<th>Description</th>
+</tr></thead><tbody>
+<tr>
+<td><code>-q, --query</code></td>
+<td>All</td>
+<td>Search query</td>
+</tr>
+<tr>
+<td><code>-p, --provider</code></td>
+<td>All</td>
+<td>Provider: auto, serper, tavily, querit, exa, perplexity, you, searxng</td>
+</tr>
+<tr>
+<td><code>-n, --max-results</code></td>
+<td>All</td>
+<td>Max results (default: 5)</td>
+</tr>
+<tr>
+<td><code>--auto</code></td>
+<td>All</td>
+<td>Force auto-routing</td>
+</tr>
+<tr>
+<td><code>--explain-routing</code></td>
+<td>All</td>
+<td>Debug auto-routing</td>
+</tr>
+<tr>
+<td><code>--images</code></td>
+<td>Serper, Tavily</td>
+<td>Include images</td>
+</tr>
+<tr>
+<td><code>--country</code></td>
+<td>Serper, You</td>
+<td>Country code (default: us)</td>
+</tr>
+<tr>
+<td><code>--language</code></td>
+<td>Serper, SearXNG</td>
+<td>Language code (default: en)</td>
+</tr>
+<tr>
+<td><code>--type</code></td>
+<td>Serper</td>
+<td>search/news/images/videos/places/shopping</td>
+</tr>
+<tr>
+<td><code>--time-range</code></td>
+<td>Serper, SearXNG</td>
+<td>hour/day/week/month/year</td>
+</tr>
+<tr>
+<td><code>--depth</code></td>
+<td>Tavily</td>
+<td>basic/advanced</td>
+</tr>
+<tr>
+<td><code>--topic</code></td>
+<td>Tavily</td>
+<td>general/news</td>
+</tr>
+<tr>
+<td><code>--raw-content</code></td>
+<td>Tavily</td>
+<td>Include full page content</td>
+</tr>
+<tr>
+<td><code>--querit-base-url</code></td>
+<td>Querit</td>
+<td>Override Querit API base URL</td>
+</tr>
+<tr>
+<td><code>--querit-base-path</code></td>
+<td>Querit</td>
+<td>Override Querit API path</td>
+</tr>
+<tr>
+<td><code>--exa-type</code></td>
+<td>Exa</td>
+<td>neural/keyword</td>
+</tr>
+<tr>
+<td><code>--category</code></td>
+<td>Exa</td>
+<td>company/research paper/news/pdf/github/tweet</td>
+</tr>
+<tr>
+<td><code>--start-date</code></td>
+<td>Exa</td>
+<td>Start date (YYYY-MM-DD)</td>
+</tr>
+<tr>
+<td><code>--end-date</code></td>
+<td>Exa</td>
+<td>End date (YYYY-MM-DD)</td>
+</tr>
+<tr>
+<td><code>--similar-url</code></td>
+<td>Exa</td>
+<td>Find similar pages</td>
+</tr>
+<tr>
+<td><code>--searxng-url</code></td>
+<td>SearXNG</td>
+<td>Instance URL</td>
+</tr>
+<tr>
+<td><code>--searxng-safesearch</code></td>
+<td>SearXNG</td>
+<td>0=off, 1=moderate, 2=strict</td>
+</tr>
+<tr>
+<td><code>--engines</code></td>
+<td>SearXNG</td>
+<td>Specific engines (google,bing,duckduckgo)</td>
+</tr>
+<tr>
+<td><code>--categories</code></td>
+<td>SearXNG</td>
+<td>Search categories (general,images,news)</td>
+</tr>
+<tr>
+<td><code>--include-domains</code></td>
+<td>Tavily, Exa</td>
+<td>Only these domains</td>
+</tr>
+<tr>
+<td><code>--exclude-domains</code></td>
+<td>Tavily, Exa</td>
+<td>Exclude these domains</td>
+</tr>
+<tr>
+<td><code>--compact</code></td>
+<td>All</td>
+<td>Compact JSON output</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>License</h2>
+<p>MIT</p>
+<hr>
+<h2>Links</h2>
+<ul>
+<li><a href="https://serper.dev">Serper</a> — Google Search API</li>
+<li><a href="https://tavily.com">Tavily</a> — AI Research Search</li>
+<li><a href="https://exa.ai">Exa</a> — Neural Search</li>
+<li><a href="https://clawhub.ai">ClawHub</a> — OpenClaw Skills</li>
+</ul>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>智能表格（SmartSheet）工具完整参考文档 - 以观其妙书院</title>
+<meta name="description" content="智能表格（SmartSheet）工具完整参考文档 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="智能表格（SmartSheet）工具完整参考文档">
+<meta property="og:description" content="智能表格（SmartSheet）工具完整参考文档 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "智能表格（SmartSheet）工具完整参考文档",
+    "description": "智能表格（SmartSheet）工具完整参考文档 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>智能表格（SmartSheet）工具完整参考文档</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>智能表格（SmartSheet）工具完整参考文档</h1>
+<p>腾讯文档智能表格（SmartSheet）提供了一套完整的表格操作 API，支持对工作表、视图、字段、记录进行增删改查操作。</p>
+<hr>
+<h2>目录</h2>
+<ul>
+<li><a href="#概念说明">概念说明</a></li>
+<li><a href="#工作表subsheet操作">工作表（SubSheet）操作</a><ul>
+<li><a href="#smartsheetlist_tables">smartsheet.list_tables - 列出工作表</a></li>
+<li><a href="#smartsheetadd_table">smartsheet.add_table - 新增工作表</a></li>
+<li><a href="#smartsheetdelete_table">smartsheet.delete_table - 删除工作表</a></li>
+</ul></li>
+<li><a href="#视图view操作">视图（View）操作</a><ul>
+<li><a href="#smartsheetlist_views">smartsheet.list_views - 列出视图</a></li>
+<li><a href="#smartsheetadd_view">smartsheet.add_view - 新增视图</a></li>
+<li><a href="#smartsheetdelete_view">smartsheet.delete_view - 删除视图</a></li>
+</ul></li>
+<li><a href="#字段field操作">字段（Field）操作</a><ul>
+<li><a href="#smartsheetlist_fields">smartsheet.list_fields - 列出字段</a></li>
+<li><a href="#smartsheetadd_fields">smartsheet.add_fields - 新增字段</a></li>
+<li><a href="#smartsheetupdate_fields">smartsheet.update_fields - 更新字段</a></li>
+<li><a href="#smartsheetdelete_fields">smartsheet.delete_fields - 删除字段</a></li>
+</ul></li>
+<li><a href="#记录record操作">记录（Record）操作</a><ul>
+<li><a href="#smartsheetlist_records">smartsheet.list_records - 列出记录</a></li>
+<li><a href="#smartsheetadd_records">smartsheet.add_records - 新增记录</a></li>
+<li><a href="#smartsheetupdate_records">smartsheet.update_records - 更新记录</a></li>
+<li><a href="#smartsheetdelete_records">smartsheet.delete_records - 删除记录</a></li>
+</ul></li>
+<li><a href="#枚举值参考">枚举值参考</a></li>
+<li><a href="#字段值格式参考">字段值格式参考</a></li>
+<li><a href="#典型工作流示例">典型工作流示例</a></li>
+</ul>
+<hr>
+<h2>概念说明</h2>
+<table>
+<thead><tr>
+<th>概念</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_id</code></td>
+<td>智能表格文档的唯一标识符，每个文档有唯一的 file_id</td>
+</tr>
+<tr>
+<td><code>sheet_id</code></td>
+<td>工作表 ID，一个智能表格文档可包含多个工作表</td>
+</tr>
+<tr>
+<td><code>view_id</code></td>
+<td>视图 ID，每个工作表可有多个视图（网格视图、看板视图等）</td>
+</tr>
+<tr>
+<td><code>field_id</code></td>
+<td>字段 ID，对应表格的列</td>
+</tr>
+<tr>
+<td><code>record_id</code></td>
+<td>记录 ID，对应表格的行</td>
+</tr>
+</tbody></table>
+<p><strong>层级关系</strong>：<code>file_id（文档）</code> → <code>sheet_id（工作表）</code> → <code>view_id（视图）</code> / <code>field_id（字段）</code> / <code>record_id（记录）</code></p>
+<hr>
+<h2>工作表（SubSheet）操作</h2>
+<h3>smartsheet.list_tables</h3>
+<p><strong>功能</strong>：列出文档下的所有工作表，返回工作表基本信息列表。</p>
+<p><strong>使用场景</strong>：</p>
+<ul>
+<li>查看一个智能表格文档中有哪些工作表</li>
+<li>获取 sheet_id 以便后续操作字段、记录、视图</li>
+</ul>
+<p><strong>请求参数</strong>：</p>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>智能表格文档的唯一标识符</td>
+</tr>
+</tbody></table>
+<p><strong>返回字段</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>sheets</code></td>
+<td>array</td>
+<td>工作表列表</td>
+</tr>
+<tr>
+<td><code>sheets[].sheet_id</code></td>
+<td>string</td>
+<td>工作表唯一标识符</td>
+</tr>
+<tr>
+<td><code>sheets[].title</code></td>
+<td>string</td>
+<td>工作表名称</td>
+</tr>
+<tr>
+<td><code>sheets[].is_visible</code></td>
+<td>bool</td>
+<td>工作表可见性</td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td>string</td>
+<td>错误信息，操作失败时返回</td>
+</tr>
+<tr>
+<td><code>trace_id</code></td>
+<td>string</td>
+<td>调用链追踪 ID</td>
+</tr>
+</tbody></table>
+<p><strong>调用示例</strong>：</p>
+<pre><code>{
+  "file_id": "your_file_id"
+}</code></pre>
+<p><strong>返回示例</strong>：</p>
+<pre><code>{
+  "sheets": [
+    {
+      "sheet_id": "sheet_abc123",
+      "title": "任务列表",
+      "is_visible": true
+    },
+    {
+      "sheet_id": "sheet_def456",
+      "title": "已归档",
+      "is_visible": false
+    }
+  ],
+  "error": "",
+  "trace_id": "trace_xyz"
+}</code></pre>
+<hr>
+<h3>smartsheet.add_table</h3>
+<p><strong>功能</strong>：在文档中新增工作表，支持设置工作表名称和初始配置。</p>
+<p><strong>使用场景</strong>：</p>
+<ul>
+<li>在已有智能表格文档中添加新的工作表（如新增"2024年Q2"工作表）</li>
+<li>按业务模块拆分数据到不同工作表</li>
+</ul>
+<p><strong>请求参数</strong>：</p>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>智能表格文档的唯一标识符</td>
+</tr>
+<tr>
+<td><code>properties</code></td>
+<td>object</td>
+<td>✅</td>
+<td>工作表属性配置</td>
+</tr>
+<tr>
+<td><code>properties.sheet_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>工作表名称（注意：此字段实际含义为工作表名称）</td>
+</tr>
+<tr>
+<td><code>properties.title</code></td>
+<td>string</td>
+<td></td>
+<td>工作表标题</td>
+</tr>
+<tr>
+<td><code>properties.index</code></td>
+<td>uint32</td>
+<td></td>
+<td>工作表下标（位置）</td>
+</tr>
+</tbody></table>
+<p><strong>返回字段</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>properties</code></td>
+<td>object</td>
+<td>新创建工作表的属性信息</td>
+</tr>
+<tr>
+<td><code>properties.sheet_id</code></td>
+<td>string</td>
+<td>工作表名称</td>
+</tr>
+<tr>
+<td><code>properties.title</code></td>
+<td>string</td>
+<td>工作表标题</td>
+</tr>
+<tr>
+<td><code>properties.index</code></td>
+<td>uint32</td>
+<td>工作表下标</td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td>string</td>
+<td>错误信息</td>
+</tr>
+<tr>
+<td><code>trace_id</code></td>
+<td>string</td>
+<td>调用链追踪 ID</td>
+</tr>
+</tbody></table>
+<p><strong>调用示例</strong>：</p>
+<pre><code>{
+  "file_id": "your_file_id",
+  "properties": {
+    "sheet_id": "新工作表",
+    "title": "2024年Q2数据",
+    "index": 1
+  }
+}</code></pre>
+<hr>
+<h3>smartsheet.delete_table</h3>
+<p><strong>功能</strong>：删除指定的工作表。</p>
+<p><strong>使用场景</strong>：</p>
+<ul>
+<li>删除不再需要的工作表</li>
+<li>清理测试数据工作表</li>
+</ul>
+<p><strong>请求参数</strong>：</p>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>智能表格文档的唯一标识符</td>
+</tr>
+<tr>
+<td><code>sheet_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>要删除的工作表 ID</td>
+</tr>
+</tbody></table>
+<p><strong>返回字段</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>error</code></td>
+<td>string</td>
+<td>错误信息，操作失败时返回</td>
+</tr>
+<tr>
+<td><code>trace_id</code></td>
+<td>string</td>
+<td>调用链追踪 ID</td>
+</tr>
+</tbody></table>
+<p><strong>调用示例</strong>：</p>
+<pre><code>{
+  "file_id": "your_file_id",
+  "sheet_id": "sheet_abc123"
+}</code></pre>
+<hr>
+<h2>视图（View）操作</h2>
+<h3>smartsheet.list_views</h3>
+<p><strong>功能</strong>：列出工作表下的所有视图，返回视图基本信息和配置。</p>
+<p><strong>使用场景</strong>：</p>
+<ul>
+<li>查看工作表有哪些视图（网格视图、看板视图）</li>
+<li>获取 view_id 以便按视图筛选记录或字段</li>
+</ul>
+<p><strong>请求参数</strong>：</p>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>智能表格文档的唯一标识符</td>
+</tr>
+<tr>
+<td><code>sheet_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>工作表 ID</td>
+</tr>
+<tr>
+<td><code>view_ids</code></td>
+<td>[]string</td>
+<td></td>
+<td>需要查询的视图 ID 数组，不填则返回全部</td>
+</tr>
+<tr>
+<td><code>offset</code></td>
+<td>uint32</td>
+<td></td>
+<td>分页查询偏移量，默认 0</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>uint32</td>
+<td></td>
+<td>分页大小，最大 100</td>
+</tr>
+</tbody></table>
+<p><strong>返回字段</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>views</code></td>
+<td>array</td>
+<td>视图列表</td>
+</tr>
+<tr>
+<td><code>views[].view_id</code></td>
+<td>string</td>
+<td>视图唯一标识符</td>
+</tr>
+<tr>
+<td><code>views[].view_name</code></td>
+<td>string</td>
+<td>视图名称</td>
+</tr>
+<tr>
+<td><code>views[].view_type</code></td>
+<td>uint32</td>
+<td>视图类型，枚举值见下方</td>
+</tr>
+<tr>
+<td><code>total</code></td>
+<td>uint32</td>
+<td>符合条件的视图总数</td>
+</tr>
+<tr>
+<td><code>hasMore</code></td>
+<td>bool</td>
+<td>是否还有更多项</td>
+</tr>
+<tr>
+<td><code>next</code></td>
+<td>uint32</td>
+<td>下一页偏移量</td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td>string</td>
+<td>错误信息</td>
+</tr>
+<tr>
+<td><code>trace_id</code></td>
+<td>string</td>
+<td>调用链追踪 ID</td>
+</tr>
+</tbody></table>
+<p><strong>视图类型枚举值</strong>：</p>
+<table>
+<thead><tr>
+<th>值</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>1</code></td>
+<td>网格视图（grid）</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>看板视图（kanban）</td>
+</tr>
+</tbody></table>
+<p><strong>调用示例</strong>：</p>
+<pre><code>{
+  "file_id": "your_file_id",
+  "sheet_id": "sheet_abc123",
+  "offset": 0,
+  "limit": 20
+}</code></pre>
+<hr>
+<h3>smartsheet.add_view</h3>
+<p><strong>功能</strong>：在工作表中新增视图，支持自定义视图名称和类型。</p>
+<p><strong>使用场景</strong>：</p>
+<ul>
+<li>为工作表创建看板视图，按状态分组展示任务</li>
+<li>创建多个网格视图，分别展示不同筛选条件的数据</li>
+</ul>
+<p><strong>请求参数</strong>：</p>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>智能表格文档的唯一标识符</td>
+</tr>
+<tr>
+<td><code>sheet_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>工作表 ID</td>
+</tr>
+<tr>
+<td><code>view_title</code></td>
+<td>string</td>
+<td>✅</td>
+<td>视图标题</td>
+</tr>
+<tr>
+<td><code>view_type</code></td>
+<td>uint32</td>
+<td></td>
+<td>视图类型：1-网格视图，2-看板视图</td>
+</tr>
+</tbody></table>
+<p><strong>返回字段</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>view_id</code></td>
+<td>string</td>
+<td>新创建的视图 ID</td>
+</tr>
+<tr>
+<td><code>view_title</code></td>
+<td>string</td>
+<td>视图标题</td>
+</tr>
+<tr>
+<td><code>view_type</code></td>
+<td>uint32</td>
+<td>视图类型</td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td>string</td>
+<td>错误信息</td>
+</tr>
+<tr>
+<td><code>trace_id</code></td>
+<td>string</td>
+<td>调用链追踪 ID</td>
+</tr>
+</tbody></table>
+<p><strong>调用示例</strong>：</p>
+<pre><code>{
+  "file_id": "your_file_id",
+  "sheet_id": "sheet_abc123",
+  "view_title": "按状态分组",
+  "view_type": 2
+}</code></pre>
+<hr>
+<h3>smartsheet.delete_view</h3>
+<p><strong>功能</strong>：删除指定的视图，支持批量删除多个视图。</p>
+<p><strong>使用场景</strong>：</p>
+<ul>
+<li>删除不再使用的视图</li>
+<li>批量清理多余视图</li>
+</ul>
+<p><strong>请求参数</strong>：</p>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>智能表格文档的唯一标识符</td>
+</tr>
+<tr>
+<td><code>sheet_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>工作表 ID</td>
+</tr>
+<tr>
+<td><code>view_ids</code></td>
+<td>[]string</td>
+<td>✅</td>
+<td>要删除的视图 ID 列表</td>
+</tr>
+</tbody></table>
+<p><strong>返回字段</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>error</code></td>
+<td>string</td>
+<td>错误信息</td>
+</tr>
+<tr>
+<td><code>trace_id</code></td>
+<td>string</td>
+<td>调用链追踪 ID</td>
+</tr>
+</tbody></table>
+<p><strong>调用示例</strong>：</p>
+<pre><code>{
+  "file_id": "your_file_id",
+  "sheet_id": "sheet_abc123",
+  "view_ids": ["view_id1", "view_id2"]
+}</code></pre>
+<hr>
+<h2>字段（Field）操作</h2>
+<h3>smartsheet.list_fields</h3>
+<p><strong>功能</strong>：列出工作表的所有字段，返回字段基本信息和类型配置。</p>
+<p><strong>使用场景</strong>：</p>
+<ul>
+<li>查看工作表有哪些列（字段）及其类型</li>
+<li>获取 field_id 以便后续更新或删除字段</li>
+<li>在写入记录前，先了解字段结构和类型</li>
+</ul>
+<p><strong>请求参数</strong>：</p>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>智能表格文档的唯一标识符</td>
+</tr>
+<tr>
+<td><code>sheet_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>工作表 ID</td>
+</tr>
+<tr>
+<td><code>view_id</code></td>
+<td>string</td>
+<td></td>
+<td>视图 ID，按视图筛选字段</td>
+</tr>
+<tr>
+<td><code>field_ids</code></td>
+<td>[]string</td>
+<td></td>
+<td>指定字段 ID 数组</td>
+</tr>
+<tr>
+<td><code>field_titles</code></td>
+<td>[]string</td>
+<td></td>
+<td>指定字段标题数组</td>
+</tr>
+<tr>
+<td><code>offset</code></td>
+<td>uint32</td>
+<td></td>
+<td>偏移量，初始值为 0</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>uint32</td>
+<td></td>
+<td>分页大小，最大 100；不填或为 0 时，总数 &gt;100 返回 100 条，否则返回全部</td>
+</tr>
+</tbody></table>
+<p><strong>返回字段</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>total</code></td>
+<td>uint32</td>
+<td>符合条件的字段总数</td>
+</tr>
+<tr>
+<td><code>has_more</code></td>
+<td>bool</td>
+<td>是否还有更多项</td>
+</tr>
+<tr>
+<td><code>next</code></td>
+<td>uint32</td>
+<td>下一页偏移量</td>
+</tr>
+<tr>
+<td><code>fields</code></td>
+<td>array</td>
+<td>字段列表，详见 FieldInfo 结构</td>
+</tr>
+</tbody></table>
+<p><strong>FieldInfo 结构</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>field_id</code></td>
+<td>string</td>
+<td>字段唯一 ID</td>
+</tr>
+<tr>
+<td><code>field_title</code></td>
+<td>string</td>
+<td>字段标题（列名）</td>
+</tr>
+<tr>
+<td><code>field_type</code></td>
+<td>uint32</td>
+<td>字段类型，枚举值见下方</td>
+</tr>
+<tr>
+<td><code>property_*</code></td>
+<td>object</td>
+<td>字段属性，根据 field_type 不同而不同</td>
+</tr>
+</tbody></table>
+<p><strong>调用示例</strong>：</p>
+<pre><code>{
+  "file_id": "your_file_id",
+  "sheet_id": "sheet_abc123"
+}</code></pre>
+<hr>
+<h3>smartsheet.add_fields</h3>
+<p><strong>功能</strong>：批量新增字段（列），支持同时添加多个不同类型的字段。</p>
+<p><strong>使用场景</strong>：</p>
+<ul>
+<li>为工作表添加新列，如"优先级"（单选）、"截止日期"（日期）、"负责人"（用户）</li>
+<li>初始化工作表结构</li>
+</ul>
+<p><strong>请求参数</strong>：</p>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>智能表格文档的唯一标识符</td>
+</tr>
+<tr>
+<td><code>sheet_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>工作表 ID</td>
+</tr>
+<tr>
+<td><code>fields</code></td>
+<td>[]FieldInfo</td>
+<td>✅</td>
+<td>要添加的字段列表</td>
+</tr>
+</tbody></table>
+<p><strong>FieldInfo 参数说明</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>field_title</code></td>
+<td>string</td>
+<td>✅</td>
+<td>字段标题（列名）</td>
+</tr>
+<tr>
+<td><code>field_type</code></td>
+<td>uint32</td>
+<td>✅</td>
+<td>字段类型，枚举值见下方</td>
+</tr>
+<tr>
+<td><code>property_text</code></td>
+<td>object</td>
+<td></td>
+<td>文本类型属性（无需额外配置）</td>
+</tr>
+<tr>
+<td><code>property_number</code></td>
+<td>object</td>
+<td></td>
+<td>数字类型属性</td>
+</tr>
+<tr>
+<td><code>property_checkbox</code></td>
+<td>object</td>
+<td></td>
+<td>复选框类型属性</td>
+</tr>
+<tr>
+<td><code>property_date_time</code></td>
+<td>object</td>
+<td></td>
+<td>日期时间类型属性</td>
+</tr>
+<tr>
+<td><code>property_url</code></td>
+<td>object</td>
+<td></td>
+<td>超链接类型属性</td>
+</tr>
+<tr>
+<td><code>property_select</code></td>
+<td>object</td>
+<td></td>
+<td>多选类型属性</td>
+</tr>
+<tr>
+<td><code>property_single_select</code></td>
+<td>object</td>
+<td></td>
+<td>单选类型属性</td>
+</tr>
+<tr>
+<td><code>property_progress</code></td>
+<td>object</td>
+<td></td>
+<td>进度类型属性</td>
+</tr>
+</tbody></table>
+<p><strong>返回字段</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>fields</code></td>
+<td>array</td>
+<td>添加成功的字段列表（含 field_id）</td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td>string</td>
+<td>错误信息</td>
+</tr>
+<tr>
+<td><code>trace_id</code></td>
+<td>string</td>
+<td>调用链追踪 ID</td>
+</tr>
+</tbody></table>
+<p><strong>调用示例（添加多种类型字段）</strong>：</p>
+<pre><code>{
+  "file_id": "your_file_id",
+  "sheet_id": "sheet_abc123",
+  "fields": [
+      {
+        "field_title": "任务名称",
+        "field_type": 1,
+        "property_text": {}
+      },
+      {
+        "field_title": "优先级",
+        "field_type": 17,
+        "property_single_select": {
+          "options": [
+            { "text": "高", "style": 1 },
+            { "text": "中", "style": 3 },
+            { "text": "低", "style": 4 }
+          ]
+        }
+      },
+      {
+        "field_title": "截止日期",
+        "field_type": 4,
+        "property_date_time": {
+          "format": "yyyy-mm-dd",
+          "auto_fill": false
+        }
+      },
+      {
+        "field_title": "完成进度",
+        "field_type": 14,
+        "property_progress": {
+          "decimal_places": 0
+        }
+      },
+      {
+        "field_title": "是否完成",
+        "field_type": 3,
+        "property_checkbox": {
+          "checked": false
+        }
+      }
+    ]
+}</code></pre>
+<hr>
+<h3>smartsheet.update_fields</h3>
+<p><strong>功能</strong>：批量更新字段属性，支持修改字段名称和配置信息。</p>
+<p><strong>使用场景</strong>：</p>
+<ul>
+<li>修改字段标题（列名）</li>
+<li>更新单选/多选字段的选项列表</li>
+<li>修改数字字段的精度配置</li>
+</ul>
+<blockquote><p>⚠️ <strong>注意</strong>：<code>field_type</code>（字段类型）不允许被更新，但更新时必须传入原字段类型值。</p></blockquote>
+<p><strong>请求参数</strong>：</p>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>智能表格文档的唯一标识符</td>
+</tr>
+<tr>
+<td><code>sheet_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>工作表 ID</td>
+</tr>
+<tr>
+<td><code>fields</code></td>
+<td>[]FieldInfo</td>
+<td>✅</td>
+<td>要更新的字段列表，必须包含 field_id</td>
+</tr>
+</tbody></table>
+<p><strong>返回字段</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>fields</code></td>
+<td>array</td>
+<td>更新成功的字段列表</td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td>string</td>
+<td>错误信息</td>
+</tr>
+<tr>
+<td><code>trace_id</code></td>
+<td>string</td>
+<td>调用链追踪 ID</td>
+</tr>
+</tbody></table>
+<p><strong>调用示例（修改字段标题和选项）</strong>：</p>
+<pre><code>{
+  "file_id": "your_file_id",
+  "sheet_id": "sheet_abc123",
+  "fields": [
+      {
+        "field_id": "field_id_001",
+        "field_title": "任务状态",
+        "field_type": 17,
+        "property_single_select": {
+          "options": [
+            { "text": "待处理", "style": 7 },
+            { "text": "进行中", "style": 3 },
+            { "text": "已完成", "style": 4 },
+            { "text": "已取消", "style": 1 }
+          ]
+        }
+      }
+    ]
+}</code></pre>
+<hr>
+<h3>smartsheet.delete_fields</h3>
+<p><strong>功能</strong>：批量删除字段（列），支持同时删除多个字段。</p>
+<p><strong>使用场景</strong>：</p>
+<ul>
+<li>删除不再需要的列</li>
+<li>清理冗余字段</li>
+</ul>
+<p><strong>请求参数</strong>：</p>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>智能表格文档的唯一标识符</td>
+</tr>
+<tr>
+<td><code>sheet_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>工作表 ID</td>
+</tr>
+<tr>
+<td><code>field_ids</code></td>
+<td>[]string</td>
+<td>✅</td>
+<td>要删除的字段 ID 数组</td>
+</tr>
+</tbody></table>
+<p><strong>返回字段</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>error</code></td>
+<td>string</td>
+<td>错误信息</td>
+</tr>
+<tr>
+<td><code>trace_id</code></td>
+<td>string</td>
+<td>调用链追踪 ID</td>
+</tr>
+</tbody></table>
+<p><strong>调用示例</strong>：</p>
+<pre><code>{
+  "file_id": "your_file_id",
+  "sheet_id": "sheet_abc123",
+  "field_ids": ["field_id_001", "field_id_002"]
+}</code></pre>
+<hr>
+<h2>记录（Record）操作</h2>
+<h3>smartsheet.list_records</h3>
+<p><strong>功能</strong>：分页列出工作表记录（行），支持排序和按字段筛选。</p>
+<p><strong>使用场景</strong>：</p>
+<ul>
+<li>读取工作表中的数据</li>
+<li>按特定字段排序查看数据</li>
+<li>分页获取大量数据</li>
+</ul>
+<p><strong>请求参数</strong>：</p>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>智能表格文档的唯一标识符</td>
+</tr>
+<tr>
+<td><code>sheet_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>工作表 ID</td>
+</tr>
+<tr>
+<td><code>view_id</code></td>
+<td>string</td>
+<td></td>
+<td>视图 ID，按视图筛选记录</td>
+</tr>
+<tr>
+<td><code>record_ids</code></td>
+<td>[]string</td>
+<td></td>
+<td>指定记录 ID 数组，精确查询</td>
+</tr>
+<tr>
+<td><code>field_titles</code></td>
+<td>[]string</td>
+<td></td>
+<td>只返回指定字段标题的值，不填则返回全部字段</td>
+</tr>
+<tr>
+<td><code>sort</code></td>
+<td>[]Sort</td>
+<td></td>
+<td>排序配置</td>
+</tr>
+<tr>
+<td><code>offset</code></td>
+<td>uint32</td>
+<td></td>
+<td>偏移量，初始值为 0</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>uint32</td>
+<td></td>
+<td>分页大小，最大 100；不填或为 0 时，总数 &gt;100 返回 100 条，否则返回全部</td>
+</tr>
+</tbody></table>
+<p><strong>Sort 排序配置</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>field_title</code></td>
+<td>string</td>
+<td>✅</td>
+<td>需要排序的字段标题</td>
+</tr>
+<tr>
+<td><code>desc</code></td>
+<td>bool</td>
+<td></td>
+<td>是否降序，默认 false（升序）</td>
+</tr>
+</tbody></table>
+<p><strong>返回字段</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>total</code></td>
+<td>uint32</td>
+<td>符合条件的记录总数</td>
+</tr>
+<tr>
+<td><code>has_more</code></td>
+<td>bool</td>
+<td>是否还有更多项</td>
+</tr>
+<tr>
+<td><code>next</code></td>
+<td>uint32</td>
+<td>下一页偏移量</td>
+</tr>
+<tr>
+<td><code>records</code></td>
+<td>array</td>
+<td>记录列表，详见 RecordInfo 结构</td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td>string</td>
+<td>错误信息</td>
+</tr>
+<tr>
+<td><code>trace_id</code></td>
+<td>string</td>
+<td>调用链追踪 ID</td>
+</tr>
+</tbody></table>
+<p><strong>RecordInfo 结构</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>record_id</code></td>
+<td>string</td>
+<td>记录唯一 ID</td>
+</tr>
+<tr>
+<td><code>field_values</code></td>
+<td>map</td>
+<td>字段值映射，key 为字段标题，value 为字段值</td>
+</tr>
+</tbody></table>
+<p><strong>调用示例</strong>：</p>
+<pre><code>{
+  "file_id": "your_file_id",
+  "sheet_id": "sheet_abc123",
+  "field_titles": ["任务名称", "优先级", "截止日期"],
+  "sort": [
+    { "field_title": "截止日期", "desc": false }
+  ],
+  "offset": 0,
+  "limit": 50
+}</code></pre>
+<hr>
+<h3>smartsheet.add_records</h3>
+<p><strong>功能</strong>：批量添加记录（行），支持同时添加多条记录数据。</p>
+<p><strong>使用场景</strong>：</p>
+<ul>
+<li>批量导入数据到工作表</li>
+<li>添加新任务、新条目</li>
+<li>从其他数据源同步数据</li>
+</ul>
+<p><strong>请求参数</strong>：</p>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>智能表格文档的唯一标识符</td>
+</tr>
+<tr>
+<td><code>sheet_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>工作表 ID</td>
+</tr>
+<tr>
+<td><code>records</code></td>
+<td>[]AddRecord</td>
+<td>✅</td>
+<td>要添加的记录列表</td>
+</tr>
+</tbody></table>
+<p><strong>AddRecord 结构</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>field_values</code></td>
+<td>map</td>
+<td>✅</td>
+<td>字段值映射，key 为字段标题，value 为字段值（格式见下方）</td>
+</tr>
+</tbody></table>
+<p><strong>返回字段</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>records</code></td>
+<td>array</td>
+<td>添加成功的记录列表（含 record_id）</td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td>string</td>
+<td>错误信息</td>
+</tr>
+<tr>
+<td><code>trace_id</code></td>
+<td>string</td>
+<td>调用链追踪 ID</td>
+</tr>
+</tbody></table>
+<p><strong>调用示例</strong>：</p>
+<pre><code>{
+  "file_id": "your_file_id",
+  "sheet_id": "sheet_abc123",
+  "records": [
+      {
+        "field_values": {
+          "任务名称": [{"text": "完成需求文档", "type": "text"}],
+          "优先级": [{"text": "高"}],
+          "截止日期": "1720000000000",
+          "完成进度": 30,
+          "是否完成": false
+        }
+      },
+      {
+        "field_values": {
+          "任务名称": [{"text": "代码评审", "type": "text"}],
+          "优先级": [{"text": "中"}],
+          "截止日期": "1720086400000",
+          "完成进度": 0,
+          "是否完成": false
+        }
+      }
+    ]
+}</code></pre>
+<hr>
+<h3>smartsheet.update_records</h3>
+<p><strong>功能</strong>：批量更新记录，支持修改多条记录的字段值。</p>
+<p><strong>使用场景</strong>：</p>
+<ul>
+<li>更新任务状态、进度</li>
+<li>修改记录中的某些字段值</li>
+<li>批量修改多条数据</li>
+</ul>
+<p><strong>请求参数</strong>：</p>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>智能表格文档的唯一标识符</td>
+</tr>
+<tr>
+<td><code>sheet_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>工作表 ID</td>
+</tr>
+<tr>
+<td><code>records</code></td>
+<td>[]RecordInfo</td>
+<td>✅</td>
+<td>要更新的记录列表，必须包含 record_id</td>
+</tr>
+</tbody></table>
+<p><strong>RecordInfo 参数说明</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>record_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>记录 ID，标识要更新哪条记录</td>
+</tr>
+<tr>
+<td><code>field_values</code></td>
+<td>map</td>
+<td>✅</td>
+<td>要更新的字段值映射</td>
+</tr>
+</tbody></table>
+<p><strong>返回字段</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>error</code></td>
+<td>string</td>
+<td>错误信息</td>
+</tr>
+<tr>
+<td><code>trace_id</code></td>
+<td>string</td>
+<td>调用链追踪 ID</td>
+</tr>
+</tbody></table>
+<p><strong>调用示例</strong>：</p>
+<pre><code>{
+  "file_id": "your_file_id",
+  "sheet_id": "sheet_abc123",
+  "records": [
+      {
+        "record_id": "record_id_001",
+        "field_values": {
+          "完成进度": 100,
+          "是否完成": true,
+          "优先级": [{"text": "高"}]
+        }
+      }
+    ]
+}</code></pre>
+<hr>
+<h3>smartsheet.delete_records</h3>
+<p><strong>功能</strong>：批量删除记录（行），支持同时删除多条指定的记录。</p>
+<p><strong>使用场景</strong>：</p>
+<ul>
+<li>删除已完成或过期的任务记录</li>
+<li>清理测试数据</li>
+<li>批量删除多条记录</li>
+</ul>
+<p><strong>请求参数</strong>：</p>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>file_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>智能表格文档的唯一标识符</td>
+</tr>
+<tr>
+<td><code>sheet_id</code></td>
+<td>string</td>
+<td>✅</td>
+<td>工作表 ID</td>
+</tr>
+<tr>
+<td><code>record_ids</code></td>
+<td>[]string</td>
+<td>✅</td>
+<td>要删除的记录 ID 列表</td>
+</tr>
+</tbody></table>
+<p><strong>返回字段</strong>：</p>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>error</code></td>
+<td>string</td>
+<td>错误信息</td>
+</tr>
+<tr>
+<td><code>trace_id</code></td>
+<td>string</td>
+<td>调用链追踪 ID</td>
+</tr>
+</tbody></table>
+<p><strong>调用示例</strong>：</p>
+<pre><code>{
+  "file_id": "your_file_id",
+  "sheet_id": "sheet_abc123",
+  "record_ids": ["record_id_001", "record_id_002", "record_id_003"]
+}</code></pre>
+<hr>
+<h2>枚举值参考</h2>
+<h3>字段类型（field_type）</h3>
+<table>
+<thead><tr>
+<th>枚举值</th>
+<th>类型名称</th>
+<th>对应 property 字段</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>1</code></td>
+<td>文本</td>
+<td><code>property_text</code></td>
+<td>普通文本，无需额外配置</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>数字</td>
+<td><code>property_number</code></td>
+<td>整数或浮点数</td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td>复选框</td>
+<td><code>property_checkbox</code></td>
+<td>布尔值 true/false</td>
+</tr>
+<tr>
+<td><code>4</code></td>
+<td>日期</td>
+<td><code>property_date_time</code></td>
+<td>毫秒时间戳字符串</td>
+</tr>
+<tr>
+<td><code>5</code></td>
+<td>图片</td>
+<td><code>property_image</code></td>
+<td>图片 ID 数组</td>
+</tr>
+<tr>
+<td><code>8</code></td>
+<td>超链接</td>
+<td><code>property_url</code></td>
+<td>URL 数组</td>
+</tr>
+<tr>
+<td><code>9</code></td>
+<td>多选</td>
+<td><code>property_select</code></td>
+<td>选项数组（可多选）</td>
+</tr>
+<tr>
+<td><code>10</code></td>
+<td>创建人</td>
+<td><code>property_user</code></td>
+<td>系统自动填充，无需配置</td>
+</tr>
+<tr>
+<td><code>11</code></td>
+<td>最后编辑人</td>
+<td><code>property_modified_user</code></td>
+<td>系统自动填充，无需配置</td>
+</tr>
+<tr>
+<td><code>12</code></td>
+<td>创建时间</td>
+<td><code>property_created_time</code></td>
+<td>系统自动填充，无需配置</td>
+</tr>
+<tr>
+<td><code>13</code></td>
+<td>最后编辑时间</td>
+<td><code>property_modified_time</code></td>
+<td>系统自动填充，无需配置</td>
+</tr>
+<tr>
+<td><code>14</code></td>
+<td>进度</td>
+<td><code>property_progress</code></td>
+<td>整数或浮点数（百分比）</td>
+</tr>
+<tr>
+<td><code>15</code></td>
+<td>电话</td>
+<td><code>property_phone_number</code></td>
+<td>字符串，无需额外配置</td>
+</tr>
+<tr>
+<td><code>16</code></td>
+<td>邮件</td>
+<td><code>property_email</code></td>
+<td>字符串，无需额外配置</td>
+</tr>
+<tr>
+<td><code>17</code></td>
+<td>单选</td>
+<td><code>property_single_select</code></td>
+<td>选项数组（只能单选）</td>
+</tr>
+<tr>
+<td><code>18</code></td>
+<td>关联</td>
+<td>-</td>
+<td>关联其他记录，值为 record_id 字符串数组</td>
+</tr>
+<tr>
+<td><code>25</code></td>
+<td>自动编号</td>
+<td>-</td>
+<td>系统自动生成编号，无需手动配置</td>
+</tr>
+<tr>
+<td><code>26</code></td>
+<td>货币</td>
+<td>-</td>
+<td>浮点数，表示货币金额</td>
+</tr>
+<tr>
+<td><code>28</code></td>
+<td>百分比</td>
+<td>-</td>
+<td>浮点数，如 0.75 表示 75%</td>
+</tr>
+</tbody></table>
+<h3>视图类型（view_type）</h3>
+<table>
+<thead><tr>
+<th>枚举值</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>1</code></td>
+<td>网格视图（grid）- 传统表格形式</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>看板视图（kanban）- 按列分组展示</td>
+</tr>
+</tbody></table>
+<h3>选项颜色（style）</h3>
+<table>
+<thead><tr>
+<th>枚举值</th>
+<th>颜色</th>
+</tr></thead><tbody>
+<tr>
+<td><code>1</code></td>
+<td>红色</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>橘黄色</td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td>蓝色</td>
+</tr>
+<tr>
+<td><code>4</code></td>
+<td>绿色</td>
+</tr>
+<tr>
+<td><code>5</code></td>
+<td>紫色</td>
+</tr>
+<tr>
+<td><code>6</code></td>
+<td>粉色</td>
+</tr>
+<tr>
+<td><code>7</code></td>
+<td>灰色</td>
+</tr>
+<tr>
+<td><code>8</code></td>
+<td>白色</td>
+</tr>
+</tbody></table>
+<h3>超链接展示样式（UrlFieldProperty.type）</h3>
+<table>
+<thead><tr>
+<th>枚举值</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>0</code></td>
+<td>未知</td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td>文字</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>图标文字</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>字段值格式参考</h2>
+<p>在 <code>add_records</code> 和 <code>update_records</code> 中，<code>field_values</code> 的 value 格式因字段类型而异：</p>
+<table>
+<thead><tr>
+<th>字段类型</th>
+<th>值格式</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td>文本（1）</td>
+<td>JSON Array of TextValue</td>
+<td><code>[{"text": "内容", "type": "text"}]</code></td>
+</tr>
+<tr>
+<td>数字（2）</td>
+<td>number</td>
+<td><code>42</code> 或 <code>3.14</code></td>
+</tr>
+<tr>
+<td>复选框（3）</td>
+<td>bool</td>
+<td><code>true</code> 或 <code>false</code></td>
+</tr>
+<tr>
+<td>日期（4）</td>
+<td>string（毫秒时间戳）</td>
+<td><code>"1720000000000"</code></td>
+</tr>
+<tr>
+<td>图片（5）</td>
+<td>JSON Array of ImageIDValue</td>
+<td><code>[{"image_id": "图片id"}]</code></td>
+</tr>
+<tr>
+<td>超链接（8）</td>
+<td>JSON Array of UrlValue</td>
+<td><code>[{"text": "链接文字", "type": "url", "link": "https://..."}]</code></td>
+</tr>
+<tr>
+<td>多选（9）</td>
+<td>JSON Array of OptionValue</td>
+<td><code>[{"text": "选项1"}, {"text": "选项2"}]</code></td>
+</tr>
+<tr>
+<td>进度（14）</td>
+<td>number</td>
+<td><code>75</code> 或 <code>75.5</code></td>
+</tr>
+<tr>
+<td>电话（15）</td>
+<td>string</td>
+<td><code>"13800138000"</code></td>
+</tr>
+<tr>
+<td>邮件（16）</td>
+<td>string</td>
+<td><code>"user@example.com"</code></td>
+</tr>
+<tr>
+<td>单选（17）</td>
+<td>JSON Array of OptionValue（单个）</td>
+<td><code>[{"text": "选项文字"}]</code></td>
+</tr>
+<tr>
+<td>关联（18）</td>
+<td>array string</td>
+<td><code>["record_id_1", "record_id_2"]</code></td>
+</tr>
+<tr>
+<td>自动编号（25）</td>
+<td>JSON(AutoNumberValue)</td>
+<td><code>{"seq": "1", "text": "编号内容"}</code></td>
+</tr>
+<tr>
+<td>货币（26）</td>
+<td>double</td>
+<td><code>99.99</code></td>
+</tr>
+<tr>
+<td>百分比（28）</td>
+<td>double</td>
+<td><code>0.75</code>（表示 75%）</td>
+</tr>
+</tbody></table>
+<h3>TextValue 结构</h3>
+<pre><code>{
+  "text": "文本内容",
+  "type": "text"
+}</code></pre>
+<h3>UrlValue 结构</h3>
+<pre><code>{
+  "text": "链接显示文字",
+  "type": "url",
+  "link": "https://example.com"
+}</code></pre>
+<h3>OptionValue 结构</h3>
+<pre><code>{
+  "id": "选项ID（可选）",
+  "text": "选项文字",
+  "style": 3
+}</code></pre>
+<blockquote><p>⚠️ <strong>注意</strong>：写入记录时，单选/多选字段的 <code>text</code> 必须与字段属性中已定义的选项文字完全匹配，否则可能写入失败。</p></blockquote>
+<hr>
+<h2>字段属性（Property）详细说明</h2>
+<h3>NumberFieldProperty（数字字段属性）</h3>
+<pre><code>{
+  "decimal_places": 2,
+  "use_separate": true
+}</code></pre>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>decimal_places</code></td>
+<td>uint32</td>
+<td>小数点位数（精度）</td>
+</tr>
+<tr>
+<td><code>use_separate</code></td>
+<td>bool</td>
+<td>是否使用千位符（如 1,000）</td>
+</tr>
+</tbody></table>
+<h3>CheckboxFieldProperty（复选框字段属性）</h3>
+<pre><code>{
+  "checked": false
+}</code></pre>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>checked</code></td>
+<td>bool</td>
+<td>新增记录时是否默认勾选</td>
+</tr>
+</tbody></table>
+<h3>DateTimeFieldProperty（日期时间字段属性）</h3>
+<pre><code>{
+  "format": "yyyy-mm-dd",
+  "auto_fill": false
+}</code></pre>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>format</code></td>
+<td>string</td>
+<td>日期格式，支持格式见下方</td>
+</tr>
+<tr>
+<td><code>auto_fill</code></td>
+<td>bool</td>
+<td>新建记录时是否自动填充当前时间</td>
+</tr>
+</tbody></table>
+<p><strong>支持的日期格式</strong>：</p>
+<table>
+<thead><tr>
+<th>格式字符串</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><code>yyyy"年"m"月"d"日"</code></td>
+<td>2018 年 4 月 20 日</td>
+</tr>
+<tr>
+<td><code>yyyy-mm-dd</code></td>
+<td>2018-04-20</td>
+</tr>
+<tr>
+<td><code>yyyy/m/d</code></td>
+<td>2018/4/20</td>
+</tr>
+<tr>
+<td><code>m"月"d"日"</code></td>
+<td>4 月 20 日</td>
+</tr>
+<tr>
+<td><code>[$-804]yyyy"年"m"月"d"日" dddd</code></td>
+<td>2018 年 4 月 20 日 星期五</td>
+</tr>
+<tr>
+<td><code>yyyy"年"m"月"d"日" hh:mm</code></td>
+<td>2018 年 4 月 20 日 14:00</td>
+</tr>
+<tr>
+<td><code>yyyy-mm-dd hh:mm</code></td>
+<td>2018-04-20 14:00</td>
+</tr>
+<tr>
+<td><code>m/d/yyyy</code></td>
+<td>4/20/2018</td>
+</tr>
+<tr>
+<td><code>d/m/yyyy</code></td>
+<td>20/4/2018</td>
+</tr>
+</tbody></table>
+<h3>UrlFieldProperty（超链接字段属性）</h3>
+<pre><code>{
+  "type": 1
+}</code></pre>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>type</code></td>
+<td>uint32</td>
+<td>展示样式：0-未知，1-文字，2-图标文字</td>
+</tr>
+</tbody></table>
+<h3>SelectFieldProperty（多选字段属性）</h3>
+<pre><code>{
+  "options": [
+    { "id": "opt_001", "text": "选项A", "style": 3 },
+    { "id": "opt_002", "text": "选项B", "style": 4 }
+  ],
+  "is_multiple": true,
+  "is_quick_add": false
+}</code></pre>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>options</code></td>
+<td>[]Option</td>
+<td>选项列表</td>
+</tr>
+<tr>
+<td><code>is_multiple</code></td>
+<td>bool</td>
+<td>是否多选（系统参数，用户无需设置）</td>
+</tr>
+<tr>
+<td><code>is_quick_add</code></td>
+<td>bool</td>
+<td>是否允许填写时新增选项（系统参数，用户无需设置）</td>
+</tr>
+</tbody></table>
+<h3>SingleSelectFieldProperty（单选字段属性）</h3>
+<p>结构与 <code>SelectFieldProperty</code> 相同，但只允许单选。</p>
+<h3>ProgressFieldProperty（进度字段属性）</h3>
+<pre><code>{
+  "decimal_places": 0
+}</code></pre>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>decimal_places</code></td>
+<td>uint32</td>
+<td>小数位数</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>典型工作流示例</h2>
+<h3>工作流一：从零创建表</h3>
+<pre><code>步骤 1：获取文档的工作表列表
+  → smartsheet.list_tables（获取 sheet_id）
+
+步骤 2：为工作表添加字段
+  → smartsheet.add_fields（添加：任务名称、优先级、负责人、截止日期、状态、进度）
+
+步骤 3：批量添加任务记录
+  → smartsheet.add_records（写入多条任务数据）
+
+步骤 4：删除默认空行和默认列
+  → smartsheet.list_records（获取建表时自动生成的空行 record_id 列表）
+  → smartsheet.delete_records（传入空行 record_ids，批量删除默认空行）
+  → smartsheet.list_fields（获取建表时自动生成的默认列 field_id 列表）
+  → smartsheet.delete_fields（传入默认列 field_ids，批量删除默认列）
+
+步骤 5：（可选）创建看板视图
+  → smartsheet.add_view（view_type=2，按状态分组）</code></pre>
+<h3>工作流二：查询并更新任务状态</h3>
+<pre><code>步骤 1：列出工作表
+  → smartsheet.list_tables（获取 sheet_id）
+
+步骤 2：查询记录
+  → smartsheet.list_records（获取 record_id 和当前字段值）
+
+步骤 3：更新指定记录
+  → smartsheet.update_records（传入 record_id 和新的字段值）</code></pre>
+<h3>工作流三：读取数据并分析</h3>
+<pre><code>步骤 1：列出工作表
+  → smartsheet.list_tables
+
+步骤 2：了解字段结构
+  → smartsheet.list_fields（了解有哪些列及其类型）
+
+步骤 3：分页读取所有记录
+  → smartsheet.list_records（offset=0, limit=100）
+  → 若 has_more=true，继续请求下一页（offset=100）
+
+步骤 4：处理数据
+  → 根据 field_values 中的数据进行统计分析</code></pre>
+<h3>工作流四：清理过期数据</h3>
+<pre><code>步骤 1：列出工作表
+  → smartsheet.list_tables
+
+步骤 2：查询需要删除的记录
+  → smartsheet.list_records（获取目标 record_id 列表）
+
+步骤 3：批量删除记录
+  → smartsheet.delete_records（传入 record_ids 数组）</code></pre>
+<hr>
+<blockquote><p>📌 <strong>提示</strong>：所有操作都需要先获取 <code>file_id</code>（智能表格文档 ID）和 <code>sheet_id</code>（工作表 ID）。
+可通过 <code>manage.search_file</code> 搜索文档获取 <code>file_id</code>，再通过 <code>smartsheet.list_tables</code> 获取 <code>sheet_id</code>。</p></blockquote>
+<h2>注意事项</h2>
+<ul>
+<li><strong>前置条件</strong>：所有 smartsheet.* 工具都需要 <code>file_id</code> 和 <code>sheet_id</code>，操作前先调用 <code>smartsheet.list_tables</code> 获取 sheet_id</li>
+<li><strong>图片字段写入</strong>：向图片类型字段（field_type=5）写入数据时，需先调用 <code>upload_image</code> 工具上传图片获取 <code>image_id</code>，再以 <code>[{"image_id": "xxx"}]</code> 格式填入字段值</li>
+<li><strong>字段类型不可变</strong>：<code>update_fields</code> 时 <code>field_type</code> 不能修改，但必须传入原值；支持的字段类型详见字段类型枚举表</li>
+<li><strong>记录字段值格式</strong>：不同字段类型的值格式不同，详见上方"字段值格式参考"章节</li>
+</ul>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

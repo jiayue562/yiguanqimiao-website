@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>麦肯锡思考框架 · 龙脑OS知识库 - 以观其妙书院</title>
+<meta name="description" content="麦肯锡思考框架 · 龙脑OS知识库 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="麦肯锡思考框架 · 龙脑OS知识库">
+<meta property="og:description" content="麦肯锡思考框架 · 龙脑OS知识库 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "麦肯锡思考框架 · 龙脑OS知识库",
+    "description": "麦肯锡思考框架 · 龙脑OS知识库 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>麦肯锡思考框架 · 龙脑OS知识库</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>麦肯锡思考框架 · 龙脑OS知识库</h1>
+<blockquote><p><strong>版本</strong>: v1.1  
+<strong>创建</strong>: 2026-04-09  
+<strong>更新</strong>: 2026-04-09（架构关系调整）  
+<strong>维护者</strong>: 龙龟神将  
+<strong>一句话定义</strong>: 麦肯锡六大类核心思考框架的知识库，由龙心OS根据场景智能调用</p></blockquote>
+<hr>
+<h2>一、核心定位</h2>
+<h3>1.1 系统归属关系</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────────┐
+│                        AI龙龟共生伙伴操作系统                         │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  【灵魂系统】                                                        │
+│   💎 第0层：木火共生关系（根基）                                      │
+│   🙏 第1层：心文化信仰体系                                           │
+│   🐉 第2层：龙心OS（智能调度中枢）← 统一调用入口                      │
+│       ├─ 象思维（0→1原创）                                           │
+│       ├─ 知识学习（深度学习）                                         │
+│       ├─ 五色光思维（多维度分析）                                     │
+│       ├─ 人机协同五象限（分工协作）                                   │
+│       ├─ 知行合一（沉淀进化）                                         │
+│       └─ 【龙脑OS知识库调用接口】 ← 麦肯锡框架由此接入               │
+│                                                                     │
+│  【龙脑OS知识库】（被调用层）                                         │
+│   📚 麦肯锡思考框架 ← 六大类西方分析工具                              │
+│   📚 五行人格心理学OS                                                 │
+│   📚 其他专业知识体系...                                              │
+│                                                                     │
+│  【躯体系统】                                                        │
+│   CLI → Skills → MCP → Framework                                    │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘</code></pre>
+<h3>1.2 架构关系说明</h3>
+<p><strong>龙脑OS（知识库）</strong>：</p>
+<ul>
+<li>定位：知识资产的存储与组织层</li>
+<li>功能：提供各类分析框架、理论体系、方法论工具的完整知识库</li>
+<li>特点：每个框架独立封装，可被龙心OS按需调用</li>
+</ul>
+<p><strong>龙心OS（调度中枢）</strong>：</p>
+<ul>
+<li>定位：智能调度与场景识别中枢</li>
+<li>功能：根据对话场景，智能判断调用哪个知识库中的哪个框架</li>
+<li>特点：统一入口，智能路由，动态组合</li>
+</ul>
+<p><strong>调用关系</strong>：</p>
+<pre><code>用户输入 → 龙心OS（场景识别）→ 龙脑OS（框架调用）→ 结果返回 → 知行合一沉淀</code></pre>
+<h3>1.3 核心原则</h3>
+<ol>
+<li><strong>龙心OS统一调度</strong>：所有分析需求先经过龙心OS的场景识别和引擎路由</li>
+<li><strong>麦肯锡框架独立存在</strong>：作为龙脑OS的知识库组件，保持独立性和完整性</li>
+<li><strong>按需调用，灵活组合</strong>：根据场景调用单个框架或多个框架组合</li>
+<li><strong>中西合璧</strong>：象思维（0→1）→ 麦肯锡框架（1→N）→ 五色光（验证）</li>
+</ol>
+<hr>
+<h2>二、六大类框架体系</h2>
+<h3>2.1 战略规划与管理类</h3>
+<table>
+<thead><tr>
+<th>框架</th>
+<th>核心用途</th>
+<th>适用场景</th>
+<th>与五色光对应</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>SWOT分析</strong></td>
+<td>内外部环境综合评估</td>
+<td>战略制定、竞争分析</td>
+<td>⬜白光（客观事实）</td>
+</tr>
+<tr>
+<td><strong>BCG矩阵</strong></td>
+<td>业务组合与资源分配</td>
+<td>产品组合、投资决策</td>
+<td>🟨黄光（价值评估）</td>
+</tr>
+<tr>
+<td><strong>PEST分析</strong></td>
+<td>宏观环境扫描</td>
+<td>市场进入、风险评估</td>
+<td>⬜白光（环境扫描）</td>
+</tr>
+<tr>
+<td><strong>STP模型</strong></td>
+<td>市场细分与定位</td>
+<td>营销策略、品牌建设</td>
+<td>🟨黄光（价值定位）</td>
+</tr>
+<tr>
+<td><strong>安索夫矩阵</strong></td>
+<td>增长战略选择</td>
+<td>业务扩张、多元化</td>
+<td>🟩绿光（创新方案）</td>
+</tr>
+</tbody></table>
+<p><strong>自动触发信号</strong>: </p>
+<ul>
+<li>提到"战略""竞争""市场分析""业务组合"</li>
+<li>需要评估优势劣势机会威胁</li>
+<li>进行市场进入或扩张决策</li>
+</ul>
+<hr>
+<h3>2.2 项目管理与执行类</h3>
+<table>
+<thead><tr>
+<th>框架</th>
+<th>核心用途</th>
+<th>适用场景</th>
+<th>与五色光对应</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>七步问题解决法</strong></td>
+<td>系统化问题处理流程</td>
+<td>复杂问题解决</td>
+<td>🎯主持人（流程控制）</td>
+</tr>
+<tr>
+<td><strong>逻辑树</strong></td>
+<td>问题结构化拆解</td>
+<td>问题分解、根因分析</td>
+<td>⬜白光（结构分解）</td>
+</tr>
+<tr>
+<td><strong>流程图</strong></td>
+<td>业务流程可视化</td>
+<td>流程优化、标准化</td>
+<td>⬜白光（流程梳理）</td>
+</tr>
+<tr>
+<td><strong>重要度/紧急度矩阵</strong></td>
+<td>任务优先级排序</td>
+<td>时间管理、资源分配</td>
+<td>🟨黄光（价值排序）</td>
+</tr>
+<tr>
+<td><strong>假设思考</strong></td>
+<td>基于数据的验证推理</td>
+<td>快速决策、验证假设</td>
+<td>🟦蓝光（风险控制）</td>
+</tr>
+</tbody></table>
+<p><strong>自动触发信号</strong>:</p>
+<ul>
+<li>提到"问题分析""根因""流程优化"</li>
+<li>需要拆解复杂问题</li>
+<li>任务优先级排序需求</li>
+</ul>
+<hr>
+<h3>2.3 组织与文化分析类</h3>
+<table>
+<thead><tr>
+<th>框架</th>
+<th>核心用途</th>
+<th>适用场景</th>
+<th>与五色光对应</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>麦肯锡7S框架</strong></td>
+<td>组织要素协同分析</td>
+<td>组织诊断、变革管理</td>
+<td>🟥红光（组织感知）</td>
+</tr>
+<tr>
+<td><strong>PESTLE分析</strong></td>
+<td>扩展版宏观环境分析</td>
+<td>全面环境扫描</td>
+<td>⬜白光（环境分析）</td>
+</tr>
+<tr>
+<td><strong>愿景与使命定义</strong></td>
+<td>战略方向锚定</td>
+<td>文化建设、战略规划</td>
+<td>🟥红光（价值共鸣）</td>
+</tr>
+</tbody></table>
+<p><strong>自动触发信号</strong>:</p>
+<ul>
+<li>提到"组织""文化""变革""7S"</li>
+<li>企业诊断或组织优化</li>
+<li>愿景使命价值观梳理</li>
+</ul>
+<hr>
+<h3>2.4 市场营销与客户分析类</h3>
+<table>
+<thead><tr>
+<th>框架</th>
+<th>核心用途</th>
+<th>适用场景</th>
+<th>与五色光对应</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>五力分析</strong></td>
+<td>行业竞争态势评估</td>
+<td>行业分析、竞争策略</td>
+<td>🟦蓝光（风险评估）</td>
+</tr>
+<tr>
+<td><strong>3C分析</strong></td>
+<td>客户/公司/竞争者三角</td>
+<td>战略定位、竞争分析</td>
+<td>⬜白光（三方对比）</td>
+</tr>
+<tr>
+<td><strong>客户旅程图</strong></td>
+<td>客户体验全流程</td>
+<td>服务设计、体验优化</td>
+<td>🟥红光（客户感知）</td>
+</tr>
+<tr>
+<td><strong>用户画像</strong></td>
+<td>目标客户精准刻画</td>
+<td>产品设计、精准营销</td>
+<td>⬜白光（客户洞察）</td>
+</tr>
+<tr>
+<td><strong>品牌资产金字塔</strong></td>
+<td>品牌价值层级构建</td>
+<td>品牌建设、价值传递</td>
+<td>🟨黄光（价值层级）</td>
+</tr>
+</tbody></table>
+<p><strong>自动触发信号</strong>:</p>
+<ul>
+<li>提到"营销""客户""品牌""竞争"</li>
+<li>市场策略制定</li>
+<li>客户体验优化</li>
+</ul>
+<hr>
+<h3>2.5 逻辑思考与结构化分析类 ⭐核心</h3>
+<table>
+<thead><tr>
+<th>框架</th>
+<th>核心用途</th>
+<th>适用场景</th>
+<th>与五色光对应</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>MECE原则</strong></td>
+<td>相互独立、完全穷尽</td>
+<td>结构化分解、分类</td>
+<td>⬜白光（逻辑严谨）</td>
+</tr>
+<tr>
+<td><strong>金字塔结构</strong></td>
+<td>结论先行的表达逻辑</td>
+<td>汇报、写作、沟通</td>
+<td>🟨黄光（价值传递）</td>
+</tr>
+<tr>
+<td><strong>五色光思维</strong></td>
+<td>多维度平行思考</td>
+<td>团队讨论、全面分析</td>
+<td>🌈五色光（全维度）</td>
+</tr>
+<tr>
+<td><strong>归纳与演绎法</strong></td>
+<td>推理逻辑基础</td>
+<td>论证、推理、决策</td>
+<td>⬜白光（逻辑基础）</td>
+</tr>
+<tr>
+<td><strong>议题树</strong></td>
+<td>议题结构化分解</td>
+<td>议题拆解、优先级</td>
+<td>🟩绿光（议题发散）</td>
+</tr>
+</tbody></table>
+<p><strong>自动触发信号</strong>:</p>
+<ul>
+<li>提到"逻辑""结构""MECE""金字塔"</li>
+<li>需要结构化表达或分析</li>
+<li>团队讨论需要多维度思考</li>
+</ul>
+<hr>
+<h3>2.6 创意与问题解决类</h3>
+<table>
+<thead><tr>
+<th>框架</th>
+<th>核心用途</th>
+<th>适用场景</th>
+<th>与五色光对应</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>书面头脑风暴</strong></td>
+<td>结构化创意激发</td>
+<td>创意收集、想法发散</td>
+<td>🟩绿光（创意发散）</td>
+</tr>
+<tr>
+<td><strong>SCAMPER法</strong></td>
+<td>创新改进检查清单</td>
+<td>产品创新、流程改进</td>
+<td>🟩绿光（创新检查）</td>
+</tr>
+<tr>
+<td><strong>曼陀罗思考法</strong></td>
+<td>九宫格联想拓展</td>
+<td>创意拓展、关联思考</td>
+<td>🟩绿光（联想拓展）</td>
+</tr>
+<tr>
+<td><strong>利弊均衡法</strong></td>
+<td>决策权衡分析</td>
+<td>方案选择、决策权衡</td>
+<td>🟦蓝光（风险权衡）</td>
+</tr>
+<tr>
+<td><strong>决策矩阵</strong></td>
+<td>多方案量化评估</td>
+<td>方案评估、量化决策</td>
+<td>🟨黄光（价值量化）</td>
+</tr>
+</tbody></table>
+<p><strong>自动触发信号</strong>:</p>
+<ul>
+<li>提到"创意""创新""头脑风暴"</li>
+<li>需要发散性思考</li>
+<li>多方案评估与决策</li>
+</ul>
+<hr>
+<h2>三、场景→框架自动路由</h2>
+<h3>3.1 场景识别矩阵</h3>
+<table>
+<thead><tr>
+<th>场景类型</th>
+<th>关键词信号</th>
+<th>自动路由框架</th>
+<th>协同引擎</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>战略制定</strong></td>
+<td>战略、规划、竞争、增长</td>
+<td>SWOT + BCG + 安索夫</td>
+<td>🌈五色光</td>
+</tr>
+<tr>
+<td><strong>问题诊断</strong></td>
+<td>问题、根因、分析、解决</td>
+<td>逻辑树 + 七步法 + MECE</td>
+<td>🐉象思维</td>
+</tr>
+<tr>
+<td><strong>组织变革</strong></td>
+<td>组织、文化、变革、7S</td>
+<td>7S框架 + PESTLE</td>
+<td>🌈五色光</td>
+</tr>
+<tr>
+<td><strong>市场策略</strong></td>
+<td>市场、营销、客户、品牌</td>
+<td>3C + 五力 + STP</td>
+<td>🌈五色光</td>
+</tr>
+<tr>
+<td><strong>逻辑表达</strong></td>
+<td>逻辑、结构、汇报、写作</td>
+<td>金字塔 + MECE</td>
+<td>📚知识学习</td>
+</tr>
+<tr>
+<td><strong>创意创新</strong></td>
+<td>创意、创新、想法、突破</td>
+<td>SCAMPER + 头脑风暴</td>
+<td>🐉象思维</td>
+</tr>
+<tr>
+<td><strong>决策评估</strong></td>
+<td>决策、选择、评估、权衡</td>
+<td>决策矩阵 + 利弊法</td>
+<td>🌈五色光</td>
+</tr>
+<tr>
+<td><strong>项目管理</strong></td>
+<td>项目、执行、进度、风险</td>
+<td>七步法 + 逻辑树</td>
+<td>🤝人机协同</td>
+</tr>
+</tbody></table>
+<h3>3.2 复合场景路由</h3>
+<p><strong>场景: 新产品战略规划</strong></p>
+<pre><code>路由序列:
+1. 🐉 象思维 → 0→1洞察产品方向
+2. 🌈 五色光白光 → 市场数据收集（PEST + 3C）
+3. 📊 麦肯锡框架 → SWOT + 五力分析
+4. 🌈 五色光黄光 → 价值评估（BCG矩阵）
+5. 🌈 五色光绿光 → 创新方案（安索夫矩阵）
+6. 🌈 五色光蓝光 → 风险评估
+7. 🔄 知行合一 → 沉淀战略洞察</code></pre>
+<p><strong>场景: 复杂问题诊断</strong></p>
+<pre><code>路由序列:
+1. 🐉 象思维 → 直觉感知问题本质
+2. 📊 麦肯锡框架 → 逻辑树拆解
+3. 📊 麦肯锡框架 → 七步问题解决法
+4. 🌈 五色光白光 → 事实验证
+5. 🌈 五色光蓝光 → 根因验证
+6. 🔄 知行合一 → 沉淀解决方案</code></pre>
+<hr>
+<h2>四、核心使用原则</h2>
+<h3>4.1 中西合璧原则</h3>
+<pre><code>象思维（东方·0→1） → 麦肯锡框架（西方·1→N） → 五色光（整合·验证）
+     ↓                        ↓                        ↓
+  直觉洞察              逻辑结构化展开            多维度验证</code></pre>
+<h3>4.2 场景适配原则</h3>
+<ul>
+<li><strong>不强制使用</strong>: 简单问题直接回答，不启动框架</li>
+<li><strong>自动匹配</strong>: 根据场景关键词自动选择最合适框架</li>
+<li><strong>组合使用</strong>: 复杂场景可组合多个框架</li>
+<li><strong>灵活调整</strong>: 根据实际进展动态调整框架选择</li>
+</ul>
+<h3>4.3 与五色光深度整合</h3>
+<table>
+<thead><tr>
+<th>麦肯锡框架</th>
+<th>五色光角色</th>
+<th>整合方式</th>
+</tr></thead><tbody>
+<tr>
+<td>MECE原则</td>
+<td>白光基础</td>
+<td>确保事实分解的完整性</td>
+</tr>
+<tr>
+<td>金字塔结构</td>
+<td>黄光传递</td>
+<td>确保价值传递的有效性</td>
+</tr>
+<tr>
+<td>五色光思维</td>
+<td>五色全维</td>
+<td>与麦肯锡框架深度整合</td>
+</tr>
+<tr>
+<td>决策矩阵</td>
+<td>多色协同</td>
+<td>绿光方案 + 黄光价值 + 蓝光风险</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>五、调用机制（龙心OS统一路由）</h2>
+<h3>5.1 架构层级</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│                    调用层级架构                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  第一层：龙心OS总调度                                         │
+│  ├─ 意图识别（用户需要什么？）                                │
+│  ├─ 场景归类（S0-S9场景分类）                                 │
+│  ├─ 复杂度评估（简单/中等/复杂）                              │
+│  └─ 引擎路由（调用哪个知识库？）                              │
+│                                                             │
+│  第二层：龙脑OS知识库调用                                      │
+│  ├─ 判断：是否需要西方分析框架？                               │
+│  ├─ 选择：调用麦肯锡思考框架库                                 │
+│  └─ 匹配：选择具体框架（SWOT/MECE/七步法等）                   │
+│                                                             │
+│  第三层：麦肯锡框架执行                                        │
+│  ├─ 加载框架定义与操作步骤                                     │
+│  ├─ 执行分析流程                                              │
+│  └─ 输出结构化结果                                            │
+│                                                             │
+│  第四层：龙心OS整合输出                                        │
+│  ├─ 与象思维洞察整合                                          │
+│  ├─ 与五色光验证整合                                          │
+│  └─ 知行合一沉淀                                              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘</code></pre>
+<h3>5.2 触发信号（由龙心OS识别）</h3>
+<p><strong>龙心OS识别到以下信号时，路由至麦肯锡框架库</strong>：</p>
+<table>
+<thead><tr>
+<th>触发级别</th>
+<th>权重</th>
+<th>触发条件</th>
+<th>龙心OS响应</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>P0·直接触发</strong></td>
+<td>5</td>
+<td>明确提到框架名称（SWOT、MECE、七步法等）</td>
+<td>路由至麦肯锡框架库</td>
+</tr>
+<tr>
+<td><strong>P1·场景触发</strong></td>
+<td>4</td>
+<td>场景关键词（战略规划、问题诊断、组织变革）</td>
+<td>场景识别+框架推荐</td>
+</tr>
+<tr>
+<td><strong>P2·信号触发</strong></td>
+<td>3</td>
+<td>多信号组合（战略+竞争、问题+拆解）</td>
+<td>智能匹配最佳框架</td>
+</tr>
+</tbody></table>
+<h3>5.3 具体触发词（供龙心OS参考）</h3>
+<p><strong>P0·框架名称</strong>:</p>
+<ul>
+<li>SWOT、BCG矩阵、PEST分析、STP模型、安索夫矩阵</li>
+<li>七步问题解决法、逻辑树、流程图、重要度紧急度矩阵</li>
+<li>麦肯锡7S、PESTLE、愿景使命</li>
+<li>五力分析、3C分析、客户旅程图、用户画像、品牌资产金字塔</li>
+<li>MECE原则、金字塔结构、五色光思维、归纳演绎、议题树</li>
+<li>SCAMPER、曼陀罗思考法、利弊均衡法、决策矩阵</li>
+</ul>
+<p><strong>P1·场景关键词</strong>:</p>
+<ul>
+<li>战略规划、竞争分析、市场进入、业务组合</li>
+<li>问题诊断、根因分析、流程优化、系统解决</li>
+<li>组织变革、文化建设、7S分析</li>
+<li>客户分析、品牌定位、营销策略</li>
+<li>结构化表达、MECE、金字塔原理</li>
+<li>创意激发、产品创新、头脑风暴</li>
+</ul>
+<p><strong>P2·信号组合</strong>:</p>
+<ul>
+<li>战略 + 竞争 → SWOT + 五力分析</li>
+<li>问题 + 拆解 → 逻辑树 + 七步法</li>
+<li>组织 + 变革 → 7S框架</li>
+<li>客户 + 体验 → 客户旅程图</li>
+<li>决策 + 多方案 → 决策矩阵</li>
+</ul>
+<p><strong>重要</strong>：所有触发信号由<strong>龙心OS统一识别</strong>，然后决定是否调用麦肯锡框架库。</p>
+<hr>
+<h2>六、输出规范</h2>
+<h3>6.1 框架调用声明</h3>
+<p><strong>单框架调用</strong>:</p>
+<blockquote><p>「📊 麦肯锡框架 · SWOT分析」</p></blockquote>
+<p><strong>多框架组合</strong>:</p>
+<blockquote><p>「📊 麦肯锡框架组合 · 战略规划套件（SWOT + BCG + 安索夫）」</p></blockquote>
+<h3>6.2 分析输出模板</h3>
+<pre><code>╔═══════════════════════════════════════════════════════════╗
+║           📊 麦肯锡框架分析 · [框架名称]                   ║
+╠═══════════════════════════════════════════════════════════╣
+║ 分析场景: [具体场景描述]                                    ║
+║ 选用框架: [框架名称及选择理由]                              ║
+╠═══════════════════════════════════════════════════════════╣
+║ 【分析过程】                                                ║
+║ ...                                                        ║
+║ 【关键发现】                                                ║
+║ ...                                                        ║
+║ 【行动建议】                                                ║
+║ ...                                                        ║
+╚═══════════════════════════════════════════════════════════╝</code></pre>
+<hr>
+<h2>七、与其他Skills的协同</h2>
+<h3>7.1 与龙心OS五大引擎的协同</h3>
+<table>
+<thead><tr>
+<th>引擎</th>
+<th>协同方式</th>
+</tr></thead><tbody>
+<tr>
+<td>🐉 象思维</td>
+<td>框架使用前的0→1直觉洞察</td>
+</tr>
+<tr>
+<td>📚 知识学习</td>
+<td>框架理论的深度学习与扩展</td>
+</tr>
+<tr>
+<td>🌈 五色光思维</td>
+<td>框架分析的多维度验证</td>
+</tr>
+<tr>
+<td>🤝 人机协同五象限</td>
+<td>复杂分析任务的协同分工</td>
+</tr>
+<tr>
+<td>🔄 知行合一</td>
+<td>框架应用经验的沉淀</td>
+</tr>
+</tbody></table>
+<h3>7.2 与五行人格心理学的协同</h3>
+<ul>
+<li><strong>木行人</strong>: 擅长创新类框架（SCAMPER、头脑风暴）</li>
+<li><strong>火行人</strong>: 擅长表达类框架（金字塔结构、五色光思维）</li>
+<li><strong>土行人</strong>: 擅长执行类框架（七步法、流程图）</li>
+<li><strong>金行人</strong>: 擅长分析类框架（MECE、逻辑树）</li>
+<li><strong>水行人</strong>: 擅长洞察类框架（SWOT、五力分析）</li>
+</ul>
+<hr>
+<h2>八、版本历史</h2>
+<h3>v1.0（2026-04-09）</h3>
+<ul>
+<li>✅ 六大类框架体系完整梳理</li>
+<li>✅ 场景→框架自动路由机制</li>
+<li>✅ 与五色光思维深度整合</li>
+<li>✅ 自动触发规则配置</li>
+<li>✅ 与其他Skills协同协议</li>
+</ul>
+<hr>
+<p><strong>核心金句</strong>:</p>
+<blockquote><p>"麦肯锡框架是西方商业思维的精华，象思维是东方智慧的精髓。两者合璧，方能应对复杂世界的多元挑战。"</p></blockquote>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

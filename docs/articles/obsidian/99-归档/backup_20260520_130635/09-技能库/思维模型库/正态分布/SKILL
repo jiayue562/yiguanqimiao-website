@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>正态分布 · SKILL.md - 以观其妙书院</title>
+<meta name="description" content="正态分布 · SKILL.md - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="正态分布 · SKILL.md">
+<meta property="og:description" content="正态分布 · SKILL.md - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "正态分布 · SKILL.md",
+    "description": "正态分布 · SKILL.md - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>正态分布 · SKILL.md</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>正态分布 · SKILL.md</h1>
+<h2>元数据</h2>
+<ul>
+<li><strong>模型编号</strong>: 33</li>
+<li><strong>模型名称</strong>: 正态分布</li>
+<li><strong>所属领域</strong>: 数学</li>
+<li><strong>难度等级</strong>: ⭐⭐</li>
+<li><strong>一句话描述</strong>: 自然界最常见的分布形态，68-95-99.7法则</li>
+</ul>
+<hr>
+<h2>核心定义</h2>
+<h3>What：什么是正态分布？</h3>
+<p>正态分布（又称高斯分布、钟形曲线）是自然界和社会现象中最常见的概率分布。其特征是：<strong>大多数数据集中在平均值附近，离平均值越远的数据越少见</strong>。</p>
+<p><strong>数学表达式</strong>:</p>
+<pre><code>f(x) = (1/σ√(2π)) × e^(-(x-μ)²/(2σ²))
+
+其中：
+- μ（mu）= 均值（分布的中心位置）
+- σ（sigma）= 标准差（分布的离散程度）</code></pre>
+<p><strong>68-95-99.7法则</strong>:</p>
+<ul>
+<li>68% 的数据落在 μ±σ 范围内</li>
+<li>95% 的数据落在 μ±2σ 范围内  </li>
+<li>99.7% 的数据落在 μ±3σ 范围内</li>
+</ul>
+<h3>Why：为什么重要？</h3>
+<ol>
+<li><strong>中心极限定理</strong>：大量独立随机变量的和趋于正态分布</li>
+<li><strong>自然界的常态</strong>：身高、体重、智商、测量误差等都近似正态</li>
+<li><strong>统计推断基础</strong>：t检验、ANOVA、回归分析都假设正态性</li>
+<li><strong>风险管理工具</strong>：六西格玛质量管理的核心</li>
+</ol>
+<h3>How：如何应用？</h3>
+<p><strong>核心操作流程</strong>:</p>
+<ol>
+<li><strong>识别正态性</strong>：数据是否近似正态分布？</li>
+<li><strong>估计参数</strong>：计算样本均值和标准差</li>
+<li><strong>概率计算</strong>：利用68-95-99.7法则快速估算</li>
+<li><strong>异常检测</strong>：超出3σ的数据点视为异常</li>
+</ol>
+<hr>
+<h2>应用场景</h2>
+<h3>场景1：质量控制</h3>
+<p><strong>情境</strong>：生产线产品尺寸检测
+<strong>应用</strong>：</p>
+<ul>
+<li>设定标准尺寸为均值 μ</li>
+<li>允许误差范围为 ±3σ</li>
+<li>超出范围的产品视为不合格</li>
+<li><strong>六西格玛</strong>：将过程能力提升到 ±6σ，缺陷率低于3.4ppm</li>
+</ul>
+<h3>场景2：人才评估</h3>
+<p><strong>情境</strong>：员工绩效评估
+<strong>应用</strong>：</p>
+<ul>
+<li>假设员工能力近似正态分布</li>
+<li>均值附近为"合格"</li>
+<li>+2σ以上为"优秀"</li>
+<li>-2σ以下为"需改进"</li>
+<li><strong>关键洞察</strong>：避免"绩效膨胀"，保持分布的区分度</li>
+</ul>
+<h3>场景3：投资风险管理</h3>
+<p><strong>情境</strong>：股票投资组合风险评估
+<strong>应用</strong>：</p>
+<ul>
+<li>假设收益率近似正态分布</li>
+<li>计算历史均值和标准差</li>
+<li>95%置信区间：μ±2σ</li>
+<li><strong>关键洞察</strong>：极端事件（黑天鹅）往往超出正态假设</li>
+</ul>
+<hr>
+<h2>常见误区</h2>
+<table>
+<thead><tr>
+<th>误区</th>
+<th>正确理解</th>
+</tr></thead><tbody>
+<tr>
+<td>万物皆正态</td>
+<td>收入、地震强度、网络链接等服从幂律分布</td>
+</tr>
+<tr>
+<td>忽视肥尾</td>
+<td>金融市场中极端事件比正态预测更常见</td>
+</tr>
+<tr>
+<td>样本偏差</td>
+<td>小样本可能无法反映真实的正态性</td>
+</tr>
+<tr>
+<td>强行正态化</td>
+<td>非正态数据强行套用正态方法会失真</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>关联模型</h2>
+<ul>
+<li><strong>贝叶斯定理</strong> (32)：正态分布作为共轭先验</li>
+<li><strong>幂律分布</strong> (34)：与正态分布对比的另一种常见分布</li>
+<li><strong>最优化</strong> (37)：最小二乘法基于正态假设</li>
+</ul>
+<hr>
+<h2>核心金句</h2>
+<blockquote><p>"正态分布是自然的默认设置，但默认不等于唯一。"</p></blockquote>
+<blockquote><p>"理解分布的形状，比记住公式更重要。"</p></blockquote>
+<hr>
+<h2>标签</h2>
+<p>#正态分布 #高斯分布 #统计学 #68-95-99.7法则 #质量管理</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

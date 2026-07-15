@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ima-skill - 以观其妙书院</title>
+<meta name="description" content="|">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="ima-skill">
+<meta property="og:description" content="|">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "ima-skill",
+    "description": "|",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>ima-skill</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>ima-skill</h1>
+<p>Unified IMA OpenAPI skill. Currently supports: <strong>notes</strong>, <strong>knowledge-base</strong>.</p>
+<h2>Setup</h2>
+<blockquote><p><strong>Security note:</strong> This skill authenticates with the <strong>official IMA API</strong> (<code>ima.qq.com</code>) — the same service the user already uses. Credentials are only sent as HTTP headers to <code>ima.qq.com</code> and never to any other domain, file, or log.</p></blockquote>
+<ol>
+<li>打开 https://ima.qq.com/agent-interface 获取 <strong>Client ID</strong> 和 <strong>API Key</strong></li>
+<li>存储凭证（二选一）：</li>
+</ol>
+<p><strong>方式 A — 配置文件（推荐）：</strong></p>
+<pre><code>mkdir -p ~/.config/ima
+echo "your_client_id" &gt; ~/.config/ima/client_id
+echo "your_api_key" &gt; ~/.config/ima/api_key</code></pre>
+<p><strong>方式 B — 环境变量：</strong></p>
+<pre><code>export IMA_OPENAPI_CLIENTID="your_client_id"
+export IMA_OPENAPI_APIKEY="your_api_key"</code></pre>
+<p>Agent 会按优先级依次尝试：环境变量 → 配置文件。</p>
+<h2>凭证预检</h2>
+<p>每次调用 API 前，先确认凭证可用。如果两个值都为空，停止操作并提示用户按 Setup 步骤配置。</p>
+<pre><code># Load user-provisioned IMA credentials (used ONLY for ima.qq.com API authentication)
+IMA_CLIENT_ID="${IMA_OPENAPI_CLIENTID:-$(cat ~/.config/ima/client_id 2&gt;/dev/null)}"
+IMA_API_KEY="${IMA_OPENAPI_APIKEY:-$(cat ~/.config/ima/api_key 2&gt;/dev/null)}"
+if [ -z "$IMA_CLIENT_ID" ] || [ -z "$IMA_API_KEY" ]; then
+  echo "缺少 IMA 凭证，请按 Setup 步骤配置 Client ID 和 API Key"
+  exit 1
+fi</code></pre>
+<h2>API 调用模板</h2>
+<p>所有请求统一为 <strong>HTTP POST + JSON Body</strong>，仅发往官方 Base URL <code>https://ima.qq.com</code>。</p>
+<p>定义辅助函数避免重复 header — 每个模块传入完整路径：</p>
+<pre><code># All requests go ONLY to the official IMA API (ima.qq.com)
+ima_api() {
+  local path="$1" body="$2"
+  curl -s -X POST "https://ima.qq.com/$path" \
+    -H "ima-openapi-clientid: $IMA_CLIENT_ID" \
+    -H "ima-openapi-apikey: $IMA_API_KEY" \
+    -H "Content-Type: application/json" \
+    -d "$body"
+}</code></pre>
+<blockquote><p><strong>Note:</strong> All IMA OpenAPI endpoints currently use HTTP POST. If a future module requires a different method, <code>ima_api()</code> must be extended to accept a method parameter.</p></blockquote>
+<h2>模块决策表</h2>
+<table>
+<thead><tr>
+<th>用户意图</th>
+<th>模块</th>
+<th>读取</th>
+</tr></thead><tbody>
+<tr>
+<td>搜索笔记、浏览笔记本、获取笔记内容、创建笔记、追加内容</td>
+<td>notes</td>
+<td><code>notes/SKILL.md</code></td>
+</tr>
+<tr>
+<td>上传文件、添加网页链接、搜索知识库、浏览知识库内容、获取知识库信息、获取可添加的知识库列表</td>
+<td>knowledge-base</td>
+<td><code>knowledge-base/SKILL.md</code></td>
+</tr>
+</tbody></table>
+<h3>⚠️ 易混淆场景</h3>
+<p>以下场景容易误判模块，需特别注意：</p>
+<table>
+<thead><tr>
+<th>用户说的</th>
+<th>实际意图</th>
+<th>正确路由</th>
+</tr></thead><tbody>
+<tr>
+<td>"把这段内容添加到知识库XX里的笔记YY"</td>
+<td>往已有<strong>笔记</strong>追加内容</td>
+<td><strong>notes</strong> — 先搜索笔记获取 <code>doc_id</code>，再用 <code>append_doc</code></td>
+</tr>
+<tr>
+<td>"把这个写到XX笔记里"、"记到XX笔记"</td>
+<td>往已有<strong>笔记</strong>追加内容</td>
+<td><strong>notes</strong> — <code>append_doc</code></td>
+</tr>
+<tr>
+<td>"把这篇笔记添加到知识库"</td>
+<td>将笔记关联到<strong>知识库</strong></td>
+<td><strong>knowledge-base</strong> — <code>add_knowledge</code> with <code>media_type=11</code></td>
+</tr>
+<tr>
+<td>"上传文件到知识库"</td>
+<td>上传<strong>文件</strong>到知识库</td>
+<td><strong>knowledge-base</strong> — <code>create_media</code> → COS → <code>add_knowledge</code></td>
+</tr>
+<tr>
+<td>"新建一篇笔记记录这些内容"</td>
+<td><strong>创建</strong>新笔记</td>
+<td><strong>notes</strong> — <code>import_doc</code></td>
+</tr>
+<tr>
+<td>"帮我记一下"、"记录一下"、"保存为笔记"（未指定已有笔记）</td>
+<td>意图不明确，<strong>需要确认</strong></td>
+<td><strong>notes</strong> — 先询问用户是创建新笔记还是追加到哪篇已有笔记，再决定接口</td>
+</tr>
+<tr>
+<td>"添加到笔记里"（未指定具体哪篇）</td>
+<td>意图不明确，<strong>需要确认</strong></td>
+<td><strong>notes</strong> — 先询问用户是创建新笔记还是追加到哪篇已有笔记，再决定接口</td>
+</tr>
+<tr>
+<td>"把知识库里的XX内容记到笔记"</td>
+<td>先从知识库读取，再写入笔记</td>
+<td><strong>多模块</strong> — knowledge-base 搜索/读取 → notes 创建/追加</td>
+</tr>
+</tbody></table>
+<p><strong>核心判断规则</strong>：</p>
+<ul>
+<li>目标是<strong>笔记的内容</strong>（读、写、追加）→ notes 模块</li>
+<li>目标是<strong>知识库的条目</strong>（上传文件、添加链接、关联笔记到知识库）→ knowledge-base 模块</li>
+<li>用户提到"知识库"只是在<strong>描述笔记的位置</strong>（如"知识库里的那篇笔记"），真正操作对象仍是笔记 → notes 模块</li>
+</ul>
+<blockquote><p><strong>多模块任务</strong>：当用户意图涉及多个模块时（如"从知识库搜索内容并记到笔记"），按意图顺序依次读取对应的模块文档并逐步执行。先完成前一个模块的操作，再进入下一个模块。</p></blockquote>
+<h2>注意事项</h2>
+<ul>
+<li><strong>UTF-8 编码（仅 notes 模块）</strong>：见下方「⚠️ UTF-8 编码强制要求」章节。notes 模块的所有写入操作前<strong>必须</strong>完成 UTF-8 编码校验，否则会导致内容乱码且无法修复。</li>
+<li><strong>文件上传保持原样（knowledge-base 模块）</strong>：当用户要求上传文件到知识库时，<strong>必须保持文件原始内容不变</strong>，不得进行任何编码转换。文件以二进制方式上传，服务端会自行处理编码。擅自转码可能破坏文件内容（如 PDF、图片、Excel 等非文本文件，或用户有意使用特定编码的文本文件）。</li>
+<li><strong>PowerShell 5.1 环境（所有模块）</strong>：见下方「⚠️ PowerShell 5.1 环境检测」章节。此问题影响<strong>所有</strong> API 调用（notes、knowledge-base 等），PowerShell 5.1 会静默将请求 Body 转为 GBK 编码导致乱码。</li>
+</ul>
+<h2>⚠️ UTF-8 编码强制要求（CRITICAL — 仅适用于 notes 模块）</h2>
+<blockquote><p><strong>此规则为强制性要求，不可跳过。</strong> 非法编码会导致内容在 IMA 中显示为乱码，且无法修复，必须重新写入。</p>
+<p><strong>适用范围：notes 模块</strong>（<code>import_doc</code>、<code>append_doc</code> 等文本写入 API）。</p>
+<p><strong>不适用于 knowledge-base 模块的文件上传</strong>：上传文件时必须保持文件原始内容，不得转码。文件以二进制方式上传，服务端自行处理。</p></blockquote>
+<p><strong>每次调用 notes 写入类 API（<code>import_doc</code>/<code>append_doc</code>）之前，必须对 <code>content</code>、<code>title</code> 等所有字符串字段执行 UTF-8 编码校验/转换。</strong> 无论内容来源如何——用户直接输入、从文件读取、WebFetch 抓取、剪贴板粘贴、外部 API 返回——都不能假设已经是合法 UTF-8，必须显式确认。</p>
+<h3>强制检查清单（notes 模块写入前）</h3>
+<p>在构造 notes 写入请求的 body <strong>之前</strong>，完成以下步骤：</p>
+<ol>
+<li><strong>来自文件的内容</strong>：先检测文件编码，转为 UTF-8 后再读入变量（注意：这是指读取文件内容作为笔记正文写入，不是上传文件到知识库）</li>
+<li><strong>来自 WebFetch / HTTP 请求的内容</strong>：响应可能为 GBK/Latin-1 等，必须转码</li>
+<li><strong>来自用户输入或变量拼接的内容</strong>：清洗非法 UTF-8 字节（<code>\xff\xfe</code> 等）</li>
+<li><strong>标题字段同理</strong>：<code>title</code> 也必须为合法 UTF-8</li>
+</ol>
+<h3>各环境转码方法</h3>
+<p><strong>Python（推荐，几乎所有环境都有）：</strong></p>
+<pre><code># 读取文件，自动检测编码并转为 UTF-8
+content=$(python3 -c "
+import sys
+data = open('tmpfile', 'rb').read()
+for enc in ['utf-8', 'gbk', 'gb2312', 'big5', 'latin-1']:
+    try:
+        sys.stdout.write(data.decode(enc))
+        break
+    except (UnicodeDecodeError, LookupError):
+        continue
+" 2&gt;/dev/null)
+
+# 如果内容已在变量中，清洗非法 UTF-8 字节
+content=$(printf '%s' "$content" | python3 -c "import sys; sys.stdout.write(sys.stdin.buffer.read().decode('utf-8','ignore'))")</code></pre>
+<p><strong>Node.js：</strong></p>
+<pre><code>content=$(node -e "const fs=require('fs');const buf=fs.readFileSync('tmpfile');process.stdout.write(buf.toString('utf8'))")
+# 已知编码（如 GBK）：
+content=$(node -e "const fs=require('fs');process.stdout.write(new TextDecoder('gbk').decode(fs.readFileSync('tmpfile')))")</code></pre>
+<p><strong>Unix (macOS/Linux)：</strong></p>
+<pre><code>content=$(iconv -f "$(file -b --mime-encoding tmpfile)" -t UTF-8 tmpfile 2&gt;/dev/null || cat tmpfile)</code></pre>
+<p><strong>Windows PowerShell：</strong></p>
+<pre><code># 读取非 UTF-8 文件并转码
+$content = [System.IO.File]::ReadAllText('tmpfile', [System.Text.Encoding]::Default)
+[System.IO.File]::WriteAllText('tmpfile.utf8', $content, [System.Text.Encoding]::UTF8)</code></pre>
+<h3>⚠️ PowerShell 5.1 环境检测（CRITICAL — 适用于所有模块）</h3>
+<blockquote><p><strong>此问题影响所有 API 调用（notes、knowledge-base 等）</strong></p>
+<p><strong>此问题极其隐蔽：PowerShell 5.1 下 <code>Invoke-RestMethod</code> 会静默将请求 Body 从 UTF-8 转为系统 ANSI 编码（中文 Windows 为 GBK），即使设置了 <code>Content-Type: charset=utf-8</code> 也无效。结果是请求看起来发送成功，但服务端收到的内容已经是乱码，且无任何错误提示。</strong></p></blockquote>
+<p><strong>当 agent 运行在 PowerShell 环境时，必须在首次 API 调用前检测版本：</strong></p>
+<pre><code># 检测 PowerShell 版本 — 在任何 API 调用之前执行（notes 和 knowledge-base 都需要）
+if ($PSVersionTable.PSVersion.Major -le 5) {
+    Write-Host "⚠️ 检测到 PowerShell 5.1，将使用 UTF-8 字节数组模式发送请求"
+    $useUtf8Bytes = $true
+} else {
+    Write-Host "✅ PowerShell 7+，默认 UTF-8，无需额外处理"
+    $useUtf8Bytes = $false
+}</code></pre>
+<p><strong>PowerShell 5.1 下必须使用以下方式发送请求</strong>（用 <code>ConvertTo-Json</code> 构建 JSON 以避免手动拼接的转义风险，再显式转为 UTF-8 字节数组）：</p>
+<pre><code># PowerShell 5.1 安全请求模板（适用于所有模块的所有 API 调用）
+$body = @{ title = "标题"; content = $content; content_format = 1 } | ConvertTo-Json -Depth 10
+if ($useUtf8Bytes) {
+    # CRITICAL: 必须转为字节数组，否则中文/非ASCII内容会变成乱码
+    $utf8Bytes = [System.Text.Encoding]::UTF8.GetBytes($body)
+    Invoke-RestMethod -Uri $url -Method Post -Body $utf8Bytes -ContentType "application/json; charset=utf-8" -Headers $headers
+} else {
+    # PowerShell 7+ 可直接传字符串
+    Invoke-RestMethod -Uri $url -Method Post -Body $body -ContentType "application/json; charset=utf-8" -Headers $headers
+}</code></pre>
+<blockquote><p><strong>总结：</strong> 在 PowerShell 5.1 环境中，<strong>所有</strong> API 调用（无论 notes 还是 knowledge-base）都必须将 Body 显式转为 UTF-8 字节数组。不检测版本直接发请求 = 中文内容必乱码。这是 PowerShell 5.1 的已知设计缺陷，不是 bug 可以被修复。</p></blockquote>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

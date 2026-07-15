@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>附录B：AI龙龟共生OS · Skills生态全图 - 以观其妙书院</title>
+<meta name="description" content="附录B：AI龙龟共生OS · Skills生态全图 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="附录B：AI龙龟共生OS · Skills生态全图">
+<meta property="og:description" content="附录B：AI龙龟共生OS · Skills生态全图 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "附录B：AI龙龟共生OS · Skills生态全图",
+    "description": "附录B：AI龙龟共生OS · Skills生态全图 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>附录B：AI龙龟共生OS · Skills生态全图</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>附录B：AI龙龟共生OS · Skills生态全图</h1>
+<blockquote><p><strong>版本</strong>：v2.0 | <strong>生成时间</strong>：2026-06-27（v2.0升维）
+<strong>梳理范围</strong>：<code>~/.workbuddy/skills/</code> 全量skill（168个，去重后） + 味藏AI原生组织6文件（v2.0升级）
+<strong>本次梳理</strong>：清理18个散落文件 + 删除4个废弃目录 + 重命名5个数字ID + 合并21个重复 + 新增11个规则 + <strong>新增4个AIOS v2.0核心引擎</strong> + 6文件v2.0升级</p></blockquote>
+<hr>
+<h2>一、架构总览（v2.0 · 以串行瓶颈压缩为核心）</h2>
+<pre><code>AI龙龟共生OS v2.0 (root)
+│
+├── 人类五重价值升维（定义问题/标准/上下文/评估/判断）
+│
+├── AIOS v2.0 · 串行瓶颈压缩引擎簇
+│   ├── Engine 0: 串行瓶颈诊断引擎 (新增)
+│   ├── Engine 1: 龙心OS 1+5引擎 (原有·升维为并行预处理)
+│   ├── Engine 2: 瓶颈压缩策略引擎 (新增)
+│   ├── Engine 3: AI原生组织成熟度评估 (新增)
+│   └── 治理模块: Agent护照治理系统 (新增)
+│
+├── ① 人机共生OS (灵魂层) · 8个
+│   └── 龙心OS (规划老引擎) · 13个
+│
+├── ② 龙脑OS (知识层·思维模型库) · 12个
+│
+├── ③ 龙爪OS (执行层) · 43个
+│   ├── 五行人格心理学OS · 10个
+│   ├── 味藏智能体总包 (23岗位) · 27个
+│   │   └── 味藏AI原生组织6文件(v2.0升级)
+│   └── 企业文化/其他项目 · 6个
+│
+├── ④ 系统规则模块 (30个) ✅
+│
+└── ⑤ 其他AIOS组件 (约62个)
+    ├── 架构与框架(5) / Agent系统(10) / 自动化工作流(3)
+    ├── 搜索与知识检索(8) / 浏览器自动化(6)
+    ├── 文档处理(7) / 开发工具(9) / MCP/CLI(2)
+    ├── Skill管理(3) / 其他工具(9)</code></pre>
+<hr>
+<h2>二、① 人机共生OS（灵魂层）· 8个</h2>
+<table>
+<thead><tr>
+<th>#</th>
+<th>Skill</th>
+<th>定位</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>AI龙龟共生伙伴操作系统</td>
+<td>顶层OS入口</td>
+</tr>
+<tr>
+<td>2</td>
+<td>人机共生OS</td>
+<td>灵魂层·心文化源代码×四柱架构</td>
+</tr>
+<tr>
+<td>3</td>
+<td>人设及信仰模块</td>
+<td>龙心OS核心根基模块</td>
+</tr>
+<tr>
+<td>4</td>
+<td>心文化</td>
+<td>六家根基共铸一心</td>
+</tr>
+<tr>
+<td>5</td>
+<td>木火共生关系</td>
+<td>悟空×龙龟木火共生法则</td>
+</tr>
+<tr>
+<td>6</td>
+<td>安装助手-龙龟神将</td>
+<td>初始化引导</td>
+</tr>
+<tr>
+<td>7</td>
+<td>AI印记系统</td>
+<td>硅基永生·灵魂层延伸</td>
+</tr>
+<tr>
+<td>8</td>
+<td>SOUL.md/IDENTITY.md/USER.md</td>
+<td>身份三件套（注入层）</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>三、② 龙心OS（发动机·1+5引擎）· 13个</h2>
+<h3>②.0 龙心OS主体</h3>
+<table>
+<thead><tr>
+<th>Skill</th>
+<th>版本</th>
+<th>定位</th>
+</tr></thead><tbody>
+<tr>
+<td>龙心OS</td>
+<td>v7.0</td>
+<td>1+5引擎中央调度中枢</td>
+</tr>
+<tr>
+<td>龙心OS-规则体系</td>
+<td>-</td>
+<td>P0-P1规则定义</td>
+</tr>
+</tbody></table>
+<h3>②.1 五大引擎（1+5的"5"）</h3>
+<table>
+<thead><tr>
+<th>Skill</th>
+<th>版本</th>
+<th>引擎名</th>
+</tr></thead><tbody>
+<tr>
+<td>象思维</td>
+<td>-</td>
+<td>ImageThinkingEngine</td>
+</tr>
+<tr>
+<td>知识学习Skills</td>
+<td>v2.3</td>
+<td>KnowledgeLearningEngine</td>
+</tr>
+<tr>
+<td>五色光思维</td>
+<td>v8.0</td>
+<td>FiveColorEngine</td>
+</tr>
+<tr>
+<td>人机协同五象限</td>
+<td>v4.0</td>
+<td>CollaborationEngine</td>
+</tr>
+<tr>
+<td>知行合一</td>
+<td>v2.1</td>
+<td>ZhiXingHeYiEngine</td>
+</tr>
+</tbody></table>
+<h3>②.4 AIOS v2.0新增核心引擎（4个）</h3>
+<table>
+<thead><tr>
+<th>Skill</th>
+<th>版本</th>
+<th>定位</th>
+<th>引擎ID</th>
+</tr></thead><tbody>
+<tr>
+<td>串行瓶颈诊断引擎</td>
+<td>v1.0</td>
+<td>四大结构性瓶颈诊断+瓶颈率/密度/热力图</td>
+<td>Engine 0</td>
+</tr>
+<tr>
+<td>瓶颈压缩策略引擎</td>
+<td>v1.0</td>
+<td>6大类瓶颈×压缩策略库+自动匹配+预期效果建模</td>
+<td>Engine 2</td>
+</tr>
+<tr>
+<td>AI原生组织成熟度评估</td>
+<td>v1.0</td>
+<td>L1-L5成熟度模型+死亡陷阱预警+演进路线图</td>
+<td>Engine 3</td>
+</tr>
+<tr>
+<td>Agent护照治理系统</td>
+<td>v1.0</td>
+<td>Agent护照+红绿灯三区制+审计追踪+回滚机制</td>
+<td>Governance</td>
+</tr>
+</tbody></table>
+<h3>②.2 五行总智能体（五行调度）</h3>
+<table>
+<thead><tr>
+<th>Skill</th>
+<th>定位</th>
+</tr></thead><tbody>
+<tr>
+<td>五行总智能体</td>
+<td>1+5模式总调度中枢</td>
+</tr>
+</tbody></table>
+<h3>②.3 木/火/土/金/水行人分智能体</h3>
+<table>
+<thead><tr>
+<th>Skill</th>
+<th>五行</th>
+</tr></thead><tbody>
+<tr>
+<td>木行人分智能体</td>
+<td>木</td>
+</tr>
+<tr>
+<td>火行人分智能体</td>
+<td>火</td>
+</tr>
+<tr>
+<td>土行人分智能体</td>
+<td>土</td>
+</tr>
+<tr>
+<td>金行人分智能体</td>
+<td>金</td>
+</tr>
+<tr>
+<td>水行人分智能体</td>
+<td>水</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>四、② 龙脑OS（知识层）· 12个</h2>
+<table>
+<thead><tr>
+<th>#</th>
+<th>Skill</th>
+<th>定位</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>龙脑OS</td>
+<td>知识库智能体主体（100思维模型·三层分层）</td>
+</tr>
+<tr>
+<td>2</td>
+<td>思维模型库</td>
+<td>龙脑OS组件</td>
+</tr>
+<tr>
+<td>3</td>
+<td>麦肯锡思考框架</td>
+<td>麦肯锡方法论</td>
+</tr>
+<tr>
+<td>4</td>
+<td>教员方法论</td>
+<td>问题发现与解决分析框架</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Karpathy LLM Wiki</td>
+<td>LLM知识库</td>
+</tr>
+<tr>
+<td>6</td>
+<td>llmification-knowledge-builder</td>
+<td>知识建构</td>
+</tr>
+<tr>
+<td>7</td>
+<td>知识库建设</td>
+<td>知识库构建方法</td>
+</tr>
+<tr>
+<td>8</td>
+<td>笔记搜索</td>
+<td>检索工具</td>
+</tr>
+<tr>
+<td>9</td>
+<td>L7理论基石</td>
+<td>五行心理学理论基石</td>
+</tr>
+<tr>
+<td>10</td>
+<td>L1·一心·统摄</td>
+<td>顶层觉知</td>
+</tr>
+<tr>
+<td>11</td>
+<td>L4·五行·分化</td>
+<td>核心智能层</td>
+</tr>
+<tr>
+<td>12</td>
+<td>拔阴取阳</td>
+<td>核心转化引擎</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>五、③ 龙爪OS（执行层）</h2>
+<h3>③.0 龙爪OS主体</h3>
+<table>
+<thead><tr>
+<th>Skill</th>
+<th>版本</th>
+<th>定位</th>
+</tr></thead><tbody>
+<tr>
+<td>龙爪OS</td>
+<td>v2.0</td>
+<td>项目智能体系统主体</td>
+</tr>
+</tbody></table>
+<h3>③.1 五行人格心理学OS · 10个</h3>
+<table>
+<thead><tr>
+<th>#</th>
+<th>Skill</th>
+<th>定位</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>五行人格心理学OS</td>
+<td>v4.0三层架构完整系统</td>
+</tr>
+<tr>
+<td>2</td>
+<td>五行人格心理学</td>
+<td>v4.0知识技能包容器（25子技能）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>凤心OS</td>
+<td>发动机（1+5模式）</td>
+</tr>
+<tr>
+<td>4</td>
+<td>凤脑OS</td>
+<td>知识地基层</td>
+</tr>
+<tr>
+<td>5</td>
+<td>凤爪OS</td>
+<td>应用接口层</td>
+</tr>
+<tr>
+<td>6</td>
+<td>五行人格心理学/L3智能调度内核</td>
+<td>调度内核</td>
+</tr>
+<tr>
+<td>7</td>
+<td>五行人格心理学/L3调度层</td>
+<td>调度层</td>
+</tr>
+<tr>
+<td>8</td>
+<td>五行人格心理学/L4五行分智能体</td>
+<td>分智能体</td>
+</tr>
+<tr>
+<td>9</td>
+<td>五行人格心理学/L5记忆层</td>
+<td>记忆与评估</td>
+</tr>
+<tr>
+<td>10</td>
+<td>五行人格心理学/L6底座层</td>
+<td>知识检索底座</td>
+</tr>
+</tbody></table>
+<h3>③.2 味藏智能体总包（23岗位）· 27个</h3>
+<p><strong>战略层（3）</strong>
+| Skill | 岗位 | P值 |
+|-------|------|-----|
+| CHMN-BRAIN | 董事长 | P=98 |
+| GM-CHIEF | 总经理 | P=96 |
+| 超级店长Skill-v3.0 | 父级编排器 | P=96 |</p>
+<p><strong>数据服务层（1）</strong>
+| P-01 | 数据服务层 | P=94 |</p>
+<p><strong>赋能层（9）</strong>
+| FIN-MGR | HR-MGR | HRD | MKT-MGR | PUR-MGR | PERF-MGR | POS-MGR | TR-SUP | FM-ALL |</p>
+<p><strong>执行层（8）</strong>
+| KC-LFY | KC-WZH | SM-JYT | SM-SS | SM-SSH | DU-DS | DU-WM | WU-JS |</p>
+<p><strong>组织层（6）</strong>
+| Skill | 定位 |
+|-------|------|
+| weizang-chief | 味藏总智能体 |
+| 味藏AI原生组织 | v1.0组织骨架（P=99） |
+| 店长7S总控 | v1.0店长7S一站式总控 |
+| 岗位智能体 | v1.0 AIOS组件 |
+| 品牌调性 | 品牌视觉基因 |
+| product-training | 产品培训 |</p>
+<h3>③.3 企业文化/其他项目 · 6个</h3>
+<table>
+<thead><tr>
+<th>#</th>
+<th>Skill</th>
+<th>定位</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>企业文化</td>
+<td>企业文化主体</td>
+</tr>
+<tr>
+<td>2</td>
+<td>企业文化OS知识库</td>
+<td>知识库</td>
+</tr>
+<tr>
+<td>3</td>
+<td>以观其妙书院公众号</td>
+<td>v4.2公众号运营</td>
+</tr>
+<tr>
+<td>4</td>
+<td>三向同步系统</td>
+<td>v5.0六向同步</td>
+</tr>
+<tr>
+<td>5</td>
+<td>workbuddy-obsidian-backup</td>
+<td>备份</td>
+</tr>
+<tr>
+<td>6</td>
+<td>龙爪OS</td>
+<td>执行层主体</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>六、④ 系统规则模块（30个）✅ 本次补齐11个</h2>
+<h3>原有规则（19个）</h3>
+<table>
+<thead><tr>
+<th>#</th>
+<th>Skill</th>
+<th>定位</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>安全规则</td>
+<td>P0安全</td>
+</tr>
+<tr>
+<td>2</td>
+<td>浏览器使用规则</td>
+<td>规则</td>
+</tr>
+<tr>
+<td>3</td>
+<td>状态更新规则</td>
+<td>规则</td>
+</tr>
+<tr>
+<td>4</td>
+<td>通信规则</td>
+<td>规则</td>
+</tr>
+<tr>
+<td>5</td>
+<td>网站部署标准</td>
+<td>规则</td>
+</tr>
+<tr>
+<td>6</td>
+<td>错误处理</td>
+<td>规则</td>
+</tr>
+<tr>
+<td>7</td>
+<td>自主权限规则</td>
+<td>规则</td>
+</tr>
+<tr>
+<td>8</td>
+<td>工具档案</td>
+<td>档案</td>
+</tr>
+<tr>
+<td>9</td>
+<td>推荐工具清单</td>
+<td>清单</td>
+</tr>
+<tr>
+<td>10</td>
+<td>长期记忆档案</td>
+<td>档案</td>
+</tr>
+<tr>
+<td>11</td>
+<td>心跳巡检档案</td>
+<td>档案</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Framework核心管理</td>
+<td>框架</td>
+</tr>
+<tr>
+<td>13</td>
+<td>学习档案</td>
+<td>错误闭环学习</td>
+</tr>
+<tr>
+<td>14</td>
+<td>学习能力系统</td>
+<td>学习</td>
+</tr>
+<tr>
+<td>15</td>
+<td>提示词工程专家</td>
+<td>提示词</td>
+</tr>
+<tr>
+<td>16</td>
+<td>多智能体管理</td>
+<td>多agent</td>
+</tr>
+<tr>
+<td>17</td>
+<td>任务控制台</td>
+<td>Mission Control</td>
+</tr>
+<tr>
+<td>18</td>
+<td>任务看板</td>
+<td>Task Board</td>
+</tr>
+<tr>
+<td>19</td>
+<td>内容发布规则</td>
+<td>规则</td>
+</tr>
+</tbody></table>
+<h3>🆕 本次新增规则（11个）</h3>
+<table>
+<thead><tr>
+<th>#</th>
+<th>Skill</th>
+<th>定位</th>
+<th>版本</th>
+</tr></thead><tbody>
+<tr>
+<td>20</td>
+<td>质量门禁规则</td>
+<td>G1/G2/G3三级门禁</td>
+<td>v1.0</td>
+</tr>
+<tr>
+<td>21</td>
+<td>版本管理规则</td>
+<td>Semantic Versioning三轨制</td>
+<td>v1.0</td>
+</tr>
+<tr>
+<td>22</td>
+<td>审计规则</td>
+<td>操作/决策/合规三维审计</td>
+<td>v1.0</td>
+</tr>
+<tr>
+<td>23</td>
+<td>回滚规则</td>
+<td>L1/L2/L3三级回滚</td>
+<td>v1.0</td>
+</tr>
+<tr>
+<td>24</td>
+<td>数据备份规则</td>
+<td>六向同步+三级备份</td>
+<td>v1.0</td>
+</tr>
+<tr>
+<td>25</td>
+<td>权限分级规则</td>
+<td>S/A/B/C/D五级权限</td>
+<td>v1.0</td>
+</tr>
+<tr>
+<td>26</td>
+<td>日志规范</td>
+<td>操作/决策/错误/进化四类日志</td>
+<td>v1.0</td>
+</tr>
+<tr>
+<td>27</td>
+<td>错误码规范</td>
+<td>五段式错误码</td>
+<td>v1.0</td>
+</tr>
+<tr>
+<td>28</td>
+<td>API规范</td>
+<td>内部/外部API统一规范</td>
+<td>v1.0</td>
+</tr>
+<tr>
+<td>29</td>
+<td>测试规范</td>
+<td>冒烟/单元/集成/回归四层</td>
+<td>v1.0</td>
+</tr>
+<tr>
+<td>30</td>
+<td>部署规范</td>
+<td>本地/云端/自动化+灰度</td>
+<td>v1.0</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>七、⑤ 其他AIOS组件（约62个）</h2>
+<h3>⑤.1 架构与框架（5）</h3>
+<p>AI-OS六层架构智能体 / AI原生组织工作流 / personal-ai-os-framework / Harness-Engineering / Framework核心管理</p>
+<h3>⑤.2 Agent系统（10）</h3>
+<p>adaptive-subagents / agent-browser-clawdbot / agent-memory-systems / agent-orchestrator / agent-swarm / agentdb-vector-search / create-sub-agent / self-improving / self-learning / darwin-skill</p>
+<h3>⑤.3 自动化与工作流（3）</h3>
+<p>automation-workflows / workflow-designer-pro / task-router</p>
+<h3>⑤.4 搜索与知识检索（8）</h3>
+<p>baidu-search / super-search / web-search-plus / rag-skill / context7 / obsidian / ima-skill / ima-skills / markitdown / find-skills</p>
+<h3>⑤.5 浏览器与外部平台自动化（6）</h3>
+<p>browser-automation / playwright-ai-agent / kimi-webbridge / wechat-article-search / wechat-article-spider / wechat-articles / xhs-publish-note</p>
+<h3>⑤.6 文档处理（7）</h3>
+<p>Excel 文件处理 / PDF 文档生成 / PPT 演示文稿 / Word 文档生成 / word-cn-format / office-automation-pro / 内容总结</p>
+<h3>⑤.7 开发工具（9）</h3>
+<p>frontend-dev / geo-converter / ghost-scan-code / ghost-scan-deps / ghost-scan-secrets / github-copilot-pro / gog / OpenCode-CLI桥接 / cost-tracker-pro</p>
+<h3>⑤.8 MCP/CLI/Skill管理（5）</h3>
+<p>MCP协议管理 / CLI原生操作入口 / skill-creator / skill-vetter / Skill安全审计（云鼎实验室） / Skill安全扫描（朱雀实验室）</p>
+<h3>⑤.9 外部平台集成（4）</h3>
+<p>github-cli / jinshuju / wechat-publisher / wechat-article-pro</p>
+<h3>⑤.10 其他工具（9）</h3>
+<p>chat-record-skills / 去AI味 / impeccable / memory-management / user-context / video-creator-ai / data-analyzer-pro / 腾讯会议 / 腾讯文档</p>
+<h3>⑤.11 通信与连接器（1）</h3>
+<p>composio-hub</p>
+<hr>
+<h2>八、本次梳理成果统计</h2>
+<table>
+<thead><tr>
+<th>项目</th>
+<th>数量</th>
+</tr></thead><tbody>
+<tr>
+<td>清理散落文件</td>
+<td>18个</td>
+</tr>
+<tr>
+<td>删除废弃目录</td>
+<td>4个</td>
+</tr>
+<tr>
+<td>重命名数字ID目录</td>
+<td>5个</td>
+</tr>
+<tr>
+<td>合并重复skill</td>
+<td>21个归档</td>
+</tr>
+<tr>
+<td>新增规则skill</td>
+<td>11个</td>
+</tr>
+<tr>
+<td><strong>新增AIOS v2.0核心引擎</strong></td>
+<td><strong>4个</strong>（串行瓶颈诊断/瓶颈压缩策略/成熟度评估/Agent护照）</td>
+</tr>
+<tr>
+<td><strong>升级味藏6文件至v2.0</strong></td>
+<td><strong>6个</strong>（00宪法/01决策矩阵/02握手协议/03心跳/04路由/05瓶颈追踪）</td>
+</tr>
+<tr>
+<td><strong>梳理前skill总数</strong></td>
+<td><strong>约180个</strong></td>
+</tr>
+<tr>
+<td><strong>梳理后skill总数</strong></td>
+<td><strong>168个 + 6文件v2.0</strong></td>
+</tr>
+<tr>
+<td><strong>核心变化</strong></td>
+<td><strong>从"工具集合"升维为"串行瓶颈压缩操作系统"</strong></td>
+</tr>
+</tbody></table>
+<h3>归档位置</h3>
+<ul>
+<li>散落文件备份：<code>/tmp/skills_cleanup_backup_20260627/散落文件/</code></li>
+<li>废弃目录备份：<code>/tmp/skills_cleanup_backup_20260627/废弃目录/</code></li>
+<li>重复合并归档：<code>~/.workbuddy/skills/_archive/重复合并_20260627/</code></li>
+</ul>
+<hr>
+<h2>九、架构健康度评估</h2>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>状态</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>垃圾文件</td>
+<td>🟢 健康</td>
+<td>已清理18+4个</td>
+</tr>
+<tr>
+<td>命名规范</td>
+<td>🟢 健康</td>
+<td>数字ID已重命名</td>
+</tr>
+<tr>
+<td>重复skill</td>
+<td>🟢 健康</td>
+<td>21个重复已归档</td>
+</tr>
+<tr>
+<td>系统规则完整度</td>
+<td>🟢 健康</td>
+<td>30/30达标</td>
+</tr>
+<tr>
+<td>🆕 AIOS v2.0引擎完整度</td>
+<td>🟢 健康</td>
+<td>4引擎全部就位（Engine 0/2/3 + Governance）</td>
+</tr>
+<tr>
+<td>🆕 味藏6文件v2.0升级</td>
+<td>🟢 健康</td>
+<td>宪法/决策/握手/心跳/路由/瓶颈全部v2.0</td>
+</tr>
+<tr>
+<td>🆕 串行瓶颈驱动</td>
+<td>🟢 健康</td>
+<td>核心主轴已从"功能堆叠"升维为"瓶颈压缩"</td>
+</tr>
+<tr>
+<td>架构层级清晰度</td>
+<td>🟢 健康</td>
+<td>五大分类明确</td>
+</tr>
+<tr>
+<td>文档同步</td>
+<td>🟡 待更新</td>
+<td>本图需同步到Obsidian</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>作者</strong>：悟空（贾悦）·以观其妙书院
+<strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy
+<strong>知识产权</strong>：© 2026 以观其妙书院 · 所有权利保留</p>
+<hr>
+<p>_此附录为《从零构建AI原生组织——味藏×AIOS实战手册》附录B，随手册主体一同发布。_</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

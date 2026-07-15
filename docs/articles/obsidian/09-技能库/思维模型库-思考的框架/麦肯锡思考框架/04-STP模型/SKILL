@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>STP模型 · 麦肯锡思维模型 - 以观其妙书院</title>
+<meta name="description" content="STP模型 · 麦肯锡思维模型 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="STP模型 · 麦肯锡思维模型">
+<meta property="og:description" content="STP模型 · 麦肯锡思维模型 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "STP模型 · 麦肯锡思维模型",
+    "description": "STP模型 · 麦肯锡思维模型 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>STP模型 · 麦肯锡思维模型</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>🎯 STP模型 · 麦肯锡思维模型</h1>
+<blockquote><p><strong>版本</strong>: v1.0 | <strong>创建</strong>: 2026-04-15 | <strong>维护者</strong>: 龙龟神将  
+<strong>系统归属</strong>: 思维模型库 · 麦肯锡子库 · 战略规划与管理类  
+<strong>调用方式</strong>: 龙心OS智能调度</p></blockquote>
+<hr>
+<h2>一、核心定义</h2>
+<h3>1.1 一句话定义</h3>
+<p><strong>STP模型</strong>是市场战略的核心框架，通过<strong>市场细分（Segmentation）→ 目标市场选择（Targeting）→ 定位（Positioning）</strong>三步，将有限资源聚焦于最具价值的市场机会。</p>
+<h3>1.2 核心公式</h3>
+<pre><code>STP = S(细分) × T(选择) × P(定位)</code></pre>
+<h3>1.3 经典引用</h3>
+<blockquote><p>"市场营销的本质不是向所有人卖所有东西，而是找到对的人，传递对的价值。"  
+— 菲利普·科特勒</p></blockquote>
+<hr>
+<h2>二、三步框架</h2>
+<h3>2.1 市场细分（S - Segmentation）</h3>
+<p><strong>核心问题</strong>：我们的市场可以被怎样独特地划分？</p>
+<h4>细分维度矩阵</h4>
+<table>
+<thead><tr>
+<th>细分维度</th>
+<th>具体变量</th>
+<th>分析要点</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>地理</strong></td>
+<td>地区/城市/气候/人口密度</td>
+<td>地域差异是否显著？</td>
+</tr>
+<tr>
+<td><strong>人口统计</strong></td>
+<td>年龄/性别/收入/教育/职业</td>
+<td>哪类人群最有价值？</td>
+</tr>
+<tr>
+<td><strong>心理</strong></td>
+<td>价值观/生活方式/个性</td>
+<td>心理特征如何影响购买？</td>
+</tr>
+<tr>
+<td><strong>行为</strong></td>
+<td>使用频率/忠诚度/购买时机</td>
+<td>行为模式有何规律？</td>
+</tr>
+</tbody></table>
+<h4>细分市场评估标准</h4>
+<table>
+<thead><tr>
+<th>评估维度</th>
+<th>问题清单</th>
+<th>权重</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>可衡量性</strong></td>
+<td>细分市场规模可量化吗？</td>
+<td>20%</td>
+</tr>
+<tr>
+<td><strong>可接近性</strong></td>
+<td>能有效触达这个群体吗？</td>
+<td>20%</td>
+</tr>
+<tr>
+<td><strong>足量性</strong></td>
+<td>规模足够大到值得投入吗？</td>
+<td>20%</td>
+</tr>
+<tr>
+<td><strong>可行动性</strong></td>
+<td>有能力服务这个群体吗？</td>
+<td>20%</td>
+</tr>
+<tr>
+<td><strong>差异性</strong></td>
+<td>各细分有明显区别吗？</td>
+<td>20%</td>
+</tr>
+</tbody></table>
+<p><strong>五色光映射</strong>：⬜ 白光（客观事实层）</p>
+<h3>2.2 目标市场选择（T - Targeting）</h3>
+<p><strong>核心问题</strong>：哪个细分市场最具战略价值？</p>
+<h4>三种目标市场策略</h4>
+<table>
+<thead><tr>
+<th>策略类型</th>
+<th>特点</th>
+<th>适用场景</th>
+<th>风险</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>密集型</strong></td>
+<td>单一细分市场深耕</td>
+<td>资源有限/产品专精</td>
+<td>市场变化风险大</td>
+</tr>
+<tr>
+<td><strong>多元化</strong></td>
+<td>多个细分市场并行</td>
+<td>资源充裕/能力强</td>
+<td>管理复杂度高</td>
+</tr>
+<tr>
+<td><strong>选择性</strong></td>
+<td>精选几个有利市场</td>
+<td>追求增长/分散风险</td>
+<td>需要差异化能力</td>
+</tr>
+</tbody></table>
+<h4>目标市场评估矩阵</h4>
+<table>
+<thead><tr>
+<th>细分市场</th>
+<th>吸引力</th>
+<th>公司竞争力</th>
+<th>综合得分</th>
+<th>优先级</th>
+</tr></thead><tbody>
+<tr>
+<td>市场A</td>
+<td>高(5)</td>
+<td>强(4)</td>
+<td>20</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>市场B</td>
+<td>中(3)</td>
+<td>强(5)</td>
+<td>15</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>市场C</td>
+<td>高(4)</td>
+<td>弱(2)</td>
+<td>8</td>
+<td>★</td>
+</tr>
+</tbody></table>
+<p><strong>五色光映射</strong>：🟨 黄光（积极价值层）</p>
+<h3>2.3 市场定位（P - Positioning）</h3>
+<p><strong>核心问题</strong>：如何在目标心智中建立独特位置？</p>
+<h4>定位三要素</h4>
+<pre><code>定位 = 我是谁 + 我为谁 + 我有何不同</code></pre>
+<h4>定位策略选择</h4>
+<table>
+<thead><tr>
+<th>定位类型</th>
+<th>策略描述</th>
+<th>成功关键</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>属性定位</strong></td>
+<td>基于产品特征</td>
+<td>特征需重要且独特</td>
+</tr>
+<tr>
+<td><strong>利益定位</strong></td>
+<td>基于客户收益</td>
+<td>利益需真实且相关</td>
+</tr>
+<tr>
+<td><strong>用途定位</strong></td>
+<td>基于使用场景</td>
+<td>场景需高频且具体</td>
+</tr>
+<tr>
+<td><strong>竞争定位</strong></td>
+<td>相对于竞争对手</td>
+<td>对比需真实且有利</td>
+</tr>
+<tr>
+<td><strong>类比定位</strong></td>
+<td>接近另一品类</td>
+<td>类比需认知度高</td>
+</tr>
+</tbody></table>
+<h4>定位陈述模板</h4>
+<blockquote><p>"对于 [目标群体]，我们是 [品类/品牌]，能够 [核心利益]，因为 [差异化理由]。"</p></blockquote>
+<p><strong>五色光映射</strong>：🟥 红光（直觉感受层）</p>
+<hr>
+<h2>三、操作流程</h2>
+<h3>3.1 标准七步法</h3>
+<pre><code>第一步：明确市场边界
+    ↓
+第二步：识别细分变量（地理/人口/心理/行为）
+    ↓
+第三步：描述细分轮廓
+    ↓
+第四步：评估吸引力与公司适配度
+    ↓
+第五步：选择目标市场策略
+    ↓
+第六步：设计价值主张与定位
+    ↓
+第七步：验证定位的可执行性</code></pre>
+<hr>
+<h2>四、实战模板</h2>
+<h3>4.1 消费品行业STP案例</h3>
+<p><strong>情境</strong>：某高端护肤品牌进行市场STP</p>
+<pre><code>【市场细分】
+- 地理：一二线城市
+- 人口：25-40岁女性，本科及以上学历
+- 心理：追求品质、注重成分、愿意为效果付费
+- 行为：使用高端品牌、关注美妆博主、频繁换产品
+
+【目标市场选择】
+选择：25-35岁一二线城市职场女性
+理由：购买力强、品牌意识高、需求与产品高度匹配
+
+【定位】
+"专为亚洲职场女性研发的科学护肤品牌，
+基于皮肤医学研究，提供安全有效的抗衰解决方案。"
+差异化：医学背景 + 亚洲肤质专研</code></pre>
+<h3>4.2 B2B企业STP案例</h3>
+<p><strong>情境</strong>：某SaaS产品进行企业客户STP</p>
+<pre><code>【市场细分】
+- 行业：制造业/零售业/服务业
+- 规模：50-500人中大型企业
+- 发展阶段：数字化转型期
+- 采购决策：IT+业务联合决策
+
+【目标市场选择】
+首选：制造业 + 50-200人规模
+次选：零售业 + 200-500人规模
+
+【定位】
+"帮助成长型企业实现业务流程数字化的敏捷SaaS平台"
+差异化：简单易用 + 性价比高 + 本地化服务</code></pre>
+<hr>
+<h2>五、与五行人格整合</h2>
+<table>
+<thead><tr>
+<th>五行人</th>
+<th>STP应用方式</th>
+</tr></thead><tbody>
+<tr>
+<td>🌿 木</td>
+<td>关注细分市场的成长性与创新需求</td>
+</tr>
+<tr>
+<td>🔥 火</td>
+<td>洞察消费者情感诉求与品牌共鸣</td>
+</tr>
+<tr>
+<td>🌏 土</td>
+<td>分析市场的稳定性与持续价值</td>
+</tr>
+<tr>
+<td>⚔️ 金</td>
+<td>精确评估市场规模与竞争壁垒</td>
+</tr>
+<tr>
+<td>💧 水</td>
+<td>把握市场趋势与周期性变化</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>六、核心金句</h2>
+<blockquote><p>"STP不是一次性的决策，而是一个动态循环。市场在变，你的STP也应该与时俱进。"</p></blockquote>
+<hr>
+<h2>七、关联文件</h2>
+<table>
+<thead><tr>
+<th>关联类型</th>
+<th>文件路径</th>
+</tr></thead><tbody>
+<tr>
+<td>母库索引</td>
+<td><code>../SKILL.md</code></td>
+</tr>
+<tr>
+<td>配套模型</td>
+<td><code>../15-3C分析/SKILL.md</code></td>
+</tr>
+<tr>
+<td>配套模型</td>
+<td><code>../17-用户画像/SKILL.md</code></td>
+</tr>
+<tr>
+<td>配套模型</td>
+<td><code>../18-品牌资产金字塔/SKILL.md</code></td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>版本</strong>: v1.0 | <strong>创建</strong>: 2026-04-15 | <strong>维护者</strong>: 龙龟神将  
+<strong>系统地位</strong>: 思维模型库 · 麦肯锡子库 · 战略规划与管理类</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>
