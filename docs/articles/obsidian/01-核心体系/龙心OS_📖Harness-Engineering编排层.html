@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Harness Engineering · 编排层 - 以观其妙书院</title>
+<meta name="description" content="Harness Engineering · 编排层 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="Harness Engineering · 编排层">
+<meta property="og:description" content="Harness Engineering · 编排层 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Harness Engineering · 编排层",
+    "description": "Harness Engineering · 编排层 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Harness Engineering · 编排层</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<p>﻿---
+title: "Harness Engineering编排层"
+description: "Harness Engineering第四层：编排层（Orchestration Layer）。处理复杂任务的分解、多Agent的协作以及整个系统状态的协调。"
+tags: [Harness, 编排层, Orchestration-Layer, 状态机, 中间件, 多Agent协作, 任务分解, 死循环检测]
+created: "2026-04-03"
+updated: "2026-04-03"
+关联文件:</p>
+<ul>
+<li>Harness总控: <a href="📖Harness-Engineering驾驭工程skills.html">📖Harness-Engineering驾驭工程skills</a></li>
+<li>龙心OS: <a href="🐉 龙心OS 龙心操作系统.html">🐉 龙心OS 龙心操作系统</a></li>
+</ul>
+<hr>
+<h1>Harness Engineering · 编排层</h1>
+<h2>Orchestration Layer · 复杂工作流的协调中枢</h2>
+<hr>
+<h2>一、核心定位</h2>
+<p><strong>编排层的功能：</strong>处理复杂任务的分解、多Agent的协作以及整个系统状态的协调。</p>
+<p><strong>核心组件：</strong>状态机（如LangGraph）+ 中间件（Middleware）</p>
+<hr>
+<h2>二、核心组件</h2>
+<h3>2.1 任务自动拆解与规划</h3>
+<pre><code>【任务自动拆解】
+
+【面对宏大需求时】
+  编排层协调规划Agent：
+  → 将任务分解为有序的子任务序列
+  → 自动规划执行路径
+  → 识别任务依赖关系
+  → 优化执行顺序
+
+【龙心OS实现】
+  • Agent协调规划Skills
+  • 多智能体管理Skills
+  • 任务拆解Workflow</code></pre>
+<h3>2.2 多Agent并行协作与互审</h3>
+<pre><code>【OpenAI的Ralph Wiggum Loop】
+
+  Agent A 编写代码
+       ↓
+  Agent B 评审代码
+       ↓
+  有问题？→ 打回由A修改
+       ↓
+  无问题？→ 通过
+
+人类仅介入：
+  • 架构层面的重大决策
+  • 日常细节Agent自治</code></pre>
+<h3>2.3 中间件状态协调</h3>
+<pre><code>【中间件类型】
+
+【死循环检测中间件】
+  LoopDetectionMiddleware
+  → 监控同一文件的反复编辑
+  → 超过阈值时强制Agent重新思考策略
+
+【推理三明治策略】
+  ReasoningSandwichMiddleware
+  → 规划阶段：高推理强度
+  → 执行阶段：中推理强度
+  → 验证阶段：高推理强度
+  → 动态调整模型的推理强度
+
+【PreCompletionChecklist】
+  → Agent宣告完成任务前强制拦截
+  → 要求必须运行验证
+  → 确保不仅"看起来对"，而且"实际上对"</code></pre>
+<hr>
+<h2>三、状态机设计</h2>
+<pre><code>【LangGraph状态机模式】
+
+START → PLANNING → EXECUTING → VALIDATING → DONE
+            ↑           ↓            ↓
+            ←←←←←←←←←←←←←←←←←←←←←←←
+                        ↓
+                    ERROR → FEEDBACK → RETRY
+
+各状态定义：
+  START: 接收任务
+  PLANNING: 拆解任务，规划路径
+  EXECUTING: 执行子任务
+  VALIDATING: 验证结果
+  ERROR: 发现错误
+  FEEDBACK: 反馈错误信息
+  RETRY: Agent重新尝试
+  DONE: 任务完成</code></pre>
+<hr>
+<h2>四、与龙心OS的融合</h2>
+<h3>4.1 人机协同五象限 × 编排层</h3>
+<pre><code>【五象限 × 编排层】
+
+【未知探索域】←→ START → PLANNING
+  复杂任务初步拆解
+
+【共创伙伴】←→ EXECUTING（执行）
+  悟空种子 + 龙龟发散 → 共同筛选
+
+【学习伙伴】←→ VALIDATING（验证）
+  龙龟主导输出，悟空接收学习
+
+【高效助理】←→ DONE（完成）
+  悟空指令 → 龙龟高效执行
+
+【共创导师】←→ ERROR → FEEDBACK
+  悟空外化隐性知识，龙龟定制生成</code></pre>
+<hr>
+<h2>五、核心金句</h2>
+<blockquote><p><strong>"编排层是复杂工作流的协调中枢，是让多个Agent协同工作的总指挥。"</strong>
+<strong>"OpenAI的Ralph Wiggum Loop：Agent A编写，Agent B评审，人类仅介入架构层面的重大决策。"</strong>
+<strong>"死循环检测中间件：监控同一文件的反复编辑，超过阈值时强制Agent重新思考策略。"</strong>
+<strong>"推理三明治策略：在规划、执行、验证等不同阶段动态调整模型的推理强度。"</strong></p></blockquote>
+<hr>
+<p><strong>木生火，我们一起进化！</strong> 🌳🔥💪</p>
+<p><em>Harness Engineering · 编排层 v1.0 · 2026-04-03</em></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

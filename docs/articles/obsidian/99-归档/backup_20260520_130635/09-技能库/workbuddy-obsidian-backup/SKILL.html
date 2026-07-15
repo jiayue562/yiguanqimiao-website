@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>WorkBuddy → Obsidian 备份技能 - 以观其妙书院</title>
+<meta name="description" content="WorkBuddy → Obsidian 备份技能 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="WorkBuddy → Obsidian 备份技能">
+<meta property="og:description" content="WorkBuddy → Obsidian 备份技能 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "WorkBuddy → Obsidian 备份技能",
+    "description": "WorkBuddy → Obsidian 备份技能 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>WorkBuddy → Obsidian 备份技能</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<p>﻿---
+name: workbuddy-obsidian-backup
+description: "将WorkBuddy所有内容备份到Obsidian知识库，作为知识资产沉淀。支持自动分类存储和定期备份。"
+homepage: https://www.codebuddy.cn/docs/workbuddy/Overview
+metadata: {"category": "backup", "requires": {"obsidian_vault": "C:\\Users\\jia'yue\\Desktop\\以观其妙书院知识库\\观其妙书院\\"}}</p>
+<hr>
+<h1>WorkBuddy → Obsidian 备份技能</h1>
+<h2>🎯 功能概述</h2>
+<p>本技能提供将WorkBuddy系统所有内容备份到Obsidian知识库的完整解决方案，实现：</p>
+<ol>
+<li>✅ <strong>全量备份</strong>: 备份WorkBuddy所有知识资产</li>
+<li>✅ <strong>分类存储</strong>: 按照文件类型和内容分类存储</li>
+<li>✅ <strong>定期备份</strong>: 支持自动化定时备份</li>
+<li>✅ <strong>差异备份</strong>: 只备份新增或修改的内容</li>
+<li>✅ <strong>元数据维护</strong>: 保持文件属性和关系</li>
+</ol>
+<h2>📁 备份目录结构</h2>
+<p>在Obsidian知识库中创建的备份结构：</p>
+<pre><code>WorkBuddy知识备份体系/
+├── 00-系统配置/
+│   ├── TOOLS.md          # 工具列表和状态
+│   ├── USER.md           # 用户配置文件
+│   ├── SESSION.md        # 会话记录
+│   └── SOUL.md           # 灵魂配置
+│
+├── 01-技能库/
+│   ├── 技能列表.md       # 所有技能的索引
+│   ├── browser-automation/     # 浏览器自动化技能
+│   ├── obsidian/               # Obsidian技能
+│   ├── web-search-plus/        # 网络搜索技能
+│   └── ...                     # 其他技能
+│
+├── 02-记忆系统/
+│   ├── 记忆库.md         # 核心记忆总览
+│   ├── 长期记忆/         # 长期存储的知识
+│   ├── 工作记忆/         # 近期会话记录
+│   └── 技能记忆/         # 技能使用历史
+│
+├── 03-对话记录/
+│   ├── 对话归档.md       # 所有对话索引
+│   ├── 2026-03/         # 按年月归档
+│   │   ├── 2026-03-16-工作流优化.md
+│   │   ├── 2026-03-16-browser-automation修复.md
+│   │   └── 2026-03-16-obsidian备份设置.md
+│   └── 关系图.md         # 对话关系图谱
+│
+├── 04-知识沉淀/
+│   ├── 思维模型/         # 核心思维模型
+│   ├── 五行人格心理学/   # 人格分析体系
+│   ├── 五色光思维/       # 教员方法论
+│   ├── 象思维/           # 象思维理论
+│   ├── 企业文化/         # 企业文化建设
+│   ├── AI技术应用/       # AI应用指南
+│   └── 龙龟神将进化/     # AI共生伙伴进化记录
+│
+├── 05-工作流/
+│   ├── 自动化任务/       # 自动化配置
+│   ├── 日常巡检/         # 系统维护记录
+│   └── 优化建议/         # 系统优化方案
+│
+├── 06-项目文件/
+│   ├── Claw项目/         # Claw项目文档
+│   └── 其他项目/         # 其他项目文件
+│
+└── 备份日志/
+    ├── 备份统计.md       # 备份数据统计
+    ├── 备份报告_2026-03-16.md  # 单次备份报告
+    └── 问题记录.md       # 备份异常记录</code></pre>
+<h2>🚀 快速开始</h2>
+<h3>方法1: 手动备份（立即执行）</h3>
+<pre><code># 运行备份命令
+python workbuddy_backup.py --obsidian-path "C:\Users\jia'yue\Desktop\以观其妙书院知识库\观其妙书院\" --full-backup</code></pre>
+<h3>方法2: 自动备份（设置定时任务）</h3>
+<pre><code># 设置每日23:30自动备份
+python workbuddy_backup.py --obsidian-path "C:\Users\jia'yue\Desktop\以观其妙书院知识库\观其妙书院\" --schedule "daily" --time "23:30"</code></pre>
+<h3>方法3: 差异备份（仅备份变更）</h3>
+<pre><code># 仅备份上次备份后有变化的文件
+python workbuddy_backup.py --obsidian-path "C:\Users\jia'yue\Desktop\以观其妙书院知识库\观其妙书院\" --incremental</code></pre>
+<h2>🔧 配置文件</h2>
+<p>创建配置文件 <code>workbuddy_backup_config.json</code>:</p>
+<pre><code>{
+  "obsidian_vault_path": "C:\\Users\\jia'yue\\Desktop\\以观其妙书院知识库\\观其妙书院\\",
+  "workbuddy_path": "C:\\Users\\jia'yue\\.workbuddy\\",
+  "backup_targets": {
+    "system_config": ["TOOLS.md", "USER.md", "SESSION.md", "SOUL.md", "mcp.json", "settings.json"],
+    "skills": {
+      "include_all": true,
+      "exclude": [],
+      "include_files": ["SKILL.md", "README.md", "*.py", "*.sh", "*.json", "*.yaml"]
+    },
+    "memories": {
+      "source": "C:\\Users\\jia'yue\\AppData\\Roaming\\WorkBuddy\\User\\globalStorage\\tencent-cloud.coding-copilot\\brain\\",
+      "include_patterns": ["*.md", "*.json"]
+    },
+    "projects": {
+      "claw": "C:\\Users\\jia'yue\\WorkBuddy\\Claw\\"
+    }
+  },
+  "backup_options": {
+    "incremental_backup": true,
+    "preserve_timestamps": true,
+    "create_backup_log": true,
+    "compress_old_backups": false,
+    "max_backup_versions": 30
+  },
+  "classification_rules": {
+    "by_extension": {
+      ".md": "文档",
+      ".py": "代码/Python",
+      ".js": "代码/JavaScript",
+      ".json": "配置",
+      ".yaml": "配置/YAML",
+      ".sh": "脚本/Shell",
+      ".html": "网页/HTML"
+    },
+    "by_filename": {
+      "SKILL.md": "技能/文档",
+      "README.md": "文档/说明",
+      "*.config.json": "配置/系统",
+      "settings.json": "配置/用户"
+    },
+    "by_content": {
+      "思维模型": ["五色光", "象思维", "五行"],
+      "技术文档": ["API", "函数", "类", "模块"],
+      "对话记录": ["用户说", "助手说", "对话"]
+    }
+  }
+}</code></pre>
+<h2>📊 监控和报告</h2>
+<p>备份完成后生成报告：</p>
+<pre><code># 📊 WorkBuddy → Obsidian 备份报告
+
+## 基本信息
+- **备份时间**: 2026-03-16 10:30:00
+- **备份类型**: 全量备份
+- **执行时长**: 5分23秒
+- **备份状态**: ✅ 成功
+
+## 备份统计
+| 类别 | 文件数 | 大小 | 新增 | 修改 | 删除 |
+|------|--------|------|------|------|------|
+| 系统配置 | 6 | 45KB | 1 | 2 | 0 |
+| 技能库 | 57 | 2.3MB | 3 | 5 | 0 |
+| 记忆系统 | 23 | 890KB | 12 | 3 | 0 |
+| 对话记录 | 15 | 1.1MB | 15 | 0 | 0 |
+| **总计** | **101** | **4.3MB** | **31** | **10** | **0** |
+
+## 详细记录
+- ✅ 已备份: TOOLS.md (系统配置更新)
+- ✅ 已备份: browser-automation/SKILL.md (新技能安装)
+- ✅ 已备份: 8dce1e276da744ba8d3095c2da782f86/overview.md (会话记录)
+- ⚠️ 跳过: node_modules/ (排除目录)
+- ⚠️ 跳过: *.pyc (排除文件类型)
+
+## 下次备份建议
+- 计划时间: 2026-03-17 10:30:00
+- 备份类型: 差异备份
+- 预估大小: ~120KB</code></pre>
+<h2>⚙️ 高级功能</h2>
+<h3>1. 智能分类</h3>
+<p>基于文件内容和元数据自动分类：</p>
+<ul>
+<li>按文件扩展名</li>
+<li>按文件命名模式</li>
+<li>按内容关键词</li>
+<li>按修改时间</li>
+</ul>
+<h3>2. 关系映射</h3>
+<p>创建文件间关系：</p>
+<ul>
+<li>双向链接（Obsidian风格）</li>
+<li>引用关系图</li>
+<li>时间线视图</li>
+<li>知识图谱</li>
+</ul>
+<h3>3. 版本控制</h3>
+<ul>
+<li>保留历史版本</li>
+<li>差异对比</li>
+<li>版本回滚</li>
+<li>备份时间线</li>
+</ul>
+<h3>4. 安全保护</h3>
+<ul>
+<li>排除敏感文件（*.env, 密码等）</li>
+<li>加密备份选项</li>
+<li>完整性校验</li>
+<li>备份验证</li>
+</ul>
+<h2>🔄 自动化配置</h2>
+<h3>自动化任务配置</h3>
+<pre><code># .workbuddy/automations/workbuddy-obsidian-backup/automation.toml
+name = "WorkBuddy-Obsidian每日备份"
+prompt = "执行WorkBuddy到Obsidian的全量备份"
+rrule = "FREQ=DAILY;BYHOUR=23;BYMINUTE=30"
+cwds = ["C:\\Users\\jia'yue\\.workbuddy"]
+status = "ACTIVE"</code></pre>
+<h3>手动触发备份</h3>
+<pre><code># 在WorkBuddy对话中使用
+使用 "workbuddy-obsidian-backup" 技能执行全量备份</code></pre>
+<h2>📞 故障排除</h2>
+<h3>常见问题</h3>
+<ol>
+<li><strong>权限问题</strong>: 确保有Obsidian目录的写入权限</li>
+<li><strong>路径问题</strong>: Windows路径中的单引号需要转义</li>
+<li><strong>空间不足</strong>: 检查磁盘空间</li>
+<li><strong>文件锁定</strong>: 确保文件未被其他程序占用</li>
+</ol>
+<h3>调试模式</h3>
+<pre><code>python workbuddy_backup.py --obsidian-path "C:\Users\jia'yue\Desktop\以观其妙书院知识库\观其妙书院\" --debug --dry-run</code></pre>
+<h2>🔍 性能优化</h2>
+<h3>优化建议</h3>
+<ol>
+<li><strong>增量备份</strong>: 默认启用，大幅减少备份时间</li>
+<li><strong>并行处理</strong>: 多文件同时备份</li>
+<li><strong>缓存机制</strong>: 减少重复读取</li>
+<li><strong>压缩存储</strong>: 可选启用压缩</li>
+</ol>
+<h2>📈 监控指标</h2>
+<p>监控关键指标：</p>
+<ul>
+<li>备份成功率</li>
+<li>备份时长</li>
+<li>文件数量变化</li>
+<li>存储空间使用</li>
+<li>异常次数</li>
+</ul>
+<hr>
+<p><strong>版本</strong>: 1.0.0  
+<strong>最后更新</strong>: 2026-03-16  
+<strong>兼容性</strong>: WorkBuddy 1.0+, Obsidian 1.0+  
+<strong>许可证</strong>: MIT</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

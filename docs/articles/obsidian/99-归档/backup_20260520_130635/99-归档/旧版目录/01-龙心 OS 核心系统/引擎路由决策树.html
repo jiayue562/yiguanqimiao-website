@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>龙心 OS 引擎路由决策树 - 以观其妙书院</title>
+<meta name="description" content="龙心 OS 引擎路由决策树 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="龙心 OS 引擎路由决策树">
+<meta property="og:description" content="龙心 OS 引擎路由决策树 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "龙心 OS 引擎路由决策树",
+    "description": "龙心 OS 引擎路由决策树 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>龙心 OS 引擎路由决策树</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>龙心 OS 引擎路由决策树</h1>
+<blockquote><p>🧠 自动调度·智能路由·引擎协同 · 2026-04-16</p></blockquote>
+<p><strong>版本</strong>: v1.0  
+<strong>日期</strong>: 2026-04-16  
+<strong>标签</strong>: #引擎路由 #决策树 #自动调度 #龙心 OS</p>
+<hr>
+<h2>🌲 决策树总览</h2>
+<pre><code>                    用户输入
+                        │
+                        ↓
+              ┌─────────────────┐
+              │   1. 上下文感知  │
+              │ - 对话历史      │
+              │ - 当前话题      │
+              │ - 情感状态      │
+              └────────┬────────┘
+                       │
+                       ↓
+              ┌─────────────────┐
+              │   2. 场景识别    │
+              │ - S0-S9 分类    │
+              │ - 置信度评分    │
+              └────────┬────────┘
+                       │
+                       ↓
+              ┌─────────────────┐
+              │   3. 引擎调度    │
+              │ - 单引擎        │
+              │ - 多引擎协同    │
+              │ - 全引擎        │
+              └────────┬────────┘
+                       │
+                       ↓
+              ┌─────────────────┐
+              │   4. 执行输出    │
+              │ - 引擎结果      │
+              │ - 整合呈现      │
+              └────────┬────────┘
+                       │
+                       ↓
+              ┌─────────────────┐
+              │   5. 反馈学习    │
+              │ - 用户反馈      │
+              │ - 优化路由      │
+              └─────────────────┘</code></pre>
+<hr>
+<h2>🔧 第一层：上下文感知</h2>
+<h3>感知维度</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>数据来源</th>
+<th>处理方式</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>对话历史</strong></td>
+<td>最近 10 轮对话</td>
+<td>语义摘要 + 关键词提取</td>
+</tr>
+<tr>
+<td><strong>当前话题</strong></td>
+<td>用户输入</td>
+<td>NLP 主题识别</td>
+</tr>
+<tr>
+<td><strong>情感状态</strong></td>
+<td>文本情感分析</td>
+<td>正面/中性/负面 + 强度</td>
+</tr>
+<tr>
+<td><strong>用户身份</strong></td>
+<td>用户画像</td>
+<td>偏好/习惯/历史行为</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>上下文窗口</h3>
+<pre><code>┌─────────────────────────────────────────┐
+│ 对话历史（最近 10 轮）                   │
+│ ┌─────────────────────────────────────┐ │
+│ │ Round 1: 用户输入 → 系统响应        │ │
+│ │ Round 2: 用户输入 → 系统响应        │ │
+│ │ ...                                 │ │
+│ │ Round 10: 用户输入 → 系统响应       │ │
+│ └─────────────────────────────────────┘ │
+│                                         │
+│ 当前输入：[用户最新输入]                │
+│                                         │
+│ 情感状态：中性 (0.6)                    │
+│ 话题标签：#龙心 OS #架构设计            │
+└─────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>🎯 第二层：场景识别</h2>
+<h3>S0-S9 分类器</h3>
+<pre><code>def classify_scene(input_text, context):
+    """
+    场景分类器
+    返回：(scene_code, confidence_score)
+    """
+    # 特征提取
+    features = extract_features(input_text, context)
+    
+    # 场景评分
+    scores = {}
+    for scene in ['S0', 'S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'S8', 'S9']:
+        scores[scene] = calculate_scene_score(features, scene)
+    
+    # 选择最高分场景
+    best_scene = max(scores, key=scores.get)
+    confidence = scores[best_scene]
+    
+    return best_scene, confidence</code></pre>
+<hr>
+<h3>置信度计算</h3>
+<table>
+<thead><tr>
+<th>因素</th>
+<th>权重</th>
+<th>计算方式</th>
+</tr></thead><tbody>
+<tr>
+<td>关键词匹配</td>
+<td>40%</td>
+<td>场景特征词匹配数量 / 总特征词数</td>
+</tr>
+<tr>
+<td>语义相似度</td>
+<td>30%</td>
+<td>输入与场景定义的余弦相似度</td>
+</tr>
+<tr>
+<td>上下文连贯</td>
+<td>20%</td>
+<td>与历史对话主题一致性</td>
+</tr>
+<tr>
+<td>情感匹配</td>
+<td>10%</td>
+<td>情感状态与场景期望的匹配度</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>置信度阈值处理</h3>
+<table>
+<thead><tr>
+<th>置信度</th>
+<th>处理方式</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>≥ 0.9</strong></td>
+<td>高置信度，直接调度</td>
+<td>"深度学习这篇文章" → S2 → 知识学习</td>
+</tr>
+<tr>
+<td><strong>0.7-0.9</strong></td>
+<td>中置信度，调度 + 确认</td>
+<td>"帮我分析这个" → S4 → 五色光思维（确认）</td>
+</tr>
+<tr>
+<td><strong>&lt; 0.7</strong></td>
+<td>低置信度，S0 或询问</td>
+<td>"这个怎么样" → S0 → 人机协同（询问澄清）</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🚀 第三层：引擎调度</h2>
+<h3>调度模式</h3>
+<table>
+<thead><tr>
+<th>模式</th>
+<th>说明</th>
+<th>适用场景</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>单引擎</strong></td>
+<td>调用单一子智能体</td>
+<td>S0/S1/S2/S3/S6/S7/S8</td>
+</tr>
+<tr>
+<td><strong>多引擎协同</strong></td>
+<td>2-3 个引擎组合</td>
+<td>S4 分析决策</td>
+</tr>
+<tr>
+<td><strong>全引擎</strong></td>
+<td>5 个引擎全部参与</td>
+<td>S5 重大决策/S9 系统进化</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>单引擎调度</h3>
+<pre><code>场景 → 引擎映射:
+S0 → 人机协同（默认模式）
+S1 → 人机协同（Q1 高效助理）
+S2 → 知识学习
+S3 → 象思维
+S6 → 五色光思维
+S7 → 知识学习 + LLM Wiki
+S8 → 象思维 + 五行分类</code></pre>
+<hr>
+<h3>多引擎协同</h3>
+<pre><code>S4 分析决策:
+┌─────────────────────────────────┐
+│ 1. 五色光思维 → 全面分析        │
+│    (白→蓝→绿→黄→红)            │
+│                                 │
+│ 2. 知行合一 → 落地转化          │
+│    (表示→压缩→泛化)             │
+│                                 │
+│ 3. 整合输出 → 分析 + 行动方案   │
+└─────────────────────────────────┘</code></pre>
+<hr>
+<h3>全引擎协同</h3>
+<pre><code>S5 重大决策:
+┌─────────────────────────────────────────┐
+│ 龙心 OS 调度中枢                         │
+│                                         │
+│ 1. 象思维 → 本质洞察 (0→1 原创)        │
+│ 2. 知识学习 → 深度学习 (十项认知)      │
+│ 3. 五色光思维 → 过程管理 (同频思考)    │
+│ 4. 知行合一 → 落地转化 (三阶转化)      │
+│ 5. 人机协同 → 执行分工 (五象限)        │
+│                                         │
+│ 整合输出 → 全面决策报告                 │
+└─────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>📤 第四层：执行输出</h2>
+<h3>输出整合</h3>
+<table>
+<thead><tr>
+<th>引擎输出</th>
+<th>整合方式</th>
+<th>呈现格式</th>
+</tr></thead><tbody>
+<tr>
+<td>单引擎</td>
+<td>直接输出</td>
+<td>Markdown/结构化</td>
+</tr>
+<tr>
+<td>多引擎</td>
+<td>顺序整合</td>
+<td>分段呈现 + 总结</td>
+</tr>
+<tr>
+<td>全引擎</td>
+<td>综合报告</td>
+<td>完整决策报告</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>输出模板</h3>
+<pre><code># [场景类型] 处理报告
+
+## 场景识别
+- 场景代码：S[X]
+- 置信度：[X.XX]
+- 识别依据：[关键词/语义/上下文]
+
+## 引擎调度
+- 激活引擎：[引擎列表]
+- 调度模式：[单引擎/多引擎/全引擎]
+
+## 处理结果
+[各引擎输出整合]
+
+## 下一步建议
+[行动建议/后续问题]</code></pre>
+<hr>
+<h2>📈 第五层：反馈学习</h2>
+<h3>反馈类型</h3>
+<table>
+<thead><tr>
+<th>类型</th>
+<th>来源</th>
+<th>处理方式</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>显式反馈</strong></td>
+<td>用户评价/纠正</td>
+<td>直接记录，调整权重</td>
+</tr>
+<tr>
+<td><strong>隐式反馈</strong></td>
+<td>继续对话/中断</td>
+<td>推断满意度</td>
+</tr>
+<tr>
+<td><strong>引擎反馈</strong></td>
+<td>执行结果/错误</td>
+<td>优化路由逻辑</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>学习闭环</h3>
+<pre><code>┌─────────────────────────────────────────┐
+│              反馈学习闭环               │
+│                                         │
+│  用户反馈 → 权重调整 → 路由优化        │
+│     ↑                      │            │
+│     │                      ↓            │
+│  效果评估 ← 执行监控 ← 引擎调度        │
+│                                         │
+└─────────────────────────────────────────┘</code></pre>
+<hr>
+<h3>权重调整规则</h3>
+<table>
+<thead><tr>
+<th>情况</th>
+<th>调整</th>
+<th>幅度</th>
+</tr></thead><tbody>
+<tr>
+<td>用户明确满意</td>
+<td>增加该路由权重</td>
+<td>+0.1</td>
+</tr>
+<tr>
+<td>用户纠正/不满</td>
+<td>减少该路由权重</td>
+<td>-0.2</td>
+</tr>
+<tr>
+<td>用户中断对话</td>
+<td>减少该路由权重</td>
+<td>-0.1</td>
+</tr>
+<tr>
+<td>用户继续深入</td>
+<td>增加该路由权重</td>
+<td>+0.05</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🎯 路由决策示例</h2>
+<h3>示例 1: 单引擎调度</h3>
+<pre><code>用户输入："帮我深度学习这篇文章"
+
+1. 上下文感知:
+   - 话题：学习/理解
+   - 情感：中性
+   - 历史：无特殊
+
+2. 场景识别:
+   - 关键词：深度学习、文章
+   - 匹配场景：S2 深度理解
+   - 置信度：0.92
+
+3. 引擎调度:
+   - 模式：单引擎
+   - 引擎：知识学习
+
+4. 执行输出:
+   - 调用知识学习 Skill
+   - 输出深度学习报告</code></pre>
+<hr>
+<h3>示例 2: 多引擎协同</h3>
+<pre><code>用户输入："帮我分析这个方案，看看能不能落地"
+
+1. 上下文感知:
+   - 话题：分析/落地
+   - 情感：认真
+   - 历史：方案讨论
+
+2. 场景识别:
+   - 关键词：分析、落地
+   - 匹配场景：S4 分析决策
+   - 置信度：0.88
+
+3. 引擎调度:
+   - 模式：多引擎协同
+   - 引擎：五色光思维 + 知行合一
+
+4. 执行输出:
+   - 五色光思维 → 全面分析
+   - 知行合一 → 落地转化
+   - 整合输出 → 分析 + 行动方案</code></pre>
+<hr>
+<h3>示例 3: 全引擎协同</h3>
+<pre><code>用户输入："我面临人生重大选择，需要全面分析"
+
+1. 上下文感知:
+   - 话题：人生/重大决策
+   - 情感：严肃/纠结
+   - 历史：多次讨论
+
+2. 场景识别:
+   - 关键词：人生、重大选择、全面
+   - 匹配场景：S5 重大决策
+   - 置信度：0.95
+
+3. 引擎调度:
+   - 模式：全引擎协同
+   - 引擎：5 个全部激活
+
+4. 执行输出:
+   - 象思维 → 本质洞察
+   - 知识学习 → 相关理论
+   - 五色光思维 → 全面分析
+   - 知行合一 → 落地转化
+   - 人机协同 → 执行分工
+   - 整合输出 → 完整决策报告</code></pre>
+<hr>
+<p>_引擎路由决策树 v1.0 · 2026-04-16 · 龙心 OS_</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

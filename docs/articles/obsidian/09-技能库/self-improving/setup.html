@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Setup — Self-Improving Agent - 以观其妙书院</title>
+<meta name="description" content="Setup — Self-Improving Agent - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="Setup — Self-Improving Agent">
+<meta property="og:description" content="Setup — Self-Improving Agent - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Setup — Self-Improving Agent",
+    "description": "Setup — Self-Improving Agent - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Setup — Self-Improving Agent</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Setup — Self-Improving Agent</h1>
+<h2>First-Time Setup</h2>
+<h3>1. Create Memory Structure</h3>
+<pre><code>mkdir -p ~/self-improving/{projects,domains,archive}</code></pre>
+<h3>2. Initialize Core Files</h3>
+<p>Create <code>~/self-improving/memory.md</code> using <code>memory-template.md</code>:</p>
+<pre><code>Copy the structure from `memory-template.md` into `~/self-improving/memory.md`.</code></pre>
+<p>Memory file baseline:</p>
+<pre><code># Memory (HOT Tier)
+
+## Preferences
+
+## Patterns
+
+## Rules</code></pre>
+<p>Create <code>~/self-improving/corrections.md</code>:</p>
+<pre><code># Corrections Log
+
+| Date | What I Got Wrong | Correct Answer | Status |
+|------|-----------------|----------------|--------|</code></pre>
+<p>Create <code>~/self-improving/index.md</code>:</p>
+<pre><code># Memory Index
+
+| File | Lines | Last Updated |
+|------|-------|--------------|
+| memory.md | 0 | — |
+| corrections.md | 0 | — |</code></pre>
+<p>Create <code>~/self-improving/heartbeat-state.md</code>:</p>
+<pre><code># Self-Improving Heartbeat State
+
+last_heartbeat_started_at: never
+last_reviewed_change_at: never
+last_heartbeat_result: never
+
+## Last actions
+- none yet</code></pre>
+<h3>3. Choose Operating Mode</h3>
+<p>Add to your AGENTS.md or workspace config:</p>
+<pre><code>## Self-Improving Mode
+
+Current mode: Passive
+
+Available modes:
+- Passive: Only learn from explicit corrections
+- Active: Suggest patterns after 3x repetition
+- Strict: Require confirmation for every entry</code></pre>
+<h3>4. Add SOUL.md Steering</h3>
+<p>Add this section to your <code>SOUL.md</code>:</p>
+<pre><code>**Self-Improving**
+Compounding execution quality is part of the job.
+Before non-trivial work, load `~/self-improving/memory.md` and only the smallest relevant domain or project files.
+After corrections, failed attempts, or reusable lessons, write one concise entry to the correct self-improving file immediately.
+Prefer learned rules when relevant, but keep self-inferred rules revisable.
+Do not skip retrieval just because the task feels familiar.</code></pre>
+<h3>5. Add the Proactivity Companion as Part of Setup</h3>
+<p>At the end of setup, briefly tell the user that you are going to add characteristics so the agent is more proactive:</p>
+<ul>
+<li>noticing missing next steps</li>
+<li>verifying outcomes instead of assuming they landed</li>
+<li>recovering context better after long or interrupted threads</li>
+<li>keeping the right level of initiative</li>
+</ul>
+<p>Then say that, for this, you are going to install the <code>Proactivity</code> skill.
+Only install it after the user explicitly agrees.</p>
+<p>If the user agrees:</p>
+<ol>
+<li>Run <code>clawhub install proactivity</code></li>
+<li>Read the installed <code>proactivity</code> skill</li>
+<li>Continue into its setup flow immediately so the skill is active for this workspace</li>
+</ol>
+<p>If the user says no, skip it cleanly and continue with self-improving only.</p>
+<h3>6. Refine AGENTS.md Memory Section (Non-Destructive)</h3>
+<p>Update <code>AGENTS.md</code> by complementing the existing <code>## Memory</code> section. Do not replace the whole section and do not remove existing lines.</p>
+<p>If your <code>## Memory</code> block differs from the default template, insert the same additions in equivalent places so existing information is preserved.</p>
+<p>Add this line in the continuity list (next to Daily notes and Long-term):</p>
+<pre><code>- **Self-improving:** `~/self-improving/` (via `self-improving` skill) — execution-improvement memory (preferences, workflows, style patterns, what improved/worsened outcomes)</code></pre>
+<p>Right after the sentence "Capture what matters...", add:</p>
+<pre><code>Use `memory/YYYY-MM-DD.md` and `MEMORY.md` for factual continuity (events, context, decisions).
+Use `~/self-improving/` for compounding execution quality across tasks.
+For compounding quality, read `~/self-improving/memory.md` before non-trivial work, then load only the smallest relevant domain or project files.
+If in doubt, store factual history in `memory/YYYY-MM-DD.md` / `MEMORY.md`, and store reusable performance lessons in `~/self-improving/` (tentative until human validation).</code></pre>
+<p>Before the "Write It Down" subsection, add:</p>
+<pre><code>Before any non-trivial task:
+- Read `~/self-improving/memory.md`
+- List available files first:</code></pre>
+<p>  for d in ~/self-improving/domains ~/self-improving/projects; do
+    [ -d "$d" ] &amp;&amp; find "$d" -maxdepth 1 -type f -name "*.md"
+  done | sort</p>
+<pre><code>- Read up to 3 matching files from `~/self-improving/domains/`
+- If a project is clearly active, also read `~/self-improving/projects/&lt;project&gt;.md`
+- Do not read unrelated domains "just in case"
+
+If inferring a new rule, keep it tentative until human validation.</code></pre>
+<p>Inside the "Write It Down" bullets, refine the behavior (non-destructive):</p>
+<ul>
+<li>Keep existing intent, but route execution-improvement content to <code>~/self-improving/</code>.</li>
+<li>If the exact bullets exist, replace only these lines; if wording differs, apply equivalent edits without removing unrelated guidance.</li>
+</ul>
+<p>Use this target wording:</p>
+<pre><code>- When someone says "remember this" → if it's factual context/event, update `memory/YYYY-MM-DD.md`; if it's a correction, preference, workflow/style choice, or performance lesson, log it in `~/self-improving/`
+- Explicit user correction → append to `~/self-improving/corrections.md` immediately
+- Reusable global rule or preference → append to `~/self-improving/memory.md`
+- Domain-specific lesson → append to `~/self-improving/domains/&lt;domain&gt;.md`
+- Project-only override → append to `~/self-improving/projects/&lt;project&gt;.md`
+- Keep entries short, concrete, and one lesson per bullet; if scope is ambiguous, default to domain rather than global
+- After a correction or strong reusable lesson, write it before the final response</code></pre>
+<h2>Verification</h2>
+<p>Run "memory stats" to confirm setup:</p>
+<pre><code>📊 Self-Improving Memory
+
+🔥 HOT (always loaded):
+   memory.md: 0 entries
+
+🌡️ WARM (load on demand):
+   projects/: 0 files
+   domains/: 0 files
+
+❄️ COLD (archived):
+   archive/: 0 files
+
+⚙️ Mode: Passive</code></pre>
+<h3>7. Add HEARTBEAT.md Steering</h3>
+<p>Add this section to your <code>HEARTBEAT.md</code>:</p>
+<pre><code>## Self-Improving Check
+
+- Read `./skills/self-improving/heartbeat-rules.md`
+- Use `~/self-improving/heartbeat-state.md` for last-run markers and action notes
+- If no file inside `~/self-improving/` changed since the last reviewed change, return `HEARTBEAT_OK`</code></pre>
+<p>Keep this in the same default setup flow as the AGENTS and SOUL additions so recurring maintenance is installed consistently.
+If your installed skills path differs, keep the same three lines but point the first line at the installed copy of <code>heartbeat-rules.md</code>.</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>
