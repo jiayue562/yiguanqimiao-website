@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>DOC 编辑引擎 API 参考 - 以观其妙书院</title>
+<meta name="description" content="DOC 编辑引擎 API 参考 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="DOC 编辑引擎 API 参考">
+<meta property="og:description" content="DOC 编辑引擎 API 参考 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "DOC 编辑引擎 API 参考",
+    "description": "DOC 编辑引擎 API 参考 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>DOC 编辑引擎 API 参考</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>DOC 编辑引擎 API 参考</h1>
+<p>本文件包含腾讯文档 DOC 编辑引擎（docengine）的所有工具 API 说明。这些工具专用于 Word 文档的编辑操作，包括用 Markdown 创建文档（create_with_markdown）、插入markdown(一般与创建文档组合使用，1.创建文档 2.插入markdown)，文本插入、替换、查找、段落设置、文本属性修改、任务插入、图片插入、分页符和表格插入等。</p>
+<blockquote><p>⚠️ <strong>注意</strong>：本文档中的工具仅适用于 <strong>Word 文档（doc_type: word）</strong> 类型，不适用于智能文档（smartcanvas）等其他类型。</p></blockquote>
+<hr>
+<h2>服务信息</h2>
+<table>
+<thead><tr>
+<th>项目</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>服务名</td>
+<td><code>tencent-docengine</code></td>
+</tr>
+<tr>
+<td>API 地址</td>
+<td><code>https://docs.qq.com/api/v6/doc/mcp</code></td>
+</tr>
+<tr>
+<td>调用方式</td>
+<td><code>mcporter call tencent-docengine &lt;工具名&gt;</code></td>
+</tr>
+<tr>
+<td>Token</td>
+<td>与 tencent-docs <strong>共用同一个 Token</strong>，完成 tencent-docs 授权（<code>auth.md</code>）后自动配置，无需单独鉴权</td>
+</tr>
+<tr>
+<td>文档类型</td>
+<td>仅支持 Word 文档类型</td>
+</tr>
+</tbody></table>
+<blockquote><p>⚠️ <strong>推荐优先使用 <code>file_url</code>（文档链接）而非 <code>file_id</code> 来标识文档</strong>，用户通常直接提供文档链接，使用更便捷。</p>
+<p>编辑前推荐先调用 <code>get_outline</code> 获取文档大纲结构，了解各标题和正文的可操作位置。</p>
+<p>当用户要求「在文档开头插入」时，需向用户确认是在「文档标题之前」（使用 <code>HEADING_LEVEL_TITLE</code> 的 <code>title_start</code>）还是「正文开头/标题之后」（使用 <code>HEADING_LEVEL_TITLE</code> 的 <code>content_start</code>）插入，未明确时应主动询问。</p>
+<p>当用户要求将结果写入文档时, 推荐使用 <code>create_with_markdown</code> 一步创建 Word 文档；也可以与创建文档manage.create_file组合使用，1.创建word文档 2.获取插入位置get_last_operable_pos 3.插入markdown(insert_markdown)</p></blockquote>
+<hr>
+<h2>通用说明</h2>
+<h3>文档标识</h3>
+<p>所有 docengine 工具都支持两种文档标识方式（二选一）：</p>
+<ul>
+<li><code>file_url</code> (string): <strong>⭐ 推荐</strong> 腾讯文档的文档链接（如 <code>https://docs.qq.com/doc/xxxxxxxx</code>），直接使用用户提供的文档链接即可</li>
+<li><code>file_id</code> (string): 文档唯一标识符</li>
+</ul>
+<blockquote><p>💡 <strong>推荐优先使用 <code>file_url</code></strong>：用户通常会直接提供文档链接，使用 <code>file_url</code> 无需额外解析 <code>file_id</code>，更加便捷。</p></blockquote>
+<h3>响应结构</h3>
+<p>编辑类 API 返回：</p>
+<ul>
+<li><code>base_version</code> (int64): 文档的基准版本号</li>
+<li><code>new_version</code> (int64): 编辑后的文档新版本号</li>
+<li><code>err_msg</code> (string): 错误信息（成功时为空）</li>
+<li><code>trace_id</code> (string): 调用链追踪 ID</li>
+</ul>
+<p>查询类 API（如 find）返回：</p>
+<ul>
+<li><code>read_result.version</code> (int64): 文档当前版本号</li>
+<li><code>read_result.trace_id</code> (string): 调用链追踪 ID</li>
+</ul>
+<hr>
+<h2>工具列表</h2>
+<table>
+<thead><tr>
+<th>工具名称</th>
+<th>功能说明</th>
+</tr></thead><tbody>
+<tr>
+<td>create_with_markdown</td>
+<td>用 Markdown 创建 Word 文档，一步完成文档创建和内容写入</td>
+</tr>
+<tr>
+<td>find</td>
+<td>查找文本所在位置，返回匹配位置和上下文</td>
+</tr>
+<tr>
+<td>insert_text</td>
+<td>在指定位置插入文本</td>
+</tr>
+<tr>
+<td>insert_paragraph</td>
+<td>在指定位置插入段落，支持设置标题级别、编号类别和编号级别</td>
+</tr>
+<tr>
+<td>replace_text</td>
+<td>替换指定范围内的文本</td>
+</tr>
+<tr>
+<td>find_and_replace_text</td>
+<td>查找并替换文档中所有匹配的文本</td>
+</tr>
+<tr>
+<td>update_text_property</td>
+<td>更新指定范围内文本的属性（加粗、斜体、下划线、删除线、颜色等）</td>
+</tr>
+<tr>
+<td>insert_task</td>
+<td>在指定位置插入一个或多个任务，支持设置任务状态和内容文本</td>
+</tr>
+<tr>
+<td>insert_image</td>
+<td>在指定位置插入图片</td>
+</tr>
+<tr>
+<td>insert_page_break</td>
+<td>在指定位置插入分页符</td>
+</tr>
+<tr>
+<td>insert_table</td>
+<td>在指定位置插入表格</td>
+</tr>
+<tr>
+<td>insert_comment</td>
+<td>在指定范围插入批注</td>
+</tr>
+<tr>
+<td>replace_image</td>
+<td>替换文档中的图片</td>
+</tr>
+<tr>
+<td>insert_markdown</td>
+<td>在指定位置插入 Markdown 格式内容，引擎自动转换为富文本</td>
+</tr>
+<tr>
+<td>get_images</td>
+<td>获取文档中所有图片的信息，包括图片位置（idx）、图片 URL 或附件 ID，可用于后续 replace_image 操作</td>
+</tr>
+<tr>
+<td>get_last_operable_pos</td>
+<td>获取文档末尾最后一个可操作位置的索引及前面内容</td>
+</tr>
+<tr>
+<td>get_outline</td>
+<td>获取文档大纲结构（标题层级树），包含各标题和正文的可操作起止位置</td>
+</tr>
+<tr>
+<td>resolve_document_structure</td>
+<td>获取文档完整结构树，返回所有块级元素（段落、标题、表格、文本框、代码块等）的层级结构和精确位置，可用于定位表格指定行列、文本框内部等复杂位置</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>工具详细说明</h2>
+<h2>0. create_with_markdown</h2>
+<h3>功能说明</h3>
+<p>用 Markdown 内容直接创建一篇新的 Word 文档（DOC）。无需先调用 <code>manage.create_file</code> 再 <code>insert_markdown</code>，一步完成文档创建和内容写入。适合需要快速将 Markdown 格式内容生成为 Word 文档的场景。</p>
+<blockquote><p>⚠️ <strong>推荐使用 <code>base64_markdown</code> 参数</strong>：由于 Markdown 内容中可能包含特殊字符（如换行符、引号等），直接传递可能导致 JSON 解析问题。<strong>建议先将 Markdown 内容进行 base64 编码后，通过 <code>base64_markdown</code> 参数传递</strong>。</p></blockquote>
+<h3>调用示例</h3>
+<p><strong>使用 base64_markdown（推荐）：</strong></p>
+<pre><code>{
+  "base64_markdown": "IyDmoIfpopgKCui/meaYr+S4gOautSoq5Yqg57KXKirmlofmnKzjgIIKCi0g5YiX6KGo6aG5MQotIOWIl+ihqOmhuTIKCnwg5aeT5ZCNIHwg5bm06b6EIHwKfC0tLS0tLXwtLS0tLS18Cnwg5byg5LiJIHwgMjUgfA==",
+  "title": "我的文档"
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>base64_markdown</code> (string, ⭐ 推荐): Markdown 内容的 base64 编码字符串。<strong>推荐优先使用此参数</strong>，先将 Markdown 文本进行标准 base64 编码后传入</li>
+<li><code>title</code> (string, 可选): 文档标题。不传时使用 Markdown 内容中的第一个标题，或自动生成</li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "file_id": "doc_1234567890",
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "version": 1,
+  "last_index": 100
+}</code></pre>
+<ul>
+<li><code>file_id</code> (string): 创建的文档唯一标识符</li>
+<li><code>file_url</code> (string): 创建的文档链接，可直接在浏览器中打开</li>
+<li><code>version</code> (int64): 当前文档版本号</li>
+<li><code>last_index</code> (int64): 文档最后一个字符的索引位置，可用于后续在文档末尾追加内容</li>
+</ul>
+<h3>推荐使用流程</h3>
+<ol>
+<li>准备好 Markdown 格式的文档内容，将其保存为 <code>&lt;workspace&gt;/.tmp/tencent_docs/&lt;标题&gt;.md</code> 文件（<code>&lt;标题&gt;</code> 为文档标题）</li>
+<li>使用系统 <code>base64</code> 命令将 Markdown 文件进行 base64 编码，并将结果写入<strong>当前工作区目录下</strong>的文件（确保 agent 可通过 read_file 访问）：</li>
+<li>使用 read_file 工具读取工作区下的输出文件（如 <code>&lt;workspace&gt;/.tmp/tencent_docs/encoded_&lt;标题&gt;.txt</code>）获取 base64 编码后的 Markdown 内容</li>
+<li>调用 <code>create_with_markdown</code> 传入读取到的 <code>base64_markdown</code> 和可选的 <code>title</code></li>
+<li>从返回值中获取 <code>file_url</code>，即可访问创建好的 Word 文档</li>
+<li>如需继续编辑，可使用返回的 <code>file_id</code>/<code>file_url</code> 和 <code>last_index</code> 调用其他 docengine 工具</li>
+</ol>
+<hr>
+<h2>1. find</h2>
+<h3>功能说明</h3>
+<p>在 Word 文档中查找指定文本，返回所有匹配位置及其上下文。如果用户需要替换文本，建议先使用 <code>find</code> 查找文本所在的各处位置，让用户确认要替换哪个位置后，再调用 <code>replace_text</code> 进行精确替换。</p>
+<h3>调用示例</h3>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "text": "要查找的文本"
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>file_url</code> (string, 推荐): 腾讯文档的文档链接，与 <code>file_id</code> 二选一，<strong>推荐优先使用</strong></li>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+<li><code>text</code> (string, 必填): 要查找的文本内容</li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "text_and_locations": [
+    {
+      "range": { "begin": 10, "end": 15 },
+      "related_text": "...上下文文本..."
+    }
+  ],
+  "read_result": {
+    "version": 1,
+    "trace_id": "trace_1234567890"
+  }
+}</code></pre>
+<ul>
+<li><code>text_and_locations</code> (array): 匹配到的文本位置列表<ul>
+<li><code>range.begin</code> (uint32): 匹配文本的起始位置</li>
+<li><code>range.end</code> (uint32): 匹配文本的结束位置</li>
+<li><code>related_text</code> (string): 匹配位置的上下文文本</li>
+</ul></li>
+<li><code>read_result.version</code> (int64): 当前文档版本号</li>
+<li><code>read_result.trace_id</code> (string): 调用相关的可追踪链路id</li>
+</ul>
+<h3>推荐使用流程</h3>
+<ol>
+<li>调用 <code>find</code> 查找目标文本，获取所有匹配位置</li>
+<li>将匹配结果展示给用户，让用户选择要替换的位置</li>
+<li>根据用户选择，调用 <code>replace_text</code> 传入对应的 <code>range</code> 进行替换</li>
+</ol>
+<hr>
+<h2>2. insert_text</h2>
+<h3>功能说明</h3>
+<p>在 Word 文档的指定位置插入文本。</p>
+<h3>调用示例</h3>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "text": "要插入的文本内容",
+  "index": 0
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>file_url</code> (string, 推荐): 腾讯文档的文档链接，与 <code>file_id</code> 二选一，<strong>推荐优先使用</strong></li>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+<li><code>text</code> (string, 必填): 要插入的文本内容</li>
+<li><code>index</code> (integer, 必填): 插入位置的索引，从 0 开始，请确认好索引后再操作</li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "base_version": 1,
+  "new_version": 2,
+  "trace_id": "trace_1234567890",
+  "err_msg": ""
+}</code></pre>
+<hr>
+<h2>3. insert_paragraph</h2>
+<h3>功能说明</h3>
+<p>在 Word 文档的指定位置插入段落。支持设置标题级别、编号类别和编号级别，可用于创建标题、有序/无序列表等。</p>
+<h3>调用示例</h3>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "idx": 0,
+  "level": "1",
+  "type": "1",
+  "numbering_lvl": "1",
+  "space_cnt": 0
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>file_url</code> (string, 推荐): 腾讯文档的文档链接，与 <code>file_id</code> 二选一，<strong>推荐优先使用</strong></li>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+<li><code>idx</code> (integer, 必填): 插入位置的索引，从 0 开始</li>
+<li><code>level</code> (string, 可选): 标题级别，取值：<ul>
+<li><code>"0"</code>: 未指定（保持原样）</li>
+<li><code>"1"</code> ~ <code>"9"</code>: 一级标题 ~ 九级标题</li>
+<li><code>"10"</code>: 正文（无标题）</li>
+<li><code>"11"</code>: 标题</li>
+<li><code>"12"</code>: 副标题</li>
+</ul></li>
+<li><code>type</code> (string, 可选): 编号类别，取值：<ul>
+<li><code>"0"</code>: 未知/无编号</li>
+<li><code>"1"</code>: 圆点列表（无序列表）</li>
+<li><code>"2"</code>: 数字编号列表（有序列表）</li>
+</ul></li>
+<li><code>numbering_lvl</code> (string, 可选): 编号级别，取值与 <code>level</code> 相同（<code>"1"</code> ~ <code>"9"</code>）</li>
+<li><code>space_cnt</code> (integer, 可选): 空格数量</li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "base_version": 1,
+  "new_version": 2,
+  "trace_id": "trace_1234567890",
+  "err_msg": ""
+}</code></pre>
+<hr>
+<h2>4. replace_text</h2>
+<h3>功能说明</h3>
+<p>替换 Word 文档中指定范围内的文本为新文本。建议先使用 <code>find</code> 工具查找文本位置，让用户确认后再调用此工具进行精确替换。</p>
+<h3>调用示例</h3>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "text": "替换后的文本内容",
+  "ranges": [{"start_index": 0, "end_index": 5}]
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>file_url</code> (string, 推荐): 腾讯文档的文档链接，与 <code>file_id</code> 二选一，<strong>推荐优先使用</strong></li>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+<li><code>text</code> (string, 必填): 替换后的文本内容</li>
+<li><code>ranges</code> (array, 必填): 需要替换的文本范围列表，每个范围包含 <code>start_index</code> 和 <code>end_index</code></li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "base_version": 1,
+  "new_version": 2,
+  "trace_id": "trace_1234567890",
+  "err_msg": ""
+}</code></pre>
+<hr>
+<h2>5. find_and_replace_text</h2>
+<h3>功能说明</h3>
+<p>在 Word 文档中查找所有匹配的文本并直接替换为新文本。与 <code>find</code> + <code>replace_text</code> 的组合不同，此工具会直接替换所有匹配项，用户无法选择性地替换某个特定位置。</p>
+<h3>调用示例</h3>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "old_text": "要查找的文本",
+  "new_text": "替换后的文本"
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>file_url</code> (string, 推荐): 腾讯文档的文档链接，与 <code>file_id</code> 二选一，<strong>推荐优先使用</strong></li>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+<li><code>old_text</code> (string, 必填): 要查找的原始文本</li>
+<li><code>new_text</code> (string, 必填): 替换后的新文本</li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "base_version": 1,
+  "new_version": 2,
+  "trace_id": "trace_1234567890",
+  "err_msg": ""
+}</code></pre>
+<hr>
+<h2>6. update_text_property</h2>
+<h3>功能说明</h3>
+<p>更新 Word 文档中指定范围内文本的属性，支持设置加粗、斜体、下划线、删除线、小型大写、字体颜色、背景颜色等。建议先使用 <code>find</code> 工具查找文本位置，获取 range 后再调用此工具修改文本属性。</p>
+<h3>调用示例</h3>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "ranges": [{"begin": 0, "end": 5}],
+  "property": {
+    "bold": true,
+    "color": "#FF0000"
+  }
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>file_url</code> (string, 推荐): 腾讯文档的文档链接，与 <code>file_id</code> 二选一，<strong>推荐优先使用</strong></li>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+<li><code>ranges</code> (array, 必填): 需要更新属性的文本范围列表，每个范围包含 <code>begin</code> 和 <code>end</code></li>
+<li><code>property</code> (object, 必填): 要设置的文本属性，支持以下字段：<ul>
+<li><code>bold</code> (bool, 可选): 是否加粗</li>
+<li><code>italic</code> (bool, 可选): 是否斜体</li>
+<li><code>underline</code> (bool, 可选): 是否下划线</li>
+<li><code>strikethrough</code> (bool, 可选): 是否删除线</li>
+<li><code>small_caps</code> (bool, 可选): 是否小型大写</li>
+<li><code>color</code> (string, 可选): 字体颜色，如 "#FF0000"</li>
+<li><code>background_color</code> (string, 可选): 背景颜色，如 "#FFFF00"</li>
+</ul></li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "base_version": 1,
+  "new_version": 2,
+  "trace_id": "trace_1234567890",
+  "err_msg": ""
+}</code></pre>
+<hr>
+<h2>7. insert_task</h2>
+<h3>功能说明</h3>
+<p>在 Word 文档的指定位置插入一个或多个任务（待办事项）。每个任务支持设置任务状态（待办/已完成）和任务内容文本。</p>
+<h3>调用示例</h3>
+<p><strong>插入单个任务：</strong></p>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "idx": 0,
+  "tasks": [
+    {
+      "state": 1,
+      "content": "完成需求文档编写"
+    }
+  ]
+}</code></pre>
+<p><strong>插入多个任务：</strong></p>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "idx": 5,
+  "tasks": [
+    {
+      "state": 1,
+      "content": "完成需求文档编写"
+    },
+    {
+      "state": 2,
+      "content": "完成接口设计"
+    },
+    {
+      "state": 1,
+      "content": "编写单元测试"
+    }
+  ]
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>file_url</code> (string, 推荐): 腾讯文档的文档链接，与 <code>file_id</code> 二选一，<strong>推荐优先使用</strong></li>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+<li><code>idx</code> (integer, 必填): 插入位置的索引，从 0 开始</li>
+<li><code>tasks</code> (array, 必填): 任务列表，支持一次插入多个任务，每个任务包含：<ul>
+<li><code>state</code> (integer, 必填): 任务状态枚举值，不允许传递0值，取值：<ul>
+<li><code>1</code>: 待办（未完成）</li>
+<li><code>2</code>: 已完成</li>
+</ul></li>
+<li><code>content</code> (string, 必填): 任务内容文本</li>
+</ul></li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "base_version": 1,
+  "new_version": 2,
+  "trace_id": "trace_1234567890",
+  "err_msg": ""
+}</code></pre>
+<hr>
+<h3>insert_image</h3>
+<h4>功能说明</h4>
+<p>在 Word 文档的指定位置插入图片。</p>
+<h4>调用示例</h4>
+<pre><code>{
+  "file_id": "doc_1234567890",
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "content": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==",
+  "index": 0,
+  "width": 400,
+  "height": 300
+}</code></pre>
+<h4>参数说明</h4>
+<ul>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+<li><code>file_url</code> (string, 可选): 腾讯文档的文档链接，与 <code>file_id</code> 二选一</li>
+<li><code>content</code> (string, 可选): 图片的 base64 内容，与 <code>image_id</code> 二选一，<strong>适合图片体积较小的场景，若图片过大导致 base64 内容超出传输限制，请改用 <code>image_id</code> 方式</strong></li>
+<li><code>image_id</code> (string, 可选): 图片的 image_id，本质是对图片信息加密后的字符串，与 <code>content</code> 二选一。<strong>适合图片体积较大、base64 内容超出传输限制的场景</strong>。获取方式：<ul>
+<li>通过 <code>upload_image</code> MCP 接口上传图片后获取</li>
+<li>通过<a href="https://docs.qq.com/open/developers/?nlc=1#/login">腾讯文档开放平台 OpenAPI</a> 图片上传接口获取（需先完成 OAuth 授权流程获取 <code>Access-Token</code>），示例命令：</li>
+</ul></li>
+<li><code>index</code> (integer, 必填): 插入位置的索引，从 0 开始</li>
+<li><code>width</code> (integer, 可选): 图片宽度，单位为像素（px），例如 400 表示 400px；不传时使用图床上传返回的宽度</li>
+<li><code>height</code> (integer, 可选): 图片高度，单位为像素（px），例如 300 表示 300px；不传时使用图床上传返回的高度</li>
+</ul>
+<h4>返回值说明</h4>
+<pre><code>{
+  "base_version": 1,
+  "new_version": 2,
+  "trace_id": "",
+  "err_msg": ""
+}</code></pre>
+<hr>
+<h2>9. insert_page_break</h2>
+<h3>功能说明</h3>
+<p>在 Word 文档的指定位置插入分页符。</p>
+<h3>调用示例</h3>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "index": 10
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>file_url</code> (string, 推荐): 腾讯文档的文档链接，与 <code>file_id</code> 二选一，<strong>推荐优先使用</strong></li>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+<li><code>index</code> (integer, 必填): 插入位置的索引，从 0 开始</li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "base_version": 1,
+  "new_version": 2,
+  "trace_id": "trace_1234567890",
+  "err_msg": ""
+}</code></pre>
+<hr>
+<h2>10. insert_table</h2>
+<h3>功能说明</h3>
+<p>在 Word 文档的指定位置插入表格。</p>
+<h3>调用示例</h3>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "index": 0,
+  "rows": 3,
+  "cols": 4
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>file_url</code> (string, 推荐): 腾讯文档的文档链接，与 <code>file_id</code> 二选一，<strong>推荐优先使用</strong></li>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+<li><code>index</code> (integer, 必填): 插入位置的索引，从 0 开始</li>
+<li><code>rows</code> (integer, 必填): 表格行数</li>
+<li><code>cols</code> (integer, 必填): 表格列数</li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "base_version": 1,
+  "new_version": 2,
+  "trace_id": "trace_1234567890",
+  "err_msg": ""
+}</code></pre>
+<hr>
+<h2>11. insert_comment</h2>
+<h3>功能说明</h3>
+<p>在 Word 文档的指定范围内插入批注（评论）。</p>
+<h3>调用示例</h3>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "text": "这里需要修改措辞",
+  "range": {"begin": 5, "end": 15}
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>file_url</code> (string, 推荐): 腾讯文档的文档链接，与 <code>file_id</code> 二选一，<strong>推荐优先使用</strong></li>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+<li><code>text</code> (string, 必填): 批注内容</li>
+<li><code>range</code> (object, 必填): 批注关联的文本范围，包含 <code>begin</code> 和 <code>end</code></li>
+<li><code>ref_id</code> (string, 可选): 评论ID，用于回复已有批注</li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "base_version": 1,
+  "new_version": 2,
+  "trace_id": "trace_1234567890",
+  "err_msg": ""
+}</code></pre>
+<hr>
+<h2>12. get_images</h2>
+<h4>功能说明</h4>
+<p>获取 Word 文档中所有图片的信息，包括每张图片的位置索引（<code>pos</code>）、来源类型（URL 图片或附件图片）以及对应的 URL 或附件 ID。通常在调用 <code>replace_image</code> 前先调用此接口，获取目标图片的 <code>pos</code>（即 <code>idx</code>）和 <code>image_url</code>/<code>attachment_id</code>（即 <code>old_image_url</code>/<code>old_attachment_id</code>）。</p>
+<h3>调用示例</h3>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx"
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>file_url</code> (string, 推荐): 腾讯文档的文档链接，与 <code>file_id</code> 二选一，<strong>推荐优先使用</strong></li>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "images": [
+    {
+      "source": 1,
+      "pos": 42,
+      "image_url": "https://docimg8.docs.qq.com/image/AgAABsUhABzwC7ScF1dHP4mZWR9jTQ5i.jpeg"
+    },
+    {
+      "source": 2,
+      "pos": 88,
+      "attachment_id": "AgAABsUhABzwC7ScF1dHP4mZWR9jTQ5i"
+    }
+  ],
+  "version": 1024
+}</code></pre>
+<ul>
+<li><code>images</code> (array): 文档中所有图片列表，按位置（<code>pos</code>）升序排列<ul>
+<li><code>source</code> (int): 图片来源类型，<code>1</code> = URL 图片（<code>FromLink</code>），<code>2</code> = 附件图片（<code>FromAttachment</code>）</li>
+<li><code>pos</code> (int64): 图片在文档中的位置索引，即 <code>replace_image</code> 接口的 <code>idx</code> 参数</li>
+<li><code>image_url</code> (string): 当 <code>source=1</code> 时有值，图片的内嵌 URL，即 <code>replace_image</code> 接口的 <code>old_image_url</code> 参数</li>
+<li><code>attachment_id</code> (string): 当 <code>source=2</code> 时有值，附件图片的 object_key，即 <code>replace_image</code> 接口的 <code>old_attachment_id</code> 参数</li>
+</ul></li>
+<li><code>version</code> (int64): 当前文档版本号</li>
+</ul>
+<h3>推荐使用流程</h3>
+<ol>
+<li>调用 <code>get_images</code> 获取文档中所有图片信息</li>
+<li>根据返回的 <code>pos</code>（作为 <code>idx</code>）和 <code>image_url</code>/<code>attachment_id</code>（作为 <code>old_image_url</code>/<code>old_attachment_id</code>）定位目标图片</li>
+<li>调用 <code>replace_image</code> 传入对应参数完成图片替换</li>
+</ol>
+<hr>
+<h2>12. replace_image</h2>
+<h3>功能说明</h3>
+<p>替换 Word 文档中的图片。可以通过旧图片的 URL 或 ID 定位要替换的图片，并指定新图片。</p>
+<h3>调用示例</h3>
+<pre><code>{
+  "file_id": "doc_1234567890",
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "idx": 0,
+  "old_image_url": "https://example.com/old_image.png",
+  "image_id": "eyJVUkwiOiJodHRwczovL2V4YW1wbGUuY29tL25ld19pbWFnZS5wbmcifQ=="
+}</code></pre>
+<h4>参数说明</h4>
+<ul>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+<li><code>file_url</code> (string, 可选): 腾讯文档的文档链接，与 <code>file_id</code> 二选一</li>
+<li><code>idx</code> (integer, 必填): 图片位置索引</li>
+<li><code>old_image_url</code> (string, 可选): 旧图片的 URL，与 <code>old_attachment_id</code> 二选一，需搭配 <code>idx</code> 一起使用</li>
+<li><code>old_attachment_id</code> (string, 可选): 旧图片的附件 ID，与 <code>old_image_url</code> 二选一，需搭配 <code>idx</code> 一起使用</li>
+<li><code>image_id</code> (string, 可选): 新图片的 image_id，本质是对图片信息加密后的字符串，与 <code>content</code> 二选一。获取方式：<ul>
+<li>通过 <code>upload_image</code> MCP 接口上传图片后获取</li>
+<li>通过<a href="https://docs.qq.com/open/developers/?nlc=1#/login">腾讯文档开放平台 OpenAPI</a> 图片上传接口获取。<strong>注意：调用开放平台接口前，需先完成 OAuth 授权流程获取 <code>Access-Token</code>（参考<a href="https://docs.qq.com/open/developers/?nlc=1#/login">开放平台登录授权文档</a>）</strong>，示例命令：</li>
+</ul></li>
+<li><code>content</code> (string, 可选): 新图片的 base64 内容，与 <code>image_id</code> 二选一。<strong>适合图片体积较小的场景；若图片过大导致 base64 内容超出限制，请改用 <code>image_id</code> 方式</strong></li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "base_version": 1,
+  "new_version": 2,
+  "trace_id": "trace_1234567890",
+  "err_msg": ""
+}</code></pre>
+<hr>
+<h2>13. insert_markdown</h2>
+<h3>功能说明</h3>
+<p>在 Word 文档的指定位置插入 Markdown 格式内容。引擎会自动将 Markdown 转换为文档富文本格式，支持标题、列表、表格、链接、加粗/斜体等常见 Markdown 语法。适合需要批量插入富文本内容的场景，比直接调用多个 <code>insert_text</code>/<code>insert_paragraph</code> 更高效。</p>
+<blockquote><p>⚠️ <strong>推荐使用 <code>base64_markdown</code> 参数</strong>：由于 Markdown 内容中可能包含特殊字符（如换行符、引号等），直接传递 <code>markdown</code> 参数容易导致 JSON 解析问题。<strong>建议 agent 先将 Markdown 内容进行 base64 编码后，通过 <code>base64_markdown</code> 参数传递</strong>。如果填写了 <code>base64_markdown</code>，则无需再填写 <code>markdown</code>。</p></blockquote>
+<h3>调用示例</h3>
+<p><strong>使用 base64_markdown（推荐）：</strong></p>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "index": 0,
+  "base64_markdown": "IyDmoIfpopgKCui/meaYr+S4gOautSoq5Yqg57KXKirmlofmnKzjgIIKCi0g5YiX6KGo6aG5MQotIOWIl+ihqOmhuTIKCnwg5aeT5ZCNIHwg5bm06b6EIHwKfC0tLS0tLXwtLS0tLS18Cnwg5byg5LiJIHwgMjUgfA==",
+  "version_info": {
+    "base_version": 5,
+    "is_latest": false
+  }
+}</code></pre>
+<p><strong>使用 markdown（备选）：</strong></p>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx",
+  "index": 0,
+  "markdown": "# 标题\n\n这是一段**加粗**文本。\n\n- 列表项1\n- 列表项2\n\n| 姓名 | 年龄 |\n|------|------|\n| 张三 | 25 |"
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>file_url</code> (string, 推荐): 腾讯文档的文档链接，与 <code>file_id</code> 二选一，<strong>推荐优先使用</strong></li>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+<li><code>index</code> (integer, 必填): 插入位置的索引，从 0 开始</li>
+<li><code>base64_markdown</code> (string, ⭐ 首选): Markdown 内容的 base64 编码字符串。<strong>推荐优先使用此参数</strong>，agent 需要先将 Markdown 文本进行标准 base64 编码后传入。与 <code>markdown</code> 二选一，如果填写了 <code>base64_markdown</code> 则无需再填写 <code>markdown</code></li>
+<li><code>markdown</code> (string, 备选): Markdown 格式的原始文本内容，与 <code>base64_markdown</code> 二选一。当未提供 <code>base64_markdown</code> 时使用此参数。支持以下语法：<ul>
+<li>标题：<code># H1</code>、<code>## H2</code>、<code>### H3</code> 等</li>
+<li>加粗/斜体：<code><strong>加粗</strong></code>、<code><em>斜体</em></code></li>
+<li>链接：<code><a href="URL">文本</a></code></li>
+<li>无序列表：<code>- 列表项</code></li>
+<li>有序列表：<code>1. 列表项</code></li>
+<li>表格：使用 <code>|</code> 和 <code>---</code> 语法</li>
+<li>代码块：使用反引号包裹</li>
+</ul></li>
+<li><code>version_info</code> (object, 可选): 版本控制参数，用于指定基于哪个版本进行编辑。不传时默认基于最新版本操作。包含以下字段：<ul>
+<li><code>base_version</code> (int64, 可选): 基准版本号，通常使用 <code>get_last_operable_pos</code>、<code>get_outline</code> 或 <code>resolve_document_structure</code> 返回的 <code>version</code> 值，基于该版本继续编辑，确保编辑操作的连续性。值为 0 表示不指定</li>
+<li><code>is_latest</code> (bool, 可选): 是否基于最新版本操作。设为 <code>true</code> 时忽略 <code>base_version</code>，直接在文档最新版本上编辑</li>
+</ul></li>
+</ul>
+<blockquote><p>💡 <strong>version_info 使用场景</strong>：当需要连续执行多步编辑操作时（如先 <code>get_outline</code> 获取大纲，再 <code>insert_markdown</code> 插入内容），建议将前一步返回的 <code>version</code> 传入 <code>version_info.base_version</code>，以确保编辑基于同一版本，避免并发冲突。</p></blockquote>
+<h3>返回值说明</h3>
+<pre><code>{
+  "base_version": 1,
+  "new_version": 2,
+  "trace_id": "trace_1234567890",
+  "err_msg": ""
+}</code></pre>
+<ul>
+<li><code>base_version</code> (int64): 文档的基准版本号</li>
+<li><code>new_version</code> (int64): 命令执行之后的文档版本</li>
+<li><code>trace_id</code> (string): 本次调用的链路追踪 ID</li>
+<li><code>err_msg</code> (string): 失败信息</li>
+</ul>
+<hr>
+<h2>14. get_last_operable_pos</h2>
+<h3>功能说明</h3>
+<p>获取 Word 文档正文（main story）最后一个可操作位置的索引，以及该位置前面最多 10 个字符的内容。在需要向文档末尾追加内容时，可先调用此接口获取末尾可操作位置，再使用 <code>insert_text</code>/<code>insert_image</code> 等接口在该位置插入内容。</p>
+<h3>调用示例</h3>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx"
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>file_url</code> (string, 推荐): 腾讯文档的文档链接，与 <code>file_id</code> 二选一，<strong>推荐优先使用</strong></li>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "position": 100,
+  "preceding_text": "...前面内容...",
+  "version": 1
+}</code></pre>
+<ul>
+<li><code>position</code> (int64): 最后一个可操作位置的索引</li>
+<li><code>preceding_text</code> (string): 该位置前面最多 10 个字符的内容</li>
+<li><code>version</code> (int64): 当前文档版本号</li>
+</ul>
+<hr>
+<h2>15. get_outline</h2>
+<h3>功能说明</h3>
+<p>获取 Word 文档的完整大纲结构（树形），返回文档标题、各级标题及其下正文的可操作位置范围。可用于：</p>
+<ul>
+<li>了解文档整体结构和层级关系</li>
+<li>获取指定标题或正文区域的精确位置（<code>title_start</code>/<code>title_end</code>、<code>content_start</code>/<code>content_end</code>），以便在对应位置插入或替换内容</li>
+<li>在操作前先掌握文档大纲，避免盲目使用 <code>find</code> 查找</li>
+</ul>
+<blockquote><p>⚠️ <strong>关于「在文档开头插入」的位置说明</strong>：文档大纲的根节点通常是 <code>HEADING_LEVEL_TITLE</code>（文档标题），其 <code>title_start</code> 表示文档标题之前的位置，<code>content_start</code> 表示标题之后、正文开头的位置。当用户要求"在文档开头插入内容"时，需要向用户确认具体含义：</p>
+<ul>
+<li><strong>在文档标题之前插入</strong>：使用 <code>HEADING_LEVEL_TITLE</code> 节点的 <code>title_start</code></li>
+<li><strong>在正文开头插入（标题之后）</strong>：使用 <code>HEADING_LEVEL_TITLE</code> 节点的 <code>content_start</code></li>
+</ul>
+<p>如果用户未明确说明，应主动询问确认。</p></blockquote>
+<h3>调用示例</h3>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx"
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>file_url</code> (string, 推荐): 腾讯文档的文档链接，与 <code>file_id</code> 二选一，<strong>推荐优先使用</strong></li>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "outlines": [
+    {
+      "title": "文档标题",
+      "level": "HEADING_LEVEL_TITLE",
+      "title_start": 0,
+      "title_end": 5,
+      "content_start": 6,
+      "content_end": 100,
+      "children": [
+        {
+          "title": "第一章 概述",
+          "level": "HEADING_LEVEL_1",
+          "title_start": 6,
+          "title_end": 12,
+          "content_start": 13,
+          "content_end": 50,
+          "children": [
+            {
+              "title": "1.1 背景",
+              "level": "HEADING_LEVEL_2",
+              "title_start": 13,
+              "title_end": 18,
+              "content_start": 19,
+              "content_end": 50,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": 1
+}</code></pre>
+<ul>
+<li><code>outlines</code> (array): 大纲根节点列表（树形结构），每个节点包含：<ul>
+<li><code>title</code> (string): 标题文本内容</li>
+<li><code>level</code> (string): 标题级别，取值说明：<ul>
+<li><code>HEADING_LEVEL_TITLE</code> (11): 文档标题</li>
+<li><code>HEADING_LEVEL_1</code> ~ <code>HEADING_LEVEL_9</code> (1~9): 一级标题 ~ 九级标题</li>
+<li><code>HEADING_LEVEL_BODY</code> (10): 正文（无标题）</li>
+</ul></li>
+<li><code>title_start</code> (int64): 标题可操作的起始位置（可在此位置前插入内容）</li>
+<li><code>title_end</code> (int64): 标题可操作的结束位置</li>
+<li><code>content_start</code> (int64): 该标题下正文可操作的起始位置（在标题下方插入内容时使用）</li>
+<li><code>content_end</code> (int64): 该标题下正文可操作的结束位置（在正文末尾追加内容时使用）</li>
+<li><code>children</code> (array): 子目录项列表（递归结构，构成树形大纲）</li>
+</ul></li>
+<li><code>version</code> (int64): 当前文档版本号</li>
+</ul>
+<hr>
+<h2>16. resolve_document_structure</h2>
+<h3>功能说明</h3>
+<p>获取 Word 文档的完整结构树（DOC），返回 main story 下所有块级元素的层级结构和位置信息。与 <code>get_outline</code> 只返回标题层级不同，此接口返回<strong>所有</strong>块级元素，包括：</p>
+<ul>
+<li><strong>Paragraph</strong>：普通文本段落</li>
+<li><strong>Heading</strong>：标题段落（含级别）</li>
+<li><strong>Table</strong>：表格（含每行每列的起止位置）</li>
+<li><strong>TextBox</strong>：文本框（含内部段落的起止位置）</li>
+<li><strong>CodeBlock</strong>：代码块（含内部段落的起止位置）</li>
+</ul>
+<p>适用场景：</p>
+<ul>
+<li>需要在<strong>表格指定行列</strong>插入或修改文本（通过 <code>table_rows[row].cells[col].end_index</code> 定位单元格末尾）</li>
+<li>需要在<strong>文本框内部</strong>插入内容（通过 <code>children</code> 中的段落位置定位）</li>
+<li>需要了解文档完整布局后再决定操作位置</li>
+<li>需要精确获取某个段落、代码块的起止范围</li>
+</ul>
+<h3>调用示例</h3>
+<pre><code>{
+  "file_url": "https://docs.qq.com/doc/xxxxxxxx"
+}</code></pre>
+<h3>参数说明</h3>
+<ul>
+<li><code>file_url</code> (string, 推荐): 腾讯文档的文档链接，与 <code>file_id</code> 二选一，<strong>推荐优先使用</strong></li>
+<li><code>file_id</code> (string, 可选): 文档唯一标识符，与 <code>file_url</code> 二选一</li>
+<li><code>include_heading</code> (bool, 可选): 是否将标题也作为独立节点列出，默认 false（标题单独归类为 Heading 类型，不计入普通段落序号）</li>
+</ul>
+<h3>返回值说明</h3>
+<pre><code>{
+  "nodes": [
+    {
+      "type": "Heading",
+      "start_index": 0,
+      "end_index": 6,
+      "text_preview": "文档标题",
+      "heading_level": 1,
+      "logical_index": 1,
+      "table_rows": [],
+      "children": []
+    },
+    {
+      "type": "Paragraph",
+      "start_index": 7,
+      "end_index": 20,
+      "text_preview": "这是第一段正文内容",
+      "heading_level": 0,
+      "logical_index": 2,
+      "table_rows": [],
+      "children": []
+    },
+    {
+      "type": "Table",
+      "start_index": 21,
+      "end_index": 60,
+      "text_preview": "",
+      "heading_level": 0,
+      "logical_index": 3,
+      "table_rows": [
+        {
+          "row": 1,
+          "cells": [
+            { "row": 1, "col": 1, "start_index": 22, "end_index": 30, "text_preview": "单元格内容" },
+            { "row": 1, "col": 2, "start_index": 31, "end_index": 38, "text_preview": "" }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            { "row": 2, "col": 1, "start_index": 40, "end_index": 48, "text_preview": "" },
+            { "row": 2, "col": 2, "start_index": 49, "end_index": 57, "text_preview": "" }
+          ]
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": "TextBox",
+      "start_index": 61,
+      "end_index": 80,
+      "text_preview": "文本框内容",
+      "heading_level": 0,
+      "logical_index": 4,
+      "table_rows": [],
+      "children": [
+        {
+          "type": "Paragraph",
+          "start_index": 62,
+          "end_index": 79,
+          "text_preview": "文本框内容",
+          "heading_level": 0,
+          "logical_index": 1,
+          "table_rows": [],
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "CodeBlock",
+      "start_index": 81,
+      "end_index": 110,
+      "text_preview": "console.log('hello')",
+      "heading_level": 0,
+      "logical_index": 5,
+      "table_rows": [],
+      "children": [
+        {
+          "type": "Paragraph",
+          "start_index": 82,
+          "end_index": 109,
+          "text_preview": "console.log('hello')",
+          "heading_level": 0,
+          "logical_index": 1,
+          "table_rows": [],
+          "children": []
+        }
+      ]
+    }
+  ],
+  "version": 5,
+  "total_paragraphs": 3,
+  "total_headings": 1,
+  "total_tables": 1
+}</code></pre>
+<ul>
+<li><code>nodes</code> (array): 顶层块级节点列表（main story 直接子节点），按文档顺序排列，每个节点包含：<ul>
+<li><code>type</code> (string): 节点类型，取值：<code>Paragraph</code>、<code>Heading</code>、<code>Table</code>、<code>TextBox</code>、<code>CodeBlock</code>、<code>HighlightBlock</code></li>
+<li><code>start_index</code> (uint32): 节点起始位置（inclusive）</li>
+<li><code>end_index</code> (uint32): 节点结束位置（在此处插入可追加到节点末尾）</li>
+<li><code>text_preview</code> (string): 文本预览，最多 50 字符，仅 Paragraph/Heading 有值</li>
+<li><code>heading_level</code> (int32): 标题级别 1-9，仅 Heading 类型有值，其余为 0</li>
+<li><code>logical_index</code> (int32): 在同级中的逻辑序号（从 1 开始）</li>
+<li><code>table_rows</code> (array): 仅 Table 类型有值，包含行列结构：<ul>
+<li><code>row</code> (int32): 行号（从 1 开始）</li>
+<li><code>cells</code> (array): 该行所有单元格：<ul>
+<li><code>row</code> (int32): 行号（从 1 开始）</li>
+<li><code>col</code> (int32): 列号（从 1 开始）</li>
+<li><code>start_index</code> (uint32): 单元格起始位置</li>
+<li><code>end_index</code> (uint32): 单元格结束位置（在此处插入可追加到单元格末尾）</li>
+<li><code>text_preview</code> (string): 单元格文本预览，最多 30 字符</li>
+</ul></li>
+</ul></li>
+<li><code>children</code> (array): 子节点列表，TextBox/CodeBlock 内部的段落等</li>
+</ul></li>
+<li><code>version</code> (int64): 当前文档版本号</li>
+<li><code>total_paragraphs</code> (int32): 正文段落总数（不含标题）</li>
+<li><code>total_headings</code> (int32): 标题总数</li>
+<li><code>total_tables</code> (int32): 表格总数</li>
+</ul>
+<hr>
+<h2>典型工作流示例</h2>
+<h3>用 Markdown 创建 Word 文档（推荐）</h3>
+<pre><code>1. 准备好 Markdown 格式的文档内容，将其保存为 &lt;workspace&gt;/.tmp/tencent_docs/&lt;标题&gt;.md 文件（&lt;标题&gt; 为文档标题）
+2. 使用系统 base64 命令进行编码，并将结果写入工作区目录下的文件（确保 agent 可通过 read_file 访问）：
+   mkdir -p &lt;workspace&gt;/.tmp/tencent_docs
+   base64 -w 0 &lt;workspace&gt;/.tmp/tencent_docs/&lt;标题&gt;.md &gt; &lt;workspace&gt;/.tmp/tencent_docs/encoded_&lt;标题&gt;.txt
+   或：echo -n "Markdown文本" | base64 -w 0 &gt; &lt;workspace&gt;/.tmp/tencent_docs/encoded_&lt;标题&gt;.txt
+   （macOS 上无需 -w 0 参数；&lt;workspace&gt; 为当前项目工作区根目录绝对路径）
+3. 使用 read_file 工具读取工作区下的输出文件（如 &lt;workspace&gt;/.tmp/tencent_docs/encoded_&lt;标题&gt;.txt），获取 base64 编码后的 Markdown 内容
+4. 调用 create_with_markdown 传入 base64_markdown 和可选的 title
+5. 从返回值获取 file_url 即可访问文档；如需继续编辑，使用 file_id/file_url 和 last_index 调用其他工具</code></pre>
+<h3>编辑已有 Word 文档</h3>
+<pre><code>1. 调用 get_outline 获取文档大纲结构，了解文档的标题层级和各区域的可操作位置
+   （如需精确定位表格行列、文本框内部等，改用 resolve_document_structure）
+2. 根据大纲定位目标区域，或调用 find 查找具体文本位置
+3. 按需调用工具进行编辑：
+   - 插入文本：insert_text
+   - 插入段落：insert_paragraph
+   - 替换文本：replace_text
+   - 全文替换：find_and_replace_text
+   - 修改文本样式：update_text_property
+   - 插入任务：insert_task
+   - 插入图片：insert_image
+   - 替换图片：replace_image
+   - 插入分页符：insert_page_break
+   - 插入表格：insert_table
+   - 插入批注：insert_comment
+   - 获取文档大纲：get_outline
+   - 获取完整结构树：resolve_document_structure</code></pre>
+<h3>查找并替换文本（精确替换）</h3>
+<pre><code>1. 调用 find 查找目标文本，获取所有匹配位置
+2. 将匹配结果展示给用户，让用户选择要替换的位置
+3. 调用 replace_text 传入对应的 range 进行精确替换</code></pre>
+<h3>查找并替换文本（全部替换）</h3>
+<pre><code>1. 直接调用 find_and_replace_text，一次性替换所有匹配项</code></pre>
+<h3>格式化文本</h3>
+<pre><code>1. 调用 find 查找目标文本，获取文本的 range
+2. 调用 update_text_property 设置文本属性（加粗、颜色等）</code></pre>
+<h3>向文档末尾追加内容</h3>
+<pre><code>1. 调用 get_last_operable_pos 获取文档末尾可操作位置
+2. 使用返回的 position 作为 index，调用 insert_text / insert_image / insert_table 等工具追加内容</code></pre>
+<h3>在指定标题下插入内容</h3>
+<pre><code>1. 调用 get_outline 获取文档大纲，找到目标标题节点
+2. 使用节点的 content_start 作为插入位置（在标题下方开头插入）
+   或使用 content_end 作为插入位置（在标题下方正文末尾追加）
+3. 调用 insert_text / insert_paragraph / insert_image 等工具在对应位置插入内容</code></pre>
+<h3>在文档开头插入内容</h3>
+<pre><code>1. 调用 get_outline 获取文档大纲
+2. 明确用户意图——是要在「文档标题前」还是「正文开头」插入：
+   - 文档标题前：使用 HEADING_LEVEL_TITLE 节点的 title_start 作为插入位置
+   - 正文开头（标题之后）：使用 HEADING_LEVEL_TITLE 节点的 content_start 作为插入位置
+3. 如果用户未明确说明，应主动询问用户确认具体插入位置
+4. 确认位置后，调用 insert_text / insert_paragraph 等工具在对应位置插入内容</code></pre>
+<h3>在表格指定行列插入文本</h3>
+<pre><code>1. 调用 resolve_document_structure 获取文档完整结构树
+2. 在返回的 nodes 中找到目标 Table 节点
+3. 通过 table_rows[row-1].cells[col-1].end_index 获取目标单元格的末尾位置
+4. 调用 insert_text，将 index 设为该 end_index，即可在指定单元格末尾插入文本</code></pre>
+<h3>在文本框内部插入内容</h3>
+<pre><code>1. 调用 resolve_document_structure 获取文档完整结构树
+2. 在返回的 nodes 中找到目标 TextBox 节点
+3. 通过 children 中的段落节点获取内部精确位置
+4. 调用 insert_text / insert_paragraph 在对应位置插入内容</code></pre>
+<h3>为文本添加批注</h3>
+<pre><code>1. 调用 find 查找目标文本，获取文本的 range（begin/end）
+2. 调用 insert_comment 传入 range 和批注内容</code></pre>
+<h3>替换文档中的图片</h3>
+<pre><code>1. 调用 get_images 获取文档中所有图片信息，包括图片位置（pos/idx）和 URL/ID
+2. 根据返回的 pos（作为 idx）和 url/id（作为 old_url/old_id）定位目标图片
+3. 调用 replace_image 传入对应参数完成图片替换</code></pre>
+<hr>
+<h2>注意事项</h2>
+<ul>
+<li>仅支持 Word 文档类型（doc_type: word）</li>
+<li><code>index</code> / <code>idx</code> 参数表示插入位置，从 0 开始计数</li>
+<li>操作前需确保拥有文档的写入权限</li>
+<li><code>replace_text</code> 的 <code>ranges</code> 参数中 <code>start_index</code> 和 <code>end_index</code> 必须在文档有效范围内</li>
+<li>替换文本的推荐流程：先调用 <code>find</code> 查找定位，让用户确认后再用 <code>replace_text</code> 精确替换；如果需要全部替换可直接使用 <code>find_and_replace_text</code></li>
+<li><code>file_id</code> 和 <code>file_url</code> 二选一，<strong>推荐优先使用 <code>file_url</code></strong>（直接传入文档链接更便捷），两者都传时优先使用 <code>file_id</code></li>
+<li><code>get_last_operable_pos</code> 返回的 <code>position</code> 即为文档末尾可安全插入内容的位置</li>
+<li><code>get_outline</code> 返回树形大纲结构，每个节点的 <code>content_start</code>/<code>content_end</code> 表示该标题下正文区域的可操作范围，可直接用作 <code>insert_text</code> 等工具的 <code>index</code> 参数</li>
+<li><strong>「在文档开头插入」需明确位置</strong>：用户要求在文档开头插入内容时，应先通过 <code>get_outline</code> 获取大纲，区分「文档标题前」（<code>HEADING_LEVEL_TITLE</code> 的 <code>title_start</code>）和「正文开头」（<code>HEADING_LEVEL_TITLE</code> 的 <code>content_start</code>），并向用户确认具体插入位置</li>
+<li><code>resolve_document_structure</code> 返回所有块级元素的完整结构树，<code>table_rows[row].cells[col].end_index</code> 即为对应单元格末尾可插入位置；TextBox/CodeBlock 的内部段落通过 <code>children</code> 字段获取；<code>logical_index</code> 表示节点在同级中的顺序（从 1 开始）</li>
+<li><code>create_with_markdown</code> 可一步完成 Word 文档的创建和内容写入，无需先 <code>manage.create_file</code> 再 <code>insert_markdown</code>，适合快速生成 Word 文档的场景</li>
+<li><code>insert_comment</code> 的 <code>range</code> 必须在文档有效范围内，建议先用 <code>find</code> 获取精确范围</li>
+<li><code>replace_image</code> 需要通过 <code>old_image_url</code> 或 <code>old_attachment_id</code> 定位旧图片，新图片通过 <code>image_id</code> 或 <code>content</code>（base64）指定</li>
+</ul>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

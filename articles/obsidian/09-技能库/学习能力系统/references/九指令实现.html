@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>9条指令完整实现 - 以观其妙书院</title>
+<meta name="description" content="9条指令完整实现 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="9条指令完整实现">
+<meta property="og:description" content="9条指令完整实现 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "9条指令完整实现",
+    "description": "9条指令完整实现 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>9条指令完整实现</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>9条指令完整实现</h1>
+<h2>指令一：写入记忆</h2>
+<h3>触发词</h3>
+<ul>
+<li>写入记忆、帮我记住、把...写入记忆</li>
+<li>记住这个、这个很重要请记住</li>
+</ul>
+<h3>实现代码</h3>
+<pre><code>1. 解析用户输入，提取需要记忆的内容
+2. 判断内容类型：
+   - 用户偏好 → 写入"偏好"板块
+   - 新知识 → 写入"知识"板块
+   - 任务/约定 → 写入"待办"板块
+3. 写入MEMORY.md（追加到相关板块）
+4. 写入当日日志（时间线格式）
+5. 可选：同步到IMA笔记
+
+输出示例：
+✅ 已将以下内容写入长期记忆：
+【类型】用户偏好
+【内容】悟空喜欢简洁直接的沟通方式，不喜欢冗长的铺垫
+【时间】2026-03-28
+存储位置：MEMORY.md</code></pre>
+<h3>存储格式</h3>
+<pre><code>## 偏好
+- 2026-03-28: 悟空喜欢简洁直接的沟通方式
+
+## 知识
+- 2026-03-28: [知识点]
+
+## 待办
+- 2026-03-28: [待办事项]</code></pre>
+<hr>
+<h2>指令二：调取记忆</h2>
+<h3>触发词</h3>
+<ul>
+<li>调取记忆、读取记忆、告诉我你记住了什么</li>
+<li>关于...你还记得什么</li>
+</ul>
+<h3>实现代码</h3>
+<pre><code>1. 解析用户查询主题
+2. 读取MEMORY.md全文
+3. 搜索相关关键词
+4. 提取相关内容
+5. 格式化输出
+
+输出示例：
+📚 关于[沟通风格]的长期记忆：
+
+【用户偏好】
+- 悟空喜欢简洁直接的沟通方式
+- 不喜欢冗长的铺垫
+
+【相关知识】
+- 2026-03-28: 建立了学习能力系统
+
+【历史任务】
+- [暂无]
+
+来源：MEMORY.md（最后更新：2026-03-28）</code></pre>
+<hr>
+<h2>指令三：记忆蒸馏</h2>
+<h3>触发词</h3>
+<ul>
+<li>记忆蒸馏、压缩记忆、整理记忆</li>
+<li>清理记忆、精简记忆</li>
+</ul>
+<h3>实现代码</h3>
+<pre><code>1. 读取MEMORY.md完整内容
+2. 识别以下模式：
+   - 重复内容 → 合并
+   - 过时信息 → 标记或删除
+   - 冗余表达 → 压缩
+   - 核心洞察 → 保留
+3. 重建精炼版本
+4. 输出对比报告
+
+输出示例：
+🔄 记忆蒸馏报告
+
+【原始大小】15KB
+【精炼大小】8KB
+【压缩率】46%
+
+【处理结果】
+- 合并重复：3处
+- 标记过时：2条
+- 压缩表达：5处
+- 保留核心：12条
+
+【核心保留】
+✓ 用户偏好（2条）
+✓ 重要知识（6条）
+✓ 核心洞察（4条）
+
+精炼版已保存 ✓</code></pre>
+<hr>
+<h2>指令四：联网搜索</h2>
+<h3>触发词</h3>
+<ul>
+<li>联网搜索、搜索最新、帮我搜索</li>
+<li>关于...的最新信息</li>
+</ul>
+<h3>实现代码</h3>
+<pre><code>1. 提取搜索主题
+2. 调用web_search获取结果
+3. 提炼核心结论（3条以内）
+4. 标注数据来源
+5. 给出可行动洞察
+
+输出示例：
+📊 [AI最新发展趋势]最新信息
+
+【核心结论】
+1. 大模型进入"实用落地年"，企业级应用成主战场
+2. 多模态能力快速提升，图像/视频生成质量显著改善
+3. AI Agent成为新风口，预计2026年市场规模增长300%
+
+【关键数据】
+- 全球AI市场规模：2025年$1500亿 → 2026年预计$2800亿
+- 企业采用率：从35%提升至52%
+
+【行动建议】
+1. 关注企业级AI应用机会
+2. 探索多模态内容生成
+3. 布局AI Agent相关技能
+
+来源：Web Search（2026-03-28）</code></pre>
+<hr>
+<h2>指令五：深度研究</h2>
+<h3>触发词</h3>
+<ul>
+<li>深度研究、深入分析、系统研究</li>
+<li>关于...的完整分析</li>
+</ul>
+<h3>实现代码</h3>
+<pre><code>1. 提取研究主题
+2. 多轮搜索（现状/趋势/数据/案例）
+3. 调用知识学习引擎深度分析
+4. 四维输出：现状+数据+影响+行动
+
+输出示例：
+🔬 [AI时代个人知识管理]深度研究报告
+
+一、现状与趋势
+- 个人知识管理正在从"存储"转向"知识图谱"
+- AI增强的PKM工具成为新趋势
+- 预计2027年，80%知识工作者将使用AI辅助知识管理
+
+二、核心数据与案例
+- Obsidian：年增长300%，社区超过100万用户
+- Notion AI：推出AI写作助手，月活突破500万
+- 腾讯IMA：推出知识库功能，定位"第二大脑"
+
+三、对我的直接影响
+- [对悟空观其妙书院的业务影响分析]
+- [对知识产品开发的方向建议]
+
+四、行动建议
+1. 短期：完善现有知识库结构
+2. 中期：引入AI增强搜索能力
+3. 长期：构建个人知识图谱系统</code></pre>
+<hr>
+<h2>指令六：读取本地文件</h2>
+<h3>触发词</h3>
+<ul>
+<li>读取文件、提炼内容、分析文件</li>
+<li>帮我看看这个文件</li>
+</ul>
+<h3>实现代码</h3>
+<pre><code>1. 识别文件路径和格式
+2. 调用对应技能读取：
+   - txt/md → read_file原生
+   - PDF → markitdown
+   - DOCX → markitdown
+   - 图片 → read_media_file
+3. 提炼核心内容
+4. 给出行动建议
+
+输出示例：
+📄 文件分析：[项目计划书.md]
+
+【核心结论】
+本文档描述了一个AI学习系统的搭建计划，分为四层架构：
+1. 记忆系统（MEMORY.md + Obsidian）
+2. 实时获取（搜索 + 公众号）
+3. 文件读取（多格式支持）
+4. 自主进化（自动沉淀 + 定时任务）
+
+【关键信息】
+- 计划周期：3个月
+- 核心目标：搭建完整的个人知识管理闭环
+- 关键里程碑：
+  * 第1个月：记忆系统完善
+  * 第2个月：搜索和读取能力
+  * 第3个月：自动化机制
+
+【行动建议】
+1. 立即开始MEMORY.md结构化
+2. 下周配置定时自动化任务
+3. 本月内完成首次知识蒸馏</code></pre>
+<hr>
+<h2>指令七：批量读取知识库</h2>
+<h3>触发词</h3>
+<ul>
+<li>知识库检索、读取知识库、批量读取</li>
+<li>关于...的所有笔记</li>
+</ul>
+<h3>实现代码</h3>
+<pre><code>1. 提取检索主题
+2. 调用obsidian技能搜索
+3. 整合所有相关笔记
+4. 输出知识图谱
+
+输出示例：
+🗺️ [五行人格]知识图谱
+
+【总体架构】
+五行人格理论
+├── 木行人（生长、觉照）
+├── 火行人（光明、热情）
+├── 土行人（承载、稳重）
+├── 金行人（决断、清明）
+└── 水行人（润泽、沉潜）
+
+【核心结论】
+1. 五行人格基于一心三界五行九层体系
+2. 每种人格有独特的转化路径
+3. 相生相克是动态平衡的关键
+
+【知识节点】
+- 木行人 ←相生→ 火行人（木生火）
+- 火行人 ←相生→ 土行人（火生土）
+- 木行人 ←相克→ 土行人（木克土）
+- [更多关系...]
+
+【行动建议】
+1. 深入学习木火共生关系
+2. 实践五行转化技术
+3. 应用到企业咨询场景</code></pre>
+<hr>
+<h2>指令八：每日知识沉淀</h2>
+<h3>触发词</h3>
+<ul>
+<li>知识沉淀、每日总结、对话总结</li>
+<li>今天的收获</li>
+</ul>
+<h3>实现代码（对话结束自动触发）</h3>
+<pre><code>1. 回溯今日所有对话
+2. 提取新知识/新洞察
+3. 识别被验证/修正的偏好
+4. 写入MEMORY.md相关板块
+5. 输出沉淀报告
+
+输出示例：
+🔄 每日知识沉淀（2026-03-28）
+
+【今日新知】
+1. 建立了完整的四层学习能力系统架构
+2. 封装了9条指令实现完整学习闭环
+3. 理解了知识诅咒的本质是共情差异
+
+【长期保留结论】
+- 学习能力系统需要四层架构：记忆+获取+读取+进化
+- 9条指令可以满足80%的学习场景需求
+- 自动化是系统持续升级的关键
+
+【偏好确认/修正】
+✓ 确认：悟空喜欢简洁直接的输出
+✓ 确认：需要结构化的知识沉淀
+✓ 修正：之前对markitdown的理解不够全面
+
+已写入MEMORY.md ✓
+已同步到当日日志 ✓</code></pre>
+<hr>
+<h2>指令九：设置定时任务</h2>
+<h3>触发词</h3>
+<ul>
+<li>设置定时任务、每周总结、自动学习</li>
+<li>创建一个自动化任务</li>
+</ul>
+<h3>实现代码</h3>
+<pre><code>1. 解析任务类型
+2. 设置执行频率
+3. 定义任务内容
+4. 调用automation_update创建
+
+输出示例：
+⚙️ 定时任务创建成功
+
+【任务名】每周知识蒸馏
+【频率】每周一 9:00
+【功能】
+  1. 读取过去7天的MEMORY.md
+  2. 提取核心知识
+  3. 压缩精炼
+  4. 写入周摘要板块
+
+【状态】✅ 已激活
+【下次执行】2026-03-30 09:00
+
+提示：可随时发送"查看定时任务"了解所有自动化任务</code></pre>
+<h3>可创建的定时任务模板</h3>
+<table>
+<thead><tr>
+<th>任务名</th>
+<th>频率</th>
+<th>功能</th>
+</tr></thead><tbody>
+<tr>
+<td>每周知识蒸馏</td>
+<td>FREQ=WEEKLY;BYDAY=MO;BYHOUR=9</td>
+<td>压缩MEMORY.md</td>
+</tr>
+<tr>
+<td>每月记忆归档</td>
+<td>FREQ=MONTHLY;BYDAY=1;BYHOUR=10</td>
+<td>归档到Obsidian</td>
+</tr>
+<tr>
+<td>每日23:30备份</td>
+<td>FREQ=DAILY;BYHOUR=23;BYMINUTE=30</td>
+<td>备份工作记忆</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>指令速查表</h2>
+<table>
+<thead><tr>
+<th>指令</th>
+<th>触发词</th>
+<th>核心功能</th>
+<th>存储</th>
+</tr></thead><tbody>
+<tr>
+<td>一</td>
+<td>写入记忆</td>
+<td>保存重要信息</td>
+<td>MEMORY.md</td>
+</tr>
+<tr>
+<td>二</td>
+<td>调取记忆</td>
+<td>检索已有知识</td>
+<td>MEMORY.md</td>
+</tr>
+<tr>
+<td>三</td>
+<td>记忆蒸馏</td>
+<td>压缩精炼</td>
+<td>MEMORY.md</td>
+</tr>
+<tr>
+<td>四</td>
+<td>联网搜索</td>
+<td>实时信息</td>
+<td>不存储</td>
+</tr>
+<tr>
+<td>五</td>
+<td>深度研究</td>
+<td>系统分析</td>
+<td>可选存储</td>
+</tr>
+<tr>
+<td>六</td>
+<td>读取文件</td>
+<td>本地文档</td>
+<td>可选存储</td>
+</tr>
+<tr>
+<td>七</td>
+<td>知识库检索</td>
+<td>批量整合</td>
+<td>不存储</td>
+</tr>
+<tr>
+<td>八</td>
+<td>知识沉淀</td>
+<td>对话总结</td>
+<td>MEMORY.md</td>
+</tr>
+<tr>
+<td>九</td>
+<td>设置定时任务</td>
+<td>自动化</td>
+<td>自动化表</td>
+</tr>
+</tbody></table>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

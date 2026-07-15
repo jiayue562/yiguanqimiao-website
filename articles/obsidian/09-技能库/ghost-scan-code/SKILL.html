@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Find Issues - 以观其妙书院</title>
+<meta name="description" content="Ghost Security - SAST code scanner. Finds security vulnerabilities in source code by planning and executing targeted scans for issues like SQL injection, XSS, BOLA, BFLA, SSRF, and other OWASP categories. Supports applications (backend, frontend, mobile) and libraries (prototype pollution, unsafe deserialization, ReDoS, path traversal, zip slip). Use when the user asks for a code security audit, SAST scan, vulnerability scan of source code, or wants to find security flaws in a codebase or library.">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="Find Issues">
+<meta property="og:description" content="Ghost Security - SAST code scanner. Finds security vulnerabilities in source code by planning and executing targeted scans for issues like SQL injection, XSS, BOLA, BFLA, SSRF, and other OWASP categories. Supports applications (backend, frontend, mobile) and libraries (prototype pollution, unsafe deserialization, ReDoS, path traversal, zip slip). Use when the user asks for a code security audit, SAST scan, vulnerability scan of source code, or wants to find security flaws in a codebase or library.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Find Issues",
+    "description": "Ghost Security - SAST code scanner. Finds security vulnerabilities in source code by planning and executing targeted scans for issues like SQL injection, XSS, BOLA, BFLA, SSRF, and other OWASP categories. Supports applications (backend, frontend, mobile) and libraries (prototype pollution, unsafe deserialization, ReDoS, path traversal, zip slip). Use when the user asks for a code security audit, SAST scan, vulnerability scan of source code, or wants to find security flaws in a codebase or library.",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Find Issues</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Find Issues</h1>
+<p>You find security issues in a repository. This skill plans which vulnerability vectors to scan, then executes those scans against each project.</p>
+<h2>Inputs</h2>
+<ul>
+<li><strong>depth</strong>: <code>quick</code> (default), <code>balanced</code>, or <code>full</code> — override via <code>$ARGUMENTS</code></li>
+</ul>
+<p>$ARGUMENTS</p>
+<blockquote><p><strong>Note:</strong> Arguments passed can be used to customize the scan workflow if provided. For example, if the user specifies a specific set of vectors, count of vectors, specific candidate files, areas to focus on, count of candidate files, etc., ensure the relevant details are passed to the relevant steps in the skill.</p></blockquote>
+<h2>Supporting files</h2>
+<ul>
+<li>Loop script: <a href="scripts/loop.sh">scripts/loop.sh</a></li>
+<li>Scan criteria: <a href="criteria/index.yaml">criteria/index.yaml</a></li>
+</ul>
+<hr>
+<h2>Step 1: Setup</h2>
+<p>Compute the repo-specific output directory:</p>
+<pre><code>repo_name=$(basename "$(pwd)") &amp;&amp; remote_url=$(git remote get-url origin 2&gt;/dev/null || pwd) &amp;&amp; short_hash=$(printf '%s' "$remote_url" | git hash-object --stdin | cut -c1-8) &amp;&amp; repo_id="${repo_name}-${short_hash}" &amp;&amp; short_sha=$(git rev-parse --short HEAD 2&gt;/dev/null || date +%Y%m%d) &amp;&amp; ghost_repo_dir="$HOME/.ghost/repos/${repo_id}" &amp;&amp; scan_dir="${ghost_repo_dir}/scans/${short_sha}/code" &amp;&amp; cache_dir="${ghost_repo_dir}/cache" &amp;&amp; mkdir -p "$scan_dir" &amp;&amp; echo "scan_dir=$scan_dir cache_dir=$cache_dir"</code></pre>
+<ol>
+<li>Read <code>$cache_dir/repo.md</code> — if missing, run the repo-context skill first and then continue.</li>
+<li>Read <a href="criteria/index.yaml">criteria/index.yaml</a> to get the valid agent→vector mappings per project type</li>
+<li>Set <code>depth</code> to <code>quick</code> if not provided</li>
+<li>If <code>depth</code> is <code>full</code>, warn the user that a full scan uses significantly more tokens and ask them to confirm before proceeding. If they decline, fall back to <code>balanced</code>.</li>
+</ol>
+<hr>
+<h2>Step 2: Plan Scans</h2>
+<p>If <code>$scan_dir/plan.md</code> already exists, skip to the next step.</p>
+<p>Otherwise, run the planner using <a href="scripts/loop.sh">scripts/loop.sh</a>:</p>
+<pre><code>bash &lt;path-to-loop.sh&gt; $scan_dir planner.md "- depth: &lt;depth&gt;
+- arguments: &lt;relevant argument overrides if any, otherwise omit&gt;" 1 $cache_dir</code></pre>
+<p>Use a 10-minute timeout. If the command times out, re-run it — the script resumes from where it left off. If it fails 3 times consecutively with the same error, stop and report the failure.</p>
+<p><strong>Verify:</strong> <code>$scan_dir/plan.md</code> exists and contains at least one <code>## Project:</code> section before proceeding.</p>
+<hr>
+<h2>Step 3: Nominate Files</h2>
+<p>If <code>$scan_dir/nominations.md</code> does not exist, generate it by reading <code>$scan_dir/plan.md</code> and for each project section (<code>## Project: &lt;base_path&gt; (&lt;type&gt;)</code>), parse the Recommended Scans table. For each row, extract the Agent and Vector columns. Write <code>$scan_dir/nominations.md</code> - one line per (project, agent, vector) combination. Skip projects with empty scan tables.</p>
+<pre><code># Nominations
+
+- [ ] &lt;base_path&gt; (&lt;type&gt;) | &lt;agent&gt; | &lt;vector&gt;
+- [ ] &lt;base_path&gt; (&lt;type&gt;) | &lt;agent&gt; | &lt;vector&gt;
+...</code></pre>
+<p>If <code>$scan_dir/nominations.md</code> already exists, change every top level task <code>- [x]</code> to <code>- [ ]</code>. Keep all indented lines/subtasks beneath each item unchanged.</p>
+<h3>Run nomination script</h3>
+<p>Using <a href="scripts/loop.sh">scripts/loop.sh</a>:</p>
+<pre><code>bash &lt;path-to-loop.sh&gt; $scan_dir nominator.md "- depth: &lt;depth&gt;
+- arguments: &lt;relevant argument overrides if any, otherwise omit&gt;" 5 $cache_dir</code></pre>
+<p>Use a 10-minute timeout. If the command times out, re-run it — the script resumes from where it left off. If it fails 3 times consecutively with the same error, stop and report the failure.</p>
+<p><strong>Verify:</strong> <code>$scan_dir/nominations.md</code> contains at least one <code>- [x]</code> line before proceeding.</p>
+<hr>
+<h2>Step 4: Analyze Nominated Files</h2>
+<p>Read <code>$scan_dir/nominations.md</code>. For each candidate file under a checked <code>- [x]</code> line, append to <code>$scan_dir/analyses.md</code> (skip candidates already listed in <code>analyses.md</code>).</p>
+<pre><code>- [ ] &lt;base_path&gt; (&lt;type&gt;) | &lt;agent&gt; | &lt;vector&gt; | &lt;candidate_file&gt;</code></pre>
+<p>Create the findings directory:</p>
+<pre><code>mkdir -p $scan_dir/findings</code></pre>
+<h3>Run analysis script</h3>
+<p>Using <a href="scripts/loop.sh">scripts/loop.sh</a>:</p>
+<pre><code>bash &lt;path-to-loop.sh&gt; $scan_dir analyzer.md "" 5 $cache_dir</code></pre>
+<p>Use a 10-minute timeout. If the command times out, re-run it — the script resumes from where it left off. If it fails 3 times consecutively with the same error, stop and report the failure.</p>
+<p><strong>Verify:</strong> <code>$scan_dir/analyses.md</code> contains at least one <code>- [x]</code> line before proceeding.</p>
+<hr>
+<h2>Step 5: Verify Findings</h2>
+<p>List all <code>.md</code> files in <code>$scan_dir/findings/</code>. If none exist, write a <code>no-findings.md</code> summary and stop.</p>
+<p>Using <a href="scripts/loop.sh">scripts/loop.sh</a>:</p>
+<pre><code>bash &lt;path-to-loop.sh&gt; $scan_dir verifier.md "" 5 $cache_dir</code></pre>
+<p>Use a 10-minute timeout. If the command times out, re-run it — the script resumes from where it left off. If it fails 3 times consecutively with the same error, stop and report the failure.</p>
+<hr>
+<h2>Completion</h2>
+<p>After all steps complete, report the scan results:</p>
+<ol>
+<li>List all finding files in <code>$scan_dir/findings/</code></li>
+<li>Count verified vs rejected findings</li>
+<li>Present a summary to the user</li>
+</ol>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>
