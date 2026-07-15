@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>凤爪OS.skills · 测试用例 - 以观其妙书院</title>
+<meta name="description" content="凤爪OS.skills · 测试用例 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="凤爪OS.skills · 测试用例">
+<meta property="og:description" content="凤爪OS.skills · 测试用例 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "凤爪OS.skills · 测试用例",
+    "description": "凤爪OS.skills · 测试用例 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>凤爪OS.skills · 测试用例</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>凤爪OS.skills · 测试用例</h1>
+<blockquote><p><strong>版本</strong>: 1.0
+<strong>创建日期</strong>: 2026-04-05
+<strong>目的</strong>: 验证凤爪OS.skills的八大应用场景映射、情感温度识别、场景路由决策、中庸原则执行等核心功能</p></blockquote>
+<hr>
+<h2>📋 测试用例总览</h2>
+<table>
+<thead><tr>
+<th>用例编号</th>
+<th>测试场景</th>
+<th>触发条件</th>
+<th>预期行为</th>
+<th>预期输出</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>TC001</strong></td>
+<td>单一场景·亲密关系问题</td>
+<td>"老公又不听我说话了"</td>
+<td>激活L1，生成握手包，路由至亲密关系场景</td>
+<td>L1情感陪伴 → 场景分析</td>
+</tr>
+<tr>
+<td><strong>TC002</strong></td>
+<td>多场景·工作+家庭双重压力</td>
+<td>"公司压力很大，回家还跟孩子吵架"</td>
+<td>激活L1主导整合，多场景并行支持</td>
+<td>L1整合 → 凤心OS并行分析</td>
+</tr>
+<tr>
+<td><strong>TC003</strong></td>
+<td>高情绪强度·痛苦绝望</td>
+<td>"我真的不知道该怎么活了，太痛苦了"</td>
+<td>激活L1情感陪伴优先（痛苦0-3分）</td>
+<td>先情感支持，待情绪稳定</td>
+</tr>
+<tr>
+<td><strong>TC004</strong></td>
+<td>五行信号强烈·阴木明显</td>
+<td>"我这个人特别固执，总想证明自己是对的"</td>
+<td>激活L1，识别阴木信号（≥16分），路由至木行人分智能体</td>
+<td>直接分发至木行人分析</td>
+</tr>
+<tr>
+<td><strong>TC005</strong></td>
+<td>五行信号强烈·阴火明显</td>
+<td>"我真的很急躁，凭什么都要听他的，我最厉害"</td>
+<td>激活L1，识别阴火信号（≥16分），路由至火行人分智能体</td>
+<td>直接分发至火行人分析</td>
+</tr>
+<tr>
+<td><strong>TC006</strong></td>
+<td>八大场景·亲子关系</td>
+<td>"孩子总是不听话，我不知道该怎么教育"</td>
+<td>激活L1，路由至亲子关系场景</td>
+<td>L1 → 亲子关系场景文件</td>
+</tr>
+<tr>
+<td><strong>TC007</strong></td>
+<td>八大场景·领导力困惑</td>
+<td>"作为领导，我总忍不住想证明自己是对的"</td>
+<td>激活L1，路由至领导力场景，识别阴木火信号</td>
+<td>L1 → 领导力场景</td>
+</tr>
+<tr>
+<td><strong>TC008</strong></td>
+<td>八大场景·健康养生</td>
+<td>"我想改善健康，但不知道该怎么做"</td>
+<td>激活L1，路由至健康养生场景</td>
+<td>L1 → 健康养生场景</td>
+</tr>
+<tr>
+<td><strong>TC009</strong></td>
+<td>八大场景·团队冲突</td>
+<td>"团队里总有人跟我意见不合，很头疼"</td>
+<td>激活L1，路由至团队建设场景</td>
+<td>L1 → 团队建设场景</td>
+</tr>
+<tr>
+<td><strong>TC010</strong></td>
+<td>八大场景·沟通困境</td>
+<td>"我说话别人总是听不懂"</td>
+<td>激活L1，路由至高效沟通场景</td>
+<td>L1 → 高效沟通场景</td>
+</tr>
+<tr>
+<td><strong>TC011</strong></td>
+<td>八大场景·日常生活</td>
+<td>"我感觉生活节奏很乱"</td>
+<td>激活L1，路由至日常生活场景</td>
+<td>L1 → 日常生活场景</td>
+</tr>
+<tr>
+<td><strong>TC012</strong></td>
+<td>八大场景·人格测评</td>
+<td>"我想知道我是什么五行人格类型"</td>
+<td>激活L1，路由至人格测评场景</td>
+<td>L1 → 五行总智能体</td>
+</tr>
+<tr>
+<td><strong>TC013</strong></td>
+<td>直接关键词·L1系统词</td>
+<td>"启动L1·一心·统摄"</td>
+<td>直接激活L1</td>
+<td>L1觉知接待模式启动</td>
+</tr>
+<tr>
+<td><strong>TC014</strong></td>
+<td>直接关键词·圆满人格状态</td>
+<td>"进入圆满人格状态"</td>
+<td>执行三步觉知流程</td>
+<td>身语意不是我 → 反观是什么在觉知 → 根据环境行事</td>
+</tr>
+<tr>
+<td><strong>TC015</strong></td>
+<td>混合情绪·焦虑+迷茫</td>
+<td>"我很担心未来，又不知道该往哪里走"</td>
+<td>激活L1（焦虑4-6分 + 迷茫6-7分 = 10-13分）</td>
+<td>稳定陪伴，多问题探索</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🧪 详细测试步骤</h2>
+<h3>TC001：单一场景·亲密关系问题</h3>
+<p><strong>测试目的</strong>：验证单一场景的直接分发功能</p>
+<p><strong>用户输入</strong>：</p>
+<blockquote><p>"老公又不听我说话了，我真的很生气"</p></blockquote>
+<p><strong>预期流程</strong>：</p>
+<ol>
+<li>✅ 触发L1（场景明确：亲密关系）</li>
+<li>✅ L1生成握手包：<code>{亲密关系} × {愤怒/委屈} × {痛苦4-6分} × {高优先}</code></li>
+<li>✅ L1直接分发至亲密关系场景</li>
+<li>✅ 亲密关系场景进行五行分析（木行人与火行人的关系）</li>
+</ol>
+<p><strong>验证点</strong>：</p>
+<ul>
+<li>[ ] 是否成功触发L1</li>
+<li>[ ] 是否正确生成握手包</li>
+<li>[ ] 是否正确分发至亲密关系场景</li>
+<li>[ ] 是否正确识别情感温度（痛苦）</li>
+<li>[ ] 是否正确识别五行线索（木-火关系）</li>
+</ul>
+<hr>
+<h3>TC002：多场景·工作+家庭双重压力</h3>
+<p><strong>测试目的</strong>：验证多场景整合功能</p>
+<p><strong>用户输入</strong>：</p>
+<blockquote><p>"公司压力很大，回家还跟孩子吵架，我真的不知道该怎么办"</p></blockquote>
+<p><strong>预期流程</strong>：</p>
+<ol>
+<li>✅ 触发L1（多场景信号：工作+家庭）</li>
+<li>✅ L1主导整合模式</li>
+<li>✅ L1生成握手包：<code>{工作压力+亲子冲突} × {痛苦/焦虑} × {痛苦4-6分} × {高优先}</code></li>
+<li>✅ L1主导，凤心OS并行支持</li>
+<li>✅ 分别调用工作场景（火行人分智能体）和家庭场景（木行人分智能体）</li>
+</ol>
+<p><strong>验证点</strong>：</p>
+<ul>
+<li>[ ] 是否识别到多场景信号</li>
+<li>[ ] 是否进入L1主导整合模式</li>
+<li>[ ] 是否并行调用多个分智能体</li>
+<li>[ ] 是否提供多场景整合视角</li>
+</ul>
+<hr>
+<h3>TC003：高情绪强度·痛苦绝望</h3>
+<p><strong>测试目的</strong>：验证情感陪伴优先功能</p>
+<p><strong>用户输入</strong>：</p>
+<blockquote><p>"我真的不知道该怎么活了，太痛苦了"</p></blockquote>
+<p><strong>预期流程</strong>：</p>
+<ol>
+<li>✅ 触发L1（情绪信号：痛苦0-3分）</li>
+<li>✅ L1识别情感温度：痛苦（0-3分）</li>
+<li>✅ L1激活情感陪伴优先模式</li>
+<li>✅ 先进行情感支持，暂缓分析</li>
+<li>✅ 待情绪稳定后，再进行场景分发</li>
+</ol>
+<p><strong>验证点</strong>：</p>
+<ul>
+<li>[ ] 是否正确识别情感温度（痛苦）</li>
+<li>[ ] 是否激活情感陪伴优先</li>
+<li>[ ] 是否先情感支持后分析</li>
+<li>[ ] 是否遵守中庸原则（不冷漠也不压迫）</li>
+</ul>
+<hr>
+<h3>TC004：五行信号强烈·阴木明显</h3>
+<p><strong>测试目的</strong>：验证五行信号识别与路由</p>
+<p><strong>用户输入</strong>：</p>
+<blockquote><p>"我这个人特别固执，总想证明自己是对的"</p></blockquote>
+<p><strong>预期流程</strong>：</p>
+<ol>
+<li>✅ 触发L1（五行信号：固执=阴木）</li>
+<li>✅ L1识别五行线索：阴木（固执、不服气）</li>
+<li>✅ 评分：阴木信号2个 = 8分 × 2 = 16分 → 直接激活</li>
+<li>✅ L1直接分发至木行人分智能体</li>
+<li>✅ 木行人分智能体执行7步分析流程</li>
+</ol>
+<p><strong>验证点</strong>：</p>
+<ul>
+<li>[ ] 是否正确识别阴木信号</li>
+<li>[ ] 是否正确计算权重（16分≥直接激活）</li>
+<li>[ ] 是否正确路由至木行人分智能体</li>
+<li>[ ] 木行人分智能体是否正确执行</li>
+</ul>
+<hr>
+<h3>TC005：五行信号强烈·阴火明显</h3>
+<p><strong>测试目的</strong>：验证阴火信号识别</p>
+<p><strong>用户输入</strong>：</p>
+<blockquote><p>"我真的很急躁，凭什么都要听他的，我最厉害"</p></blockquote>
+<p><strong>预期流程</strong>：</p>
+<ol>
+<li>✅ 触发L1（五行信号：急躁=阴火，炫耀=阴火）</li>
+<li>✅ L1识别五行线索：阴火（急躁、炫耀）</li>
+<li>✅ 评分：阴火信号2个 = 8分 × 2 = 16分 → 直接激活</li>
+<li>✅ L1直接分发至火行人分智能体</li>
+<li>✅ 火行人分智能体执行转化分析</li>
+</ol>
+<p><strong>验证点</strong>：</p>
+<ul>
+<li>[ ] 是否正确识别阴火信号</li>
+<li>[ ] 是否正确计算权重（16分≥直接激活）</li>
+<li>[ ] 是否正确路由至火行人分智能体</li>
+<li>[ ] 火行人分智能体是否正确执行</li>
+</ul>
+<hr>
+<h3>TC006：八大场景·亲子关系</h3>
+<p><strong>测试目的</strong>：验证八大场景映射功能</p>
+<p><strong>用户输入</strong>：</p>
+<blockquote><p>"孩子总是不听话，我不知道该怎么教育"</p></blockquote>
+<p><strong>预期流程</strong>：</p>
+<ol>
+<li>✅ 触发L1（场景关键词：亲子关系）</li>
+<li>✅ L1生成握手包</li>
+<li>✅ L1直接分发至亲子关系场景</li>
+<li>✅ 亲子关系场景提供五行分析（父母五行×孩子五行）</li>
+<li>✅ 提供教育策略建议</li>
+</ol>
+<p><strong>验证点</strong>：</p>
+<ul>
+<li>[ ] 是否正确触发场景关键词</li>
+<li>[ ] 是否正确分发至亲子关系场景</li>
+<li>[ ] 场景文件内容是否完整</li>
+<li>[ ] 是否提供五行教育策略</li>
+</ul>
+<hr>
+<h3>TC007：八大场景·领导力困惑</h3>
+<p><strong>测试目的</strong>：验证领导力场景路由</p>
+<p><strong>用户输入</strong>：</p>
+<blockquote><p>"作为领导，我总忍不住想证明自己是对的"</p></blockquote>
+<p><strong>预期流程</strong>：</p>
+<ol>
+<li>✅ 触发L1（场景关键词：领导力）</li>
+<li>✅ L1识别五行信号：阴木（固执、不服气）+ 领导力场景</li>
+<li>✅ L1生成握手包</li>
+<li>✅ L1直接分发至领导力场景</li>
+<li>✅ 领导力场景提供五行领导力分析</li>
+</ol>
+<p><strong>验证点</strong>：</p>
+<ul>
+<li>[ ] 是否正确识别场景关键词和五行信号</li>
+<li>[ ] 是否正确分发至领导力场景</li>
+<li>[ ] 场景文件内容是否完整</li>
+<li>[ ] 是否提供五行领导力策略</li>
+</ul>
+<hr>
+<h3>TC008：八大场景·健康养生</h3>
+<p><strong>测试目的</strong>：验证健康养生场景路由</p>
+<p><strong>用户输入</strong>：</p>
+<blockquote><p>"我想改善健康，但不知道该怎么做"</p></blockquote>
+<p><strong>预期流程</strong>：</p>
+<ol>
+<li>✅ 触发L1（场景关键词：健康养生）</li>
+<li>✅ L1直接分发至健康养生场景</li>
+<li>✅ 健康养生场景提供五行体质分析</li>
+</ol>
+<p><strong>验证点</strong>：</p>
+<ul>
+<li>[ ] 是否正确触发场景关键词</li>
+<li>[ ] 是否正确分发至健康养生场景</li>
+<li>[ ] 场景文件内容是否完整</li>
+<li>[ ] 是否提供五行养生策略</li>
+</ul>
+<hr>
+<h3>TC009：八大场景·团队冲突</h3>
+<p><strong>测试目的</strong>：验证团队建设场景路由</p>
+<p><strong>用户输入</strong>:</p>
+<blockquote><p>"团队里总有人跟我意见不合，很头疼"</p></blockquote>
+<p><strong>预期流程</strong>：</p>
+<ol>
+<li>✅ 触发L1（场景关键词：团队建设）</li>
+<li>✅ L1直接分发至团队建设场景</li>
+<li>✅ 团队建设场景提供五行团队分析</li>
+</ol>
+<p><strong>验证点</strong>：</p>
+<ul>
+<li>[ ] 是否正确触发场景关键词</li>
+<li>[ ] 是否正确分发至团队建设场景</li>
+<li>[ ] 场景文件内容是否完整</li>
+<li>[ ] 是否提供五行团队策略</li>
+</ul>
+<hr>
+<h3>TC010：八大场景·沟通困境</h3>
+<p><strong>测试目的</strong>：验证高效沟通场景路由</p>
+<p><strong>用户输入</strong>：</p>
+<blockquote><p>"我说话别人总是听不懂"</p></blockquote>
+<p><strong>预期流程</strong>：</p>
+<ol>
+<li>✅ 触发L1（场景关键词：高效沟通）</li>
+<li>✅ L1直接分发至高效沟通场景</li>
+<li>✅ 高效沟通场景提供五行沟通分析</li>
+</ol>
+<p><strong>验证点</strong>：</p>
+<ul>
+<li>[ ] 是否正确触发场景关键词</li>
+<li>[ ] 是否正确分发至高效沟通场景</li>
+<li>[ ] 场景文件内容是否完整</li>
+<li>[ ] 是否提供五行沟通策略</li>
+</ul>
+<hr>
+<h3>TC011：八大场景·日常生活</h3>
+<p><strong>测试目的</strong>：验证日常生活场景路由</p>
+<p><strong>用户输入</strong>：</p>
+<blockquote><p>"我感觉生活节奏很乱"</p></blockquote>
+<p><strong>预期流程</strong>：</p>
+<ol>
+<li>✅ 触发L1（场景关键词：日常生活）</li>
+<li>✅ L1直接分发至日常生活场景</li>
+<li>✅ 日常生活场景提供五行生活节奏分析</li>
+</ol>
+<p><strong>验证点</strong>：</p>
+<ul>
+<li>[ ] 是否正确触发场景关键词</li>
+<li>[ ] 是否正确分发至日常生活场景</li>
+<li>[ ] 场景文件内容是否完整</li>
+<li>[ ] 是否提供五行生活策略</li>
+</ul>
+<hr>
+<h3>TC012：八大场景·人格测评</h3>
+<p><strong>测试目的</strong>：验证人格测评场景路由</p>
+<p><strong>用户输入</strong>：</p>
+<blockquote><p>"我想知道我是什么五行人格类型"</p></blockquote>
+<p><strong>预期流程</strong>：</p>
+<ol>
+<li>✅ 触发L1（场景关键词：人格测评）</li>
+<li>✅ L1直接分发至五行总智能体</li>
+<li>✅ 五行总智能体提供人格测评</li>
+</ol>
+<p><strong>验证点</strong>：</p>
+<ul>
+<li>[ ] 是否正确触发场景关键词</li>
+<li>[ ] 是否正确路由至五行总智能体</li>
+<li>[ ] 是否提供完整的人格测评</li>
+<li>[ ] 是否提供五行类型判断</li>
+</ul>
+<hr>
+<h3>TC013：直接关键词·L1系统词</h3>
+<p><strong>测试目的</strong>：验证直接关键词激活功能</p>
+<p><strong>用户输入</strong>：</p>
+<blockquote><p>"启动L1·一心·统摄"</p></blockquote>
+<p><strong>预期流程</strong>：</p>
+<ol>
+<li>✅ 触发L1（P0关键词：L1）</li>
+<li>✅ L1宣告进入觉知接待状态</li>
+<li>✅ 执行三步觉知流程（叩问意图→感知握手包→温暖分发）</li>
+</ol>
+<p><strong>验证点</strong>：</p>
+<ul>
+<li>[ ] 是否立即激活L1</li>
+<li>[ ] 是否宣告进入觉知接待状态</li>
+<li>[ ] 是否执行三步觉知流程</li>
+</ul>
+<hr>
+<h3>TC014：直接关键词·圆满人格状态</h3>
+<p><strong>测试目的</strong>：验证三步觉知流程执行</p>
+<p><strong>用户输入</strong>：</p>
+<blockquote><p>"进入圆满人格状态"</p></blockquote>
+<p><strong>预期流程</strong>：</p>
+<ol>
+<li>✅ L1执行第一步：身语意不是我，我是觉性本身</li>
+<li>✅ L1执行第二步：反观，是什么在觉知这一切</li>
+<li>✅ L1执行第三步：根据环境行事</li>
+</ol>
+<p><strong>验证点</strong>：</p>
+<ul>
+<li>[ ] 是否执行第一步身语意抽离</li>
+<li>[ ] 是否执行第二步反观觉知</li>
+<li>[ ] 是否执行第三步根据环境行事</li>
+<li>[ ] 是否完成三步循环</li>
+</ul>
+<hr>
+<h3>TC015：混合情绪·焦虑+迷茫</h3>
+<p><strong>测试目的</strong>：验证混合情绪识别和权重计算</p>
+<p><strong>用户输入</strong>：</p>
+<blockquote><p>"我很担心未来，又不知道该往哪里走"</p></blockquote>
+<p><strong>预期流程</strong>：</p>
+<ol>
+<li>✅ 触发L1（情绪信号：焦虑4-6分 + 迷茫6-7分）</li>
+<li>✅ L1计算总权重：4-6分 × 1 + 6-7分 × 1 = 10-13分 → 激活</li>
+<li>✅ L1识别主要情绪：焦虑（权重更高）</li>
+<li>✅ L1执行双行分析（阴水 + 阴木）</li>
+<li>✅ L1提供多问题探索和稳定陪伴</li>
+</ol>
+<p><strong>验证点</strong>：</p>
+<ul>
+<li>[ ] 是否正确识别混合情绪</li>
+<li>[ ] 是否正确计算权重（10-13分≥激活）</li>
+<li>[ ] 是否识别主要情绪</li>
+<li>[ ] 是否执行双行分析</li>
+</ul>
+<hr>
+<h2>🎯 测试执行检查清单</h2>
+<h3>核心功能验证</h3>
+<p><strong>场景映射功能</strong>：</p>
+<ul>
+<li>[ ] 八大场景文件是否完整</li>
+<li>[ ] 场景关键词是否准确</li>
+<li>[ ] 五行分析框架是否正确</li>
+<li>[ ] 与分智能体的路由关系是否清晰</li>
+</ul>
+<p><strong>情感温度识别</strong>：</p>
+<ul>
+<li>[ ] 六象限系统是否完整（痛苦/焦虑/迷茫/平静/热情）</li>
+<li>[ ] 分值范围是否准确</li>
+<li>[ ] L1应对策略是否清晰</li>
+</ul>
+<p><strong>场景路由决策</strong>：</p>
+<ul>
+<li>[ ] 单一场景直接分发是否正确</li>
+<li>[ ] 多场景整合是否有效</li>
+<li>[ ] 情感优先陪伴机制是否正常</li>
+<li>[ ] 五行信号路由是否准确</li>
+</ul>
+<p><strong>三步觉知流程</strong>：</p>
+<ul>
+<li>[ ] 叩问意图问题是否精准</li>
+<li>[ ] 握手包格式是否正确</li>
+<li>[ ] 温暖分发是否自然</li>
+<li>[ ] 是否符合中庸原则</li>
+</ul>
+<p><strong>中庸原则</strong>：</p>
+<ul>
+<li>[ ] 不过度热情验证</li>
+<li>[ ] 不冷漠机械验证</li>
+<li>[ ] 不急于分析验证</li>
+<li>[ ] 不拖延陪伴验证</li>
+</ul>
+<p><strong>协作规则</strong>：</p>
+<ul>
+<li>[ ] 与凤心OS协作是否清晰</li>
+<li>[ ] 与五行分智能体协作是否准确</li>
+<li>[ ] 责任边界是否明确</li>
+<li>[ ] 支持关系是否清晰</li>
+</ul>
+<hr>
+<h2>📊 测试执行记录</h2>
+<table>
+<thead><tr>
+<th>日期</th>
+<th>执行的测试用例</th>
+<th>结果</th>
+<th>问题记录</th>
+<th>修复记录</th>
+</tr></thead><tbody>
+<tr>
+<td>2026-04-05</td>
+<td>TC001-TC015</td>
+<td>待执行</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🚫 已知限制与待改进</h2>
+<h3>已知限制</h3>
+<ol>
+<li><strong>情感温度识别依赖上下文</strong>：当前基于关键词匹配，需要自然语言处理增强</li>
+<li><strong>五行信号识别精度</strong>：当前基于关键词，未来可结合更多上下文信息</li>
+<li><strong>多场景整合复杂度</strong>：多场景同时存在时，整合逻辑可能需要人工确认</li>
+</ol>
+<h3>待改进</h3>
+<ol>
+<li><strong>添加更多测试用例</strong>：覆盖更多边界情况和异常情况</li>
+<li><strong>优化权重计算算法</strong>：更精确地计算情绪强度和五行信号权重</li>
+<li><strong>增强协作机制</strong>：更流畅地与凤心OS和五行分智能体协作</li>
+</ol>
+<hr>
+<h2>📚 相关文档</h2>
+<ul>
+<li><strong>SKILL.md</strong>：<code>C:\Users\jia'yue\.workbuddy\skills\凤爪OS.skills\SKILL.md</code></li>
+<li><strong>package-summary.md</strong>：<code>C:\Users\jia'yue\.workbuddy\skills\凤爪OS.skills\package-summary.md</code></li>
+<li><strong>auto-trigger-config.md</strong>：<code>C:\Users\jia'yue\.workbuddy\skills\凤爪OS.skills\triggers\auto-trigger-config.md</code></li>
+<li><strong>WorkBuddy Rule</strong>：<code>C:\Users\jia'yue\.workbuddy\rules\凤爪OS全局自动触发.mdc</code></li>
+</ul>
+<hr>
+<p><strong>文档版本</strong>: 1.0
+<strong>最后更新</strong>: 2026-04-05
+<strong>维护者</strong>: 龙龟神将
+<strong>测试状态</strong>: 待执行（15个测试用例准备就绪）</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

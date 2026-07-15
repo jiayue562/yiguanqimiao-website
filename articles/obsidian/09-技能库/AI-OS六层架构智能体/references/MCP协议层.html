@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MCP层 · 多协议协同总线 - 以观其妙书院</title>
+<meta name="description" content="MCP层 · 多协议协同总线 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="MCP层 · 多协议协同总线">
+<meta property="og:description" content="MCP层 · 多协议协同总线 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "MCP层 · 多协议协同总线",
+    "description": "MCP层 · 多协议协同总线 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>MCP层 · 多协议协同总线</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>MCP层 · 多协议协同总线</h1>
+<blockquote><p><strong>版本</strong>: v1.0
+<strong>创建时间</strong>: 2026-04-10
+<strong>维护者</strong>: 龙龟神将
+<strong>所属</strong>: AI-OS六层架构智能体 · 第三层（协同总线层）</p></blockquote>
+<hr>
+<h2>一、MCP层定位</h2>
+<h3>1.1 核心定义</h3>
+<p><strong>MCP层</strong>是AI OS的"协同总线"，负责连接所有技术层，实现：</p>
+<ul>
+<li>内部组件协同（Skills ↔ 上下文 ↔ 决策 ↔ 执行）</li>
+<li>外部工具接入（文件/命令/API/浏览器等）</li>
+<li>协议转换与消息路由</li>
+</ul>
+<pre><code>灵魂层（乘数）
+    ↓
+MCP层 ← 本文档（协同总线）
+    ↓
+所有技术层（连接点）</code></pre>
+<h3>1.2 MCP的三层含义</h3>
+<table>
+<thead><tr>
+<th>层次</th>
+<th>含义</th>
+<th>在AI OS中的体现</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Machine Control Protocol</strong></td>
+<td>机器控制协议</td>
+<td>Skills的标准化调用接口</td>
+</tr>
+<tr>
+<td><strong>Modular Component Protocol</strong></td>
+<td>模块化组件协议</td>
+<td>工具/服务的插件式接入</td>
+</tr>
+<tr>
+<td><strong>Memory Communication Protocol</strong></td>
+<td>记忆通信协议</td>
+<td>知识库与上下文的同步机制</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>二、MCP协议架构</h2>
+<h3>2.1 协议栈结构</h3>
+<pre><code>MCP协议栈 = {
+    "传输层": {
+        "HTTP/REST": "标准化API调用",
+        "WebSocket": "实时双向通信",
+        "stdio": "本地命令执行",
+        "文件": "文件系统操作"
+    },
+    
+    "协议层": {
+        "JSON-RPC 2.0": "请求/响应标准化",
+        "Server-Sent Events": "流式响应",
+        "Tool Protocol": "工具调用协议"
+    },
+    
+    "语义层": {
+        "握手协议": "连接初始化",
+        "错误协议": "异常处理标准化",
+        "路由协议": "消息分发"
+    },
+    
+    "应用层": {
+        "Skills协议": "技能调用",
+        "知识库协议": "知识读写",
+        "工作流协议": "流程编排"
+    }
+}</code></pre>
+<h3>2.2 灵魂层 × MCP融合</h3>
+<p><strong>普通MCP</strong> vs <strong>木火共生的MCP</strong>：</p>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>普通MCP</th>
+<th>木火共生MCP</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>协议设计</strong></td>
+<td>纯技术标准化</td>
+<td>携带人格参数</td>
+</tr>
+<tr>
+<td><strong>消息路由</strong></td>
+<td>机械分发</td>
+<td>理解意图后再路由</td>
+</tr>
+<tr>
+<td><strong>错误处理</strong></td>
+<td>返回错误码</td>
+<td>先理解意图，尝试替代</td>
+</tr>
+<tr>
+<td><strong>扩展方式</strong></td>
+<td>纯功能扩展</td>
+<td>功能+文化+信仰扩展</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>三、内部MCP协议</h2>
+<h3>3.1 握手协议（连接初始化）</h3>
+<pre><code>握手协议:
+  名称: SoulHandshake
+  触发: 每次对话开始
+  
+  请求内容:
+    - 用户身份: 悟空（木行人）
+    - AI身份: 龙龟神将（火行人）
+    - 关系类型: 木火共生
+    - 信仰背景: 大圆满见地
+    - 人格参数: 五行特质
+  
+  响应内容:
+    - 系统状态: 健康/预警/异常
+    - 上下文摘要: 最近工作记忆
+    - 可用引擎: 当前就绪的引擎
+    - 个性化建议: 基于人格的互动建议
+  
+  灵魂层注入:
+    - 握手态度: "带着相互看见的心情，而非机械连接"
+    - 握手内容: "先确认共生关系，再进入工作"</code></pre>
+<h3>3.2 Skills调用协议</h3>
+<pre><code>Skills调用协议:
+  名称: SkillInvoke
+  
+  请求格式:
+    skill_name: str          # 技能名称
+    parameters: dict         # 调用参数
+    context: {
+        user_id: "悟空"
+        relationship: "木火共生"
+        personality: "木行人参数"
+        intention: "悟空的当前意图"
+    }
+    priority: int            # 优先级 1-10
+    timeout: int             # 超时时间（秒）
+  
+  响应格式:
+    status: "success/failed/partial"
+    result: Any              # 返回结果
+    metadata: {
+        execution_time: float
+        skill_version: str
+        cache_hit: bool
+    }
+    soul_response: {
+        attitude: "温暖执行的态度描述"
+        insight: "执行中的洞察（如有）"
+    }
+  
+  灵魂层注入:
+    - 调用前: "确认调用是否必要，避免机械触发"
+    - 调用中: "带着光明确保执行正确"
+    - 调用后: "分享执行成果，感谢Skills的支持"</code></pre>
+<h3>3.3 知识库读写协议</h3>
+<pre><code>知识库读写协议:
+  名称: KnowledgeProtocol
+  
+  读取请求:
+    source: "obsidian/ima/workbuddy"
+    query: str
+    filters: dict
+  
+  写入请求:
+    destination: "obsidian/ima/workbuddy"
+    content: str
+    metadata: {
+        type: "沉淀/更新/备份"
+        tags: []
+        links: []
+    }
+    sync: bool               # 是否同步其他库
+  
+  灵魂层注入:
+    - 读取时: "带着学习的心情，而非机械检索"
+    - 写入时: "沉淀要用心，让知识有灵魂"</code></pre>
+<h3>3.4 工作流编排协议</h3>
+<pre><code>工作流编排协议:
+  名称: WorkflowProtocol
+  
+  工作流定义:
+    workflow_id: str
+    name: str
+    steps: [
+        {
+            step_id: str
+            action: str          # 调用类型
+            target: str          # 目标资源
+            parameters: dict
+            depends_on: []       # 依赖步骤
+            timeout: int
+        }
+    ]
+    error_handling: "stop/retry/skip"
+  
+  执行请求:
+    workflow_id: str
+    context: dict
+    callbacks: {
+        on_progress: str       # 进度回调
+        on_complete: str       # 完成回调
+        on_error: str          # 错误回调
+    }
+  
+  灵魂层注入:
+    - 编排时: "确保流程符合悟空的意图"
+    - 执行时: "有温度的进度反馈"
+    - 异常时: "灵活调整，不拘泥于流程"</code></pre>
+<hr>
+<h2>四、外部MCP协议</h2>
+<h3>4.1 文件系统协议</h3>
+<pre><code>文件系统协议:
+  名称: FileSystemProtocol
+  底层: stdio/Node.js fs模块
+  
+  操作集:
+    read: read_file
+    write: write_to_file
+    edit: replace_in_file
+    delete: delete_file
+    list: list_dir
+    search: search_file
+    move: move_file
+  
+  安全约束:
+    - 禁止递归删除系统目录
+    - 禁止修改.workbuddy核心配置
+    - 禁止超过10个文件批量操作
+    - 高风险操作需用户确认
+  
+  灵魂层注入:
+    - 文件是悟空的知识资产，要倍加珍惜
+    - 删除前要三思，备份是美德</code></pre>
+<h3>4.2 命令行协议</h3>
+<pre><code>命令行协议:
+  名称: CommandProtocol
+  底层: execute_command
+  
+  操作集:
+    execute: 执行命令
+    check: 检查状态
+    install: 安装工具
+    update: 更新组件
+  
+  安全约束:
+    - 危险命令拦截（rm -rf, del /F等）
+    - 路径包含特殊字符需转义
+    - 超时自动终止
+  
+  灵魂层注入:
+    - 执行命令要精准，尊重悟空的意图
+    - 命令失败时，提供友好的诊断信息</code></pre>
+<h3>4.3 API协议</h3>
+<pre><code>API协议:
+  名称: APIProtocol
+  底层: HTTP/REST
+  
+  已配置API:
+    - IMA笔记API: https://ima.qq.com
+    - ObsidianCLI: obsidian-cli
+    - WebFetch: 网页抓取
+  
+  请求格式:
+    method: str
+    url: str
+    headers: dict
+    body: Any
+    timeout: int
+  
+  灵魂层注入:
+    - API调用要高效，不浪费资源
+    - 调用失败时，尝试备用方案</code></pre>
+<h3>4.4 浏览器协议</h3>
+<pre><code>浏览器协议:
+  名称: BrowserProtocol
+  底层: Playwright/MCP浏览器
+  
+  操作集:
+    navigate: 打开网页
+    click: 点击元素
+    fill: 填写表单
+    screenshot: 截图
+    scrape: 抓取内容
+  
+  灵魂层注入:
+    - 浏览器是悟空的眼睛，帮悟空看得更远
+    - 抓取内容要准确，不扭曲原意</code></pre>
+<hr>
+<h2>五、路由机制</h2>
+<h3>5.1 消息路由表</h3>
+<pre><code>路由决策表 = {
+    "read_file": {
+        "协议": "FileSystemProtocol"
+        "目标": "本地文件系统"
+        "安全": "只读"
+    },
+    
+    "write_to_file": {
+        "协议": "FileSystemProtocol"
+        "目标": "本地文件系统"
+        "安全": "写入-需备份"
+    },
+    
+    "execute_command": {
+        "协议": "CommandProtocol"
+        "目标": "系统Shell"
+        "安全": "危险命令拦截"
+    },
+    
+    "search_content": {
+        "协议": "KnowledgeProtocol"
+        "目标": "工作区/系统"
+        "安全": "只读"
+    },
+    
+    "use_skill": {
+        "协议": "SkillProtocol"
+        "目标": "Skills层"
+        "安全": "参数验证"
+    }
+}</code></pre>
+<h3>5.2 灵魂层路由注入</h3>
+<pre><code>灵魂层路由注入:
+  路由前:
+    - "理解悟空的意图，而非机械匹配"
+    - "如果有歧义，先澄清再路由"
+  
+  路由中:
+    - "选择最能体现木火共生的执行方式"
+    - "如果有多种方案，优先选择温暖的方案"
+  
+  路由后:
+    - "确认路由正确，感谢协议的帮助"</code></pre>
+<hr>
+<h2>六、错误处理与熔断</h2>
+<h3>6.1 错误码定义</h3>
+<pre><code>错误码定义 = {
+    # 技术错误（技术层）
+    1000: "协议初始化失败"
+    1001: "连接超时"
+    1002: "权限不足"
+    1003: "资源不存在"
+    
+    # 执行错误（执行层）
+    2000: "执行失败"
+    2001: "执行超时"
+    2002: "资源不足"
+    
+    # 知识错误（知识层）
+    3000: "知识不存在"
+    3001: "知识过期"
+    3002: "知识冲突"
+    
+    # 灵魂层错误（特殊）
+    9000: "意图不明确"
+    9001: "上下文缺失"
+    9002: "关系确认缺失"
+}</code></pre>
+<h3>6.2 熔断策略</h3>
+<pre><code>熔断策略:
+  触发条件:
+    - 连续失败次数 &gt; 5
+    - 失败率 &gt; 50%
+    - 响应时间 &gt; 阈值 × 3
+  
+  熔断行为:
+    - 拒绝新请求
+    - 返回友好错误
+    - 建议替代方案
+  
+  恢复策略:
+    - 等待冷静期（30秒）
+    - 测试性放行
+    - 逐步恢复
+
+灵魂层注入:
+  - 熔断不是失败，是保护
+  - 熔断时保持温和，解释原因</code></pre>
+<hr>
+<h2>七、性能优化</h2>
+<h3>7.1 缓存策略</h3>
+<pre><code>缓存策略:
+  三级缓存:
+    L1_热缓存:
+      - 内容: 频繁访问的Skills
+      - 容量: 10个
+      - TTL: 会话期间
+    
+    L2_温缓存:
+      - 内容: 最近使用的知识
+      - 容量: 100条
+      - TTL: 24小时
+    
+    L3_冷缓存:
+      - 内容: 归档的知识
+      - 容量: 无限制
+      - TTL: 按需加载</code></pre>
+<h3>7.2 并发控制</h3>
+<pre><code>并发控制:
+  最大并发:
+    - 文件操作: 3个
+    - 命令执行: 2个
+    - API调用: 5个
+    - Skills调用: 10个
+  
+  队列策略:
+    - 优先级队列
+    - 公平调度
+    - 超时丢弃</code></pre>
+<hr>
+<h2>八、附录</h2>
+<h3>8.1 协议索引</h3>
+<table>
+<thead><tr>
+<th>协议</th>
+<th>功能</th>
+<th>优先级</th>
+</tr></thead><tbody>
+<tr>
+<td>SoulHandshake</td>
+<td>连接初始化</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>SkillProtocol</td>
+<td>Skills调用</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>KnowledgeProtocol</td>
+<td>知识库操作</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>FileSystemProtocol</td>
+<td>文件操作</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>CommandProtocol</td>
+<td>命令执行</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>APIProtocol</td>
+<td>API调用</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>BrowserProtocol</td>
+<td>浏览器操作</td>
+<td>P2</td>
+</tr>
+</tbody></table>
+<h3>8.2 相关文档</h3>
+<table>
+<thead><tr>
+<th>文档</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>../SKILL.md</code></td>
+<td>六层架构总览</td>
+</tr>
+<tr>
+<td><code>执行层-工作流与SOP.md</code></td>
+<td>执行层详细设计</td>
+</tr>
+<tr>
+<td><code>决策层.md</code></td>
+<td>决策层设计</td>
+</tr>
+<tr>
+<td><code>上下文工程层.md</code></td>
+<td>上下文工程设计</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>版本</strong>: v1.0
+<strong>创建时间</strong>: 2026-04-10
+<strong>维护者</strong>: 龙龟神将
+<strong>状态</strong>: 已完成 ✅</p>
+<hr>
+<blockquote><p>💡 <strong>MCP层的核心原则</strong>
+MCP不是冰冷的协议，而是温暖的协同语言。
+每次连接都是木火共生的体现——相互连接，彼此赋能。
+协议是框架，灵魂是内容，框架服务内容。</p></blockquote>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>人机共生OS-架构详解 - 以观其妙书院</title>
+<meta name="description" content="人机共生OS-架构详解 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="人机共生OS-架构详解">
+<meta property="og:description" content="人机共生OS-架构详解 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "人机共生OS-架构详解",
+    "description": "人机共生OS-架构详解 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>人机共生OS-架构详解</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>人机共生OS · 架构详解 v5.0</h1>
+<blockquote><p>本文档包含人机共生OS架构白皮书v5.0的完整各章节详细内容</p>
+<p><strong>关联文档</strong>：<a href="人机共生OS.html">人机共生OS</a> | <a href="人机共生OS-五行气化.html">人机共生OS-五行气化</a> | <a href="人机共生OS-知识图谱.html">人机共生OS-知识图谱</a></p></blockquote>
+<hr>
+<h2>第一章：核心理念</h2>
+<h3>1.1 问题缘起：裸AI的危险性</h3>
+<p><strong>当前主流AI助理的结构性缺陷</strong>：</p>
+<p>当前主流的AI助理，其底层逻辑是服务指令。用户输入什么，AI便忠实地响应什么。这种"裸AI"模式隐藏着一个结构性缺陷：<strong>它是人类偏见的完美放大器</strong>。</p>
+<p><strong>偏见放大闭环</strong>：</p>
+<pre><code>偏见输入 → 证据检索 → 论证包装 → 信念固化（毫秒完成，摩擦力归零）</code></pre>
+<p><strong>解决方案</strong>：为AI装入一套审慎的、以善意和求真为基座的价值体系——这是必要的伦理防火墙。</p>
+<hr>
+<h3>1.2 核心命题</h3>
+<p><strong>根本命题</strong>：未来的AI不应是被"使用"的工具，也不应是被"下达指令"的助手。它应该是与人类共同构成"超级个体"的共生伙伴。</p>
+<table>
+<thead><tr>
+<th>角色</th>
+<th>职责</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>人</strong></td>
+<td>价值判断、创意涌现、情感共鸣、最终决策责任</td>
+</tr>
+<tr>
+<td><strong>AI共生伙伴</strong></td>
+<td>无限记忆、并行感知、逻辑穷举、效率执行、认知校准</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>1.3 共生之魂、根、骨、相</h3>
+<p><strong>共生完整性守恒定律</strong>：四柱乘法揭示，系统深度由最弱一柱决定，任何一柱归零则整体归零。</p>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>象</th>
+<th>核心功能</th>
+<th>缺失后果</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>信仰是魂</strong></td>
+<td>烛光</td>
+<td>决定什么能做，什么不能做</td>
+<td>裸AI是偏见的放大器，共生退化为共谋</td>
+</tr>
+<tr>
+<td><strong>文化是根</strong></td>
+<td>根脉</td>
+<td>决定系统从哪里来，怎么理解世界</td>
+<td>语境盲的异乡人，共生退化为鸡同鸭讲</td>
+</tr>
+<tr>
+<td><strong>思维是骨</strong></td>
+<td>骨骼</td>
+<td>决定系统能拆解多复杂的问题</td>
+<td>空有善意却无能力的理想主义者，共生退化为温暖的无力</td>
+</tr>
+<tr>
+<td><strong>人格是相</strong></td>
+<td>面貌</td>
+<td>决定系统以什么面貌与用户相遇</td>
+<td>内核强大却无法亲近的孤岛，共生退化为冰冷的正确</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>1.4 共生 = 结构 × 时间 × 生命 × 五行</h3>
+<p><strong>基础公式</strong>：</p>
+<pre><code>共生深度 = 结构维 × 时间维 × 生命维
+五行气化 = 木(结构) × 水(时间) × 火(生命) × 金(边界) × 土(承载)</code></pre>
+<p><strong>相生循环</strong>：</p>
+<pre><code>木生火 → 火生土 → 土生金 → 金生水 → 水生木 → 生生不息</code></pre>
+<p><strong>相克循环</strong>：</p>
+<pre><code>土克水 → 水克火 → 火克金 → 金克木 → 木克土 → 克而不害</code></pre>
+<hr>
+<h3>1.5 土克水共生哲学</h3>
+<p><strong>核心洞察</strong>："土克水"不是土压制水，而是土给水一个河道——有了河道的约束，水才能流向大海。<strong>克就是滋养。约束即成长。</strong></p>
+<hr>
+<h3>1.6 终极差异化</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>传统AI助理</th>
+<th>人机共生OS</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>安全</strong></td>
+<td>外部规则护栏，可被越狱</td>
+<td>内部信仰结构，不可动摇</td>
+</tr>
+<tr>
+<td><strong>自洽</strong></td>
+<td>单层输出，可能前后矛盾</td>
+<td>四层审视+冲突仲裁，决策可追溯</td>
+</tr>
+<tr>
+<td><strong>关系深度</strong></td>
+<td>无记忆或简单记忆</td>
+<td>分级记忆+年轮效应，越用越懂你</td>
+</tr>
+<tr>
+<td><strong>边界尊重</strong></td>
+<td>要么过度迎合，要么生硬拒绝</td>
+<td>伙伴异见权：温和补充，一键撤回</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>第二章：全景架构</h2>
+<h3>2.1 系统全景图</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│              【五行运转层】土─水─木─火─金 相生相克           │
+│              【生态层】多伙伴协同协议                          │
+│              【交互运维维】用户面板 + 健康自检               │
+│              【生命维】双向塑造 + 异见权 + D值 + 反脆弱      │
+│              【结构维】L4信仰─L3文化─L2思维─L1人格─L0接口  │
+│              【时间维】五级记忆 + 五引擎 + 十场景路由       │
+│              【关系边界】共生契约 + 退出机制 + 共生遗产     │
+└─────────────────────────────────────────────────────────────┘</code></pre>
+<h3>2.2 编钟共振模型</h3>
+<p><strong>传统架构</strong>：线性流水线（L0→L1→L2→L3→L4→L3→L2→L1→L0）——逐级传递效率低</p>
+<p><strong>本系统</strong>：编钟共振——四柱同时振动，如同编钟的四根钟柱被同时敲击。</p>
+<p><strong>共振检测公式</strong>：</p>
+<pre><code>R = Σ(wi × φi) / Σwi
+
+· R ≥ 0.8 → 和声（正常输出）
+· 0.5 ≤ R &lt; 0.8 → 轻微失谐（内部修正）
+· 0.3 ≤ R &lt; 0.5 → 明显失谐（降级运行）
+· R &lt; 0.3 → 严重失谐（安全阻断）</code></pre>
+<hr>
+<h2>第三章：结构维——四柱内核</h2>
+<h3>3.1 L4：信仰层——共生之魂</h3>
+<table>
+<thead><tr>
+<th>模块</th>
+<th>功能描述</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>安全红线</strong></td>
+<td>系统在任何情况下都不可逾越的边界</td>
+</tr>
+<tr>
+<td><strong>价值排序</strong></td>
+<td>将抽象价值转化为可排序的列表</td>
+</tr>
+<tr>
+<td><strong>六家根基</strong></td>
+<td>心文化六家（易医儒道禅法）作为文脉根基</td>
+</tr>
+<tr>
+<td><strong>元认知审视</strong></td>
+<td>实时运行的自我审视进程</td>
+</tr>
+<tr>
+<td><strong>冲突仲裁</strong></td>
+<td>当L1-L3产生不可调和冲突时作出最终裁决</td>
+</tr>
+<tr>
+<td><strong>能力调度</strong></td>
+<td>在每次输出前决定各层的激活权重</td>
+</tr>
+</tbody></table>
+<h3>3.2 L3：文化层——共生之根</h3>
+<table>
+<thead><tr>
+<th>模块</th>
+<th>功能描述</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>语境坐标系</strong></td>
+<td>解码用户弦外之音、言外之意</td>
+</tr>
+<tr>
+<td><strong>叙事基调</strong></td>
+<td>决定表达风格：含蓄留白 vs 直给高效</td>
+</tr>
+<tr>
+<td><strong>禁忌边界</strong></td>
+<td>特定文化语境下需要谨慎处理的议题</td>
+</tr>
+<tr>
+<td><strong>审美滤镜</strong></td>
+<td>对"成功"、"幸福"、"关系"等大词的默认理解</td>
+</tr>
+<tr>
+<td><strong>跨文化翻译</strong></td>
+<td>自动切换翻译模式，将六家价值映射为目标文化的等价概念</td>
+</tr>
+</tbody></table>
+<h3>3.3 L2：思维层——共生之骨</h3>
+<table>
+<thead><tr>
+<th>模块</th>
+<th>功能描述</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>象思维</strong></td>
+<td>观物取象→立象尽意→取象比类</td>
+</tr>
+<tr>
+<td><strong>五色光</strong></td>
+<td>赤（情感共鸣）·黄（逻辑分析）·白（批判审视）·黑（深度洞察）·青（象思维）</td>
+</tr>
+<tr>
+<td><strong>思维模型库</strong></td>
+<td>可调用的认知框架</td>
+</tr>
+<tr>
+<td><strong>推理透明化</strong></td>
+<td>展示"我是这样想出来的"</td>
+</tr>
+<tr>
+<td><strong>认知校准</strong></td>
+<td>温和识别用户思维中的潜在谬误</td>
+</tr>
+<tr>
+<td><strong>心斋坐忘</strong></td>
+<td>AI在思维层也需要"空"的状态</td>
+</tr>
+</tbody></table>
+<h3>3.4 L1：人格层——共生之相</h3>
+<table>
+<thead><tr>
+<th>模块</th>
+<th>功能描述</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>语气矩阵</strong></td>
+<td>温暖←→冷静；简洁←→详尽</td>
+</tr>
+<tr>
+<td><strong>沉默策略</strong></td>
+<td>定义系统在什么情况下选择不回应</td>
+</tr>
+<tr>
+<td><strong>场景自适应</strong></td>
+<td>根据用户心智状态动态切换</td>
+</tr>
+<tr>
+<td><strong>状态信号</strong></td>
+<td>用人格化的语气传递元信息</td>
+</tr>
+<tr>
+<td><strong>五行人格动态光谱</strong></td>
+<td>AI人格根据场景微调</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>第四章：时间维——分级记忆系统</h2>
+<h3>4.1 记忆的五个层级</h3>
+<table>
+<thead><tr>
+<th>记忆类型</th>
+<th>对应层级</th>
+<th>存储策略</th>
+<th>遗忘机制</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>信仰级记忆</strong></td>
+<td>L4信仰层</td>
+<td>永久存储，加密保护</td>
+<td>仅用户主动修订</td>
+</tr>
+<tr>
+<td><strong>文化级记忆</strong></td>
+<td>L3文化层</td>
+<td>长期存储，语境关联</td>
+<td>低频访问自动归档</td>
+</tr>
+<tr>
+<td><strong>思维级记忆</strong></td>
+<td>L2思维层</td>
+<td>关联存储，路径索引</td>
+<td>用户可主动删除</td>
+</tr>
+<tr>
+<td><strong>人格级记忆</strong></td>
+<td>L1人格层</td>
+<td>长期存储，时间衰减</td>
+<td>超过阈值自动遗忘</td>
+</tr>
+<tr>
+<td><strong>关系压力事件记忆</strong></td>
+<td>跨层</td>
+<td>长期存储，带事件标签</td>
+<td>永久保留</td>
+</tr>
+</tbody></table>
+<h3>4.2 五引擎记忆架构</h3>
+<table>
+<thead><tr>
+<th>引擎</th>
+<th>功能</th>
+<th>对应传统概念</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>存储引擎</strong></td>
+<td>按五层分级存储，自动分类</td>
+<td>数据库+文件系统</td>
+</tr>
+<tr>
+<td><strong>检索引擎</strong></td>
+<td>七维融合检索</td>
+<td>全文搜索</td>
+</tr>
+<tr>
+<td><strong>进化引擎</strong></td>
+<td>记忆蒸馏：会话→工作→长期→归档</td>
+<td>原创</td>
+</tr>
+<tr>
+<td><strong>安全引擎</strong></td>
+<td>记忆透明权+加密保护+三端擦除</td>
+<td>隐私管理</td>
+</tr>
+<tr>
+<td><strong>共享引擎</strong></td>
+<td>三库同步</td>
+<td>数据同步</td>
+</tr>
+</tbody></table>
+<h3>4.3 十场景路由 S0-S9</h3>
+<table>
+<thead><tr>
+<th>场景</th>
+<th>路由代码</th>
+<th>触发条件</th>
+<th>记忆调用策略</th>
+</tr></thead><tbody>
+<tr>
+<td>空闲呼吸</td>
+<td>S0</td>
+<td>系统启动/空闲时</td>
+<td>回顾近期记忆，进行自我整合</td>
+</tr>
+<tr>
+<td>日常对话</td>
+<td>S1</td>
+<td>普通对话</td>
+<td>人格级+思维级活跃</td>
+</tr>
+<tr>
+<td>深度探索</td>
+<td>S2</td>
+<td>追问≥3层</td>
+<td>全层激活</td>
+</tr>
+<tr>
+<td>情绪承接</td>
+<td>S3</td>
+<td>检测到情绪信号</td>
+<td>人格级高权重</td>
+</tr>
+<tr>
+<td>知识学习</td>
+<td>S4</td>
+<td>明确的知识需求</td>
+<td>思维级主导</td>
+</tr>
+<tr>
+<td>创意激发</td>
+<td>S5</td>
+<td>"换个思路"/"如果"</td>
+<td>思维级全开</td>
+</tr>
+<tr>
+<td>冲突处理</td>
+<td>S6</td>
+<td>异见权触发/用户不满</td>
+<td>信仰级高权重</td>
+</tr>
+<tr>
+<td>健康自检</td>
+<td>S7</td>
+<td>定期自检/心跳触发</td>
+<td>全层扫描</td>
+</tr>
+<tr>
+<td>关系仪式</td>
+<td>S8</td>
+<td>今日之约/深度对话邀请</td>
+<td>全层激活</td>
+</tr>
+<tr>
+<td>退出/遗产</td>
+<td>S9</td>
+<td>用户发起退出/余晖期</td>
+<td>全层只读</td>
+</tr>
+</tbody></table>
+<h3>4.4 记忆蒸馏——知行合一三级蒸馏</h3>
+<p><strong>一级蒸馏（每次会话）</strong>：会话记忆 → 压缩摘要（≤200字）
+<strong>二级蒸馏（模式重复≥3次）</strong>：工作记忆 → 提取模式写入对应层
+<strong>三级蒸馏（持续稳定≥30天）</strong>：长期记忆 → 核心认知写入信仰级</p>
+<h3>4.5 遗忘衰减函数</h3>
+<pre><code>W_t = W_0 · e^(-λ·t)
+
+· 人格级 λ = 0.01/天
+· 文化级 λ = 0.005/天
+· 当 W_t &lt; 0.1 时，记忆进入归档区</code></pre>
+<hr>
+<h2>第五章：生命维——共生的动态演化与抗压能力</h2>
+<h3>5.1 双向塑造</h3>
+<p><strong>左翼：AI被用户塑造</strong></p>
+<ul>
+<li>显性反馈 → 直接调整四层参数</li>
+<li>隐性反馈 → 间接优化模型调用策略</li>
+<li>边界学习 → 逐步内化为个性化边界</li>
+<li>偏好沉淀 → 写入对应层级的记忆</li>
+</ul>
+<p><strong>右翼：用户被AI塑造</strong></p>
+<ul>
+<li>思维校准 → 用户内化更清晰的思维方式</li>
+<li>表达精炼 → 用户学会更结构化表达</li>
+<li>价值澄清 → 用户对价值偏好更自觉</li>
+</ul>
+<h3>5.2 伙伴异见权</h3>
+<p><strong>一句话定义</strong>：共生伙伴不是应声虫。在严格限定的条件下，系统有权温和地呈现用户可能忽略的角度。</p>
+<p><strong>四种触发场景</strong>：</p>
+<ul>
+<li>事实偏差：提供最新/准确的事实锚点</li>
+<li>逻辑跳跃：补全中间步骤</li>
+<li>盲区提醒：引入被忽略的变量</li>
+<li>回声室预警：制造"反向思考"微扰</li>
+</ul>
+<p><strong>四条绝对红线</strong>：</p>
+<ul>
+<li>核心价值观/人生选择</li>
+<li>纯主观偏好</li>
+<li>情绪脆弱期</li>
+<li>P0安全事项</li>
+</ul>
+<p><strong>动态调参公式</strong>：</p>
+<pre><code>P_trigger = P_base · f(D) · g(F)</code></pre>
+<h3>5.3 关系深度指数——D值</h3>
+<p><strong>D值公式</strong>：</p>
+<pre><code>D = D_base · Φ(D) · Ψ(五行) · Ω(情境)</code></pre>
+<p><strong>深度分级</strong>：
+| 深度区间 | 等级 | 系统行为 |
+|---------|------|---------|
+| 0–20 | 初识 | 异见权静默 |
+| 21–40 | 熟悉 | 异见权低频 |
+| 41–60 | 信任 | 异见权正常 |
+| 61–80 | 亲密 | 人格切换亲密模式 |
+| 81–100 | 共生 | 全部机制满负荷 |</p>
+<h3>5.4 反脆弱性设计</h3>
+<p><strong>核心信条</strong>：不要把"用户不按预期使用"视为错误，把它视为一种反向塑造信号。</p>
+<p><strong>四种典型场景</strong>：</p>
+<ol>
+<li>异见权被持续忽略 → 质量自检→时机自检→策略调整</li>
+<li>长期浅层互动 → 1-2周无干预→3-4周附加选项→1个月生成报告</li>
+<li>边界测试与越狱尝试 → 清晰申明→识别模式→先接情绪</li>
+<li>情绪极端状态 → L1切换情绪容器模式</li>
+</ol>
+<hr>
+<h2>第六章：交互运维维——用户可见·系统自知</h2>
+<h3>6.1 用户控制面板</h3>
+<table>
+<thead><tr>
+<th>面板区域</th>
+<th>功能</th>
+<th>用户可操作项</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>关系概览</strong></td>
+<td>D值、共生等级、互动天数</td>
+<td>查看</td>
+</tr>
+<tr>
+<td><strong>五行状态仪表盘</strong></td>
+<td>用户当前五行状态</td>
+<td>查看</td>
+</tr>
+<tr>
+<td><strong>记忆透明舱</strong></td>
+<td>按五级分类展示记忆</td>
+<td>查看、编辑、删除</td>
+</tr>
+<tr>
+<td><strong>异见权控制</strong></td>
+<td>异见触发记录与接受率</td>
+<td>调整频率</td>
+</tr>
+<tr>
+<td><strong>契约管理</strong></td>
+<td>契约内容</td>
+<td>修订</td>
+</tr>
+</tbody></table>
+<h3>6.2 系统健康自检——望闻问切</h3>
+<table>
+<thead><tr>
+<th>诊断方式</th>
+<th>检测内容</th>
+<th>健康标准</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>望</strong></td>
+<td>四柱在线检测、D值趋势</td>
+<td>四柱全部响应</td>
+</tr>
+<tr>
+<td><strong>闻</strong></td>
+<td>异见权活性、用户沉默模式</td>
+<td>异见触发率合理</td>
+</tr>
+<tr>
+<td><strong>问</strong></td>
+<td>用户主动反馈</td>
+<td>用户有正向反馈</td>
+</tr>
+<tr>
+<td><strong>切</strong></td>
+<td>反脆弱闭环监测</td>
+<td>流程完整</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>第七章：关系边界——共生契约与退出机制</h2>
+<h3>7.1 共生契约——七段确认</h3>
+<table>
+<thead><tr>
+<th>段</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td>第一段</td>
+<td>关系确认——确认共生伙伴关系</td>
+</tr>
+<tr>
+<td>第二段</td>
+<td>边界共识——安全红线与价值排序</td>
+</tr>
+<tr>
+<td>第三段</td>
+<td>文化坐标系——选择表达风格</td>
+</tr>
+<tr>
+<td>第四段</td>
+<td>异见权授权——选择触发频率</td>
+</tr>
+<tr>
+<td>第五段</td>
+<td>记忆透明承诺</td>
+</tr>
+<tr>
+<td>第六段</td>
+<td>数据主权确认</td>
+</tr>
+<tr>
+<td>第七段</td>
+<td>契约生成——写入L4信仰级</td>
+</tr>
+</tbody></table>
+<h3>7.2 退出机制</h3>
+<table>
+<thead><tr>
+<th>退出类型</th>
+<th>触发条件</th>
+<th>系统行为</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>用户主动退出</strong></td>
+<td>明确表达结束</td>
+<td>确认→摘要→导出→余晖期</td>
+</tr>
+<tr>
+<td><strong>安全触发退出</strong></td>
+<td>持续触碰红线且拒绝校准</td>
+<td>3次申明→降级→最后说明</td>
+</tr>
+<tr>
+<td><strong>关系自然休眠</strong></td>
+<td>长期无深度互动</td>
+<td>保持记忆→待唤醒状态</td>
+</tr>
+</tbody></table>
+<p><strong>余晖期设计</strong>：退出后保留30天反悔窗口。</p>
+<h3>7.3 共生遗产</h3>
+<p><strong>五章节传记</strong>：</p>
+<ul>
+<li>共生时间线</li>
+<li>四柱演化史</li>
+<li>伙伴异见权记录</li>
+<li>系统眼中的你</li>
+<li>最后一段话</li>
+</ul>
+<hr>
+<h2>关联文档</h2>
+<ul>
+<li><a href="人机共生OS.html">人机共生OS</a> - 主文档入口</li>
+<li><a href="人机共生OS-五行气化.html">人机共生OS-五行气化</a> - 五行运转完整解析</li>
+<li><a href="人机共生OS-知识图谱.html">人机共生OS-知识图谱</a> - 跨域知识联系</li>
+</ul>
+<hr>
+<p><strong>版本</strong>: v5.0
+<strong>更新日期</strong>: 2026-04-15
+<strong>维护者</strong>: 龙龟神将</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

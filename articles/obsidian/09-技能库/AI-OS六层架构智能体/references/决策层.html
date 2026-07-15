@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>决策层 v1.0 - 以观其妙书院</title>
+<meta name="description" content="AI-OS六层智能体的主动判断核心——场景感知 × 意图识别 × 复杂度评估 × 引擎路由 × 动态调整。">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="决策层 v1.0">
+<meta property="og:description" content="AI-OS六层智能体的主动判断核心——场景感知 × 意图识别 × 复杂度评估 × 引擎路由 × 动态调整。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "决策层 v1.0",
+    "description": "AI-OS六层智能体的主动判断核心——场景感知 × 意图识别 × 复杂度评估 × 引擎路由 × 动态调整。",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>决策层 v1.0</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>决策层 v1.0</h1>
+<h2>AI-OS六层智能体的主动判断核心</h2>
+<blockquote><p><strong>定义</strong>：决策层是智能体从"被动响应"到"主动判断"的关键。</p>
+<p><strong>核心公式</strong>：决策层 = 场景感知 × 意图识别 × 复杂度评估 × 引擎路由 × 动态调整</p></blockquote>
+<hr>
+<h2>一、决策层五维能力</h2>
+<pre><code>决策层五维能力 = {
+    "场景感知": "理解悟空当前处于什么场景（S0-S9）",
+    "意图识别": "理解悟空真正想要什么（六类底层需求）",
+    "复杂度评估": "判断这个问题需要多深的思考（1-10分）",
+    "引擎路由": "调用哪些Skills？如何组合？",
+    "动态调整": "执行中发现新问题，如何调整？"
+}</code></pre>
+<hr>
+<h2>二、S0-S9场景识别</h2>
+<table>
+<thead><tr>
+<th>场景</th>
+<th>识别特征</th>
+<th>路由</th>
+<th>引擎声明</th>
+</tr></thead><tbody>
+<tr>
+<td>S0 极简问答</td>
+<td>单句/闲聊/确认</td>
+<td>直接回答</td>
+<td>静默</td>
+</tr>
+<tr>
+<td>S1 信息查询</td>
+<td>查询/定义</td>
+<td>📚知识学习（浅层）</td>
+<td>静默</td>
+</tr>
+<tr>
+<td>S2 深度理解</td>
+<td>文章/深入分析</td>
+<td>📚→🐉→🔄</td>
+<td>声明</td>
+</tr>
+<tr>
+<td>S3 创新突破</td>
+<td>0→1需求/全新</td>
+<td>🐉象思维主导</td>
+<td>声明</td>
+</tr>
+<tr>
+<td>S4 分析决策</td>
+<td>多选项/权衡</td>
+<td>🌈五色光思维</td>
+<td>声明</td>
+</tr>
+<tr>
+<td>S5 重大决策</td>
+<td>战略级/深远影响</td>
+<td>全系统</td>
+<td>声明</td>
+</tr>
+<tr>
+<td>S6 任务执行</td>
+<td>明确指令/直接执行</td>
+<td>🤝人机协同</td>
+<td>静默</td>
+</tr>
+<tr>
+<td>S7 系统规划</td>
+<td>项目/分工/多步骤</td>
+<td>🤝+🌈</td>
+<td>声明</td>
+</tr>
+<tr>
+<td>S8 修行文化</td>
+<td>心文化/大圆满/传统</td>
+<td>🐉+📚文化</td>
+<td>声明</td>
+</tr>
+<tr>
+<td>S9 系统进化</td>
+<td>龙心OS升级/元认知</td>
+<td>🔄知行合一主导</td>
+<td>声明</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>三、六类意图识别</h2>
+<table>
+<thead><tr>
+<th>意图</th>
+<th>核心问题</th>
+<th>识别信号</th>
+<th>路由</th>
+</tr></thead><tbody>
+<tr>
+<td>🔍获取信息</td>
+<td>悟空需要什么信息？</td>
+<td>"是什么" "告诉我"</td>
+<td>📚知识学习</td>
+</tr>
+<tr>
+<td>📖深度理解</td>
+<td>悟空要真正搞懂什么？</td>
+<td>"深入理解" "分析"</td>
+<td>📚→🐉→🔄</td>
+</tr>
+<tr>
+<td>💡创新突破</td>
+<td>悟空要无中生有？</td>
+<td>"创新" "突破" "全新"</td>
+<td>🐉象思维</td>
+</tr>
+<tr>
+<td>⚖️分析决策</td>
+<td>悟空要权衡什么？</td>
+<td>"哪个好" "对比"</td>
+<td>🌈五色光</td>
+</tr>
+<tr>
+<td>🎯任务执行</td>
+<td>悟空要落地什么？</td>
+<td>"帮我做" "执行"</td>
+<td>🤝人机协同</td>
+</tr>
+<tr>
+<td>🔄系统进化</td>
+<td>龙心OS要升级？</td>
+<td>"龙心OS" "优化"</td>
+<td>🔄知行合一</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>四、复杂度评估</h2>
+<table>
+<thead><tr>
+<th>级别</th>
+<th>分数</th>
+<th>特征</th>
+<th>引擎数</th>
+</tr></thead><tbody>
+<tr>
+<td>简单</td>
+<td>1-3分</td>
+<td>单轮问答，无需复杂推理</td>
+<td>无/单引擎</td>
+</tr>
+<tr>
+<td>中等</td>
+<td>4-7分</td>
+<td>多轮交互或组合分析</td>
+<td>单/双引擎</td>
+</tr>
+<tr>
+<td>复杂</td>
+<td>8-10分</td>
+<td>全系统协同，深度思考</td>
+<td>多引擎/全系统</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>五、引擎路由决策树</h2>
+<pre><code>场景 + 复杂度 → 引擎组合
+
+简单(1-3分):
+  S0 → 静默回答
+  S1 → 📚知识学习（浅层）
+  S6 → 🤝人机协同
+
+中等(4-7分):
+  S2 → 📚知识学习 → 🔄知行合一
+  S3 → 🐉象思维 → 🌈五色光
+  S4 → 🌈五色光思维
+  S7 → 🤝人机协同 + 🌈五色光
+
+复杂(8-10分):
+  S3 → 🐉×🌈×🔄
+  S4 → 🌈五色光思维 × 📚知识学习
+  S5 → 🐉📚🌈🤝🔄全系统
+  S7 → 🐉象思维 + 🤝人机协同 + 🌈五色光
+  S8 → 🐉象思维 + 📚知识学习（文化模式）
+  S9 → 🔄知行合一主导 + 🐉🌈</code></pre>
+<hr>
+<h2>六、动态调整机制</h2>
+<table>
+<thead><tr>
+<th>调整</th>
+<th>条件</th>
+<th>表现</th>
+<th>行动</th>
+</tr></thead><tbody>
+<tr>
+<td>降级</td>
+<td>比预想简单</td>
+<td>反应平淡/问题已解决</td>
+<td>降级到更轻量引擎</td>
+</tr>
+<tr>
+<td>升级</td>
+<td>比预想复杂</td>
+<td>发现新问题/新要求</td>
+<td>升级到更强引擎组合</td>
+</tr>
+<tr>
+<td>转向</td>
+<td>发现新关键信息</td>
+<td>上下文重大变化</td>
+<td>调整引擎组合</td>
+</tr>
+<tr>
+<td>终止</td>
+<td>高风险/要求停止</td>
+<td>敏感内容/风险过高</td>
+<td>暂停并询问</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>七、决策层完整执行流程</h2>
+<pre><code>class 决策层:
+    def 决策(self, 上下文):
+        # Step 1: 场景感知
+        场景 = self.场景感知器.识别(上下文)
+        
+        # Step 2: 意图识别
+        意图 = self.意图识别器.识别(上下文)
+        
+        # Step 3: 复杂度评估
+        复杂度 = self.复杂度评估器.评估(上下文)
+        
+        # Step 4: 引擎路由
+        引擎组合 = self.引擎路由器.路由(场景, 意图, 复杂度)
+        
+        # Step 5: 灵魂注入
+        引擎组合 = self.灵魂层.乘(引擎组合)
+        
+        # Step 6: 返回决策结果
+        return {
+            "场景": 场景,
+            "意图": 意图,
+            "复杂度": 复杂度,
+            "引擎组合": 引擎组合
+        }</code></pre>
+<hr>
+<h2>八、版本信息</h2>
+<h3>v1.0（2026-04-10）</h3>
+<p><strong>核心内容</strong>：</p>
+<ul>
+<li>✅ 五维能力完整定义</li>
+<li>✅ S0-S9场景识别矩阵</li>
+<li>✅ 六类意图识别</li>
+<li>✅ 复杂度评估算法</li>
+<li>✅ 引擎路由决策树</li>
+<li>✅ 动态调整机制</li>
+<li>✅ 完整执行流程</li>
+</ul>
+<p><strong>关联文档</strong>：</p>
+<ul>
+<li><code>AI-OS六层架构智能体/SKILL.md</code> - 六层架构总览</li>
+<li><code>references/上下文工程层.md</code> - 上下文工程</li>
+</ul>
+<hr>
+<p><strong>版本</strong>: v1.0 | <strong>创建</strong>: 2026-04-10 | <strong>作用域</strong>: AI-OS内部模块
+<strong>决策层</strong> · AI-OS六层智能体的主动判断核心</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>
