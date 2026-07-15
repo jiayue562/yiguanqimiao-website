@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Ghost Secrets Scanner - 以观其妙书院</title>
+<meta name="description" content="Ghost Secrets Scanner - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="Ghost Secrets Scanner">
+<meta property="og:description" content="Ghost Secrets Scanner - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Ghost Secrets Scanner",
+    "description": "Ghost Secrets Scanner - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Ghost Secrets Scanner</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Ghost Secrets Scanner</h1>
+<p>AI-powered secrets and credentials scanner for codebases. Uses <a href="https://github.com/ghostsecurity/poltergeist">poltergeist</a> for fast pattern matching with AI analysis to filter false positives.</p>
+<h2>Usage</h2>
+<pre><code>/ghost-scan-secrets [path-to-scan]</code></pre>
+<p>Examples:</p>
+<pre><code>/ghost-scan-secrets .                    # Scan current directory
+/ghost-scan-secrets ./src                # Scan specific directory
+/ghost-scan-secrets /path/to/repo        # Scan absolute path</code></pre>
+<h2>How It Works</h2>
+<ol>
+<li><strong>Initialize</strong>: Downloads/verifies poltergeist binary</li>
+<li><strong>Scan</strong>: Runs poltergeist to detect secret candidates</li>
+<li><strong>Analyze</strong>: AI agents evaluate each candidate for:<ul>
+<li>Real secret vs placeholder/example</li>
+<li>Hardcoded vs environment-loaded</li>
+<li>Production code vs test code</li>
+<li>Evidence of exposure</li>
+</ul></li>
+<li><strong>Report</strong>: Generates findings and summary report</li>
+</ol>
+<h2>Prerequisites</h2>
+<p>The skill requires the <code>poltergeist</code> binary. It will be installed automatically via one of two methods:</p>
+<h3>Option 1: GitHub Releases (default)</h3>
+<p>If the <a href="https://github.com/ghostsecurity/poltergeist">poltergeist repository</a> is reachable, the binary is downloaded automatically from GitHub releases.</p>
+<h3>Option 2: Local Fallback</h3>
+<p>If GitHub is unavailable (network issues, air-gapped environment), place release artifacts in the fallback directory:</p>
+<table>
+<thead><tr>
+<th>Platform</th>
+<th>Fallback Directory</th>
+</tr></thead><tbody>
+<tr>
+<td>Linux/macOS</td>
+<td><code>~/.ghost/releases/latest/</code></td>
+</tr>
+<tr>
+<td>Windows</td>
+<td><code>%USERPROFILE%\.ghost\releases\latest\</code></td>
+</tr>
+</tbody></table>
+<p>Required files (for your platform):</p>
+<pre><code>~/.ghost/releases/latest/
+├── poltergeist_linux_amd64.tar.gz
+├── poltergeist_linux_arm64.tar.gz
+├── poltergeist_darwin_amd64.tar.gz
+├── poltergeist_darwin_arm64.tar.gz
+└── poltergeist_windows_amd64.zip</code></pre>
+<p>You only need the file for your platform.</p>
+<h2>Supported Platforms</h2>
+<ul>
+<li>Linux (amd64, arm64)</li>
+<li>macOS (amd64, arm64)</li>
+<li>Windows (amd64) - via Git Bash, WSL, or MSYS2</li>
+</ul>
+<h2>Output</h2>
+<p>Findings are written to <code>~/.ghost/repos/&lt;repo_id&gt;/scans/&lt;short_sha&gt;/secrets/</code>:</p>
+<pre><code>~/.ghost/repos/myrepo-a1b2c3d4/scans/abc1234/secrets/
+├── scan-output.json      # Raw poltergeist output
+├── candidates.json       # Parsed candidates
+├── findings/             # Confirmed security risks
+│   └── &lt;finding-id&gt;.md
+└── report.md             # Summary report</code></pre>
+<h2>Secret Types Detected</h2>
+<p>Poltergeist includes 100+ built-in rules for common secrets:</p>
+<ul>
+<li>API keys (AWS, GCP, Azure, Anthropic, OpenAI, etc.)</li>
+<li>Database credentials (PostgreSQL, MySQL, MongoDB)</li>
+<li>Private keys and certificates</li>
+<li>OAuth tokens and JWTs</li>
+<li>Service-specific tokens (Stripe, Twilio, SendGrid, etc.)</li>
+</ul>
+<p>See <a href="https://github.com/ghostsecurity/poltergeist/blob/main/docs/rules.md">poltergeist rules documentation</a> for the full list.</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

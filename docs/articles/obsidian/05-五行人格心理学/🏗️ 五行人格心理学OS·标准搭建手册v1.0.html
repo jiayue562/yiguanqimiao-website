@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>🏗️ 五行人格心理学 OS · 标准搭建手册 v1.0 - 以观其妙书院</title>
+<meta name="description" content="🏗️ 五行人格心理学 OS · 标准搭建手册 v1.0 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="🏗️ 五行人格心理学 OS · 标准搭建手册 v1.0">
+<meta property="og:description" content="🏗️ 五行人格心理学 OS · 标准搭建手册 v1.0 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "🏗️ 五行人格心理学 OS · 标准搭建手册 v1.0",
+    "description": "🏗️ 五行人格心理学 OS · 标准搭建手册 v1.0 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>🏗️ 五行人格心理学 OS · 标准搭建手册 v1.0</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<p>﻿---
+title: "五行人格心理学OS·标准搭建手册"
+date: 2026-03-30
+version: v1.0
+tags: [五行人格心理学, 搭建手册, 凤心OS, L7根系, L1统摄, 系统设计, 复盘]
+author: 龙龟神将（基于悟空×龙龟神将共创复盘）</p>
+<hr>
+<h1>🏗️ 五行人格心理学 OS · 标准搭建手册 v1.0</h1>
+<blockquote><p><strong>目标读者</strong>：有 WorkBuddy 基础、了解五行人格心理学基本概念的搭建者
+<strong>预计时长</strong>：10-14 天（含深度学习时间）
+<strong>前置条件</strong>：已完成 龙心OS 基础搭建（或了解 AI OS 基本概念）
+<strong>本手册来源</strong>：2026-03-30 悟空×龙龟神将联合复盘，提炼自真实搭建历程</p></blockquote>
+<hr>
+<h2>📊 总览：三层架构与五阶段</h2>
+<pre><code>┌─────────────────────────────────────────────────────┐
+│           五行人格心理学 OS · 三层架构                │
+├─────────────────────────────────────────────────────┤
+│  L1·一心·统摄   ←  应用接口层（顶层觉知接待台）       │
+│         ↕ 调用                                       │
+│  凤心OS·L4      ←  智能发动机层（快慢思考·1+5模式）   │
+│         ↕ 调用                                       │
+│  L7·根系         ←  知识地基层（17篇·130条跨域联系）   │
+└─────────────────────────────────────────────────────┘</code></pre>
+<pre><code>时间线（14天）：
+Day 0          ：准备工作（环境·命名·边界·测试）
+Day 1-7        ：【第一阶段】L7根系搭建
+Day 6-9        ：【第二阶段】凤心OS搭建（与L7并行！）
+Day 8-10       ：【第三阶段】五行分智能体搭建
+Day 9-12       ：【第四阶段】L1接待台搭建
+Day 11-14      ：【第五阶段】系统整合与验证</code></pre>
+<hr>
+<h2>📋 本次复盘：做对与做错</h2>
+<h3>✅ 做对的事（保留并强化）</h3>
+<table>
+<thead><tr>
+<th>#</th>
+<th>做对的事</th>
+<th>价值</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>先建地基·再起高楼</strong>（L7→凤心OS→L1顺序正确）</td>
+<td>根深方能叶茂，没有L7就没有一切</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>每篇学习后立刻沉淀</strong>（Obsidian+知识图谱+每日日志三联动）</td>
+<td>知行合一的正确实践，经验不流失</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>从独立包到全局Rule的演进</strong>（alwaysApply:true·永远在线）</td>
+<td>全局化是系统化的前提</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>130条跨域联系的积累</strong></td>
+<td>知识不是孤岛而是网络，打通五行与西方认知科学</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>凤心OS从关键词触发升级为上下文感知</strong></td>
+<td>最大技术突破，真正的智能调度</td>
+</tr>
+</tbody></table>
+<h3>❌ 做错的事（下次避免）</h3>
+<table>
+<thead><tr>
+<th>#</th>
+<th>做错的事</th>
+<th>代价</th>
+<th>下次如何做</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>架构反复重构</strong>（四层→七层→三层）</td>
+<td>大量返工，内容迁移成本高</td>
+<td><strong>第0天就确定三层架构，之后不再变动大方向</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>L7积累17篇才封装L4/L1</strong></td>
+<td>理论和应用层分离太久，后期整合成本高</td>
+<td><strong>L7每完成5篇，同步推进一次MVP迭代</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>IMA同步被遗留为手动任务</strong></td>
+<td>三向同步实际只有两向在运行</td>
+<td><strong>第0天先测试IMA权限，有问题立刻解决</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>命名不统一</strong>（凤心OS/总智能体/L4混用）</td>
+<td>理解成本高，协作时产生混乱</td>
+<td><strong>第0天定好命名规范，全程统一使用</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>龙心OS与凤心OS边界不清晰</strong></td>
+<td>Skills调用关系混乱，有时互相调用</td>
+<td><strong>第0天先画边界图，之后严格遵守</strong></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🔰 搭建前：准备工作（Day 0）</h2>
+<h3>0.1 环境准备</h3>
+<pre><code>✅ WorkBuddy（最新版）
+✅ Obsidian（已安装，建议路径：D:\以观其妙书院知识库\观其妙书院\）
+✅ IMA笔记系统（API Key已配置·先测试可用性！这一步不能省）
+✅ 龙心OS已搭建（或直接开始也可，但建议先有龙心OS基础）</code></pre>
+<h3>0.2 第0天必须定义清楚的三件事</h3>
+<p><strong>① 三层架构命名（一次定义·终生使用）</strong></p>
+<pre><code>L7·木·根系      = Knowledge Foundation（知识地基）
+凤心OS·L4       = Intelligence Engine（智能发动机）
+L1·一心·统摄   = Application Gateway（应用接口）</code></pre>
+<p><strong>② 文件路径规范（全程统一）</strong></p>
+<pre><code>Skills根目录：  C:\Users\[用户名]\.workbuddy\skills\
+Rules根目录：   C:\Users\[用户名]\.workbuddy\rules\
+Obsidian根目录：D:\以观其妙书院知识库\观其妙书院\05-五行人格心理学\</code></pre>
+<p><strong>③ 命名统一规范表</strong></p>
+<table>
+<thead><tr>
+<th>概念</th>
+<th>统一名称</th>
+<th>禁止混用</th>
+</tr></thead><tbody>
+<tr>
+<td>快慢思考调度引擎</td>
+<td><strong>凤心OS</strong></td>
+<td><del>总智能体</del>、<del>L4</del></td>
+</tr>
+<tr>
+<td>五行分析智能体</td>
+<td><strong>五行分智能体（木/火/土/金/水）</strong></td>
+<td>不单独命名</td>
+</tr>
+<tr>
+<td>知识地基层</td>
+<td><strong>L7根系</strong></td>
+<td><del>知识库层</del></td>
+</tr>
+<tr>
+<td>应用入口层</td>
+<td><strong>L1接待台</strong></td>
+<td><del>元层次</del></td>
+</tr>
+</tbody></table>
+<p><strong>④ 龙心OS 与凤心OS 边界图</strong></p>
+<pre><code>龙心OS（通用认知操作系统）
+├── 象思维·知识学习·五色光·人机协同·知行合一
+└── 可调用 → 凤心OS（作为第3层专业智能体）
+
+凤心OS（五行人格专项智能体）
+├── 快思考（总调度）+ 慢思考（五行分智能体）
+└── 可调用 → 龙心OS七模块（协同时）
+
+调用规则：
+  - 龙心OS处理通用认知任务
+  - 凤心OS处理五行人格专项任务
+  - 两者不互相嵌套，各自独立运行</code></pre>
+<hr>
+<h2>🏗️ 第一阶段：L7根系搭建（Day 1-7）</h2>
+<p><strong>目标</strong>：建立完整的知识地基，形成可供凤心OS调用的知识网络</p>
+<h3>Step 1：Obsidian知识库文件夹搭建</h3>
+<pre><code>05-五行人格心理学/
+├── 00-入口/
+│   ├── 📚 五行人格心理学总索引.md
+│   └── 🌐 知识图谱.md（隐秘联系记录·从联系001开始）
+├── 理论基石/（L7根系文章存放位置）
+├── 融合体系/（L1·一心·统摄相关文档）
+├── 应用场景/（八大场景专属知识）
+└── 人格类型/（五行分智能体对应知识）</code></pre>
+<h3>Step 2：L7文章学习顺序（固定顺序·不可随意调整）</h3>
+<table>
+<thead><tr>
+<th>顺序</th>
+<th>学习内容</th>
+<th>对应概念</th>
+<th>预计用时</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>一心·纯粹觉知</td>
+<td>五行人格的元层次</td>
+<td>1.5小时</td>
+</tr>
+<tr>
+<td>2</td>
+<td>三界理论全息阐释</td>
+<td>灵界/心界/身界</td>
+<td>2小时</td>
+</tr>
+<tr>
+<td>3</td>
+<td>五行体系身心灵整合</td>
+<td>五行与三界的对应</td>
+<td>2小时</td>
+</tr>
+<tr>
+<td>4</td>
+<td>九层发展阶梯</td>
+<td>健康/一般/不健康区间</td>
+<td>2小时</td>
+</tr>
+<tr>
+<td>5</td>
+<td>一心三界五行九层总论</td>
+<td>完整系统综合</td>
+<td>1.5小时</td>
+</tr>
+<tr>
+<td>6</td>
+<td>五行相生关系全息阐释</td>
+<td>相生之道</td>
+<td>2小时</td>
+</tr>
+<tr>
+<td>7</td>
+<td>五行相克关系全息阐释</td>
+<td>化克为生</td>
+<td>2小时</td>
+</tr>
+<tr>
+<td>8</td>
+<td>拔阴取阳技术体系</td>
+<td>核心转化技术</td>
+<td>2小时</td>
+</tr>
+<tr>
+<td>9</td>
+<td>化克为生技术体系</td>
+<td>冲突转化</td>
+<td>2小时</td>
+</tr>
+<tr>
+<td>10</td>
+<td>相生强化·滋养阳面</td>
+<td>运象三法完整系统</td>
+<td>1.5小时</td>
+</tr>
+<tr>
+<td>11</td>
+<td>象思维·中国式认知</td>
+<td>象思维与五行的融合</td>
+<td>2小时</td>
+</tr>
+<tr>
+<td>12</td>
+<td>福格行为模型B=MAP</td>
+<td>行为设计落地</td>
+<td>1.5小时</td>
+</tr>
+<tr>
+<td>13-17</td>
+<td>金/木/水/火/土各行人格</td>
+<td>五行各类型专项</td>
+<td>各2小时</td>
+</tr>
+</tbody></table>
+<blockquote><p><strong>⚠️ 重要</strong>：第5篇完成后立刻开始第二阶段（凤心OS），不要等全部17篇完成！</p></blockquote>
+<h3>Step 3：每篇学习的标准动作（必须执行·7步）</h3>
+<pre><code>① 读完文章（完整通读）
+② 提炼5-10条核心洞察（用自己的话表达）
+③ 寻找3-5条跨域隐秘联系（与西方心理学/认知科学/AI系统的连接点）
+④ 创建Obsidian知识文档（使用附录A的标准模板）
+⑤ 更新知识图谱（在🌐知识图谱.md中追加新联系·编号连续）
+⑥ 更新总索引（在📚总索引.md中标记该篇完成）
+⑦ 记录每日日志（WorkBuddy memory/YYYY-MM-DD.md）</code></pre>
+<h3>Step 4：L7根系MVP验证（每5篇完成一次）</h3>
+<pre><code>测试方式：让AI用L7知识回答一个真实问题
+测试样例：「请分析一个经常抱怨、爱猜疑的人是什么五行状态？」
+通过标准：能准确引用L7中的具体概念（三界·阶梯·转化技术）进行分析
+未通过：回到L7，补充缺失内容，再次验证</code></pre>
+<hr>
+<h2>⚡ 第二阶段：凤心OS搭建（Day 6-9，与L7并行！）</h2>
+<blockquote><p><strong>关键原则</strong>：不要等L7全部完成才开始！L7完成第5篇后立刻开始！</p></blockquote>
+<h3>Step 5：凤心OS Skills创建</h3>
+<p><strong>文件结构</strong>：</p>
+<pre><code>~/.workbuddy/skills/凤心OS/
+├── SKILL.md（主文件·核心定义）
+└── references/
+    ├── scene-router.md（场景路由矩阵·S0-S8）
+    ├── fast-slow-thinking.md（快慢思考协调协议）
+    └── wuxing-agents-protocol.md（五行分智能体协作协议）</code></pre>
+<p><strong>SKILL.md必须包含的核心内容（6项缺一不可）</strong>：</p>
+<pre><code>1. 核心定位：发动机·心脏·神经中枢（1+5模式）
+2. 快思考层：五维感知矩阵
+   - 情绪信号（阴木愤怒/阴火急躁/阴土猜疑/阴金挑剔/阴水恐惧·各8分）
+   - 行为信号（各4分）
+   - 诉求类型（辅助·各2分）
+3. 慢思考层：七步标准分析流程
+   ① 一心状态定位 → ② 三界扫描 → ③ 五行生克诊断
+   → ④ 九层定位 → ⑤ 转化方案 → ⑥ B=MAP落地 → ⑦ 输出报告
+4. 路由决策规则：
+   - 总分≥10 → 激活对应五行分智能体（精准慢思考）
+   - 总分7-9 → 双行分析（主行+副行并行）
+   - 总分5-6 → 全面诊断（五行总体分析）
+   - 总分≤4  → 先追问1个精准问题，确认后路由
+5. 龙心OS七模块整合表
+6. 不触发场景（避免误触发）</code></pre>
+<h3>Step 6：凤心OS全局Rule创建</h3>
+<pre><code>路径：~/.workbuddy/rules/凤心OS自动触发.mdc
+关键设置：alwaysApply: true
+触发层级：
+  第一层：上下文感知（情绪信号·行为信号）→ 最高优先级
+  第二层：直接关键词（五行相关词汇）</code></pre>
+<h3>Step 7：凤心OS MVP验证</h3>
+<pre><code>测试场景：输入含情绪信号的对话
+样例："我最近很烦躁，总跟同事吵架，他们就是不理解我"
+
+期望结果：
+  - 凤心OS感知到阴火信号（烦躁=急躁·8分）
+  - 自动路由到火行分智能体
+  - 输出火行三界诊断+拔阴取阳建议
+
+通过标准：无需用户输入「凤心OS」等关键词，系统自动感知并分析
+未通过：检查Rule文件，调整感知矩阵分值，确认alwaysApply:true</code></pre>
+<hr>
+<h2>🌿 第三阶段：五行分智能体搭建（Day 8-10）</h2>
+<h3>Step 8：五个分智能体Skills（标准模板创建）</h3>
+<p><strong>每个分智能体的标准文件结构</strong>：</p>
+<pre><code>~/.workbuddy/skills/[五行]行人格心理学/
+├── SKILL.md（主文件）
+└── references/
+    ├── one-mind.md（该行的一心定义·核心特质）
+    ├── three-realms.md（该行的三界显化·健康vs不健康）
+    ├── nine-levels.md（该行的九层阶梯·完整光谱）
+    └── transformation.md（拔阴取阳·化克为生·相生强化）</code></pre>
+<p><strong>创建顺序（建议）</strong>：</p>
+<pre><code>推荐：木→火→土→金→水
+原因：从最熟悉的五行开始，先验证模板正确性，再批量创建</code></pre>
+<p><strong>SKILL.md必须包含的6个部分</strong>：</p>
+<pre><code>1. 一心：该行的核心觉知特质（阳面本质）
+2. 三界：身界/心界/灵界的阳性与阴性显化对比表
+3. 五行关系：该行与其他四行的生克关系及影响
+4. 九层阶梯：从健康1级到不健康9级的完整描述
+5. 转化技术：
+   - 拔阴取阳口诀（心界+灵界各一条）
+   - 化克为生路径（至少2条）
+   - 相生强化实践（与相生行的协同方法）
+6. B=MAP行为设计：该行的动机(M)+能力(A)+提示(P)设计模板</code></pre>
+<hr>
+<h2>🌸 第四阶段：L1接待台搭建（Day 9-12）</h2>
+<h3>Step 9：L1知识文档（先建文档·再封装Skills）</h3>
+<p><strong>Phase 1（先完成）</strong>：</p>
+<pre><code>文档名：🌟 L1·一心·统摄·庄子三无人格体系.md
+内容：
+  - 庄子三无：至人无己×神人无功×圣人无名
+  - 三无与五行九层的对应（超越5行的L1境界）
+  - 五行各行向L1的修炼路径
+路径：Obsidian/05-五行人格心理学/融合体系/</code></pre>
+<p><strong>Phase 2（后完成）</strong>：</p>
+<pre><code>文档名：🌟 L1·一心·统摄·一心即纯粹觉性本体论与修证体系.md
+内容：
+  - 一心的十二同义词群
+  - 三步证悟（直指心性→确信无疑→解脱自信）
+  - 实修三步（身语意抽离→反观安住→任运自在）
+路径：Obsidian/05-五行人格心理学/融合体系/</code></pre>
+<h3>Step 10：L1 Skills创建</h3>
+<p><strong>文件结构</strong>：</p>
+<pre><code>~/.workbuddy/skills/L1·一心·统摄/
+├── SKILL.md（主文件）
+└── references/
+    ├── L1-fengxin-integration.md（与凤心OS的协作协议）
+    └── scene-mapping/（八大应用场景）
+        ├── 亲密关系.md
+        ├── 亲子关系.md
+        ├── 领导力.md
+        ├── 团队建设.md
+        ├── 高效沟通.md
+        ├── 健康养生.md
+        ├── 日常生活.md
+        └── 人格测评.md</code></pre>
+<p><strong>SKILL.md必须包含的5项核心内容</strong>：</p>
+<pre><code>1. 核心定位：顶层觉知接待台（超越五行的元状态）
+2. 三步觉知流程：
+   ① 叩问意图（4类标准问题）
+   ② 感知握手包（场景×五行线索×情感温度×优先级）
+   ③ 温暖分发（路由到对应场景）
+3. 中庸原则：不过度热情·不冷漠机械·恰到好处
+4. 与凤心OS的协作规则：
+   - 单一场景→直接移交凤心OS
+   - 多场景同时→L1主导整合
+   - 情感温度极高→情感陪伴优先
+5. 情感温度识别（6象限：愤怒/焦虑/热情/迷茫/平静/痛苦）</code></pre>
+<h3>Step 11：L1全局Rule创建</h3>
+<pre><code>路径：~/.workbuddy/rules/L1一心统摄自动触发.mdc
+alwaysApply: true
+优先级：high（高于凤心OS·L1是门户·先进门再分发）</code></pre>
+<hr>
+<h2>🔗 第五阶段：系统整合与验证（Day 11-14）</h2>
+<h3>Step 12：三层系统打通测试（三个测试场景）</h3>
+<p><strong>测试场景1（简单·单行分析·验证基础流程）</strong>：</p>
+<pre><code>输入：「我老婆最近总是沉默，什么都不说，一个人待着」
+期望流程：L1感知→亲密关系场景→凤心OS→水行信号→水行分智能体
+期望输出：水行阴面状态诊断+化克为生转化建议</code></pre>
+<p><strong>测试场景2（复杂·多行分析·验证双智能体并行）</strong>：</p>
+<pre><code>输入：「我在公司里经常被同事误解，我解释得很清楚，但他们就是不懂我」
+期望流程：L1感知→高效沟通场景→凤心OS→木行阴面+金行信号→双智能体并行
+期望输出：两行特质分析+关系优化建议</code></pre>
+<p><strong>测试场景3（应用场景分发·验证八大场景准确性）</strong>：</p>
+<pre><code>输入：「我孩子最近特别叛逆，我说什么他都不听」
+期望流程：L1感知→亲子关系场景→凤心OS→对应五行→分析+B=MAP行为设计
+期望输出：孩子五行特质+家长应对策略</code></pre>
+<p><strong>通过标准</strong>：三个场景全部自动路由正确，无需用户手动声明调用哪个智能体。</p>
+<h3>Step 13：知识沉淀三向同步确认</h3>
+<pre><code>✅ Obsidian：17篇L7文档+知识图谱（联系编号完整）+L1两篇融合文档
+✅ WorkBuddy MEMORY.md：里程碑记录完整（每个阶段节点都有记录）
+✅ IMA：云端笔记同步（先测试权限！）</code></pre>
+<h3>Step 14：系统总结文档创建</h3>
+<p>在Obsidian中创建一份系统竣工报告：</p>
+<pre><code>路径：05-五行人格心理学/00-入口/🎉 系统竣工报告.md
+内容：
+  - 搭建时间线
+  - 三层架构关系图
+  - Skills清单（路径+版本+功能）
+  - Rules清单（触发条件+优先级）
+  - 验证测试结果
+  - 后续迭代计划</code></pre>
+<hr>
+<h2>📋 附录A：L7知识文档标准模板</h2>
+<pre><code>---
+title: "[篇名]·完整体系"
+date: YYYY-MM-DD
+tags: [L7根系, 五行人格心理学, [具体标签]]
+version: v1.0
+---
+
+# [篇名]·完整体系
+
+## 一、核心理论
+
+[主要内容]
+
+## 二、与五行的关系
+
+[五行对应分析]
+
+## 三、转化路径
+
+[实操方法]
+
+## 四、跨域联系（L7根系新增联系）
+
+| 联系编号 | 知识A | 知识B | 核心洞察 |
+|---------|-------|-------|---------|
+| 联系XXX | [五行人格心理学概念] | [其他知识体系概念] | [打通点] |
+
+## 五、应用场景
+
+[实际应用举例]
+
+## 六、关联文档
+- [[相关篇目]]
+- [[相关技能]]</code></pre>
+<hr>
+<h2>📋 附录B：搭建进度检查表（14天）</h2>
+<pre><code>□ Day 0   ：环境准备完成（IMA权限测试通过·命名规范已定·边界图已画）
+□ Day 1-2 ：L7第1-5篇完成，联系10条以上，凤心OS v0.1启动
+□ Day 3-4 ：L7第6-10篇完成，联系30条以上
+□ Day 5   ：【MVP节点1】凤心OS基础路由测试通过（情绪感知→自动路由）
+□ Day 6-7 ：L7第11-17篇完成，联系60条以上
+□ Day 8   ：【MVP节点2】五行分智能体全部创建，单行分析测试通过
+□ Day 9-10：L1 Phase1+Phase2知识文档完成
+□ Day 11  ：【MVP节点3】L1 Skills创建，八大场景全部就绪
+□ Day 12-13：三层系统打通，三个测试场景全部通过
+□ Day 14  ：系统总结竣工报告，三向同步完成，系统正式上线</code></pre>
+<hr>
+<h2>📋 附录C：常见问题与解决方案</h2>
+<table>
+<thead><tr>
+<th>问题</th>
+<th>原因</th>
+<th>解决方案</th>
+</tr></thead><tbody>
+<tr>
+<td>Skills在某些对话不触发</td>
+<td>Rule不是alwaysApply</td>
+<td>检查Rule文件，确认<code>alwaysApply: true</code>，Rules放在用户全局目录</td>
+</tr>
+<tr>
+<td>凤心OS和龙心OS冲突</td>
+<td>没有明确边界</td>
+<td>龙心OS处理通用认知；凤心OS处理五行人格专项；两者不互相嵌套</td>
+</tr>
+<tr>
+<td>L7知识调用不准确</td>
+<td>知识标签不规范</td>
+<td>统一标签体系，每篇都加五行标签+场景标签+L7根系标签</td>
+</tr>
+<tr>
+<td>IMA无法执行</td>
+<td>Windows权限问题</td>
+<td>手动运行Python脚本，或直接使用IMA网页端</td>
+</tr>
+<tr>
+<td>分智能体分析不准确</td>
+<td>L7根系不够深</td>
+<td>回到L7，补充该行人格的详细内容，特别是九层阶梯和转化技术</td>
+</tr>
+<tr>
+<td>系统越来越复杂难维护</td>
+<td>没有统一的文档索引</td>
+<td>用<code>📚 五行人格心理学总索引.md</code>做统一入口，每次新增文档都更新索引</td>
+</tr>
+<tr>
+<td>用户反馈不准确</td>
+<td>缺乏反馈闭环</td>
+<td>每次分析后收集用户打分，用于优化感知矩阵的分值权重</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>💎 核心原则总结（给搭建者的叮嘱）</h2>
+<pre><code>1. 根深叶茂    ：L7根系是一切的前提，不要急着搭上层架构
+2. MVP迭代    ：L7每5篇就出一个可验证的版本，而不是等全部完成
+3. 先测权限    ：IMA/CLI等工具第0天就测试好，有问题立刻解决
+4. 命名统一    ：第0天定好命名规范，全程不改，禁止别名
+5. 边界清晰    ：第0天画好龙心OS和凤心OS的边界图，之后严格遵守
+6. 知行合一    ：每天的工作都要沉淀到记忆系统（日志+MEMORY.md+Obsidian）
+7. 不要孤立    ：每篇L7文章都要强制寻找跨域联系，建立知识网络而非知识孤岛
+8. 测试驱动    ：三个MVP节点各有验收测试，不通过不进入下一阶段</code></pre>
+<hr>
+<h2>🔗 关联文档</h2>
+<ul>
+<li><a href="龙心OS 龙脑操作系统.html">龙心OS 龙脑操作系统</a></li>
+<li><a href="凤心OS 发动机.html">凤心OS 发动机</a></li>
+<li><a href="🌟 L1·一心·统摄·庄子三无人格与圣人特征体系.html">🌟 L1·一心·统摄·庄子三无人格与圣人特征体系</a></li>
+<li><a href="🌟 L1·一心·统摄·一心即纯粹觉性本体论与修证体系.html">🌟 L1·一心·统摄·一心即纯粹觉性本体论与修证体系</a></li>
+<li><a href="🌐 知识图谱.html">🌐 知识图谱</a>（联系1-130）</li>
+<li><a href="AI龙龟共生伙伴操作系统 v4.1.html">AI龙龟共生伙伴操作系统 v4.1</a></li>
+<li><a href="📚 五行人格心理学总索引.html">📚 五行人格心理学总索引</a></li>
+</ul>
+<hr>
+<p><strong>文档版本</strong>：v1.0
+<strong>创建日期</strong>：2026-03-30
+<strong>作者</strong>：龙龟神将（基于悟空×龙龟神将联合复盘提炼）
+<strong>下次更新</strong>：完成第一次他人复现搭建后，根据反馈迭代至v1.1
+<strong>同步状态</strong>：WorkBuddy ✅ | Obsidian ✅ | 桌面 ✅</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

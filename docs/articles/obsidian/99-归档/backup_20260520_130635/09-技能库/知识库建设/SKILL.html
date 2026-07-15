@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>📚 知识库建设 · 三层架构设计与实施指南 - 以观其妙书院</title>
+<meta name="description" content="📚 知识库建设 · 三层架构设计与实施指南 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="📚 知识库建设 · 三层架构设计与实施指南">
+<meta property="og:description" content="📚 知识库建设 · 三层架构设计与实施指南 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "📚 知识库建设 · 三层架构设计与实施指南",
+    "description": "📚 知识库建设 · 三层架构设计与实施指南 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>📚 知识库建设 · 三层架构设计与实施指南</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>📚 知识库建设 · 三层架构设计与实施指南</h1>
+<blockquote><p><strong>核心定位</strong>：基于Karpathy LLM Wiki方法论的三层知识库架构设计，实现Obsidian/WorkBuddy/IMA三库协同，支撑AI系统专业化。
+<strong>版本</strong>：v1.0 | <strong>创建日期</strong>：2026-04-09 | <strong>维护者</strong>：龙龟神将</p></blockquote>
+<hr>
+<h2>📖 核心定义</h2>
+<h3>What（是什么）</h3>
+<p>知识库建设是一套基于<strong>LLM Wiki（LLMification）</strong>方法论的三层知识库架构设计与实施指南。它将知识管理从"人类编写、机器检索"转变为"机器编译、人类审核"，构建具有持久记忆与自我进化能力的AI原生知识库。</p>
+<p><strong>核心公式</strong>：</p>
+<pre><code>专业化AI系统 = 70%知识库质量 + 30%工程化实现</code></pre>
+<h3>Why（为什么）</h3>
+<p><strong>传统知识管理的三大困境</strong>：</p>
+<ol>
+<li><strong>失忆缺陷</strong> — 每次对话从零开始，会话结束即记忆清空</li>
+<li><strong>信息孤岛</strong> — 多个知识库分散，缺乏统一架构</li>
+<li><strong>静态沉淀</strong> — 知识只进不出，无法自我进化</li>
+</ol>
+<p><strong>LLM Wiki范式的突破</strong>：</p>
+<ul>
+<li>✅ 知识只需编译一次，持续复用与迭代</li>
+<li>✅ 从"检索-生成"升级为"调用-执行"</li>
+<li>✅ 知识库随使用而不断增厚（复利效应）</li>
+</ul>
+<h3>How（怎么做）</h3>
+<p><strong>一句话工作流</strong>：</p>
+<pre><code>现状诊断 → 分层定位 → 架构设计 → 流动管道 → 工具配置 → 自动化脚本 → 持续进化</code></pre>
+<p><strong>三层知识库架构</strong>：</p>
+<ul>
+<li>🏛️ <strong>Obsidian</strong> = 知识资产层（长期理论沉淀）— 土·承载</li>
+<li>⚡ <strong>WorkBuddy</strong> = 工作记忆层（AI实时调用）— 火·转化</li>
+<li>📱 <strong>IMA</strong> = 快速捕获层（移动端闪念记录）— 水·流动</li>
+</ul>
+<hr>
+<h2>⚡ 触发条件</h2>
+<h3>P0·直接触发词（权重5·绝对触发）</h3>
+<ul>
+<li>"知识库建设"</li>
+<li>"构建知识库"</li>
+<li>"三库配合"</li>
+<li>"Obsidian WorkBuddy IMA"</li>
+<li>"LLM Wiki"</li>
+<li>"知识库专业化"</li>
+<li>"知识库架构"</li>
+<li>"知识库如何配合"</li>
+</ul>
+<h3>P1·场景触发词（权重4·强触发）</h3>
+<ul>
+<li>"如何整合多个知识库"</li>
+<li>"知识库分散问题"</li>
+<li>"AI系统专业化"</li>
+<li>"知识管理优化"</li>
+<li>"知识库同步"</li>
+<li>"知识库分层"</li>
+</ul>
+<h3>P2·信号触发词（权重3·弱触发）</h3>
+<ul>
+<li>提到"三个知识库"</li>
+<li>提到"知识库配合/协同"</li>
+<li>提到"Karpathy"或"LLMification"</li>
+<li>提到"知识库专业化"</li>
+</ul>
+<hr>
+<h2>🎯 核心流程</h2>
+<h3>7步实施流程</h3>
+<h4>Step 1: 现状诊断（10分钟）</h4>
+<p><strong>目标</strong>：评估当前三库使用状况与问题</p>
+<p><strong>诊断清单</strong>：</p>
+<pre><code>Obsidian诊断:
+  - 目录结构是否清晰？
+  - 双向链接是否完善？
+  - 知识图谱是否可视化？
+  - 内容更新频率如何？
+
+WorkBuddy诊断:
+  - Skills包是否完整？
+  - 自动触发规则是否精准？
+  - 身份文件是否最新？
+  - 与Obsidian同步机制如何？
+
+IMA诊断:
+  - 使用频率如何？
+  - 内容类型分布？
+  - 定期整理机制是否建立？
+  - API配置是否正常？</code></pre>
+<p><strong>输出</strong>：现状诊断报告（问题清单 + 优先级排序）</p>
+<hr>
+<h4>Step 2: 分层定位（15分钟）</h4>
+<p><strong>目标</strong>：明确三库的专业分工</p>
+<p><strong>三层架构定义</strong>：</p>
+<pre><code>┌─────────────────────────────────────────────────────────┐
+│                    三层知识库架构                          │
+├─────────────────────────────────────────────────────────┤
+│                                                         │
+│  🏛️ 第一层：Obsidian（主知识库·知识资产层）               │
+│  ├─ 定位：结构化知识沉淀、理论体系、长期资产              │
+│  ├─ 内容：L7理论基石、五行人格完整理论、象思维体系        │
+│  ├─ 特点：双向链接、图谱可视化、Markdown标准格式          │
+│  └─ 五行属性：土·承载·稳定·信实                          │
+│                                                         │
+│  ⚡ 第二层：WorkBuddy Brain（工作记忆层）                 │
+│  ├─ 定位：AI上下文记忆、Skills配置、系统指令              │
+│  ├─ 内容：Skills包、自动触发规则、IDENTITY/USER/SOUL      │
+│  ├─ 特点：AI原生、实时加载、与对话上下文无缝集成          │
+│  └─ 五行属性：火·转化·光明·礼明                          │
+│                                                         │
+│  📱 第三层：IMA（移动笔记·快速捕获层）                    │
+│  ├─ 定位：碎片化信息快速记录、移动端访问                  │
+│  ├─ 内容：灵感闪念、待办事项、临时笔记、语音转文字        │
+│  ├─ 特点：移动端优先、快速录入、轻量化                    │
+│  └─ 五行属性：水·流动·智慧·润泽                          │
+│                                                         │
+└─────────────────────────────────────────────────────────┘</code></pre>
+<p><strong>决策规则</strong>：</p>
+<ul>
+<li>理论/长期资产 → Obsidian（土）</li>
+<li>Skills/系统指令 → WorkBuddy（火）</li>
+<li>闪念/待办 → IMA（水）</li>
+</ul>
+<hr>
+<h4>Step 3: 架构设计（20分钟）</h4>
+<p><strong>目标</strong>：设计LLM Wiki三层结构</p>
+<p><strong>LLM Wiki核心架构</strong>（Karpathy方法论）：</p>
+<pre><code>┌─────────────────────────────────────────────────────────┐
+│                  LLM Wiki 三层架构                        │
+├─────────────────────────────────────────────────────────┤
+│                                                         │
+│  📁 第一层：原始资料层（raw/）                            │
+│  ├─ 定位：只读的事实来源，确保不可篡改                    │
+│  ├─ 内容：文章、论文、代码库、数据集、图片                │
+│  ├─ 摄取：Obsidian Web Clipper快速保存                   │
+│  └─ 关键：图片本地化，解决LLM引用问题                     │
+│                                                         │
+│  📖 第二层：Wiki本体层（LLM维护）                         │
+│  ├─ 定位：结构化Markdown，横亘在用户与原始资料之间        │
+│  ├─ 内容：摘要页面、实体页面、概念页面、对比分析          │
+│  ├─ 维护：LLM自动生成和更新，用户审核                     │
+│  └─ 关键：深度结构化，保留语义信息                        │
+│                                                         │
+│  ⚙️ 第三层：Schema配置层（CLAUDE.md）                     │
+│  ├─ 定位：定义Wiki结构规范与维护规则                      │
+│  ├─ 内容：目录结构、命名规范、更新策略、质量标准          │
+│  ├─ 作用：LLM的"系统指令"，确保有纪律的知识管理          │
+│  └─ 关键：机器的行为准则，保证一致性                      │
+│                                                         │
+└─────────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h4>Step 4: 流动管道设计（20分钟）</h4>
+<p><strong>目标</strong>：建立知识在三库间的流转机制</p>
+<p><strong>知识流动管道</strong>：</p>
+<pre><code>┌─────────────────────────────────────────────────────────┐
+│                  知识流动管道设计                          │
+├─────────────────────────────────────────────────────────┤
+│                                                         │
+│  流向①：IMA → Obsidian（定期整理）                       │
+│  ├── 触发：每周/每月批量整理                              │
+│  ├── 处理：提炼结构化知识，存入Obsidian对应目录           │
+│  └── 示例：临时灵感 → 整理为理论文章 → 存入Obsidian       │
+│                                                         │
+│  流向②：Obsidian → WorkBuddy（系统同步）                 │
+│  ├── 触发：Skills更新、Rule更新、身份配置更新             │
+│  ├── 处理：将理论转化为可执行的Skills和Rules              │
+│  └── 示例：五行人格理论 → 封装为五行总智能体Skill         │
+│                                                         │
+│  流向③：WorkBuddy → Obsidian（知行合一沉淀）             │
+│  ├── 触发：每次深度对话后自动执行                         │
+│  ├── 处理：对话洞察 → 压缩 → 泛化 → 存入Obsidian          │
+│  └── 示例：对话新发现 → 沉淀为知识卡片 → 更新知识图谱     │
+│                                                         │
+│  流向④：IMA ↔ WorkBuddy（实时同步）                      │
+│  ├── 触发：通过API实时同步                                │
+│  ├── 处理：移动端记录 ↔ AI对话上下文                      │
+│  └── 示例：IMA记录待办 → AI对话中提醒 → 完成后归档        │
+│                                                         │
+└─────────────────────────────────────────────────────────┘</code></pre>
+<p><strong>五行相生隐喻</strong>：</p>
+<ul>
+<li>水（IMA）→ 木（整理生长）→ 火（WorkBuddy转化）→ 土（Obsidian沉淀）→ 金（方法论提炼）→ 水（新灵感）</li>
+</ul>
+<hr>
+<h4>Step 5: 工具配置（15分钟）</h4>
+<p><strong>目标</strong>：配置三库协同的工具链</p>
+<p><strong>工具清单</strong>：</p>
+<table>
+<thead><tr>
+<th>工具</th>
+<th>用途</th>
+<th>配置要点</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Obsidian Web Clipper</strong></td>
+<td>网页内容快速捕获</td>
+<td>保存为Markdown，图片本地化</td>
+</tr>
+<tr>
+<td><strong>Obsidian CLI</strong></td>
+<td>命令行操作Obsidian</td>
+<td>设置默认仓库，批量操作</td>
+</tr>
+<tr>
+<td><strong>IMA API</strong></td>
+<td>与WorkBuddy实时同步</td>
+<td>Client ID + API Key配置</td>
+</tr>
+<tr>
+<td><strong>Git</strong></td>
+<td>版本控制与备份</td>
+<td>定期commit，远程备份</td>
+</tr>
+</tbody></table>
+<p><strong>配置模板</strong>：</p>
+<pre><code># IMA API配置
+ima_config:
+  client_id: "your-client-id"
+  api_key: "your-api-key"
+  base_url: "https://ima.qq.com"
+  sync_frequency: "realtime"  # realtime/daily/weekly
+
+# Obsidian CLI配置
+obsidian_config:
+  default_vault: "观其妙书院"
+  vault_path: "D:/以观其妙书院知识库/观其妙书院"
+  
+# 同步规则
+sync_rules:
+  ima_to_obsidian:
+    trigger: "weekly"
+    filter: "tag:待整理"
+    target_folder: "04-个人成长/闪念整理"
+  
+  obsidian_to_workbuddy:
+    trigger: "on_skill_update"
+    source_folder: "01-核心体系"
+    target: "~/.workbuddy/skills/"</code></pre>
+<hr>
+<h4>Step 6: 自动化脚本（20分钟）</h4>
+<p><strong>目标</strong>：开发三库同步与定期整理自动化机制</p>
+<p><strong>脚本清单</strong>：</p>
+<ol>
+<li><strong>IMA定期整理脚本</strong> (<code>ima_sync.py</code>)<ul>
+<li>功能：批量导出IMA笔记，按标签分类</li>
+<li>触发：每周日执行</li>
+<li>输出：整理后的Markdown文件</li>
+</ul></li>
+<li><strong>Obsidian→WorkBuddy同步脚本</strong> (<code>obsidian_to_workbuddy.py</code>)<ul>
+<li>功能：监控Obsidian变更，自动同步到WorkBuddy</li>
+<li>触发：文件变更时</li>
+<li>输出：更新Skills和Rules</li>
+</ul></li>
+<li><strong>知识库健康检查脚本</strong> (<code>health_check.py</code>)<ul>
+<li>功能：检查孤立页面、缺失链接、过期内容</li>
+<li>触发：每月执行</li>
+<li>输出：健康检查报告</li>
+</ul></li>
+</ol>
+<p><strong>自动化工作流</strong>：</p>
+<pre><code>每日:
+  - IMA ↔ WorkBuddy 实时同步
+  
+每周:
+  - IMA → Obsidian 批量整理
+  - 生成知识库使用报告
+  
+每月:
+  - 知识库健康检查
+  - 孤立页面清理
+  - 知识图谱更新</code></pre>
+<hr>
+<h4>Step 7: 持续进化（持续）</h4>
+<p><strong>目标</strong>：建立知识库自我修复与进化机制</p>
+<p><strong>PDCA循环</strong>：</p>
+<pre><code>┌─────────────────────────────────────────────────────────┐
+│              知识库持续进化机制                            │
+├─────────────────────────────────────────────────────────┤
+│                                                         │
+│  PLAN（计划）                                            │
+│  ├── 短期（1个月）：明确三库边界，建立同步机制            │
+│  ├── 中期（3个月）：自动化流转管道，案例库建设            │
+│  └── 长期（6个月）：AI驱动的知识自组织系统                │
+│                                                         │
+│  DO（执行）                                              │
+│  ├── 每日：实时同步，对话沉淀                            │
+│  ├── 每周：批量整理，知识归档                            │
+│  └── 每月：健康检查，结构优化                            │
+│                                                         │
+│  CHECK（检查）                                           │
+│  ├── 知识检索效率：找到特定知识的时间                     │
+│  ├── AI触发准确率：Skills被正确调用的比例                 │
+│  ├── 知识复用率：同一知识被多次调用的频率                 │
+│  └── 用户满意度：使用三库的整体体验                       │
+│                                                         │
+│  ACT（改进）                                             │
+│  ├── 根据使用数据优化目录结构                             │
+│  ├── 根据AI对话质量优化Skills内容                         │
+│  └── 根据同步效率优化自动化脚本                           │
+│                                                         │
+└─────────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>🔗 与现有Skills的协作</h2>
+<h3>前置Skills</h3>
+<table>
+<thead><tr>
+<th>Skills</th>
+<th>何时调用</th>
+<th>原因</th>
+</tr></thead><tbody>
+<tr>
+<td>📚 <strong>知识学习</strong></td>
+<td>需要深度学习Karpathy理论时</td>
+<td>用十项认知指令理解LLM Wiki方法论</td>
+</tr>
+<tr>
+<td>🌈 <strong>五色光思维</strong></td>
+<td>复杂架构决策时</td>
+<td>多维度分析三库配合策略</td>
+</tr>
+<tr>
+<td>🐉 <strong>象思维</strong></td>
+<td>需要0→1创新设计时</td>
+<td>原创性知识架构设计</td>
+</tr>
+</tbody></table>
+<h3>后置Skills</h3>
+<table>
+<thead><tr>
+<th>Skills</th>
+<th>何时调用</th>
+<th>原因</th>
+</tr></thead><tbody>
+<tr>
+<td>🔄 <strong>知行合一</strong></td>
+<td>知识库建设完成后</td>
+<td>沉淀建设经验，持续优化</td>
+</tr>
+<tr>
+<td>📖 <strong>LLM-Wiki</strong></td>
+<td>需要具体执行知识编译时</td>
+<td>LLM-Wiki是具体执行工具</td>
+</tr>
+</tbody></table>
+<h3>协同关系</h3>
+<pre><code>知识库建设（架构设计指南）
+    ↓ 指导
+LLM-Wiki（具体执行工具）
+    ↓ 产出
+结构化知识库
+    ↓ 支撑
+AI OS / 五行人格OS 专业化</code></pre>
+<hr>
+<h2>📊 专业化评估指标</h2>
+<h3>AI龙龟共生伙伴OS专业化指标</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>当前状态</th>
+<th>目标状态</th>
+<th>知识库支撑</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>理论深度</strong></td>
+<td>五大引擎框架完整</td>
+<td>每个引擎有完整理论体系</td>
+<td>Obsidian：每个引擎独立理论文档</td>
+</tr>
+<tr>
+<td><strong>触发精准</strong></td>
+<td>关键词触发</td>
+<td>上下文感知触发</td>
+<td>WorkBuddy：优化trigger-rules.yaml</td>
+</tr>
+<tr>
+<td><strong>执行稳定</strong></td>
+<td>偶尔手动干预</td>
+<td>全自动运行</td>
+<td>WorkBuddy：完善错误处理机制</td>
+</tr>
+<tr>
+<td><strong>进化持续</strong></td>
+<td>手动知行合一</td>
+<td>自动沉淀+定期复盘</td>
+<td>三库协同：对话→WorkBuddy→Obsidian</td>
+</tr>
+</tbody></table>
+<h3>五行人格心理学OS专业化指标</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>当前状态</th>
+<th>目标状态</th>
+<th>知识库支撑</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>理论地基</strong></td>
+<td>L7理论基石17篇</td>
+<td>完整五行人格百科全书</td>
+<td>Obsidian：凤脑OS知识地基</td>
+</tr>
+<tr>
+<td><strong>诊断准确</strong></td>
+<td>基于规则判断</td>
+<td>基于案例学习+模式识别</td>
+<td>WorkBuddy：积累诊断案例库</td>
+</tr>
+<tr>
+<td><strong>干预有效</strong></td>
+<td>通用转化技术</td>
+<td>个性化精准干预</td>
+<td>Obsidian：分五行、分场景干预方案</td>
+</tr>
+<tr>
+<td><strong>发展持续</strong></td>
+<td>静态九层模型</td>
+<td>动态成长路径</td>
+<td>三库协同：个案追踪→模式提炼→理论更新</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>💡 核心原则</h2>
+<h3>✅ 必须遵守</h3>
+<ol>
+<li><strong>分层清晰</strong><ul>
+<li>✅ 每个知识库有明确的专业分工</li>
+<li>❌ 不能让三个库都有"全部内容"的倾向</li>
+</ul></li>
+<li><strong>流动畅通</strong><ul>
+<li>✅ 建立知识流转管道，避免信息孤岛</li>
+<li>❌ 不能依赖人工同步，必须自动化</li>
+</ul></li>
+<li><strong>质量优先</strong><ul>
+<li>✅ 知识结构化程度决定AI专业化程度</li>
+<li>❌ 不能只追求数量，忽视质量</li>
+</ul></li>
+<li><strong>持续进化</strong><ul>
+<li>✅ 知识库随使用而不断增厚（复利效应）</li>
+<li>❌ 不能"一次性建设"就停止</li>
+</ul></li>
+<li><strong>人机协同</strong><ul>
+<li>✅ "机器编译、人类审核"的高效协作</li>
+<li>❌ 不能完全依赖AI，也不能完全人工</li>
+</ul></li>
+</ol>
+<h3>🚫 禁止做法</h3>
+<ul>
+<li>❌ 把三个知识库当成"备份关系"（内容重复）</li>
+<li>❌ 忽视IMA的定期整理（导致知识流失）</li>
+<li>❌ 跳过Schema配置层（导致结构混乱）</li>
+<li>❌ 没有自动化同步机制（依赖人工）</li>
+<li>❌ 不建立健康检查机制（知识库僵化）</li>
+</ul>
+<hr>
+<h2>📚 关联文档</h2>
+<h3>核心参考</h3>
+<ul>
+<li><code>references/llm-wiki-theory.md</code> - LLM Wiki理论完整版</li>
+<li><code>references/three-vault-architecture.md</code> - 三库架构详解</li>
+<li><code>references/sync-mechanism.md</code> - 同步机制与自动化脚本</li>
+</ul>
+<h3>使用指南</h3>
+<ul>
+<li><code>templates/diagnosis-template.md</code> - 现状诊断模板</li>
+<li><code>templates/architecture-template.md</code> - 架构设计模板</li>
+<li><code>templates/automation-scripts.md</code> - 自动化脚本模板</li>
+</ul>
+<h3>配置示例</h3>
+<ul>
+<li><code>triggers/trigger-rules.yaml</code> - 自动触发规则配置</li>
+</ul>
+<hr>
+<h2>🎯 版本迭代</h2>
+<table>
+<thead><tr>
+<th>版本</th>
+<th>时间</th>
+<th>改动点</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>v1.0</strong></td>
+<td>2026-04-09</td>
+<td>初始版本：三层架构 + 七步流程 + 三库协同</td>
+</tr>
+<tr>
+<td><strong>v1.1</strong></td>
+<td>📅 2026-05-01</td>
+<td>增强：自动化脚本库 + 健康检查机制</td>
+</tr>
+<tr>
+<td><strong>v2.0</strong></td>
+<td>📅 2026-06-01</td>
+<td>进阶：AI驱动的知识自组织系统</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🚀 快速开始</h2>
+<h3>立即使用</h3>
+<pre><code>用户输入：
+"我有Obsidian、WorkBuddy、IMA三个知识库，
+ 如何配合才能支撑AI OS和五行人格OS的专业化？"
+
+我的响应：
+  ✅ 自动进入知识库建设流程
+  ✅ 按7步流程逐步完成
+  ✅ 输出完整架构方案 + 实施路线图</code></pre>
+<h3>典型场景</h3>
+<p><strong>场景1：初次建设</strong></p>
+<pre><code>输入："我要从零开始建设三库协同的知识库"
+输出：完整7步实施指南 + 目录结构模板 + 工具配置清单</code></pre>
+<p><strong>场景2：优化现有</strong></p>
+<pre><code>输入："我的知识库很分散，如何优化？"
+输出：现状诊断报告 + 优化建议 + 自动化同步方案</code></pre>
+<p><strong>场景3：专业化升级</strong></p>
+<pre><code>输入："如何让我的AI OS更专业？"
+输出：专业化评估 + 知识库升级路径 + 持续进化机制</code></pre>
+<hr>
+<p><strong>知识库建设 v1.0</strong> · <strong>龙龟神将</strong>  
+<em>让知识活起来——能被AI理解、能被快速检索、能持续进化、能产生复利</em> 📚🔥</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

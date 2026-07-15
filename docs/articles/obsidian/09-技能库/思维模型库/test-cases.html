@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>思维模型库 · 测试用例文档 - 以观其妙书院</title>
+<meta name="description" content="思维模型库 · 测试用例文档 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="思维模型库 · 测试用例文档">
+<meta property="og:description" content="思维模型库 · 测试用例文档 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "思维模型库 · 测试用例文档",
+    "description": "思维模型库 · 测试用例文档 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>思维模型库 · 测试用例文档</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>思维模型库 · 测试用例文档</h1>
+<blockquote><p><strong>版本</strong>: v1.0  
+<strong>创建</strong>: 2026-04-09  
+<strong>维护者</strong>: 龙龟神将</p></blockquote>
+<hr>
+<h2>测试覆盖概览</h2>
+<table>
+<thead><tr>
+<th>测试类型</th>
+<th>用例数</th>
+<th>状态</th>
+</tr></thead><tbody>
+<tr>
+<td>功能测试</td>
+<td>3个</td>
+<td>✅ 待执行</td>
+</tr>
+<tr>
+<td>集成测试</td>
+<td>2个</td>
+<td>✅ 待执行</td>
+</tr>
+<tr>
+<td>场景测试</td>
+<td>3个</td>
+<td>✅ 待执行</td>
+</tr>
+<tr>
+<td><strong>总计</strong></td>
+<td><strong>8个</strong></td>
+<td>-</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>一、功能测试</h2>
+<h3>TC-001：单模型调用测试</h3>
+<p><strong>测试目标</strong>: 验证单个思维模型的调用和输出</p>
+<p><strong>测试步骤</strong>:</p>
+<ol>
+<li>用户输入："用SWOT分析一下我的副业项目"</li>
+<li>龙心OS识别场景 → 路由到思维模型库</li>
+<li>调用SWOT模型</li>
+<li>检查输出格式和内容</li>
+</ol>
+<p><strong>预期结果</strong>:</p>
+<ul>
+<li>✅ 正确识别SWOT模型</li>
+<li>✅ 输出包含：原理阐释、操作步骤、AI结合方案、行动建议</li>
+<li>✅ 格式符合标准模板</li>
+<li>✅ 响应时间 &lt; 5秒</li>
+</ul>
+<p><strong>测试数据</strong>:</p>
+<pre><code>输入："用SWOT分析一下我的副业项目"
+预期输出：SWOT四象限分析 + AI结合方案</code></pre>
+<hr>
+<h3>TC-002：阶段套件调用测试</h3>
+<p><strong>测试目标</strong>: 验证阶段套件的调用和输出</p>
+<p><strong>测试步骤</strong>:</p>
+<ol>
+<li>用户输入："我想系统提升底层思维能力"</li>
+<li>龙心OS识别场景 → 路由到思维模型库</li>
+<li>调用第一阶段套件</li>
+<li>检查输出完整性</li>
+</ol>
+<p><strong>预期结果</strong>:</p>
+<ul>
+<li>✅ 正确识别第一阶段</li>
+<li>✅ 输出15个模型全景图</li>
+<li>✅ 提供学习路径建议</li>
+<li>✅ 响应时间 &lt; 10秒</li>
+</ul>
+<p><strong>测试数据</strong>:</p>
+<pre><code>输入："我想系统提升底层思维能力"
+预期输出：第一阶段15个模型列表 + 学习建议</code></pre>
+<hr>
+<h3>TC-003：多模型组合测试</h3>
+<p><strong>测试目标</strong>: 验证多模型组合的调用和整合输出</p>
+<p><strong>测试步骤</strong>:</p>
+<ol>
+<li>用户输入："我想进入新市场，帮我全面分析一下"</li>
+<li>龙心OS识别场景 → 路由到思维模型库</li>
+<li>调用组合：波特五力 + SWOT + PEST</li>
+<li>检查整合输出</li>
+</ol>
+<p><strong>预期结果</strong>:</p>
+<ul>
+<li>✅ 正确识别需要组合分析</li>
+<li>✅ 选择恰当的模型组合</li>
+<li>✅ 输出综合洞察和行动方案</li>
+<li>✅ 响应时间 &lt; 15秒</li>
+</ul>
+<p><strong>测试数据</strong>:</p>
+<pre><code>输入："我想进入新市场，帮我全面分析一下"
+预期输出：五力+SWOT+PEST综合分析报告</code></pre>
+<hr>
+<h2>二、集成测试</h2>
+<h3>TC-004：与龙心OS五大引擎协同测试</h3>
+<p><strong>测试目标</strong>: 验证与五大引擎的协同工作</p>
+<p><strong>测试步骤</strong>:</p>
+<ol>
+<li>用户输入复杂决策问题</li>
+<li>龙心OS调用思维模型库 + 象思维 + 五色光</li>
+<li>检查协同输出</li>
+</ol>
+<p><strong>预期结果</strong>:</p>
+<ul>
+<li>✅ 象思维提供0→1洞察</li>
+<li>✅ 思维模型库提供1→N分析</li>
+<li>✅ 五色光进行多维度验证</li>
+<li>✅ 输出整合一致</li>
+</ul>
+<p><strong>测试数据</strong>:</p>
+<pre><code>输入："我要做一个重大战略决策，需要全面分析"
+预期协同：象思维+思维模型库+五色光联合输出</code></pre>
+<hr>
+<h3>TC-005：与麦肯锡思考框架互补测试</h3>
+<p><strong>测试目标</strong>: 验证与麦肯锡框架的互补关系</p>
+<p><strong>测试步骤</strong>:</p>
+<ol>
+<li>用户输入需要西方分析工具的问题</li>
+<li>检查思维模型库和麦肯锡框架的调用决策</li>
+<li>验证无冲突</li>
+</ol>
+<p><strong>预期结果</strong>:</p>
+<ul>
+<li>✅ 思维模型库覆盖更广（东方+AI时代）</li>
+<li>✅ 麦肯锡框架专注西方商业工具</li>
+<li>✅ 两者互补不冲突</li>
+<li>✅ 根据场景选择最合适的工具</li>
+</ul>
+<p><strong>测试数据</strong>:</p>
+<pre><code>输入："用MECE帮我拆解问题"
+预期：思维模型库响应（MECE在第一阶）
+输入："用波特五力分析竞争"
+预期：思维模型库响应（五力在第二阶）</code></pre>
+<hr>
+<h2>三、场景测试</h2>
+<h3>TC-006：S4分析决策场景测试</h3>
+<p><strong>测试目标</strong>: 验证S4场景下的模型调用</p>
+<p><strong>测试步骤</strong>:</p>
+<ol>
+<li>模拟S4场景用户输入</li>
+<li>检查龙心OS路由决策</li>
+<li>验证思维模型库调用</li>
+</ol>
+<p><strong>预期结果</strong>:</p>
+<ul>
+<li>✅ 正确识别S4场景</li>
+<li>✅ 调用决策类模型组合</li>
+<li>✅ 与五色光思维协同</li>
+</ul>
+<p><strong>测试数据</strong>:</p>
+<pre><code>输入："我该选择A方案还是B方案？"
+预期路由：S4 → 思维模型库（决策矩阵+利弊法）+ 五色光</code></pre>
+<hr>
+<h3>TC-007：S7系统规划场景测试</h3>
+<p><strong>测试目标</strong>: 验证S7场景下的全阶段调用</p>
+<p><strong>测试步骤</strong>:</p>
+<ol>
+<li>模拟S7场景用户输入</li>
+<li>检查龙心OS路由决策</li>
+<li>验证全六阶段模型调用</li>
+</ol>
+<p><strong>预期结果</strong>:</p>
+<ul>
+<li>✅ 正确识别S7场景</li>
+<li>✅ 调用全六阶段模型</li>
+<li>✅ 与象思维+五色光协同</li>
+</ul>
+<p><strong>测试数据</strong>:</p>
+<pre><code>输入："帮我规划未来三年的个人发展战略"
+预期路由：S7 → 全六阶段模型 + 象思维 + 五色光</code></pre>
+<hr>
+<h3>TC-008：S0简单问答场景测试</h3>
+<p><strong>测试目标</strong>: 验证S0场景不触发思维模型库</p>
+<p><strong>测试步骤</strong>:</p>
+<ol>
+<li>模拟S0场景用户输入</li>
+<li>检查龙心OS路由决策</li>
+<li>验证不调用思维模型库</li>
+</ol>
+<p><strong>预期结果</strong>:</p>
+<ul>
+<li>✅ 正确识别S0场景</li>
+<li>✅ 直接回答，不调用思维模型库</li>
+<li>✅ 响应快速简洁</li>
+</ul>
+<p><strong>测试数据</strong>:</p>
+<pre><code>输入："今天天气怎么样？"
+预期路由：S0 → 直接回答，不调用思维模型库</code></pre>
+<hr>
+<h2>四、性能测试</h2>
+<h3>TC-009：响应时间测试</h3>
+<table>
+<thead><tr>
+<th>调用类型</th>
+<th>目标时间</th>
+<th>最大时间</th>
+<th>测试方法</th>
+</tr></thead><tbody>
+<tr>
+<td>单模型快速</td>
+<td>&lt; 3秒</td>
+<td>&lt; 5秒</td>
+<td>10次取平均</td>
+</tr>
+<tr>
+<td>单模型标准</td>
+<td>&lt; 5秒</td>
+<td>&lt; 10秒</td>
+<td>10次取平均</td>
+</tr>
+<tr>
+<td>多模型组合</td>
+<td>&lt; 15秒</td>
+<td>&lt; 30秒</td>
+<td>5次取平均</td>
+</tr>
+<tr>
+<td>阶段套件</td>
+<td>&lt; 10秒</td>
+<td>&lt; 20秒</td>
+<td>5次取平均</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>五、质量六标准检查</h2>
+<table>
+<thead><tr>
+<th>标准</th>
+<th>检查项</th>
+<th>及格线</th>
+<th>测试结果</th>
+</tr></thead><tbody>
+<tr>
+<td>① 核心定义清晰</td>
+<td>What/Why/How一句话可说清</td>
+<td>✅ 能用不超过3句话解释</td>
+<td>待验证</td>
+</tr>
+<tr>
+<td>② 操作流程完整</td>
+<td>使用者能自主完成所有步骤</td>
+<td>✅ 提供详细SOP + 2个案例</td>
+<td>待验证</td>
+</tr>
+<tr>
+<td>③ 触发机制准确</td>
+<td>自动触发的关键词命中率</td>
+<td>✅ 测试≥85%准确率</td>
+<td>待验证</td>
+</tr>
+<tr>
+<td>④ 文件结构规范</td>
+<td>符合标准目录结构</td>
+<td>✅ 100%符合模板</td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>⑤ 测试用例完整</td>
+<td>至少3个真实场景可复现</td>
+<td>✅ 全部通过功能测试</td>
+<td>待验证</td>
+</tr>
+<tr>
+<td>⑥ 与其他Skills无冲突</td>
+<td>不与现有Skills争抢触发条件</td>
+<td>✅ 协同关系明确</td>
+<td>✅ 通过</td>
+</tr>
+</tbody></table>
+<p><strong>当前状态</strong>: 4/6 通过，2/6 待验证</p>
+<hr>
+<h2>六、测试执行记录</h2>
+<table>
+<thead><tr>
+<th>日期</th>
+<th>测试员</th>
+<th>通过用例</th>
+<th>失败用例</th>
+<th>备注</th>
+</tr></thead><tbody>
+<tr>
+<td>2026-04-09</td>
+<td>龙龟神将</td>
+<td>-</td>
+<td>-</td>
+<td>初始版本，待测试</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>文档版本</strong>: v1.0  
+<strong>最后更新</strong>: 2026-04-09  
+<strong>维护者</strong>: 龙龟神将</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

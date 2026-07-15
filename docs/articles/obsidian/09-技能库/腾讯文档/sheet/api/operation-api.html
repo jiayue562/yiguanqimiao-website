@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Sheet 表格操作参考文档 - 以观其妙书院</title>
+<meta name="description" content="Sheet 表格操作参考文档 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="Sheet 表格操作参考文档">
+<meta property="og:description" content="Sheet 表格操作参考文档 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Sheet 表格操作参考文档",
+    "description": "Sheet 表格操作参考文档 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Sheet 表格操作参考文档</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Sheet 表格操作参考文档</h1>
+<p>本文件包含腾讯文档 MCP 中 Sheet（在线表格）相关工具的完整 API 说明、详细调用示例、参数说明和返回值说明。</p>
+<hr>
+<h2>通用说明</h2>
+<h3>Sheet 工具概述</h3>
+<p>Sheet 工具专门用于操作腾讯文档中的在线表格（Excel格式），提供表格信息的查询、范围数据的获取以及批量更新等功能。</p>
+<h3>响应结构</h3>
+<p>所有 API 返回都包含：</p>
+<ul>
+<li><code>error</code>: 错误信息（成功时为空）</li>
+<li><code>trace_id</code>: 调用链追踪 ID</li>
+</ul>
+<h2>工具调用示例</h2>
+<h2>OperationSheet</h2>
+<h3>功能说明</h3>
+<p>进行表格编辑操作的时候，通过生成对应操作的脚本代码，进行编辑操作。</p>
+<h4>调用示例</h4>
+<pre><code>{
+  "file_id": "doc_1234567890",
+  "js_script": "
+      // 获取当前活动的工作表
+      const sheet = SpreadsheetApp.getActiveSheet();
+      // 设置 A1 单元格的背景颜色为红色
+      const range1 = sheet.getRange("A1");
+      range1.setBackground("#ff0000");
+      // 设置 A1:B2 范围的所有单元格为黄色背景
+      const range2 = sheet.getRange("A1:B2");
+      range2.setBackground("#ffff00");
+  ",
+  "sheet_id": "BB08J2",
+}</code></pre>
+<h4>参数说明</h4>
+<ul>
+<li><code>file_id</code> (string 必填)：在线文档 ID</li>
+<li><code>sheet_id</code> (string 非必填)：表格工作表 ID，如果获取不到，默认为 <code>BB08J2</code></li>
+<li><code>js_script</code> (string 必填)：JavaScript 脚本内容，如上例所示，通过 js-script-rule.md 生成对应脚本</li>
+</ul>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

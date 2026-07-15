@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Troubleshooting Guide - 以观其妙书院</title>
+<meta name="description" content="Troubleshooting Guide - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="Troubleshooting Guide">
+<meta property="og:description" content="Troubleshooting Guide - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Troubleshooting Guide",
+    "description": "Troubleshooting Guide - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Troubleshooting Guide</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Troubleshooting Guide</h1>
+<h2>Caching Issues (v2.7.0+)</h2>
+<h3>Cache not working / always fetching fresh</h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Every request hits the API</li>
+<li><code>"cached": false</code> even for repeated queries</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>Check cache directory exists and is writable:</li>
+<li>Verify <code>--no-cache</code> isn't being passed</li>
+<li>Check disk space isn't full</li>
+<li>Ensure query is EXACTLY the same (including provider and max_results)</li>
+</ol>
+<h3>Stale results from cache</h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Getting outdated information</li>
+<li>Cache TTL seems too long</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>Use <code>--no-cache</code> to force fresh results</li>
+<li>Reduce TTL: <code>--cache-ttl 1800</code> (30 minutes)</li>
+<li>Clear cache: <code>python3 scripts/search.py --clear-cache</code></li>
+</ol>
+<h3>Cache growing too large</h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Disk space filling up</li>
+<li>Many .json files in <code>.cache/</code></li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>Clear cache periodically:</li>
+<li>Set up a cron job to clear weekly</li>
+<li>Use a smaller TTL so entries expire faster</li>
+</ol>
+<h3>"Permission denied" when caching</h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Cache write errors in stderr</li>
+<li>Searches work but don't cache</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>Check directory permissions: <code>chmod 755 .cache/</code></li>
+<li>Use custom cache dir: <code>export WSP_CACHE_DIR="/tmp/wsp-cache"</code></li>
+</ol>
+<hr>
+<h2>Common Issues</h2>
+<h3>"No API key found" error</h3>
+<p><strong>Symptoms:</strong></p>
+<pre><code>Error: No API key found for serper</code></pre>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>Check <code>.env</code> exists in skill folder with <code>export VAR=value</code> format</li>
+<li>Keys auto-load from skill's <code>.env</code> since v2.2.0</li>
+<li>Or set in system environment: <code>export SERPER_API_KEY="..."</code></li>
+<li>Verify key format in config.json:</li>
+</ol>
+<p><strong>Priority order:</strong> config.json &gt; .env &gt; environment variable</p>
+<hr>
+<h3>Getting empty results</h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Search returns no results</li>
+<li><code>"results": []</code> in JSON output</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>Check API key is valid (try the provider's web dashboard)</li>
+<li>Try a different provider with <code>-p</code></li>
+<li>Some queries have no results (very niche topics)</li>
+<li>Check if provider is rate-limited</li>
+<li>Verify internet connectivity</li>
+</ol>
+<p><strong>Debug:</strong></p>
+<pre><code>python3 scripts/search.py -q "test query" --verbose</code></pre>
+<hr>
+<h3>Rate limited</h3>
+<p><strong>Symptoms:</strong></p>
+<pre><code>Error: 429 Too Many Requests
+Error: Rate limit exceeded</code></pre>
+<p><strong>Good news:</strong> Since v2.2.5, automatic fallback kicks in! If one provider hits rate limits, the script automatically tries the next provider.</p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>Wait for rate limit to reset (usually 1 hour or end of day)</li>
+<li>Use a different provider: <code>-p tavily</code> instead of <code>-p serper</code></li>
+<li>Check free tier limits:<ul>
+<li>Serper: 2,500 free total</li>
+<li>Tavily: 1,000/month free</li>
+<li>Exa: 1,000/month free</li>
+</ul></li>
+<li>Upgrade to paid tier for higher limits</li>
+<li>Use SearXNG (self-hosted, unlimited)</li>
+</ol>
+<p><strong>Fallback info:</strong> Response will include <code>routing.fallback_used: true</code> when fallback was used.</p>
+<hr>
+<h3>SearXNG: "403 Forbidden"</h3>
+<p><strong>Symptoms:</strong></p>
+<pre><code>Error: 403 Forbidden
+Error: JSON format not allowed</code></pre>
+<p><strong>Cause:</strong> Most public SearXNG instances disable JSON API to prevent bot abuse.</p>
+<p><strong>Solution:</strong> Self-host your own instance:</p>
+<pre><code>docker run -d -p 8080:8080 searxng/searxng</code></pre>
+<p>Then enable JSON in <code>settings.yml</code>:</p>
+<pre><code>search:
+  formats:
+    - html
+    - json  # Add this!</code></pre>
+<p>Restart the container and update your config:</p>
+<pre><code>{
+  "searxng": {
+    "instance_url": "http://localhost:8080"
+  }
+}</code></pre>
+<hr>
+<h3>SearXNG: Slow responses</h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>SearXNG takes 2-5 seconds</li>
+<li>Other providers are faster</li>
+</ul>
+<p><strong>Explanation:</strong> This is expected behavior. SearXNG queries 70+ upstream engines in parallel, which takes longer than direct API calls.</p>
+<p><strong>Trade-off:</strong> Slower but privacy-preserving + multi-source + $0 cost.</p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>Accept the trade-off for privacy benefits</li>
+<li>Limit engines for faster results:</li>
+<li>Use SearXNG as fallback (put last in priority list)</li>
+</ol>
+<hr>
+<h3>Auto-routing picks wrong provider</h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Query about research goes to Serper</li>
+<li>Query about shopping goes to Tavily</li>
+</ul>
+<p><strong>Debug:</strong></p>
+<pre><code>python3 scripts/search.py --explain-routing -q "your query"</code></pre>
+<p>This shows the full analysis:</p>
+<pre><code>{
+  "query": "how much does iPhone 16 Pro cost",
+  "routing_decision": {
+    "provider": "serper",
+    "confidence": 0.68,
+    "reason": "moderate_confidence_match"
+  },
+  "scores": {"serper": 7.0, "tavily": 0.0, "exa": 0.0},
+  "top_signals": [
+    {"matched": "how much", "weight": 4.0},
+    {"matched": "brand + product detected", "weight": 3.0}
+  ]
+}</code></pre>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>Override with explicit provider: <code>-p tavily</code></li>
+<li>Rephrase query to be more explicit about intent</li>
+<li>Adjust <code>confidence_threshold</code> in config.json (default: 0.3)</li>
+</ol>
+<hr>
+<h3>Config not loading</h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Changes to config.json not applied</li>
+<li>Using default values instead</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>Check JSON syntax (use a validator)</li>
+<li>Ensure file is in skill directory: <code>/path/to/skills/web-search-plus/config.json</code></li>
+<li>Check file permissions</li>
+<li>Run setup wizard to regenerate:</li>
+</ol>
+<p><strong>Validate JSON:</strong></p>
+<pre><code>python3 -m json.tool config.json</code></pre>
+<hr>
+<h3>Python dependencies missing</h3>
+<p><strong>Symptoms:</strong></p>
+<pre><code>ModuleNotFoundError: No module named 'requests'</code></pre>
+<p><strong>Solution:</strong></p>
+<pre><code>pip3 install requests</code></pre>
+<p>Or install all dependencies:</p>
+<pre><code>pip3 install -r requirements.txt</code></pre>
+<hr>
+<h3>Timeout errors</h3>
+<p><strong>Symptoms:</strong></p>
+<pre><code>Error: Request timeout after 30s</code></pre>
+<p><strong>Causes:</strong></p>
+<ul>
+<li>Slow network connection</li>
+<li>Provider API issues</li>
+<li>SearXNG instance overloaded</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>Try again (temporary issue)</li>
+<li>Switch provider: <code>-p serper</code></li>
+<li>Check your internet connection</li>
+<li>If using SearXNG, check instance health</li>
+</ol>
+<hr>
+<h3>Duplicate results</h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Same result appears multiple times</li>
+<li>Results overlap between providers</li>
+</ul>
+<p><strong>Solution:</strong> This is expected when using auto-fallback or multiple providers. The skill doesn't deduplicate across providers.</p>
+<p>For single-provider results:</p>
+<pre><code>python3 scripts/search.py -p serper -q "query"</code></pre>
+<hr>
+<h2>Debug Mode</h2>
+<p>For detailed debugging:</p>
+<pre><code># Verbose output
+python3 scripts/search.py -q "query" --verbose
+
+# Show routing decision
+python3 scripts/search.py -q "query" --explain-routing
+
+# Dry run (no actual search)
+python3 scripts/search.py -q "query" --dry-run
+
+# Test specific provider
+python3 scripts/search.py -p tavily -q "query" --verbose</code></pre>
+<hr>
+<h2>Getting Help</h2>
+<p><strong>Still stuck?</strong></p>
+<ol>
+<li>Check the full documentation in <code>README.md</code></li>
+<li>Run the setup wizard: <code>python3 scripts/setup.py</code></li>
+<li>Review <code>FAQ.md</code> for common questions</li>
+<li>Open an issue: https://github.com/robbyczgw-cla/web-search-plus/issues</li>
+</ol>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

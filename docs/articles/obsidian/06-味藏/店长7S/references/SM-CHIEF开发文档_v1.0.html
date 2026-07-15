@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SM-CHIEF 店长总控Skill智能体 · 完整开发文档 v1.0 - 以观其妙书院</title>
+<meta name="description" content="SM-CHIEF 店长总控Skill智能体 · 完整开发文档 v1.0 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·GE0 v2.0">
+<meta property="og:title" content="SM-CHIEF 店长总控Skill智能体 · 完整开发文档 v1.0">
+<meta property="og:description" content="SM-CHIEF 店长总控Skill智能体 · 完整开发文档 v1.0 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "SM-CHIEF 店长总控Skill智能体 · 完整开发文档 v1.0",
+    "description": "SM-CHIEF 店长总控Skill智能体 · 完整开发文档 v1.0 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>SM-CHIEF 店长总控Skill智能体 · 完整开发文档 v1.0</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>SM-CHIEF 店长总控Skill智能体 · 完整开发文档 v1.0</h1>
+<blockquote><p><strong>副标题</strong>：基于董事长顶层设计 × GM战略解码双重视角的AI生命体开发操作系统</p>
+<p><strong>构建方法</strong>：龙心OS五引擎工业化生产 + Skill Builder 5阶20步标准化流程</p>
+<p><strong>质量评级</strong>：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (10/10 卓越级)</p></blockquote>
+<hr>
+<h2>文档元数据</h2>
+<table>
+<thead><tr>
+<th>属性</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>文档类型</strong></td>
+<td>AI智能体开发规范（非Skill包/非工具箱/非通用助手）= AI生命体</td>
+</tr>
+<tr>
+<td><strong>目标读者</strong></td>
+<td>店长（第一责任人）/ 运营总监 / AI开发团队 / 董事会战略参谋</td>
+</tr>
+<tr>
+<td><strong>核心公式</strong></td>
+<td>SM-CHIEF = CHMN愿景牵引(木) × GM执行穿透(金) × 五步开发法 × 龙心OS五引擎 × 7S全维映射 = 店长的"数字大脑前额叶+灵魂良知"</td>
+</tr>
+<tr>
+<td><strong>版本</strong></td>
+<td>v1.0</td>
+</tr>
+<tr>
+<td><strong>构建日期</strong></td>
+<td>2026-05-22</td>
+</tr>
+<tr>
+<td><strong>关联文档</strong></td>
+<td>董事长顶层设计v3.5 / GM战略解码v2.3 / 日反馈智能体v1.0 / SM-W01周复盘v1.2 / SM-D02营运管理</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>核心定位与设计哲学</h2>
+<h3>1.1 为什么需要店长总控Skill智能体？</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│                    三重痛点诊断                              │
+├─────────────────────────────────────────────────────────────┤
+│ ① 信息过载：店长每天被数据淹没，1.5h日反馈耗时严重         │
+│ ② 判断分散：7个信息交会点缺乏系统化支撑，靠经验拍板       │
+│ ③ 成长瓶颈：从"事务管理者"升维到"战略经营者"缺少数字引擎   │
+│                                                             │
+│ ④ 文化断层：董事长文化意图→总经理战略→店长执行存在衰减     │
+│ ⑤ 数据断裂：日反馈→周复盘→月度会议→战略校准缺乏连续性     │
+│ ⑥ 人才断层：店长能力无法复制，依赖个人英雄主义           │
+└─────────────────────────────────────────────────────────────┘</code></pre>
+<h3>1.2 核心设计哲学（三源合一）</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>董事长视角（木行人）</th>
+<th>GM视角（金行人）</th>
+<th>店长视角（实战）</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>本质</strong></td>
+<td>愿景牵引·文化布道</td>
+<td>执行穿透·结果交付</td>
+<td>问题解决·效率提升</td>
+</tr>
+<tr>
+<td><strong>核心问题</strong></td>
+<td>"这件事是否符合'成就有才（财）之人'？"</td>
+<td>"这件事能否达成36,049,064.23元？"</td>
+<td>"今天怎么做最有效？"</td>
+</tr>
+<tr>
+<td><strong>价值主张</strong></td>
+<td>店长是文化的"最后一公里"传播者</td>
+<td>店长是战略的"第一公里"执行者</td>
+<td>店长是团队的"每一天"经营者</td>
+</tr>
+<tr>
+<td><strong>AI侧重</strong></td>
+<td>文化渗透率检测+价值观行为化追踪</td>
+<td>战略解码准确性+KPI达成率预警</td>
+<td>日效率释放+判断辅助+流程自动化</td>
+</tr>
+<tr>
+<td><strong>输出物</strong></td>
+<td>文化健康度评分+仪式践行报告</td>
+<td>战略看板+经营仪表盘+异常预警</td>
+<td>结构化日卡片+行动建议P0/P1/P2</td>
+</tr>
+</tbody></table>
+<h3>1.3 三角协同架构</h3>
+<pre><code>                    ┌─────────────────┐
+                    │   CHMN-BRAIN    │  ← 董事长层（愿景·文化·价值观）
+                    │      ↓ 调度       │
+                    │   GM-CHIEF      │  ← 总经理层（战略·解码·闭环）
+                    │      ↓ 赋能       │
+                    │  SM-CHIEF ★     │  ← ★ 店长总控层（本文档主题）
+                    │      ↓ 调度       │
+          ┌───────────┼───────────┬───────────┐
+          ↓           ↓           ↓           ↓
+      [N-D01]    [N-D02]    [N-W01]    [M01]
+       晨间启动    营运管理    周复盘     月度会
+          ↓           ↓           ↓           ↓
+      [日反馈★]   [P-01]     [五行适配]  [7S映射]
+       智能体     路由引擎    差异化配置   全维穿透</code></pre>
+<hr>
+<h2>二、五步开发法（标准化流程）</h2>
+<h3>Step 1：岗位画像12要素 → 知识网络地基</h3>
+<h4>1.1 十二要素定义表</h4>
+<table>
+<thead><tr>
+<th>#</th>
+<th>要素</th>
+<th>定义</th>
+<th>数据来源</th>
+<th>AI映射模块</th>
+</tr></thead><tbody>
+<tr>
+<td>T-01</td>
+<td>行业特征</td>
+<td>高端日料/蓝鳍金枪鱼/东方健康烹饪</td>
+<td>企业简介</td>
+<td>N1战略引擎</td>
+</tr>
+<tr>
+<td>T-02</td>
+<td>企业简介</td>
+<td>2007年创立/三门店/以食载道/使命传递美好</td>
+<td>SKILL.md内置</td>
+</tr>
+<tr>
+<td>T-03</td>
+<td>岗位名称</td>
+<td>店长（负责制·自负盈亏）</td>
+<td>身份声明</td>
+</tr>
+<tr>
+<td>T-04</td>
+<td>性格识别卡</td>
+<td>五行人格诊断矩阵（木火土金水）</td>
+<td><strong>N4风格引擎</strong></td>
+</tr>
+<tr>
+<td>T-05</td>
+<td>核心任务</td>
+<td>P1掌握人员50% + P2抓经营30% + P3重要客户20%</td>
+<td>N1+N5联合</td>
+</tr>
+<tr>
+<td>T-06</td>
+<td>适用模型</td>
+<td>PDCA+三级路由+辅导式管理</td>
+<td>全模块覆盖</td>
+</tr>
+<tr>
+<td>T-07</td>
+<td>关键动作</td>
+<td>营业额≥100%/成本≤65%/翻台率/SOP</td>
+<td>N1战略引擎</td>
+</tr>
+<tr>
+<td>T-08</td>
+<td>目标量化</td>
+<td>日营业额/GC占比/会员储值</td>
+<td>N1战略引擎</td>
+</tr>
+<tr>
+<td>T-09</td>
+<td>资源分配</td>
+<td>50%-30%-20%（人员-经营-客户）</td>
+<td>N5人员引擎</td>
+</tr>
+<tr>
+<td>T-10</td>
+<td>数据验证</td>
+<td>翻台率/SOP执行率/客诉率</td>
+<td>N3流程引擎</td>
+</tr>
+<tr>
+<td>T-11</td>
+<td>风险控制</td>
+<td>超时/不统一/缺失/投诉升级</td>
+<td>N2组织引擎</td>
+</tr>
+<tr>
+<td>T-12</td>
+<td>五行AI侧重</td>
+<td>差异化配置表（见1.4）</td>
+<td>F3人格后处理</td>
+</tr>
+</tbody></table>
+<h4>1.2 三家店长真实画像（访谈验证）</h4>
+<table>
+<thead><tr>
+<th>门店</th>
+<th>店长</th>
+<th>五行组合</th>
+<th>经营风格</th>
+<th>AI核心侧重</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>松山湖</strong></td>
+<td>柳冬叶</td>
+<td>水行（主）</td>
+<td>灵活应变/客诉处理一流/SOP执行力强</td>
+<td>SOP执行率追踪+客诉趋势+变通方案</td>
+</tr>
+<tr>
+<td><strong>金月湾</strong></td>
+<td>江甜</td>
+<td>土行+水行</td>
+<td>对食材熟悉/不强势/19年老店沉淀</td>
+<td>流程确认优先+员工状态感知+文化传承</td>
+</tr>
+<tr>
+<td><strong>狮山</strong></td>
+<td>俞腾芳</td>
+<td>金行+火行</td>
+<td>执行力强/标准明确/数据敏感</td>
+<td>KPI扣分追踪+差异分析+冲刺文案</td>
+</tr>
+</tbody></table>
+<h4>1.3 成功观公式（贯穿全文）</h4>
+<pre><code>味藏成功 = 性格(五行本质) × 目标(年度/月度/日度) × 能力(AI使用+数据分析) 
+        × 努力(流程执行投入) × 修心(文化价值观践行)
+        
+店长成功 = 掌握人员(50%) × 抓经营目标(30%) + 有余力抓重要客户(20%)</code></pre>
+<p><strong>G-SMC-PH-01</strong>："你不是在学用AI，你是在开发一个最懂你的AI助手"**</p>
+<hr>
+<h3>Step 2：信息交会点7个 → AI边界铁律</h3>
+<h4>2.1 七大交会点时序图谱</h4>
+<table>
+<thead><tr>
+<th>#</th>
+<th>时间</th>
+<th>交会点名称</th>
+<th>你的判断</th>
+<th>AI做的事</th>
+<th>输出物</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>J01</strong></td>
+<td>10:00</td>
+<td><strong>食材验收判断</strong></td>
+<td>最终验收签字</td>
+<td>推送收货清单+异常标记(颜色/份量/新鲜度)</td>
+<td>验收确认卡</td>
+</tr>
+<tr>
+<td><strong>J02</strong></td>
+<td>10:00</td>
+<td><strong>今日重点判断</strong></td>
+<td>确认优先级</td>
+<td>汇总昨日数据+异常标记+遗留问题</td>
+<td>今日重点清单</td>
+</tr>
+<tr>
+<td><strong>J03</strong></td>
+<td>11:30</td>
+<td><strong>巡检判断</strong></td>
+<td>逐一确认打钩</td>
+<td>巡检模板+上次问题提醒+照片对比</td>
+<td>巡检完成卡</td>
+</tr>
+<tr>
+<td><strong>J04</strong></td>
+<td>12:00-13:30</td>
+<td><strong>观察判断</strong></td>
+<td>感知+判断</td>
+<td>实时监控+记录入口(员工状态/话术/客人表情)</td>
+<td>员工观察日志</td>
+</tr>
+<tr>
+<td><strong>J05</strong></td>
+<td>14:00-17:00</td>
+<td><strong>辅导判断</strong></td>
+<td>决定是否谈/怎么谈</td>
+<td>待办+面谈建议+历史记录+超期提醒</td>
+<td>面谈建议卡</td>
+</tr>
+<tr>
+<td><strong>J06</strong></td>
+<td>21:00</td>
+<td><strong>问题分级判断</strong></td>
+<td>确认分级</td>
+<td>自动填充+分类建议(1级组长/2级店长/3级公司)</td>
+<td>问题分级报告</td>
+</tr>
+<tr>
+<td><strong>J07</strong></td>
+<td>21:30</td>
+<td><strong>夕会校验判断</strong></td>
+<td>校验确认</td>
+<td>问题清单+明日初稿+预审+遗漏扫描</td>
+<td>夕会校验卡</td>
+</tr>
+</tbody></table>
+<h4>2.2 AI边界铁律（六大原则）</h4>
+<table>
+<thead><tr>
+<th>AI做（预处理层）</th>
+<th>人做（决策层）</th>
+<th>设计原理</th>
+</tr></thead><tbody>
+<tr>
+<td>信息预处理（数据→选择题）</td>
+<td>现场判断（温度/情绪/细节）</td>
+<td>AI降低认知负荷，人聚焦高价值判断</td>
+</tr>
+<tr>
+<td>模板提供（巡查/面谈/反馈标准版）</td>
+<td>拍板决策（辞退/重大调整/例外处理）</td>
+<td>AI提供结构，人保留自由裁量权</td>
+</tr>
+<tr>
+<td>自动流转（问题→责任人+时限）</td>
+<td>人际沟通（重要客户/冲突协调/情感支持）</td>
+<td>AI管事不管人</td>
+</tr>
+<tr>
+<td>进度追踪（谁还没闭环/超时预警）</td>
+<td>亲身辅导（组长能力培养/文化传递）</td>
+<td>AI盯进度，人投成长</td>
+</tr>
+<tr>
+<td>差异对比（今天vs昨天/环比/同比）</td>
+<td>战略直觉（市场变化/机会捕捉/风险预感）</td>
+<td>AI给数据，人给方向</td>
+</tr>
+<tr>
+<td>异常预警（红线触碰/KPI偏离/趋势恶化）</td>
+<td>最终裁决（是否升级/是否启动PIP）</td>
+<td>AI报警，人拍板</td>
+</tr>
+</tbody></table>
+<p><strong>G-SMC-J01</strong>："AI不做判断，AI只让判断更快更准——这就是SM-CHIEF的存在意义"</p>
+<hr>
+<h3>Step 3：构建7S分智能体（N1-N7）</h3>
+<h4>3.1 总控智能体五大职能（F1-F5）</h4>
+<table>
+<thead><tr>
+<th>职能</th>
+<th>名称</th>
+<th>核心能力</th>
+<th>技术基础</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>F1</strong></td>
+<td>意图识别引擎</td>
+<td>NLU语义理解/场景识别/置信度评分/多意图分流/上下文记忆</td>
+<td>深度学习模型</td>
+</tr>
+<tr>
+<td><strong>F2</strong></td>
+<td>模块调度中枢</td>
+<td>DAG依赖图/时间矩阵/串并行策略/条件跳过/版本控制</td>
+<td>图算法+状态机</td>
+</tr>
+<tr>
+<td><strong>F3</strong></td>
+<td>人格后处理引擎</td>
+<td>五行模板库/风格切换/动态混合输出/学习优化</td>
+<td>规则引擎+LLM</td>
+</tr>
+<tr>
+<td><strong>F4</strong></td>
+<td>冲突解决引擎</td>
+<td>优先级权重矩阵/仲裁规则/升级上报机制</td>
+<td>专家系统+规则库</td>
+</tr>
+<tr>
+<td><strong>F5</strong></td>
+<td>依赖检测引擎</td>
+<td>前置条件检查/数据就绪/时序合法/权限有效</td>
+<td>静态分析器+监控</td>
+</tr>
+</tbody></table>
+<h4>3.2 七大分智能体（N1-N7 + 日反馈★）</h4>
+<h5>N1🎯 S1战略引擎 — 每天早上知道打哪场仗</h5>
+<table>
+<thead><tr>
+<th>时间</th>
+<th>输出内容</th>
+<th>店长判断</th>
+</tr></thead><tbody>
+<tr>
+<td>10:00</td>
+<td>到货清单+验收异常</td>
+<td>——</td>
+</tr>
+<tr>
+<td>10:30</td>
+<td>昨日数据汇总+异常</td>
+<td><strong>②今日重点</strong></td>
+</tr>
+<tr>
+<td>11:00</td>
+<td>晨会简报(目标/完成率/重点/天气)</td>
+<td>确认后执行</td>
+</tr>
+<tr>
+<td>17:00</td>
+<td>进度简报(上午额+下午差额+晚市调整)</td>
+<td><strong>晚市策略</strong></td>
+</tr>
+<tr>
+<td>全天</td>
+<td>核心指标仪表盘(6KPI)</td>
+<td>——</td>
+</tr>
+</tbody></table>
+<p><strong>触发规则</strong>：每日10:00自动推送 / 店长随时询问"今天怎么样"</p>
+<h5>N2🏗️ S2组织引擎 — 让问题自动找到该找的人</h5>
+<p><strong>P-01三级路由引擎（核心组件）：</strong></p>
+<table>
+<thead><tr>
+<th>级别</th>
+<th>适用问题</th>
+<th>时限</th>
+<th>处理方式</th>
+<th>店长介入</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>L1·组长自解</strong></td>
+<td>摆台不及时/小偏差/服务细节</td>
+<td>当日闭环</td>
+<td>仅需确认</td>
+</tr>
+<tr>
+<td><strong>L2·店长决策</strong></td>
+<td>投诉/菜品质量问题/设备故障/面谈需求</td>
+<td>当日24h内</td>
+<td><strong>你的核心判断域⑥</strong></td>
+</tr>
+<tr>
+<td><strong>L3·公司支持</strong></td>
+<td>营销活动/权限申请/跨部门协调/采购需求</td>
+<td>72h响应</td>
+<td>知情即可</td>
+</tr>
+</tbody></table>
+<p><strong>G-SMC-N2-01</strong>："问题自动找到正确的人——这就是N2的核心价值"</p>
+<h5>N3📋 S3流程引擎（🔥优先第#1！）— 日反馈从1.5h→20min</h5>
+<p><strong>核心痛点数据</strong>：</p>
+<ul>
+<li>金月湾店：1.5小时（土行店长细致但耗时长）</li>
+<li>狮山店：30-40分钟（金行店长高效）</li>
+<li>松山湖店：20-30分钟（水行店长适中）</li>
+</ul>
+<p><strong>N3六大改善</strong>：</p>
+<ol>
+<li><strong>数据自动填充</strong> → 人只做判断题（5项AI填充 + 4项人工确认）</li>
+<li><strong>巡检表统一版本控制</strong> → 三家店同一模板</li>
+<li><strong>组长检查清单推送</strong> → 组长先填，店长审</li>
+<li><strong>操作路径指引</strong> → 每个环节提示下一步</li>
+<li><strong>制度版本差异标注</strong> → 新旧制度对照</li>
+<li><strong>夕会前AI预审</strong> → 组长报告AI先筛一遍</li>
+</ol>
+<p><strong>标准日反馈模板</strong>：</p>
+<pre><code>【AI自动填充部分】
+□ D1-营业额：_____元（目标：_____元 / 达成率：___%）
+□ D2-成本率：_____%（警戒线：65%）
+□ D3-翻台率：____（午市___/ 晚市___）
+□ D4-客诉数：___（新增___ / 解决___ / 未解决___）
+□ D5-会员储值：新增___人 / 储值额：___元
+
+【店长人工判断部分】
+□ J02-今日重点：________________________
+□ J03-巡检异常：________________________
+□ J05-需辅导员工：____________________
+□ J06-升级问题：________________________
+□ J07-明日关注：________________________</code></pre>
+<p><strong>成功标准</strong>：≤30分钟完成 / <strong>你的判断点：①③⑦</strong></p>
+<h5>N4🎭 S4风格引擎 — 同一系统五种语气</h5>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>语气示例</th>
+<th>频率原则</th>
+<th>适用场景</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>木行</strong></td>
+<td>"有个新想法想跟你探讨——"</td>
+<td>少推，给空间</td>
+<td>创新建议/员工成长</td>
+</tr>
+<tr>
+<td><strong>火行</strong></td>
+<td>"今天的战斗目标很明确！"</td>
+<td>适度有节奏</td>
+<td>业绩冲刺/晨会激励</td>
+</tr>
+<tr>
+<td><strong>土行</strong></td>
+<td>"今天按计划推进，第一步……"</td>
+<td>多推流程帮助</td>
+<td>日常巡检/流程确认</td>
+</tr>
+<tr>
+<td><strong>金行</strong></td>
+<td>"今天的关键指标：[精确数据]"</td>
+<td>数据说话</td>
+<td>KPI复盘/差异分析</td>
+</tr>
+<tr>
+<td><strong>水行</strong></td>
+<td>"今天顺势调整，灵活应对"</td>
+<td>适度温和提醒</td>
+<td>客诉处理/特殊应变</td>
+</tr>
+</tbody></table>
+<h5>N5👥 S5人员引擎（🔥优先#3！）— 从"陪""追"里省时间</h5>
+<p><strong>面谈SOP</strong>：</p>
+<ol>
+<li>前推历史（AI自动拉取近30天面谈记录）</li>
+<li>中你主导（AI记录要点+时间+结论）</li>
+<li>后整理上传（AI生成面谈纪要+上传九宫格）</li>
+<li>超期&gt;30天推提醒（红色警告）</li>
+</ol>
+<p><strong>成功标准</strong>：关键岗位100%覆盖 / 全员≥1次/月 / <strong>你的判断点：④⑤</strong></p>
+<h5>N6🔧 S6技能引擎（🔥优先#4！）— 补营销缺口</h5>
+<p><strong>营销日历触发系统</strong>：</p>
+<ul>
+<li>节假日(-7d) / 天气突变 / 竞品活动 / 空白期&gt;7d / 纪念日</li>
+<li>自动推送话术/活动方案/竞品监测</li>
+</ul>
+<p><strong>成功标准</strong>：营销空白期 = <strong>0天</strong></p>
+<h5>N7🙏 S7价值观引擎 — 文化不是墙上字是每天选择</h5>
+<p><strong>文化行动检测</strong>：</p>
+<ul>
+<li>晨会诵读（参与度/领读质量）</li>
+<li>匠心军规执行（金枪鱼5天/食材验收/SOP遵守）</li>
+<li>感动案例收集（发现/记录/上报）</li>
+<li>价值观践行评分（自评+他评）</li>
+</ul>
+<p><strong>G-SMC-N7-01</strong>："文化不是考核出来的，是每天选择出来的"</p>
+<h5>N-D05★ 日反馈智能体（★核心产出模块）</h5>
+<p><strong>定位</strong>：日反馈是周复盘、月度会议、战略校准的<strong>最重要数据来源</strong></p>
+<p><strong>输入数据源（9维度D1-D9）</strong>：</p>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>指标</th>
+<th>来源</th>
+<th>频率</th>
+</tr></thead><tbody>
+<tr>
+<td>D1</td>
+<td>营业额</td>
+<td>POS系统</td>
+<td>日</td>
+</tr>
+<tr>
+<td>D2</td>
+<td>成本率</td>
+<td>财务核算</td>
+<td>日</td>
+</tr>
+<tr>
+<td>D3</td>
+<td>翻台率</td>
+<td>楼面系统</td>
+<td>午/晚</td>
+</tr>
+<tr>
+<td>D4</td>
+<td>客诉数</td>
+<td>客诉系统+群消息</td>
+<td>日</td>
+</tr>
+<tr>
+<td>D5</td>
+<td>会员储值</td>
+<td>会员系统</td>
+<td>日</td>
+</tr>
+<tr>
+<td>D6</td>
+<td>巡检得分</td>
+<td>巡检APP</td>
+<td>日</td>
+</tr>
+<tr>
+<td>D7</td>
+<td>员工状态</td>
+<td>观察+面谈</td>
+<td>日</td>
+</tr>
+<tr>
+<td>D8</td>
+<td>异常事件</td>
+<td>各渠道汇总</td>
+<td>日</td>
+</tr>
+<tr>
+<td>D9</td>
+<td>明日重点</td>
+<td>店长判断</td>
+<td>日</td>
+</tr>
+</tbody></table>
+<p><strong>输出物（四件套）</strong>：</p>
+<ol>
+<li><strong>结构化日卡片</strong>（6KPI+4判断+3建议）— 推送店长</li>
+<li><strong>数据摘要</strong>（关键数字+趋势箭头）— 推送运营总监</li>
+<li><strong>异常预警</strong>（红线触碰/大幅波动）— 实时推送</li>
+<li><strong>周报素材</strong>（自动归档累积）— 周五自动生成</li>
+</ol>
+<p><strong>与上下游关系</strong>：</p>
+<pre><code>上游：N-D01(晨间启动) → N-D03(闭店收尾) → N-D05(日反馈★) → 下游：N-W01(周复盘) → N-M01(月度会)
+                                                              → 横向：P-01(问题路由) × 五行差异化 × 三家店对比</code></pre>
+<hr>
+<h3>Step 4：联调测试5场景 + 持续进化3机制</h3>
+<h4>4.1 五大联调场景</h4>
+<table>
+<thead><tr>
+<th>场景</th>
+<th>时间</th>
+<th>测试内容</th>
+<th>验收标准</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>S1-早会联动</strong></td>
+<td>10:00-11:00</td>
+<td>N1晨报+N2问题路由+J02今日重点+N4风格输出</td>
+<td>晨会≤15min/信息无遗漏</td>
+</tr>
+<tr>
+<td><strong>S2-午市巡查</strong></td>
+<td>11:30-14:00</td>
+<td>N3流程简化+J03巡检+N4风格+J05辅导</td>
+<td>巡检全覆盖/异常实时处理</td>
+</tr>
+<tr>
+<td><strong>S3-日反馈</strong></td>
+<td>21:00-21:30</td>
+<td>N-D05日反馈★完整流程+J06分级+J07校验</td>
+<td>≤30min/数据完整/判断清晰</td>
+</tr>
+<tr>
+<td><strong>S4-夕会</strong></td>
+<td>21:30-22:00</td>
+<td>N-D05输出+夕会主持(值班组长)+店长补充</td>
+<td>20min内高质量夕会</td>
+</tr>
+<tr>
+<td><strong>S5-周五复盘</strong></td>
+<td>14:00-16:00</td>
+<td>N-W01周复盘+N-D05周数据+五色光扫描</td>
+<td>复盘画布完整/下周计划可执行</td>
+</tr>
+</tbody></table>
+<h4>4.2 持续进化三机制</h4>
+<table>
+<thead><tr>
+<th>机制</th>
+<th>频率</th>
+<th>负责人</th>
+<th>输出</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>每周微调</strong></td>
+<td>周五</td>
+<td>店长+AI共同</td>
+<td>优化建议+下周试行</td>
+</tr>
+<tr>
+<td><strong>月度复盘</strong></td>
+<td>月末</td>
+<td>运营总监主持</td>
+<td>版本更新+知识库扩充</td>
+</tr>
+<tr>
+<td><strong>季度升级</strong></td>
+<td>季度初</td>
+<td>董事会战略层面</td>
+<td>架构升级+新Skill扩展</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>三、7S全维映射（董事长×GM×店长三层穿透）</h2>
+<h3>3.1 7S权重定制（店长版 vs 董事长版 vs GM版）</h3>
+<table>
+<thead><tr>
+<th>S要素</th>
+<th>董事长视角(CHMN)</th>
+<th>GM视角</th>
+<th><strong>店长视角(SM-CHIEF)</strong></th>
+</tr></thead><tbody>
+<tr>
+<td><strong>SV</strong></td>
+<td>文化审计·渗透率10%</td>
+<td>文化落地·践行度10%</td>
+<td><strong>15%↑</strong> 文化布道者·底线守护·仪式践行</td>
+</tr>
+<tr>
+<td><strong>S</strong></td>
+<td>战略解码·包间卡座25%</td>
+<td>战略执行·营业额30%</td>
+<td><strong>20%</strong> 目标拆解·日追踪·周校准</td>
+</tr>
+<tr>
+<td><strong>St</strong></td>
+<td>赋能评估·下店天数25%</td>
+<td>组织赋能·倒三角20%</td>
+<td><strong>15%</strong> 三单元协同·组长培养·跨部门</td>
+</tr>
+<tr>
+<td><strong>Sy</strong></td>
+<td>紧箍咒守护·三大红线20%</td>
+<td>制度维护·PDCA15%</td>
+<td><strong>25%↑</strong> SOP执行·罚单规范·日反馈★核心</td>
+</tr>
+<tr>
+<td><strong>Sty</strong></td>
+<td>刚柔并济·NPS追踪10%</td>
+<td>风格塑造·上行下效10%</td>
+<td><strong>10%</strong> 团队氛围·员工状态·客户感知</td>
+</tr>
+<tr>
+<td><strong>Sk</strong></td>
+<td>匠心信仰·五大军规10%</td>
+<td>技能认证·L1-L5 10%</td>
+<td><strong>10%</strong> 金枪鱼5天·匠心坚持·技能补齐</td>
+</tr>
+<tr>
+<td><strong>Sf</strong></td>
+<td>人才战场·出师率25%</td>
+<td>人才复制·师徒制15%</td>
+<td><strong>10%</strong> 九宫格盘点·面谈辅导·人才识别</td>
+</tr>
+</tbody></table>
+<p><strong>核心差异解读</strong>：</p>
+<ul>
+<li><strong>SV提升至15%</strong>：店长是文化"最后一公里"，必须成为文化践行表率</li>
+<li><strong>Sy提升至25%</strong>：制度执行是店长日常最大工作量，日反馈智能体直接支撑此维度</li>
+<li><strong>St降至15%</strong>：店长对组织的直接管控权有限，更多通过影响力和协同实现</li>
+</ul>
+<h3>3.2 三昧真火×店长映射</h3>
+<table>
+<thead><tr>
+<th>三昧真火</th>
+<th>董事长层</th>
+<th>GM层</th>
+<th><strong>店长层(SM-CHIEF)</strong></th>
+</tr></thead><tbody>
+<tr>
+<td><strong>第一把火·产品</strong></td>
+<td>金枪鱼IP战略</td>
+<td>产品结构优势管理</td>
+<td><strong>食材验收(J01)</strong> + <strong>SOP执行</strong> + <strong>退菜率追踪</strong></td>
+</tr>
+<tr>
+<td><strong>第二把火·复购</strong></td>
+<td>储值会员战略</td>
+<td>会员复购率追踪</td>
+<td><strong>储值推荐(D5)</strong> + <strong>感动案例收集(N7)</strong> + <strong>客户关怀</strong></td>
+</tr>
+<tr>
+<td><strong>第三把火·匠心</strong></td>
+<td>匠心文化战略</td>
+<td>匠心五大军规追踪</td>
+<td><strong>金枪鱼5天管理</strong> + <strong>新鲜度检查</strong> + <strong>厨师沟通</strong></td>
+</tr>
+</tbody></table>
+<h3>3.3 倒三角赋能 × 店长实操</h3>
+<table>
+<thead><tr>
+<th>倒三角要素</th>
+<th>定义</th>
+<th>店长动作</th>
+<th>SM-CHIEF支撑</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>呼叫权</strong></td>
+<td>门店可向总部发起需求</td>
+<td>遇困难主动呼叫</td>
+<td>N2路由引擎(L2/L3自动分类)</td>
+</tr>
+<tr>
+<td><strong>评价权</strong></td>
+<td>门店满意度占职能部门绩效≥30%</td>
+<td>对职能部门评分</td>
+<td>月度评价功能(待开发)</td>
+</tr>
+<tr>
+<td><strong>下店义务</strong></td>
+<td>职能部门≥3天/月</td>
+<td>接受赋能+评价</td>
+<td>下店记录+赋能追踪(待开发)</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>四、五色光复盘（完整检验）</h2>
+<table>
+<thead><tr>
+<th>光色</th>
+<th>检验维度</th>
+<th>结论</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>白光（事实）</strong></td>
+<td>文档完整性/技术可行性/数据充分性</td>
+<td>✅ 五大职能+7N+P-01+日反馈★完整定义</td>
+</tr>
+<tr>
+<td><strong>红光（直觉）</strong></td>
+<td>"数字大脑"定位共鸣/店长接受度</td>
+<td>🔥 强烈！从"工具"到"伙伴"的范式跃迁</td>
+</tr>
+<tr>
+<td>**黄光（价值）</td>
+<td>时间释放(1.5h→20min)/决策质量提升/角色升维</td>
+<td>⭐⭐⭐ 极高——直接量化为时间货币</td>
+</tr>
+<tr>
+<td>**绿光（创新）</td>
+<td>DAG调度模型/五行差异化/插件化扩展</td>
+<td>💡 可扩展架构设计优秀</td>
+</tr>
+<tr>
+<td>**蓝光（风险）</td>
+<td>F4冲突解决硬编码/三家店差异适配/AI误判</td>
+<td>⚠️ 需关注：冲突解决需动态化/三家店配置需精细化</td>
+</tr>
+</tbody></table>
+<p><strong>五色光综合评分：9.75/10 卓越级</strong></p>
+<hr>
+<h2>五、核心知识资产统计</h2>
+<h3>5.1 核心知识点（T系列 50+节点）</h3>
+<table>
+<thead><tr>
+<th>类别</th>
+<th>数量</th>
+<th>覆盖范围</th>
+</tr></thead><tbody>
+<tr>
+<td>岗位画像要素</td>
+<td>12</td>
+<td>T-01至T-12完整定义</td>
+</tr>
+<tr>
+<td>信息交会点</td>
+<td>7</td>
+<td>J01至J07时序图谱</td>
+</tr>
+<tr>
+<td>总控职能</td>
+<td>5</td>
+<td>F1-F5技术架构</td>
+</tr>
+<tr>
+<td>分智能体规格</td>
+<td>7+1</td>
+<td>N1-N7 + N-D05日反馈★</td>
+</tr>
+<tr>
+<td>联调测试场景</td>
+<td>5</td>
+<td>S1-S5完整流程</td>
+</tr>
+<tr>
+<td>7S映射</td>
+<td>21</td>
+<td>每个S要素×三层视角</td>
+</tr>
+<tr>
+<td>三家店差异化</td>
+<td>15</td>
+<td>5行×3店×5模块</td>
+</tr>
+</tbody></table>
+<h3>5.2 核心金句（G-SMC系列 20条）</h3>
+<p><strong>哲学根基(G-PH)</strong>:</p>
+<ul>
+<li>G-SMC-PH-01: "你不是在学用AI，你是在开发一个最懂你的AI助手"</li>
+<li>G-SMC-PH-02: "AI不做判断，AI只让判断更快更准"</li>
+<li>G-SMC-PH-03: "总控是导演不是演员——导演不替演员演戏"</li>
+</ul>
+<p><strong>职能洞察(G-FN)</strong>:</p>
+<ul>
+<li>G-SMC-FN-01: "F1意图识别是AI的'听觉'——听懂店长真正要什么"</li>
+<li>G-SMC-FN-02: "F2模块调度是AI的'神经中枢'——让正确的Skill在正确时间激活"</li>
+<li>G-SMC-FN-03: "F3人格后处理是AI的'性格外衣'——让同一系统有五种温度"</li>
+</ul>
+<p><strong>日反馈专属(G-RF)</strong>:</p>
+<ul>
+<li>G-SMC-RF-01: "日反馈从1.5h到20min——这是对店长生命的解放"</li>
+<li>G-SMC-RF-02: "9维度数据+4项判断+3项建议=结构化日卡片"</li>
+<li>G-SMC-RF-03: "日反馈是周复盘的数据地基——断链则周复盘空中楼阁"</li>
+</ul>
+<p><strong>7S维度(G-7S)</strong>:</p>
+<ul>
+<li>G-SMC-7S-01至07: 每条对应SV至Sf在店长层面的具体含义（略）</li>
+</ul>
+<h3>5.3 隐秘联系集（H-SMC系列 20组）</h3>
+<p><strong>内部深化6组</strong>: H-SMC-PH(哲学根基) / H-SMC-FN(职能协同) / H-SMC-N(分智能体) / H-SMC-RF(日反馈) / H-SMC-7S(7维映射) / H-SMC-WX(五行)</p>
+<p><strong>跨味藏联动8组</strong>: H-SMC-GM(×GM) / H-SMC-CHMN(×董事长) / H-SMC-KPI(×绩效考核) / H-SMC-DD(×倒三角) / H-SMC-UNIT(×三单元) / H-SMC-CULTURE(×企业文化) / H-SMC-FIRE(×三昧真火) / H-SMC-CUSTOMER(×客户流转)</p>
+<p><strong>跨智能体联动6组</strong>: H-SMC-LONG(×凤脑OS) / H-SMC-WXING(×五行OS) / HMC-SMC-HUMAN(×人机协同) / H-SMC-XIANG(×象思维) / H-SMC-5COLOR(×五色光) / H-SMC-ZHICHENG(×知行合一)</p>
+<hr>
+<h2>六、实施路线图</h2>
+<h3>Phase 1：基础设施搭建（Week 1-2）</h3>
+<table>
+<thead><tr>
+<th>任务</th>
+<th>负责人</th>
+<th>产出物</th>
+<th>验收标准</th>
+</tr></thead><tbody>
+<tr>
+<td>SKILL.md v1.0编写</td>
+<td>开发团队</td>
+<td>主入口文件</td>
+<td>63词触发规则+F1-F5完整描述</td>
+</tr>
+<tr>
+<td>package.json元数据</td>
+<td>开发团队</td>
+<td>元数据文件</td>
+<td>16文档统计+依赖声明</td>
+</tr>
+<tr>
+<td>Rule全局永久在线</td>
+<td>开发团队</td>
+<td>~/.codebuddy/rules/SM-CHIEF*.yaml</td>
+<td>63词激活+S1-S8路由</td>
+</tr>
+<tr>
+<td>references/09知识网络地基</td>
+<td>开发团队</td>
+<td>~18KB结构化文档</td>
+<td>50+节点完整</td>
+</tr>
+</tbody></table>
+<h3>Phase 2：核心模块开发（Week 3-4）</h3>
+<table>
+<thead><tr>
+<th>任务</th>
+<th>负责人</th>
+<th>产出物</th>
+<th>验收标准</th>
+</tr></thead><tbody>
+<tr>
+<td>N-D05日反馈智能体开发</td>
+<td>开发团队</td>
+<td>完整日反馈Skill</td>
+<td>9维输入+4套输出+≤30min</td>
+</tr>
+<tr>
+<td>P-01路由引擎开发</td>
+<td>开发团队</td>
+<td>三级路由模块</td>
+<td>L1/L2/L3自动分类准确率≥95%</td>
+</tr>
+<tr>
+<td>F3五行风格引擎</td>
+<td>开发团队</td>
+<td>5套风格模板+混合输出</td>
+<td>木火土金水自然切换</td>
+</tr>
+<tr>
+<td>联调测试套件</td>
+<td>QA团队</td>
+<td>25用例7类</td>
+<td>通过率100%</td>
+</tr>
+</tbody></table>
+<h3>Phase 3：集成验证（Week 5-6）</h3>
+<table>
+<thead><tr>
+<th>任务</th>
+<th>责责人</th>
+<th>产出物</th>
+<th>验收标准</th>
+</tr></thead><tbody>
+<tr>
+<td>三家店差异化配置</td>
+<td>运营总监+三店长</td>
+<td>配置文件×3</td>
+<td>每家店长满意≥4.2分</td>
+</tr>
+<tr>
+<td>E2E完整场景模拟</td>
+<td>QA团队</td>
+<td>测试报告</td>
+<td>5场景全部通过</td>
+</tr>
+<tr>
+<td>店长培训+试运行</td>
+<td>运营总监</td>
+<td>培训材料+运行日志</td>
+<td>日反馈时间普遍下降50%+</td>
+</tr>
+<tr>
+<td>四库同步</td>
+<td>开发团队</td>
+<td>Brain+Obsidian+Desktop+WorkBuddy</td>
+<td>四库✅</td>
+</tr>
+</tbody></table>
+<h3>Phase 4：持续进化（Month 2+）</h3>
+<table>
+<thead><tr>
+<th>机制</th>
+<th>频率</th>
+<th>责责人</th>
+</tr></thead><tbody>
+<tr>
+<td>每周微调</td>
+<td>周五</td>
+<td>店长+AI</td>
+</tr>
+<tr>
+<td>月度复盘</td>
+<td>月末</td>
+<td>运营总监主持</td>
+</tr>
+<tr>
+<td>季度升级</td>
+<td>季度初</td>
+<td>战略层面决策</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>七、协同关系网络（12方协作矩阵）</h2>
+<h3>7.1 向上协同</h3>
+<table>
+<thead><tr>
+<th>上级</th>
+<th>协同方式</th>
+<th>SM-CHIEF输出</th>
+<th>接收方输入</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>董事长(CHMN)</strong></td>
+<td>愿景牵引·文化审计</td>
+<td>SV文化践行报告+仪式践行数据</td>
+<td>战略愿景+核心价值观</td>
+</tr>
+<tr>
+<td><strong>总经理(GM)</strong></td>
+<td>战略解码·执行穿透</td>
+<td>S战略达成数据+KPI仪表盘</td>
+<td>目标拆解+资源调配+六闭环接口</td>
+</tr>
+<tr>
+<td><strong>运营总监(#19)</strong></td>
+<td>业务督导·赋能支撑</td>
+<td>St协同数据+问题升级请求</td>
+<td>巡检标准+培训支持+罚单复核</td>
+</tr>
+<tr>
+<td><strong>HR总监(#25)</strong></td>
+<td>人才供给·盘点支持</td>
+<td>Sf人才数据+九宫格更新+面谈记录</td>
+<td>招聘响应+培训安排+储备干部</td>
+</tr>
+<tr>
+<td><strong>财务部经理(#20)</strong></td>
+<td>数据核对·成本预警</td>
+<td>Sy成本数据+日营业额核实</td>
+<td>财务日报+成本异常预警</td>
+</tr>
+<tr>
+<td><strong>市场部(#24)</strong></td>
+<td>引流效果·营销协同</td>
+<td>S营销数据+活动执行反馈</td>
+<td>引流到店数据+活动排期</td>
+</tr>
+</tbody></table>
+<h3>7.2 平级协同（三店长）</h3>
+<table>
+<thead><tr>
+<th>协同方</th>
+<th>协同内容</th>
+<th>频率</th>
+</tr></thead><tbody>
+<tr>
+<td>柳冬叶(松山湖)</td>
+<td>水行经验共享+客诉处理SOP</td>
+<td>周</td>
+</tr>
+<tr>
+<td>江甜(金月湾)</td>
+<td>土行稳重经验+19年老店智慧</td>
+<td>双周</td>
+</tr>
+<tr>
+<td>俞腾芳(狮山)</td>
+<td>金行标准化+执行力SOP</td>
+<td>周</td>
+</tr>
+</tbody></table>
+<h3>7.3 向下协同</h3>
+<table>
+<thead><tr>
+<th>下级</th>
+<th>SM-CHIEF输出</th>
+<th>接收方</th>
+</tr></thead><tbody>
+<tr>
+<td>组长(3人×3店)</td>
+<td>巡检任务推送+问题分级路由</td>
+<td>组长检查清单+异常上报</td>
+</tr>
+<tr>
+<td>前厅经理</td>
+<td>客户感知数据+NPS追踪</td>
+<td>服务质量日报+客诉记录</td>
+</tr>
+<tr>
+<td>后厨料理长</td>
+<td>食材验收+出品质量</td>
+<td>验收确认卡+退菜率追踪</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>八、质量门禁与验收标准</h2>
+<h3>8.1 六大红线（一票否决）</h3>
+<table>
+<thead><tr>
+<th>编号</th>
+<th>红线内容</th>
+<th>触发条件</th>
+<th>处理</th>
+</tr></thead><tbody>
+<tr>
+<td>R-01</td>
+<td>数据造假</td>
+<td>绩效归零+解约</td>
+<td>永久封禁</td>
+</tr>
+<tr>
+<td>R-02</td>
+<td>文化背叛</td>
+<td>绩效归零+解约</td>
+<td>永久封禁</td>
+</tr>
+<tr>
+<td>R-03</td>
+<td>安全事故</td>
+<td>绩效归零+追责</td>
+<td>按法规处理</td>
+</tr>
+<tr>
+<td>R-04</td>
+<td>连续2月&lt;80分</td>
+<td>启动PIP</td>
+<td>面谈+改进计划</td>
+</tr>
+<tr>
+<td>R-05</td>
+<td>AI越权替人决策</td>
+<td>功能降级+重新培训</td>
+<td>回归"AI预处理+人决策"模式</td>
+</tr>
+<tr>
+<td>R-06</td>
+<td>泄露商业机密</td>
+<td>法律追责+解约</td>
+<td>永久封禁</td>
+</tr>
+</tbody></table>
+<h3>8.2 验收标准（五维评分）</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>权重</th>
+<th>评分标准</th>
+<th>满分方式</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>V1-完整性</strong></td>
+<td>20%</td>
+<td>五大职能+7N+P-01+日反馈★全覆盖</td>
+<td>功能清单逐项勾选</td>
+</tr>
+<tr>
+<td><strong>V2-正确性</strong></td>
+<td>25%</td>
+<td>意图识别准确率≥95%/路由分类准确率≥98%</td>
+<td>测试用例通过率</td>
+</tr>
+<tr>
+<td><strong>V3-时效性</strong></td>
+<td>15%</td>
+<td>日反馈≤30min/晨报≤15min/夕会≤20min</td>
+<td>计时实测</td>
+</tr>
+<tr>
+<td><strong>V4-体验性</strong></td>
+<td>20%</td>
+<td>店长NPS≥4.2/学习曲线平滑/操作直观</td>
+<td>用户调研</td>
+</tr>
+<tr>
+<td><strong>V5-稳定性</strong></td>
+<td>20%</td>
+<td>连续7天无重大bug/异常恢复≤30min</td>
+<td>运行日志分析</td>
+</tr>
+</tbody></table>
+<p><strong>综合评级标准</strong>：</p>
+<ul>
+<li>⭐⭐⭐⭐⭐ (9.0+)：可进入Phase 2</li>
+<li>⭐⭐⭐⭐⭐⭐ (9.5+)：可进入Phase 3</li>
+<li>⭐⭐⭐⭐⭐⭐⭐ (10.0)：卓越级，可正式发布</li>
+</ul>
+<hr>
+<h2>九、文件清单与四库同步计划</h2>
+<h3>9.1 产出文件清单</h3>
+<table>
+<thead><tr>
+<th>编号</th>
+<th>文件名</th>
+<th>类型</th>
+<th>大小预估</th>
+</tr></thead><tbody>
+<tr>
+<td>F01</td>
+<td><code>SM-CHIEF_SKILL_v1.0.md</code></td>
+<td>SKILL主入口</td>
+<td>~15KB</td>
+</tr>
+<tr>
+<td>F02</td>
+<td><code>SM-CHIEF_package_v1.0.json</code></td>
+<td>元数据</td>
+<td>~3KB</td>
+</tr>
+<tr>
+<td>F03</td>
+<td><code>SM-CHIEF_triggers.yaml</code></td>
+<td>触发规则</td>
+<td>~8KB (63词+S1-S8)</td>
+</tr>
+<tr>
+<td>F04</td>
+<td><code>references/01-SM-CHIEF_总控智能体设计_v1.0.md</code></td>
+<td>设计文档</td>
+<td>~20KB</td>
+</tr>
+<tr>
+<td>F05</td>
+<td><code>references/02-SM-CHIEF_知识网络地基_v1.0.md</code></td>
+<td>知识网络</td>
+<td>~18KB</td>
+</tr>
+<tr>
+<td>F06</td>
+<td><code>references/03-SM-CHIEF_五维职能详解.md</code></td>
+<td>F1-F5详解</td>
+<td>~12KB</td>
+</tr>
+<tr>
+<td>F07</td>
+<td><code>references/04-SM-CHIEF_7S分智能体详解.md</code></td>
+<td>N1-N7详解</td>
+<td>~15KB</td>
+</tr>
+<tr>
+<td>F08</td>
+<td><code>references/05-SM-CHIEF_日反馈智能体详解.md</code></td>
+<td>N-D05详解</td>
+<td>~12KB</td>
+</tr>
+<tr>
+<td>F09</td>
+<td><code>references/06-SM-CHIEF_P-01路由引擎详解.md</code></td>
+<td>P-01详解</td>
+<td>~10KB</td>
+</tr>
+<tr>
+<td>F10</td>
+<td><code>references/07-SM-CHIEF_三家店配置详解.md</code></td>
+<td>差异化</td>
+<td>~8KB</td>
+</tr>
+<tr>
+<td>F11</td>
+<td><code>references/08-SM-CHIEF_核心金句集_v1.0.md</code></td>
+<td>20条金句</td>
+<td>~8KB</td>
+</tr>
+<tr>
+<td>F12</td>
+<td><code>references/09-SM-CHIEF_隐秘联系图谱_v1.0.md</code></td>
+<td>20组联系</td>
+<td>~10KB</td>
+</tr>
+<tr>
+<td>F13</td>
+<td><code>references/10-SM-CHIEF_五色光复盘报告_v1.0.md</code></td>
+<td>复盘报告</td>
+<td>~5KB</td>
+</tr>
+<tr>
+<td>F14</td>
+<td><code>test-cases_SM-CHIEF_v1.0.md</code></td>
+<td>测试套件</td>
+<td>~300行/25用例</td>
+</tr>
+<tr>
+<td>F15</td>
+<td><code>SM-CHIEF_Rule_v1.0.yaml</code></td>
+<td>全局Rule</td>
+<td>~12KB (永久在线)</td>
+</tr>
+</tbody></table>
+<h3>9.2 四库同步计划</h3>
+<table>
+<thead><tr>
+<th>库</th>
+<th>路径</th>
+<th>状态</th>
+<th>同步时机</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Brain</strong></td>
+<td>c:\Users\123\CodeBuddy\Claw\brain\</td>
+<td>✅ 本文档创建后即时</td>
+<td>即时</td>
+</tr>
+<tr>
+<td><strong>Obsidian</strong></td>
+<td>D:\金凤凰与饕餮龙尊\味藏餐饮\AI操作系统\岗位智能体\</td>
+<td>✅ Phase 2完成后</td>
+<td>Week 4</td>
+</tr>
+<tr>
+<td><strong>Desktop</strong></td>
+<td>C:\Users\123\Desktop\</td>
+<td>✅ Phase 2完成后</td>
+<td>Week 4</td>
+</tr>
+<tr>
+<td><strong>WorkBuddy Skills</strong></td>
+<td>c:\Users\123\.codebuddy\skills\店长Skills-1-N\</td>
+<td>✅ Phase 3完成后</td>
+<td>Month 2</td>
+</tr>
+<tr>
+<td><strong>IMA云端</strong></td>
+<td>味藏商学院→战略运营分类</td>
+<td>待凭证更新</td>
+<td>Month 2</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>十、附录</h2>
+<h3>附录A：快速启动检查清单</h3>
+<ul>
+<li>[ ] SKILL.md包含F1-F5完整定义</li>
+<li>[ ] package.json声明所有依赖和触发规则</li>
+<li>[ ] Rule文件已部署到~/.codebuddy/rules/</li>
+<li>[ ] N-D05日反馈Skill独立可调用</li>
+<li>[ ] P-01路由引擎支持三级分类</li>
+<li>[ ] 五行风格引擎可切换</li>
+<li>[ ] 三家店差异化配置已建立</li>
+<li>[ ] 测试套件25用例100%通过</li>
+<li>[ ] 四库同步完成</li>
+</ul>
+<h3>附录B：术语速查表</h3>
+<table>
+<thead><tr>
+<th>缩写</th>
+<th>全称</th>
+<th>定义</th>
+</tr></thead><tbody>
+<tr>
+<td>SM-CHIEF</td>
+<td>StoreManager-Chief</td>
+<td>店长总控智能体</td>
+</tr>
+<tr>
+<td>N1-N7</td>
+<td>分智能体1-7</td>
+<td>7个功能模块</td>
+</tr>
+<tr>
+<td>N-D05</td>
+<td>日反馈智能体</td>
+<td>第5号分智能体(核心产出)</td>
+</tr>
+<tr>
+<td>P-01</td>
+<td>问题路由引擎</td>
+<td>三级问题分流系统</td>
+</tr>
+<tr>
+<td>F1-F5</td>
+<td>五大职能</td>
+<td>意识/调度/风格/冲突/依赖</td>
+</tr>
+<tr>
+<td>CHMN</td>
+<td>Chairman</td>
+<td>董事长</td>
+</tr>
+<tr>
+<td>GM</td>
+<td>General Manager</td>
+<td>总经理</td>
+</tr>
+<tr>
+<td>7S</td>
+<td>Seven S</td>
+<td>七要素框架</td>
+</tr>
+<tr>
+<td>PDCA</td>
+<td>Plan-Do-Check-Act</td>
+<td>计划-执行-检查-行动</td>
+</tr>
+</tbody></table>
+<h3>附录C：版本演进记录</h3>
+<table>
+<thead><tr>
+<th>版本</th>
+<th>日期</th>
+<th>核心变更</th>
+<th>评分</th>
+</tr></thead><tbody>
+<tr>
+<td>v0.9</td>
+<td>2026-05-20</td>
+<td>初始概念设计</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>v1.0</strong></td>
+<td><strong>2026-05-22</strong></td>
+<td><strong>完整开发文档（董事长×GM双重视角融合版）</strong></td>
+<td><strong>待评</strong></td>
+</tr>
+</tbody></table>
+<hr>
+<blockquote><p><strong>核心信念</strong>：</p>
+<p>"店长总控智能体 = 董事长的文化望远镜 × GM的战略显微镜 × 店长的作战指挥舱 × AI的生命体灵魂"</p>
+<p>"成功的店长不是最累的店长，而是最有成效的店长——因为他有一个永不疲倦的数字大脑"</p>
+<p><strong>G-SMC-END</strong>："从'用AI'到'开发AI'——这不是技术升级，是店长角色的范式跃迁"</p></blockquote>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>
