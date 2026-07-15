@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>RAG 向量检索系统开发文档 - 以观其妙书院</title>
+<meta name="description" content="RAG 向量检索系统开发文档 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="RAG 向量检索系统开发文档">
+<meta property="og:description" content="RAG 向量检索系统开发文档 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "RAG 向量检索系统开发文档",
+    "description": "RAG 向量检索系统开发文档 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>RAG 向量检索系统开发文档</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<p>﻿---
+title: RAG向量检索系统开发文档
+type: system-architecture
+created: 2026-05-26
+updated: 2026-05-26
+tags: [RAG, 向量检索, 知识库, 信息检索, AI OS基础设施]</p>
+<hr>
+<h1>RAG 向量检索系统开发文档</h1>
+<blockquote><p><strong>现状诊断</strong>：知识库 4862 个 .md 文件（~64MB），关键词搜索已无法高效定位。需要引入语义检索——让 AI 理解"你想找什么"，而不是仅仅匹配"你搜了什么字"。</p></blockquote>
+<hr>
+<h2>一、你的实际问题是什么</h2>
+<h3>1.1 知识库数据画像（基于实际扫描）</h3>
+<table>
+<thead><tr>
+<th>指标</th>
+<th>数值</th>
+<th>含义</th>
+</tr></thead><tbody>
+<tr>
+<td>Obsidian .md 文件</td>
+<td><strong>4862 个</strong></td>
+<td>中等规模个人知识库</td>
+</tr>
+<tr>
+<td>总大小</td>
+<td><strong>~64 MB</strong></td>
+<td>纯文本，非常轻量，单机可处理</td>
+</tr>
+<tr>
+<td>平均文件大小</td>
+<td><strong>11.6 KB</strong></td>
+<td>一篇文章约等于一个 chunk</td>
+</tr>
+<tr>
+<td>中位数文件大小</td>
+<td><strong>7.8 KB</strong></td>
+<td>绝大多数文件本身就很小</td>
+</tr>
+<tr>
+<td>五行人格心理学</td>
+<td><strong>345 个文件</strong>，~6.6 MB</td>
+<td>子知识库，密度最高</td>
+</tr>
+<tr>
+<td>五大元素测评题</td>
+<td><strong>~300 题</strong></td>
+<td>结构化数据，需要保持完整</td>
+</tr>
+<tr>
+<td>SKILL.md</td>
+<td><strong>194 个</strong>，平均 9.9 KB</td>
+<td>有 frontmatter + 正文的结构化文档</td>
+</tr>
+<tr>
+<td>平均链接密度</td>
+<td><strong>7 个 wikilinks/文件</strong></td>
+<td>高度互联的知识网络</td>
+</tr>
+<tr>
+<td>平均标签密度</td>
+<td><strong>10.3 个 tags/文件</strong></td>
+<td>丰富的元数据标签</td>
+</tr>
+<tr>
+<td>大小分布：&lt;1KB</td>
+<td>294 个（6%）</td>
+<td>极短笔记，可合并</td>
+</tr>
+<tr>
+<td>大小分布：1-5KB</td>
+<td>1237 个（25%）</td>
+<td>短笔记</td>
+</tr>
+<tr>
+<td>大小分布：5-20KB</td>
+<td>2646 个（54%）</td>
+<td><strong>主体——适合整文件作为 chunk</strong></td>
+</tr>
+<tr>
+<td>大小分布：20-100KB</td>
+<td>679 个（14%）</td>
+<td>长文——需要按标题切片</td>
+</tr>
+<tr>
+<td>大小分布：&gt;100KB</td>
+<td>6 个（&lt;1%）</td>
+<td>超长文档——需要专门处理</td>
+</tr>
+</tbody></table>
+<h3>1.2 当前搜索的痛点</h3>
+<table>
+<thead><tr>
+<th>你想搜</th>
+<th>关键词搜索的结果</th>
+<th>你真正想要的结果</th>
+</tr></thead><tbody>
+<tr>
+<td>"木生火"</td>
+<td>只返回含"木"和"火"字</td>
+<td>扩展为"生长滋养光明"的语义关联</td>
+</tr>
+<tr>
+<td>"亲密关系冲突"</td>
+<td>可能找不到</td>
+<td>自动匹配场景 SC-01 + 五行建议</td>
+</tr>
+<tr>
+<td>"我经常发火"</td>
+<td>无匹配</td>
+<td>识别为阴木/阴火-&gt;自动找到拔阴取阳方法</td>
+</tr>
+<tr>
+<td>"领导力沟通"</td>
+<td>只找到含"领导力"的文件</td>
+<td>匹配土行人领导风格 + 相关场景</td>
+</tr>
+<tr>
+<td>跨场景关联</td>
+<td>需要手动逐篇查找</td>
+<td>一次搜索返回多个场景的相关内容</td>
+</tr>
+</tbody></table>
+<h3>1.3 根本原因</h3>
+<p>关键词搜索天然不适合"意思匹配"的需求。你的知识库特点是：</p>
+<ul>
+<li><strong>高度互联</strong>（每个文件平均 7 个链接 + 10 个标签）</li>
+<li><strong>专有术语多</strong>（五行、拔阴取阳、化克为生、象思维等）</li>
+<li><strong>场景关联复杂</strong>（同一个概念在不同场景有不同解读）</li>
+<li><strong>跨域联系密集</strong>（130+ 条跨域联系网络）</li>
+</ul>
+<hr>
+<h2>二、RAG 是什么（用你能懂的方式）</h2>
+<blockquote><p><strong>RAG = 检索增强生成</strong>——在回答你的问题之前，AI 先去知识库里<strong>搜一遍相关的内容</strong>，然后基于搜到的"证据"来回答。</p></blockquote>
+<h3>2.1 核心流程</h3>
+<pre><code>你的问题："什么是木火共生？"
+    |
+    v
+Step 1: Embedding（向量化）
+    把问题变成一串数字：[0.123, -0.456, 0.789, ...] （共1024个数字）
+    |
+    v
+Step 2: 向量搜索
+    在你的4862个文件中，找"语义上最像这个问题的"前20篇
+    |- #1 木火共生协议.md（相似度 0.92）
+    |- #2 木火共生关系Skill.md（相似度 0.88）
+    |- #3 木行人·生长与创造.md（相似度 0.76）
+    |
+    v
+Step 3: 混合增强 + Rerank（精排）+ 注入回答</code></pre>
+<h3>2.2 "向量"是什么</h3>
+<blockquote><p>每个文件被翻译成一串数字（向量），类似物品在仓库里的坐标。
+"木火共生"和"木生火"的坐标很接近，"会计流程"的坐标很远。
+搜索 = 找"坐标最接近"的文件——这就是"语义相似度"。</p></blockquote>
+<hr>
+<h2>三、技术架构</h2>
+<h3>3.1 组件选型</h3>
+<table>
+<thead><tr>
+<th>组件</th>
+<th>选型</th>
+<th>理由</th>
+<th>不选</th>
+</tr></thead><tbody>
+<tr>
+<td>向量数据库</td>
+<td><strong>Qdrant</strong></td>
+<td>混合搜索（向量+BM25+过滤），一个.exe搞定，~200MB内存</td>
+<td>Milvus太重，Chroma不支持混合搜索</td>
+</tr>
+<tr>
+<td>Embedding</td>
+<td><strong>BGE-M3</strong></td>
+<td>1024维，中英双语，支持稠密+稀疏双向量</td>
+<td>text2vec英文弱，OpenAI需API调用</td>
+</tr>
+<tr>
+<td>Reranker</td>
+<td><strong>BGE-reranker-v2-m3</strong></td>
+<td>Top-k二次精排，准确率+15%</td>
+<td></td>
+</tr>
+<tr>
+<td>分块</td>
+<td><strong>按文件大小自适应</strong></td>
+<td>80%文件&lt;20KB不切分</td>
+<td>固定512token会切断上下文</td>
+</tr>
+</tbody></table>
+<h3>3.2 数据管道</h3>
+<table>
+<thead><tr>
+<th>文件类型</th>
+<th>分块策略</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>&lt; 20KB 的 md</strong>（占80%）</td>
+<td><strong>不切分，整文件 = 1 个 chunk</strong></td>
+</tr>
+<tr>
+<td><strong>&gt; 20KB 的 md</strong>（占14%）</td>
+<td>按 <code>##</code> 标题切分</td>
+</tr>
+<tr>
+<td><strong>SKILL.md</strong></td>
+<td>frontmatter 一个 chunk + 正文按标题切</td>
+</tr>
+<tr>
+<td><strong>测评题</strong></td>
+<td>按元素聚合（木/火/土/金/水 各一个 chunk）</td>
+</tr>
+<tr>
+<td><strong>&lt; 1KB 的笔记</strong>（占6%）</td>
+<td>按目录合并</td>
+</tr>
+</tbody></table>
+<h3>3.3 Chunk 元数据</h3>
+<pre><code>{
+  "chunk_id": "wx-assessment-wood-001",
+  "source_file": "05-五行人格心理学/测评系统/03-木行人-测评模块.md",
+  "tags": ["测评", "木行", "阳木", "生长性"],
+  "scene_ids": ["SC-01", "SC-03", "SC-08"],
+  "wuxing": "木",
+  "yin_yang": "阳",
+  "dimension": "基本属性",
+  "links_to": ["07-计分规则.md", "火行人测评模块.md"]
+}</code></pre>
+<h3>3.4 检索策略</h3>
+<pre><code>Layer 1: 意图识别 -&gt; 判断场景ID + 五行类型
+Layer 2: 混合检索（向量 0.6 + BM25 0.3 + 元数据过滤 0.1）-&gt; Top 50
+Layer 3: Reranker 精排 -&gt; Top 10</code></pre>
+<h3>3.5 场景路由权重</h3>
+<table>
+<thead><tr>
+<th>场景</th>
+<th>向量权重</th>
+<th>BM25权重</th>
+<th>过滤条件</th>
+</tr></thead><tbody>
+<tr>
+<td>SC-01 亲密关系</td>
+<td>0.7</td>
+<td>0.3</td>
+<td>scene_ids=SC-01</td>
+</tr>
+<tr>
+<td>SC-02 亲子教育</td>
+<td>0.6</td>
+<td>0.4</td>
+<td>scene_ids=SC-02</td>
+</tr>
+<tr>
+<td>SC-03 领导力</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>scene_ids=SC-03</td>
+</tr>
+<tr>
+<td>SC-04 团队建设</td>
+<td>0.6</td>
+<td>0.4</td>
+<td>scene_ids=SC-04</td>
+</tr>
+<tr>
+<td>SC-05 高效沟通</td>
+<td>0.7</td>
+<td>0.3</td>
+<td>scene_ids=SC-05</td>
+</tr>
+<tr>
+<td>SC-06 健康养生</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>scene_ids=SC-06</td>
+</tr>
+<tr>
+<td>SC-07 日常生活</td>
+<td>0.6</td>
+<td>0.4</td>
+<td>scene_ids=SC-07</td>
+</tr>
+<tr>
+<td>SC-08 人格测评</td>
+<td>0.4</td>
+<td>0.6</td>
+<td>scene_ids=SC-08</td>
+</tr>
+</tbody></table>
+<h3>3.6 五行分智能体个性化权重</h3>
+<p>分智能体检索时，按相生相克关系调整结果权重：</p>
+<ul>
+<li><strong>加强</strong>（x1.5）：自身行内容</li>
+<li><strong>次加强</strong>（x1.2）：相生行内容</li>
+<li><strong>减弱</strong>（x0.5）：相克行内容</li>
+</ul>
+<hr>
+<h2>四、与 AI OS 的集成</h2>
+<table>
+<thead><tr>
+<th>六层</th>
+<th>RAG 角色</th>
+</tr></thead><tbody>
+<tr>
+<td>灵魂层（x）</td>
+<td>决定检索的"价值观"——找到"对的事"而非随便的信息</td>
+</tr>
+<tr>
+<td>上下文工程层（L1）</td>
+<td>提供长期记忆的向量检索能力</td>
+</tr>
+<tr>
+<td>决策层（L2）</td>
+<td>根据场景/意图选择检索策略</td>
+</tr>
+<tr>
+<td>Skills层（L3）</td>
+<td>RAG检索作为一个原子化技能</td>
+</tr>
+<tr>
+<td>MCP层（L4）</td>
+<td>通过MCP接口通信</td>
+</tr>
+<tr>
+<td>工作流层（L5）</td>
+<td>标准化流程：意图-&gt;检索-&gt;精排-&gt;注入-&gt;回答</td>
+</tr>
+<tr>
+<td>知识层（L6）</td>
+<td>核心作用域——让知识可检索</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>五、实施路线图</h2>
+<h3>P0 - 基础设施（2-3天）</h3>
+<ul>
+<li>Day 1: 下载 qdrant.exe -&gt; 启动 -&gt; 创建 collection</li>
+<li>Day 2: 部署 BGE-M3（通过 ollama 或 sentence-transformers）</li>
+<li>Day 3: 编写数据管道（解析 frontmatter / 分块 / embedding）</li>
+</ul>
+<h3>P1 - 全量索引（2-3天）</h3>
+<ul>
+<li>Day 4: 全量索引 4862 个文件 -&gt; 搜索验证</li>
+<li>Day 5: 编写 FastAPI 检索接口 + 混合搜索 + Reranker</li>
+<li>Day 6: 集成场景路由 + 五行个性化权重</li>
+</ul>
+<h3>P2 - AI OS 集成（2-3天）</h3>
+<ul>
+<li>Day 7: 龙脑OS三层感知雷达接入</li>
+<li>Day 8: 增量同步（文件 watcher + IMA 三向同步）</li>
+<li>Day 9: 调优参数 -&gt; 全场景测试 -&gt; 上线</li>
+</ul>
+<h3>共 7-9 天</h3>
+<hr>
+<h2>六、预期效果</h2>
+<table>
+<thead><tr>
+<th>场景</th>
+<th>关键词搜索</th>
+<th>RAG 后</th>
+</tr></thead><tbody>
+<tr>
+<td>搜"什么叫拔阴取阳"</td>
+<td>只找到含四字的文件</td>
+<td>找到文档 + 相关转化案例</td>
+</tr>
+<tr>
+<td>"我和伴侣总是冷战"</td>
+<td>无结果</td>
+<td>沟通策略 + SC-01场景内容</td>
+</tr>
+<tr>
+<td>"如何培养团队"</td>
+<td>含"培养""团队"的文件</td>
+<td>土行人领导力 + 梯队建设</td>
+</tr>
+<tr>
+<td>"早上起不来怎么办"</td>
+<td>无结果</td>
+<td>识别为阴土惰性 -&gt; 方法</td>
+</tr>
+<tr>
+<td>中英文混合</td>
+<td>只搜到一种语言</td>
+<td>中英文都搜到</td>
+</tr>
+</tbody></table>
+<p>性能目标：单次检索 &lt; 1秒，全量索引 &lt; 30分钟，磁盘 &lt; 200MB</p>
+<hr>
+<p><strong>版本</strong>: v1.0 | <strong>创建</strong>: 2026-05-26 | <strong>位置</strong>: 龙脑OS·知识地基层</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

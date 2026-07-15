@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Skill 构建 SOP - 龙心 OS 技能开发标准流程 - 以观其妙书院</title>
+<meta name="description" content="Skill 构建 SOP - 龙心 OS 技能开发标准流程 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="Skill 构建 SOP - 龙心 OS 技能开发标准流程">
+<meta property="og:description" content="Skill 构建 SOP - 龙心 OS 技能开发标准流程 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Skill 构建 SOP - 龙心 OS 技能开发标准流程",
+    "description": "Skill 构建 SOP - 龙心 OS 技能开发标准流程 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Skill 构建 SOP - 龙心 OS 技能开发标准流程</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Skill 构建 SOP - 龙心 OS 技能开发标准流程</h1>
+<blockquote><p>🔧 从需求到部署的完整流程 · 第 4 步</p></blockquote>
+<hr>
+<h2>📋 流程总览</h2>
+<pre><code>需求分析 → 技能搜索 → 安全审查 → 安装配置 → 测试验证 → 文档沉淀
+    ↓          ↓          ↓          ↓          ↓          ↓
+ 明确需求   ClawHub    skill-vetter  安装技能   功能测试   写入 TOOLS.md
+          本地技能   手动审查      配置凭证   集成测试   更新 SOP</code></pre>
+<hr>
+<h2>步骤 1: 需求分析</h2>
+<h3>明确需求</h3>
+<p><strong>输入</strong>: 用户描述的功能需求</p>
+<p><strong>输出</strong>: 结构化的技能需求文档</p>
+<p><strong>模板</strong>:</p>
+<pre><code>## 技能需求
+
+### 功能描述
+[一句话描述技能功能]
+
+### 使用场景
+- 场景 1
+- 场景 2
+
+### 期望行为
+[技能应该如何响应用户请求]
+
+### 优先级
+🔴 高 / 🟡 中 / 🟢 低</code></pre>
+<h3>需求分类</h3>
+<table>
+<thead><tr>
+<th>类别</th>
+<th>示例</th>
+<th>推荐方案</th>
+</tr></thead><tbody>
+<tr>
+<td>记忆系统</td>
+<td>写入/读取记忆</td>
+<td>已有技能组合</td>
+</tr>
+<tr>
+<td>搜索获取</td>
+<td>联网搜索/公众号</td>
+<td>web-search-plus</td>
+</tr>
+<tr>
+<td>文件处理</td>
+<td>PDF/Word/Excel</td>
+<td>专用技能</td>
+</tr>
+<tr>
+<td>自动化</td>
+<td>定时任务</td>
+<td>cron-helper</td>
+</tr>
+<tr>
+<td>安全审查</td>
+<td>技能 vetting</td>
+<td>skill-vetter</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>步骤 2: 技能搜索</h2>
+<h3>搜索渠道</h3>
+<p><strong>优先级顺序</strong>:</p>
+<ol>
+<li><strong>本地已安装</strong> (<code>skills_extra</code> + <code>~/.agents/skills</code>)</li>
+<li><strong>ClawHub</strong> (官方市场)</li>
+<li><strong>GitHub</strong> (开源技能)</li>
+<li><strong>自研</strong> (创建新技能)</li>
+</ol>
+<h3>搜索命令</h3>
+<pre><code># ClawHub 搜索
+openclaw skills search &lt;keyword&gt;
+
+# 本地技能列表
+openclaw skills list
+
+# 查看技能详情
+openclaw skills show &lt;skill-name&gt;</code></pre>
+<h3>搜索技巧</h3>
+<table>
+<thead><tr>
+<th>技巧</th>
+<th>示例</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>同义词</td>
+<td><code>summarize</code> / <code>summary</code> / <code>abstract</code></td>
+<td>多词搜索</td>
+</tr>
+<tr>
+<td>功能描述</td>
+<td><code>pdf reader</code> / <code>document convert</code></td>
+<td>描述功能</td>
+</tr>
+<tr>
+<td>场景</td>
+<td><code>wechat search</code> / <code>公众号</code></td>
+<td>使用场景</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>步骤 3: 安全审查</h2>
+<h3>自动审查 (skill-vetter)</h3>
+<pre><code>openclaw skills vet &lt;skill-name&gt;</code></pre>
+<p><strong>检查项</strong>:</p>
+<ul>
+<li>[ ] 权限申请是否合理</li>
+<li>[ ] 网络请求目标是否可信</li>
+<li>[ ] 代码是否有混淆</li>
+<li>[ ] 依赖来源是否可靠</li>
+<li>[ ] 是否有恶意代码迹象</li>
+</ul>
+<h3>手动审查清单</h3>
+<table>
+<thead><tr>
+<th>检查项</th>
+<th>通过标准</th>
+<th>状态</th>
+</tr></thead><tbody>
+<tr>
+<td>来源可信</td>
+<td>官方市场/知名作者</td>
+<td>⬜</td>
+</tr>
+<tr>
+<td>权限合理</td>
+<td>最小权限原则</td>
+<td>⬜</td>
+</tr>
+<tr>
+<td>代码清晰</td>
+<td>无混淆/加密</td>
+<td>⬜</td>
+</tr>
+<tr>
+<td>依赖安全</td>
+<td>无未知依赖</td>
+<td>⬜</td>
+</tr>
+<tr>
+<td>文档完整</td>
+<td>有使用说明</td>
+<td>⬜</td>
+</tr>
+</tbody></table>
+<h3>风险等级</h3>
+<table>
+<thead><tr>
+<th>等级</th>
+<th>标准</th>
+<th>处理</th>
+</tr></thead><tbody>
+<tr>
+<td>🟢 安全</td>
+<td>全部通过</td>
+<td>直接安装</td>
+</tr>
+<tr>
+<td>🟡 低风险</td>
+<td>1-2 项存疑</td>
+<td>告知用户后决定</td>
+</tr>
+<tr>
+<td>🔴 高风险</td>
+<td>3 项以上存疑</td>
+<td>拒绝安装</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>步骤 4: 安装配置</h2>
+<h3>安装命令</h3>
+<pre><code># 从 ClawHub 安装
+openclaw skills install &lt;skill-name&gt;
+
+# 本地安装 (复制技能目录)
+Copy-Item -Path "source/skill" -Destination "~/.agents/skills/" -Recurse</code></pre>
+<h3>配置凭证</h3>
+<p><strong>常见凭证类型</strong>:</p>
+<table>
+<thead><tr>
+<th>类型</th>
+<th>存储位置</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td>API Key</td>
+<td><code>~/.config/&lt;skill&gt;/api_key</code></td>
+<td>IMA API Key</td>
+</tr>
+<tr>
+<td>Client ID</td>
+<td><code>~/.config/&lt;skill&gt;/client_id</code></td>
+<td>IMA Client ID</td>
+</tr>
+<tr>
+<td>Token</td>
+<td>环境变量</td>
+<td><code>export TOKEN=xxx</code></td>
+</tr>
+</tbody></table>
+<h3>配置模板</h3>
+<pre><code># 创建配置目录
+New-Item -ItemType Directory -Force -Path "~/.config/&lt;skill&gt;"
+
+# 写入凭证
+echo "your_api_key" &gt; "~/.config/&lt;skill&gt;/api_key"
+
+# 验证配置
+cat "~/.config/&lt;skill&gt;/api_key"</code></pre>
+<hr>
+<h2>步骤 5: 测试验证</h2>
+<h3>功能测试</h3>
+<p><strong>测试清单</strong>:</p>
+<table>
+<thead><tr>
+<th>测试项</th>
+<th>测试方法</th>
+<th>预期结果</th>
+</tr></thead><tbody>
+<tr>
+<td>基本功能</td>
+<td>执行核心功能</td>
+<td>正常响应</td>
+</tr>
+<tr>
+<td>边界条件</td>
+<td>输入极端值</td>
+<td>优雅处理</td>
+</tr>
+<tr>
+<td>错误处理</td>
+<td>故意触发错误</td>
+<td>清晰报错</td>
+</tr>
+<tr>
+<td>性能</td>
+<td>大数据量</td>
+<td>可接受延迟</td>
+</tr>
+</tbody></table>
+<h3>集成测试</h3>
+<pre><code># 测试技能调用
+openclaw skills run &lt;skill-name&gt; --args "test input"
+
+# 检查输出
+# 预期：结构化输出，无错误</code></pre>
+<h3>验证标准</h3>
+<ul>
+<li>[ ] 功能正常</li>
+<li>[ ] 无安全警告</li>
+<li>[ ] 文档完整</li>
+<li>[ ] 凭证配置正确</li>
+<li>[ ] 与其他技能无冲突</li>
+</ul>
+<hr>
+<h2>步骤 6: 文档沉淀</h2>
+<h3>更新 TOOLS.md</h3>
+<p><strong>添加技能条目</strong>:</p>
+<pre><code>### 新增技能
+
+| 技能 | 功能 | 位置 |
+|------|------|------|
+| `&lt;skill-name&gt;` | [功能描述] | `~/.agents/skills/` |</code></pre>
+<h3>创建使用示例</h3>
+<p><strong>示例模板</strong>:</p>
+<pre><code>## &lt;skill-name&gt; 使用示例
+
+### 基本用法</code></pre>
+<p>[用户指令示例]</p>
+<pre><code>
+### 高级用法</code></pre>
+<p>[复杂场景示例]</p>
+<pre><code>
+### 注意事项
+- 注意 1
+- 注意 2</code></pre>
+<h3>写入 LEARNINGS.md</h3>
+<p><strong>经验提炼</strong>:</p>
+<pre><code>### [技能名称] 安装经验
+
+**来源**: 本次安装实践
+
+**经验**:
+1. [经验点 1]
+2. [经验点 2]
+
+**SOP**:
+[标准化流程]</code></pre>
+<hr>
+<h2>📊 技能安装清单模板</h2>
+<h3>已安装技能</h3>
+<pre><code>| 技能名称 | 功能 | 安装日期 | 状态 | 备注 |
+|----------|------|----------|------|------|
+| skill-1 | 功能 1 | 2026-04-13 | ✅ | 正常 |
+| skill-2 | 功能 2 | 2026-04-13 | ✅ | 需配置 |</code></pre>
+<h3>待安装技能</h3>
+<pre><code>| 技能名称 | 功能 | 优先级 | 预计安装日期 |
+|----------|------|--------|--------------|
+| skill-3 | 功能 3 | 🔴 高 | 2026-04-14 |
+| skill-4 | 功能 4 | 🟡 中 | 2026-04-15 |</code></pre>
+<hr>
+<h2>🔄 持续优化</h2>
+<h3>技能审查周期</h3>
+<table>
+<thead><tr>
+<th>周期</th>
+<th>审查内容</th>
+</tr></thead><tbody>
+<tr>
+<td>每周</td>
+<td>新安装技能审查</td>
+</tr>
+<tr>
+<td>每月</td>
+<td>已安装技能使用情况</td>
+</tr>
+<tr>
+<td>每季</td>
+<td>技能库整体优化</td>
+</tr>
+</tbody></table>
+<h3>技能淘汰标准</h3>
+<ul>
+<li>6 个月未使用</li>
+<li>有更好替代品</li>
+<li>存在安全风险</li>
+<li>作者停止维护</li>
+</ul>
+<hr>
+<h2>🎯 9 条核心指令实现</h2>
+<h3>指令实现状态</h3>
+<table>
+<thead><tr>
+<th>指令</th>
+<th>功能</th>
+<th>实现方式</th>
+<th>状态</th>
+</tr></thead><tbody>
+<tr>
+<td>指令一</td>
+<td>写入记忆</td>
+<td><code>edit</code> + MEMORY.md</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>指令二</td>
+<td>调取记忆</td>
+<td><code>memory_search</code> + <code>memory_get</code></td>
+<td>✅</td>
+</tr>
+<tr>
+<td>指令三</td>
+<td>记忆蒸馏</td>
+<td>AI 总结 + <code>edit</code></td>
+<td>✅</td>
+</tr>
+<tr>
+<td>指令四</td>
+<td>联网搜索</td>
+<td><code>web-search-plus</code></td>
+<td>✅</td>
+</tr>
+<tr>
+<td>指令五</td>
+<td>深度研究</td>
+<td><code>web-search-plus</code> + <code>web_fetch</code></td>
+<td>✅</td>
+</tr>
+<tr>
+<td>指令六</td>
+<td>读取文件</td>
+<td><code>read</code> + 文档技能</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>指令七</td>
+<td>批量读取</td>
+<td><code>Get-ChildItem</code> + AI 整合</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>指令八</td>
+<td>知识沉淀</td>
+<td><code>edit</code> + MEMORY.md</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>指令九</td>
+<td>定时任务</td>
+<td><code>cron-helper</code> + 脚本</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>📌 快速参考</h2>
+<h3>常用命令</h3>
+<pre><code># 搜索技能
+openclaw skills search &lt;keyword&gt;
+
+# 安装技能
+openclaw skills install &lt;skill-name&gt;
+
+# 安全审查
+openclaw skills vet &lt;skill-name&gt;
+
+# 列出技能
+openclaw skills list
+
+# 查看技能详情
+openclaw skills show &lt;skill-name&gt;
+
+# 更新技能
+openclaw skills update &lt;skill-name&gt;</code></pre>
+<h3>配置路径</h3>
+<table>
+<thead><tr>
+<th>配置</th>
+<th>路径</th>
+</tr></thead><tbody>
+<tr>
+<td>技能目录</td>
+<td><code>~/.agents/skills/</code></td>
+</tr>
+<tr>
+<td>配置目录</td>
+<td><code>~/.config/&lt;skill&gt;/</code></td>
+</tr>
+<tr>
+<td>工作区</td>
+<td><code>~/.openclaw/workspace/</code></td>
+</tr>
+<tr>
+<td>记忆文件</td>
+<td><code>~/.openclaw/workspace/MEMORY.md</code></td>
+</tr>
+</tbody></table>
+<hr>
+<p>_龙心 OS Skill 构建 SOP v1.0 · 最后更新：2026-04-13 · 悟空 × 龙龟 共同维护_</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>
