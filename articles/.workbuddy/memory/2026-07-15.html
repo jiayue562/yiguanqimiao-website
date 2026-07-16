@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 07 15 - 以观其妙书院</title>
+    <meta name="description" content="2026-07-15 工作日志🔏 六向同步·AI印记全链路（23:30自动化）- deploy_site.py 执行：docs/为权威源跳过同步 → _headers 19条 ✅ → 索引7726篇(187微信+6280Obsidian) → Git commit+push(SSH) ✅- wrangler token失效(9109) → GitHub自动部署替代 ✅- 首页验证: HTTP200">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="2026 07 15">
+    <meta property="og:description" content="2026-07-15 工作日志🔏 六向同步·AI印记全链路（23:30自动化）- deploy_site.py 执行：docs/为权威源跳过同步 → _headers 19条 ✅ → 索引7726篇(187微信+6280Obsidian) → Git commit+push(SSH) ✅- wrangler token失效(9109) → GitHub自动部署替代 ✅- 首页验证: HTTP200">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/2026-07-15.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/2026-07-15.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "2026 07 15",
+      "description": "2026-07-15 工作日志🔏 六向同步·AI印记全链路（23:30自动化）- deploy_site.py 执行：docs/为权威源跳过同步 → _headers 19条 ✅ → 索引7726篇(187微信+6280Obsidian) → Git commit+push(SSH) ✅- wrangler token失效(9109) → GitHub自动部署替代 ✅- 首页验证: HTTP200",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>2026 07 15</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            2026 07 15...
+        </div>
+        
+        <article>
+<h1>2026-07-15 工作日志</h1>
+
+<h2>🔏 六向同步·AI印记全链路（23:30自动化）</h2>
+<li>deploy_site.py 执行：docs/为权威源跳过同步 → _headers 19条 ✅ → 索引7726篇(187微信+6280Obsidian) → Git commit+push(SSH) ✅</li>
+<li>wrangler token失效(9109) → GitHub自动部署替代 ✅</li>
+<li>首页验证: HTTP200, text/html, 水印3处 ✅</li>
+<li>网站: https://yiguanqimiao-website.pages.dev/ 🟢 Live</li>
+
+<h2>10篇五行人格心理学公众号文章（≥1万字/篇）·收尾</h2>
+
+<strong>已完成创作（全部达标）</strong>
+<li>工作目录：<code>c:\Users\jia'yue\WorkBuddy\Claw\公众号文章-五行人格系列\</code></li>
+<li>10篇均 ≥10,000 总字符（含标点，与微信编辑器一致），合计 100,712 字符，中文约 68,426 字。</li>
+  - 01总论 / 02木 / 03火 / 04土 / 05金 / 06水 / 07相生相克 / 08职业 / 09家庭教育 / 10与AI
+<li>封面图 6 张（<code>assets/cover-wuxing/mu/huo/tu/jin/shui.jpg</code>，1080×540 水墨深色+楷体+五行光晕），由 <code>gen_covers.py</code>（PIL，系统Python3.14）生成。</li>
+<li>frontmatter 统一为 <code>title</code> / <code>author: 悟空</code> / <code>cover: ./assets/cover-*.jpg</code>。</li>
+
+<strong>发布草稿箱（阻塞）</strong>
+<li>凭据已就位：AppID <code>wxb628dc96af4c1129</code> + AppSecret（存于公众号Skill SKILL.md）。</li>
+<li>实测 <code>wenyan publish</code> 报错：<code>40164: invalid ip 120.244.214.74 ... not in whitelist</code> → 微信IP白名单拦截。</li>
+<li>当前机器公网IP <code>120.244.214.74</code> 未加入白名单（白名单现配 <code>14.216.3.226</code>）。</li>
+<li>已写 <code>publish_all.py</code>（循环10篇，shell调用 wenyan，自动识别IP拦截/成功），加白后运行即发布。</li>
+<li><strong>用户待办</strong>：登录 mp.weixin.qq.com → 设置 → 安全中心 → IP白名单，加入 <code>120.244.214.74</code>。</li>
+
+<strong>wenyan-cli v2.0.8 源码核实（修正Skill旧注）</strong>
+<li><code>core.js</code> 的 <code>handleFrontMatter</code> 解析 frontmatter 的 <code>cover</code>/<code>author</code>；<code>wrapper.js</code> 的 <code>publishToWechatDraft</code> 将 <code>cover</code> 上传为草稿 <code>thumb_media_id</code>，缺省则回退正文首图。</li>
+<li>已修正 <code>~/.workbuddy/skills/以观其妙书院公众号/SKILL.md</code> 中"wenyan无cover参数须正文嵌入"的过时说法。</li>
+
+<h2>微信IP加白 + 草稿箱发布完成（21:38 起）</h2>
+<li>用户确认已将 <code>120.244.214.74</code> 加入公众号IP白名单。</li>
+<li>运行 <code>publish_all.py</code> → 后台任务 GZk76v（输出记录已回收）。</li>
+<li><strong>只读API核验（draft/batchget）</strong>：草稿箱 <code>total_count=202</code>，最近20条含全部10篇五行人格文章（标题被 wenyan 规整前缀，内容一致）：总论/木/火/土/金/水/相生相克/职业/家庭教育/与AI。<strong>发布任务彻底完成 ✅</strong>。</li>
+
+<h2>六向同步·AI印记全链路 v2.0 规范落地（用户供给规范）</h2>
+<li>保存权威规范文档：<code>c:\Users\jia'yue\WorkBuddy\Claw\六向同步-AI印记全链路v2.0.md</code>（核心逻辑/六节点角色/8步部署/5条P0标准/容错规则/印记配置/每日自动化）。</li>
+<li><code>deploy_site.py</code>（<code>yiguanqimiao-website/scripts/</code>，20KB）<strong>已实现v2.0规范</strong>：Step1同步→Step2中文名转ASCII(MD5)→Step3无扩展名副本→Step4 <code>_headers</code>精确路径→Step5重建索引→Step6 Git+Cloudflare部署→水印常量→Step8链接验证。无需重写。</li>
+<li>对齐同步技能 <code>~/.workbuddy/skills/三向同步系统/SKILL.md</code>：frontmatter <code>name</code> 由"三向同步系统"改为"六向同步·AI印记全链路"(v6.0.0)，补入 v2.0 节点角色表 + 5条P0 + 容错规则 + 部署脚本说明，引用权威规范文档路径。</li>
+<li>更新 <code>MEMORY.md</code> 九：指向 v2.0 规范 + deploy_site.py；五/十二：标记微信发布✅、IP已加白。</li>
+
+<h2>待确认（未主动执行，避免触达线上）</h2>
+<li>是否现在运行 <code>deploy_site.py</code> 对全站/新增文章做一次实际部署？（涉及 GitHub push + Cloudflare 线上发布，需用户明确授权）</li>
+<li>六向同步每日自动化（23:30–23:45）是否需新建/校验 automation 条目？</li>
+
+<h2>六向同步执行·微信草稿箱202篇落地（本轮回合 22:28 起）</h2>
+用户指令"草稿箱总数202篇进行六向同步"。执行结果：
+
+<strong>① WorkBuddy本地 ✅</strong>
+<li><code>wechat_draft_list.py</code> 只读拉取草稿箱202篇→去重181篇、20组重复。</li>
+<li><code>export_wechat_drafts.py</code> 导出<strong>180篇</strong>去重HTML（含SEO meta/结构化数据）至 <code>yiguanqimiao-website/articles/wechat-articles/</code>（wx_前缀hash命名），清理旧同步产物47个。</li>
+
+<strong>② Obsidian ✅</strong>
+<li>180篇复制到 <code>D:/以观其妙书院知识库/以观其妙书院/微信公众号草稿库/</code>。</li>
+
+<strong>③ IMA云端 ⚠️ 50/180（每日配额限制）</strong>
+<li>用户提供新 IMA API Key（ClientID不变），验证有效并写入 <code>~/.config/ima/api_key</code>。</li>
+<li><code>sync_ima_notes.py</code>（笔记路径 import_doc→add_knowledge media_type=11，断点续传 ima_done.json）测试2篇通过→后台跑至50篇后被回收。</li>
+<li>前台重跑剩余：批量报 <strong>403 code 200005「请求超量，请明日再试」</strong>——IMA <code>import_doc</code> <strong>每日配额~50条</strong>。今日已用满50/180。</li>
+<li><strong>已建自动化 <code>automation-1784126355561</code>（一次性·2026-07-16 09:00）</strong> 自动续传剩余130篇，断点续传安全。</li>
+
+<strong>④ GitHub ✅（修复后）</strong>
+<li>初推送因 remote URL 内嵌 <code>ghp_...</code> token 失效报 auth failed；切 SSH：<code>git remote set-url origin git@github.com:jiayue562/yiguanqimiao-website.git</code>（SSH密钥 <code>~/.ssh/id_ed25519</code> 已认证）。</li>
+<li>commit <code>5237d764</code>（180篇wx_新增+47旧wechat删除）经 SSH 推送成功 <code>9282aba1..5237d764 main->main</code>。<strong>顺带消除明文token泄露风险。</strong></li>
+
+<strong>⑤ Cloudflare Pages ✅ / ⑥ pages.dev ✅</strong>
+<li>22:19 部署提交 <code>9282aba1</code> 已上线；180篇抽样 <code>004942985a</code> 复验 HTTP 200，全站可访问。</li>
+
+<strong>Git工作树</strong>：修复后仅剩2个 <code>dist/</code> 未跟踪构建产物（index.html.bak + 遗留HTML），不影响同步，未处理。
+
+<strong>关键脚本清单</strong>：<code>export_wechat_drafts.py</code>(微信→本地) / <code>sync_ima_notes.py</code>(本地→IMA) / <code>wechat_draft_list.py</code>(清单) / <code>publish_all.py</code>(草稿箱发布) / <code>gen_covers.py</code>(封面)。
+
+<h2>全站AI大模型水印部署（22:43 用户指令：所有内容部署到pages.dev + AI水印）</h2>
+用户给定水印串 <code>yiguanqimiao-unique-watermark-wk-jiayue-academy</code>（以观其妙书院），要求全站部署到 https://yiguanqimiao-website.pages.dev/ 并打水印。
+
+<li><strong>诊断</strong>：deploy_site.py 仅"验证首页水印"不注入；本地 docs/ articles/ 共仅 44 篇含水印（8篇AI-OS系列+...），172篇微信文章缺失。线上抽样此前有水印系站点全局模板层所致。</li>
+<li><strong>注入</strong>：写 <code>apply_watermark.py</code>，将水印注入 <strong>docs/ 1703篇 + articles/ 1856篇 = 3515篇新注入</strong>（44篇已含自动跳过，0错误）。每篇含①可见脚注<code><p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p></code> ②机器可读HTML注释。</li>
+<li><strong>GitHub ✅</strong>：commit <code>ffa994be</code>「🔏 全站AI大模型水印注入」3515文件，SSH推送 <code>5237d764..ffa994be main->main</code> 成功。</li>
+<li><strong>Cloudflare ⚠️→✅</strong>：<code>wrangler pages deploy</code> <strong>因 token 失效失败</strong>（9109/10000）。但 <strong>GitHub push 触发 Cloudflare Pages 自动部署</strong>，pages.dev 随之全站更新含水印。</li>
+<li><strong>线上验证 ✅</strong>：首页 HTTP 200 且水印3次；抽样5篇微信文章（首/中/尾）均水印3次。全站AI水印落地完成。</li>
+<li><strong>阻塞遗留</strong>：Cloudflare API token 已失效，未来若需 <code>wrangler</code> 直推须换新 token；当前 GitHub 自动部署可绕开。</li>
+
+<h2>味藏AI原生组织·每日心跳写入（23:45自动化）</h2>
+<li>15天空窗后恢复执行（06-30~07-15未触发）</li>
+<li>更新 <code>03-组织心跳仪表盘.md</code>：K1=54天🟡、PERF-MGR=43天🟡、N5=100%🟢、K5=0🟢</li>
+<li>生成07-15每日快报，标记15天空窗、K1距红线6天、自动化稳定性需确认</li>
+<li>补齐 <code>瓶颈日志-基线测量期.md</code> Week 2/3/4 空窗期记录（0任务/0瓶颈）</li>
+<li>归档到 <code>05-瓶颈追踪系统+五象限映射.md</code> 瓶颈日志部分</li>
+<li>更新自动化记忆：<code>.workbuddy/automations/automation-味藏心跳每日/memory.md</code></li>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

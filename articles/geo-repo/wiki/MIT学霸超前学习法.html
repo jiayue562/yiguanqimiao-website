@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT学霸超前学习法 - 以观其妙书院</title>
+    <meta name="description" content="MIT学霸超前学习法基于AI工具与认知重构的深度学习范式研究核心框架- 认知支架：NotebookLM（Gemini 1.5 Pro驱动，证据驱动型推理）- 核心算法：三问驱动（概念关联分析 + 教学式自查 + 出题思维训练）- 执行流程：课前60%→课中20%→课后20%- 效率跃迁：从"时间驱动"向"漏洞驱动"- 核心指标：知识内化率（≥60%为有效）关键人物- 斯科特·扬（MIT，整体性学习">
+    <meta name="keywords" content="[学习法, 超前学习, MIT, NotebookLM, 费曼技巧, 元认知, 整体性学习法, 漏洞驱动, 学习飞轮, 凋零效应, 知识内化率]">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="MIT学霸超前学习法">
+    <meta property="og:description" content="MIT学霸超前学习法基于AI工具与认知重构的深度学习范式研究核心框架- 认知支架：NotebookLM（Gemini 1.5 Pro驱动，证据驱动型推理）- 核心算法：三问驱动（概念关联分析 + 教学式自查 + 出题思维训练）- 执行流程：课前60%→课中20%→课后20%- 效率跃迁：从"时间驱动"向"漏洞驱动"- 核心指标：知识内化率（≥60%为有效）关键人物- 斯科特·扬（MIT，整体性学习">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/MIT学霸超前学习法.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/MIT学霸超前学习法.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "MIT学霸超前学习法",
+      "description": "MIT学霸超前学习法基于AI工具与认知重构的深度学习范式研究核心框架- 认知支架：NotebookLM（Gemini 1.5 Pro驱动，证据驱动型推理）- 核心算法：三问驱动（概念关联分析 + 教学式自查 + 出题思维训练）- 执行流程：课前60%→课中20%→课后20%- 效率跃迁：从"时间驱动"向"漏洞驱动"- 核心指标：知识内化率（≥60%为有效）关键人物- 斯科特·扬（MIT，整体性学习",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>MIT学霸超前学习法</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            MIT学霸超前学习法...
+        </div>
+        
+        <article>
+<h1>MIT学霸超前学习法</h1>
+
+<blockquote>基于AI工具与认知重构的深度学习范式研究</blockquote>
+
+<h2>核心框架</h2>
+<li><strong>认知支架</strong>：NotebookLM（Gemini 1.5 Pro驱动，证据驱动型推理）</li>
+<li><strong>核心算法</strong>：三问驱动（概念关联分析 + 教学式自查 + 出题思维训练）</li>
+<li><strong>执行流程</strong>：课前60%→课中20%→课后20%</li>
+<li><strong>效率跃迁</strong>：从"时间驱动"向"漏洞驱动"</li>
+<li><strong>核心指标</strong>：知识内化率（≥60%为有效）</li>
+
+<h2>关键人物</h2>
+<li>斯科特·扬（MIT，整体性学习法创始人）</li>
+<li>何猷君（MIT，3年完成4年学业满绩）</li>
+<li>苏珊·周（哈佛，GPA 4.0，费曼学习法实践者）</li>
+<li>克里斯汀（斯坦福，三栏笔记法）</li>
+<li>丹尼尔（普林斯顿，倒推阅读法/出题思维）</li>
+
+<h2>关键概念</h2>
+<li>整体性学习法：大脑通过联系网络储存信息</li>
+<li>凋零效应：机械式超前学习优势在小学四年级后消失</li>
+<li>知识内化率：判定超前学习成败的核心指标（≥60%有效）</li>
+<li>学习飞轮：问题-地图-验证的闭环系统</li>
+<li>三问驱动：概念关联+教学自查+出题思维的元认知闭环</li>
+
+<h2>核心金句</h2>
+<blockquote>"所谓的理解就是联系。只有将其嵌入到庞大的联系网络中，才是真正的整体性学习。"</blockquote>
+<blockquote>"真正的超前，不是违背认知规律的强行催熟，而是以AI为翼，在思维深处修筑认知高速公路。"</blockquote>
+<blockquote>"语言卡点即知识漏洞所在。"</blockquote>
+
+<h2>关联Wiki页面</h2>
+<li>[[整体性学习法]]</li>
+<li>[[费曼技巧]]</li>
+<li>[[NotebookLM]]</li>
+<li>[[元认知理论]]</li>
+<li>[[凋零效应]]</li>
+<li>[[知识内化率]]</li>
+<li>[[学习飞轮]]</li>
+<li>[[三问驱动框架]]</li>
+<li>[[知识连续性建构]]</li>
+<li>[[概念关联分析]]</li>
+<li>[[教学式自查]]</li>
+<li>[[出题思维训练]]</li>
+<li>[[三栏笔记法]]</li>
+<li>[[间隔重复]]</li>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

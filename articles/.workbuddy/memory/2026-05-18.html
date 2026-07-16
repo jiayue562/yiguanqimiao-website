@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 05 18 - 以观其妙书院</title>
+    <meta name="description" content="2026-05-18 工作日志任务1：每日WorkBuddy→IMA知识库增量同步（11:00）- 读取IMA凭证 ✅- 搜索知识库，找到"以观其妙书院" ✅- COS上传失败 ❌（AccessDenied，缺少签名脚本cos-upload.cjs）- 替代方案：方案A更新IMA skill / 方案B Python cos-sdk / 方案C IMA笔记API任务2：AI OS三层架构完整性审查">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="2026 05 18">
+    <meta property="og:description" content="2026-05-18 工作日志任务1：每日WorkBuddy→IMA知识库增量同步（11:00）- 读取IMA凭证 ✅- 搜索知识库，找到"以观其妙书院" ✅- COS上传失败 ❌（AccessDenied，缺少签名脚本cos-upload.cjs）- 替代方案：方案A更新IMA skill / 方案B Python cos-sdk / 方案C IMA笔记API任务2：AI OS三层架构完整性审查">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/2026-05-18.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/2026-05-18.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "2026 05 18",
+      "description": "2026-05-18 工作日志任务1：每日WorkBuddy→IMA知识库增量同步（11:00）- 读取IMA凭证 ✅- 搜索知识库，找到"以观其妙书院" ✅- COS上传失败 ❌（AccessDenied，缺少签名脚本cos-upload.cjs）- 替代方案：方案A更新IMA skill / 方案B Python cos-sdk / 方案C IMA笔记API任务2：AI OS三层架构完整性审查",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>2026 05 18</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            2026 05 18...
+        </div>
+        
+        <article>
+<h1>2026-05-18 工作日志</h1>
+
+<h2>任务1：每日WorkBuddy→IMA知识库增量同步（11:00）</h2>
+<li>读取IMA凭证 ✅</li>
+<li>搜索知识库，找到"以观其妙书院" ✅</li>
+<li>COS上传失败 ❌（AccessDenied，缺少签名脚本cos-upload.cjs）</li>
+<li>替代方案：方案A更新IMA skill / 方案B Python cos-sdk / 方案C IMA笔记API</li>
+
+<h2>任务2：AI OS三层架构完整性审查（11:05）</h2>
+<li>龙脑OS v2.0 ✅ | 龙心OS v6.1 ✅ | 龙爪OS v2.0 ✅</li>
+<li>完整性评分：95/100</li>
+<li>调用链：用户输入 → 龙爪OS(场景识别) → 龙心OS(引擎调度) → 龙脑OS(知识检索)</li>
+
+<h2>任务3：岗位智能体v1.0→v2.0改造清单学习与知识沉淀（12:08）</h2>
+<li>激活龙心OS（1+5模式）✅</li>
+<li>调用岗位智能体skill ✅</li>
+<li>读取现有SKILL.md，确认已包含全部9个改动点 ✅</li>
+<li>逐行学习改造清单，创建学习笔记 ✅</li>
+<li>检查补充文件（references/templates/triggers）全部存在 ✅</li>
+<li>知识沉淀：</li>
+  - Obsidian ✅：7个文件复制到 <code>D:\以观其妙书院知识库\以观其妙书院\岗位智能体v2.0\</code>
+  - IMA知识库 ❌：DNS解析失败（api.ima.qq.com无法访问）
+  - WorkBuddy LLM Wiki ✅：3个新页面（岗位智能体v2.0、龙爪模式、智能体vsSkill）+ 索引和日志更新
+<li>记忆系统更新 ✅：MEMORY.md v32.0→v33.0</li>
+
+<h3>学习收获</h3>
+<li>岗位智能体v2.0核心升级：双模式（👤提示词+🐉龙爪）</li>
+<li>龙爪模式 = 输出WorkBuddy SKILL.md + 可选Rule .mdc</li>
+<li>核心哲学："本质是智能体（生命体），本Skill包仅为其工程载体和入口"</li>
+<li>8步SOP：六维采集→五行识别→关键动作→AI关键词→提示词生成→选择输出→资产引用→Rule生成</li>
+<li>Step 7 资产引用规则：5类场景对应不同引用路径</li>
+<li>Step 8 Rule文件：两层触发（上下文感知+直接触发词）</li>
+
+<h3>待处理</h3>
+<li>IMA知识库DNS问题待解决</li>
+<li>IMA COS上传脚本（cos-upload.cjs、preflight-check.cjs）需补全</li>
+
+<h2>任务4：味藏店长龙爪创建（14:20）</h2>
+<li>激活岗位智能体🐉龙爪模式 ✅</li>
+<li>按8步SOP执行：六维采集→五行识别→关键动作→AI关键词→SKILL.md生成→资产引用→Rule文件</li>
+<li>创建文件：</li>
+  - <code>~/.workbuddy/skills/味藏店长龙爪/SKILL.md</code> ✅
+  - <code>~/.workbuddy/skills/味藏店长龙爪/味藏店长龙爪.mdc</code> ✅
+<li>龙爪核心内容：</li>
+  - 5大总部赋能接口（数据/培训/资源/问题/反馈）
+  - 7S能力模块（SV战略结构制度风格人员技能）
+  - 三层行动日历（每日/每周/每月）
+  - 五行人格适配五种店长沟通风格
+  - 经营分析框架 + 心文化落地引擎
+<li>修复岗位智能体SKILL.md版本号不一致（版本历史v1.0占位+文档版本1.0→2.0）✅</li>
+
+<h2>任务5：味藏堂食创业单元5月第2周复盘HTML报告（15:22）</h2>
+<li>汇总三店（金月湾/松山湖/狮山店）周数据，制作全面复盘报告 ✅</li>
+<li>创建文件：<code>Claw/味藏堂食创业单元5月第2周复盘报告.html</code> ✅</li>
+<li>报告包含7大模块：</li>
+  1. 三店核心数据总览（对比表+进度条）
+  2. 本周工作模块进展（5模块状态追踪）
+  3. 优劣势剖析（双栏对比）
+  4. 复盘画布（5步：目标→结果→差异→经验→行动）
+  5. 矛盾剖析（根本/阶段/主要矛盾方面）
+  6. 一页纸汇报（总负责人视角）
+  7. PDCA落地执行方案（9项行动+时间节点+追踪人）
+<li>设计风格：深色顶栏+白色画布+浅灰网格+响应式</li>
+
+<h2>任务6：味藏店长龙爪7S诊断报告（15:31）</h2>
+<li>启用味藏店长龙爪Skill分析堂食创业单元数据 ✅</li>
+<li>创建文件：<code>Claw/味藏店长龙爪-堂食创业单元7S诊断报告.html</code> ✅</li>
+<li>报告8大模块：</li>
+  1. 7S组织诊断（评分+诊断依据+问题+方向）
+  2. 经营仪表盘（三店KPI卡片+预警）
+  3. 五行人格适配（金月湾=金行/松山湖=火行/狮山=金行已确认，各配龙爪沟通模式）
+  4. 指标分层预警（结果/过程/风险三层）
+  5. 心文化落地评估（检视+行动）
+  6. 5大总部赋能接口（激活状态：数据已激活/反馈未激活）
+  7. 三层行动日历（每日/每周/每月，含新增攻坚项）
+  8. 龙爪断语（三大断语+下周核心命题）
+<li>关键发现：5大总部接口中仅数据赋能到位，反馈赋能完全空缺；三店客户链接是系统性断裂</li>
+
+<h2>任务7：味藏店长龙爪-行政人事部7S诊断报告（15:43）</h2>
+<li>启用味藏店长龙爪Skill分析行政人事部5月第3周数据 ✅</li>
+<li>创建文件：<code>Claw/味藏店长龙爪-行政人事部7S诊断报告.html</code> ✅</li>
+<li>报告12大模块：</li>
+  1. 7S雷达诊断（综合4.9/10：S1战略7/S2结构3/S3制度3/S4风格5/S5人员5/S6技能4/S7价值观6）
+  2. 人事经营仪表盘（8项KPI卡片：699简历/12面试/1入职/2培训/0制度/3罚单/1战略/2沟通）
+  3. 五行人格适配（HR总监熊=金行·共创导师模式）
+  4. 五色光矛盾分析（金字塔+矛盾论三层：根本/阶段/主要矛盾方面）
+  5. 指标分层预警（2项红色：入职转化率0.14%/制度产出0）
+  6. 心文化落地评估（六维均分4.5，"以心为本"最低3分）
+  7. 5大总部赋能接口（仅数据激活，问题+反馈未激活）
+  8. 复盘画布（目标→结果→原因→经验→行动）
+  9. 一页纸汇报（人力总监视角·金线原理）
+  10. PDCA落地执行方案（6项SMART行动+时间节点+追踪人）
+  11. 三层行动日历（每日7项含4攻坚/每周5项/每月5项）
+  12. 龙爪断语（核心：金生水——用精准标准驱动灵活吸引）
+<li>核心发现：行政人事部"战略有意识、结构有硬伤、制度有断层"；招聘0.14%转化率是战术勤奋掩盖战略懒惰；5大接口仅1项到位，反馈通道完全空缺</li>
+
+<h2>任务8：岗位智能体龙爪实测反推修改文档（17:22）</h2>
+<li>基于两份龙爪实测HTML（狮山店周复盘画布+堂食创业单元7S诊断报告），反推岗位智能体v2.0的13项修改需求 ✅</li>
+<li>创建文件：<code>Claw/岗位智能体-龙爪实测反推修改文档.html</code> ✅</li>
+<li>核心发现：岗位智能体v2.0在三个层面存在系统性缺口：</li>
+  1. <strong>深度分析框架</strong>缺失：7S评分体系、复盘画布6步框架、指标分层预警（P0/P1）
+  2. <strong>多维度诊断输出</strong>缺失：五行阴阳面分析、龙爪断语、总部赋能接口激活评估
+  3. <strong>视觉化呈现规范</strong>缺失：HTML输出无CSS变量/组件库/响应式规范
+<li>13项修改清单：7P0 + 4P1 + 2P2</li>
+  - P0：7S评分体系、复盘画布、五行阴阳面、指标分层、总部赋能评估、龙爪断语、HTML视觉规范
+  - P1：多门店对比、心文化评估升级、行动日历标记、风险4列升级
+  - P2：双报告模板（个人复盘/组织诊断）、SOP 8步→10步重构
+<li>同步影响：味藏店长龙爪需5项同步更新（阴阳面+赋能评估+心文化+行动日历+视觉规范）</li>
+<li>核心升级方向：从"能造龙爪"到"能造出咬得动问题的龙爪"</li>
+
+<h2>任务9：岗位智能体反推修改文档HTML→MD格式转换（17:34）</h2>
+<li>读取<code>Claw/岗位智能体-龙爪实测反推修改文档.html</code>，将全部内容梳理为Markdown文档 ✅</li>
+<li>创建文件：<code>Claw/岗位智能体-龙爪实测反推修改文档.md</code> ✅</li>
+<li>保留全部13项修改内容（7P0+4P1+2P2）、代码块、影响矩阵、同步影响表、龙爪断语</li>
+
+<h2>任务10：岗位智能体v2.0→v3.0全面升级（17:51）</h2>
+<li>激活龙心OS 1+5模式，深度学习修改文档全部13项修改 ✅</li>
+<li>更新SKILL.md至v3.0 ✅（核心升级：SOP 8步→10步，输出类型2→3种）</li>
+<li>更新references/theory.md ✅（新增7S/阴阳面/指标分层/复盘画布/龙爪断语/HTML规范6大理论）</li>
+<li>更新references/practice.md ✅（新增B1/B2两种实操案例+5大实操要点）</li>
+<li>更新references/integration.md ✅（新增级联影响表+1+5模式映射）</li>
+<li>新增references/visual-spec.md ✅（HTML输出视觉设计规范完整版）</li>
+<li>更新templates/input_template.md ✅（新增B1/B2输入模板）</li>
+<li>更新templates/output_template.md ✅（新增B1/B2输出模板说明+对比表）</li>
+<li>三平台存储 ✅：</li>
+  - Obsidian: <code>D:/以观其妙书院知识库/以观其妙书院/岗位智能体v3.0/</code>（6个文件）
+  - IMA: 跳过（DNS解析失败）
+  - LLM Wiki: <code>wiki-knowledge/wiki/岗位智能体v3.0.md</code>（新建）+ index.md更新 + log.md更新
+<li>v3.0核心逻辑线：7S评分定基 → 五行阴阳面定性 → 指标分层定量 → 复盘画布结构化 → 龙爪断语升华</li>
+
+<h2>任务11：公众号文章撰写（18:12）</h2>
+<li>基于今日10个任务的工作日志，撰写公众号文章 ✅</li>
+<li>标题：《岗位智能体的一天进化史：从"能造龙爪"到"咬得动问题"》</li>
+<li>文件：<code>Claw/岗位智能体的一天进化史-公众号文章.md</code></li>
+<li>10个章节：起因→方法→发现→7项P0详解→核心逻辑线→SOP重构→级联影响→反思→时间线回顾→核心哲学</li>
+<li>核心叙事线："造龙爪→用龙爪→修龙爪"的知行合一循环</li>
+<li>金句："从'能造龙爪'到'能造出咬得动问题的龙爪'"</li>
+
+<h2>任务12：学习Anthropic《创始人手册》+去总部化理论讨论（19:13）</h2>
+<li>学习剑宁翻译的Anthropic《创始人手册》全文 ✅</li>
+<li>三个共振点：创始人→智能体编排者、工作流锁定=护城河、领域知识→AI上下文</li>
+<li>三个分歧问题讨论 ✅：</li>
+  1. 总部级知识生产→总部从"管理中心"变成"知识引擎"
+  2. 产品制vs项目制→六维框架即参数化引擎，三层产品架构（引擎+行业包+运营）
+  3. 兜底机制→三层龙爪（S1店长→S2总经理→S3董事长）自动上升
+<li>核心差异：Anthropic优化管理效率，去总部化消灭管理本身</li>
+<li>商业悖论：买你服务的人恰恰是你要消灭的岗位</li>
+
+<h2>任务13：去总部化理论文章撰写（19:25）</h2>
+<li>整理三轮回话讨论，形成学术规范理论文章 ✅</li>
+<li>文件：<code>Claw/去总部化-AI重构企业组织形态的理论框架.md</code></li>
+<li>9章+3附录：问题提出→理论基础→三层演化路径→龙爪信号协议→商业模型→总经理角色重构→与Anthropic批判性对话→实施路径→结论</li>
+<li>核心贡献：去总部化概念、三层演化路径、龙爪信号协议v1.0、岗位自治度指标、商业悖论突破策略</li>
+<li>关键创新：龙爪信号格式+上升触发规则+断语汇聚机制（升维压缩）</li>
+
+<h2>任务14：去总部化理论框架v1.0→v2.0审查意见补全（19:50）</h2>
+<li>读取桌面审查意见文件，识别5个结构性缺口+3个优化点 ✅</li>
+<li>G1（高）：在第六章增加治理模型（治理权力重新分配+冲突裁决三级机制+核心设计原则）✅</li>
+<li>G2（高）：在第四章增加下行信号协议（YAML格式+下行分解机制+上行下行闭环）✅</li>
+<li>G3（中）：在第二章增加适用边界分析（三条必要条件+判断维度+最佳适配/不适配画像）✅</li>
+<li>G4（中）：在第四章增加知识引擎自演化机制（三层知识闭环+行业实践库+数据飞轮）✅</li>
+<li>G5（低）：在第二章增加科斯定理经济学基础（企业/总部为何存在+AI改变等式+核心公式）✅</li>
+<li>G6（次）：在第五章增加数据所有权与知识资产边界（客户私有/客户授权/咨询方自有三层）✅</li>
+<li>G7（次）：新增附录D伦理边界声明（5条边界+伦理底线）✅</li>
+<li>G8（次）：在第一章增加竞争格局与本文定位（5家竞品对比+独特定位）✅</li>
+<li>同步更新：摘要、关键词、术语表（新增5条）、理论贡献（5→9条）、参考文献（+科斯1937）、版本号v1.0→v2.0 ✅</li>
+
+<h2>任务15：去总部化理论深度学习+岗位智能体知识体系更新（20:38）</h2>
+<li>激活龙心OS 1+5全引擎（岗位智能体+象思维+知识学习+五色光+知行合一+人机协同五象限）✅</li>
+<li>使用知识学习Skills五层递进深度学习893行去总部化文档 ✅</li>
+  - 第一层金（剖析+解构）：提取P0级15个+P1级20个+P2级20个知识点
+  - 第二层火（透视+阐释）：核心论证链、科斯三层逻辑、五个核心概念深层阐释
+  - 第三层水（推演+思辨）：规模天花板推演、知识引擎纠错推演、品牌一致性推演、四维批判
+  - 第四层木（溯源+融合）：学术谱系（科斯→Peters→Hammer→Anthropic）、6组跨域融合发现、8项与龙心OS深度融合映射
+  - 第五层土（启发+映射）：5个研究空白、五级成熟度模型、6条核心命题总结
+<li>五行标签体系+双向链接+知识图谱构建 ✅</li>
+<li>三处存储 ✅：</li>
+  - Obsidian: <code>去总部化·AI重构企业组织形态·深度学习.md</code> + <code>去总部化·知识图谱.md</code>
+  - LLM Wiki: <code>wiki/去总部化理论.md</code>
+  - IMA: ✅ 补传完成（2026-05-19），3份文档上传至folder_7441985942068358
+    - 去总部化·知识图谱（note_id: 7462123185667305）
+    - 去总部化·AI重构企业组织形态·深度学习（note_id: 7462123194054439）
+    - 去总部化-AI重构企业组织形态的理论框架v2.0（note_id: 7462123307300049）
+<li>更新岗位智能体SKILL.md ✅：</li>
+  - 新增"去总部化理论整合"小节（核心映射10项+适用边界约束+信号协议落地+知识自演化实现）
+  - 标签体系新增12个去总部化相关标签
+  - 关联文档新增去总部化深度学习链接
+<li>记忆系统更新 ✅</li>
+
+<h2>任务16：IMA去总部化文档补传（跨会话续接）</h2>
+<li>前会话因DNS失败跳过IMA上传，本会话DNS恢复后补传 ✅</li>
+<li>使用Python+requests上传（避免PowerShell 5.1中文编码问题）</li>
+<li>发现IMA import_doc响应字段为note_id（非doc_id）</li>
+<li>3份文档全部上传成功至folder_7441985942068358：</li>
+  - 去总部化·知识图谱（3.6KB, note_id: 7462123185667305）
+  - 去总部化·AI重构企业组织形态·深度学习（35KB, note_id: 7462123194054439）
+  - 去总部化-AI重构企业组织形态的理论框架v2.0（47KB, note_id: 7462123307300049）
+<li>去总部化深度学习任务<strong>全部完成</strong>：Obsidian ✅ + IMA ✅ + LLM Wiki ✅ + 岗位智能体SKILL.md ✅ + 记忆系统 ✅</li>
+
+<h2>任务17：企业文化顶层设计深度学习——续接完成（跨会话）</h2>
+
+<h3>已完成（前会话）</h3>
+<li>全量读取7020行GBK文档→UTF-8转换 ✅</li>
+<li>五层递进深度学习（金剖析→火透视→水推演→木溯源→土启发）✅</li>
+<li>138个知识点提取（P0×63 + P1×45 + P2×30）✅</li>
+<li>Obsidian深度学习文档创建 ✅</li>
+
+<h3>本会话完成</h3>
+<li>Obsidian知识图谱创建 ✅：<code>D:/以观其妙书院知识库/以观其妙书院/01-核心体系/企业文化顶层设计·知识图谱.md</code></li>
+<li>LLM Wiki持久记忆 ✅：<code>~/.workbuddy/wiki-knowledge/wiki/企业文化顶层设计.md</code> + index/log更新</li>
+<li>IMA知识库上传 ❌：DNS再次不可用，需后续补传2份文档（深度学习+知识图谱）至folder_7441985942068358</li>
+<li>岗位智能体SKILL.md更新 ✅：新增"企业文化顶层设计整合"小节（10项核心映射+9大板块YAML+文化-去总部化衔接+5级成熟度模型）</li>
+<li>记忆系统更新 ✅</li>
+
+<h3>核心知识点</h3>
+<li>组织三体论：信息体+能量体+物质体 → 龙爪信号协议三体映射</li>
+<li>心文化：天文考古→文明三本→心文化 → 从外在约束转向内在驱动</li>
+<li>差序格局：水波纹关系 → 龙爪S1/S2/S3层级编码</li>
+<li>五行企业家精神：创新木/冒险火/诚信土/敬业金/应变水</li>
+<li>礼法合治：礼主内+法主外 → 龙心OS双驱动</li>
+<li>行为经济学双锚：损失厌恶(2.5倍)+锚定效应→选择架构</li>
+<li>文化-去总部化衔接：文化从"中心化宣贯"→"分布式涌现"→龙爪=文化分布式载体</li>
+
+<h3>IMA待补传</h3>
+<li>企业文化顶层设计·深度学习（29KB）</li>
+<li>企业文化顶层设计·知识图谱（~15KB）</li>
+<li>味藏AI应用·岗位提示词深度学习（~20KB）</li>
+<li>味藏AI应用·岗位提示词知识图谱（~8KB）</li>
+
+<h2>任务18：味藏AI应用三文档深度学习（21:12）</h2>
+
+<h3>执行内容</h3>
+<li>激活龙心OS 1+5模式（知识学习+象思维+五色光+人机协同+知行合一）</li>
+<li>深度学习3份docx：AI演练（高客单）销售1225 + AI演练（高盈利组）+ 高盈利组设计方案</li>
+<li>8岗位×3版本全面学习，每一行不遗漏</li>
+
+<h3>核心知识发现</h3>
+1. <strong>提示词12要素结构</strong>：引导词→公司简介→行业→岗位→性格(五行)→核心任务→适用模型→关键动作→目标量化→资源分配→数据验证→风险控制
+2. <strong>八岗位五行映射</strong>：木(董事长+产品总监)·金(总经理+采购+市场+店长)·水(人事)·火(督导+文化)·土(财务)
+3. <strong>提示词迭代三定律</strong>：模型叠加律+KPI收敛律+风控扩展律
+4. <strong>五行分布"金重木轻"</strong>：4金2木1水1火1土→餐饮行业"执行驱动型"组织特征
+5. <strong>8条隐秘知识联系</strong>：提示词↔SKILL.md·五行岗位↔差序格局·心饮食↔心文化·AI核查↔龙爪信号·AB角↔冗余设计·膳食平衡↔阴阳平衡·VIP社群↔核心圈·模型叠加↔棘轮机制
+
+<h3>存储状态</h3>
+<li>Obsidian ✅：深度学习+知识图谱（2份，<code>01-核心体系/</code>）</li>
+<li>LLM Wiki ✅：概念页+索引更新+日志更新</li>
+<li>岗位智能体SKILL.md ✅：新增味藏AI应用知识整合小节</li>
+<li>IMA ❌：DNS持续异常，4份文档待补传</li>
+
+<h3>核心金句</h3>
+<li>"提示词是岗位智能体的灵魂注入"</li>
+<li>"文化不是价值观标语，而是每单至少1次的文化话术传递"</li>
+<li>"执行偏差≤5%与数据造假零容忍——餐饮标准化落地铁律"</li>
+<li>"AB角机制=去总部化的组织基础"</li>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

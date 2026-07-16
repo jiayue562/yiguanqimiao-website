@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五行人格测评系统 - 以观其妙书院</title>
+    <meta name="description" content="五行人格测评系统核心定义五行人格测评系统是基于"一心三界五行九层"理论体系的完整人格诊断工具，融合中国传统五行哲学与现代心理学，实现从静态标签到动态转化的范式升级。一句话总结：用50道题（木火土金水各10题）测量人格五行维度，提供诊断+转化+发展一体化方案。关键属性属性  值-----------题目数量  50题测评维度  木、火、土、金、水（各10题）评分量表  1-5分（李克特量表）理论基础">
+    <meta name="keywords" content="五行人格心理学, 五行人格, 以观其妙书院, 龙龟神将">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="五行人格测评系统">
+    <meta property="og:description" content="五行人格测评系统核心定义五行人格测评系统是基于"一心三界五行九层"理论体系的完整人格诊断工具，融合中国传统五行哲学与现代心理学，实现从静态标签到动态转化的范式升级。一句话总结：用50道题（木火土金水各10题）测量人格五行维度，提供诊断+转化+发展一体化方案。关键属性属性  值-----------题目数量  50题测评维度  木、火、土、金、水（各10题）评分量表  1-5分（李克特量表）理论基础">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/五行人格测评系统-LLM-Wiki-wiki层.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/五行人格测评系统-LLM-Wiki-wiki层.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "五行人格测评系统",
+      "description": "五行人格测评系统核心定义五行人格测评系统是基于"一心三界五行九层"理论体系的完整人格诊断工具，融合中国传统五行哲学与现代心理学，实现从静态标签到动态转化的范式升级。一句话总结：用50道题（木火土金水各10题）测量人格五行维度，提供诊断+转化+发展一体化方案。关键属性属性  值-----------题目数量  50题测评维度  木、火、土、金、水（各10题）评分量表  1-5分（李克特量表）理论基础",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>五行人格测评系统</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            五行人格测评系统...
+        </div>
+        
+        <article>
+<h1>五行人格测评系统</h1>
+
+<h2>核心定义</h2>
+
+<p>五行人格测评系统是基于"一心三界五行九层"理论体系的完整人格诊断工具，融合中国传统五行哲学与现代心理学，实现从静态标签到动态转化的范式升级。</p>
+
+<strong>一句话总结</strong>：用50道题（木火土金水各10题）测量人格五行维度，提供诊断+转化+发展一体化方案。
+
+<h2>关键属性</h2>
+
+<p>| 属性 | 值 |
+|------|-----|
+| 题目数量 | 50题 |
+| 测评维度 | 木、火、土、金、水（各10题） |
+| 评分量表 | 1-5分（李克特量表） |
+| 理论基础 | 一心三界五行九层象思维体系 |
+| 输出结果 | 五行得分分布 + 人格类型判定 + 转化建议 |
+| 系统归属 | 五行人格心理学OS > 凤心OS > 龙心OS |</p>
+
+<h2>五行维度详解</h2>
+
+<h3>🌿 木行（仁德·生长）</h3>
+
+<strong>核心特质</strong>：独立性、创新性、正直感、战略规划能力
+
+<strong>阳性（健康）</strong>：仁慈善良、正直担当、创新开拓、独立主见
+<strong>阴性（失衡）</strong>：固执己见、抗上不服、孤傲孤僻、倔强顶撞
+
+<strong>通关点</strong>：不抗上
+<strong>转化口诀</strong>：阴木怒转阳木问，阴木抗转阳木学
+<strong>适合职业</strong>：创业者、战略规划师、产品经理、研发负责人
+
+<h3>🔥 火行（光明·热情）</h3>
+
+<strong>核心特质</strong>：热情度、表达欲、乐观性、情绪感染力
+
+<strong>阳性（健康）</strong>：热情开朗、善于表达、激励他人、光明磊落
+<strong>阴性（失衡）</strong>：急躁冲动、情绪波动、虚荣炫耀、易怒嗔恨
+
+<strong>通关点</strong>：不怨人
+<strong>转化口诀</strong>：阴火恨转阳火礼，阴火嗔转阳火明
+<strong>适合职业</strong>：销售总监、培训师、公关经理、主持人
+
+<h3>🌍 土行（承载·稳定）</h3>
+
+<strong>核心特质</strong>：稳定性、包容性、可靠性、协调能力
+
+<strong>阳性（健康）</strong>：稳重可靠、包容宽厚、信守承诺、协调和谐
+<strong>阴性（失衡）</strong>：多疑犹豫、依赖粘着、过度担心、缺乏主见
+
+<strong>通关点</strong>：不怨人
+<strong>转化口诀</strong>：阴土怨转阳土思，阴土疑转阳土信
+<strong>适合职业</strong>：人力资源经理、客户服务总监、行政主管
+
+<h3>⚔️ 金行（清明·决断）</h3>
+
+<strong>核心特质</strong>：条理性、决断力、完美主义、规则意识
+
+<strong>阳性（健康）</strong>：清明决断、精准高效、守律公正、追求完美
+<strong>阴性（失衡）</strong>：挑剔苛刻、冷漠无情、过于刻板、不够灵活
+
+<strong>通关点</strong>：不恼人
+<strong>转化口诀</strong>：阴金恼转阳金行，阴金贪转阳金义
+<strong>适合职业</strong>：财务总监、审计经理、质量管理员、法律顾问
+
+<h3>💧 水行（润泽·智慧）</h3>
+
+<strong>核心特质</strong>：洞察力、适应性、思考力、协调能力
+
+<strong>阳性（健康）</strong>：智慧深沉、灵活应变、善于协调、洞察力强
+<strong>阴性（失衡）</strong>：优柔寡断、情绪敏感、逃避冲突、过度思考
+
+<strong>通关点</strong>：不烦人
+<strong>转化口诀</strong>：阴水烦转阳水辩，阴水痴转阳水智
+<strong>适合职业</strong>：咨询顾问、外交官、研究员、创意总监
+
+<h2>生克关系图谱</h2>
+
+<h3>相生关系（滋养循环）</h3>
+
+<pre><code>木 → 火 → 土 → 金 → 水 → 木
+</code></pre>
+
+<li><strong>木生火</strong>：创新点燃热情</li>
+<li><strong>火生土</strong>：热情转化为稳定成果</li>
+<li><strong>土生金</strong>：稳定孕育精准规则</li>
+<li><strong>金生水</strong>：规则涵养智慧流动</li>
+<li><strong>水生木</strong>：智慧滋养创新生长</li>
+
+<h3>相克关系（约束平衡）</h3>
+
+<pre><code>木 ↔ 土  （创新 vs 稳定）
+火 ↔ 金  （热情 vs 规则）
+土 ↔ 水  （稳定 vs 变通）
+金 ↔ 木  （规则 vs 创新）
+水 ↔ 火  （冷静 vs 热情）
+</code></pre>
+
+<h2>测评实施流程</h2>
+
+<p>1. <strong>环境准备</strong>：安静空间，10-15分钟，平和心态
+2. <strong>正式测评</strong>：阅读指导语，逐题作答（50题，8-10分钟）
+3. <strong>结果解读</strong>：查看得分分布，确认人格类型，理解生克关系
+4. <strong>知行合一</strong>：记录洞察，设定目标，每日觉察，定期复测</p>
+
+<h2>转化与修炼</h2>
+
+<h3>拔阴取阳四步法</h3>
+
+<p>1. <strong>认不是</strong>：承认阴面特质（"我太固执了"）
+2. <strong>找好处</strong>：在逆境中发现价值（"批评帮助我成长"）
+3. <strong>信因果</strong>：理解因缘关系（"这是我种下的因"）
+4. <strong>达天时</strong>：把握时机行动（"现在先积蓄力量"）</p>
+
+<h3>化克为生五路径</h3>
+
+<p>| 相克 | 转化路径 | 核心洞察 |
+|------|---------|---------|
+| 木克土 | 木生火→火生土 | 用热情连接创新与稳定 |
+| 火克金 | 火生土→土生金 | 用稳定连接热情与规则 |
+| 土克水 | 土生金→金生水 | 用精准连接稳定与变通 |
+| 金克木 | 金生水→水生木 | 用智慧连接规则与创新 |
+| 水克火 | 水生木→木生火 | 用创新连接冷静与热情 |</p>
+
+<h2>关联实体</h2>
+
+<li>[[一心]] - 纯粹觉知，五行人格终极源头</li>
+<li>[[三界]] - 身界×心界×灵界</li>
+<li>[[五行人格心理学OS]] - 系统总览</li>
+<li>[[凤心OS]] - 智能发动机</li>
+<li>[[凤爪OS]] - 应用接口层</li>
+<li>[[九层阶梯]] - 发展层级模型</li>
+<li>[[拔阴取阳]] - 转化技术</li>
+<li>[[化克为生]] - 生克调和</li>
+
+<h2>知识资产位置</h2>
+
+<li><strong>Obsidian</strong>：<code>02-专业领域知识库矩阵/02-2 五行人格心理学OS知识库/</code></li>
+<li><strong>WorkBuddy</strong>：LLM Wiki三层架构编译</li>
+<li><strong>IMA</strong>：以以观其妙书院空间</li>
+
+<hr>
+<strong>version</strong>: 1.0 | <strong>updated</strong>: 2026-04-17 | <strong>maintainer</strong>: 龙龟神将
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

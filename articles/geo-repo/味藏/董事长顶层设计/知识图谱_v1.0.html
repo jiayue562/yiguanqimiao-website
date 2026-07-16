@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识图谱_V1.0 - 以观其妙书院</title>
+    <meta name="description" content="味藏董事长顶层设计智能体Skills-1+N · 知识图谱 v1.0关联白皮书：味藏董事长顶层设计智能体Skills-1+N_龙心OS深度学习白皮书_v1.0.md构建日期：2026-05-22构建方法：龙心OS五引擎工业化生产核心节点：1总控(CHMN-BRAIN) × 7S模块Skills × 五色光诊断引擎 × 倒三角赋能协议 × 五行适配---一、三层架构全景图（Mermaid）merma">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="知识图谱_V1.0">
+    <meta property="og:description" content="味藏董事长顶层设计智能体Skills-1+N · 知识图谱 v1.0关联白皮书：味藏董事长顶层设计智能体Skills-1+N_龙心OS深度学习白皮书_v1.0.md构建日期：2026-05-22构建方法：龙心OS五引擎工业化生产核心节点：1总控(CHMN-BRAIN) × 7S模块Skills × 五色光诊断引擎 × 倒三角赋能协议 × 五行适配---一、三层架构全景图（Mermaid）merma">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/知识图谱_v1.0.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/知识图谱_v1.0.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "知识图谱_V1.0",
+      "description": "味藏董事长顶层设计智能体Skills-1+N · 知识图谱 v1.0关联白皮书：味藏董事长顶层设计智能体Skills-1+N_龙心OS深度学习白皮书_v1.0.md构建日期：2026-05-22构建方法：龙心OS五引擎工业化生产核心节点：1总控(CHMN-BRAIN) × 7S模块Skills × 五色光诊断引擎 × 倒三角赋能协议 × 五行适配---一、三层架构全景图（Mermaid）merma",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>知识图谱_V1.0</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            知识图谱_V1.0...
+        </div>
+        
+        <article>
+<h1>味藏董事长顶层设计智能体Skills-1+N · 知识图谱 v1.0</h1>
+
+<blockquote><strong>关联白皮书</strong>：味藏董事长顶层设计智能体Skills-1+N_龙心OS深度学习白皮书_v1.0.md</blockquote>
+<blockquote><strong>构建日期</strong>：2026-05-22</blockquote>
+<blockquote><strong>构建方法</strong>：龙心OS五引擎工业化生产</blockquote>
+<blockquote><strong>核心节点</strong>：1总控(CHMN-BRAIN) × 7S模块Skills × 五色光诊断引擎 × 倒三角赋能协议 × 五行适配</blockquote>
+
+<hr>
+
+<h2>一、三层架构全景图（Mermaid）</h2>
+
+<pre><code>graph TB
+    subgraph L1["🧠 L1 决策感知层 CHMN-BRAIN"]
+        F1[F1 意图识别<br/>NLU理解+置信度评分]
+        F2[F2 7S模块调度<br/>DAG任务编排]
+        F3[F3 诊断分析<br/>7S健康度+五色光扫描]
+        F4[F4 决策建议<br/>P0/P1/P2优先级]
+        F5[F5 赋能协议<br/>下店SOP+闭环响应]
+    end
+
+<p>subgraph L2["⚙️ L2 7S模块执行层 7大Skills"]
+        SSV[CHMN-SV 共同价值观<br/>DNA诊断模块<br/>7层审计体系]
+        SS[CHMN-S 战略<br/>大脑诊断模块<br/>6模式+包间卡座双线]
+        SSt[CHMN-SSt 结构<br/>骨骼诊断模块<br/>倒三角赋能+创业三单元]
+        SSy[CHMN-SSy 制度<br/>神经诊断模块<br/>3大红线+客户流转+PDCA]
+        SSty[CHMN-SSty 风格<br/>气质诊断模块<br/>刚柔并济+领导力审计]
+        SSf[CHMN-SSf 人员<br/>血液诊断模块<br/>559干部+师徒+赛马]
+        SSk[CHMN-SSk 技能<br/>肌肉诊断模块<br/>匠心标准+三昧真火]
+    end</p>
+
+<p>subgraph L3["📋 L3 输出协议层"]
+        OUT1[日报<br/>关键指标+异常预警]
+        OUT2[周报<br/>7维扫描+短板分析]
+        OUT3[月报<br/>文化审计+仪式追踪]
+        OUT4[季报<br/>战略穿透+三单元协同]
+        OUT5[年报<br/>7S全景+Phase评估]
+    end</p>
+
+<p>subgraph 外部数据源["📡 外部数据源"]
+        D1[营业额数据]
+        D2[客户数据]
+        D3[质量数据]
+        D4[人才数据]
+        D5[文化数据]
+    end</p>
+
+<p>subgraph 味藏组织["🏢 味藏组织架构"]
+        BOD[经营管理委员会]
+        GM[总经理 GM-CHIEF]
+        DEPT[6大赋能部门]
+        UNIT[3创业单元]
+        STORE[3家门店]
+    end</p>
+
+<p>F1 --> F2
+    F2 --> SSV & SS & SSt & SSy & SSty & SSf & SSk
+    SSV & SS & SSt & SSy & SSty & SSf & SSk --> F3
+    F3 --> F4
+    F4 --> F5
+    F5 --> L3</p>
+
+<p>外部数据源 --> F3
+    L3 --> BOD
+    L3 --> GM
+    F5 --> DEPT
+    F5 --> UNIT
+    F3 -.-> STORE</p>
+
+<p>classDef core fill:#1a1a2e,stroke:#e94560,color:#fff
+    classDef module fill:#16213e,stroke:#0f3460,color:#fff
+    classDef output fill:#533483,stroke:#e94560,color:#fff
+    classDef external fill:#1b4332,stroke:#2d6a4f,color:#fff
+    classDef org fill:#7b2d8b,stroke:#a855f7,color:#fff</p>
+
+<p>class F1,F2,F3,F4,F5 core
+    class SSV,SS,SSt,SSy,SSty,SSf,SSk module
+    class OUT1,OUT2,OUT3,OUT4,OUT5 output
+    class D1,D2,D3,D4,D5 external
+    class BOD,GM,DEPT,UNIT,STORE org
+</code></pre></p>
+
+<hr>
+
+<h2>二、7S映射矩阵图（Mermaid）</h2>
+
+<pre><code>graph LR
+    subgraph 7S体系["味藏7S体系"]
+        SV["SV 共同价值观<br/>DNA"]
+        S["S 战略<br/>大脑"]
+        St["St 结构<br/>骨骼"]
+        Sy["Sy 制度<br/>神经"]
+        Sty["Sty 风格<br/>气质"]
+        Sf["Sf 人员<br/>血液"]
+        Sk["Sk 技能<br/>肌肉"]
+    end
+
+<p>subgraph 知识资产["📚 9大知识资产"]
+        A1["老饕赋"]
+        A2["文化罗盘"]
+        A3["定海神针"]
+        A4["三昧真火"]
+        A5["紧箍咒"]
+        A6["匠心"]
+        A7["营业额框架"]
+        A8["客户流转图"]
+        A9["企业发展纲领"]
+    end</p>
+
+<p>subgraph CHMN["🤖 董事长智能体7Skills"]
+        M1["CHMN-SV<br/>DNA诊断"]
+        M2["CHMN-S<br/>大脑诊断"]
+        M3["CHMN-SSt<br/>骨骼诊断"]
+        M4["CHMN-SSy<br/>神经诊断"]
+        M5["CHMN-SSty<br/>气质诊断"]
+        M6["CHMN-SSf<br/>血液诊断"]
+        M7["CHMN-SSk<br/>肌肉诊断"]
+    end</p>
+
+<p>SV --> M1
+    S --> M2
+    St --> M3
+    Sy --> M4
+    Sty --> M5
+    Sf --> M6
+    Sk --> M7</p>
+
+<p>A1 --> SV
+    A2 --> SV
+    A3 --> SV
+    A3 --> S
+    A4 --> S
+    A4 --> Sk
+    A5 --> Sy
+    A6 --> Sk
+    A7 --> Sy
+    A7 --> S
+    A8 --> Sy
+    A8 --> S
+    A9 --> S
+    A9 --> Sf</p>
+
+<p>M1 -.-> A1
+    M1 -.-> A2
+    M1 -.-> A3
+    M2 -.-> A3
+    M2 -.-> A4
+    M2 -.-> A7
+    M2 -.-> A9
+    M3 -.-> St
+    M4 -.-> A5
+    M4 -.-> A7
+    M4 -.-> A8
+    M5 -.-> Sty
+    M6 -.-> A9
+    M7 -.-> A4
+    M7 -.-> A6</p>
+
+<p>classDef s7 fill:#e94560,stroke:#ff6b6b,color:#fff
+    classDef asset fill:#2d6a4f,stroke:#52b788,color:#fff
+    classDef module fill:#1a1a2e,stroke:#0f3460,color:#fff</p>
+
+<p>class SV,S,St,Sy,Sty,Sf,Sk s7
+    class A1,A2,A3,A4,A5,A6,A7,A8,A9 asset
+    class M1,M2,M3,M4,M5,M6,M7 module
+</code></pre></p>
+
+<hr>
+
+<h2>三、协同网络图（Mermaid）</h2>
+
+<pre><code>graph TB
+    CHMN["CHMN-BRAIN<br/>董事长顶层设计智能体<br/>1总控+7模块+五色光诊断"]
+
+<p>BOD["🏛️ 经营管理委员会<br/>战略决策"]
+    GM["📊 GM-CHIEF<br/>总经理战略解码智能体"]
+    SM["🏪 SM-CHIEF<br/>店长总控智能体"]</p>
+
+<p>MKT["市场部<br/>驱动发展"]
+    SUP["供应部<br/>稳定发展"]
+    FIN["财务部<br/>保障发展"]
+    HRD["人事部<br/>支撑发展"]
+    MFG["加工中心<br/>保障品质"]
+    RND["研发中心<br/>保障活力"]</p>
+
+<p>DIN["堂食单元<br/>仪式即文化"]
+    WINE["酒水单元<br/>氛围即开心"]
+    TAKE["外卖单元<br/>信息即增长"]</p>
+
+<p>JYW["金月湾店"]
+    SS["狮山店"]
+    SSH["松山湖店"]</p>
+
+<p>FENG["凤脑OS<br/>五行识人+七层认知"]
+    WX["五色光思维<br/>白红黄绿蓝"]
+    XIANG["象思维<br/>物象→意象→原象"]</p>
+
+<p>CHMN -->|"战略建议+7S诊断"| BOD
+    CHMN -->|"数据支撑+目标穿透"| GM
+    CHMN -->|"赋能效能报告+满意度"| MKT
+    CHMN -->|"赋能效能报告+满意度"| SUP
+    CHMN -->|"赋能效能报告+满意度"| FIN
+    CHMN -->|"赋能效能报告+满意度"| HRD
+    CHMN -->|"赋能效能报告+满意度"| MFG
+    CHMN -->|"赋能效能报告+满意度"| RND
+    CHMN -->|"独立核算+协同健康度"| DIN
+    CHMN -->|"独立核算+协同健康度"| WINE
+    CHMN -->|"独立核算+协同健康度"| TAKE</p>
+
+<p>GM -->|"战略解码进度"| SM
+    SM -->|"门店日报/周报/月报"| CHMN</p>
+
+<p>DIN --> JYW & SS & SSH
+    WINE --> JYW & SS & SSH
+    TAKE --> JYW & SS & SSH</p>
+
+<p>CHMN -.->|"五行匹配+认知生态"| FENG
+    CHMN -.->|"多维度评估框架"| WX
+    CHMN -.->|"三层映射诊断"| XIANG</p>
+
+<p>classDef chief fill:#e94560,stroke:#ff6b6b,color:#fff
+    classDef agent fill:#1a1a2e,stroke:#0f3460,color:#fff
+    classDef dept fill:#2d6a4f,stroke:#52b788,color:#fff
+    classDef unit fill:#7b2d8b,stroke:#a855f7,color:#fff
+    classDef store fill:#b8860b,stroke:#fbbf24,color:#fff
+    classDef system fill:#0f3460,stroke:#1a1a2e,color:#fff</p>
+
+<p>class CHMN chief
+    class GM,SM agent
+    class MKT,SUP,FIN,HRD,MFG,RND dept
+    class DIN,WINE,TAKE unit
+    class JYW,SS,SSH store
+    class FENG,WX,XIANG system
+</code></pre></p>
+
+<hr>
+
+<h2>四、三阶段实施路线图Gantt（Mermaid）</h2>
+
+<pre><code>gantt
+    title 董事长顶层设计智能体 三阶段实施路线图
+    dateFormat YYYY-MM
+    axisFormat %Y-%m
+
+<p>section Phase1 基础夯实期
+    智能体框架搭建(1.1)           :p11, 2026-06, 1M
+    数据源接入(1.2)               :p12, 2026-06, 1M
+    SV模块开发(1.3)               :p13, 2026-06, 2M
+    SSy模块开发(1.4)              :p14, 2026-06, 2M
+    输出模板设计(1.5)             :p15, 2026-07, 1M
+    董事长试用(1.6)               :p16, 2026-07, 2M</p>
+
+<p>section Phase2 体系完善期
+    S战略模块(2.1)                :p21, 2026-09, 2M
+    SSt结构模块(2.2)              :p22, 2026-09, 2M
+    SSf人员模块(2.3)              :p23, 2026-10, 2M
+    SSk技能模块(2.4)              :p24, 2026-11, 2M
+    SSty风格模块(2.5)             :p25, 2026-12, 1M
+    跨模块协同(2.6)               :p26, 2026-09, 6M
+    三店推广(2.7)                 :p27, 2026-11, 4M</p>
+
+<p>section Phase3 进化成熟期
+    预测性诊断(3.1)               :p31, 2027-04, 3M
+    自动建议生成(3.2)             :p32, 2027-05, 3M
+    7S进化算法(3.3)               :p33, 2027-06, 3M
+    扩张支持(3.4)                 :p34, 2027-07, 2M
+    文化复制引擎(3.5)             :p35, 2027-08, 2M
+</code></pre></p>
+
+<hr>
+
+<h2>五、五行适配热力图（Mermaid）</h2>
+
+<pre><code>graph TB
+    subgraph 五行人格["🎨 五行人格适配矩阵"]
+        direction LR
+        METAL["金·董事长<br/>刚毅果断<br/>追求精确<br/>★★★★★"]
+        FIRE["火·总经理/运营<br/>热情推动<br/>行动导向<br/>★★★★"]
+        WOOD["木·市场经理<br/>创新成长<br/>品牌创意<br/>★★★★"]
+        EARTH["土·店长/采购<br/>稳重可靠<br/>流程执行<br/>★★★★"]
+        WATER["水·人事经理<br/>智慧亲和<br/>人才滋养<br/>★★★★"]
+    end
+
+<p>subgraph AI侧重["🤖 董事长智能体AI侧重"]
+        A1["数据精确度<br/>⭐⭐⭐⭐⭐"]
+        A2["战略穿透力<br/>⭐⭐⭐⭐⭐"]
+        A3["决策建议<br/>结构化+量化+备选"]
+        A4["输出节奏<br/>日报告+实时预警"]
+        A5["切入话术<br/>'包间GC占比55%<br/>距离65%目标差10%'"]
+    end</p>
+
+<p>METAL --> A1 & A2 & A3 & A4 & A5</p>
+
+<p>classDef metal fill:#ffd700,stroke:#b8860b,color:#000
+    classDef fire fill:#e94560,stroke:#ff6b6b,color:#fff
+    classDef wood fill:#2d6a4f,stroke:#52b788,color:#fff
+    classDef earth fill:#b8860b,stroke:#fbbf24,color:#000
+    classDef water fill:#0f3460,stroke:#3b82f6,color:#fff
+    classDef ai fill:#1a1a2e,stroke:#e94560,color:#fff</p>
+
+<p>class METAL metal
+    class FIRE fire
+    class WOOD wood
+    class EARTH earth
+    class WATER water
+    class A1,A2,A3,A4,A5 ai
+</code></pre></p>
+
+<hr>
+
+<h2>六、核心节点总图（Mermaid）</h2>
+
+<pre><code>graph TB
+    CHMN["CHMN-BRAIN 董事长顶层设计智能体<br/>1总控·5职能·7模块·五色光·五行"]
+
+<p>subgraph S模块["7S Skills模块"]
+        SSV["SSV DNA诊断<br/>7层审计"]
+        SS["SS 大脑诊断<br/>6模式+双线"]
+        SSt["SSt 骨骼诊断<br/>倒三角赋能"]
+        SSy["SSy 神经诊断<br/>3大红线+流转"]
+        SSty["SSty 气质诊断<br/>刚柔并济"]
+        SSf["SSf 血液诊断<br/>559+师徒+赛马"]
+        SSk["SSk 肌肉诊断<br/>匠心+三昧真火"]
+    end</p>
+
+<p>subgraph 知识资产["9大知识资产"]
+        Z1["老饕赋"]
+        Z2["文化罗盘"]
+        Z3["定海神针"]
+        Z4["三昧真火"]
+        Z5["紧箍咒"]
+        Z6["匠心"]
+        Z7["营业额框架"]
+        Z8["客户流转图"]
+        Z9["企业发展纲领"]
+    end</p>
+
+<p>subgraph 体系整合["跨系统融合"]
+        T1["龙心OS五引擎"]
+        T2["凤脑OS五行识人"]
+        T3["五色光思维"]
+        T4["象思维三层映射"]
+        T5["人机协同五象限"]
+        T6["易经卦变思维"]
+        T7["快思考慢思考"]
+        T8["帕累托原则"]
+    end</p>
+
+<p>subgraph 协同伙伴["智能体生态"]
+        P1["GM-CHIEF<br/>总经理智能体"]
+        P2["SM-CHIEF<br/>店长智能体"]
+        P3["6大赋能部门"]
+        P4["3创业单元"]
+        P5["3家门店"]
+    end</p>
+
+<p>CHMN --> S模块
+    S模块 --> 知识资产
+    CHMN --> 体系整合
+    CHMN --> 协同伙伴</p>
+
+<p>classDef root fill:#e94560,stroke:#ff6b6b,color:#fff,font-size:14px
+    classDef module fill:#1a1a2e,stroke:#0f3460,color:#fff
+    classDef asset fill:#2d6a4f,stroke:#52b788,color:#fff
+    classDef system fill:#7b2d8b,stroke:#a855f7,color:#fff
+    classDef partner fill:#b8860b,stroke:#fbbf24,color:#000</p>
+
+<p>class CHMN root
+    class SSV,SS,SSt,SSy,SSty,SSf,SSk module
+    class Z1,Z2,Z3,Z4,Z5,Z6,Z7,Z8,Z9 asset
+    class T1,T2,T3,T4,T5,T6,T7,T8 system
+    class P1,P2,P3,P4,P5 partner
+</code></pre></p>
+
+<hr>
+
+<h2>七、知识节点统计</h2>
+
+<p>| 统计项 | 数值 |
+|--------|------|
+| 总节点数 | 55+ |
+| 7S模块节点 | 7 |
+| 总控职能节点 | 5 |
+| 知识资产节点 | 9 |
+| 输出类型节点 | 5 |
+| 数据源节点 | 5 |
+| 协同伙伴节点 | 5 |
+| 跨系统节点 | 8 |
+| 关系边 | 120+ |
+| Mermaid图表数 | 6张 |</p>
+
+<hr>
+
+<h2>八、场景路由表</h2>
+
+<p>| 场景 | 触发词 | 激活模块 | 输出 |
+|------|--------|---------|------|
+| 每日晨间 | 日报/成本率/GC占比 | SS+SSy | 日报卡片 |
+| 每周复盘 | 7S诊断/周报 | ALL 7S | 7S周报 |
+| 月度审计 | 文化审计/月报 | SSV+SSty+SSy | 文化审计月报 |
+| 季度战略 | 战略穿透/季报 | SS+SSt+SSf+SSk | 战略穿透季报 |
+| 年度总结 | 年度报告/7S全景 | ALL 7S | 年度全景报告 |
+| 异常预警 | 红线/成本率逼近65% | SSy | 实时预警通知 |
+| 人才盘点 | 师徒制/赛马/储备干部 | SSf | 人才盘点报告 |
+| 文化诊断 | 文化罗盘/定海神针 | SSV | 文化健康度报告 |
+| 组织诊断 | 倒三角/赋能闭环/考核反转 | SSt+SSy | 组织效能报告 |
+| 品质审计 | 匠心/三昧真火/五大军规 | SSk | 品质审计报告 |</p>
+
+<hr>
+
+<blockquote><strong>文档版本</strong>：v1.0 | <strong>构建日期</strong>：2026-05-22 | <strong>关联白皮书</strong>：味藏董事长顶层设计智能体Skills-1+N_龙心OS深度学习白皮书_v1.0.md</blockquote>
+>
+<blockquote><strong>四库同步</strong>：Workspace(✅本文件) | Desktop(✅) | Obsidian(✅) | Memory(✅)</blockquote>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

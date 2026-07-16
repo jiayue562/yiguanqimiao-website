@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定期健康检查 - 龙心OS知识库维护指南 - 以观其妙书院</title>
+    <meta name="description" content="定期健康检查 - 龙心OS知识库维护指南建议频率: 每周运行一次目的: 保持知识库结构完整、链接有效、标签一致---📋 检查清单1. 链接完整性检查-   双向链接有效性（文件名格式）-   外部链接可访问性-   图片和资源引用完整性-   知识库间交叉引用一致性检查方法:1. 在Obsidian中打开"图谱视图"2. 查看是否有孤立的节点（无连接的文件）3. 检查红色链接（失效链接）4. 使用">
+    <meta name="keywords" content="[维护, 健康检查, Lint, 知识库管理]">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="定期健康检查 - 龙心OS知识库维护指南">
+    <meta property="og:description" content="定期健康检查 - 龙心OS知识库维护指南建议频率: 每周运行一次目的: 保持知识库结构完整、链接有效、标签一致---📋 检查清单1. 链接完整性检查-   双向链接有效性（文件名格式）-   外部链接可访问性-   图片和资源引用完整性-   知识库间交叉引用一致性检查方法:1. 在Obsidian中打开"图谱视图"2. 查看是否有孤立的节点（无连接的文件）3. 检查红色链接（失效链接）4. 使用">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/定期健康检查.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/定期健康检查.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "定期健康检查 - 龙心OS知识库维护指南",
+      "description": "定期健康检查 - 龙心OS知识库维护指南建议频率: 每周运行一次目的: 保持知识库结构完整、链接有效、标签一致---📋 检查清单1. 链接完整性检查-   双向链接有效性（文件名格式）-   外部链接可访问性-   图片和资源引用完整性-   知识库间交叉引用一致性检查方法:1. 在Obsidian中打开"图谱视图"2. 查看是否有孤立的节点（无连接的文件）3. 检查红色链接（失效链接）4. 使用",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>定期健康检查 - 龙心OS知识库维护指南</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            定期健康检查 - 龙心OS知识库维护指南...
+        </div>
+        
+        <article>
+<h1>定期健康检查 - 龙心OS知识库维护指南</h1>
+
+<blockquote><strong>建议频率</strong>: 每周运行一次  </blockquote>
+<blockquote><strong>目的</strong>: 保持知识库结构完整、链接有效、标签一致</blockquote>
+
+<hr>
+
+<h2>📋 检查清单</h2>
+
+<h3>1. 链接完整性检查</h3>
+
+<li>[ ] 双向链接有效性（<code>[[文件名]]</code>格式）</li>
+<li>[ ] 外部链接可访问性</li>
+<li>[ ] 图片和资源引用完整性</li>
+<li>[ ] 知识库间交叉引用一致性</li>
+
+<strong>检查方法</strong>:
+<pre><code>1. 在Obsidian中打开"图谱视图"
+2. 查看是否有孤立的节点（无连接的文件）
+3. 检查红色链接（失效链接）
+4. 使用搜索功能检查"[["匹配情况
+</code></pre>
+
+<hr>
+
+<h3>2. 标签一致性检查</h3>
+
+<li>[ ] 标签命名规范（统一使用小写）</li>
+<li>[ ] 标签定义一致性</li>
+<li>[ ] 无重复标签（如 #龙心OS 和 #龙心os）</li>
+<li>[ ] 核心标签完整性</li>
+
+<strong>核心标签列表</strong>:
+| 标签 | 用途 |
+|------|------|
+| #龙心OS | 龙心操作系统相关内容 |
+| #五行人格 | 五行人格心理学相关内容 |
+| #象思维 | 原创思维方法论 |
+| #企业文化 | 企业文化建设相关内容 |
+| #心文化 | 大圆满与修行体系 |
+| #知行合一 | 自我进化与经验沉淀 |
+| #索引 | 导航和索引页面 |
+| #待整理 | 需要进一步整理的内容 |
+| #已完成 | 已经完成的工作 |
+
+<hr>
+
+<h3>3. 文件命名规范检查</h3>
+
+<li>[ ] 使用数字前缀排序（00-, 01-, 02-）</li>
+<li>[ ] 避免特殊字符（除-和_外）</li>
+<li>[ ] 文件名与标题一致</li>
+<li>[ ] 无重复文件</li>
+
+<strong>命名规范</strong>:
+<pre><code>✅ 正确: 01-龙心OS核心系统.md
+✅ 正确: 象思维-理论体系.md
+❌ 错误: 龙心OS 核心系统.md（含空格）
+❌ 错误: 01--系统.md（双横线）
+</code></pre>
+
+<hr>
+
+<h3>4. 元数据完整性检查</h3>
+
+<li>[ ] YAML frontmatter 格式正确</li>
+<li>[ ] title 字段存在</li>
+<li>[ ] created 日期格式正确（YYYY-MM-DD）</li>
+<li>[ ] tags 字段存在</li>
+
+<strong>标准模板</strong>:
+<pre><code>---
+title: "文档标题"
+created: "2026-04-11"
+version: "1.0"
+tags: [标签1, 标签2]
+<hr>
+</code></pre>
+
+<hr>
+
+<h3>5. 内存系统同步检查</h3>
+
+<li>[ ] WorkBuddy Brain 同步状态</li>
+<li>[ ] Obsidian 知识库更新状态</li>
+<li>[ ] IMA 笔记同步状态</li>
+<li>[ ] MEMORY.md 更新状态</li>
+
+<strong>三向同步检查</strong>:
+<pre><code>Obsidian（主知识库）
+    ↕️
+WorkBuddy Brain（工作记忆）
+    ↕️
+IMA笔记（移动端）
+</code></pre>
+
+<hr>
+
+<h3>6. 知识库结构检查</h3>
+
+<li>[ ] 目录层级符合架构规范</li>
+<li>[ ] 无空目录</li>
+<li>[ ] 索引文件存在且最新</li>
+<li>[ ] 核心文档无缺失</li>
+
+<strong>标准架构</strong>:
+<pre><code>AI OS知识库
+├── 00-总索引与导航
+├── 01-龙心OS核心系统
+├── 02-专业领域知识库矩阵
+├── 03-知识地基层
+├── 04-实践案例库
+└── 05-个人成长与修行
+</code></pre>
+
+<hr>
+
+<h2>🔧 自动化工具</h2>
+
+<h3>Obsidian 插件推荐</h3>
+
+<p>| 插件 | 功能 | 用途 |
+|------|------|------|
+| <strong>Linter</strong> | 自动格式化Markdown | 统一格式规范 |
+| <strong>Tag Wrangler</strong> | 标签管理 | 合并重复标签 |
+| <strong>Broken Links</strong> | 失效链接检测 | 链接完整性 |
+| <strong>Dataview</strong> | 数据查询 | 生成索引和报告 |</p>
+
+<h3>手动检查脚本</h3>
+
+<strong>PowerShell 检查脚本</strong>（保存为 <code>health_check.ps1</code>）:
+<pre><code><h1>检查重复标签</h1>
+Get-ChildItem -Recurse -Filter "*.md" | 
+    Select-String -Pattern "^tags:" -Context 0,1 |
+    Export-Csv "tags_report.csv"
+
+<h1>检查失效链接</h1>
+Get-ChildItem -Recurse -Filter "*.md" |
+    Select-String -Pattern "\[\[([^\]]+)\]\]" |
+    Export-Csv "links_report.csv"
+</code></pre>
+
+<hr>
+
+<h2>📊 健康报告模板</h2>
+
+<p>每次检查后生成报告：</p>
+
+<pre><code><h2>知识库健康检查报告 - YYYY-MM-DD</h2>
+
+<h3>检查概况</h3>
+<li><strong>检查时间</strong>: YYYY-MM-DD HH:MM</li>
+<li><strong>检查人</strong>: 龙龟神将</li>
+<li><strong>知识库版本</strong>: v2.X</li>
+
+<h3>检查结果</h3>
+| 检查项 | 状态 | 问题数 | 备注 |
+|--------|------|--------|------|
+| 链接完整性 | ✅/⚠️/❌ | 0 | |
+| 标签一致性 | ✅/⚠️/❌ | 0 | |
+| 命名规范 | ✅/⚠️/❌ | 0 | |
+| 元数据完整性 | ✅/⚠️/❌ | 0 | |
+| 内存同步 | ✅/⚠️/❌ | 0 | |
+| 结构规范 | ✅/⚠️/❌ | 0 | |
+
+<h3>发现问题</h3>
+1. [问题描述]
+   - 位置: [文件路径]
+   - 建议: [修复建议]
+
+<h3>修复记录</h3>
+1. [修复内容]
+   - 时间: [修复时间]
+   - 验证: [验证结果]
+
+<h3>下次检查建议</h3>
+<li>[建议内容]</li>
+</code></pre>
+
+<hr>
+
+<h2>🚨 常见问题处理</h2>
+
+<h3>问题1: 大量失效链接</h3>
+<strong>原因</strong>: 文件重命名或移动后未更新链接  
+<strong>解决</strong>:
+1. 使用Obsidian的"重命名并更新链接"功能
+2. 或使用全局替换更新链接
+
+<h3>问题2: 标签不一致</h3>
+<strong>原因</strong>: 手动输入时大小写或拼写不一致  
+<strong>解决</strong>:
+1. 使用 Tag Wrangler 插件合并标签
+2. 建立标签使用规范文档
+
+<h3>问题3: 同步失败</h3>
+<strong>原因</strong>: 网络问题或文件冲突  
+<strong>解决</strong>:
+1. 检查网络连接
+2. 手动解决文件冲突
+3. 重新触发同步
+
+<hr>
+
+<h2>📅 检查日程建议</h2>
+
+<p>| 频率 | 检查内容 | 耗时 |
+|------|---------|------|
+| <strong>每日</strong> | 快速检查新增文件命名 | 5分钟 |
+| <strong>每周</strong> | 完整运行本检查清单 | 30分钟 |
+| <strong>每月</strong> | 深度检查+知识库优化 | 2小时 |
+| <strong>每季</strong> | 全面审计+架构调整 | 半天 |</p>
+
+<hr>
+
+<h2>🔗 关联文档</h2>
+
+<li>[[00-总索引与导航]] - 知识库总入口</li>
+<li>[[01-龙心OS核心系统]] - 系统核心文档</li>
+<li>[[知识库健康检查报告_2026-04-11]] - 历史检查报告示例</li>
+<li>[[系统使用指南]] - 知识库使用规范</li>
+<li>[[知识沉淀流程]] - 知识维护流程</li>
+
+<hr>
+
+<strong>文档版本</strong>: 1.0  
+<strong>最后更新</strong>: 2026-04-11  
+<strong>维护者</strong>: 龙龟神将  
+<strong>建议检查频率</strong>: 每周一次
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

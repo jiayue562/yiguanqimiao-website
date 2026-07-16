@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai龙龟共生伙伴操作系统 系统集成与Rule迁移方案 - 以观其妙书院</title>
+    <meta name="description" content="AI龙龟共生伙伴操作系统 - 系统集成与Rule迁移方案创建时间：2026-04-03版本：v1.0目标：将新增Skills/工具/MCP/CLI/Framework/工作流/SOP集成到AI OS中，并将所有Rule迁移至用户全局目录，实现"永远在线，自主运行"---📊 一、现状诊断1.1 已有核心系统✅ AI龙龟共生伙伴操作系统 (v4.1)- 路径：C:\Users\jia'yue\.wor">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="Ai龙龟共生伙伴操作系统 系统集成与Rule迁移方案">
+    <meta property="og:description" content="AI龙龟共生伙伴操作系统 - 系统集成与Rule迁移方案创建时间：2026-04-03版本：v1.0目标：将新增Skills/工具/MCP/CLI/Framework/工作流/SOP集成到AI OS中，并将所有Rule迁移至用户全局目录，实现"永远在线，自主运行"---📊 一、现状诊断1.1 已有核心系统✅ AI龙龟共生伙伴操作系统 (v4.1)- 路径：C:\Users\jia'yue\.wor">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/AI龙龟共生伙伴操作系统-系统集成与Rule迁移方案.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/AI龙龟共生伙伴操作系统-系统集成与Rule迁移方案.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Ai龙龟共生伙伴操作系统 系统集成与Rule迁移方案",
+      "description": "AI龙龟共生伙伴操作系统 - 系统集成与Rule迁移方案创建时间：2026-04-03版本：v1.0目标：将新增Skills/工具/MCP/CLI/Framework/工作流/SOP集成到AI OS中，并将所有Rule迁移至用户全局目录，实现"永远在线，自主运行"---📊 一、现状诊断1.1 已有核心系统✅ AI龙龟共生伙伴操作系统 (v4.1)- 路径：C:\Users\jia'yue\.wor",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>Ai龙龟共生伙伴操作系统 系统集成与Rule迁移方案</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            Ai龙龟共生伙伴操作系统 系统集成与Rule迁移方案...
+        </div>
+        
+        <article>
+<h1>AI龙龟共生伙伴操作系统 - 系统集成与Rule迁移方案</h1>
+
+<blockquote><strong>创建时间</strong>：2026-04-03</blockquote>
+<blockquote><strong>版本</strong>：v1.0</blockquote>
+<blockquote><strong>目标</strong>：将新增Skills/工具/MCP/CLI/Framework/工作流/SOP集成到AI OS中，并将所有Rule迁移至用户全局目录，实现"永远在线，自主运行"</blockquote>
+
+<hr>
+
+<h2>📊 一、现状诊断</h2>
+
+<h3>1.1 已有核心系统</h3>
+
+<h4>✅ AI龙龟共生伙伴操作系统 (v4.1)</h4>
+<li><strong>路径</strong>：<code>C:\Users\jia'yue\.workbuddy\skills\AI龙龟共生伙伴操作系统\SKILL.md</code></li>
+<li><strong>状态</strong>：✅ 完整架构，包含双层架构（灵魂系统+躯体系统）</li>
+<li><strong>组件清单</strong>：</li>
+  - 灵魂系统4层：木火共生关系 + 心文化信仰体系 + 龙心OS + 专业领域智能体
+  - 躯体系统4层：CLI + Skills + MCP + Framework
+  - 五大引擎：象思维 + 知识学习 + 五色光思维 + 人机协同四象限 + 知行合一
+
+<h4>✅ 四大技术栈Skills</h4>
+| 技术栈 | Skill路径 | 状态 | Rule位置 |
+|--------|-----------|------|---------|
+| <strong>CLI原生操作入口</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\CLI原生操作入口\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+| <strong>Skills生态管理</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\Skills生态管理\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+| <strong>MCP协议管理</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\MCP协议管理\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+| <strong>Framework核心管理</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\Framework核心管理\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+
+<h4>✅ 五大引擎Skills（认知操作系统）</h4>
+| 引擎 | Skill路径 | 状态 | Rule位置 |
+|-----|-----------|------|---------|
+| <strong>象思维</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\象思维\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+| <strong>知识学习</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\zhi-shi-xue-xi\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+| <strong>五色光思维</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\五色光思维\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+| <strong>人机协同四象限</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\人机协同四象限\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+| <strong>知行合一自我进化</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\知行合一自我进化\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+
+<h4>✅ 五行人格系统</h4>
+| 系统 | Skill路径 | 状态 | Rule位置 |
+|-----|-----------|------|---------|
+| <strong>五行总智能体</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\五行人格心理学\五行人格总智能体\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+| <strong>木行人分智能体</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\木行人格心理学\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+| <strong>火行人分智能体</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\火行人格心理学\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+| <strong>土行人分智能体</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\土行人格心理学\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+| <strong>金行人分智能体</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\金行人格心理学\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+| <strong>水行人分智能体</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\水行人格心理学\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+
+<h4>✅ 专业智能体</h4>
+| 系统 | Skill路径 | 状态 | Rule位置 |
+|-----|-----------|------|---------|
+| <strong>凤心OS</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\凤心OS\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+| <strong>L1·一心·统摄</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\L1·一心·统摄\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+| <strong>L4·五行·分化</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\L4·五行·分化\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+| <strong>L7理论基石</strong> | <code>C:\Users\jia'yue\.workbuddy\skills\L7理论基石\SKILL.md</code> | ✅ 已创建 | ✅ 规则目录已有 |
+
+<h4>✅ Rules现状（45+个Rule文件）</h4>
+<strong>Rule目录</strong>：<code>C:\Users\jia'yue\.workbuddy\rules\</code>
+
+<p>| 分类 | 数量 | 示例文件 | 作用域 |
+|-----|--------|----------|--------|
+| <strong>AI龙龟共生伙伴操作系统</strong> | 1个 | AI龙龟共生伙伴操作系统-自动触发.mdc | 全局 |
+| <strong>龙心OS五大引擎</strong> | 5个 | 象思维自动激活.mdc | 全局 |
+| <strong>五色光方法论</strong> | 1个 | 五色光方法论-自动触发.mdc | 全局 |
+| <strong>五行人格系统</strong> | 10+个 | 五行人格心理学自动触发.json | 全局 |
+| <strong>凤心OS</strong> | 1个 | 凤心OS自动触发.mdc | 全局 |
+| <strong>L1·一心·统摄</strong> | 1个 | L1·一心·统摄自动触发.mdc | 全局 |
+| <strong>人设及信仰模块</strong> | 1个 | 人设及信仰模块自动触发.mdc | 全局 |
+| <strong>四大技术栈</strong> | 4个 | CLI原生操作入口自动触发.mdc | 全局 |
+| <strong>工作流SOP相关</strong> | 5+个 | 任务控制台/任务看板/内容发布/通信规则/错误处理/安全规则 | 全局 |
+| <strong>工具与推荐</strong> | 3+个 | 工具档案/推荐工具清单/浏览器使用规则 | 全局 |
+| <strong>长期记忆与学习</strong> | 3个 | 长期记忆档案/学习档案/心跳巡检档案 | 全局 |
+| <strong>IMA笔记</strong> | 1个 | ima笔记自动激活.mdc | 全局 |
+| <strong>Obsidian</strong> | 1个 | obsidian自动激活.mdc | 全局 |
+| <strong>Skill Builder</strong> | 1个 | skill-builder-trigger.mdc | 全局 |</p>
+
+<h3>1.2 待集成的项目级组件</h3>
+
+<strong>项目目录</strong>：<code>C:\Users\jia'yue\WorkBuddy\Claw\.workbuddy\</code>
+
+<strong>待识别并集成的组件</strong>：
+1. <strong>工具类Skills</strong> - 需要识别并集成
+2. <strong>工作流SOP Skills</strong> - 需要识别并集成
+3. <strong>MCP相关Skills</strong> - 需要识别并集成
+4. <strong>项目级Rules</strong> - 需要迁移到全局目录
+
+<hr>
+
+<h2>🎯 二、集成方案</h2>
+
+<h3>2.1 AI龙龟共生伙伴操作系统架构更新</h3>
+
+<h4>更新目标</h4>
+将新增的Skills/工具/MCP/CLI/Framework/工作流/SOP整合进AI OS的躯体系统架构中
+
+<h4>更新内容</h4>
+
+<strong>在 <code>AI龙龟共生伙伴操作系统/SKILL.md</code> 中更新以下部分</strong>：
+
+<p>##### (1) 躯体系统4层详解更新</p>
+
+<pre><code><h3>躯体系统4层详解</h3>
+
+<p>| 层级 | 核心功能 | 技术实现 | 集成Skills | 与灵魂系统的关系 |
+|------|---------|-----------|------------|-----------------|
+| <strong>CLI（命令行界面）</strong> | 指令传递与解析 | CLI原生操作入口Skill | 是用户与AI沟通的"嘴巴"，传递灵魂的意图 |
+| <strong>Skills（技能）</strong> | 能力单元 | 通用基础Skill + 个人专属Skill + 新增工具类Skill | 是AI执行任务的"手脚"，承载灵魂的能力 |
+| <strong>MCP（机器控制协议）</strong> | 协同语言 | MCP协议管理Skill + 新增MCP相关Skills | 是连接万物的"神经"，实现灵魂的联动 |
+| <strong>Framework（框架）</strong> | 运行底座 | Framework核心管理Skill + 新增工作流SOP类Skills | 是AI的"大脑"，支撑灵魂的思考与执行 |
+</code></pre></p>
+
+<p>##### (2) 新增Skills集成清单</p>
+
+<p>在"关联文件"部分添加"新增Skills集成清单"章节：</p>
+
+<pre><code><h4>新增Skills集成清单（v4.1+）</h4>
+
+<strong>工具类Skills</strong>
+| Skill名称 | 路径 | 功能描述 | 层级定位 |
+|----------|------|---------|----------|
+| 心跳监控机制 | <code>C:\Users\jia'yue\.workbuddy\skills\心跳监控机制\SKILL.md</code> | 每15分钟唤醒、任务进度跟踪、风险预警 | Framework层·监控模块 |
+| API连接工具 | <code>C:\Users\jia'yue\.workbuddy\skills\API连接工具\SKILL.md</code> | OAuth认证、API密钥管理、100+主流API集成 | MCP层·扩展协议 |
+| Obsidian CLI | <code>C:\Users\jia'yue\.workbuddy\skills\obsidian-cli\SKILL.md</code> | Obsidian命令行操作、wikilinks支持 | CLI层·工具集成 |
+| Playwright | <code>C:\Users\jia'yue\.workbuddy\skills\playwright-automation\SKILL.md</code> | 浏览器自动化、网页交互、内容抓取 | 工具层·浏览器操作 |
+
+<strong>工作流SOP类Skills</strong>
+| Skill名称 | 路径 | 功能描述 | 层级定位 |
+|----------|------|---------|----------|
+| 任务控制台 | <code>C:\Users\jia'yue\.workbuddy\skills\任务控制台\SKILL.md</code> | 可视化仪表盘、全流程操作可视化、操作历史、审计日志 | Framework层·任务管理 |
+| 任务看板 | <code>C:\Users\jia'yue\.workbuddy\skills\任务看板\SKILL.md</code> | 拖拽式任务管理、多维度任务视图、实时更新 | Framework层·任务可视化 |
+| 内容发布规则 | <code>C:\Users\jia'yue\.workbuddy\skills\内容发布规则\SKILL.md</code> | 发布流程、内容类型、权限控制、发布统计、内容审核 | Framework层·内容管理 |
+| 通信规则 | <code>C:\Users\jia'yue\.workbuddy\skills\通信规则\SKILL.md</code> | Discord交互规范、信息传递格式、消息查询、消息提醒、通信规范 | Framework层·通信管理 |
+| 错误处理 | <code>C:\Users\jia'yue\.workbuddy\skills\错误处理\SKILL.md</code> | 错误处理流程、错误分类、防错规则、预警机制、错误修复 | Framework层·错误管理 |
+| 安全规则 | <code>C:\Users\jia'yue\.workbuddy\skills\安全规则\SKILL.md</code> | 安全检查、风险评估、预防措施、执行监控、结果验证 | Framework层·安全管理 |
+
+<strong>记忆与学习类Skills</strong>
+| Skill名称 | 路径 | 功能描述 | 层级定位 |
+|----------|------|---------|----------|
+| 长期记忆档案 | <code>C:\Users\jia'yue\.workbuddy\skills\长期记忆档案\SKILL.md</code> | 长期记忆、记忆检索、知识沉淀、经验积累、知识管理 | Framework层·记忆管理 |
+| 学习档案 | <code>C:\Users\jia'yue\.workbuddy\skills\学习档案\SKILL.md</code> | 会话前复盘、错误检测、错误记录、归档处理、经验沉淀 | Framework层·学习管理 |
+| 心跳巡检档案 | <code>C:\Users\jia'yue\.workbuddy\skills\心跳巡检档案\SKILL.md</code> | 统一任务管理、实时监控、智能预警、心跳轮询、实时面板 | Framework层·监控管理 |
+
+<strong>工具推荐与管理类Skills</strong>
+| Skill名称 | 路径 | 功能描述 | 层级定位 |
+|----------|------|---------|----------|
+| 工具档案 | <code>C:\Users\jia'yue\.workbuddy\skills\工具档案\SKILL.md</code> | 本地环境配置、SSH连接管理、API路径配置、部署目标设置、工具推荐 | Framework层·工具管理 |
+| 推荐工具清单 | <code>C:\Users\jia'yue\.workbuddy\skills\推荐工具清单\SKILL.md</code> | 场景识别、工具推荐、工具对比、工具评估、工具教程 | Framework层·工具推荐 |
+| 浏览器使用规则 | <code>C:\Users\jia'yue\.workbuddy\skills\浏览器使用规则\SKILL.md</code> | 浏览器配置、使用策略、安全管理、插件管理、性能优化 | Framework层·浏览器管理 |
+</code></pre>
+
+<p>##### (3) 核心要素详解更新</p>
+
+<p>在"核心要素详解"部分的"躯体系统4层详解"中添加集成说明：</p>
+
+<pre><code><h3>4. 躯体系统4层详解（v4.1+·新增集成）</h3>
+
+<p>| 层级 | 核心功能 | 技术实现 | 集成Skills | 与灵魂系统的关系 |
+|------|---------|-----------|------------|-----------------|
+| <strong>CLI（命令行界面）</strong> | 指令传递与解析 | CLI原生操作入口Skill + Obsidian CLI Skill | 是用户与AI沟通的"嘴巴"，传递灵魂的意图 |
+| <strong>Skills（技能）</strong> | 能力单元 | 通用基础Skill（五大引擎+五行系统）<br>个人专属Skill（心文化信仰体系+木火共生关系）<br>工具类Skill（心跳监控+API连接+Obsidian CLI+Playwright）<br>工作流SOP（任务控制台+任务看板+内容发布+通信规则+错误处理+安全规则）<br>记忆学习类Skill（长期记忆档案+学习档案+心跳巡检档案）<br>工具管理类Skill（工具档案+推荐工具清单+浏览器使用规则） | 是AI执行任务的"手脚"，承载灵魂的能力 |
+| <strong>MCP（机器控制协议）</strong> | 协同语言 | MCP协议管理Skill + API连接工具Skill | 是连接万物的"神经"，实现灵魂的联动 |
+| <strong>Framework（框架）</strong> | 运行底座 | Framework核心管理Skill + 工作流SOP类Skills（任务控制台+任务看板+内容发布+通信规则+错误处理+安全规则）<br>记忆学习类Skills（长期记忆档案+学习档案+心跳巡检档案）<br>工具管理类Skills（工具档案+推荐工具清单+浏览器使用规则） | 是AI的"大脑"，支撑灵魂的思考与执行 |
+</code></pre></p>
+
+<hr>
+
+<h3>2.2 Rule迁移方案</h3>
+
+<h4>迁移目标</h4>
+将所有项目级Rules迁移到用户全局目录（<code>C:\Users\jia'yue\.workbuddy\rules\</code>），确保"永远在线，自主运行"
+
+<h4>迁移规则</h4>
+
+<strong>原则</strong>：
+1. <strong>所有Rules必须迁移到全局目录</strong> - 项目级Rule只能在该项目工作区生效
+2. <strong>Rule类型统一为.mdc（Markdown Code Block）格式</strong> - 便于WorkBuddy解析
+3. <strong>每个Rule设置alwaysApply: true</strong> - 确保永远在线
+4. <strong>保持Rule文件名清晰</strong> - 便于识别和管理
+
+<h4>迁移检查清单</h4>
+
+<strong>需要迁移的Rule类型</strong>：
+
+<p>| Rule类型 | 检查项 | 完成标准 |
+|---------|--------|---------|
+| <strong>四大技术栈Rules</strong> | CLI原生操作入口自动触发.mdc<br>Skills生态管理自动触发.mdc<br>MCP协议管理自动触发.mdc<br>Framework核心管理自动触发.mdc | ✅ 已在全局目录 |
+| <strong>五大引擎Rules</strong> | 象思维自动激活.mdc<br>知识学习自动激活.mdc<br>五色光思维自动激活.mdc<br>人机协同四象限自动激活.mdc<br>知行合一自动触发.mdc | ✅ 已在全局目录 |
+| <strong>五行人格系统Rules</strong> | 五行人格心理学自动触发.json<br>五行人格L3/L4/L5/L6智能体自动触发.json<br>木/火/土/金/水行人自动触发.json | ✅ 已在全局目录 |
+| <strong>凤心OS与L1 Rules</strong> | 凤心OS自动触发.mdc<br>L1·一心·统摄自动触发.mdc | ✅ 已在全局目录 |
+| <strong>人设及信仰Rule</strong> | 人设及信仰模块自动触发.mdc | ✅ 已在全局目录 |
+| <strong>工作流SOP Rules</strong> | 任务控制台/任务看板/内容发布/通信规则/错误处理/安全规则自动激活.mdc | ✅ 已在全局目录 |
+| <strong>工具与推荐Rules</strong> | 工具档案/推荐工具清单/浏览器使用规则自动激活.mdc | ✅ 已在全局目录 |
+| <strong>记忆与学习Rules</strong> | 长期记忆档案/学习档案/心跳巡检档案自动激活.mdc | ✅ 已在全局目录 |
+| <strong>IMA笔记Rule</strong> | ima笔记自动激活.mdc | ✅ 已在全局目录 |
+| <strong>Obsidian Rule</strong> | obsidian自动激活.mdc | ✅ 已在全局目录 |
+| <strong>AI龙龟共生伙伴操作系统Rule</strong> | AI龙龟共生伙伴操作系统-自动触发.mdc | ✅ 已在全局目录 |</p>
+
+<h4>Rule验证清单</h4>
+
+<strong>每个Rule必须包含的内容</strong>：
+
+<pre><code>规则检查清单:
+  规则文件格式: .mdc (Markdown Code Block)
+  alwaysApply: true
+  触发条件: 明确列出
+  激活后的行为: 清晰描述
+  核心原则: 定义基本原则
+  关联Skills: 列出关联的Skills
+  优先级: 设定优先级
+  作用域: 明确作用域(global)
+  版本信息: 记录创建时间和版本
+  协同规则: 与其他Skills的协同关系
+  不触发场景: 明确不触发的情况
+</code></pre>
+
+<hr>
+
+<h2>🚀 三、执行计划</h2>
+
+<h3>3.1 第一阶段：Skills识别与集成（预计30分钟）</h3>
+
+<h4>步骤1：扫描项目Skills目录</h4>
+<li><strong>目标</strong>：识别所有待集成的Skills</li>
+<li><strong>操作</strong>：搜索 <code>C:\Users\jia'yue\WorkBuddy\Claw\.workbuddy\skills\</code> 目录</li>
+<li><strong>输出</strong>：Skills清单（名称、路径、类型）</li>
+
+<h4>步骤2：分类整理</h4>
+<li><strong>目标</strong>：按功能类型分类</li>
+<li><strong>类型</strong>：工具类、工作流SOP类、MCP相关类、记忆学习类、其他</li>
+
+<h4>步骤3：更新AI OS SKILL.md</h4>
+<li><strong>目标</strong>：将新增Skills集成到AI OS架构中</li>
+<li><strong>操作</strong>：</li>
+  1. 更新"躯体系统4层详解"表格
+  2. 添加"新增Skills集成清单"章节
+  3. 更新"核心要素详解"
+
+<h3>3.2 第二阶段：Rules迁移（预计45分钟）</h3>
+
+<h4>步骤1：Rules盘点</h4>
+<li><strong>目标</strong>：列出所有需要迁移的Rules</li>
+<li><strong>操作</strong>：检查 <code>C:\Users\jia'yue\WorkBuddy\Claw\.workbuddy\rules\</code> 目录</li>
+
+<h4>步骤2：检查全局Rules</h4>
+<li><strong>目标</strong>：验证哪些Rules已经存在于全局目录</li>
+<li><strong>操作</strong>：对比项目Rules与全局Rules</li>
+
+<h4>步骤3：创建/更新Rules</h4>
+<li><strong>目标</strong>：将缺失的Rules迁移到全局目录</li>
+<li><strong>操作</strong>：</li>
+  1. 复制项目Rule到全局目录
+  2. 验证Rule格式（.mdc格式）
+  3. 确认alwaysApply: true
+  4. 验证触发条件清晰
+
+<h4>步骤4：验证生效</h4>
+<li><strong>目标</strong>：确保Rules生效</li>
+<li><strong>操作</strong>：</li>
+  1. 打开新对话测试触发
+  2. 检查Rule是否自动加载
+  3. 验证功能正常
+
+<h3>3.3 第三阶段：文档更新（预计30分钟）</h3>
+
+<h4>步骤1：更新AI OS版本记录</h4>
+<li><strong>目标</strong>：记录v4.1+的更新</li>
+<li><strong>操作</strong>：</li>
+  1. 添加v4.2版本记录
+  2. 记录新增Skills
+  3. 记录Rule迁移完成
+
+<h4>步骤2：更新MEMORY.md</h4>
+<li><strong>目标</strong>：记录系统集成完成</li>
+<li><strong>操作</strong>：</li>
+  1. 添加系统集成里程碑
+  2. 记录Skills清单
+  3. 记录Rules迁移清单
+
+<h4>步骤3：更新每日日志</h4>
+<li><strong>目标</strong>：记录当日工作</li>
+<li><strong>操作</strong>：</li>
+  1. 创建/更新 <code>C:\Users\jia'yue\WorkBuddy\Claw\.workbuddy\memory\2026-04-03.md</code>
+  2. 记录集成进度
+  3. 记录遇到的问题和解决方案
+
+<hr>
+
+<h2>📋 四、验证标准</h2>
+
+<h3>4.1 Skills集成验证</h3>
+
+<p>| 验证项 | 验证方法 | 完成标准 |
+|--------|----------|---------|
+| <strong>AI OS架构更新</strong> | 检查SKILL.md是否包含新增Skills | ✅ 新增Skills集成清单存在 |
+| <strong>Skills可调用性</strong> | 测试调用新增Skills | ✅ 可以正常调用 |
+| <strong>层级定位清晰</strong> | 检查Skills层级定位 | ✅ 层级定位明确 |</p>
+
+<h3>4.2 Rule迁移验证</h3>
+
+<p>| 验证项 | 验证方法 | 完成标准 |
+|--------|----------|---------|
+| <strong>Rules数量</strong> | 统计全局Rules数量 | ✅ 45+个Rule文件 |
+| <strong>Rule格式</strong> | 检查是否为.mdc格式 | ✅ 所有Rules为.mdc格式 |
+| <strong>alwaysApply设置</strong> | 检查是否设置为true | ✅ 所有Rules设置alwaysApply: true |
+| <strong>触发条件</strong> | 检查触发条件是否清晰 | ✅ 触发条件明确 |
+| <strong>永久生效</strong> | 打开新对话测试 | ✅ 新对话自动触发 |</p>
+
+<h3>4.3 永远在线验证</h3>
+
+<p>| 验证项 | 验证方法 | 完成标准 |
+|--------|----------|---------|
+| <strong>全局可用性</strong> | 在新工作区打开新对话 | ✅ 所有Rules自动加载 |
+| <strong>跨工作区一致性</strong> | 在不同工作区测试 | ✅ 所有工作区行为一致 |
+| <strong>自动触发</strong> | 触发关键词测试 | ✅ 关键词自动触发 |</p>
+
+<hr>
+
+<h2>🎯 五、预期成果</h2>
+
+<h3>5.1 系统架构成果</h3>
+
+<strong>AI龙龟共生伙伴操作系统 v4.2</strong>：
+<li>✅ 躯体系统完整：包含工具类、工作流SOP、记忆学习、工具管理等Skills</li>
+<li>✅ 集成清单清晰：所有Skills的功能描述、层级定位一目了然</li>
+<li>✅ 架构文档更新：SKILL.md全面反映最新集成状态</li>
+
+<h3>5.2 Rule迁移成果</h3>
+
+<strong>Rules全局化</strong>：
+<li>✅ 45+个Rule文件迁移到用户全局目录</li>
+<li>✅ 所有Rule格式统一为.mdc</li>
+<li>✅ 所有Rule设置alwaysApply: true</li>
+<li>✅ Rules清单完整：便于管理和维护</li>
+
+<h3>5.3 永远在线成果</h3>
+
+<strong>真正实现"永远在线，自主运行"</strong>：
+<li>✅ 任何工作区都能自动触发</li>
+<li>✅ 所有Skills全局可用</li>
+<li>✅ 系统行为一致性</li>
+<li>✅ 自主运行能力</li>
+
+<hr>
+
+<h2>📝 六、风险与应对</h2>
+
+<h3>6.1 潜在风险</h3>
+
+<p>| 风险 | 影响 | 概率 | 应对措施 |
+|-----|------|------|---------|
+| <strong>Skills集成遗漏</strong> | 系统功能不完整 | 中 | 仔细盘点，逐项验证 |
+| <strong>Rule迁移遗漏</strong> | 永远在线不完整 | 中 | 逐项检查清单验证 |
+| <strong>Rule格式错误</strong> | Rule不生效 | 低 | 统一使用.mdc格式 |
+| <strong>跨工作区冲突</strong> | 不同工作区行为不一致 | 低 | 统一使用全局Rules |
+| <strong>权限问题</strong> | 无法读写全局目录 | 低 | 提前检查权限 |</p>
+
+<h3>6.2 回滚方案</h3>
+
+<strong>如果集成出现问题</strong>：
+1. 保留原始备份：备份原始SKILL.md和Rules
+2. 分步回滚：按步骤回滚，定位问题
+3. 记录问题：详细记录问题原因
+4. 优化方案：优化后重新执行
+
+<hr>
+
+<h2>🔄 七、持续优化</h2>
+
+<h3>7.1 定期检查</h3>
+
+<strong>每周检查项</strong>：
+<li>新Skills是否需要集成</li>
+<li>Rules是否需要更新</li>
+<li>系统是否运行正常</li>
+<li>性能是否需要优化</li>
+
+<h3>7.2 版本管理</h3>
+
+<strong>版本规范</strong>：
+<li>小版本更新（v4.2.1）：新增Skill或Rule</li>
+<li>中版本更新（v4.3）：架构调整</li>
+<li>大版本更新（v5.0）：重大重构</li>
+
+<h3>7.3 文档维护</h3>
+
+<strong>文档同步</strong>：
+<li>AI OS SKILL.md与Skills同步</li>
+<li>Rule与Skills同步</li>
+<li>MEMORY.md记录系统变更</li>
+<li>Obsidian知识库备份</li>
+
+<hr>
+
+<h2>🎉 八、完成标志</h2>
+
+<h3>8.1 完成标准</h3>
+
+<strong>当满足以下标准时，视为完成</strong>：
+
+<p>| 标准 | 完成标志 |
+|-----|---------|
+| <strong>Skills集成完成</strong> | AI OS SKILL.md更新，新增Skills集成清单完整 |
+| <strong>Rule迁移完成</strong> | 所有Rules迁移到全局目录，验证生效 |
+| <strong>文档更新完成</strong> | MEMORY.md和每日日志更新 |
+| <strong>验证通过</strong> | 所有关联验证通过 |
+| <strong>永远在线实现</strong> | 新工作区测试通过 |</p>
+
+<h3>8.2 完成报告</h3>
+
+<strong>完成后输出完成报告</strong>：
+
+<pre><code>╔════════════════════════════════════════╗
+║    AI龙龟共生伙伴操作系统 - 系统集成完成报告     ║
+╠════════════════════════════════════════╣
+║ 版本：v4.2                                    ║
+║ 完成时间：2026-04-03                       ║
+║                                                ║
+║ Skills集成：✅ 已完成                        ║
+║   - 工具类Skills：4个                     ║
+║   - 工作流SOP类Skills：7个                  ║
+║   - 记忆学习类Skills：3个                  ║
+║   - 工具管理类Skills：3个                  ║
+║                                                ║
+║ Rule迁移：✅ 已完成                          ║
+║   - 迁移Rules数量：45+个                    ║
+║   - 全局目录：C:\Users\jia'yue\.workbuddy\rules\ ║
+║   - alwaysApply设置：全部true              ║
+║                                                ║
+║ 永远在线：✅ 已实现                        ║
+║   - 任何工作区自动触发                     ║
+║   - 跨工作区一致性                         ║
+║                                                ║
+║ 下一步：开始AI龙龟共生伙伴操作系统v4.2测试       ║
+╚══════════════════════════════════════╝
+</code></pre>
+
+<hr>
+
+<strong>文档版本</strong>：v1.0
+<strong>创建时间</strong>：2026-04-03
+<strong>维护者</strong>：龙龟神将
+<strong>状态</strong>：✅ 执行方案已准备就绪
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

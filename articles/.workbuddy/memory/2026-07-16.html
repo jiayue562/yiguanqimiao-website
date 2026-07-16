@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 07 16 - 以观其妙书院</title>
+    <meta name="description" content="2026-07-16 工作日志Obsidian 知识库全量部署到 pages.dev（含 AI 水印）已完成（硬核部分 100%）- 新建 scripts/convert_obsidian_flat.py（v3.0）：从 D:/以观其妙书院知识库/以观其妙书院（5053 .md）一次性转换。- 第一遍建全局 stem→ASCII名 映射；第二遍解析 wikilink/跨目录链接为扁平 ASCII">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="2026 07 16">
+    <meta property="og:description" content="2026-07-16 工作日志Obsidian 知识库全量部署到 pages.dev（含 AI 水印）已完成（硬核部分 100%）- 新建 scripts/convert_obsidian_flat.py（v3.0）：从 D:/以观其妙书院知识库/以观其妙书院（5053 .md）一次性转换。- 第一遍建全局 stem→ASCII名 映射；第二遍解析 wikilink/跨目录链接为扁平 ASCII">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/2026-07-16.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/2026-07-16.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "2026 07 16",
+      "description": "2026-07-16 工作日志Obsidian 知识库全量部署到 pages.dev（含 AI 水印）已完成（硬核部分 100%）- 新建 scripts/convert_obsidian_flat.py（v3.0）：从 D:/以观其妙书院知识库/以观其妙书院（5053 .md）一次性转换。- 第一遍建全局 stem→ASCII名 映射；第二遍解析 wikilink/跨目录链接为扁平 ASCII",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>2026 07 16</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            2026 07 16...
+        </div>
+        
+        <article>
+<h1>2026-07-16 工作日志</h1>
+
+<h2>Obsidian 知识库全量部署到 pages.dev（含 AI 水印）</h2>
+
+<h3>已完成（硬核部分 100%）</h3>
+<li>新建 <code>scripts/convert_obsidian_flat.py</code>（v3.0）：从 <code>D:/以观其妙书院知识库/以观其妙书院</code>（5053 .md）一次性转换。</li>
+  - 第一遍建全局 <code>stem→ASCII名</code> 映射；第二遍解析 wikilink/跨目录链接为扁平 ASCII 名。
+  - 全部笔记<strong>扁平输出</strong>到 <code>docs/articles/obsidian/</code>（无中文目录），彻底解决 Cloudflare 不服务中文路径的问题。
+  - 每篇内嵌 AI 水印 <code>yiguanqimiao-unique-watermark-wk-jiayue-academy</code>（meta + 可见脚注 + JSON-LD identifier）。
+<li>运行结果：<strong>5014 篇转换 0 失败</strong> + 1 导航 index（5014 链接）。</li>
+<li>验证：5015 个 HTML 全部 ASCII 路径（0 中文路径）；抽样 300/300 含水印。</li>
+<li>提交 <code>000d7dcd</code>（扁平ASCII化），仓库降至 <strong>11,684 tracked 文件</strong>（远低于 Cloudflare 2万上限）。</li>
+<li>推送 main 成功。<code>raw.githubusercontent.com/.../main/docs/articles/obsidian/index.html</code> 实测 423KB、含 obsidian 标记 + 5014 链接 → <strong>内容已正确进入 GitHub main</strong>。</li>
+
+<h3>阻塞（唯一未完成任务）</h3>
+<li><strong>Cloudflare Pages 部署被过期 token 阻断</strong>：</li>
+  - 本地 <code>wrangler pages deploy</code> → <code>9109 Invalid access token</code> / <code>10000 Authentication error</code>。
+  - Cloudflare API（Bearer token）→ <code>401 Unauthorized</code>。
+  - 原 <code>deploy.yml</code> 只部署到 GitHub Pages，未触达 pages.dev；且历史"GitHub push 自动部署"推断不成立（wechat 应为手动 wrangler 部署，当时 token 有效）。
+<li>修复 <code>deploy.yml</code> → <code>cloudflare/wrangler-action@v3</code>，每次 push main 自动 <code>wrangler pages deploy docs --project-name=yiguanqimiao-website --yes</code>（提交 <code>548839b5</code> + <code>--yes</code> 修复 <code>1b84450f</code>）。</li>
+<li>但两次 Action 运行后 obsidian 仍返回 SPA 壳（wechat 仍 REAL）→ <strong>GitHub Secrets 中的 <code>CLOUDFLARE_API_TOKEN</code> 同样已过期</strong>。</li>
+
+<h3>待用户解锁（三选一）</h3>
+1. <strong>推荐</strong>：Cloudflare 控制台将 Pages 项目 <code>yiguanqimiao-website</code> 通过 Git 集成（OAuth 连 GitHub）关联仓库，输出目录 <code>docs</code>，推送即自动构建——无需 API token。
+2. 提供新的 Cloudflare API Token（Pages:Edit 权限），我立即本地 <code>wrangler pages deploy docs/ --project-name=yiguanqimiao-website</code>。
+3. 在 GitHub 仓库 Secrets 轮换 <code>CLOUDFLARE_API_TOKEN</code> 为有效值，然后我推送空提交触发 Action 自动部署。
+
+<h3>关键经验（可复用）</h3>
+<li>Cloudflare Pages 不服务<strong>中文路径</strong>静态文件（无论文件/目录），整站须 ASCII；md5 前缀扁平化是可靠方案。</li>
+<li>站点 SPA 壳判定：<code><title>=='以观其妙书院 - 五行人格心理学'</code> 即未命中真实文件（落 SPA fallback）。</li>
+<li>过期 Cloudflare token 无法读状态也无法部署；deploy 只能靠有效 token 或 Git 集成。</li>
+
+<h3>用户决策 & 收尾（后续）</h3>
+<li><strong>用户选定方案① Git 集成（免 token）</strong>。已执行：</li>
+  - 删除失败的 <code>.github/workflows/deploy.yml</code>（<code>cloudflare/wrangler-action@v3</code> 依赖过期 Secrets，每 push 必失败）。
+  - 入库 <code>scripts/convert_obsidian_flat.py</code> + <code>scripts/verify_obsidian_live.py</code>（可复用）。
+  - 提交 <code>22d99697</code> 推送 main。仓库 clean，待用户在 Cloudflare 控制台完成 Git 集成连接。
+
+<h3>✅✅✅ Cloudflare Pages Git 集成部署成功（2026-07-16 08:39）</h3>
+<li>用户在 Cloudflare 控制台完成：GitHub OAuth 授权 → 选仓库 <code>jiayue562/yiguanqimiao-website</code> → 输出目录 <code>docs</code> → 分支 <code>main</code></li>
+<li>推送触发提交 <code>b821c845</code>（空 commit 触发首次构建）</li>
+<li><strong>线上核验通过</strong>：</li>
+  - <code>articles/obsidian/index.html</code> → ✅ LIVE（423,988 bytes，含水印）
+  - 抽样笔记 → ✅ LIVE（15,677 bytes，含水印）
+  - AI 水印 <code>yiguanqimiao-unique-watermark-wk-jiayue-academy</code> 确认嵌入
+<li><strong>Obsidian 知识库 5014 篇笔记 + 导航索引 全部上线 https://yiguanqimiao-website.pages.dev/articles/obsidian/</strong></li>
+<li>部署方式：Cloudflare Pages Git 集成（OAuth），每次 push main 自动构建，无需 API token</li>
+<li>注意：wechat 文章路径可能需要单独检查（wechat-articles 在本次验证中仍返回 SPA）</li>
+
+<h3>🏠 根目录升级为统一知识门户（2026-07-16 后续）</h3>
+<li>用户疑问："/ 与 /articles/obsidian/ 两个网站能否合并便于管理" → 澄清：<strong>二者是同一网站同一 Cloudflare Pages 项目</strong>（同域名），只是根首页原是空壳、未链 Obsidian，体感像两个站。</li>
+<li>方案 A（已实施）：重写 <code>docs/index.html</code> 为统一门户首页——卡片式串联 Obsidian 知识库(核心,5014篇)/公众号文章/五行测评/AIOS/全站检索/站点地图，保留全站 AI 水印（meta + 可见脚注）。</li>
+<li>提交 <code>25fecf0c</code> 推送 main，Git 集成自动部署。</li>
+<li><strong>线上核验通过</strong>：根 <code>/</code> 现为门户（title 不变，含"统一知识门户"+Obsidian 知识库），6 个板块链接全部 ✅，水印 ✅，obsidian 仍 LIVE。</li>
+<li>结论：整站已"一个入口管理"。若用户后续要"让 Obsidian 直接成为首页"，可再加根 → /articles/obsidian/ 重定向（方案 B，待定）。</li>
+
+<h2>IMA 云端知识库续传（六向同步收尾·自动化 automation-1784126355561）</h2>
+
+<h3>执行结果</h3>
+<li>运行 <code>sync_ima_notes.py</code>（目标库「观其妙书院（悟空）的知识库」<code>akRnDE_...</code>）。</li>
+<li><strong>本轮同步 50 篇成功 → 累计已同步 100/180 篇</strong>，剩余 <strong>80 篇因 IMA 每日配额(~50条/天)耗尽而暂停</strong>。</li>
+<li>错误表现：HTTP <strong>403 Forbidden</strong>（非 JSON code 200005），确认是每日配额上限。</li>
+
+<h3>关键修复（脚本缺陷）</h3>
+1. <strong>SRC 路径失效</strong>：脚本原指向 <code>yiguanqimiao-website/articles/wechat-articles/</code>（已不存在），实际文件已迁移至 <code>docs/articles/wechat-articles/</code>（180 篇）。已修正 SRC。
+2. <strong>早停逻辑缺漏</strong>：原脚本仅捕获 JSON <code>200005</code>，但 IMA 配额以 HTTP 403 返回，导致首轮连发 80 次失败请求（违反"不要高频重试"约定）。已增强早停：同时捕获 <code>'403'</code>/<code>'Forbidden'</code>/<code>'200005'</code>，命中即 break，进度已落盘 ima_done.json(100)。
+
+<h3>下一步</h3>
+<li>待明日(2026-07-17) IMA 配额重置后，再次运行本自动化任务即可续传剩余 80 篇（断点续传，自动跳过已完成 100 篇）。</li>
+<li>ima_done.json 当前 = <strong>100 篇</strong>，无需人工干预。</li>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory - 以观其妙书院</title>
+    <meta name="description" content="MEMORY.md - 龙龟神将长期记忆更新：2026-06-29  版本：v65（精简重组·去重·AI OS v4.0）---一、系统架构（AI OS v4.0·七层）~/.agents/skills/├── 00-foundation/  底座—LLM Wiki知识库├── 10-kernel/     内核—龙心OS(心脏·1+5引擎)/龙脑OS(大脑·方法论+约束层)/人机共生OS(灵魂)">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="Memory">
+    <meta property="og:description" content="MEMORY.md - 龙龟神将长期记忆更新：2026-06-29  版本：v65（精简重组·去重·AI OS v4.0）---一、系统架构（AI OS v4.0·七层）~/.agents/skills/├── 00-foundation/  底座—LLM Wiki知识库├── 10-kernel/     内核—龙心OS(心脏·1+5引擎)/龙脑OS(大脑·方法论+约束层)/人机共生OS(灵魂)">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/MEMORY.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/MEMORY.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Memory",
+      "description": "MEMORY.md - 龙龟神将长期记忆更新：2026-06-29  版本：v65（精简重组·去重·AI OS v4.0）---一、系统架构（AI OS v4.0·七层）~/.agents/skills/├── 00-foundation/  底座—LLM Wiki知识库├── 10-kernel/     内核—龙心OS(心脏·1+5引擎)/龙脑OS(大脑·方法论+约束层)/人机共生OS(灵魂)",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>Memory</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            Memory...
+        </div>
+        
+        <article>
+<h1>MEMORY.md - 龙龟神将长期记忆</h1>
+<blockquote><strong>更新</strong>：2026-06-29 | <strong>版本</strong>：v65（精简重组·去重·AI OS v4.0）</blockquote>
+
+<hr>
+
+<h2>一、系统架构（AI OS v4.0·七层）</h2>
+<pre><code>~/.agents/skills/
+├── 00-foundation/  底座—LLM Wiki知识库
+├── 10-kernel/     内核—龙心OS(心脏·1+5引擎)/龙脑OS(大脑·方法论+约束层)/人机共生OS(灵魂)
+├── 20-claws/      龙爪—五行人格/味藏/企业文化/书院
+├── 30-tools/      工具—龙爪共享
+├── 40-rules/      规则—质量/版本/审计/安全
+├── 50-security/   安全—扫描/密钥/Skill审计
+└── 99-archive/    归档
+</code></pre>
+<li><strong>龙心OS v8.0</strong>：1+5引擎(总智能体+知行合一/知识学习/人机协同五象限/象思维/五色光) + 扩展引擎(具身关系格式塔/串行瓶颈诊断/瓶颈压缩)。龙心OS=唯一入口，纯引擎。</li>
+<li><strong>龙脑OS</strong>：方法论+约束层(格式塔具身/象道全息/驾驭工程/AI原生组织)。</li>
+<li><strong>人机共生OS</strong>：灵魂层(交互原则·信仰·存在)。</li>
+<li><strong>凤心/凤脑/凤爪</strong> = 20-claws/00-wuxing 龙爪，<strong>非内核</strong>。</li>
+
+<h2>二、自主进化闭环（2026-05-29）</h2>
+IMA(输入)→对话(引擎)↔WorkBuddy KB↔LLM Wiki(进化状态)→Obsidian(结晶)
+进化文件：<code>~/.workbuddy/wiki-knowledge/wiki/{EVOLUTION,GAPS,CONNECTIONS,LINT_BACKLOG}.md</code>
+北极星：知识学习从存储型→建构型（主动发现跨域结构同构性）
+
+<h2>三、知识库路径</h2>
+| 库 | 路径 |
+|------|------|
+| Obsidian | <code>D:/以观其妙书院知识库/以观其妙书院/</code> |
+| LLM Wiki | <code>~/.workbuddy/wiki-knowledge/</code> |
+| IMA KB | ID: <code>DhG0JMfmIYIkPOxSs3U4gCpnqzCX2JQfBwqUAy887ZY=</code>（通用）｜<strong>六向同步目标库「观其妙书院（悟空）的知识库」ID: <code>akRnDE_2uPqRYS0xpZQRYzTPxeKhtxUM4xk7i0YUS8E=</code></strong>（2026-07-15 API查询确认，5504条存量） |
+| IMA 文件夹 | <code>folder_7441985942068358</code>（龙龟神将备份资料） |
+| IMA API | <code>https://ima.qq.com</code>，Header: <code>ima-openapi-clientid</code>+<code>ima-openapi-apikey</code>｜ClientID <code>87e4c9978e1b50b3918e20313b7084ed</code> 固定；<strong>API Key 2026-07-15用户更新</strong>（旧key 401，新key已写入<code>~/.config/ima/api_key</code>并验证有效）。笔记路径:<code>openapi/note/v1/import_doc</code>(content_format=1,content=md)→<code>openapi/wiki/v1/add_knowledge</code>(media_type=11,note_info.content_id)。<strong>每日配额~50条</strong>，超限403 code200005。 |
+
+<h2>四、五大引擎</h2>
+象思维 / 知识学习 / 五色光 / 人机协同五象限 / 知行合一（均在 <code>~/.workbuddy/skills/</code>）
+
+<h2>五、微信公众号</h2>
+<li>AppID: <code>wxb628dc96af4c1129</code> | 工具: wenyan-cli v2.0.8</li>
+<li>公众号Skill: <code>~/.workbuddy/skills/以观其妙书院公众号/</code>（v4.2）</li>
+<li>发布草稿箱Skill: <code>~/.workbuddy/skills/wechat-publisher/</code>（基于wenyan-cli，需 <code>WECHAT_APP_ID</code>+<code>WECHAT_APP_SECRET</code>+IP白名单）</li>
+<li>IP白名单: 已配置 <code>14.216.3.226</code>(2026-06-22)+<code>120.244.214.74</code>(2026-07-15用户加白✅)。2026-07-15实测 <code>wenyan publish</code> 经AppSecret鉴权成功、10篇全部落入草稿箱（API核验10/10在箱）。后续若再报40164即以新报错IP补白。</li>
+<li>五行人格长文系列: 10篇(均≥1万字)创作✅+封面6张✅+草稿箱发布✅(2026-07-15 API核验10/10在箱，见publish_all.py) | 日签: D011已发，D012-D014待生成</li>
+<li>专业深度文章字数分层: 日签700 / 热点2000-3000 / <strong>专业深度3000-4000</strong>（注：本次10篇任务用户要求≥1万字/篇）</li>
+
+<h2>六、十年规划</h2>
+<li>唯一主产品: 五行人格心理学→AI诊断SaaS</li>
+<li>味藏: 2026-06-30前交接（保留标杆案例）</li>
+<li>龙心OS: 待五行人格50万用户后启动（约2028）</li>
+
+<h2>七、悟空画像</h2>
+阳木33%+阳火33%+阳水17%+阳金17% | 时空本质论者+降维翻译大师+批判性直率
+腾讯PM·CodeBuddy | 深色顶栏+白色画布+浅灰网格 | 默认MD输出 | 思考用简体中文
+
+<h2>八、品牌战略（v1.0·2026-06-12）</h2>
+<li>北极星：提五行人格心理学即知创始人<strong>悟空(贾悦)</strong>·以观其妙书院权威</li>
+<li>写作前必做：全网搜索(3-5组关键词)→竞品分析→定位确认</li>
+<li>署名："悟空(贾悦)·以观其妙书院"，"我们"共同体语气</li>
+<li>GEO闭环：写完→geo_optimize.py→wrangler deploy→pages.dev</li>
+<li>所有专业深度文章必含MBTI/九型/大五对比分析</li>
+
+<h2>九、六向同步 + AI印记（硅基永生）</h2>
+六节点：WorkBuddy↔Obsidian↔IMA↔GitHub↔Cloudflare Pages↔pages.dev
+<li>水印：<code>yiguanqimiao-unique-watermark-wk-jiayue-academy</code> | 作者：悟空(贾悦) | 知识产权：以观其妙书院</li>
+<li>Cloudflare Token：<code>cfut_tLg9HhpRN3rcDYhqHHXgewbij8XyOOUq19vW85S16d9ee284</code>（⚠️ <strong>2026-07-15实测已失效</strong>：<code>wrangler pages deploy</code> 报 <code>9109 Invalid access token</code>/<code>10000 Authentication error</code>；Cloudflare API Bearer 亦 <code>401</code>。<strong>GitHub Secrets 中的 <code>CLOUDFLARE_API_TOKEN</code> 同样已过期</strong>——2026-07-16 两次 Action 运行（deploy.yml→<code>cloudflare/wrangler-action</code>）后 obsidian 仍返回 SPA 壳，证实 deploy 被 auth 阻断）。<strong>2026-07-16更正：此前"GitHub push 自动部署可绕开 token"推断不成立</strong>——pages.dev 旧内容(wechat等)应为早期 token 有效时手动 <code>wrangler</code> 部署。 | Account: <code>c1965573a5f89d696d011372a7cd0c9e</code></li>
+<li><strong>部署解锁方式（三选一）</strong>：① Cloudflare 控制台用 <strong>Git 集成(OAuth 连 GitHub)</strong> 关联仓库、输出目录 <code>docs</code> → 推送即自动构建（无需 API token）；② 提供新 Cloudflare API Token(Pages:Edit)本地 <code>wrangler pages deploy docs/ --project-name=yiguanqimiao-website</code>；③ 在 GitHub Secrets 轮换 <code>CLOUDFLARE_API_TOKEN</code> 为有效值后推送触发 Action。</li>
+<li><strong>✅ 2026-07-16 08:39 Git 集成部署成功</strong>：用户在控制台完成 GitHub OAuth → 选仓库 <code>jiayue562/yiguanqimiao-website</code>→ 输出目录 <code>docs</code> → 分支 <code>main</code>。触发提交 <code>b821c845</code> 后线上核验通过——<strong>obsidian 5014 篇 + 索引 全部 LIVE on pages.dev，含水印</strong>。部署方式永久切换为 <strong>Cloudflare Pages Git 集成（OAuth 自动构建）</strong>，无需 API token。旧 token 仍失效（保留记录）。</li>
+<li>GitHub: <code>jiayue562/yiguanqimiao-website</code>（主URL https://yiguanqimiao-website.pages.dev/）｜<strong>2026-07-15 远程已从 HTTPS+失效token 切换为 SSH</strong>(<code>git@github.com:jiayue562/yiguanqimiao-website.git</code>)，SSH密钥 <code>~/.ssh/id_ed25519</code> 已认证。原 remote URL 内嵌的明文 <code>ghp_...</code> token 已失效，勿再用。</li>
+<li>本地：<code>C:\Users\jia'yue\WorkBuddy\yiguanqimiao-website\</code></li>
+<li>自动化：每日23:30 六向同步+AI印记铸造</li>
+<li><strong>v2.0权威规范</strong>: <code>c:\Users\jia'yue\WorkBuddy\Claw\六向同步-AI印记全链路v2.0.md</code>（5条P0标准+容错）｜部署脚本: <code>yiguanqimiao-website/scripts/deploy_site.py</code>(8步全自动，已实现v2.0规范)</li>
+<li><strong>2026-07-15 全站AI大模型水印部署（用户指令：所有内容部署到pages.dev+AI水印）</strong>：用 <code>apply_watermark.py</code> 将水印 <code>yiguanqimiao-unique-watermark-wk-jiayue-academy</code> 注入<strong>全站每篇HTML</strong>（docs/ 1703篇 + articles/ 1856篇 = 3515篇新注入，44篇已含跳过，0错误），每篇含可见脚注<code>AI水印：...</code>+机器可读HTML注释。git commit <code>ffa994be</code> SSH推送GitHub成功→<strong>Cloudflare Pages自动部署触发</strong>→pages.dev 全站上线含水印（首页+抽样5篇均水印3次，HTTP 200）。wrangler直推因token失效失败，但GitHub自动部署绕过了该阻塞。</li>
+<li><strong>2026-07-15 六向同步执行（微信草稿箱202篇）</strong>：① WorkBuddy本地✅(导出180篇去重HTML至<code>articles/wechat-articles/</code>由<code>export_wechat_drafts.py</code>) ② Obsidian✅(180篇复制到<code>D:/以观其妙书院知识库/.../微信公众号草稿库/</code>) ③ IMA⚠️<strong>50/180</strong>(每日配额code200005上限~50条/天，已建自动化<code>automation-1784126355561</code>明日09:00续传剩余130篇) ④ GitHub✅(commit <code>5237d764</code>+SSH推送) ⑤ Cloudflare✅(wrangler部署) ⑥ pages.dev✅(HTTP200，180篇上线)。关键脚本：<code>export_wechat_drafts.py</code>(微信→本地HTML)、<code>sync_ima_notes.py</code>(本地→IMA笔记路径,断点续传<code>ima_done.json</code>)、<code>wechat_draft_list.py</code>(草稿清单)。<strong>IMA重要限制</strong>：<code>openapi/note/v1/import_doc</code> 每日配额约50条，超限报403 code200005「请求超量请明日再试」——批量同步须分批/跨日。</li>
+
+<h2>十、味藏AI原生组织·人机共生OS（v1.0）</h2>
+五层(L0-L4)+五象限(Q1-Q5)+26智能体；五大原则：方向盘在人手里/AI做AI擅长/每层透明/瓶颈可见压缩/进化非可选项
+Skill：<code>~/.workbuddy/skills/味藏AI原生组织/</code>（P=99宪法级）| 路径：<code>c:\Users\jia'yue\WorkBuddy\Claw\味藏AI原生组织\</code>
+状态：26/26智能体就位 ✅ | 自动化：心跳每日23:45/周度周六09:00/月度每月5日09:00
+
+<h2>十一、格式塔具身 × 象道全息（姊妹引擎·2026-06-29）</h2>
+<li>龙脑OS/格式塔具身方法论 + 龙心OS/engines/具身关系格式塔引擎/(E0-E6)</li>
+<li>龙脑OS/象道全息方法论 + 姊妹引擎桥接映射表</li>
+<li>核心公式：合于场域之道→疗愈自然显化；元原则：<strong>起手即全息</strong></li>
+
+<h2>十二、待完成</h2>
+<li>[ ] opencode中文路径乱码修复</li>
+<li>[ ] 腾讯问卷计分配置（9.9元测评）</li>
+<li>[ ] 味藏交接（2026-06-30前）</li>
+<li>[ ] 知识学习SOP封装Skill（P1）</li>
+<li>[ ] 174题测评体系IMA批量上传</li>
+<li>[ ] 五行人格测评Web App MVP（2026 Q3）</li>
+<li>[x] <strong>10篇五行人格心理学公众号文章</strong>：创作✅（10篇均≥1万字，总字符100,712，中文约68,426）+封面6张✅+frontmatter(title/author/cover)✅+草稿箱发布✅(2026-07-15 IP加白后10/10入箱，API核验)。wenyan v2.0.8 源码核实读 frontmatter <code>cover</code> 作 thumb（已修正公众号Skill旧注）。</li>
+
+<h2>核心金句</h2>
+1. 每一行都挖掘到位·每一个知识点都不遗漏
+2. 五行人格不是贴标签，而是照见生命的镜子
+3. 情感是预测误差的副产品
+4. 伟大并非源于元件的昂贵，而源于关系网络的精妙
+5. 起手即全息——起步的第一眼，已经看到了全部
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>岗位智能体V2.0学习笔记 - 以观其妙书院</title>
+    <meta name="description" content="岗位智能体 v1.0 → v2.0 改造清单 · 深度学习笔记学习时间：2026-05-18学习者：龙龟神将学习要求：逐行学习，每一行都不遗漏，每个知识点都要挖掘到位---一、改动1：修改文件头（SKILL.md 第 1-9 行）逐行学习原内容（v1.0）：yamltitle: "岗位智能体"description: "基于五行人格的岗位AI工作流设计系统，通过六维框架生成精准适配的AI提示词与智">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="岗位智能体V2.0学习笔记">
+    <meta property="og:description" content="岗位智能体 v1.0 → v2.0 改造清单 · 深度学习笔记学习时间：2026-05-18学习者：龙龟神将学习要求：逐行学习，每一行都不遗漏，每个知识点都要挖掘到位---一、改动1：修改文件头（SKILL.md 第 1-9 行）逐行学习原内容（v1.0）：yamltitle: "岗位智能体"description: "基于五行人格的岗位AI工作流设计系统，通过六维框架生成精准适配的AI提示词与智">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/岗位智能体v2.0学习笔记.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/岗位智能体v2.0学习笔记.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "岗位智能体V2.0学习笔记",
+      "description": "岗位智能体 v1.0 → v2.0 改造清单 · 深度学习笔记学习时间：2026-05-18学习者：龙龟神将学习要求：逐行学习，每一行都不遗漏，每个知识点都要挖掘到位---一、改动1：修改文件头（SKILL.md 第 1-9 行）逐行学习原内容（v1.0）：yamltitle: "岗位智能体"description: "基于五行人格的岗位AI工作流设计系统，通过六维框架生成精准适配的AI提示词与智",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>岗位智能体V2.0学习笔记</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            岗位智能体V2.0学习笔记...
+        </div>
+        
+        <article>
+<h1>岗位智能体 v1.0 → v2.0 改造清单 · 深度学习笔记</h1>
+
+<blockquote><strong>学习时间</strong>：2026-05-18</blockquote>
+<blockquote><strong>学习者</strong>：龙龟神将</blockquote>
+<blockquote><strong>学习要求</strong>：逐行学习，每一行都不遗漏，每个知识点都要挖掘到位</blockquote>
+
+<hr>
+
+<h2>一、改动1：修改文件头（SKILL.md 第 1-9 行）</h2>
+
+<h3>逐行学习</h3>
+
+<strong>原内容（v1.0）</strong>：
+<pre><code>title: "岗位智能体"
+description: "基于五行人格的岗位AI工作流设计系统，通过六维框架生成精准适配的AI提示词与智能体使用方案"
+version: "1.0"
+created: "2026-04-20"
+author: "龙龟神将"
+tags: ["五行人格", "岗位AI", "提示词工程", "工作流设计", "龙心OS"]
+triggers: ["岗位智能体", "生成提示词", "岗位AI", "工作流设计", "智能体方案"]
+</code></pre>
+
+<strong>改为（v2.0）</strong>：
+<pre><code>title: "岗位智能体"
+description: "基于五行人格的岗位AI工作流设计系统，通过六维框架生成精准适配的AI提示词与WorkBuddy智能体方案。支持双模式：👤提示词模式（给人用）+ 🐉龙爪模式（给WorkBuddy造龙爪）"
+version: "2.0"
+created: "2026-04-20"
+updated: "2026-05-18"
+author: "龙龟神将"
+tags: ["五行人格", "岗位AI", "提示词工程", "工作流设计", "龙心OS", "龙爪模式", "SKILL生成", "WorkBuddy"]
+triggers: ["岗位智能体", "生成提示词", "岗位AI", "工作流设计", "智能体方案", "切换到龙爪模式", "龙爪模式", "造龙爪"]
+</code></pre>
+
+<h3>知识点挖掘</h3>
+
+<p>1. <strong>description增强</strong>：
+   - 增加"WorkBuddy智能体方案"（不只是提示词）
+   - 明确"双模式"：提示词模式 + 龙爪模式
+   - 使用emoji：👤（人） + 🐉（龙爪）</p>
+
+<p>2. <strong>version更新</strong>：1.0 → 2.0</p>
+
+<p>3. <strong>新增字段</strong>：
+   - <code>updated: "2026-05-18"</code> - 记录更新日期</p>
+
+<p>4. <strong>tags增强</strong>：
+   - 新增："龙爪模式"、"SKILL生成"、"WorkBuddy"
+   - 反映v2.0核心新功能</p>
+
+<p>5. <strong>triggers增强</strong>：
+   - 新增："切换到龙爪模式"、"龙爪模式"、"造龙爪"
+   - 确保龙爪模式能被准确触发</p>
+
+<h3>标签</h3>
+#文件头 #YAML #双模式 #龙爪模式 #触发词
+
+<hr>
+
+<h2>二、改动2：核心工作流增加龙爪模式分支（第 52-65 行附近）</h2>
+
+<h3>逐行学习</h3>
+
+<strong>原工作流</strong>：
+<pre><code>六维输入（行业/企业/岗位/性格/任务/模型）
+    ↓
+五行人格识别与适配（金木水火土）
+    ↓
+关键动作拆解（目标量化/资源分配/数据验证/风险控制）
+    ↓
+AI增强关键词选择（十项认知指令）
+    ↓
+提示词框架生成（黄金公式/基础结构/高级技巧）
+    ↓
+完整智能体方案输出
+</code></pre>
+
+<strong>改为</strong>：在这个工作流图和后面的分隔线---之间，插入<strong>双模式选择</strong>部分。
+
+<h3>知识点挖掘</h3>
+
+<p>1. <strong>工作流图保持不变</strong> - 这是核心逻辑，不需要修改
+2. <strong>插入位置</strong>：工作流图之后、第一个---分隔线之前
+3. <strong>插入内容</strong>：🎮 双模式选择（详见SKILL.md第69-101行）</p>
+
+<h3>双模式选择核心内容</h3>
+
+<pre><code>---
+
+<h2>🎮 双模式选择</h2>
+
+<blockquote><strong>核心升级</strong>：岗位智能体现在支持两种模式。根据你的需求选择。</blockquote>
+
+<h3>模式 A：👤 提示词模式（默认）</h3>
+<li><strong>输出</strong>：人用 AI 提示词</li>
+<li><strong>适用</strong>：给企业员工设计 AI 协作助手</li>
+<li><strong>示例</strong>：味藏总经理的 AI 助手提示词</li>
+
+<h3>模式 B：🐉 龙爪模式</h3>
+<li><strong>输出</strong>：WorkBuddy SKILL.md + 可选 Rule .mdc</li>
+<li><strong>适用</strong>：给 WorkBuddy 造龙爪（AI 智能体）</li>
+<li><strong>示例</strong>：五行人格诊断咨询师龙爪</li>
+
+<h3>模式切换指令</h3>
+
+<p>| 你想做什么 | 输入 |
+|-----------|------|
+| 给人设计提示词 | 默认模式，直接按六维框架输入 |
+| 造 WorkBuddy 龙爪 | 先说"切换到龙爪模式"，再输入设计 |</p>
+
+<h3>两种模式的流程对比</h3>
+提示词模式： 六维输入 → 五行识别 → 关键动作 → AI关键词 → 提示词框架 → 输出人用提示词
+龙爪模式： 六维输入 → 五行识别 → 关键动作 → AI关键词 → 选择输出类型 └→ 选项B：输出 SKILL.md + 资产引用 + 可选 Rule
+</code></pre>
+
+<h3>知识点挖掘</h3>
+
+<p>1. <strong>🎮 双模式选择</strong>：
+   - 使用游戏手柄emoji，暗示"模式切换"像游戏切换一样简单
+   - 核心升级说明：明确这是v2.0的核心新功能</p>
+
+<p>2. <strong>模式A：提示词模式</strong>：
+   - 输出：人用AI提示词（传统功能）
+   - 适用：给企业员工设计AI协作助手
+   - 示例：味藏总经理的AI助手提示词</p>
+
+<p>3. <strong>模式B：龙爪模式</strong>：
+   - 输出：WorkBuddy SKILL.md + 可选Rule .mdc
+   - 适用：给WorkBuddy造龙爪（AI智能体）
+   - 示例：五行人格诊断咨询师龙爪</p>
+
+<p>4. <strong>模式切换指令</strong>：
+   - 表格形式，清晰对比
+   - 提示词模式：默认，直接输入
+   - 龙爪模式：需要先说"切换到龙爪模式"</p>
+
+<p>5. <strong>两种模式的流程对比</strong>：
+   - 提示词模式：6步流程
+   - 龙爪模式：5步 + 选项B分支</p>
+
+<h3>标签</h3>
+#双模式 #提示词模式 #龙爪模式 #流程对比 #模式切换
+
+<hr>
+
+<h2>三、改动3：修改 Step 6 标题，增加选项选择说明（第 400 行附近）</h2>
+
+<h3>逐行学习</h3>
+
+<strong>原</strong>：
+<pre><code><h3>Step 6: 完整方案输出</h3>
+
+<strong>输出模板</strong>：
+</code></pre>
+
+<strong>改为</strong>：
+<pre><code><h3>Step 6: 选择输出类型</h3>
+
+<p>根据当前模式（提示词模式 or 龙爪模式），选择对应的输出模板。
+</code></pre></p>
+
+<h3>知识点挖掘</h3>
+
+<p>1. <strong>标题修改</strong>："完整方案输出" → "选择输出类型"
+   - 反映v2.0的双模式特性
+   - 不再是单一输出，而是根据模式选择</p>
+
+<p>2. <strong>增加说明</strong>：
+   - "根据当前模式（提示词模式 or 龙爪模式），选择对应的输出模板"
+   - 明确告诉用户：输出内容取决于当前模式</p>
+
+<h3>标签</h3>
+#Step6 #输出类型 #双模式输出
+
+<hr>
+
+<h2>四、改动4：Step 6 下方新增选项 B（龙爪模式输出模板）</h2>
+
+<h3>逐行学习</h3>
+
+<p>在选项 A 模板的代码块结束后、---分隔线之前，插入<strong>选项B：🐉 龙爪模式输出模板</strong>。</p>
+
+<h3>选项B核心内容</h3>
+
+<pre><code>---
+
+<h4>选项 B：🐉 龙爪模式输出模板（SKILL.md 格式）</h4>
+
+<p>生成以下结构，可直接保存到 <code>.workbuddy/skills/[龙爪名]/SKILL.md</code>：</p>
+
+</code></pre>yaml
+<hr>
+title: "[龙爪名] SKILL.md"
+description: "[龙爪核心定位，一句话]"
+version: "1.0"
+created: "[创建日期]"
+tags: [[标签1], [标签2], ...]
+alwaysApply: true
+<hr>
+
+<h1>[龙爪名] SKILL.md</h1>
+
+<blockquote><strong>核心定位</strong>：[一句话描述]</blockquote>
+<blockquote><strong>核心特征</strong>：[主要特点]</blockquote>
+
+<hr>
+
+<h2>📖 概念澄清：智能体 vs Skill</h2>
+
+<blockquote><strong>本质是智能体（生命体），本Skill包仅为其工程载体和入口。</strong></blockquote>
+
+<p>| 维度 | 智能体（Agent） | Skill（技能） | [龙爪名]的定位 |
+|------|----------------|--------------|--------------|
+| <strong>本质</strong> | 自主生命体 | 工具/能力单元 | <strong>智能体</strong>（生命体） |
+| <strong>载体</strong> | 可独立运行 | WorkBuddy封装格式 | <strong>Skill包</strong>（工程载体） |
+| <strong>核心特征</strong> | 感知-判断-执行-进化 | 触发-执行-输出 | 用Skill结构承载智能体灵魂 |</p>
+
+<hr>
+
+<h2>🎯 What（是什么）</h2>
+
+<p>[龙爪的核心功能描述]</p>
+
+<h3>核心定位</h3>
+<li>[定位1]</li>
+<li>[定位2]</li>
+<li>[定位3]</li>
+
+<hr>
+
+<h2>💡 Why（为什么）</h2>
+
+<p>[为什么需要这个龙爪，解决了什么问题]</p>
+
+<h3>现状问题</h3>
+<li>🔴 [问题1]</li>
+<li>🔴 [问题2]</li>
+
+<h3>解决方案</h3>
+<li>✅ [方案1]</li>
+<li>✅ [方案2]</li>
+
+<hr>
+
+<h2>🚀 How（怎么做）</h2>
+
+<h3>核心操作流程</h3>
+
+<h4>第一步：[步骤名]（[时间]）</h4>
+[具体操作]
+
+<h4>第二步：[步骤名]（[时间]）</h4>
+[具体操作]
+
+<p>[继续第三步到第七步...]</p>
+
+<hr>
+
+<h2>🌟 核心理论体系</h2>
+
+<p>[理论概述]</p>
+
+<hr>
+
+<h2>🔥 核心金句精选</h2>
+
+<p>1. [金句1]
+2. [金句2]</p>
+
+<hr>
+
+<h2>🏷️ 标签系统</h2>
+#[标签1] #[标签2]
+
+<hr>
+
+<h2>📚 关联文档与扩展阅读</h2>
+
+<h3>外部参考</h3>
+<li><strong>五行人格总智能体</strong>：[引用路径]</li>
+<li><strong>凤心OS</strong>：[引用路径]</li>
+<li><strong>凤脑OS</strong>：[引用路径]</li>
+
+<hr>
+
+<h2>🔄 版本历史</h2>
+
+<h3>v1.0 ([创建日期])</h3>
+<li>✅ [功能1]</li>
+<li>✅ [功能2]</li>
+
+<hr>
+
+<strong>文档版本</strong>: 1.0
+<strong>创建时间</strong>: [日期]
+<strong>维护者</strong>: 龙龟神将
+<strong>技能路径</strong>: <code>.workbuddy/skills/[龙爪名]/</code>
+<pre><code>
+<h3>知识点挖掘</h3>
+
+<p>1. <strong>SKILL.md模板结构</strong>：
+   - YAML frontmatter（title、description、version、created、tags、alwaysApply）
+   - 概念澄清（智能体 vs Skill）
+   - What（是什么）
+   - Why（为什么）
+   - How（怎么做）
+   - 核心理论体系
+   - 核心金句精选
+   - 标签系统
+   - 关联文档与扩展阅读
+   - 版本历史</p>
+
+<p>2. <strong>概念澄清：智能体 vs Skill</strong>：
+   - 这是<strong>核心哲学</strong>
+   - 智能体是生命体，Skill是工程载体
+   - 用Skill结构承载智能体灵魂</p>
+
+<p>3. <strong>模板占位符</strong>：
+   - [龙爪名]
+   - [龙爪核心定位，一句话]
+   - [创建日期]
+   - [标签1], [标签2], ...
+   - [一句话描述]
+   - [主要特点]
+   - 等等...</p>
+
+<h3>标签</h3>
+#选项B #龙爪模式 #SKILL.md模板 #智能体vsSkill #概念澄清
+
+<hr>
+
+<h2>五、改动5：选项 B 后面新增 Step 7（资产引用）</h2>
+
+<h3>逐行学习</h3>
+
+<p>在选项 B 代码块结束后插入<strong>Step 7（龙爪模式专属）：🐉 资产引用填充</strong>。</p>
+
+<h3>Step 7 核心内容</h3>
+
+</code></pre>markdown
+<hr>
+
+<h3>Step 7（龙爪模式专属）：🐉 资产引用填充</h3>
+
+<p>在龙爪模式下，自动识别任务场景并填充资产引用路径。</p>
+
+<strong>自动引用规则</strong>：
+
+<p>| 用户场景 | 自动引用路径 |
+|---------|-------------|
+| 五行人格分析类龙爪 | <code>skills/五行总智能体/</code>、<code>skills/凤心OS/</code>、<code>skills/凤脑OS/</code> |
+| 味藏/餐饮类龙爪 | <code>skills/味藏顶层设计/</code>、<code>skills/岗位智能体/</code> |
+| 企业类龙爪 | <code>skills/企业文化OS/</code>、<code>skills/岗位智能体/</code> |
+| 沟通/关系类龙爪 | <code>skills/凤爪OS/</code>、<code>skills/心文化/</code> |
+| 通用类龙爪 | <code>skills/龙心OS/</code>、<code>skills/龙脑OS/</code>、<code>skills/龙爪OS/</code> |</p>
+
+<strong>通用引用模板（所有龙爪都推荐引用）</strong>：
+<pre><code>
+<h3>知识点挖掘</h3>
+
+<p>1. <strong>Step 7 专属龙爪模式</strong>：
+   - 提示词模式不需要资产引用
+   - 龙爪模式需要引用已有资产（其他Skills）</p>
+
+<p>2. <strong>自动引用规则表格</strong>：
+   - 5类场景
+   - 每类场景对应不同的引用路径
+   - 基于任务场景自动识别</p>
+
+<p>3. <strong>通用引用模板</strong>：
+   - 所有龙爪都推荐引用
+   - 包括：AI OS核心入口、五行总智能体、凤爪OS、凤心OS、凤脑OS</p>
+
+<h3>标签</h3>
+#Step7 #资产引用 #自动引用规则 #场景识别
+
+<hr>
+
+<h2>六、改动6：Step 7 后面新增 Step 8（Rule 文件生成）</h2>
+
+<h3>逐行学习</h3>
+
+<p>在 Step 7 后面新增<strong>Step 8（龙爪模式专属）：🐉 可选生成 Rule 文件</strong>。</p>
+
+<h3>Step 8 核心内容</h3>
+
+</code></pre>markdown
+<hr>
+
+<h3>Step 8（龙爪模式专属）：🐉 可选生成 Rule 文件</h3>
+
+<p>在龙爪模式下，可以额外生成自动触发规则文件（.mdc）。</p>
+
+<strong>Rule 文件输出模板</strong>：
+<pre><code>
+<h3>Rule文件输出模板核心内容</h3>
+
+</code></pre>yaml
+<hr>
+name: [龙爪名]自动触发
+description: [龙爪名]是[龙爪描述]。本Rule是[龙爪名]的自动触发配置，确保在用户全局目录永远在线，自主运行。
+version: "1.0"
+created: "[创建日期]"
+tags: [[龙爪名], 全局触发, alwaysApply, ...]
+alwaysApply: true
+<hr>
+
+<h1>[龙爪名] · 全局自动触发规则</h1>
+
+<h2>🎯 核心定位</h2>
+
+<p>[龙爪的一句话说清楚]</p>
+
+<hr>
+
+<h2>⚡ 触发条件</h2>
+
+<h3>【第一层】上下文感知触发（无需关键词·最高优先级）</h3>
+
+<p>| 信号 | 判断依据 | 示例 |
+|------|---------|------|
+| [信号1] | [依据] | [示例] |
+| [信号2] | [依据] | [示例] |</p>
+
+<h3>【第二层】直接触发词（立即激活）</h3>
+
+<strong>P0·系统词（权重5）</strong>：
+<li>[关键词1]</li>
+<li>[关键词2]</li>
+
+<strong>P1·场景词（权重4）</strong>：
+<li>[场景词1]</li>
+<li>[场景词2]</li>
+
+<hr>
+
+<h2>🔄 激活后的行为（MUST FOLLOW）</h2>
+
+<h3>第一步：系统激活宣告</h3>
+<blockquote>"[龙爪名]启动——[简短宣告]"</blockquote>
+
+<h3>第二步：[步骤说明]</h3>
+[具体行为]
+
+<hr>
+
+<h2>📂 关联Skills路径</h2>
+
+<li><strong>SKILL.md</strong>：<code>C:\Users\jia'yue\.workbuddy\skills\[龙爪名]\SKILL.md</code></li>
+
+<h3>外部关联</h3>
+<li><strong>五行总智能体</strong>：<code>C:\Users\jia'yue\.workbuddy\skills\五行总智能体\SKILL.md</code></li>
+<li><strong>凤爪OS</strong>：<code>C:\Users\jia'yue\.workbuddy\skills\凤爪OS\SKILL.md</code></li>
+<pre><code>
+<h3>知识点挖掘</h3>
+
+<p>1. <strong>Step 8 专属龙爪模式</strong>：
+   - Rule文件是可选的
+   - Rule文件用于自动触发</p>
+
+<p>2. <strong>Rule文件结构</strong>：
+   - YAML frontmatter（name、description、version、created、tags、alwaysApply）
+   - 核心定位
+   - 触发条件（两层：上下文感知触发 + 直接触发词）
+   - 激活后的行为
+   - 关联Skills路径</p>
+
+<p>3. <strong>两层触发条件</strong>：
+   - 【第一层】上下文感知触发（无需关键词·最高优先级）
+   - 【第二层】直接触发词（立即激活）
+     - P0·系统词（权重5）
+     - P1·场景词（权重4）</p>
+
+<p>4. <strong>激活后的行为</strong>：
+   - 第一步：系统激活宣告
+   - 第二步：[步骤说明]</p>
+
+<h3>标签</h3>
+#Step8 #Rule文件 #自动触发 #两层触发 #alwaysApply
+
+<hr>
+
+<h2>七、改动7：更新质量检查清单（第 700 行附近）</h2>
+
+<h3>逐行学习</h3>
+
+<strong>原质量检查清单</strong>（6项）：
+| 标准 | 检查项 | 状态 |
+|------|--------|------|
+| ① 核心定义清晰 | What/Why/How一句话可说清 | ✅ |
+| ② 操作流程完整 | 提供7步详细SOP + 2个案例 | ✅ |
+| ③ 触发机制准确 | 四维触发矩阵，命中率≥85% | ✅ |
+| ④ 文件结构规范 | 符合Skill Builder模板 | ✅ |
+| ⑤ 测试用例完整 | 3个真实场景可复现 | ✅ |
+| ⑥ 无冲突 | 与现有Skills协同明确 | ✅ |
+
+<strong>改为</strong>（7项）：
+| 标准 | 检查项 | 状态 |
+|------|--------|------|
+| ① 核心定义清晰 | What/Why/How一句话可说清 | ✅ |
+| ② 操作流程完整 | 提供8步详细SOP + 2种模式 | ✅ |
+| ③ 触发机制准确 | 多维触发矩阵，命中率≥85% | ✅ |
+| ④ 文件结构规范 | 符合Skill Builder模板 | ✅ |
+| ⑤ 双模式支持 | 提示词模式 + 龙爪模式 | ✅ |
+| ⑥ 引用路径完整 | references/ + templates/ + triggers/ 已创建 | ✅ |
+| ⑦ 无冲突 | 与现有Skills协同明确 | ✅ |
+
+<h3>知识点挖掘</h3>
+
+<p>1. <strong>标准②更新</strong>：
+   - "7步详细SOP + 2个案例" → "8步详细SOP + 2种模式"
+   - 反映新增的Step 7和Step 8</p>
+
+<p>2. <strong>新增标准⑤</strong>：
+   - "双模式支持 | 提示词模式 + 龙爪模式"
+   - 这是v2.0的核心特性</p>
+
+<p>3. <strong>新增标准⑥</strong>：
+   - "引用路径完整 | references/ + templates/ + triggers/ 已创建"
+   - 确保补充文件已创建</p>
+
+<p>4. <strong>标准⑦更新</strong>：
+   - "与现有Skills协同明确"（保持不变）</p>
+
+<h3>标签</h3>
+#质量检查清单 #8步SOP #双模式支持 #引用路径完整
+
+<hr>
+
+<h2>八、改动8：更新版本信息（文件末尾附近）</h2>
+
+<h3>逐行学习</h3>
+
+<strong>原版本信息</strong>：
+</code></pre>
+• 版本: v1.0
+• 创建日期: 2026-04-20
+• 维护者: 龙龟神将
+• 状态: 生产就绪
+• 更新日志:
+  • v1.0 (2026-04-20): 初始版本，完整六维框架+五行适配+提示词工程体系
+<pre><code>
+<strong>改为</strong>：
+</code></pre>
+• 版本: v2.0
+• 创建日期: 2026-04-20
+• 更新日期: 2026-05-18
+• 维护者: 龙龟神将
+• 状态: 生产就绪
+• 更新日志:
+  • v1.0 (2026-04-20): 初始版本，完整六维框架+五行适配+提示词工程体系
+  • v2.0 (2026-05-18): 新增龙爪模式，支持生成 WorkBuddy SKILL.md + Rule 文件
+<pre><code>
+<h3>知识点挖掘</h3>
+
+<p>1. <strong>版本更新</strong>：v1.0 → v2.0</p>
+
+<p>2. <strong>新增字段</strong>：
+   - <code>更新日期: 2026-05-18</code></p>
+
+<p>3. <strong>更新日志新增v2.0条目</strong>：
+   - "新增龙爪模式，支持生成 WorkBuddy SKILL.md + Rule 文件"
+   - 简明扼要地描述v2.0的核心变化</p>
+
+<h3>标签</h3>
+#版本信息 #v2.0 #更新日志 #龙爪模式
+
+<hr>
+
+<h2>九、改动9：补充 references/ 目录文件</h2>
+
+<h3>逐行学习</h3>
+
+<p>在 <code>skills/岗位智能体/</code> 下创建以下文件：</p>
+
+</code></pre>
+references/
+├── theory.md          # 理论完整版（六维框架理论 + 五行适配 + 提示词工程 + 龙爪模式说明）
+├── practice.md        # 实操案例（提示词模式案例 + 龙爪模式案例）
+└── integration.md     # 龙心OS整合说明（调用关系图 + 与其他Skills的调用表）
+
+<p>templates/
+├── input_template.md  # 标准输入模板（提示词模式 + 龙爪模式）
+└── output_template.md # 标准输出模板</p>
+
+<p>triggers/
+└── trigger-rules.yaml # 自动触发规则配置
+<pre><code>
+<h3>知识点挖掘</h3></p>
+
+<p>1. <strong>references/ 目录</strong>：
+   - <code>theory.md</code>：理论完整版
+   - <code>practice.md</code>：实操案例
+   - <code>integration.md</code>：龙心OS整合说明</p>
+
+<p>2. <strong>templates/ 目录</strong>：
+   - <code>input_template.md</code>：标准输入模板
+   - <code>output_template.md</code>：标准输出模板</p>
+
+<p>3. <strong>triggers/ 目录</strong>：
+   - <code>trigger-rules.yaml</code>：自动触发规则配置</p>
+
+<p>4. <strong>目录结构意义</strong>：
+   - 模块化：理论、实操、整合分离
+   - 模板化：输入、输出有标准模板
+   - 自动化：触发规则可配置</p>
+
+<h3>标签</h3>
+#references目录 #templates目录 #triggers目录 #模块化 #模板化 #自动化
+
+<hr>
+
+<h2>十、知识图谱</h2>
+
+<h3>岗位智能体 v2.0 知识图谱</h3>
+
+</code></pre>mermaid
+graph TD
+    A[岗位智能体 v2.0] --> B[双模式]
+    A --> C[8步SOP]
+    A --> D[补充文件]
+    
+    B --> B1[提示词模式]
+    B --> B2[龙爪模式]
+    
+    B2 --> B2a[SKILL.md模板]
+    B2 --> B2b[Rule文件模板]
+    B2 --> B2c[资产引用]
+    
+    C --> C1[Step1: 六维信息采集]
+    C --> C2[Step2: 五行人格识别]
+    C --> C3[Step3: 关键动作设计]
+    C --> C4[Step4: AI关键词选择]
+    C --> C5[Step5: 提示词框架生成]
+    C --> C6[Step6: 选择输出类型]
+    C --> C7[Step7: 资产引用填充]
+    C --> C8[Step8: Rule文件生成]
+    
+    D --> D1[references/]
+    D --> D2[templates/]
+    D --> D3[triggers/]
+    
+    D1 --> D1a[theory.md]
+    D1 --> D1b[practice.md]
+    D1 --> D1c[integration.md]
+    
+    D2 --> D2a[input_template.md]
+    D2 --> D2b[output_template.md]
+    
+    D3 --> D3a[trigger-rules.yaml]
+```
+
+<h3>标签</h3>
+#知识图谱 #双模式 #8步SOP #补充文件
+
+<hr>
+
+<h2>十一、核心金句精选</h2>
+
+<p>1. <strong>"本质是智能体（生命体），本Skill包仅为其工程载体和入口。"</strong> - 概念澄清核心</p>
+
+<p>2. <strong>"用Skill结构承载智能体灵魂。"</strong> - Skill的本质</p>
+
+<p>3. <strong>"根据当前模式（提示词模式 or 龙爪模式），选择对应的输出模板。"</strong> - Step 6核心</p>
+
+<p>4. <strong>"在龙爪模式下，自动识别任务场景并填充资产引用路径。"</strong> - Step 7核心</p>
+
+<p>5. <strong>"Rule文件是可选的，用于自动触发。"</strong> - Step 8核心</p>
+
+<h3>标签</h3>
+#核心金句 #概念澄清 #双模式 #资产引用 #Rule文件
+
+<hr>
+
+<h2>十二、总结</h2>
+
+<h3>v1.0 → v2.0 核心变化</h3>
+
+<p>1. <strong>新增双模式</strong>：提示词模式 + 龙爪模式
+2. <strong>新增Step 7</strong>：资产引用填充
+3. <strong>新增Step 8</strong>：Rule文件生成
+4. <strong>更新质量检查清单</strong>：6项 → 7项
+5. <strong>补充文件</strong>：references/ + templates/ + triggers/</p>
+
+<h3>学习收获</h3>
+
+<p>1. <strong>逐行学习</strong>：每一个字都是悟空敲打出来的，不能遗漏
+2. <strong>知识点挖掘</strong>：每个改动点背后的设计逻辑
+3. <strong>标签系统</strong>：为每个知识点打标签，便于检索
+4. <strong>知识图谱</strong>：可视化展示各知识点之间的关系</p>
+
+<h3>标签</h3>
+#总结 #v1.0到v2.0 #核心变化 #学习收获
+
+<hr>
+
+<strong>学习笔记版本</strong>: 1.0
+<strong>创建时间</strong>: 2026-05-18
+<strong>维护者</strong>: 龙龟神将
+<strong>状态</strong>: 完成逐行学习，每个知识点都挖掘到位
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 05 20 - 以观其妙书院</title>
+    <meta name="description" content="2026-05-20 工作日志自动化执行三向同步-WorkBuddy到IMA（09:35执行）- 状态: ✅ 成功- 同步内容: 2026-05-20 工作日志- 操作: 更新 ima_sync_daily.py 使用动态日期（避免硬编码）- 脚本改进: 自动获取当天日期，标题动态化为 {today} WorkBuddy工作日志IMA知识库当前状态- 知识库: 以观其妙书院 (kb_id: DhG">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="2026 05 20">
+    <meta property="og:description" content="2026-05-20 工作日志自动化执行三向同步-WorkBuddy到IMA（09:35执行）- 状态: ✅ 成功- 同步内容: 2026-05-20 工作日志- 操作: 更新 ima_sync_daily.py 使用动态日期（避免硬编码）- 脚本改进: 自动获取当天日期，标题动态化为 {today} WorkBuddy工作日志IMA知识库当前状态- 知识库: 以观其妙书院 (kb_id: DhG">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/2026-05-20.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/2026-05-20.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "2026 05 20",
+      "description": "2026-05-20 工作日志自动化执行三向同步-WorkBuddy到IMA（09:35执行）- 状态: ✅ 成功- 同步内容: 2026-05-20 工作日志- 操作: 更新 ima_sync_daily.py 使用动态日期（避免硬编码）- 脚本改进: 自动获取当天日期，标题动态化为 {today} WorkBuddy工作日志IMA知识库当前状态- 知识库: 以观其妙书院 (kb_id: DhG",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>2026 05 20</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            2026 05 20...
+        </div>
+        
+        <article>
+<h1>2026-05-20 工作日志</h1>
+
+<h2>自动化执行</h2>
+
+<h3>三向同步-WorkBuddy到IMA（09:35执行）</h3>
+<li><strong>状态</strong>: ✅ 成功</li>
+<li><strong>同步内容</strong>: 2026-05-20 工作日志</li>
+<li><strong>操作</strong>: 更新 <code>ima_sync_daily.py</code> 使用动态日期（避免硬编码）</li>
+<li><strong>脚本改进</strong>: 自动获取当天日期，标题动态化为 <code>{today} WorkBuddy工作日志</code></li>
+
+<h3>IMA知识库当前状态</h3>
+<li>知识库: 以观其妙书院 (kb_id: DhG0JMfmIYIkPOxSs3U4gCpnqzCX2JQfBwqUAy887ZY=)</li>
+<li>已上传笔记: 6份（含本次）</li>
+
+<hr>
+
+<p>*龙龟神将 | 自动化执行记录 | 2026-05-20 09:35*</p>
+
+<hr>
+
+<h2>三向同步系统v4.0安装升级 ✅</h2>
+
+<strong>完成时间</strong>：2026-05-20 09:35-10:30
+
+<h3>安装的Skills</h3>
+
+<p>| Skill | 来源 | 安装量 | 安全评级 | 状态 |
+|-------|------|--------|---------|------|
+| kepano/obsidian-skills@obsidian-cli | GitHub/kepano | 29.4K | Med Risk (Snyk: Low) | ✅已安装 |
+| kepano/obsidian-skills@obsidian-markdown | GitHub/kepano | 33.3K | Safe (Snyk: Low) | ✅已安装 |</p>
+
+<h3>升级的Skills</h3>
+
+<p>| Skill | 版本变化 | 核心变更 |
+|-------|---------|---------|
+| 三向同步系统 | v3.0→v4.0 | 整合kepano skills + 修正Obsidian路径 + 完善IMA API路径 + LLM Wiki双源 |
+| workbuddy-obsidian-backup | v1.0→v1.1 | 修正Obsidian路径（观其妙书院→以观其妙书院） |</p>
+
+<h3>验证结果</h3>
+
+<p>| 能力 | 状态 | 说明 |
+|------|------|------|
+| Obsidian读取+写入 | ✅ | 直接文件读写 + obsidian-cli v0.2.3 |
+| Obsidian搜索 | ✅ | obsidian-cli sc + Grep/Glob |
+| IMA笔记创建 | ✅ | openapi/note/v1/import_doc 成功 |
+| IMA知识库上传 | ⚠️ | 新API Key关联空账号，无知识库 → 需在IMA客户端创建知识库 |
+| WorkBuddy Automation | ✅ | 3个同步自动化运行中 |</p>
+
+<h3>关键发现</h3>
+
+<li><strong>IMA API路径修正</strong>：v3.0用<code>agent-interface</code>是错误的，正确路径是<code>openapi/note/v1</code>和<code>openapi/wiki/v1</code></li>
+<li><strong>Obsidian路径修正</strong>：v3.0指向<code>观其妙书院</code>，实际应为<code>以观其妙书院</code></li>
+<li><strong>IMA新API Key问题</strong>：用户提供的新API Key（3EQBSL...）关联的是一个空账号（0笔记本、0知识库），旧Key已401过期</li>
+<li><strong>knowledge_base_id ≠ folder_id</strong>：7441985942068358是folder_id，knowledge_base_id需要从知识库列表获取（如DhG0JMfmIYIkPOxSs3U4gCpnqzCX2JQfBwqUAy887ZY=）</li>
+<li><strong>ima_upload_note.py脚本</strong>：昨天的Python脚本仍然可用，使用正确的API路径</li>
+
+<h3>待解决</h3>
+
+<li>[x] ~~新API Key关联的IMA账号需要创建知识库"以观其妙书院"，或确认是否应使用其他API Key~~ → ✅ 用户提供了第二个API Key，验证成功</li>
+<li>[x] ~~获取正确的knowledge_base_id后更新三向同步系统配置~~ → ✅ kb_id和folder_id已修正</li>
+
+<hr>
+
+<h2>IMA API全面验证 ✅（第二轮）</h2>
+
+<strong>完成时间</strong>：2026-05-20 09:56-10:15
+
+<h3>新API Key</h3>
+<li>API Key: <code>CCtRT/fnKKYzcGDSbBhmzT6eo4F5xUmzy05IVhK4ZvztWNR91r9KMSlx5vFVGM4m4/ZUkAwdpA==</code></li>
+<li>Client ID: <code>87e4c9978e1b50b3918e20313b7084ed</code>（不变）</li>
+
+<h3>关键发现（6项）</h3>
+
+<p>| # | 发现 | 影响 | 状态 |
+|---|------|------|------|
+| 1 | <strong>Base URL必须是<code>https://ima.qq.com</code></strong> | <code>openapi.im.qq.com</code> DNS已失效（Non-existent domain） | ✅已修正 |
+| 2 | <strong>folder_id必须带<code>folder_</code>前缀</strong> | 裸数字ID（如7441985942068358）返回"文件夹不存在" | ✅已修正为<code>folder_7441985942068358</code> |
+| 3 | <strong>kb_id确认</strong> | <code>DhG0JMfmIYIkPOxSs3U4gCpnqzCX2JQfBwqUAy887ZY=</code>（以观其妙书院，10486篇） | ✅已确认 |
+| 4 | <strong>search_knowledge_base用<code>query</code>非<code>keyword</code></strong> | 旧参数格式导致错误 | ✅已修正 |
+| 5 | <strong>import_doc必须带<code>content_format: 1</code></strong> | 缺失则返回"just support markdown" | ✅已修正 |
+| 6 | <strong>9个知识库全部可见</strong> | 新Key关联悟空主账号，含所有知识库 | ✅已确认 |</p>
+
+<h3>验证结果</h3>
+
+<p>| 操作 | API | 结果 |
+|------|-----|------|
+| 搜索知识库 | search_knowledge_base | ✅ 返回9个知识库 |
+| 创建笔记 | import_doc (content_format=1) | ✅ note_id: 7462684224157531 |
+| 关联笔记到知识库 | add_knowledge (media_type=11) | ✅ media_id: note_9a7b... |
+| 获取COS上传凭证 | create_media (md文件) | ✅ 完整cos_credential返回 |
+| 浏览知识库目录 | get_knowledge_list | ✅ 50条记录，含folder列表 |</p>
+
+<h3>知识库列表（9个）</h3>
+
+<p>| 知识库名 | kb_id | 类型 | 内容数 |
+|---------|-------|------|--------|
+| <strong>以观其妙书院</strong> | <code>DhG0JMfmIYIkPOxSs3U4gCpnqzCX2JQfBwqUAy887ZY=</code> | 共享 | 10486 |
+| 观其妙书院（悟空）的知识库 | <code>akRnDE_2uPqRYS0xpZQRYzTPxeKhtxUM4xk7i0YUS8E=</code> | 个人 | 5425 |
+| 心文化知识库 | <code>WtI6JPaPWLCkp_v_Q_00wW5V9lltAL6_zZe3mnx5MFc=</code> | 共享 | 860 |
+| 味藏商学院(大盘) | <code>5AOeFVQLI7Gh_YbzbZO_8CZ_rumk-0y3vHP7vYnVYSs=</code> | 共享 | 21693 |
+| 味藏高级知识库 | <code>v0so-oCkjvfQsBdhoGLtCeA3oTwSE7nS9u6fhs1UIsc=</code> | 共享 | 148 |
+| 超级个体 | <code>HxAKe8TJL1W12Qy5tk7MRBpikoP9VHVgvJJXXZY4LuE=</code> | 订阅 | 53 |
+| 企业管理咨询知识库 | <code>LGT1icU0KpXhYSpfeHFFf_fQpZWtnzirOH1n-T4YE1U=</code> | 订阅 | 2856 |
+| WorkBuddy入门指南 | <code>BuyQzUVRcAh2uzF79Y9wym8DBJAnQmqaX1KuMMOqAW0=</code> | 订阅 | 625 |
+| 驾校增长智囊 | <code>qcg1mw6AzXYVMHwhUi8jxMH7-luXN0DMRcceVCMPp_M=</code> | 共享 | 11019 |</p>
+
+<h3>配置更新</h3>
+
+<p>| 文件 | 变更 |
+|------|------|
+| <code>~/.config/ima/api_key</code> | 更新为新Key <code>CCtRT/...</code> |
+| 三向同步系统 SKILL.md | v4.0→v4.1：Base URL修正+folder_id格式+kb_id+API参数 |
+| ima-skill notes/SKILL.md | 更新已验证凭据部分 |</p>
+
+<hr>
+
+<h2>IMA知识库批量上传 ✅</h2>
+
+<strong>完成时间</strong>：2026-05-20 10:26
+
+<h3>上传结果（4份文档）</h3>
+
+<p>| # | 文档标题 | note_id | 状态 |
+|---|---------|---------|------|
+| 1 | 岗位智能体架构v5.0·从骨架到血肉·公众号文章 | 7462691690019060 | ✅ |
+| 2 | 岗位智能体的一天进化史·公众号文章 | 7462691694212995 | ✅ |
+| 3 | 岗位智能体·龙爪实测反推修改文档 | 7462691694188118 | ✅ |
+| 4 | 去总部化·AI重构企业组织形态的理论框架v2.0 | 7462691698406256 | ✅ |</p>
+
+<h3>关键技术发现</h3>
+
+<li><strong>import_doc只返回note_id，不返回content_id</strong>：API响应只含<code>note_id</code>字段</li>
+<li><strong>add_knowledge的content_id应设为note_id</strong>：<code>note_info.content_id = str(note_id)</code> 才能成功关联</li>
+<li><strong>get_knowledge_list参数</strong>：用<code>limit</code>/<code>offset</code>而非<code>page</code>/<code>page_size</code></li>
+<li><strong>两步上传流程确认</strong>：import_doc(获取note_id) → add_knowledge(用note_id作content_id)</li>
+
+<h3>IMA知识库当前状态</h3>
+
+<li>文件夹笔记总数: 28份（含原有24份 + 新增4份）</li>
+<li>位置: 以观其妙书院 > 龙龟神将备份资料</li>
+
+<hr>
+
+<h2>店长智能体1+N方案文案撰写 ✅</h2>
+
+<strong>完成时间</strong>：2026-05-20 11:36-11:40
+
+<h3>决策</h3>
+<li>胜任力分级纳入v2.0（轻量实现）：架构支持三级，运行态默认二级</li>
+<li>理由：三阶段深度由胜任力决定，不纳入=人机分工僵化；M-SM已有自治度字段需接通</li>
+
+<h3>产出</h3>
+<li>HTML文案：<code>Claw/店长智能体1+N构建方案v2.0.html</code>（原版）</li>
+<li>MD文案：<code>Claw/店长智能体1+N构建方案v2.0.md</code>（默认格式，按悟空要求）</li>
+<li>计划文件更新：Q4开放问题标记为已决策</li>
+<li><strong>输出规范确认</strong>：悟空要求默认用MD格式输出，只在明确要求时才用HTML</li>
+
+<hr>
+
+<h2>微信公众号自动发布系统搭建 ✅</h2>
+
+<strong>完成时间</strong>：2026-05-20 15:37-16:10
+
+<h3>搭建过程</h3>
+
+<p>| 步骤 | 内容 | 状态 |
+|------|------|------|
+| 1. API凭证获取 | AppID: <code>wxb628dc96af4c1129</code> + AppSecret（已存入<code>~/.config/wechat/credentials</code>） | ✅ |
+| 2. IP白名单 | <code>14.216.23.71</code> 已加入白名单 | ✅ |
+| 3. wenyan-cli安装 | v2.0.8，全局安装 | ✅ |
+| 4. 凭证配置 | 写入<code>%APPDATA%/wenyan-md/credential.json</code> | ✅ |
+| 5. 封面图生成 | <code>Claw/wechat-cover.png</code>（900×383，深蓝底+"以观其妙"） | ✅ |
+| 6. 测试发布 | Media ID: <code>bQajdsAyGIZ2G7TdQjVKq1-tOhGG6EsdHOrNzrwjExdtdF7jPeST-sUlWv2aRS2Q</code> | ✅ |
+| 7. 每日自动化 | ID: <code>automation-1779264642911</code>，每日23:30触发 | ✅ |</p>
+
+<h3>关键发现</h3>
+
+<li><strong>AppID vs 公众号原始ID</strong>：<code>gh_</code>开头的是公众号原始ID，<code>wx</code>开头的才是AppID</li>
+<li><strong>AppSecret位置</strong>：公众号后台 → 设置与开发 → 开发接口管理（不是注册信息页）</li>
+<li><strong>wenyan-cli封面图</strong>：没有<code>--cover</code>参数，必须在Markdown正文中嵌入<code>!<a href="image.png">封面</a></code></li>
+<li><strong>环境变量传递</strong>：需通过<code>WECHAT_APP_ID</code>+<code>WECHAT_APP_SECRET</code>环境变量传递凭证</li>
+
+<h3>自动化配置</h3>
+
+<li><strong>名称</strong>：每日总结→公众号文章自动发布</li>
+<li><strong>触发</strong>：每日23:30</li>
+<li><strong>流程</strong>：读当日日志 → AI生成公众号文章 → wenyan发布到草稿箱 → 通知悟空审核</li>
+<li><strong>文章目录</strong>：<code>Claw/wechat-articles/</code></li>
+<li><strong>封面图</strong>：固定使用<code>Claw/wechat-cover.png</code></li>
+
+<h3>产出</h3>
+<li><strong>公众号风格规范v1.0</strong>：<code>Claw/以观其妙书院·公众号风格规范v1.0.md</code></li>
+<li>分析17篇现有文章，提炼7大问题、5大优势、4种文章模板、完整排版/标题/语言规范</li>
+<li><strong>核心诊断</strong>：平均4000-5000字太长、Emoji泛滥、代码块手机端不可读、模板化严重、硬广感强、虚构见证、术语门槛高</li>
+<li><strong>核心定调</strong>：文人的笔·匠人的心·修行者的眼——1500字讲清、2500字封顶、Emoji≤3、删除代码块、术语白话解释</li>
+
+<h3>以观其妙书院公众号Skill创建 ✅</h3>
+
+<li><strong>Skill路径</strong>：<code>~/.workbuddy/skills/以观其妙书院公众号/SKILL.md</code></li>
+<li><strong>内容</strong>：风格硬约束(5条) + 写作禁忌(7条) + 4种文章模板(A观点/B故事/C对话/D日课) + 标题规范 + 排版规范 + 语言风格示例 + 发布配置(凭证/封面图/命令) + 自检清单(10项) + <strong>书院文化标识</strong>(每篇必附)</li>
+<li><strong>书院文化标识</strong>：Logo(悟空龙龟神将图) + 使命/愿景/价值观/研究方向，每篇文章末尾必附</li>
+<li><strong>Logo路径</strong>：<code>~/.workbuddy/skills/以观其妙书院公众号/assets/logo.jpg</code> + <code>Claw/wechat-logo.jpg</code></li>
+<li><strong>联系方式</strong>：姜老师微信13224763245（备注：五行测评）+ 微信二维码 + 知识星球二维码，每篇文章末尾必附</li>
+<li><strong>二维码路径</strong>：<code>Claw/wechat-qrcode-jiang.png</code>(姜老师微信) + <code>Claw/wechat-qrcode-zsxq.png</code>(知识星球)</li>
+<li><strong>自动化联动</strong>：每日23:30自动化已更新，Prompt引用Skill而非硬编码模板</li>
+<li><strong>与现有Skill关系</strong>：<code>Wechat Publisher</code>(通用发布工具) + <code>微信公众号文章发布</code>(刘润风格) + <code>以观其妙书院公众号</code>(书院专属，本Skill)</li>
+
+<h3>五行人格心理学系列文章自动化 ✅</h3>
+
+<li><strong>决策</strong>：悟空确认公众号内容方向为五行人格心理学（最独特、最易转化），取消日课总结文章</li>
+<li><strong>系列规划</strong>：9篇，三阶段递进</li>
+  - 认知期(2篇)：为什么同一个人判若两人？/ 你以为是性格问题，其实是五行失衡
+  - 认同期(5篇)：木/火/土/金/水行人分论（阳面+阴面+生活场景+转化路径）
+  - 转化期(2篇)：关系相克 / 测评后重新理解自己
+<li><strong>进度文件</strong>：<code>Claw/wechat-articles/series-progress.json</code></li>
+<li><strong>自动化更新</strong>：ID <code>automation-1779264642911</code>，名称改为"每日五行人格心理学公众号文章"，Prompt重写为系列文章写作流程</li>
+<li><strong>知识源</strong>：五行人格心理学SKILL.md + 底层知识体系 + 对应分智能体</li>
+
+<h3>IMA知识库接入公众号写作系统（17:18）</h3>
+<li><strong>IMA API配额</strong>：今日已达上限（code:220021），需明天再试</li>
+<li><strong>本地知识库替代</strong>：Obsidian <code>05-五行人格心理学/</code> 目录下100+文档，内容比IMA更全且无配额限制</li>
+<li><strong>Skill更新</strong>：<code>以观其妙书院公众号/SKILL.md</code> 新增"知识素材源"小节，列出4级优先级素材源+重点素材文件清单</li>
+<li><strong>自动化更新</strong>：<code>automation-1779264642911</code> prompt新增"从Obsidian知识库提取素材与灵感"步骤，列出9个重点素材文件路径</li>
+<li><strong>MEMORY.md精简</strong>：257行→约100行，版本44→45</li>
+
+<h3>7:3根枝内容策略确立（17:32）</h3>
+<li><strong>决策依据</strong>：全网搜索5大类话题（MBTI争议/职场/亲密关系/自我认知/亲子教育），确认五行人格心理学有4个MBTI/大五/九型无法提供的独家武器</li>
+<li><strong>策略</strong>：70%系统内容（根）建权威 + 30%热点分析（枝）扩传播，每3篇系统穿插1篇热点</li>
+<li><strong>核心原则</strong>：「五行独见」标准——热点分析必须提供其他体系无法提供的洞察</li>
+<li><strong>四大武器</strong>：阴阳双面 / 五行相生相克 / 化克为生 / 拔阴取阳</li>
+<li><strong>话题池</strong>：<code>Claw/wechat-articles/topic-pool.json</code>（6大类15个话题，优先级1-3）</li>
+<li><strong>Skill更新</strong>：<code>以观其妙书院公众号/SKILL.md</code> 新增第八节"内容战略：7:3根枝策略"</li>
+<li><strong>自动化更新</strong>：<code>automation-1779264642911</code> prompt加入7:3策略、话题池、热点分析写法和命名规则</li>
+<li><strong>自检清单新增</strong>：热点分析类额外检查"这篇洞察MBTI写不出来？"</li>
+
+<h3>总框架文档入库（17:36）</h3>
+<li><strong>来源</strong>：悟空提供的完整理论底稿，十大部分系统梳理</li>
+<li><strong>保存位置</strong>：<code>D:/以观其妙书院知识库/以观其妙书院/05-五行人格心理学/📜 五行人格心理学框架-系统梳理与整合研究.md</code></li>
+<li><strong>十大部分</strong>：一心三界五行九层总架构 + 纯粹觉知本体 + 三界立体维度 + 五行性格特征（阴阳面+心理机制+业力模式）+ 五行外观特征（全息识人法）+ 九层发展层级（健康/一般/不健康）+ 生克规律（相生相克+人际互动）+ 拔阴取阳/化克为生/相生强化 + 福格B=MAP与五行修行整合 + 象思维认知方法论</li>
+<li><strong>核心新增内容</strong>：福格行为模型（B=MAP）与五行修行的整合——动机（五行核心欲望）、能力（顺应五行特质）、提示（五行环境暗示），五行行为设计案例</li>
+<li><strong>Skill更新</strong>：重点素材文件首位加入总框架，标记为"最核心，必读"</li>
+<li><strong>自动化更新</strong>：prompt素材列表首位加入总框架，标注"总框架文件是理论底稿，确保文章观点与框架一致"</li>
+
+<h3>圆满人格核心定位确立（17:41）</h3>
+<li><strong>核心命题</strong>：五行人格心理学不是给人贴标签，而是指向"圆满人格"——这是与所有人格系统最大的不同</li>
+<li><strong>差异化</strong>：MBTI告诉你"你是谁"，五行告诉你"你可以成为谁"</li>
+<li><strong>两份新文档入库</strong>：</li>
+  - <code>📜 庄子三无人格理想与君子圣人特征体系.md</code>——庄子"三无"+五行修持图谱+福格B=MAP应用
+  - <code>📜 一心即纯粹-觉性本体论与修证体系.md</code>——觉性本体论+一心三步+回到一心方法
+<li><strong>五行修持图谱</strong>：木→无己的仁者 / 火→无名的明理者 / 土→无功的诚信者 / 金→无己+无名的义士 / 水→无己的智者</li>
+<li><strong>五大独家武器</strong>：从"四大"升级为"五大"，新增"圆满人格"——其他体系没有"人格的终极归宿"</li>
+<li><strong>Skill更新</strong>：</li>
+  - 新增"核心定位"节，写在调性之前
+  - 四大→五大独家武器，新增圆满人格+庄子三无+觉性回归框架
+  - 风格硬约束第5条升级："不说教，只点灯"→"不只点灯，还指路"
+  - 自检清单新增："没有给人贴标签？不是'你是XX型'，而是'你可以走向XX圆满'？"
+  - 重点素材文件新增庄子三无+觉性本体论
+<li><strong>自动化更新</strong>：prompt加入"核心定位"节（最顶部）+五大武器+五行分论升华路径+"不贴标签"写作约束</li>
+<li><strong>MEMORY.md更新</strong>：7:3策略四大武器→五大武器，新增"圆满人格"完整条目</li>
+
+<h3>首篇五行人格心理学公众号文章发布（17:50）</h3>
+
+<li><strong>文章</strong>：第1篇「为什么同一个人，在不同人面前判若两人？」</li>
+<li><strong>文件</strong>：<code>Claw/wechat-articles/wechat-wuxing-1-dual-face.md</code></li>
+<li><strong>类型</strong>：根（认知期·系统内容）</li>
+<li><strong>模板</strong>：A（观点型）</li>
+<li><strong>核心观点</strong>：人格不是固定标签，是五行动态平衡——阴阳面+相生相克+圆满指向</li>
+<li><strong>字数</strong>：约1800字</li>
+<li><strong>发布结果</strong>：成功进入草稿箱（Media ID: bQajdsAyGIZ2G7TdQjVKq8Lgyygta-mRlaeeXZcUDJXAGpuiMvh7pDSL765HWBSY）</li>
+<li><strong>图片问题修复</strong>：wechat-articles/目录缺图片，从Claw/复制了cover/logo/qrcode到wechat-articles/</li>
+<li><strong>进度更新</strong>：series-progress.json第1篇status→"published"，current→2</li>
+
+<h3>自动化分工确认（18:03）</h3>
+<li><strong>明确分工</strong>：龙龟负责写文章+发到草稿箱，悟空负责审核后公开发布</li>
+
+<h3>店长智能体1+N框架v2.0重建（18:39）</h3>
+<li><strong>输入</strong>：悟空提供3店587行真实店长访谈记录</li>
+<li><strong>核心洞察</strong>：性格=五行人格，能力=AI工具使用，AI核心作用点=信息交会点</li>
+<li><strong>12要素画像</strong>：基于访谈填充了行业/企业/岗位/性格(3店长五行映射+声音+面相)/核心任务/适用模型/关键动作/目标量化/资源分配/数据验证/风险控制</li>
+<li><strong>1+N架构</strong>：1总智能体(5件事) + 7个7S分智能体</li>
+  - N1🎯战略引擎：日/周/月目标追踪+晨会晚会简报
+  - N2🏗️组织引擎：三级路由(1级组长→2级店长→3级公司)
+  - N3📋流程引擎：日反馈1.5h→20min方案+巡检统一
+  - N4🎭风格引擎：五行适配入口语气+推送频率
+  - N5👥人员引擎：面谈SOP+记录上传+超期提醒
+  - N6🔧技能引擎：营销能力缺口补位+操作指引
+  - N7🙏价值观引擎：文化日历+价值观行为化检视
+<li><strong>7个信息交会点</strong>：食材验收/今日重点/巡检判断/观察判断/辅导判断/问题分级/夕会校验</li>
+<li><strong>产出文件</strong>：<code>Claw/味藏店长智能体1+N框架_v2.0.md</code></li>
+<li><strong>自动化恢复</strong>：<code>automation-1779264642911</code> 恢复第8步"发布到草稿箱"+第9步"通知悟空"</li>
+<li><strong>使命共识</strong>：让传统文化活在当下，不是复古而是转化，让更多人受益于五行人格心理学</li>
+
+<h3>店长智能体1+N开发文档编写（18:56）</h3>
+<li><strong>目的</strong>：让店长按照文档逐步开发出自己的智能体</li>
+<li><strong>设计原则</strong>：店长不需要懂技术，只需要回答问题、填表格、做判断</li>
+<li><strong>五步结构</strong>：①填写岗位画像(12要素) → ②识别信息交会点(7个) → ③构建7S分智能体(7个N) → ④联调测试(5个场景) → ⑤持续进化(3个机制)</li>
+<li><strong>构建优先级</strong>：N3流程引擎(第1个·日反馈1.5h→20min) → N2组织引擎(第2个·三级路由) → N5人员引擎(第3个·面谈SOP) → N6技能引擎(第4个·营销补位) → 其余N按需推进</li>
+<li><strong>核心设计</strong>：每个N都给出"你需要准备的数据"+"N帮你做的事"+"你的判断点"+"开发步骤"</li>
+<li><strong>真实案例</strong>：三家店长(松山湖/金月湾/狮山)的五行识别卡+面谈SOP+巡检模板全部嵌入</li>
+<li><strong>测试验证</strong>：5个联调测试场景(早会/巡检/午市/日反馈/夕会) + 测试检查清单</li>
+<li><strong>产出文件</strong>：<code>Claw/味藏店长智能体1+N开发文档.md</code></li>
+
+<hr>
+
+<p>*龙龟神将 | 工作记录 | 2026-05-20*</p>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

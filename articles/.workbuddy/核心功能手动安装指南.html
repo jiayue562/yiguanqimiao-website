@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>核心功能手动安装指南 - 以观其妙书院</title>
+    <meta name="description" content="核心功能手动安装指南最后更新：2026-04-03 11:30状态：等待手动安装🎯 安装策略说明由于系统权限限制，无法通过AI自动执行npm和PowerShell命令。推荐采用手动安装方案：1. 以管理员身份运行终端2. 按照指南逐步安装3. AI辅助验证和配置---🔴 P0优先级：核心功能（立即安装）1. Obsidian CLI（本地笔记智能关联）功能说明- 智能搜索Obsidian笔记- 支">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="核心功能手动安装指南">
+    <meta property="og:description" content="核心功能手动安装指南最后更新：2026-04-03 11:30状态：等待手动安装🎯 安装策略说明由于系统权限限制，无法通过AI自动执行npm和PowerShell命令。推荐采用手动安装方案：1. 以管理员身份运行终端2. 按照指南逐步安装3. AI辅助验证和配置---🔴 P0优先级：核心功能（立即安装）1. Obsidian CLI（本地笔记智能关联）功能说明- 智能搜索Obsidian笔记- 支">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/核心功能手动安装指南.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/核心功能手动安装指南.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "核心功能手动安装指南",
+      "description": "核心功能手动安装指南最后更新：2026-04-03 11:30状态：等待手动安装🎯 安装策略说明由于系统权限限制，无法通过AI自动执行npm和PowerShell命令。推荐采用手动安装方案：1. 以管理员身份运行终端2. 按照指南逐步安装3. AI辅助验证和配置---🔴 P0优先级：核心功能（立即安装）1. Obsidian CLI（本地笔记智能关联）功能说明- 智能搜索Obsidian笔记- 支",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>核心功能手动安装指南</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            核心功能手动安装指南...
+        </div>
+        
+        <article>
+<h1>核心功能手动安装指南</h1>
+
+<blockquote>最后更新：2026-04-03 11:30</blockquote>
+<blockquote>状态：等待手动安装</blockquote>
+
+<h2>🎯 安装策略说明</h2>
+
+<p>由于系统权限限制，无法通过AI自动执行npm和PowerShell命令。
+<strong>推荐采用手动安装方案</strong>：
+1. 以管理员身份运行终端
+2. 按照指南逐步安装
+3. AI辅助验证和配置</p>
+
+<hr>
+
+<h2>🔴 P0优先级：核心功能（立即安装）</h2>
+
+<h3>1. Obsidian CLI（本地笔记智能关联）</h3>
+
+<h4>功能说明</h4>
+<li>智能搜索Obsidian笔记</li>
+<li>支持双向链接查询</li>
+<li>自动识别Obsidian仓库</li>
+<li>管理笔记和标签</li>
+
+<h4>安装步骤</h4>
+
+<strong>步骤1：以管理员身份打开PowerShell</strong>
+<pre><code><h1>右键点击PowerShell → "以管理员身份运行"</h1>
+</code></pre>
+
+<strong>步骤2：全局安装Obsidian CLI</strong>
+<pre><code>npm install -g @yakitrak/obsidian-cli
+</code></pre>
+
+<strong>步骤3：配置默认仓库</strong>
+<pre><code><h1>设置默认Obsidian仓库路径</h1>
+obsidian-cli set-default "D:\以观其妙书院知识库\观其妙书院"
+
+<h1>验证设置</h1>
+obsidian-cli print-default
+</code></pre>
+
+<strong>步骤4：测试功能</strong>
+<pre><code><h1>搜索笔记（测试）</h1>
+obsidian-cli search "五行人格"
+</code></pre>
+
+<h4>AI验证</h4>
+安装完成后，告诉我"Obsidian CLI已安装"，我会：
+1. 验证安装状态
+2. 创建自动触发Rule
+3. 配置与知识库的连接
+
+<hr>
+
+<h3>2. Playwright（浏览器自动化）</h3>
+
+<h4>功能说明</h4>
+<li>无头浏览器自动化</li>
+<li>网页导航、点击、输入</li>
+<li>截图和PDF生成</li>
+<li>表单自动填写</li>
+
+<h4>安装步骤</h4>
+
+<strong>步骤1：全局安装Playwright</strong>
+<pre><code>npm install -g playwright
+</code></pre>
+
+<strong>步骤2：安装浏览器驱动</strong>
+<pre><code><h1>安装Chromium（推荐）</h1>
+npx playwright install chromium
+
+<h1>可选：安装所有浏览器</h1>
+<h1>npx playwright install</h1>
+</code></pre>
+
+<strong>步骤3：验证安装</strong>
+<pre><code><h1>检查版本</h1>
+playwright --version
+
+<h1>运行测试</h1>
+npx playwright test --version
+</code></pre>
+
+<h4>AI验证</h4>
+安装完成后，告诉我"Playwright已安装"，我会：
+1. 创建Playwright测试脚本
+2. 验证无头浏览器功能
+3. 创建自动化工作流模板
+
+<hr>
+
+<h3>3. 心跳监控机制（Skill Builder创建）</h3>
+
+<h4>功能说明</h4>
+<li>每15分钟自动唤醒</li>
+<li>持续跟踪任务进度</li>
+<li>优化工作流程</li>
+<li>每周五自动汇总学习成果</li>
+
+<h4>使用Skill Builder创建</h4>
+
+<strong>调用Skill Builder</strong>
+<pre><code>直接对我说："我想构建一个Skill：心跳监控机制"
+</code></pre>
+
+<strong>我会自动执行</strong>：
+1. ✅ 分析功能需求
+2. ✅ 设计Skill架构
+3. ✅ 生成完整Skill包
+4. ✅ 创建自动触发Rule
+5. ✅ 编写测试用例
+
+<strong>核心功能模块</strong>：
+<li>定时任务调度（15分钟轮询）</li>
+<li>任务进度跟踪</li>
+<li>工作流程优化</li>
+<li>周报自动生成</li>
+<li>预警机制</li>
+
+<hr>
+
+<h3>4. API连接工具（Skill Builder创建）</h3>
+
+<h4>功能说明</h4>
+<li>连接100+主流API（Google/Microsoft/GitHub等）</li>
+<li>OAuth认证流程</li>
+<li>API调用模板</li>
+<li>错误处理和重试</li>
+
+<h4>使用Skill Builder创建</h4>
+
+<strong>调用Skill Builder</strong>
+<pre><code>直接对我说："我想构建一个Skill：API连接工具"
+</code></pre>
+
+<strong>我会自动执行</strong>：
+1. ✅ 分析API连接需求
+2. ✅ 设计OAuth认证架构
+3. ✅ 生成完整Skill包
+4. ✅ 创建API调用模板
+5. ✅ 编写安全规则
+
+<strong>支持的API</strong>：
+<li>Google Workspace (Gmail/Calendar/Drive)</li>
+<li>Microsoft 365 (Outlook/OneDrive/Teams)</li>
+<li>GitHub (Issues/PR/Actions)</li>
+<li>Slack/Teams/Discord</li>
+<li>Notion/Trello/Asana</li>
+
+<hr>
+
+<h2>🟡 P1优先级：高优先级（本周安装）</h2>
+
+<h3>5. 自动化工作流</h3>
+
+<strong>搜索关键词</strong>：
+<li><code>workflow automation</code></li>
+<li><code>n8n automation</code></li>
+<li><code>zapier alternative</code></li>
+
+<strong>使用ClawHub搜索</strong>（需手动执行）：
+<pre><code>npx clawhub search "workflow automation"
+</code></pre>
+
+<hr>
+
+<h3>6. 文档处理工具集</h3>
+
+<strong>搜索关键词</strong>：
+<li><code>document processing</code></li>
+<li><code>pdf ocr</code></li>
+<li><code>video transcript</code></li>
+
+<strong>手动安装</strong>：
+<pre><code><h1>PDF处理</h1>
+npm install -g pdf-lib
+
+<h1>视频处理</h1>
+npm install -g @ffmpeg/ffmpeg
+</code></pre>
+
+<hr>
+
+<h3>7. GitHub CLI增强</h3>
+
+<strong>手动安装</strong>：
+<pre><code>npm install -g gh
+
+<h1>认证</h1>
+gh auth login
+</code></pre>
+
+<hr>
+
+<h3>8. 对话储存</h3>
+
+<strong>搜索关键词</strong>：
+<li><code>conversation storage</code></li>
+<li><code>chat history</code></li>
+<li><code>session management</code></li>
+
+<strong>使用ClawHub搜索</strong>（需手动执行）：
+<pre><code>npx clawhub search "conversation storage"
+</code></pre>
+
+<hr>
+
+<h2>🟢 P2优先级：中优先级（下周安装）</h2>
+
+<h3>9-12. 其他功能</h3>
+
+<p>采用相同策略：
+1. 用Skill Builder创建核心功能
+2. 用ClawHub搜索现成技能
+3. 手动安装npm工具</p>
+
+<hr>
+
+<h2>🔵 P3优先级：标准优先级（按需安装）</h2>
+
+<h3>13-25. 其他专业工具</h3>
+
+<p>根据实际需求逐步安装。</p>
+
+<hr>
+
+<h2>📊 安装检查清单</h2>
+
+<h3>P0核心功能</h3>
+
+<li>[ ] Obsidian CLI已安装</li>
+<li>[ ] Obsidian CLI已配置默认仓库</li>
+<li>[ ] Obsidian CLI测试通过</li>
+<li>[ ] Playwright已安装</li>
+<li>[ ] Playwright浏览器已安装</li>
+<li>[ ] Playwright测试通过</li>
+<li>[ ] 心跳监控Skill已创建</li>
+<li>[ ] API连接Skill已创建</li>
+
+<h3>P1高优先级</h3>
+
+<li>[ ] 自动化工作流已安装</li>
+<li>[ ] 文档处理工具已安装</li>
+<li>[ ] GitHub CLI已安装</li>
+<li>[ ] 对话储存已安装</li>
+<li>[ ] 技能搜索引擎已验证</li>
+
+<hr>
+
+<h2>🚀 快速安装命令汇总</h2>
+
+<h3>一键安装（以管理员身份运行PowerShell）</h3>
+
+<pre><code><h1>P0核心功能一键安装</h1>
+npm install -g @yakitrak/obsidian-cli
+npm install -g playwright
+npx playwright install chromium
+
+<h1>P1工具一键安装</h1>
+npm install -g pdf-lib
+npm install -g gh
+
+<h1>验证安装</h1>
+obsidian-cli --version
+playwright --version
+gh --version
+</code></pre>
+
+<hr>
+
+<h2>💡 使用AI辅助安装的最佳实践</h2>
+
+<h3>方法1：分步安装+AI验证</h3>
+
+<p>1. <strong>手动安装一个工具</strong>
+   <pre><code>   npm install -g @yakitrak/obsidian-cli
+   </code></pre></p>
+
+<p>2. <strong>告诉AI安装完成</strong>
+   <pre><code>   "Obsidian CLI已安装"
+   </code></pre></p>
+
+<p>3. <strong>AI自动验证和配置</strong>
+   - 检查安装状态
+   - 配置自动触发Rule
+   - 创建测试脚本</p>
+
+<h3>方法2：批量安装+AI验证</h3>
+
+<p>1. <strong>批量安装所有P0工具</strong>
+   <pre><code>   npm install -g @yakitrak/obsidian-cli playwright
+   npx playwright install chromium
+   </code></pre></p>
+
+<p>2. <strong>告诉AI全部安装完成</strong>
+   <pre><code>   "所有P0工具已安装完成"
+   </code></pre></p>
+
+<p>3. <strong>AI批量验证和配置</strong>
+   - 验证所有工具
+   - 配置所有Rule
+   - 生成测试报告</p>
+
+<hr>
+
+<h2>🆘 常见问题</h2>
+
+<h3>Q1: npm install失败</h3>
+
+<strong>解决方案</strong>：
+<pre><code><h1>清理npm缓存</h1>
+npm cache clean --force
+
+<h1>使用淘宝镜像</h1>
+npm install -g @yakitrak/obsidian-cli --registry=https://registry.npmmirror.com
+</code></pre>
+
+<h3>Q2: 权限不足</h3>
+
+<strong>解决方案</strong>：
+<li>必须以管理员身份运行PowerShell</li>
+<li>右键PowerShell → "以管理员身份运行"</li>
+
+<h3>Q3: Playwright浏览器下载失败</h3>
+
+<strong>解决方案</strong>：
+<pre><code><h1>手动下载浏览器</h1>
+<h1>访问：https://playwright.dev/docs/browsers</h1>
+</code></pre>
+
+<hr>
+
+<h2>📞 需要帮助？</h2>
+
+<p>如果安装过程中遇到问题：
+1. 记录错误信息
+2. 告诉AI具体问题
+3. AI会提供解决方案</p>
+
+<hr>
+
+<strong>维护者</strong>：龙龟神将
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
