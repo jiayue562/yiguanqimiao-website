@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>00 总索引与导航 - 以观其妙书院</title>
+    <meta name="description" content="AI OS P0功能增强 - 完成总览日期: 2026-04-15  状态: ✅ 设计完成  实施周期: 26天---✅ P0功能全部完成设计序号  功能  版本  核心升级  文档路径--------------------------------------1  记忆系统  v5.3 → v6.0  SQLite + FTS5 + 向量索引  00-系统配置/记忆系统v6.0架构设计.md2">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="00 总索引与导航">
+    <meta property="og:description" content="AI OS P0功能增强 - 完成总览日期: 2026-04-15  状态: ✅ 设计完成  实施周期: 26天---✅ P0功能全部完成设计序号  功能  版本  核心升级  文档路径--------------------------------------1  记忆系统  v5.3 → v6.0  SQLite + FTS5 + 向量索引  00-系统配置/记忆系统v6.0架构设计.md2">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/00-总索引与导航.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/00-总索引与导航.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "00 总索引与导航",
+      "description": "AI OS P0功能增强 - 完成总览日期: 2026-04-15  状态: ✅ 设计完成  实施周期: 26天---✅ P0功能全部完成设计序号  功能  版本  核心升级  文档路径--------------------------------------1  记忆系统  v5.3 → v6.0  SQLite + FTS5 + 向量索引  00-系统配置/记忆系统v6.0架构设计.md2",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>00 总索引与导航</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            00 总索引与导航...
+        </div>
+        
+        <article>
+<h1>AI OS P0功能增强 - 完成总览</h1>
+<blockquote><strong>日期</strong>: 2026-04-15 | <strong>状态</strong>: ✅ 设计完成 | <strong>实施周期</strong>: 26天</blockquote>
+
+<hr>
+
+<h2>✅ P0功能全部完成设计</h2>
+
+<p>| 序号 | 功能 | 版本 | 核心升级 | 文档路径 |
+|------|------|------|----------|----------|
+| 1 | <strong>记忆系统</strong> | v5.3 → v6.0 | SQLite + FTS5 + 向量索引 | <code>00-系统配置/记忆系统v6.0架构设计.md</code> |
+| 2 | <strong>技能进化</strong> | v2.0 → v3.0 | GEPA遗传进化算法 | <code>00-系统配置/技能进化v3.0-GEPA算法整合.md</code> |
+| 3 | <strong>自动化工作流</strong> | v1.0 (新增) | 定时/事件驱动任务调度 | <code>00-系统配置/自动化工作流系统架构.md</code> |</p>
+
+<hr>
+
+<h2>📊 功能架构总览</h2>
+
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    AI OS P0功能增强全景图                        │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  ┌─────────────────────────────────────────────────────────┐   │
+│  │  ① 记忆系统v6.0                                          │   │
+│  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐  │   │
+│  │  │ SQLite存储  │  │ FTS5全文搜索 │  │ 向量相似度检索   │  │   │
+│  │  │ 结构化数据  │  │ 毫秒级响应  │  │ 768维语义匹配   │  │   │
+│  │  └─────────────┘  └─────────────┘  └─────────────────┘  │   │
+│  │  ┌─────────────┐  ┌─────────────┐                        │   │
+│  │  │ GraphRAG   │  │ 混合搜索    │                        │   │
+│  │  │ 关系推理   │  │ RRF融合排序 │                        │   │
+│  │  └─────────────┘  └─────────────┘                        │   │
+│  └─────────────────────────────────────────────────────────┘   │
+│                              ↓                                  │
+│  ┌─────────────────────────────────────────────────────────┐   │
+│  │  ② 技能进化v3.0 (GEPA算法)                               │   │
+│  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐  │   │
+│  │  │ 基因编码    │  │ 适应度评估  │  │ 变异策略库      │  │   │
+│  │  │ 提示词→基因 │  │ 多维度评分  │  │ 5+变异策略      │  │   │
+│  │  └─────────────┘  └─────────────┘  └─────────────────┘  │   │
+│  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐  │   │
+│  │  │ 种群进化    │  │ 交叉繁殖    │  │ 知行合一整合    │  │   │
+│  │  │ 遗传算法    │  │ 基因重组    │  │ 三阶段×GEPA    │  │   │
+│  │  └─────────────┘  └─────────────┘  └─────────────────┘  │   │
+│  └─────────────────────────────────────────────────────────┘   │
+│                              ↓                                  │
+│  ┌─────────────────────────────────────────────────────────┐   │
+│  │  ③ 自动化工作流系统                                      │   │
+│  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐  │   │
+│  │  │ 定时调度    │  │ 事件驱动    │  │ DAG编排        │  │   │
+│  │  │ Cron表达式  │  │ 事件总线    │  │ 有向无环图     │  │   │
+│  │  └─────────────┘  └─────────────┘  └─────────────────┘  │   │
+│  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐  │   │
+│  │  │ 心跳巡检    │  │ 知行合一沉淀│  │ 监控仪表盘     │  │   │
+│  │  │ 每小时执行  │  │ 会话后触发  │  │ 实时状态监控   │  │   │
+│  │  └─────────────┘  └─────────────┘  └─────────────────┘  │   │
+│  └─────────────────────────────────────────────────────────┘   │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+</code></pre>
+
+<hr>
+
+<h2>🎯 核心设计亮点</h2>
+
+<h3>记忆系统v6.0</h3>
+<li><strong>全文检索</strong>: FTS5实现毫秒级响应（目标<50ms）</li>
+<li><strong>语义搜索</strong>: 768维向量相似度匹配</li>
+<li><strong>混合搜索</strong>: RRF算法融合关键词+语义结果</li>
+<li><strong>知识图谱</strong>: GraphRAG关系推理</li>
+<li><strong>性能提升</strong>: 文档容量1000→100,000+（100x）</li>
+
+<h3>技能进化v3.0 (GEPA)</h3>
+<li><strong>基因编码</strong>: 提示词→基因→染色体的生物类比</li>
+<li><strong>适应度评估</strong>: 5维度评分（准确性/一致性/完整性/效率/鲁棒性）</li>
+<li><strong>变异策略</strong>: 随机替换/同义改写/扩展/压缩/添加约束/结构调整</li>
+<li><strong>知行合一整合</strong>: 三阶段×GEPA深度融合</li>
+<li><strong>自动触发</strong>: 对话结束后自动评估进化</li>
+
+<h3>自动化工作流</h3>
+<li><strong>DSL定义</strong>: YAML格式工作流定义</li>
+<li><strong>多触发器</strong>: 定时(Cron) + 事件 + 手动 + Webhook</li>
+<li><strong>DAG编排</strong>: 有向无环图任务依赖</li>
+<li><strong>预设工作流</strong>: 心跳巡检 + 知行合一沉淀</li>
+<li><strong>监控仪表盘</strong>: 实时状态可视化</li>
+
+<hr>
+
+<h2>📅 实施计划汇总</h2>
+
+<p>| 功能 | 阶段 | 工期 | 关键里程碑 |
+|------|------|------|-----------|
+| <strong>记忆系统v6.0</strong> | 4阶段 | 8天 | SQLite+FTS5 → 数据迁移 → API实现 → 测试优化 |
+| <strong>技能进化v3.0</strong> | 4阶段 | 9天 | GEPA核心 → 知行合一整合 → 龙心OS集成 → 测试优化 |
+| <strong>自动化工作流</strong> | 4阶段 | 9天 | 核心引擎 → 触发系统 → 预设工作流 → 集成测试 |
+| <strong>总计</strong> | - | <strong>26天</strong> | 并行可压缩至14天 |</p>
+
+<hr>
+
+<h2>🔗 文档导航</h2>
+
+<pre><code>00-系统配置/
+├── 记忆系统v6.0架构设计.md          # 详细Schema + API + 迁移计划
+├── 技能进化v3.0-GEPA算法整合.md      # GEPA算法 + 知行合一整合
+├── 自动化工作流系统架构.md           # DSL + 引擎 + 预设工作流
+└── 本文件                           # 总览与导航
+</code></pre>
+
+<hr>
+
+<h2>💎 核心金句</h2>
+
+<blockquote><strong>"P0不是优先级，是承诺。"</strong></blockquote>
+
+<blockquote><strong>"记忆让系统有过去，GEPA让系统有未来，工作流让系统永远在线。"</strong></blockquote>
+
+<blockquote><strong>"灵魂不动，躯体进化——AI OS的本质从未改变，只是变得更加强大。"</strong></blockquote>
+
+<hr>
+
+<strong>设计完成时间</strong>: 2026-04-15 18:45 | <strong>下一步</strong>: 进入Phase 1实施
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

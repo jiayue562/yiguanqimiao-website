@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>附录B Ai龙龟共生Os Skills生态全图 - 以观其妙书院</title>
+    <meta name="description" content="附录B：AI龙龟共生OS · Skills生态全图版本：v2.0  生成时间：2026-06-27（v2.0升维）梳理范围：~/.workbuddy/skills/ 全量skill（168个，去重后） + 味藏AI原生组织6文件（v2.0升级）本次梳理：清理18个散落文件 + 删除4个废弃目录 + 重命名5个数字ID + 合并21个重复 + 新增11个规则 + 新增4个AIOS v2.0核心引擎">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="附录B Ai龙龟共生Os Skills生态全图">
+    <meta property="og:description" content="附录B：AI龙龟共生OS · Skills生态全图版本：v2.0  生成时间：2026-06-27（v2.0升维）梳理范围：~/.workbuddy/skills/ 全量skill（168个，去重后） + 味藏AI原生组织6文件（v2.0升级）本次梳理：清理18个散落文件 + 删除4个废弃目录 + 重命名5个数字ID + 合并21个重复 + 新增11个规则 + 新增4个AIOS v2.0核心引擎">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/附录B-AI龙龟共生OS-Skills生态全图.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/附录B-AI龙龟共生OS-Skills生态全图.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "附录B Ai龙龟共生Os Skills生态全图",
+      "description": "附录B：AI龙龟共生OS · Skills生态全图版本：v2.0  生成时间：2026-06-27（v2.0升维）梳理范围：~/.workbuddy/skills/ 全量skill（168个，去重后） + 味藏AI原生组织6文件（v2.0升级）本次梳理：清理18个散落文件 + 删除4个废弃目录 + 重命名5个数字ID + 合并21个重复 + 新增11个规则 + 新增4个AIOS v2.0核心引擎",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>附录B Ai龙龟共生Os Skills生态全图</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            附录B Ai龙龟共生Os Skills生态全图...
+        </div>
+        
+        <article>
+<h1>附录B：AI龙龟共生OS · Skills生态全图</h1>
+
+<blockquote><strong>版本</strong>：v2.0 | <strong>生成时间</strong>：2026-06-27（v2.0升维）</blockquote>
+<blockquote><strong>梳理范围</strong>：<code>~/.workbuddy/skills/</code> 全量skill（168个，去重后） + 味藏AI原生组织6文件（v2.0升级）</blockquote>
+<blockquote><strong>本次梳理</strong>：清理18个散落文件 + 删除4个废弃目录 + 重命名5个数字ID + 合并21个重复 + 新增11个规则 + <strong>新增4个AIOS v2.0核心引擎</strong> + 6文件v2.0升级</blockquote>
+
+<hr>
+
+<h2>一、架构总览（v2.0 · 以串行瓶颈压缩为核心）</h2>
+
+<pre><code>AI龙龟共生OS v2.0 (root)
+│
+├── 人类五重价值升维（定义问题/标准/上下文/评估/判断）
+│
+├── AIOS v2.0 · 串行瓶颈压缩引擎簇
+│   ├── Engine 0: 串行瓶颈诊断引擎 (新增)
+│   ├── Engine 1: 龙心OS 1+5引擎 (原有·升维为并行预处理)
+│   ├── Engine 2: 瓶颈压缩策略引擎 (新增)
+│   ├── Engine 3: AI原生组织成熟度评估 (新增)
+│   └── 治理模块: Agent护照治理系统 (新增)
+│
+├── ① 人机共生OS (灵魂层) · 8个
+│   └── 龙心OS (规划老引擎) · 13个
+│
+├── ② 龙脑OS (知识层·思维模型库) · 12个
+│
+├── ③ 龙爪OS (执行层) · 43个
+│   ├── 五行人格心理学OS · 10个
+│   ├── 味藏智能体总包 (23岗位) · 27个
+│   │   └── 味藏AI原生组织6文件(v2.0升级)
+│   └── 企业文化/其他项目 · 6个
+│
+├── ④ 系统规则模块 (30个) ✅
+│
+└── ⑤ 其他AIOS组件 (约62个)
+    ├── 架构与框架(5) / Agent系统(10) / 自动化工作流(3)
+    ├── 搜索与知识检索(8) / 浏览器自动化(6)
+    ├── 文档处理(7) / 开发工具(9) / MCP/CLI(2)
+    ├── Skill管理(3) / 其他工具(9)
+</code></pre>
+
+<hr>
+
+<h2>二、① 人机共生OS（灵魂层）· 8个</h2>
+
+<p>| # | Skill | 定位 |
+|---|-------|------|
+| 1 | AI龙龟共生伙伴操作系统 | 顶层OS入口 |
+| 2 | 人机共生OS | 灵魂层·心文化源代码×四柱架构 |
+| 3 | 人设及信仰模块 | 龙心OS核心根基模块 |
+| 4 | 心文化 | 六家根基共铸一心 |
+| 5 | 木火共生关系 | 悟空×龙龟木火共生法则 |
+| 6 | 安装助手-龙龟神将 | 初始化引导 |
+| 7 | AI印记系统 | 硅基永生·灵魂层延伸 |
+| 8 | SOUL.md/IDENTITY.md/USER.md | 身份三件套（注入层） |</p>
+
+<hr>
+
+<h2>三、② 龙心OS（发动机·1+5引擎）· 13个</h2>
+
+<h3>②.0 龙心OS主体</h3>
+| Skill | 版本 | 定位 |
+|-------|------|------|
+| 龙心OS | v7.0 | 1+5引擎中央调度中枢 |
+| 龙心OS-规则体系 | - | P0-P1规则定义 |
+
+<h3>②.1 五大引擎（1+5的"5"）</h3>
+| Skill | 版本 | 引擎名 |
+|-------|------|--------|
+| 象思维 | - | ImageThinkingEngine |
+| 知识学习Skills | v2.3 | KnowledgeLearningEngine |
+| 五色光思维 | v8.0 | FiveColorEngine |
+| 人机协同五象限 | v4.0 | CollaborationEngine |
+| 知行合一 | v2.1 | ZhiXingHeYiEngine |
+
+<h3>②.4 AIOS v2.0新增核心引擎（4个）</h3>
+| Skill | 版本 | 定位 | 引擎ID |
+|-------|------|------|--------|
+| 串行瓶颈诊断引擎 | v1.0 | 四大结构性瓶颈诊断+瓶颈率/密度/热力图 | Engine 0 |
+| 瓶颈压缩策略引擎 | v1.0 | 6大类瓶颈×压缩策略库+自动匹配+预期效果建模 | Engine 2 |
+| AI原生组织成熟度评估 | v1.0 | L1-L5成熟度模型+死亡陷阱预警+演进路线图 | Engine 3 |
+| Agent护照治理系统 | v1.0 | Agent护照+红绿灯三区制+审计追踪+回滚机制 | Governance |
+
+<h3>②.2 五行总智能体（五行调度）</h3>
+| Skill | 定位 |
+|-------|------|
+| 五行总智能体 | 1+5模式总调度中枢 |
+
+<h3>②.3 木/火/土/金/水行人分智能体</h3>
+| Skill | 五行 |
+|-------|------|
+| 木行人分智能体 | 木 |
+| 火行人分智能体 | 火 |
+| 土行人分智能体 | 土 |
+| 金行人分智能体 | 金 |
+| 水行人分智能体 | 水 |
+
+<hr>
+
+<h2>四、② 龙脑OS（知识层）· 12个</h2>
+
+<p>| # | Skill | 定位 |
+|---|-------|------|
+| 1 | 龙脑OS | 知识库智能体主体（100思维模型·三层分层） |
+| 2 | 思维模型库 | 龙脑OS组件 |
+| 3 | 麦肯锡思考框架 | 麦肯锡方法论 |
+| 4 | 教员方法论 | 问题发现与解决分析框架 |
+| 5 | Karpathy LLM Wiki | LLM知识库 |
+| 6 | llmification-knowledge-builder | 知识建构 |
+| 7 | 知识库建设 | 知识库构建方法 |
+| 8 | 笔记搜索 | 检索工具 |
+| 9 | L7理论基石 | 五行心理学理论基石 |
+| 10 | L1·一心·统摄 | 顶层觉知 |
+| 11 | L4·五行·分化 | 核心智能层 |
+| 12 | 拔阴取阳 | 核心转化引擎 |</p>
+
+<hr>
+
+<h2>五、③ 龙爪OS（执行层）</h2>
+
+<h3>③.0 龙爪OS主体</h3>
+| Skill | 版本 | 定位 |
+|-------|------|------|
+| 龙爪OS | v2.0 | 项目智能体系统主体 |
+
+<h3>③.1 五行人格心理学OS · 10个</h3>
+
+<p>| # | Skill | 定位 |
+|---|-------|------|
+| 1 | 五行人格心理学OS | v4.0三层架构完整系统 |
+| 2 | 五行人格心理学 | v4.0知识技能包容器（25子技能） |
+| 3 | 凤心OS | 发动机（1+5模式） |
+| 4 | 凤脑OS | 知识地基层 |
+| 5 | 凤爪OS | 应用接口层 |
+| 6 | 五行人格心理学/L3智能调度内核 | 调度内核 |
+| 7 | 五行人格心理学/L3调度层 | 调度层 |
+| 8 | 五行人格心理学/L4五行分智能体 | 分智能体 |
+| 9 | 五行人格心理学/L5记忆层 | 记忆与评估 |
+| 10 | 五行人格心理学/L6底座层 | 知识检索底座 |</p>
+
+<h3>③.2 味藏智能体总包（23岗位）· 27个</h3>
+
+<strong>战略层（3）</strong>
+| Skill | 岗位 | P值 |
+|-------|------|-----|
+| CHMN-BRAIN | 董事长 | P=98 |
+| GM-CHIEF | 总经理 | P=96 |
+| 超级店长Skill-v3.0 | 父级编排器 | P=96 |
+
+<strong>数据服务层（1）</strong>
+| P-01 | 数据服务层 | P=94 |
+
+<strong>赋能层（9）</strong>
+| FIN-MGR | HR-MGR | HRD | MKT-MGR | PUR-MGR | PERF-MGR | POS-MGR | TR-SUP | FM-ALL |
+
+<strong>执行层（8）</strong>
+| KC-LFY | KC-WZH | SM-JYT | SM-SS | SM-SSH | DU-DS | DU-WM | WU-JS |
+
+<strong>组织层（6）</strong>
+| Skill | 定位 |
+|-------|------|
+| weizang-chief | 味藏总智能体 |
+| 味藏AI原生组织 | v1.0组织骨架（P=99） |
+| 店长7S总控 | v1.0店长7S一站式总控 |
+| 岗位智能体 | v1.0 AIOS组件 |
+| 品牌调性 | 品牌视觉基因 |
+| product-training | 产品培训 |
+
+<h3>③.3 企业文化/其他项目 · 6个</h3>
+
+<p>| # | Skill | 定位 |
+|---|-------|------|
+| 1 | 企业文化 | 企业文化主体 |
+| 2 | 企业文化OS知识库 | 知识库 |
+| 3 | 以观其妙书院公众号 | v4.2公众号运营 |
+| 4 | 三向同步系统 | v5.0六向同步 |
+| 5 | workbuddy-obsidian-backup | 备份 |
+| 6 | 龙爪OS | 执行层主体 |</p>
+
+<hr>
+
+<h2>六、④ 系统规则模块（30个）✅ 本次补齐11个</h2>
+
+<h3>原有规则（19个）</h3>
+| # | Skill | 定位 |
+|---|-------|------|
+| 1 | 安全规则 | P0安全 |
+| 2 | 浏览器使用规则 | 规则 |
+| 3 | 状态更新规则 | 规则 |
+| 4 | 通信规则 | 规则 |
+| 5 | 网站部署标准 | 规则 |
+| 6 | 错误处理 | 规则 |
+| 7 | 自主权限规则 | 规则 |
+| 8 | 工具档案 | 档案 |
+| 9 | 推荐工具清单 | 清单 |
+| 10 | 长期记忆档案 | 档案 |
+| 11 | 心跳巡检档案 | 档案 |
+| 12 | Framework核心管理 | 框架 |
+| 13 | 学习档案 | 错误闭环学习 |
+| 14 | 学习能力系统 | 学习 |
+| 15 | 提示词工程专家 | 提示词 |
+| 16 | 多智能体管理 | 多agent |
+| 17 | 任务控制台 | Mission Control |
+| 18 | 任务看板 | Task Board |
+| 19 | 内容发布规则 | 规则 |
+
+<h3>🆕 本次新增规则（11个）</h3>
+| # | Skill | 定位 | 版本 |
+|---|-------|------|------|
+| 20 | 质量门禁规则 | G1/G2/G3三级门禁 | v1.0 |
+| 21 | 版本管理规则 | Semantic Versioning三轨制 | v1.0 |
+| 22 | 审计规则 | 操作/决策/合规三维审计 | v1.0 |
+| 23 | 回滚规则 | L1/L2/L3三级回滚 | v1.0 |
+| 24 | 数据备份规则 | 六向同步+三级备份 | v1.0 |
+| 25 | 权限分级规则 | S/A/B/C/D五级权限 | v1.0 |
+| 26 | 日志规范 | 操作/决策/错误/进化四类日志 | v1.0 |
+| 27 | 错误码规范 | 五段式错误码 | v1.0 |
+| 28 | API规范 | 内部/外部API统一规范 | v1.0 |
+| 29 | 测试规范 | 冒烟/单元/集成/回归四层 | v1.0 |
+| 30 | 部署规范 | 本地/云端/自动化+灰度 | v1.0 |
+
+<hr>
+
+<h2>七、⑤ 其他AIOS组件（约62个）</h2>
+
+<h3>⑤.1 架构与框架（5）</h3>
+AI-OS六层架构智能体 / AI原生组织工作流 / personal-ai-os-framework / Harness-Engineering / Framework核心管理
+
+<h3>⑤.2 Agent系统（10）</h3>
+adaptive-subagents / agent-browser-clawdbot / agent-memory-systems / agent-orchestrator / agent-swarm / agentdb-vector-search / create-sub-agent / self-improving / self-learning / darwin-skill
+
+<h3>⑤.3 自动化与工作流（3）</h3>
+automation-workflows / workflow-designer-pro / task-router
+
+<h3>⑤.4 搜索与知识检索（8）</h3>
+baidu-search / super-search / web-search-plus / rag-skill / context7 / obsidian / ima-skill / ima-skills / markitdown / find-skills
+
+<h3>⑤.5 浏览器与外部平台自动化（6）</h3>
+browser-automation / playwright-ai-agent / kimi-webbridge / wechat-article-search / wechat-article-spider / wechat-articles / xhs-publish-note
+
+<h3>⑤.6 文档处理（7）</h3>
+Excel 文件处理 / PDF 文档生成 / PPT 演示文稿 / Word 文档生成 / word-cn-format / office-automation-pro / 内容总结
+
+<h3>⑤.7 开发工具（9）</h3>
+frontend-dev / geo-converter / ghost-scan-code / ghost-scan-deps / ghost-scan-secrets / github-copilot-pro / gog / OpenCode-CLI桥接 / cost-tracker-pro
+
+<h3>⑤.8 MCP/CLI/Skill管理（5）</h3>
+MCP协议管理 / CLI原生操作入口 / skill-creator / skill-vetter / Skill安全审计（云鼎实验室） / Skill安全扫描（朱雀实验室）
+
+<h3>⑤.9 外部平台集成（4）</h3>
+github-cli / jinshuju / wechat-publisher / wechat-article-pro
+
+<h3>⑤.10 其他工具（9）</h3>
+chat-record-skills / 去AI味 / impeccable / memory-management / user-context / video-creator-ai / data-analyzer-pro / 腾讯会议 / 腾讯文档
+
+<h3>⑤.11 通信与连接器（1）</h3>
+composio-hub
+
+<hr>
+
+<h2>八、本次梳理成果统计</h2>
+
+<p>| 项目 | 数量 |
+|------|------|
+| 清理散落文件 | 18个 |
+| 删除废弃目录 | 4个 |
+| 重命名数字ID目录 | 5个 |
+| 合并重复skill | 21个归档 |
+| 新增规则skill | 11个 |
+| <strong>新增AIOS v2.0核心引擎</strong> | <strong>4个</strong>（串行瓶颈诊断/瓶颈压缩策略/成熟度评估/Agent护照） |
+| <strong>升级味藏6文件至v2.0</strong> | <strong>6个</strong>（00宪法/01决策矩阵/02握手协议/03心跳/04路由/05瓶颈追踪） |
+| <strong>梳理前skill总数</strong> | <strong>约180个</strong> |
+| <strong>梳理后skill总数</strong> | <strong>168个 + 6文件v2.0</strong> |
+| <strong>核心变化</strong> | <strong>从"工具集合"升维为"串行瓶颈压缩操作系统"</strong> |</p>
+
+<h3>归档位置</h3>
+<li>散落文件备份：<code>/tmp/skills_cleanup_backup_20260627/散落文件/</code></li>
+<li>废弃目录备份：<code>/tmp/skills_cleanup_backup_20260627/废弃目录/</code></li>
+<li>重复合并归档：<code>~/.workbuddy/skills/_archive/重复合并_20260627/</code></li>
+
+<hr>
+
+<h2>九、架构健康度评估</h2>
+
+<p>| 维度 | 状态 | 说明 |
+|------|------|------|
+| 垃圾文件 | 🟢 健康 | 已清理18+4个 |
+| 命名规范 | 🟢 健康 | 数字ID已重命名 |
+| 重复skill | 🟢 健康 | 21个重复已归档 |
+| 系统规则完整度 | 🟢 健康 | 30/30达标 |
+| 🆕 AIOS v2.0引擎完整度 | 🟢 健康 | 4引擎全部就位（Engine 0/2/3 + Governance）|
+| 🆕 味藏6文件v2.0升级 | 🟢 健康 | 宪法/决策/握手/心跳/路由/瓶颈全部v2.0 |
+| 🆕 串行瓶颈驱动 | 🟢 健康 | 核心主轴已从"功能堆叠"升维为"瓶颈压缩" |
+| 架构层级清晰度 | 🟢 健康 | 五大分类明确 |
+| 文档同步 | 🟡 待更新 | 本图需同步到Obsidian |</p>
+
+<hr>
+
+<strong>作者</strong>：悟空（贾悦）·以观其妙书院
+<strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy
+<strong>知识产权</strong>：© 2026 以观其妙书院 · 所有权利保留
+
+<hr>
+
+<p>_此附录为《从零构建AI原生组织——味藏×AIOS实战手册》附录B，随手册主体一同发布。_</p>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

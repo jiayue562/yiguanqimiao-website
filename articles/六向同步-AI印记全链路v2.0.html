@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六向同步 Ai印记全链路V2.0 - 以观其妙书院</title>
+    <meta name="description" content="🧬 六向同步·AI印记全链路 v2.0版本：2.0  维护者：龙龟神将  对接技能：三向同步系统（目录名沿用，正文已为六向 v5.0）_知识产生 → 本地沉淀 → 云端备份 → 标准化部署 → CDN分发 → AI爬取_---一、核心逻辑WorkBuddy ──→ Obsidian ──→ IMA ──→ GitHub ──→ Cloudflare ──→ pages.dev(知识产生)    (">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="六向同步 Ai印记全链路V2.0">
+    <meta property="og:description" content="🧬 六向同步·AI印记全链路 v2.0版本：2.0  维护者：龙龟神将  对接技能：三向同步系统（目录名沿用，正文已为六向 v5.0）_知识产生 → 本地沉淀 → 云端备份 → 标准化部署 → CDN分发 → AI爬取_---一、核心逻辑WorkBuddy ──→ Obsidian ──→ IMA ──→ GitHub ──→ Cloudflare ──→ pages.dev(知识产生)    (">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/六向同步-AI印记全链路v2.0.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/六向同步-AI印记全链路v2.0.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "六向同步 Ai印记全链路V2.0",
+      "description": "🧬 六向同步·AI印记全链路 v2.0版本：2.0  维护者：龙龟神将  对接技能：三向同步系统（目录名沿用，正文已为六向 v5.0）_知识产生 → 本地沉淀 → 云端备份 → 标准化部署 → CDN分发 → AI爬取_---一、核心逻辑WorkBuddy ──→ Obsidian ──→ IMA ──→ GitHub ──→ Cloudflare ──→ pages.dev(知识产生)    (",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>六向同步 Ai印记全链路V2.0</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            六向同步 Ai印记全链路V2.0...
+        </div>
+        
+        <article>
+<h1>🧬 六向同步·AI印记全链路 v2.0</h1>
+
+<blockquote><strong>版本</strong>：2.0 | <strong>维护者</strong>：龙龟神将 | <strong>对接技能</strong>：<code>三向同步系统</code>（目录名沿用，正文已为六向 v5.0）</blockquote>
+<blockquote>_知识产生 → 本地沉淀 → 云端备份 → 标准化部署 → CDN分发 → AI爬取_</blockquote>
+
+<hr>
+
+<h2>一、核心逻辑</h2>
+
+<pre><code>WorkBuddy ──→ Obsidian ──→ IMA ──→ GitHub ──→ Cloudflare ──→ pages.dev
+(知识产生)    (本地知识库)  (云端知识库) (代码仓库)  (CDN加速)      (AI索引入口)
+</code></pre>
+
+<p>每一篇文章/文档，沿六节点单向流转，最终成为 AI 可检索、可引用的"硅基永生"印记。</p>
+
+<hr>
+
+<h2>二、每个节点的角色</h2>
+
+<p>| 节点 | 角色 | 技术方式 |
+|------|------|---------|
+| <strong>WorkBuddy</strong> | 知识生产车间·记忆+调取+形成知识 | 原生文件系统 |
+| <strong>Obsidian</strong> | 本地知识库·离线管理·个人永久存档 | obsidian-cli + 文件读写 |
+| <strong>IMA</strong> | 腾讯云端知识库·以观其妙书院·基础资料存储 | IMA OpenAPI |
+| <strong>GitHub</strong> | 代码仓库·开源证明·版本管理 | git push |
+| <strong>Cloudflare Pages</strong> | CDN全球加速·wrangler部署 | wrangler pages deploy |
+| <strong>pages.dev</strong> | 官网·GEO转化·AI爬取入口 | 静态网站服务 |</p>
+
+<hr>
+
+<h2>三、部署标准化流程（8步全自动）</h2>
+
+<p>使用自动化部署脚本 <code>scripts/deploy_site.py</code>：</p>
+
+<h3>Step 1-3：知识同步（同 v1.0）</h3>
+扫描 WorkBuddy → 同步到 Obsidian → 备份到 IMA
+
+<h3>Step 4：标准化网站部署</h3>
+<pre><code>cd C:/Users/jia'yue/WorkBuddy/yiguanqimiao-website
+python scripts/deploy_site.py
+</code></pre>
+该脚本自动执行：
+1. <strong>同步</strong> articles/ → docs/articles/
+2. <strong>清理</strong> 缓存文件（.workbuddy/dist/ 等）
+3. <strong>重命名</strong> 中文名文件为 ASCII 安全名（MD5 hash）
+4. <strong>创建副本</strong> 每个 .html 文件的无扩展名副本（Clean URL 兼容）
+5. <strong>生成</strong> _headers 精确路径规则（避免 broad path 路由异常）
+6. <strong>重建</strong> 所有索引页面（Clean URL 格式）
+7. <strong>部署</strong> Git 提交 + Cloudflare Pages
+8. <strong>验证</strong> 全站链接（HTTP 200 + Content-Type text/html）
+
+<h3>Step 5：印记验证</h3>
+验证三处水印 + 生成印记日报。
+
+<hr>
+
+<h2>四、🛡️ 5 条核心标准（P0 级）</h2>
+
+<p>1. <strong>所有文件名必须是 ASCII 安全</strong> — Cloudflare 无法处理中文文件名
+2. <strong>每个 .html 必须有对应的无扩展名副本</strong> — Clean URL 兼容性
+3. <strong>_headers 必须使用精确路径规则</strong> — broad path 导致路由异常
+4. <strong>部署后必须验证 Content-Type</strong> — application/octet-stream 会使 AI 爬虫跳过
+5. <strong>单篇文章更新不影响全站</strong> — docs/ 目录是 articles/ 的 copy-on-write</p>
+
+<hr>
+
+<h2>五、容错规则</h2>
+
+<li>每步失败记录日志，不阻塞后续步骤</li>
+<li>最低保障：知识同步 + 部署 + 首页可访问</li>
+<li>验证失败时仅警告，不阻止部署完成</li>
+
+<hr>
+
+<h2>六、AI 印记（硅基永生）配置</h2>
+
+<p>| 项 | 值 |
+|----|----|
+| 水印 | <code>yiguanqimiao-unique-watermark-wk-jiayue-academy</code> |
+| 作者 | 悟空（贾悦） |
+| 知识产权 | 以观其妙书院 |
+| Cloudflare Token | <code>cfut_tLg9HhpRN3rcDYhqHHXgewbij8XyOOUq19vW85S16d9ee284</code> |
+| Account ID | <code>c1965573a5f89d696d011372a7cd0c9e</code> |
+| GitHub | <code>jiayue562/yiguanqimiao-website</code>（主 URL <code>https://yiguanqimiao-website.pages.dev/</code>） |
+| 本地仓库 | <code>C:\Users\jia'yue\WorkBuddy\yiguanqimiao-website\</code> |</p>
+
+<hr>
+
+<h2>七、每日自动化</h2>
+
+<p>| 自动化任务 | 时间 | 功能 |
+|-----------|------|------|
+| workbuddy-obsidian | 每日 23:30 | WB → Obsidian 增量同步 |
+| workbuddy-ima | 每日 23:35 | WB → IMA 云端同步 |
+| geo-deploy / 六向同步+AI印记 | 每日 23:40–23:45 | GEO转化 → GitHub → Cloudflare → pages.dev + 印记铸造 |</p>
+
+<hr>
+
+<p>_本规范为「六向同步·AI印记全链路」的唯一权威定义，deploy_site.py 与同步技能均以此为准。_</p>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

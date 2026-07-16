@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识沉淀流程 - 以观其妙书院</title>
+    <meta name="description" content="知识沉淀流程概述本流程描述了如何将日常记录转化为有价值的系统知识，实现知识的有效沉淀和复用。完整工作流mermaidgraph TDA日常记录 -- B初步整理B -- C知识归类C -- D内容完善D -- E建立关联E -- F定期回顾F -- G知识复用详细步骤阶段一：日常记录 (Daily Recording)目标：及时记录所有有价值的信息执行要点：- 使用每日笔记模板记录日常工作- 会议">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="知识沉淀流程">
+    <meta property="og:description" content="知识沉淀流程概述本流程描述了如何将日常记录转化为有价值的系统知识，实现知识的有效沉淀和复用。完整工作流mermaidgraph TDA日常记录 -- B初步整理B -- C知识归类C -- D内容完善D -- E建立关联E -- F定期回顾F -- G知识复用详细步骤阶段一：日常记录 (Daily Recording)目标：及时记录所有有价值的信息执行要点：- 使用每日笔记模板记录日常工作- 会议">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/知识沉淀流程.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/知识沉淀流程.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "知识沉淀流程",
+      "description": "知识沉淀流程概述本流程描述了如何将日常记录转化为有价值的系统知识，实现知识的有效沉淀和复用。完整工作流mermaidgraph TDA日常记录 -- B初步整理B -- C知识归类C -- D内容完善D -- E建立关联E -- F定期回顾F -- G知识复用详细步骤阶段一：日常记录 (Daily Recording)目标：及时记录所有有价值的信息执行要点：- 使用每日笔记模板记录日常工作- 会议",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-16",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>知识沉淀流程</h1>
+            <div class="meta">
+                <span>📅 2026-07-16</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            知识沉淀流程...
+        </div>
+        
+        <article>
+<h1>知识沉淀流程</h1>
+
+<h2>概述</h2>
+
+<p>本流程描述了如何将日常记录转化为有价值的系统知识，实现知识的有效沉淀和复用。</p>
+
+<h2>完整工作流</h2>
+
+<pre><code>graph TD
+    A[日常记录] --> B[初步整理]
+    B --> C[知识归类]
+    C --> D[内容完善]
+    D --> E[建立关联]
+    E --> F[定期回顾]
+    F --> G[知识复用]
+</code></pre>
+
+<h2>详细步骤</h2>
+
+<h3>阶段一：日常记录 (Daily Recording)</h3>
+
+<strong>目标</strong>：及时记录所有有价值的信息
+
+<strong>执行要点</strong>：
+<li>使用[[每日笔记]]模板记录日常工作</li>
+<li>会议后立即整理[[会议记录]]</li>
+<li>学习过程中记录[[学习笔记]]</li>
+<li>关键思考及时记录在相应分类中</li>
+
+<strong>产出</strong>：原始记录文件
+
+<h3>阶段二：初步整理 (Initial Organization)</h3>
+
+<strong>目标</strong>：将零散信息初步归类
+
+<strong>执行要点</strong>：
+<li>每周五下午进行周度整理</li>
+<li>识别记录中的核心知识点</li>
+<li>删除无关或重复内容</li>
+<li>标记需要深入整理的内容 (#待整理)</li>
+
+<strong>产出</strong>：初步整理后的笔记
+
+<h3>阶段三：知识归类 (Knowledge Categorization)</h3>
+
+<strong>目标</strong>：将知识归入相应分类体系
+
+<strong>执行要点</strong>：
+<li>判断知识类型：概念/实践/项目/工具</li>
+<li>移动到对应目录</li>
+<li>建立标准化的文件名</li>
+<li>添加适当的标签</li>
+
+<strong>产出</strong>：分类后的知识文件
+
+<h3>阶段四：内容完善 (Content Enhancement)</h3>
+
+<strong>目标</strong>：提升知识质量和完整性
+
+<strong>执行要点</strong>：
+<li>补充背景信息和上下文</li>
+<li>添加具体示例和应用场景</li>
+<li>完善结构和逻辑</li>
+<li>更新元数据（状态、重要性等）</li>
+
+<strong>产出</strong>：高质量的完整知识
+
+<h3>阶段五：建立关联 (Relationship Building)</h3>
+
+<strong>目标</strong>：构建知识网络
+
+<strong>执行要点</strong>：
+<li>使用双链笔记建立内部链接</li>
+<li>创建知识地图和索引页面</li>
+<li>建立跨领域的知识关联</li>
+<li>更新相关笔记的链接</li>
+
+<strong>产出</strong>：互联的知识网络
+
+<h3>阶段六：定期回顾 (Regular Review)</h3>
+
+<strong>目标</strong>：保持知识的新鲜度和可用性
+
+<strong>执行要点</strong>：
+<li>每月回顾重要知识</li>
+<li>更新过时信息</li>
+<li>合并相似内容</li>
+<li>删除不再需要的知识</li>
+
+<strong>产出</strong>：持续更新的知识库
+
+<h3>阶段七：知识复用 (Knowledge Reuse)</h3>
+
+<strong>目标</strong>：实际应用沉淀的知识
+
+<strong>执行要点</strong>：
+<li>在解决问题时主动检索相关知识</li>
+<li>在新项目中复用已有经验</li>
+<li>分享知识给团队成员</li>
+<li>基于已有知识创造新知识</li>
+
+<strong>产出</strong>：知识价值的实现
+
+<h2>质量检查清单</h2>
+
+<h3>内容质量</h3>
+<li>[ ] 信息准确无误</li>
+<li>[ ] 结构清晰合理</li>
+<li>[ ] 示例具体实用</li>
+<li>[ ] 语言简洁明了</li>
+
+<h3>元数据完整性</h3>
+<li>[ ] 标签恰当</li>
+<li>[ ] 状态明确</li>
+<li>[ ] 关联建立</li>
+<li>[ ] 更新时间记录</li>
+
+<h3>可发现性</h3>
+<li>[ ] 文件名规范</li>
+<li>[ ] 目录位置正确</li>
+<li>[ ] 索引页面更新</li>
+<li>[ ] 搜索关键词优化</li>
+
+<h2>工具和技巧</h2>
+
+<h3>Obsidian功能利用</h3>
+<li><strong>模板系统</strong>：使用标准化模板确保一致性</li>
+<li><strong>标签系统</strong>：建立层次化的标签体系</li>
+<li><strong>双链笔记</strong>：构建知识间的关联网络</li>
+<li><strong>图形视图</strong>：可视化知识结构和关系</li>
+
+<h3>自动化脚本</h3>
+<li>定期备份脚本</li>
+<li>内容质量检查脚本</li>
+<li>重复内容检测脚本</li>
+
+<h2>成功指标</h2>
+
+<h3>量化指标</h3>
+<li>知识文件数量增长趋势</li>
+<li>知识关联密度</li>
+<li>知识复用频率</li>
+<li>问题解决效率提升</li>
+
+<h3>质化指标</h3>
+<li>知识查找的便捷性</li>
+<li>知识内容的实用性</li>
+<li>团队协作的效率</li>
+<li>个人成长的可见性</li>
+
+<hr>
+*流程版本: 1.0 | 最后更新: {{date}}*
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
