@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>企业文化诊断CLI · 命令行操作入口 - 以观其妙书院</title>
+<meta name="description" content="企业文化诊断CLI · 命令行操作入口 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="企业文化诊断CLI · 命令行操作入口">
+<meta property="og:description" content="企业文化诊断CLI · 命令行操作入口 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "企业文化诊断CLI · 命令行操作入口",
+    "description": "企业文化诊断CLI · 命令行操作入口 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>企业文化诊断CLI · 命令行操作入口</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>企业文化诊断CLI · 命令行操作入口</h1>
+<blockquote><p><strong>版本</strong>: v1.0 | <strong>创建</strong>: 2026-04-10 | <strong>维护者</strong>: 龙龟神将</p></blockquote>
+<hr>
+<h2>🎯 核心定位</h2>
+<p>企业文化诊断CLI是企业文化OS的<strong>原生操作入口</strong>，提供极简、语义清晰、人格化适配的命令行接口，让企业管理者能够通过纯文本指令一键启动企业文化诊断流程。</p>
+<p><strong>设计哲学</strong>：</p>
+<ul>
+<li><strong>极简设计</strong>：指令长度控制在 5-10 个词</li>
+<li><strong>语义清晰</strong>：指令意图明确，无需二次确认</li>
+<li><strong>人格化适配</strong>：所有指令都携带企业文化OS的个性化参数</li>
+<li><strong>全系统CLI化</strong>：AI 可通过纯文本指令一键调用诊断、设计、落地全流程</li>
+</ul>
+<hr>
+<h2>📋 命令清单</h2>
+<h3>🔍 诊断类命令</h3>
+<table>
+<thead><tr>
+<th>命令</th>
+<th>功能</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><code>企业文化诊断</code></td>
+<td>启动完整诊断流程</td>
+<td><code>企业文化诊断 --企业="XX科技"</code></td>
+</tr>
+<tr>
+<td><code>文化现状扫描</code></td>
+<td>快速扫描文化现状</td>
+<td><code>文化现状扫描 --部门="销售部"</code></td>
+</tr>
+<tr>
+<td><code>文化问题识别</code></td>
+<td>识别文化痛点</td>
+<td><code>文化问题识别 --类型="沟通"</code></td>
+</tr>
+<tr>
+<td><code>文化健康度评估</code></td>
+<td>评估文化健康度</td>
+<td><code>文化健康度评估 --维度="精神层"</code></td>
+</tr>
+</tbody></table>
+<h3>🎨 设计类命令</h3>
+<table>
+<thead><tr>
+<th>命令</th>
+<th>功能</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><code>企业文化设计</code></td>
+<td>启动文化设计方案</td>
+<td><code>企业文化设计 --诊断报告="report.md"</code></td>
+</tr>
+<tr>
+<td><code>文化理念提炼</code></td>
+<td>提炼使命愿景价值观</td>
+<td><code>文化理念提炼 --关键词="创新,客户第一"</code></td>
+</tr>
+<tr>
+<td><code>文化体系构建</code></td>
+<td>构建四层文化体系</td>
+<td><code>文化体系构建 --重点="制度层,行为层"</code></td>
+</tr>
+</tbody></table>
+<h3>🚀 落地类命令</h3>
+<table>
+<thead><tr>
+<th>命令</th>
+<th>功能</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><code>企业文化落地</code></td>
+<td>启动落地实施</td>
+<td><code>企业文化落地 --方案="design.md"</code></td>
+</tr>
+<tr>
+<td><code>文化落地检查</code></td>
+<td>检查落地进度</td>
+<td><code>文化落地检查 --阶段="第一阶段"</code></td>
+</tr>
+<tr>
+<td><code>文化效果评估</code></td>
+<td>评估落地效果</td>
+<td><code>文化效果评估 --周期="季度"</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🔧 参数规范</h2>
+<h3>通用参数</h3>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><code>--企业</code> / <code>-c</code></td>
+<td>string</td>
+<td>企业名称</td>
+<td><code>--企业="XX科技"</code></td>
+</tr>
+<tr>
+<td><code>--行业</code> / <code>-i</code></td>
+<td>string</td>
+<td>行业类型</td>
+<td><code>--行业="互联网"</code></td>
+</tr>
+<tr>
+<td><code>--规模</code> / <code>-s</code></td>
+<td>string</td>
+<td>企业规模</td>
+<td><code>--规模="100-500人"</code></td>
+</tr>
+<tr>
+<td><code>--部门</code> / <code>-d</code></td>
+<td>string</td>
+<td>目标部门</td>
+<td><code>--部门="销售部"</code></td>
+</tr>
+<tr>
+<td><code>--维度</code> / <code>-v</code></td>
+<td>string</td>
+<td>诊断维度</td>
+<td><code>--维度="精神层"</code></td>
+</tr>
+<tr>
+<td><code>--输出</code> / <code>-o</code></td>
+<td>string</td>
+<td>输出路径</td>
+<td><code>--输出="./report.md"</code></td>
+</tr>
+<tr>
+<td><code>--详细</code> / <code>--verbose</code></td>
+<td>bool</td>
+<td>详细输出</td>
+<td><code>--详细</code></td>
+</tr>
+</tbody></table>
+<h3>诊断专用参数</h3>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><code>--诊断类型</code></td>
+<td>enum</td>
+<td>全面/快速/专项</td>
+<td><code>--诊断类型="全面"</code></td>
+</tr>
+<tr>
+<td><code>--调研方法</code></td>
+<td>array</td>
+<td>问卷/访谈/观察</td>
+<td><code>--调研方法="问卷,访谈"</code></td>
+</tr>
+<tr>
+<td><code>--样本量</code></td>
+<td>int</td>
+<td>调研样本数量</td>
+<td><code>--样本量=100</code></td>
+</tr>
+</tbody></table>
+<h3>设计专用参数</h3>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><code>--诊断报告</code></td>
+<td>path</td>
+<td>诊断报告路径</td>
+<td><code>--诊断报告="./diagnose.md"</code></td>
+</tr>
+<tr>
+<td><code>--重点模块</code></td>
+<td>array</td>
+<td>重点设计模块</td>
+<td><code>--重点模块="经营心法,氛围营造"</code></td>
+</tr>
+<tr>
+<td><code>--风格偏好</code></td>
+<td>enum</td>
+<td>传统/现代/融合</td>
+<td><code>--风格偏好="融合"</code></td>
+</tr>
+</tbody></table>
+<h3>落地专用参数</h3>
+<table>
+<thead><tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><code>--设计方案</code></td>
+<td>path</td>
+<td>设计方案路径</td>
+<td><code>--设计方案="./design.md"</code></td>
+</tr>
+<tr>
+<td><code>--阶段</code></td>
+<td>string</td>
+<td>实施阶段</td>
+<td><code>--阶段="第一阶段"</code></td>
+</tr>
+<tr>
+<td><code>--试点部门</code></td>
+<td>string</td>
+<td>试点部门</td>
+<td><code>--试点部门="人力资源部"</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>💡 使用示例</h2>
+<h3>示例1：完整诊断流程</h3>
+<pre><code># 启动全面企业文化诊断
+企业文化诊断 \
+  --企业="XX科技有限公司" \
+  --行业="互联网/软件开发" \
+  --规模="200-500人" \
+  --诊断类型="全面" \
+  --调研方法="问卷,访谈,观察" \
+  --样本量=150 \
+  --输出="./diagnose-report.md" \
+  --详细</code></pre>
+<p><strong>系统响应</strong>：</p>
+<pre><code>🔍 企业文化诊断启动
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+企业：XX科技有限公司
+行业：互联网/软件开发
+规模：200-500人
+诊断类型：全面诊断
+调研方法：问卷 + 访谈 + 观察
+样本量：150人
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 诊断流程：
+1. 资料收集与初步分析
+2. 问卷调研设计
+3. 深度访谈实施
+4. 现场观察记录
+5. 数据分析与诊断
+6. 生成诊断报告
+
+⏱️ 预计耗时：5-7个工作日
+🎯 开始执行...（调用企业文化诊断子智能体）</code></pre>
+<h3>示例2：快速现状扫描</h3>
+<pre><code># 快速扫描销售部文化现状
+文化现状扫描 \
+  --企业="XX科技" \
+  --部门="销售部" \
+  --维度="行为层,制度层" \
+  --快速</code></pre>
+<h3>示例3：基于诊断的设计</h3>
+<pre><code># 基于诊断报告启动文化设计
+企业文化设计 \
+  --诊断报告="./diagnose-report.md" \
+  --重点模块="经营心法,礼乐仪式,功勋体系" \
+  --风格偏好="融合" \
+  --输出="./culture-design.md"</code></pre>
+<h3>示例4：分阶段落地</h3>
+<pre><code># 启动第一阶段落地
+企业文化落地 \
+  --设计方案="./culture-design.md" \
+  --阶段="第一阶段：理念宣贯" \
+  --试点部门="人力资源部,销售部" \
+  --周期="3个月"</code></pre>
+<hr>
+<h2>🔄 命令路由机制</h2>
+<pre><code>用户输入CLI命令
+       ↓
+┌─────────────────┐
+│   CLI解析器      │
+│  - 提取命令类型   │
+│  - 解析参数      │
+│  - 验证必填项    │
+└────────┬────────┘
+         ↓
+┌─────────────────┐
+│   智能路由       │
+│  - 匹配子智能体   │
+│  - 构建握手包    │
+│  - 调用MCP协议   │
+└────────┬────────┘
+         ↓
+┌─────────────────┐
+│   子智能体执行   │
+│  - 诊断/设计/落地 │
+│  - 返回结果      │
+└────────┬────────┘
+         ↓
+┌─────────────────┐
+│   结果格式化     │
+│  - 生成报告      │
+│  - 输出到指定路径 │
+└─────────────────┘</code></pre>
+<hr>
+<h2>📦 与Skill Builder集成</h2>
+<p>CLI命令将自动触发对应的Skill：</p>
+<table>
+<thead><tr>
+<th>CLI命令</th>
+<th>触发Skill</th>
+<th>路径</th>
+</tr></thead><tbody>
+<tr>
+<td><code>企业文化诊断</code></td>
+<td>企业文化诊断子智能体</td>
+<td><code>skills/qiye-wenhua-zhenduan/</code></td>
+</tr>
+<tr>
+<td><code>文化现状扫描</code></td>
+<td>企业文化诊断子智能体</td>
+<td><code>skills/qiye-wenhua-zhenduan/</code></td>
+</tr>
+<tr>
+<td><code>企业文化设计</code></td>
+<td>企业文化总智能体</td>
+<td><code>skills/qiye-wenhua-zongti/</code></td>
+</tr>
+<tr>
+<td><code>企业文化落地</code></td>
+<td>企业文化总智能体</td>
+<td><code>skills/qiye-wenhua-zongti/</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🛡️ 错误处理</h2>
+<table>
+<thead><tr>
+<th>错误类型</th>
+<th>错误码</th>
+<th>处理方式</th>
+</tr></thead><tbody>
+<tr>
+<td>参数缺失</td>
+<td>E001</td>
+<td>提示必填参数，提供示例</td>
+</tr>
+<tr>
+<td>参数格式错误</td>
+<td>E002</td>
+<td>显示正确格式，重新输入</td>
+</tr>
+<tr>
+<td>文件不存在</td>
+<td>E003</td>
+<td>检查路径，提供相对路径示例</td>
+</tr>
+<tr>
+<td>权限不足</td>
+<td>E004</td>
+<td>提示使用管理员权限</td>
+</tr>
+<tr>
+<td>子智能体调用失败</td>
+<td>E005</td>
+<td>自动重试3次，失败转人工</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>📝 版本历史</h2>
+<h3>v1.0 (2026-04-10)</h3>
+<ul>
+<li>初始版本创建</li>
+<li>定义诊断/设计/落地三类命令</li>
+<li>设计参数规范和路由机制</li>
+</ul>
+<hr>
+<p><strong>企业文化诊断CLI</strong> · 龙龟神将设计 · 极简·语义·人格化</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AIDMA模型 - 消费者行为阶段分析 - 以观其妙书院</title>
+<meta name="description" content="AIDMA模型 - 消费者行为阶段分析 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="AIDMA模型 - 消费者行为阶段分析">
+<meta property="og:description" content="AIDMA模型 - 消费者行为阶段分析 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AIDMA模型 - 消费者行为阶段分析",
+    "description": "AIDMA模型 - 消费者行为阶段分析 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>AIDMA模型 - 消费者行为阶段分析</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>AIDMA模型 · 消费者行为阶段分析</h1>
+<h2>🎯 一、核心定义</h2>
+<p><strong>AIDMA模型</strong>是描述消费者从注意到购买决策全过程的经典营销模型，由美国广告学家E.S.刘易斯提出：</p>
+<table>
+<thead><tr>
+<th>字母</th>
+<th>含义</th>
+<th>中文</th>
+<th>核心问题</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>A</strong></td>
+<td>Attention</td>
+<td>注意</td>
+<td>如何让消费者看到？</td>
+</tr>
+<tr>
+<td><strong>I</strong></td>
+<td>Interest</td>
+<td>兴趣</td>
+<td>如何引发消费者兴趣？</td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td>Desire</td>
+<td>欲望</td>
+<td>如何激发购买欲望？</td>
+</tr>
+<tr>
+<td><strong>M</strong></td>
+<td>Memory</td>
+<td>记忆</td>
+<td>如何让消费者记住？</td>
+</tr>
+<tr>
+<td><strong>A</strong></td>
+<td>Action</td>
+<td>行动</td>
+<td>如何促使购买行动？</td>
+</tr>
+</tbody></table>
+<h3>1.1 AIDMA曲线</h3>
+<pre><code>消费者数量
+    ▲
+    │▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    │
+    │    ★★★★★★★★★★★★★★★★★★★  注意（A）
+    │  ★★★★★★★★★★★★★★★★★★★  兴趣（I）
+    │★★★★★★★★★★★★★★★  欲望（D）
+    │★★★★★★★★★★  记忆（M）
+    │★★★★★  行动（A）
+    └──────────────────────────────────→ 时间/触点</code></pre>
+<h3>1.2 AIDMA的演进</h3>
+<pre><code>AIDMA（传统）→ AISCE（互联网）→ AIPL（电商）→ AFS（A面）
+                                        ↓
+                    社交时代：关注（Attention）→ 互动（Interaction）→ 分享（Share）→ 传播（传播）</code></pre>
+<hr>
+<h2>👁️ 二、第一阶段：注意（Attention）</h2>
+<h3>2.1 注意力获取策略</h3>
+<table>
+<thead><tr>
+<th>策略类型</th>
+<th>做法</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>尺寸放大</strong></td>
+<td>增大视觉元素</td>
+<td>大标题、大图片</td>
+</tr>
+<tr>
+<td><strong>色彩对比</strong></td>
+<td>使用高对比色</td>
+<td>黑底黄字</td>
+</tr>
+<tr>
+<td><strong>动态吸引</strong></td>
+<td>动画、视频、动效</td>
+<td>视频广告</td>
+</tr>
+<tr>
+<td><strong>悬念设计</strong></td>
+<td>制造好奇</td>
+<td>悬念文案</td>
+</tr>
+<tr>
+<td><strong>名人效应</strong></td>
+<td>KOL、明星代言</td>
+<td>明星海报</td>
+</tr>
+</tbody></table>
+<h3>2.2 注意力质量评估</h3>
+<table>
+<thead><tr>
+<th>评估维度</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>触达率</strong></td>
+<td>多少人看到了</td>
+</tr>
+<tr>
+<td><strong>关注率</strong></td>
+<td>多少人真正注意到</td>
+</tr>
+<tr>
+<td><strong>停留时间</strong></td>
+<td>消费者看了多久</td>
+</tr>
+<tr>
+<td><strong>首因效应</strong></td>
+<td>最初几秒的印象</td>
+</tr>
+</tbody></table>
+<h3>2.3 Attention阶段关键指标</h3>
+<pre><code>Attention KPI：
+- 曝光量（Impressions）
+- 点击率（CTR）
+- 完播率（Video Completion Rate）
+- 首次触达成本（CPM）</code></pre>
+<hr>
+<h2>💡 三、第二阶段：兴趣（Interest）</h2>
+<h3>3.1 兴趣激发策略</h3>
+<table>
+<thead><tr>
+<th>策略类型</th>
+<th>做法</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>内容价值</strong></td>
+<td>提供有用信息</td>
+<td>教程、攻略</td>
+</tr>
+<tr>
+<td><strong>故事叙事</strong></td>
+<td>讲述品牌故事</td>
+<td>情感故事</td>
+</tr>
+<tr>
+<td><strong>互动参与</strong></td>
+<td>问答、游戏、测试</td>
+<td>互动活动</td>
+</tr>
+<tr>
+<td><strong>场景关联</strong></td>
+<td>关联消费者场景</td>
+<td>使用场景</td>
+</tr>
+<tr>
+<td><strong>问题解决</strong></td>
+<td>解决消费者痛点</td>
+<td>问题解答</td>
+</tr>
+</tbody></table>
+<h3>3.2 兴趣维持技巧</h3>
+<table>
+<thead><tr>
+<th>技巧</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>分段信息</strong></td>
+<td>逐步释放信息</td>
+</tr>
+<tr>
+<td><strong>悬念递进</strong></td>
+<td>信息层层递进</td>
+</tr>
+<tr>
+<td><strong>互动反馈</strong></td>
+<td>即时回应用户</td>
+</tr>
+<tr>
+<td><strong>社交证明</strong></td>
+<td>展示其他用户兴趣</td>
+</tr>
+</tbody></table>
+<h3>3.3 Interest阶段关键指标</h3>
+<pre><code>Interest KPI：
+- 页面停留时间
+- 互动率（点赞、评论、收藏）
+- 内容分享率
+- 关注转化率</code></pre>
+<hr>
+<h2>🔥 四、第三阶段：欲望（Desire）</h2>
+<h3>4.1 欲望激发策略</h3>
+<table>
+<thead><tr>
+<th>策略类型</th>
+<th>做法</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>痛点放大</strong></td>
+<td>强调问题严重性</td>
+<td>痛点场景</td>
+</tr>
+<tr>
+<td><strong>解决方案展示</strong></td>
+<td>展示产品如何解决</td>
+<td>产品功效</td>
+</tr>
+<tr>
+<td><strong>效果对比</strong></td>
+<td>Before/After对比</td>
+<td>效果图</td>
+</tr>
+<tr>
+<td><strong>社会证明</strong></td>
+<td>用户好评、案例</td>
+<td>口碑展示</td>
+</tr>
+<tr>
+<td><strong>稀缺紧迫</strong></td>
+<td>限时限量</td>
+<td>倒计时</td>
+</tr>
+</tbody></table>
+<h3>4.2 欲望与需求的关系</h3>
+<pre><code>需求 → 欲望 → 行动
+  ↓       ↓       ↓
+功能性  情感化   购买
+需求    渴望</code></pre>
+<h3>4.3 Desire阶段关键指标</h3>
+<pre><code>Desire KPI：
+- 加购率
+- 收藏率
+- 询盘转化率
+- 试用申请率</code></pre>
+<hr>
+<h2>🧠 五、第四阶段：记忆（Memory）</h2>
+<h3>5.1 记忆强化策略</h3>
+<table>
+<thead><tr>
+<th>策略类型</th>
+<th>做法</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>重复曝光</strong></td>
+<td>多触点持续触达</td>
+<td>品牌广告</td>
+</tr>
+<tr>
+<td><strong>记忆锚点</strong></td>
+<td>建立品牌符号</td>
+<td>视觉锤</td>
+</tr>
+<tr>
+<td><strong>情感连接</strong></td>
+<td>建立情感记忆</td>
+<td>品牌故事</td>
+</tr>
+<tr>
+<td><strong>行动指令</strong></td>
+<td>明确下一步行动</td>
+<td>CTA按钮</td>
+</tr>
+<tr>
+<td><strong>会员体系</strong></td>
+<td>建立关系绑定</td>
+<td>会员日</td>
+</tr>
+</tbody></table>
+<h3>5.2 记忆类型与营销</h3>
+<table>
+<thead><tr>
+<th>记忆类型</th>
+<th>营销应用</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>陈述性记忆</strong></td>
+<td>品牌故事、卖点</td>
+</tr>
+<tr>
+<td><strong>程序性记忆</strong></td>
+<td>使用习惯、操作步骤</td>
+</tr>
+<tr>
+<td><strong>情感记忆</strong></td>
+<td>品牌体验、情感连接</td>
+</tr>
+</tbody></table>
+<h3>5.3 Memory阶段关键指标</h3>
+<pre><code>Memory KPI：
+- 品牌认知度
+- 品牌提及率（BOT）
+- 无提示recall
+- 有提示recall</code></pre>
+<hr>
+<h2>🎬 六、第五阶段：行动（Action）</h2>
+<h3>6.1 行动转化策略</h3>
+<table>
+<thead><tr>
+<th>策略类型</th>
+<th>做法</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>降低门槛</strong></td>
+<td>简化流程、减少步骤</td>
+<td>一键购买</td>
+</tr>
+<tr>
+<td><strong>行动激励</strong></td>
+<td>优惠、赠品、积分</td>
+<td>首单优惠</td>
+</tr>
+<tr>
+<td><strong>信任建立</strong></td>
+<td>保障、评价、认证</td>
+<td>七天无理由</td>
+</tr>
+<tr>
+<td><strong>场景触发</strong></td>
+<td>场景化提醒</td>
+<td>购物车提醒</td>
+</tr>
+<tr>
+<td><strong>紧迫营造</strong></td>
+<td>限时优惠</td>
+<td>倒计时</td>
+</tr>
+</tbody></table>
+<h3>6.2 行动障碍排查</h3>
+<table>
+<thead><tr>
+<th>障碍类型</th>
+<th>表现</th>
+<th>解决方案</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>信任障碍</strong></td>
+<td>不放心</td>
+<td>背书、评价、保障</td>
+</tr>
+<tr>
+<td><strong>价格障碍</strong></td>
+<td>太贵</td>
+<td>分期、优惠券</td>
+</tr>
+<tr>
+<td><strong>操作障碍</strong></td>
+<td>太复杂</td>
+<td>简化流程</td>
+</tr>
+<tr>
+<td><strong>时机障碍</strong></td>
+<td>不是购买时机</td>
+<td>场景触发</td>
+</tr>
+<tr>
+<td><strong>支付障碍</strong></td>
+<td>支付不便</td>
+<td>多支付方式</td>
+</tr>
+</tbody></table>
+<h3>6.3 Action阶段关键指标</h3>
+<pre><code>Action KPI：
+- 转化率（CR）
+- 订单完成率
+- 支付成功率
+- ROI/ROAS</code></pre>
+<hr>
+<h2>📊 七、AIDMA全链路优化</h2>
+<h3>7.1 漏斗转化分析</h3>
+<table>
+<thead><tr>
+<th>阶段</th>
+<th>漏斗比例</th>
+<th>优化方向</th>
+</tr></thead><tbody>
+<tr>
+<td>A→I</td>
+<td>?%</td>
+<td>注意力质量</td>
+</tr>
+<tr>
+<td>I→D</td>
+<td>?%</td>
+<td>兴趣转化欲望</td>
+</tr>
+<tr>
+<td>D→M</td>
+<td>?%</td>
+<td>记忆强化</td>
+</tr>
+<tr>
+<td>M→A</td>
+<td>?%</td>
+<td>行动触发</td>
+</tr>
+</tbody></table>
+<h3>7.2 各阶段资源配置</h3>
+<pre><code>AIDMA资源配置矩阵：
+              高转化难度
+                 │
+       重I轻A   │    重D重M
+       资源     │    资源
+                 │
+低价值 ──────────┼─────────── 高价值
+                 │
+       轻A轻I    │    重A重I
+       资源      │    资源
+                 │
+              低转化难度</code></pre>
+<h3>7.3 AIDMA营销触点设计</h3>
+<pre><code>触点设计模板：
+| 阶段 | 触点 | 内容 | 形式 | 目标 |
+|------|------|------|------|------|
+| A | | | | |
+| I | | | | |
+| D | | | | |
+| M | | | | |
+| A | | | | |</code></pre>
+<hr>
+<h2>🔗 八、与龙心OS的整合</h2>
+<h3>8.1 与五色光思维的整合</h3>
+<table>
+<thead><tr>
+<th>五色光</th>
+<th>AIDMA整合点</th>
+</tr></thead><tbody>
+<tr>
+<td>⬜ 白光</td>
+<td>曝光数据、转化率分析</td>
+</tr>
+<tr>
+<td>🟥 红光</td>
+<td>情感共鸣、品牌故事</td>
+</tr>
+<tr>
+<td>🟨 黄光</td>
+<td>价值传递、利益点</td>
+</tr>
+<tr>
+<td>🟩 绿光</td>
+<td>创新触点、互动设计</td>
+</tr>
+<tr>
+<td>🟦 蓝光</td>
+<td>障碍识别、风险防控</td>
+</tr>
+</tbody></table>
+<h3>8.2 与五行人格的整合</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>AIDMA应用</th>
+</tr></thead><tbody>
+<tr>
+<td>木行人</td>
+<td>创新触点设计、兴趣激发</td>
+</tr>
+<tr>
+<td>火行人</td>
+<td>情感营销、品牌传播</td>
+</tr>
+<tr>
+<td>土行人</td>
+<td>信任建立、行动转化</td>
+</tr>
+<tr>
+<td>金行人</td>
+<td>数据分析、精准优化</td>
+</tr>
+<tr>
+<td>水行人</td>
+<td>场景设计、用户洞察</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>💡 九、核心金句</h2>
+<ol>
+<li><strong>"AIDMA不是线性的，消费者可能在任何阶段进出。"</strong></li>
+<li><strong>"注意力是入口，行动是出口，中间环节决定转化效率。"</strong></li>
+<li><strong>"最好的营销是让消费者'不知不觉'走完AIDMA全程。"</strong></li>
+<li><strong>"每个阶段的触点设计都要对应该阶段的用户心理。"</strong></li>
+<li><strong>"AIDMA模型需要随媒介和用户行为变化而迭代。"</strong></li>
+</ol>
+<hr>
+<h2>📚 关联知识图谱</h2>
+<h3>向上关联</h3>
+<ul>
+<li><strong><a href="消费者旅程.html">04-市场营销战略/消费者旅程</a></strong> - 消费者旅程是AIDMA的现代演绎</li>
+<li><strong><a href="市场营销组合.html">04-市场营销战略/市场营销组合</a></strong> - AIDMA指导促销策略</li>
+</ul>
+<h3>向下关联</h3>
+<ul>
+<li><strong><a href="用户画像分析.html">04-市场营销战略/用户画像分析</a></strong> - 用户画像决定AIDMA各阶段设计</li>
+<li><strong><a href="品牌资产.html">04-市场营销战略/品牌资产</a></strong> - 品牌在AIDMA各阶段积累</li>
+</ul>
+<h3>跨域关联</h3>
+<ul>
+<li><strong><a href="金字塔结构.html">01-逻辑思考领域/金字塔结构</a></strong> - 金字塔结构支持AIDA表达逻辑</li>
+<li><strong><a href="KPI树.html">05-组织与团队管理/KPI树</a></strong> - KPI树用于AIDMA各阶段指标管理</li>
+</ul>
+<hr>
+<p><strong>版本</strong>: v1.0
+<strong>创建</strong>: 2026-04-10
+<strong>维护者</strong>: 龙龟神将
+<strong>知识库路径</strong>: <code>C:\Users\jia'yue\.workbuddy\skills\麦肯锡思考工具\04-市场营销战略\AIDMA模型\</code></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

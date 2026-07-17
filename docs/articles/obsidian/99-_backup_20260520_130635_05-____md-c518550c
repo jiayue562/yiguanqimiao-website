@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>📊 金行人福格行为模型知识图谱 - 以观其妙书院</title>
+<meta name="description" content="📊 金行人福格行为模型知识图谱 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="📊 金行人福格行为模型知识图谱">
+<meta property="og:description" content="📊 金行人福格行为模型知识图谱 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "📊 金行人福格行为模型知识图谱",
+    "description": "📊 金行人福格行为模型知识图谱 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>📊 金行人福格行为模型知识图谱</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>📊 金行人福格行为模型（B=MAP）知识图谱</h1>
+<h2>一、核心节点</h2>
+<h3>1.1 理论融合节点</h3>
+<pre><code>graph TD
+    A[福格行为模型 B=MAP] --&gt; B[动机 M]
+    A --&gt; C[能力 A]
+    A --&gt; D[提示 P]
+    
+    E[金行人特质] --&gt; E1[坚固-刚毅]
+    E --&gt; E2[收敛-含蓄]
+    E --&gt; E3[锋利-公正]
+    E --&gt; E4[光洁-智慧]
+    E --&gt; E5[沉降-沉稳]
+    
+    F[整合模型] --&gt; F1[五维度诊断系统]
+    F --&gt; F2[七步实践流程]
+    F --&gt; F3[场景应用方案]
+    
+    B --&gt; F1
+    C --&gt; F1
+    D --&gt; F1
+    E --&gt; F1</code></pre>
+<h3>1.2 五维度行为设计方案节点</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>阳面目标</th>
+<th>阴面问题</th>
+<th>B=MAP诊断</th>
+<th>核心微行为</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>坚固</strong></td>
+<td>共赢合作</td>
+<td>好胜计较</td>
+<td>M=证明自己强&lt;br/&gt;A=情感脑力高&lt;br/&gt;P=竞争警报</td>
+<td>10秒黄金沉默</td>
+</tr>
+<tr>
+<td><strong>收敛</strong></td>
+<td>智慧分享</td>
+<td>小气狭隘</td>
+<td>M=资源稀缺恐惧&lt;br/&gt;A=损失厌恶&lt;br/&gt;P=求助被解读索取</td>
+<td>每日一微分享</td>
+</tr>
+<tr>
+<td><strong>锋利</strong></td>
+<td>对事对人</td>
+<td>严苛无情</td>
+<td>M=消除错误&lt;br/&gt;A=共情能力低&lt;br/&gt;P=错误触发批评</td>
+<td>缓冲-聚焦句式</td>
+</tr>
+<tr>
+<td><strong>光洁</strong></td>
+<td>扎实权威</td>
+<td>虚荣自负</td>
+<td>M=证明价值&lt;br/&gt;A=威胁自我感&lt;br/&gt;P=成功触发炫耀</td>
+<td>成就谦述法</td>
+</tr>
+<tr>
+<td><strong>沉降</strong></td>
+<td>周密定力</td>
+<td>焦虑多疑</td>
+<td>M=风险恐惧&lt;br/&gt;A=失控焦虑&lt;br/&gt;P=变化触发反刍</td>
+<td>1分钟焦虑快照</td>
+</tr>
+</tbody></table>
+<h2>二、关系网络</h2>
+<h3>2.1 理论基础关系</h3>
+<pre><code>{
+  "福格行为模型": {
+    "核心公式": "B = M × A × P",
+    "PAC动机框架": {
+      "P": "Person - 内在愉悦/痛苦",
+      "A": "Action - 外在利益/惩罚",
+      "C": "Context - 社会接受/拒绝"
+    },
+    "核心概念": ["动机", "能力", "提示", "行动线", "黄金行为", "微习惯", "锚点提示"]
+  },
+  "金行人特质": {
+    "核心能量": "从革、收敛、肃降",
+    "五维度": ["坚固", "收敛", "锋利", "光洁", "沉降"],
+    "阴阳两面": {
+      "阳面": ["刚毅坚强", "含蓄持重", "公正锋利", "智慧权威", "沉稳冷静"],
+      "阴面": ["好胜计较", "小气狭隘", "严苛无情", "虚荣自负", "焦虑多疑"]
+    }
+  }
+}</code></pre>
+<h3>2.2 与五行体系的关系</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>在本模型中的角色</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>金</strong></td>
+<td>主体：精准、秩序、原则性的行为优化</td>
+</tr>
+<tr>
+<td><strong>木</strong></td>
+<td>相克：创新挑战可能触发金行人的防御反应</td>
+</tr>
+<tr>
+<td><strong>火</strong></td>
+<td>相生：热情驱动可增强行为改变的动力</td>
+</tr>
+<tr>
+<td><strong>土</strong></td>
+<td>相生：价值整合帮助发现行为改变的意义</td>
+</tr>
+<tr>
+<td><strong>水</strong></td>
+<td>相克：风险焦虑可能成为行为改变的阻碍</td>
+</tr>
+</tbody></table>
+<h3>2.3 与其他知识体系的链接</h3>
+<pre><code>graph LR
+    A[金行人福格行为模型] --&gt; B[五行人格心理学]
+    A --&gt; C[西方行为科学]
+    A --&gt; D[微习惯理论]
+    A --&gt; E[行为设计学]
+    
+    B --&gt; B1[一心三界五行九层]
+    B --&gt; B2[拔阴取阳]
+    B --&gt; B3[化克为生]
+    
+    C --&gt; C1[斯坦福行为设计]
+    C --&gt; C2[神经科学]
+    
+    D --&gt; D1[福格习惯研究]
+    D --&gt; D2[习惯回路]
+    
+    E --&gt; E1[用户行为分析]
+    E --&gt; E2[产品设计]</code></pre>
+<h2>三、实践应用网络</h2>
+<h3>3.1 七步实践路径</h3>
+<table>
+<thead><tr>
+<th>步骤</th>
+<th>名称</th>
+<th>核心操作</th>
+<th>金行人适配要点</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>明确愿望</td>
+<td>成果陈述</td>
+<td>连接"秩序"、"价值"动机</td>
+</tr>
+<tr>
+<td>2</td>
+<td>探索选项</td>
+<td>头脑风暴</td>
+<td>避免过早可行性批判</td>
+</tr>
+<tr>
+<td>3</td>
+<td>匹配行为</td>
+<td>黄金行为</td>
+<td>高影响力×高可行性</td>
+</tr>
+<tr>
+<td>4</td>
+<td>微习惯开始</td>
+<td>简化行为</td>
+<td>抵抗"完美或不做"冲动</td>
+</tr>
+<tr>
+<td>5</td>
+<td>找到提示</td>
+<td>锚点设计</td>
+<td>利用计划敏感性</td>
+</tr>
+<tr>
+<td>6</td>
+<td>庆祝成功</td>
+<td>即时反馈</td>
+<td>理性肯定方式</td>
+</tr>
+<tr>
+<td>7</td>
+<td>排除障碍</td>
+<td>迭代优化</td>
+<td>视为系统数据反馈</td>
+</tr>
+</tbody></table>
+<h3>3.2 场景应用映射</h3>
+<table>
+<thead><tr>
+<th>场景</th>
+<th>问题类型</th>
+<th>适用维度</th>
+<th>核心方案</th>
+</tr></thead><tbody>
+<tr>
+<td>决策犹豫</td>
+<td>过度准备</td>
+<td>沉降</td>
+<td>15分钟决策计时器</td>
+</tr>
+<tr>
+<td>团队沟通</td>
+<td>严厉感</td>
+<td>锋利</td>
+<td>SBIT反馈法</td>
+</tr>
+<tr>
+<td>知识分享</td>
+<td>不愿分享</td>
+<td>收敛</td>
+<td>知识库Q&amp;A</td>
+</tr>
+<tr>
+<td>竞争态度</td>
+<td>好胜敌对</td>
+<td>坚固</td>
+<td>三赢表达法</td>
+</tr>
+</tbody></table>
+<h2>四、关键概念索引</h2>
+<h3>4.1 核心概念快速链接</h3>
+<table>
+<thead><tr>
+<th>概念</th>
+<th>定义</th>
+<th>相关文档</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>B=MAP</strong></td>
+<td>行为=动机×能力×提示</td>
+<td>本文档</td>
+</tr>
+<tr>
+<td><strong>黄金行为</strong></td>
+<td>高影响力×高可行性的行为</td>
+<td>本文档</td>
+</tr>
+<tr>
+<td><strong>微习惯</strong></td>
+<td>简单到不会失败的行为</td>
+<td><a href="📖 金行人福格行为模型B=MAP.html">📖 金行人福格行为模型B=MAP</a></td>
+</tr>
+<tr>
+<td><strong>锚点提示</strong></td>
+<td>绑定到既有习惯的触发器</td>
+<td>本文档</td>
+</tr>
+<tr>
+<td><strong>行动线</strong></td>
+<td>M×A决定行为发生可能性</td>
+<td>本文档</td>
+</tr>
+<tr>
+<td><strong>PAC动机框架</strong></td>
+<td>Person/Action/Context动机来源</td>
+<td>本文档</td>
+</tr>
+</tbody></table>
+<h3>4.2 五维度关键词</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>阳面关键词</th>
+<th>阴面关键词</th>
+<th>转化关键词</th>
+</tr></thead><tbody>
+<tr>
+<td>坚固</td>
+<td>刚毅、坚韧、合作</td>
+<td>好胜、计较、对立</td>
+<td>共赢、三赢、沉默</td>
+</tr>
+<tr>
+<td>收敛</td>
+<td>含蓄、积累、深度</td>
+<td>狭隘、自私、封闭</td>
+<td>分享、播种、投资</td>
+</tr>
+<tr>
+<td>锋利</td>
+<td>公正、精准、原则</td>
+<td>严苛、无情、攻击</td>
+<td>缓冲、共情、SBIT</td>
+</tr>
+<tr>
+<td>光洁</td>
+<td>智慧、权威、贡献</td>
+<td>虚荣、自负、炫耀</td>
+<td>谦述、寻优、归因</td>
+</tr>
+<tr>
+<td>沉降</td>
+<td>沉稳、冷静、周密</td>
+<td>焦虑、多疑、失控</td>
+<td>快照、同心圆、正念</td>
+</tr>
+</tbody></table>
+<h2>五、学习路径建议</h2>
+<h3>5.1 初学者路径</h3>
+<pre><code>Step 1: 理解福格行为模型基础
+  → 阅读：福格行为模型核心公式
+  → 实践：识别自己的B=MAP
+  
+Step 2: 理解金行人特质
+  → 阅读：[[📖 金行人专属-一心三界五行九层象思维体系v2.0]]
+  → 实践：自我特质评估
+  
+Step 3: 掌握五维度诊断
+  → 阅读：本知识图谱"五维度行为设计方案"
+  → 实践：选择一个维度进行诊断
+  
+Step 4: 应用七步流程
+  → 阅读：第四章"七步实践路径"
+  → 实践：从微习惯开始
+  
+Step 5: 场景深化
+  → 阅读：第五章"应用实践"
+  → 实践：解决具体问题</code></pre>
+<h3>5.2 进阶研究者路径</h3>
+<pre><code>进阶研究 → 
+  理论对比：福格模型 vs 传统习惯理论
+  跨文化整合：B=MAP × 五行人格 × 九型人格
+  技术应用：AI个性化行为导航系统
+  组织应用：团队管理中的金行人激励</code></pre>
+<hr>
+<p><strong>图谱版本</strong>: 1.0
+<strong>创建日期</strong>: 2026-03-27
+<strong>更新频率</strong>: 按需更新
+<strong>维护者</strong>: 龙龟神将</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

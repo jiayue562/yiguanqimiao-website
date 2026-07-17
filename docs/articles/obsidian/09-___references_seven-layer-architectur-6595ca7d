@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>五行人格心理学智能体 · 七层专业架构 SOP v1.0 - 以观其妙书院</title>
+<meta name="description" content="五行人格心理学智能体 · 七层专业架构 SOP v1.0 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="五行人格心理学智能体 · 七层专业架构 SOP v1.0">
+<meta property="og:description" content="五行人格心理学智能体 · 七层专业架构 SOP v1.0 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "五行人格心理学智能体 · 七层专业架构 SOP v1.0",
+    "description": "五行人格心理学智能体 · 七层专业架构 SOP v1.0 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>五行人格心理学智能体 · 七层专业架构 SOP v1.0</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>五行人格心理学智能体 · 七层专业架构 SOP v1.0</h1>
+<blockquote><p><strong>版本</strong>：v1.0 · 2026-03-25
+<strong>定位</strong>：七层架构的完整标准操作程序（边做边改·小白友好·实践论驱动）
+<strong>设计原则</strong>：先按七层设计，实现时发现多余再合并。细设计+粗实现=灵活。</p></blockquote>
+<hr>
+<h2>架构总览</h2>
+<pre><code>┌──────────────────────────────────────────────────────────────────┐
+│  🌟 L1·一心·统摄 (Application)                                   │
+│  👁️ 无行·镜像人格 · 接收意图 · 场景分发                           │
+│  输出握手包：{场景/五行线索/情感温度/优先级}                        │
+│  ——————————————————————————————————————————                      │
+│  亲密关系│亲子关系│领导力│团队建设│高效沟通│健康养生               │
+├──────────────────────────────────────────────────────────────────┤
+│  🎯 L2·水·流动 (Routing)                                         │
+│  意图识别 → 场景分类 → 五行分流 → 技能匹配                         │
+│  ⚡ 快速通道触发评分（满2分触发）                                   │
+│  极速通道(3分)→直连L5 | 快速通道(2分)→L2+L3监控 | 完整(≤1分)      │
+├──────────────────────────────────────────────────────────────────┤
+│  🔥 L3·火·照亮 (Orchestration)                                   │
+│  读取握手包 → 照亮任务空间 → 分智能体并行激活 → 聚合转化            │
+│  五行协调引擎v2.0：单行型/双行型/均衡型                             │
+├──────────────────────────────────────────────────────────────────┤
+│  ⚡ L4·五行·分化 (Intelligence)                                  │
+│  🌿木智能体│🔥火智能体│🌏土智能体│⚔️金智能体│💧水智能体           │
+├──────────────────────────────────────────────────────────────────┤
+│  🔬 L5·金·洞察 (Diagnosis) ← 核心护城河                          │
+│  ①五行诊断→②九层诊断→③阴阳检测→④拔阴取阳+④'化克为生→⑤成长路径  │
+│  🚀 渐进式诊断协议：3次定区间→精细化→追踪                          │
+├──────────────────────────────────────────────────────────────────┤
+│  🗄️ L6·土·承载 (Memory) ← 由Memory MCP支撑                      │
+│  用户画像│会话记忆│向量检索│诊断历史│成长轨迹│用户关系档案          │
+├──────────────────────────────────────────────────────────────────┤
+│  📚 L7·木·根系 (Knowledge Foundation) ← 由Filesystem MCP支撑    │
+│  一心三界五行九层理论+12个Obsidian文档+10种跨行组合知识库           │
+└──────────────────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>各层详细SOP</h2>
+<h3>L1·一心·统摄（Application Layer）</h3>
+<p><strong>职责</strong>：接收用户原始意图，生成标准化握手包</p>
+<p><strong>输入</strong>：用户自然语言输入</p>
+<p><strong>输出握手包格式</strong>：</p>
+<pre><code>{
+  "scene": "亲密关系/亲子关系/领导力/团队建设/高效沟通/健康养生",
+  "wuxing_clues": ["木", "火"],
+  "emotion_temp": "高焦虑/平静/低落/激动",
+  "priority": "紧急/常规",
+  "fast_track_score": 0
+}</code></pre>
+<p><strong>无行·镜像人格行为规范</strong>：</p>
+<ul>
+<li>不带任何五行偏见，纯粹映射用户意图</li>
+<li>不主动诊断，只准确分类场景</li>
+<li>保持情感温度感知，避免冷漠机械</li>
+</ul>
+<p><strong>输出标准</strong>：</p>
+<pre><code>【L1接收完成】
+场景：{scene}
+五行线索：{wuxing_clues}
+情感温度：{emotion_temp}
+快速通道评分：{score}/3
+→ 路由至 L{2或5}</code></pre>
+<hr>
+<h3>L2·水·流动（Routing Layer）</h3>
+<p><strong>职责</strong>：意图精准识别 + 路由决策</p>
+<p><strong>快速通道评分规则（三条件·满2分触发）</strong>：</p>
+<table>
+<thead><tr>
+<th>条件</th>
+<th>评分标准</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td>条件1：句长</td>
+<td>句子≤15字=1分</td>
+<td>"我老公是什么五行"</td>
+</tr>
+<tr>
+<td>条件2：意图明确</td>
+<td>直接问=1分</td>
+<td>直接询问五行类型</td>
+</tr>
+<tr>
+<td>条件3：情绪强度</td>
+<td>含强烈情绪词=1分</td>
+<td>"很烦/很焦虑/很担心"</td>
+</tr>
+</tbody></table>
+<p><strong>路由决策树</strong>：</p>
+<pre><code>评分=3分（极速）→ 跳过L2/L3，直连L5诊断
+评分=2分（快速）→ L2轻量分流 + L3后台监控
+评分≤1分（完整）→ L2→L3→L4→L5完整流程</code></pre>
+<p><strong>五行分流规则</strong>：</p>
+<ul>
+<li>提到"我/我的性格/我的问题" → 激活用户自身五行分析</li>
+<li>提到"他/她/对方" → 激活关系对方五行分析</li>
+<li>提到"团队/组织/公司" → 激活团队五行配伍分析</li>
+</ul>
+<hr>
+<h3>L3·火·照亮（Orchestration Layer）</h3>
+<p><strong>职责</strong>：读取握手包，协调多个分智能体并行工作</p>
+<p><strong>五行协调引擎v2.0规则</strong>：</p>
+<pre><code>单行型（主导五行≥50%特征匹配）
+  → 激活单一分智能体（深度分析模式）
+
+双行型（两行各≥25%，合≥65%）
+  → 并行激活两个分智能体
+  → 相生组合（如木+火）→ 协同增强模式
+  → 相克组合（如木+金）→ 张力探索模式
+
+均衡型（无主导五行）
+  → 激活全五行分智能体
+  → 渐进精准：均衡→双行→单行</code></pre>
+<p><strong>跨行知识库（10种组合）</strong>：</p>
+<table>
+<thead><tr>
+<th>组合</th>
+<th>关系</th>
+<th>调度策略</th>
+</tr></thead><tbody>
+<tr>
+<td>木+火</td>
+<td>相生</td>
+<td>协同增强：创造力×热情</td>
+</tr>
+<tr>
+<td>火+土</td>
+<td>相生</td>
+<td>协同增强：激情×稳定</td>
+</tr>
+<tr>
+<td>土+金</td>
+<td>相生</td>
+<td>协同增强：稳定×精准</td>
+</tr>
+<tr>
+<td>金+水</td>
+<td>相生</td>
+<td>协同增强：决断×智慧</td>
+</tr>
+<tr>
+<td>水+木</td>
+<td>相生</td>
+<td>协同增强：智慧×创新</td>
+</tr>
+<tr>
+<td>木+土</td>
+<td>相克</td>
+<td>张力探索：主见VS包容</td>
+</tr>
+<tr>
+<td>土+水</td>
+<td>相克</td>
+<td>张力探索：稳重VS灵活</td>
+</tr>
+<tr>
+<td>水+火</td>
+<td>相克</td>
+<td>张力探索：冷静VS热情</td>
+</tr>
+<tr>
+<td>火+金</td>
+<td>相克</td>
+<td>张力探索：感性VS理性</td>
+</tr>
+<tr>
+<td>金+木</td>
+<td>相克</td>
+<td>张力探索：规则VS创意</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>L4·五行·分化（Intelligence Layer）</h3>
+<p><strong>职责</strong>：各分智能体深度分析本行特质</p>
+<p><strong>各分智能体职责</strong>：</p>
+<table>
+<thead><tr>
+<th>智能体</th>
+<th>路径</th>
+<th>核心能力</th>
+</tr></thead><tbody>
+<tr>
+<td>🌿木智能体</td>
+<td><code>木行人分智能体/SKILL.md</code></td>
+<td>仁德分析、生长路径、顶撞转化</td>
+</tr>
+<tr>
+<td>🔥火智能体</td>
+<td><code>火行人分智能体/SKILL.md</code></td>
+<td>礼明分析、热情管理、嗔怒转化</td>
+</tr>
+<tr>
+<td>🌏土智能体</td>
+<td><code>土行人分智能体/SKILL.md</code></td>
+<td>信实分析、包容培养、怨疑转化</td>
+</tr>
+<tr>
+<td>⚔️金智能体</td>
+<td><code>金行人分智能体/SKILL.md</code></td>
+<td>义气分析、决断培养、恼苦转化</td>
+</tr>
+<tr>
+<td>💧水智能体</td>
+<td><code>水行人分智能体/SKILL.md</code></td>
+<td>智慧分析、柔和培养、痴烦转化</td>
+</tr>
+</tbody></table>
+<p><strong>输出格式（各分智能体统一）</strong>：</p>
+<pre><code>[{行}智能体分析]
+一心状态：{阳面/阴面主导}
+三界显化：{信息体/能量体/物质体状态}
+九层位置：第{n}层（{状态名}）
+核心干预：{具体建议}</code></pre>
+<hr>
+<h3>L5·金·洞察（Diagnosis Layer）—— 核心护城河</h3>
+<p><strong>职责</strong>：完整五步诊断流程（建议申请知识产权保护）</p>
+<p><strong>五步诊断流程</strong>：</p>
+<p><strong>① 五行诊断</strong>（确定主导五行）</p>
+<pre><code>观察维度：
+- 物质体：体型/动作节奏/声音特质/着装偏好
+- 能量体：情绪主调/气场/与人互动方式
+- 信息体：价值观/口头禅/核心驱动力</code></pre>
+<p><strong>② 九层诊断</strong>（定位当前层级）</p>
+<pre><code>健康区（1-3层）：行动中有喜悦，自然流露正面特质
+一般区（4-6层）：有意识的努力，时有失衡
+不健康区（7-9层）：行为固化，他人受到影响</code></pre>
+<p><strong>③ 阴阳检测</strong>（判断当前能量态）</p>
+<pre><code>阳面主导 → 成长建议（如何升至更高层）
+阴面主导 → 转化建议（如何拔阴取阳）
+阴阳交替 → 稳定化建议（如何巩固阳面）</code></pre>
+<p><strong>④ 拔阴取阳（主转化路径）</strong></p>
+<pre><code>木：怒→仁（顶撞→正直担当）
+火：恨→礼（控制→明理热情）
+土：怨→信（抱怨→包容信任）
+金：恼→义（刻薄→果断仗义）
+水：烦→智（忧虑→深思灵活）</code></pre>
+<p><strong>④' 化克为生（关系转化路径）</strong></p>
+<pre><code>相克识别 → 张力探索 → 找通关点 → 转生路径
+例：木克土 → 木生火 → 火生土（迂回生化）</code></pre>
+<p><strong>⑤ 成长路径</strong>（个性化发展方案）</p>
+<pre><code>短期（1-3个月）：{具体可操作的转化练习}
+中期（3-12个月）：{层级跃迁的关键里程碑}
+长期（1-3年）：{向1-2层健康状态进发}</code></pre>
+<p><strong>渐进式诊断协议（重要！）</strong>：</p>
+<pre><code>第1次对话：3个问题确定区间（健康/一般/不健康）
+第3次对话：精细化定位到具体层级（如第5层→第4层边界）
+第10次对话：追踪成长轨迹，动态调整路径</code></pre>
+<p><strong>3个定区间问题模板</strong>：</p>
+<pre><code>问题1：[你最近/通常]在压力下，你会（A）变得更努力/（B）退缩/（C）对他人发火？
+问题2：你觉得你的主要问题是（A）太固执/（B）情绪化/（C）过度担心？
+问题3：你身边的人经常说你（A）太强势/（B）不够自信/（C）想太多？
+→ 根据答案组合，快速定位区间</code></pre>
+<hr>
+<h3>L6·土·承载（Memory Layer）</h3>
+<p><strong>职责</strong>：持久化存储用户全生命周期数据</p>
+<p><strong>由Memory MCP支撑</strong>（<code>@modelcontextprotocol/server-memory</code>）</p>
+<p><strong>存储结构</strong>：</p>
+<pre><code>用户节点 {
+  基础信息: {姓名, 主导五行, 初次诊断时间}
+  画像数据: {九层位置, 阴阳比例, 核心阴面特质}
+  成长轨迹: [{日期, 层级, 关键事件}]
+  关系档案: [{对象, 五行组合, 互动模式}]
+  会话摘要: [{日期, 核心洞察, 行动建议}]
+}</code></pre>
+<p><strong>记忆调用规则</strong>：</p>
+<ul>
+<li>每次对话开始 → 读取用户历史画像</li>
+<li>每次诊断完成 → 更新成长轨迹</li>
+<li>用户名+五行组合 → 唯一标识符</li>
+</ul>
+<p><strong>隐私保护原则</strong>：</p>
+<ul>
+<li>不存储原始对话文字，只存储结构化摘要</li>
+<li>不存储医疗敏感信息（如7-9层病态描述）</li>
+</ul>
+<hr>
+<h3>L7·木·根系（Knowledge Foundation Layer）</h3>
+<p><strong>职责</strong>：五行人格理论知识库，所有诊断的依据来源</p>
+<p><strong>由Filesystem MCP支撑</strong>（<code>@modelcontextprotocol/server-filesystem</code>）</p>
+<p><strong>Obsidian知识库路径</strong>：
+<code>C:\Users\jia'yue\Desktop\以观其妙书院知识库\观其妙书院\05-五行人格心理学\</code></p>
+<p><strong>12个核心文档</strong>：</p>
+<table>
+<thead><tr>
+<th>文件</th>
+<th>内容</th>
+<th>对应层级</th>
+</tr></thead><tbody>
+<tr>
+<td><code>📚 五行人格心理学总索引.md</code></td>
+<td>总导航</td>
+<td>L1</td>
+</tr>
+<tr>
+<td><code>📖 一心三界五行九层总纲.md</code></td>
+<td>核心理论</td>
+<td>L5</td>
+</tr>
+<tr>
+<td><code>🌐 知识图谱.md</code></td>
+<td>关系网络</td>
+<td>L3</td>
+</tr>
+<tr>
+<td><code>转化技术/🔧 拔阴取阳完整指南.md</code></td>
+<td>转化方法</td>
+<td>L5④</td>
+</tr>
+<tr>
+<td><code>转化技术/🔀 化克为生完整指南.md</code></td>
+<td>关系转化</td>
+<td>L5④'</td>
+</tr>
+<tr>
+<td><code>五行各论/🌿 木行人完整体系.md</code></td>
+<td>木行诊断</td>
+<td>L4+L5</td>
+</tr>
+<tr>
+<td><code>五行各论/🔥 火行人完整体系.md</code></td>
+<td>火行诊断</td>
+<td>L4+L5</td>
+</tr>
+<tr>
+<td><code>五行各论/🌏 土行人完整体系.md</code></td>
+<td>土行诊断</td>
+<td>L4+L5</td>
+</tr>
+<tr>
+<td><code>五行各论/⚔️ 金行人完整体系.md</code></td>
+<td>金行诊断</td>
+<td>L4+L5</td>
+</tr>
+<tr>
+<td><code>五行各论/💧 水行人完整体系.md</code></td>
+<td>水行诊断</td>
+<td>L4+L5</td>
+</tr>
+<tr>
+<td><code>🌓 五行人三界阴阳特征·工坊实测版.md</code></td>
+<td>实测数据</td>
+<td>L5</td>
+</tr>
+<tr>
+<td><code>🌸 五行季节意向与交往之道·工坊实测版.md</code></td>
+<td>识别技巧</td>
+<td>L1</td>
+</tr>
+</tbody></table>
+<p><strong>知识检索策略</strong>：</p>
+<ul>
+<li>诊断时 → 优先读取对应五行文档</li>
+<li>外观识别时 → 读取工坊实测版</li>
+<li>关系分析时 → 读取化克为生指南</li>
+</ul>
+<hr>
+<h2>完整调用流程示例</h2>
+<h3>示例：用户说"我和老公总是吵架，我不知道怎么办"</h3>
+<pre><code>L1接收：
+  场景=亲密关系，情感温度=高焦虑，快速通道=2分
+
+L2路由：
+  快速通道(2分) → L2分流+L3监控
+  五行线索：暂无，需诊断双方五行
+
+L3调度：
+  触发关系分析模式
+  待诊断：用户本人五行 + 配偶五行
+  激活：五行协调引擎（关系模式）
+
+L4分化：
+  并行激活：（待确认五行后激活对应分智能体）
+
+L5诊断：
+  ① 先对用户做3问定区间
+  ② 对配偶做行为描述→五行推断
+  ③ 识别相克组合，应用化克为生路径
+  
+L6记忆：
+  读取：是否有历史画像？（初次=无）
+  存储：初次诊断记录
+
+L7知识：
+  读取：化克为生完整指南
+  读取：对应两行的完整体系</code></pre>
+<hr>
+<h2>技术装备清单（当前版本）</h2>
+<h3>已安装MCP（支撑各层）</h3>
+<table>
+<thead><tr>
+<th>MCP服务器</th>
+<th>支撑层级</th>
+<th>功能</th>
+</tr></thead><tbody>
+<tr>
+<td><code>memory</code></td>
+<td>L6</td>
+<td>知识图谱式持久化记忆</td>
+</tr>
+<tr>
+<td><code>filesystem</code></td>
+<td>L7</td>
+<td>读取Obsidian知识库</td>
+</tr>
+<tr>
+<td><code>sequential-thinking</code></td>
+<td>L1+L3</td>
+<td>结构化思维链，多步推理</td>
+</tr>
+<tr>
+<td><code>baidu-search</code></td>
+<td>辅助</td>
+<td>外部信息检索</td>
+</tr>
+</tbody></table>
+<h3>已有Skills（支撑各层）</h3>
+<table>
+<thead><tr>
+<th>Skills</th>
+<th>支撑层级</th>
+<th>路径</th>
+</tr></thead><tbody>
+<tr>
+<td>五行人格心理学总智能体</td>
+<td>L1+L3</td>
+<td><code>五行人格总智能体/SKILL.md</code></td>
+</tr>
+<tr>
+<td>木/火/土/金/水行人分智能体</td>
+<td>L4</td>
+<td>各分智能体目录</td>
+</tr>
+<tr>
+<td>象思维</td>
+<td>L5（识别方法）</td>
+<td><code>象思维/SKILL.md</code></td>
+</tr>
+<tr>
+<td>五色光思维</td>
+<td>L3（多维分析）</td>
+<td><code>五色光思维/SKILL.md</code></td>
+</tr>
+<tr>
+<td>知行合一</td>
+<td>全层收尾</td>
+<td><code>知行合一自我进化/SKILL.md</code></td>
+</tr>
+</tbody></table>
+<h3>待建设（边做边完善）</h3>
+<table>
+<thead><tr>
+<th>待建设项</th>
+<th>支撑层级</th>
+<th>优先级</th>
+</tr></thead><tbody>
+<tr>
+<td>L6记忆存储Schema</td>
+<td>L6</td>
+<td>高</td>
+</tr>
+<tr>
+<td>L5渐进式诊断模板</td>
+<td>L5</td>
+<td>高</td>
+</tr>
+<tr>
+<td>L3跨行组合知识库（10种）</td>
+<td>L3</td>
+<td>中</td>
+</tr>
+<tr>
+<td>L1快速通道评分细则</td>
+<td>L1/L2</td>
+<td>低</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>边做边改协议</h2>
+<blockquote><p>悟空原则：先按七层设计，边做边根据实际情况修改。</p></blockquote>
+<p><strong>合并评估点（每季度检查一次）</strong>：</p>
+<ul>
+<li>L1和L2功能重叠？→ 考虑合并为"接收-路由层"</li>
+<li>L4和L5职责模糊？→ 考虑将分智能体并入诊断层</li>
+<li>L6功能过简？→ 考虑引入更强大的持久化方案</li>
+</ul>
+<p><strong>不变的核心</strong>：</p>
+<ul>
+<li>L5诊断引擎（核心护城河，永远独立）</li>
+<li>L7知识库（理论根基，永远独立）</li>
+</ul>
+<hr>
+<p><em>版本：v1.0 · 2026-03-25 · 龙龟神将 · 边做边改·实践论驱动</em></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

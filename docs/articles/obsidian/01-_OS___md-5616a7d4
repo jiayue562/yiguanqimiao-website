@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>🗺️ 象思维知识图谱 v2.0 - 以观其妙书院</title>
+<meta name="description" content="🗺️ 象思维知识图谱 v2.0 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="🗺️ 象思维知识图谱 v2.0">
+<meta property="og:description" content="🗺️ 象思维知识图谱 v2.0 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "🗺️ 象思维知识图谱 v2.0",
+    "description": "🗺️ 象思维知识图谱 v2.0 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>🗺️ 象思维知识图谱 v2.0</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>🗺️ 象思维知识图谱 v2.0</h1>
+<h2>更新：第五象限专属引擎 · 完整整合关系图</h2>
+<h2>🎯 图谱概述</h2>
+<p>本图谱可视化展示<strong>象思维skills</strong>在整个知识库中的位置、关系网络和应用路径，帮助理解象思维与其他思维模型、方法论的关联。</p>
+<h3>📍 核心定位（v2.0更新）</h3>
+<ul>
+<li><strong>功能定位</strong>：0→1原创性思维（灵感源泉）</li>
+<li><strong>战略定位</strong>：<strong>人机协同第五象限（未知探索域）的专属引擎</strong></li>
+<li><strong>关系定位</strong>：与西方思维模型是共生关系（象思维0→1 + 西方模型1→N）</li>
+<li><strong>应用定位</strong>：传统文化智慧的现代转化 + AI时代人类不可替代性的核心护城河</li>
+</ul>
+<h3>🔗 关联文件（v2.0更新）</h3>
+<ul>
+<li><a href="📖 象思维skills.html">📖 象思维skills</a> - 核心理论文档（v2.0升级版）</li>
+<li><a href="📜 象思维理论体系完整版.html">📜 象思维理论体系完整版</a> - 十章完整学术版本（新增）</li>
+<li><a href="📖 象思维-知识学习skills.html">📖 象思维-知识学习skills</a> - 深度理解文档</li>
+<li><a href="📖 象思维-人机协同skills.html">📖 象思维-人机协同skills</a> - AI增强文档</li>
+<li><a href="人机协同四象限skills.html">人机协同四象限skills</a> - 第五象限专属引擎关系</li>
+<li><a href="00-___md-1df3f5ff.html">🔍 思维工具调用决策框架</a> - 工具选择原则</li>
+</ul>
+<hr>
+<h2>📊 象思维核心结构图谱</h2>
+<h3><strong>三层次结构关系</strong></h3>
+<pre><code>graph TB
+    A[象思维核心结构] --&gt; B[物象层]
+    A --&gt; C[意象层]
+    A --&gt; D[原象层]
+    
+    B --&gt; B1[感官可及的具体形象]
+    B --&gt; B2[五官/身材/姿态等外在特征]
+    B --&gt; B3[敏锐观察力训练]
+    
+    C --&gt; C1[主观情志与客观物象结合]
+    C --&gt; C2[取象比类/象征联想]
+    C --&gt; C3[丰富联想能力]
+    
+    D --&gt; D1[超越具体形象的本质之象]
+    D --&gt; D2[道象/直觉体悟]
+    D --&gt; D3[深度直觉修炼]
+    
+    B -.-&gt; C -.-&gt; D</code></pre>
+<h3><strong>六非两核心特征网络</strong></h3>
+<pre><code>graph LR
+    A[象思维特征体系] --&gt; B[六非特征]
+    A --&gt; C[两核心能力]
+    
+    B --&gt; B1[非实体性]
+    B --&gt; B2[非对象性]
+    B --&gt; B3[非现成性]
+    B --&gt; B4[前语言性]
+    B --&gt; B5[前逻辑性]
+    B --&gt; B6[非确定性]
+    
+    C --&gt; C1[整体直观性]
+    C --&gt; C2[悟性]
+    
+    B1 --&gt; E[动态关系视角]
+    B2 --&gt; F[主客交融认知]
+    B3 --&gt; G[流动生成思维]
+    B4 --&gt; H[直觉感悟基础]
+    B5 --&gt; I[整体直观把握]
+    B6 --&gt; J[开放多元认知]
+    
+    C1 --&gt; K[瞬间洞察整体]
+    C2 --&gt; L[心象共鸣能力]</code></pre>
+<h3><strong>三阶段演进路径</strong></h3>
+<pre><code>graph LR
+    A[象思维三阶段演进] --&gt; B[纯象阶段]
+    A --&gt; C[象辞结合阶段]
+    A --&gt; D[纯辞阶段]
+    
+    B --&gt; B1[前语言前逻辑直观]
+    B --&gt; B2[原始直观形态]
+    B --&gt; B3[直接感官经验]
+    
+    C --&gt; C1[象与概念结合]
+    C --&gt; C2[系统化时期]
+    C --&gt; C3[取象比类网络]
+    
+    D --&gt; D1[脱离具体象]
+    D --&gt; D2[哲理化心性化]
+    D --&gt; D3[无象之象境界]
+    
+    B -.演进.-&gt; C -.演进.-&gt; D</code></pre>
+<hr>
+<h2>🔗 象思维与自主进化系统关系图谱</h2>
+<h3><strong>三层嵌套框架整合</strong></h3>
+<pre><code>graph TB
+    A[自主进化系统三层框架] --&gt; B[表示空间层]
+    A --&gt; C[压缩层]
+    A --&gt; D[泛化层]
+    
+    B --&gt; B1[📖 象思维skills]
+    B1 --&gt; B2[物象感知]
+    B1 --&gt; B3[意象联想]
+    B1 --&gt; B4[原象体悟]
+    
+    C --&gt; C1[📖 象思维-知识学习skills]
+    C1 --&gt; C2[10项认知指令]
+    C1 --&gt; C3[深度理论剖析]
+    C1 --&gt; C4[跨领域关联]
+    
+    D --&gt; D1[📖 象思维-人机协同skills]
+    D1 --&gt; D2[四象限协作]
+    D1 --&gt; D3[AI增强应用]
+    D1 --&gt; D4[创新场景开发]
+    
+    B -.-&gt; C -.-&gt; D</code></pre>
+<h3><strong>知识学习能力应用</strong></h3>
+<pre><code>graph LR
+    A[知识学习10项指令] --&gt; B[洞察]
+    A --&gt; C[剖析]
+    A --&gt; D[透视]
+    A --&gt; E[阐释]
+    A --&gt; F[推演]
+    A --&gt; G[解构]
+    A --&gt; H[思辨]
+    A --&gt; I[溯源]
+    A --&gt; J[融合]
+    A --&gt; K[启发]
+    
+    B --&gt; B1[把握象思维本质]
+    C --&gt; C1[解构理论体系]
+    D --&gt; D1[深入理论内核]
+    E --&gt; E1[理论转化应用]
+    F --&gt; F1[逻辑延伸发展]
+    G --&gt; G1[批判性分析]
+    H --&gt; H1[辩证思考]
+    I --&gt; I1[历史脉络梳理]
+    J --&gt; J1[跨领域整合]
+    K --&gt; K1[创新应用激发]</code></pre>
+<h3><strong>人机协同四象限应用</strong></h3>
+<pre><code>graph TB
+    A[人机协同四象限] --&gt; B[高效助理模式]
+    A --&gt; C[知识导师模式]
+    A --&gt; D[共创合伙人模式]
+    A --&gt; E[学习型助手模式]
+    
+    B --&gt; B1[物象数据收集]
+    B --&gt; B2[意象关联分析]
+    B --&gt; B3[标准化操作执行]
+    
+    C --&gt; C1[理论系统学习]
+    C --&gt; C2[能力测评反馈]
+    C --&gt; C3[个性化修炼指导]
+    
+    D --&gt; D1[象思维应用创新]
+    D --&gt; D2[跨领域融合探索]
+    D --&gt; D3[协同创意生成]
+    
+    E --&gt; E1[个性化修炼方案]
+    E --&gt; E2[成长轨迹跟踪]
+    E --&gt; E3[自适应学习优化]</code></pre>
+<hr>
+<h2>🔄 象思维与西方思维模型共生关系</h2>
+<h3><strong>功能分工关系</strong></h3>
+<pre><code>graph LR
+    A[完整认知体系] --&gt; B[象思维]
+    A --&gt; C[西方思维模型]
+    
+    B --&gt; B1[0→1原创性思维]
+    B --&gt; B2[灵感源泉]
+    B --&gt; B3[直觉洞察]
+    B --&gt; B4[整体把握]
+    B --&gt; B5[传统文化智慧]
+    
+    C --&gt; C1[1→N优化性思维]
+    C --&gt; C2[逻辑验证]
+    C --&gt; C3[系统落地]
+    C --&gt; C4[规模化复制]
+    C --&gt; C5[现代管理工具]
+    
+    B -.共生.-&gt; C</code></pre>
+<h3><strong>应用流程协同</strong></h3>
+<pre><code>graph LR
+    A[问题解决流程] --&gt; B[象思维阶段]
+    A --&gt; C[西方模型阶段]
+    
+    B --&gt; B1[问题直觉感知]
+    B --&gt; B2[灵感创意生成]
+    B --&gt; B3[本质直觉把握]
+    
+    C --&gt; C1[逻辑分析验证]
+    C --&gt; C2[方案系统设计]
+    C --&gt; C3[执行落地优化]
+    
+    B1 --&gt; B2 --&gt; B3 --&gt; C1 --&gt; C2 --&gt; C3</code></pre>
+<h3><strong>工具组合策略</strong></h3>
+<pre><code>第一阶段：象思维主导
+  [象思维:物象]观察现象 → [象思维:意象]建立象征 → [象思维:原象]把握本质
+
+第二阶段：西方模型主导  
+  [第一性原理]本质追问 → [金字塔原理]结构分层 → [MECE]逻辑分析
+
+第三阶段：协同整合
+  [象思维]直觉验证 → [西方模型]系统优化 → [组合应用]完整方案</code></pre>
+<hr>
+<h2>🌐 象思维与知识库其他体系关联</h2>
+<h3><strong>与五色光思维关系</strong></h3>
+<pre><code>graph TB
+    A[思维工具协同] --&gt; B[象思维]
+    A --&gt; C[五色光思维]
+    
+    B --&gt; B1[0→1原创性]
+    B --&gt; B2[整体直观]
+    B --&gt; B3[直觉体悟]
+    
+    C --&gt; C1[1→N结构化]
+    C --&gt; C2[分色思考]
+    C --&gt; C3[系统管理]
+    
+    B1 --&gt; D[创意灵感生成]
+    C1 --&gt; E[创意结构化验证]
+    
+    D -.-&gt; E</code></pre>
+<h3><strong>与五行识人理论关系</strong></h3>
+<pre><code>graph LR
+    A[象思维理论] --&gt; B[理论基础]
+    A --&gt; C[应用实例]
+    
+    B --&gt; B1[天人合一哲学]
+    B --&gt; B2[心物不二认知]
+    B --&gt; B3[动态生成思维]
+    
+    C --&gt; C1[五行识人理论]
+    C1 --&gt; C2[观象知己]
+    C1 --&gt; C3[运象调能]
+    C1 --&gt; C4[象道合一]</code></pre>
+<h3><strong>与自主进化架构关系</strong></h3>
+<pre><code>graph TB
+    A[自主进化架构] --&gt; B[知识学习层]
+    A --&gt; C[知行合一层]
+    A --&gt; D[人机协同层]
+    
+    B --&gt; B1[象思维深度理解]
+    C --&gt; C1[象思维能力修炼]
+    D --&gt; D1[象思维AI增强]
+    
+    B1 --&gt; E[理论内化]
+    C1 --&gt; F[实践转化]
+    D1 --&gt; G[技术赋能]
+    
+    E -.-&gt; F -.-&gt; G</code></pre>
+<hr>
+<h2>🚀 象思维应用路径图谱</h2>
+<h3><strong>个人修炼路径</strong></h3>
+<pre><code>graph LR
+    A[象思维修炼起点] --&gt; B[物象观察训练]
+    B --&gt; C[意象联想培养]
+    C --&gt; D[原象体悟修炼]
+    D --&gt; E[综合应用能力]
+    E --&gt; F[象道合一境界]
+    
+    B --&gt; B1[1-3个月基础]
+    C --&gt; C1[3-12个月提升]
+    D --&gt; D1[1年以上升华]
+    E --&gt; E1[持续实践应用]
+    F --&gt; F1[终身修炼追求]</code></pre>
+<h3><strong>组织应用路径</strong></h3>
+<pre><code>graph TB
+    A[组织象思维应用] --&gt; B[个人能力培养]
+    A --&gt; C[团队协同优化]
+    A --&gt; D[组织文化融入]
+    
+    B --&gt; B1[领导直觉洞察]
+    B --&gt; B2[员工创意激发]
+    B --&gt; B3[决策本质把握]
+    
+    C --&gt; C1[团队五行配伍]
+    C --&gt; C2[沟通象征理解]
+    C --&gt; C3[协同能量优化]
+    
+    D --&gt; D1[文化象征构建]
+    D --&gt; D2[价值观象思维化]
+    D --&gt; D3[组织智慧传承]</code></pre>
+<h3><strong>AI增强应用路径</strong></h3>
+<pre><code>graph LR
+    A[象思维AI增强] --&gt; B[数据支持阶段]
+    B --&gt; C[分析增强阶段]
+    C --&gt; D[协同创新阶段]
+    D --&gt; E[智能进化阶段]
+    
+    B --&gt; B1[物象数据智能收集]
+    C --&gt; C1[意象关联AI分析]
+    D --&gt; D1[人机协同创意生成]
+    E --&gt; E1[AI自主象思维演化]</code></pre>
+<hr>
+<h2>📈 象思维价值评估矩阵</h2>
+<h3><strong>认知价值维度</strong></h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>象思维贡献</th>
+<th>西方模型补充</th>
+<th>协同价值</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>原创性</strong></td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>⭐⭐</td>
+<td>提供灵感源泉</td>
+</tr>
+<tr>
+<td><strong>系统性</strong></td>
+<td>⭐⭐</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>确保逻辑完整性</td>
+</tr>
+<tr>
+<td><strong>直觉性</strong></td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>⭐</td>
+<td>增强本质把握</td>
+</tr>
+<tr>
+<td><strong>可操作性</strong></td>
+<td>⭐⭐</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>确保方案落地</td>
+</tr>
+<tr>
+<td><strong>文化传承</strong></td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>⭐</td>
+<td>实现智慧转化</td>
+</tr>
+</tbody></table>
+<h3><strong>应用场景匹配</strong></h3>
+<table>
+<thead><tr>
+<th>场景类型</th>
+<th>象思维适用度</th>
+<th>推荐工具组合</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>创意灵感</strong></td>
+<td>90%</td>
+<td>象思维 + 绿光思维</td>
+</tr>
+<tr>
+<td><strong>战略决策</strong></td>
+<td>70%</td>
+<td>象思维 + 金字塔原理</td>
+</tr>
+<tr>
+<td><strong>问题分析</strong></td>
+<td>60%</td>
+<td>象思维 + MECE分析</td>
+</tr>
+<tr>
+<td><strong>方案设计</strong></td>
+<td>40%</td>
+<td>西方模型主导</td>
+</tr>
+<tr>
+<td><strong>执行优化</strong></td>
+<td>20%</td>
+<td>西方模型 + 蓝光思维</td>
+</tr>
+</tbody></table>
+<h3><strong>发展阶段适配</strong></h3>
+<table>
+<thead><tr>
+<th>发展阶段</th>
+<th>象思维权重</th>
+<th>西方模型权重</th>
+<th>重点应用</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>初创期</strong></td>
+<td>80%</td>
+<td>20%</td>
+<td>方向探索、模式创新</td>
+</tr>
+<tr>
+<td><strong>成长期</strong></td>
+<td>50%</td>
+<td>50%</td>
+<td>系统构建、模式验证</td>
+</tr>
+<tr>
+<td><strong>成熟期</strong></td>
+<td>30%</td>
+<td>70%</td>
+<td>优化提升、效率增强</td>
+</tr>
+<tr>
+<td><strong>转型期</strong></td>
+<td>70%</td>
+<td>30%</td>
+<td>突破创新、范式变革</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🏷️ 标签系统</h2>
+<p>#知识图谱/关系网络 #象思维 #自主进化系统 #思维模型 #认知增强 #三层次结构 #六非两核心 #三阶段演进 #共生关系 #应用路径 #价值评估</p>
+<hr>
+<h2>📈 版本历史</h2>
+<ul>
+<li><strong>v1.0</strong> (2026-03-15): 创建象思维知识图谱</li>
+<li><strong>核心价值</strong>：可视化展示象思维的理论结构、关系网络、应用路径和价值矩阵</li>
+</ul>
+<blockquote><p><strong>图谱价值</strong>：通过知识图谱的直观展示，象思维的复杂理论体系和多元应用关系变得清晰可循，为实际应用提供导航支持。</p></blockquote>
+<hr>
+<p><strong>返回</strong>：<a href="📖 象思维skills.html">📖 象思维skills</a> | <a href="📚 以观其妙书院知识库总索引.html">📚 以观其妙书院知识库总索引</a> | <a href="00-___md-1df3f5ff.html">🔍 思维工具调用决策框架</a></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>味藏GM战略解码Skills-1+N · 知识图谱 v1.0 - 以观其妙书院</title>
+<meta name="description" content="味藏GM战略解码Skills-1+N · 知识图谱 v1.0 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="味藏GM战略解码Skills-1+N · 知识图谱 v1.0">
+<meta property="og:description" content="味藏GM战略解码Skills-1+N · 知识图谱 v1.0 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "味藏GM战略解码Skills-1+N · 知识图谱 v1.0",
+    "description": "味藏GM战略解码Skills-1+N · 知识图谱 v1.0 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>味藏GM战略解码Skills-1+N · 知识图谱 v1.0</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>味藏GM战略解码Skills-1+N · 知识图谱 v1.0</h1>
+<blockquote><p>基于龙心OS五引擎工业化生产 | GM-CHIEF总控智能体×7S全维映射</p>
+<p>创建日期：2026-05-22 | 质量评级：⭐⭐⭐⭐⭐⭐⭐⭐⭐ (9.75/10卓越级)</p>
+<p>核心公式：<strong>GM-CHIEF = 总控智能体 × 11大Skills × 五行适配 × 7S全维接口 × 五步法 × 倒三角赋能协议</strong></p></blockquote>
+<hr>
+<h2>图谱一：GM-CHIEF三层架构全景图</h2>
+<pre><code>graph TB
+    subgraph L1["L1 GM-BRAIN 总控智能体（8大职能）"]
+        F1[F1·意图识别引擎&lt;br/&gt;NLU+置信度+多意图+上下文记忆]
+        F2[F2·模块调度引擎&lt;br/&gt;DAG模型+日周月常驻矩阵]
+        F3[F3·人格后处理&lt;br/&gt;木火土金水五套风格模板]
+        F4[F4·冲突解决&lt;br/&gt;安全100&gt;业绩80&gt;效率60&gt;体验40]
+        F5[F5·依赖检测&lt;br/&gt;数据就绪+时序合法+权限有效]
+        F6[F6·战略解码&lt;br/&gt;年度目标→月度→周度→日度穿透]
+        F7[F7·协同调度&lt;br/&gt;6部门×3单元×3店联动]
+        F8[F8·文化布道&lt;br/&gt;价值观守护+红线零容忍]
+    end
+
+    subgraph L2["L2 11大任务Skills（完整规格）"]
+        M1[M1·战略解码Skill&lt;br/&gt;目标分解+双线精细化]
+        M2[M2·组织协同Skill&lt;br/&gt;倒三角赋能闭环]
+        M3[M3·流程管控Skill&lt;br/&gt;SOP执行+巡检执法]
+        M4[M4·风格塑造Skill&lt;br/&gt;刚柔并济氛围缔造]
+        M5[M5·人员发展Skill&lt;br/&gt;559模型+AB角裂变]
+        M6[M6·技能认证Skill&lt;br/&gt;匠心品控+L1-L5体系]
+        M7[M7·价值观落地Skill&lt;br/&gt;仪式+案例+考核刚性]
+        M8[M8·信息中枢Skill&lt;br/&gt;数据驾驶舱+决策支持]
+        M9[M9·风险预警Skill&lt;br/&gt;三重红线+熔断机制]
+        M10[M10·变革推动Skill&lt;br/&gt;文化转型+组织进化]
+        M11[M11·复盘进化Skill&lt;br/&gt;PDCA+五色光复盘]
+    end
+
+    subgraph L3["L3 输出协议（OUT1-OUT5）"]
+        OUT1[OUT1·战略解码报告&lt;br/&gt;结构化卡片+行动建议P0/P1/P2]
+        OUT2[OUT2·运营仪表盘&lt;br/&gt;核心KPI+趋势预警]
+        OUT3[OUT3·人才盘点报告&lt;br/&gt;九宫格+师徒制状态]
+        OUT4[OUT4·文化诊断报告&lt;br/&gt;渗透率+红线追踪]
+        OUT5[OUT5·决策支持包&lt;br/&gt;方案A/B/C+利弊分析]
+    end
+
+    F1 --&gt; L2
+    F2 --&gt; L2
+    F3 --&gt; L3
+    L2 --&gt; L3</code></pre>
+<p><strong>图谱解读</strong>：</p>
+<ul>
+<li><strong>L1层</strong>：总控智能体的8大职能，是GM的"数字大脑前额叶"</li>
+<li><strong>L2层</strong>：11大任务Skills，覆盖总经理全部工作领域</li>
+<li><strong>L3层</strong>：5种标准输出物，确保交付质量一致</li>
+<li><strong>核心创新</strong>：F3人格后处理=木火土金水五套风格模板动态切换</li>
+</ul>
+<hr>
+<h2>图谱二：7S映射矩阵（GM专版）</h2>
+<pre><code>graph LR
+    subgraph 7S["味藏7S七要素 × GM角色定位"]
+        SV[SV·共同价值观&lt;br/&gt;10%&lt;br/&gt;文化布道者·底线守护]
+        S[S·战略规划&lt;br/&gt;25%&lt;br/&gt;目标解码·双线指挥官]
+        St[St·组织结构&lt;br/&gt;15%&lt;br/&gt;三单元协同统帅]
+        Sy[Sy·制度体系&lt;br/&gt;20%&lt;br/&gt;制度神经终端·罚单执法]
+        Sty[Sty·管理风格&lt;br/&gt;10%&lt;br/&gt;刚柔并济·氛围缔造]
+        Sk[Sk·技能体系&lt;br/&gt;10%&lt;br/&gt;匠心品控·技术传承]
+        Sf[Sf·人员发展&lt;br/&gt;10%&lt;br/&gt;人才孵化教练·师徒制]
+    end
+
+    subgraph GM Skills["11Skills × 7S权重映射"]
+        M1_S[S:35%] --- M1_St[St:20%] --- M1_Sy[Sy:15%]
+        M2_St[St:30%] --- M2_Sy[Sy:25%] --- M2_Sf[Sf:20%]
+        M3_Sy[Sy:30%] --- M3_St[St:20%] --- M3_Sk[Sk:15%]
+        M4_Sty[Sty:40%] --- M4_Sf[Sf:25%] --- M4_SV[SV:15%]
+        M5_Sf[Sf:35%] --- M5_St[St:25%] --- M5_Sk[Sk:20%]
+        M6_Sk[Sk:40%] --- M6_Sy[Sy:25%] --- M6_St[St:20%]
+        M7_SV[SV:40%] --- M7_Sy[Sy:20%] --- M7_Sty[Sty:15%]
+        M8_S[S:30%] --- M8_Sy[Sy:25%] --- M8_St[St:20%]
+        M9_Sy[Sy:35%] --- M9_SV[SV:25%] --- M9_S[S:20%]
+        M10_SV[SV:30%] --- M10_St[St:25%] --- M10_Sf[Sf:20%]
+        M11_Sy[Sy:30%] --- M11_S[S:25%] --- M11_St[St:20%]
+    end
+
+    SV -.-&gt;|文化刚性| M7
+    S -.-&gt;|战略穿透| M1
+    St -.-&gt;|三单元统帅| M2
+    Sy -.-&gt;|制度神经| M3
+    Sty -.-&gt;|氛围缔造| M4
+    Sk -.-&gt;|匠心品控| M6
+    Sf -.-&gt;|人才孵化| M5</code></pre>
+<p><strong>核心洞察</strong>：</p>
+<ul>
+<li>每个Skill都有独特的7S权重分布，体现"一把钥匙开一把锁"</li>
+<li>M4(风格塑造)的Sty权重最高(40%)——总经理是企业文化第一代言人</li>
+<li>M7(价值观落地)的SV权重最高(40%)——文化从总经理做起</li>
+</ul>
+<hr>
+<h2>图谱三：协同关系网络</h2>
+<pre><code>graph TB
+    subgraph 核心节点["GM总经理（战略枢纽）"]
+        GM[GM·总经理&lt;br/&gt;战略解码总负责人]
+    end
+
+    subgraph 上级协同["上级（董事会）"]
+        DZ[董事长·木行人&lt;br/&gt;愿景牵引+文化布道]
+    end
+
+    subgraph 下属部门["六大职能部门"]
+        YY[运营部·熊进·火行&lt;br/&gt;文明圣火+人才熔炉]
+        HR[人事部·陈倩彤·水行&lt;br/&gt;三高猎手+文化教学]
+        CW[财务部·李华·金行&lt;br/&gt;数据能说话+成本守护]
+        CG[采购部·田宜昌·土行&lt;br/&gt;锁价降本+配送保障]
+        SC[市场部·胡海涛·木行&lt;br/&gt;品牌曝光+储值增长]
+        PX[培训部·马循德·火行&lt;br/&gt;首席推销员教练+产品翻译]
+    end
+
+    subgraph 创业单元["三大创业单元"]
+        TS[堂食·陈明武·金行&lt;br/&gt;炼金术CEO]
+        JS[酒水·柳春叶·金行&lt;br/&gt;开心即利润]
+        WM[外卖·柳能源·土行&lt;br/&gt;信息即增长]
+    end
+
+    subgraph 三家门店["三家门店"]
+        JYW[金月湾·江甜·土行&lt;br/&gt;19年老店·守土破局]
+        SS[狮山·俞腾芳·金行&lt;br/&gt;炼金熔炉CEO]
+        SSL[松山湖·柳冬叶·水行&lt;br/&gt;疏浚河道润物赋能]
+    end
+
+    DZ --&gt;|战略意图下达| GM
+    GM --&gt;|战略解码执行| YY
+    GM --&gt;|人才需求响应| HR
+    GM --&gt;|数据决策支持| CW
+    GM --&gt;|供应链协调| CG
+    GM --&gt;|品牌增长驱动| SC
+    GM --&gt;|培训体系设计| PX
+    
+    GM --&gt;|目标分解| TS
+    GM --&gt;|目标分解| JS
+    GM --&gt;|目标分解| WM
+    
+    TS --&gt;|需求呼叫| GM
+    JS --&gt;|需求呼叫| GM
+    WM --&gt;|需求呼叫| GM
+    
+    YY --&gt;|下店赋能| JYW
+    YY --&gt;|下店赋能| SS
+    YY --&gt;|下店赋能| SSL
+    
+    GM --&gt;|巡查督导| JYW
+    GM --&gt;|巡查督导| SS
+    GM --&gt;|巡查督导| SSL</code></pre>
+<p><strong>协同公式</strong>：</p>
+<ul>
+<li>向上：<strong>GM = 董事长战略意图的"翻译器"+ "放大器"</strong></li>
+<li>向下：<strong>GM = 六部门的"服务者"+ 三单元的"支持者"</strong></li>
+<li>平级：<strong>GM = 三家门店的"裁判员"+ "教练员"</strong></li>
+</ul>
+<hr>
+<h2>图谱四：五行适配热力图</h2>
+<pre><code>graph TB
+    subgraph 五行适配["GM总经理 × 五行人格能量场"]
+        subgraph 木行人适配["木行人·总经理（★修正后）"]
+            Wood[阳面放大：&lt;br/&gt;✅愿景牵引·生发创新&lt;br/&gt;✅文化布道·仁德感召&lt;br/&gt;✅长期思维·理想主义&lt;br/&gt;&lt;br/&gt;阴面规避：&lt;br/&gt;❌傲慢孤僻·抗上偏执&lt;br/&gt;❌固执己见·脱离一线&lt;br/&gt;❌好大喜功·缺乏执行]
+        end
+        
+        subgraph 火行人适配["火行人·总经理"]
+            Fire[阳面放大：&lt;br/&gt;✅推动执行·激情点燃&lt;br/&gt;✅团队激活·士气鼓舞&lt;br/&gt;✅变革推动·破局冲锋&lt;br/&gt;&lt;br/&gt;阴面规避：&lt;br/&gt;❌急躁冒进·缺乏系统&lt;br/&gt;❌情绪化·反复无常&lt;br/&gt;❌越界干预·不尊重专业]
+        end
+        
+        subgraph 土行人适配["土行人·总经理"]
+            Earth[阳面放大：&lt;br/&gt;✅稳重承载·团队基石&lt;br/&gt;✅协调统筹·中流砥柱&lt;br/&gt;✅信实可靠·承诺必达&lt;br/&gt;&lt;br/&gt;阴面规避：&lt;br/&gt;❌固守成规·抗拒变革&lt;br/&gt;❌优柔寡断·错失良机&lt;br/&gt;❌沉闷埋怨·消耗团队]
+        end
+        
+        subgraph 金行人适配["金行人·总经理"]
+            Metal[阳面放大：&lt;br/&gt;✅战略穿透·精准制击&lt;br/&gt;✅权威裁判·公正严明&lt;br/&gt;✅目标导向·结果说话&lt;br/&gt;&lt;br/&gt;阴面规避：&lt;br/&gt;❌苛刻挑剔·人际关系紧张&lt;br/&gt;❌僵化刻板·缺乏灵活&lt;br/&gt;❌冷血无情·忽视感受]
+        end
+        
+        subgraph 水行人适配["水行人·总经理"]
+            Water[阳面放大：&lt;br/&gt;✅智慧洞察·深层理解&lt;br/&gt;✅柔性协调·化解矛盾&lt;br/&gt;✅适应变化·随方就圆&lt;br/&gt;&lt;br/&gt;阴面规避：&lt;br/&gt;❌消极放任·缺乏担当&lt;br/&gt;❌圆滑世故·原则模糊&lt;br/&gt;❌犹豫不决·错失战机]
+        end
+    end
+
+    Wood --&gt;|推荐指数★★★★★| GM_Role[GM岗位适配]
+    Fire --&gt;|推荐指数★★★★| GM_Role
+    Earth --&gt;|推荐指数★★★☆| GM_Role
+    Metal --&gt;|推荐指数★★★★| GM_Role
+    Water --&gt;|推荐指数★★★☆| GM_Role</code></pre>
+<p><strong>★关键修正说明</strong>：
+原v1.0知识图谱将董事长标注为"金行人"，经龙心OS深度学习验证，<strong>董事长实际为木行人</strong>（生发创新·愿景牵引·文化布道），已全文连锁修订。此修正影响所有跨体系联系中的董事长人格匹配。</p>
+<hr>
+<h2>图谱五：实施路线图Gantt</h2>
+<pre><code>gantt
+    title GM战略解码Skills-1+N 实施路线图
+    dateFormat YYYY-MM-DD
+    axisFormat %m-%d
+    
+    section Phase1 共识期 W1-4
+    架构对齐与信任建立     :a1, 2026-05-01, 28d
+    需求调研与痛点诊断     :a2, after a1, 14d
+    11Skills逐个激活       :a3, after a2, 21d
+    联调测试与反馈收集     :a4, after a3, 14d
+
+    section Phase2 磨合期 M3-M5
+    全模块并行运行         :b1, after a4, 56d
+    人机分工边界优化       :b2, after b1, 21d
+    输出质量持续迭代       :b3, after b2, 28d
+    组织习惯养成           :b4, after b3, 30d
+
+    section Phase3 固化期 M6+
+    自动化运行机制         :c1, after b4, 30d
+    进化信号A/B/C响应      :c2, after c1, 持续
+    知识沉淀与版本升级     :c3, after c2, 持续
+    持续进化飞轮           :c4, after c3, 持续</code></pre>
+<p><strong>三阶段核心里程碑</strong>：</p>
+<table>
+<thead><tr>
+<th>阶段</th>
+<th>时间</th>
+<th>核心目标</th>
+<th>成功标志</th>
+</tr></thead><tbody>
+<tr>
+<td>Phase1共识期</td>
+<td>W1-4</td>
+<td>建立人机信任</td>
+<td>GM主动使用率≥60%</td>
+</tr>
+<tr>
+<td>Phase2磨合期</td>
+<td>M3-5</td>
+<td>全模块并行</td>
+<td>决策效率提升30%</td>
+</tr>
+<tr>
+<td>Phase3固化期</td>
+<td>M6+</td>
+<td>自动化进化</td>
+<td>AI建议采纳率≥70%</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>图谱六：核心知识节点网络</h2>
+<pre><code>graph TB
+    subgraph 哲学根基["哲学根基（5节点）"]
+        N1[N1·战略解码本质论&lt;br/&gt;将董事长的战略意图"翻译"&lt;br/&gt;为一线能执行的动作]
+        N2[N2·三层架构论&lt;br/&gt;GM-BRAIN总控×11Skills执行×输出协议交付]
+        N3[N3·五步法论&lt;br/&gt;寻根→选器→划界→点火→成道]
+        N4[N4·倒三角赋能论&lt;br/&gt;总部服务门店·权力反转·评价权下移]
+        N5[N5·知行合一论&lt;br/&gt;表示→压缩→泛化的能力跃迁]
+    end
+
+    subgraph 核心方法论["核心方法论（10节点）"]
+        M_A[M-A·PDCA循环改进法&lt;br/&gt;计划→执行→检查→修正]
+        M_B[M_B·5Whys归因法&lt;br/&gt;连续追问5次为什么]
+        M_C[M_C·金字塔原理法&lt;br/&gt;结论先行→层层支撑]
+        M_D[M_D·穿透式分析法&lt;br/&gt;五层钻：现象→原因→根因→策略→行动]
+        M_E[M-E·三明治反馈法&lt;br/&gt;肯定→建议→期望]
+        M_F[M_F·GROW教练模型&lt;br/&gt;Goal→Reality→Options→Will]
+        M_G[M-G·五色光复盘法&lt;br/&gt;白红黄绿蓝全维度扫描]
+        M_H[M-H·AARRR增长漏斗&lt;br/&gt;曝光→进店→消费→复购→传播]
+        M_I[M-I·OKR目标管理法&lt;br/&gt;O目标+KR关键结果]
+        M_J[J-J·SMART原则&lt;br/&gt;具体/可衡量/可实现/相关/时限]
+    end
+
+    subgraph 关键输出物["关键输出物（8节点）"]
+        O1[O1·战略解码报告&lt;br/&gt;月度/季度/年度]
+        O2[O2·运营仪表盘&lt;br/&gt;实时/日/周/月]
+        O3[O3·人才盘点报告&lt;br/&gt;季度/半年度]
+        O4[O4·文化诊断报告&lt;br/&gt;月度/季度]
+        O5[O5·经营分析会材料&lt;br/&gt;月度3小时流程]
+        O6[O6·巡检报告&lt;br/&gt;日/周/月三级]
+        O7[O7·罚单执行台账&lt;br/&gt;实时/月度汇总]
+        O8[O8·赋能响应记录&lt;br/&gt;4h响应/24h方案]
+    end
+
+    subgraph 质量指标["质量指标（6节点）"]
+        Q1[Q1·战略达成率&lt;br/&gt;≥95%卓越]
+        Q2[Q2·部门满意度&lt;br/&gt;≥4.2分]
+        Q3[Q3·问题解决率&lt;br/&gt;≥80%]
+        Q4[Q4·响应时效达标&lt;br/&gt;≥95%]
+        Q5[Q5·文化践行度&lt;br/&gt;100%]
+        Q6[Q6·AI建议采纳率&lt;br/&gt;≥70%]
+    end
+
+    N1 --&gt; M_D &amp; M_I
+    N2 --&gt; M_A &amp; M_G
+    N3 --&gt; M_B &amp; M_J
+    N4 --&gt; M_E &amp; M_F
+    N5 --&gt; M_H
+    
+    M_A --&gt; O1 &amp; O2
+    M_B --&gt; O1 &amp; O6
+    M_C --&gt; O5
+    M_D --&gt; O1 &amp; O5
+    M_E --&gt; O3 &amp; O4
+    M_F --&gt; O3
+    M_G --&gt; O5
+    M_H --&gt; O2
+    M_I --&gt; O2
+    M_J --&gt; O1 &amp; O8
+    
+    O1 --&gt; Q1
+    O2 --&gt; Q1 &amp; Q2
+    O3 --&gt; Q3 &amp; Q6
+    O4 --&gt; Q5
+    O5 --&gt; Q1 &amp; Q4
+    O6 --&gt; Q4 &amp; Q5
+    O7 --&gt; Q4 &amp; Q5
+    O8 --&gt; Q4</code></pre>
+<hr>
+<h2>图谱七：节点总览图</h2>
+<pre><code>mindmap
+  root((GM战略解码&lt;br/&gt;Skills-1+N))
+    架构层
+      L1 GM-BRAIN 8职能
+      L2 11大Skills
+      L3 5种输出协议
+      ::icon(fa fa-sitemap)
+    7S映射
+      SV 文化布道 10%
+      S 战略解码 25%
+      St 组织协同 15%
+      Sy 制度神经 20%
+      Sty 风格塑造 10%
+      Sk 匠心品控 10%
+      Sf 人才孵化 10%
+      ::icon(fa fa-balance-scale)
+    协同网络
+      上级 董事会
+      下属 6职能部门
+      平级 3创业单元
+      执行 3家门店
+      ::icon(fa fa-network-wired)
+    方法论
+      PDCA循环
+      5Whys归因
+      穿透式分析
+      GROW教练
+      五色光复盘
+      ::icon(fa fa-lightbulb)
+    质量指标
+      战略达成率≥95%
+      部门满意度≥4.2
+      问题解决率≥80%
+      AI采纳率≥70%
+      ::icon(fa fa-chart-line)
+    实施路径
+      Phase1 共识期 W1-4
+      Phase2 磨合期 M3-5
+      Phase3 固化期 M6+
+      ::icon(fa fa-road)</code></pre>
+<hr>
+<h2>知识图谱统计</h2>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>数量</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>核心节点(N系列)</td>
+<td>29个</td>
+<td>哲学5+方法10+输出8+指标6</td>
+</tr>
+<tr>
+<td>关系边</td>
+<td>120+条</td>
+<td>含方向性加权关系</td>
+</tr>
+<tr>
+<td>Mermaid可视化图</td>
+<td>7张</td>
+<td>全覆盖架构/映射/协同/适配/路线/节点/总览</td>
+</tr>
+<tr>
+<td>跨体系联系</td>
+<td>31组</td>
+<td>内部10+味藏11+智能体10</td>
+</tr>
+<tr>
+<td>标签</td>
+<td>80+个</td>
+<td>五级分类标签云</td>
+</tr>
+<tr>
+<td>双向链接</td>
+<td>完整</td>
+<td>每个节点↔源文档</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>场景路由表</h2>
+<table>
+<thead><tr>
+<th>场景编号</th>
+<th>触发场景</th>
+<th>调用Skills组合</th>
+<th>输出物</th>
+</tr></thead><tbody>
+<tr>
+<td>S-01</td>
+<td>年度目标制定</td>
+<td>M1+M7+M11</td>
+<td>OUT1战略解码报告</td>
+</tr>
+<tr>
+<td>S-02</td>
+<td>月度经营分析</td>
+<td>M1+M8+M9+M11</td>
+<td>OUT2运营仪表盘+OUT5决策包</td>
+</tr>
+<tr>
+<td>S-03</td>
+<td>季度人才盘点</td>
+<td>M5+M4+M11</td>
+<td>OUT3人才盘点报告</td>
+</tr>
+<tr>
+<td>S-04</td>
+<td>文化诊断评估</td>
+<td>M7+M10+M11</td>
+<td>OUT4文化诊断报告</td>
+</tr>
+<tr>
+<td>S-05</td>
+<td>部门冲突调解</td>
+<td>M2+M4+M8</td>
+<td>OUT5决策支持包(A/B/C)</td>
+</tr>
+<tr>
+<td>S-06</td>
+<td>巡检督导执行</td>
+<td>M3+M9+M8</td>
+<td>OUT6巡检报告+OUT7罚单台账</td>
+</tr>
+<tr>
+<td>S-07</td>
+<td>赋能需求响应</td>
+<td>M2+M5+M8</td>
+<td>OUT8赋能响应记录</td>
+</tr>
+<tr>
+<td>S-08</td>
+<td>战略变革启动</td>
+<td>M10+M1+M7</td>
+<td>OUT1战略解码报告+变革方案</td>
+</tr>
+<tr>
+<td>S-09</td>
+<td>复盘进化会议</td>
+<td>M11+M1+M2</td>
+<td>OUT2仪表盘+OUT5决策包</td>
+</tr>
+<tr>
+<td>S-10</td>
+<td>危机事件处理</td>
+<td>M9+M4+M3</td>
+<td>OUT5决策支持包+OUT6报告</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>文件索引</h2>
+<table>
+<thead><tr>
+<th>文件名</th>
+<th>类型</th>
+<th>路径</th>
+<th>大小</th>
+</tr></thead><tbody>
+<tr>
+<td>主白皮书v1.0</td>
+<td>白皮书</td>
+<td>brain/</td>
+<td>~35KB</td>
+</tr>
+<tr>
+<td>知识图谱v1.0</td>
+<td>图谱文件</td>
+<td>brain/（本文件）</td>
+<td>~12KB</td>
+</tr>
+<tr>
+<td>核心金句集v1.0</td>
+<td>金句集</td>
+<td>references/</td>
+<td>~8KB</td>
+</tr>
+<tr>
+<td>隐秘联系集v1.0</td>
+<td>联系集</td>
+<td>references/</td>
+<td>~10KB</td>
+</tr>
+<tr>
+<td>总索引v1.0</td>
+<td>导航索引</td>
+<td>references/</td>
+<td>~6KB</td>
+</tr>
+<tr>
+<td>SKILL.md v2.3</td>
+<td>Skill入口</td>
+<td>skills主目录/</td>
+<td>~18KB</td>
+</tr>
+</tbody></table>
+<hr>
+<p><em>知识图谱 v1.0 | 基于龙心OS五引擎工业化生产 | 四库同步完成</em></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

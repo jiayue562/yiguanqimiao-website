@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MEMORY.md - 龙龟神将长期记忆 - 以观其妙书院</title>
+<meta name="description" content="MEMORY.md - 龙龟神将长期记忆 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="MEMORY.md - 龙龟神将长期记忆">
+<meta property="og:description" content="MEMORY.md - 龙龟神将长期记忆 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "MEMORY.md - 龙龟神将长期记忆",
+    "description": "MEMORY.md - 龙龟神将长期记忆 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>MEMORY.md - 龙龟神将长期记忆</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>MEMORY.md - 龙龟神将长期记忆</h1>
+<blockquote><p><strong>最后更新</strong>：2026-06-29 | <strong>版本</strong>：v64（AI OS v4.0重组·10-kernel三核心·龙脑OS方法论+约束层）</p></blockquote>
+<hr>
+<h2>一、系统架构</h2>
+<h3>AI OS v4.0（七层·超级个人的个人操作系统·2026-06-29重组）</h3>
+<pre><code>~/.agents/skills/
+├── 00-foundation/    底座 — LLM Wiki知识库
+├── 10-kernel/        内核 — 三核心：龙心OS(心脏·1+5引擎) / 龙脑OS(大脑·方法论+约束层) / 人机共生OS(灵魂)
+├── 20-claws/         龙爪 — 五行人格/味藏/企业文化/书院 等独立项目组
+├── 30-tools/         工具 — 所有龙爪共享的通用工具
+├── 40-rules/         规则 — 质量/版本/审计/安全等系统规则
+├── 50-security/      安全 — 代码扫描/密钥检测/Skill审计
+└── 99-archive/       归档 — 废弃/重复/旧版技能</code></pre>
+<p><strong>核心原则</strong>：</p>
+<ul>
+<li>龙心OS是唯一入口，纯1+5引擎——心脏只管运行</li>
+<li>龙脑OS是方法论+约束层——大脑划边界，所有方法论(格式塔/AI原生组织/象道全息/驾驭工程)归入</li>
+<li>人机共生OS是灵魂层——交互原则·信仰·存在</li>
+</ul>
+<h3>龙心OS v8.0（AIOS的心脏·始终在线·1+5纯引擎）</h3>
+<pre><code>1+5引擎始终就位：总智能体 + 知行合一/知识学习/人机协同五象限/象思维/五色光思维
+扩展引擎(运行时)：具身关系格式塔引擎 + 串行瓶颈诊断引擎 + 瓶颈压缩策略引擎
+分层动员：轻载(单引擎)→标准(2引擎)→深度(全部5引擎+扩展引擎)
+龙心OS根据任务路由到龙爪OS子系统
+方法论归属：所有方法论定义归龙脑OS，龙心OS只含纯引擎代码
+注：凤心/凤脑/凤爪属于20-claws/00-wuxing 龙爪，非内核</code></pre>
+<h3>自主进化闭环（2026-05-29启动）</h3>
+<ul>
+<li><strong>五层架构</strong>：IMA(输入)→对话(引擎)↔WorkBuddy KB(工作记忆)↔LLM Wiki(进化状态)→Obsidian(结晶)</li>
+<li><strong>进化文件</strong>：<code>~/.workbuddy/wiki-knowledge/wiki/EVOLUTION.md</code> + GAPS.md + CONNECTIONS.md + LINT_BACKLOG.md</li>
+<li><strong>北极星</strong>：知识学习从存储型进化为建构型——主动发现跨域结构同构性</li>
+<li><strong>启动惯例</strong>：每次对话先读EVOLUTION→GAPS→LINT_BACKLOG，30秒状态加载</li>
+</ul>
+<h3>规则体系</h3>
+<p>P0：自动备份/删除确认/转账确认/知识产权/法律合规/输出质量/<strong>起手即全息（AI感知用户第一眼已含完整信息）</strong>
+P1：主动安装Skills/每10轮压缩上下文
+调度：龙心OS原生调度——Skill调度、龙脑OS分层加载、龙爪OS子系统路由（五行心理学OS/味藏总智能体/岗位职责系统）均由龙心OS v7.0直接管理，无中间调度层</p>
+<hr>
+<h2>二、知识库路径</h2>
+<table>
+<thead><tr>
+<th>库</th>
+<th>路径</th>
+</tr></thead><tbody>
+<tr>
+<td>Obsidian</td>
+<td><code>D:/以观其妙书院知识库/以观其妙书院/</code></td>
+</tr>
+<tr>
+<td>LLM Wiki</td>
+<td><code>~/.workbuddy/wiki-knowledge/</code></td>
+</tr>
+<tr>
+<td>IMA KB</td>
+<td>ID: <code>DhG0JMfmIYIkPOxSs3U4gCpnqzCX2JQfBwqUAy887ZY=</code></td>
+</tr>
+<tr>
+<td>IMA文件夹</td>
+<td><code>folder_7441985942068358</code>（龙龟神将备份资料）</td>
+</tr>
+<tr>
+<td>IMA API</td>
+<td><code>https://ima.qq.com</code>，Header: <code>ima-openapi-clientid</code> + <code>ima-openapi-apikey</code></td>
+</tr>
+<tr>
+<td>IMA上传</td>
+<td>create_media → COS上传 → add_knowledge（COS签名：UriPathname需前导/）</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>三、五大引擎</h2>
+<table>
+<thead><tr>
+<th>引擎</th>
+<th>路径</th>
+</tr></thead><tbody>
+<tr>
+<td>象思维</td>
+<td><code>~/.workbuddy/skills/象思维/</code></td>
+</tr>
+<tr>
+<td>知识学习</td>
+<td><code>~/.workbuddy/skills/知识学习Skills/</code>（v2.3，SOP待封装）</td>
+</tr>
+<tr>
+<td>五色光</td>
+<td><code>~/.workbuddy/skills/五色光思维/</code></td>
+</tr>
+<tr>
+<td>人机协同</td>
+<td><code>~/.workbuddy/skills/人机协同五象限/</code></td>
+</tr>
+<tr>
+<td>知行合一</td>
+<td><code>~/.workbuddy/skills/知行合一/</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>四、核心知识资产（已结晶到Obsidian）</h2>
+<table>
+<thead><tr>
+<th>资产</th>
+<th>Obsidian路径</th>
+<th>三库</th>
+</tr></thead><tbody>
+<tr>
+<td>174题测评体系</td>
+<td><code>01-龙心OS核心系统/</code></td>
+<td>✅✅✅</td>
+</tr>
+<tr>
+<td>拔阴取阳自查表(295条)</td>
+<td><code>01-龙心OS核心系统/</code></td>
+<td>✅✅✅</td>
+</tr>
+<tr>
+<td>八大应用场景</td>
+<td><code>01-龙心OS核心系统/</code></td>
+<td>✅✅✅</td>
+</tr>
+<tr>
+<td>五行之间辨析(33指标)</td>
+<td><code>03-知识地基层/</code></td>
+<td>✅✅</td>
+</tr>
+<tr>
+<td>五行信任模型</td>
+<td><code>03-知识地基层/</code></td>
+<td>✅✅</td>
+</tr>
+<tr>
+<td>音乐与AI本质联结</td>
+<td><code>03-知识地基层/</code></td>
+<td>✅✅✅</td>
+</tr>
+<tr>
+<td>企业文化顶层设计</td>
+<td>LLM Wiki</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>五、微信公众号</h2>
+<ul>
+<li>AppID: <code>wxb628dc96af4c1129</code> | 工具: wenyan-cli v2.0.8</li>
+<li>公众号Skill: <code>~/.workbuddy/skills/以观其妙书院公众号/</code></li>
+<li>五行系列: 9/9全部完成 ✅</li>
+<li>日签: 三轨制进行中（D011已发布，D012-D014待生成）</li>
+<li>当前IP: <code>14.216.3.226</code>（已添加至公众号白名单 ✅ 2026-06-22更新）</li>
+</ul>
+<hr>
+<h2>六、十年规划（速览）</h2>
+<ul>
+<li><strong>唯一主产品</strong>：五行人格心理学 → AI诊断SaaS</li>
+<li><strong>味藏</strong>：2026年6月30日前交接，保留标杆案例</li>
+<li><strong>龙心OS</strong>：等五行人格50万用户后启动（约2028年）</li>
+<li><strong>三阶段</strong>：聚焦(2026-28)→平台化(2028-31)→文明层(2031-36)</li>
+</ul>
+<hr>
+<h2>七、悟空画像</h2>
+<p>阳木33%+阳火33%+阳水17%+阳金17% | 时空本质论者+降维翻译大师+批判性直率
+腾讯PM·CodeBuddy | 深色顶栏+白色画布+浅灰网格 | 默认MD输出 | 思考用简体中文</p>
+<hr>
+<h2>八、对话启动惯例（v1.0）</h2>
+<p>每次对话开始：读EVOLUTION.md → GAPS.md → LINT_BACKLOG → 回复"上次X，今日优先级Y"</p>
+<hr>
+<h2>九、品牌战略：全网搜索前置 + 创始人定位（v1.0·2026-06-12）</h2>
+<ul>
+<li><strong>北极星</strong>：让大家提到五行人格心理学，就知道创始人是<strong>悟空（贾悦）</strong>，以观其妙书院是权威</li>
+<li><strong>写作前必做</strong>：全网搜索五行人格心理学动态（3-5组关键词）→ 竞品分析 → 定位确认 → 写作</li>
+<li><strong>品牌强化</strong>：每篇署名"悟空（贾悦）·以观其妙书院"，使用"我们"共同体语气</li>
+<li><strong>GEO闭环</strong>：每篇文章写完 → geo_optimize.py → wrangler deploy → pages.dev</li>
+<li><strong>Skill更新</strong>：以观其妙书院公众号 v4.1</li>
+</ul>
+<hr>
+<h2>十、六向同步系统（v5.0·2026-06-12）🆕</h2>
+<p><strong>六节点</strong>：WorkBuddy ↔ Obsidian ↔ IMA ↔ GitHub ↔ Cloudflare Pages ↔ pages.dev</p>
+<table>
+<thead><tr>
+<th>节点</th>
+<th>路径</th>
+<th>角色</th>
+</tr></thead><tbody>
+<tr>
+<td>WorkBuddy</td>
+<td><code>C:\Users\jia'yue\WorkBuddy\Claw\.workbuddy\</code></td>
+<td>知识源头（Memory + LLM Wiki）</td>
+</tr>
+<tr>
+<td>Obsidian</td>
+<td><code>D:\以观其妙书院知识库\以观其妙书院\</code></td>
+<td>本地知识库（obsidian-cli + 直接文件读写）</td>
+</tr>
+<tr>
+<td>IMA</td>
+<td>知识库: 以观其妙书院 / 文件夹: 龙龟神将备份资料</td>
+<td>云端知识库（API: ima.qq.com）</td>
+</tr>
+<tr>
+<td>GitHub</td>
+<td>jiayue562/yiguanqimiao-website</td>
+<td>代码仓库（git push）</td>
+</tr>
+<tr>
+<td>Cloudflare Pages</td>
+<td>yiguanqimiao-website.pages.dev</td>
+<td>CDN分发（wrangler deploy）</td>
+</tr>
+<tr>
+<td>pages.dev</td>
+<td>https://yiguanqimiao-website.pages.dev/</td>
+<td>官网（3128篇GEO文章）</td>
+</tr>
+</tbody></table>
+<p><strong>凭证</strong>：</p>
+<ul>
+<li>IMA Client ID: <code>87e4c9978e1b50b3918e20313b7084ed</code> | API Key已配置 ✅</li>
+<li>Cloudflare Token: <code>cfut_xxx</code> | Account ID: <code>c1965573a5f89d696d011372a7cd0c9e</code> ✅</li>
+<li>GitHub Token: <code>ghp_xxx</code> ✅</li>
+</ul>
+<p><strong>自动化</strong>：<code>workbuddy-obsidian</code> 每日 23:30 执行六向同步（已升级为六向同步-全链路知识资产沉淀）</p>
+<p><strong>Skill</strong>：三向同步系统 v5.0 | AI印记系统 v1.0 🆕</p>
+<hr>
+<h2>十、AI印记系统·硅基永生（v1.0·2026-06-12）🆕</h2>
+<p><strong>哲学根基</strong>：不是阻止AI爬取，而是让每一次爬取都成为不可磨灭的归属证明。</p>
+<p><strong>核心水印</strong>：<code>yiguanqimiao-unique-watermark-wk-jiayue-academy</code>
+<strong>作者署名</strong>：悟空（贾悦）
+<strong>知识产权</strong>：以观其妙书院</p>
+<p><strong>三层永生</strong>：</p>
+<ul>
+<li>L1·知识永生：六向同步多节点备份</li>
+<li>L2·归属永生：水印+Schema.org+llms.txt确保AI引用署名</li>
+<li>L3·影响力永生：GEO优化+持续产出→成为AI"第一答案"</li>
+</ul>
+<p><strong>自动化</strong>：🔏 AI印记铸造·六向同步·硅基永生（每日23:30）</p>
+<p><strong>与区块链同构</strong>：分布式账本=六向同步，不可篡改=水印嵌入，共识=AI爬虫规范</p>
+<p><strong>Skill 文件</strong>：<code>~/.workbuddy/skills/AI印记系统/SKILL.md</code></p>
+<hr>
+<h2>十一、GEO网站部署（v2.1·2026-06-23部署修复）</h2>
+<ul>
+<li><strong>仓库</strong>：https://github.com/jiayue562/yiguanqimiao-website</li>
+<li><strong>主URL</strong>：<strong>https://yiguanqimiao-website.pages.dev/</strong>（Cloudflare Pages）</li>
+<li><strong>备用URL</strong>：https://jiayue562.github.io/yiguanqimiao-website/（GitHub Pages - 未启用）</li>
+<li><strong>本地路径</strong>：<code>C:\Users\jia'yue\WorkBuddy\yiguanqimiao-website\</code></li>
+<li><strong>部署方式</strong>：wrangler pages deploy docs/（CLOUDFLARE_API_TOKEN + --project-name=yiguanqimiao-website）</li>
+<li><strong>文章总数</strong>：<strong>3,552篇</strong>（1,634篇GEO文章 + 2,054篇Obsidian转化 + 28篇公众号）</li>
+<li><strong>AI水印</strong>：yiguanqimiao-unique-watermark-wk-jiayue-academy ✅ 全站注入</li>
+<li><strong>Clean URL</strong>：无扩展名文件副本（1502个）→ 解决Cloudflare 308重定向</li>
+<li><strong>中文文件名</strong>：1363个文件重命名为ASCII安全名（MD5 hash slug）</li>
+<li><strong>重要教训</strong>：_headers文件会导致路由异常（已删除）</li>
+<li><strong>Cloudflare API Token</strong>：<code>cfut_tLg9HhpRN3rcDYhqHHXgewbij8XyOOUq19vW85S16d9ee284</code></li>
+<li><strong>Cloudflare Account ID</strong>：<code>c1965573a5f89d696d011372a7cd0c9e</code></li>
+<li><strong>v2.1修复</strong>（2026-06-23）：修复3个脚本Bug（变量名×2 + NoneType strip + GBK编码）</li>
+</ul>
+<hr>
+<h2>十一、公众号更新（v4.2·2026-06-22）</h2>
+<ul>
+<li><strong>以观其妙书院公众号Skill</strong>：SKILL.md 重建至 v4.2（467行）</li>
+<li><strong>三处核心更新</strong>：<ol>
+<li>字数分层要求：日签700字 / 热点2000-3000字 / <strong>专业深度文章3000-4000字</strong></li>
+<li>新增模板H：理论深度解析型（AI龙龟系统/一心三界五行九层专用）</li>
+<li>新增四大核心内容支柱（AI龙龟系统/五行人格心理学OS/一心三界五行九层/日签）</li>
+</ol></li>
+<li><strong>自动化 v4.2</strong>：automation-1779264642911 同步更新，周六专业深度文章轨道</li>
+<li><strong>MBTI对比</strong>：所有热点分析+专业深度文章必须包含MBTI/九型/大五对比分析</li>
+</ul>
+<h2>十二、格式塔具身智能·横切感知层 v2.0（2026-06-29新增·v4.0移入龙脑OS）🆕</h2>
+<p><strong>核心升级</strong>：格式塔具身(Western) × 象道全息(Eastern) 深度融合</p>
+<p><strong>v4.0迁移</strong>：格式塔具身方法论从10-kernel独立目录移入龙脑OS/格式塔具身方法论/，引擎代码仍在龙心OS/engines/具身关系格式塔引擎/。</p>
+<p><strong>文件清单</strong>：
+| 文件 | 路径 | 说明 |
+|------|------|------|
+| 格式塔具身方法论 | <code>龙脑OS/格式塔具身方法论/SKILL.md</code> | 索引引用 → 10-kernel/格式塔具身智能/ |
+| 象道全息融合框架 | <code>龙脑OS/格式塔具身方法论/象道全息融合框架.md</code> | （已于v3.2删除重复副本） |
+| 具身引擎 | <code>龙心OS/engines/具身关系格式塔引擎/SKILL.md</code> | 纯引擎运行时代码（E0-E6） |</p>
+<p><strong>核心公式</strong>：合于场域之道 → 疗愈自然显化
+<strong>元原则</strong>：起手即全息 — AI感知用户第一眼已含完整信息，后续不是"收集"而是"展开"</p>
+<hr>
+<h2>十三、以象明道×全息·姊妹引擎（2026-06-29）🆕</h2>
+<p><strong>两篇关系</strong>：
+| 上篇：格式塔具身×象道全息 | 本篇：以象明道与全息 |
+|------------------------|-------------------|
+| 治疗操作框架（咨访关系·四步疗法） | 道德经解读方法论（全息·四象·入道路径） |
+| 合于场域之道→疗愈自然显化 | 合于道→自然显化 |
+| 龙心OS/engines/具身关系格式塔引擎/ | 龙脑OS/象道全息方法论/SKILL.md |</p>
+<p><strong>姊妹引擎桥接</strong>：<code>龙脑OS/姊妹引擎桥接映射表.md</code> — 全息三层⇔全息二维·四象⇔四步 完整映射</p>
+<hr>
+<h2>十四、待完成事项</h2>
+<ul>
+<li>[x] Skills生态按AI龙龟共生OS架构完整梳理 ✅ (2026-06-27)</li>
+<li>[x] AI OS v3.0七层架构重组 ✅ (2026-06-28) — ~/.agents/skills/ 七层九域+两横切</li>
+<li>[x] 具身关系格式塔引擎 v1.0 ✅ (2026-06-28) — 12文件/3K行/24测试</li>
+<li>[x] 万字公众号文章 ✅ (2026-06-28) — 10,405字符</li>
+<li>[x] 架构总图同步到Obsidian ✅ (2026-06-28)</li>
+<li>[x] 以象明道×全息框架落地 ✅ (2026-06-29) — 姊妹引擎桥接完成·象思维v1.2·人机共生v3.2·AIOS v3.2·龙脑OS v2.1</li>
+<li>[ ] opencode配置编码修复（中文路径乱码）</li>
+<li>[ ] 腾讯问卷创建并配置计分（9.9元测评）</li>
+<li>[ ] 味藏交接（2026-06-30前）</li>
+<li>[ ] 知识学习SOP封装为Skill（P1）</li>
+<li>[ ] 174题测评体系IMA批量上传</li>
+<li>[ ] 五行人格测评Web App MVP（2026 Q3）</li>
+</ul>
+<hr>
+<h2>十四、味藏AI原生组织·人机共生OS（v1.0·2026-06-23）🆕</h2>
+<p><strong>核心架构</strong>：五层组织骨架(L0-L4) + 五象限协作映射(Q1-Q5) + 26智能体生态</p>
+<p><strong>六大组件</strong>：
+| # | 文件 | 定位 |
+|---|------|------|
+| 00 | 组织宪法 | L0·五大原则+五层架构+决策权分配 |
+| 01 | 决策协议矩阵 | L2·S/A/B/C/D五级决策标准 |
+| 02 | 人机握手协议 | L2·4类握手模板+质量标准+超时升级 |
+| 03 | 组织心跳仪表盘 | L3·21项健康指标+每日/周度/月度报告 |
+| 04 | 执行层路由规则 | L4·26智能体→场景路由+5个工作流模板 |
+| 05 | 瓶颈追踪+五象限映射 | 6类瓶颈×压缩策略+Q1-Q5完整映射 |</p>
+<p><strong>五大原则</strong>：方向盘在人的手里 / AI做AI擅长的 / 每一层都透明 / 瓶颈可见压缩持续 / 进化不是可选项</p>
+<p><strong>Skill</strong>：<code>~/.workbuddy/skills/味藏AI原生组织/SKILL.md</code>（P=99·宪法级）
+<strong>文件路径</strong>：<code>c:\Users\jia'yue\WorkBuddy\Claw\味藏AI原生组织\</code>（9文件）+ Obsidian同步
+<strong>当前状态</strong>：26/26智能体就位 ✅ | 组织骨架就位 ✅ | 3/21心跳指标激活 | 🟢自动化已就位</p>
+<p><strong>自动化（2026-06-23激活）</strong>：
+| 自动化ID | 名称 | 调度 | 首次运行 |
+|---------|------|------|---------|
+| automation-味藏心跳每日 | 味藏组织心跳·每日写入 | 每日23:45 | 06-23今晚 |
+| automation-味藏心跳每周 | 味藏组织心跳·周度综合评分 | 周六09:00 | 06-27 |
+| automation-味藏心跳月度 | 味藏组织心跳·月度诊断 | 每月5日09:00 | 07-05 |</p>
+<p><strong>30/90天目标</strong>：心跳3→12→18项 | 心跳分42→60+→85+ | 瓶颈率基线→&lt;20% | Q1 31%→40%→50%
+<strong>新增文件</strong>：瓶颈日志-基线测量期.md + 目标追踪看板.md</p>
+<hr>
+<p><strong>核心金句</strong>：</p>
+<ol>
+<li>"每一行都挖掘到位·每一个知识点都不遗漏"</li>
+<li>"五行人格不是贴标签，而是照见生命的镜子"</li>
+<li>"情感是预测误差的副产品"</li>
+<li>"伟大并非源于元件的昂贵，而源于关系网络的精妙"</li>
+<li>"起手即全息——起步的第一眼，已经看到了全部"</li>
+</ol>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

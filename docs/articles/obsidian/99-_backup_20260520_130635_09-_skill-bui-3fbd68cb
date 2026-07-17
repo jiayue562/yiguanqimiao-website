@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Skill 质量底线体系 v1.0 - 以观其妙书院</title>
+<meta name="description" content="Skill 质量底线体系 v1.0 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="Skill 质量底线体系 v1.0">
+<meta property="og:description" content="Skill 质量底线体系 v1.0 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Skill 质量底线体系 v1.0",
+    "description": "Skill 质量底线体系 v1.0 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Skill 质量底线体系 v1.0</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Skill 质量底线体系 v1.0</h1>
+<blockquote><p><strong>核心定位</strong>：不是追求100分，而是确保所有Skill都达到<strong>统一的及格线</strong>。及格线由11个必选项与7个增强项组成，通过结构化清单确保质量可控。</p></blockquote>
+<hr>
+<h2>📋 第一部分：质量底线检查清单（MUST HAVE）</h2>
+<h3>一、触发机制完整性（权重：20%）</h3>
+<h4>✅ 必选项 1：触发关键词权重表</h4>
+<p><strong>及格标准</strong>：</p>
+<ul>
+<li>[ ] 至少包含3个P0直接触发词（权重5），例如：<ul>
+<li>直接动词：构建、创建、搭建、启动</li>
+<li>系统词汇：系统名称、Skill名、完整概念词</li>
+</ul></li>
+<li>[ ] 至少包含5个P1场景触发词（权重4），例如：<ul>
+<li>问题场景词：困难、困惑、无法、不知道</li>
+<li>诉求词：帮我、给我、怎么办、有没有</li>
+<li>工作词：分析、学习、优化、重构</li>
+</ul></li>
+<li>[ ] 至少包含3个P2行为信号词（权重3），例如：<ul>
+<li>多步骤流程信号：步骤、阶段、过程、流程</li>
+<li>标准化信号：标准化、系统化、自动化、规范化</li>
+<li>高效需求信号：重复、效率、快速、简化</li>
+</ul></li>
+<li>[ ] 权重计算公式清晰（P0×5 + P1×4 + P2×3，阈值≥3分）</li>
+</ul>
+<p><strong>快速检查</strong>：</p>
+<pre><code>触发词表完整性 = 
+  (P0词≥3 + P1词≥5 + P2词≥3) ? "及格" : "不及格"</code></pre>
+<p><strong>不及格案例</strong>：</p>
+<pre><code>❌ 只有5个通用关键词，没有权重区分
+❌ 没有P2行为信号的定义
+❌ 关键词列表但无应用场景说明</code></pre>
+<p><strong>及格案例</strong>：</p>
+<pre><code>✅ P0（权重5）：象思维、象感知、0→1、原创
+✅ P1（权重4）：困境分析、创意突破、新想法
+✅ P2（权重3）：多维度思考、跨域类比、视角切换
+✅ 触发阈值：任何P0 = 立即激活；累计≥3分 = 激活</code></pre>
+<hr>
+<h4>✅ 必选项 2：场景识别矩阵</h4>
+<p><strong>及格标准</strong>：</p>
+<ul>
+<li>[ ] 至少覆盖3个明确的场景（S0~S9范围内）</li>
+<li>[ ] 每个场景都有<strong>明确的触发信号描述</strong>，不能笼统</li>
+<li>[ ] 每个场景都有<strong>对应的引擎路由决策</strong>（调用哪些Skills）</li>
+</ul>
+<p><strong>快速检查</strong>：</p>
+<pre><code>场景识别矩阵完整性 = 
+  (场景数≥3 &amp;&amp; 每个场景有信号描述 &amp;&amp; 每个场景有路由) ? "及格" : "不及格"</code></pre>
+<p><strong>不及格案例</strong>：</p>
+<pre><code>❌ 只写"需要使用该Skill"，没有具体场景
+❌ 场景不超过2个
+❌ 有场景但没说调用哪些其他Skills</code></pre>
+<p><strong>及格案例</strong>：</p>
+<pre><code>✅ S2场景（深度理解）：用户提供文章需要深度学习 → 调用知识学习十项指令 + 五色光思维
+✅ S3场景（创意突破）：需要0→1创新 → 调用象思维 + 五色光绿光
+✅ S5场景（重大决策）：复杂问题分析 → 调用五色光完整序列 + 人机协同</code></pre>
+<hr>
+<h3>二、核心定义与功能完整性（权重：20%）</h3>
+<h4>✅ 必选项 3：清晰的一句话定义</h4>
+<p><strong>及格标准</strong>：</p>
+<ul>
+<li>[ ] 用一句话明确定义该Skill解决什么问题（&lt;=50字）</li>
+<li>[ ] 该定义应该让完全不了解的人也能快速理解</li>
+</ul>
+<p><strong>快速检查</strong>：</p>
+<pre><code>定义清晰度 = 
+  (字数≤50 &amp;&amp; 包含问题+解决方案 &amp;&amp; 无技术术语堆砌) ? "及格" : "不及格"</code></pre>
+<p><strong>不及格案例</strong>：</p>
+<pre><code>❌ "这是一个用于多维度分析的智能引擎，基于五行理论构建，融合了象思维与西方模型..."
+❌ "提供专业的Skill构建工具"（太笼统）</code></pre>
+<p><strong>及格案例</strong>：</p>
+<pre><code>✅ 象思维Skill：教会AI从无到有的直觉洞察，激发0→1的原创突破
+✅ 五色光思维：用五种思维模式同时分析同一个问题，达成全面认知和决策共识
+✅ 知识学习Skill：用十项认知指令对任何文章进行系统深度学习和知识重构</code></pre>
+<hr>
+<h4>✅ 必选项 4：完整的操作步骤（3步以上）</h4>
+<p><strong>及格标准</strong>：</p>
+<ul>
+<li>[ ] 清晰列出该Skill的操作步骤（至少3步，最多7步）</li>
+<li>[ ] 每一步都可以独立执行，不能是笼统的抽象</li>
+<li>[ ] 最好包含"判断标准"——如何判断这一步完成了</li>
+</ul>
+<p><strong>快速检查</strong>：</p>
+<pre><code>操作步骤完整性 = 
+  (步骤数在3-7之间 &amp;&amp; 每步都是具体操作 &amp;&amp; 包含判断标准) ? "及格" : "不及格"</code></pre>
+<p><strong>不及格案例</strong>：</p>
+<pre><code>❌ Step1: 理解问题
+❌ Step2: 分析问题
+❌ Step3: 解决问题
+（太笼统，无法执行）</code></pre>
+<p><strong>及格案例</strong>：</p>
+<pre><code>✅ 五色光思维：
+  Step1: 进入白光模式 → 客观列出所有事实（判断标准：没有任何价值判断，只是陈述）
+  Step2: 进入红光模式 → 暴露所有直觉和情感（判断标准：感受到了什么情绪？）
+  Step3: 进入绿光模式 → 发散所有可能的解决方案（判断标准：至少列出10个选项）
+  Step4: 进入黄光模式 → 评估每个方案的收益（判断标准：有定量的价值评分）
+  Step5: 进入蓝光模式 → 识别所有风险点（判断标准：找到了致命的风险点）
+  Step6: 主持人综合 → 汇总决策（判断标准：得出一个清晰的建议）</code></pre>
+<hr>
+<h3>三、测试与验证完整性（权重：15%）</h3>
+<h4>✅ 必选项 5：至少3个测试用例</h4>
+<p><strong>及格标准</strong>：</p>
+<ul>
+<li>[ ] 包含至少3个不同场景的测试用例</li>
+<li>[ ] 每个用例都有<strong>清晰的输入、预期输出、实际输出</strong></li>
+<li>[ ] 测试结果明确：通过✅ / 不通过❌ / 部分通过⚠️</li>
+</ul>
+<p><strong>快速检查</strong>：</p>
+<pre><code>测试用例完整性 = 
+  (用例数≥3 &amp;&amp; 每个用例有输入输出 &amp;&amp; 有检验结果) ? "及格" : "不及格"</code></pre>
+<p><strong>不及格案例</strong>：</p>
+<pre><code>❌ 只有1个或2个用例
+❌ 用例没有清晰的输入-输出对应
+❌ 用例只是描述，没有实际测试结果</code></pre>
+<p><strong>及格案例</strong>：</p>
+<pre><code>✅ 测试用例1：
+   场景：用户想要创意突破方案
+   输入：某企业的产品创新困局（描述）
+   预期输出：3个突破性创意方案
+   实际输出：✅ 生成了5个创意，其中3个符合预期
+   
+✅ 测试用例2：
+   场景：用户想要风险评估
+   输入：某项目方案（具体细节）
+   预期输出：列出所有P0和P1级风险
+   实际输出：✅ 识别了7个风险，其中3个用户未曾想到
+   
+✅ 测试用例3：
+   场景：用户混乱的分析思路
+   输入：用户的混乱表述
+   预期输出：澄清后的清晰思路
+   实际输出：⚠️ 澄清了主要问题，但还有2个细节需要再讨论</code></pre>
+<hr>
+<h4>✅ 必选项 6：与其他Skills的关系图</h4>
+<p><strong>及格标准</strong>：</p>
+<ul>
+<li>[ ] 明确列出<strong>前置Skills</strong>（使用该Skill前需要先调用的Skills）</li>
+<li>[ ] 明确列出<strong>后置Skills</strong>（使用该Skill后通常调用的Skills）</li>
+<li>[ ] 明确列出<strong>冲突检测</strong>（与哪些Skills不能同时激活）</li>
+</ul>
+<p><strong>快速检查</strong>：</p>
+<pre><code>关系图完整性 = 
+  (有前置Skills列表 &amp;&amp; 有后置Skills列表 &amp;&amp; 有冲突检测) ? "及格" : "不及格"</code></pre>
+<p><strong>不及格案例</strong>：</p>
+<pre><code>❌ 没有列出与其他Skills的关系
+❌ 只有前置或后置，缺一个
+❌ 没有冲突检测</code></pre>
+<p><strong>及格案例</strong>：</p>
+<pre><code>✅ 前置Skills：知识学习Skills（深度理解文本）
+✅ 后置Skills：知行合一自我进化（沉淀学习成果）
+✅ 冲突检测：与"快速查询Skills"不冲突；与"信息获取Skills"轻冲突（可并行）
+✅ 调度规则：如果用户同时触发本Skill和知识学习，优先用知识学习的十项指令完成第一层分析</code></pre>
+<hr>
+<h3>四、版本迭代与维护（权重：15%）</h3>
+<h4>✅ 必选项 7：清晰的版本迭代计划</h4>
+<p><strong>及格标准</strong>：</p>
+<ul>
+<li>[ ] 明确当前版本号（例：v1.0）</li>
+<li>[ ] 列出至少2个后续版本计划（v1.1、v1.2等）</li>
+<li>[ ] 每个版本都有<strong>明确的改进点</strong>，不能笼统</li>
+</ul>
+<p><strong>快速检查</strong>：</p>
+<pre><code>版本计划完整性 = 
+  (有当前版本号 &amp;&amp; 至少2个后续版本 &amp;&amp; 每个版本有具体改进点) ? "及格" : "不及格"</code></pre>
+<p><strong>不及格案例</strong>：</p>
+<pre><code>❌ 只说"会继续优化"，没有版本号
+❌ 版本计划太模糊（例："v1.1会改进触发机制"，但没说怎么改）
+❌ 只有当前版本，没有后续计划</code></pre>
+<p><strong>及格案例</strong>：</p>
+<pre><code>✅ v1.0（当前）：基础五色光思维引擎
+✅ v1.1（计划2026-04-15）：增加AI自动分色建议功能 + 支持4人以上多人同频
+✅ v1.2（计划2026-05-01）：集成知识学习的融合阶段 + 自动生成决策报告
+✅ v2.0（计划2026-06-01）：支持实时视频会议中的同频分析</code></pre>
+<hr>
+<h4>✅ 必选项 8：维护责任人与联系方式</h4>
+<p><strong>及格标准</strong>：</p>
+<ul>
+<li>[ ] 明确该Skill的<strong>第一维护者</strong></li>
+<li>[ ] 标注<strong>上一次维护时间</strong></li>
+<li>[ ] 标注<strong>下一次计划维护时间</strong></li>
+</ul>
+<p><strong>快速检查</strong>：</p>
+<pre><code>维护信息完整性 = 
+  (有维护者 &amp;&amp; 有最后维护时间 &amp;&amp; 有下次维护计划) ? "及格" : "不及格"</code></pre>
+<p><strong>不及格案例</strong>：</p>
+<pre><code>❌ 没有明确的维护者
+❌ 只有维护者，没有时间信息</code></pre>
+<p><strong>及格案例</strong>：</p>
+<pre><code>✅ 第一维护者：龙龜神將（火行人·执行引擎）
+✅ 最后维护：2026-03-17
+✅ 下次维护计划：2026-04-01（根据用户反馈进行微调）
+✅ 联系方式：龙心OS系统内反馈 / 知识库注记</code></pre>
+<hr>
+<h3>五、文件结构规范性（权重：15%）</h3>
+<h4>✅ 必选项 9：标准的文件结构</h4>
+<p><strong>及格标准</strong>：</p>
+<ul>
+<li>[ ] 必须包含<strong>SKILL.md</strong>（主文档，至少2000字）</li>
+<li>[ ] 必须包含<strong>references目录</strong>（至少包含2个参考文件）</li>
+<li>[ ] 必须包含<strong>触发规则配置</strong>（trigger-rules.yaml或json）</li>
+<li>[ ] 可选但推荐：templates目录、tests目录</li>
+</ul>
+<p><strong>快速检查</strong>：</p>
+<pre><code>文件结构完整性 = 
+  (有SKILL.md &amp;&amp; 有references &amp;&amp; 有触发规则配置) ? "及格" : "不及格"</code></pre>
+<p><strong>不及格案例</strong>：</p>
+<pre><code>❌ 只有一个SKILL.md文件
+❌ SKILL.md内容少于1500字
+❌ 没有任何参考文档
+❌ 没有配置触发规则</code></pre>
+<p><strong>及格案例</strong>：</p>
+<pre><code>✅ 文件结构：
+   五色光思维/
+   ├── SKILL.md（主文档，3000+字）
+   ├── references/
+   │   ├── theory.md（理论完整版）
+   │   ├── practice-guide.md（实操指南）
+   │   └── examples.md（应用案例）
+   ├── triggers/
+   │   ├── trigger-rules.yaml（自动触发配置）
+   │   └── auto-activate.json（WorkBuddy配置）
+   ├── templates/（可选）
+   │   ├── input_template.md
+   │   └── output_template.md
+   └── tests/（可选）
+       └── test-cases.md</code></pre>
+<hr>
+<h4>✅ 必选项 10：README.md快速导航</h4>
+<p><strong>及格标准</strong>：</p>
+<ul>
+<li>[ ] 包含<strong>快速开始</strong>部分（用户如何使用该Skill）</li>
+<li>[ ] 包含<strong>核心概念</strong>部分（关键术语解释）</li>
+<li>[ ] 包含<strong>常见问题</strong>部分（FAQ）</li>
+</ul>
+<p><strong>快速检查</strong>：</p>
+<pre><code>README完整性 = 
+  (有快速开始 &amp;&amp; 有核心概念 &amp;&amp; 有FAQ) ? "及格" : "不及格"</code></pre>
+<hr>
+<h3>六、集成与协同（权重：10%）</h3>
+<h4>✅ 必选项 11：龙心OS集成声明</h4>
+<p><strong>及格标准</strong>：</p>
+<ul>
+<li>[ ] 明确该Skill与龙心OS的关系（属于哪个引擎或补充工具）</li>
+<li>[ ] 清晰说明<strong>与其他5大引擎的协同方式</strong></li>
+<li>[ ] 说明该Skill在<strong>哪些场景（S0~S9）</strong>会被自动调用</li>
+</ul>
+<p><strong>快速检查</strong>：</p>
+<pre><code>龙心OS集成完整性 = 
+  (有引擎定位 &amp;&amp; 有协同说明 &amp;&amp; 有场景覆盖说明) ? "及格" : "不及格"</code></pre>
+<p><strong>不及格案例</strong>：</p>
+<pre><code>❌ 没有说明与龙心OS的关系
+❌ 只说"与其他Skills协同"，但没有具体协同场景
+❌ 没有说明会在什么情况下被自动触发</code></pre>
+<p><strong>及格案例</strong>：</p>
+<pre><code>✅ 五色光思维Skill定位：龙心OS的"眼"（五大引擎之一）
+✅ 协同关系：
+   - 与象思维协同：象思维识别本质→五色光进行多维分析→象思维确认最优方案
+   - 与知识学习协同：学习新知识时用五色光的"启发+映射"层完成0→1创新
+   - 与人机协同协同：在人机协同的所有象限中都可以使用五色光
+✅ 场景覆盖：
+   - S3（创意创新）：🟩绿光 + 🟦蓝光检验 → 完整5色序列
+   - S4（分析决策）：白光→绿光→黄光→蓝光 → 完整5色序列
+   - S5（重大决策）：全系统激活，五色光是协调引擎</code></pre>
+<hr>
+<h2>📊 第二部分：质量评分表</h2>
+<h3>评分标准（11项必选 + 7项增强）</h3>
+<table>
+<thead><tr>
+<th>#</th>
+<th>评估项目</th>
+<th>权重</th>
+<th>分数</th>
+<th>评分标准</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>必选项（必须≥60分）</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>触发关键词权重表</td>
+<td>20%</td>
+<td>__/20</td>
+<td>P0≥3个(5分) + P1≥5个(5分) + P2≥3个(5分) + 权重公式(5分)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>场景识别矩阵</td>
+<td>20%</td>
+<td>__/20</td>
+<td>场景≥3个(5分) + 每场景有信号(5分) + 每场景有路由(10分)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>一句话定义</td>
+<td>20%</td>
+<td>__/20</td>
+<td>字数≤50(5分) + 包含问题+方案(10分) + 无堆砌术语(5分)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>操作步骤</td>
+<td>15%</td>
+<td>__/15</td>
+<td>3-7步(5分) + 每步可独立执行(5分) + 包含判断标准(5分)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>测试用例</td>
+<td>15%</td>
+<td>__/15</td>
+<td>≥3个用例(5分) + 有输入输出(5分) + 有测试结果(5分)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>关系图</td>
+<td>15%</td>
+<td>__/15</td>
+<td>有前置(5分) + 有后置(5分) + 有冲突检测(5分)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>版本计划</td>
+<td>15%</td>
+<td>__/15</td>
+<td>有版本号(5分) + ≥2个后续版本(5分) + 每版本有具体改进(5分)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>维护信息</td>
+<td>10%</td>
+<td>__/10</td>
+<td>有维护者(3分) + 有维护时间(3分) + 有下次计划(4分)</td>
+</tr>
+<tr>
+<td>9</td>
+<td>文件结构</td>
+<td>15%</td>
+<td>__/15</td>
+<td>SKILL.md≥2000字(5分) + 有references(5分) + 有触发规则(5分)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>README导航</td>
+<td>10%</td>
+<td>__/10</td>
+<td>快速开始(3分) + 核心概念(3分) + FAQ(4分)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>龙心OS集成</td>
+<td>10%</td>
+<td>__/10</td>
+<td>有引擎定位(3分) + 有协同说明(3分) + 有场景说明(4分)</td>
+</tr>
+<tr>
+<td><strong>必选小计</strong></td>
+<td></td>
+<td></td>
+<td><strong>__/160</strong></td>
+<td>需≥96分（60%）才能通过</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>增强项（提升体验）</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>人机协同象限定位</td>
+<td>可选</td>
+<td>__/5</td>
+<td>明确定位（高效助理/学习伙伴/共创伙伴/共创导师/未知探索）</td>
+</tr>
+<tr>
+<td>13</td>
+<td>与五色光思维的映射</td>
+<td>可选</td>
+<td>__/5</td>
+<td>在五色光中的对应位置（白/红/黄/绿/蓝）</td>
+</tr>
+<tr>
+<td>14</td>
+<td>知行合一三阶段集成</td>
+<td>可选</td>
+<td>__/5</td>
+<td>与表示空间/压缩/泛化的映射</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Obsidian知识库集成</td>
+<td>可选</td>
+<td>__/5</td>
+<td>与Obsidian的双向链接 / 存储路径</td>
+</tr>
+<tr>
+<td>16</td>
+<td>五行人格映射</td>
+<td>可选</td>
+<td>__/5</td>
+<td>在五行（金木水火土）中的对应位置</td>
+</tr>
+<tr>
+<td>17</td>
+<td>性能优化指标</td>
+<td>可选</td>
+<td>__/5</td>
+<td>响应时间、准确度、覆盖率等量化指标</td>
+</tr>
+<tr>
+<td>18</td>
+<td>用户反馈闭环</td>
+<td>可选</td>
+<td>__/5</td>
+<td>如何收集用户反馈并持续迭代</td>
+</tr>
+<tr>
+<td><strong>增强小计</strong></td>
+<td></td>
+<td></td>
+<td><strong>__/35</strong></td>
+<td>增强项越多体验越好（建议≥15分）</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>总分</strong></td>
+<td></td>
+<td></td>
+<td><strong>__/195</strong></td>
+<td>及格线：≥96分；优秀线：≥150分</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>评分等级划分</h3>
+<table>
+<thead><tr>
+<th>总分范围</th>
+<th>评级</th>
+<th>说明</th>
+<th>行动</th>
+</tr></thead><tbody>
+<tr>
+<td>≥150</td>
+<td>🟢 优秀（A级）</td>
+<td>可直接发布为标准Skill供生态伙伴使用</td>
+<td>立即发布、纳入Skill市场</td>
+</tr>
+<tr>
+<td>96~149</td>
+<td>🟡 及格（B级）</td>
+<td>可在项目内部使用，但建议后续迭代增强</td>
+<td>标注为"测试版"发布、建立迭代计划</td>
+</tr>
+<tr>
+<td>60~95</td>
+<td>🟠 勉强（C级）</td>
+<td>满足基本要求，但质量待提升，不推荐对外发布</td>
+<td>补充完善后重新评分</td>
+</tr>
+<tr>
+<td>&lt;60</td>
+<td>🔴 不及格（D级）</td>
+<td>未达到Skill质量底线，禁止发布</td>
+<td>按照必选项清单逐一补充</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>📝 第三部分：及格线细则</h2>
+<h3>及格线的定义（96分）</h3>
+<p><strong>必选11项必须全部满足</strong>，且<strong>单项不低于7分</strong>（保证基础完整性）。</p>
+<p><strong>禁止项</strong>（一旦出现，直接不及格）：</p>
+<ul>
+<li>❌ 触发关键词少于3个P0或5个P1</li>
+<li>❌ 没有任何测试用例</li>
+<li>❌ SKILL.md少于1500字</li>
+<li>❌ 没有与其他Skills的关系说明</li>
+<li>❌ 没有版本迭代计划</li>
+</ul>
+<h3>优秀线的定义（150分）</h3>
+<ul>
+<li>✅ 必选11项全部≥15分（高于基础标准）</li>
+<li>✅ 增强项完成≥4项</li>
+<li>✅ 包含标准案例和最佳实践文档</li>
+<li>✅ 已在实际项目中验证过效果</li>
+</ul>
+<hr>
+<h2>🔗 第四部分：与Skill Builder的整合</h2>
+<h3>Skill Builder中的质量检查流程</h3>
+<h4>阶段四：测试验证中的质量检查</h4>
+<pre><code>质量检查清单:
+  step1_触发机制验证:
+    检查项: 触发关键词权重表 + 场景识别矩阵
+    标准: P0≥3 + P1≥5 + 场景≥3
+    判断: 满足则继续，不满足则回到阶段二重新设计
+  
+  step2_功能完整性验证:
+    检查项: 一句话定义 + 操作步骤 + 文件结构
+    标准: 定义清晰 + 步骤3-7 + SKILL.md≥2000字
+    判断: 满足则继续，不满足则补充内容
+  
+  step3_质量评分:
+    方法: 按上面的11项必选逐一检查
+    通过线: ≥96分
+    不通过: 标注需要改进的项目，返回相应阶段
+  
+  step4_最终发布决策:
+    &gt;=150分: 优秀版本，直接标准化发布
+    96-149分: 测试版本，建立迭代计划后发布
+    &lt;96分: 禁止发布，需要补充完善</code></pre>
+<hr>
+<h3>Skill Builder的质量守门人角色</h3>
+<pre><code>Skill Builder不仅是"构建工具"，更是"质量守门人"
+
+当用户提交Skill时：
+1️⃣ 自动检查11项必选
+2️⃣ 自动计算评分
+3️⃣ 给出改进建议清单
+4️⃣ 若&lt;96分，建议补充完善
+5️⃣ 若≥96分，生成发布报告
+
+让质量控制从"人工审核"转变为"系统自动检查"</code></pre>
+<hr>
+<h2>📌 使用指南</h2>
+<h3>对于Skill构建者（你）</h3>
+<p><strong>创建新Skill时</strong>：</p>
+<ol>
+<li>在SKILL.md中创建一个"质量检查表"部分</li>
+<li>逐一填写11项必选的检查框</li>
+<li>计算总分</li>
+<li>若≥96分，可以发布；若&lt;96分，按建议补充</li>
+</ol>
+<h3>对于Skill使用者（生态伙伴）</h3>
+<p><strong>选择使用某个Skill时</strong>：</p>
+<ul>
+<li>🟢 A级（≥150分）：生产环境直接使用</li>
+<li>🟡 B级（96~149分）：可用，但要关注迭代计划</li>
+<li>🟠 C级（60~95分）：不推荐使用，等待补完</li>
+</ul>
+<h3>对于龙心OS系统</h3>
+<p><strong>自动化管理</strong>：</p>
+<ul>
+<li>每个Skill的评分写入触发规则的"质量分数"字段</li>
+<li>若评分&lt;96分，系统自动标记为"Beta版"</li>
+<li>月度自动审计：检查所有已发布Skill的评分是否还≥96分</li>
+</ul>
+<hr>
+<h2>🎯 总结</h2>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>标准</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>及格线</strong></td>
+<td>≥96分 / 必选11项全部满足</td>
+<td>能在项目内部使用</td>
+</tr>
+<tr>
+<td><strong>优秀线</strong></td>
+<td>≥150分 / 增强项≥4项</td>
+<td>可发布供生态伙伴使用</td>
+</tr>
+<tr>
+<td><strong>禁止项</strong></td>
+<td>6项禁止事项</td>
+<td>一旦发现直接不及格</td>
+</tr>
+<tr>
+<td><strong>持续迭代</strong></td>
+<td>每次用户反馈→更新版本→重新评分</td>
+<td>确保Skill保持活力</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>版本</strong>：v1.0  
+<strong>创建时间</strong>：2026-03-31  
+<strong>维护者</strong>：龙龜神將 + 悟空  
+<strong>集成</strong>：Skill Builder v1.0 + 龙心OS v2.0</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

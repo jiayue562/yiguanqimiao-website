@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>议题树 · 麦肯锡思维模型 - 以观其妙书院</title>
+<meta name="description" content="议题树 · 麦肯锡思维模型 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="议题树 · 麦肯锡思维模型">
+<meta property="og:description" content="议题树 · 麦肯锡思维模型 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "议题树 · 麦肯锡思维模型",
+    "description": "议题树 · 麦肯锡思维模型 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>议题树 · 麦肯锡思维模型</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>议题树</h1>
+<blockquote><p>版本: v1.0 | 创建: 2026-04-15 | 维护者: 龙龟神将</p></blockquote>
+<hr>
+<h2>一、核心定义</h2>
+<h3>1.1 一句话定义</h3>
+<p>议题树是将复杂议题/问题结构化分解为<strong>子议题</strong>，通过层层追问Why/How，穷尽议题维度，确保分析全面不遗漏。</p>
+<h3>1.2 与逻辑树的区别</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>逻辑树</th>
+<th>议题树</th>
+</tr></thead><tbody>
+<tr>
+<td>核心</td>
+<td>问题分解</td>
+<td>议题分解</td>
+</tr>
+<tr>
+<td>重点</td>
+<td>解决问题</td>
+<td>全面覆盖议题</td>
+</tr>
+<tr>
+<td>结构</td>
+<td>Why（原因）</td>
+<td>Why/How（原因/解决方案）</td>
+</tr>
+<tr>
+<td>适用</td>
+<td>问题诊断</td>
+<td>议题分析</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>二、结构类型</h2>
+<h3>2.1 Why型议题树（原因导向）</h3>
+<pre><code>            [核心议题]
+              为什么？
+           /    |    \
+        Why1   Why2   Why3
+        / \     |      / \
+      ...  ...  ...  ...  ...
+
+示例：
+          [销售额下降]
+               Why？
+           /    |      \
+       需求降   供给降   竞争强
+         ↓       ↓        ↓
+        Why?    Why?     Why?</code></pre>
+<h3>2.2 How型议题树（方案导向）</h3>
+<pre><code>            [目标]
+              How？
+           /    |    \
+        How1   How2   How3
+        / \     |      / \
+      ...  ...  ...  ...  ...
+
+示例：
+        [提升销售额]
+             How？
+         /    |      \
+     提单价   提销量   开新渠道
+       ↓       ↓        ↓
+      How?    How?     How?</code></pre>
+<hr>
+<h2>三、构建步骤</h2>
+<h3>3.1 标准流程</h3>
+<pre><code>第一步：明确核心议题/问题
+    ↓
+第二步：确定分解角度（Why或How）
+    ↓
+第三步：第一层分解（3-5个维度）
+    ↓
+第四步：第二层分解（追问）
+    ↓
+第五步：检验MECE（无遗漏、无重复）
+    ↓
+第六步：标注优先级（关键维度）</code></pre>
+<h3>3.2 分解检查清单</h3>
+<pre><code>□ 分解维度是否相互独立？
+□ 是否覆盖了议题的主要方面？
+□ 每个分支是否可以进一步分解？
+□ 分解是否到达可执行层级？
+□ 是否有遗漏的重要维度？</code></pre>
+<hr>
+<h2>四、实战模板</h2>
+<h3>4.1 市场战略议题树</h3>
+<pre><code>【议题树 · 市场战略选择】
+
+目标：选择最优市场进入策略
+            How？
+        /    |      \
+    深度做   广度做   创新做
+       ↓       ↓        ↓
+     现有    新市场   新模式
+     城市     下沉    差异化
+      ↓        ↓        ↓
+     How?     How?     How?
+
+■ 深度做（现有城市）
+ - 如何提升份额？
+ - 如何深耕用户？
+ - 如何建立壁垒？
+
+■ 广度做（开拓新城市）
+ - 如何选择城市？
+ - 如何快速复制？
+ - 需要多少资源？
+
+■ 创新做（新模式）
+ - 有哪些创新可能？
+ - 风险如何？
+ - 如何验证？</code></pre>
+<h3>4.2 组织问题议题树</h3>
+<pre><code>【议题树 · 员工离职率高】
+
+核心议题：为什么离职率高？
+              Why？
+          /    |      \
+      钱少    发展   文化
+       ↓       ↓      ↓
+     Why?    Why?   Why?
+
+■ 钱少
+ - 薪酬低于市场？
+ - 薪酬结构不合理？
+ - 晋升调薪慢？
+
+■ 发展
+ - 看不到晋升空间？
+ - 学不到新东西？
+ - 能力被埋没？
+
+■ 文化
+ - 工作氛围差？
+ - 领导管理方式？
+ - 公司价值观不合？</code></pre>
+<hr>
+<h2>五、与五行人格整合</h2>
+<table>
+<thead><tr>
+<th>五行人</th>
+<th>议题树应用</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>关注创新方向议题</td>
+</tr>
+<tr>
+<td>火</td>
+<td>洞察战略选择议题</td>
+</tr>
+<tr>
+<td>土</td>
+<td>分析稳健运营议题</td>
+</tr>
+<tr>
+<td>金</td>
+<td>追求精准分解议题</td>
+</tr>
+<tr>
+<td>水</td>
+<td>把握长期演进议题</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>六、核心金句</h2>
+<blockquote><p>"议题树的价值，在于让我们看到议题的全貌。好的议题树，是一幅完整的地图，让我们在复杂中找到方向。"</p></blockquote>
+<hr>
+<h2>七、关联文件</h2>
+<table>
+<thead><tr>
+<th>关联类型</th>
+<th>文件路径</th>
+</tr></thead><tbody>
+<tr>
+<td>母库索引</td>
+<td><code>../SKILL.md</code></td>
+</tr>
+<tr>
+<td>配套模型</td>
+<td><code>../07-逻辑树/SKILL.md</code></td>
+</tr>
+<tr>
+<td>配套模型</td>
+<td><code>../19-MECE原则/SKILL.md</code></td>
+</tr>
+</tbody></table>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

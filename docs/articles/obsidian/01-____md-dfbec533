@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>逻辑基本知识·第四章 演绎推理 - 以观其妙书院</title>
+<meta name="description" content="逻辑基本知识·第四章 演绎推理 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="逻辑基本知识·第四章 演绎推理">
+<meta property="og:description" content="逻辑基本知识·第四章 演绎推理 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "逻辑基本知识·第四章 演绎推理",
+    "description": "逻辑基本知识·第四章 演绎推理 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>逻辑基本知识·第四章 演绎推理</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>逻辑基本知识·第四章 演绎推理</h1>
+<blockquote><p><strong>核心结论</strong>：演绎推理是从一般性前提推出个别性结论的推理，只要前提为真、推理形式有效，结论<strong>必然为真</strong>；核心形式包括三段论、复合命题推理、选言推理、假言推理和二难推理。</p></blockquote>
+<hr>
+<h2>第一节 三段论</h2>
+<h3>核心定义</h3>
+<p><strong>三段论</strong>：传统形式逻辑的核心推理形式，由三个部分组成：</p>
+<table>
+<thead><tr>
+<th>组成部分</th>
+<th>定义</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>大前提</strong></td>
+<td>一般性原理</td>
+<td>所有M都是P</td>
+</tr>
+<tr>
+<td><strong>小前提</strong></td>
+<td>个别性情况</td>
+<td>所有S都是M</td>
+</tr>
+<tr>
+<td><strong>结论</strong></td>
+<td>根据两个前提推出的个别性结论</td>
+<td>所以所有S都是P</td>
+</tr>
+</tbody></table>
+<p><strong>典型形式</strong>：</p>
+<pre><code>所有M都是P（大前提）
+所有S都是M（小前提）
+∴ 所有S都是P（结论）</code></pre>
+<h3>课文案例：《拿来主义》</h3>
+<blockquote><p>"没有拿来的，人不能自成为新人；没有拿来的，文艺不能自成为新文艺。所以，我们要拿来。"</p></blockquote>
+<p><strong>逻辑分析</strong>：</p>
+<ul>
+<li>大前提："没有拿来的，人/文艺不能创新"</li>
+<li>小前提："我们要创新人/文艺"</li>
+<li>结论："我们要拿来"</li>
+</ul>
+<h3>三段论规则（核心）</h3>
+<table>
+<thead><tr>
+<th>规则</th>
+<th>内容</th>
+<th>违反谬误</th>
+</tr></thead><tbody>
+<tr>
+<td>规则1</td>
+<td>中项（M）至少周延一次</td>
+<td>中项不周延</td>
+</tr>
+<tr>
+<td>规则2</td>
+<td>前提中不周延的项，结论中也不能周延</td>
+<td>不当周延</td>
+</tr>
+<tr>
+<td>规则3</td>
+<td>两个否定前提不能推出结论</td>
+<td>—</td>
+</tr>
+<tr>
+<td>规则4</td>
+<td>前提有一个否定，结论必否定</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<p><strong>隐秘联系</strong>：</p>
+<ul>
+<li>→ <a href="01-____md-c6009032.html">逻辑基本知识·第一章 绪论</a>：三段论的核心是逻辑形式"所有M都是P，所有S都是M，所以所有S都是P"</li>
+<li>→ <a href="逻辑基本知识·第五章 思维的基本规律#同一律.html">逻辑基本知识·第五章 思维的基本规律</a>：三段论要求中项保持同一，不能偷换概念</li>
+<li>→ <a href="逻辑基本知识·第六章 谬误#语形谬误.html">逻辑基本知识·第六章 谬误</a>：违反三段论规则会产生"中项不周延"等推理谬误</li>
+</ul>
+<hr>
+<h2>第二节 复合命题</h2>
+<p><strong>核心定义</strong>：复合命题是由<strong>简单命题</strong>和<strong>逻辑联结词</strong>构成的命题。</p>
+<h3>四类基本复合命题</h3>
+<h4>1. 联言命题</h4>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>形式</strong></td>
+<td>p <strong>且</strong> q</td>
+</tr>
+<tr>
+<td><strong>逻辑规则</strong></td>
+<td>全真才真，一假则假</td>
+</tr>
+<tr>
+<td><strong>示例</strong></td>
+<td>"鲁迅是文学家，并且是思想家"</td>
+</tr>
+</tbody></table>
+<h4>2. 选言命题</h4>
+<table>
+<thead><tr>
+<th>类型</th>
+<th>形式</th>
+<th>逻辑规则</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>相容选言</strong></td>
+<td>p <strong>或</strong> q</td>
+<td>可以同时存在；否定一部分→肯定另一部分；<strong>肯定一部分不能否定另一部分</strong></td>
+</tr>
+<tr>
+<td><strong>不相容选言</strong></td>
+<td><strong>要么</strong> p <strong>要么</strong> q</td>
+<td>只能存在一个；否定一个→肯定另一个；肯定一个→否定另一个</td>
+</tr>
+</tbody></table>
+<h4>3. 假言命题</h4>
+<table>
+<thead><tr>
+<th>类型</th>
+<th>形式</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>充分条件</strong></td>
+<td><strong>如果</strong> p，<strong>那么</strong> q</td>
+<td>p是q的充分条件</td>
+</tr>
+<tr>
+<td><strong>必要条件</strong></td>
+<td><strong>只有</strong> p，<strong>才</strong> q</td>
+<td>p是q的必要条件</td>
+</tr>
+<tr>
+<td><strong>充要条件</strong></td>
+<td><strong>当且仅当</strong> p，<strong>才</strong> q</td>
+<td>p是q的充要条件</td>
+</tr>
+</tbody></table>
+<h4>4. 负命题</h4>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>形式</strong></td>
+<td><strong>并非</strong> p</td>
+</tr>
+<tr>
+<td><strong>逻辑规则</strong></td>
+<td>负命题的真值与原命题<strong>相反</strong></td>
+</tr>
+<tr>
+<td><strong>示例</strong></td>
+<td>"并非所有鸟都会飞"</td>
+</tr>
+</tbody></table>
+<p><strong>隐秘联系</strong>：</p>
+<ul>
+<li>→ <a href="01-____md-c6009032.html">逻辑基本知识·第一章 绪论</a>：复合命题的形式化表达是命题逻辑的核心</li>
+<li>→ <a href="01-____md-dfbec533.html">逻辑基本知识·第四章 演绎推理</a>：假言命题是假言推理的基础</li>
+<li>→ <a href="逻辑基本知识·第六章 谬误#语义谬误.html">逻辑基本知识·第六章 谬误</a>：混淆"相容"与"不相容"选言命题是常见语义谬误</li>
+</ul>
+<hr>
+<h2>第三节 选言命题与选言推理</h2>
+<h3>相容选言推理</h3>
+<p><strong>规则</strong>：</p>
+<ol>
+<li>✅ <strong>否定一部分选言支，就要肯定另一部分选言支</strong></li>
+<li>❌ <strong>肯定一部分选言支，不能否定另一部分</strong>（两种情况可以同时存在）</li>
+</ol>
+<p><strong>有效式</strong>：</p>
+<pre><code>（p 或 q）
+非p
+∴ q</code></pre>
+<p><strong>示例</strong>：</p>
+<blockquote><p>"他要么是生病了，要么是家里有事迟到了；他没生病，所以他是家里有事迟到了。"
+<strong>注意</strong>：若改为"他生病了，所以他不是家里有事迟到的"——<strong>无效</strong>，因为两种情况可以同时存在。</p></blockquote>
+<h3>不相容选言推理</h3>
+<p><strong>规则</strong>：</p>
+<ol>
+<li>✅ 否定一个，就要肯定另一个</li>
+<li>✅ 肯定一个，就要否定另一个</li>
+</ol>
+<p><strong>有效式</strong>：</p>
+<pre><code>（要么p，要么q）
+非p
+∴ q
+
+（要么p，要么q）
+p
+∴ 非q</code></pre>
+<p><strong>示例</strong>：</p>
+<blockquote><p>"要么生，要么死；他没死，所以他活着。"</p></blockquote>
+<p><strong>隐秘联系</strong>：</p>
+<ul>
+<li>→ <a href="逻辑基本知识·第五章 思维的基本规律#排中律.html">逻辑基本知识·第五章 思维的基本规律</a>：不相容选言推理的逻辑基础是排中律（两个矛盾命题不能同假）</li>
+<li>→ <a href="逻辑基本知识·第五章 思维的基本规律#不矛盾律.html">逻辑基本知识·第五章 思维的基本规律</a>：相容选言推理"肯定不能否定"的逻辑基础是不矛盾律（两个情况可以同时为真）</li>
+</ul>
+<hr>
+<h2>第四节 假言命题与假言推理</h2>
+<h3>充分条件假言推理</h3>
+<p><strong>规则</strong>：</p>
+<ol>
+<li>✅ <strong>肯定前件就要肯定后件</strong>（肯定前件式）</li>
+<li>✅ <strong>否定后件就要否定前件</strong>（否定后件式）</li>
+<li>❌ 否定前件不能否定后件</li>
+<li>❌ 肯定后件不能肯定前件</li>
+</ol>
+<p><strong>有效式</strong>：</p>
+<pre><code>如果p，那么q（充分条件）
+p（肯定前件）
+∴ q
+
+如果p，那么q（充分条件）
+非q（否定后件）
+∴ 非p</code></pre>
+<p><strong>示例</strong>：</p>
+<blockquote><p>"如果下雨，地就湿；下雨了，所以地湿。"（肯定前件式）
+"如果下雨，地就湿；地没湿，所以没下雨。"（否定后件式）</p></blockquote>
+<h3>必要条件假言推理</h3>
+<p><strong>规则</strong>（与充分条件<strong>相反</strong>）：</p>
+<ol>
+<li>✅ <strong>否定前件就要否定后件</strong>（否定前件式）</li>
+<li>✅ <strong>肯定后件就要肯定前件</strong>（肯定后件式）</li>
+<li>❌ 肯定前件不能肯定后件</li>
+<li>❌ 否定后件不能否定前件</li>
+</ol>
+<p><strong>有效式</strong>：</p>
+<pre><code>只有p，才q（必要条件）
+非p（否定前件）
+∴ 非q
+
+只有p，才q（必要条件）
+q（肯定后件）
+∴ p</code></pre>
+<p><strong>示例</strong>：</p>
+<blockquote><p>"只有努力，才能成功；不努力，所以不能成功。"（否定前件式）
+"只有努力，才能成功；成功了，所以努力了。"（肯定后件式）</p></blockquote>
+<p><strong>隐秘联系</strong>：</p>
+<ul>
+<li>→ <a href="01-____md-c6009032.html">逻辑基本知识·第一章 绪论</a>：假言推理是演绎逻辑的核心内容，前提真则结论必然真</li>
+<li>→ <a href="逻辑基本知识·第六章 谬误#语形谬误.html">逻辑基本知识·第六章 谬误</a>：混淆充分条件和必要条件是常见推理谬误</li>
+</ul>
+<hr>
+<h2>第五节 二难推理</h2>
+<h3>核心定义</h3>
+<p><strong>二难推理</strong>：由两个假言命题和一个选言命题作为前提构成的推理，常让对方陷入"进退两难"的困境而得名。</p>
+<h3>经典案例：半费之讼</h3>
+<blockquote><p>普罗泰戈拉教欧几里得诉讼，约定：</p>
+<ul>
+<li>欧几里得先付一半学费</li>
+<li>另一半等欧几里得<strong>打赢第一场官司</strong>再付</li>
+</ul>
+<p>后来欧几里得一直不打官司，普罗泰戈拉就起诉他：</p>
+<ul>
+<li>"如果你打赢这场官司，按照<strong>合同</strong>要付我另一半学费；"</li>
+<li>"如果你打输这场官司，按照<strong>判决</strong>要付我另一半学费；"</li>
+<li>"你要么打赢要么打输，所以你都要付我学费。"</li>
+</ul></blockquote>
+<p><strong>逻辑结构（二难推理构造）</strong>：</p>
+<pre><code>如果打赢 → 按合同付学费
+如果打输 → 按判决付学费
+要么打赢，要么打输
+∴ 总要付学费</code></pre>
+<h3>二难推理的正确形式要求</h3>
+<table>
+<thead><tr>
+<th>要求</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>假言前提</strong></td>
+<td>前件必须是后件的充分条件</td>
+</tr>
+<tr>
+<td><strong>选言前提</strong></td>
+<td>必须<strong>穷尽所有可能</strong></td>
+</tr>
+</tbody></table>
+<h3>假二难推理谬误</h3>
+<p><strong>定义</strong>：违反上述要求（假言前提不充分，或选言前提未穷尽）而产生的谬误。</p>
+<p><strong>示例</strong>：</p>
+<blockquote><p>"要么支持我们，要么就是反对我们。"（选言前提未穷尽——还有"中立"的可能）</p></blockquote>
+<p><strong>隐秘联系</strong>：</p>
+<ul>
+<li>→ <a href="逻辑基本知识·第五章 思维的基本规律#排中律.html">逻辑基本知识·第五章 思维的基本规律</a>：二难推理的选言前提必须穷尽所有矛盾可能，这正是排中律的要求</li>
+<li>→ <a href="逻辑基本知识·第三章 归纳推理#穆勒五法.html">逻辑基本知识·第三章 归纳推理</a>：二难推理与归纳推理形成对照——演绎必然vs归纳或然</li>
+</ul>
+<hr>
+<h2>核心金句</h2>
+<ol>
+<li><strong>"演绎推理的核心：前提真且形式有效，结论必然真。"</strong></li>
+<li><strong>"三段论的规则：中项至少周延一次，前提中不周延的项结论中也不能周延。"</strong></li>
+<li><strong>"充分条件假言推理：肯定前件→肯定后件；否定后件→否定前件。"</strong></li>
+<li><strong>"必要条件假言推理：否定前件→否定后件；肯定后件→肯定前件。"</strong></li>
+<li><strong>"二难推理让对方进退两难——但假二难推理的选言前提往往没有穷尽所有可能。"</strong></li>
+</ol>
+<hr>
+<h2>关联文件</h2>
+<ul>
+<li><a href="01-____md-c6009032.html">逻辑基本知识·第一章 绪论</a></li>
+<li><a href="01-____md-928d28e6.html">逻辑基本知识·第二章 逻辑与语言</a></li>
+<li><a href="逻辑基本知识·第三章 归纳推理.html">逻辑基本知识·第三章 归纳推理</a></li>
+<li><a href="逻辑基本知识·第五章 思维的基本规律.html">逻辑基本知识·第五章 思维的基本规律</a></li>
+<li><a href="逻辑基本知识·第六章 谬误.html">逻辑基本知识·第六章 谬误</a></li>
+<li><a href="01-___md-0d5aca6d.html">逻辑基本知识·总索引</a></li>
+<li><a href="01-___md-ab9b2a56.html">逻辑基本知识·知识图谱</a></li>
+</ul>
+<hr>
+<p><em>本章学习完成时间：2026-05-24</em>
+<em>学习方法：知识学习Skills v3.0 · 第二层·火（透视+阐释） + 第三层·水（推演+思辨）</em></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

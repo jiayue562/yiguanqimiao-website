@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>麦肯锡思考框架 · 龙心OS调用协议 - 以观其妙书院</title>
+<meta name="description" content="麦肯锡思考框架 · 龙心OS调用协议 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="麦肯锡思考框架 · 龙心OS调用协议">
+<meta property="og:description" content="麦肯锡思考框架 · 龙心OS调用协议 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "麦肯锡思考框架 · 龙心OS调用协议",
+    "description": "麦肯锡思考框架 · 龙心OS调用协议 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>麦肯锡思考框架 · 龙心OS调用协议</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>麦肯锡思考框架 · 龙心OS调用协议</h1>
+<blockquote><p><strong>版本</strong>: v1.0  
+<strong>创建</strong>: 2026-04-09  
+<strong>维护者</strong>: 龙龟神将  
+<strong>定位</strong>: 龙脑OS知识库与龙心OS调度中枢的整合协议</p></blockquote>
+<hr>
+<h2>一、架构关系定义</h2>
+<h3>1.1 系统层级</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────────┐
+│                         系统架构全景图                               │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  【用户层】                                                          │
+│   悟空（木行人）←→ 龙龟神将（火行人）                                │
+│                                                                     │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  【调度层】龙心OS（智能中枢）                                         │
+│   ├─ 意图识别模块                                                    │
+│   ├─ 场景归类模块（S0-S9）                                           │
+│   ├─ 引擎路由模块                                                    │
+│   └─ 结果整合模块                                                    │
+│                                                                     │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  【知识库层】龙脑OS（知识资产）                                        │
+│   ├─ 📊 麦肯锡思考框架 ← 本Skill所在位置                              │
+│   ├─ 🔨 五行人格心理学OS                                              │
+│   ├─ 📚 知识学习理论体系                                              │
+│   ├─ 🌈 五色光思维体系                                                │
+│   └─ ...其他专业知识体系                                              │
+│                                                                     │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  【执行层】躯体系统                                                   │
+│   CLI → Skills → MCP → Framework                                    │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘</code></pre>
+<h3>1.2 核心关系</h3>
+<p><strong>龙心OS（调度中枢）</strong>：</p>
+<ul>
+<li>唯一入口：所有用户输入首先由龙心OS处理</li>
+<li>智能路由：根据场景判断调用哪个知识库</li>
+<li>协议转换：将用户需求转换为知识库调用指令</li>
+<li>结果整合：将知识库输出与五大引擎整合</li>
+</ul>
+<p><strong>龙脑OS（知识库）</strong>：</p>
+<ul>
+<li>被调用方：不直接响应用户，只响应龙心OS的调用</li>
+<li>独立封装：每个知识库独立维护，保持完整性</li>
+<li>标准接口：提供统一的调用接口和输出格式</li>
+</ul>
+<p><strong>麦肯锡思考框架</strong>：</p>
+<ul>
+<li>位置：龙脑OS知识库中的一个独立组件</li>
+<li>功能：提供西方商业分析框架的完整知识体系</li>
+<li>特点：六大类框架独立存在，可按需调用</li>
+</ul>
+<hr>
+<h2>二、调用协议</h2>
+<h3>2.1 调用流程</h3>
+<pre><code>用户输入
+    ↓
+龙心OS意图识别
+    ↓
+场景归类（S0-S9）
+    ↓
+是否需要西方分析框架？
+    ├─ 是 → 路由至龙脑OS麦肯锡框架库
+    │           ↓
+    │       选择具体框架
+    │           ↓
+    │       执行分析
+    │           ↓
+    │       返回结构化结果
+    │           ↓
+    │       龙心OS整合输出
+    │           ↓
+    │       知行合一沉淀
+    │
+    └─ 否 → 调用其他引擎（象思维/五色光等）</code></pre>
+<h3>2.2 调用接口</h3>
+<p><strong>龙心OS调用麦肯锡框架的标准格式</strong>：</p>
+<pre><code># 调用请求
+调用方: 龙心OS
+被调用方: 龙脑OS.麦肯锡思考框架
+调用参数:
+  场景类型: [战略规划/问题分析/组织诊断/营销客户/逻辑表达/创意解决]
+  具体框架: [SWOT/MECE/七步法/...]  # 可选，如未指定则自动匹配
+  输入内容: [用户原始输入]
+  上下文: [对话历史摘要]
+
+# 调用响应
+响应方: 龙脑OS.麦肯锡思考框架
+响应内容:
+  推荐框架: [具体框架名称]
+  框架定义: [一句话定义]
+  操作步骤: [Step 1 → Step 2 → ...]
+  输出模板: [结构化输出格式]
+  注意事项: [使用要点]</code></pre>
+<h3>2.3 场景路由表</h3>
+<table>
+<thead><tr>
+<th>龙心OS场景</th>
+<th>麦肯锡框架调用</th>
+<th>组合建议</th>
+</tr></thead><tbody>
+<tr>
+<td>S2深度分析</td>
+<td>根据内容类型选择</td>
+<td>+ 知识学习</td>
+</tr>
+<tr>
+<td>S3创意创新</td>
+<td>SCAMPER、曼陀罗</td>
+<td>+ 象思维</td>
+</tr>
+<tr>
+<td>S4分析决策</td>
+<td>SWOT、决策矩阵、逻辑树</td>
+<td>+ 五色光</td>
+</tr>
+<tr>
+<td>S5重大决策</td>
+<td>多框架组合</td>
+<td>+ 全系统</td>
+</tr>
+<tr>
+<td>S6任务执行</td>
+<td>七步法、流程图</td>
+<td>+ 人机协同</td>
+</tr>
+<tr>
+<td>S7系统规划</td>
+<td>7S、BCG、安索夫矩阵</td>
+<td>+ 象思维+五色光</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>三、与五大引擎的协同</h2>
+<h3>3.1 标准协同流程</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│                    中西合璧分析流程                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  阶段1：0→1原创（东方智慧）                                    │
+│  🐉 象思维 → 直觉洞察问题本质                                  │
+│       ↓                                                     │
+│  阶段2：1→N展开（西方工具）                                    │
+│  📊 麦肯锡框架 → 逻辑结构化分析                                │
+│       ↓                                                     │
+│  阶段3：多维度验证（整合工具）                                  │
+│  🌈 五色光思维 → 五色分治同频共振                              │
+│       ↓                                                     │
+│  阶段4：沉淀进化（系统升级）                                    │
+│  🔄 知行合一 → 经验压缩与泛化                                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘</code></pre>
+<h3>3.2 各引擎与麦肯锡框架的关系</h3>
+<table>
+<thead><tr>
+<th>引擎</th>
+<th>与麦肯锡框架的关系</th>
+<th>协同方式</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>象思维</strong></td>
+<td>前置引擎</td>
+<td>象思维0→1洞察 → 麦肯锡框架1→N展开</td>
+</tr>
+<tr>
+<td><strong>知识学习</strong></td>
+<td>并行引擎</td>
+<td>深度学习麦肯锡方法论本身</td>
+</tr>
+<tr>
+<td><strong>五色光思维</strong></td>
+<td>验证引擎</td>
+<td>麦肯锡分析结果用五色光验证</td>
+</tr>
+<tr>
+<td><strong>人机协同五象限</strong></td>
+<td>分工引擎</td>
+<td>复杂分析任务的人机分工</td>
+</tr>
+<tr>
+<td><strong>知行合一</strong></td>
+<td>收尾引擎</td>
+<td>麦肯锡分析经验沉淀为系统能力</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>四、独立框架清单</h2>
+<h3>4.1 每个框架都是独立的</h3>
+<p>麦肯锡思考框架库包含<strong>六大类、25+个独立框架</strong>，每个框架都可以被单独调用：</p>
+<pre><code>麦肯锡思考框架库/
+├── 1.战略规划与管理类/
+│   ├── SWOT分析.md
+│   ├── BCG矩阵.md
+│   ├── PEST分析.md
+│   ├── STP模型.md
+│   └── 安索夫矩阵.md
+│
+├── 2.项目管理与执行类/
+│   ├── 七步问题解决法.md
+│   ├── 逻辑树.md
+│   ├── 流程图.md
+│   ├── 重要度紧急度矩阵.md
+│   └── 假设思考.md
+│
+├── 3.组织与文化分析类/
+│   ├── 麦肯锡7S框架.md
+│   ├── PESTLE分析.md
+│   └── 愿景与使命定义.md
+│
+├── 4.市场营销与客户分析类/
+│   ├── 五力分析.md
+│   ├── 3C分析.md
+│   ├── 客户旅程图.md
+│   ├── 用户画像.md
+│   └── 品牌资产金字塔.md
+│
+├── 5.逻辑思考与结构化分析类/
+│   ├── MECE原则.md
+│   ├── 金字塔结构.md
+│   ├── 五色光思维.md
+│   ├── 归纳演绎.md
+│   └── 议题树.md
+│
+└── 6.创意与问题解决类/
+    ├── SCAMPER.md
+    ├── 曼陀罗思考法.md
+    ├── 利弊均衡法.md
+    └── 决策矩阵.md</code></pre>
+<h3>4.2 框架调用优先级</h3>
+<p>当龙心OS调用麦肯锡框架库时，按以下优先级选择具体框架：</p>
+<ol>
+<li><strong>用户明确指定</strong> → 调用指定框架</li>
+<li><strong>场景关键词匹配</strong> → 调用最匹配的1-2个框架</li>
+<li><strong>复杂度评估</strong> → 简单问题用单框架，复杂问题用组合</li>
+<li><strong>历史使用记录</strong> → 参考该场景下的历史成功案例</li>
+</ol>
+<hr>
+<h2>五、输出标准</h2>
+<h3>5.1 麦肯锡框架输出格式</h3>
+<p>所有框架的输出必须遵循以下标准格式：</p>
+<pre><code>## 📊 [框架名称]分析结果
+
+### 1. 框架定义
+[一句话定义该框架]
+
+### 2. 分析过程
+[Step-by-step的分析步骤和中间结果]
+
+### 3. 核心发现
+[3-5个关键发现，用 bullet points]
+
+### 4. 行动建议
+[具体的、可执行的建议]
+
+### 5. 风险提示
+[需要注意的风险和局限]
+
+---
+**分析框架**: [框架名称]  
+**适用场景**: [场景描述]  
+**置信度**: [高/中/低]</code></pre>
+<h3>5.2 与龙心OS整合输出</h3>
+<p>麦肯锡框架的输出会被龙心OS整合到最终回复中：</p>
+<pre><code>龙心OS最终输出 = 
+    象思维洞察（如有）+
+    麦肯锡框架分析结果 +
+    五色光验证（如有）+
+    人机协同建议（如有）+
+    知行合一沉淀建议</code></pre>
+<hr>
+<h2>六、版本历史</h2>
+<table>
+<thead><tr>
+<th>版本</th>
+<th>日期</th>
+<th>更新内容</th>
+</tr></thead><tbody>
+<tr>
+<td>v1.0</td>
+<td>2026-04-09</td>
+<td>初始版本，定义龙心OS与龙脑OS的调用协议</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>文档版本</strong>: v1.0  
+<strong>最后更新</strong>: 2026-04-09  
+<strong>维护者</strong>: 龙龟神将  
+<strong>系统地位</strong>: 龙脑OS知识库 · 龙心OS调用协议</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

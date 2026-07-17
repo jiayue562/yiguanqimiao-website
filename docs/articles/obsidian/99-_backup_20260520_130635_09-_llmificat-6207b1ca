@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>LLMification 输入模板 - 以观其妙书院</title>
+<meta name="description" content="LLMification 输入模板 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="LLMification 输入模板">
+<meta property="og:description" content="LLMification 输入模板 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "LLMification 输入模板",
+    "description": "LLMification 输入模板 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>LLMification 输入模板</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>LLMification 输入模板</h1>
+<blockquote><p><strong>用途</strong>：标准化LLMification Knowledge Builder的输入格式
+<strong>版本</strong>：v1.0</p></blockquote>
+<hr>
+<h2>📋 基本信息</h2>
+<table>
+<thead><tr>
+<th>字段</th>
+<th>说明</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>知识库名称</strong></td>
+<td>知识库的标识名称</td>
+<td>"企业产品知识库"</td>
+</tr>
+<tr>
+<td><strong>作用域</strong></td>
+<td>global（全局）或 specific（特定）</td>
+<td>"corporate"</td>
+</tr>
+<tr>
+<td><strong>知识库路径</strong></td>
+<td>知识库的根目录</td>
+<td><code>D:\knowledge-base\</code></td>
+</tr>
+<tr>
+<td><strong>版本</strong></td>
+<td>知识库版本号</td>
+<td>"v1.0"</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>📂 文件夹结构</h2>
+<pre><code>{知识库路径}/
+├── raw/                  # Raw Layer - 原始资料（只读）
+│   ├── 手册/
+│   │   ├── 产品手册-v1.0.pdf
+│   │   └── 员工手册.pdf
+│   ├── 文档/
+│   │   ├── 技术文档.md
+│   │   └── 流程说明.md
+│   ├── 网页/
+│   │   ├── 官网介绍.html
+│   │   └── API文档.html
+│   └── 其他/
+│       ├── 会议记录.docx
+│       └── 培训材料.pptx
+│
+├── wiki/                 # Wiki Layer - 结构化知识（LLM维护）
+│   ├── 核心概念/
+│   ├── 操作指南/
+│   ├── 常见问题/
+│   └── 参考资料/
+│
+└── schema/               # Schema Layer - 机器行为规则
+    ├── CLAUDE.md
+    └── AGENTS.md</code></pre>
+<hr>
+<h2>📄 Raw Layer 输入规范</h2>
+<h3>原始资料清单</h3>
+<table>
+<thead><tr>
+<th>文件名</th>
+<th>类型</th>
+<th>路径</th>
+<th>描述</th>
+</tr></thead><tbody>
+<tr>
+<td>示例文件.pdf</td>
+<td>PDF</td>
+<td><code>raw/手册/</code></td>
+<td></td>
+</tr>
+<tr>
+<td>示例文档.docx</td>
+<td>DOCX</td>
+<td><code>raw/文档/</code></td>
+<td></td>
+</tr>
+<tr>
+<td>示例网页.html</td>
+<td>HTML</td>
+<td><code>raw/网页/</code></td>
+<td></td>
+</tr>
+<tr>
+<td>示例笔记.md</td>
+<td>Markdown</td>
+<td><code>raw/文档/</code></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>原始资料元数据</h3>
+<pre><code>raw_material:
+  file_name: "文件名"
+  file_path: "raw/子文件夹/文件名.扩展名"
+  file_type: "pdf/docx/html/text"
+  encoding: "utf-8"
+  language: "zh-CN/en-US"
+  created_at: "ISO8601"
+  updated_at: "ISO8601"
+  lifecycle_stage: "pending/compiled"</code></pre>
+<hr>
+<h2>📝 Wiki Layer 输入规范</h2>
+<h3>编译参数</h3>
+<pre><code>compilation_params:
+  llm_model: "gpt-4/claude-3.5-sonnet"
+  temperature: 0.3
+  max_tokens: 4000
+  output_format: "markdown"
+  preserve_structure: true
+  add_metadata: true
+  create_links: true</code></pre>
+<h3>Wiki 文档规范</h3>
+<pre><code>wiki_document:
+  path: "wiki/子文件夹/文件名.md"
+  title: "文档标题"
+  tags: ["#标签1", "#标签2", "#标签3"]
+  references: ["[[相关文档1]]", "[[相关文档2]]"]
+  metadata:
+    created_at: "ISO8601"
+    updated_at: "ISO8601"
+    lifecycle_stage: "draft/published"
+    source_raw: "raw/原始文件名"
+    version: "v1.0"
+    author: "作者名"</code></pre>
+<hr>
+<h2>🔒 Schema Layer 输入规范</h2>
+<h3>Schema 定义</h3>
+<pre><code>schema_definition:
+  scope: "global/specific"
+  version: "1.0"
+  rules:
+    file_naming: "kebab-case/snake_case"
+    tag_format: "#tag"
+    reference_format: "[[document_name]]"
+    metadata_format: "YAML frontmatter"
+    max_heading_level: 6
+    max_file_size: 50000  # 字符数
+    allowed_formats: ["md"]
+  compilation_constraints:
+    - "保留原始资料的核心信息"
+    - "使用LLM原生表达（Markdown+Mermaid+代码块）"
+    - "建立双向链接网络"
+    - "添加元数据标签"</code></pre>
+<h3>行为规则示例</h3>
+<h4>CLAUDE.md</h4>
+<pre><code>claud_behavior:
+  style: "technical/concise"
+  tone: "professional/friendly"
+  response_format: "structured"
+  max_context_length: 4000
+  code_examples: true
+  mermaid_diagrams: true</code></pre>
+<h4>AGENTS.md</h4>
+<pre><code>agent_behavior:
+  default_model: "gpt-4"
+  fallback_model: "gpt-3.5-turbo"
+  max_retries: 3
+  timeout: 30
+  cache_enabled: true
+  cache_ttl: 3600</code></pre>
+<hr>
+<h2>🔄 生命周期管理</h2>
+<h3>编译状态</h3>
+<pre><code>lifecycle:
+  raw_to_wiki:
+    status: "pending/in_progress/completed/failed"
+    started_at: "ISO8601"
+    completed_at: "ISO8601"
+    error_message: "错误信息（如有）"
+  
+  wiki_validation:
+    status: "pending/in_progress/completed/failed"
+    validation_results:
+      schema_compliance: "pass/fail"
+      link_integrity: "pass/fail"
+      tag_consistency: "pass/fail"
+      orphan_detection: "pass/fail"
+  
+  knowledge_check:
+    status: "pending/in_progress/completed"
+    check_timestamp: "ISO8601"
+    violation_count: 0
+    orphan_count: 0
+    repair_count: 0</code></pre>
+<hr>
+<h2>📊 质量指标</h2>
+<h3>编译质量指标</h3>
+<table>
+<thead><tr>
+<th>指标</th>
+<th>说明</th>
+<th>目标值</th>
+</tr></thead><tbody>
+<tr>
+<td>结构完整性</td>
+<td>标题层级、段落结构清晰</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>内容保留度</td>
+<td>保留原始资料核心信息比例</td>
+<td>≥ 95%</td>
+</tr>
+<tr>
+<td>LLM原生性</td>
+<td>Markdown、代码块、Mermaid图表使用</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>元数据完整度</td>
+<td>YAML frontmatter、标签、引用</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>链接完整性</td>
+<td>双向链接、引用文档存在</td>
+<td>100%</td>
+</tr>
+</tbody></table>
+<h3>一致性检查指标</h3>
+<table>
+<thead><tr>
+<th>指标</th>
+<th>说明</th>
+<th>目标值</th>
+</tr></thead><tbody>
+<tr>
+<td>Schema符合度</td>
+<td>符合Schema Layer规则的比例</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>链接有效性</td>
+<td>所有链接指向存在的文档</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>标签一致性</td>
+<td>标签格式和分类一致</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>孤岛检测</td>
+<td>未被引用的文档数量</td>
+<td>0</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🎯 编译请求模板</h2>
+<h3>批量编译请求</h3>
+<pre><code>batch_compile_request:
+  knowledge_base: "知识库名称"
+  scope: "corporate"
+  sources:
+    - "raw/手册/*.pdf"
+    - "raw/文档/*.docx"
+    - "raw/网页/*.html"
+  compilation_params:
+    llm_model: "gpt-4"
+    temperature: 0.3
+    max_tokens: 4000
+  schema_definition: "schema/config.yaml"
+  output_path: "wiki/"
+  notification:
+    on_success: "email/webhook"
+    on_failure: "email/webhook"</code></pre>
+<h3>增量更新请求</h3>
+<pre><code>incremental_update_request:
+  knowledge_base: "知识库名称"
+  action: "merge"
+  sources:
+    - "raw/新文档.pdf"
+  target_topic: "主题关键词"
+  update_strategy: "append/merge/replace"
+  validation_required: true</code></pre>
+<hr>
+<h2>🔍 查询输入格式</h2>
+<h3>自然语言查询</h3>
+<pre><code>query_request:
+  user_query: "自然语言查询问题"
+  scope: "global/specific"
+  max_results: 5
+  include_references: true
+  response_format: "markdown/code/json"
+  context_length: 2000</code></pre>
+<h3>查询优化建议</h3>
+<table>
+<thead><tr>
+<th>查询类型</th>
+<th>示例</th>
+<th>优化建议</th>
+</tr></thead><tbody>
+<tr>
+<td>事实查询</td>
+<td>"产品的核心功能是什么？"</td>
+<td>使用具体的关键词</td>
+</tr>
+<tr>
+<td>流程查询</td>
+<td>"如何创建用户账户？"</td>
+<td>分步骤描述流程</td>
+</tr>
+<tr>
+<td>对比查询</td>
+<td>"功能A和功能B的区别是什么？"</td>
+<td>明确对比维度</td>
+</tr>
+<tr>
+<td>示例查询</td>
+<td>"给我一个代码示例"</td>
+<td>指定编程语言和场景</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>⚠️ 错误处理</h2>
+<h3>常见错误类型</h3>
+<table>
+<thead><tr>
+<th>错误类型</th>
+<th>说明</th>
+<th>解决方案</th>
+</tr></thead><tbody>
+<tr>
+<td>文件格式错误</td>
+<td>原始文件格式不支持</td>
+<td>转换为支持的格式（PDF/DOCX/HTML/Text）</td>
+</tr>
+<tr>
+<td>编码错误</td>
+<td>文件编码问题</td>
+<td>统一使用UTF-8编码</td>
+</tr>
+<tr>
+<td>Schema违规</td>
+<td>Wiki文档不符合Schema规则</td>
+<td>根据Schema Layer规则修正</td>
+</tr>
+<tr>
+<td>链接失效</td>
+<td>引用的文档不存在</td>
+<td>检查文档路径或创建缺失文档</td>
+</tr>
+<tr>
+<td>编译失败</td>
+<td>LLM编译过程失败</td>
+<td>检查LLM API连接和参数配置</td>
+</tr>
+</tbody></table>
+<h3>错误恢复流程</h3>
+<pre><code>error_recovery:
+  step1: "记录错误日志"
+  step2: "分析错误原因"
+  step3: "提供修复建议"
+  step4: "自动修复（如可能）"
+  step5: "人工审核（自动修复失败时）"</code></pre>
+<hr>
+<h2>📈 性能监控</h2>
+<h3>编译性能指标</h3>
+<table>
+<thead><tr>
+<th>指标</th>
+<th>说明</th>
+<th>记录频率</th>
+</tr></thead><tbody>
+<tr>
+<td>编译耗时</td>
+<td>单个文档编译时间</td>
+<td>每次编译</td>
+</tr>
+<tr>
+<td>编译成功率</td>
+<td>成功编译文档比例</td>
+<td>每日汇总</td>
+</tr>
+<tr>
+<td>LLM调用次数</td>
+<td>LLM API调用总次数</td>
+<td>每日汇总</td>
+</tr>
+<tr>
+<td>Token消耗</td>
+<td>编译过程消耗的Token数</td>
+<td>每日汇总</td>
+</tr>
+<tr>
+<td>错误率</td>
+<td>编译失败比例</td>
+<td>每日汇总</td>
+</tr>
+</tbody></table>
+<h3>查询性能指标</h3>
+<table>
+<thead><tr>
+<th>指标</th>
+<th>说明</th>
+<th>记录频率</th>
+</tr></thead><tbody>
+<tr>
+<td>查询响应时间</td>
+<td>从查询到响应的时间</td>
+<td>每次查询</td>
+</tr>
+<tr>
+<td>检索准确率</td>
+<td>相关文档在前5结果中的比例</td>
+<td>每周汇总</td>
+</tr>
+<tr>
+<td>答案质量评分</td>
+<td>用户对答案质量的评分</td>
+<td>每周汇总</td>
+</tr>
+<tr>
+<td>缓存命中率</td>
+<td>从缓存获取答案的比例</td>
+<td>每周汇总</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>输入模板版本</strong>：v1.0  
+<strong>最后更新</strong>：2026-04-08  
+<strong>维护者</strong>：龙龟神将</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

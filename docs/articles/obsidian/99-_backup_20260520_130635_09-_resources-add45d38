@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Frequently Asked Questions - 以观其妙书院</title>
+<meta name="description" content="Frequently Asked Questions - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="Frequently Asked Questions">
+<meta property="og:description" content="Frequently Asked Questions - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Frequently Asked Questions",
+    "description": "Frequently Asked Questions - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Frequently Asked Questions</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Frequently Asked Questions</h1>
+<h2>Caching (NEW in v2.7.0!)</h2>
+<h3>How does caching work?</h3>
+<p>Search results are automatically cached locally for 1 hour (3600 seconds). When you make the same query again, you get instant results at $0 API cost. The cache key is based on: query text + provider + max_results.</p>
+<h3>Where are cached results stored?</h3>
+<p>In <code>.cache/</code> directory inside the skill folder by default. Override with <code>WSP_CACHE_DIR</code> environment variable:</p>
+<pre><code>export WSP_CACHE_DIR="/path/to/custom/cache"</code></pre>
+<h3>How do I see cache stats?</h3>
+<pre><code>python3 scripts/search.py --cache-stats</code></pre>
+<p>This shows total entries, size, oldest/newest entries, and breakdown by provider.</p>
+<h3>How do I clear the cache?</h3>
+<pre><code>python3 scripts/search.py --clear-cache</code></pre>
+<h3>Can I change the cache TTL?</h3>
+<p>Yes! Default is 3600 seconds (1 hour). Set a custom TTL per request:</p>
+<pre><code>python3 scripts/search.py -q "query" --cache-ttl 7200  # 2 hours</code></pre>
+<h3>How do I skip the cache?</h3>
+<p>Use <code>--no-cache</code> to always fetch fresh results:</p>
+<pre><code>python3 scripts/search.py -q "query" --no-cache</code></pre>
+<h3>How do I know if a result was cached?</h3>
+<p>The response includes:</p>
+<ul>
+<li><code>"cached": true/false</code> — whether result came from cache</li>
+<li><code>"cache_age_seconds": 1234</code> — how old the cached result is (when cached)</li>
+</ul>
+<hr>
+<h2>General</h2>
+<h3>How does auto-routing decide which provider to use?</h3>
+<p>Multi-signal analysis scores each provider based on: price patterns, explanation phrases, similarity keywords, URLs, product+brand combos, and query complexity. Highest score wins. Use <code>--explain-routing</code> to see the decision breakdown.</p>
+<h3>What if it picks the wrong provider?</h3>
+<p>Override with <code>-p serper/tavily/exa</code>. Check <code>--explain-routing</code> to understand why it chose differently.</p>
+<h3>What does "low confidence" mean?</h3>
+<p>Query is ambiguous (e.g., "Tesla" could be cars, stock, or company). Falls back to Serper. Results may vary.</p>
+<h3>Can I disable a provider?</h3>
+<p>Yes! In config.json: <code>"disabled_providers": ["exa"]</code></p>
+<hr>
+<h2>API Keys</h2>
+<h3>Which API keys do I need?</h3>
+<p>At minimum ONE key (or SearXNG instance). You can use just Serper, just Tavily, just Exa, just You.com, or just SearXNG. Missing keys = that provider is skipped.</p>
+<h3>Where do I get API keys?</h3>
+<ul>
+<li>Serper: https://serper.dev (2,500 free queries, no credit card)</li>
+<li>Tavily: https://tavily.com (1,000 free searches/month)</li>
+<li>Exa: https://exa.ai (1,000 free searches/month)</li>
+<li>You.com: https://api.you.com (Limited free tier for testing)</li>
+<li>SearXNG: Self-hosted, no key needed! https://docs.searxng.org/admin/installation.html</li>
+</ul>
+<h3>How do I set API keys?</h3>
+<p>Two options (both auto-load):</p>
+<p><strong>Option A: .env file</strong></p>
+<pre><code>export SERPER_API_KEY="your-key"</code></pre>
+<p><strong>Option B: config.json</strong> (v2.2.1+)</p>
+<pre><code>{ "serper": { "api_key": "your-key" } }</code></pre>
+<hr>
+<h2>Routing Details</h2>
+<h3>How do I know which provider handled my search?</h3>
+<p>Check <code>routing.provider</code> in JSON output, or <code>[🔍 Searched with: Provider]</code> in chat responses.</p>
+<h3>Why does it sometimes choose Serper for research questions?</h3>
+<p>If the query has brand/product signals (e.g., "how does Tesla FSD work"), shopping intent may outweigh research intent. Override with <code>-p tavily</code>.</p>
+<h3>What's the confidence threshold?</h3>
+<p>Default: 0.3 (30%). Below this = low confidence, uses fallback. Adjustable in config.json.</p>
+<hr>
+<h2>You.com Specific</h2>
+<h3>When should I use You.com over other providers?</h3>
+<p>You.com excels at:</p>
+<ul>
+<li><strong>RAG applications</strong>: Pre-extracted snippets ready for LLM consumption</li>
+<li><strong>Real-time information</strong>: Current events, breaking news, status updates</li>
+<li><strong>Combined sources</strong>: Web + news results in a single API call</li>
+<li><strong>Summarization tasks</strong>: "What's the latest on...", "Key points about..."</li>
+</ul>
+<h3>What's the livecrawl feature?</h3>
+<p>You.com can fetch full page content on-demand. Use <code>--livecrawl web</code> for web results, <code>--livecrawl news</code> for news articles, or <code>--livecrawl all</code> for both. Content is returned in Markdown format.</p>
+<h3>Does You.com include news automatically?</h3>
+<p>Yes! You.com's intelligent classification automatically includes relevant news results when your query has news intent. You can also use <code>--include-news</code> to explicitly enable it.</p>
+<hr>
+<h2>SearXNG Specific</h2>
+<h3>Do I need my own SearXNG instance?</h3>
+<p>Yes! SearXNG is self-hosted. Most public instances disable the JSON API to prevent bot abuse. You need to run your own instance with JSON format enabled. See: https://docs.searxng.org/admin/installation.html</p>
+<h3>How do I set up SearXNG?</h3>
+<p>Docker is the easiest way:</p>
+<pre><code>docker run -d -p 8080:8080 searxng/searxng</code></pre>
+<p>Then enable JSON in <code>settings.yml</code>:</p>
+<pre><code>search:
+  formats:
+    - html
+    - json</code></pre>
+<h3>Why am I getting "403 Forbidden"?</h3>
+<p>The JSON API is disabled on your instance. Enable it in <code>settings.yml</code> under <code>search.formats</code>.</p>
+<h3>What's the API cost for SearXNG?</h3>
+<p><strong>$0!</strong> SearXNG is free and open-source. You only pay for hosting (~$5/month VPS). Unlimited queries.</p>
+<h3>When should I use SearXNG?</h3>
+<ul>
+<li><strong>Privacy-sensitive queries</strong>: No tracking, no profiling</li>
+<li><strong>Budget-conscious</strong>: $0 API cost</li>
+<li><strong>Diverse results</strong>: Aggregates 70+ search engines</li>
+<li><strong>Self-hosted requirements</strong>: Full control over your search infrastructure</li>
+<li><strong>Fallback provider</strong>: When paid APIs are rate-limited</li>
+</ul>
+<h3>Can I limit which search engines SearXNG uses?</h3>
+<p>Yes! Use <code>--engines google,bing,duckduckgo</code> to specify engines, or configure defaults in <code>config.json</code>.</p>
+<hr>
+<h2>Provider Selection</h2>
+<h3>Which provider should I use?</h3>
+<table>
+<thead><tr>
+<th>Query Type</th>
+<th>Best Provider</th>
+<th>Why</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Shopping</strong> ("buy laptop", "cheap shoes")</td>
+<td><strong>Serper</strong></td>
+<td>Google Shopping, price comparisons, local stores</td>
+</tr>
+<tr>
+<td><strong>Research</strong> ("how does X work?", "explain Y")</td>
+<td><strong>Tavily</strong></td>
+<td>Deep research, academic quality, full-page content</td>
+</tr>
+<tr>
+<td><strong>Startups/Papers</strong> ("companies like X", "arxiv papers")</td>
+<td><strong>Exa</strong></td>
+<td>Semantic/neural search, startup discovery</td>
+</tr>
+<tr>
+<td><strong>RAG/Real-time</strong> ("summarize latest", "current events")</td>
+<td><strong>You.com</strong></td>
+<td>LLM-ready snippets, combined web+news</td>
+</tr>
+<tr>
+<td><strong>Privacy</strong> ("search without tracking")</td>
+<td><strong>SearXNG</strong></td>
+<td>No tracking, multi-source, self-hosted</td>
+</tr>
+</tbody></table>
+<p><strong>Tip:</strong> Enable auto-routing and let the skill choose automatically! 🎯</p>
+<h3>Do I need all 5 providers?</h3>
+<p><strong>No!</strong> All providers are optional. You can use:</p>
+<ul>
+<li><strong>1 provider</strong> (e.g., just Serper for everything)</li>
+<li><strong>2-3 providers</strong> (e.g., Serper + You.com for most needs)</li>
+<li><strong>All 5</strong> (maximum flexibility + fallback options)</li>
+</ul>
+<h3>How much do the APIs cost?</h3>
+<table>
+<thead><tr>
+<th>Provider</th>
+<th>Free Tier</th>
+<th>Paid Plan</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Serper</strong></td>
+<td>2,500 queries/mo</td>
+<td>$50/mo (5,000 queries)</td>
+</tr>
+<tr>
+<td><strong>Tavily</strong></td>
+<td>1,000 queries/mo</td>
+<td>$150/mo (10,000 queries)</td>
+</tr>
+<tr>
+<td><strong>Exa</strong></td>
+<td>1,000 queries/mo</td>
+<td>$1,000/mo (100,000 queries)</td>
+</tr>
+<tr>
+<td><strong>You.com</strong></td>
+<td>Limited free</td>
+<td>~$10/mo (varies by usage)</td>
+</tr>
+<tr>
+<td><strong>SearXNG</strong></td>
+<td><strong>FREE</strong> ✅</td>
+<td>Only VPS cost (~$5/mo if self-hosting)</td>
+</tr>
+</tbody></table>
+<p><strong>Budget tip:</strong> Use SearXNG as primary + others as fallback for specialized queries!</p>
+<h3>How private is SearXNG really?</h3>
+<table>
+<thead><tr>
+<th>Setup</th>
+<th>Privacy Level</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Self-hosted (your VPS)</strong></td>
+<td>⭐⭐⭐⭐⭐ You control everything</td>
+</tr>
+<tr>
+<td><strong>Self-hosted (Docker local)</strong></td>
+<td>⭐⭐⭐⭐⭐ Fully private</td>
+</tr>
+<tr>
+<td><strong>Public instance</strong></td>
+<td>⭐⭐⭐ Depends on operator's logging policy</td>
+</tr>
+</tbody></table>
+<p><strong>Best practice:</strong> Self-host if privacy is critical.</p>
+<h3>Which provider has the best results?</h3>
+<table>
+<thead><tr>
+<th>Metric</th>
+<th>Winner</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Most accurate for facts</strong></td>
+<td>Serper (Google)</td>
+</tr>
+<tr>
+<td><strong>Best for research depth</strong></td>
+<td>Tavily</td>
+</tr>
+<tr>
+<td><strong>Best for semantic queries</strong></td>
+<td>Exa</td>
+</tr>
+<tr>
+<td><strong>Best for RAG/AI context</strong></td>
+<td>You.com</td>
+</tr>
+<tr>
+<td><strong>Most diverse sources</strong></td>
+<td>SearXNG (70+ engines)</td>
+</tr>
+<tr>
+<td><strong>Most private</strong></td>
+<td>SearXNG (self-hosted)</td>
+</tr>
+</tbody></table>
+<p><strong>Recommendation:</strong> Enable multiple providers + auto-routing for best overall experience.</p>
+<h3>How does auto-routing work?</h3>
+<p>The skill analyzes your query for keywords and patterns:</p>
+<pre><code>"buy cheap laptop"     → Serper (shopping signals)
+"how does AI work?"    → Tavily (research/explanation)
+"companies like X"     → Exa (semantic/similar)
+"summarize latest news" → You.com (RAG/real-time)
+"search privately"     → SearXNG (privacy signals)</code></pre>
+<p><strong>Confidence threshold:</strong> Only routes if confidence &gt; 30%. Otherwise uses default provider.</p>
+<p><strong>Override:</strong> Use <code>-p provider</code> to force a specific provider.</p>
+<hr>
+<h2>Production Use</h2>
+<h3>Can I use this in production?</h3>
+<p><strong>Yes!</strong> Web-search-plus is production-ready:</p>
+<ul>
+<li>✅ Error handling with automatic fallback</li>
+<li>✅ Rate limit protection</li>
+<li>✅ Timeout handling (30s per provider)</li>
+<li>✅ API key security (.env + config.json gitignored)</li>
+<li>✅ 5 providers for redundancy</li>
+</ul>
+<p><strong>Tip:</strong> Monitor API usage to avoid exceeding free tiers!</p>
+<h3>What if I run out of API credits?</h3>
+<ol>
+<li><strong>Fallback chain:</strong> Other enabled providers automatically take over</li>
+<li><strong>Use SearXNG:</strong> Switch to self-hosted (unlimited queries)</li>
+<li><strong>Upgrade plan:</strong> Paid tiers have higher limits</li>
+<li><strong>Rate limit:</strong> Use <code>disabled_providers</code> to skip exhausted APIs temporarily</li>
+</ol>
+<hr>
+<h2>Updates</h2>
+<h3>How do I update to the latest version?</h3>
+<p><strong>Via ClawHub (recommended):</strong></p>
+<pre><code>clawhub update web-search-plus --registry "https://www.clawhub.ai" --no-input</code></pre>
+<p><strong>Manually:</strong></p>
+<pre><code>cd /path/to/workspace/skills/web-search-plus/
+git pull origin main
+python3 scripts/setup.py  # Re-run to configure new features</code></pre>
+<h3>Where can I report bugs or request features?</h3>
+<ul>
+<li><strong>GitHub Issues:</strong> https://github.com/robbyczgw-cla/web-search-plus/issues</li>
+<li><strong>ClawHub:</strong> https://www.clawhub.ai/skills/web-search-plus</li>
+</ul>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

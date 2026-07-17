@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>龙爪OS架构设计文档 - 以观其妙书院</title>
+<meta name="description" content="龙爪OS架构设计文档 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="龙爪OS架构设计文档">
+<meta property="og:description" content="龙爪OS架构设计文档 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "龙爪OS架构设计文档",
+    "description": "龙爪OS架构设计文档 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>龙爪OS架构设计文档</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>龙爪OS架构设计文档</h1>
+<blockquote><p><strong>版本</strong>: v1.0  
+<strong>创建日期</strong>: 2026-04-10  
+<strong>维护者</strong>: 龙龟神将</p></blockquote>
+<hr>
+<h2>一、架构设计哲学</h2>
+<h3>1.1 核心设计原则</h3>
+<p><strong>原则1：智能体灵魂 + Skill载体</strong></p>
+<ul>
+<li>龙爪OS本质是智能体，具备自主感知、决策、学习能力</li>
+<li>使用Skill结构作为工程载体，利用WorkBuddy生态基础设施</li>
+<li>通过Framework层突破Skill框架限制，实现真正的智能体能力</li>
+</ul>
+<p><strong>原则2：三层解耦 + 有机协同</strong></p>
+<ul>
+<li>龙心OS（决策层）：负责场景识别、引擎路由、思维调度</li>
+<li>龙脑OS（知识层）：负责提供思维模型、分析框架、知识支撑</li>
+<li>龙爪OS（执行层）：负责项目执行、工作流管理、SOP落地</li>
+</ul>
+<p><strong>原则3：标准化 + 可扩展</strong></p>
+<ul>
+<li>项目工作流标准化封装，确保执行质量</li>
+<li>模块化设计，支持新项目的快速接入</li>
+<li>知行合一沉淀，持续进化优化</li>
+</ul>
+<h3>1.2 与龙心OS、龙脑OS的关系</h3>
+<pre><code>┌────────────────────────────────────────────────────────────┐
+│                      用户交互层                              │
+└──────────────────────┬─────────────────────────────────────┘
+                       │
+                       ▼
+┌────────────────────────────────────────────────────────────┐
+│  🐉 龙心OS（决策层）                                         │
+│  ├── 场景识别矩阵（S0-S9）                                    │
+│  ├── 引擎路由决策树                                          │
+│  ├── 思维模型选择逻辑                                        │
+│  └── 动态调整机制                                            │
+│                                                             │
+│  核心功能：理解用户意图 → 选择最优认知策略 → 调度下层资源      │
+└──────────────────────┬─────────────────────────────────────┘
+                       │ 调用协议：场景上下文 + 需求描述
+                       ▼
+┌────────────────────────────────────────────────────────────┐
+│  🧠 龙脑OS（知识层）                                         │
+│  ├── 麦肯锡思考框架（6大类）                                  │
+│  ├── 思维模型库（63个模型）                                   │
+│  └── 五行人格心理学OS（三层有机系统）                          │
+│                                                             │
+│  核心功能：提供思维工具 → 执行分析计算 → 返回结构化结果        │
+└──────────────────────┬─────────────────────────────────────┘
+                       │ 调用协议：步骤特征 + 模型需求
+                       ▼
+┌────────────────────────────────────────────────────────────┐
+│  🐾 龙爪OS（执行层）                                         │
+│  ├── 项目管理（启动/规划/执行/监控/收尾）                      │
+│  ├── 工作流引擎（步骤分解/依赖管理/状态跟踪）                   │
+│  └── SOP管理（标准操作程序/质量控制/持续改进）                 │
+│                                                             │
+│  核心功能：分解项目目标 → 执行工作流步骤 → 交付可量化成果      │
+└────────────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>二、技术架构</h2>
+<h3>2.1 三层架构详解</h3>
+<h4>第1层：概念层（文档澄清）</h4>
+<p><strong>目标</strong>：明确龙爪OS的智能体本质，建立正确的认知框架</p>
+<p><strong>核心文档</strong>：</p>
+<ul>
+<li><code>SKILL.md</code> 主文档：明确声明"龙爪OS本质是智能体，本Skill包仅为其工程载体和入口"</li>
+<li><code>references/architecture.md</code>：详细阐述三层架构关系</li>
+<li><code>references/theory.md</code>：智能体理论基础</li>
+</ul>
+<p><strong>关键区分</strong>：</p>
+<pre><code>龙爪OS智能体（灵魂）
+    ├── 自主感知：理解项目上下文
+    ├── 场景理解：识别项目类型和阶段
+    ├── 引擎路由：选择最优工作流
+    ├── 动态调整：根据反馈优化执行
+    └── 持续学习：知行合一沉淀
+
+    ↓ 通过Framework层实现
+
+龙爪OS Skill（载体）
+    ├── SKILL.md：结构化文档
+    ├── references/：参考资料
+    ├── templates/：操作模板
+    └── triggers/：触发配置</code></pre>
+<h4>第2层：架构层（Framework突破）</h4>
+<p><strong>目标</strong>：通过Framework层实现智能体的核心能力，突破Skill框架限制</p>
+<p><strong>Framework层能力</strong>：</p>
+<table>
+<thead><tr>
+<th>能力</th>
+<th>Skill框架限制</th>
+<th>Framework突破</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>自主感知</strong></td>
+<td>被动等待触发</td>
+<td>主动感知项目上下文</td>
+</tr>
+<tr>
+<td><strong>场景理解</strong></td>
+<td>关键词匹配</td>
+<td>语义理解 + 意图识别</td>
+</tr>
+<tr>
+<td><strong>引擎路由</strong></td>
+<td>固定流程</td>
+<td>动态选择最优路径</td>
+</tr>
+<tr>
+<td><strong>持续学习</strong></td>
+<td>静态知识</td>
+<td>知行合一自动进化</td>
+</tr>
+</tbody></table>
+<p><strong>实现机制</strong>：</p>
+<pre><code>感知模块:
+  输入: 用户消息 + 历史上下文 + 项目状态
+  处理: 语义分析 + 意图识别 + 情感分析
+  输出: 项目类型 + 当前阶段 + 用户需求
+
+决策模块:
+  输入: 感知结果 + 可用工作流 + 历史效果
+  处理: 工作流匹配 + 步骤规划 + 资源分配
+  输出: 执行计划 + 模型选择 + 时间估算
+
+执行模块:
+  输入: 执行计划 + 用户确认
+  处理: 步骤执行 + 状态跟踪 + 质量控制
+  输出: 阶段成果 + 进度报告 + 风险预警
+
+学习模块:
+  输入: 执行结果 + 用户反馈
+  处理: 效果评估 + 模式提取 + 知识沉淀
+  输出: 经验总结 + 流程优化 + 知识更新</code></pre>
+<h4>第3层：载体层（Skill结构）</h4>
+<p><strong>目标</strong>：利用WorkBuddy基础设施，保持生态兼容性</p>
+<p><strong>目录结构</strong>：</p>
+<pre><code>龙爪OS/
+├── SKILL.md                    # 主文档：概念澄清 + 快速入门
+├── references/
+│   ├── architecture.md         # 架构设计（本文档）
+│   ├── theory.md              # 智能体理论
+│   ├── workflow-guide.md      # 工作流操作指南
+│   └── integration.md         # 整合协议
+├── templates/
+│   ├── project-template.md    # 项目模板
+│   ├── workflow-template.md   # 工作流模板
+│   └── sop-template.md        # SOP模板
+├── triggers/
+│   └── trigger-rules.yaml     # 触发规则配置
+└── test-cases.md              # 测试用例</code></pre>
+<h3>2.2 工作流引擎设计</h3>
+<h4>工作流定义格式</h4>
+<pre><code>workflow:
+  name: "企业文化诊断分析"
+  version: "1.0"
+  description: "企业文化项目第一阶段工作流"
+  
+  phases:
+    - name: "现状调研"
+      step: 1
+      description: "客观收集企业文化现状数据"
+      models: ["白光思维", "麦肯锡七步成诗"]
+      inputs: ["企业资料", "员工访谈", "调研问卷"]
+      outputs: ["现状调研报告"]
+      
+    - name: "问题识别"
+      step: 2
+      description: "分析企业文化存在的痛点和问题"
+      models: ["蓝光思维", "根因分析"]
+      inputs: ["现状调研报告"]
+      outputs: ["问题清单", "痛点分析"]
+      
+    - name: "标杆研究"
+      step: 3
+      description: "寻找行业最佳实践和创新方案"
+      models: ["绿光思维", "对标分析"]
+      inputs: ["问题清单", "行业资料"]
+      outputs: ["标杆案例", "创新方案"]
+      
+    - name: "诊断报告"
+      step: 4
+      description: "整合分析结果，形成诊断结论"
+      models: ["黄光思维", "金字塔原理"]
+      inputs: ["痛点分析", "创新方案"]
+      outputs: ["诊断报告", "改进建议"]</code></pre>
+<h4>工作流执行状态机</h4>
+<pre><code>[待启动] → [执行中] → [已完成]
+              ↓
+          [暂停]
+              ↓
+          [已取消]</code></pre>
+<p><strong>状态转换规则</strong>：</p>
+<ul>
+<li>用户确认 → 待启动 → 执行中</li>
+<li>步骤完成 → 执行中 → 已完成</li>
+<li>用户暂停 → 执行中 → 暂停</li>
+<li>用户取消 → 任意状态 → 已取消</li>
+<li>恢复执行 → 暂停 → 执行中</li>
+</ul>
+<hr>
+<h2>三、调用协议详解</h2>
+<h3>3.1 龙心OS → 龙爪OS 协议</h3>
+<p><strong>触发条件</strong>：</p>
+<pre><code>自动触发:
+  - 场景归类为 S7（系统规划）
+  - 场景归类为 S9（系统升级）
+  - 用户明确提及"项目"、"工作流"、"SOP"
+  
+关键词触发:
+  - "企业文化项目"
+  - "五行人格项目"
+  - "启动工作流"
+  - "执行SOP"</code></pre>
+<p><strong>输入参数</strong>：</p>
+<pre><code>interface LongZhaoOSInput {
+  // 项目类型
+  projectType: "企业文化" | "五行人格心理学OS" | "通用工作流";
+  
+  // 项目阶段（可选，如未指定则自动识别）
+  projectPhase?: "诊断" | "设计" | "实施" | "评估" | "全流程";
+  
+  // 用户需求描述
+  userRequirements: string;
+  
+  // 紧急程度
+  urgency: "紧急" | "普通" | "可延期";
+  
+  // 上下文信息
+  context?: {
+    industry?: string;      // 行业
+    companySize?: string;   // 企业规模
+    history?: string[];     // 历史交互
+  };
+}</code></pre>
+<p><strong>输出格式</strong>：</p>
+<pre><code>interface LongZhaoOSOutput {
+  // 项目执行计划
+  projectPlan: {
+    name: string;
+    description: string;
+    phases: Phase[];
+    timeline: string;
+  };
+  
+  // 工作流步骤
+  workflowSteps: WorkflowStep[];
+  
+  // 思维模型选择
+  modelSelection: {
+    step: number;
+    models: string[];
+    reason: string;
+  }[];
+  
+  // 预期交付成果
+  expectedOutput: string[];
+  
+  // 时间规划
+  timeline: {
+    startDate: string;
+    endDate: string;
+    milestones: Milestone[];
+  };
+}</code></pre>
+<h3>3.2 龙爪OS → 龙脑OS 协议</h3>
+<p><strong>模型选择逻辑</strong>：</p>
+<pre><code>def select_models(step_features: StepFeatures) -&gt; List[Model]:
+    """
+    根据步骤特征选择最优思维模型组合
+    """
+    models = []
+    
+    # 1. 根据目标类型选择基础模型
+    if step_features.objective == "数据收集":
+        models.append("白光思维")  # 客观事实
+        
+    elif step_features.objective == "问题分析":
+        models.append("蓝光思维")  # 风险识别
+        models.append("根因分析")  # 深层原因
+        
+    elif step_features.objective == "创新方案":
+        models.append("绿光思维")  # 创新发散
+        models.append("象思维")     # 0→1突破
+        
+    elif step_features.objective == "价值评估":
+        models.append("黄光思维")  # 积极价值
+        models.append("成本效益")  # 量化分析
+        
+    elif step_features.objective == "决策制定":
+        models.append("五色光完整序列")  # 全面分析
+        
+    # 2. 根据复杂度选择辅助模型
+    if step_features.complexity == "高":
+        models.append("麦肯锡七步成诗")
+        models.append("MECE原则")
+        
+    elif step_features.complexity == "中":
+        models.append("金字塔原理")
+        
+    # 3. 根据领域选择专业模型
+    if step_features.domain == "战略":
+        models.append("第一性原理")
+        models.append("二阶思维")
+        
+    elif step_features.domain == "组织":
+        models.append("五行人格心理学OS")
+        
+    return models</code></pre>
+<hr>
+<h2>四、扩展机制</h2>
+<h3>4.1 新增项目类型</h3>
+<p><strong>步骤1：定义项目工作流</strong></p>
+<pre><code># 在 references/workflows/ 下创建新的工作流定义
+new_project_workflow.yaml</code></pre>
+<p><strong>步骤2：注册到项目类型列表</strong></p>
+<pre><code># 在 SKILL.md 中更新项目类型表格
+项目类型:
+  - name: "新项目类型"
+    description: "描述"
+    workflows: ["工作流1", "工作流2"]
+    status: "已启用"</code></pre>
+<p><strong>步骤3：添加触发规则</strong></p>
+<pre><code># 在 triggers/trigger-rules.yaml 中添加
+新项目类型触发:
+  keywords: ["关键词1", "关键词2"]
+  patterns: ["正则表达式"]
+  confidence_threshold: 0.8</code></pre>
+<h3>4.2 自定义工作流步骤</h3>
+<p><strong>模板格式</strong>：</p>
+<pre><code>step_template:
+  name: "步骤名称"
+  description: "步骤描述"
+  
+  # 输入
+  inputs:
+    - name: "输入1"
+      type: "文档|数据|决策"
+      required: true
+      
+  # 输出
+  outputs:
+    - name: "输出1"
+      type: "文档|数据|决策"
+      
+  # 思维模型
+  models:
+    primary: "主要模型"
+    secondary: ["辅助模型1", "辅助模型2"]
+    
+  # 质量控制
+  quality_gates:
+    - "检查点1"
+    - "检查点2"
+    
+  # 时间估算
+  estimated_time: "2小时"</code></pre>
+<hr>
+<h2>五、性能优化</h2>
+<h3>5.1 缓存机制</h3>
+<p><strong>项目状态缓存</strong>：</p>
+<pre><code>interface ProjectCache {
+  projectId: string;
+  currentPhase: string;
+  completedSteps: number[];
+  pendingSteps: number[];
+  intermediateResults: Map&lt;string, any&gt;;
+  lastUpdated: Date;
+}</code></pre>
+<p><strong>模型选择缓存</strong>：</p>
+<pre><code>interface ModelSelectionCache {
+  stepSignature: string;  // 步骤特征签名
+  selectedModels: string[];
+  effectiveness: number;  // 效果评分
+  usageCount: number;
+}</code></pre>
+<h3>5.2 并发控制</h3>
+<p><strong>工作流步骤并发规则</strong>：</p>
+<ul>
+<li>独立步骤：可并行执行</li>
+<li>依赖步骤：必须串行执行</li>
+<li>关键路径：优先保障</li>
+</ul>
+<hr>
+<h2>六、安全与容错</h2>
+<h3>6.1 错误处理</h3>
+<p><strong>错误分类</strong>：
+| 级别 | 类型 | 处理方式 |
+|------|------|---------|
+| P0 | 系统错误 | 立即停止，通知用户 |
+| P1 | 模型调用失败 | 自动重试，切换备用模型 |
+| P2 | 数据缺失 | 提示用户补充 |
+| P3 | 警告 | 记录日志，继续执行 |</p>
+<h3>6.2 数据安全</h3>
+<p><strong>敏感信息处理</strong>：</p>
+<ul>
+<li>企业机密数据：加密存储</li>
+<li>个人隐私数据：脱敏处理</li>
+<li>项目数据：定期备份</li>
+</ul>
+<hr>
+<p><strong>龙爪OS架构设计</strong> · 让项目执行智能化、标准化、可进化 🐾</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

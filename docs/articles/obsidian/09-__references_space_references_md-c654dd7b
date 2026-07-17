@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>知识库空间 API 参考 - 以观其妙书院</title>
+<meta name="description" content="知识库空间 API 参考 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="知识库空间 API 参考">
+<meta property="og:description" content="知识库空间 API 参考 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "知识库空间 API 参考",
+    "description": "知识库空间 API 参考 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>知识库空间 API 参考</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>知识库空间 API 参考</h1>
+<p>本文件包含腾讯文档 MCP 知识库空间相关工具的 API 说明，包括空间管理和节点操作。</p>
+<hr>
+<h2>通用类型说明</h2>
+<h3>node_type 枚举值</h3>
+<table>
+<thead><tr>
+<th>值</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>wiki_folder</td>
+<td>文件夹</td>
+</tr>
+<tr>
+<td>wiki_tdoc</td>
+<td>在线文档（请求时使用）</td>
+</tr>
+<tr>
+<td>wiki_file</td>
+<td>在线文档（返回值中使用）</td>
+</tr>
+<tr>
+<td>link</td>
+<td>链接</td>
+</tr>
+<tr>
+<td>resource</td>
+<td>资源文件</td>
+</tr>
+</tbody></table>
+<h3>doc_type 枚举值</h3>
+<table>
+<thead><tr>
+<th>值</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>word</td>
+<td>文字处理文档</td>
+</tr>
+<tr>
+<td>excel</td>
+<td>电子表格</td>
+</tr>
+<tr>
+<td>form</td>
+<td>收集表</td>
+</tr>
+<tr>
+<td>slide</td>
+<td>幻灯片</td>
+</tr>
+<tr>
+<td>smartcanvas</td>
+<td>智能文档</td>
+</tr>
+<tr>
+<td>smartsheet</td>
+<td>智能表格</td>
+</tr>
+<tr>
+<td>mind</td>
+<td>思维导图</td>
+</tr>
+<tr>
+<td>flowchart</td>
+<td>流程图</td>
+</tr>
+</tbody></table>
+<h3>NodeInfo 节点信息结构</h3>
+<pre><code>{
+  "node_id": "节点 ID，同时也是 file_id",
+  "title": "节点标题",
+  "node_type": "节点类型",
+  "has_child": true,
+  "doc_type": "文档类型（仅 wiki_file 有效）",
+  "url": "访问链接"
+}</code></pre>
+<h3>StringMatrix 表格数据结构</h3>
+<pre><code>{
+  "texts": {
+    "rows": [
+      {"values": ["单元格1", "单元格2"]},
+      {"values": ["单元格3", "单元格4"]}
+    ]
+  }
+}</code></pre>
+<p>数据从 A1 单元格开始，按行列顺序填充。</p>
+<hr>
+<h2>工具列表</h2>
+<table>
+<thead><tr>
+<th>工具名称</th>
+<th>功能说明</th>
+</tr></thead><tbody>
+<tr>
+<td>query_space_list</td>
+<td>获取知识库空间列表</td>
+</tr>
+<tr>
+<td>create_space</td>
+<td>创建新的知识库空间</td>
+</tr>
+<tr>
+<td>query_space_node</td>
+<td>查询空间内节点列表</td>
+</tr>
+<tr>
+<td>create_space_node</td>
+<td>在空间中创建新节点（文件夹、文档或链接）</td>
+</tr>
+<tr>
+<td>delete_space_node</td>
+<td>删除空间中的指定节点</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>工具详细说明</h2>
+<h3>1. query_space_list</h3>
+<h4>功能说明</h4>
+<p>获取知识库空间列表，支持按不同方式排序和分页查询。</p>
+<h4>调用示例</h4>
+<pre><code>{
+  "num": 0,
+  "order_by": 1,
+  "query_by": 1,
+  "descending": true
+}</code></pre>
+<h4>参数说明</h4>
+<ul>
+<li><code>num</code> (uint32, 可选): 分页页码，从0开始，每页最多返回100个空间</li>
+<li><code>order_by</code> (uint32, 可选): 排序方式（1-按最近预览时间排序，2-按最近编辑时间排序，3-按创建时间排序）</li>
+<li><code>query_by</code> (uint32, 可选): 查询范围（0-查询全部空间（默认），1-仅查询我创建的空间，2-仅查询我加入的空间）</li>
+<li><code>descending</code> (bool, 可选): 是否降序排列，true-降序（最新在前），false-升序，默认为true</li>
+</ul>
+<h4>返回值说明</h4>
+<pre><code>{
+  "spaces": [
+    {
+      "space_id": "space_1234567890",
+      "title": "我的知识库",
+      "description": "知识库描述",
+      "is_top": false,
+      "file_cnt": 10,
+      "member_cnt": 5,
+      "is_owner": true,
+      "created_at": 1713600000,
+      "updated_at": 1713600000
+    }
+  ],
+  "has_next": false,
+  "error": "",
+  "trace_id": "trace_1234567890"
+}</code></pre>
+<h3>2. create_space</h3>
+<h4>功能说明</h4>
+<p>创建新的知识库空间。空间是组织和管理文档的容器，可以包含文件夹、文档等节点。</p>
+<h4>调用示例</h4>
+<pre><code>{
+  "title": "项目文档库",
+  "description": "存放项目相关的所有文档"
+}</code></pre>
+<h4>参数说明</h4>
+<ul>
+<li><code>title</code> (string, 必填): 空间标题</li>
+<li><code>description</code> (string, 可选): 空间描述</li>
+</ul>
+<h4>返回值说明</h4>
+<pre><code>{
+  "space_id": "space_1234567890",
+  "error": "",
+  "trace_id": "trace_1234567890"
+}</code></pre>
+<h3>3. query_space_node</h3>
+<h4>功能说明</h4>
+<p>查询空间内的节点列表，支持按父节点分页查询。</p>
+<h4>调用示例</h4>
+<pre><code>{
+  "space_id": "space_1234567890",
+  "parent_id": "folder_1234567890",
+  "num": 0
+}</code></pre>
+<h4>参数说明</h4>
+<ul>
+<li><code>space_id</code> (string, 必填): 空间ID，用于指定查询的空间</li>
+<li><code>parent_id</code> (string, 可选): 父节点ID，为空时返回根节点</li>
+<li><code>num</code> (uint32, 可选): 分页页码，从0开始，每页返回20个节点</li>
+</ul>
+<h4>返回值说明</h4>
+<pre><code>{
+  "children": [
+    {
+      "node_id": "doc_1234567890",
+      "title": "项目文档",
+      "node_type": "wiki_file",
+      "has_child": false,
+      "doc_type": "smartcanvas",
+      "url": "https://docs.qq.com/doc/DV2h5cWJ0R1lQb0lH"
+    }
+  ],
+  "error": "",
+  "has_next": false,
+  "trace_id": "trace_1234567890"
+}</code></pre>
+<h3>4. create_space_node</h3>
+<h4>功能说明</h4>
+<p>在空间中创建新节点（文件夹、文档或链接）。</p>
+<h4>调用示例</h4>
+<pre><code>{
+  "space_id": "space_1234567890",
+  "parent_node_id": "folder_1234567890",
+  "title": "新建页面文档1",
+  "node_type": "wiki_tdoc",
+  "wiki_tdoc_node": {
+    "title": "新建页面文档",
+    "doc_type": "smartcanvas"
+  }
+}</code></pre>
+<h4>参数说明</h4>
+<ul>
+<li><code>space_id</code> (string, 必填): 空间ID，用于指定在哪个空间下创建节点</li>
+<li><code>parent_node_id</code> (string, 可选): 父节点ID，为空或在根目录创建时可不传</li>
+<li><code>title</code> (string, 必填): 节点标题</li>
+<li><code>node_type</code> (string, 必填): 节点类型（wiki_folder/wiki_tdoc/link）</li>
+<li><code>is_before</code> (bool, 可选): 插入位置，true 表示插入到父节点子列表开头，false 表示插入到末尾</li>
+<li><code>wiki_folder_node</code> (object, 可选): 文件夹节点配置，node_type 为 wiki_folder 时必填</li>
+<li><code>wiki_tdoc_node</code> (object, 可选): 在线文档节点配置，node_type 为 wiki_tdoc 时必填</li>
+<li><code>link_node</code> (object, 可选): 链接节点配置，node_type 为 link 时必填</li>
+</ul>
+<h4>返回值说明</h4>
+<pre><code>{
+  "node_info": {
+    "node_id": "doc_1234567890",
+    "title": "新建页面文档",
+    "node_type": "wiki_file",
+    "has_child": false,
+    "doc_type": "smartcanvas",
+    "url": "https://docs.qq.com/doc/DV2h5cWJ0R1lQb0lH"
+  },
+  "error": "",
+  "trace_id": "trace_1234567890"
+}</code></pre>
+<h3>5. delete_space_node</h3>
+<h4>功能说明</h4>
+<p>删除空间中的指定节点。仅删除当前节点时，子节点自动挂载到上级节点；使用 <code>all</code> 模式时递归删除所有子节点（谨慎使用）。</p>
+<h4>调用示例</h4>
+<pre><code>{
+  "space_id": "space_1234567890",
+  "node_id": "doc_1234567890",
+  "remove_type": "current"
+}</code></pre>
+<h4>参数说明</h4>
+<ul>
+<li><code>space_id</code> (string, 必填): 空间ID</li>
+<li><code>node_id</code> (string, 必填): 要删除的节点ID</li>
+<li><code>remove_type</code> (string, 可选): 删除类型，枚举值：<code>current</code>（默认，仅删除当前节点，子节点挂载到上级）、<code>all</code>（删除当前节点及所有子节点，⚠️ 谨慎使用）</li>
+</ul>
+<h4>返回值说明</h4>
+<pre><code>{
+  "error": "",
+  "trace_id": "trace_1234567890"
+}</code></pre>
+<hr>
+<h2>典型工作流示例</h2>
+<h3>组织文档到指定空间目录</h3>
+<pre><code>1. 调用 query_space_list 获取空间列表，找到目标空间的 space_id
+2. 调用 query_space_node 遍历空间节点，查找目标文件夹，获取 parent_node_id
+3. 调用 create_space_node 在目标位置创建文档节点（doc_type 优先选择 smartcanvas）
+   或调用 manage.create_file（传入 space_id 和 parent_id）在空间内创建文件，两者均可</code></pre>
+<h3>查找空间中的文档</h3>
+<pre><code>1. 调用 query_space_list 获取空间列表
+2. 调用 query_space_node 遍历节点树查找文档
+3. 从结果中获取 node_id（即 file_id）和 url</code></pre>
+<hr>
+<h2>注意事项</h2>
+<ul>
+<li><code>node_id</code> 即 <code>file_id</code>：空间节点的 <code>node_id</code> 同时也是文档的 <code>file_id</code></li>
+<li>删除节点需谨慎：<code>delete_space_node</code> 默认仅删除当前节点（<code>remove_type=current</code>），使用 <code>all</code> 时会递归删除所有子节点</li>
+<li>分页查询：<code>query_space_list</code> 每页 100 条，<code>query_space_node</code> 每页 20 条，使用 <code>has_next</code> 判断是否有更多数据，页码从 0 开始</li>
+</ul>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>
