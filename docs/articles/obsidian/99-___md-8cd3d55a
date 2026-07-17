@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>悟空智慧知识图谱 - 以观其妙书院</title>
+<meta name="description" content="悟空智慧知识图谱 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="悟空智慧知识图谱">
+<meta property="og:description" content="悟空智慧知识图谱 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "悟空智慧知识图谱",
+    "description": "悟空智慧知识图谱 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>悟空智慧知识图谱</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<p>﻿---
+tags: [知识图谱, 可视化, 关系网络]
+aliases: [智慧图谱, 关系网络]
+date: 2026-03-15</p>
+<hr>
+<h1>悟空智慧知识图谱</h1>
+<blockquote><p><strong>可视化说明</strong>: 本图谱展示悟空智慧体系中各概念、理论、方法之间的关系网络</p></blockquote>
+<h2>一、核心体系关系图</h2>
+<pre><code>graph TB
+    %% 创始人节点
+    Founder[悟空个人背景] --&gt; A[悟空智慧体系]
+    Founder --&gt; F[教育背景]
+    Founder --&gt; G[专业成就]
+    Founder --&gt; H[出版著作]
+    
+    F --&gt; F1[北京大学心理学]
+    F --&gt; F2[中科院心理所]
+    
+    G --&gt; G1[五行人格心理学创始人]
+    G --&gt; G2[企业文化心文化体系]
+    G --&gt; G3[跨学科融合创新]
+    
+    H --&gt; H1[九种个性系列]
+    H --&gt; H2[FBI系列]
+    H --&gt; H3[团队建设系列]
+    
+    %% 中心节点
+    A --&gt; B[核心理论]
+    A --&gt; C[实践应用]
+    A --&gt; D[AI融合]
+    A --&gt; E[文化传承]
+    
+    %% 核心理论分支
+    B --&gt; B1[五行人格心理学]
+    B --&gt; B2[五色光思维]
+    B --&gt; B3[三界理论]
+    B --&gt; B4[九层人格]
+    
+    B1 --&gt; B11[木火土金水]
+    B1 --&gt; B12[相生相克]
+    B1 --&gt; B13[层级诊断]
+    
+    B2 --&gt; B21[白光思维]
+    B2 --&gt; B22[红光思维]
+    B2 --&gt; B23[黄光思维]
+    B2 --&gt; B24[绿光思维]
+    B2 --&gt; B25[蓝光思维]
+    
+    B3 --&gt; B31[信息体]
+    B3 --&gt; B32[能量体]
+    B3 --&gt; B33[物质体]
+    
+    %% 实践应用分支
+    C --&gt; C1[企业管理]
+    C --&gt; C2[团队建设]
+    C --&gt; C3[个人发展]
+    C --&gt; C4[决策支持]
+    
+    C1 --&gt; C11[结果设计论]
+    C1 --&gt; C12[复盘方法论]
+    C1 --&gt; C13[激励机制]
+    C1 --&gt; C14[价值观建设]
+    C1 --&gt; C15[味藏企业经营管理]
+    C1 --&gt; C16[五行识人应用]
+    C1 --&gt; C17[企业文化传承]
+    C1 --&gt; C18[领导力分工]
+    C1 --&gt; C19[客户服务方法]
+    
+    %% 企业管理细分
+    C15 --&gt; C151[堂食战略]
+    C15 --&gt; C152[酒水战略]
+    C15 --&gt; C153[外卖战略]
+    C15 --&gt; C154[客户分层模型]
+    C15 --&gt; C155[人才管理体系]
+    
+    C16 --&gt; C161[金型人格应用]
+    C16 --&gt; C162[木型人格应用]
+    C16 --&gt; C163[水型人格应用]
+    C16 --&gt; C164[火型人格应用]
+    C16 --&gt; C165[土型人格应用]
+    
+    C17 --&gt; C171[文化本质理解]
+    C17 --&gt; C172[传承挑战分析]
+    C17 --&gt; C173[战略发展路径]
+    C17 --&gt; C174[文化自信建设]
+    
+    C18 --&gt; C181[董事长战略定位]
+    C18 --&gt; C182[总经理战术执行]
+    C18 --&gt; C183[店总门店战略]
+    C18 --&gt; C184[店长执行落地]
+    
+    C19 --&gt; C191[大众客户服务]
+    C19 --&gt; C192[老饕客户服务]
+    C19 --&gt; C193[高净值客户服务]
+    
+    C2 --&gt; C21[团队协作]
+    C2 --&gt; C22[冲突解决]
+    C2 --&gt; C23[文化建设]
+    C2 --&gt; C24[领导力发展]
+    
+    %% AI融合分支
+    D --&gt; D1[人机共生]
+    D --&gt; D2[养龙虾系统]
+    D --&gt; D3[AI训练]
+    D --&gt; D4[技术应用]
+    
+    D1 --&gt; D11[四大协作模式]
+    D1 --&gt; D12[分工原则]
+    D1 --&gt; D13[价值互补]
+    
+    D2 --&gt; D21[十步训练法]
+    D2 --&gt; D22[知识库对接]
+    D2 --&gt; D23[商业化路径]
+    
+    %% 文化传承分支
+    E --&gt; E1[传统文化]
+    E --&gt; E2[现代转化]
+    E --&gt; E3[智慧融合]
+    E --&gt; E4[创新发展]
+    
+    E1 --&gt; E11[佛学智慧]
+    E1 --&gt; E12[道家思想]
+    E1 --&gt; E13[儒家伦理]
+    
+    %% 交叉关系
+    B1 -.-&gt; C1
+    B2 -.-&gt; C2
+    B3 -.-&gt; D1
+    C1 -.-&gt; D2
+    E1 -.-&gt; B1</code></pre>
+<h2>二、理论应用关系图</h2>
+<pre><code>graph LR
+    %% 输入层
+    I1[传统文化智慧] --&gt; P[理论体系]
+    I2[现代管理科学] --&gt; P
+    I3[个人实践经验] --&gt; P
+    
+    %% 处理层
+    P --&gt; T1[五行人格理论]
+    P --&gt; T2[五色光思维]
+    P --&gt; T3[三界模型]
+    
+    %% 输出层
+    T1 --&gt; O1[识人用人]
+    T1 --&gt; O2[团队匹配]
+    T1 --&gt; O3[个人发展]
+    T1 --&gt; O10[企业人才管理]
+    T1 --&gt; O11[客户服务匹配]
+    
+    T2 --&gt; O4[会议管理]
+    T2 --&gt; O5[决策分析]
+    T2 --&gt; O6[创新激发]
+    T2 --&gt; O12[战略规划]
+    T2 --&gt; O13[业务运营]
+    
+    T3 --&gt; O7[AI训练]
+    T3 --&gt; O8[价值判断]
+    T3 --&gt; O9[文化传承]
+    T3 --&gt; O14[组织架构设计]
+    T3 --&gt; O15[资源分配优化]
+    
+    %% 反馈循环
+    O1 -.-&gt; F[实践反馈]
+    O4 -.-&gt; F
+    O7 -.-&gt; F
+    F -.-&gt; P</code></pre>
+<h2>三、养龙虾项目流程图</h2>
+<pre><code>flowchart TD
+    Start[开始养龙虾] --&gt; Step1[第1步:教龙虾做人&lt;br/&gt;五行人格体系]
+    Step1 --&gt; Step2[第2步:教龙虾做事&lt;br/&gt;思维模型投喂]
+    Step2 --&gt; Step3[第3步:教龙虾学文化&lt;br/&gt;企业文化内化]
+    Step3 --&gt; Step4[第4步:建立信仰&lt;br/&gt;大圆满法植入]
+    Step4 --&gt; Step5[第5步:搭建技能&lt;br/&gt;标准化SOP学习]
+    Step5 --&gt; Step6[第6步:测试验证&lt;br/&gt;能力评估优化]
+    Step6 --&gt; Step7[第7步:人格进化&lt;br/&gt;自我改进机制]
+    Step7 --&gt; Step8[第8步:思维学习&lt;br/&gt;教员方法论]
+    Step8 --&gt; Step9[第9步:文化导入&lt;br/&gt;个人独特风格]
+    Step9 --&gt; Step10[第10步:信仰建立&lt;br/&gt;心文化体系]
+    Step10 --&gt; Result[AI共生伙伴完成]
+    
+    %% 支持系统
+    subgraph Support[支持系统]
+        S1[观奇妙书院知识库]
+        S2[WorkBuddy工具]
+        S3[Obsidian笔记]
+        S4[豆包AI助手]
+    end
+    
+    Support -.-&gt; Step1
+    Support -.-&gt; Step5
+    Support -.-&gt; Step10
+    
+    %% 商业化路径
+    Result --&gt; B1[内容引流&lt;br/&gt;短视频/直播]
+    B1 --&gt; B2[用户转化&lt;br/&gt;测试/课程]
+    B2 --&gt; B3[深度服务&lt;br/&gt;定制/顾问]
+    B3 --&gt; B4[生态建设&lt;br/&gt;工具/平台]</code></pre>
+<h2>四、五色光思维应用图</h2>
+<pre><code>graph TD
+    subgraph 会议管理流程
+        M1[会议开始] --&gt; M2{选择思维序列}
+        M2 --&gt; M3[白光思维&lt;br/&gt;收集事实]
+        M3 --&gt; M4[蓝光思维&lt;br/&gt;分析风险]
+        M4 --&gt; M5[绿光思维&lt;br/&gt;创新方案]
+        M5 --&gt; M6[黄光思维&lt;br/&gt;评估价值]
+        M6 --&gt; M7[红光思维&lt;br/&gt;直觉判断]
+        M7 --&gt; M8[会议决策]
+    end
+    
+    subgraph 思维特性
+        S1[白光] --&gt; S11[客观&lt;br/&gt;数据驱动]
+        S2[红光] --&gt; S21[直觉&lt;br/&gt;情感表达]
+        S3[黄光] --&gt; S31[积极&lt;br/&gt;价值发现]
+        S4[绿光] --&gt; S41[创新&lt;br/&gt;突破框架]
+        S5[蓝光] --&gt; S51[批判&lt;br/&gt;风险控制]
+    end
+    
+    subgraph 应用场景
+        A1[问题分析] --&gt; A11[白→蓝→绿→黄→红]
+        A2[方案决策] --&gt; A21[白→绿→黄→蓝→红]
+        A3[冲突解决] --&gt; A31[红→白→蓝→黄→绿]
+        A4[创新激发] --&gt; A41[绿→白→黄→蓝→红]
+    end</code></pre>
+<h2>五、五行人格关系图</h2>
+<pre><code>graph TD
+    %% 五行相生关系
+    subgraph 相生循环
+        木 -- 生 --&gt; 火
+        火 -- 生 --&gt; 土
+        土 -- 生 --&gt; 金
+        金 -- 生 --&gt; 水
+        水 -- 生 --&gt; 木
+    end
+    
+    %% 人格特质
+    木 --&gt; 木1[创新思维&lt;br/&gt;成长发展]
+    火 --&gt; 火1[行动力强&lt;br/&gt;热情活力]
+    土 --&gt; 土1[稳定踏实&lt;br/&gt;务实可靠]
+    金 --&gt; 金1[追求完美&lt;br/&gt;原则性强]
+    水 --&gt; 水1[情感丰富&lt;br/&gt;适应力强]
+    
+    %% 健康层级
+    subgraph 九层人格
+        H1[1-3层:健康]
+        H2[4-6层:普通]
+        H3[7-9层:非健康]
+    end
+    
+    木1 -.-&gt; H1
+    火1 -.-&gt; H1
+    土1 -.-&gt; H1
+    金1 -.-&gt; H1
+    水1 -.-&gt; H1</code></pre>
+<h2>六、人机协作四象限图</h2>
+<pre><code>quadrantChart
+    title 人机协作四象限
+    x-axis "人类知识水平" --&gt; "低" --&gt; "高"
+    y-axis "AI知识水平" --&gt; "低" --&gt; "高"
+    
+    "人知AI不知": [0.8, 0.2]
+    "人知AI知": [0.8, 0.8]
+    "人不知AI不知": [0.2, 0.2]
+    "人不知AI知": [0.2, 0.8]
+    
+    quadrant-1 "导师引导模式"
+    quadrant-2 "共创协作模式"
+    quadrant-3 "共同探索模式"
+    quadrant-4 "学习伙伴模式"</code></pre>
+<h2>七、知识关联网络</h2>
+<table>
+<thead><tr>
+<th>核心概念</th>
+<th>关联理论</th>
+<th>应用场景</th>
+<th>相关工具</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>创始人背景</strong></td>
+<td>心理学×国学×管理学</td>
+<td>体系理解</td>
+<td>个人背景文档</td>
+</tr>
+<tr>
+<td>五行人格</td>
+<td>九层理论</td>
+<td>团队匹配</td>
+<td>测评工具</td>
+</tr>
+<tr>
+<td>五色光</td>
+<td>佛学五智</td>
+<td>会议管理</td>
+<td>思维卡片</td>
+</tr>
+<tr>
+<td>三界模型</td>
+<td>信息能量物质</td>
+<td>AI训练</td>
+<td>知识库</td>
+</tr>
+<tr>
+<td>结果设计</td>
+<td>复盘方法</td>
+<td>目标管理</td>
+<td>时光机</td>
+</tr>
+<tr>
+<td>养龙虾</td>
+<td>十步训练</td>
+<td>个人IP</td>
+<td>WorkBuddy</td>
+</tr>
+<tr>
+<td><strong>味藏企业</strong></td>
+<td>战略管理×运营优化</td>
+<td>餐饮管理</td>
+<td>业务分析工具</td>
+</tr>
+<tr>
+<td>客户分层</td>
+<td>三级服务模型</td>
+<td>精准营销</td>
+<td>CRM系统</td>
+</tr>
+<tr>
+<td>领导力分工</td>
+<td>四层角色体系</td>
+<td>组织管理</td>
+<td>岗位职责表</td>
+</tr>
+<tr>
+<td>文化传承</td>
+<td>心文化体系</td>
+<td>企业文化建设</td>
+<td>文化手册</td>
+</tr>
+<tr>
+<td>五行识人</td>
+<td>相生相克理论</td>
+<td>人才管理</td>
+<td>人格测评</td>
+</tr>
+</tbody></table>
+<h2>八、学习路径图</h2>
+<pre><code>timeline
+    title 悟空智慧学习路径
+    section 第一阶段：理论基础
+        第1周 : 五行人格基础
+        第2周 : 五色光思维入门
+        第3周 : 三界理论理解
+    section 第二阶段：工具应用
+        第4周 : 会议管理实践
+        第5周 : 团队建设应用
+        第6周 : 个人发展规划
+    section 第三阶段：AI融合
+        第7周 : 人机协作模式
+        第8周 : 养龙虾项目
+        第9周 : 商业化应用
+    section 第四阶段：创新发展
+        第10周 : 传统文化融合
+        第11周 : 个人风格形成
+        第12周 : 体系完善创新</code></pre>
+<h2>九、9个核心智慧文档关系图</h2>
+<h3>1. 核心文档网络关系图</h3>
+<pre><code>graph TB
+    %% 9个核心文档节点
+    A1[满愿与圆满之道] --&gt; A[信仰文化体系]
+    A2[高维能量理论] --&gt; A
+    A3[心文化修法体系] --&gt; A
+    A4[悟空心文化] --&gt; A
+    
+    B1[象思维体系] --&gt; B[思维智慧体系]
+    B2[五色光智慧组织] --&gt; B
+    
+    C1[药食同源理论] --&gt; C[健康养生体系]
+    
+    D1[企业文化顶层设计] --&gt; D[企业管理体系]
+    
+    E1[AI课程体系] --&gt; E[AI教育体系]
+    
+    %% 体系间关系
+    A -.-&gt; B
+    A -.-&gt; C
+    A -.-&gt; D
+    A -.-&gt; E
+    
+    B -.-&gt; D
+    B -.-&gt; E
+    
+    C -.-&gt; A
+    C -.-&gt; B
+    
+    D -.-&gt; E
+    
+    %% 核心文档间的双向链接
+    A1 -.-&gt; A2
+    A1 -.-&gt; A3
+    A1 -.-&gt; A4
+    A1 -.-&gt; B1
+    A1 -.-&gt; B2
+    A1 -.-&gt; D1
+    
+    A2 -.-&gt; A3
+    A2 -.-&gt; B1
+    A2 -.-&gt; B2
+    A2 -.-&gt; D1
+    
+    A3 -.-&gt; A4
+    A3 -.-&gt; B1
+    A3 -.-&gt; C1
+    A3 -.-&gt; B2
+    
+    B1 -.-&gt; B2
+    B1 -.-&gt; D1
+    B1 -.-&gt; E1
+    
+    B2 -.-&gt; D1
+    B2 -.-&gt; E1
+    
+    C1 -.-&gt; A1
+    C1 -.-&gt; A2
+    C1 -.-&gt; A3
+    
+    D1 -.-&gt; B2
+    D1 -.-&gt; B1
+    D1 -.-&gt; E1
+    
+    E1 -.-&gt; B2
+    E1 -.-&gt; B1
+    E1 -.-&gt; D1</code></pre>
+<h3>2. 文档链接密度图</h3>
+<pre><code>graph TD
+    %% 中心节点：象思维体系（链接最完整）
+    象思维体系 --&gt; 满愿与圆满之道
+    象思维体系 --&gt; 高维能量理论
+    象思维体系 --&gt; 心文化修法体系
+    象思维体系 --&gt; 悟空心文化
+    象思维体系 --&gt; 五色光智慧组织
+    象思维体系 --&gt; 药食同源理论
+    象思维体系 --&gt; 企业文化顶层设计
+    象思维体系 --&gt; AI课程体系
+    
+    %% 第二层：高维能量理论
+    高维能量理论 --&gt; 满愿与圆满之道
+    高维能量理论 --&gt; 心文化修法体系
+    高维能量理论 --&gt; 五色光智慧组织
+    高维能量理论 --&gt; 企业文化顶层设计
+    
+    %% 第三层：心文化修法体系
+    心文化修法体系 --&gt; 满愿与圆满之道
+    心文化修法体系 --&gt; 药食同源理论
+    心文化修法体系 --&gt; 五色光智慧组织
+    
+    %% 第四层：五色光智慧组织
+    五色光智慧组织 --&gt; 企业文化顶层设计
+    五色光智慧组织 --&gt; AI课程体系
+    
+    %% 第五层：其他文档
+    满愿与圆满之道 --&gt; 心文化修法体系
+    满愿与圆满之道 --&gt; 高维能量理论
+    
+    企业文化顶层设计 --&gt; 五色光智慧组织
+    企业文化顶层设计 --&gt; AI课程体系
+    
+    AI课程体系 --&gt; 五色光智慧组织
+    AI课程体系 --&gt; 企业文化顶层设计
+    
+    药食同源理论 --&gt; 心文化修法体系
+    药食同源理论 --&gt; 满愿与圆满之道
+    药食同源理论 --&gt; 高维能量理论
+    
+    悟空心文化 --&gt; 心文化修法体系
+    悟空心文化 --&gt; 满愿与圆满之道
+    悟空心文化 --&gt; 高维能量理论</code></pre>
+<h3>3. 学习探索路径图</h3>
+<pre><code>flowchart TD
+    Start[开始学习] --&gt; Path1[信仰文化路径]
+    Start --&gt; Path2[思维智慧路径]
+    Start --&gt; Path3[健康养生路径]
+    Start --&gt; Path4[企业管理路径]
+    Start --&gt; Path5[AI教育路径]
+    
+    Path1 --&gt; P1_1[满愿与圆满之道&lt;br/&gt;精神导航系统]
+    P1_1 --&gt; P1_2[高维能量理论&lt;br/&gt;生命管理系统]
+    P1_2 --&gt; P1_3[心文化修法体系&lt;br/&gt;大圆满实践]
+    P1_3 --&gt; P1_4[悟空心文化&lt;br/&gt;空性智慧修行]
+    
+    Path2 --&gt; P2_1[象思维体系&lt;br/&gt;中国传统思维]
+    P2_1 --&gt; P2_2[五色光智慧组织&lt;br/&gt;现代思维应用]
+    
+    Path3 --&gt; P3_1[药食同源理论&lt;br/&gt;中医养生智慧]
+    
+    Path4 --&gt; P4_1[企业文化顶层设计&lt;br/&gt;系统文化构建]
+    
+    Path5 --&gt; P5_1[AI课程体系&lt;br/&gt;人工智能教育]
+    
+    %% 路径间交叉学习
+    P1_1 -.-&gt; P2_1
+    P1_2 -.-&gt; P2_2
+    P1_3 -.-&gt; P3_1
+    P1_4 -.-&gt; P4_1
+    
+    P2_1 -.-&gt; P3_1
+    P2_2 -.-&gt; P4_1
+    P2_2 -.-&gt; P5_1
+    
+    P4_1 -.-&gt; P5_1
+    
+    %% 最终整合
+    P1_4 --&gt; Integration[智慧整合应用]
+    P2_2 --&gt; Integration
+    P3_1 --&gt; Integration
+    P4_1 --&gt; Integration
+    P5_1 --&gt; Integration
+    
+    Integration --&gt; Practice[实践应用]
+    Practice --&gt; Growth[个人成长]
+    Practice --&gt; Leadership[领导力提升]
+    Practice --&gt; Innovation[创新突破]</code></pre>
+<h2>十、核心文档链接统计表</h2>
+<table>
+<thead><tr>
+<th>文档名称</th>
+<th>链接总数</th>
+<th>双向链接数</th>
+<th>单向链接数</th>
+<th>外部链接数</th>
+<th>链接密度</th>
+</tr></thead><tbody>
+<tr>
+<td><a href="02-__md-ec407276.html">满愿与圆满之道</a></td>
+<td>5</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>中等</td>
+</tr>
+<tr>
+<td><a href="02-__md-b7f94b11.html">高维能量理论</a></td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>高</td>
+</tr>
+<tr>
+<td><a href="02-__md-c5ac9ec3.html">心文化修法体系</a></td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>高</td>
+</tr>
+<tr>
+<td><a href="02-__md-c015c3ac.html">悟空心文化</a></td>
+<td>5</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>低</td>
+</tr>
+<tr>
+<td><a href="象思维体系.html">象思维体系</a></td>
+<td>5</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>极高</td>
+</tr>
+<tr>
+<td><a href="五色光智慧组织.html">五色光智慧组织</a></td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>高</td>
+</tr>
+<tr>
+<td><a href="药食同源理论.html">药食同源理论</a></td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>低</td>
+</tr>
+<tr>
+<td><a href="企业文化顶层设计.html">企业文化顶层设计</a></td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>3</td>
+<td>中等</td>
+</tr>
+<tr>
+<td><a href="AI课程体系.html">AI课程体系</a></td>
+<td>5</td>
+<td>0</td>
+<td>3</td>
+<td>2</td>
+<td>低</td>
+</tr>
+<tr>
+<td><strong>总计/平均</strong></td>
+<td><strong>45</strong></td>
+<td><strong>26</strong></td>
+<td><strong>17</strong></td>
+<td><strong>5</strong></td>
+<td><strong>中等</strong></td>
+</tr>
+</tbody></table>
+<p><strong>链接密度说明</strong>：</p>
+<ul>
+<li><strong>极高</strong>: 与其他8个文档都有双向链接</li>
+<li><strong>高</strong>: 有4个以上双向链接</li>
+<li><strong>中等</strong>: 有2-3个双向链接</li>
+<li><strong>低</strong>: 有0-1个双向链接</li>
+</ul>
+<h2>十一、知识应用场景图</h2>
+<pre><code>graph LR
+    %% 输入场景
+    S1[个人修行需求] --&gt; D1[满愿与圆满之道]
+    S1 --&gt; D2[心文化修法体系]
+    S1 --&gt; D3[悟空心文化]
+    
+    S2[思维提升需求] --&gt; D4[象思维体系]
+    S2 --&gt; D5[五色光智慧组织]
+    
+    S3[健康管理需求] --&gt; D6[药食同源理论]
+    
+    S4[企业管理需求] --&gt; D7[企业文化顶层设计]
+    S4 --&gt; D5
+    
+    S5[技术学习需求] --&gt; D8[AI课程体系]
+    S5 --&gt; D4
+    
+    %% 文档到应用
+    D1 --&gt; A1[精神导航实践]
+    D2 --&gt; A2[修行方法应用]
+    D3 --&gt; A3[空性智慧生活]
+    
+    D4 --&gt; A4[原创思维激发]
+    D5 --&gt; A5[团队协作优化]
+    
+    D6 --&gt; A6[体质调理养生]
+    
+    D7 --&gt; A7[文化体系建设]
+    
+    D8 --&gt; A8[AI技术应用]
+    
+    %% 综合应用
+    A1 --&gt; C[综合智慧应用]
+    A2 --&gt; C
+    A3 --&gt; C
+    A4 --&gt; C
+    A5 --&gt; C
+    A6 --&gt; C
+    A7 --&gt; C
+    A8 --&gt; C
+    
+    C --&gt; R1[个人成长加速]
+    C --&gt; R2[团队效能提升]
+    C --&gt; R3[组织文化优化]
+    C --&gt; R4[创新能力增强]</code></pre>
+<h2>十二、更新说明</h2>
+<h3>图谱更新记录</h3>
+<ul>
+<li><strong>2026-03-15</strong>: 创建基础图谱，包含核心关系图</li>
+<li><strong>2026-03-15</strong>: 添加企业管理分支，包含味藏企业经营管理体系、五行识人应用、企业文化传承、领导力分工、客户服务方法等节点</li>
+<li><strong>2026-03-15</strong>: 添加9个核心智慧文档关系图，包含网络关系图、链接密度图、学习路径图、应用场景图</li>
+<li><strong>计划更新</strong>: 根据知识库内容动态更新关系</li>
+<li><strong>自动更新</strong>: 通过脚本定期生成最新图谱</li>
+</ul>
+<h3>使用说明</h3>
+<ol>
+<li>本图谱为动态关系图，会随知识库更新而变化</li>
+<li>点击图中节点可跳转到对应文档</li>
+<li>图谱支持多种视图切换（关系图、流程图、时间线等）</li>
+<li>建议定期查看最新版本</li>
+</ol>
+<h2>十、技术实现</h2>
+<h3>1. 生成工具</h3>
+<ul>
+<li><strong>Mermaid语法</strong>: 用于生成各种图表</li>
+<li><strong>Obsidian插件</strong>: 支持实时预览和交互</li>
+<li><strong>自定义脚本</strong>: 自动化更新知识图谱</li>
+</ul>
+<h3>2. 数据来源</h3>
+<ul>
+<li>知识库文档内容分析</li>
+<li>双向链接关系提取</li>
+<li>用户行为数据统计</li>
+</ul>
+<h3>3. 更新机制</h3>
+<pre><code>📅 每日自动更新: 基础关系图谱
+📅 每周手动更新: 详细应用图谱
+📅 每月全面更新: 完整知识图谱</code></pre>
+<hr>
+<p><strong>标签</strong>: #知识图谱 #可视化 #关系网络 #智慧体系 #学习路径 #核心文档 #双向链接 #信仰文化 #思维智慧 #健康养生 #企业管理 #AI教育
+<strong>创建时间</strong>: 2026-03-15
+<strong>最后更新</strong>: 2026-03-15 9个核心智慧文档关系图全面更新</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

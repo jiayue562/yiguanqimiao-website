@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>应用场景·人格测评 - 以观其妙书院</title>
+<meta name="description" content="应用场景·人格测评 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="应用场景·人格测评">
+<meta property="og:description" content="应用场景·人格测评 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "应用场景·人格测评",
+    "description": "应用场景·人格测评 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>应用场景·人格测评</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>人格测评 · 五行人格应用场景</h1>
+<blockquote><p>场景映射编号：SC-08 | 凤爪OS.skills 标签：scene-mapping/人格测评
+核心定位：完整测评流程的入口与操作指南</p></blockquote>
+<hr>
+<h2>一、测评入口</h2>
+<p>本场景直接关联 <a href="00-测评系统-总索引.html">00-测评系统-总索引</a>，作为所有测评模块的统一入口。</p>
+<h3>快速导航</h3>
+<table>
+<thead><tr>
+<th>目标</th>
+<th>文件</th>
+</tr></thead><tbody>
+<tr>
+<td>开始测评</td>
+<td><a href="00-测评系统-总索引.html">00-测评系统-总索引</a></td>
+</tr>
+<tr>
+<td>查看规则</td>
+<td><a href="05-__07--_md-11ac2d25.html">07-阴阳属性判定-计分规则</a></td>
+</tr>
+<tr>
+<td>土行人题库</td>
+<td><a href="05-__01--_md-ed2dc4ab.html">01-土行人-测评模块</a></td>
+</tr>
+<tr>
+<td>水行人题库</td>
+<td><a href="05-__02--_md-66e1e7ca.html">02-水行人-测评模块</a></td>
+</tr>
+<tr>
+<td>木行人题库</td>
+<td><a href="05-__03--_md-42bb165e.html">03-木行人-测评模块</a></td>
+</tr>
+<tr>
+<td>金行人题库</td>
+<td><a href="05-__04--_md-493f0e5d.html">04-金行人-测评模块</a></td>
+</tr>
+<tr>
+<td>火行人题库</td>
+<td><a href="05-__05--_md-a4229e9b.html">05-火行人-测评模块</a></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>二、标准测评流程</h2>
+<h3>Step 1：明确测评目的</h3>
+<ul>
+<li>自我认知：了解自己的五行主导和阴阳偏性</li>
+<li>关系诊断：了解双方的匹配度和冲突根因</li>
+<li>团队配置：了解团队五行分布</li>
+</ul>
+<h3>Step 2：执行测评</h3>
+<ol>
+<li>五个模块依次答题</li>
+<li>每个模块三个维度全部完成</li>
+<li>如实回答，每题 5 秒内做第一反应</li>
+</ol>
+<h3>Step 3：统计得分</h3>
+<ul>
+<li>参照 <a href="05-__07--_md-11ac2d25.html">07-阴阳属性判定-计分规则</a></li>
+<li>各维度独立计算后交叉验证</li>
+</ul>
+<h3>Step 4：生成报告</h3>
+<ul>
+<li>使用 <a href="05-__08--_md-3c20cbe7.html">08-测评结果-综合报告模板</a></li>
+<li>输出五行雷达图 + 阴阳明细</li>
+</ul>
+<h3>Step 5：解读与应用</h3>
+<ul>
+<li>根据主导类型查看对应场景</li>
+<li>关联 <a href="05-<strong>-01-_md-85c89604.html">应用场景-01-亲密关系</a> ~ <a href="05-</strong>-07-_md-d9c903ec.html">应用场景-07-日常生活</a></li>
+</ul>
+<hr>
+<h2>三、测评深度体系</h2>
+<h3>L1：基础认知（5分钟）</h3>
+<ul>
+<li>五行快速自测（每题选最符合的描述）</li>
+</ul>
+<h3>L2：标准测评（30分钟）</h3>
+<ul>
+<li>完成全部五个测评模块 × 三个维度</li>
+</ul>
+<h3>L3：深度诊断（60分钟）</h3>
+<ul>
+<li>完成测评后，结合 <a href="05-__-120_md-50ae4485.html">五行人格心理学核心金句完整版-120则</a> 深度解读</li>
+<li>结合 <a href="五行识人-三步判断法.html">五行识人-三步判断法</a> 外部验证</li>
+</ul>
+<hr>
+<h2>四、应用场景联动</h2>
+<p>测评完成后，根据结果进入对应的应用场景：</p>
+<pre><code>测评结果
+    │
+    ├── 亲密关系问题 → [[应用场景-01-亲密关系]]
+    ├── 亲子教育问题 → [[应用场景-02-亲子关系]]
+    ├── 领导力困惑 → [[应用场景-03-领导力]]
+    ├── 团队协作问题 → [[应用场景-04-团队建设]]
+    ├── 沟通冲突 → [[应用场景-05-高效沟通]]
+    ├── 健康问题 → [[应用场景-06-健康养生]]
+    └── 日常生活 → [[应用场景-07-日常生活]]</code></pre>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

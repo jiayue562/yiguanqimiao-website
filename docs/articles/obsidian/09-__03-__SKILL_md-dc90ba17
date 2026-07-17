@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>重要度/紧急度矩阵 · 任务优先级排序 - 以观其妙书院</title>
+<meta name="description" content="重要度/紧急度矩阵 · 任务优先级排序 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="重要度/紧急度矩阵 · 任务优先级排序">
+<meta property="og:description" content="重要度/紧急度矩阵 · 任务优先级排序 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "重要度/紧急度矩阵 · 任务优先级排序",
+    "description": "重要度/紧急度矩阵 · 任务优先级排序 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>重要度/紧急度矩阵 · 任务优先级排序</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>重要度/紧急度矩阵 · 任务优先级排序</h1>
+<blockquote><p><strong>Skill版本</strong>: v1.0
+<strong>创建时间</strong>: 2026-04-10
+<strong>维护者</strong>: 龙龟神将
+<strong>核心分类</strong>: 问题解决 · 优先级排序</p></blockquote>
+<hr>
+<h2>📌 一句话定义</h2>
+<p><strong>重要度/紧急度矩阵</strong>（艾森豪威尔矩阵）是一种时间管理和任务优先级排序工具，将任务分为四类，区分优先度来有效管理时间。</p>
+<hr>
+<h2>🎯 核心定义</h2>
+<h3>1.1 四象限</h3>
+<pre><code>                    重要度
+                       ↑
+                       │
+         第一象限       │        第二象限
+        【重要且紧急】   │       【重要不紧急】
+         立即处理       │        计划重点
+         亲自做         │        重点做
+         ↓              │        ↓
+     ──────────────────┼─────────────────→ 紧急度
+         第三象限       │        第四象限
+        【不重要紧急】   │       【不重要不紧急】
+         尽量减少       │        尽量不做
+         授权做         │        拒绝
+                       │
+                       │</code></pre>
+<h3>1.2 四大象限策略</h3>
+<table>
+<thead><tr>
+<th>象限</th>
+<th>类型</th>
+<th>策略</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>第一象限</strong></td>
+<td>重要且紧急</td>
+<td>亲自做，立即做</td>
+</tr>
+<tr>
+<td><strong>第二象限</strong></td>
+<td>重要不紧急</td>
+<td>计划做，重点做（时间投入重点）</td>
+</tr>
+<tr>
+<td><strong>第三象限</strong></td>
+<td>不重要紧急</td>
+<td>授权做，尽量减少</td>
+</tr>
+<tr>
+<td><strong>第四象限</strong></td>
+<td>不重要不紧急</td>
+<td>尽量不做</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>📊 详细解析</h2>
+<h3>2.1 操作步骤</h3>
+<table>
+<thead><tr>
+<th>步骤</th>
+<th>操作</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>列出所有任务</td>
+<td>近期所有待办事项</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>评估分类</td>
+<td>判断重要度和紧急度，放入相应象限</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>分配时间</td>
+<td>将大部分时间投入第二象限，有效处理第一象限</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>定期审视</td>
+<td>任务状态会变化，需定期重新评估</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>💡 核心金句</h2>
+<blockquote><ol>
+<li>"最大的陷阱是沉迷第三象限（救火），而忽视第二象限（防火）" —— 注意事项</li>
+</ol></blockquote>
+<hr>
+<h2>🏷️ 标签</h2>
+<ul>
+<li>\#艾森豪威尔矩阵</li>
+<li>\#重要紧急</li>
+<li>\#优先级</li>
+<li>\#时间管理</li>
+<li>\#四象限</li>
+</ul>
+<hr>
+<p><strong>维护者</strong>: 龙龟神将
+<strong>最后更新</strong>: 2026-04-10</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

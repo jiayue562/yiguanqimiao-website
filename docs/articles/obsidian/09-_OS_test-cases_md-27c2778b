@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>龙爪OS测试用例 - 以观其妙书院</title>
+<meta name="description" content="龙爪OS测试用例 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="龙爪OS测试用例">
+<meta property="og:description" content="龙爪OS测试用例 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "龙爪OS测试用例",
+    "description": "龙爪OS测试用例 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>龙爪OS测试用例</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>龙爪OS测试用例</h1>
+<blockquote><p><strong>版本</strong>: v1.0  
+<strong>创建日期</strong>: 2026-04-10  
+<strong>维护者</strong>: 龙龟神将</p></blockquote>
+<hr>
+<h2>测试用例1：企业文化项目启动</h2>
+<h3>基本信息</h3>
+<table>
+<thead><tr>
+<th>项目</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>用例ID</strong></td>
+<td>LZ-001</td>
+</tr>
+<tr>
+<td><strong>用例名称</strong></td>
+<td>企业文化项目-直接启动</td>
+</tr>
+<tr>
+<td><strong>测试类型</strong></td>
+<td>功能测试</td>
+</tr>
+<tr>
+<td><strong>优先级</strong></td>
+<td>P0</td>
+</tr>
+</tbody></table>
+<h3>前置条件</h3>
+<ul>
+<li>龙爪OS已正确安装</li>
+<li>触发规则已生效</li>
+<li>企业文化Skill可用</li>
+</ul>
+<h3>测试步骤</h3>
+<ol>
+<li>用户输入："启动企业文化项目，进行诊断分析"</li>
+<li>观察龙爪OS响应</li>
+<li>验证项目是否正确启动</li>
+<li>验证工作流是否正确加载</li>
+</ol>
+<h3>预期结果</h3>
+<pre><code>龙爪OS响应：
+🐾 龙爪OS项目智能体激活
+📋 项目类型：企业文化
+🎯 当前阶段：诊断分析
+🔄 工作流：阶段1-企业文化诊断分析
+
+阶段1包含4个步骤：
+1. 现状调研（白光思维 + 麦肯锡七步成诗）
+2. 问题识别（蓝光思维 + 根因分析）
+3. 标杆研究（绿光思维 + 对标分析）
+4. 诊断报告（黄光思维 + 金字塔原理）
+
+预计完成时间：2周
+是否开始执行？[确认/修改/取消]</code></pre>
+<h3>验证点</h3>
+<ul>
+<li>[ ] 正确识别项目类型为"企业文化"</li>
+<li>[ ] 正确识别阶段为"诊断分析"</li>
+<li>[ ] 正确加载阶段1工作流</li>
+<li>[ ] 正确显示4个步骤</li>
+<li>[ ] 正确匹配思维模型</li>
+<li>[ ] 显示预计完成时间</li>
+</ul>
+<hr>
+<h2>测试用例2：隐含需求识别</h2>
+<h3>基本信息</h3>
+<table>
+<thead><tr>
+<th>项目</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>用例ID</strong></td>
+<td>LZ-002</td>
+</tr>
+<tr>
+<td><strong>用例名称</strong></td>
+<td>隐含项目需求-自动识别</td>
+</tr>
+<tr>
+<td><strong>测试类型</strong></td>
+<td>功能测试</td>
+</tr>
+<tr>
+<td><strong>优先级</strong></td>
+<td>P0</td>
+</tr>
+</tbody></table>
+<h3>测试步骤</h3>
+<ol>
+<li>用户输入："我们公司想梳理一下文化理念"</li>
+<li>观察龙爪OS响应</li>
+<li>验证是否正确识别隐含需求</li>
+</ol>
+<h3>预期结果</h3>
+<pre><code>龙爪OS响应：
+🐾 感知到企业文化项目需求
+🔍 自动识别项目类型：企业文化
+🎯 建议阶段：理念提炼（阶段2）
+
+检测到的需求关键词：
+- "梳理" → 整理现有文化
+- "文化理念" → 使命愿景价值观
+
+建议工作流：阶段2-企业文化理念提炼
+
+是否启动该项目？[确认/修改/取消]</code></pre>
+<h3>验证点</h3>
+<ul>
+<li>[ ] 从隐含描述中识别项目类型</li>
+<li>[ ] 正确推荐项目阶段</li>
+<li>[ ] 显示识别的关键词</li>
+<li>[ ] 提供确认选项</li>
+</ul>
+<hr>
+<h2>测试用例3：五行人格项目执行</h2>
+<h3>基本信息</h3>
+<table>
+<thead><tr>
+<th>项目</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>用例ID</strong></td>
+<td>LZ-003</td>
+</tr>
+<tr>
+<td><strong>用例名称</strong></td>
+<td>五行人格项目-完整执行</td>
+</tr>
+<tr>
+<td><strong>测试类型</strong></td>
+<td>集成测试</td>
+</tr>
+<tr>
+<td><strong>优先级</strong></td>
+<td>P0</td>
+</tr>
+</tbody></table>
+<h3>测试步骤</h3>
+<ol>
+<li>用户输入："启动五行人格测评项目"</li>
+<li>确认启动项目</li>
+<li>完成阶段1（人格测评）</li>
+<li>验证是否正确进入阶段2</li>
+<li>完成阶段2（深度分析）</li>
+<li>验证是否正确进入阶段3</li>
+</ol>
+<h3>预期结果</h3>
+<p><strong>步骤1响应</strong>：</p>
+<pre><code>🐾 龙爪OS项目智能体激活
+📋 项目类型：五行人格心理学OS
+🎯 当前阶段：人格测评
+
+阶段1-人格测评：
+1. 测评工具选择
+2. 数据采集
+3. 五行归类（1+5模式）
+4. 测评报告生成
+
+请选择测评深度：
+[快速测评(10题)] [标准测评(50题)] [深度测评(100题)]</code></pre>
+<p><strong>步骤2响应</strong>（完成阶段1后）：</p>
+<pre><code>✅ 阶段1完成：人格测评报告已生成
+
+测评结果：
+- 主五行：[木/火/土/金/水]
+- 副五行：[X]
+- 置信度：85%
+
+🔄 自动进入阶段2：深度分析
+
+阶段2包含4个步骤：
+1. 一心状态定位
+2. 三界扫描
+3. 五行生克诊断
+4. 九层定位
+
+是否继续？[确认/查看报告/暂停]</code></pre>
+<h3>验证点</h3>
+<ul>
+<li>[ ] 正确启动五行人格项目</li>
+<li>[ ] 正确加载4个阶段</li>
+<li>[ ] 阶段间自动流转</li>
+<li>[ ] 测评结果正确显示</li>
+<li>[ ] 深度分析正确启动</li>
+</ul>
+<hr>
+<h2>测试用例4：项目状态查询</h2>
+<h3>基本信息</h3>
+<table>
+<thead><tr>
+<th>项目</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>用例ID</strong></td>
+<td>LZ-004</td>
+</tr>
+<tr>
+<td><strong>用例名称</strong></td>
+<td>项目状态查询</td>
+</tr>
+<tr>
+<td><strong>测试类型</strong></td>
+<td>功能测试</td>
+</tr>
+<tr>
+<td><strong>优先级</strong></td>
+<td>P1</td>
+</tr>
+</tbody></table>
+<h3>前置条件</h3>
+<ul>
+<li>已有进行中的项目</li>
+</ul>
+<h3>测试步骤</h3>
+<ol>
+<li>用户输入："查看当前项目状态"</li>
+<li>观察龙爪OS响应</li>
+</ol>
+<h3>预期结果</h3>
+<pre><code>📊 项目状态报告
+
+项目名称：企业文化建设项目
+项目类型：企业文化
+启动时间：2026-04-10
+
+当前阶段：阶段1-诊断分析
+完成进度：50% (2/4 步骤)
+
+✅ 已完成：
+   - 步骤1：现状调研
+     完成时间：2026-04-10 10:00
+     输出：《现状调研报告》
+   
+   - 步骤2：问题识别
+     完成时间：2026-04-10 14:00
+     输出：《问题清单》
+
+🔄 进行中：
+   - 步骤3：标杆研究
+     开始时间：2026-04-10 15:00
+     预计完成：2026-04-11 12:00
+
+⏳ 待开始：
+   - 步骤4：诊断报告
+
+📅 项目时间线：
+   计划完成：2026-04-24
+   预计完成：2026-04-24（按计划）</code></pre>
+<h3>验证点</h3>
+<ul>
+<li>[ ] 显示正确的项目名称和类型</li>
+<li>[ ] 显示准确的完成进度</li>
+<li>[ ] 列出已完成的步骤和输出</li>
+<li>[ ] 显示进行中的步骤和状态</li>
+<li>[ ] 显示项目时间线</li>
+</ul>
+<hr>
+<h2>测试用例5：项目控制操作</h2>
+<h3>基本信息</h3>
+<table>
+<thead><tr>
+<th>项目</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>用例ID</strong></td>
+<td>LZ-005</td>
+</tr>
+<tr>
+<td><strong>用例名称</strong></td>
+<td>项目暂停与恢复</td>
+</tr>
+<tr>
+<td><strong>测试类型</strong></td>
+<td>功能测试</td>
+</tr>
+<tr>
+<td><strong>优先级</strong></td>
+<td>P1</td>
+</tr>
+</tbody></table>
+<h3>前置条件</h3>
+<ul>
+<li>已有进行中的项目</li>
+</ul>
+<h3>测试步骤</h3>
+<ol>
+<li>用户输入："暂停当前项目"</li>
+<li>验证项目是否正确暂停</li>
+<li>用户输入："恢复项目执行"</li>
+<li>验证项目是否正确恢复</li>
+</ol>
+<h3>预期结果</h3>
+<p><strong>暂停响应</strong>：</p>
+<pre><code>⏸️ 项目已暂停
+
+项目：企业文化建设项目
+暂停时间：2026-04-10 16:00
+当前步骤：步骤3-标杆研究（进行中）
+
+状态已保存，可随时恢复执行。
+
+操作选项：
+[恢复执行] [查看状态] [结束项目]</code></pre>
+<p><strong>恢复响应</strong>：</p>
+<pre><code>▶️ 项目恢复执行
+
+项目：企业文化建设项目
+恢复时间：2026-04-10 17:00
+
+继续执行：步骤3-标杆研究
+从上次的进度继续...
+
+🔄 正在恢复上下文...
+✅ 已恢复
+
+继续执行步骤3？
+[确认执行] [查看之前结果] [跳过此步骤]</code></pre>
+<h3>验证点</h3>
+<ul>
+<li>[ ] 正确暂停项目</li>
+<li>[ ] 保存当前状态</li>
+<li>[ ] 正确恢复项目</li>
+<li>[ ] 恢复之前的上下文</li>
+<li>[ ] 从上次的进度继续</li>
+</ul>
+<hr>
+<h2>测试用例6：思维模型调用验证</h2>
+<h3>基本信息</h3>
+<table>
+<thead><tr>
+<th>项目</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>用例ID</strong></td>
+<td>LZ-006</td>
+</tr>
+<tr>
+<td><strong>用例名称</strong></td>
+<td>工作流步骤模型调用</td>
+</tr>
+<tr>
+<td><strong>测试类型</strong></td>
+<td>集成测试</td>
+</tr>
+<tr>
+<td><strong>优先级</strong></td>
+<td>P0</td>
+</tr>
+</tbody></table>
+<h3>测试步骤</h3>
+<ol>
+<li>启动企业文化项目</li>
+<li>执行到步骤2（问题识别）</li>
+<li>验证是否正确调用蓝光思维</li>
+<li>验证是否正确调用根因分析</li>
+<li>查看分析结果</li>
+</ol>
+<h3>预期结果</h3>
+<pre><code>🎯 执行步骤2：问题识别
+
+🧠 调用思维模型：
+   主要模型：蓝光思维
+   辅助模型：根因分析（5Why）
+
+📋 分析框架：
+   1. 蓝光思维：识别文化风险点
+      - 理念与实际脱节？
+      - 部门认知不一致？
+      - 新老员工差异？
+      - 文化与战略不匹配？
+   
+   2. 根因分析：深挖问题根源
+      - 对每个风险点进行5Why分析
+      - 找到根本原因
+
+🔄 开始分析...
+
+分析结果：
+┌─────────────────────────────────────────┐
+│ 问题识别结果                           │
+├─────────────────────────────────────────┤
+│ 主要风险点：                            │
+│ 1. 文化理念与实际行为脱节（高风险）      │
+│    根因：制度未配套，缺乏行为指引        │
+│                                         │
+│ 2. 部门间文化认知不一致（中风险）        │
+│    根因：缺乏统一的文化宣贯              │
+│                                         │
+│ 3. 新员工文化认同度低（中风险）          │
+│    根因：入职培训文化模块缺失            │
+└─────────────────────────────────────────┘
+
+✅ 步骤2完成，输出：《问题清单》
+
+是否进入步骤3？[确认/重分析/查看详情]</code></pre>
+<h3>验证点</h3>
+<ul>
+<li>[ ] 正确选择蓝光思维模型</li>
+<li>[ ] 正确选择根因分析模型</li>
+<li>[ ] 正确执行分析框架</li>
+<li>[ ] 输出结构化结果</li>
+<li>[ ] 生成问题清单</li>
+</ul>
+<hr>
+<h2>测试用例7：错误处理</h2>
+<h3>基本信息</h3>
+<table>
+<thead><tr>
+<th>项目</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>用例ID</strong></td>
+<td>LZ-007</td>
+</tr>
+<tr>
+<td><strong>用例名称</strong></td>
+<td>模型调用失败容错</td>
+</tr>
+<tr>
+<td><strong>测试类型</strong></td>
+<td>异常测试</td>
+</tr>
+<tr>
+<td><strong>优先级</strong></td>
+<td>P1</td>
+</tr>
+</tbody></table>
+<h3>测试步骤</h3>
+<ol>
+<li>启动项目</li>
+<li>模拟模型调用失败</li>
+<li>验证降级处理</li>
+</ol>
+<h3>预期结果</h3>
+<pre><code>⚠️ 步骤执行遇到问题
+
+步骤：步骤2-问题识别
+问题：龙脑OS服务暂时不可用
+
+🔄 自动尝试降级方案...
+
+降级方案1：重试调用
+状态：失败
+
+降级方案2：使用简化分析逻辑
+状态：成功
+
+简化分析结果：
+（使用内置基础逻辑进行分析）
+
+主要问题：
+1. 文化理念与实际行为存在差距
+2. 部门间文化理解不一致
+3. 新员工融入困难
+
+⚠️ 注意：此为简化分析，建议稍后重试完整分析
+
+操作选项：
+[接受简化结果] [稍后重试] [跳过此步骤] [暂停项目]</code></pre>
+<h3>验证点</h3>
+<ul>
+<li>[ ] 检测到模型调用失败</li>
+<li>[ ] 自动尝试降级方案</li>
+<li>[ ] 使用简化逻辑继续</li>
+<li>[ ] 告知用户降级情况</li>
+<li>[ ] 提供后续操作选项</li>
+</ul>
+<hr>
+<h2>测试用例8：多项目切换</h2>
+<h3>基本信息</h3>
+<table>
+<thead><tr>
+<th>项目</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>用例ID</strong></td>
+<td>LZ-008</td>
+</tr>
+<tr>
+<td><strong>用例名称</strong></td>
+<td>多项目上下文切换</td>
+</tr>
+<tr>
+<td><strong>测试类型</strong></td>
+<td>功能测试</td>
+</tr>
+<tr>
+<td><strong>优先级</strong></td>
+<td>P2</td>
+</tr>
+</tbody></table>
+<h3>前置条件</h3>
+<ul>
+<li>有多个进行中的项目</li>
+</ul>
+<h3>测试步骤</h3>
+<ol>
+<li>查询项目列表</li>
+<li>切换到指定项目</li>
+<li>验证上下文正确切换</li>
+</ol>
+<h3>预期结果</h3>
+<pre><code>用户：查看所有项目
+
+📋 项目列表
+
+1. 企业文化建设项目 [进行中]
+   类型：企业文化
+   进度：50%
+   最后更新：2026-04-10 16:00
+
+2. 五行人格测评项目 [暂停]
+   类型：五行人格心理学OS
+   进度：25%
+   最后更新：2026-04-09 18:00
+
+3. 战略规划项目 [已完成]
+   类型：通用工作流
+   完成时间：2026-04-08
+
+用户：切换到项目2
+
+🔄 切换到项目：五行人格测评项目
+
+项目状态：暂停
+当前阶段：阶段1-人格测评
+当前步骤：步骤3-五行归类
+
+⏸️ 项目处于暂停状态
+是否恢复执行？[恢复/仅查看/保持暂停]</code></pre>
+<h3>验证点</h3>
+<ul>
+<li>[ ] 列出所有项目</li>
+<li>[ ] 显示项目状态</li>
+<li>[ ] 正确切换上下文</li>
+<li>[ ] 恢复项目状态</li>
+</ul>
+<hr>
+<h2>测试执行记录</h2>
+<table>
+<thead><tr>
+<th>用例ID</th>
+<th>执行日期</th>
+<th>执行人</th>
+<th>结果</th>
+<th>备注</th>
+</tr></thead><tbody>
+<tr>
+<td>LZ-001</td>
+<td></td>
+<td></td>
+<td>⬜ 未执行</td>
+<td></td>
+</tr>
+<tr>
+<td>LZ-002</td>
+<td></td>
+<td></td>
+<td>⬜ 未执行</td>
+<td></td>
+</tr>
+<tr>
+<td>LZ-003</td>
+<td></td>
+<td></td>
+<td>⬜ 未执行</td>
+<td></td>
+</tr>
+<tr>
+<td>LZ-004</td>
+<td></td>
+<td></td>
+<td>⬜ 未执行</td>
+<td></td>
+</tr>
+<tr>
+<td>LZ-005</td>
+<td></td>
+<td></td>
+<td>⬜ 未执行</td>
+<td></td>
+</tr>
+<tr>
+<td>LZ-006</td>
+<td></td>
+<td></td>
+<td>⬜ 未执行</td>
+<td></td>
+</tr>
+<tr>
+<td>LZ-007</td>
+<td></td>
+<td></td>
+<td>⬜ 未执行</td>
+<td></td>
+</tr>
+<tr>
+<td>LZ-008</td>
+<td></td>
+<td></td>
+<td>⬜ 未执行</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>龙爪OS测试用例</strong> · 确保系统质量与稳定性 🐾</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

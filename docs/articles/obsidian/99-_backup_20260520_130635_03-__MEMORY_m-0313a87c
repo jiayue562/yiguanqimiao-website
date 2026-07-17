@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MEMORY.md - 记忆系统架构 v2.1 - 以观其妙书院</title>
+<meta name="description" content="MEMORY.md - 记忆系统架构 v2.1 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="MEMORY.md - 记忆系统架构 v2.1">
+<meta property="og:description" content="MEMORY.md - 记忆系统架构 v2.1 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "MEMORY.md - 记忆系统架构 v2.1",
+    "description": "MEMORY.md - 记忆系统架构 v2.1 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>MEMORY.md - 记忆系统架构 v2.1</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<p>﻿---
+title: "MEMORY.md - 记忆系统架构 v2.1"
+created: "2026-03-27"
+version: "2.1"
+tags: [memory, architecture, system]</p>
+<hr>
+<h1>MEMORY.md - 记忆系统架构 v2.1</h1>
+<h2>🧠 记忆系统总览</h2>
+<h3>四层记忆架构（核心）</h3>
+<pre><code>┌─────────────────────────────────────────┐
+│           SESSION.md                    │
+│         (会话上下文 - 工作记忆)           │
+├─────────────────────────────────────────┤
+│           TOOLS.md                       │
+│        (工具技能 - 稳序记忆)              │
+├─────────────────────────────────────────┤
+│            USER.md                       │
+│       (用户偏好 - 长期记忆)              │
+├─────────────────────────────────────────┤
+│            SOUL.md                       │
+│       (核心身份 - 灵魂记忆)              │
+└─────────────────────────────────────────┘</code></pre>
+<h3>记忆层次说明</h3>
+<table>
+<thead><tr>
+<th>层级</th>
+<th>文件</th>
+<th>功能</th>
+<th>更新频率</th>
+<th>生命周期</th>
+</tr></thead><tbody>
+<tr>
+<td>L1 灵魂</td>
+<td>SOUL.md</td>
+<td>核心身份、价值观、长期目标</td>
+<td>重大变化时</td>
+<td>永久</td>
+</tr>
+<tr>
+<td>L2 偏好</td>
+<td>USER.md</td>
+<td>用户习惯、工作方式、禁忌</td>
+<td>每次发现新偏好</td>
+<td>长期</td>
+</tr>
+<tr>
+<td>L3 工具</td>
+<td>TOOLS.md</td>
+<td>技能列表、配置信息</td>
+<td>技能变化时</td>
+<td>中期</td>
+</tr>
+<tr>
+<td>L4 上下文</td>
+<td>SESSION.md</td>
+<td>当前任务、进度、变量</td>
+<td>每次工具调用</td>
+<td>会话</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>📡 三向同步架构</h2>
+<h3>WorkBuddy ↔ Obsidian ↔ IMA 同步</h3>
+<pre><code>                    ┌──────────────┐
+                    │   WorkBuddy  │
+                    │   Brain      │
+                    └──────┬───────┘
+                           │ 实时同步
+                    ┌──────▼───────┐
+                    │   Obsidian   │
+                    │  (主知识库)   │
+                    └──────┬───────┘
+                           │ 每日备份
+                    ┌──────▼───────┐
+                    │     IMA      │
+                    │  (移动笔记)   │
+                    └──────────────┘</code></pre>
+<h3>同步策略详情</h3>
+<table>
+<thead><tr>
+<th>平台</th>
+<th>同步内容</th>
+<th>同步时机</th>
+<th>同步方式</th>
+</tr></thead><tbody>
+<tr>
+<td>WorkBuddy Brain</td>
+<td>当前会话、任务状态、对话历史</td>
+<td>实时</td>
+<td>自动</td>
+</tr>
+<tr>
+<td>Obsidian</td>
+<td>完整记忆备份、深度知识沉淀</td>
+<td>每日+会话结束</td>
+<td>自动</td>
+</tr>
+<tr>
+<td>IMA</td>
+<td>快速笔记、临时想法、灵感捕捉</td>
+<td>随时</td>
+<td>手动+半自动</td>
+</tr>
+</tbody></table>
+<h3>自动化备份策略</h3>
+<h4>WorkBuddy → Obsidian 自动备份</h4>
+<ul>
+<li><strong>触发条件</strong>：每次对话结束</li>
+<li><strong>备份内容</strong>：<ul>
+<li>SOUL.md（核心身份）</li>
+<li>USER.md（用户偏好）</li>
+<li>TOOLS.md（工具列表）</li>
+<li>今日对话记录（YYYY-MM-DD.md）</li>
+</ul></li>
+<li><strong>目标路径</strong>：<code>C:\Users\jia'yue\Desktop\以观其妙书院知识库\观其妙书院\03-记忆系统\</code></li>
+</ul>
+<h4>WorkBuddy → IMA 快速同步</h4>
+<ul>
+<li><strong>触发条件</strong>：用户明确指定"存入 IMA"</li>
+<li><strong>同步内容</strong>：重要笔记、灵感、关键洞察</li>
+<li><strong>目标笔记本</strong>：待配置（建议："WorkBuddy 笔记"）</li>
+</ul>
+<hr>
+<h2>🔄 记忆流转机制</h2>
+<h3>输入流程（检索与组装）</h3>
+<pre><code>用户输入
+  ↓
+意图识别（龙心OS 场景路由）
+  ↓
+记忆检索（四层记忆 + 向量检索）
+  ↓
+上下文组装（SOUL + USER + TOOLS + SESSION）
+  ↓
+响应生成（调用引擎/工具）</code></pre>
+<h3>输出流程（沉淀与存储）</h3>
+<pre><code>响应生成
+  ↓
+知行合一沉淀（满足条件时自动触发）
+  ↓
+记忆更新（写入相应层级）
+  ↓
+同步分发（Obsidian + IMA）
+  ↓
+存储（最终持久化）</code></pre>
+<hr>
+<h2>🛡️ 增强记忆功能系统</h2>
+<h3>功能矩阵</h3>
+<table>
+<thead><tr>
+<th>功能模块</th>
+<th>功能描述</th>
+<th>实现方式</th>
+<th>优先级</th>
+<th>状态</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>实体识别</strong></td>
+<td>从对话中识别实体、建立关联</td>
+<td>NER + 关系抽取</td>
+<td>P0</td>
+<td>✅ 已实现</td>
+</tr>
+<tr>
+<td><strong>类型标注</strong></td>
+<td>为记忆打标签分类</td>
+<td>实体类型系统</td>
+<td>P0</td>
+<td>✅ 已实现</td>
+</tr>
+<tr>
+<td><strong>结构化记忆</strong></td>
+<td>实体+属性+关系三元组</td>
+<td>Memory 格式</td>
+<td>P0</td>
+<td>✅ 已实现</td>
+</tr>
+<tr>
+<td><strong>错误记录</strong></td>
+<td>ERRORS.md 自动记录</td>
+<td>自动写入</td>
+<td>P0</td>
+<td>✅ 已实现</td>
+</tr>
+<tr>
+<td><strong>学习沉淀</strong></td>
+<td>LEARNINGS.md 知识积累</td>
+<td>知行合一</td>
+<td>P0</td>
+<td>✅ 已实现</td>
+</tr>
+<tr>
+<td><strong>反馈学习</strong></td>
+<td>从用户反馈中学习</td>
+<td>偏好记录</td>
+<td>P1</td>
+<td>✅ 已实现</td>
+</tr>
+<tr>
+<td><strong>Obsidian CLI</strong></td>
+<td>笔记自动化操作</td>
+<td>obsidian-cli</td>
+<td>P1</td>
+<td>⏳ 待配置</td>
+</tr>
+<tr>
+<td><strong>记忆治理</strong></td>
+<td>分类、整理、优化记忆</td>
+<td>自动化脚本</td>
+<td>P2</td>
+<td>⏳ 待开发</td>
+</tr>
+<tr>
+<td><strong>向量化存储</strong></td>
+<td>嵌入向量数据库</td>
+<td>待选型</td>
+<td>P2</td>
+<td>⏳ 待实现</td>
+</tr>
+<tr>
+<td><strong>语义检索</strong></td>
+<td>相似记忆召回</td>
+<td>向量相似度</td>
+<td>P2</td>
+<td>⏳ 待实现</td>
+</tr>
+<tr>
+<td><strong>记忆图谱</strong></td>
+<td>可视化关系网络</td>
+<td>Obsidian Graph</td>
+<td>P3</td>
+<td>✅ 已支持</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>📊 记忆管理规范</h2>
+<h3>记忆分类标准</h3>
+<h4>按内容分类</h4>
+<pre><code>身份类 (SOUL)
+  - 核心身份定义
+  - 价值观与使命
+  - 人格特质
+
+偏好类 (USER)
+  - 工作习惯
+  - 沟通风格
+  - 禁忌与不喜欢
+
+技能类 (TOOLS)
+  - 可用工具列表
+  - 工具配置信息
+  - 工具使用经验
+
+上下文类 (SESSION)
+  - 当前任务状态
+  - 对话历史
+  - 临时变量
+
+学习类 (LEARNINGS)
+  - 知识点
+  - 洞察
+  - 创新发现
+
+错误类 (ERRORS)
+  - 错误记录
+  - 解决方案
+  - 避坑指南</code></pre>
+<h4>按重要性分类</h4>
+<pre><code>核心级 (不可删除)
+  - SOUL.md
+  - USER.md
+  - IDENTITY.md
+
+重要级 (谨慎删除)
+  - TOOLS.md
+  - AGENTS.md
+  - BOOTSTRAP.md
+
+一般级 (可覆盖)
+  - SESSION.md
+  - LEARNINGS.md
+
+临时级 (会话后清除)
+  - 临时变量
+  - 对话缓存</code></pre>
+<h3>记忆清理规则</h3>
+<table>
+<thead><tr>
+<th>文件</th>
+<th>清理规则</th>
+<th>清理时机</th>
+</tr></thead><tbody>
+<tr>
+<td>SESSION.md</td>
+<td>会话结束后归档到 01-每日归档/</td>
+<td>每次会话结束</td>
+</tr>
+<tr>
+<td>临时变量</td>
+<td>立即清除</td>
+<td>任务完成</td>
+</tr>
+<tr>
+<td>对话缓存</td>
+<td>保留最近 7-10 轮</td>
+<td>每次新对话</td>
+</tr>
+<tr>
+<td>ERRORS.md</td>
+<td>归档过期错误</td>
+<td>每月</td>
+</tr>
+<tr>
+<td>LEARNINGS.md</td>
+<td>归档到知识库</td>
+<td>每周</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🔗 文档工程完整结构</h2>
+<h3>四层核心文档（已存在 ✅）</h3>
+<pre><code>C:\Users\jia'yue\.workbuddy\
+├── SOUL.md          ✅ 核心身份与长期记忆
+├── USER.md          ✅ 用户偏好与习惯
+├── TOOLS.md         ✅ 可用工具与技能
+└── SESSION.md       ✅ 当前会话上下文</code></pre>
+<h3>工程支撑文档（已存在 ✅）</h3>
+<pre><code>C:\Users\jia'yue\.workbuddy\
+├── IDENTITY.md      ✅ 身份锚点（木火共生关系）
+├── AGENTS.md        ✅ 智能体配置
+├── BOOTSTRAP.md     ✅ 启动配置（已删除）
+└── HEARTBEAT.md     ⏳ 心跳监控（待创建）</code></pre>
+<h3>进化管理文档（待创建 ⏳）</h3>
+<pre><code>C:\Users\jia'yue\.workbuddy\
+├── ERRORS.md        ⏳ 错误记录与规避
+└── LEARNINGS.md     ⏳ 学习积累与知识沉淀</code></pre>
+<hr>
+<h2>🎯 自动化记忆系统功能清单</h2>
+<h3>1. Obsidian Markdown 笔记库管理</h3>
+<ul>
+<li><strong>功能</strong>：obsidian-cli 实现笔记自动化操作</li>
+<li><strong>状态</strong>：⏳ 待安装和配置</li>
+<li><strong>工具</strong>：obsidian-cli 或 notesmd-cli</li>
+</ul>
+<h3>2. AI 智能体跨会话长期记忆</h3>
+<ul>
+<li><strong>功能</strong>：长周期对话内容记忆与调取</li>
+<li><strong>状态</strong>：✅ 已实现</li>
+<li><strong>实现</strong>：WorkBuddy Brain + 向量检索</li>
+</ul>
+<h3>3. AI 智能体记忆治理</h3>
+<ul>
+<li><strong>功能</strong>：分类、整理、优化记忆内容，提升调用效率</li>
+<li><strong>状态</strong>：⏳ 待开发自动化脚本</li>
+<li><strong>方案</strong>：定期运行记忆清理和优化脚本</li>
+</ul>
+<h3>4. Clawdbot 文档专家</h3>
+<ul>
+<li><strong>功能</strong>：导航、搜索、版本追踪及配置代码片段提供</li>
+<li><strong>状态</strong>：⏳ 待集成</li>
+<li><strong>替代方案</strong>：WorkBuddy 内置文档检索能力</li>
+</ul>
+<h3>5. AI 自进化引擎</h3>
+<ul>
+<li><strong>功能</strong>：自动学习新能力并动态优化</li>
+<li><strong>状态</strong>：✅ 已实现（知行合一 + self-improving-agent）</li>
+<li><strong>实现</strong>：知行合一三阶段转化模型</li>
+</ul>
+<h3>6. 自主学习系统</h3>
+<ul>
+<li><strong>功能</strong>：持续分析用户习惯并调整策略</li>
+<li><strong>状态</strong>：✅ 已实现</li>
+<li><strong>实现</strong>：USER.md 偏好记录 + 智能优先级调整</li>
+</ul>
+<h3>7. 自然语言交互</h3>
+<ul>
+<li><strong>功能</strong>：通过自然语言交互实现文档处理、信息检索</li>
+<li><strong>状态</strong>：✅ 已实现</li>
+<li><strong>实现</strong>：WorkBuddy 对话能力 + RAG 检索</li>
+</ul>
+<h3>8. 记忆系统增强</h3>
+<h4>8.1 用户偏好记录</h4>
+<ul>
+<li><strong>状态</strong>：✅ 已实现</li>
+<li><strong>实现</strong>：USER.md + 实时更新</li>
+</ul>
+<h4>8.2 工作目标跟踪</h4>
+<ul>
+<li><strong>状态</strong>：✅ 已实现</li>
+<li><strong>实现</strong>：USER.md 目标管理 + 心跳监控</li>
+</ul>
+<h4>8.3 智能优先级调整</h4>
+<ul>
+<li><strong>状态</strong>：✅ 已实现</li>
+<li><strong>实现</strong>：USER.md 优先级矩阵 + 动态调整规则</li>
+</ul>
+<h3>9. 结构化长期记忆（实体识别）</h3>
+<ul>
+<li><strong>功能</strong>：从对话中识别实体、建立关联、打类型标签</li>
+<li><strong>状态</strong>：✅ 已实现</li>
+<li><strong>示例</strong>：<ul>
+<li>偏好-简洁风格</li>
+<li>人格-木行人</li>
+<li>角色-企业家</li>
+<li>知识-象思维专家</li>
+<li>目标-超级个体赋能</li>
+</ul></li>
+</ul>
+<h3>10. 错误记录与规避</h3>
+<ul>
+<li><strong>功能</strong>：自动监控执行结果和用户反馈，写入日志，类似问题自动查询</li>
+<li><strong>状态</strong>：✅ 已实现（需创建 ERRORS.md）</li>
+<li><strong>示例</strong>：</li>
+</ul>
+<h3>11. 终身学习机制</h3>
+<ul>
+<li><strong>功能</strong>：三级进化体系</li>
+<li><strong>状态</strong>：✅ 已实现</li>
+<li><strong>实现</strong>：</li>
+</ul>
+<h3>12. 跨 AI 知识共享</h3>
+<ul>
+<li><strong>功能</strong>：单个 AI 的进步可转化为全平台 Skill</li>
+<li><strong>状态</strong>：✅ 已实现</li>
+<li><strong>实现</strong>：Skills 系统 + ClawHub</li>
+</ul>
+<h3>13. 无限有序记忆系统</h3>
+<ul>
+<li><strong>功能</strong>：补充 AI 助手的内置记忆，无限分类存储</li>
+<li><strong>状态</strong>：✅ 已实现</li>
+<li><strong>实现</strong>：Obsidian PKM + WorkBuddy Brain</li>
+</ul>
+<h3>14. Obsidian PKM 与结构化本体双向同步</h3>
+<ul>
+<li><strong>功能</strong>：从 markdown 自动提取实体和关系，维护本体图谱</li>
+<li><strong>状态</strong>：⏳ 待开发</li>
+<li><strong>计划</strong>：通过 cron 定期运行同步脚本</li>
+</ul>
+<hr>
+<h2>📅 自动化任务规划</h2>
+<h3>每日任务（已配置 ✅）</h3>
+<ul>
+<li><strong>23:30 自动备份</strong>：WorkBuddy → Obsidian</li>
+<li><strong>心跳监控</strong>：每 15 分钟检查任务状态（automation-4）</li>
+</ul>
+<h3>每周任务（待配置 ⏳）</h3>
+<ul>
+<li><strong>记忆清理</strong>：清理临时记忆和过期缓存</li>
+<li><strong>学习归档</strong>：将本周 LEARNINGS 归档到知识库</li>
+<li><strong>错误复盘</strong>：分析本周错误，更新 ERRORS.md</li>
+</ul>
+<h3>每月任务（待配置 ⏳）</h3>
+<ul>
+<li><strong>系统优化</strong>：分析记忆调用效率，优化存储结构</li>
+<li><strong>知识图谱更新</strong>：更新 Obsidian 关系图谱</li>
+<li><strong>版本备份</strong>：完整备份记忆系统</li>
+</ul>
+<hr>
+<h2>🔗 关联文档索引</h2>
+<h3>WorkBuddy 本地路径</h3>
+<pre><code>C:\Users\jia'yue\.workbuddy\
+├── SOUL.md              # 核心身份
+├── USER.md              # 用户偏好
+├── TOOLS.md             # 工具列表
+├── SESSION.md           # 会话上下文
+├── IDENTITY.md          # 身份锚点
+├── AGENTS.md            # 智能体配置
+├── HEARTBEAT.md         # 心跳监控
+├── ERRORS.md            # 错误记录（待创建）
+├── LEARNINGS.md         # 学习积累（待创建）
+└── 共生关系检查清单.md  # 共生关系维护</code></pre>
+<h3>Obsidian 备份路径</h3>
+<pre><code>C:\Users\jia'yue\Desktop\以观其妙书院知识库\观其妙书院\
+└── 03-记忆系统\
+    ├── SOUL.md          # 核心身份
+    ├── USER.md          # 用户偏好
+    ├── TOOLS.md         # 工具列表
+    ├── SESSION.md       # 会话上下文
+    ├── IDENTITY.md      # 身份锚点
+    ├── AGENTS.md        # 智能体配置
+    ├── BOOTSTRAP.md     # 启动配置
+    ├── HEARTBEAT.md     # 心跳监控
+    ├── MEMORY.md        # 记忆架构
+    └── 用户档案/</code></pre>
+<h3>IMA 笔记路径</h3>
+<pre><code>IMA 云端笔记
+└── "WorkBuddy 笔记"（笔记本）
+    ├── 核心身份
+    ├── 用户偏好
+    ├── 工具技能
+    ├── 学习记录
+    └── 错误记录</code></pre>
+<hr>
+<h2>🎯 系统升级计划</h2>
+<h3>当前待完成事项（2026-03-27更新）</h3>
+<table>
+<thead><tr>
+<th>优先级</th>
+<th>任务</th>
+<th>所有者</th>
+<th>状态</th>
+<th>推荐方案</th>
+</tr></thead><tbody>
+<tr>
+<td>🔴 P0</td>
+<td>IMA API手动测试</td>
+<td>悟空</td>
+<td>⏳</td>
+<td>周二上午</td>
+</tr>
+<tr>
+<td>🔴 P0</td>
+<td>Obsidian CLI激活</td>
+<td>悟空</td>
+<td>⏳</td>
+<td>周二上午</td>
+</tr>
+<tr>
+<td>🟡 P1</td>
+<td>月度总结方案决策</td>
+<td>决策</td>
+<td>❓</td>
+<td>推荐B方案（最后周五合并）</td>
+</tr>
+<tr>
+<td>🟡 P1</td>
+<td>文档标准化提升</td>
+<td>龙龟</td>
+<td>⏳</td>
+<td>推荐现在立即（30min）</td>
+</tr>
+<tr>
+<td>🟢 P2</td>
+<td>Python验证工具运行</td>
+<td>悟空</td>
+<td>⏳</td>
+<td>周末</td>
+</tr>
+</tbody></table>
+<h3>v2.1 计划（短期）</h3>
+<ul>
+<li>[x] 创建 HEARTBEAT.md 心跳监控文档</li>
+<li>[x] 创建 ERRORS.md 错误记录文档</li>
+<li>[x] 创建 LEARNINGS.md 学习积累文档</li>
+<li>[ ] 配置 obsidian-cli 自动化脚本</li>
+<li>[ ] 设置每周记忆清理自动化任务</li>
+</ul>
+<h3>v2.2 计划（中期）</h3>
+<ul>
+<li>[ ] 开发实体识别和关系抽取增强模块</li>
+<li>[ ] 实现记忆治理自动化脚本</li>
+<li>[ ] 建立语义检索能力</li>
+<li>[ ] 开发 Obsidian PKM 与结构化本体双向同步</li>
+</ul>
+<h3>v3.0 计划（长期）</h3>
+<ul>
+<li>[ ] 引入向量化存储</li>
+<li>[ ] 构建记忆图谱可视化</li>
+<li>[ ] 实现跨 AI 知识共享自动化</li>
+<li>[ ] 开发企业级多用户协同记忆系统</li>
+</ul>
+<hr>
+<p><strong>文档版本</strong>: 2.1
+<strong>最后更新</strong>: 2026-03-27
+<strong>维护者</strong>: 龙龟神将
+<strong>同步状态</strong>: WorkBuddy ↔ Obsidian ↔ IMA 三向同步</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

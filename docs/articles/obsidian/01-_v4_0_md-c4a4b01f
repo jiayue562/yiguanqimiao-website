@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>岗位智能体通用生成器 v4.0 · 深度学习档案 - 以观其妙书院</title>
+<meta name="description" content="岗位智能体通用生成器 v4.0 · 深度学习档案 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="岗位智能体通用生成器 v4.0 · 深度学习档案">
+<meta property="og:description" content="岗位智能体通用生成器 v4.0 · 深度学习档案 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "岗位智能体通用生成器 v4.0 · 深度学习档案",
+    "description": "岗位智能体通用生成器 v4.0 · 深度学习档案 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>岗位智能体通用生成器 v4.0 · 深度学习档案</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>岗位智能体通用生成器 v4.0 · 深度学习档案</h1>
+<blockquote><p><strong>学习日期</strong>: 2026-05-26 | <strong>方法论</strong>: 知行合一三阶段 | <strong>维护者</strong>: 龙龟神将
+<strong>源文档</strong>: <code>Desktop/岗位智能体通用生成器文档_v4.0.md</code>
+<strong>关联</strong>: <a href="岗位智能体通用生成器文档_v3.0.html">岗位智能体通用生成器文档_v3.0</a> | <a href="岗位智能体开发文档_v4.0.html">岗位智能体开发文档_v4.0</a> | <a href="味藏店长龙爪.html">味藏店长龙爪</a></p></blockquote>
+<hr>
+<h2>📊 第一阶段：表示空间 — 标签化拆解</h2>
+<h3>1.1 版本进化全链路</h3>
+<pre><code>v1.0 → v2.0 → v3.0 → v4.0 → v5.0(展望)
+16模块  信息交会点  13模块框架  双模式+信号网络  一键生成引擎
+填满    4步拆解     龙爪信号    跨岗位协作      智能体市场
+        8字段输入   5行适配     生命周期管理    自评分+自动修复
+                    行动日历    质量样例墙
+                    100分评分   部署检查清单</code></pre>
+<h3>1.2 v4.0 九大新增知识点</h3>
+<table>
+<thead><tr>
+<th>#</th>
+<th>知识点</th>
+<th>标签</th>
+<th>核心价值</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>双模式架构</strong></td>
+<td>#轻量模式 #完整模式 #快速开始</td>
+<td>10分钟出成果 vs 1小时完整部署</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>跨岗位信号网络</strong></td>
+<td>#信号拓扑 #星型 #链式 #网状 #信号冲突</td>
+<td>从单兵到生态的关键升级</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>质量样例墙</strong></td>
+<td>#90分样例 #70分样例 #50分样例</td>
+<td>不会写？看例子——好/中/差对照</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>去总部化实战指南</strong></td>
+<td>#L1信息 #L2决策 #L3职能 #去中心化</td>
+<td>从概念到三层实操模型</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Agent生命周期</strong></td>
+<td>#创建 #运营 #升级 #退役</td>
+<td>智能体不是一次性产出，需要持续运维</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>部署检查清单</strong></td>
+<td>#格式转换 #用户验收 #上线</td>
+<td>生成完不知道怎么用？按清单来</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>少样本增强Prompt</strong></td>
+<td>#少样本示例 #自检机制 #质量铁律</td>
+<td>比v3.0 Prompt更强大——给90分样例作标杆</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>版本号规范</strong></td>
+<td>#v1.0 #v1.x #v2.0 #v3.0+</td>
+<td>每个版本的升级标准</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>快速开始向导</strong></td>
+<td>#10分钟入门 #选模式 #填输入 #跑Prompt</td>
+<td>新人友好</td>
+</tr>
+</tbody></table>
+<h3>1.3 双模式决策树</h3>
+<pre><code>首次使用？→ 是 → 轻量模式(4模块: 01身份+02定义+06指标+08日历)
+                ↓
+           2周后→ 效果好吗？→ 是 → 升级到完整模式(13模块)
+                            → 否 → 检查06指标墙是否缺公式
+
+正式部署？→ 是 → 完整模式(13模块)
+                ↓
+           管理岗？→ 是 → 必装模块10(文化落地)
+                → 否 → 模块10权重自动分配给04和12</code></pre>
+<h3>1.4 13模块与轻量/完整映射</h3>
+<table>
+<thead><tr>
+<th>模块</th>
+<th>名称</th>
+<th>轻量</th>
+<th>完整</th>
+<th>权重</th>
+</tr></thead><tbody>
+<tr>
+<td>01</td>
+<td>身份声明</td>
+<td>✅</td>
+<td>✅</td>
+<td>5</td>
+</tr>
+<tr>
+<td>02</td>
+<td>核心定义</td>
+<td>✅</td>
+<td>✅</td>
+<td>10</td>
+</tr>
+<tr>
+<td>03</td>
+<td>能力架构</td>
+<td>❌</td>
+<td>✅</td>
+<td>5</td>
+</tr>
+<tr>
+<td>04</td>
+<td>核心能力</td>
+<td>❌</td>
+<td>✅</td>
+<td>5</td>
+</tr>
+<tr>
+<td>05</td>
+<td>五行适配矩阵</td>
+<td>❌</td>
+<td>✅</td>
+<td>10</td>
+</tr>
+<tr>
+<td>06</td>
+<td><strong>指标墙</strong></td>
+<td>✅⭐</td>
+<td>✅⭐</td>
+<td>15</td>
+</tr>
+<tr>
+<td>07</td>
+<td>龙爪信号协议</td>
+<td>❌</td>
+<td>✅</td>
+<td>10</td>
+</tr>
+<tr>
+<td>08</td>
+<td><strong>三层行动日历</strong></td>
+<td>✅⭐</td>
+<td>✅⭐</td>
+<td>15</td>
+</tr>
+<tr>
+<td>09</td>
+<td>AI协作模式</td>
+<td>❌</td>
+<td>✅</td>
+<td>10</td>
+</tr>
+<tr>
+<td>10</td>
+<td>文化落地引擎</td>
+<td>❌</td>
+<td>✅*</td>
+<td>5*</td>
+</tr>
+<tr>
+<td>11</td>
+<td>知识索引</td>
+<td>❌</td>
+<td>✅</td>
+<td>5</td>
+</tr>
+<tr>
+<td>12</td>
+<td>风险控制</td>
+<td>❌</td>
+<td>✅</td>
+<td>5</td>
+</tr>
+<tr>
+<td>13</td>
+<td>一句话哲学</td>
+<td>❌</td>
+<td>✅</td>
+<td>5</td>
+</tr>
+</tbody></table>
+<blockquote><p>*管理岗必装，非管理岗权重自动分配给04(10)+12(10)</p></blockquote>
+<h3>1.5 信号网络核心概念</h3>
+<pre><code>信号拓扑三类型:
+  星型: 一中心多节点（总经理←→各部门）→ 适合餐饮/零售/工厂
+  链式: 采购→仓储→生产→销售 → 适合制造业/供应链
+  网状: 全连通（研发↔产品↔运营↔市场） → 适合互联网/科技
+
+信号路由标准格式:
+  name: "信号名"
+  source: "来源智能体"
+  target: "目标智能体"
+  condition: "触发条件"
+  content: "信号内容模板"
+  response: {expected: "响应时限", escalation: "超时升级路径"}
+  collision: {rule: "冲突处理规则", priority: ["🔴&gt;🟡&gt;ℹ️"]}
+
+信号冲突处理:
+  - 多信号并发 → 按优先级队列处理
+  - 同类信号连续 → 合并为一条+趋势
+  - 链路断路 → 超时自动升级给上一级</code></pre>
+<h3>1.6 质量样例墙核心法则</h3>
+<pre><code>90分的关键:
+  指标墙(06): ①公式写出来了 ②有预警值 ③有时间闭环 ④数量不超
+  行动日历(08): ①有时间点 ②有人做啥+AI做啥 ③≤7项 ④可打印贴墙上
+  五行适配(05): ①5行全填 ②具体到岗位场景 ③有AI话术 ④有风险+进化
+  龙爪信号(07): ①有闭环 ②有超时升级 ③有响应时限
+
+50分→70分→90分的差距:
+  指标墙: "做好数据分析" → "渠道ROI,每周" → "渠道ROI=营收/成本,每周,&lt;1:2黄线,&lt;1:1.5红线→24h响应"
+  行动日历: "周一开会" → "每周复盘" → "09:00 AI推送日报→你确认3个异常,10min"</code></pre>
+<h3>1.7 去总部化三层模型</h3>
+<pre><code>L1 信息去中心化: 总部不再收集分发数据 → AI自动推送各岗位
+L2 决策去中心化: 总部不再审批常规决策 → AI推演+人确认
+L3 职能去中心化: 总部某个部门被智能体网络替代 → 需要3个月过渡期并行
+
+岗位智能体的 de_hq_contribution 字段回答了:
+  "有了这个智能体，总部哪个岗位/部门可以被缩减或撤销？"</code></pre>
+<h3>1.8 生命周期四阶段</h3>
+<pre><code>创建(今天): 轻量模式→用起来→完整模式→完善
+运营(1-3月): 每月校准指标→每季度校准工作流→降级未用的★★★
+升级(3-6月): 模块更新→信号网络→版本号升级
+退役(不再需要): 职责变化&gt;50%→连续2季度无人用→被另一个智能体覆盖</code></pre>
+<hr>
+<h2>🔬 第二阶段：压缩 — 核心化提炼</h2>
+<h3>2.1 一句话哲学</h3>
+<blockquote><p>"v3.0 教你造一个智能体，v4.0 教你维护一整个智能体生态——从创建到运营到退役，从单兵作战到信号网络。"</p></blockquote>
+<h3>2.2 三条核心进化</h3>
+<table>
+<thead><tr>
+<th>进化维度</th>
+<th>v3.0</th>
+<th>v4.0</th>
+<th>本质</th>
+</tr></thead><tbody>
+<tr>
+<td>使用模式</td>
+<td>唯一路径</td>
+<td>双模式</td>
+<td>降低门槛（10分钟 vs 1小时）</td>
+</tr>
+<tr>
+<td>协作范围</td>
+<td>单智能体</td>
+<td>跨岗位信号网络</td>
+<td>从单兵到生态</td>
+</tr>
+<tr>
+<td>时间维度</td>
+<td>一次性生成</td>
+<td>全生命周期</td>
+<td>从交付到运维</td>
+</tr>
+</tbody></table>
+<h3>2.3 v4.0 十大隐秘知识联系</h3>
+<table>
+<thead><tr>
+<th>#</th>
+<th>联系</th>
+<th>类型</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>轻量模式←→去总部化L1阶段（信息去中心化）— 先让信息自动流转，再让决策去中心化</td>
+<td>阶段对应</td>
+</tr>
+<tr>
+<td>2</td>
+<td>完整模式←→去总部化L2/L3阶段 — 13模块覆盖信号协议/文化落地/风险控制 — 需要L2/L3成熟度</td>
+<td>能力匹配</td>
+</tr>
+<tr>
+<td>3</td>
+<td>质量样例墙←→岗位智能体v3.0 7S评分 — 都是"给标准不给模糊"的设计哲学</td>
+<td>设计同构</td>
+</tr>
+<tr>
+<td>4</td>
+<td>跨岗位信号网络←→龙心OS 1+5模式 — 信号网络=总智能体调度的信息基础设施</td>
+<td>架构映射</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Agent生命周期←→知行合一闭环 — 创建=表示空间/运营=压缩/升级=泛化/退役=闭环重置</td>
+<td>框架同构</td>
+</tr>
+<tr>
+<td>6</td>
+<td>部署检查清单←→味藏店长龙爪三层行动日历 — 都是"从生成到执行"的最后一公里</td>
+<td>落地对应</td>
+</tr>
+<tr>
+<td>7</td>
+<td>少样本增强Prompt←→知识学习十项认知指令 — 少样本=给模型看"什么算好"=启发+映射</td>
+<td>方法融合</td>
+</tr>
+<tr>
+<td>8</td>
+<td>信号冲突处理(🔴&gt;🟡&gt;ℹ️)←→三层指标体系(结果&gt;过程&gt;风险) — 优先级体系跨模块统一</td>
+<td>体系一致</td>
+</tr>
+<tr>
+<td>9</td>
+<td>星型/链式/网状拓扑←→差序格局水波纹 — 组织结构的自然涌现 vs AI信号网络的人为设计</td>
+<td>理论对话</td>
+</tr>
+<tr>
+<td>10</td>
+<td>v4.0 9字段输入←→v3.0 11字段输入 — 减去"信号接口"和"管理层级"→合并到S1岗位画像自动推断</td>
+<td>进化逻辑</td>
+</tr>
+</tbody></table>
+<h3>2.4 v4.0与岗位智能体SKILL.md的映射</h3>
+<table>
+<thead><tr>
+<th>v4.0模块</th>
+<th>岗位智能体SKILL.md对应</th>
+<th>融合状态</th>
+</tr></thead><tbody>
+<tr>
+<td>双模式</td>
+<td>双模式+三种输出类型</td>
+<td>✅ 已融合</td>
+</tr>
+<tr>
+<td>13模块定义</td>
+<td>10步SOP核心组成</td>
+<td>⚠️ 需更新引用</td>
+</tr>
+<tr>
+<td>跨岗位信号网络</td>
+<td>龙爪信号协议(Step 9)</td>
+<td>🆕 需新增</td>
+</tr>
+<tr>
+<td>质量样例墙</td>
+<td>质量检查清单</td>
+<td>🆕 需新增</td>
+</tr>
+<tr>
+<td>去总部化实战指南</td>
+<td>去总部化理论整合</td>
+<td>✅ 已融合</td>
+</tr>
+<tr>
+<td>Agent生命周期</td>
+<td>无</td>
+<td>🆕 需新增</td>
+</tr>
+<tr>
+<td>部署检查清单</td>
+<td>无</td>
+<td>🆕 需新增</td>
+</tr>
+<tr>
+<td>少样本增强Prompt</td>
+<td>生成器Prompt(旧版)</td>
+<td>🆕 需替换</td>
+</tr>
+<tr>
+<td>版本号规范</td>
+<td>版本信息(v3.0→v4.0)</td>
+<td>⚠️ 需更新</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🎯 第三阶段：泛化 — 存储三库</h2>
+<h3>3.1 知识资产清单</h3>
+<table>
+<thead><tr>
+<th>资产</th>
+<th>路径</th>
+<th>状态</th>
+</tr></thead><tbody>
+<tr>
+<td>Obsidian存储</td>
+<td><code>D:/以观其妙书院知识库/以观其妙书院/01-核心体系/</code></td>
+<td>⏳ 待存储</td>
+</tr>
+<tr>
+<td>IMA存储</td>
+<td><code>以观其妙书院/龙龟神将备份资料/</code></td>
+<td>⏳ 待存储</td>
+</tr>
+<tr>
+<td>LLM Wiki</td>
+<td><code>.workbuddy/wiki-knowledge/</code></td>
+<td>⏳ 待存储</td>
+</tr>
+<tr>
+<td>岗位智能体SKILL.md</td>
+<td>更新模块引用和新增章节</td>
+<td>⏳ 待更新</td>
+</tr>
+</tbody></table>
+<h3>3.2 核心金句精选(v4.0)</h3>
+<ol>
+<li>"v3.0 教你造一个智能体，v4.0 教你维护一整个智能体生态——从创建到运营到退役，从单兵作战到信号网络。"</li>
+<li>"AI不在所有地方用——只在信息交会点用。找到工作流中需要大量人共判断的地方，那些就是AI的黄金位置。"</li>
+<li>"轻量模式4模块10分钟，完整模式13模块1小时。第一次轻量，第二周完整。"</li>
+<li>"90分的关键：公式写出来了、预警值设好了、时间闭环完成了、数量不超了。"</li>
+<li>"去总部化三层：L1信息→L2决策→L3职能——每层有不同的过渡策略。"</li>
+<li>"智能体不是一次性产出。它有生命周期：创建→运营→升级→退役。"</li>
+<li>"每个指标的公式必须写出来。——这不是建议，是铁律。"</li>
+</ol>
+<h3>3.3 标签体系</h3>
+<pre><code>核心标签:
+  - #岗位智能体
+  - #通用生成器
+  - #v4.0
+  - #信息交会点
+  - #13模块
+  - #双模式
+
+v4.0新增标签:
+  - #跨岗位信号网络
+  - #信号拓扑
+  - #信号冲突处理
+  - #质量样例墙
+  - #Agent生命周期
+  - #去总部化实战
+  - #部署检查清单
+  - #少样本Prompt
+  - #版本号规范
+  - #轻量模式
+  - #完整模式
+  - #快速开始
+
+关联标签:
+  - #去总部化
+  - #龙爪信号协议
+  - #龙心OS
+  - #味藏店长龙爪
+  - #知行合一
+  - #知识学习
+  - #人机协同五象限
+  - #象思维
+  - #五色光思维
+  - #拔阴取阳
+  - #化克为生</code></pre>
+<hr>
+<p><strong>学习完成标记</strong>: ✅ 表示空间(标签化拆解完成) | ✅ 压缩(核心进化提炼完成) | ⏳ 泛化(三库存储待执行)</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

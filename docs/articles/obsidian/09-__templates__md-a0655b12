@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>矛盾分析操作模板 - 以观其妙书院</title>
+<meta name="description" content="矛盾分析操作模板 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="矛盾分析操作模板">
+<meta property="og:description" content="矛盾分析操作模板 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "矛盾分析操作模板",
+    "description": "矛盾分析操作模板 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>矛盾分析操作模板</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>矛盾分析操作模板</h1>
+<blockquote><p><strong>模板版本</strong>：v1.0 | <strong>配套Skill</strong>：教员方法论 v2.0</p></blockquote>
+<hr>
+<h2>使用说明</h2>
+<p>本模板用于系统化地进行矛盾分析，按照"找→装→填"三步法操作。</p>
+<hr>
+<h2>第一步：找（找到成熟的思维模型）</h2>
+<h3>1.1 问题定义</h3>
+<pre><code>问题描述：_______________________________________________
+
+分析目标：_______________________________________________
+
+时间范围：□ 短期（1-3个月）  □ 中期（3-12个月）  □ 长期（1年以上）
+
+涉及范围：□ 个人  □ 部门  □ 公司  □ 行业</code></pre>
+<h3>1.2 模型匹配</h3>
+<table>
+<thead><tr>
+<th>模型类型</th>
+<th>候选模型</th>
+<th>适用性评估</th>
+<th>是否选用</th>
+</tr></thead><tbody>
+<tr>
+<td>战略分析</td>
+<td>SWOT / PEST / 波特五力</td>
+<td>□高 □中 □低</td>
+<td>□是 □否</td>
+</tr>
+<tr>
+<td>问题诊断</td>
+<td>5Why / 鱼骨图 / MECE</td>
+<td>□高 □中 □低</td>
+<td>□是 □否</td>
+</tr>
+<tr>
+<td>方案设计</td>
+<td>商业画布 / 价值链</td>
+<td>□高 □中 □低</td>
+<td>□是 □否</td>
+</tr>
+<tr>
+<td>决策分析</td>
+<td>决策矩阵 / 成本效益</td>
+<td>□高 □中 □低</td>
+<td>□是 □否</td>
+</tr>
+</tbody></table>
+<p><strong>选定模型组合</strong>：<strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong>__</p>
+<hr>
+<h2>第二步：装（将模型改装成适配框架）</h2>
+<h3>2.1 改装三问</h3>
+<p><strong>问1：这个模型的核心结构是什么？</strong></p>
+<pre><code>_______________________________________________</code></pre>
+<p><strong>问2：我的具体问题需要调整哪些部分？</strong></p>
+<pre><code>_______________________________________________</code></pre>
+<p><strong>问3：如何让模型适配我的现实情况？</strong></p>
+<pre><code>_______________________________________________</code></pre>
+<h3>2.2 改装后框架</h3>
+<pre><code>【改装框架图示/描述】
+
+_______________________________________________
+_______________________________________________
+_______________________________________________</code></pre>
+<hr>
+<h2>第三步：填（填入具体现实内容）</h2>
+<h3>3.1 五色光分析</h3>
+<h4>⬜ 白光·客观事实</h4>
+<pre><code>关键数据1：_______________________________________________
+关键数据2：_______________________________________________
+关键数据3：_______________________________________________</code></pre>
+<h4>🟥 红光·直觉感受</h4>
+<pre><code>我的直觉判断：_______________________________________________
+情绪信号：_______________________________________________</code></pre>
+<h4>🟨 黄光·价值评估</h4>
+<pre><code>利益相关方1：_______________________________________________
+利益相关方2：_______________________________________________
+价值冲突点：_______________________________________________</code></pre>
+<h4>🟩 绿光·创新方案</h4>
+<pre><code>方案A：_______________________________________________
+方案B：_______________________________________________
+方案C：_______________________________________________</code></pre>
+<h4>🟦 蓝光·风险审视</h4>
+<pre><code>风险1：_______________________________________________
+风险2：_______________________________________________
+风险3：_______________________________________________</code></pre>
+<h3>3.2 矛盾定位</h3>
+<h4>根本矛盾（系统层面）</h4>
+<pre><code>定义：_______________________________________________
+
+判定依据：
+□ 影响全局
+□ 贯穿始终
+□ 决定本质</code></pre>
+<h4>阶段矛盾（周期层面）</h4>
+<pre><code>当前阶段：□ 初创期  □ 扩张期  □ 成熟期  □ 转型期
+
+阶段矛盾：_______________________________________________</code></pre>
+<h4>主要矛盾（当前决定性）</h4>
+<pre><code>内容：_______________________________________________
+
+影响占比估算：______%
+
+解决后预期效果：_______________________________________________</code></pre>
+<h4>次要矛盾（辅助性）</h4>
+<pre><code>内容：_______________________________________________
+
+影响占比估算：______%
+
+与主要矛盾的关系：_______________________________________________</code></pre>
+<h3>3.3 矛盾维度分析</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>关键发现</th>
+<th>行动要点</th>
+</tr></thead><tbody>
+<tr>
+<td>个人</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>部门</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>店面/门店</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>公司</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>行业</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>时代</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>3.4 矛盾三维结构</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>当前状态</th>
+<th>变动阈值</th>
+<th>失衡信号</th>
+</tr></thead><tbody>
+<tr>
+<td>物质体（资源）</td>
+<td></td>
+<td>±15%</td>
+<td></td>
+</tr>
+<tr>
+<td>能量体（执行）</td>
+<td></td>
+<td>±15%</td>
+<td></td>
+</tr>
+<tr>
+<td>信息体（认知）</td>
+<td></td>
+<td>±15%</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>第四步：方案制定（金字塔五层结构）</h2>
+<h3>4.1 背景层</h3>
+<pre><code>时间范围：_______________________________________________
+地域范围：_______________________________________________
+前提假设：_______________________________________________</code></pre>
+<h3>4.2 现状层</h3>
+<pre><code>数据支撑1：_______________________________________________
+数据支撑2：_______________________________________________
+数据支撑3：_______________________________________________</code></pre>
+<h3>4.3 矛盾层</h3>
+<pre><code>根本矛盾：_______________________________________________
+主要矛盾：_______________________________________________
+次要矛盾：_______________________________________________</code></pre>
+<h3>4.4 方案层</h3>
+<pre><code>方案1：_______________________________________________
+金线验证：□ 假设清晰  □ 证据充分  □ 结论可信
+
+方案2：_______________________________________________
+金线验证：□ 假设清晰  □ 证据充分  □ 结论可信</code></pre>
+<h3>4.5 落地层</h3>
+<pre><code>Q1行动：_______________________________________________
+Q2行动：_______________________________________________
+Q3行动：_______________________________________________
+复盘节点：_______________________________________________</code></pre>
+<hr>
+<h2>第五步：PDCA闭环</h2>
+<h3>P - Plan（计划）</h3>
+<pre><code>量化目标：_______________________________________________
+时间节点：_______________________________________________
+责任人：_______________________________________________
+
+行动清单：
+1. _______________________________________________
+2. _______________________________________________
+3. _______________________________________________
+
+风险预案：
+| 风险点 | 预防措施 | 应急方案 |
+|--------|---------|---------|
+| | | |</code></pre>
+<h3>D - Do（执行）</h3>
+<pre><code>执行记录：
+| 日期 | 进展 | 问题 | 备注 |
+|------|------|------|------|
+| | | | |</code></pre>
+<h3>C - Check（检查）</h3>
+<pre><code>结果对照：
+| 指标 | 目标值 | 实际值 | 达成率 |
+|------|--------|--------|--------|
+| | | | |
+
+矛盾验证：
+□ 主要矛盾是否解决？
+□ 矛盾主要方面是否转化？
+□ 是否有新矛盾浮现？</code></pre>
+<h3>A - Act（调整）</h3>
+<pre><code>调整措施：_______________________________________________
+
+经验沉淀：
+- 成功经验：_______________________________________________
+- 失败教训：_______________________________________________
+- 待验证假设：_______________________________________________
+
+标准化建议：
+- 可固化的流程：_______________________________________________
+- 可复制的经验：_______________________________________________</code></pre>
+<hr>
+<h2>分析总结</h2>
+<h3>核心洞察（一句话）</h3>
+<pre><code>_______________________________________________</code></pre>
+<h3>关键行动（三件事）</h3>
+<pre><code>1. _______________________________________________
+2. _______________________________________________
+3. _______________________________________________</code></pre>
+<h3>预期成果</h3>
+<pre><code>_______________________________________________</code></pre>
+<hr>
+<p><strong>模板使用日期</strong>：<strong>_</strong><strong>_</strong><strong>_</strong>
+<strong>分析者</strong>：<strong>_</strong><strong>_</strong><strong>_</strong>
+<strong>复核者</strong>：<strong>_</strong><strong>_</strong><strong>_</strong></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>
