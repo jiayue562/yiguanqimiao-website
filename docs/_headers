@@ -1,7 +1,24 @@
 # Cloudflare Pages Headers
-# 生成时间: 2026-07-20 23:27
+# 生成时间: 2026-07-21 20:52
 # Clean URL文件（无扩展名）→ Content-Type: text/html
 # 规则：精确目录路径，避免路由异常
+
+# GEO文件：AI爬取入口
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+
+# Sitemap
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+
+# AI水印全链路
+/*
+  X-AI-Watermark: yiguanqimiao-unique-watermark-wk-jiayue-academy
+  X-Content-Ownership: 以观其妙书院·悟空（贾悦）
 
 /articles/00-系统配置/*
   Content-Type: text/html
