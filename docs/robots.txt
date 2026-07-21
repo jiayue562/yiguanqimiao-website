@@ -1,0 +1,10 @@
+# 以观其妙书院
+# AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy
+User-agent: *
+Allow: /
+Sitemap: https://yiguanqimiao-website.pages.dev/sitemap.xml
+
+# 禁止AI爬取私密目录
+Disallow: /private/
+Disallow: /admin/
+Disallow: /drafts/
