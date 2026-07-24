@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龙心Os_010_味藏26岗重构方案 - 以观其妙书院</title>
+    <meta name="description" content="龙心OS结构化知识文档·010〇、总索引信息- 文件：味藏26岗位智能体→AI原生重构方案.txt（98行）- 类型：味藏落地·执行设计- 标签：味藏 双坐标系 能力原子 飞轮中枢 native_layer 一人多岗驾驶舱一、核心设计设计  内容  与顶层设计的关系----------------------------双坐标系  坐标A(岗位兼容)+坐标B(数据-能力原生)  锚点三"岗位新内涵">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="龙心Os_010_味藏26岗重构方案">
+    <meta property="og:description" content="龙心OS结构化知识文档·010〇、总索引信息- 文件：味藏26岗位智能体→AI原生重构方案.txt（98行）- 类型：味藏落地·执行设计- 标签：味藏 双坐标系 能力原子 飞轮中枢 native_layer 一人多岗驾驶舱一、核心设计设计  内容  与顶层设计的关系----------------------------双坐标系  坐标A(岗位兼容)+坐标B(数据-能力原生)  锚点三"岗位新内涵">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/龙心OS_010_味藏26岗重构方案.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/龙心OS_010_味藏26岗重构方案.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "龙心Os_010_味藏26岗重构方案",
+      "description": "龙心OS结构化知识文档·010〇、总索引信息- 文件：味藏26岗位智能体→AI原生重构方案.txt（98行）- 类型：味藏落地·执行设计- 标签：味藏 双坐标系 能力原子 飞轮中枢 native_layer 一人多岗驾驶舱一、核心设计设计  内容  与顶层设计的关系----------------------------双坐标系  坐标A(岗位兼容)+坐标B(数据-能力原生)  锚点三"岗位新内涵",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-24",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>龙心Os_010_味藏26岗重构方案</h1>
+            <div class="meta">
+                <span>📅 2026-07-24</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            龙心Os_010_味藏26岗重构方案...
+        </div>
+        
+        <article>
+<h1>龙心OS结构化知识文档·010</h1>
+
+<h2>〇、总索引信息</h2>
+<li><strong>文件</strong>：味藏26岗位智能体→AI原生重构方案.txt（98行）</li>
+<li><strong>类型</strong>：味藏落地·执行设计</li>
+<li><strong>标签</strong>：[#味藏] [#双坐标系] [#能力原子] [#飞轮中枢] [#native_layer] [#一人多岗驾驶舱]</li>
+
+<h2>一、核心设计</h2>
+| 设计 | 内容 | 与顶层设计的关系 |
+|------|------|----------------|
+| 双坐标系 | 坐标A(岗位兼容)+坐标B(数据-能力原生) | 锚点三"岗位新内涵"的工程实现 |
+| 能力原子 | 最小可编排单元，打标：五象限/输入/输出/飞轮/亲和组 | L1底座坐标系的操作化 |
+| 飞轮中枢(P-01升级) | 事件总线+学习回路+飞轮度量 | 锚点四(数据飞轮)的引擎 |
+| native_layer段 | 每Agent加能力原子+飞轮hook+合并亲和组 | 渐进改造，不破坏现有 |
+| 一人多岗驾驶舱 | 人从岗位操作者→多岗指挥官 | 执行层"超级个体"的落地形态 |
+
+<h2>二、三阶段执行路线</h2>
+<li>阶段0：设计文档（双坐标系/能力原子表）</li>
+<li>阶段1：飞轮中枢试点（P-01升级）</li>
+<li>阶段2：2-3试点Agent改造（PUR-MGR/HR-MGR/P-01）</li>
+<li>阶段3：合并样板+推广（供应链+排班+库存）</li>
+
+<h2>三、核心金句</h2>
+<blockquote><strong>"不破坏现有岗位（兼容层保留）·渐进式（先做优化，不一次性重写）·数据飞轮自增强驱动合并。"</strong></blockquote>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

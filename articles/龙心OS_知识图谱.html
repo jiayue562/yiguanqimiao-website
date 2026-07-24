@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龙心Os_知识图谱 - 以观其妙书院</title>
+    <meta name="description" content="龙心OS结构化知识文档·知识图谱AI原生组织顶层设计 · 全量知识图谱展示所有核心概念间的连接关系---一、核心概念图谱┌─────────────────────────────────────────────────────┐│                 合于道→自然显化                       ││                   (元公式·L0)">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将, 人工智能">
+    <meta name="author" content="以观其妙书院">
+    <meta property="og:title" content="龙心Os_知识图谱">
+    <meta property="og:description" content="龙心OS结构化知识文档·知识图谱AI原生组织顶层设计 · 全量知识图谱展示所有核心概念间的连接关系---一、核心概念图谱┌─────────────────────────────────────────────────────┐│                 合于道→自然显化                       ││                   (元公式·L0)">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/龙心OS_知识图谱.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/龙心OS_知识图谱.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "龙心Os_知识图谱",
+      "description": "龙心OS结构化知识文档·知识图谱AI原生组织顶层设计 · 全量知识图谱展示所有核心概念间的连接关系---一、核心概念图谱┌─────────────────────────────────────────────────────┐│                 合于道→自然显化                       ││                   (元公式·L0)",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-24",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>龙心Os_知识图谱</h1>
+            <div class="meta">
+                <span>📅 2026-07-24</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            龙心Os_知识图谱...
+        </div>
+        
+        <article>
+<h1>龙心OS结构化知识文档·知识图谱</h1>
+
+<blockquote><strong>AI原生组织顶层设计 · 全量知识图谱</strong></blockquote>
+<blockquote>展示所有核心概念间的连接关系</blockquote>
+
+<hr>
+
+<h2>一、核心概念图谱</h2>
+
+<pre><code>                ┌─────────────────────────────────────────────────────┐
+                │                 合于道→自然显化                       │
+                │                   (元公式·L0)                        │
+                └────────────┬────────────────────┬──────────────────┘
+                             │                    │
+              ┌──────────────┴──────────┐   ┌────┴──────────────┐
+              │   西方实证线             │   │   东方体认线       │
+              │  (数据+逻辑+验证)        │   │  (直觉+整体+哲学)  │
+              │                         │   │                   │
+              │ 串行瓶颈(004)←──────────┼──→起手即全息(008)     │
+              │ Product/Process(005)──┼──→合于道自然显化(007) │
+              │ 四判断标准(006)───────┼──→存在之反(007)       │
+              │ 组织奇点(005)─────────┼──→场论×全息(008)     │
+              └────────────┬──────────┘   └────┬──────────────┘
+                           │                    │
+                           └────────┬───────────┘
+                                    │
+                    ┌───────────────┴────────────────┐
+                    │      五层模型(002·L0-L5)        │
+                    │                                │
+                    │  L0:合于道→自然显化             │
+                    │  L1:场景·人·Agent动态匹配       │
+                    │  L2:无定形关系场                │
+                    │  L3:意图驱动·起手即全息          │
+                    │  L4:人机分工边界                │
+                    │  L5:治理与演化                 │
+                    └───────────────┬────────────────┘
+                                    │
+                    ┌───────────────┴────────────────┐
+                    │      三层结构(001·共识)          │
+                    │                                │
+                    │  决策层(人·方向+责任)            │
+                    │  数据层(AI全自动·全业务数据)      │
+                    │  执行层(人+AI超级个体)           │
+                    └───────────────┬────────────────┘
+                                    │
+                    ┌───────────────┴────────────────┐
+                    │      味藏路线(003·三个转折点)    │
+                    │                                │
+                    │  阶段一:单体验证(当前)           │
+                    │  阶段二:抽象为产品               │
+                    │  阶段三:对外复制                 │
+                    └───────────────┬────────────────┘
+                                    │
+                    ┌───────────────┴────────────────┐
+                    │ 执行设计(010·011)                │
+                    │ 双坐标系+能力原子+飞轮中枢        │
+                    │ 🔴🟡🟢三类清单+五行人格培养       │
+                    └────────────────────────────────┘
+</code></pre>
+
+<hr>
+
+<h2>二、概念连接网（按主题分组）</h2>
+
+<h3>核心概念连接</h3>
+<pre><code>合于道→自然显化 ──哲学来源──→ 以象明道与全息(007)
+合于道→自然显化 ──组织操作──→ AI并行+人判断+共享上下文层(002)
+合于道→自然显化 ──逆用刻度──→ 哈佛硬指标(005)
+合于道→自然显化 ──工程实现──→ 数据飞轮(001-锚点四)
+合于道→自然显化 ──组织同构──→ 持续压缩串行瓶颈(004)
+合于道→自然显化 ──哲学深化──→ 存在之反=不凝固(007)
+</code></pre>
+
+<h3>三层结构连接</h3>
+<pre><code>三层结构 ──源头记录──→ 录音28/悟空原始表述(026)
+三层结构 ──共识基线──→ 阶段性总结6锚点(001)
+三层结构 ──工程实现──→ 双坐标系(010)
+三层结构 ──边界定义──→ 三类清单(011)
+三层结构 ──判断差异(开放)──→ 执行层vs决策层(001-Q1)
+</code></pre>
+
+<h3>东西同构连接</h3>
+<pre><code>合于道→自然显化 ⟷ 合于组织本质(002)
+起手即全息 ⟷ 串行瓶颈压缩(002/008)
+格式塔场 ⟷ 无定形网络(002/008)
+微扰动 ⟷ 持续压缩迭代(002/004)
+觉察×体化 ⟷ 最终判断+受托责任(002/003)
+悖论改变 ⟷ 人不假装用AI(002/003)
+</code></pre>
+
+<h3>味藏路线连接</h3>
+<pre><code>味藏 ──定位──→ 被试兼产物(001-锚点六/003-转折点二)
+味藏 ──路线──→ 三阶段(003)
+味藏 ──执行──→ 26岗重构(010)
+味藏 ──边界──→ 人机协同总图(011)
+味藏 ──护城河──→ 五行人格培养(011)
+</code></pre>
+
+<h3>开放问题连接</h3>
+<pre><code>Q1判断差异 ⟵ 源头 ⟶ 录音28/悟空提问(026)
+Q1判断差异 ⟵ 现有假设 ⟶ 执行层=局部/决策层=全局(001)
+Q2三店落点 ⟵ 依赖 ⟶ Q1判断差异(001)
+Q3 MVP形态 ⟵ 悟空倾向 ⟶ a+b候选(003-转折点三)
+Q4人才管道 ⟵ 哈佛数据 ⟶ 初级岗少15%(005)
+Q5受托责任 ⟵ 哈佛理论 ⟶ 组织奇点(005)
+</code></pre>
+
+<hr>
+
+<h2>三、同构发现（跨越文件的结构一致性）</h2>
+
+<h3>同构A: 合于道→自然显化 = 持续压缩串行瓶颈</h3>
+<li><strong>来源</strong>：007 (哲学) × 004 (组织)</li>
+<li><strong>本质</strong>：两者都在描述同一件事——让组织流动起来，不凝固</li>
+<li><strong>证据</strong>：道不凝固=存在之反；串行瓶颈=组织凝固</li>
+
+<h3>同构B: 起手即全息 = 第一手锁定决策点</h3>
+<li><strong>来源</strong>：008 (格式塔) × 004 (管理学)</li>
+<li><strong>本质</strong>：不分析全局再行动，而是锁定最关键的一个节点层层展开</li>
+
+<h3>同构C: 存在之反 = L2无定形组织</h3>
+<li><strong>来源</strong>：007 (道) × 002 (五层模型)</li>
+<li><strong>本质</strong>：组织不凝固在任何结构中 = 道的存在方式就是"反"</li>
+
+<h3>同构D: 味藏=被试兼产物 = 自指闭环</h3>
+<li><strong>来源</strong>：003 (讨论记录)</li>
+<li><strong>本质</strong>：用自己跑自己，理论指导实践，实践校正理论</li>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
