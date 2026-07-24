@@ -1,0 +1,221 @@
+{
+  "version": "3.0",
+  "started": "2026-05-26",
+  "total_published": 15,
+  "total_written": 20,
+  "current_day": 19,
+  "used_questions": ["D001", "D002", "D003", "D004", "D005", "D006", "D007", "D008", "D009", "D010", "D011", "D012", "D013", "D014", "D015", "D016", "D017", "D018", "D019"],
+  "publish_history": [
+    {
+      "date": "2026-05-26",
+      "id": "D001",
+      "category": "动物",
+      "title": "五行日签｜Day 01：如果能变成动物生活一周",
+      "media_id": "bQajdsAyGIZ2G7TdQjVKq2_g9SBeurdIU8JAVu2TYgZHTWRm6B06HUmpZ7J2AyAE",
+      "element_focus": "金",
+      "publish_status": "success"
+    },
+    {
+      "date": "2026-05-28",
+      "id": "D002",
+      "category": "颜色",
+      "title": "五行日签｜Day 02：你的衣柜里，什么颜色占最多？",
+      "media_id": "bQajdsAyGIZ2G7TdQjVKq3aCVKSdPfh6BxiorffDcbzu4ufMxY0fjJmDH1K_D-T0",
+      "element_focus": "火",
+      "publish_status": "success"
+    },
+    {
+      "date": "2026-05-29",
+      "id": "D003",
+      "category": "食物",
+      "title": "五行日签｜Day 03：压力大的时候，你最想吃什么？",
+      "media_id": "bQajdsAyGIZ2G7TdQjVKq91f5q734v0XquJ63lv5NbC7ONfpL43H3BGMkTU3zZu2",
+      "element_focus": "土",
+      "publish_status": "success"
+    },
+    {
+      "date": "2026-06-01",
+      "id": "D004",
+      "category": "饮品",
+      "title": "五行日签｜Day 04：早上醒来，第一杯你最想喝什么？",
+      "media_id": "bQajdsAyGIZ2G7TdQjVKq1NtAKaq2tzm7IrEQjJzCeHFKlq5fSVQX5Bj9smKunkh",
+      "element_focus": "木",
+      "publish_status": "success"
+    },
+    {
+      "date": "2026-06-02",
+      "id": "D005",
+      "category": "旅行地",
+      "title": "五行日签｜Day 05：如果没有任何限制，你最想去哪种地方旅行？",
+      "media_id": "bQajdsAyGIZ2G7TdQjVKqwABIyiiJkq90fx7dwdVIsyPr9HwRMxqVJKDv6Nqqmq4",
+      "element_focus": "水",
+      "publish_status": "success"
+    },
+    {
+      "date": "2026-06-03",
+      "type": "hot_analysis",
+      "title": "高考前夜：为什么有人越考越好，有人一考就崩？",
+      "media_id": "bQajdsAyGIZ2G7TdQjVKq9p4j4nVRbw1QfTgVpLoksdaNaVQX6G0bx_2RXYFdN",
+      "publish_status": "success"
+    },
+    {
+      "date": "2026-06-04",
+      "id": "D006",
+      "category": "音乐",
+      "title": "五行日签｜Day 06：什么类型的音乐最能让你安静下来？",
+      "media_id": "bQajdsAyGIZ2G7TdQjVKq6wwRVs-mp1e695M5BZJMWIu8dwlwxUEcPi6HY-vNEfZ",
+      "element_focus": "火",
+      "publish_status": "success"
+    },
+    {
+      "date": "2026-06-05",
+      "id": "D007",
+      "category": "周末计划",
+      "title": "五行日签｜Day 07：一个完全属于自己的理想周末，你怎么过？",
+      "media_id": "bQajdsAyGIZ2G7TdQjVKq4dflaFiZONVmYCdd-sVjnF3Fhu9zq9_ktk_JrWYXbz_",
+      "element_focus": "木",
+      "publish_status": "success"
+    },
+    {
+      "date": "2026-06-11",
+      "id": "D008",
+      "category": "人生格言",
+      "title": "五行日签｜Day 08：哪句话，你对自己说得最多也伤得最深？",
+      "media_id": "bQajdsAyGIZ2G7TdQjVKqy1vKyVfKMcALf66ywkbUe83T0OnqD9pGIrCeX-52-wA",
+      "element_focus": "金",
+      "publish_status": "success"
+    },
+    {
+      "date": "2026-06-12",
+      "id": "D009",
+      "category": "季节天气",
+      "title": "五行日签｜Day 09：哪个季节，让你觉得"对了，就是这个感觉"？",
+      "media_id": "bQajdsAyGIZ2G7TdQjVKqxIucBfu0MtM8ZW0wXH6B-54zj6UXkPCEjGP0vzOMPfD",
+      "element_focus": "土",
+      "publish_status": "success"
+    },
+    {
+      "date": "2026-06-23",
+      "id": "D010",
+      "category": "穿戴风格",
+      "title": "D010·日签：你的穿衣第一原则，藏着你的五行密码",
+      "element_focus": "木",
+      "publish_status": "failed_ip_whitelist",
+      "publish_ip": "14.216.3.201"
+    },
+    {
+      "date": "2026-06-25",
+      "id": "D011",
+      "category": "安心动物",
+      "title": "五行日签｜Day 11：哪种动物最让你觉得安心？",
+      "element_focus": "火",
+      "publish_status": "failed_ip_whitelist",
+      "publish_ip": "14.216.3.201"
+    },
+    {
+      "date": "2026-06-29",
+      "id": "D012",
+      "category": "食物口味",
+      "title": "D012·日签：如果余生只能吃一种口味，你选什么？",
+      "element_focus": "水",
+      "publish_status": "failed_ip_whitelist",
+      "publish_ip": "123.174.140.103"
+    },
+    {
+      "date": "2026-06-30",
+      "id": "D013",
+      "category": "旅行住处",
+      "title": "D013·日签：如果让你独自旅行一周，你最想住什么样的地方？",
+      "element_focus": "土",
+      "publish_status": "failed_ip_whitelist",
+      "publish_ip": "123.174.140.103"
+    },
+    {
+      "date": "2026-07-16",
+      "id": "D014",
+      "category": "人生格言",
+      "title": "D014·日签：深夜独自反思时，哪句话最常出现在你脑海里？",
+      "element_focus": "火",
+      "publish_status": "success",
+      "media_id": "bQajdsAyGIZ2G7TdQjVKq6OKlwOxtf3Lov9AscqB6kQkI93MPvFPxm8W1hgdQa0L"
+    },
+    {
+      "date": "2026-07-17",
+      "id": "D015",
+      "category": "起床模式",
+      "title": "D015·日签：你醒来后做的第一件事，暴露了你的能量启动模式",
+      "element_focus": "金",
+      "publish_status": "success",
+      "media_id": "bQajdsAyGIZ2G7TdQjVKq059jcs_EACci5vz4uC2gGTYMuivZayVsKS3lvq7MtFJ"
+    },
+    {
+      "date": "2026-07-20",
+      "id": "D016",
+      "category": "能量恢复",
+      "title": "D016·日签：当你精疲力竭时，你会怎么恢复能量？",
+      "element_focus": "水",
+      "publish_status": "failed_ip_whitelist",
+      "publish_ip": "14.218.30.1"
+    },
+    {
+      "date": "2026-07-21",
+      "id": "D017",
+      "category": "面对冲突",
+      "title": "D017·日签：面对冲突，你的第一反应暴露了你的五行能量模式",
+      "element_focus": "金",
+      "publish_status": "failed_ip_whitelist",
+      "publish_ip": "14.218.30.1"
+    },
+    {
+      "date": "2026-07-23",
+      "id": "D018",
+      "category": "存在感",
+      "title": "D018·日签：你最想被谁记住？",
+      "element_focus": "火",
+      "publish_status": "failed_ip_whitelist",
+      "publish_ip": "14.218.3.36"
+    },
+    {
+      "date": "2026-07-24",
+      "id": "D019",
+      "category": "关系恐惧",
+      "title": "D019·日签：你在一段关系里，最怕听到的三个字是什么？",
+      "element_focus": "金",
+      "publish_status": "success",
+      "media_id": "bQajdsAyGIZ2G7TdQjVKq4QTj_f1unmSR24eY5sqELqLQhIDUSYrxfGecI1HEd8m"
+    }
+  ],
+  "weekly_themes": ["W1:五行入门", "W2:阴阳动静", "W3:生克转化", "W4:B=MAP行为设计", "W5:觉性回归"],
+  "bmap_stats": {
+    "total_practices_designed": 13,
+    "practices_by_element": {"木": 2, "火": 3, "土": 2, "金": 4, "水": 2},
+    "practices_by_bmap_focus": {"M": 6, "A": 3, "P": 4}
+  },
+  "weekly_reviews": [
+    {
+      "week": 1,
+      "date": "2026-05-31",
+      "file": "wechat-review-0531.md",
+      "title": "五行周复盘｜Week 01：从动物到食物，你的五行在说什么",
+      "publish_status": "success",
+      "media_id": "bQajdsAyGIZ2G7TdQjVKq8eiVmXgvCcfrSuIwnXMSDnXrPvFd30JJeC6q1UKP2CD"
+    },
+    {
+      "week": 2,
+      "date": "2026-06-21",
+      "file": "wechat-review-0621.md",
+      "title": "五行周复盘｜Week 02：日签过半，你的五行在哪个季节卡住了？",
+      "publish_status": "failed_ip_whitelist",
+      "publish_ip": "14.216.1.13"
+    },
+    {
+      "week": 3,
+      "date": "2026-06-28",
+      "file": "wechat-review-0628.md",
+      "title": "五行周复盘｜Week 03：你对自己说的那句话，是铠甲还是笼子？",
+      "publish_status": "failed_ip_whitelist",
+      "publish_ip": "123.174.140.178"
+    }
+  ],
+  "next_scheduled": "2026-07-23"
+}
