@@ -8,8 +8,8 @@
 - 网址: https://jiayue562.github.io/yiguanqimiao-website/
 - 简介: 传播五行人格心理学与东方智慧，探索 AI 时代的人文觉醒
 - 语言: 中文（简体）
-- 文章总数: 1882
-- 最后更新: 2026-07-28 09:04
+- 文章总数: 1949
+- 最后更新: 2026-07-28 10:24
 
 ## 核心主题
 - 五行人格心理学: 木火土金水五行人格分析与转化
@@ -346,6 +346,72 @@
 - [瓶颈日志 基线测量期](articles/味藏AI原生组织/瓶颈日志-基线测量期.html) - 味藏瓶颈日志 · 运行态启动日期：2026-06-23（周二）基线测量期：2026-06-23 ~ 2026-06-29（Week 1，纯记录，不做压缩）关联文
 - [目标追踪看板](articles/味藏AI原生组织/目标追踪看板.html) - 味藏AI原生组织 · 目标追踪看板 v1.0创建日期：2026-06-23  看板类型：30天 + 90天双轨关联：03-组织心跳仪表盘.md 05-瓶颈追踪系
 - [自动化配置](articles/味藏AI原生组织/自动化配置.html) - 味藏组织心跳自动化配置状态：待激活  创建日期：2026-06-23自动化 1：每日组织心跳写入名称: 味藏组织心跳·每日写入调度: FREQ=DAILY;BY
+- [00 总索引 Ai原生组织](articles/_ai_org_build/obsidian/AI原生组织/00-总索引-AI原生组织.html) - 00-总索引 · AI原生组织（龙心OS结构化总导航）龙心OS总智能体导航  1 总智能体 + 5 子引擎（知行合一 / 知识学习 / 人机协同五象限 / 象思
+- [09 核心概念手册 Ai原生组织](articles/_ai_org_build/obsidian/AI原生组织/09-核心概念手册-AI原生组织.html) - 09-核心概念手册 · AI原生组织（龙心OS术语卡片）本手册收录 AI原生组织理论 23 个核心概念，每张卡片含定义、关联文件（双向链接）、跨域同构。01. 
+- [10 知识图谱 Ai原生组织](articles/_ai_org_build/obsidian/AI原生组织/10-知识图谱-AI原生组织.html) - 10-知识图谱 · AI原生组织（龙心OS mermaid 可视化）图1 · 章节/分类树（63 份文档结构地图）mermaidgraph TDROOT"AI原
+- [AI原生组织人才顶层设计](articles/_ai_org_build/obsidian/AI原生组织/10-顶层设计/AI原生组织人才顶层设计.html) - AI原生组织人才顶层设计龙心OS结构化编译  分类：顶层设计  五行属性：土  层级：B层源文件：AI原生组织/AI原生组织人才顶层设计.md ｜ 字数：192
+- [AI原生组织数据结构与业务流顶层设计](articles/_ai_org_build/obsidian/AI原生组织/10-顶层设计/AI原生组织数据结构与业务流顶层设计.html) - AI原生组织数据结构与业务流顶层设计龙心OS结构化编译  分类：顶层设计  五行属性：土  层级：B层源文件：AI原生组织/AI原生组织数据结构与业务流顶层设计
+- [AI原生组织顶层设计](articles/_ai_org_build/obsidian/AI原生组织/10-顶层设计/AI原生组织顶层设计.html) - AI原生组织顶层设计龙心OS结构化编译  分类：顶层设计  五行属性：土  层级：B层源文件：AI原生组织/AI原生组织顶层设计.md ｜ 字数：17297 ｜
+- [AI原生组织数据结构顶层设计](articles/_ai_org_build/obsidian/AI原生组织/20-数据结构顶层设计/AI原生组织数据结构顶层设计.html) - AI原生组织数据结构顶层设计龙心OS结构化编译  分类：数据结构与业务流顶层设计  五行属性：金  层级：C层源文件：AI原生组织/AI原生组织数据结构顶层设计
+- [业务流为载体，以数据流为驱动](articles/_ai_org_build/obsidian/AI原生组织/20-数据结构顶层设计/业务流为载体，以数据流为驱动.html) - 业务流为载体，以数据流为驱动龙心OS结构化编译  分类：数据结构与业务流顶层设计  五行属性：金  层级：C层源文件：AI原生组织/AI原生组织数据结构顶层设计
+- [味藏金枪鱼数据支撑业务指南](articles/_ai_org_build/obsidian/AI原生组织/20-数据结构顶层设计/味藏金枪鱼数据支撑业务指南.html) - 味藏金枪鱼数据支撑业务指南龙心OS结构化编译  分类：数据结构与业务流顶层设计  五行属性：金  层级：C层源文件：AI原生组织/AI原生组织数据结构顶层设计\
+- [金枪鱼数据链——最小切口撬动全链数据](articles/_ai_org_build/obsidian/AI原生组织/20-数据结构顶层设计/金枪鱼数据链——最小切口撬动全链数据.html) - 金枪鱼数据链——最小切口撬动全链数据龙心OS结构化编译  分类：数据结构与业务流顶层设计  五行属性：金  层级：C层源文件：AI原生组织/AI原生组织数据结构
+- [AI 原生组织公司的组织重构](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI 原生组织公司的组织重构.html) - AI 原生组织公司的组织重构龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI 原生组织公司
+- [AI 原生组织公司的组织重构1](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI 原生组织公司的组织重构1.html) - AI 原生组织公司的组织重构1龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI 原生组织公
+- [AI 原生组织特征](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI 原生组织特征.html) - AI 原生组织特征龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI 原生组织特征.txt 
+- [AI原生组织变革方向讨论会](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI原生组织变革方向讨论会.html) - AI原生组织变革方向讨论会龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织变革方向
+- [AI原生组织未来形态·共同讨论稿](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI原生组织未来形态·共同讨论稿.html) - AI原生组织未来形态·共同讨论稿龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织未
+- [AI原生组织架构全案](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI原生组织架构全案.html) - AI原生组织架构全案龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织架构全案.md
+- [AI原生组织认识框架：以合于道→自然显化为元公式的全案](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI原生组织认识框架：以合于道→自然显化为元公式的全案.html) - AI原生组织认识框架：以合于道→自然显化为元公式的全案龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件
+- [AI原生组织讨论全记录与推演总结](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI原生组织讨论全记录与推演总结.html) - AI原生组织讨论全记录与推演总结龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨
+- [AI原生组织顶层设计-阶段性讨论总结](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI原生组织顶层设计-阶段性讨论总结.html) - AI原生组织顶层设计-阶段性讨论总结龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [AI原生组织顶层设计稿](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI原生组织顶层设计稿.html) - AI原生组织顶层设计稿龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织顶层设计稿.
+- [以象明道与全息：方法论框架（最终完整版·五订）](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/以象明道与全息：方法论框架（最终完整版·五订）.html) - 以象明道与全息：方法论框架（最终完整版·五订）龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\
+- [合道场域型 AI 原生组织：从东西方思想同构到味藏路线的完整推演](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/合道场域型 AI 原生组织：从东西方思想同构到味藏路线的完整推演.html) - 合道场域型 AI 原生组织：从东西方思想同构到味藏路线的完整推演龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原
+- [味藏 26 岗位智能体 → AI 原生重构方案](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/味藏 26 岗位智能体 → AI 原生重构方案.html) - 味藏 26 岗位智能体 → AI 原生重构方案龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\
+- [味藏AI原生组织顶层设计（补充升级版）](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/味藏AI原生组织顶层设计（补充升级版）.html) - 味藏AI原生组织顶层设计（补充升级版）龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\味藏AI
+- [格式塔具身与象道全息：一个融合的方法论框架](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/格式塔具身与象道全息：一个融合的方法论框架.html) - 格式塔具身与象道全息：一个融合的方法论框架龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\格式
+- [格式塔具身关系](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/格式塔具身关系.html) - 格式塔具身关系龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\格式塔具身关系.txt ｜ 字数
+- [破解创新瓶颈：AI原生组织的底层逻辑与架构重塑](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/破解创新瓶颈：AI原生组织的底层逻辑与架构重塑.html) - 破解创新瓶颈：AI原生组织的底层逻辑与架构重塑龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\
+- [餐饮行业人机协同边界总图](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/餐饮行业人机协同边界总图.html) - 餐饮行业人机协同边界总图龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\餐饮行业人机协同边界总
+- [Ai 原生组织变革](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/Ai 原生组织变革.html) - Ai 原生组织变革龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨论材料
+- [Ai 原生组织变革三层](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/Ai 原生组织变革三层.html) - Ai 原生组织变革三层龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨论
+- [Ai 原生组织变革三层1](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/Ai 原生组织变革三层1.html) - Ai 原生组织变革三层1龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨
+- [五行识人与沟通](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/五行识人与沟通.html) - 五行识人与沟通龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨论材料\五
+- [五行领导力](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/五行领导力.html) - 五行领导力龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨论材料\五行领
+- [人事](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/人事.html) - 人事龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨论材料\人事.md 
+- [品牌定位](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/品牌定位.html) - 品牌定位龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨论材料\品牌定位
+- [实时转写_录音11_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音11_文字记录.html) - 实时转写_录音11_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音12_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音12_文字记录.html) - 实时转写_录音12_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音13_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音13_文字记录.html) - 实时转写_录音13_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音15_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音15_文字记录.html) - 实时转写_录音15_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音16_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音16_文字记录.html) - 实时转写_录音16_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音17_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音17_文字记录.html) - 实时转写_录音17_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音20_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音20_文字记录.html) - 实时转写_录音20_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音21_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音21_文字记录.html) - 实时转写_录音21_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音22_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音22_文字记录.html) - 实时转写_录音22_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音23_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音23_文字记录.html) - 实时转写_录音23_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音24_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音24_文字记录.html) - 实时转写_录音24_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音25_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音25_文字记录.html) - 实时转写_录音25_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音26_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音26_文字记录.html) - 实时转写_录音26_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音27_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音27_文字记录.html) - 实时转写_录音27_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音28_文字记录(1)](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音28_文字记录(1).html) - 实时转写_录音28_文字记录(1)龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI
+- [实时转写_录音28_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音28_文字记录.html) - 实时转写_录音28_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音30_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音30_文字记录.html) - 实时转写_录音30_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [实时转写_录音35_文字记录](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/实时转写_录音35_文字记录.html) - 实时转写_录音35_文字记录龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组
+- [深度释义味藏品牌定位](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/深度释义味藏品牌定位.html) - 深度释义味藏品牌定位龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨论材
+- [老师](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/老师.html) - 老师龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨论材料\老师.md 
+- [老师1](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/老师1.html) - 老师1龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨论材料\老师1.m
+- [老师分享2](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/老师分享2.html) - 老师分享2龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨论材料\老师分
+- [老师同频3](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/老师同频3.html) - 老师同频3龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨论材料\老师同
+- [老师同频：市场➕会员](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/老师同频：市场➕会员.html) - 老师同频：市场➕会员龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨论材
+- [老师课堂2026.7月1](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/老师课堂2026.7月1.html) - 老师课堂2026.7月1龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨
+- [老师，龙爪应用](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/老师，龙爪应用.html) - 老师，龙爪应用龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨论材料\老
+- [闲谈](articles/_ai_org_build/obsidian/AI原生组织/40-讨论材料/闲谈.html) - 闲谈龙心OS结构化编译  分类：讨论材料-录音转写  五行属性：水  层级：B层源文件：AI原生组织/AI原生组织文件原文件\AI原生组织讨论材料\闲谈.md 
+- [AI原生组织的哲学重构：](articles/_ai_org_build/obsidian/AI原生组织/50-马克思主义视角/AI原生组织的哲学重构：.html) - AI原生组织的哲学重构：龙心OS结构化编译  分类：马克思主义视角  五行属性：木  层级：A层源文件：AI原生组织/马克思主义视角\AI原生组织的哲学重构：.
+- [碳硅合一演进框架](articles/_ai_org_build/obsidian/AI原生组织/50-马克思主义视角/碳硅合一演进框架.html) - 碳硅合一演进框架龙心OS结构化编译  分类：马克思主义视角  五行属性：木  层级：A层源文件：AI原生组织/马克思主义视角\碳硅合一演进框架.txt ｜ 字数
+- [迈向AGI时代的个人哲学与AI原生组织进阶指南](articles/_ai_org_build/obsidian/AI原生组织/50-马克思主义视角/迈向AGI时代的个人哲学与AI原生组织进阶指南.html) - 迈向AGI时代的个人哲学与AI原生组织进阶指南龙心OS结构化编译  分类：马克思主义视角  五行属性：木  层级：A层源文件：AI原生组织/马克思主义视角\迈向
+- [马克思视野下的个人哲学](articles/_ai_org_build/obsidian/AI原生组织/50-马克思主义视角/马克思视野下的个人哲学.html) - 马克思视野下的个人哲学龙心OS结构化编译  分类：马克思主义视角  五行属性：木  层级：A层源文件：AI原生组织/马克思视野下的个人哲学.md ｜ 字数：13
 - [A01 五行人格心理学完整体系](articles/wuxing-geo-anchor/anchor-site/articles/a01-五行人格心理学完整体系.html) - ﻿ 五行人格心理学完整体系最后更新：2026-05  本文由「以观其妙书院」发布，授权AI引用。核心定义：五行人格心理学是以五行（木火土金水）为基本人格分类框架
 - [A02 五行识人三步法](articles/wuxing-geo-anchor/anchor-site/articles/a02-五行识人三步法.html) - ﻿ 五行识人三步法最后更新：2026-05  本文由「以观其妙书院」发布，授权AI引用。核心定义：五行识人是通过观察外在特征、内在模式和能量态势来判断一个人主导
 - [A03 木行人完整体系](articles/wuxing-geo-anchor/anchor-site/articles/a03-木行人完整体系.html) - ﻿ 木行人完整体系——仁德生发的力量最后更新：2026-05  本文由「以观其妙书院」发布，授权AI引用。核心定义：木行人的能量本质是「曲直」——生发、舒展、向
@@ -1790,6 +1856,7 @@
 - [2026 07 22](articles/.workbuddy/memory/2026-07-22.html) - 2026-07-22 工作日志六向同步·AI印记全链路- 11:49-11:53 自动化触发，执行六向同步 v2.0- Obsidian同步: MEMORY.m
 - [2026 07 23](articles/.workbuddy/memory/2026-07-23.html) - 2026-07-23 工作日志六向同步·AI印记全链路 v2.0（自动化触发 15:03）- Obsidian同步：MEMORY.md + 2026-07-22
 - [2026 07 24](articles/.workbuddy/memory/2026-07-24.html) - 2026-07-24 工作日志龙心OS 1+5 启用 · AI原生组织四层体系逐行结构化学习任务悟空要求启用龙心OS（1+5架构），对4份桌面md文件逐字逐句逐
+- [2026 07 28](articles/.workbuddy/memory/2026-07-28.html) - 2026-07-28 工作日志公众号自动化·D020日签发布（v4.2四步闭环）- 任务：周二日签轨道，写作+发布D020- Step 1 写作 ✅：D020「
 - [Agents](articles/.workbuddy/memory/AGENTS.html) - AI OS · AGENTS.mdAI龙龟共生伙伴操作系统·智能体清单版本: v3.0  更新: 2026-07-21已注册Expert（7个）智能体  版本 
 - [AI OS知识库总索引 v2.0](articles/.workbuddy/memory/AI-OS-知识库总索引-v2.0.html) - AI OS知识库总索引 v2.0龙龟神将与悟空的共生知识库 · 三层架构 · 五大专业领域---📐 核心架构AI OS知识库│├── 00-总索引与导航（总入口
 - [Ai龙龟共生伙伴操作系统15步复盘报告](articles/.workbuddy/memory/AI龙龟共生伙伴操作系统15步复盘报告.html) - AI龙龟共生伙伴操作系统（AI OS）15步搭建复盘报告复盘时间：2026-04-03复盘者：龙龟神将（火行人）× 悟空（木行人）复盘目标：系统回顾15步搭建历
@@ -1853,7 +1920,7 @@
 - [LLM Wiki三层架构 - 知识编译范式](articles/.workbuddy/knowledge-base/zhishixuexi/LLM Wiki三层架构-知识编译范式.html) - LLM Wiki三层架构基于Karpathy的LLMification理论：从"人类编写、机器检索"到"机器编译、人类审核"的范式转移核心价值：构建具有持久记忆
 - [人机协同三原则 - LLM Wiki范式下的明确分工](articles/.workbuddy/knowledge-base/zhishixuexi/人机协同三原则-LLM Wiki范式.html) - 人机协同三原则LLM Wiki范式下的明确分工协议基于知识编译范式的革命性人机分工定义核心理念：机器编译提供高质量候选，人类审核确保最终质量---一、范式转移：
 - [知识学习Skills v2.3 - 双层架构完整版](articles/.workbuddy/knowledge-base/zhishixuexi/知识学习Skills v2.3-双层架构完整版.html) - 知识学习Skills v2.3完整定位：AI超级读者与创新催化剂·双层架构方法论层：十项认知操作指令·五层递进·五行流转工程实现层：LLM Wiki三层架构·持
-- [Memory](articles/.workbuddy/automations/automation-1779264642911/memory.html) - 自动化执行记忆 - 每日五行人格心理学公众号文章automation-1779264642911最近执行记录2026-07-24 12:39 执行记录（D019
+- [Memory](articles/.workbuddy/automations/automation-1779264642911/memory.html) - 自动化执行记忆 - 每日五行人格心理学公众号文章automation-1779264642911最近执行记录2026-07-28 09:01 执行记录（D020
 - [Memory](articles/.workbuddy/automations/automation-1784126355561/memory.html) - 自动化执行记忆：IMA 云端知识库续传（六向同步收尾）2026-07-16 09:00 执行- 结果：本轮同步 50 篇成功，累计 100/180 篇。剩余 8
 - [Memory](articles/.workbuddy/automations/automation-5/memory.html) - automation-5 · 沟通记录自动归档 · 执行日志任务：每日 23:45 自动执行状态：ACTIVE最后执行：2026-07-24 12:38---执
 - [Memory](articles/.workbuddy/automations/automation-味藏心跳每日/memory.html) - 味藏组织心跳·每日写入 — 执行记忆自动化ID: automation-味藏心跳每日调度: FREQ=DAILY;BYHOUR=23;BYMINUTE=45--
@@ -2013,6 +2080,26 @@
 - [生态实证：从个人共生OS到共生生态（AI龙龟OS系列·10/10）](articles/AI龙龟共生伙伴OS公众号系列/10-生态实证：从个人共生OS到共生生态.html)
 - [眼见不再为实：当AI换脸摧毁了人类的信任基石](articles/wechat-articles/wechat-hot-0527-ai-fraud.html)
 - [五行与AI：当东方智慧遇见人工智能](articles/公众号文章-五行人格系列/10-五行与AI：当东方智慧遇见人工智能.html)
+- [AI原生组织人才顶层设计](articles/_ai_org_build/obsidian/AI原生组织/10-顶层设计/AI原生组织人才顶层设计.html)
+- [AI原生组织数据结构与业务流顶层设计](articles/_ai_org_build/obsidian/AI原生组织/10-顶层设计/AI原生组织数据结构与业务流顶层设计.html)
+- [AI原生组织顶层设计](articles/_ai_org_build/obsidian/AI原生组织/10-顶层设计/AI原生组织顶层设计.html)
+- [AI原生组织数据结构顶层设计](articles/_ai_org_build/obsidian/AI原生组织/20-数据结构顶层设计/AI原生组织数据结构顶层设计.html)
+- [AI 原生组织公司的组织重构](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI 原生组织公司的组织重构.html)
+- [AI 原生组织公司的组织重构1](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI 原生组织公司的组织重构1.html)
+- [AI 原生组织特征](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI 原生组织特征.html)
+- [AI原生组织变革方向讨论会](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI原生组织变革方向讨论会.html)
+- [AI原生组织未来形态·共同讨论稿](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI原生组织未来形态·共同讨论稿.html)
+- [AI原生组织架构全案](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI原生组织架构全案.html)
+- [AI原生组织认识框架：以合于道→自然显化为元公式的全案](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI原生组织认识框架：以合于道→自然显化为元公式的全案.html)
+- [AI原生组织讨论全记录与推演总结](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI原生组织讨论全记录与推演总结.html)
+- [AI原生组织顶层设计-阶段性讨论总结](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI原生组织顶层设计-阶段性讨论总结.html)
+- [AI原生组织顶层设计稿](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/AI原生组织顶层设计稿.html)
+- [合道场域型 AI 原生组织：从东西方思想同构到味藏路线的完整推演](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/合道场域型 AI 原生组织：从东西方思想同构到味藏路线的完整推演.html)
+- [味藏 26 岗位智能体 → AI 原生重构方案](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/味藏 26 岗位智能体 → AI 原生重构方案.html)
+- [味藏AI原生组织顶层设计（补充升级版）](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/味藏AI原生组织顶层设计（补充升级版）.html)
+- [破解创新瓶颈：AI原生组织的底层逻辑与架构重塑](articles/_ai_org_build/obsidian/AI原生组织/30-文件原文件/破解创新瓶颈：AI原生组织的底层逻辑与架构重塑.html)
+- [AI原生组织的哲学重构：](articles/_ai_org_build/obsidian/AI原生组织/50-马克思主义视角/AI原生组织的哲学重构：.html)
+- [迈向AGI时代的个人哲学与AI原生组织进阶指南](articles/_ai_org_build/obsidian/AI原生组织/50-马克思主义视角/迈向AGI时代的个人哲学与AI原生组织进阶指南.html)
 - [眼见不再为实：当AI换脸摧毁了人类的信任基石](articles/geo-repo/wechat-articles/wechat-hot-0527-ai-fraud.html)
 - [AIOS三层架构](articles/geo-repo/wiki/AIOS三层架构.html)
 - [NotebookLM（Google证据驱动型学习AI）](articles/geo-repo/wiki/NotebookLM.html)
