@@ -151,6 +151,7 @@ def generate_article_html(meta: dict, content: str, filename: str) -> str:
     <meta name="description" content="{description}">
     <meta name="keywords" content="{keywords}">
     <meta name="author" content="{author}">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
     <meta property="og:title" content="{title}">
     <meta property="og:description" content="{description}">
     <meta property="og:type" content="article">
@@ -366,9 +367,10 @@ def collect_articles() -> list:
                 '.xhs-' not in rel  # 排除小红书文章
             )
             
-            # 排除某些非文章文件
-            exclude_patterns = ['style', '规范', '分析', '建议', 'template', 'test', 'demo']
-            should_exclude = any(p in name for p in exclude_patterns)
+            # 排除某些非文章文件（英文用单词边界，避免 retest/lattest 被误判为 test）
+            import re as _re
+            exclude_regex = _re.compile(r'\b(?:style|template|test|demo)\b|规范|分析|建议')
+            should_exclude = bool(exclude_regex.search(name))
             
             if is_wechat and not should_exclude:
                 result = process_article(filepath, search_dir)
