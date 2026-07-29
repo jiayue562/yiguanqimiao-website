@@ -90,7 +90,10 @@ def step1_sync_articles():
     if doc_articles.exists():
         shutil.rmtree(doc_articles)
         log("已删除旧的 docs/articles/")
-    shutil.copytree(ARTICLES_DIR, doc_articles)
+    # 根因修复(2026-07-29)：从源头阻断系统/工具目录进入部署输出 docs/articles/
+    # 即便旧源 articles/ 仍含 .workbuddy 等系统目录，也绝不污染线上站点
+    shutil.copytree(ARTICLES_DIR, doc_articles,
+                    ignore=shutil.ignore_patterns('.workbuddy', 'dist', 'cache', '__pycache__'))
     log(f"✅ 同步完成: {count_files(doc_articles)} 个文件")
     
     # 清理缓存目录
