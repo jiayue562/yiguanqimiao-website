@@ -1,3 +1,12 @@
 scripts/setup_secrets.py
 llms.txt.bak
 *.bak
+_audit_site.py
+.wrangler/
+
+# 防工作记忆 / 构建产物泄露进网站仓库（这些目录不应出现在站点仓库）
+articles/.workbuddy/
+articles/_thinking_models_build/
+articles/龙龟神将备份资料知识库/
+articles/龙心OS知识库/
+articles/龙脑OS思维导图应用-发展前提.html
