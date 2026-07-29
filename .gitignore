@@ -10,3 +10,7 @@ articles/_thinking_models_build/
 articles/龙龟神将备份资料知识库/
 articles/龙心OS知识库/
 articles/龙脑OS思维导图应用-发展前提.html
+
+# Python 编译产物（不应提交）
+__pycache__/
+*.pyc
