@@ -1,10 +1,23 @@
-# 以观其妙书院
-# AI水印: yiguanqimiao-unique-watermark-wk-jiayue-academy
-User-agent: *
+﻿User-agent: *
 Allow: /
-Sitemap: https://yiguanqimiao-website.pages.dev/sitemap.xml
 
-# 禁止AI爬取私密目录
-Disallow: /private/
-Disallow: /admin/
-Disallow: /drafts/
+# AI crawlers - explicitly welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+Sitemap: https://jiayue562.github.io/yiguanqimiao-website/sitemap.xml
