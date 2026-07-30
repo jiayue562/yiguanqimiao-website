@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>企业文化OS · 技术栈安装指南 - 以观其妙书院</title>
+<meta name="description" content="企业文化OS · 技术栈安装指南 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="企业文化OS · 技术栈安装指南">
+<meta property="og:description" content="企业文化OS · 技术栈安装指南 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "企业文化OS · 技术栈安装指南",
+    "description": "企业文化OS · 技术栈安装指南 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>企业文化OS · 技术栈安装指南</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>企业文化OS · 技术栈安装指南</h1>
+<blockquote><p><strong>版本</strong>: v1.0 | <strong>创建</strong>: 2026-04-10 | <strong>维护者</strong>: 龙龟神将</p></blockquote>
+<hr>
+<h2>📦 安装清单</h2>
+<p>企业文化OS采用六层技术栈架构：</p>
+<pre><code>┌─────────────────────────────────────────┐
+│  Layer 6: SOP层（标准化操作程序）          │
+│  - 诊断SOP / 设计SOP / 落地SOP            │
+├─────────────────────────────────────────┤
+│  Layer 5: 工作流层（Workflow）            │
+│  - 七步落地工作流 / 诊断工作流 / 迭代工作流 │
+├─────────────────────────────────────────┤
+│  Layer 4: Framework层（框架调度）          │
+│  - 任务调度 / 状态管理 / 执行监控          │
+├─────────────────────────────────────────┤
+│  Layer 3: MCP层（通信协议）               │
+│  - 子智能体通信 / 数据同步 / 协同协议      │
+├─────────────────────────────────────────┤
+│  Layer 2: Skills层（技能单元）            │
+│  - 9个子智能体Skills + 总调度Skill         │
+├─────────────────────────────────────────┤
+│  Layer 1: CLI层（命令入口）               │
+│  - 诊断CLI / 设计CLI / 落地CLI            │
+└─────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>✅ 安装状态</h2>
+<table>
+<thead><tr>
+<th>层级</th>
+<th>组件</th>
+<th>状态</th>
+<th>路径</th>
+</tr></thead><tbody>
+<tr>
+<td>CLI</td>
+<td>企业文化诊断CLI</td>
+<td>🔄 安装中</td>
+<td><code>cli/diagnose-cli.md</code></td>
+</tr>
+<tr>
+<td>CLI</td>
+<td>企业文化设计CLI</td>
+<td>⏳ 待安装</td>
+<td><code>cli/design-cli.md</code></td>
+</tr>
+<tr>
+<td>CLI</td>
+<td>企业文化落地CLI</td>
+<td>⏳ 待安装</td>
+<td><code>cli/implement-cli.md</code></td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>企业文化诊断子智能体</td>
+<td>⏳ 待构建</td>
+<td><code>skills/qiye-wenhua-zhenduan/</code></td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>融入时代子智能体</td>
+<td>⏳ 待构建</td>
+<td><code>skills/rongru-shidai/</code></td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>经营心法子智能体</td>
+<td>⏳ 待构建</td>
+<td><code>skills/jingying-xinfa/</code></td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>氛围营造子智能体</td>
+<td>⏳ 待构建</td>
+<td><code>skills/fenwei-yingzao/</code></td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>礼乐仪式子智能体</td>
+<td>⏳ 待构建</td>
+<td><code>skills/liyi-yishi/</code></td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>功勋体系子智能体</td>
+<td>⏳ 待构建</td>
+<td><code>skills/gongxun-tixi/</code></td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>企业商学院子智能体</td>
+<td>⏳ 待构建</td>
+<td><code>skills/qiye-shangxueyuan/</code></td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>企业大事件子智能体</td>
+<td>⏳ 待构建</td>
+<td><code>skills/qiye-dashijian/</code></td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>企业文化总智能体</td>
+<td>⏳ 待构建</td>
+<td><code>skills/qiye-wenhua-zongti/</code></td>
+</tr>
+<tr>
+<td>MCP</td>
+<td>子智能体通信协议</td>
+<td>⏳ 待配置</td>
+<td><code>mcp/qiye-wenhua-mcp.json</code></td>
+</tr>
+<tr>
+<td>Framework</td>
+<td>任务调度框架</td>
+<td>⏳ 待配置</td>
+<td><code>framework/qiye-wenhua-framework.yaml</code></td>
+</tr>
+<tr>
+<td>工作流</td>
+<td>七步落地工作流</td>
+<td>⏳ 待创建</td>
+<td><code>workflow/7step-workflow.md</code></td>
+</tr>
+<tr>
+<td>SOP</td>
+<td>诊断→设计→落地SOP</td>
+<td>⏳ 待创建</td>
+<td><code>sop/qiye-wenhua-sop.md</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🚀 快速开始</h2>
+<h3>1. 诊断入口</h3>
+<pre><code># 启动企业文化诊断
+企业文化诊断 --企业名称="XX公司" --行业="互联网" --规模="100-500人"</code></pre>
+<h3>2. 设计入口</h3>
+<pre><code># 启动企业文化设计
+企业文化设计 --诊断报告="path/to/report.md" --重点模块="经营心法,氛围营造"</code></pre>
+<h3>3. 落地入口</h3>
+<pre><code># 启动企业文化落地
+企业文化落地 --设计方案="path/to/design.md" --阶段="第一阶段"</code></pre>
+<hr>
+<h2>📁 目录结构</h2>
+<pre><code>企业文化OS/
+├── README.md                 # 总览文档
+├── INSTALL.md               # 本安装指南
+├── cli/                     # CLI层
+│   ├── diagnose-cli.md     # 诊断CLI
+│   ├── design-cli.md       # 设计CLI
+│   └── implement-cli.md    # 落地CLI
+├── skills/                  # Skills层（9+1）
+│   ├── qiye-wenhua-zhenduan/      # 诊断子智能体
+│   ├── rongru-shidai/             # 融入时代
+│   ├── jingying-xinfa/            # 经营心法
+│   ├── fenwei-yingzao/            # 氛围营造
+│   ├── liyi-yishi/                # 礼乐仪式
+│   ├── gongxun-tixi/              # 功勋体系
+│   ├── qiye-shangxueyuan/         # 企业商学院
+│   ├── qiye-dashijian/            # 企业大事件
+│   └── qiye-wenhua-zongti/        # 总智能体
+├── mcp/                     # MCP层
+│   └── qiye-wenhua-mcp.json
+├── framework/               # Framework层
+│   └── qiye-wenhua-framework.yaml
+├── workflow/                # 工作流层
+│   ├── 7step-workflow.md
+│   ├── diagnose-workflow.md
+│   └── iterate-workflow.md
+└── sop/                     # SOP层
+    ├── diagnose-sop.md
+    ├── design-sop.md
+    └── implement-sop.md</code></pre>
+<hr>
+<h2>🔧 安装步骤</h2>
+<h3>Step 1: CLI层安装</h3>
+<ul>
+<li>[x] 创建CLI目录结构</li>
+<li>[ ] 编写诊断CLI文档</li>
+<li>[ ] 编写设计CLI文档</li>
+<li>[ ] 编写落地CLI文档</li>
+</ul>
+<h3>Step 2: Skills层安装</h3>
+<ul>
+<li>[ ] 使用Skill Builder构建9个子智能体</li>
+<li>[ ] 配置自动触发规则</li>
+<li>[ ] 测试子智能体调用</li>
+</ul>
+<h3>Step 3: MCP层安装</h3>
+<ul>
+<li>[ ] 定义子智能体通信协议</li>
+<li>[ ] 配置数据同步机制</li>
+<li>[ ] 测试跨智能体调用</li>
+</ul>
+<h3>Step 4: Framework层安装</h3>
+<ul>
+<li>[ ] 配置任务调度器</li>
+<li>[ ] 配置状态管理</li>
+<li>[ ] 配置执行监控</li>
+</ul>
+<h3>Step 5: 工作流层安装</h3>
+<ul>
+<li>[ ] 创建七步落地工作流</li>
+<li>[ ] 创建诊断工作流</li>
+<li>[ ] 创建迭代工作流</li>
+</ul>
+<h3>Step 6: SOP层安装</h3>
+<ul>
+<li>[ ] 编写诊断SOP</li>
+<li>[ ] 编写设计SOP</li>
+<li>[ ] 编写落地SOP</li>
+</ul>
+<hr>
+<h2>📊 安装进度</h2>
+<table>
+<thead><tr>
+<th>阶段</th>
+<th>进度</th>
+<th>状态</th>
+</tr></thead><tbody>
+<tr>
+<td>CLI层</td>
+<td>0%</td>
+<td>🔄 进行中</td>
+</tr>
+<tr>
+<td>Skills层</td>
+<td>0%</td>
+<td>⏳ 等待中</td>
+</tr>
+<tr>
+<td>MCP层</td>
+<td>0%</td>
+<td>⏳ 等待中</td>
+</tr>
+<tr>
+<td>Framework层</td>
+<td>0%</td>
+<td>⏳ 等待中</td>
+</tr>
+<tr>
+<td>工作流层</td>
+<td>0%</td>
+<td>⏳ 等待中</td>
+</tr>
+<tr>
+<td>SOP层</td>
+<td>0%</td>
+<td>⏳ 等待中</td>
+</tr>
+</tbody></table>
+<p><strong>总体进度</strong>: 0% | <strong>预计完成时间</strong>: 2026-04-12</p>
+<hr>
+<h2>📝 更新日志</h2>
+<h3>v1.0 (2026-04-10)</h3>
+<ul>
+<li>初始版本创建</li>
+<li>定义六层技术栈架构</li>
+<li>创建安装清单和目录结构</li>
+</ul>
+<hr>
+<p><strong>企业文化OS · 技术栈安装指南</strong> · 龙龟神将维护</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

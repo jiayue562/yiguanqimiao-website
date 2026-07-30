@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI原生组织工作流·开发文档 - 以观其妙书院</title>
+<meta name="description" content="AI原生组织工作流·开发文档 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="AI原生组织工作流·开发文档">
+<meta property="og:description" content="AI原生组织工作流·开发文档 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AI原生组织工作流·开发文档",
+    "description": "AI原生组织工作流·开发文档 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>AI原生组织工作流·开发文档</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>AI原生组织工作流 · 开发文档</h1>
+<blockquote><p><strong>版本</strong>：v1.0 | <strong>关联Skill</strong>：<code>~/.workbuddy/skills/AI原生组织工作流/SKILL.md</code></p></blockquote>
+<hr>
+<h2>核心定位</h2>
+<p>AI原生组织工作流是龙心OS的任务分解引擎，基于"AI原生组织"的串行/并行/瓶颈三分类模型，对每次任务自动进行工作分解与标注。</p>
+<h3>三分类标注体系</h3>
+<table>
+<thead><tr>
+<th>符号</th>
+<th>类别</th>
+<th>含义</th>
+</tr></thead><tbody>
+<tr>
+<td>🟢 [AI]</td>
+<td>AI并行</td>
+<td>龙龟独立完成，无需悟空干预</td>
+</tr>
+<tr>
+<td>🔴 [人]</td>
+<td>人串行</td>
+<td>悟空必须亲自决策/判断/批准</td>
+</tr>
+<tr>
+<td>🟡 [⇄]</td>
+<td>串联瓶颈</td>
+<td>AI做完后需等待悟空处理的节点</td>
+</tr>
+</tbody></table>
+<h3>工作流四阶段</h3>
+<ol>
+<li><strong>任务分析</strong> → 识别三类工作</li>
+<li><strong>并行执行</strong> → 执行所有🟢 [AI]</li>
+<li><strong>收敛报告</strong> → 标记🟡 [⇄]，呈现结果</li>
+<li><strong>完成总结</strong> → 输出统计 + 压缩建议</li>
+</ol>
+<hr>
+<h2>文件清单</h2>
+<table>
+<thead><tr>
+<th>文件</th>
+<th>路径</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>SKILL.md</td>
+<td><code>~/.workbuddy/skills/AI原生组织工作流/SKILL.md</code></td>
+<td>主Skill规则</td>
+</tr>
+<tr>
+<td>开发文档</td>
+<td><code>~/.workbuddy/skills/AI原生组织工作流/references/开发文档.md</code></td>
+<td>完整开发技术文档</td>
+</tr>
+<tr>
+<td>瓶颈日志</td>
+<td><code>~/.workbuddy/skills/AI原生组织工作流/references/bottleneck-log.md</code></td>
+<td>串行瓶颈记录</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>双向链接</h2>
+<ul>
+<li><a href="08-OS_AI-OS__OS_AI-_md-34310e55.html">AI原生组织-深度学习报告</a></li>
+<li><a href="08-OS_AI-OS__OS_-AI_md-42444a55.html">悟空-AI原生组织诊断报告</a></li>
+<li><a href="人机协同五象限·理论体系完整版.html">人机协同五象限·理论体系完整版</a></li>
+<li><a href="龙心OS总索引.html">龙心OS总索引</a></li>
+</ul>
+<hr>
+<p><strong>创建日期</strong>: 2026-06-11
+<strong>版本</strong>: v1.0</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

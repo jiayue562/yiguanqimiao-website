@@ -1,5 +1,5 @@
 # Cloudflare Pages Headers
-# 生成时间: 2026-07-28 23:26
+# 生成时间: 2026-07-31 06:45
 # Clean URL文件（无扩展名）→ Content-Type: text/html
 # 规则：精确目录路径，避免路由异常
 
@@ -33,13 +33,31 @@
 /articles/05-个人成长与修行/*
   Content-Type: text/html
 
+/articles/AI原生组织公众号系列/*
+  Content-Type: text/html
+
+/articles/AI龙龟共生伙伴OS公众号系列/*
+  Content-Type: text/html
+
+/articles/_ai_org_build/obsidian/AI原生组织/*
+  Content-Type: text/html
+
 /articles/_temp_ima2/*
+  Content-Type: text/html
+
+/articles/_thinking_models_build/obsidian/思维模型/*
+  Content-Type: text/html
+
+/articles/_thinking_models_build/restructured/思维模型/01-核心体系/龙脑-思维模型顶层设计/*
   Content-Type: text/html
 
 /articles/ai_os_v6/*
   Content-Type: text/html
 
 /articles/articles_01-OS-4b6624df/*
+  Content-Type: text/html
+
+/articles/articles_01-OS-4b6624df_1/*
   Content-Type: text/html
 
 /articles/geo-repo/*
@@ -60,5 +78,20 @@
 /articles/wuxing-geo-anchor/anchor-site/articles/*
   Content-Type: text/html
 
+/articles/公众号文章-五行人格系列/*
+  Content-Type: text/html
+
+/articles/公众号文章-五行人格系列三OS学术版/*
+  Content-Type: text/html
+
+/articles/公众号文章-五行人格系列二/*
+  Content-Type: text/html
+
 /articles/味藏AI原生组织/*
+  Content-Type: text/html
+
+/articles/岗位智能体系列公众号文章/*
+  Content-Type: text/html
+
+/articles/龙脑OS系列公众号文章/*
   Content-Type: text/html

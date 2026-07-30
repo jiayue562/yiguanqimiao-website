@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CLI 原生操作入口 Skill - 以观其妙书院</title>
+<meta name="description" content="CLI 原生操作入口 Skill - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="CLI 原生操作入口 Skill">
+<meta property="og:description" content="CLI 原生操作入口 Skill - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "CLI 原生操作入口 Skill",
+    "description": "CLI 原生操作入口 Skill - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>CLI 原生操作入口 Skill</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<p>﻿---
+title: "CLI 原生操作入口 Skill"
+created: "2026-04-03"
+version: "1.0"
+tags: [AI-OS, 技术栈, CLI, 人机协同]</p>
+<hr>
+<h1>CLI 原生操作入口 Skill</h1>
+<blockquote><p><strong>核心定位</strong>：CLI 是个人 AI OS 中<strong>人机共生的原生操作入口</strong>，锚定"人控AI 行"的交互底层。</p></blockquote>
+<h2>一、核心定义</h2>
+<h3>什么是 CLI（命令行界面）？</h3>
+<p>CLI（Command Line Interface）是个人 AI OS 中，人向 AI 传递指令、AI 操作全系统软硬件的<strong>标准化原生入口</strong>：</p>
+<ul>
+<li><strong>对人而言</strong>：极简、高效的"指令输出端"（无需复杂操作，直接传递创意/决策）</li>
+<li><strong>对 AI 而言</strong>：无歧义、可精准执行的"操作输入端"（替代 GUI 的视觉依赖，适配 Agent 的自动化执行特性）</li>
+<li><strong>核心价值</strong>：人机共生的交互基础协议</li>
+</ul>
+<h3>技术定位</h3>
+<ul>
+<li><strong>层级</strong>：四大技术栈中的第一层（入口层）</li>
+<li><strong>功能</strong>：指令解析、人格化适配、全系统调用</li>
+<li><strong>特性</strong>：轻量化、标准化、人格化</li>
+</ul>
+<hr>
+<h2>二、核心能力</h2>
+<h3>能力1：个人专属 CLI 指令体系</h3>
+<p><strong>核心目标</strong>：围绕个人的使用习惯、核心需求设计轻量化 CLI 指令。</p>
+<p><strong>指令分类</strong>：</p>
+<h4>核心决策指令（人发出）</h4>
+<pre><code># 内容创作类
+创作AI行业文章 --基于 GEO思维模型 --贴合我人格
+
+# 工作执行类
+运行数据处理脚本 --项目 xxx --优先级 高
+
+# 知识管理类
+检索我的信仰相关笔记 --时间段 本月</code></pre>
+<h4>执行操作指令（AI 自主调用）</h4>
+<pre><code># 知识库操作
+检索知识库 --关键词 五行人格
+
+# 系统操作
+运行每日总结 --包含 今日完成项、明日计划
+
+# 技能调用
+调用 象思维 --场景 创新突破</code></pre>
+<p><strong>设计原则</strong>：</p>
+<ul>
+<li>✅ <strong>极简设计</strong>：指令长度控制在 5-10 个词</li>
+<li>✅ <strong>语义清晰</strong>：指令意图明确，无需二次确认</li>
+<li>✅ <strong>分类体系</strong>：按功能域（创作/执行/管理）组织</li>
+</ul>
+<hr>
+<h3>能力2：全系统 CLI 化适配</h3>
+<p><strong>核心目标</strong>：让个人 AI OS 中的所有工具、组件、外部服务都提供 CLI 接口，AI 可通过纯文本指令一键调用。</p>
+<p><strong>适配范围</strong>：</p>
+<ul>
+<li>本地文档操作</li>
+<li>云端知识库（Obsidian、IMA）</li>
+<li>办公软件集成</li>
+<li>外部 API 调用</li>
+<li>Skills 执行</li>
+</ul>
+<p><strong>实现方式</strong>：</p>
+<pre><code># CLI 指令到操作的映射
+指令: "检索 Obsidian 笔记"
+操作:
+  - tool: obsidian-cli
+  - action: search
+  - params: {关键词: "{arg}"}
+
+指令: "创建 IMA 笔记"
+操作:
+  - tool: ima-api
+  - action: create_note
+  - params: {内容: "{content}"}</code></pre>
+<p><strong>特性</strong>：</p>
+<ul>
+<li>✅ <strong>一键调用</strong>：无需人介入，AI 可直接执行</li>
+<li>✅ <strong>状态反馈</strong>：执行过程中实时返回进度</li>
+<li>✅ <strong>错误处理</strong>：执行失败时自动重试或降级方案</li>
+</ul>
+<hr>
+<h3>能力3：CLI 指令的「人格化适配」</h3>
+<p><strong>核心目标</strong>：支持指令带个人语气/人格特质，让执行结果贴合个人特质。</p>
+<p><strong>人格化参数体系</strong>：</p>
+<h4>思维模型参数</h4>
+<pre><code># 指令示例
+分析问题 --基于 第一性原理 --深度 3级
+# 参数解析
+思维模型: 第一性原理
+分析深度: 深度（3级）</code></pre>
+<h4>人格特质参数</h4>
+<pre><code># 指令示例
+生成文案 --人格 火行人 --语气 热情感染
+# 参数解析
+人格类型: 火行人
+语气特征: 热情感染</code></pre>
+<h4>文化/信仰参数</h4>
+<pre><code># 指令示例
+分析战略 --文化 心文化 --信仰 大圆满
+# 参数解析
+文化背景: 心文化体系
+信仰根基: 大圆满见地</code></pre>
+<p><strong>AI 解析流程</strong>：</p>
+<ol>
+<li>提取指令中的人格化参数</li>
+<li>同步加载对应的个人数据</li>
+<li>调用 Skills 时传递参数</li>
+<li>执行结果自动应用参数特征</li>
+</ol>
+<hr>
+<h2>三、核心价值</h2>
+<h3>与共生逻辑的结合</h3>
+<p><strong>「共生」实现</strong>：</p>
+<ul>
+<li><strong>人少操作</strong>：CLI 实现极简指令，人无需复杂操作</li>
+<li><strong>AI 多干活</strong>：AI 自动拆解指令为底层 CLI 操作，全链路执行</li>
+<li><strong>分工明确</strong>：人聚焦创意/决策，AI 聚焦执行</li>
+</ul>
+<p><strong>「个性化」实现</strong>：</p>
+<ul>
+<li>指令前缀参数化：如"按第一性原理""按长期主义视角"</li>
+<li>AI 解析时同步加载，所有执行基于核心认知</li>
+<li>文化/信仰检索标签：执行时快速调用相关背景知识</li>
+</ul>
+<hr>
+<h2>四、实操指南</h2>
+<h3>场景1：日常内容创作</h3>
+<p><strong>用户指令</strong>：</p>
+<pre><code>创作 AI 行业文章 --主题 AI OS 发展 --基于 教员方法论</code></pre>
+<p><strong>AI 执行流程</strong>：</p>
+<ol>
+<li>解析指令：主题="AI OS 发展"，思维模型="教员方法论"</li>
+<li>调用知识库 Skill：检索相关资料</li>
+<li>调用五色光 Skill：生成结构化分析</li>
+<li>调用文案 Skill：生成符合人格的文章</li>
+<li>CLI 一键执行全流程，人等待结果</li>
+</ol>
+<hr>
+<h3>场景2：知识库深度检索</h3>
+<p><strong>用户指令</strong>：</p>
+<pre><code>检索我的笔记 --关键词 木火共生关系 --关联 象思维</code></pre>
+<p><strong>AI 执行流程</strong>：</p>
+<ol>
+<li>解析指令：关键词="木火共生关系"，关联="象思维"</li>
+<li>调用 Obsidian CLI：双向链接检索</li>
+<li>调用知识图谱 Skill：可视化关系网络</li>
+<li>返回结构化结果（包含笔记路径、关联节点、核心洞察）</li>
+</ol>
+<hr>
+<h3>场景3：系统自动化任务</h3>
+<p><strong>用户指令</strong>：</p>
+<pre><code>运行每日自动化 --包括 知识备份、日志归档、健康检查</code></pre>
+<p><strong>AI 执行流程</strong>：</p>
+<ol>
+<li>解析指令：任务类型="每日自动化"</li>
+<li>拆解为子任务：<ul>
+<li>备份 Obsidian 到云端</li>
+<li>归档 WorkBuddy 日志</li>
+<li>检查系统健康状态</li>
+</ul></li>
+<li>通过 CLI 调用对应工具</li>
+<li>实时反馈执行进度</li>
+<li>生成执行报告</li>
+</ol>
+<hr>
+<h2>五、与四大技术栈的协同</h2>
+<h3>与 Skills 层的协同</h3>
+<ul>
+<li><strong>调用 Skills</strong>：CLI 指令 → AI 解析 → 匹配对应 Skills</li>
+<li><strong>传递参数</strong>：CLI 指令中的人格化参数 → 传递给 Skills</li>
+<li><strong>接收结果</strong>：Skills 执行结果 → CLI 统一格式化反馈给人</li>
+</ul>
+<h3>与 MCP 层的协同</h3>
+<ul>
+<li><strong>协议标准化</strong>：CLI 指令的格式 → MCP 协议标准</li>
+<li><strong>无缝调用</strong>：CLI 通过 MCP → 调用任意 Skills</li>
+<li><strong>状态同步</strong>：CLI 执行状态 → MCP 同步给 Framework</li>
+</ul>
+<h3>与 Framework 层的协同</h3>
+<ul>
+<li><strong>任务调度</strong>：Framework 调度模块 → CLI 指令队列</li>
+<li><strong>推理辅助</strong>：Framework 推理模块 → CLI 指令智能补全</li>
+<li><strong>结果整合</strong>：CLI 执行结果 → Framework 整合模块</li>
+</ul>
+<hr>
+<h2>六、技术实现要点</h2>
+<h3>CLI 接口设计</h3>
+<pre><code>接口规范:
+  输入格式: "命令 [参数=值] [参数=值]..."
+  输出格式: "进度 | 结果 | 错误"
+  状态码:
+    - 0: 成功
+    - 1: 部分成功
+    - 2: 执行中
+    - 3: 失败</code></pre>
+<h3>错误处理</h3>
+<ul>
+<li>指令不明确：AI 自动追问澄清</li>
+<li>工具不可用：降级到备用方案</li>
+<li>执行失败：自动重试 3 次</li>
+<li>权限不足：提示用户确认</li>
+</ul>
+<h3>性能优化</h3>
+<ul>
+<li>指令缓存：常用指令预加载</li>
+<li>并行执行：独立任务并行处理</li>
+<li>增量反馈：实时推送执行进度</li>
+</ul>
+<hr>
+<h2>七、测试用例</h2>
+<h3>测试用例1：人格化指令解析</h3>
+<p><strong>输入</strong>：</p>
+<pre><code>创作文章 --人格 火行人 --思维模型 五色光</code></pre>
+<p><strong>预期输出</strong>：</p>
+<ul>
+<li>解析成功：人格="火行人"，思维模型="五色光"</li>
+<li>传递参数给 Skills：成功</li>
+<li>执行结果：文章风格符合火行人热情特质</li>
+</ul>
+<h3>测试用例2：全系统调用</h3>
+<p><strong>输入</strong>：</p>
+<pre><code>检索知识库 --关键词 五行人格 --关联 象思维</code></pre>
+<p><strong>预期输出</strong>：</p>
+<ul>
+<li>调用 Obsidian CLI：成功</li>
+<li>调用知识图谱 Skill：成功</li>
+<li>返回结果：结构化笔记列表 + 关联关系图</li>
+</ul>
+<h3>测试用例3：自动化任务</h3>
+<p><strong>输入</strong>：</p>
+<pre><code>运行每日总结 --包括 今日完成、明日计划、学习笔记</code></pre>
+<p><strong>预期输出</strong>：</p>
+<ul>
+<li>执行备份：成功</li>
+<li>归档日志：成功</li>
+<li>生成总结：成功</li>
+<li>执行报告：完整输出</li>
+</ul>
+<hr>
+<h2>八、关联文件</h2>
+<h3>核心依赖</h3>
+<ul>
+<li><code>CLI、Skills、MCP、Framework 落地应用学习笔记.md</code>（理论依据）</li>
+<li><code>人机协同五象限 Skill</code>（协同协议）</li>
+<li><code>Framework 核心管理 Skill</code>（调度支持）</li>
+</ul>
+<h3>配置文件</h3>
+<ul>
+<li><code>cli-commands.yaml</code>（指令配置）</li>
+<li><code>cli-personalization.json</code>（人格化参数）</li>
+<li><code>cli-mappings.json</code>（指令到操作映射）</li>
+</ul>
+<hr>
+<p><strong>版本</strong>: 1.0
+<strong>创建</strong>: 2026-04-03
+<strong>维护者</strong>: 龙龟神将
+<strong>核心价值</strong>: 极简指令、人格化适配、全系统 CLI 化、人机共生入口</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

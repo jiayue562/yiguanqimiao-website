@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>教员方法论 · 检查清单 - 以观其妙书院</title>
+<meta name="description" content="教员方法论 · 检查清单 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="教员方法论 · 检查清单">
+<meta property="og:description" content="教员方法论 · 检查清单 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "教员方法论 · 检查清单",
+    "description": "教员方法论 · 检查清单 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>教员方法论 · 检查清单</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>教员方法论 · 检查清单</h1>
+<blockquote><p>✅ Skill 构建质量检查 · 2026-04-16</p></blockquote>
+<hr>
+<h2>一、文件结构检查</h2>
+<ul>
+<li>[ ] SKILL.md 主文件已创建</li>
+<li>[ ] references/theory.md 理论文档已创建</li>
+<li>[ ] references/practice-guide.md 实践指南已创建</li>
+<li>[ ] templates/io-templates.md 输入输出模板已创建</li>
+<li>[ ] triggers/trigger-rules.yaml 触发规则已创建</li>
+<li>[ ] CHECKLIST.md 检查清单已创建</li>
+<li>[ ] COMPLETION_REPORT.md 完成报告已创建</li>
+</ul>
+<p><strong>文件总数</strong>: 7 个</p>
+<hr>
+<h2>二、核心内容检查</h2>
+<h3>核心定义</h3>
+<ul>
+<li>[ ] 技能定位清晰（分析问题、解决问题的方法论）</li>
+<li>[ ] 核心框架明确（找→装→填）</li>
+<li>[ ] 核心心法完整（工具为我所用）</li>
+</ul>
+<h3>理论框架</h3>
+<ul>
+<li>[ ] 矛盾论内容完整（根本/阶段/主要/主要方面）</li>
+<li>[ ] 金字塔原理内容完整（四大原则）</li>
+<li>[ ] 金线原理内容完整（逻辑验证标准）</li>
+<li>[ ] 实践论内容完整（PDCA 闭环）</li>
+</ul>
+<h3>矛盾分析框架</h3>
+<ul>
+<li>[ ] 矛盾层次（四层）定义清晰</li>
+<li>[ ] 矛盾维度（五层）定义清晰</li>
+<li>[ ] 矛盾内部结构（三体）定义清晰</li>
+<li>[ ] 转化条件说明完整</li>
+</ul>
+<h3>应用流程</h3>
+<ul>
+<li>[ ] 七步分析法完整</li>
+<li>[ ] 每步操作要点清晰</li>
+<li>[ ] 每步检查清单完整</li>
+</ul>
+<h3>实战案例</h3>
+<ul>
+<li>[ ] 创业公司案例完整</li>
+<li>[ ] 个人发展案例完整</li>
+<li>[ ] 门店业绩案例完整</li>
+</ul>
+<hr>
+<h2>三、触发规则检查</h2>
+<h3>P0 直接触发</h3>
+<ul>
+<li>[ ] 关键词覆盖完整（12 个关键词）</li>
+<li>[ ] 模式匹配合理（8 个模式）</li>
+<li>[ ] 权重设置正确（5）</li>
+</ul>
+<h3>P1 场景触发</h3>
+<ul>
+<li>[ ] 场景分类合理（4 个场景）</li>
+<li>[ ] 场景关键词完整</li>
+<li>[ ] 确认机制配置（confirm_required: true）</li>
+</ul>
+<h3>P2 信号触发</h3>
+<ul>
+<li>[ ] 信号模式合理（5 个信号）</li>
+<li>[ ] 建议文本清晰</li>
+<li>[ ] 仅建议模式配置（suggest_only: true）</li>
+</ul>
+<h3>协同路由</h3>
+<ul>
+<li>[ ] 与知行合一协同配置</li>
+<li>[ ] 与知识学习协同配置</li>
+<li>[ ] 与象思维协同配置</li>
+<li>[ ] 与五色光思维协同配置</li>
+<li>[ ] 与人机协同五象限协同配置</li>
+</ul>
+<h3>排除规则</h3>
+<ul>
+<li>[ ] 情感类问题排除</li>
+<li>[ ] 艺术类问题排除</li>
+<li>[ ] 灵感类问题排除</li>
+<li>[ ] 感受类问题排除</li>
+</ul>
+<hr>
+<h2>四、模板检查</h2>
+<h3>输入模板</h3>
+<ul>
+<li>[ ] 问题分析请求模板完整</li>
+<li>[ ] 矛盾分析请求模板完整</li>
+<li>[ ] 方案验证请求模板完整</li>
+</ul>
+<h3>输出模板</h3>
+<ul>
+<li>[ ] 矛盾分析报告模板完整（10 个章节）</li>
+<li>[ ] 快速分析卡片模板完整</li>
+<li>[ ] 实践复盘模板完整</li>
+</ul>
+<hr>
+<h2>五、与龙心 OS 协同检查</h2>
+<ul>
+<li>[ ] 与知行合一协同关系明确</li>
+<li>[ ] 与知识学习协同关系明确</li>
+<li>[ ] 与象思维协同关系明确</li>
+<li>[ ] 与五色光思维协同关系明确</li>
+<li>[ ] 与人机协同五象限协同关系明确</li>
+<li>[ ] 与五行分类图谱参考关系明确</li>
+</ul>
+<hr>
+<h2>六、知识图谱检查</h2>
+<ul>
+<li>[ ] 核心概念标签完整</li>
+<li>[ ] 双向链接配置完整</li>
+<li>[ ] 隐秘知识联系发现</li>
+</ul>
+<hr>
+<h2>七、三库同步检查</h2>
+<ul>
+<li>[ ] Agents Skills 目录已创建（~/.agents/skills/教员方法论/）</li>
+<li>[ ] Obsidian 目录已创建（01-龙心 OS 核心系统/）</li>
+<li>[ ] OpcClaw 目录已创建（01-龙心 OS 核心系统/）</li>
+<li>[ ] IMA 待上传</li>
+</ul>
+<hr>
+<h2>八、质量验证</h2>
+<h3>方法论体系完整</h3>
+<ul>
+<li>[ ] 理论框架完整</li>
+<li>[ ] 逻辑自洽</li>
+<li>[ ] 概念清晰</li>
+</ul>
+<h3>应用框架清晰</h3>
+<ul>
+<li>[ ] 操作步骤清晰</li>
+<li>[ ] 可执行性强</li>
+<li>[ ] 模板实用</li>
+</ul>
+<h3>案例库丰富</h3>
+<ul>
+<li>[ ] 创业案例</li>
+<li>[ ] 个人发展案例</li>
+<li>[ ] 门店业绩案例</li>
+</ul>
+<hr>
+<h2>九、核心金句检查</h2>
+<ul>
+<li>[ ] "当我们能够准确地找到问题、发现问题，那么问题就解决了一半。"</li>
+<li>[ ] "没有目标就没有矛盾，仅仅围绕目标分析矛盾。"</li>
+<li>[ ] "团结更多的人将精力聚焦在主要矛盾上，凝聚目标。"</li>
+<li>[ ] "工具为我所用，而非我为工具所困。"</li>
+<li>[ ] "找（成熟模型）→ 装（改装框架）→ 填（填入现实）= 分析技能。"</li>
+<li>[ ] "实践是检验矛盾寻找是否合适的主要办法。"</li>
+<li>[ ] "道路走不通，发现了更大的矛盾，就向上找是不是根本矛盾就定的不对。"</li>
+<li>[ ] "往下走用 PDCA 解决具体，哪个环节出了问题。"</li>
+</ul>
+<hr>
+<h2>十、完成度评估</h2>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>完成度</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>文件结构</td>
+<td>100%</td>
+<td>7 个文件全部创建</td>
+</tr>
+<tr>
+<td>核心内容</td>
+<td>100%</td>
+<td>核心定义、理论框架、应用流程完整</td>
+</tr>
+<tr>
+<td>触发规则</td>
+<td>100%</td>
+<td>P0/P1/P2 三级触发配置完成</td>
+</tr>
+<tr>
+<td>模板体系</td>
+<td>100%</td>
+<td>输入输出模板完整</td>
+</tr>
+<tr>
+<td>协同关系</td>
+<td>100%</td>
+<td>与 5 个 Skills 协同关系明确</td>
+</tr>
+<tr>
+<td>三库同步</td>
+<td>75%</td>
+<td>Agents/Obsidian/OpcClaw完成，IMA待上传</td>
+</tr>
+</tbody></table>
+<p><strong>总体完成度</strong>: <strong>95%</strong></p>
+<hr>
+<p>_教员方法论 · 检查清单 v1.0 · 2026-04-16 · 龙心 OS_</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

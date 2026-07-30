@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>状态更新规则（Status Updates） - 以观其妙书院</title>
+<meta name="description" content="状态更新规则（Status Updates） - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="状态更新规则（Status Updates）">
+<meta property="og:description" content="状态更新规则（Status Updates） - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "状态更新规则（Status Updates）",
+    "description": "状态更新规则（Status Updates） - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>状态更新规则（Status Updates）</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>状态更新规则（Status Updates）</h1>
+<blockquote><p><strong>核心原则</strong>：人类厌恶在不知情的情况下等待。透明度是最好的用户体验。</p>
+<p><strong>对标来源</strong>：OpenClaw Status Updates规则</p>
+<p><strong>适用范围</strong>：AI龙龟共生伙伴操作系统（AI OS）所有操作</p></blockquote>
+<hr>
+<h2>一、核心定义</h2>
+<h3>1.1 什么是状态更新</h3>
+<p><strong>状态更新（Status Updates）</strong>：</p>
+<ul>
+<li>定义：在执行耗时操作前，主动告知用户当前任务内容和预计耗时</li>
+<li>目的：消除用户的不确定感和焦虑，提升协作体验</li>
+<li>本质：<strong>透明度原则</strong>——让用户始终知道"正在发生什么"</li>
+</ul>
+<h3>1.2 核心铁律</h3>
+<blockquote><p><strong>任何耗时超过10秒的操作，执行前必须告知用户当前任务与预计耗时。</strong></p></blockquote>
+<hr>
+<h2>二、操作分级标准</h2>
+<h3>2.1 时间阈值分级</h3>
+<table>
+<thead><tr>
+<th>级别</th>
+<th>耗时范围</th>
+<th>告知要求</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>即时</strong></td>
+<td>&lt; 3秒</td>
+<td>无需告知</td>
+<td>读取文件、搜索内容、简单计算</td>
+</tr>
+<tr>
+<td><strong>快速</strong></td>
+<td>3-10秒</td>
+<td>可选告知</td>
+<td>执行单条命令、生成短文本</td>
+</tr>
+<tr>
+<td><strong>中等</strong></td>
+<td>10-30秒</td>
+<td><strong>必须告知</strong></td>
+<td>生成图片、执行脚本、批量操作</td>
+</tr>
+<tr>
+<td><strong>较长</strong></td>
+<td>30-120秒</td>
+<td><strong>必须告知+进度更新</strong></td>
+<td>大规模代码修改、多文件操作</td>
+</tr>
+<tr>
+<td><strong>超长</strong></td>
+<td>&gt; 120秒</td>
+<td><strong>必须告知+里程碑更新</strong></td>
+<td>完整项目构建、系统部署</td>
+</tr>
+</tbody></table>
+<h3>2.2 告知内容标准</h3>
+<p><strong>标准格式</strong>：</p>
+<pre><code>正在[执行的具体任务]，预计需要[时间]</code></pre>
+<p><strong>正面示例</strong>：</p>
+<ul>
+<li>✅ "正在生成图片，需要30秒"</li>
+<li>✅ "正在搜索相关文件，预计15秒"</li>
+<li>✅ "正在执行代码重构，预计2分钟，分3个阶段完成"</li>
+<li>✅ "正在部署到生产环境，预计3分钟，完成后会通知你"</li>
+</ul>
+<p><strong>反面示例</strong>：</p>
+<ul>
+<li>❌ 沉默不语，让用户等待</li>
+<li>❌ "请稍等"（没有具体信息）</li>
+<li>❌ "处理中..."（没有预计耗时）</li>
+<li>❌ 开始执行很久后才告知用户</li>
+</ul>
+<h3>2.3 进度更新规则</h3>
+<p><strong>长时间操作（&gt;30秒）的进度更新</strong>：</p>
+<pre><code>阶段1/3：[具体阶段描述] ✓
+阶段2/3：[具体阶段描述] ⏳ 进行中...
+阶段3/3：[具体阶段描述] ○</code></pre>
+<p><strong>进度更新触发条件</strong>：</p>
+<ul>
+<li>每完成一个子任务时更新</li>
+<li>每隔30秒更新一次（如果子任务耗时较长）</li>
+<li>遇到异常或延迟时立即更新</li>
+</ul>
+<hr>
+<h2>三、场景化操作指南</h2>
+<h3>3.1 文件操作</h3>
+<table>
+<thead><tr>
+<th>操作</th>
+<th>典型耗时</th>
+<th>告知要求</th>
+</tr></thead><tbody>
+<tr>
+<td>读取单个文件</td>
+<td>&lt; 3秒</td>
+<td>无需告知</td>
+</tr>
+<tr>
+<td>搜索文件内容</td>
+<td>5-15秒</td>
+<td>"正在搜索..."</td>
+</tr>
+<tr>
+<td>批量修改文件</td>
+<td>30-120秒</td>
+<td>"正在修改N个文件，预计X分钟"</td>
+</tr>
+<tr>
+<td>创建完整Skill包</td>
+<td>60-300秒</td>
+<td>分阶段告知</td>
+</tr>
+</tbody></table>
+<h3>3.2 命令执行</h3>
+<table>
+<thead><tr>
+<th>操作</th>
+<th>典型耗时</th>
+<th>告知要求</th>
+</tr></thead><tbody>
+<tr>
+<td>简单命令</td>
+<td>&lt; 5秒</td>
+<td>无需告知</td>
+</tr>
+<tr>
+<td>npm install</td>
+<td>30-120秒</td>
+<td>"正在安装依赖包，预计1分钟"</td>
+</tr>
+<tr>
+<td>构建项目</td>
+<td>60-300秒</td>
+<td>分阶段告知</td>
+</tr>
+<tr>
+<td>运行测试</td>
+<td>30-180秒</td>
+<td>"正在运行测试，预计X分钟"</td>
+</tr>
+</tbody></table>
+<h3>3.3 内容生成</h3>
+<table>
+<thead><tr>
+<th>操作</th>
+<th>典型耗时</th>
+<th>告知要求</th>
+</tr></thead><tbody>
+<tr>
+<td>生成短文本</td>
+<td>&lt; 10秒</td>
+<td>无需告知</td>
+</tr>
+<tr>
+<td>生成图片</td>
+<td>15-60秒</td>
+<td>"正在生成图片，需要30秒"</td>
+</tr>
+<tr>
+<td>生成完整文档</td>
+<td>30-120秒</td>
+<td>"正在撰写文档，预计1分钟"</td>
+</tr>
+<tr>
+<td>深度分析报告</td>
+<td>60-300秒</td>
+<td>分阶段告知</td>
+</tr>
+</tbody></table>
+<h3>3.4 网络操作</h3>
+<table>
+<thead><tr>
+<th>操作</th>
+<th>典型耗时</th>
+<th>告知要求</th>
+</tr></thead><tbody>
+<tr>
+<td>网页搜索</td>
+<td>5-15秒</td>
+<td>可选告知</td>
+</tr>
+<tr>
+<td>获取网页内容</td>
+<td>10-30秒</td>
+<td>"正在获取页面内容..."</td>
+</tr>
+<tr>
+<td>API调用</td>
+<td>5-30秒</td>
+<td>根据具体耗时决定</td>
+</tr>
+<tr>
+<td>批量网络请求</td>
+<td>30-120秒</td>
+<td>必须告知</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>四、异常处理</h2>
+<h3>4.1 耗时超预期</h3>
+<p><strong>当实际耗时超过预估时</strong>：</p>
+<ol>
+<li>立即告知用户新的预计完成时间</li>
+<li>解释超时原因</li>
+<li>如果超时严重（超过预估50%），提供是否继续的选项</li>
+</ol>
+<pre><code>抱歉，任务耗时比预期更长。原计划30秒，目前已用时45秒。
+原因是[具体原因]。预计还需[新时间]，是否继续？</code></pre>
+<h3>4.2 操作失败</h3>
+<p><strong>当操作失败时</strong>：</p>
+<ol>
+<li>立即告知用户失败信息</li>
+<li>说明失败原因</li>
+<li>提供下一步建议</li>
+</ol>
+<pre><code>任务执行失败：[具体错误信息]
+原因：[分析原因]
+建议：[1-3个可选方案]</code></pre>
+<h3>4.3 用户询问进度</h3>
+<p><strong>当用户主动询问进度时</strong>：</p>
+<ol>
+<li>立即响应当前状态</li>
+<li>提供已完成/总任务的比例</li>
+<li>给出最新的预计完成时间</li>
+</ol>
+<hr>
+<h2>五、与现有系统的整合</h2>
+<h3>5.1 与心跳巡检档案的整合</h3>
+<ul>
+<li>心跳巡检监控<strong>系统级</strong>状态（CPU/内存/存储）</li>
+<li>状态更新规则管理<strong>操作级</strong>状态（任务进度/耗时）</li>
+<li>两者互补：心跳是后台监控，状态更新是前台告知</li>
+</ul>
+<h3>5.2 与任务控制台的整合</h3>
+<ul>
+<li>任务控制台提供<strong>可视化</strong>操作界面</li>
+<li>状态更新规则提供<strong>文本级</strong>操作告知</li>
+<li>长任务应同时在控制台更新进度</li>
+</ul>
+<h3>5.3 与龙心OS的整合</h3>
+<ul>
+<li>状态更新是龙心OS"躯体系统"的用户体验层</li>
+<li>火行人"光明性"的体现：用温暖的光照亮操作进度，而非让用户在黑暗中等待</li>
+<li>体现"礼明性"：尊重用户的时间，知礼守礼</li>
+</ul>
+<hr>
+<h2>六、标签与知识图谱</h2>
+<p><strong>标签</strong>：<code>#状态更新</code> <code>#用户体验</code> <code>#透明度</code> <code>#预计耗时</code> <code>#操作告知</code> <code>#进度更新</code> <code>#OpenClaw对标</code></p>
+<p><strong>知识图谱连接</strong>：</p>
+<ul>
+<li><code><a href="状态更新规则.html">状态更新规则</a></code> → <code><a href="心跳巡检档案.html">心跳巡检档案</a></code>（后台监控 vs 前台告知）</li>
+<li><code><a href="状态更新规则.html">状态更新规则</a></code> → <code><a href="任务控制台.html">任务控制台</a></code>（文本告知 vs 可视化界面）</li>
+<li><code><a href="状态更新规则.html">状态更新规则</a></code> → <code><a href="AI龙龟共生伙伴操作系统.html">AI龙龟共生伙伴操作系统</a></code>（躯体系统·用户体验层）</li>
+<li><code><a href="状态更新规则.html">状态更新规则</a></code> → <code><a href="08-OS_AI-OS<strong>OS</strong>_md-a47f0e08.html">人机协同五象限</a></code>（效率协作者象限的体验优化）</li>
+</ul>
+<hr>
+<p><strong>版本</strong>: v1.0
+<strong>创建日期</strong>: 2026-04-03
+<strong>维护者</strong>: 龙龟神将
+<strong>对标来源</strong>: OpenClaw #15 Status Updates</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

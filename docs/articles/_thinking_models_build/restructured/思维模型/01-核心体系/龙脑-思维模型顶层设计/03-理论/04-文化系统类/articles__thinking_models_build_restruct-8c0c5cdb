@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创新抵抗理论 - 以观其妙书院</title>
+    <meta name="description" content="创新抵抗理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\创新抵抗理论.txt ｜ 字数：8096 ｜ 行数：98五色光分布（启发式）：绿光59% 黄光15% 蓝光10% 白光9% 红光5%象思维相关度：低（命中 9 次）一、核心定义核心定义（龙心OS精修）：01二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│内容），未删改、未遗漏，供">
+    <meta name="keywords" content="[思维模型, 理论模型, 结构化学习, 沟通, 学习]">
+    <meta name="author" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta property="og:title" content="创新抵抗理论">
+    <meta property="og:description" content="创新抵抗理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\创新抵抗理论.txt ｜ 字数：8096 ｜ 行数：98五色光分布（启发式）：绿光59% 黄光15% 蓝光10% 白光9% 红光5%象思维相关度：低（命中 9 次）一、核心定义核心定义（龙心OS精修）：01二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│内容），未删改、未遗漏，供">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/创新抵抗理论.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/创新抵抗理论.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "创新抵抗理论",
+      "description": "创新抵抗理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\创新抵抗理论.txt ｜ 字数：8096 ｜ 行数：98五色光分布（启发式）：绿光59% 黄光15% 蓝光10% 白光9% 红光5%象思维相关度：低（命中 9 次）一、核心定义核心定义（龙心OS精修）：01二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│内容），未删改、未遗漏，供",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-30",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>创新抵抗理论</h1>
+            <div class="meta">
+                <span>📅 2026-07-30</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            创新抵抗理论...
+        </div>
+        
+        <article>
+<h1>创新抵抗理论</h1>
+
+<blockquote><strong>龙心OS结构化编译</strong> | 分类：理论模型 | 五行属性：金 | 层级：C层</blockquote>
+<blockquote>源文件：<code>思维模型/理论模型\创新抵抗理论.txt</code> ｜ 字数：8096 ｜ 行数：98</blockquote>
+<blockquote>五色光分布（启发式）：绿光59% 黄光15% 蓝光10% 白光9% 红光5%</blockquote>
+<blockquote>象思维相关度：低（命中 9 次）</blockquote>
+
+<h2>一、核心定义</h2>
+
+<strong>核心定义（龙心OS精修）</strong>：01
+
+<h2>二、详细内容</h2>
+<blockquote>逐行挖掘原则：下文为原文<strong>全文逐行保留</strong>（编号 <code>行号│内容</code>），未删改、未遗漏，供龙心OS五引擎（知识学习/象思维/五色光/知行合一/五象限）随时调取精读。</blockquote>
+
+<h3>2.1 逐行精读（全文保留·98 行）</h3>
+<pre><code>0001│研究理论介绍 | 创新抵抗理论（Innovation Resistance Theory，IRT）
+0002│
+0003│
+0004│当公司为提升效率，决定全员换用一款全新的办公软件时，或许总有一些同事迟迟不愿下载。问起原因，有人说：“太复杂了，学不会（这太麻烦了）。”有人说：“原来的用得好好的，为什么要换（这没必要）？”还有人担心：“新软件安全吗？会不会泄露文件（这不安全）？”最后大家发现，新软件功能强大却推广缓慢，抱怨和抵触的情绪却在蔓延。这种对新事物的下意识抗拒并非个例，其背后藏着一套系统的理论：创新抵抗理论（Innovation Resistance Theory, IRT）。
+0005│
+0006│
+0007│
+0008│01
+0009│
+0010│理论背景
+0011│
+0012│
+0013│
+0014│
+0015│
+0016│长久以来，无论是企业推广新品，还是社会倡导新观念，研究都更加关注“人们为什么接受”，例如，经典的“创新扩散理论”描绘了从“创新者”到“落伍者”接受创新的完整曲线。
+0017│
+0018│然而在现实中，“不接受”或“延迟接受”往往才更加常见，20世纪80年代，学者们开始将“抵抗”本身作为研究课题，Ram在1987年首次明确提出了“创新抵抗”的概念框架[1]，随后，Ram与Sheth在1989年的合作研究中，正式确立并完善了“创新抵抗理论”（IRT）[2]。他们的核心观点在于：抵抗并非采纳的简单对立面，而是个体面对改变时一种自然的、正常的心理与行为反应。理解人们为何“抵抗”与理解人们为何“接受”同等重要，甚至更为关键，因为“抵抗”直接揭示了创新落地过程中真实的障碍。
+0019│
+0020│这一理论将研究视角从“如何说服”转向“为何受阻”，将关注点从人们如何选择接受，转向分析当人们说“不”的时候究竟在想些什么。
+0021│
+0022│
+0023│
+0024│02
+0025│
+0026│理论内容
+0027│
+0028│
+0029│
+0030│创新抵抗理论认为，消费者对创新的抵抗主要源于两大类障碍[2]：功能障碍（Functional Barriers）和心理障碍（Psychological Barriers）。
+0031│
+0032│
+0033│
+0034│1
+0035│
+0036│功能障碍（Functional Barriers）
+0037│
+0038│功能障碍通常源于用户对创新本身功能与价值的理性评估，是最直接、最普遍的抵抗来源，它主要包括：
+0039│
+0040│・使用障碍（Usage Barrier）
+0041│
+0042│新技术、新产品的创新与用户现有的习惯、实践模式或生活方式不兼容，需要花费额外的学习成本。
+0043│
+0044│・价值障碍（Value Barrier）
+0045│
+0046│用户感知不到创新相对于现有方案（或替代方案）的显著优势，认为创新的性价比不高或新意不足。
+0047│
+0048│・风险障碍（Risk Barrier）
+0049│
+0050│用户对采用创新可能带来的不确定性以及风险感到担忧，可能包括安全方面（对身体有害）、财务方面（效果不佳而亏损）、社交方面（采纳后被社交圈所排斥）等。
+0051│
+0052│
+0053│
+0054│2
+0055│
+0056│心理障碍（Psychological Barriers）
+0057│
+0058│心理障碍往往更为深层和顽固，是由于触及到用户的价值观、自我认知或社会规范等方面而产生的抵抗。它主要包括：
+0059│
+0060│・传统障碍（Traditional Barrier）
+0061│
+0062│创新与用户根深蒂固的文化传统、习俗、信仰或价值观相冲突。
+0063│
+0064│・形象障碍（Image Barrier）
+0065│
+0066│用户对创新本身或其来源（如品牌、国家）存在负面刻板印象，或对创新本身、其使用者或所属品类存在负面联想，因而产生抵触情绪。
+0067│
+0068│
+0069│
+0070│3
+0071│
+0072│创新抵抗的程度及其表现形式
+0073│
+0074│创新抵抗并非处于单一的“接受”或“拒绝”的二元状态，而是存在于一个连续体之上。
+0075│
+0076│该理论将用户对创新的抵抗反应分为被动抵抗(或惯性，Passive Resistance or Inertia)和主动抵抗(Active Resistance)两个维度，并进一步区分为三个具体层级：被动抵抗、主动抵抗、强烈抵抗[2]。
+0077│
+0078│・被动抵抗：通常是一种惯性的状态，此时用户表现为对创新缺乏兴趣，不主动接触。
+0079│
+0080│・主动抵抗：用户对创新有风险感知，担心采用创新可能带来的潜在危害，因此表现出主动地推迟或犹豫。
+0081│
+0082│・强烈抵抗：用户不仅坚定地认为创新不适用、不符合自身需求，甚至会对其表现出攻击性。
+0083│
+0084│Ram与Sheth还指出了决定抵抗程度的两大核心因素：一是创新带来的改变程度或非连续性，二是创新与消费者信念结构的冲突程度。
+0085│
+0086│
+0087│
+0088│03
+0089│
+0090│理论应用
+0091│
+0092│
+0093│
+0094│
+0095│
+0096│商业营销与科技创新推广
+0097│
+0098│这是创新抵抗理论（IRT）的传统应用领域。新技术或新产品的推广与传播过程，往往伴随着用户端的使用障碍、价值障碍和风险障碍。为提升新技术与新产品的接受程度，开发与营销人员可从排除这些障碍着手。例如，国外已有不少研究者采用创新抵抗理论分析海外各国在线支付（移动支付）和数字钱包接纳程度不高的深层原因[3][4]。此外，有学者运用该理论分析了导致用户退出在线社区的因素，指出社会认可度、信息过载等负面因素是用户退出在线社区的重要原因[5]。
+0099│
+0100│
+0101│
+0102│公共服务与社会政策推行
+0103│
+0104│政府在新政策推行的过程中，往往难免遭遇阻力。学界不乏运用创新抵抗理论对政府的公共服务与新政策的推行进行分析，例如，一项有关针对德国政策实施的研究中，Leopold从被动创新抗拒视角分析德国公民对全民基本收入（UBI）制度的接受程度[6]。除此之外，Shah等也运用该理论探究小米作为优良粮食作物品种在印度推广时所面临的现实阻碍[7]。
+0105│
+0106│
+0107│
+0108│组织管理与内部变革
+0109│
+0110│在组织机构中推行新技术、新制度或新文化时，组织成员的抵抗是关键影响因素。管理者可借助创新抵抗理论剖析成员的抵抗根源，进而精准开展沟通，推进变革的实施。Nikiforova 等以公共组织开放政府数据（OGD）的采纳与实施为研究场景，基于创新抗拒理论构建适配模型，识别公共组织对开放政府数据存在抵抗的原因[8]。Shata则聚焦高等教育场域，运用创新抗拒理论探究高校教师对生成式人工智能的抵抗行为，通过实证调研明确其拒绝使用的核心原因[9]。
+0111│
+0112│
+0113│
+0114│04
+0115│
+0116│案例分享
+0117│
+0118│
+0119│
+0120│
+0121│
+0122│Why are people reluctant to use metaverse products? Investigating barriers based on innovation resistance theory[10]
+0123│
+0124│Qiuping Nie,Long Ma,
+0125│
+0126│Zhifu Li
+0127│
+0128│Abstract:
+0129│
+0130│Purpose
+0131│
+0132│Despite the rapid development of metaverse industry, the adoption rate of metaverse products is still very low. While prior studies mainly focused on investigating the motivators of metaverse adoption, this study explores the barriers affecting consumer intention to use metaverse products, utilizing the framework of innovation resistance theory (IRT).
+0133│
+0134│Design/methodology/approach
+0135│
+0136│Through a survey conducted in China, we examined the effects of variables such as usage barrier, value barrier, risk barrier, tradition barrier, image barrier, as well as the moderating effects of individuals’ innovativeness. Three hundred and seventy seven valid questionnaires were collected and hierarchical regression method was conducted to analyze the data.
+0137│
+0138│Findings
+0139│
+0140│Our findings reveal that usage and value barriers, as well as tradition barrier, significantly negatively influence consumer intention to use metaverse products. However, risk and image barrier do not exhibit a significant impact. Additionally, we discovered that individuals’ innovativeness positively influences consumer intention, indicating that users with higher innovativeness are more inclined to engage with metaverse products. Furthermore, innovativeness acts as a positive moderator, weakening the negative impact of tradition barrier on usage intention.
+0141│
+0142│Originality/value
+0143│
+0144│The study extends IRT by incorporating the role of individual innovativeness, providing a more holistic understanding of the factors that impede the widespread use of metaverse products. The findings are crucial for developing strategies to mitigate the negative influences of potential barriers, ultimately promoting the diffusion of metaverse products.
+0145│
+0146│研究目的
+0147│
+0148│尽管元宇宙产业发展迅猛，但元宇宙产品的采纳率仍然相对较低。现有研究主要聚焦于元宇宙采纳的驱动因素，而本研究旨在利用创新抵抗理论（IRT）框架，探讨影响消费者使用元宇宙产品意愿的障碍因素。
+0149│
+0150│研究方法
+0151│
+0152│通过在中国境内开展问卷调查，本研究考察了使用障碍、价值障碍、风险障碍、传统障碍、形象障碍等变量的影响效果，并分析了个体创新性对消费者意图的调节作用。共收集了377份有效问卷，采用分层回归方法对数据进行分析。
+0153│
+0154│研究发现
+0155│
+0156│研究结果显示，使用障碍、价值障碍以及传统障碍对消费者使用元宇宙产品的意愿产生了显著的负向影响。然而，风险障碍和形象障碍未表现出显著影响。此外，我们发现个体创新性对消费者意愿有正向影响，这表明具有较高创新性的用户更倾向于使用元宇宙产品。创新性还发挥了积极的调节作用，削弱了传统障碍对使用意愿的负向影响。
+0157│
+0158│原创性/研究价值
+0159│
+0160│本研究通过引入个体创新性的角色，拓展了创新抵抗理论（IRT），从而更全面地理解了阻碍元宇宙产品广泛使用的因素。这些发现对于制定策略以减轻潜在障碍的负面影响至关重要，最终有助于促进元宇宙产品的扩散。
+0161│
+0162│Keywords:Metaverse, Adoption barriers, Innovation Resistance Theory, Innovativeness, Moderating effect
+0163│
+0164│文献来源：Online Information Review, Vol.49 No.4 pp.707–728
+0165│
+0166│
+0167│
+0168│创新抵抗：推荐算法厌恶的
+0169│
+0170│影响因素及影响机制[11]
+0171│
+0172│张可 张鑫 金婷 谢雨辰
+0173│
+0174│摘要：随着算法推荐技术在新媒体平台中的深度嵌入，部分用户产生了算法厌恶，影响了健康的用户—算法的关系。本研究基于创新抵抗理论，构建算法负面口碑对算法厌恶的影响机制模型，并在模型中引入创新采用障碍和技术准备度。研究发现，算法负面口碑对算法厌恶的影响受到多种障碍因素差异化的中介作用。在算法负面口碑影响用户算法态度的过程中，使用障碍的作用相对较弱，而传统障碍的影响更为显著，风险障碍、价值障碍和形象障碍也扮演了重要角色。技术准备度中的乐观性和创新性有助于减轻这些障碍对算法厌恶的影响，而不舒适感会加剧风险障碍与形象障碍对算法厌恶的影响。本研究为算法设计者通过优化设计减少用户算法厌恶，提升人机互动体验提供了建议。
+0175│
+0176│关键词：算法负面口碑；功能障碍；心理障碍；技术准备度；算法厌恶
+0177│
+0178│文献来源:《国际新闻界》2025年第47卷第9期第86-113页
+0179│
+0180│参考文献
+0181│
+0182│[1]Ram S .A Model of Innovation Resistance[J].ACR North American Advances, 1987.
+0183│
+0184│[2]Ram S , Sheth J N .Consumer Resistance to Innovations: The Marketing Problem and its Solutions[J].Journal of Consumer Marketing, 1989, 6(2):5-14.
+0185│
+0186│[3]Podder, B., Venkatesh, S., Phuong, N. Q., & Ghosh, J.. Partial resistance to digital payments in an emerging economy: a conundrum[J].Managerial Finance,2025
+0187│
+0188│[4]Uddin S M F , Kirmani M D , Sabir L B ,et al.Consumer resistance to WhatsApp payment system: integrating innovation resistance theory and SOR framework[J].Marketing Intelligence & Planning,2025,43(2)
+0189│
+0190│[5] Kumar A , Shankar A , Tiwari A K ,et al.Understanding dark side of online community engagement: an innovation resistance theory perspective[J].Information Systems and e-Business Management,2025, 23(1):13-39.
+0191│
+0192│[6]Leopold, F.,Lindenmeier, J.. Determinants of the Unconditional Basic Income Acceptance Among German Citizens: An Empirical Analysis Based on Innovation Resistance Theory[J]. Social Policy & Administration,2024
+0193│
+0194│[7]Shah P , Mehta N , Bist S S .What are the Barriers to the Consumption of Millet-based Foods in India? An Innovation Resistance Theory (IRT) Perspective[J].Journal of International Food & Agribusiness Marketing,2025,37(2):348-378.
+0195│
+0196│[8]Nikiforova, A., Clarinval, A., Zuiderwijk, A., Rudmark, D., Milić, P., & Rajamae-Soosaar, K. . Innovation Resistance Theory in Action: Unveiling Barriers to Open Government Data Adoption by Public Organizations to Unlock Open Data Innovation.arXiv.org, abs/2407.10883,2024
+0197│
+0198│[9]Shata, A.. “Opting Out of AI”: exploring perceptions, reasons, and concerns behind faculty resistance to generative AI.[J].Frontiers in Communication,2025
+0199│
+0200│[10]Nie Q , Ma L , Li Z .Why are people reluctant to use metaverse products? Investigating barriers based on innovation resistance theory[J].Online Information Review,2025,49(4):707–728.
+0201│
+0202│[11]张可,张鑫,金婷,等.创新抵抗：推荐算法厌恶的影响因素及影响机制[J].国际新闻界,2025,47(09):86-113.
+0203│
+0204│[12]Leung W K S , Law S P M , Cheung M L ,et al.From resistance to acceptance: developing health task measures to boost mHealth adoption among older adults: mixed-methods approach and innovation resistance[J].Internet Research,2024.
+0205│
+0206│[13]Kaur P , Dhir A , Singh N ,et al.An innovation resistance theory perspective on mobile payment solutions[J].Journal of Retailing and Consumer Services,2020,55:102059.
+0207│
+0208│
+0209│
+0210│图片
+0211│编辑 / 王   紫
+0212│
+0213│审核 / 于孟利
+0214│
+0215│
+0216│
+0217│声明
+0218│
+0219│如需转载文章，可在留言区留言，并附转载公众号名称+公众号ID。转载时烦请标清文章来源，不允许将内容用于其他用途，并严格禁止将内容用于任何目的的大模型训练，感谢您的支持！
+0220│
+0221│
+0222│
+0223│往期回顾
+0224│
+0225│研究理论介绍 | 认知-情感-意动框架（Cognition-Affect-Conation Perspective）
+0226│
+0227│新华社发布：2026年中国AI发展趋势前瞻
+0228│
+0229│研究理论介绍 | 资源保存理论（Conservation of Resources Theory，COR）
+0230│
+0231│研究理论介绍 | 组织信息加工理论（Organizational Information Processing Theory, OIPT）
+0232│
+0233│项目申报 | 2026年度国家自然科学基金项目申请指南正式发布
+0234│
+0235│研究理论介绍 | 交互记忆系统（Transactive Memory System，TMS）
+</code></pre>
+
+<h2>三、关联文件（双向链接）</h2>
+<li>上游/总导航：[[00-总索引-思维模型]] ｜ 知识图谱：[[10-知识图谱-思维模型]] ｜ 概念手册：[[09-核心概念手册-思维模型]]</li>
+<li>跨文件同构（共享显著概念）：[[消费价值理论]]，[[自我呈现理论]]，[[保护动机理论]]，[[情感事件理论]]，[[认知-情感-意动框架]]，[[恐惧管理理论]]，[[社会支持理论]]，[[PERMA幸福理论]]</li>
+
+<h2>四、核心金句</h2>
+<blockquote>创新抵抗理论认为，消费者对创新的抵抗主要源于两大类障碍[2]：功能障碍（Functional Barriers）和心理障碍（Psychological Barriers）。</blockquote>
+<blockquote>Ram与Sheth还指出了决定抵抗程度的两大核心因素：一是创新带来的改变程度或非连续性，二是创新与消费者信念结构的冲突程度。</blockquote>
+<blockquote>长久以来，无论是企业推广新品，还是社会倡导新观念，研究都更加关注“人们为什么接受”，例如，经典的“创新扩散理论”描绘了从“创新者”到“落伍者”接受创新的完整曲线。</blockquote>
+<blockquote>功能障碍通常源于用户对创新本身功能与价值的理性评估，是最直接、最普遍的抵抗来源，它主要包括：</blockquote>
+<blockquote>心理障碍往往更为深层和顽固，是由于触及到用户的价值观、自我认知或社会规范等方面而产生的抵抗。它主要包括：</blockquote>
+<blockquote>・被动抵抗：通常是一种惯性的状态，此时用户表现为对创新缺乏兴趣，不主动接触。</blockquote>
+
+<h2>五、标签</h2>
+<li>领域：理论模型、思维模型、沟通、学习</li>
+<li>机制：知识学习(十项认知指令)、五色光思维(白红黄绿蓝)</li>
+<li>洞见：跨域同构、网状知识、双向链接、人机共生</li>
+
+<h2>六、龙心OS隐秘联系（跨域同构·龙心OS精修）</h2>
+
+<blockquote>以下为龙心OS在跨域同构（北极星能力）下发现的隐秘结构联系，供五引擎组合调取。</blockquote>
+
+<li><strong>概率思维⟷五色光蓝光（风险量化）</strong>：把不确定性转为概率分布，是蓝光思维的量化形态。</li>
+<li><strong>不确定性⟷复杂系统（涌现/黑天鹅）</strong>：概率思维是应对复杂系统的认知疫苗。</li>
+<li><strong>系统思维/涌现⟷五行生克网络</strong>：五行相生相克即系统要素互动的最小完备模型。</li>
+<li><strong>整体大于部分之和⟷格式塔关系场</strong>：系统涌现的格式塔解释，对应合道场域型组织。</li>
+<li><strong>SCAMPER⟷五色光绿光（创新）</strong>：替代/组合/调整/消除等七问即绿光『创新变革』的操作清单。</li>
+<li><strong>SCAMPER⟷五行木（生发）</strong>：创新是木之生发，SCAMPER 提供生发路径。</li>
+<li><strong>双系统理论⟷龙心OS知行合一（直觉/反思）</strong>：System1=表示（直觉），System2=泛化（反思），三阶中的两端。</li>
+<li><strong>双系统⟷五色光（红直觉/白事实）</strong>：直觉属红光、理性属白光，二者协同即五色光调度。</li>
+<li><strong>跨文件同构</strong>：与 [[消费价值理论]]、[[自我呈现理论]]、[[保护动机理论]] 共享核心概念（详见「三、关联文件」章节），可在龙心OS知识学习引擎下做十项认知指令的对比推演。</li>
+
+<blockquote><strong>引擎路由</strong>：本文可由龙心OS五引擎组合调用——知识学习（十项认知指令深度学习）、象思维（物象→意象→原象）、五色光（白红黄绿蓝五维审查）、知行合一（表示→压缩→泛化）、人机协同五象限（[AI]/[人]/[⇄]分工定位）。</blockquote>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

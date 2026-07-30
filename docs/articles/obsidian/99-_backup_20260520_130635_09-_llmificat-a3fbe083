@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Practice Guide.md - LLMification 实操指南 - 以观其妙书院</title>
+<meta name="description" content="Practice Guide.md - LLMification 实操指南 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="Practice Guide.md - LLMification 实操指南">
+<meta property="og:description" content="Practice Guide.md - LLMification 实操指南 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Practice Guide.md - LLMification 实操指南",
+    "description": "Practice Guide.md - LLMification 实操指南 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Practice Guide.md - LLMification 实操指南</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Practice Guide.md - LLMification 实操指南</h1>
+<blockquote><p><strong>用途</strong>：LLMification Knowledge Builder的实操执行手册
+<strong>适用人群</strong>：知识库建设者、AI系统管理员、知识工程师
+<strong>前置条件</strong>：已理解三层架构理论（Raw→Wiki→Schema）</p></blockquote>
+<hr>
+<h2>🎯 实操场景</h2>
+<h3>场景1：企业知识库建设</h3>
+<p><strong>背景</strong>：
+某公司有大量PDF手册、网页文档、培训材料，分散在不同平台，员工难以快速找到准确信息。</p>
+<p><strong>目标</strong>：
+使用LLMification方法，构建三层架构的企业知识库。</p>
+<p><strong>执行步骤</strong>：</p>
+<p><strong>Step 1：Raw Layer准备</strong></p>
+<pre><code>knowledge-base/
+├── raw/
+│   ├── 手册/
+│   │   ├── 产品手册-v1.0.pdf
+│   │   └── 培训手册-2024.pdf
+│   ├── 网页/
+│   │   ├── 官网产品介绍.html
+│   │   └── 技术文档.html
+│   └── 文档/
+│       ├── 员工指南.docx
+│       └── 流程说明.txt</code></pre>
+<p><strong>Step 2：Wiki Layer编译</strong></p>
+<pre><code># 编译产品手册
+/compile raw/手册/产品手册-v1.0.pdf
+
+# 编译网页文档
+/compile raw/网页/官网产品介绍.html
+
+# 编译员工指南
+/compile raw/文档/员工指南.docx</code></pre>
+<p><strong>输出示例</strong>：</p>
+<pre><code>---
+path: knowledge-base/wiki/产品手册.md
+tags: ["#产品", "#手册"]
+created_at: 2026-04-08T10:00:00
+lifecycle_stage: published
+source_raw: raw/手册/产品手册-v1.0.pdf
+---
+
+# 产品手册 v1.0
+
+## 核心功能
+
+### 功能1：用户管理
+- 创建用户
+- 修改用户信息
+- 删除用户
+
+### 功能2：订单管理
+- 创建订单
+- 查询订单
+- 取消订单
+
+## 常见问题
+
+### Q1：如何创建用户？
+A：使用以下步骤...
+
+### Q2：订单取消后如何退款？
+A：参考[[退款流程]]文档。
+
+## 相关文档
+- [[员工指南]]
+- [[培训手册]]</code></pre>
+<p><strong>Step 3：Schema Layer定义</strong></p>
+<pre><code># 定义全局Schema
+/define-schema global</code></pre>
+<p><strong>生成</strong>：<code>CLAUDE.md</code></p>
+<pre><code>file_naming: "kebab-case"
+tag_format: "#标签"
+reference_format: "[[文档名]]"
+max_heading_level: 6</code></pre>
+<p><strong>Step 4：Query测试</strong></p>
+<pre><code># 自然语言查询
+/query "如何创建用户账户？"
+
+/query "订单取消后的退款流程是什么？"</code></pre>
+<p><strong>结果</strong>：</p>
+<pre><code>Query: "如何创建用户账户？"
+Answer: 要创建用户账户，请按照以下步骤：
+1. 访问用户管理页面
+2. 点击"创建用户"按钮
+3. 填写用户信息
+4. 点击提交
+
+相关信息：[[产品手册]] -&gt; 功能1：用户管理</code></pre>
+<hr>
+<h3>场景2：个人知识资产系统化</h3>
+<p><strong>背景</strong>：
+个人研究者收集了大量论文、书籍笔记、网页资料，管理混乱，查找困难。</p>
+<p><strong>目标</strong>：
+构建个人三层知识库系统，提升知识管理效率。</p>
+<p><strong>执行步骤</strong>：</p>
+<p><strong>Step 1：Raw Layer整理</strong></p>
+<pre><code>personal-kb/
+├── raw/
+│   ├── 论文/
+│   │   ├── 论文1.pdf
+│   │   └── 论文2.pdf
+│   ├── 书籍/
+│   │   ├── 书籍1笔记.md
+│   │   └── 书籍2笔记.md
+│   └── 网页/
+│       ├── 文章1.html
+│       └── 文章2.html</code></pre>
+<p><strong>Step 2：增量编译</strong></p>
+<pre><code># 先编译核心论文
+/compile raw/论文/论文1.pdf
+
+# 再编译书籍笔记
+/compile raw/书籍/书籍1笔记.md
+
+# 增量编译网页资料
+/update "机器学习"</code></pre>
+<p><strong>输出示例</strong>：</p>
+<pre><code>---
+path: personal-kb/wiki/机器学习核心概念.md
+tags: ["#机器学习", "#深度学习", "#神经网络"]
+created_at: 2026-04-08T12:00:00
+lifecycle_stage: published
+---
+
+# 机器学习核心概念
+
+## 核心理论
+
+### 神经网络
+神经网络是机器学习的一种模型...
+
+### 深度学习
+深度学习是神经网络的延伸...
+
+## 相关研究
+
+### 论文1：[[Attention Is All You Need]]
+核心观点：Transformer架构的核心...
+
+### 论文2：[[BERT: Pre-training of Deep Bidirectional Transformers]]
+核心贡献：预训练语言模型...
+
+## 实践应用
+
+### 应用1：图像识别
+参考[[计算机视觉]]
+
+### 应用2：自然语言处理
+参考[[NLP技术栈]]</code></pre>
+<p><strong>Step 3：一致性检查</strong></p>
+<pre><code># 检查整个知识库
+/check all
+
+# 修复发现的孤岛
+/merge ["孤岛1.md", "孤岛2.md"]</code></pre>
+<hr>
+<h3>场景3：AI原生内容管理</h3>
+<p><strong>背景</strong>：
+需要为AI Agent（如Claude、GPT）构建优化的知识库，提升响应质量。</p>
+<p><strong>目标</strong>：
+使用LLMification方法，创建AI原生的知识表达。</p>
+<p><strong>执行步骤</strong>：</p>
+<p><strong>Step 1：设计AI友好结构</strong></p>
+<pre><code># AI优化版知识库
+
+## 核心概念（LLM易于理解）
+
+### 概念定义
+使用清晰的定义和示例...
+
+### 算法步骤
+使用编号和代码块...
+
+## 常见问题（FAQ格式）
+
+### 问题1：[具体问题]
+**答案**：[简洁准确回答]
+
+**相关概念**：[[概念1]], [[概念2]]</code></pre>
+<p><strong>Step 2：Wiki Layer优化</strong></p>
+<pre><code>/compile raw/资料/技术文档.md</code></pre>
+<p><strong>优化输出</strong>：</p>
+<pre><code>---
+path: ai-kb/wiki/技术文档-ai版.md
+tags: ["#AI优化", "#技术文档"]
+format: "markdown"
+---
+
+# 技术文档 - AI优化版
+
+## 快速参考
+
+### API端点
+| 端点 | 方法 | 描述 |
+|-------|------|------|
+| /api/users | GET | 获取用户列表 |
+| /api/users/:id | GET | 获取单个用户 |
+| /api/users | POST | 创建用户 |
+
+### 常见错误
+| 错误码 | 原因 | 解决方案 |
+|-------|------|---------|
+| 400 | 参数错误 | 检查参数格式 |
+| 401 | 未授权 | 检查API密钥 |
+| 404 | 资源不存在 | 确认资源ID |
+
+## 详细说明
+
+### 创建用户</code></pre>
+<h1>示例代码</h1>
+<p>import requests</p>
+<p>response = requests.post(
+    "http://api.example.com/api/users",
+    json={
+        "name": "张三",
+        "email": "zhangsan@example.com"
+    },
+    headers={"Authorization": "Bearer YOUR_TOKEN"}
+)</p>
+<p>print(response.json())</p>
+<pre><code>
+## 相关文档
+- [[API文档完整版]]
+- [[错误处理指南]]</code></pre>
+<p><strong>Step 3：Schema Layer配置</strong></p>
+<pre><code># CLAUDE.md
+ai_knowledge_base:
+  style: "technical"
+  format_preference: "code-first"
+  response_style: "concise"
+  max_context_length: 4000</code></pre>
+<hr>
+<h2>🛠️ 常见问题与解决方案</h2>
+<h3>Q1：Raw Layer应该放什么文件？</h3>
+<p><strong>A</strong>：</p>
+<ul>
+<li>✅ 原始资料（PDF、DOCX、HTML、Text）</li>
+<li>✅ 未经LLM修改的文档</li>
+<li>❌ 不要放已经Wiki化的文档</li>
+</ul>
+<h3>Q2：如何处理重复内容？</h3>
+<p><strong>A</strong>：
+使用<code>/merge</code>指令：</p>
+<pre><code>/merge ["文档1.md", "文档2.md"]</code></pre>
+<p>LLM会自动识别重复内容并合并。</p>
+<h3>Q3：Schema Layer如何定义？</h3>
+<p><strong>A</strong>：
+根据知识库的用途定义：</p>
+<pre><code># 个人知识库
+scope: "personal"
+rules:
+  file_naming: "snake_case"
+  tag_format: "#个人笔记"
+
+# 企业知识库
+scope: "corporate"
+rules:
+  file_naming: "kebab-case"
+  tag_format: "#官方文档"</code></pre>
+<h3>Q4：如何更新已有知识？</h3>
+<p><strong>A</strong>：
+使用<code>/update</code>指令进行增量更新：</p>
+<pre><code>/update "机器学习"</code></pre>
+<p>LLM会找到相关文档并追加新内容。</p>
+<h3>Q5：知识库多大合适？</h3>
+<p><strong>A</strong>：</p>
+<ul>
+<li>个人知识库：建议&lt; 1000个文档</li>
+<li>企业知识库：建议&lt; 10000个文档</li>
+<li>超过建议拆分为多个子知识库</li>
+</ul>
+<hr>
+<h2>📊 性能优化建议</h2>
+<h3>1. 分层存储</h3>
+<pre><code>knowledge-base/
+├── raw/           # 原始资料（冷存储）
+├── wiki/          # 结构化知识（热存储）
+└── schema/        # 行为规则（规则存储）</code></pre>
+<h3>2. 增量编译</h3>
+<ul>
+<li>避免全量重编</li>
+<li>使用<code>/update</code>进行增量更新</li>
+<li>定期执行<code>/check</code>维护一致性</li>
+</ul>
+<h3>3. 索引优化</h3>
+<ul>
+<li>建立清晰的标签体系</li>
+<li>使用双向链接建立知识网络</li>
+<li>控制文档长度（建议&lt; 5000字）</li>
+</ul>
+<h3>4. 查询优化</h3>
+<ul>
+<li>使用精确的自然语言查询</li>
+<li>避免过于宽泛的关键词</li>
+<li>结合标签和引用进行精准检索</li>
+</ul>
+<hr>
+<h2>🔗 工具集成</h2>
+<h3>与Obsidian集成</h3>
+<p><strong>存储路径</strong>：</p>
+<pre><code>knowledge-base/wiki/ → Obsidian库</code></pre>
+<p><strong>配置</strong>：</p>
+<pre><code>{
+  "attachmentFolderPath": "knowledge-base/raw",
+  "newFileLocation": "current",
+  "newFileTemplatePath": "templates/wiki-template.md"
+}</code></pre>
+<h3>与WorkBuddy集成</h3>
+<p><strong>自动触发</strong>：</p>
+<ul>
+<li>当检测到"知识库建设"、"文档整理"等关键词时自动激活</li>
+<li>自动执行<code>/compile</code>、<code>/update</code>、<code>/query</code>等操作</li>
+</ul>
+<p><strong>配置</strong>：</p>
+<pre><code># WorkBuddy Rule
+triggers:
+  - "知识库"
+  - "文档整理"
+  - "资料系统化"
+auto_operations:
+  - "/compile"
+  - "/update"
+  - "/check"</code></pre>
+<hr>
+<h2>✅ 质量检查清单</h2>
+<p>在发布知识库前，使用此清单进行质量检查：</p>
+<h3>Raw Layer检查</h3>
+<ul>
+<li>[ ] 所有文件都在<code>raw/</code>文件夹</li>
+<li>[ ] 文件格式统一（PDF/DOCX/HTML/Text）</li>
+<li>[ ] 文件名清晰明确</li>
+<li>[ ] 没有重复文件</li>
+</ul>
+<h3>Wiki Layer检查</h3>
+<ul>
+<li>[ ] 所有文档符合Markdown格式</li>
+<li>[ ] 标题层级清晰（最多6级）</li>
+<li>[ ] 标签体系统一（使用#前缀）</li>
+<li>[ ] 双向链接完整（使用<code><a href="文档名.html">文档名</a></code>）</li>
+<li>[ ] 元数据完整（YAML frontmatter）</li>
+</ul>
+<h3>Schema Layer检查</h3>
+<ul>
+<li>[ ] <code>CLAUDE.md</code>已定义</li>
+<li>[ ] <code>AGENTS.md</code>已定义（如需要）</li>
+<li>[ ] 规则清晰明确</li>
+<li>[ ] 版本控制信息完整</li>
+</ul>
+<h3>整体检查</h3>
+<ul>
+<li>[ ] 一致性检查通过（<code>/check</code>）</li>
+<li>[ ] 无知识孤岛</li>
+<li>[ ] 查询响应准确</li>
+<li>[ ] 性能满足要求</li>
+</ul>
+<hr>
+<h2>📚 进阶主题</h2>
+<h3>主题1：多语言知识库</h3>
+<p><strong>方法</strong>：
+在Wiki Layer中使用语言标签：</p>
+<pre><code>---
+tags: ["#技术", "#English", "#中文"]
+---</code></pre>
+<h3>主题2：版本管理</h3>
+<p><strong>方法</strong>：
+在文件名中包含版本：</p>
+<pre><code>knowledge-base/wiki/产品手册-v1.0.md
+knowledge-base/wiki/产品手册-v2.0.md</code></pre>
+<h3>主题3：权限控制</h3>
+<p><strong>方法</strong>：
+在Schema Layer中定义访问规则：</p>
+<pre><code>access_control:
+  public:
+    - tags: ["#公开", "#文档"]
+  internal:
+    - tags: ["#内部", "#流程"]
+  admin:
+    - tags: ["#管理", "#配置"]</code></pre>
+<hr>
+<p><strong>实操指南版本</strong>：v1.0  
+<strong>最后更新</strong>：2026-04-08  
+<strong>维护者</strong>：龙龟神将</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

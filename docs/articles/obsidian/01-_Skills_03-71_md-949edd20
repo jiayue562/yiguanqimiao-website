@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>71个低频模型按需加载配置——思维模型库原生整合第三阶段 - 以观其妙书院</title>
+<meta name="description" content="71个低频模型按需加载配置——思维模型库原生整合第三阶段 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="71个低频模型按需加载配置——思维模型库原生整合第三阶段">
+<meta property="og:description" content="71个低频模型按需加载配置——思维模型库原生整合第三阶段 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "71个低频模型按需加载配置——思维模型库原生整合第三阶段",
+    "description": "71个低频模型按需加载配置——思维模型库原生整合第三阶段 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>71个低频模型按需加载配置——思维模型库原生整合第三阶段</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>🧠 71个低频模型按需加载配置 · v1.0</h1>
+<h2>一、核心定位</h2>
+<p><strong>71个低频模型</strong>是龙心OS思维模型感知雷达的第三层级（工具层），在核心层（9个高频本能）和模式层（20个中频）之后，用于需要精准调用特定思维工具的场景。</p>
+<table>
+<thead><tr>
+<th>层级</th>
+<th>模型数</th>
+<th>响应层级</th>
+<th>触发方式</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>核心层</strong></td>
+<td>9个高频本能模型</td>
+<td>即时本能反应</td>
+<td>感知即激活</td>
+</tr>
+<tr>
+<td><strong>模式层</strong></td>
+<td>20个中频模型（四大模式）</td>
+<td>场景本能反应</td>
+<td>识别场景后激活</td>
+</tr>
+<tr>
+<td><strong>工具层</strong></td>
+<td>71个低频模型</td>
+<td>精准工具调用</td>
+<td>明确指令后加载</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>二、三阶段总览</h2>
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│              龙心OS 思维模型感知雷达 · 完整架构              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  【核心层】9大高频本能模型 ✅                                │
+│  └── 感知即激活 → 本能反应（0步）                           │
+│                                                             │
+│  【模式层】20个中频模型 ✅                                   │
+│  └── 场景识别 → 本能反应（1步）                             │
+│                                                             │
+│  【工具层】71个低频模型 ⏳                                   │
+│  └── 指令调用 → 精准工具使用（N步）                          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>三、71个低频模型分类</h2>
+<h3>3.1 来源构成</h3>
+<table>
+<thead><tr>
+<th>来源</th>
+<th>总数</th>
+<th>已用</th>
+<th>剩余</th>
+<th>状态</th>
+</tr></thead><tbody>
+<tr>
+<td>《思考的框架》</td>
+<td>31</td>
+<td>9（核心层）+ 7（模式层）= 16</td>
+<td>15</td>
+<td>⏳</td>
+</tr>
+<tr>
+<td>麦肯锡思考框架</td>
+<td>28</td>
+<td>0 + 13（模式层）= 13</td>
+<td>15</td>
+<td>⏳</td>
+</tr>
+<tr>
+<td>其他专业模型</td>
+<td>41</td>
+<td>0</td>
+<td>41</td>
+<td>⏳</td>
+</tr>
+<tr>
+<td><strong>总计</strong></td>
+<td><strong>100</strong></td>
+<td><strong>29</strong></td>
+<td><strong>71</strong></td>
+<td>⏳</td>
+</tr>
+</tbody></table>
+<h3>3.2 十五大场景分类</h3>
+<hr>
+<h4>🔬 场景一：物理与自然法则（8个）</h4>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>模型</th>
+<th>一句话核心</th>
+<th>触发指令</th>
+</tr></thead><tbody>
+<tr>
+<td>01</td>
+<td><strong>摩擦力</strong></td>
+<td>行动阻力，减少摩擦提升效率</td>
+<td>"分析摩擦力"</td>
+</tr>
+<tr>
+<td>02</td>
+<td><strong>相对论</strong></td>
+<td>价值取决于参照系，视角决定认知</td>
+<td>"用相对论分析"</td>
+</tr>
+<tr>
+<td>03</td>
+<td><strong>杠杆</strong></td>
+<td>小力量撬动大结果，放大投入产出</td>
+<td>"杠杆分析"</td>
+</tr>
+<tr>
+<td>04</td>
+<td><strong>极值</strong></td>
+<td>优化目标函数，找到极端最优解</td>
+<td>"极值分析"</td>
+</tr>
+<tr>
+<td>05</td>
+<td><strong>锁定</strong></td>
+<td>系统被锁定在某种状态，难以脱离</td>
+<td>"锁定效应"</td>
+</tr>
+<tr>
+<td>06</td>
+<td><strong>跃迁</strong></td>
+<td>量子跳跃，突破性跃迁</td>
+<td>"跃迁分析"</td>
+</tr>
+<tr>
+<td>07</td>
+<td><strong>湍流</strong></td>
+<td>混沌系统，不可预测性</td>
+<td>"湍流分析"</td>
+</tr>
+<tr>
+<td>08</td>
+<td><strong>相变</strong></td>
+<td>状态突变，临界突破</td>
+<td>"相变分析"</td>
+</tr>
+</tbody></table>
+<hr>
+<h4>⚗️ 场景二：化学与转化（6个）</h4>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>模型</th>
+<th>一句话核心</th>
+<th>触发指令</th>
+</tr></thead><tbody>
+<tr>
+<td>09</td>
+<td><strong>化学平衡</strong></td>
+<td>动态平衡，系统自我调节</td>
+<td>"化学平衡"</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>自催化</strong></td>
+<td>自我增强，正反馈循环</td>
+<td>"自催化分析"</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>氧化还原</strong></td>
+<td>电子转移，能量交换</td>
+<td>"氧化还原"</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>溶解度</strong></td>
+<td>临界饱和，边界条件</td>
+<td>"溶解度分析"</td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>催化剂</strong></td>
+<td>加速反应，不参与反应</td>
+<td>"催化剂思维"</td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>活化能</strong></td>
+<td>跨越启动障碍</td>
+<td>"活化能分析"</td>
+</tr>
+</tbody></table>
+<hr>
+<h4>🌱 场景三：生物与进化（7个）</h4>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>模型</th>
+<th>一句话核心</th>
+<th>触发指令</th>
+</tr></thead><tbody>
+<tr>
+<td>15</td>
+<td><strong>竞争排斥</strong></td>
+<td>资源有限，优胜劣汰</td>
+<td>"竞争排斥"</td>
+</tr>
+<tr>
+<td>16</td>
+<td><strong>共生关系</strong></td>
+<td>互利共生，协同进化</td>
+<td>"共生关系"</td>
+</tr>
+<tr>
+<td>17</td>
+<td><strong>遗传变异</strong></td>
+<td>稳定传承，创新突破</td>
+<td>"遗传变异"</td>
+</tr>
+<tr>
+<td>18</td>
+<td><strong>最小可行种群</strong></td>
+<td>临界规模，生存底线</td>
+<td>"最小种群"</td>
+</tr>
+<tr>
+<td>19</td>
+<td><strong>自然选择</strong></td>
+<td>适者生存，筛选机制</td>
+<td>"自然选择"</td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>适应度景观</strong></td>
+<td>多维适应空间</td>
+<td>"适应度景观"</td>
+</tr>
+<tr>
+<td>21</td>
+<td><strong>红皇后效应</strong></td>
+<td>拼命奔跑才能保持在原地</td>
+<td>"红皇后效应"</td>
+</tr>
+</tbody></table>
+<hr>
+<h4>🏛️ 场景四：麦肯锡战略与管理（5个）</h4>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>模型</th>
+<th>一句话核心</th>
+<th>触发指令</th>
+</tr></thead><tbody>
+<tr>
+<td>22</td>
+<td><strong>波士顿矩阵</strong></td>
+<td>产品组合分析，资源配置</td>
+<td>"波士顿矩阵"</td>
+</tr>
+<tr>
+<td>23</td>
+<td><strong>GE矩阵</strong></td>
+<td>多因素战略评估</td>
+<td>"GE矩阵"</td>
+</tr>
+<tr>
+<td>24</td>
+<td><strong>价值链分析</strong></td>
+<td>内部活动与竞争优势</td>
+<td>"价值链分析"</td>
+</tr>
+<tr>
+<td>25</td>
+<td><strong>战略定位</strong></td>
+<td>差异化聚焦领先</td>
+<td>"战略定位"</td>
+</tr>
+<tr>
+<td>26</td>
+<td><strong>商业模式画布</strong></td>
+<td>商业模式九要素</td>
+<td>"商业模式画布"</td>
+</tr>
+</tbody></table>
+<hr>
+<h4>📊 场景五：麦肯锡分析工具（6个）</h4>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>模型</th>
+<th>一句话核心</th>
+<th>触发指令</th>
+</tr></thead><tbody>
+<tr>
+<td>27</td>
+<td><strong>7S分析</strong></td>
+<td>组织七要素分析框架</td>
+<td>"7S分析"</td>
+</tr>
+<tr>
+<td>28</td>
+<td><strong>三分法</strong></td>
+<td>系统三分结构</td>
+<td>"三分法"</td>
+</tr>
+<tr>
+<td>29</td>
+<td><strong>流程图分析</strong></td>
+<td>流程优化与瓶颈识别</td>
+<td>"流程图分析"</td>
+</tr>
+<tr>
+<td>30</td>
+<td><strong>差距分析</strong></td>
+<td>现状与目标差距</td>
+<td>"差距分析"</td>
+</tr>
+<tr>
+<td>31</td>
+<td><strong>情景规划</strong></td>
+<td>多情景战略预案</td>
+<td>"情景规划"</td>
+</tr>
+<tr>
+<td>32</td>
+<td><strong>战略时钟</strong></td>
+<td>竞争定位与价格策略</td>
+<td>"战略时钟"</td>
+</tr>
+</tbody></table>
+<hr>
+<h4>🔍 场景六：麦肯锡逻辑与结构（5个）</h4>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>模型</th>
+<th>一句话核心</th>
+<th>触发指令</th>
+</tr></thead><tbody>
+<tr>
+<td>33</td>
+<td><strong>结构化思维</strong></td>
+<td>自上而下分类分组</td>
+<td>"结构化思维"</td>
+</tr>
+<tr>
+<td>34</td>
+<td><strong>假设驱动</strong></td>
+<td>先假设再验证</td>
+<td>"假设驱动"</td>
+</tr>
+<tr>
+<td>35</td>
+<td><strong>MECE补充</strong></td>
+<td>逻辑穷举技巧</td>
+<td>"MECE补充"</td>
+</tr>
+<tr>
+<td>36</td>
+<td><strong>逻辑树</strong></td>
+<td>问题分解树状结构</td>
+<td>"逻辑树分析"</td>
+</tr>
+<tr>
+<td>37</td>
+<td><strong>空·雨·伞</strong></td>
+<td>事实-解读-行动</td>
+<td>"空雨伞"</td>
+</tr>
+</tbody></table>
+<hr>
+<h4>💡 场景七：麦肯锡创新与问题解决（5个）</h4>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>模型</th>
+<th>一句话核心</th>
+<th>触发指令</th>
+</tr></thead><tbody>
+<tr>
+<td>38</td>
+<td><strong>设计思维</strong></td>
+<td>以人为本的创新</td>
+<td>"设计思维"</td>
+</tr>
+<tr>
+<td>39</td>
+<td><strong>头脑风暴</strong></td>
+<td>数量胜于质量，激发创意</td>
+<td>"头脑风暴"</td>
+</tr>
+<tr>
+<td>40</td>
+<td><strong>六顶思考帽</strong></td>
+<td>平行思维工具</td>
+<td>"六顶思考帽"</td>
+</tr>
+<tr>
+<td>41</td>
+<td><strong>二维码矩阵</strong></td>
+<td>创意与可行双评估</td>
+<td>"二维码矩阵"</td>
+</tr>
+<tr>
+<td>42</td>
+<td><strong>创新难题分析</strong></td>
+<td>创新障碍识别</td>
+<td>"创新难题"</td>
+</tr>
+</tbody></table>
+<hr>
+<h4>🎯 场景八：麦肯锡市场与客户（5个）</h4>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>模型</th>
+<th>一句话核心</th>
+<th>触发指令</th>
+</tr></thead><tbody>
+<tr>
+<td>43</td>
+<td><strong>市场细分</strong></td>
+<td>识别同质客户群</td>
+<td>"市场细分"</td>
+</tr>
+<tr>
+<td>44</td>
+<td><strong>用户画像</strong></td>
+<td>典型客户特征</td>
+<td>"用户画像"</td>
+</tr>
+<tr>
+<td>45</td>
+<td><strong>客户旅程</strong></td>
+<td>全触点体验优化</td>
+<td>"客户旅程"</td>
+</tr>
+<tr>
+<td>46</td>
+<td><strong>需求层次</strong></td>
+<td>马斯洛需求分析</td>
+<td>"需求层次"</td>
+</tr>
+<tr>
+<td>47</td>
+<td><strong>竞争定位图</strong></td>
+<td>市场空白识别</td>
+<td>"竞争定位图"</td>
+</tr>
+</tbody></table>
+<hr>
+<h4>⚖️ 场景九：法律与合规（4个）</h4>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>模型</th>
+<th>一句话核心</th>
+<th>触发指令</th>
+</tr></thead><tbody>
+<tr>
+<td>48</td>
+<td><strong>合规风险</strong></td>
+<td>法律底线与合规要求</td>
+<td>"合规风险分析"</td>
+</tr>
+<tr>
+<td>49</td>
+<td><strong>合同条款</strong></td>
+<td>权利义务界定</td>
+<td>"合同条款分析"</td>
+</tr>
+<tr>
+<td>50</td>
+<td><strong>知识产权</strong></td>
+<td>无形资产保护</td>
+<td>"知识产权分析"</td>
+</tr>
+<tr>
+<td>51</td>
+<td><strong>诉讼风险</strong></td>
+<td>法律纠纷预防</td>
+<td>"诉讼风险"</td>
+</tr>
+</tbody></table>
+<hr>
+<h4>💰 场景十：财务与投资（5个）</h4>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>模型</th>
+<th>一句话核心</th>
+<th>触发指令</th>
+</tr></thead><tbody>
+<tr>
+<td>52</td>
+<td><strong>现金流</strong></td>
+<td>资金时间价值</td>
+<td>"现金流分析"</td>
+</tr>
+<tr>
+<td>53</td>
+<td><strong>ROI分析</strong></td>
+<td>投资回报评估</td>
+<td>"ROI分析"</td>
+</tr>
+<tr>
+<td>54</td>
+<td><strong>风险调整</strong></td>
+<td>风险收益权衡</td>
+<td>"风险调整收益"</td>
+</tr>
+<tr>
+<td>55</td>
+<td><strong>净现值</strong></td>
+<td>长期投资评估</td>
+<td>"净现值分析"</td>
+</tr>
+<tr>
+<td>56</td>
+<td><strong>敏感性分析</strong></td>
+<td>关键变量影响</td>
+<td>"敏感性分析"</td>
+</tr>
+</tbody></table>
+<hr>
+<h4>🧠 场景十一：认知与决策（5个）</h4>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>模型</th>
+<th>一句话核心</th>
+<th>触发指令</th>
+</tr></thead><tbody>
+<tr>
+<td>57</td>
+<td><strong>认知偏差</strong></td>
+<td>系统性判断误差</td>
+<td>"认知偏差分析"</td>
+</tr>
+<tr>
+<td>58</td>
+<td><strong>锚定效应</strong></td>
+<td>参照点影响判断</td>
+<td>"锚定效应"</td>
+</tr>
+<tr>
+<td>59</td>
+<td><strong>确认偏误</strong></td>
+<td>偏好验证已有观点</td>
+<td>"确认偏误"</td>
+</tr>
+<tr>
+<td>60</td>
+<td><strong>损失厌恶</strong></td>
+<td>对损失更敏感</td>
+<td>"损失厌恶"</td>
+</tr>
+<tr>
+<td>61</td>
+<td><strong>过度自信</strong></td>
+<td>高估自己判断</td>
+<td>"过度自信"</td>
+</tr>
+</tbody></table>
+<hr>
+<h4>🔮 场景十二：系统与复杂性（5个）</h4>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>模型</th>
+<th>一句话核心</th>
+<th>触发指令</th>
+</tr></thead><tbody>
+<tr>
+<td>62</td>
+<td><strong>系统动力学</strong></td>
+<td>反馈回路与延迟</td>
+<td>"系统动力学"</td>
+</tr>
+<tr>
+<td>63</td>
+<td><strong>复杂适应系统</strong></td>
+<td>主体互动演化</td>
+<td>"复杂系统"</td>
+</tr>
+<tr>
+<td>64</td>
+<td><strong>突现现象</strong></td>
+<td>整体突现属性</td>
+<td>"突现分析"</td>
+</tr>
+<tr>
+<td>65</td>
+<td><strong>混沌边缘</strong></td>
+<td>秩序与混沌边界</td>
+<td>"混沌边缘"</td>
+</tr>
+<tr>
+<td>66</td>
+<td><strong>网络效应</strong></td>
+<td>节点价值递增</td>
+<td>"网络效应"</td>
+</tr>
+</tbody></table>
+<hr>
+<h4>🎭 场景十三：沟通与影响（4个）</h4>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>模型</th>
+<th>一句话核心</th>
+<th>触发指令</th>
+</tr></thead><tbody>
+<tr>
+<td>67</td>
+<td><strong>说服技巧</strong></td>
+<td>影响力原则</td>
+<td>"说服技巧"</td>
+</tr>
+<tr>
+<td>68</td>
+<td><strong>非暴力沟通</strong></td>
+<td>需求导向表达</td>
+<td>"非暴力沟通"</td>
+</tr>
+<tr>
+<td>69</td>
+<td><strong>积极倾听</strong></td>
+<td>共情理解沟通</td>
+<td>"积极倾听"</td>
+</tr>
+<tr>
+<td>70</td>
+<td><strong>故事思维</strong></td>
+<td>叙事说服力量</td>
+<td>"故事思维"</td>
+</tr>
+</tbody></table>
+<hr>
+<h4>🌐 场景十四：东方智慧与整合（2个）</h4>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>模型</th>
+<th>一句话核心</th>
+<th>触发指令</th>
+</tr></thead><tbody>
+<tr>
+<td>71</td>
+<td><strong>象思维</strong></td>
+<td>观物取象，以象尽意</td>
+<td>"象思维分析"</td>
+</tr>
+<tr>
+<td>72</td>
+<td><strong>五行生克</strong></td>
+<td>五行相生相克关系</td>
+<td>"五行分析"</td>
+</tr>
+</tbody></table>
+<hr>
+<h4>🔯 场景十五：综合与整合（3个）</h4>
+<table>
+<thead><tr>
+<th>序号</th>
+<th>模型</th>
+<th>一句话核心</th>
+<th>触发指令</th>
+</tr></thead><tbody>
+<tr>
+<td>73</td>
+<td><strong>第一性原理</strong></td>
+<td>剥离表象回归本质</td>
+<td>"第一性原理"</td>
+</tr>
+<tr>
+<td>74</td>
+<td><strong>组合创新</strong></td>
+<td>要素重组创新</td>
+<td>"组合创新"</td>
+</tr>
+<tr>
+<td>75</td>
+<td><strong>场景测试</strong></td>
+<td>极端场景检验</td>
+<td>"场景压力测试"</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>四、按需加载配置</h2>
+<h3>4.1 触发机制</h3>
+<pre><code># 工具层模型触发规则
+
+触发条件:
+  - 用户明确提到具体模型名称
+  - 用户请求"使用XX模型分析"
+  - 用户说"用XX思维"
+
+加载策略:
+  - 单模型：直接加载对应模型
+  - 多模型组合：并行加载，组合输出
+  - 场景套件：加载整个场景的5-6个模型
+
+响应时间:
+  - 单模型：&lt;0.5秒
+  - 多模型：&lt;1秒
+  - 场景套件：&lt;2秒</code></pre>
+<h3>4.2 场景套件配置</h3>
+<pre><code># 十五大场景套件
+
+物理自然套件:
+  模型: [摩擦力, 相对论, 杠杆, 极值, 锁定, 跃迁, 湍流, 相变]
+  触发: "物理思维" / "自然法则"
+
+化学转化套件:
+  模型: [化学平衡, 自催化, 氧化还原, 溶解度, 催化剂, 活化能]
+  触发: "化学思维" / "转化分析"
+
+生物进化套件:
+  模型: [竞争排斥, 共生关系, 遗传变异, 最小种群, 自然选择, 适应度景观, 红皇后效应]
+  触发: "生物思维" / "进化分析"
+
+麦肯锡战略套件:
+  模型: [波士顿矩阵, GE矩阵, 价值链, 战略定位, 商业模式画布]
+  触发: "战略分析" / "麦肯锡战略"
+
+麦肯锡分析套件:
+  模型: [7S分析, 三分法, 流程图, 差距分析, 情景规划, 战略时钟]
+  触发: "管理分析" / "麦肯锡分析"
+
+麦肯锡逻辑套件:
+  模型: [结构化思维, 假设驱动, MECE补充, 逻辑树, 空雨伞]
+  触发: "逻辑分析" / "结构化"
+
+麦肯锡创新套件:
+  模型: [设计思维, 头脑风暴, 六顶思考帽, 二维码矩阵, 创新难题]
+  触发: "创新分析" / "问题解决"
+
+麦肯锡市场套件:
+  模型: [市场细分, 用户画像, 客户旅程, 需求层次, 竞争定位图]
+  触发: "市场分析" / "客户洞察"
+
+法律合规套件:
+  模型: [合规风险, 合同条款, 知识产权, 诉讼风险]
+  触发: "法律分析" / "合规审查"
+
+财务投资套件:
+  模型: [现金流, ROI分析, 风险调整, 净现值, 敏感性分析]
+  触发: "财务分析" / "投资评估"
+
+认知偏差套件:
+  模型: [认知偏差, 锚定效应, 确认偏误, 损失厌恶, 过度自信]
+  触发: "认知分析" / "决策偏差"
+
+系统复杂套件:
+  模型: [系统动力学, 复杂系统, 突现分析, 混沌边缘, 网络效应]
+  触发: "系统思维" / "复杂性分析"
+
+沟通影响套件:
+  模型: [说服技巧, 非暴力沟通, 积极倾听, 故事思维]
+  触发: "沟通分析" / "影响策略"
+
+东方智慧套件:
+  模型: [象思维, 五行生克]
+  触发: "东方智慧" / "象思维"
+
+综合整合套件:
+  模型: [第一性原理, 组合创新, 场景测试]
+  触发: "综合分析" / "整合思维"</code></pre>
+<hr>
+<h2>五、指令调用协议</h2>
+<h3>5.1 单模型调用</h3>
+<pre><code>用户指令格式：
+- "用[模型名]分析[问题]"
+- "[模型名]思维"
+- "从[模型名]角度看[问题]"
+
+龙心OS响应：
+→ 加载对应模型
+→ 执行分析
+→ 输出结果</code></pre>
+<h3>5.2 多模型组合调用</h3>
+<pre><code>用户指令格式：
+- "用[模型A]和[模型B]分析[问题]"
+- "从多角度分析：模型A、模型B、模型C"
+
+龙心OS响应：
+→ 并行加载多个模型
+→ 组合分析
+→ 整合输出</code></pre>
+<h3>5.3 场景套件调用</h3>
+<pre><code>用户指令格式：
+- "[场景名]分析"
+- "用[场景套件名]处理"
+
+龙心OS响应：
+→ 加载整个套件
+→ 系统性分析
+→ 完整报告</code></pre>
+<hr>
+<h2>六、与上层的协同</h2>
+<h3>6.1 三层联动</h3>
+<pre><code>核心层（9个）：
+  - 感知即激活
+  - 直接穿透本质
+  ↓ 组合使用
+模式层（20个）：
+  - 场景识别后激活
+  - 系统性分析
+  ↓ 精准补充
+工具层（71个）：
+  - 指令调用
+  - 深度专项分析</code></pre>
+<h3>6.2 组合使用示例</h3>
+<pre><code>场景：新产品市场进入策略
+
+核心层激活（自动）：
+  → 第一性原理：市场本质是什么？
+  → SWOT：四维分析
+  → 五色光：多维透视
+
+模式层激活（场景识别）：
+  → 决策分析模式：风险评估
+  → 创新突破模式：突破口
+
+工具层调用（指令）：
+  → 麦肯锡战略套件：战略定位
+  → 麦肯锡市场套件：用户画像
+  → 财务投资套件：ROI分析</code></pre>
+<hr>
+<h2>七、核心金句</h2>
+<blockquote><p><strong>工具层的本质</strong>：不是越多越好，而是需要时能精准调用。</p>
+<p><strong>按需加载的智慧</strong>：核心层是本能，模式层是场景直觉，工具层是精准武器。</p>
+<p><strong>三层协同</strong>：本能反应 + 场景直觉 + 精准工具 = 完整认知闭环</p></blockquote>
+<hr>
+<p><strong>文档版本</strong>: v1.0
+<strong>创建时间</strong>: 2026-04-15
+<strong>维护者</strong>: 龙龟神将
+<strong>所属系统</strong>: 龙心OS · 思维模型库原生整合第三阶段
+<strong>状态</strong>: ⏳ 待完成（72个模型已识别）</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

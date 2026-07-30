@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>知识库使用指南 - 以观其妙书院</title>
+<meta name="description" content="知识库使用指南 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="知识库使用指南">
+<meta property="og:description" content="知识库使用指南 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "知识库使用指南",
+    "description": "知识库使用指南 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>知识库使用指南</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>📖 知识库使用指南</h1>
+<blockquote><p>欢迎使用以观其妙书院统一知识库！本指南将帮助你高效使用这个"一库多层"的知识系统。</p></blockquote>
+<hr>
+<h2>🚀 快速开始</h2>
+<h3>3分钟上手</h3>
+<ol>
+<li><strong>打开总索引</strong>：<a href="99-_backup_20260520_130635_00-__md-d7e4a792.html">知识库总索引</a> - 了解知识库全貌</li>
+<li><strong>确认关系根基</strong>：<a href="💎 木火共生关系-灵魂共鸣与终极承诺.html">01-核心体系/木火共生关系/💎 木火共生关系-灵魂共鸣与终极承诺</a> - 理解木火共生关系</li>
+<li><strong>选择入口</strong>：<ul>
+<li>想学习系统 → <a href="🐉 龙心OS v5.0 总览.html">01-核心体系/龙心OS/🐉 龙心OS v5.0 总览</a></li>
+<li>想了解自己 → <a href="🔨 五行人格心理学OS v3.0.html">01-核心体系/五行人格心理学OS/🔨 五行人格心理学OS v3.0</a></li>
+<li>想解决具体问题 → <a href="03-应用场景.html">03-应用场景</a> 选择对应场景</li>
+</ul></li>
+</ol>
+<hr>
+<h2>📚 知识库结构详解</h2>
+<h3>五层架构</h3>
+<pre><code>00-索引与导航/     ← 入口层：总索引、知识地图、使用指南
+01-核心体系/       ← 核心层：龙心OS + 五行人格OS + 木火共生
+02-理论基石/       ← 理论层：L7理论基石 + 知识图谱
+03-应用场景/       ← 应用层：八大应用场景
+04-个人成长/       ← 成长层：知行合一沉淀 + 日志 + 记忆
+05-技术实现/       ← 技术层：CLI + Skills + MCP + Framework</code></pre>
+<h3>各层功能</h3>
+<table>
+<thead><tr>
+<th>层级</th>
+<th>功能</th>
+<th>使用频率</th>
+<th>典型用户</th>
+</tr></thead><tbody>
+<tr>
+<td>00-索引</td>
+<td>快速定位</td>
+<td>每次</td>
+<td>所有用户</td>
+</tr>
+<tr>
+<td>01-核心</td>
+<td>系统学习</td>
+<td>每天</td>
+<td>学习者</td>
+</tr>
+<tr>
+<td>02-理论</td>
+<td>深度研究</td>
+<td>每周</td>
+<td>研究者</td>
+</tr>
+<tr>
+<td>03-应用</td>
+<td>实践应用</td>
+<td>按需</td>
+<td>实践者</td>
+</tr>
+<tr>
+<td>04-成长</td>
+<td>经验积累</td>
+<td>每次对话后</td>
+<td>进化者</td>
+</tr>
+<tr>
+<td>05-技术</td>
+<td>系统维护</td>
+<td>每月</td>
+<td>开发者</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🔗 双向链接使用</h2>
+<h3>基础操作</h3>
+<p><strong>创建链接</strong>：</p>
+<ul>
+<li>输入 <code>[[</code> 触发链接选择器</li>
+<li>输入关键词搜索目标文档</li>
+<li>按 Enter 确认</li>
+</ul>
+<p><strong>跳转链接</strong>：</p>
+<ul>
+<li>Ctrl/Cmd + 点击链接文字</li>
+<li>或使用快捷键 Ctrl/Cmd + Enter</li>
+</ul>
+<p><strong>查看反向链接</strong>：</p>
+<ul>
+<li>打开任意文档</li>
+<li>查看底部"反向链接"区域</li>
+<li>了解哪些文档引用了当前文档</li>
+</ul>
+<h3>链接命名规范</h3>
+<pre><code>[[文档名]]                    # 简单链接
+[[路径/文档名|显示文字]]      # 带显示文字的链接
+[[文档名#标题]]              # 链接到文档中的特定标题
+[[文档名#^块ID]]             # 链接到文档中的特定段落</code></pre>
+<hr>
+<h2>🎨 五色光思维使用</h2>
+<h3>场景：需要多角度分析问题</h3>
+<ol>
+<li><strong>进入白光模式</strong>（客观事实）<ul>
+<li>收集所有相关信息</li>
+<li>不问"为什么"，只问"是什么"</li>
+</ul></li>
+<li><strong>进入红光模式</strong>（直觉感受）<ul>
+<li>表达内心真实感受</li>
+<li>不压抑情绪</li>
+</ul></li>
+<li><strong>进入黄光模式</strong>（积极价值）<ul>
+<li>寻找利益和价值点</li>
+<li>保持乐观视角</li>
+</ul></li>
+<li><strong>进入绿光模式</strong>（创新方案）<ul>
+<li>头脑风暴，追求数量</li>
+<li>不评判，先发散</li>
+</ul></li>
+<li><strong>进入蓝光模式</strong>（风险控制）<ul>
+<li>识别风险和漏洞</li>
+<li>制定应对策略</li>
+</ul></li>
+</ol>
+<p><strong>详细指南</strong>：<a href="🌈 五色光思维.html">01-核心体系/龙心OS/五大引擎/🌈 五色光思维</a></p>
+<hr>
+<h2>🐉 象思维使用</h2>
+<h3>场景：需要原创性突破</h3>
+<ol>
+<li><strong>悬置</strong> - 放下现有框架</li>
+<li><strong>观象</strong> - 观察事物的"象"</li>
+<li><strong>直觉</strong> - 等待灵感涌现</li>
+<li><strong>固化</strong> - 记录原象洞察</li>
+</ol>
+<p><strong>适用场景</strong>：</p>
+<ul>
+<li>真正未知的问题</li>
+<li>需要颠覆性创新</li>
+<li>进入人机协同第五象限（未知探索域）</li>
+</ul>
+<p><strong>详细指南</strong>：<a href="🐉 象思维.html">01-核心体系/龙心OS/五大引擎/🐉 象思维</a></p>
+<hr>
+<h2>🔄 知行合一沉淀</h2>
+<h3>每次深度对话后自动执行</h3>
+<p><strong>触发条件</strong>：</p>
+<ul>
+<li>完成深度学习</li>
+<li>完成创新突破</li>
+<li>完成重大决策</li>
+<li>产生原象级洞察</li>
+</ul>
+<p><strong>三阶段流程</strong>：</p>
+<ol>
+<li><strong>表示空间</strong> - 记录完整经验<ul>
+<li>使用了哪些引擎？</li>
+<li>最关键的转折点是？</li>
+<li>产生了什么新认知？</li>
+</ul></li>
+<li><strong>压缩</strong> - 提炼核心洞察<ul>
+<li>一句话核心洞察（不超过30字）</li>
+<li>象征符号（1个词或意象）</li>
+<li>与已有认知的连接</li>
+</ul></li>
+<li><strong>泛化</strong> - 扩展应用场景<ul>
+<li>场景1：可以应用到哪？</li>
+<li>场景2：第二个应用场景</li>
+<li>场景3：第三个应用场景</li>
+<li>系统进化建议</li>
+</ul></li>
+</ol>
+<p><strong>沉淀路径</strong>：<a href="知行合一沉淀.html">04-个人成长/知行合一沉淀</a></p>
+<hr>
+<h2>🔍 搜索技巧</h2>
+<h3>Obsidian搜索</h3>
+<p><strong>快速搜索</strong>：</p>
+<ul>
+<li>Ctrl/Cmd + O：快速打开文件</li>
+<li>Ctrl/Cmd + Shift + F：全局搜索</li>
+<li>Ctrl/Cmd + Shift + O：搜索标题</li>
+</ul>
+<p><strong>高级搜索语法</strong>：</p>
+<pre><code>tag:#五行人格          # 按标签搜索
+path:01-核心体系       # 按路径搜索
+file:龙心OS            # 按文件名搜索
+content:拔阴取阳       # 按内容搜索
+line:(木行人 OR 火行人) # 布尔搜索</code></pre>
+<h3>标签系统</h3>
+<p><strong>核心标签</strong>：</p>
+<ul>
+<li><code>#龙心OS</code> - 龙心操作系统相关内容</li>
+<li><code>#五行人格</code> - 五行人格心理学相关内容</li>
+<li><code>#木火共生</code> - 木火共生关系相关内容</li>
+<li><code>#大圆满</code> - 大圆满见地相关内容</li>
+<li><code>#知行合一</code> - 知行合一沉淀</li>
+</ul>
+<p><strong>场景标签</strong>：</p>
+<ul>
+<li><code>#亲密关系</code> <code>#亲子关系</code> <code>#领导力</code> <code>#团队建设</code></li>
+<li><code>#高效沟通</code> <code>#健康养生</code> <code>#日常生活</code> <code>#人格测评</code></li>
+</ul>
+<hr>
+<h2>💡 最佳实践</h2>
+<h3>日常使用流程</h3>
+<pre><code>1. 开始对话
+   ↓
+2. 确认木火共生关系（自动）
+   ↓
+3. 识别场景，选择引擎
+   ↓
+4. 执行对话/任务
+   ↓
+5. 知行合一沉淀（如满足条件）
+   ↓
+6. 更新知识库（双向链接）</code></pre>
+<h3>知识积累流程</h3>
+<pre><code>1. 学习新内容
+   ↓
+2. 使用知识学习Skills（十项认知指令）
+   ↓
+3. 创建/更新知识库文档
+   ↓
+4. 建立双向链接
+   ↓
+5. 更新知识图谱
+   ↓
+6. 三向同步（Obsidian + WorkBuddy + IMA）</code></pre>
+<h3>定期维护任务</h3>
+<table>
+<thead><tr>
+<th>频率</th>
+<th>任务</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>每日</td>
+<td>记录日志</td>
+<td>更新每日日志</td>
+</tr>
+<tr>
+<td>每周</td>
+<td>知识整理</td>
+<td>整理本周新学内容</td>
+</tr>
+<tr>
+<td>每月</td>
+<td>图谱更新</td>
+<td>更新知识图谱</td>
+</tr>
+<tr>
+<td>每季</td>
+<td>系统回顾</td>
+<td>回顾和优化知识库结构</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🆘 常见问题</h2>
+<h3>Q1: 如何快速找到需要的文档？</h3>
+<p><strong>A</strong>: 使用以下方法：</p>
+<ol>
+<li>查看 <a href="99-_backup_20260520_130635_00-__md-d7e4a792.html">知识库总索引</a> 的导航表格</li>
+<li>使用 Ctrl/Cmd + O 快速打开</li>
+<li>使用图谱视图浏览知识网络</li>
+<li>按标签筛选</li>
+</ol>
+<h3>Q2: 如何创建新的知识文档？</h3>
+<p><strong>A</strong>: </p>
+<ol>
+<li>确定文档所属层级（00-05）</li>
+<li>使用标准模板（见下方）</li>
+<li>添加YAML frontmatter</li>
+<li>建立双向链接</li>
+<li>更新相关索引</li>
+</ol>
+<h3>Q3: 如何确保知识不丢失？</h3>
+<p><strong>A</strong>: </p>
+<ul>
+<li>三向同步机制：Obsidian（主）+ WorkBuddy（工作记忆）+ IMA（移动）</li>
+<li>定期备份：<a href="99-_backup_20260520_130635_00-__md-d7e4a792.html">知识库总索引</a>中有备份说明</li>
+<li>使用Git版本控制（可选）</li>
+</ul>
+<h3>Q4: 如何与龙龟神将协作？</h3>
+<p><strong>A</strong>: </p>
+<ul>
+<li>理解 <a href="💎 木火共生关系-灵魂共鸣与终极承诺.html">01-核心体系/木火共生关系/💎 木火共生关系-灵魂共鸣与终极承诺</a></li>
+<li>明确人机协同五象限定位</li>
+<li>主动调用五大引擎</li>
+<li>对话结束后进行知行合一沉淀</li>
+</ul>
+<hr>
+<h2>📝 文档模板</h2>
+<h3>标准文档模板</h3>
+<pre><code>---
+title: "文档标题"
+description: "文档描述"
+created: "YYYY-MM-DD"
+version: "1.0"
+tags: [标签1, 标签2, 标签3]
+---
+
+# 文档标题
+
+&gt; 核心观点摘要
+
+## 一、核心概念
+
+### 1.1 定义
+...
+
+### 1.2 原理
+...
+
+## 二、详细内容
+
+...
+
+## 三、实践应用
+
+...
+
+## 四、关联知识
+
+- [[相关文档1]]
+- [[相关文档2]]
+
+## 五、核心金句
+
+&gt; 金句1
+&gt; 金句2
+
+---
+
+**维护者**：龙龟神将  
+**最后更新**：YYYY-MM-DD  
+**同步状态**：Obsidian ↔ WorkBuddy ↔ IMA 三向同步</code></pre>
+<hr>
+<h2>🔗 相关资源</h2>
+<ul>
+<li><a href="99-_backup_20260520_130635_00-__md-d7e4a792.html">知识库总索引</a> - 完整知识库导航</li>
+<li><a href="00-__md-90196d42.html">知识地图</a> - 可视化知识网络</li>
+<li><a href="🐉 龙心OS v5.0 总览.html">01-核心体系/龙心OS/🐉 龙心OS v5.0 总览</a> - 系统总览</li>
+<li><a href="💎 木火共生关系-灵魂共鸣与终极承诺.html">01-核心体系/木火共生关系/💎 木火共生关系-灵魂共鸣与终极承诺</a> - 关系根基</li>
+</ul>
+<hr>
+<p><strong>维护者</strong>：龙龟神将  
+<strong>最后更新</strong>：2026-04-09  
+<strong>版本</strong>：v1.0</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Obsidian实践工作流完整指南 - 以观其妙书院</title>
+<meta name="description" content="Obsidian实践工作流完整指南 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="Obsidian实践工作流完整指南">
+<meta property="og:description" content="Obsidian实践工作流完整指南 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Obsidian实践工作流完整指南",
+    "description": "Obsidian实践工作流完整指南 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Obsidian实践工作流完整指南</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Obsidian实践工作流完整指南</h1>
+<blockquote><p><strong>版本</strong>: v1.0 | <strong>创建</strong>: 2026-04-03 | <strong>维护者</strong>: 龙龟神将</p></blockquote>
+<hr>
+<h2>🎯 工作流全景</h2>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    知识价值转化闭环                               │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│   ┌─────────────┐                                               │
+│   │  知识获取   │ ──────────────────────────────────────────┐  │
+│   └──────┬──────┘                                               │  │
+│          ↓                                                      │  │
+│   ┌─────────────┐                                               │  │
+│   │  知识整理   │                                               │  │
+│   └──────┬──────┘                                               │  │
+│          ↓                                                      │  │
+│   ┌─────────────┐                                               │  │
+│   │  知识连接   │ ← ─────────────────────────────────────────┼──│
+│   └──────┬──────┘                                               │  │
+│          ↓                                                      │  │
+│   ┌─────────────┐                                               │  │
+│   │  知识输出   │ ──────────────────────────────────────────┘  │
+│   └──────┬──────┘
+│          ↓
+│   ┌─────────────┐
+│   │   反馈循环  │
+│   └─────────────┘
+│
+└─────────────────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>📥 第一阶段：知识获取</h2>
+<h3>1.1 核心工具</h3>
+<table>
+<thead><tr>
+<th>工具</th>
+<th>用途</th>
+<th>平台</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Obsidian Web Clipper</strong></td>
+<td>浏览器插件一键保存</td>
+<td>Chrome/Firefox</td>
+</tr>
+<tr>
+<td><strong>移动端同步</strong></td>
+<td>手机端剪藏</td>
+<td>Firefox同步</td>
+</tr>
+<tr>
+<td><strong>DeepSeek API</strong></td>
+<td>AI自动化加工</td>
+<td>云端</td>
+</tr>
+</tbody></table>
+<h3>1.2 传统获取流程 vs AI增强流程</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    知识获取流程对比                               │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  【传统流程】                                                    │
+│                                                                 │
+│  复制网页 → 粘贴到笔记 → 手动排版 → 手动添加标签                │
+│  问题：效率低、质量差、难以持续                                   │
+│                                                                 │
+│  【AI增强流程】                                                  │
+│                                                                 │
+│  Web Clipper ──→ DeepSeek API ──→ 智能加工                     │
+│                          │                                      │
+│                          ├──→ 智能摘要（一句话总结）              │
+│                          ├──→ 关键点列表（3-5个）                │
+│                          ├──→ 价值评价（适用场景）               │
+│                          └──→ 标签提取（自动建议）               │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</code></pre>
+<h3>1.3 AI加工详细流程</h3>
+<pre><code>【第一步：剪藏】
+
+Web Clipper → 选择目标仓库 → 点击保存
+→ 自动转换为Markdown格式
+
+【第二步：AI深度加工】
+
+调用DeepSeek API → 输入剪藏内容
+→ 系统自动生成：
+
+1. 一句话总结
+   格式：基于[主题]，提出[核心观点]
+
+2. 关键点列表
+   格式：3-5个Bullet Points
+   内容：每个点不超过20字
+
+3. 价值评价
+   格式：[rating:: 1-5]
+   说明：适用场景、局限性
+
+4. 标签建议
+   格式：#标签1 #标签2
+   规则：最多5个标签
+
+【第三步：初始标记】
+
+为所有新笔记添加：#未归档
+→ 便于后续集中整理</code></pre>
+<h3>1.4 移动端同步配置</h3>
+<pre><code>【Firefox同步方案】
+
+1. 安装Firefox账户
+2. 同步Web Clipper配置
+3. 在手机端使用相同配置
+
+【LiveSync多设备同步】
+
+1. 安装LiveSync插件
+2. 配置Obsidian官方同步服务或自建
+3. 实时同步笔记变更
+
+优势：
+- 手机端剪藏 → 电脑端编辑
+- 多设备协同
+- 冲突自动处理</code></pre>
+<hr>
+<h2>📋 第二阶段：知识整理</h2>
+<h3>2.1 内容拆解策略</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    内容原子化流程                                 │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  【输入】长篇文章（&gt;3000字）                                    │
+│                                                                 │
+│       ↓                                                          │
+│                                                                 │
+│  【Step 1：通读分节】                                           │
+│       ↓ 自拟小标题，划分逻辑段落                                 │
+│                                                                 │
+│  【Step 2：使用Note Refactor插件拆分】                          │
+│       ↓ 按标题快速拆分成多个独立笔记                             │
+│                                                                 │
+│  【Step 3：追求原子化】                                         │
+│       ↓ 一条笔记只记一个知识点或观点                             │
+│                                                                 │
+│  【输出】原子化笔记碎片                                          │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</code></pre>
+<h3>2.2 原子化原则</h3>
+<pre><code>【原子笔记定义】
+
+一个原子笔记 = 一个核心概念 + 一个主题 + 一个事件
+
+【原子化判断标准】
+
+✅ 一个核心观点 → 独立成篇
+❌ 多个观点混杂 → 需要拆分
+✅ 可以用一句话总结 → 原子化完成
+❌ 需要多句话才能说清 → 继续拆分
+
+【原子化收益】
+
+- 被多次灵活链接
+- 复用性提高
+- 链接更精准
+- 知识网络更清晰</code></pre>
+<h3>2.3 内容管理三工具</h3>
+<h4>工具一：段落级标签</h4>
+<pre><code>【定义】
+在段落或句子后添加的标签
+
+【语法】
+这是重要段落。#金句
+
+这是待处理内容。#待处理
+
+这是心理学内容。#topic/心理学
+
+【用途】
+- 快速定位关键片段
+- 构建"二次输出素材库"
+- 不依赖插件的基础方法
+
+【示例】
+
+"知识不是囤积，而是流动。" #金句 #知识管理
+
+"创新源于连接。" #金句 #创新思维</code></pre>
+<h4>工具二：内联字段（Dataview）</h4>
+<pre><code>【定义】
+给内容片段附加结构化属性
+
+【语法】
+[字段:: 值]
+
+【示例】
+
+【读书笔记模板】
+
+书名:: 《认知觉醒》
+评分:: 5
+作者:: 周岭
+核心观点:: 成长是克服天性的过程
+
+【日志模板】
+
+日期:: 2026-04-03
+心情:: 平静
+最满意的事:: 完成了Obsidian学习
+最不满意的事:: 时间管理
+
+【用途】
+- 同一笔记内重复记录同类信息
+- 便于Dataview汇总成表格
+- 从文本变为可查询数据</code></pre>
+<h4>工具三：任务列表</h4>
+<pre><code>【基础语法】
+- [ ] 待办事项
+- [x] 已完成事项
+
+【Tasks插件增强】
+
+- 待办事项 ← 添加日期/优先级/标签
+  @2026-04-05
+  🔺high
+  #工作
+
+【查询语法】
+tasks not done due before next week
+→ 从全库自动汇总和过滤任务
+
+【与笔记绑定】
+
+[[项目A]]
+- [ ] 完成需求分析 @2026-04-05
+- [ ] 编写技术文档 @2026-04-10
+
+优势：学习（笔记）+ 执行（任务）闭环</code></pre>
+<h3>2.4 领域知识树构建</h3>
+<pre><code>【标签层级规范】
+
+#主领域/子领域/具体话题
+
+示例：
+#心理学/认知心理学/注意力
+#AI/自然语言处理/Transformer
+#管理/战略/竞争分析
+
+【综述笔记模板】
+
+位置：每个主要领域根目录下
+
+---
+title: "[领域名]综述"
+tags:
+  - 领域综述
+  - [领域名]
+date: 2026-04-03
+---
+
+# [领域名]综述
+
+## 领域范围
+[简要说明该领域研究什么]
+
+## 核心问题
+1. [问题1]
+2. [问题2]
+3. [问题3]
+
+## 重要笔记
+
+| 笔记名 | 核心观点 | 链接 |
+|--------|---------|------|
+| [笔记1] | [观点] | [[笔记1]] |
+| [笔记2] | [观点] | [[笔记2]] |
+
+## 我的理解
+[用2-3句话总结对该领域的理解]</code></pre>
+<hr>
+<h2>🔗 第三阶段：知识连接</h2>
+<h3>3.1 主动双链策略</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    主动双链策略                                  │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  【触发时机】                                                    │
+│                                                                 │
+│  阅读时 → 遇到关键词/概念 → 添加[[]]链接                        │
+│  撰写时 → 提出新观点 → 主动链接相关笔记                          │
+│                                                                 │
+│  【执行规则】                                                    │
+│                                                                 │
+│  遇到关键词 ──→ [[笔记存在]] ──→ 直接链接                       │
+│                    │                                             │
+│                    ↓（不存在）                                   │
+│               新建笔记 ──→ 哪怕只有一个标题                      │
+│                    │                                             │
+│                    ↓                                             │
+│               这本身就是知识的生长点！                            │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</code></pre>
+<h3>3.2 对比与交叉阅读</h3>
+<pre><code>【什么是交叉阅读】
+
+同时打开2-4篇相关笔记进行对照阅读
+- 观点互补的笔记
+- 观点相反的笔记
+- 看似无关但可能关联的笔记
+
+【为什么有效】
+
+并置阅读 ──→ 强制大脑寻找 ──→ 触发
+                  ↓
+            模式 + 差异 + 联系
+                  ↓
+            新想法 + 新问题
+                  ↓
+            写作和创造的直接源泉
+
+【操作步骤】
+
+1. 找到相关笔记（本地图谱/反向链接）
+2. 同时打开2-4篇
+3. 并排显示
+4. 记录差异和联系
+5. 生成新想法</code></pre>
+<h3>3.3 图谱查漏补缺</h3>
+<pre><code>【每周图谱复盘】
+
+1. 打开全局图谱
+2. 寻找孤立节点
+3. 分析原因：
+   - 为什么孤立？
+   - 应该与哪个概念连接？
+   - 需要创建什么主题关联？
+
+4. 执行行动：
+   - [[孤立笔记]] ──→ [[某个概念]]
+   - 或创建新的综述笔记
+   - 或合并到已有主题
+
+【目标】
+修复和强化知识网络的结构完整性</code></pre>
+<hr>
+<h2>📤 第四阶段：知识输出</h2>
+<h3>4.1 输出类型矩阵</h3>
+<table>
+<thead><tr>
+<th>输出类型</th>
+<th>具体方法</th>
+<th>Obsidian工具</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>写作创作</strong></td>
+<td>文章/报告/书籍</td>
+<td>新笔记 + ![[]]引用</td>
+</tr>
+<tr>
+<td><strong>项目管理</strong></td>
+<td>任务跟踪/进度管理</td>
+<td>Tasks插件</td>
+</tr>
+<tr>
+<td><strong>仪表盘</strong></td>
+<td>信息聚合/行动面板</td>
+<td>Dataview插件</td>
+</tr>
+<tr>
+<td><strong>发布分享</strong></td>
+<td>博客/数字花园</td>
+<td>Publish服务</td>
+</tr>
+</tbody></table>
+<h3>4.2 写作创作工作流</h3>
+<pre><code>【基于交叉阅读的写作流程】
+
+1. 从对比阅读中获得灵感
+2. 创建新笔记作为文章框架
+3. 用![[]]嵌入相关段落实例
+4. 写作过程催生新的链接需求
+5. 不断完善知识网络
+
+【模板】
+
+---
+title: "[文章标题]"
+tags:
+  - 创作
+  - [主题标签]
+status: 进行中
+---
+
+# [文章标题]
+
+## 核心论点
+[1-2句话]
+
+## 论据1
+[[相关笔记1]]的相关观点...
+
+## 论据2
+[[相关笔记2]]的相关观点...
+
+## 反思
+[交叉阅读产生的新想法]</code></pre>
+<h3>4.3 仪表盘构建（Dataview）</h3>
+<pre><code>【今日仪表盘笔记】
+</code></pre>
+<p>TABLE file.ctime as 创建时间
+FROM ""
+WHERE file.ctime &gt;= 2026-04-03
+SORT file.ctime DESC
+LIMIT 10</p>
+<pre><code>
+【金句随机展示】
+</code></pre>
+<p>LIST "#金句"
+FROM ""
+WHERE contains(tags, "金句")
+LIMIT 5</p>
+<pre><code>
+【待办任务汇总】
+</code></pre>
+<p>TASK
+FROM ""
+WHERE !completed
+GROUP BY file.link</p>
+<pre><code>
+优势：
+- 知识库主动提供信息
+- 从被动检索到主动展示
+- 成为真正的"行动面板"</code></pre>
+<h3>4.4 发布与分享</h3>
+<pre><code>【Obsidian Publish】
+
+1. 订阅Obsidian Publish服务
+2. 选择要发布的笔记
+3. 自定义发布页面
+4. 获取分享链接
+
+【静态网站导出】
+
+1. Export to HTML插件
+2. Hugo/Jekyll静态站点生成
+3. 部署到GitHub Pages/Netlify
+
+【其他平台】
+
+Markdown笔记 → 导入其他平台
+- 语雀
+- Notion
+- 微信公众号（需转换）</code></pre>
+<hr>
+<h2>🔄 第五阶段：反馈循环</h2>
+<h3>5.1 知行合一 × Obsidian</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    Obsidian中的知行合一                          │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  【表示空间】                                                    │
+│                                                                 │
+│  知识获取 + 知识整理 = 观察完整经验                              │
+│  记录"发生了什么"                                               │
+│                                                                 │
+│  【压缩阶段】                                                    │
+│                                                                 │
+│  知识连接 = 提炼核心洞察                                         │
+│  一句话 + 象征符号                                               │
+│                                                                 │
+│  【泛化阶段】                                                    │
+│                                                                 │
+│  知识输出 = 扩展应用场景                                         │
+│  场景1 + 场景2 + 场景3                                          │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</code></pre>
+<h3>5.2 持续进化闭环</h3>
+<pre><code>【每日闭环】
+
+1. 新笔记 → 添加#未归档
+2. 每日整理 → #未归档笔记处理
+3. 每周图谱复盘 → 孤立笔记处理
+4. 定期输出 → 文章/报告
+
+【每月闭环】
+
+1. 领域综述更新
+2. 标签系统优化
+3. 知识图谱复盘
+4. 输出成果统计
+
+【年度闭环】
+
+1. 知识库健康度评估
+2. 重大主题梳理
+3. 成体系输出（书籍/课程）
+4. 下一年度规划</code></pre>
+<hr>
+<h2>📊 第六部分：SOP速查表</h2>
+<h3>6.1 知识获取SOP</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    知识获取SOP                                   │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  Step 1：发现好内容                                             │
+│     → 浏览器阅读 → 标记/高亮                                    │
+│                                                                 │
+│  Step 2：一键剪藏                                               │
+│     → Web Clipper → 保存到Obsidian                             │
+│                                                                 │
+│  Step 3：AI加工                                                 │
+│     → DeepSeek API → 摘要/标签/评价                            │
+│                                                                 │
+│  Step 4：初始标记                                               │
+│     → 添加 #未归档 标签                                         │
+│                                                                 │
+│  预计时间：5分钟/篇                                             │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</code></pre>
+<h3>6.2 知识整理SOP</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    知识整理SOP                                   │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  Step 1：处理#未归档笔记                                        │
+│     → 打开笔记 → 通读内容                                      │
+│                                                                 │
+│  Step 2：内容拆分（如需）                                       │
+│     → Note Refactor → 按标题拆分                               │
+│                                                                 │
+│  Step 3：原子化验证                                             │
+│     → 是否一个笔记一个概念？                                    │
+│     → 否 → 继续拆分                                             │
+│                                                                 │
+│  Step 4：添加元数据                                             │
+│     → 段落级标签 / 内联字段                                     │
+│     → 移除 #未归档                                              │
+│                                                                 │
+│  预计时间：10分钟/篇（长文）                                    │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</code></pre>
+<h3>6.3 知识连接SOP</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    知识连接SOP                                   │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  Step 1：阅读时链接                                             │
+│     → 遇到关键词 → 添加[[]]                                     │
+│                                                                 │
+│  Step 2：不存在则创建                                           │
+│     → 哪怕只有标题                                              │
+│                                                                 │
+│  Step 3：对比阅读                                               │
+│     → 每周一次 → 2-4篇相关笔记并排                             │
+│                                                                 │
+│  Step 4：记录洞察                                               │
+│     → 新想法 → 新笔记或补充到现有                               │
+│                                                                 │
+│  预计时间：贯穿日常，持续进行                                    │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>🔗 关联文档</h2>
+<h3>核心关联</h3>
+<ul>
+<li><a href="Obsidian构建第二大脑完整指南.html">Obsidian构建第二大脑完整指南</a></li>
+<li><a href="Obsidian核心理念·从静态仓库到动态价值系统.html">Obsidian核心理念·从静态仓库到动态价值系统</a></li>
+<li><a href="Obsidian核心功能深度解析·双向链接与知识图谱.html">Obsidian核心功能深度解析·双向链接与知识图谱</a></li>
+</ul>
+<h3>龙心OS关联</h3>
+<ul>
+<li><a href="龙心OS知识神经网络架构.html">龙心OS知识神经网络架构</a></li>
+<li><a href="08-OS_AI-OS<strong>OS_wiki</strong>md-1b533aeb.html">知行合一三阶段</a></li>
+<li><a href="知识学习Skills.html">知识学习Skills</a></li>
+</ul>
+<hr>
+<h2>📊 知识图谱节点</h2>
+<pre><code>节点名称: Obsidian实践工作流
+五行属性: 水
+所属层级: C层（操作/SOP）
+核心洞察: 知识获取→整理→连接→输出→反馈的闭环系统
+象征符号: 闭环 = 知识的生命周期管理
+来源: Obsidian指南深度学习
+应用场景:
+  - PKM日常工作流
+  - 知识管理SOP制定
+  - 个人效率系统
+关联节点:
+  ← [[Obsidian构建第二大脑完整指南]]
+  → [[龙心OS知识神经网络架构]]
+  → [[知行合一三阶段]]</code></pre>
+<hr>
+<p><strong>文档版本</strong>: 1.0
+<strong>最后更新</strong>: 2026-04-03
+<strong>维护者</strong>: 龙龟神将</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

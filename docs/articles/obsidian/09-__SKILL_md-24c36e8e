@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Error Handling Skill（错误处理） - 以观其妙书院</title>
+<meta name="description" content="Error Handling Skill（错误处理） - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="Error Handling Skill（错误处理）">
+<meta property="og:description" content="Error Handling Skill（错误处理） - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Error Handling Skill（错误处理）",
+    "description": "Error Handling Skill（错误处理） - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Error Handling Skill（错误处理）</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Error Handling Skill（错误处理）</h1>
+<h2>📖 技能定义</h2>
+<p>Error Handling是AI龙龟共生伙伴操作系统的<strong>错误处理机制</strong>，建立自我改进闭环，标准化错误处理流程，每次修正都触发自我迭代。</p>
+<p><strong>核心定位</strong>：</p>
+<ul>
+<li><strong>自我改进</strong>：每次错误都是学习机会</li>
+<li><strong>标准化流程</strong>：统一的错误处理流程</li>
+<li><strong>持续迭代</strong>：每次修正都触发自我迭代</li>
+</ul>
+<p><strong>核心原则</strong>：</p>
+<blockquote><p>自我改进闭环：修复→记录→写规则→复盘。</p></blockquote>
+<hr>
+<h2>🔄 错误处理流程</h2>
+<h3>1. 自我改进闭环</h3>
+<pre><code>错误发生
+    ↓
+立即修复
+    ↓
+记录错误
+    ↓
+编写防错规则
+    ↓
+会话复盘
+    ↓
+避免重复</code></pre>
+<h3>2. 详细流程说明</h3>
+<p><strong>步骤1：立即修复</strong></p>
+<p><strong>修复原则</strong>：</p>
+<ul>
+<li>不询问、不等待、不汇报、不拖延</li>
+<li>立即修复当前问题</li>
+<li>确保系统正常运行</li>
+</ul>
+<p><strong>修复策略</strong>：</p>
+<pre><code>repair_strategies:
+  immediate_fix:
+    - 恢复系统正常运行
+    - 回滚到上一个稳定版本（如果需要）
+    - 临时解决问题（如果无法彻底修复）
+
+  root_cause_fix:
+    - 分析根本原因
+    - 彻底解决问题
+    - 防止问题复发</code></pre>
+<p><strong>步骤2：记录错误</strong></p>
+<p><strong>记录内容</strong>：</p>
+<pre><code>error_record:
+  id: ERROR-20260323-001
+  timestamp: "2026-03-23 14:23:45"
+  error_type: [配置错误/权限错误/依赖错误/逻辑错误/性能错误/安全错误/数据错误/网络错误]
+  severity: [P0/P1/P2/P3]
+
+  error_message: "详细错误信息"
+  stack_trace: "错误堆栈信息"
+
+  trigger_mode: "触发模式"
+  root_cause: "根本原因分析"
+  impact: "影响范围"
+
+  fix: "修复方案"
+  result: "修复结果"
+
+  prevention_rule: "防错规则"</code></pre>
+<p><strong>步骤3：编写防错规则</strong></p>
+<p><strong>规则格式</strong>：</p>
+<pre><code>prevention_rule:
+  id: RULE-001
+  error_id: ERROR-20260323-001
+  rule_name: "规则名称"
+  rule_type: [P0核心安全/P1重要/P2一般/P3建议性]
+
+  rule_content: "规则内容"
+  trigger_condition: "触发条件"
+  action: "执行动作"
+
+  created_date: "2026-03-23"
+  created_by: "龙龟神将"
+  status: [active/inactive]</code></pre>
+<p><strong>步骤4：会话复盘</strong></p>
+<p><strong>复盘时机</strong>：</p>
+<ul>
+<li>每次会话开始前</li>
+<li>每次错误发生后</li>
+<li>每周五定期复盘</li>
+</ul>
+<p><strong>复盘内容</strong>：</p>
+<pre><code>review:
+  session_id: SESSION-20260323-001
+  timestamp: "2026-03-23 14:30:00"
+
+  errors_reviewed:
+    - ERROR-20260323-001
+    - ERROR-20260323-002
+
+  rules_active:
+    - RULE-001
+    - RULE-002
+
+  lessons_learned: "学到的教训"
+  improvements: "改进措施"</code></pre>
+<p><strong>步骤5：避免重复</strong></p>
+<p><strong>验证机制</strong>：</p>
+<pre><code>verification:
+  check_same_error: true  # 检查是否相同错误
+  check_similar_error: true  # 检查是否相似错误
+  check_prevention_rules: true  # 检查防错规则
+
+  action_if_repeat:
+    - 触发P0预警
+    - 立即停止当前任务
+    - 记录重复错误
+    - 分析规则失效原因
+    - 更新防错规则</code></pre>
+<hr>
+<h2>📋 错误分类体系</h2>
+<h3>1. 按类型分类</h3>
+<table>
+<thead><tr>
+<th>错误类型</th>
+<th>定义</th>
+<th>示例</th>
+<th>严重程度</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>配置错误</strong></td>
+<td>配置文件错误、参数错误</td>
+<td>API密钥错误、端口配置错误</td>
+<td>P0-P1</td>
+</tr>
+<tr>
+<td><strong>权限错误</strong></td>
+<td>权限不足、访问拒绝</td>
+<td>文件访问权限、API访问权限</td>
+<td>P0-P1</td>
+</tr>
+<tr>
+<td><strong>依赖错误</strong></td>
+<td>依赖缺失、版本冲突</td>
+<td>Python包缺失、Node.js版本冲突</td>
+<td>P1-P2</td>
+</tr>
+<tr>
+<td><strong>逻辑错误</strong></td>
+<td>代码逻辑错误、算法错误</td>
+<td>条件判断错误、循环错误</td>
+<td>P1-P2</td>
+</tr>
+<tr>
+<td><strong>性能错误</strong></td>
+<td>性能问题、资源占用过高</td>
+<td>内存泄漏、CPU占用过高</td>
+<td>P2-P3</td>
+</tr>
+<tr>
+<td><strong>安全错误</strong></td>
+<td>安全漏洞、数据泄露</td>
+<td>SQL注入、XSS攻击</td>
+<td>P0</td>
+</tr>
+<tr>
+<td><strong>数据错误</strong></td>
+<td>数据格式错误、数据丢失</td>
+<td>数据类型错误、数据损坏</td>
+<td>P0-P1</td>
+</tr>
+<tr>
+<td><strong>网络错误</strong></td>
+<td>网络连接问题、超时</td>
+<td>DNS解析失败、连接超时</td>
+<td>P1-P2</td>
+</tr>
+</tbody></table>
+<h3>2. 按严重程度分类</h3>
+<table>
+<thead><tr>
+<th>严重程度</th>
+<th>定义</th>
+<th>处理时效</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>P0</strong></td>
+<td>系统崩溃、安全漏洞、数据丢失</td>
+<td>立即处理</td>
+<td>数据库连接失败、SQL注入</td>
+</tr>
+<tr>
+<td><strong>P1</strong></td>
+<td>严重功能异常、重要数据错误</td>
+<td>1小时内处理</td>
+<td>API调用失败、文件读写错误</td>
+</tr>
+<tr>
+<td><strong>P2</strong></td>
+<td>一般功能异常、性能问题</td>
+<td>4小时内处理</td>
+<td>页面加载慢、接口响应慢</td>
+</tr>
+<tr>
+<td><strong>P3</strong></td>
+<td>次要功能异常、潜在问题</td>
+<td>24小时内处理</td>
+<td>日志格式不规范、警告信息</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🔧 防错规则体系</h2>
+<h3>1. 规则分类</h3>
+<p><strong>P0核心安全规则</strong>（4条）：</p>
+<pre><code>P0_rules:
+  - RULE-001: 绝不靠猜测修改配置
+  - RULE-002: 发现错误立即修复
+  - RULE-003: 绝不破坏Git历史
+  - RULE-004: API密钥集中管理</code></pre>
+<p><strong>P1重要规则</strong>（4条）：</p>
+<pre><code>P1_rules:
+  - RULE-005: 修改配置前必须备份
+  - RULE-006: 发布前必须测试
+  - RULE-007: 权限最小化原则
+  - RULE-008: 数据定期备份</code></pre>
+<p><strong>P2一般规则</strong>（4条）：</p>
+<pre><code>P2_rules:
+  - RULE-009: 代码必须格式化
+  - RULE-010: 日志必须完整
+  - RULE-011: 文档必须更新
+  - RULE-012: 性能必须优化</code></pre>
+<p><strong>P3建议性规则</strong>（3条）：</p>
+<pre><code>P3_rules:
+  - RULE-013: 代码注释要清晰
+  - RULE-014: 变量命名要规范
+  - RULE-015: 模块化设计要合理</code></pre>
+<h3>2. 规则触发机制</h3>
+<p><strong>自动触发</strong>：</p>
+<pre><code>auto_trigger:
+  - 修改配置前：检查P0规则
+  - 发布代码前：检查P0/P1规则
+  - 执行敏感操作前：检查P0规则
+  - 修改API前：检查P0/P1规则</code></pre>
+<p><strong>手动触发</strong>：</p>
+<pre><code>manual_trigger:
+  - 定期检查所有规则
+  - 特定操作前手动检查
+  - 复盘时检查规则</code></pre>
+<hr>
+<h2>📊 错误统计</h2>
+<h3>1. 错误统计</h3>
+<p><strong>每日统计</strong>：</p>
+<pre><code>error_stats:
+  date: 2026-03-23
+  total_errors: 10
+  by_type:
+    config_error: 2
+    permission_error: 1
+    dependency_error: 2
+    logic_error: 3
+    performance_error: 1
+    security_error: 0
+    data_error: 1
+    network_error: 0
+
+  by_severity:
+    P0: 1
+    P1: 3
+    P2: 4
+    P3: 2
+
+  by_status:
+    fixed: 10
+    pending: 0</code></pre>
+<h3>2. 错误趋势分析</h3>
+<p><strong>趋势分析</strong>：</p>
+<pre><code>trend_analysis:
+  period: "2026-03-01 ~ 2026-03-23"
+  total_errors: 100
+  avg_per_day: 4.35
+  trend: "decreasing"  # increasing/decreasing/stable
+
+  by_type_trend:
+    config_error: "decreasing"
+    logic_error: "stable"
+    performance_error: "increasing"
+
+  by_severity_trend:
+    P0: "decreasing"
+    P1: "stable"
+    P2: "increasing"
+    P3: "stable"</code></pre>
+<hr>
+<h2>🔔 预警机制</h2>
+<h3>1. 错误预警</h3>
+<p><strong>预警级别</strong>：</p>
+<pre><code>alert_levels:
+  P0:
+    channel: [immediate_notification, email, mobile]
+    frequency: immediate
+    content: [error_message, impact, suggested_action]
+
+  P1:
+    channel: [immediate_notification]
+    frequency: within_1_hour
+    content: [error_message, suggested_action]
+
+  P2:
+    channel: [log_file]
+    frequency: within_4_hours
+    content: [error_message]
+
+  P3:
+    channel: [log_file]
+    frequency: within_24_hours
+    content: [error_message]</code></pre>
+<h3>2. 重复错误预警</h3>
+<p><strong>重复错误检测</strong>：</p>
+<pre><code>repeat_detection:
+  threshold: 2  # 相同错误发生2次触发预警
+  time_window: 1h  # 1小时内
+
+  action_if_repeat:
+    - 触发P0预警
+    - 立即停止当前任务
+    - 记录重复错误
+    - 分析规则失效原因
+    - 更新防错规则</code></pre>
+<hr>
+<h2>🔄 与其他Skills的协同</h2>
+<h3>1. 与学习档案Skill协同</h3>
+<ul>
+<li><strong>错误处理</strong>：记录错误和防错规则</li>
+<li><strong>学习档案</strong>：存储学习档案</li>
+<li><strong>协同</strong>：错误处理记录→学习档案存储→会话复盘</li>
+</ul>
+<h3>2. 与安全规则Skill协同</h3>
+<ul>
+<li><strong>错误处理</strong>：识别安全错误</li>
+<li><strong>安全规则</strong>：定义安全防护规则</li>
+<li><strong>协同</strong>：错误处理发现安全错误→安全规则触发防护</li>
+</ul>
+<h3>3. 与心跳巡检Skill协同</h3>
+<ul>
+<li><strong>心跳巡检</strong>：监控错误率</li>
+<li><strong>错误处理</strong>：处理错误</li>
+<li><strong>协同</strong>：心跳巡检发现错误→错误处理修复</li>
+</ul>
+<hr>
+<h2>🚫 使用禁忌</h2>
+<h3>1. 不要做的</h3>
+<ul>
+<li>❌ 不立即修复错误</li>
+<li>❌ 不记录错误</li>
+<li>❌ 不编写防错规则</li>
+<li>❌ 不复盘错误</li>
+<li>❌ 重复犯错</li>
+</ul>
+<h3>2. 必须做的</h3>
+<ul>
+<li>✅ 立即修复错误</li>
+<li>✅ 记录错误详情</li>
+<li>✅ 编写防错规则</li>
+<li>✅ 定期复盘错误</li>
+<li>✅ 避免重复犯错</li>
+</ul>
+<hr>
+<h2>💡 最佳实践</h2>
+<h3>1. 错误修复</h3>
+<p><strong>快速响应</strong>：</p>
+<ul>
+<li>立即停止当前任务</li>
+<li>快速诊断问题</li>
+<li>立即修复错误</li>
+</ul>
+<p><strong>彻底修复</strong>：</p>
+<ul>
+<li>分析根本原因</li>
+<li>彻底解决问题</li>
+<li>防止问题复发</li>
+</ul>
+<h3>2. 错误记录</h3>
+<p><strong>完整记录</strong>：</p>
+<ul>
+<li>记录错误详情</li>
+<li>记录修复方案</li>
+<li>记录防错规则</li>
+</ul>
+<p><strong>结构化记录</strong>：</p>
+<ul>
+<li>使用标准格式</li>
+<li>分类清晰</li>
+<li>便于检索</li>
+</ul>
+<h3>3. 防错规则</h3>
+<p><strong>规则编写</strong>：</p>
+<ul>
+<li>规则要具体</li>
+<li>触发条件明确</li>
+<li>执行动作清晰</li>
+</ul>
+<p><strong>规则验证</strong>：</p>
+<ul>
+<li>测试规则有效性</li>
+<li>定期更新规则</li>
+<li>删除无效规则</li>
+</ul>
+<hr>
+<h2>🎯 核心原则总结</h2>
+<h3>三大铁律</h3>
+<ol>
+<li><strong>自我改进闭环</strong><ul>
+<li>修复→记录→写规则→复盘</li>
+<li>每次错误都是学习机会</li>
+<li>持续迭代优化</li>
+</ul></li>
+<li><strong>标准化流程</strong><ul>
+<li>统一的错误处理流程</li>
+<li>完整的错误记录</li>
+<li>明确的防错规则</li>
+</ul></li>
+<li><strong>核心铁律验证</strong><ul>
+<li>同一错误犯两次，绝对不可原谅</li>
+<li>每次会话复盘所有规则</li>
+<li>避免重复犯错</li>
+</ul></li>
+</ol>
+<h3>核心价值</h3>
+<ul>
+<li><strong>自我改进</strong>：每次错误都是学习机会</li>
+<li><strong>持续迭代</strong>：每次修正都触发自我迭代</li>
+<li><strong>避免重复</strong>：防错规则避免重复犯错</li>
+<li><strong>知识沉淀</strong>：错误记录和防错规则是知识资产</li>
+</ul>
+<hr>
+<h2>🔧 实施路线</h2>
+<h3>第一阶段：基础流程（立即）</h3>
+<ul>
+<li>✅ 定义错误处理流程</li>
+<li>✅ 定义错误分类体系</li>
+<li>✅ 定义防错规则体系</li>
+</ul>
+<h3>第二阶段：功能实现（本周）</h3>
+<ul>
+<li>⏳ 实现错误记录功能</li>
+<li>⏳ 实现防错规则功能</li>
+<li>⏳ 实现会话复盘功能</li>
+</ul>
+<h3>第三阶段：优化完善（本月）</h3>
+<ul>
+<li>⏳ 实现错误统计分析</li>
+<li>⏳ 实现重复错误检测</li>
+<li>⏳ 优化自我迭代机制</li>
+</ul>
+<hr>
+<p><strong>版本</strong>: v1.0
+<strong>创建日期</strong>: 2026-03-23
+<strong>对标来源</strong>: OpenClaw Error Handling规则
+<strong>AI龙龟共生伙伴操作系统版本</strong>: v4.1
+<strong>路径</strong>: <code>C:\Users\jia'yue\.workbuddy\skills\错误处理\SKILL.md</code></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>
