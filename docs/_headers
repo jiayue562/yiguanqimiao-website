@@ -1,5 +1,5 @@
 # Cloudflare Pages Headers
-# 生成时间: 2026-08-27 09:11
+# 生成时间: 2026-08-28 10:28
 # Clean URL文件（无扩展名）→ Content-Type: text/html
 # 规则：精确目录路径，避免路由异常
 
@@ -78,6 +78,9 @@
 /articles/wuxing-geo-anchor/anchor-site/articles/*
   Content-Type: text/html
 
+/articles/书院历程/*
+  Content-Type: text/html
+
 /articles/公众号文章-五行人格系列/*
   Content-Type: text/html
 
@@ -91,6 +94,9 @@
   Content-Type: text/html
 
 /articles/岗位智能体系列公众号文章/*
+  Content-Type: text/html
+
+/articles/生生系列/*
   Content-Type: text/html
 
 /articles/龙脑OS系列公众号文章/*
