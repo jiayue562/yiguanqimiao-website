@@ -269,15 +269,15 @@ def main():
         print(" WARN 分类: " + "  ".join(f"{k}={v}" for k, v in sorted(wc.items())))
     print("=" * 64)
     if errors:
-        print("❌ 存在 ERROR —— 禁止上传/部署！请先修复上述 ERROR 项。")
+        print("[ERROR] 存在 ERROR —— 禁止上传/部署！请先修复上述 ERROR 项。")
         print("   提示: 无扩展名冗余可用 --fix-dup 自动清理；")
         print("        坏链需同步修正 index.html/sitemap.xml/llms.txt 与文件名。")
         sys.exit(1)
     elif warns:
-        print("⚠️  全部通过(仅有 WARN 级提示，可部署但建议复核)")
+        print("[WARN] 全部通过(仅有 WARN 级提示，可部署但建议复核)")
         sys.exit(0)
     else:
-        print("✅ 全部通过 —— 网页均可打开且有内容，可安全部署。")
+        print("[OK] 全部通过 —— 网页均可打开且有内容，可安全部署。")
         sys.exit(0)
 
 if __name__ == "__main__":
