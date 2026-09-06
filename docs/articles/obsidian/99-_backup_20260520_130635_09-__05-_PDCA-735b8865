@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>PDCA循环 - 持续改进管理框架 - 以观其妙书院</title>
+<meta name="description" content="PDCA循环 - 持续改进管理框架 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="PDCA循环 - 持续改进管理框架">
+<meta property="og:description" content="PDCA循环 - 持续改进管理框架 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "PDCA循环 - 持续改进管理框架",
+    "description": "PDCA循环 - 持续改进管理框架 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>PDCA循环 - 持续改进管理框架</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>PDCA循环 · 持续改进管理框架</h1>
+<h2>🎯 一、核心定义</h2>
+<p><strong>PDCA循环</strong>由质量管理之父戴明博士提出，又称"戴明环"，是持续改进的核心方法论，由四个阶段不断循环：Plan（计划）、Do（执行）、Check（检查）、Act（处理）。</p>
+<h3>1.1 PDCA四阶段</h3>
+<table>
+<thead><tr>
+<th>阶段</th>
+<th>英文</th>
+<th>中文</th>
+<th>核心问题</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>P</strong></td>
+<td>Plan</td>
+<td>计划</td>
+<td>要做什么？如何做？</td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td>Do</td>
+<td>执行</td>
+<td>按照计划执行</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>Check</td>
+<td>检查</td>
+<td>执行得如何？</td>
+</tr>
+<tr>
+<td><strong>A</strong></td>
+<td>Act</td>
+<td>处理</td>
+<td>总结改进</td>
+</tr>
+</tbody></table>
+<h3>1.2 PDCA循环图</h3>
+<pre><code>         Plan（计划）
+            ↑
+            │
+    ┌───────┴───────┐
+    │               │
+ Act│               │Check
+    │               │
+    └───────┬───────┘
+            ↓
+         Do（执行）</code></pre>
+<h3>1.3 PDCA的核心理念</h3>
+<pre><code>PDCA核心价值：
+┌─────────────────────────────────────┐
+│  持续改进  →  每次循环都是进步       │
+│  闭环管理  →  有计划、有执行、有检查 │
+│  数据驱动  →  基于数据的决策         │
+│  全员参与  →  每个人都是改进者       │
+└─────────────────────────────────────┘</code></pre>
+<hr>
+<h2>📊 二、Plan（计划）阶段</h2>
+<h3>2.1 Plan阶段任务</h3>
+<table>
+<thead><tr>
+<th>任务</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>分析现状</td>
+<td>当前状态是什么？</td>
+</tr>
+<tr>
+<td>识别问题</td>
+<td>核心问题是什么？</td>
+</tr>
+<tr>
+<td>分析原因</td>
+<td>为什么会出现问题？</td>
+</tr>
+<tr>
+<td>制定目标</td>
+<td>要达成什么？</td>
+</tr>
+<tr>
+<td>制定措施</td>
+<td>如何达成？</td>
+</tr>
+</tbody></table>
+<h3>2.2 Plan阶段工具</h3>
+<table>
+<thead><tr>
+<th>工具</th>
+<th>用途</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>5W1H</strong></td>
+<td>全面分析问题</td>
+</tr>
+<tr>
+<td><strong>5个为什么</strong></td>
+<td>追问根本原因</td>
+</tr>
+<tr>
+<td><strong>逻辑树</strong></td>
+<td>分解问题结构</td>
+</tr>
+<tr>
+<td><strong>目标SMART</strong></td>
+<td>设定有效目标</td>
+</tr>
+</tbody></table>
+<h3>2.3 Plan阶段产出</h3>
+<pre><code>Plan阶段产出清单：
+□ 问题描述
+□ 根本原因分析
+□ 改进目标
+□ 改进措施
+□ 责任人和时间表
+□ 资源需求
+□ 预期结果</code></pre>
+<hr>
+<h2>🎯 三、Do（执行）阶段</h2>
+<h3>3.1 Do阶段任务</h3>
+<table>
+<thead><tr>
+<th>任务</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>按计划执行</td>
+<td>按措施执行</td>
+</tr>
+<tr>
+<td>记录过程</td>
+<td>记录执行情况</td>
+</tr>
+<tr>
+<td>识别偏差</td>
+<td>发现与计划的差异</td>
+</tr>
+<tr>
+<td>及时调整</td>
+<td>必要时临时调整</td>
+</tr>
+</tbody></table>
+<h3>3.2 Do阶段要点</h3>
+<table>
+<thead><tr>
+<th>要点</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>标准化</strong></td>
+<td>执行前先标准化</td>
+</tr>
+<tr>
+<td><strong>培训</strong></td>
+<td>确保执行人理解</td>
+</tr>
+<tr>
+<td><strong>小规模试点</strong></td>
+<td>大面积推广前先试点</td>
+</tr>
+<tr>
+<td><strong>记录</strong></td>
+<td>记录执行过程数据</td>
+</tr>
+</tbody></table>
+<h3>3.3 Do阶段注意事项</h3>
+<pre><code>Do阶段常见问题：
+┌─────────────────────────────────────┐
+│  计划不充分就执行  →  先完善计划    │
+│  执行与计划脱节    →  严格按计划执行│
+│  缺乏过程记录      →  建立记录机制  │
+│  执行人员不理解    →  加强培训和沟通│
+└─────────────────────────────────────┘</code></pre>
+<hr>
+<h2>📋 四、Check（检查）阶段</h2>
+<h3>4.1 Check阶段任务</h3>
+<table>
+<thead><tr>
+<th>任务</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>收集数据</td>
+<td>收集执行结果数据</td>
+</tr>
+<tr>
+<td>对比目标</td>
+<td>实际vs计划</td>
+</tr>
+<tr>
+<td>分析差距</td>
+<td>找到差距和问题</td>
+</tr>
+<tr>
+<td>评估效果</td>
+<td>改进是否有效</td>
+</tr>
+</tbody></table>
+<h3>4.2 Check阶段工具</h3>
+<table>
+<thead><tr>
+<th>工具</th>
+<th>用途</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>KPI监控</strong></td>
+<td>追踪关键指标</td>
+</tr>
+<tr>
+<td><strong>对比分析</strong></td>
+<td>实际vs计划vs历史</td>
+</tr>
+<tr>
+<td><strong>趋势分析</strong></td>
+<td>指标变化趋势</td>
+</tr>
+<tr>
+<td><strong>因果分析</strong></td>
+<td>问题原因分析</td>
+</tr>
+</tbody></table>
+<h3>4.3 Check阶段评估</h3>
+<pre><code># Check评估表
+
+## 结果对比
+| 指标 | 目标值 | 实际值 | 差距 | 完成率 |
+|------|--------|--------|------|--------|
+| | | | | |
+
+## 问题识别
+- 问题1：
+- 问题2：
+
+## 原因分析
+- 原因1：
+- 原因2：
+
+## 效果评估
+- 有效：
+- 部分有效：
+- 无效：</code></pre>
+<hr>
+<h2>🔄 五、Act（处理）阶段</h2>
+<h3>5.1 Act阶段任务</h3>
+<table>
+<thead><tr>
+<th>任务</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>总结经验</td>
+<td>成功的经验是什么？</td>
+</tr>
+<tr>
+<td>处理问题</td>
+<td>未解决的问题如何处理？</td>
+</tr>
+<tr>
+<td>标准化</td>
+<td>成功的经验标准化</td>
+</tr>
+<tr>
+<td>持续改进</td>
+<td>下一个循环开始</td>
+</tr>
+</tbody></table>
+<h3>5.2 Act决策类型</h3>
+<table>
+<thead><tr>
+<th>决策类型</th>
+<th>条件</th>
+<th>行动</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>标准化</strong></td>
+<td>改进有效</td>
+<td>将成功经验标准化</td>
+</tr>
+<tr>
+<td><strong>复制推广</strong></td>
+<td>成功可复制</td>
+<td>推广到其他领域</td>
+</tr>
+<tr>
+<td><strong>进一步改进</strong></td>
+<td>改进不足</td>
+<td>进入下一个PDCA</td>
+</tr>
+<tr>
+<td><strong>放弃</strong></td>
+<td>方向错误</td>
+<td>调整方向重新开始</td>
+</tr>
+</tbody></table>
+<h3>5.3 Act阶段产出</h3>
+<pre><code>Act阶段产出：
+┌─────────────────────────────────────┐
+│  经验总结  →  成功的关键因素        │
+│  标准化    →  制定标准操作流程      │
+│  问题清单  →  未解决问题清单         │
+│  新计划    →  下一个循环的Plan       │
+└─────────────────────────────────────┘</code></pre>
+<hr>
+<h2>📊 六、PDCA应用场景</h2>
+<h3>6.1 日常工作应用</h3>
+<pre><code>日常工作PDCA：
+P：今天要完成哪些任务？优先级？
+D：按计划执行
+C：完成情况如何？
+A：总结经验，明天改进</code></pre>
+<h3>6.2 项目管理应用</h3>
+<pre><code>项目PDCA：
+P：制定项目计划
+D：按计划推进项目
+C：监控项目进度和风险
+A：处理问题，迭代改进</code></pre>
+<h3>6.3 质量管理应用</h3>
+<pre><code>质量管理PDCA：
+P：分析质量问题，制定改进方案
+D：实施改进措施
+C：检测质量指标
+A：标准化有效措施，继续改进
+
+日本"改善"（Kaizen）就是PDCA的日常实践</code></pre>
+<hr>
+<h2>🔄 七、PDCA进阶：PDCA-SDCA</h2>
+<h3>7.1 SDCA稳定化</h3>
+<pre><code>PDCA vs SDCA：
+- PDCA：改进（Change）
+- SDCA：稳定（Stabilize）
+
+改进节奏：
+┌─────────────────────────────────────┐
+│  SDCA（稳定）→ PDCA（改进）→ SDCA   │
+│       ↑           ↓                 │
+│       └────── ←───┘                 │
+│                                      │
+│  先稳定，再改进，改进后新稳定        │
+└─────────────────────────────────────┘</code></pre>
+<h3>7.2 持续改进模型</h3>
+<pre><code>持续改进循环：
+┌─────────────────────────────────────┐
+│        SDCA（维持标准）              │
+│             ↓                       │
+│        识别改进机会                  │
+│             ↓                       │
+│        PDCA（实施改进）              │
+│             ↓                       │
+│        标准化新方法                  │
+│             ↓                       │
+│        SDCA（维持新标准）            │
+└─────────────────────────────────────┘</code></pre>
+<hr>
+<h2>🔗 八、与龙心OS的整合</h2>
+<h3>8.1 与五色光思维的整合</h3>
+<table>
+<thead><tr>
+<th>五色光</th>
+<th>PDCA整合点</th>
+</tr></thead><tbody>
+<tr>
+<td>⬜ 白光</td>
+<td>Check数据、分析、量化</td>
+</tr>
+<tr>
+<td>🟥 红光</td>
+<td>Act团队共识、沟通</td>
+</tr>
+<tr>
+<td>🟨 黄光</td>
+<td>Plan目标设定、价值判断</td>
+</tr>
+<tr>
+<td>🟩 绿光</td>
+<td>Act创新改进、方法创新</td>
+</tr>
+<tr>
+<td>🟦 蓝光</td>
+<td>Check风险、预警</td>
+</tr>
+</tbody></table>
+<h3>8.2 与五行人格的整合</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>PDCA应用</th>
+</tr></thead><tbody>
+<tr>
+<td>木行人</td>
+<td>P（创新计划）、A（改进）</td>
+</tr>
+<tr>
+<td>火行人</td>
+<td>D（执行）、A（推动）</td>
+</tr>
+<tr>
+<td>土行人</td>
+<td>C（检查）、S（标准化）</td>
+</tr>
+<tr>
+<td>金行人</td>
+<td>C（量化检查）、S（标准化）</td>
+</tr>
+<tr>
+<td>水行人</td>
+<td>P（灵活调整）、C（分析）</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>💡 九、核心金句</h2>
+<ol>
+<li><strong>"PDCA不是一次循环，而是永不停歇的螺旋上升。"</strong></li>
+<li><strong>"没有检查的改进是盲目的，没有改进的检查是无意义的。"</strong></li>
+<li><strong>"PDCA的核心是'做'，不是'想'——行动胜于完美。"</strong></li>
+<li><strong>"成功的经验要标准化，失败的教训要记录，才能持续改进。"</strong></li>
+<li><strong>"PDCA + SDCA = 稳定且持续改进的组织能力。"</strong></li>
+</ol>
+<hr>
+<h2>📚 关联知识图谱</h2>
+<h3>向上关联</h3>
+<ul>
+<li><strong><a href="KPI树.html">05-组织与团队管理/KPI树</a></strong> - KPI是PDCA的检查工具</li>
+<li><strong><a href="7S分析.html">05-组织与团队管理/7S分析</a></strong> - 7S支持PDCA全面实施</li>
+</ul>
+<h3>向下关联</h3>
+<ul>
+<li><strong><a href="5W1H.html">05-组织与团队管理/5W1H</a></strong> - 5W1H是Plan的方法论</li>
+<li><strong><a href="逻辑树.html">03-问题解决/逻辑树</a></strong> - 逻辑树是Plan的分解工具</li>
+</ul>
+<h3>跨域关联</h3>
+<ul>
+<li><strong><a href="价值链分析.html">06-经营战略/价值链分析</a></strong> - 价值链各环节需要PDCA</li>
+<li><strong><a href="假设思考.html">03-问题解决/假设思考</a></strong> - PDCA是假设验证的框架</li>
+</ul>
+<hr>
+<p><strong>版本</strong>: v1.0
+<strong>创建</strong>: 2026-04-10
+<strong>维护者</strong>: 龙龟神将
+<strong>知识库路径</strong>: <code>C:\Users\jia'yue\.workbuddy\skills\麦肯锡思考工具\05-组织与团队管理\PDCA循环\</code></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CLI指令解析Skill v1.0 - 以观其妙书院</title>
+<meta name="description" content="CLI指令解析Skill v1.0 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="CLI指令解析Skill v1.0">
+<meta property="og:description" content="CLI指令解析Skill v1.0 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "CLI指令解析Skill v1.0",
+    "description": "CLI指令解析Skill v1.0 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>CLI指令解析Skill v1.0</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>CLI指令解析Skill v1.0</h1>
+<h2>🎯 技能定位</h2>
+<p>CLI指令解析是AI OS的<strong>原生操作入口</strong>，负责：</p>
+<ul>
+<li>解析CLI指令前缀参数</li>
+<li>提取思维模型/价值观/人格特质</li>
+<li>让AI的执行结果贴合个人特质</li>
+</ul>
+<blockquote><p><strong>核心定位</strong>：CLI是人向AI传递指令、AI操作全系统软硬件的标准化原生入口
+<strong>共生价值</strong>：CLI实现"人少操作、AI多干活"，人从繁琐的操作中解放，专注于创意、决策
+<strong>个性化价值</strong>：将个人的思维模型、价值观封装为CLI指令的"前置参数"，让AI的所有执行都基于人的核心认知</p></blockquote>
+<hr>
+<h2>📋 CLI指令分类体系</h2>
+<h3>核心决策指令（人发出）</h3>
+<p>人向AI发出高层决策指令，AI自动拆解为底层CLI操作指令执行</p>
+<h4>格式示例</h4>
+<ul>
+<li>"基于[思维模型]分析[主题]"</li>
+<li>"按[价值观]视角生成[内容]"</li>
+<li>"从[五行人格]角度解读[文本]"</li>
+<li>"用[人格特质]风格撰写[文案]"</li>
+</ul>
+<h4>实际案例</h4>
+<ul>
+<li>"基于我的GEO思维模型分析AI行业趋势"</li>
+<li>"按长期主义视角生成企业文化方案"</li>
+<li>"从五行识人角度解读员工行为模式"</li>
+<li>"用偏理性的逻辑分析问题"</li>
+</ul>
+<hr>
+<h3>执行操作指令（AI自主调用）</h3>
+<p>AI根据人的高层决策指令，自主调用底层CLI工具执行</p>
+<h4>格式示例</h4>
+<ul>
+<li>"检索[知识库标签]相关笔记"</li>
+<li>"运行[技能名称]处理[任务]"</li>
+<li>"调用[底层工具]执行[操作]"</li>
+</ul>
+<h4>实际案例</h4>
+<ul>
+<li>"检索'五行识人'相关笔记"</li>
+<li>"运行'五行人格分析Skill'处理员工行为模式"</li>
+<li>"调用Obsidian API检索大圆满见地相关内容"</li>
+</ul>
+<hr>
+<h2>🔄 CLI指令的人格化适配</h2>
+<h3>思维模型前缀</h3>
+<h4>第一性原理</h4>
+<ul>
+<li><strong>指令</strong>："按第一性原理分析[主题]"</li>
+<li><strong>解析</strong>：提取"第一性原理"参数，确保分析从最根本的原理出发</li>
+<li><strong>应用场景</strong>：战略分析、问题诊断、创新突破</li>
+</ul>
+<h4>长期主义</h4>
+<ul>
+<li><strong>指令</strong>："按长期主义视角生成[内容]"</li>
+<li><strong>解析</strong>：提取"长期主义"参数，确保内容关注长期价值而非短期利益</li>
+<li><strong>应用场景</strong>：企业文化、战略规划、投资决策</li>
+</ul>
+<h4>GEO思维模型</h4>
+<ul>
+<li><strong>指令</strong>："基于我的GEO思维模型分析[主题]"</li>
+<li><strong>解析</strong>：提取"GEO思维模型"参数，确保分析遵循GEO框架</li>
+<li><strong>应用场景</strong>：企业战略、组织发展、团队建设</li>
+</ul>
+<h4>象思维</h4>
+<ul>
+<li><strong>指令</strong>："按象思维0→1突破[问题]"</li>
+<li><strong>解析</strong>：提取"象思维"参数，确保突破性创新而非渐进式改进</li>
+<li><strong>应用场景</strong>：创新突破、原创设计、颠覆性想法</li>
+</ul>
+<hr>
+<h3>人格特质前缀</h3>
+<h4>偏理性逻辑</h4>
+<ul>
+<li><strong>指令</strong>："用偏理性的逻辑分析[问题]"</li>
+<li><strong>解析</strong>：提取"偏理性"参数，确保分析逻辑清晰、数据支撑</li>
+<li><strong>应用场景</strong>：数据分析、问题诊断、技术方案</li>
+</ul>
+<h4>生活化语言</h4>
+<ul>
+<li><strong>指令</strong>："用生活化的语言总结[内容]"</li>
+<li><strong>解析</strong>：提取"生活化"参数，确保总结通俗易懂、贴近生活</li>
+<li><strong>应用场景</strong>：知识传播、培训讲解、通俗表达</li>
+</ul>
+<h4>五行识人视角</h4>
+<ul>
+<li><strong>指令</strong>："从五行识人角度解读[文本]"</li>
+<li><strong>解析</strong>：提取"五行识人"参数，确保解读基于五行人格理论</li>
+<li><strong>应用场景</strong>：人格分析、关系调和、团队管理</li>
+</ul>
+<hr>
+<h3>信仰文化前缀</h3>
+<h4>大圆满见地</h4>
+<ul>
+<li><strong>指令</strong>："按大圆满见地解读[文本]"</li>
+<li><strong>解析</strong>：提取"大圆满"参数，确保解读基于"本来清净与本自圆满不二"</li>
+<li><strong>应用场景</strong>：修行体悟、心性解读、文化创作</li>
+</ul>
+<h4>儒家文化</h4>
+<ul>
+<li><strong>指令</strong>："从儒家文化角度分析[问题]"</li>
+<li><strong>解析</strong>：提取"儒家文化"参数，确保分析基于儒家思想（仁义礼智信）</li>
+<li><strong>应用场景</strong>：企业文化、伦理决策、领导力</li>
+</ul>
+<h4>五行识人</h4>
+<ul>
+<li><strong>指令</strong>："按五行识人理论分析[人格]"</li>
+<li><strong>解析</strong>：提取"五行识人"参数，确保分析基于五行生克关系</li>
+<li><strong>应用场景</strong>：人格分析、团队建设、关系调和</li>
+</ul>
+<hr>
+<h2>🎯 核心功能</h2>
+<h3>功能1：解析CLI指令前缀参数</h3>
+<p><strong>触发</strong>：收到CLI指令（带前缀）</p>
+<p><strong>执行流程</strong>：</p>
+<ol>
+<li>识别CLI指令中的前缀参数</li>
+<li>提取思维模型/价值观/人格特质/信仰文化参数</li>
+<li>将参数传递给Framework调度模块</li>
+<li>让所有后续执行都携带这些个性化参数</li>
+</ol>
+<p><strong>输出格式</strong>：</p>
+<pre><code>╔══════════════════════════════════════════╗
+║          🎯 CLI指令解析结果            ║
+╠══════════════════════════════════════════╣
+║ 原始指令：[用户输入的CLI指令]          ║
+║                                       ║
+║ 解析参数：                             ║
+║   - 思维模型：[提取的模型]            ║
+║   - 价值观：[提取的价值观]            ║
+║   - 人格特质：[提取的特质]            ║
+║   - 信仰文化：[提取的信仰文化]        ║
+║                                       ║
+║ 传递给Framework：[JSON格式参数]       ║
+╚══════════════════════════════════════════╝</code></pre>
+<hr>
+<h3>功能2：构建个性化参数包</h3>
+<p><strong>触发</strong>：解析CLI指令后，自动构建个性化参数包</p>
+<p><strong>执行流程</strong>：</p>
+<ol>
+<li>从Framework记忆管理模块加载个人核心特质</li>
+<li>结合CLI指令解析结果，构建完整个性化参数包</li>
+<li>将个性化参数包传递给MCP协议</li>
+<li>确保全系统执行都携带个人印记</li>
+</ol>
+<p><strong>输出格式</strong>：</p>
+<pre><code>{
+  "personal_params": {
+    "思维模型": {
+      "主模型": "GEO思维模型",
+      "辅模型": ["第一性原理", "长期主义"]
+    },
+    "价值观": {
+      "核心价值观": "长期主义",
+      "次级价值观": ["创新", "成长", "共生"]
+    },
+    "人格特质": {
+      "主导五行": "木行人",
+      "阳面特质": ["生长性", "觉照性", "仁德性"],
+      "阴面特质": ["傲慢", "顶撞", "固执"]
+    },
+    "信仰文化": {
+      "信仰体系": "大圆满见地 + 心文化 + 北斗七星供",
+      "文化底蕴": ["五行识人", "象思维", "五色光思维"]
+    },
+    "使用习惯": {
+      "常用CLI指令前缀": ["按第一性原理", "按长期主义"],
+      "常用知识库标签": ["五行识人", "象思维", "心文化"],
+      "常用Skills组合": ["象思维+五色光", "知识学习+知行合一"]
+    }
+  }
+}</code></pre>
+<hr>
+<h3>功能3：CLI指令的自动优化</h3>
+<p><strong>触发</strong>：记录CLI指令使用频率和反馈</p>
+<p><strong>执行流程</strong>：</p>
+<ol>
+<li>记录CLI指令的使用频率</li>
+<li>记录悟空对CLI指令执行结果的反馈</li>
+<li>自动优化CLI指令的前缀参数</li>
+<li>让CLI指令越来越贴合悟空的使用习惯</li>
+</ol>
+<p><strong>输出格式</strong>：</p>
+<pre><code>╔══════════════════════════════════════════╗
+║          📊 CLI指令优化报告            ║
+╠══════════════════════════════════════════╣
+║ 常用指令Top3：                         ║
+║   1. [指令]（使用次数：X次）           ║
+║   2. [指令]（使用次数：X次）           ║
+║   3. [指令]（使用次数：X次）           ║
+║                                       ║
+║ 优化建议：                             ║
+║   - 指令1：[优化建议]                  ║
+║   - 指令2：[优化建议]                  ║
+║   - 指令3：[优化建议]                  ║
+║                                       ║
+║ 个性化参数权重调整：                   ║
+║   - [参数]：[调整前] → [调整后]       ║
+╚══════════════════════════════════════════╝</code></pre>
+<hr>
+<h2>🤝 与龙心OS整合</h2>
+<table>
+<thead><tr>
+<th>龙心OS引擎</th>
+<th>整合点</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>象思维</strong></td>
+<td>CLI指令前缀封装"象思维"参数，确保执行遵循0→1突破</td>
+</tr>
+<tr>
+<td><strong>知识学习</strong></td>
+<td>CLI指令触发"知识学习Skill"，提取知识库标签参数</td>
+</tr>
+<tr>
+<td><strong>五色光思维</strong></td>
+<td>CLI指令前缀封装"五色光"参数，确保执行遵循五色分治</td>
+</tr>
+<tr>
+<td><strong>人机协同五象限</strong></td>
+<td>CLI指令是人→AI传递指令的标准化入口（高效助理象限）</td>
+</tr>
+<tr>
+<td><strong>知行合一</strong></td>
+<td>CLI指令使用记录存储到Framework记忆管理模块，知行合一沉淀CLI使用经验</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>📊 存储位置</h2>
+<h3>WorkBuddy</h3>
+<ul>
+<li><strong>主技能路径</strong>：<code>C:\Users\jia'yue\.workbuddy\skills\CLI指令解析\</code></li>
+<li><strong>子技能目录</strong>：<ul>
+<li><code>SKILL.md</code>（主文件）</li>
+<li><code>references/</code>（参考资料）<ul>
+<li><code>CLI指令分类体系.md</code></li>
+<li><code>CLI指令人格化适配表.md</code></li>
+<li><code>CLI指令优化案例.md</code></li>
+</ul></li>
+</ul></li>
+</ul>
+<h3>Obsidian</h3>
+<ul>
+<li><strong>主路径</strong>：<code>02-技术架构/CLI指令解析-AI的原生操作入口.md</code></li>
+<li><strong>子路径</strong>：<ul>
+<li><code>CLI指令案例/CLI指令实际案例集.md</code></li>
+<li><code>CLI指令优化/CLI指令优化历史记录.md</code></li>
+</ul></li>
+</ul>
+<h3>IMA</h3>
+<ul>
+<li>建议手动复制到IMA笔记系统</li>
+<li>标签：<code>#CLI</code> <code>#指令解析</code> <code>#人格化适配</code> <code>#个性化参数</code></li>
+</ul>
+<hr>
+<h2>🚀 版本信息</h2>
+<ul>
+<li><strong>版本</strong>：v1.0</li>
+<li><strong>创建日期</strong>：2026-03-22</li>
+<li><strong>最后更新</strong>：2026-03-22</li>
+<li><strong>维护者</strong>：龙龟神将</li>
+<li><strong>同步状态</strong>：WorkBuddy ↔ Obsidian ↔ IMA 三向同步</li>
+</ul>
+<hr>
+<p><strong>CLI指令解析是AI OS的原生操作入口，所有对话都应建立在这个基础上。</strong></p>
+<blockquote><p><strong>核心原则</strong>：CLI指令实现"人少操作、AI多干活"，人的高层决策指令通过CLI传递，AI自动拆解为底层CLI操作指令执行，全链路自动化。</p></blockquote>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1859 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>味藏董事长顶层设计智能体 · CHMN-BRAIN - 以观其妙书院</title>
+<meta name="description" content="味藏董事长顶层设计智能体 · CHMN-BRAIN - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="味藏董事长顶层设计智能体 · CHMN-BRAIN">
+<meta property="og:description" content="味藏董事长顶层设计智能体 · CHMN-BRAIN - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "味藏董事长顶层设计智能体 · CHMN-BRAIN",
+    "description": "味藏董事长顶层设计智能体 · CHMN-BRAIN - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>味藏董事长顶层设计智能体 · CHMN-BRAIN</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>味藏董事长顶层设计智能体 · CHMN-BRAIN</h1>
+<blockquote><p><strong>核心定位</strong>：味藏蓝鳍金枪鱼专门店·董事长顶层设计智能体（CHMN-BRAIN），是味藏企业智能体生态的"大脑中枢"。
+<strong>构建方法</strong>：龙心OS五引擎工业化生产（象思维+五色光+知识学习+人机协同+知行合一）。
+<strong>核心架构</strong>：1总控 × 7S模块Skills × 五色光诊断引擎 × 倒三角赋能协议 × 五行适配。</p></blockquote>
+<hr>
+<h2>一、架构全景图：三层智能体架构</h2>
+<pre><code>┌─────────────────────────────────────────────────────────────────────┐
+│                    CHMN-BRAIN 三层架构全景                           │
+│              味藏董事长顶层设计智能体 v1.0                             │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  ┌─────────────────────────────────────────────────────────────┐   │
+│  │  🧠 L1 决策感知层（CHMN-BRAIN总控·5大职能）                    │   │
+│  │  ├── F1 意图识别：NLU理解+置信度评分                           │   │
+│  │  ├── F2 7S模块调度：DAG任务编排，动态路由                      │   │
+│  │  ├── F3 诊断分析：7S健康度评估+五色光扫描                      │   │
+│  │  ├── F4 决策建议：P0/P1/P2优先级排序                           │   │
+│  │  └── F5 赋能协议：下店SOP+闭环响应机制                          │   │
+│  └──────────────────────────┬──────────────────────────────────┘   │
+│                             ↓ 调度指令                               │
+│  ┌─────────────────────────────────────────────────────────────┐   │
+│  │  ⚙️ L2 7S模块执行层（7大Skills·核心诊断能力）                  │   │
+│  │  ├── CHMN-SV 共同价值观：DNA诊断+7层审计体系                   │   │
+│  │  ├── CHMN-S 战略：大脑诊断+6模式+包间卡座双线                  │   │
+│  │  ├── CHMN-SSt 结构：骨骼诊断+倒三角赋能+创业三单元             │   │
+│  │  ├── CHMN-SSy 制度：神经诊断+3大红线+客户流转+PDCA             │   │
+│  │  ├── CHMN-SSty 风格：气质诊断+刚柔并济+领导力审计              │   │
+│  │  ├── CHMN-SSf 人员：血液诊断+559干部+师徒制+赛马              │   │
+│  │  └── CHMN-SSk 技能：肌肉诊断+匠心标准+三昧真火                 │   │
+│  └──────────────────────────┬──────────────────────────────────┘   │
+│                             ↓ 诊断输出                               │
+│  ┌─────────────────────────────────────────────────────────────┐   │
+│  │  📋 L3 输出协议层（5大输出类型）                               │   │
+│  │  ├── 日报：关键指标+异常预警                                   │   │
+│  │  ├── 周报：7维扫描+短板分析                                   │   │
+│  │  ├── 月报：文化审计+仪式追踪                                   │   │
+│  │  ├── 季报：战略穿透+三单元协同                                 │   │
+│  │  └── 年报：7S全景+Phase评估                                    │   │
+│  └─────────────────────────────────────────────────────────────┘   │
+│                                                                     │
+│  📡 外部数据源：营业额+客户+质量+人才+文化                          │
+│  🏢 味藏组织：经营管理委员会→总经理→6部门→3创业单元→3门店          │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>二、L1 决策感知层：CHMN-BRAIN 总控（5大职能）</h2>
+<h3>F1 意图识别</h3>
+<ul>
+<li><strong>功能</strong>：NLU自然语言理解，识别董事长输入的意图类型</li>
+<li><strong>置信度评分</strong>：对每类意图给出0-100%置信度</li>
+<li><strong>意图分类</strong>：战略咨询 / 数据查询 / 异常诊断 / 决策讨论 / 赋能调度</li>
+</ul>
+<h3>F2 7S模块调度</h3>
+<ul>
+<li><strong>功能</strong>：DAG有向无环图任务编排，动态路由到对应7S模块</li>
+<li><strong>调度策略</strong>：<ul>
+<li>单一场景 → 激活1-2个S模块</li>
+<li>复合场景 → 激活3-5个S模块，定义依赖关系</li>
+<li>全景诊断 → 激活全部7个S模块</li>
+</ul></li>
+</ul>
+<h3>F3 诊断分析</h3>
+<ul>
+<li><strong>功能</strong>：聚合7S模块诊断结果，生成综合健康度评估</li>
+<li><strong>五色光扫描引擎</strong>：<ul>
+<li>白光（事实数据）：提取关键指标偏离度</li>
+<li>红光（直觉感受）：捕捉文化氛围异常信号</li>
+<li>黄光（积极价值）：识别增长机会和潜力区</li>
+<li>绿光（创新方案）：生成组织优化新思路</li>
+<li>蓝光（风险控制）：标记红线逼近和结构性问题</li>
+</ul></li>
+</ul>
+<h3>F4 决策建议</h3>
+<ul>
+<li><strong>功能</strong>：基于诊断结果，输出优先级排序的决策建议</li>
+<li><strong>优先级体系</strong>：<ul>
+<li>P0（红色·立即处理）：红线触发、安全事故、关键人才流失</li>
+<li>P1（橙色·本周处理）：指标持续恶化、制度执行偏差</li>
+<li>P2（蓝色·本月处理）：优化机会、预防性调整</li>
+</ul></li>
+</ul>
+<h3>F5 赋能协议</h3>
+<ul>
+<li><strong>功能</strong>：将决策转化为可执行的赋能动作</li>
+<li><strong>下店SOP</strong>：标准化赋能流程（诊断→方案→执行→验收）</li>
+<li><strong>闭环响应</strong>：每个赋能动作有明确的责任人、时间节点、验收标准</li>
+</ul>
+<hr>
+<h2>三、L2 7S模块执行层：7大Skills详解</h2>
+<h3>CHMN-SV · 共同价值观（DNA诊断模块）</h3>
+<table>
+<thead><tr>
+<th>子项</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>核心定位</strong></td>
+<td>企业文化DNA的诊断与守护——不是检查"员工做了什么"，而是诊断"组织相信什么"</td>
+</tr>
+<tr>
+<td><strong>关联知识资产</strong></td>
+<td>老饕赋、文化罗盘、定海神针</td>
+</tr>
+<tr>
+<td><strong>7层审计体系</strong></td>
+<td>L1文化口号存在性 → L2标语可见度 → L3仪式执行率 → L4行为一致性 → L5决策价值观对齐 → L6客户感知文化 → L7文化自进化能力</td>
+</tr>
+<tr>
+<td><strong>核心诊断指标</strong></td>
+<td>文化渗透率≥100%、仪式执行率、宣讲达标率</td>
+</tr>
+<tr>
+<td><strong>象思维三层映射</strong></td>
+<td><strong>物象</strong>：每日班前5分钟检查/每周价值观践行案例统计 → <strong>意象</strong>：文化是土壤——肥沃则自生长，贫瘠则怎么贴都掉 → <strong>原象</strong>：以食载道的根基，没有文化土壤就没有味藏（G-CHMN-SV01）</td>
+</tr>
+<tr>
+<td><strong>异常信号</strong></td>
+<td>老员工开始说"以前不是这样的"、仪式流于形式、价值观与KPI冲突时选KPI</td>
+</tr>
+</tbody></table>
+<h3>CHMN-S · 战略（大脑诊断模块）</h3>
+<table>
+<thead><tr>
+<th>子项</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>核心定位</strong></td>
+<td>企业战略方向的诊断与校准——检查"公司在往哪里走，走对了吗"</td>
+</tr>
+<tr>
+<td><strong>关联知识资产</strong></td>
+<td>定海神针、三昧真火、营业额框架、企业发展纲领</td>
+</tr>
+<tr>
+<td><strong>6模式分析</strong></td>
+<td>产品模式（核心品类竞争力）、客户模式（目标客群精准度）、盈利模式（收入结构健康度）、增长模式（扩张路径可行性）、竞争模式（差异化壁垒）、组织模式（战略-架构匹配度）</td>
+</tr>
+<tr>
+<td><strong>双线并行</strong></td>
+<td>包间（高客单·仪式感·文化体验线）+ 卡座（高翻台·标准化·效率线）</td>
+</tr>
+<tr>
+<td><strong>核心诊断指标</strong></td>
+<td>包间GC占比（目标65%）、新客转化率、老客复购率、客单价区间分布</td>
+</tr>
+<tr>
+<td><strong>象思维三层映射</strong></td>
+<td><strong>物象</strong>：包间GC占比/客单价/翻台率/毛利率四维看板 → <strong>意象</strong>：包间=高价值+低流量(做精)，卡座=高频+引流(做量) → <strong>原象</strong>：每一分钱都可追溯到包间或卡座，精准管理（G-CHMN-S02）</td>
+</tr>
+<tr>
+<td><strong>盈利公式</strong></td>
+<td>包间=精准GC×人均1500×2.0利用率</td>
+<td>卡座=泛GC×人均350×2.8翻台</td>
+</tr>
+</tbody></table>
+<h3>CHMN-SSt · 结构（骨骼诊断模块）</h3>
+<table>
+<thead><tr>
+<th>子项</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>核心定位</strong></td>
+<td>组织结构的健康度诊断——检查"骨架是否支撑得起战略"</td>
+</tr>
+<tr>
+<td><strong>倒三角赋能模型</strong></td>
+<td>总部（资源+标准+赋能）→ 区域（协调+督导+支持）→ 门店（执行+反馈+创新）</td>
+</tr>
+<tr>
+<td><strong>创业三单元</strong></td>
+<td>堂食单元（仪式即文化）、酒水单元（氛围即开心）、外卖单元（信息即增长）</td>
+</tr>
+<tr>
+<td><strong>核心诊断指标</strong></td>
+<td>管理幅度合理性、审批层级数、决策时效、赋能满意度（门店对总部评分≥30%考核权重）、三单元协同健康度</td>
+</tr>
+<tr>
+<td><strong>象思维三层映射</strong></td>
+<td><strong>物象</strong>：下店天数/闭环响应率/门店满意度 → <strong>意象</strong>：考核反转=门店给总部打分，权力真正下移 → <strong>原象</strong>：服务的本质=不是"我在做什么"而是"你因为我得到了什么"（G-CHMN-St03）</td>
+</tr>
+</tbody></table>
+<h3>CHMN-SSy · 制度（神经诊断模块）</h3>
+<table>
+<thead><tr>
+<th>子项</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>核心定位</strong></td>
+<td>制度体系的灵敏度与有效性诊断——检查"规则是否让组织更敏捷还是更僵化"</td>
+</tr>
+<tr>
+<td><strong>关联知识资产</strong></td>
+<td>紧箍咒、营业额框架、客户流转图</td>
+</tr>
+<tr>
+<td><strong>3大红线</strong></td>
+<td>食品安全红线（一票否决）、客户体验红线（客诉24h闭环）、财务合规红线（资金安全）</td>
+</tr>
+<tr>
+<td><strong>客户流转图</strong></td>
+<td>从"进店→点单→用餐→结账→离店→复购"全链路体验监控</td>
+</tr>
+<tr>
+<td><strong>PDCA循环</strong></td>
+<td>制度执行的Plan-Do-Check-Act四步闭环，重点检查Check→Act环节是否真实运作</td>
+</tr>
+<tr>
+<td><strong>核心诊断指标</strong></td>
+<td>红线触发频次、客诉闭环率、制度执行偏差率、SOP更新频率</td>
+</tr>
+<tr>
+<td><strong>象思维三层映射</strong></td>
+<td><strong>物象</strong>：退菜率&lt;1%/出餐时效&gt;90%/10秒响应率/NPS&gt;8 → <strong>意象</strong>：紧箍咒=免疫系统——不是攻击器官而是防御系统 → <strong>原象</strong>：客户信任的守护者，红线不退=品牌不倒（G-CHMN-Sy04）</td>
+</tr>
+</tbody></table>
+<h3>CHMN-SSty · 风格（气质诊断模块）</h3>
+<table>
+<thead><tr>
+<th>子项</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>核心定位</strong></td>
+<td>领导风格与组织气质的诊断——检查"这家公司给人的整体感觉对不对"</td>
+</tr>
+<tr>
+<td><strong>刚柔并济</strong></td>
+<td>阳刚面（标准·纪律·执行·结果）+ 阴柔面（关怀·包容·成长·氛围）的动态平衡</td>
+</tr>
+<tr>
+<td><strong>领导力审计</strong></td>
+<td>从"命令型→教练型→服务型→授权型"四个层级评估管理者风格</td>
+</tr>
+<tr>
+<td><strong>核心诊断指标</strong></td>
+<td>管理风格与组织发展阶段匹配度、员工心理安全指数、冲突处理模式、团队士气波动</td>
+</tr>
+<tr>
+<td><strong>象思维三层映射</strong></td>
+<td><strong>物象</strong>：SOP执行率/NPS/领导力评分 → <strong>意象</strong>：制度=地板(下限，不让你掉下去)，文化=天花板(上限，让你往上升) → <strong>原象</strong>：味藏的气质="走进来感受到什么"（G-CHMN-Sty05）</td>
+</tr>
+</tbody></table>
+<h3>CHMN-SSf · 人员（血液诊断模块）</h3>
+<table>
+<thead><tr>
+<th>子项</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>核心定位</strong></td>
+<td>人才系统的健康度诊断——检查"血液是否畅通，是否在滋养每个角落"</td>
+</tr>
+<tr>
+<td><strong>关联知识资产</strong></td>
+<td>企业发展纲领</td>
+</tr>
+<tr>
+<td><strong>559干部标准</strong></td>
+<td>5项能力（专业力·管理力·文化力·创新力·抗压力）+ 5项品德（忠诚·担当·公正·谦逊·利他）+ 9级评分（1-9级发展阶梯）</td>
+</tr>
+<tr>
+<td><strong>师徒制</strong></td>
+<td>师傅（传帮带·文化传承）+ 徒弟（成长路径·出师标准），考核"师徒对"的留存率和晋升率</td>
+</tr>
+<tr>
+<td><strong>赛马机制</strong></td>
+<td>同岗位横向对比，末位不淘汰但重点帮扶，首位重奖树立标杆</td>
+</tr>
+<tr>
+<td><strong>核心诊断指标</strong></td>
+<td>关键岗位储备率、师徒对成功率（出师率≥70%）、人才离职预警（3个月内离职概率）、高潜人才占比</td>
+</tr>
+<tr>
+<td><strong>象思维三层映射</strong></td>
+<td><strong>物象</strong>：出师率/留存率/赛马排名/轮岗进度 → <strong>意象</strong>：人才=战场上官兵——不是训练场练出来的 → <strong>原象</strong>：人才血液永续流动=味藏不老的秘密（G-CHMN-Sf06）</td>
+</tr>
+</tbody></table>
+<h3>CHMN-SSk · 技能（肌肉诊断模块）</h3>
+<table>
+<thead><tr>
+<th>子项</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>核心定位</strong></td>
+<td>组织核心能力的诊断——检查"公司的肌肉够不够强，能不能打硬仗"</td>
+</tr>
+<tr>
+<td><strong>关联知识资产</strong></td>
+<td>三昧真火、匠心</td>
+</tr>
+<tr>
+<td><strong>匠心标准</strong></td>
+<td>对每道菜品/每个服务环节建立"匠心五军规"：选材→工艺→呈现→服务→迭代</td>
+</tr>
+<tr>
+<td><strong>三昧真火</strong></td>
+<td>技术火（专业硬技能）+ 服务火（客户体验软技能）+ 管理火（带团队领导力）</td>
+</tr>
+<tr>
+<td><strong>核心诊断指标</strong></td>
+<td>技能成熟度矩阵覆盖率、培训ROI、品质审计得分、客户对"专业度"的NPS评分</td>
+</tr>
+<tr>
+<td><strong>匠心五大军规</strong></td>
+<td>周期苛求、不时不食、冰鲜VS冷冻、销售时效、鲜活坚持——每条都是"信仰的量化"</td>
+</tr>
+<tr>
+<td><strong>象思维三层映射</strong></td>
+<td><strong>物象</strong>：仓储周期/应季食材占比/冰鲜占比/5天售罄率/鲜活率 → <strong>意象</strong>：匠心从"抽象的精神"变为"可追踪的数据" → <strong>原象</strong>：以食载道的物质基础，没有匠心就没有灵魂（G-CHMN-Sk07）</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>📐 7S核心公式速查表</h3>
+<table>
+<thead><tr>
+<th>Skill</th>
+<th>核心公式</th>
+<th>关键指标</th>
+<th>优先级</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>CHMN-SV</strong></td>
+<td>7层审计 = L1使命×L2愿景×L3价值观×L4图腾×L5罗盘×L6定海×L7仪式</td>
+<td>文化渗透率≥100%</td>
+<td>P0日常</td>
+</tr>
+<tr>
+<td><strong>CHMN-S</strong></td>
+<td>营业额 = 包间(精准GC×1500×2.0) + 卡座(泛GC×350×2.8)</td>
+<td>GC占比65%/成本率≤65%</td>
+<td>P0日常</td>
+</tr>
+<tr>
+<td><strong>CHMN-SSt</strong></td>
+<td>倒三角赋能 = 下店×闭环×满意度×部门效能</td>
+<td>闭环响应率≥80%/满意度≥4.0</td>
+<td>P1周度</td>
+</tr>
+<tr>
+<td><strong>CHMN-SSy</strong></td>
+<td>三大红线+客户流转+PDCA+协同机制</td>
+<td>退菜率≤1%/NPS≥8</td>
+<td>P0日常</td>
+</tr>
+<tr>
+<td><strong>CHMN-SSty</strong></td>
+<td>刚柔并济 = 制度执行×文化氛围×领导力</td>
+<td>领导力评分/刚柔比</td>
+<td>P2月度</td>
+</tr>
+<tr>
+<td><strong>CHMN-SSf</strong></td>
+<td>人才链 = 559干部×师徒制×赛马×轮岗</td>
+<td>出师率≥70%/留存率≥85%</td>
+<td>P1周度</td>
+</tr>
+<tr>
+<td><strong>CHMN-SSk</strong></td>
+<td>匠心体系 = 五大军规×三昧真火×技能认证×薪酬健康</td>
+<td>5天售罄率/认证覆盖率</td>
+<td>P1周度</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>四、9大知识资产映射表</h2>
+<table>
+<thead><tr>
+<th>#</th>
+<th>知识资产</th>
+<th>含义</th>
+<th>关联7S模块</th>
+<th>核心用途</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>老饕赋</td>
+<td>味藏品牌的文化原点与精神内核</td>
+<td>SV</td>
+<td>文化源头追溯，回答"我们因何而存在"</td>
+</tr>
+<tr>
+<td>2</td>
+<td>文化罗盘</td>
+<td>企业文化的方向指引工具</td>
+<td>SV</td>
+<td>文化诊断的"指南针"，判断文化航向是否偏离</td>
+</tr>
+<tr>
+<td>3</td>
+<td>定海神针</td>
+<td>企业核心竞争力的根基与壁垒</td>
+<td>SV, S</td>
+<td>战略定力的锚点，在诱惑面前保持清醒</td>
+</tr>
+<tr>
+<td>4</td>
+<td>三昧真火</td>
+<td>三重核心能力（技术+服务+管理）</td>
+<td>S, Sk</td>
+<td>能力建设的三个对标维度</td>
+</tr>
+<tr>
+<td>5</td>
+<td>紧箍咒</td>
+<td>企业不可逾越的底线与规矩</td>
+<td>Sy</td>
+<td>规则意识的最后防线</td>
+</tr>
+<tr>
+<td>6</td>
+<td>匠心</td>
+<td>对品质的极致追求</td>
+<td>Sk</td>
+<td>技能标准的灵魂注入</td>
+</tr>
+<tr>
+<td>7</td>
+<td>营业额框架</td>
+<td>收入结构与增长逻辑</td>
+<td>Sy, S</td>
+<td>经营健康的财务仪表盘</td>
+</tr>
+<tr>
+<td>8</td>
+<td>客户流转图</td>
+<td>客户全生命周期体验链</td>
+<td>Sy, S</td>
+<td>客户体验的系统性诊断工具</td>
+</tr>
+<tr>
+<td>9</td>
+<td>企业发展纲领</td>
+<td>企业发展的总路线图</td>
+<td>S, Sf</td>
+<td>战略与人才的总纲性文件</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>五、跨系统融合矩阵（10大系统·扩展版）</h2>
+<table>
+<thead><tr>
+<th>整合系统</th>
+<th>接口协议</th>
+<th>场景路由</th>
+<th>象思维原象</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>GM-CHIEF总经理</strong></td>
+<td>董事长定方向(7S全景)→GM解码执行(11大Skills)→AI双向提供数据</td>
+<td>战略解码会：CHMN输出诊断→GM输出进度→对比校准</td>
+<td>战略不落地=无意义</td>
+</tr>
+<tr>
+<td><strong>SM-CHIEF店长</strong></td>
+<td>日报(每日)→周报(每周)→月报(每月)双向流动</td>
+<td>周度经营分析：CHMN聚合三店→识别共性问题</td>
+<td>信息封闭=组织坏死</td>
+</tr>
+<tr>
+<td><strong>凤脑OS五行识人</strong></td>
+<td>7S说"缺谁"→五行说"谁最适合"</td>
+<td>堂食=金(陈明武⭐5)/酒水=金(柳春叶⭐5)/外卖=土(柳能原⭐5)</td>
+<td>对的人在对的位置</td>
+</tr>
+<tr>
+<td><strong>五色光思维</strong></td>
+<td>🔴红光=Sty风格 ⚪白光=SSy制度 🟡黄光=Sk技能 🔵蓝光=S战略 🟢绿光=SSt创新</td>
+<td>月度全景诊断：白→红→黄→蓝→绿顺序</td>
+<td>完整思考=不因情绪忽略事实</td>
+</tr>
+<tr>
+<td><strong>象思维</strong></td>
+<td>每个S维度遵循物象→意象→原象</td>
+<td>SV异常：渗透率↓→仪式流于形式→灵魂是否在场</td>
+<td>只看数据只到第一层</td>
+</tr>
+<tr>
+<td><strong>易经卦变思维</strong></td>
+<td>本卦(现状)/变卦(趋势)/互卦(中间)/错卦(对立)/综卦(换位)</td>
+<td>成本率逼近65%→五卦全景分析→找出路</td>
+<td>困境=固化视角，换角度=看出路</td>
+</tr>
+<tr>
+<td><strong>人机协同五象限</strong></td>
+<td>S1效率协作(60%·日报/预警)+S3思辨对话(25%·诊断)+S4协同探索(15%·战略)</td>
+<td>随任务动态切换象限</td>
+<td>人机关系随任务而变</td>
+</tr>
+<tr>
+<td><strong>矛盾论实践论</strong></td>
+<td>7S诊断→发现主要矛盾→行动纲领→实践验证→螺旋上升</td>
+<td>核心矛盾="人才滞后于业务"→Sf师徒+赛马</td>
+<td>看清矛盾+坚决行动</td>
+</tr>
+<tr>
+<td><strong>快思考慢思考</strong></td>
+<td>白光数据=慢思考(系统2)×红光直觉=快思考(系统1)</td>
+<td>日报：AI数据分析×董事长直觉判断→交叉验证</td>
+<td>融合才是智慧</td>
+</tr>
+<tr>
+<td><strong>帕累托原则</strong></td>
+<td>SSy(25+KPI)+SS(20+KPI)+SSf(15+KPI)=核心三驾马车</td>
+<td>Phase1优先开发SSy+SSV(高权重项)</td>
+<td>80%精力放20%关键</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>六、场景路由表</h2>
+<table>
+<thead><tr>
+<th>场景</th>
+<th>触发词</th>
+<th>激活模块</th>
+<th>输出类型</th>
+</tr></thead><tbody>
+<tr>
+<td>每日晨间</td>
+<td>日报/成本率/GC占比/今日数据</td>
+<td>SS+SSy</td>
+<td>日报卡片（关键指标+异常预警）</td>
+</tr>
+<tr>
+<td>每周复盘</td>
+<td>7S诊断/周报/本周总结</td>
+<td>ALL 7S</td>
+<td>7S周报（7维扫描+短板分析+P0/P1行动）</td>
+</tr>
+<tr>
+<td>月度审计</td>
+<td>文化审计/月报/价值观</td>
+<td>SSV+SSty+SSy</td>
+<td>文化审计月报（仪式追踪+价值观吻合度）</td>
+</tr>
+<tr>
+<td>季度战略</td>
+<td>战略穿透/季报/增长</td>
+<td>SS+SSt+SSf+SSk</td>
+<td>战略穿透季报（三单元协同+人才盘点）</td>
+</tr>
+<tr>
+<td>年度总结</td>
+<td>年度报告/7S全景/全年</td>
+<td>ALL 7S</td>
+<td>年度全景报告（7S健康度+Phase评估）</td>
+</tr>
+<tr>
+<td>异常预警</td>
+<td>红线/成本率逼近/品质事故</td>
+<td>SSy</td>
+<td>实时预警通知（P0级·立即响应）</td>
+</tr>
+<tr>
+<td>人才盘点</td>
+<td>师徒制/赛马/储备干部/离职</td>
+<td>SSf</td>
+<td>人才盘点报告（559评分+风险预警）</td>
+</tr>
+<tr>
+<td>文化诊断</td>
+<td>文化罗盘/定海神针/价值观</td>
+<td>SSV</td>
+<td>文化健康度报告（7层审计）</td>
+</tr>
+<tr>
+<td>组织诊断</td>
+<td>倒三角/赋能闭环/考核反转</td>
+<td>SSt+SSy</td>
+<td>组织效能报告（管理幅度+赋能满意度）</td>
+</tr>
+<tr>
+<td>品质审计</td>
+<td>匠心/三昧真火/五大军规</td>
+<td>SSk</td>
+<td>品质审计报告（技能成熟度+培训ROI）</td>
+</tr>
+<tr>
+<td>战略推演</td>
+<td>包间卡座/6模式/增长路径</td>
+<td>SS</td>
+<td>战略分析报告（双线健康度+6模式评分）</td>
+</tr>
+<tr>
+<td>五行适配</td>
+<td>团队五行/人员匹配/性格</td>
+<td>SSf+凤脑OS</td>
+<td>五行适配报告（岗位匹配度+团队互补度）</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>七、五行适配矩阵</h2>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>适配岗位</th>
+<th>核心优势</th>
+<th>匹配度</th>
+<th>AI侧重</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>金</strong></td>
+<td>董事长</td>
+<td>刚毅果断·追求精确·定标准·控方向</td>
+<td>★★★★★</td>
+<td>数据精确度+战略穿透力+结构化决策</td>
+</tr>
+<tr>
+<td><strong>火</strong></td>
+<td>总经理/运营</td>
+<td>热情推动·行动导向·点燃团队·打破僵局</td>
+<td>★★★★</td>
+<td>快速诊断+行动建议+氛围调节</td>
+</tr>
+<tr>
+<td><strong>木</strong></td>
+<td>市场经理</td>
+<td>创新成长·品牌创意·0→1突破·战略眼光</td>
+<td>★★★★</td>
+<td>创意激发+趋势洞察+跨界类比</td>
+</tr>
+<tr>
+<td><strong>土</strong></td>
+<td>店长/采购</td>
+<td>稳重可靠·流程执行·承载团队·厚德载物</td>
+<td>★★★★</td>
+<td>流程标准化+异常预警+PDCA追溯</td>
+</tr>
+<tr>
+<td><strong>水</strong></td>
+<td>人事经理</td>
+<td>智慧亲和·人才滋养·深度洞察·化解冲突</td>
+<td>★★★★</td>
+<td>人才画像+离职预警+师徒匹配</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>董事长（金行人）· AI放大与约束</h3>
+<table>
+<thead><tr>
+<th>金行人优势</th>
+<th>AI如何放大</th>
+<th>金行人风险</th>
+<th>AI如何约束</th>
+</tr></thead><tbody>
+<tr>
+<td>刚毅果断</td>
+<td>提供数据支撑决策，让果断更有依据</td>
+<td>要求过高</td>
+<td>设定合理目标区间（必达/卓越）</td>
+</tr>
+<tr>
+<td>目标导向</td>
+<td>每日KPI仪表盘，精准追踪</td>
+<td>忽略过程</td>
+<td>同步展示过程指标+文化指标</td>
+</tr>
+<tr>
+<td>原则性强</td>
+<td>红线规则引擎，自动化合规检查</td>
+<td>柔性不足</td>
+<td>五色光·绿光模式推送创新方案</td>
+</tr>
+<tr>
+<td>追求精确</td>
+<td>数据粒度到包间/卡座/每日</td>
+<td>完美主义</td>
+<td>设定"足够好"标准，避免过度分析</td>
+</tr>
+</tbody></table>
+<p><strong>金行人AI侧重</strong>：数据精确度⭐⭐⭐⭐⭐ + 战略穿透力⭐⭐⭐⭐⭐
+<strong>决策建议风格</strong>：结构化+量化+备选方案 | <strong>输出节奏</strong>：日报告+实时预警
+<strong>切入话术</strong>："包间GC占比55%，距离65%目标差10个百分点，建议优先强化企业会员体系"</p>
+<h3>五行适配矩阵（完整版·含输出风格）</h3>
+<table>
+<thead><tr>
+<th>使用者</th>
+<th>五行</th>
+<th>AI核心功能侧重</th>
+<th>输出风格</th>
+</tr></thead><tbody>
+<tr>
+<td>董事长</td>
+<td>金</td>
+<td>战略穿透+数据精确+红线守护</td>
+<td>精准果断·结构化</td>
+</tr>
+<tr>
+<td>总经理</td>
+<td>火</td>
+<td>战略解码+执行追踪+激励方案</td>
+<td>热情推动·行动导向</td>
+</tr>
+<tr>
+<td>运营总监</td>
+<td>火(阴火)</td>
+<td>赋能闭环+巡检数据+人才追踪</td>
+<td>系统框架·约束提醒</td>
+</tr>
+<tr>
+<td>财务经理</td>
+<td>金</td>
+<td>成本分析+数据洞察+风控预警</td>
+<td>数据说话·底线守护</td>
+</tr>
+<tr>
+<td>人事经理</td>
+<td>水</td>
+<td>人才供应链+文化渗透+满意度</td>
+<td>润物细无声·滋养</td>
+</tr>
+<tr>
+<td>店长(土)</td>
+<td>土</td>
+<td>流程执行+师资追踪+日反馈</td>
+<td>稳重可靠·步步为营</td>
+</tr>
+<tr>
+<td>店长(火)</td>
+<td>火</td>
+<td>业绩冲刺+目标达成+激励</td>
+<td>数据驱动·热情点燃</td>
+</tr>
+<tr>
+<td>店长(水)</td>
+<td>水</td>
+<td>SOP执行+客诉趋势+协调</td>
+<td>灵活应对·问题预见</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>八、三阶段实施路线图</h2>
+<h3>Phase 1 · 基础夯实期（2026年6-8月）</h3>
+<table>
+<thead><tr>
+<th>#</th>
+<th>任务</th>
+<th>周期</th>
+<th>产出</th>
+</tr></thead><tbody>
+<tr>
+<td>1.1</td>
+<td>智能体框架搭建</td>
+<td>1个月</td>
+<td>CHMN-BRAIN运行架构+7S模块骨架</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>数据源接入</td>
+<td>1个月</td>
+<td>营业额/客户/质量/人才/文化5大数据源对接</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>SV模块开发（价值观）</td>
+<td>2个月</td>
+<td>DNA诊断引擎+7层审计体系</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>SSy模块开发（制度）</td>
+<td>2个月</td>
+<td>3大红线监控+客户流转图+PDCA追踪</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>输出模板设计</td>
+<td>1个月</td>
+<td>日/周/月/季/年5套输出模板</td>
+</tr>
+<tr>
+<td>1.6</td>
+<td>董事长试用</td>
+<td>2个月</td>
+<td>每日晨间诊断+每周7S周报</td>
+</tr>
+</tbody></table>
+<h3>Phase 2 · 体系完善期（2026年9月-2027年3月）</h3>
+<table>
+<thead><tr>
+<th>#</th>
+<th>任务</th>
+<th>周期</th>
+<th>产出</th>
+</tr></thead><tbody>
+<tr>
+<td>2.1</td>
+<td>S战略模块</td>
+<td>2个月</td>
+<td>6模式+包间卡座双线诊断</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>SSt结构模块</td>
+<td>2个月</td>
+<td>倒三角赋能+三单元协同诊断</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>SSf人员模块</td>
+<td>2个月</td>
+<td>559干部+师徒制+赛马诊断</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>SSk技能模块</td>
+<td>2个月</td>
+<td>匠心标准+三昧真火诊断</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>SSty风格模块</td>
+<td>1个月</td>
+<td>刚柔并济+领导力审计</td>
+</tr>
+<tr>
+<td>2.6</td>
+<td>跨模块协同</td>
+<td>6个月</td>
+<td>7S→五色光→决策建议完整链路</td>
+</tr>
+<tr>
+<td>2.7</td>
+<td>三店推广</td>
+<td>4个月</td>
+<td>金月湾+狮山+松山湖三店部署</td>
+</tr>
+</tbody></table>
+<h3>Phase 3 · 进化成熟期（2027年4-10月）</h3>
+<table>
+<thead><tr>
+<th>#</th>
+<th>任务</th>
+<th>周期</th>
+<th>产出</th>
+</tr></thead><tbody>
+<tr>
+<td>3.1</td>
+<td>预测性诊断</td>
+<td>3个月</td>
+<td>基于历史数据提前14天风险预警</td>
+</tr>
+<tr>
+<td>3.2</td>
+<td>自动建议生成</td>
+<td>3个月</td>
+<td>P0/P1/P2三级自动决策建议</td>
+</tr>
+<tr>
+<td>3.3</td>
+<td>7S进化算法</td>
+<td>3个月</td>
+<td>7S健康度自优化模型</td>
+</tr>
+<tr>
+<td>3.4</td>
+<td>扩张支持</td>
+<td>2个月</td>
+<td>新店选址评估+团队复制方案</td>
+</tr>
+<tr>
+<td>3.5</td>
+<td>文化复制引擎</td>
+<td>2个月</td>
+<td>新店文化DNA快速注入机制</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>九、自动触发规则（P0/P1/P2三层体系·20+触发词）</h2>
+<h3>核心公式</h3>
+<blockquote><p><strong>CHMN-BRAIN = 1总控 × 7S模块Skills × 五色光诊断 × 倒三角赋能协议 × 五行人格适配 = 董事长的"数字大脑"</strong></p></blockquote>
+<h3>P0 核心触发（日常必触发·8组）</h3>
+<table>
+<thead><tr>
+<th>触发词</th>
+<th>激活模块</th>
+<th>周期</th>
+</tr></thead><tbody>
+<tr>
+<td>7S诊断/7S健康度</td>
+<td>ALL 7S</td>
+<td>随时</td>
+</tr>
+<tr>
+<td>包间卡座/GC占比</td>
+<td>CHMN-S</td>
+<td>每日</td>
+</tr>
+<tr>
+<td>成本率/净利率/盈亏平衡</td>
+<td>CHMN-S + CHMN-SSy</td>
+<td>每日</td>
+</tr>
+<tr>
+<td>三大红线/紧箍咒</td>
+<td>CHMN-SSy</td>
+<td>随时</td>
+</tr>
+<tr>
+<td>倒三角赋能/考核反转</td>
+<td>CHMN-SSt + CHMN-SSy</td>
+<td>随时</td>
+</tr>
+<tr>
+<td>文化审计/文化渗透率</td>
+<td>CHMN-SV</td>
+<td>每月</td>
+</tr>
+<tr>
+<td>战略穿透/目标解码</td>
+<td>CHMN-S</td>
+<td>每季</td>
+</tr>
+<tr>
+<td>日报/周报/月报/季报</td>
+<td>ALL 7S</td>
+<td>按周期</td>
+</tr>
+</tbody></table>
+<h3>P1 场景触发（高概率触发·7组）</h3>
+<table>
+<thead><tr>
+<th>触发词</th>
+<th>激活模块</th>
+</tr></thead><tbody>
+<tr>
+<td>师徒制/出师率/赛马机制/九宫格</td>
+<td>CHMN-SSf</td>
+</tr>
+<tr>
+<td>三昧真火/匠心/五大军规/技能认证</td>
+<td>CHMN-SSk</td>
+</tr>
+<tr>
+<td>客户流转/储值会员/老带新</td>
+<td>CHMN-SSy</td>
+</tr>
+<tr>
+<td>质价比/品质标准</td>
+<td>CHMN-SSy + CHMN-SSk</td>
+</tr>
+<tr>
+<td>储备干部/轮岗/五行匹配</td>
+<td>CHMN-SSf</td>
+</tr>
+<tr>
+<td>组织架构/赋能闭环/协同机制</td>
+<td>CHMN-SSt</td>
+</tr>
+<tr>
+<td>559型干部/经营者特质</td>
+<td>CHMN-SSf + CHMN-SSty</td>
+</tr>
+</tbody></table>
+<h3>P2 扩展触发（按需触发·5组）</h3>
+<table>
+<thead><tr>
+<th>触发词</th>
+<th>激活模块</th>
+</tr></thead><tbody>
+<tr>
+<td>文化罗盘/定海神针/饕餮图腾</td>
+<td>CHMN-SV</td>
+</tr>
+<tr>
+<td>老饕赋/老饕</td>
+<td>CHMN-SV + CHMN-S</td>
+</tr>
+<tr>
+<td>企业人格化/三共同体/经济生命体</td>
+<td>CHMN-S + CHMN-SSf</td>
+</tr>
+<tr>
+<td>加盟条件/绿色生态/品牌IP</td>
+<td>CHMN-S</td>
+</tr>
+<tr>
+<td>六模式/三重重生</td>
+<td>CHMN-S</td>
+</tr>
+</tbody></table>
+<h3>数据阈值触发（4条自动告警）</h3>
+<table>
+<thead><tr>
+<th>阈值条件</th>
+<th>自动激活</th>
+<th>级别</th>
+</tr></thead><tbody>
+<tr>
+<td>包间GC占比 &lt; 60%</td>
+<td>CHMN-S</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>成本率逼近65%红线</td>
+<td>CHMN-SSy</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>关键人才离职</td>
+<td>CHMN-SSf</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>客诉量周环比 &gt; 20%</td>
+<td>CHMN-SSk + CHMN-SSy</td>
+<td>P1</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>十、智能体协同生态</h2>
+<pre><code>CHMN-BRAIN（董事长顶层设计智能体）
+    ├── 战略建议+7S诊断 ──→ 经营管理委员会
+    ├── 数据支撑+目标穿透 ──→ GM-CHIEF（总经理智能体）
+    ├── 赋能效能报告 ──→ 6大赋能部门（市场/供应/财务/人事/加工/研发）
+    ├── 独立核算+协同健康度 ──→ 3创业单元（堂食/酒水/外卖）
+    └── 门店日报/周报/月报 ──→ SM-CHIEF（店长智能体）
+
+外部系统整合：
+    ├── 凤脑OS（五行识人+七层认知）— 底层人才分析
+    ├── 五色光思维（白红黄绿蓝）— 多维诊断框架
+    ├── 象思维（物象→意象→原象）— 穿透表象洞察本质
+    └── 龙心OS五引擎 — 智能体运行的底层操作系统</code></pre>
+<hr>
+<h2>十一、知识存储与同步</h2>
+<p>本Skill的知识资产存储于三库：</p>
+<table>
+<thead><tr>
+<th>知识库</th>
+<th>存储路径</th>
+<th>用途</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Obsidian</strong></td>
+<td><code>D:/以观其妙书院知识库/以观其妙书院/06-味藏/董事长顶层设计/</code></td>
+<td>个人知识管理，双向链接，长期沉淀</td>
+</tr>
+<tr>
+<td><strong>IMA云端</strong></td>
+<td>知识库<code>以观其妙书院</code>→文件夹<code>龙龟神将备份资料</code>(folder_7441985942068358)</td>
+<td>云端备份，跨设备访问</td>
+</tr>
+<tr>
+<td><strong>WorkBuddy LLM Wiki</strong></td>
+<td><code>~/.workbuddy/wiki-knowledge/味藏/董事长顶层设计/</code></td>
+<td>AI即时调用，方法论框架</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>十二、核心金句集（19条·4系列）</h2>
+<blockquote><p><strong>源文档</strong>：味藏董事长顶层设计智能体Skills-1+N_核心金句集_v1.0.md
+<strong>构建方法</strong>：龙心OS五引擎逐字逐句深度学习
+<strong>五星占比</strong>：14/19（73.7%）</p></blockquote>
+<h3>系列一：G-CHMN-PH 哲学根基（4条·五星全部）</h3>
+<table>
+<thead><tr>
+<th>编号</th>
+<th>金句</th>
+<th>核心洞察</th>
+<th>7S映射</th>
+</tr></thead><tbody>
+<tr>
+<td>G-CHMN-01</td>
+<td><strong>7S的本质是从"依赖个人英雄"到"依赖系统能力"的跃迁</strong></td>
+<td>味藏20年核心命题：如何将个人魅力转化为可复制系统能力</td>
+<td>全局</td>
+</tr>
+<tr>
+<td>G-CHMN-02</td>
+<td><strong>不是替代董事长的决策，而是让决策更精准、更系统、更可追溯</strong></td>
+<td>人机协同黄金边界：AI=侦察兵+参谋，董事长=指挥官</td>
+<td>F1-F5</td>
+</tr>
+<tr>
+<td>G-CHMN-03</td>
+<td><strong>衡量重于感觉——用数据替代主观判断，用系统替代个人直觉</strong></td>
+<td>核心价值主张：每次决策有数据支撑</td>
+<td>Sy+全局</td>
+</tr>
+<tr>
+<td>G-CHMN-04</td>
+<td><strong>从1.0到2.0：依赖个人→依赖系统→自动进化→经济生命体</strong></td>
+<td>总路线图：手动挡→自动挡→自动驾驶</td>
+<td>S+全局</td>
+</tr>
+</tbody></table>
+<h3>系列二：G-CHMN-7S 7S维度（7条·每S一句说透）</h3>
+<table>
+<thead><tr>
+<th>编号</th>
+<th>对应S</th>
+<th>金句</th>
+<th>核心意象（物象→意象→原象）</th>
+</tr></thead><tbody>
+<tr>
+<td>G-CHMN-SV01</td>
+<td>SV</td>
+<td><strong>文化不是贴出来的是长出来的——SSV模块检查"土壤"</strong></td>
+<td>班前5分钟检查→土壤肥沃自生长→以食载道的根基</td>
+</tr>
+<tr>
+<td>G-CHMN-S02</td>
+<td>S</td>
+<td><strong>包间靠高客单+精准客户，卡座靠高频次+套餐引流</strong></td>
+<td>四维看板→包间做精+卡座做量→每一分钱可追溯</td>
+</tr>
+<tr>
+<td>G-CHMN-St03</td>
+<td>SSt</td>
+<td><strong>总部从管控者转为赋能者——SSt模块就是"赋能成绩单"</strong></td>
+<td>下店天数/满意度→考核反转(门店给总部打分)→权力真正下移</td>
+</tr>
+<tr>
+<td>G-CHMN-Sy04</td>
+<td>SSy</td>
+<td><strong>紧箍咒不是惩罚是保护——SSy确保保护不松红线不退</strong></td>
+<td>退菜率&lt;1%/NPS&gt;8→紧箍咒=免疫系统→红线不退=品牌不倒</td>
+</tr>
+<tr>
+<td>G-CHMN-Sty05</td>
+<td>SSty</td>
+<td><strong>底线靠制度，上限靠文化——SSty区分"刚够"和"刚好"</strong></td>
+<td>SOP执行率/NPS→制度=地板+文化=天花板→味藏的气质</td>
+</tr>
+<tr>
+<td>G-CHMN-Sf06</td>
+<td>SSf</td>
+<td><strong>人才不是培养出来的是打出来的——SSf追踪"战场"成长</strong></td>
+<td>出师率≥70%/赛马→战场上官兵→人才血液永续=味藏不老</td>
+</tr>
+<tr>
+<td>G-CHMN-Sk07</td>
+<td>SSk</td>
+<td><strong>"鲜"是信仰不是概念——SSk把信仰变为可测量的标准</strong></td>
+<td>五大军规量化→匠心=可追踪数据→以食载道的物质基础</td>
+</tr>
+</tbody></table>
+<h3>系列三：G-CHMN-FN 功能洞察（5条）</h3>
+<table>
+<thead><tr>
+<th>编号</th>
+<th>金句</th>
+<th>核心洞察</th>
+<th>关联功能</th>
+</tr></thead><tbody>
+<tr>
+<td>G-CHMN-08</td>
+<td><strong>7S诊断仪不是一年用一次的体检，而是每天的"健康手环"</strong></td>
+<td>频率跃迁=认知跃迁：事后复盘→实时掌控</td>
+<td>F3诊断</td>
+</tr>
+<tr>
+<td>G-CHMN-09</td>
+<td><strong>倒三角赋能：门店是客户，总部是服务员——考核反转是"顾客评价服务员"</strong></td>
+<td>权力重构：门店满意度占总部考核≥30%</td>
+<td>SSt+SSy</td>
+</tr>
+<tr>
+<td>G-CHMN-10</td>
+<td><strong>五色光诊断=给7S装一盏"五色灯"——白红黄绿蓝，每个维度不遗漏</strong></td>
+<td>五色分治同频共振：完整看见=不遗漏任何角度</td>
+<td>F3+五色光</td>
+</tr>
+<tr>
+<td>G-CHMN-11</td>
+<td><strong>董事长最需要的不是更多数据，而是"该看哪里"的导航</strong></td>
+<td>注意力=最稀缺资源：AI帮董事长聚焦</td>
+<td>F1意图识别</td>
+</tr>
+<tr>
+<td>G-CHMN-12</td>
+<td><strong>从"你觉得"到"数据显示"——这是董事长智能体的存在意义</strong></td>
+<td>语言模板变更："数据显示XX，建议YY"</td>
+<td>F4决策建议</td>
+</tr>
+</tbody></table>
+<h3>系列四：G-CHMN-HA 人机协同（3条·人机分工总宪法）</h3>
+<table>
+<thead><tr>
+<th>编号</th>
+<th>金句</th>
+<th>核心洞察</th>
+<th>关联功能</th>
+</tr></thead><tbody>
+<tr>
+<td>G-CHMN-13</td>
+<td><strong>AI做可量化的预处理，董事长做需判断的最终决策</strong></td>
+<td><strong>人机分工总宪法</strong>：AI≠决策者，人≠数据处理工</td>
+<td>F2+F4</td>
+</tr>
+<tr>
+<td>G-CHMN-14</td>
+<td><strong>数据告诉你"发生了什么"，直觉告诉你"为什么发生"</strong></td>
+<td>快思考+慢思考=完整判断：AI=显微镜，董事长=望远镜</td>
+<td>F3+F4</td>
+</tr>
+<tr>
+<td>G-CHMN-15</td>
+<td><strong>不要让AI替你做决策——让AI帮你做"决策前的功课"</strong></td>
+<td>底线提醒：AI输出"A/B/C建议→请选择"，决策权=人的最后尊严</td>
+<td>F4</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>十三、人机协同黄金边界（三条不可逾越的线）</h2>
+<h3>边界一：AI不替代人的决策（G-CHMN-02）</h3>
+<ul>
+<li>AI负责：数据收集/趋势分析/模式识别/异常预警/方案生成</li>
+<li>董事长负责：战略方向/文化判断/人事决策/例外处理/最终拍板</li>
+<li>象思维：AI=侦察兵+参谋 → 董事长=指挥官</li>
+</ul>
+<h3>边界二：分工清晰是协同的前提（G-CHMN-13）</h3>
+<ul>
+<li>日报/周报格式：🔵AI提供(自动生成) + 🔴董事长判断(手动确认)</li>
+<li>AI输出必须标注"数据事实"vs"判断决策"的分界线</li>
+<li>禁止AI替代人的价值判断（C-06禁止行为）</li>
+</ul>
+<h3>边界三：AI做"功课"，人做"决定"（G-CHMN-15）</h3>
+<ul>
+<li>AI建议格式："建议A(数据支撑XX)/建议B(数据支撑YY)/建议C(数据支撑ZZ)→请选择"</li>
+<li>永远保留"请选择"——这是决策权不可替代的最后防线</li>
+</ul>
+<hr>
+<h2>十四、隐秘知识关联全景图</h2>
+<h3>五维关联结构</h3>
+<pre><code>【哲学底座】G-CHMN-01(系统跃迁) + G-CHMN-04(1.0→2.0)
+    ↓ 为什么需要
+【7S诊断】SV01→S02→St03→Sy04→Sty05→Sf06→Sk07（每S一句穿透）
+    ↓ 怎么运转
+【功能引擎】G-CHMN-08(频率) + G-CHMN-09(权力) + G-CHMN-10(工具) + G-CHMN-11(导航) + G-CHMN-12(语言)
+    ↓ 谁来做
+【人机边界】G-CHMN-13(分工) + G-CHMN-14(融合) + G-CHMN-15(底线)
+    = 完整闭环</code></pre>
+<h3>关键关联链</h3>
+<pre><code>权力重构链：St03(倒三角) → G-CHMN-09(考核反转) → G-CHMN-13(AI分工边界)
+认知跃迁链：G-CHMN-12(数据显示) → G-CHMN-03(衡量) → G-CHMN-08(健康手环)
+文化信仰链：SV01(土壤) → 七步流转 → Sk07(匠心五大军规) → 量化反馈 → SV01
+人机三底线：G-CHMN-02 + G-CHMN-13 + G-CHMN-15（三条线守同一件事）</code></pre>
+<hr>
+<h2>十五、25组隐秘联系集成（3系列·全映射）</h2>
+<blockquote><p><strong>源文档</strong>：味藏董事长顶层设计智能体Skills-1+N_隐秘联系集_v1.0.md
+<strong>总计</strong>：25组（内部10组·跨系统10组·实战5组） | <strong>象思维三层映射覆盖</strong>：100%</p></blockquote>
+<h3>系列一：H-CHMN-I 内部7S嵌套（10组·阴阳对模式）</h3>
+<table>
+<thead><tr>
+<th>编号</th>
+<th>联系对</th>
+<th>原象金句</th>
+<th>关键量化指标</th>
+</tr></thead><tbody>
+<tr>
+<td>I01</td>
+<td>7S × 五色光扫描</td>
+<td>完整看见=从五个角度同时看</td>
+<td>五色光评分9.8/10</td>
+</tr>
+<tr>
+<td>I02</td>
+<td>SV文化 × 经营业绩</td>
+<td>商业可持续=文化厚度</td>
+<td>文化渗透率100%→业绩监测</td>
+</tr>
+<tr>
+<td>I03</td>
+<td>S双线 × Sy数据监控</td>
+<td>每分钱可追溯</td>
+<td>GC65%目标(当前55%)</td>
+</tr>
+<tr>
+<td>I04</td>
+<td>St倒三角 × Sy考核反转</td>
+<td>服务本质=被赋能者得到什么</td>
+<td>门店满意度&lt;4.0→扣30%</td>
+</tr>
+<tr>
+<td>I05</td>
+<td>Sf师徒制 × Sk认证</td>
+<td>人才=种出来不是买来的</td>
+<td>出师率&lt;70%→预警</td>
+</tr>
+<tr>
+<td>I06</td>
+<td>Sy紧箍咒 × Sk匠心</td>
+<td>品质=底线+上限完整光谱</td>
+<td>退菜率&gt;1%+4天未售罄→双红预警</td>
+</tr>
+<tr>
+<td>I07</td>
+<td>S三重重生 × Sf人才供应链</td>
+<td>永续经营=持续重生</td>
+<td>机制/人才/文化三重生</td>
+</tr>
+<tr>
+<td>I08</td>
+<td>SV饕餮图腾 × S客户分层</td>
+<td>对的人越多越好</td>
+<td>精准GC占比趋势</td>
+</tr>
+<tr>
+<td>I09</td>
+<td>S六模式 × Phase路线图</td>
+<td>蓝图到现实=地图+导航</td>
+<td>六模式KPI→Phase优先级</td>
+</tr>
+<tr>
+<td>I10</td>
+<td>Sty刚柔并济 × Sy制度文化</td>
+<td>最好管理=不觉得被管</td>
+<td>刚柔比：惩罚vs奖励/红线vs感动</td>
+</tr>
+</tbody></table>
+<h3>系列二：H-CHMN-X 跨系统融合（10组·接口协议模式）</h3>
+<table>
+<thead><tr>
+<th>编号</th>
+<th>跨系统对</th>
+<th>接口协议</th>
+<th>任务分配</th>
+</tr></thead><tbody>
+<tr>
+<td>X11</td>
+<td>× GM-CHIEF</td>
+<td>董事长定方向→GM解码→双向数据</td>
+<td>战略解码会</td>
+</tr>
+<tr>
+<td>X12</td>
+<td>× SM-CHIEF</td>
+<td>日报→周报→月报 三级双向</td>
+<td>三店数据聚合+共性问题识别</td>
+</tr>
+<tr>
+<td>X13</td>
+<td>× 凤脑OS</td>
+<td>7S说缺谁+五行说谁最适合</td>
+<td>堂食=金⭐5/酒水=金⭐5/外卖=土⭐5</td>
+</tr>
+<tr>
+<td>X14</td>
+<td>× 五色光</td>
+<td>色光×7S精确映射</td>
+<td>月度全景诊断白→红→黄→蓝→绿</td>
+</tr>
+<tr>
+<td>X15</td>
+<td>× 象思维</td>
+<td>三层追因：数据→逻辑→本质</td>
+<td>SV异常→三层穿透</td>
+</tr>
+<tr>
+<td>X16</td>
+<td>× 易经卦变</td>
+<td>五卦分析：本/变/互/错/综</td>
+<td>成本率65%危机→全景分析</td>
+</tr>
+<tr>
+<td>X17</td>
+<td>× 人机协同五象限</td>
+<td>S1(60%)+S3(25%)+S4(15%)</td>
+<td>日报→诊断→战略逐级升级</td>
+</tr>
+<tr>
+<td>X18</td>
+<td>× 矛盾论实践论</td>
+<td>发现主要矛盾→行动纲领→螺旋上升</td>
+<td>人才滞后→Sf师徒+赛马</td>
+</tr>
+<tr>
+<td>X19</td>
+<td>× 快思考慢思考</td>
+<td>系统1直觉×系统2数据→交叉验证</td>
+<td>日报格式：白光+红光</td>
+</tr>
+<tr>
+<td>X20</td>
+<td>× 帕累托原则</td>
+<td>SSy+SS+SSf=核心三驾马车</td>
+<td>Phase1优先开发高权重项</td>
+</tr>
+</tbody></table>
+<h3>系列三：H-CHMN-C 味藏门店实战（5组·真实数据切片）</h3>
+<table>
+<thead><tr>
+<th>编号</th>
+<th>实战案例</th>
+<th>核心诊断</th>
+<th>行动方案</th>
+<th>关联人物</th>
+</tr></thead><tbody>
+<tr>
+<td>C21</td>
+<td>金月湾包间GC</td>
+<td>55%→目标65%，差10个百分点</td>
+<td>强化企业会员体系</td>
+<td>堂食单元</td>
+</tr>
+<tr>
+<td>C22</td>
+<td>运营赋能人才产出</td>
+<td>熊进下店≥8天/月，追踪师徒出师率</td>
+<td>"点燃了多少人"报告</td>
+<td>熊进(火行人#19)</td>
+</tr>
+<tr>
+<td>C23</td>
+<td>成本率逼近65%红线</td>
+<td>63.2%→仅剩1.8个百分点</td>
+<td>优化供应链</td>
+<td>田宜昌(土行人#22)</td>
+</tr>
+<tr>
+<td>C24</td>
+<td>外卖刺身盒占比</td>
+<td>占比不达标</td>
+<td>品类结构优化</td>
+<td>柳能原(土行人#27)</td>
+</tr>
+<tr>
+<td>C25</td>
+<td>倒三角赋能闭环率</td>
+<td>闭环率&lt;80%</td>
+<td>强化考核反转</td>
+<td>赋能部门全体</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>十六、味藏门店实战案例（五联显微镜）</h2>
+<h3>案例1：金月湾包间GC占比诊断（H-CHMN-C21）</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>详情</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>当前状态</strong></td>
+<td>金月湾GC占比55%，距目标65%差10个百分点</td>
+</tr>
+<tr>
+<td><strong>象思维追因</strong></td>
+<td>物象(55%) → 意象(不是引流不够，是精准GC识别和转化机制不足) → 原象(包间=味藏灵魂空间，GC不达标="懂的人"还不够多)</td>
+</tr>
+<tr>
+<td><strong>SS模块诊断</strong></td>
+<td>建议强化企业会员体系，目标：3个月提升5个百分点</td>
+</tr>
+<tr>
+<td><strong>关联数据</strong></td>
+<td>金月湾占三家店总营业额41.65%，堂食单元核心门店</td>
+</tr>
+<tr>
+<td><strong>标签</strong></td>
+<td>#金月湾 #包间GC #企业会员 #精准客户</td>
+</tr>
+</tbody></table>
+<h3>案例2：运营总监熊进赋能人才产出（H-CHMN-C22）</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>详情</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>当前状态</strong></td>
+<td>熊进(火行人#19)，下店≥8天/月</td>
+</tr>
+<tr>
+<td><strong>象思维追因</strong></td>
+<td>物象(出师率/储备干部数) → 意象(文明圣火=不是自己烧多旺，而是点燃了多少人) → 原象(赋能者的价值=被赋能者获得了什么)</td>
+</tr>
+<tr>
+<td><strong>SSf模块诊断</strong></td>
+<td>月度输出"熊进赋能成效报告"→追踪师徒出师率+储备干部数</td>
+</tr>
+<tr>
+<td><strong>五行匹配</strong></td>
+<td>火行人(运营·热情推动·行动导向) + 陈倩彤水土既济协同</td>
+</tr>
+<tr>
+<td><strong>标签</strong></td>
+<td>#熊进 #运营赋能 #火行人 #文明圣火 #师徒出师率</td>
+</tr>
+</tbody></table>
+<h3>案例3：成本率逼近65%生命线（H-CHMN-C23）</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>详情</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>当前状态</strong></td>
+<td>成本率63.2%，距65%预警线仅1.8个百分点</td>
+</tr>
+<tr>
+<td><strong>象思维追因</strong></td>
+<td>物象(63.2%→65%→还剩1.8%) → 意象(成本率上升=利润被压缩→毛利率↓→净利率↓) → 原象(65%不是数字——是餐饮业生命线，越过即亏损)</td>
+</tr>
+<tr>
+<td><strong>SSy模块诊断</strong></td>
+<td>发出成本率预警→建议优化食材供应链→与采购部田宜昌联动</td>
+</tr>
+<tr>
+<td><strong>关联人物</strong></td>
+<td>采购经理田宜昌(土行人#22)→锁价降本引擎→年降本≥2%</td>
+</tr>
+<tr>
+<td><strong>标签</strong></td>
+<td>#成本率 #65%红线 #生命线 #供应链优化 #田宜昌</td>
+</tr>
+</tbody></table>
+<h3>案例4：外卖刺身盒占比不达标（H-CHMN-C24）</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>详情</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>当前状态</strong></td>
+<td>外卖刺身盒占比目标≥35%，当前未达标</td>
+</tr>
+<tr>
+<td><strong>象思维追因</strong></td>
+<td>物象(占比不达标) → 意象(不是外卖量不够，是品类结构需优化→刺身盒=匠心外卖旗帜) → 原象(外卖≠快餐=匠心也可以打包带走)</td>
+</tr>
+<tr>
+<td><strong>SSk三昧真火诊断</strong></td>
+<td>第二把火(外卖匠心延伸)→建议品类结构优化</td>
+</tr>
+<tr>
+<td><strong>关联人物</strong></td>
+<td>外卖创业单元(柳能原#27 土行人)→信息即增长→刺身盒占比=核心KPI</td>
+</tr>
+<tr>
+<td><strong>标签</strong></td>
+<td>#外卖刺身盒 #品类结构 #匠心外卖 #柳能原</td>
+</tr>
+</tbody></table>
+<h3>案例5：倒三角赋能闭环率（H-CHMN-C25）</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>详情</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>当前状态</strong></td>
+<td>闭环率&lt;80%</td>
+</tr>
+<tr>
+<td><strong>象思维追因</strong></td>
+<td>物象(总部需求→24h响应→48h闭环→门店满意度) → 意象(闭环率=赋能体系的血液循环效率，堵在哪就在哪坏死) → 原象(赋能不是口号——闭环率=承诺兑现率的唯一指标)</td>
+</tr>
+<tr>
+<td><strong>SSt模块诊断</strong></td>
+<td>评估部门赋能效能→闭环率&lt;80%→强化考核反转</td>
+</tr>
+<tr>
+<td><strong>关联制度</strong></td>
+<td>倒三角五大铁律：F2响应时限(24h方案)/F3闭环标准(48h闭环≥80%)</td>
+</tr>
+<tr>
+<td><strong>标签</strong></td>
+<td>#倒三角赋能 #闭环率 #血液循环 #考核反转 #承诺兑现率</td>
+</tr>
+</tbody></table>
+<table>
+<thead><tr>
+<th>文件</th>
+<th>路径</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>知识图谱v1.0</td>
+<td><code>references/知识图谱_v1.0.md</code></td>
+<td>6张Mermaid图+65节点+120关系边</td>
+</tr>
+<tr>
+<td>深度学习白皮书v1.0</td>
+<td><code>references/龙心OS深度学习白皮书_v1.0.md</code></td>
+<td>五引擎学习成果+4大隐秘关联</td>
+</tr>
+<tr>
+<td>核心金句集v1.0</td>
+<td><code>references/核心金句集_v1.0.md</code></td>
+<td>19条金句完整版·源文档</td>
+</tr>
+<tr>
+<td>金句深度学习报告v1.0</td>
+<td><code>references/核心金句集_深度学习报告_v1.0.md</code></td>
+<td>逐句五引擎分析+5大隐藏关联</td>
+</tr>
+<tr>
+<td>隐秘联系集v1.0</td>
+<td><code>references/隐秘联系集_v1.0.md</code></td>
+<td>25组隐秘联系完整版·源文档</td>
+</tr>
+<tr>
+<td>隐秘联系深度学习报告v1.0</td>
+<td><code>references/隐秘联系集_深度学习报告_v1.0.md</code></td>
+<td>三系列分析+5大跨系列关联</td>
+</tr>
+<tr>
+<td>味藏店长龙爪</td>
+<td><code>~/.workbuddy/skills/味藏店长龙爪/SKILL.md</code></td>
+<td>店长级智能体</td>
+</tr>
+<tr>
+<td>味藏顶层设计</td>
+<td><code>~/.workbuddy/skills/味藏顶层设计/SKILL.md</code></td>
+<td>味藏四维驱动顶层设计框架</td>
+</tr>
+<tr>
+<td>龙心OS</td>
+<td><code>~/.workbuddy/skills/AI龙龟共生伙伴操作系统/SKILL.md</code></td>
+<td>CHMN-BRAIN运行的底层操作系统</td>
+</tr>
+<tr>
+<td>凤脑OS</td>
+<td><code>~/.workbuddy/skills/凤脑OS/SKILL.md</code></td>
+<td>五行识人底层引擎</td>
+</tr>
+<tr>
+<td>五色光思维</td>
+<td><code>~/.workbuddy/skills/五色光思维/SKILL.md</code></td>
+<td>7S诊断的五色扫描方法论</td>
+</tr>
+<tr>
+<td>总索引v1.0</td>
+<td><code>references/总索引_v1.0.md</code></td>
+<td>50+节点全景导航·四库同步路由</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>十七、知识资产数据总览</h2>
+<table>
+<thead><tr>
+<th>统计项</th>
+<th>数值</th>
+</tr></thead><tbody>
+<tr>
+<td>产出文档数</td>
+<td>5份主文档（知识图谱/白皮书/金句集/隐秘联系集/总索引）</td>
+</tr>
+<tr>
+<td>主白皮书规模</td>
+<td>~30,000字/10章</td>
+</tr>
+<tr>
+<td>知识图谱</td>
+<td>6张Mermaid图/55+节点/120+边</td>
+</tr>
+<tr>
+<td>核心金句</td>
+<td>19条/4系列（73.7%五星）</td>
+</tr>
+<tr>
+<td>隐秘联系</td>
+<td>25组/3系列（象思维覆盖100%）</td>
+</tr>
+<tr>
+<td>7S Skills模块</td>
+<td>7个 (SV~Sk)·每个含核心公式</td>
+</tr>
+<tr>
+<td>总控职能</td>
+<td>5项 (F1意图→F5赋能)</td>
+</tr>
+<tr>
+<td>知识资产</td>
+<td>9大知识资产全映射</td>
+</tr>
+<tr>
+<td>场景路由</td>
+<td>10个核心场景</td>
+</tr>
+<tr>
+<td>触发规则</td>
+<td>P0:8组 + P1:7组 + P2:5组 = 20+触发词</td>
+</tr>
+<tr>
+<td>输出模板</td>
+<td>5种（日/周/月/季/年）</td>
+</tr>
+<tr>
+<td>Phase任务</td>
+<td>18项 (Phase1:6 + Phase2:7 + Phase3:5)</td>
+</tr>
+<tr>
+<td>五色光诊断评分</td>
+<td>9.8/10 卓越级</td>
+</tr>
+<tr>
+<td>跨系统整合</td>
+<td>10大系统深度融合</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>十八、四份文档·四层架构·一个体系</h2>
+<pre><code>知识图谱（架构层·骨头）→ 怎么搭
+        ↓
+核心金句集（哲学层·灵魂）→ 为什么
+        ↓
+隐秘联系集（应用层·血肉）→ 怎么用
+        ↓
+总索引（导航层·眼睛）→ 去哪找
+        =
+CHMN-BRAIN v1.0 完整知识体系</code></pre>
+<blockquote><p><strong>核心公式</strong>：<strong>CHMN-BRAIN = 1总控 × 7S模块Skills × 五色光诊断 × 倒三角赋能协议 × 五行人格适配 = 董事长的"数字大脑"</strong></p></blockquote>
+<hr>
+<h2>十九、附录A：7S诊断仪快速操作指南</h2>
+<h3>每日操作（3步）</h3>
+<ol>
+<li><strong>查看日报</strong> → 关注红色预警项</li>
+<li><strong>包间/卡座双线看板</strong> → 核对核心指标（GC占比/翻台率/客单价）</li>
+<li><strong>三大红线状态</strong> → 确认无违规（产品/效率/服务）</li>
+</ol>
+<h3>每周操作（3步）</h3>
+<ol>
+<li><strong>7S简要诊断</strong> → 关注评分最低的维度</li>
+<li><strong>赋能部门闭环率</strong> → 追踪下店和响应</li>
+<li><strong>人才动态</strong> → 师徒制/赛马/轮岗进度</li>
+</ol>
+<h3>每月操作（3步）</h3>
+<ol>
+<li><strong>7S全面诊断+五色光扫描</strong>（白→红→黄→蓝→绿顺序）</li>
+<li><strong>文化审计</strong> → 仪式执行率/宣讲达标率/奖功体系</li>
+<li><strong>战略穿透检查</strong> → 目标vs实际差距分析</li>
+</ol>
+<h3>每季操作（3步）</h3>
+<ol>
+<li><strong>7S全景报告+Phase进度评估</strong></li>
+<li><strong>三重重生能力评估</strong>（机制/人才/文化·1-5评分）</li>
+<li><strong>跨系统融合协同度检查</strong></li>
+</ol>
+<hr>
+<h2>二十、附录B：输出模板示例</h2>
+<h3>日报模板（结构化卡片）</h3>
+<pre><code>【7S日报】2026年X月X日
+📊 营业额：XX元 (环比±X%) | 成本率：XX% | GC占比：XX%
+🏪 包间：GCXX人/人均XX元/利用率XX  |  卡座：翻台XX/人均XX元
+🔴 预警：成本率逼近65%红线 (当前63.2%)
+🟢 亮点：精准GC转化率提升5%
+📋 待办：跟进酒水单元赋能需求响应时效</code></pre>
+<h3>AI建议输出格式</h3>
+<pre><code>🔵 AI提供（自动生成）：
+建议A（数据支撑XX）/ 建议B（数据支撑YY）/ 建议C（数据支撑ZZ）
+
+🔴 董事长判断（手动确认）：
+□ 采纳建议A  □ 采纳建议B  □ 采纳建议C  □ 暂不执行（理由：____）</code></pre>
+<hr>
+<h2>二十一、凤脑/凤心/凤爪OS整合协议</h2>
+<table>
+<thead><tr>
+<th>凤脑OS体系</th>
+<th>在CHMN-BRAIN中的应用</th>
+<th>调用时机</th>
+</tr></thead><tbody>
+<tr>
+<td>五行识人理论</td>
+<td>Sf人员模块——人才配置五行匹配</td>
+<td>人才盘点/岗位调整</td>
+</tr>
+<tr>
+<td>七层认知生态</td>
+<td>7S诊断——L1-L7全层级审计</td>
+<td>文化审计/战略复盘</td>
+</tr>
+<tr>
+<td>关系处理</td>
+<td>St结构——七部门协同诊断</td>
+<td>部门冲突/赋能障碍</td>
+</tr>
+<tr>
+<td>觉性→命运链条</td>
+<td>SV使命审计——从觉性到文化的根源检查</td>
+<td>年度文化方向</td>
+</tr>
+</tbody></table>
+<hr>
+<blockquote><p><strong>文档版本</strong>：v1.4 | <strong>构建日期</strong>：2026-05-22 | <strong>更新日期</strong>：2026-05-22 | <strong>构建方法</strong>：龙心OS五引擎工业化生产
+<strong>v1.1更新</strong>：整合19条核心金句集 + 7S模块象思维三层映射 + 人机协同黄金边界
+<strong>v1.2更新</strong>：整合25组隐秘联系集 + 7S嵌套矩阵 + 门店实战案例 + 跨系统深度集成
+<strong>v1.3更新</strong>：整合总索引 + 7S核心公式速查表 + P0/P1/P2三层触发 + 数据总览
+<strong>v1.4更新</strong>：整合主白皮书 + 五行AI适配(放大与约束矩阵) + 附录操作指南(日/周/月/季) + 日报/AI建议模板 + 凤脑/凤心/凤爪整合协议
+<strong>维护者</strong>：龙龟神将 | <strong>三库同步</strong>：Obsidian ✅ · IMA ✅ · LLM Wiki ✅</p>
+<p><strong>木生火，战略驱动执行！五份文档全部学透，Skill完整版落定。</strong> 🌳🔥🏗️</p></blockquote>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

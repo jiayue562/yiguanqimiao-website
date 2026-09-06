@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORID焦点讨论法 - 以观其妙书院</title>
+    <meta name="description" content="ORID焦点讨论法龙心OS结构化编译  分类：思维模型组合  五行属性：火  层级：B层源文件：思维模型/思维模型组合\ORID焦点讨论法.txt ｜ 字数：1638 ｜ 行数：61五色光分布（启发式）：红光32% 白光23% 黄光23% 蓝光20% 绿光0%象思维相关度：低（命中 0 次）一、核心定义核心定义（龙心OS精修）：开会各说各话、复盘流于形式、沟通情绪化严重、总结完没有任何落地动作——">
+    <meta name="keywords" content="[思维模型, 思维模型组合, 结构化学习, ORID, 决策, 沟通]">
+    <meta name="author" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta property="og:title" content="ORID焦点讨论法">
+    <meta property="og:description" content="ORID焦点讨论法龙心OS结构化编译  分类：思维模型组合  五行属性：火  层级：B层源文件：思维模型/思维模型组合\ORID焦点讨论法.txt ｜ 字数：1638 ｜ 行数：61五色光分布（启发式）：红光32% 白光23% 黄光23% 蓝光20% 绿光0%象思维相关度：低（命中 0 次）一、核心定义核心定义（龙心OS精修）：开会各说各话、复盘流于形式、沟通情绪化严重、总结完没有任何落地动作——">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/ORID焦点讨论法.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/ORID焦点讨论法.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "ORID焦点讨论法",
+      "description": "ORID焦点讨论法龙心OS结构化编译  分类：思维模型组合  五行属性：火  层级：B层源文件：思维模型/思维模型组合\ORID焦点讨论法.txt ｜ 字数：1638 ｜ 行数：61五色光分布（启发式）：红光32% 白光23% 黄光23% 蓝光20% 绿光0%象思维相关度：低（命中 0 次）一、核心定义核心定义（龙心OS精修）：开会各说各话、复盘流于形式、沟通情绪化严重、总结完没有任何落地动作——",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-30",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>ORID焦点讨论法</h1>
+            <div class="meta">
+                <span>📅 2026-07-30</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            ORID焦点讨论法...
+        </div>
+        
+        <article>
+<h1>ORID焦点讨论法</h1>
+
+<blockquote><strong>龙心OS结构化编译</strong> | 分类：思维模型组合 | 五行属性：火 | 层级：B层</blockquote>
+<blockquote>源文件：<code>思维模型/思维模型组合\ORID焦点讨论法.txt</code> ｜ 字数：1638 ｜ 行数：61</blockquote>
+<blockquote>五色光分布（启发式）：红光32% 白光23% 黄光23% 蓝光20% 绿光0%</blockquote>
+<blockquote>象思维相关度：低（命中 0 次）</blockquote>
+
+<h2>一、核心定义</h2>
+
+<strong>核心定义（龙心OS精修）</strong>：开会各说各话、复盘流于形式、沟通情绪化严重、总结完没有任何落地动作——这些问题的本质，不是谁的态度有问题，而是团队缺少一套统一的思考逻辑。
+
+<h2>二、详细内容</h2>
+<blockquote>逐行挖掘原则：下文为原文<strong>全文逐行保留</strong>（编号 <code>行号│内容</code>），未删改、未遗漏，供龙心OS五引擎（知识学习/象思维/五色光/知行合一/五象限）随时调取精读。</blockquote>
+
+<h3>2.1 逐行精读（全文保留·61 行）</h3>
+<pre><code>0001│ORID焦点讨论法：四层递进，看见事实→表达感受→解读意义→落地行动
+0002│开会各说各话、复盘流于形式、沟通情绪化严重、总结完没有任何落地动作——这些问题的本质，不是谁的态度有问题，而是团队缺少一套统一的思考逻辑。
+0003│
+0004│ORID焦点讨论法，就是把人类天然的思考顺序，变成一套标准化的对话流程。适配团队复盘、会议研讨、培训总结，也可用于个人每日复盘和自我决策。四层递进，层层深入，让每一次沟通都有共识、有洞察、有可落地的结果。
+0005│
+0006│一、ORID是什么？
+0007│ORID由教育学家斯坦利·罗姆联合麦肯锡顾问研发，经国际文化事务学会全球推广，是目前企业管理、团队引导、个人复盘的主流思考工具。
+0008│
+0009│它的底层逻辑很简单：人类的天然思考顺序是“看见事实→产生感受→解读意义→做出决策”。日常沟通之所以低效，大多是因为打乱了这个顺序——有人还在讲事实，有人已经跳到了结论；有人还在消化情绪，有人已经在布置任务。
+0010│
+0011│ORID的核心价值，就是把隐性的思考过程，转化为显性的、不可跳过的对话流程，让所有人的节奏同步。
+0012│
+0013│二、四层递进：看见事实→表达感受→解读意义→落地行动
+0014│四层流程严禁颠倒、严禁跳过，层层递进构成完整思考闭环。
+0015│
+0016│O层：看见事实（Objective）
+0017│核心目标：统一全员认知，搭建无争议的沟通基础。
+0018│
+0019│核心问题：具体发生了什么？
+0020│
+0021│核心要求：纯客观记录，如同摄像机取景。不带评判、不带情绪、不做主观猜测，只讲可验证的真实内容。
+0022│
+0023│常用提问：
+0024│
+0025│本次事件的关键节点有哪些？
+0026│数据和现场直观信息是什么？
+0027│哪些内容被反复提及？
+0028│常见误区：跳过事实直接谈感受、给结论。各方认知基线不一致，后续争论毫无意义。
+0029│
+0030│R层：表达感受（Reflective）
+0031│核心目标：释放情绪反馈，捕捉理性之下的真实体感。
+0032│
+0033│核心问题：我的直观感受是什么？
+0034│
+0035│核心要求：接纳所有情绪，不评判感受的对错。情绪是隐藏问题的重要信号，无需刻意压抑。
+0036│
+0037│常用提问：
+0038│
+0039│哪个环节让你惊喜或困扰？
+0040│本次过程最难或最有收获的部分是什么？
+0041│用一个词概括当下心情？
+0042│常见误区：否定团队情绪，一味强调理性。压抑真实诉求，会导致后续决策脱离实际人心。
+0043│
+0044│I层：解读意义（Interpretive）
+0045│核心目标：复盘根源、提炼规律，挖掘事件背后的价值与问题。
+0046│
+0047│核心问题：这件事对我们意味着什么？
+0048│
+0049│核心要求：结合事实与感受深度分析，允许多元观点碰撞，最终达成团队核心共识即可。
+0050│
+0051│常用提问：
+0052│
+0053│问题背后的根本原因是什么？
+0054│本次经历带来哪些经验？
+0055│维持现状会产生什么风险？
+0056│常见误区：主观臆断代替客观分析，管理者一言堂，扼杀团队独立思考，复盘浮于表面。
+0057│
+0058│D层：落地行动（Decisional）
+0059│核心目标：将复盘洞察转化为可落地、可考核的具体动作。
+0060│
+0061│核心问题：下一步具体要怎么做？
+0062│
+0063│核心要求：行动必须满足四要素——明确责任人、截止时间、执行动作、验收标准。杜绝空泛话术。
+0064│
+0065│常用提问：
+0066│
+0067│首要执行动作是什么？
+0068│需要停止、继续、新增哪些工作？
+0069│如何衡量行动效果？
+0070│常见误区：行动指令模糊，无责任、无时限、无考核标准。复盘只停留在口头，无实际改变。
+0071│
+0072│三、标准化闭环流程
+0073│四层单向递进，顺序不可打乱：
+0074│
+0075│看见事实 → 表达感受 → 解读意义 → 落地行动
+0076│
+0077│核心禁忌：跳过事实空谈分析、跳过情绪直接决策，都会违背人脑思考规律，让整场对话失效。
+0078│
+0079│四、适用场景
+0080│团队管理场景：
+0081│
+0082│项目阶段性复盘、结案总结
+0083│会议共识研讨、团队冲突沟通、绩效面谈
+0084│培训复盘、团建总结
+0085│个人成长场景：
+0086│
+0087│日/周度工作复盘、失误反思
+0088│重大事件回顾、关键选择自我梳理
+0089│写在最后
+0090│ORID本质上不是一套复杂的管理工具，而是一条回归本能的思考秩序。
+0091│
+0092│沟通低效的根源，从来不是能力不足，而是思考不同步。遵循ORID四层逻辑——先看见事实、再表达感受、后解读意义、最终落地行动——既能让团队沟通高效共识，也能让个人反思清晰有结果。
+0093│
+0094│好的对话不是从结论开始，而是从“你看到了什么”开始。
+</code></pre>
+
+<h2>三、关联文件（双向链接）</h2>
+<li>上游/总导航：[[00-总索引-思维模型]] ｜ 知识图谱：[[10-知识图谱-思维模型]] ｜ 概念手册：[[09-核心概念手册-思维模型]]</li>
+<li>跨文件同构（共享显著概念）：[[6种提问法速查手册]]，[[思维模型——人类认知的底层操作系统]]，[[《麦肯锡思考工具》理论体系梳理与应用研究]]，[[框架-思维框架-框架思维]]，[[教员方法论]]，[[保护动机理论]]，[[思维模式-方法论-解决问题”的模型]]，[[十种知识整合方式]]</li>
+
+<h2>四、核心金句</h2>
+<blockquote>开会各说各话、复盘流于形式、沟通情绪化严重、总结完没有任何落地动作——这些问题的本质，不是谁的态度有问题，而是团队缺少一套统一的思考逻辑。</blockquote>
+<blockquote>核心问题：这件事对我们意味着什么？</blockquote>
+<blockquote>核心要求：行动必须满足四要素——明确责任人、截止时间、执行动作、验收标准。杜绝空泛话术。</blockquote>
+<blockquote>沟通低效的根源，从来不是能力不足，而是思考不同步。遵循ORID四层逻辑——先看见事实、再表达感受、后解读意义、最终落地行动——既能让团队沟通高效共识，也能让个人反思清晰有结果。</blockquote>
+<blockquote>好的对话不是从结论开始，而是从“你看到了什么”开始。</blockquote>
+<blockquote>ORID焦点讨论法：四层递进，看见事实→表达感受→解读意义→落地行动</blockquote>
+
+<h2>五、标签</h2>
+<li>领域：思维模型组合、思维模型、ORID、决策、沟通</li>
+<li>机制：知识学习(十项认知指令)、五色光思维(白红黄绿蓝)</li>
+<li>洞见：跨域同构、网状知识、双向链接、人机共生</li>
+
+<h2>六、龙心OS隐秘联系（跨域同构·龙心OS精修）</h2>
+
+<blockquote>以下为龙心OS在跨域同构（北极星能力）下发现的隐秘结构联系，供五引擎组合调取。</blockquote>
+
+<li><strong>系统思维/涌现⟷五行生克网络</strong>：五行相生相克即系统要素互动的最小完备模型。</li>
+<li><strong>整体大于部分之和⟷格式塔关系场</strong>：系统涌现的格式塔解释，对应合道场域型组织。</li>
+<li><strong>批判性思维⟷五色光蓝光（批判审查）</strong>：蓝光专司『风险/问题/不足』的批判性定位。</li>
+<li><strong>批判性思维⟷知识学习（思辨指令）</strong>：批判性即十项认知指令中的『思辨』。</li>
+<li><strong>ORID⟷人机协同五象限（对话结构）</strong>：事实→感受→诠释→行动，正是 Q2 知识导师 / Q3 共创合伙人的对话骨架。</li>
+<li><strong>ORID⟷五色光（白事实→红感受→黄价值→绿行动）</strong>：四阶恰好对应四色光的递进。</li>
+<li><strong>双系统理论⟷龙心OS知行合一（直觉/反思）</strong>：System1=表示（直觉），System2=泛化（反思），三阶中的两端。</li>
+<li><strong>双系统⟷五色光（红直觉/白事实）</strong>：直觉属红光、理性属白光，二者协同即五色光调度。</li>
+<li><strong>跨文件同构</strong>：与 [[6种提问法速查手册]]、[[思维模型——人类认知的底层操作系统]]、[[《麦肯锡思考工具》理论体系梳理与应用研究]] 共享核心概念（详见「三、关联文件」章节），可在龙心OS知识学习引擎下做十项认知指令的对比推演。</li>
+
+<blockquote><strong>引擎路由</strong>：本文可由龙心OS五引擎组合调用——知识学习（十项认知指令深度学习）、象思维（物象→意象→原象）、五色光（白红黄绿蓝五维审查）、知行合一（表示→压缩→泛化）、人机协同五象限（[AI]/[人]/[⇄]分工定位）。</blockquote>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

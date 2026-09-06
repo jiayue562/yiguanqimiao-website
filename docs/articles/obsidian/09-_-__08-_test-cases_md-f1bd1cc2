@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>流程图 · 测试用例 - 以观其妙书院</title>
+<meta name="description" content="流程图 · 测试用例 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="流程图 · 测试用例">
+<meta property="og:description" content="流程图 · 测试用例 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "流程图 · 测试用例",
+    "description": "流程图 · 测试用例 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>流程图 · 测试用例</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>🧪 流程图 · 测试用例</h1>
+<h2>测试场景一：电商退货流程</h2>
+<h3>输入</h3>
+<p><strong>情境</strong>：设计电商退货处理流程，识别优化点</p>
+<h3>期望输出</h3>
+<pre><code>【流程图 · 电商退货处理】
+
+标准流程：
+开始 → 客户申请 → 客服审核 → 仓库接收 → 质检 → 退款/换货 → 结束
+
+泳道流程：
+
+| 客户 | 客服 | 仓库 | 财务 |
+|------|------|------|------|
+|开始 | | | |
+|→申请退货 | | | |
+| | →审核 | | |
+| | 合规? | | |
+| | 否→ | →拒绝 |
+| | 是→ | →接收 | |
+| | | →质检 | |
+| | | 合格? | |
+| | ←←← | 否→ | →换货 |
+| | | 是 | |
+| | ←←←←← | | →退款 |
+|结束 | | | |
+
+【优化点识别】
+1. 质检环节成为瓶颈 → 增设质检人员
+2. 退款周期长 → 自动化退款系统
+3. 客户等待焦虑 → 实时进度通知</code></pre>
+<h3>验证标准</h3>
+<ul>
+<li>[ ] 流程节点完整</li>
+<li>[ ] 决策点清晰</li>
+<li>[ ] 泳道划分合理</li>
+<li>[ ] 优化点有针对性</li>
+</ul>
+<hr>
+<h2>测试场景二：招聘流程优化</h2>
+<h3>输入</h3>
+<p><strong>情境</strong>：优化公司招聘流程，从30天缩短至15天</p>
+<h3>期望输出</h3>
+<pre><code>【流程图 · 招聘流程优化】
+
+优化前（21天）：
+简历筛选(3d) → 初试(7d) → 复试(7d) → 发放offer(4d)
+
+优化后（12天）：
+简历筛选(2d) → AI预筛(1d) → 初试(3d) → 复试(3d) → 并行背调(3d) → offer
+
+【关键优化】
+1. AI预筛：自动过滤不符合条件简历
+2. 并行背调：复试同时启动背调
+3. 简化审批：取消HRD复核环节</code></pre>
+<hr>
+<h2>测试场景三：新员工入职流程</h2>
+<h3>输入</h3>
+<p><strong>情境</strong>：设计跨部门协作的新员工入职流程</p>
+<h3>期望输出</h3>
+<pre><code>【泳道流程图 · 新员工入职】
+
+| HR | IT | 行政 | 直属上级 | 新员工 |
+|----|----|----|----------|--------|
+|开始 | | | | |
+|→发送offer | | | | |
+| | →创建账号 | | | |
+| | →发放设备 | | | |
+| | | →准备工位 | | |
+| | | | | →入职报到 |
+| | | | ← | →提交资料 |
+|→录入系统 | | | | |
+| | →账号开通 | | | |
+| | | →培训安排 | | |
+| | | | →导师分配 | |
+| | | | →任务布置 | |
+| | | | | →入职培训 |
+|结束 | | | | |</code></pre>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

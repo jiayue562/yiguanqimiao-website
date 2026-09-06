@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>人机握手协议 v1.0 - 以观其妙书院</title>
+<meta name="description" content="人机握手协议 v1.0 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="人机握手协议 v1.0">
+<meta property="og:description" content="人机握手协议 v1.0 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "人机握手协议 v1.0",
+    "description": "人机握手协议 v1.0 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>人机握手协议 v1.0</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>人机握手协议 v1.0</h1>
+<blockquote><p><strong>定位</strong>：L2人机握手层的核心规范——定义味藏组织中每一次人-AI信息交接的标准格式、质量标准、超时处理和反馈闭环。
+<strong>核心理念</strong>：每一次交接都是一次"握手"——握得好，组织流畅；握得差，组织阻塞。</p></blockquote>
+<hr>
+<h2>一、握手原则</h2>
+<h3>握手三要素</h3>
+<table>
+<thead><tr>
+<th>要素</th>
+<th>含义</th>
+<th>反例</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>清晰</strong></td>
+<td>信息格式标准、边界明确、无歧义</td>
+<td>"你看看这个数据有没有问题"</td>
+</tr>
+<tr>
+<td><strong>完整</strong></td>
+<td>包含决策所需的所有上下文</td>
+<td>只给数据不给背景和分析</td>
+</tr>
+<tr>
+<td><strong>有时限</strong></td>
+<td>每次握手都有明确的时间预期</td>
+<td>"有空看一下"</td>
+</tr>
+</tbody></table>
+<h3>握手铁律</h3>
+<ol>
+<li><strong>AI给出分析，人做出判断</strong>——AI不替人拍板</li>
+<li><strong>人给出方向，AI展开执行</strong>——人不替AI做细节</li>
+<li><strong>握手双方都清楚：谁在等谁、等什么、等到什么时候</strong></li>
+<li><strong>超时自动升级，不无声等待</strong></li>
+</ol>
+<hr>
+<h2>二、标准握手模板</h2>
+<h3>模板1：AI → 人（信息推送型）</h3>
+<p><strong>场景</strong>：AI完成分析/检测后，将结果推送给人审阅/决策</p>
+<pre><code>## 🤖→👤 握手 #[编号]
+
+**时间**：YYYY-MM-DD HH:MM
+**优先级**：[紧急/重要/常规]
+**类型**：[日报/异常/建议/方案]
+
+### 📊 AI已完成
+- [具体做了什么分析/检测]
+- [关键发现：3-5条bullet]
+- [数据支撑：关键数字]
+
+### 🎯 需要你做
+- [ ] [具体需要人做什么决策/确认/行动]
+- [ ] [如果有多个决策点，分开列出]
+
+### ⏰ 请在 [时间] 前回复
+**超时处理**：[超时后的自动动作]
+
+### 📎 附件/详情
+[链接或引用]</code></pre>
+<p><strong>味藏实例</strong>：</p>
+<pre><code>## 🤖→👤 握手 #2026-0623-001
+
+**时间**：2026-06-23 07:00
+**优先级**：重要
+**类型**：日报
+
+### 📊 AI已完成
+- 昨日经营数据汇总：营收 ¥42,800（环比+5.2%）
+- 异常检测：酒水占比从18%降至12%（↓6个百分点）⚠️
+- 客户满意度：4.2/5（2条低分，已标记）
+- TOP3菜品：金枪鱼大腹 ¥8,200 / 蓝鳍刺身拼盘 ¥6,500 / 海胆 ¥4,100
+
+### 🎯 需要你做
+- [ ] 确认酒水占比下降原因（新品影响/服务员推荐变化？）
+- [ ] 查看2条低分评价并决定处理方式
+- [ ] 今日采购确认（已自动生成清单）
+
+### ⏰ 请在 10:00 前回复酒水占比问题
+**超时处理**：10:00自动升级至总经理
+
+### 📎 详情
+- 完整日报：`日反馈/2026-06-22.md`
+- 低分评价：`客户反馈/2026-06-22/`</code></pre>
+<h3>模板2：人 → AI（任务下达型）</h3>
+<p><strong>场景</strong>：人向AI下达分析/执行任务</p>
+<pre><code>## 👤→🤖 任务 #[编号]
+
+**时间**：YYYY-MM-DD HH:MM
+**任务类型**：[分析/报告/方案/执行]
+**优先级**：[紧急/重要/常规]
+
+### 🎯 任务描述
+[一句话说清楚要做什么]
+
+### 📋 具体要求
+- 输出格式：[MD/表格/PPT]
+- 数据范围：[时间/门店/指标]
+- 特殊要求：[对比维度/关注点]
+
+### ⏰ 完成时限
+[YYYY-MM-DD HH:MM]
+
+### 📎 参考
+[相关文件/数据/上下文]</code></pre>
+<h3>模板3：AI ↔ 人（对话确认型）</h3>
+<p><strong>场景</strong>：AI执行中遇到需要人确认的分叉点</p>
+<pre><code>## 🤖↔👤 确认请求 #[编号]
+
+**当前进度**：[AI已完成的部分]
+**分叉点**：[遇到了什么需要选择的情况]
+
+### 选项A：[方案描述]
+- 优点：
+- 风险：
+- AI建议：[倾向性建议]
+
+### 选项B：[方案描述]
+- 优点：
+- 风险：
+
+### ⏰ 请在 [时间] 前选择
+**默认处理**：若无回复，按 [选项X] 执行</code></pre>
+<h3>模板4：双向握手（任务完成交接）</h3>
+<p><strong>场景</strong>：AI完成任务后，人进行验收</p>
+<pre><code>## ✅ 完成交接 #[编号]
+
+**原任务**：[任务编号和描述]
+**完成时间**：YYYY-MM-DD HH:MM
+
+### 🟢 AI交付物
+[具体的产出]
+
+### 🔴 请验收
+- [ ] [验收点1]
+- [ ] [验收点2]
+- [ ] [验收点3]
+
+### ⏰ 验收时限
+**超时处理**：默认通过，可事后反馈</code></pre>
+<hr>
+<h2>三、握手质量标准</h2>
+<h3>AI→人信息质量标准</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>标准</th>
+<th>不合格示例</th>
+</tr></thead><tbody>
+<tr>
+<td>可行动性</td>
+<td>人看完后知道具体要做什么</td>
+<td>"数据有些异常"→应说"酒水占比下降6个百分点，请确认原因"</td>
+</tr>
+<tr>
+<td>压缩率</td>
+<td>3-5条关键发现 + 1个核心建议</td>
+<td>丢出20页原始数据</td>
+</tr>
+<tr>
+<td>上下文</td>
+<td>包含对比基线（同比/环比/目标）</td>
+<td>只说"营收42,800"不提供对比</td>
+</tr>
+<tr>
+<td>紧迫性</td>
+<td>标注优先级 + 明确时限</td>
+<td>所有信息都标"重要"</td>
+</tr>
+</tbody></table>
+<h3>人→AI任务质量标准</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>标准</th>
+<th>不合格示例</th>
+</tr></thead><tbody>
+<tr>
+<td>清晰度</td>
+<td>AI不需要追问就能开始执行</td>
+<td>"帮我分析一下"→应说"分析上月各店营收趋势，输出表格+3个关键发现"</td>
+</tr>
+<tr>
+<td>边界</td>
+<td>明确说"要什么"和"不要什么"</td>
+<td>不设边界导致AI过度输出</td>
+</tr>
+<tr>
+<td>格式</td>
+<td>指定输出格式和结构</td>
+<td>不指定导致格式不匹配</td>
+</tr>
+<tr>
+<td>时限</td>
+<td>明确deadline</td>
+<td>"有空做一下"</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>四、反馈闭环</h2>
+<h3>AI输出质量评分（人每次验收时填写）</h3>
+<pre><code>## 反馈 #[编号]
+
+**任务**：[原任务]
+**评分**：[1-5分]
+- 信息准确性：⭐×N
+- 行动指导性：⭐×N
+- 格式规范性：⭐×N
+- 时效性：⭐×N
+
+**改进建议**：
+[如果有任何不好用的地方]</code></pre>
+<h3>反馈效应</h3>
+<table>
+<thead><tr>
+<th>连续评分</th>
+<th>AI行为调整</th>
+</tr></thead><tbody>
+<tr>
+<td>连续5次≥4分</td>
+<td>维持现有标准</td>
+</tr>
+<tr>
+<td>连续3次3分</td>
+<td>调整输出格式/详细度</td>
+</tr>
+<tr>
+<td>连续2次≤2分</td>
+<td>触发握手协议复审，调整该类型任务的AI模板</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>五、握手超时处理</h2>
+<h3>超时分级</h3>
+<table>
+<thead><tr>
+<th>握手类型</th>
+<th>标准时限</th>
+<th>⚠️ 警告</th>
+<th>🚨 升级</th>
+<th>🔴 紧急</th>
+</tr></thead><tbody>
+<tr>
+<td>日报推送</td>
+<td>2小时</td>
+<td>4h提醒</td>
+<td>8h升级</td>
+<td>-</td>
+</tr>
+<tr>
+<td>异常预警</td>
+<td>30分钟</td>
+<td>1h提醒</td>
+<td>2h升级至总经理</td>
+<td>4h紧急通知</td>
+</tr>
+<tr>
+<td>方案审批</td>
+<td>1天</td>
+<td>2天提醒</td>
+<td>3天升级</td>
+<td>-</td>
+</tr>
+<tr>
+<td>应急响应</td>
+<td>15分钟</td>
+<td>-</td>
+<td>30分钟紧急通知</td>
+<td>1h启动预案</td>
+</tr>
+<tr>
+<td>任务下达</td>
+<td>4小时</td>
+<td>8h提醒</td>
+<td>24h标记为取消</td>
+<td>-</td>
+</tr>
+</tbody></table>
+<h3>超时日志</h3>
+<p>每次超时自动记录到 <code>瓶颈追踪系统</code>：</p>
+<pre><code>| 日期 | 握手类型 | 责任人 | 原定时限 | 实际用时 | 超时倍数 | 影响 |
+|------|---------|--------|---------|---------|---------|------|</code></pre>
+<hr>
+<h2>六、智能体→智能体握手</h2>
+<h3>AI→AI握手标准</h3>
+<p>味藏智能体之间也需要标准化握手：</p>
+<pre><code>## 🤖→🤖 路由 #[编号]
+
+**来源智能体**：[name P=XX]
+**目标智能体**：[name P=XX]
+**路由原因**：[为什么需要交给这个智能体]
+
+### 📦 传递数据
+[结构化数据，JSON格式]
+
+### 🔗 上下文
+[当前任务的完整上下文链接]
+
+### ⏰ 期望响应时间
+- 标准：30分钟
+- 紧急：5分钟（需Gate审批）</code></pre>
+<h3>跨层路由规则</h3>
+<table>
+<thead><tr>
+<th>路由方向</th>
+<th>是否需要Gate</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>赋能层→执行层</td>
+<td>不需要</td>
+<td>专业指令直达一线</td>
+</tr>
+<tr>
+<td>执行层→赋能层</td>
+<td>不需要</td>
+<td>一线请求直接支援</td>
+</tr>
+<tr>
+<td>执行层→决策层</td>
+<td><strong>需要Gate</strong></td>
+<td>升级必须经过超级店长</td>
+</tr>
+<tr>
+<td>赋能层→决策层</td>
+<td><strong>需要Gate</strong></td>
+<td>战略建议需要Gate编排</td>
+</tr>
+<tr>
+<td>决策层→执行层</td>
+<td>不需要</td>
+<td>战略指令直达一线</td>
+</tr>
+</tbody></table>
+<h3>Gate拦截场景</h3>
+<p>超级店长（P=96）的Gate功能自动拦截：</p>
+<ul>
+<li>同一任务被重复路由</li>
+<li>跨层路由缺少必要上下文</li>
+<li>智能体Trust Score&lt;50时的路由请求</li>
+<li>涉及S级决策时直接路由尝试绕过人审批</li>
+</ul>
+<hr>
+<p><strong>关联文件</strong>：</p>
+<ul>
+<li><code>00-组织宪法.md</code> — 五大原则</li>
+<li><code>01-决策协议矩阵.md</code> — 决策类型与权限</li>
+<li><code>05-瓶颈追踪系统.md</code> — 握手超时自动记录</li>
+</ul>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

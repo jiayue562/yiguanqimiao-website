@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>🔗 三向同步系统 (Tri-Sync System) v4.1 - 以观其妙书院</title>
+<meta name="description" content="🔗 三向同步系统 (Tri-Sync System) v4.1 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="🔗 三向同步系统 (Tri-Sync System) v4.1">
+<meta property="og:description" content="🔗 三向同步系统 (Tri-Sync System) v4.1 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "🔗 三向同步系统 (Tri-Sync System) v4.1",
+    "description": "🔗 三向同步系统 (Tri-Sync System) v4.1 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>🔗 三向同步系统 (Tri-Sync System) v4.1</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>🔗 三向同步系统 (Tri-Sync System) v4.1</h1>
+<blockquote><p><strong>WorkBuddy ↔ Obsidian ↔ IMA</strong> 三向知识同步系统</p>
+<p>版本: 4.1.0 | 更新: 2026-05-20 | AI OS v6.0配套</p></blockquote>
+<h2>🆕 v4.1升级内容</h2>
+<blockquote><p><strong>v4.1核心修复</strong>：IMA Base URL修正 + folder_id格式修正 + kb_id显式标注 + API参数修正</p></blockquote>
+<table>
+<thead><tr>
+<th>变更项</th>
+<th>v4.0（有误）</th>
+<th>v4.1（已修正）</th>
+</tr></thead><tbody>
+<tr>
+<td>IMA Base URL</td>
+<td><code>ima.qq.com</code>（未验证）</td>
+<td>✅ <code>https://ima.qq.com</code>（<code>openapi.im.qq.com</code> DNS已失效）</td>
+</tr>
+<tr>
+<td>folder_id</td>
+<td><code>7441985942068358</code></td>
+<td>✅ <code>folder_7441985942068358</code>（必须带<code>folder_</code>前缀）</td>
+</tr>
+<tr>
+<td>kb_id</td>
+<td>未标注</td>
+<td>✅ <code>DhG0JMfmIYIkPOxSs3U4gCpnqzCX2JQfBwqUAy887ZY=</code></td>
+</tr>
+<tr>
+<td>search参数</td>
+<td><code>keyword</code></td>
+<td>✅ <code>query</code>（search_knowledge_base用query非keyword）</td>
+</tr>
+<tr>
+<td>import_doc</td>
+<td>未标content_format</td>
+<td>✅ <code>content_format: 1</code>（必填，1=Markdown）</td>
+</tr>
+<tr>
+<td>全链路验证</td>
+<td>未验证</td>
+<td>✅ 笔记创建+知识库关联+COS凭证获取均通过</td>
+</tr>
+</tbody></table>
+<h3>v4.0升级内容（历史）</h3>
+<table>
+<thead><tr>
+<th>变更项</th>
+<th>v3.0</th>
+<th>v4.0</th>
+</tr></thead><tbody>
+<tr>
+<td>Obsidian路径</td>
+<td><code>观其妙书院</code></td>
+<td>✅ <code>以观其妙书院</code></td>
+</tr>
+<tr>
+<td>Obsidian操作</td>
+<td>仅直接文件读写</td>
+<td>✅ obsidian-cli + 直接文件读写 + kepano skills</td>
+</tr>
+<tr>
+<td>IMA API路径</td>
+<td><code>ima.qq.com/agent-interface</code></td>
+<td>✅ <code>ima.qq.com/openapi/note/v1</code> + <code>openapi/wiki/v1</code></td>
+</tr>
+<tr>
+<td>IMA知识库</td>
+<td>仅概念</td>
+<td>✅ folder_id明确标注</td>
+</tr>
+<tr>
+<td>WorkBuddy源</td>
+<td>仅Brain目录</td>
+<td>✅ Memory + LLM Wiki 双源</td>
+</tr>
+<tr>
+<td>外部Skills</td>
+<td>无</td>
+<td>✅ kepano obsidian-cli + obsidian-markdown</td>
+</tr>
+</tbody></table>
+<h2>🎯 核心功能</h2>
+<ol>
+<li><strong>三向同步</strong>: WorkBuddy Memory/Wiki、Obsidian、IMA 三个知识库增量同步</li>
+<li><strong>原生automation驱动</strong>: 不依赖外部脚本，由WorkBuddy自动化系统直接执行</li>
+<li><strong>obsidian-cli 集成</strong>: 完整的 Obsidian CRUD 操作（搜索、创建、读取、管理）</li>
+<li><strong>kepano Skills集成</strong>: obsidian-cli + obsidian-markdown 规范格式</li>
+<li><strong>IMA API 集成</strong>: 通过ima-skill实现笔记创建+知识库上传</li>
+<li><strong>增量模式</strong>: 仅同步当日变更，提高效率</li>
+<li><strong>容错处理</strong>: IMA API不可用时自动跳过，不阻塞其他同步</li>
+</ol>
+<h2>📁 系统架构 v5.0</h2>
+<pre><code>┌──────────────────────────────────────────────────────────────────────┐
+│       🔗 六向同步系统 v5.0（WorkBuddy原生Automation + CLI工具）        │
+├──────────────────────────────────────────────────────────────────────┤
+│                                                                      │
+│  ┌────────────────────────────────────────────────────────────┐     │
+│  │           WorkBuddy 原生 Automation 引擎                      │     │
+│  │                                                            │     │
+│  │  ① workbuddy-obsidian (每日23:30)                            │     │
+│  │     WB Memory/Wiki → Obsidian 增量同步                      │     │
+│  │                                                            │     │
+│  │  ② workbuddy-ima (每日23:35)                                 │     │
+│  │     WB Memory/Wiki → IMA 云端同步                            │     │
+│  │                                                            │     │
+│  │  ③ geo-deploy (每日23:40) 🆕                                 │     │
+│  │     GEO转化 → GitHub推送 → Cloudflare Pages部署              │     │
+│  │     → pages.dev网站全球CDN曝光                                │     │
+│  └────────────────────────────────────────────────────────────┘     │
+│                                                                      │
+│  ┌─────────────────────┐  ┌─────────────────────┐                   │
+│  │   Obsidian 本地      │  │   IMA 云端            │                   │
+│  │   D:\以观其妙书院\    │  │   知识库: 以观其妙书院  │                   │
+│  │   obsidian-cli       │  │   API: ima.qq.com     │                   │
+│  └─────────────────────┘  └─────────────────────┘                   │
+│                                                                      │
+│  ┌─────────────────────┐  ┌─────────────────────────────────────┐   │
+│  │   GitHub             │  │   Cloudflare Pages + pages.dev       │   │
+│  │   jiayue562/         │  │   wrangler deploy → CDN全球分发       │   │
+│  │   yiguanqimiao-      │  │   yiguanqimiao-website.pages.dev     │   │
+│  │   website            │  │   3128篇GEO优化文章                   │   │
+│  └─────────────────────┘  └─────────────────────────────────────┘   │
+│                                                                      │
+└──────────────────────────────────────────────────────────────────────┘</code></pre>
+<h2>🚀 快速使用</h2>
+<h3>方式一：自动同步（推荐）</h3>
+<p>无需手动操作。WorkBuddy原生automation自动执行：</p>
+<table>
+<thead><tr>
+<th>自动化任务</th>
+<th>时间</th>
+<th>功能</th>
+</tr></thead><tbody>
+<tr>
+<td>workbuddy-obsidian</td>
+<td>每日23:30</td>
+<td>WB→Obsidian增量同步</td>
+</tr>
+<tr>
+<td>workbuddy-ima</td>
+<td>每日23:35</td>
+<td>WB→IMA云端同步</td>
+</tr>
+<tr>
+<td>automation-5</td>
+<td>每日23:45</td>
+<td>沟通记录归档+Obsidian同步</td>
+</tr>
+</tbody></table>
+<h3>方式二：手动同步</h3>
+<p><strong>Obsidian操作</strong>（三种方式）:</p>
+<ol>
+<li><strong>直接文件读写</strong>（最可靠，推荐用于批量操作）:<ul>
+<li>读取：Read工具读取 <code>D:\以观其妙书院知识库\以观其妙书院\</code> 下任意.md文件</li>
+<li>写入：Write/Edit工具写入对应路径</li>
+<li>搜索：Grep/Glob工具搜索文件内容/文件名</li>
+</ul></li>
+<li><strong>obsidian-cli</strong>（推荐用于交互式操作）:</li>
+</ol>
+<p>   # 创建新笔记（通过Obsidian URI，需Obsidian运行中）
+   obsidian-cli create "文件夹/笔记名" --content "内容" --open</p>
+<p>   # 设置默认知识库
+   obsidian-cli set-default "以观其妙书院"
+   obsidian-cli print-default --path-only
+   # 输出: D:\以观其妙书院知识库\以观其妙书院</p>
+<pre><code>
+3. **kepano Skills**（已安装，自动加载）:
+   - obsidian-cli: 提供CLI操作最佳实践
+   - obsidian-markdown: 提供Obsidian Markdown格式规范
+
+**IMA操作**（通过ima-skill）:
+
+1. **笔记操作** (openapi/note/v1):</code></pre>
+<ul>
+<li>import_doc: 创建笔记</li>
+<li>append_doc: 追加内容</li>
+<li>search_note_book: 搜索笔记</li>
+<li>list_note_folder_by_cursor: 列出笔记本</li>
+<li>get_doc_content: 读取笔记正文</li>
+</ul>
+<ol>
+<li><strong>知识库操作</strong> (openapi/wiki/v1):<ul>
+<li>search_knowledge_base: 搜索知识库</li>
+<li>get_knowledge_list: 浏览知识库内容</li>
+<li>add_knowledge: 添加内容到知识库</li>
+<li>import_urls: 添加网页链接</li>
+</ul></li>
+<li><strong>触发词</strong>: "同步到IMA" / "IMA知识库" / "上传到IMA"</li>
+</ol>
+<h2>📋 同步目录结构</h2>
+<h3>Obsidian 同步结构</h3>
+<pre><code>D:\以观其妙书院知识库\以观其妙书院\
+├── 00-WorkBuddy-Sync/        # WorkBuddy自动同步目录
+│   ├── 04-Knowledge/          # 知识沉淀文档
+│   └── ...
+├── 00-索引与导航/              # 知识库索引
+├── 01-核心体系/                # 核心知识（岗位智能体、去总部化等）
+├── 02-信仰文化体系/            # 心文化、大圆满等
+├── 03-知识地基层/              # LLM Wiki等
+├── 05-五行人格心理学/          # 五行人格系列
+├── 06-工作记录与复盘/          # 工作日志
+└── 09-技能库/                  # Skill文档</code></pre>
+<h3>IMA 同步结构</h3>
+<pre><code>知识库: 以观其妙书院 (kb_id: DhG0JMfmIYIkPOxSs3U4gCpnqzCX2JQfBwqUAy887ZY=)
+└── 文件夹: 龙龟神将备份资料 (folder_id: folder_7441985942068358)
+    ├── 味藏AI应用·岗位提示词深度学习.md
+    ├── 味藏AI应用·岗位提示词知识图谱.md
+    ├── 企业文化顶层设计·深度学习.md
+    ├── 企业文化顶层设计·知识图谱.md
+    └── ...（后续同步内容）</code></pre>
+<h3>WorkBuddy LLM Wiki 同步结构</h3>
+<pre><code>~/.workbuddy/wiki-knowledge/wiki/
+├── 去总部化理论.md
+├── 味藏AI应用岗位提示词体系.md
+└── ...（方法论框架层）</code></pre>
+<h2>⚙️ 关键路径</h2>
+<table>
+<thead><tr>
+<th>平台</th>
+<th>路径</th>
+<th>说明</th>
+<th>操作方式</th>
+</tr></thead><tbody>
+<tr>
+<td>WorkBuddy Memory</td>
+<td><code>c:\Users\jia'yue\WorkBuddy\Claw\.workbuddy\memory\</code></td>
+<td>工作记忆源</td>
+<td>Read/Write/Edit</td>
+</tr>
+<tr>
+<td>WorkBuddy Wiki</td>
+<td><code>C:\Users\jia'yue\.workbuddy\wiki-knowledge\</code></td>
+<td>LLM Wiki源</td>
+<td>Read/Write</td>
+</tr>
+<tr>
+<td>WorkBuddy Skills</td>
+<td><code>C:\Users\jia'yue\.workbuddy\skills\</code></td>
+<td>技能库源</td>
+<td>Read</td>
+</tr>
+<tr>
+<td>Obsidian</td>
+<td><code>D:\以观其妙书院知识库\以观其妙书院\</code></td>
+<td>目标1</td>
+<td>文件读写+obsidian-cli</td>
+</tr>
+<tr>
+<td>IMA</td>
+<td><code>https://ima.qq.com</code></td>
+<td>目标2</td>
+<td>OpenAPI</td>
+</tr>
+<tr>
+<td>IMA凭证</td>
+<td><code>~/.config/ima/</code></td>
+<td>IMA认证</td>
+<td>client_id + api_key</td>
+</tr>
+</tbody></table>
+<h2>🔄 同步流程</h2>
+<h3>WB → Obsidian 增量同步（每日23:30）</h3>
+<pre><code>1. 读取 WorkBuddy Memory (当日YYYY-MM-DD.md + MEMORY.md)
+2. 读取 WorkBuddy LLM Wiki (wiki/下变更的.md)
+3. 对比 Obsidian 中已有文件（通过文件存在性+内容hash）
+4. 写入新增/修改的文件到 Obsidian 对应目录
+5. 生成同步日志</code></pre>
+<h3>WB → IMA 云端同步（每日23:35）</h3>
+<pre><code>1. 读取 WorkBuddy Memory (当日变更)
+2. 读取 WorkBuddy LLM Wiki (当日变更)
+3. 对每个新增/修改的文档:
+   a. 调用 import_doc 创建笔记（content_format=1）
+   b. 调用 add_knowledge 将笔记关联到知识库
+4. 容错: IMA API不可用时自动跳过，不阻塞</code></pre>
+<h3>GEO转化 + GitHub + Cloudflare + pages.dev 🆕（每日23:40）</h3>
+<pre><code>1. 运行 GEO优化脚本:
+   C:\Users\jia'yue\WorkBuddy\yiguanqimiao-website\scripts\geo_optimize.py
+   → 将全部.md文章转为AI爬取友好的HTML
+   → 生成 llms.txt + sitemap.xml + robots.txt
+
+2. 打包 dist 目录:
+   rm -rf dist &amp;&amp; mkdir dist
+   cp -r articles dist/ &amp;&amp; cp llms.txt sitemap.xml robots.txt dist/
+   python -c 修复根首页articles/链接前缀
+
+3. 部署到 Cloudflare Pages:
+   CLOUDFLARE_API_TOKEN=cfut_xxx CLOUDFLARE_ACCOUNT_ID=c1965573a5f89d696d011372a7cd0c9e \
+   npx wrangler pages deploy dist --project-name=yiguanqimiao-website --branch=main --commit-dirty=true
+   → 全球CDN分发: https://yiguanqimiao-website.pages.dev/
+
+4. 推送到 GitHub（备用存档）:
+   cd yiguanqimiao-website
+   git add articles/ llms.txt sitemap.xml robots.txt
+   git commit -m "GEO同步: {date}"
+   git push origin master</code></pre>
+<h2>🛡️ 安全说明</h2>
+<ul>
+<li>IMA凭证仅存储在本地 <code>~/.config/ima/</code></li>
+<li>凭证仅用于官方IMA API认证（<code>ima.qq.com</code>）</li>
+<li>不会将凭证发送到任何第三方服务</li>
+<li>原生automation不依赖外部脚本，减少攻击面</li>
+<li>Obsidian文件操作遵循个人文件安全规则</li>
+</ul>
+<h2>📞 故障排除</h2>
+<h3>常见问题</h3>
+<ol>
+<li><strong>同步未执行</strong>: 检查automation状态 <code>automation_update(mode="list")</code></li>
+<li><strong>Obsidian同步失败</strong>: 确认路径 <code>D:\以观其妙书院知识库\以观其妙书院\</code> 存在</li>
+<li><strong>IMA API错误</strong>: 检查 <code>~/.config/ima/</code> 凭证文件；Base URL必须是<code>https://ima.qq.com</code>（<code>openapi.im.qq.com</code> DNS已失效）；folder_id必须带<code>folder_</code>前缀</li>
+<li><strong>obsidian-cli未找到</strong>: <code>npm install -g @yakitrak/obsidian-cli</code></li>
+<li><strong>IMA folder不存在</strong>: folder_id格式必须为<code>folder_</code>前缀开头，如<code>folder_7441985942068358</code>（非裸数字ID）</li>
+<li><strong>Obsidian搜索无结果</strong>: 使用 <code>obsidian-cli sc "关键词"</code> (非 <code>search</code>)</li>
+</ol>
+<h2>📊 版本历史</h2>
+<table>
+<thead><tr>
+<th>版本</th>
+<th>日期</th>
+<th>变更</th>
+</tr></thead><tbody>
+<tr>
+<td>v4.1.0</td>
+<td>2026-05-20</td>
+<td>修正IMA Base URL + folder_id格式 + kb_id + API参数 + 全链路验证通过</td>
+</tr>
+<tr>
+<td>v4.0.0</td>
+<td>2026-05-20</td>
+<td>整合kepano skills + 修正Obsidian路径 + 完善IMA API路径 + LLM Wiki双源</td>
+</tr>
+<tr>
+<td>v3.0.0</td>
+<td>2026-05-17</td>
+<td>架构重构：原生automation替代外部脚本，删除6个冗余自动化</td>
+</tr>
+<tr>
+<td>v2.0.0</td>
+<td>2026-04-24</td>
+<td>新增SKILL.md，配置IMA API</td>
+</tr>
+<tr>
+<td>v1.0.0</td>
+<td>2026-04-17</td>
+<td>初始设计，依赖sync.py/tri-sync.ps1（未实现）</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>版本</strong>: 4.1.0  
+<strong>最后更新</strong>: 2026-05-20  
+<strong>兼容性</strong>: WorkBuddy 1.0+, Obsidian 1.0+, IMA OpenAPI  
+<strong>维护者</strong>: 龙龟神将</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

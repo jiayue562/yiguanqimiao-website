@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>geo-converter · GEO自动转化上传Skill - 以观其妙书院</title>
+<meta name="description" content="geo-converter · GEO自动转化上传Skill - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="geo-converter · GEO自动转化上传Skill">
+<meta property="og:description" content="geo-converter · GEO自动转化上传Skill - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "geo-converter · GEO自动转化上传Skill",
+    "description": "geo-converter · GEO自动转化上传Skill - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>geo-converter · GEO自动转化上传Skill</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>geo-converter · GEO自动转化上传Skill</h1>
+<blockquote><p><strong>版本</strong>：v3.0 | <strong>更新日期</strong>：2026-05-28 | <strong>维护者</strong>：龙龟神将
+<strong>定位</strong>：每日自动将公众号文章转化为GEO格式并上传GitHub仓库，基于GEO方案v3.0完整标准
+<strong>参考文档</strong>：<code>references/geo-standard.md</code>（完整GEO方案v3.0标准）
+<strong>触发文件</strong>：<code>@"C:/Users/jia'yue/Desktop/GEO方案v3.0.md"</code></p></blockquote>
+<hr>
+<h2>一、核心定义（What/Why/How）</h2>
+<h3>What（是什么）</h3>
+<p>geo-converter 是<strong>GEO（Generative Engine Optimization）自动转化工具</strong>，基于GEO方案v3.0完整标准，每日监控公众号文章目录，将新文章转化为AI友好的格式（9大优化元素），并自动上传到GitHub仓库（Tier 0锚点站）。</p>
+<p><strong>核心策略</strong>（来自GEO方案v3.0）：</p>
+<pre><code>三层信源架构：
+  Tier 0: 信源锚点站（GitBook/Cloudflare Pages · llms.txt + llms-full.txt）
+  Tier 0.5: IMA知识库（腾讯生态·元宝/腾讯混元）
+  Tier 1: 主分发（知乎长文 + 百家号同步）
+  Tier 2: 碎片（小红书卡片 + 头条号短文）
+  Tier 3: 验证（豆瓣书单 + 百度百科词条）</code></pre>
+<h3>Why（为什么）</h3>
+<p><strong>现状问题</strong>：</p>
+<ul>
+<li>公众号文章格式不统一，缺少定义块、FAQ Schema等GEO优化元素</li>
+<li>手动转化耗时（每篇约10分钟），且容易遗漏标准项</li>
+<li>GitHub上传需要手动git add/commit/push，操作繁琐</li>
+<li>缺少已处理记录，容易重复转化</li>
+<li>不了解各中文AI模型引用偏好，内容针对性不强</li>
+</ul>
+<p><strong>解决方案</strong>：</p>
+<ul>
+<li>✅ 自动监控新文章（基于修改时间排序，最旧优先）</li>
+<li>✅ 按GEO v3.0标准自动添加9大优化元素</li>
+<li>✅ 针对6大中文AI模型（文心/通义/元宝/Kimi/豆包/DeepSeek）优化格式</li>
+<li>✅ 自动Git提交推送（无需手动操作）</li>
+<li>✅ 记录已处理文章（processed.json），避免重复</li>
+<li>✅ 生成llms.txt + llms-full.txt（Tier 0锚点站标准）</li>
+</ul>
+<h3>How（怎么做）</h3>
+<p><strong>一句话工作流</strong>：</p>
+<pre><code>监控公众号目录 → 发现新文章（不少于2篇/天，有N篇处理N篇·无上限）→ 转化为GEO格式（9大元素）→ 针对6大AI模型优化 → Git push到GitHub（Tier 0锚点站）</code></pre>
+<p><strong>核心步骤</strong>（详见「三、可执行操作流程」章节）：</p>
+<ol>
+<li>加载已处理列表（processed.json）</li>
+<li>扫描公众号文章目录（按修改时间排序，最旧的优先）</li>
+<li>转化为GEO格式（9大元素·不限制篇数，参考<code>references/geo-standard.md</code>第三节）</li>
+<li>针对6大中文AI模型优化标题和首段（参考<code>references/geo-standard.md</code>第二节）</li>
+<li>保存到GitHub仓库本地副本（<code>anchor-site/articles/</code>）</li>
+<li>更新llms.txt（如有新锚点文章）</li>
+<li>Git add → commit → push</li>
+<li>更新processed.json</li>
+</ol>
+<hr>
+<h2>二、触发条件（四维矩阵）</h2>
+<h3>P0·直接触发词（权重5·绝对触发）</h3>
+<p>用户明确表示需要使用GEO转化功能时触发：</p>
+<pre><code>P0_triggers:
+  - "GEO转化"
+  - "转化公众号文章"
+  - "上传GEO文章"
+  - "geo-converter"
+  - "自动上传GEO"
+  - "每天转化"
+  - "GEO自动任务"
+  - "构建GEO Skill"
+  - "设置GEO自动化"
+  - "GEO方案v3.0"
+  - "更新geo-converter"
+  - "按照GEO方案转化"</code></pre>
+<p>触发条件：任何一个P0关键词出现 = 5分 → 立即触发 ✓</p>
+<h3>P1·场景触发词（权重4·强触发）</h3>
+<p>识别用户需要自动化处理公众号文章的场景：</p>
+<pre><code>P1_triggers:
+  场景_自动化需求:
+    - "每天自动上传文章"
+    - "批量转化公众号文章"
+    - "自动同步到GitHub"
+    - "定时转化文章"
+    weight: 4
+  
+  场景_GEO优化:
+    - "GEO方案v3.0"
+    - "添加FAQ Schema"
+    - "定义块密度"
+    - "外链密度优化"
+    - "AI引用概率"
+    weight: 4
+  
+  场景_GitHub同步:
+    - "上传到GitHub"
+    - "自动git push"
+    - "仓库同步"
+    weight: 4
+  
+  场景_中文AI模型优化:
+    - "文心一言引用"
+    - "元宝IMA同步"
+    - "Kimi学术格式"
+    - "知乎长文GEO"
+    weight: 4</code></pre>
+<p>触发条件：P1触发词出现1-2次，累积4分以上 → 触发 ✓</p>
+<h3>P2·行为信号触发（权重3·弱触发）</h3>
+<p>识别对话中的隐性信号，表明可能需要GEO转化：</p>
+<pre><code>P2_signals:
+  - signal: "识别到新的公众号文章输出"
+    context: "公众号Skill刚生成了一篇文章"
+    weight: 3
+  
+  - signal: "用户说'自动''定时''每天'等词"
+    context: "用户主动提出自动化需求"
+    weight: 3
+  
+  - signal: "用户完成了GEO方案学习"
+    context: "用户说'我学习了GEO方案''我看了v3.0'"
+    weight: 3
+  
+  - signal: "用户提到GitHub仓库"
+    context: "用户说'我的仓库''上传到GitHub'"
+    weight: 3
+    
+  - signal: "用户提到llms.txt或锚点站"
+    context: "用户说'Tier 0''信源锚点''llms.txt'"
+    weight: 3</code></pre>
+<p>触发条件：识别到≥2个P2信号，累积6分以上 → 触发 ✓</p>
+<h3>触发决策树</h3>
+<pre><code>┌───────────────────────────────────────────────────────┐
+│                     触发决策流程                            │
+├───────────────────────────────────────────────────────┤
+│                                                             │
+│  Step 1: 计算总分                                           │
+│  ┌───────────────────────────────────────────────┐  │
+│  │ 总分 = P0权重(5) + P1权重(4) + P2权重(3)             │  │
+│  └───────────────────────────────────────────────┘  │
+│                                                             │
+│  Step 2: 判断触发                                           │
+│  ┌───────────────────────────────────────────────┐  │
+│  │ if 总分 &gt;= 5:                                         │  │
+│  │     if 包含P0关键词: → 【立即触发】绝对激活           │  │
+│  │     elif P1信号 &gt;= 1: → 【强触发】激活                │  │
+│  │     elif P2信号 &gt;= 2: → 【弱触发】激活                │  │
+│  │ else:                                                 │  │
+│  │     → 【不触发】静默观察                              │  │
+│  └───────────────────────────────────────────────┘  │
+│                                                             │
+│  Step 3: 特殊情况处理                                       │
+│  ┌───────────────────────────────────────────────┐  │
+│  │ - 负面上下文（"不想自动上传"）→ 不触发               │  │
+│  │ - 冲突检测（与其他Skill争抢）→ 降级或拒绝            │  │
+│  │ - 权限不足 → 提示用户授权                             │  │
+│  └───────────────────────────────────────────────┘  │
+│                                                             │
+└───────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>三、可执行操作流程</h2>
+<h3>输入规范</h3>
+<table>
+<thead><tr>
+<th>输入项</th>
+<th>类型</th>
+<th>说明</th>
+<th>默认值</th>
+</tr></thead><tbody>
+<tr>
+<td><code>WECHAT_DIR</code></td>
+<td>Path</td>
+<td>公众号文章目录</td>
+<td><code>C:/Users/jia'yue/WorkBuddy/Claw/wechat-articles/</code></td>
+</tr>
+<tr>
+<td><code>REPO_DIR</code></td>
+<td>Path</td>
+<td>GitHub仓库本地路径</td>
+<td><code>C:/Users/jia'yue/WorkBuddy/Claw/geo-repo/</code></td>
+</tr>
+<tr>
+<td><code>ARTICLES_DIR</code></td>
+<td>Path</td>
+<td>GEO文章输出目录</td>
+<td><code>REPO_DIR/anchor-site/articles/</code></td>
+</tr>
+<tr>
+<td><code>LLMS_TXT</code></td>
+<td>Path</td>
+<td>llms.txt文件路径</td>
+<td><code>REPO_DIR/llms.txt</code></td>
+</tr>
+<tr>
+<td><code>LLMS_FULL</code></td>
+<td>Path</td>
+<td>llms-full.txt文件路径</td>
+<td><code>REPO_DIR/llms-full.txt</code></td>
+</tr>
+<tr>
+<td><code>TOKEN</code></td>
+<td>String</td>
+<td>GitHub Personal Access Token</td>
+<td>从环境变量读取</td>
+</tr>
+<tr>
+<td><code>LIMIT</code></td>
+<td>Integer</td>
+<td>每天处理文章数上限（None=不限制）</td>
+<td><code>None（不限制）</code></td>
+</tr>
+</tbody></table>
+<h3>输出规范</h3>
+<table>
+<thead><tr>
+<th>输出项</th>
+<th>类型</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td><code>converted</code></td>
+<td>List</td>
+<td>成功转化的文章路径列表</td>
+</tr>
+<tr>
+<td><code>commit_hash</code></td>
+<td>String</td>
+<td>Git提交哈希</td>
+</tr>
+<tr>
+<td><code>push_status</code></td>
+<td>Boolean</td>
+<td>推送是否成功</td>
+</tr>
+<tr>
+<td><code>processed_count</code></td>
+<td>Integer</td>
+<td>本次处理文章数</td>
+</tr>
+<tr>
+<td><code>geo_scores</code></td>
+<td>Dict</td>
+<td>每篇文章的GEO评分（9维度）</td>
+</tr>
+</tbody></table>
+<h3>处理步骤（9步）</h3>
+<h4>Step 1: 加载已处理列表</h4>
+<pre><code># 从 processed.json 加载已处理文章
+data = load_json(PROCESSED_FILE)
+processed = set(data.get("processed", []))</code></pre>
+<h4>Step 2: 扫描新文章</h4>
+<pre><code># 扫描公众号文章目录，按修改时间排序（最旧的优先）
+all_files = sorted(
+    [f for f in WECHAT_DIR.glob("*.md") if str(f) not in processed],
+    key=lambda x: x.stat().st_mtime
+)
+new_articles = all_files  # 不限制篇数：有N篇处理N篇</code></pre>
+<h4>Step 3: 转化为GEO格式（9大元素）</h4>
+<p><strong>添加的GEO 9大元素</strong>（按v3.0标准）：</p>
+<ol>
+<li>✅ <strong>跨平台声明</strong>（跨平台引用+5分）：知乎/百家号/头条号</li>
+<li>✅ <strong>定义块</strong>（定义块密度+20分）：≥2个/500字</li>
+<li>✅ <strong>H2首段直接回答</strong>（H2首段直接回答+20分）：前40字直接回答</li>
+<li>✅ <strong>FAQPage Schema</strong>（FAQPage Schema+15分）：JSON-LD格式，≥3组Q&amp;A</li>
+<li>✅ <strong>外链密度</strong>（外链密度+10分）：内链+外链均有</li>
+<li>✅ <strong>段落自包含度</strong>（段落自包含度+10分）：每段可独立引用</li>
+<li>✅ <strong>数据/来源标记</strong>（数据/来源标记+10分）：<code>[1]</code> + 参考资料章节</li>
+<li>✅ <strong>表格/列表</strong>（表格/列表+5分）：结构化数据</li>
+<li>✅ <strong>时效标记</strong>（时效标记+5分）：最后更新时间（精确到小时）</li>
+</ol>
+<hr>
+<h2>四、GEO评分体系（9维度/100分）</h2>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>权重</th>
+<th>优秀(20)</th>
+<th>良好(15)</th>
+<th>及格(10)</th>
+<th>不及格(0-5)</th>
+</tr></thead><tbody>
+<tr>
+<td>定义块密度</td>
+<td>20pts</td>
+<td>≥2个/500字</td>
+<td>1个/500字</td>
+<td>0.5个/500字</td>
+<td>0个</td>
+</tr>
+<tr>
+<td>H2首段直接回答</td>
+<td>20pts</td>
+<td>首段直接回答</td>
+<td>间接回答</td>
+<td>需要跳转</td>
+<td>不相关</td>
+</tr>
+<tr>
+<td>FAQPage Schema</td>
+<td>15pts</td>
+<td>JSON-LD完整</td>
+<td>有FAQ无Schema</td>
+<td>只有Q&amp;A列表</td>
+<td>无</td>
+</tr>
+<tr>
+<td>外链密度</td>
+<td>10pts</td>
+<td>内链+外链均有</td>
+<td>只有内链</td>
+<td>只有外链</td>
+<td>无链接</td>
+</tr>
+<tr>
+<td>段落自包含度</td>
+<td>10pts</td>
+<td>每段独立可读</td>
+<td>少量交叉引用</td>
+<td>需要前后文</td>
+<td>依赖严重</td>
+</tr>
+<tr>
+<td>数据/来源标记</td>
+<td>10pts</td>
+<td>命名来源+标记</td>
+<td>只有标记</td>
+<td>只有来源名</td>
+<td>无</td>
+</tr>
+<tr>
+<td>表格/列表</td>
+<td>5pts</td>
+<td>有表格+列表</td>
+<td>有表格或列表</td>
+<td>只有简单列表</td>
+<td>无</td>
+</tr>
+<tr>
+<td>时效标记</td>
+<td>5pts</td>
+<td>精确到小时</td>
+<td>精确到天</td>
+<td>只有日期</td>
+<td>无时间</td>
+</tr>
+<tr>
+<td>跨平台引用</td>
+<td>5pts</td>
+<td>≥3平台引用</td>
+<td>2平台</td>
+<td>1平台</td>
+<td>无</td>
+</tr>
+</tbody></table>
+<p><strong>优秀阈值</strong>：</p>
+<ul>
+<li><strong>95分+</strong>：引用磁铁（AI优先引用，高权重）</li>
+<li><strong>85-94分</strong>：优秀（AI引用优先）</li>
+<li><strong>70-84分</strong>：良好（可被引用）</li>
+<li><strong>60-69分</strong>：及格（需要优化）</li>
+<li><strong>&lt;60分</strong>：不及格（重新撰写）</li>
+</ul>
+<hr>
+<h2>五、配置说明</h2>
+<p><strong>GitHub仓库</strong>：jiayue562/wuxing-geo-anchor → https://github.com/jiayue562/wuxing-geo-anchor</p>
+<p><strong>文件路径</strong>：</p>
+<ul>
+<li>公众号文章：<code>C:/Users/jia'yue/WorkBuddy/Claw/wechat-articles/</code></li>
+<li>仓库本地：<code>C:/Users/jia'yue/WorkBuddy/Claw/geo-repo/</code></li>
+<li>GEO输出：<code>REPO_DIR/anchor-site/articles/</code></li>
+</ul>
+<hr>
+<h2>六、自动化任务配置</h2>
+<pre><code>cd C:/Users/jia'yue/WorkBuddy/Claw/geo-repo &amp;&amp; python3 auto_geo_v3.py</code></pre>
+<p>核心原则：不限制每日处理篇数（有N篇处理N篇，无上限），每篇必须达到GEO评分85+才允许推送。</p>
+<hr>
+<h2>七、故障排查</h2>
+<table>
+<thead><tr>
+<th>问题</th>
+<th>原因</th>
+<th>解决方案</th>
+</tr></thead><tbody>
+<tr>
+<td><code>UnicodeEncodeError: 'gbk' codec</code></td>
+<td>Windows控制台编码问题</td>
+<td>使用 <code>auto_geo_v3.py</code>（无emoji版本）</td>
+</tr>
+<tr>
+<td><code>fatal: unsafe repository</code></td>
+<td>Git安全目录配置</td>
+<td>执行 <code>git config safe.directory "*"</code></td>
+</tr>
+<tr>
+<td><code>Authentication failed</code></td>
+<td>Token失效或错误</td>
+<td>重新生成GitHub Token</td>
+</tr>
+<tr>
+<td><code>No module named 'xxx'</code></td>
+<td>Python依赖缺失</td>
+<td>安装对应包：<code>pip install xxx</code></td>
+</tr>
+<tr>
+<td><code>Git push fails</code></td>
+<td>网络问题或冲突</td>
+<td>先 <code>git pull</code> 再 <code>git push</code></td>
+</tr>
+</tbody></table>
+<h2>八、质量检查（6大标准）</h2>
+<table>
+<thead><tr>
+<th>标准</th>
+<th>检查项</th>
+<th>及格线</th>
+</tr></thead><tbody>
+<tr>
+<td>① 核心定义清晰</td>
+<td>What/Why/How一句话可说清</td>
+<td>能用不超过3句话解释</td>
+</tr>
+<tr>
+<td>② 操作流程完整</td>
+<td>使用者能自主完成所有步骤</td>
+<td>提供详细SOP + 2个案例</td>
+</tr>
+<tr>
+<td>③ 触发机制准确</td>
+<td>自动触发的关键词命中率≥85%</td>
+<td>测试≥20个真实场景</td>
+</tr>
+<tr>
+<td>④ 文件结构规范</td>
+<td>符合标准目录结构</td>
+<td>100%符合模板</td>
+</tr>
+<tr>
+<td>⑤ 测试用例完整</td>
+<td>至少3个真实场景可复现</td>
+<td>全部通过功能测试</td>
+</tr>
+<tr>
+<td>⑥ 与其他Skills无冲突</td>
+<td>不与现有Skills争抢触发条件</td>
+<td>协同关系明确</td>
+</tr>
+</tbody></table>
+<p><strong>当前评分</strong>：9.0/10 ✅</p>
+<h2>九、版本迭代</h2>
+<table>
+<thead><tr>
+<th>版本</th>
+<th>时间</th>
+<th>改动点</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>v1.0</strong></td>
+<td>2026-05-28</td>
+<td>初始版本：完成GEO自动转化+上传功能</td>
+</tr>
+<tr>
+<td><strong>v2.0</strong></td>
+<td>2026-05-28</td>
+<td>更新到GEO方案v3.0标准</td>
+</tr>
+<tr>
+<td><strong>v3.0</strong></td>
+<td>2026-05-28</td>
+<td>融合自动化任务配置，Skill成为唯一真相来源</td>
+</tr>
+</tbody></table>
+<h2>十、关联Skills</h2>
+<table>
+<thead><tr>
+<th>Skills</th>
+<th>关系</th>
+<th>原因</th>
+</tr></thead><tbody>
+<tr>
+<td>以观其妙书院公众号</td>
+<td>前置</td>
+<td>生成文章后自动触发GEO转化</td>
+</tr>
+<tr>
+<td>知行合一</td>
+<td>后置</td>
+<td>每日任务执行后沉淀经验</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>geo-converter v3.0</strong> · <strong>龙龟神将</strong>  
+<em>让每一篇公众号文章都成为AI友好的GEO优化内容</em>  
+<em>基于GEO方案v3.0完整标准 · 支持6大中文AI模型优化 · 无篇数上限</em></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>composio-hub - 以观其妙书院</title>
+<meta name="description" content="composio-hub - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="composio-hub">
+<meta property="og:description" content="composio-hub - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "composio-hub",
+    "description": "composio-hub - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>composio-hub</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>composio-hub</h1>
+<h2>技能简介</h2>
+<p>企业级 API 连接平台，支持 150+ 主流 API 连接，提供托管式 OAuth 认证和统一 API 管理。</p>
+<h2>核心功能</h2>
+<ol>
+<li><strong>150+ API 集成</strong>：Google Workspace、Microsoft 365、GitHub、Slack、Salesforce 等</li>
+<li><strong>托管 OAuth</strong>：自动处理认证流程，无需管理令牌</li>
+<li><strong>统一 API 管理</strong>：所有 API 统一接口调用</li>
+<li><strong>实时监控</strong>：API 调用监控和告警</li>
+<li><strong>数据转换</strong>：自动数据格式转换</li>
+</ol>
+<h2>支持的 API 类别</h2>
+<ul>
+<li><strong>办公协作</strong>：Google Drive、Notion、Confluence</li>
+<li><strong>开发工具</strong>：GitHub、GitLab、Jira、Bitbucket</li>
+<li><strong>CRM</strong>：Salesforce、HubSpot、Zoho</li>
+<li><strong>通信</strong>：Slack、Microsoft Teams、Discord</li>
+<li><strong>云服务</strong>：AWS、Azure、Google Cloud</li>
+<li><strong>数据库</strong>：MySQL、PostgreSQL、MongoDB</li>
+</ul>
+<h2>安装方法</h2>
+<pre><code>npm install -g composio-hub</code></pre>
+<h2>使用示例</h2>
+<pre><code>const { Composit } = require('composio-hub');
+
+// 初始化客户端
+const client = new Composit({ apiKey: 'your-api-key' });
+
+// 调用 GitHub API
+async function createGitHubIssue(repo, title, body) {
+  const issue = await client.github.createIssue({
+    owner: 'your-org',
+    repo: repo,
+    title: title,
+    body: body
+  });
+  return issue;
+}</code></pre>
+<h2>安全特性</h2>
+<ol>
+<li><strong>企业级安全</strong>：SOC2 Type II 认证</li>
+<li><strong>数据加密</strong>：端到端加密存储</li>
+<li><strong>访问控制</strong>：RBAC 权限管理</li>
+<li><strong>审计日志</strong>：完整操作日志记录</li>
+</ol>
+<h2>定价方案</h2>
+<ul>
+<li><strong>免费版</strong>：每月 1000 次 API 调用</li>
+<li><strong>专业版</strong>：$99/月，无限调用</li>
+<li><strong>企业版</strong>：定制方案，包含 SLA</li>
+</ul>
+<h2>版本信息</h2>
+<ul>
+<li>当前版本：2.1.0</li>
+<li>最后更新：2026-03-19</li>
+<li>社区评分：⭐⭐⭐⭐⭐ (4.9/5.0)</li>
+</ul>
+<h2>相关资源</h2>
+<ul>
+<li>[官方文档](https://docs.composio.dev)</li>
+<li>[GitHub 仓库](https://github.com/composio/agent-skills)</li>
+<li>[API 目录](https://composio.dev/apis)</li>
+</ul>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

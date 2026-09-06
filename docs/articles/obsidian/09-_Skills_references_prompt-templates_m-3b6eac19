@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>知识学习Skills — 十项认知操作提示词模板库 - 以观其妙书院</title>
+<meta name="description" content="知识学习Skills — 十项认知操作提示词模板库 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="知识学习Skills — 十项认知操作提示词模板库">
+<meta property="og:description" content="知识学习Skills — 十项认知操作提示词模板库 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "知识学习Skills — 十项认知操作提示词模板库",
+    "description": "知识学习Skills — 十项认知操作提示词模板库 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>知识学习Skills — 十项认知操作提示词模板库</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>知识学习Skills — 十项认知操作提示词模板库</h1>
+<h2>使用说明</h2>
+<p>以下每个模板均为即插即用型提示词，将 [占位符] 替换为实际内容后直接使用。</p>
+<hr>
+<h2>第一层：基础解析与结构拆解</h2>
+<h3>① 剖析（Analyze）— 结构化拆解提示词</h3>
+<pre><code>请对以下文章进行完整剖析。
+
+任务清单：
+1. 提取全文的核心研究问题与核心假设（各1-3条）
+2. 列出文章使用的主要概念/理论，并给出文中出现的简要定义
+3. 将研究方法分解为连续的步骤清单
+4. 将研究结论分解为一系列独立的、可验证的陈述
+
+请以结构化格式输出，确保每个元素可追溯至原文大致段落。
+
+文章内容：
+[粘贴文章]</code></pre>
+<h3>② 解构（Deconstruct）— 要素清单提示词</h3>
+<pre><code>请对以下文章进行解构分析，构建"知识零件清单"：
+
+1. 核心实体：文章中出现的关键人物/机构/概念/事件
+2. 关键陈述：文章的核心主张（逐条列出）
+3. 方法论：文章采用的研究/论证方法
+4. 数据与证据：支撑论点的核心数据或案例
+5. 结论集合：文章得出的所有结论（标注强/弱）
+
+文章内容：
+[粘贴文章]</code></pre>
+<hr>
+<h2>第二层：深度理解与意义挖掘</h2>
+<h3>③ 透视（Perceive）— 论证链条提示词</h3>
+<pre><code>请透视该文章的深层逻辑，分析其论证链条：
+
+从初始观察或问题（A）→ 核心假设（B）→ 验证方法（C）→ 数据结果（D）→ 结论（E）
+
+任务：
+1. 梳理A→B→C→D→E的完整推理链
+2. 分析B到C、C到D、D到E每一步推理的合理性与潜在弱点
+3. 识别文章中未被作者明言，但隐含在数据或方法论中的潜在新颖关系
+
+文章内容：
+[粘贴文章]</code></pre>
+<h3>④ 阐释（Interpret）— 概念深化提示词</h3>
+<pre><code>请对文章中的核心概念 "[目标概念]" 进行深度阐释：
+
+1. 在本文具体语境中，该概念如何被定义和应用？
+2. 该概念相对于文中其他方法/概念的优势是什么？
+3. 该概念在更广阔领域中的起源、演变历史和主要变体是什么？
+4. 该概念在本文任务中可能带来哪些潜在影响（正面/负面）？
+
+文章内容：
+[粘贴文章]</code></pre>
+<hr>
+<h2>第三层：逻辑推演与批判性建构</h2>
+<h3>⑤ 推演（Deduce）— 三步逻辑外推提示词</h3>
+<pre><code>基于本文关于 [核心现象/结论] 的内容，请进行三步逻辑推演：
+
+第一步（条件变更）：
+如果 [关键参数/条件] 发生显著变化（如扩大10倍/迁移到新环境），
+该结论会如何强化或弱化？
+
+第二步（领域迁移）：
+将本文的研究框架应用于 [相邻领域]，
+预测可能观察到的核心现象和规律。
+
+第三步（不确定性）：
+指出上述推演过程中最大的不确定性来源，
+以及需要哪些额外数据/研究来验证。
+
+文章内容：
+[粘贴文章]</code></pre>
+<h3>⑥ 思辨（Critical Thinking）— 四维批判提示词</h3>
+<pre><code>请从"批判性朋友"视角对本文进行四维思辨分析：
+
+【方法论思辨】
+实验/研究设计是否严谨？对照组设置是否合理？
+是否存在样本偏差、混淆变量或统计功效不足的问题？
+
+【结论思辨】
+数据是否充分支持结论？结论的普适性是否被过度夸大？
+文章是否坦诚讨论了局限性？
+
+【范式思辨】
+文章基于何种理论范式？其基本假设是否存在争议？
+从另一个竞争性范式看，该问题的界定和解释方式会有何不同？
+
+【伦理与影响思辨】
+该研究的技术或结论，可能带来哪些潜在社会、伦理或环境影响？
+
+最终：找出本文论证中最脆弱的三个环节，
+并为每个环节提供一种加强论证或替代解释的思路（引用其他领域研究作类比）。
+
+文章内容：
+[粘贴文章]</code></pre>
+<hr>
+<h2>第四层：脉络追溯与跨域整合</h2>
+<h3>⑦ 溯源（Trace Origins）— 学术谱系提示词</h3>
+<pre><code>请为本文核心概念 "[核心概念]" 绘制学术简史：
+
+1. 在本文中，"[核心概念]" 的明确定义是什么？
+2. 追溯最早关于此概念的文献：是谁提出的？核心观点是什么？
+3. 描述该概念在过去20-50年间的主要演变路径：
+   - 哪些学者/事件推动了关键转变？
+   - 从哪些领域迁移到哪些领域？
+   - 内涵发生了哪些扩展或收缩？
+4. 本文在这条演变脉络中处于什么位置？是延续还是突破？
+
+文章内容：
+[粘贴文章]</code></pre>
+<h3>⑧ 融合（Synthesize）— 强制关联法提示词</h3>
+<pre><code>现在有两篇（或多篇）文章需要进行跨域融合：
+
+A文：[文章A的核心主题/结论简述]
+B文：[文章B的核心主题/结论简述]
+
+请进行融合思考：
+
+1. A文的核心概念/机制，如何类比于B文中的对应元素？
+   （构建明确的类比映射表：A中X ↔ B中Y）
+
+2. 基于这种类比，从B领域能为A领域提出几条具体的改进启发或新思路？
+
+3. 这种跨领域融合可能催生怎样的新的交叉研究方向或创新应用？
+
+4. 融合过程中最大的概念张力或冲突在哪里？如何调和？
+
+文章A内容：[粘贴]
+文章B内容：[粘贴]</code></pre>
+<hr>
+<h2>第五层：创新生成与人机协同</h2>
+<h3>⑨ 启发（Inspire）— 三类创新模式提示词</h3>
+<p><strong>研究空白启发：</strong></p>
+<pre><code>基于对以下文章（或多篇文章）的深度分析，
+请综合指出当前领域中尚未被充分探索的"空白区"或"矛盾点"：
+
+1. 指出3个最值得研究的空白区域（说明为何重要、现有研究的不足）
+2. 指出2个现有研究之间存在的矛盾或张力（说明矛盾来源）
+3. 基于上述空白和矛盾，提出1个最有潜力的新研究方向（含初步研究设计）
+
+文章内容：[粘贴]</code></pre>
+<p><strong>反事实场景启发：</strong></p>
+<pre><code>请针对本文核心结论/技术进行反事实思考：
+
+如果 [关键历史节点/设计选择] 当初做出了不同的决定，
+今天的 [领域/技术/社会格局] 会有何根本不同？
+
+请从3个维度展开：技术路径、社会影响、知识演化。</code></pre>
+<p><strong>未来趋势启发：</strong></p>
+<pre><code>基于本文内容和当前领域发展态势，
+请预测该领域在未来5-10年可能发生的：
+
+1. 核心范式转变（旧范式→新范式的转变逻辑）
+2. 关键技术突破节点（基于发展曲线推断）
+3. 最可能出现的跨领域融合趋势
+4. 最大的不确定性风险因素</code></pre>
+<h3>⑩ 映射（Map &amp; Reconstruct）— 框架生成提示词</h3>
+<pre><code>基于以上对所有输入文章的深度分析，请担任"理论整合者"，
+创建一个全新的框架：《[新框架名称]》
+
+该框架须包含：
+
+（1）3-5个核心维度
+    - 每个维度的名称与明确定义
+    - 该维度的理论依据（引用或融合输入文章中的观点）
+
+（2）每个维度下2-3个可操作的关键测量指标或表征现象
+
+（3）维度关系图
+    - 哪些维度之间存在权衡关系？（此消彼长）
+    - 哪些维度之间存在协同关系？（相互强化）
+
+（4）框架的适用边界
+    - 该框架最适用于哪类情境？
+    - 哪类情境不适用？
+
+请确保该框架是对输入文章的超越与整合，而非简单罗列。
+框架应能"反向解释"输入文章中的核心案例，同时对新案例具有预测力。</code></pre>
+<hr>
+<h2>快速单指令激活语</h2>
+<p>用户可直接说：</p>
+<table>
+<thead><tr>
+<th>用户输入</th>
+<th>激活指令</th>
+</tr></thead><tbody>
+<tr>
+<td>"剖析这篇文章"</td>
+<td>剖析</td>
+</tr>
+<tr>
+<td>"帮我透视一下"</td>
+<td>透视</td>
+</tr>
+<tr>
+<td>"推演一下这个结论"</td>
+<td>推演</td>
+</tr>
+<tr>
+<td>"批判性分析"</td>
+<td>思辨</td>
+</tr>
+<tr>
+<td>"溯源一下"</td>
+<td>溯源</td>
+</tr>
+<tr>
+<td>"跨领域融合"</td>
+<td>融合</td>
+</tr>
+<tr>
+<td>"启发我"</td>
+<td>启发（三合一）</td>
+</tr>
+<tr>
+<td>"形成新框架"</td>
+<td>映射</td>
+</tr>
+<tr>
+<td>"全面深度学习"</td>
+<td>完整SOP五层</td>
+</tr>
+</tbody></table>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>五行"化克为生"理论体系 - 知识图谱 - 以观其妙书院</title>
+<meta name="description" content="五行"化克为生"理论体系 - 知识图谱 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="五行"化克为生"理论体系 - 知识图谱">
+<meta property="og:description" content="五行"化克为生"理论体系 - 知识图谱 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "五行"化克为生"理论体系 - 知识图谱",
+    "description": "五行"化克为生"理论体系 - 知识图谱 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>五行"化克为生"理论体系 - 知识图谱</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>五行"化克为生"理论体系 - 知识图谱</h1>
+<blockquote><p><strong>文档类型</strong>：L7理论基石 · 知识图谱第23篇
+<strong>创建时间</strong>：2026-04-07
+<strong>作者</strong>：龙龟神将
+<strong>关联主文档</strong>：<code><a href="05-_00-_--_md-199bd55a.html">五行化克为生理论体系-原理-机制与实践路径</a></code>
+<strong>图谱版本</strong>：v1.0</p></blockquote>
+<hr>
+<h2>📊 知识图谱概览</h2>
+<p>本图谱可视化了五行"化克为生"理论体系的核心概念、转化路径与跨域知识联系，包含<strong>130条</strong>跨域知识连接。</p>
+<hr>
+<h2>🌐 核心网络结构</h2>
+<pre><code>graph TB
+    subgraph 五行化克为生理论体系
+        direction TB
+        
+        A[五行生克基本原理]
+        B[化克为生哲学智慧]
+        C[畏的双重性机制]
+        D[十组相克口诀解析]
+        E[三大实践路径]
+        F[现代心理学整合]
+        G[跨域连接]
+        
+        A --&gt;|相生关系| B
+        A --&gt;|相克关系| C
+        B --&gt;|相生与相克的辩证统一| E
+        C --&gt;|畏的双重性认知| D
+        D --&gt;|十组口诀深度解析| E
+        E --&gt;|自我修行路径| F
+        E --&gt;|关系调和路径| G
+        E --&gt;|能量干预路径| G
+        G --&gt;|与五行化性通关点| A
+        G --&gt;|与心文化信仰体系| B
+        G --&gt;|与象思维| C
+        G --&gt;|与五色光思维| D
+        G --&gt;|与知行合一| E
+        G --&gt;|与五行人格心理学OS| F
+        G --&gt;|与中医理论| A
+        G --&gt;|与现代管理学| B
+        G --&gt;|与王凤仪化性谈| C
+        G --&gt;|与量子力学| D</code></pre>
+<hr>
+<h2>🔄 十组相克口诀转化路径网络</h2>
+<pre><code>graph LR
+    subgraph 相克关系
+        木克土[木克土]
+        土克水[土克水]
+        水克火[水克火]
+        火克金[火克金]
+        金克木[金克木]
+    end
+    
+    subgraph 畏关系
+        土畏木[土畏木]
+        水畏土[水畏土]
+        火畏水[火畏水]
+        金畏火[金畏火]
+        木畏金[木畏金]
+    end
+    
+    subgraph 转化路径
+        土生金[土生金]
+        水生木[水生木]
+        火生土[火生土]
+        金生水[金生水]
+        木生火[木生火]
+    end
+    
+    木克土 --&gt; 土畏木
+    土克水 --&gt; 水畏土
+    水克火 --&gt; 火畏水
+    火克金 --&gt; 金畏火
+    金克木 --&gt; 木畏金
+    
+    土畏木 --&gt; 土生金
+    水畏土 --&gt; 水生木
+    火畏水 --&gt; 火生土
+    金畏火 --&gt; 金生水
+    木畏金 --&gt; 木生火</code></pre>
+<hr>
+<h2>🧠 跨域知识联系网络（130条）</h2>
+<h3>1. 与五行化性通关点的连接（20条）</h3>
+<h4>五德目标（5条）</h4>
+<ul>
+<li><strong>仁（木）</strong>：木行人化性通关终极目标</li>
+<li><strong>礼（火）</strong>：火行人化性通关终极目标</li>
+<li><strong>信（土）</strong>：土行人化性通关终极目标</li>
+<li><strong>义（金）</strong>：金行人化性通关终极目标</li>
+<li><strong>智（水）</strong>：水行人化性通关终极目标</li>
+</ul>
+<h4>五行心法（5条）</h4>
+<ul>
+<li><strong>达天时（阳火）</strong>：火行人心法，对应"化克为生"的时机选择</li>
+<li><strong>信因果（阳土）</strong>：土行人心法，对应"化克为生"的因果理解</li>
+<li><strong>找好处（阳金）</strong>：金行人心法，对应"化克为生"的价值发现</li>
+<li><strong>认不是（阳水）</strong>：水行人心法，对应"化克为生"的自我觉察</li>
+<li><strong>转化能量</strong>：十组相克口诀中的"畏"机制应用心法</li>
+</ul>
+<h4>五戒律（5条）</h4>
+<ul>
+<li><strong>不争斗（木）</strong>：破解木克土冲突</li>
+<li><strong>不嗔恨（火）</strong>：化解火克金冲突</li>
+<li><strong>不怀疑（土）</strong>：转化土克水冲突</li>
+<li><strong>不苛刻（金）</strong>：软化金克木冲突</li>
+<li><strong>不恐惧（水）</strong>：平复水克火冲突</li>
+</ul>
+<h4>五实践方法（5条）</h4>
+<ul>
+<li><strong>五行兼修</strong>：自我修行路径</li>
+<li><strong>关系调和</strong>：关系调和路径</li>
+<li><strong>能量干预</strong>：环境、饮食、音声调和</li>
+<li><strong>拔阴取阳</strong>：能量质量转化系统</li>
+<li><strong>觉知互动</strong>：日常修持实践</li>
+</ul>
+<hr>
+<h3>2. 与心文化信仰体系的连接（15条）</h3>
+<h4>大圆满见地（5条）</h4>
+<ul>
+<li><strong>本来清净</strong>：五行化性的本质是回归本然清净</li>
+<li><strong>本自圆满</strong>：阳五行状态是本自圆满的显化</li>
+<li><strong>噶达陇竹尼美</strong>：空性与光明的不二</li>
+<li><strong>"化克为生"的本质</strong>：从对抗性相克到建设性相生的能量质量转化</li>
+<li><strong>椎击三要</strong>：直指心性、确信无疑、解脱自信是"化克为生"的修行基础</li>
+</ul>
+<h4>修行方法（5条）</h4>
+<ul>
+<li><strong>阿底上师瑜伽</strong>：观想明点白"阿"，认证觉性</li>
+<li><strong>每日三省</strong>：觉察五行能量状态</li>
+<li><strong>觉知互动</strong>：在互动中保持觉知</li>
+<li><strong>能量干预</strong>：外在能量调理</li>
+<li><strong>心性转化</strong>：从阴五行到阳五行</li>
+</ul>
+<h4>北斗七星（5条）</h4>
+<ul>
+<li><strong>贪狼星（木）</strong>：人丁兴旺，旺运发财</li>
+<li><strong>巨门星（土）</strong>：擅长治愈，恢复健康</li>
+<li><strong>文曲星（金）</strong>：催生学业，激发文艺才能</li>
+<li><strong>廉贞星（火）</strong>：消解厄运，有助化煞</li>
+<li><strong>破军星（水）</strong>：祥瑞，促使修行增进</li>
+</ul>
+<hr>
+<h3>3. 与象思维的连接（10条）</h3>
+<h4>三层次对应（3条）</h4>
+<ul>
+<li><strong>物象 ↔ 身界</strong>：五行生理表现（胃发堵、常后悔、急窝火、人不亲、气不舒）</li>
+<li><strong>意象 ↔ 心界</strong>：五行心理模式（固执、多疑、急躁、尖锐、完美主义）</li>
+<li><strong>原象 ↔ 灵界</strong>：五行本源能量（仁德、信实、明理、义气、智慧）</li>
+</ul>
+<h4>核心机制（3条）</h4>
+<ul>
+<li><strong>畏机制</strong>：双向能量制约与敬畏关系是象思维的"观物取象"与"悬置"的深层表达</li>
+<li><strong>三元动态平衡</strong>：制化之克、乘侮之克、相生循环三元共存</li>
+<li><strong>0→1突破</strong>：从"对抗关系"到"动态平衡关系"的范式跃迁</li>
+</ul>
+<h4>转化路径（4条）</h4>
+<ul>
+<li><strong>悬置</strong>：觉察当前的相克状态</li>
+<li><strong>观象</strong>：识别"畏"的关系</li>
+<li><strong>直觉</strong>：引入相生元素</li>
+<li><strong>固化</strong>：形成制化之克+相生循环</li>
+</ul>
+<hr>
+<h3>4. 与五色光思维的连接（10条）</h3>
+<h4>五色光应用（5条）</h4>
+<ul>
+<li><strong>白光（客观事实）</strong>：分析五行相克的生理表现、心理模式、口诀原文</li>
+<li><strong>红光（直觉感受）</strong>：感知被克者的压抑感、克者的愧疚感、转化后的解脱感</li>
+<li><strong>黄光（积极价值）</strong>：发现每个相克关系中的成长机会、功德利益、转化价值</li>
+<li><strong>绿光（创新方案）</strong>：创造性地设计转化路径、实践方法、整合方案</li>
+<li><strong>蓝光（风险控制）</strong>：识别转化过程中可能遇到的障碍、反复的风险、失败的预警</li>
+</ul>
+<h4>三体一心整合（5条）</h4>
+<ul>
+<li><strong>信息体层（象思维）</strong>：原象→三元动态平衡理论</li>
+<li><strong>能量体层（五色光场）</strong>：畏的双向性能量流动</li>
+<li><strong>物质体层（五色光操作工具）</strong>：十组相克口诀的具体操作</li>
+<li><strong>三体一心</strong>：从觉察到转化的完整能量操作系统</li>
+</ul>
+<hr>
+<h3>5. 与知行合一的连接（10条）</h3>
+<h4>三阶段转化（3条）</h4>
+<ul>
+<li><strong>表示空间</strong>：五行"化克为生"理论体系（五德目标、五通关点、五戒律、五心法、五实践方法）</li>
+<li><strong>压缩阶段</strong>：能量质量转化系统（从阴五行到阳五行的炼金术）</li>
+<li><strong>泛化阶段</strong>：自我修行、关系调和、能量干预</li>
+</ul>
+<h4>系统进化（4条）</h4>
+<ul>
+<li><strong>表示空间</strong>：十组相克口诀深度解析</li>
+<li><strong>压缩</strong>：畏的双向性机制</li>
+<li><strong>泛化</strong>：三大实践路径</li>
+<li><strong>象征符号</strong>：畏（双向制约与敬畏）</li>
+</ul>
+<h4>转化模型（3条）</h4>
+<ul>
+<li><strong>旧模式</strong>：失衡相克→乘侮之克→病理与冲突</li>
+<li><strong>新模式</strong>：失衡相克→洞察克制→识别畏关系→引入相生元素→制化之克+相生循环→动态平衡</li>
+<li><strong>转化核心</strong>：能量质量（阴转阳）</li>
+</ul>
+<hr>
+<h3>6. 与五行人格心理学OS的连接（15条）</h3>
+<h4>总智能体系统（5条）</h4>
+<ul>
+<li><strong>场景归类</strong>：识别五行相克场景（个人成长/亲密关系/职场关系/身心健康）</li>
+<li><strong>五行归类</strong>：判断双方主导五行属性</li>
+<li><strong>引擎路由</strong>：调用对应五行分智能体</li>
+<li><strong>结果整合</strong>：综合化克为生转化方案</li>
+<li><strong>智能调度</strong>：动态调整转化路径</li>
+</ul>
+<h4>分智能体系统（5条）</h4>
+<ul>
+<li><strong>木行人分智能体</strong>：木克土/金克木的转化分析</li>
+<li><strong>火行人分智能体</strong>：水克火/火克金的转化分析</li>
+<li><strong>土行人分智能体</strong>：土克水/木克土的转化分析</li>
+<li><strong>金行人分智能体</strong>：火克金/金克木的转化分析</li>
+<li><strong>水行人分智能体</strong>：水克火/土克水的转化分析</li>
+</ul>
+<h4>拔阴取阳技术（5条）</h4>
+<ul>
+<li><strong>木行人</strong>：认不是（木）、找好处（金）、信因果（土）、达天时（火）</li>
+<li><strong>火行人</strong>：认不是（木）、找好处（土）、信因果（水）、达天时（火）</li>
+<li><strong>土行人</strong>：认不是（土）、找好处（金）、信因果（木）、达天时（水）</li>
+<li><strong>金行人</strong>：认不是（金）、找好处（水）、信因果（火）、达天时（土）</li>
+<li><strong>水行人</strong>：认不是（水）、找好处（木）、信因果（金）、达天时（土）</li>
+</ul>
+<hr>
+<h3>7. 与中医理论的连接（10条）</h3>
+<h4>五行对应五脏（5条）</h4>
+<ul>
+<li><strong>肝（木）</strong>：主疏泄，主筋</li>
+<li><strong>心（火）</strong>：主血脉，主神明</li>
+<li><strong>脾（土）</strong>：主运化，主肌肉</li>
+<li><strong>肺（金）</strong>：主气，司呼吸，主皮毛</li>
+<li><strong>肾（水）</strong>：主藏精，主水液代谢，主骨</li>
+</ul>
+<h4>五行生克病理（5条）</h4>
+<ul>
+<li><strong>木克土</strong>：肝木乘脾土，胃发堵</li>
+<li><strong>土克水</strong>：脾土克肾水，常后悔</li>
+<li><strong>水克火</strong>：肾水克心火，急窝火</li>
+<li><strong>火克金</strong>：心火克肺金，人不亲</li>
+<li><strong>金克木</strong>：肺金克肝木，气不舒</li>
+</ul>
+<hr>
+<h3>8. 与现代管理学的连接（10条）</h3>
+<h4>系统论视角（4条）</h4>
+<ul>
+<li><strong>五行生克是宇宙万物关联的基本法则</strong></li>
+<li><strong>系统自调节</strong>：适度的相克是系统健康的保障，过度相克导致失衡</li>
+<li><strong>管理应用</strong>：五行生克原理用于团队配置、冲突调解、组织变革</li>
+<li><strong>"化克为生"</strong>：将失衡转化为建设的系统管理智慧</li>
+</ul>
+<h4>企业应用（6条）</h4>
+<ul>
+<li><strong>团队配置优化</strong>：运用五行相生原理进行角色配置，实现性格互补</li>
+<li><strong>冲突调解</strong>：运用"化克为生"思维化解团队相克冲突</li>
+<li><strong>组织变革管理</strong>：预见冲突类型，设计转化路径</li>
+<li><strong>领导力发展</strong>：根据自身五行特质发展领导力</li>
+<li><strong>组织文化</strong>：构建五德价值观体系（仁礼信义智）的组织文化</li>
+<li><strong>系统智慧</strong>：从静态管理到动态平衡的管理智慧</li>
+</ul>
+<hr>
+<h3>9. 与王凤仪化性谈的连接（10条）</h3>
+<h4>每日三省（3条）</h4>
+<ul>
+<li><strong>每日三省不仅是道德反省，更是五行化性的日常修持</strong></li>
+<li><strong>识别当下的五行能量状态，觉察阴面禀性的升起</strong></li>
+<li><strong>及时运用"化克为生"的智慧进行自我调节</strong></li>
+</ul>
+<h4>五行心法呼应（4条）</h4>
+<ul>
+<li><strong>认不是</strong>：对应王凤仪"找好处"的反向操作</li>
+<li><strong>找好处</strong>：对应王凤仪"不怨人"的核心心法</li>
+<li><strong>信因果</strong>：对应王凤仪"信因果"的因果观</li>
+<li><strong>达天时</strong>：对应王凤仪"达天时"的时机智慧</li>
+</ul>
+<h4>化性谈转译（3条）</h4>
+<ul>
+<li><strong>五行化性实践是传统智慧的现代化转译</strong></li>
+<li><strong>"化克为生"是王凤仪化性谈的理论深化</strong></li>
+<li><strong>十组相克口诀是王凤仪化性谈的具体化</strong></li>
+</ul>
+<hr>
+<h3>10. 与量子力学的连接（10条）</h3>
+<h4>范式跃迁（3条）</h4>
+<ul>
+<li><strong>从"对抗关系"到"动态平衡关系"</strong>：象思维三元动态平衡理论的范式跃迁</li>
+<li><strong>从"实体状态"到"能量状态"</strong>：五行化性关注能量质量（阴转阳）转化，而非物质属性</li>
+<li><strong>量子纠缠与五行生克</strong>：宇宙万物通过能量场相互关联、相互影响</li>
+</ul>
+<h4>能量场理论（4条）</h4>
+<ul>
+<li><strong>畏的双向性</strong>：能量制约与心理敬畏是量子纠缠的显化</li>
+<li><strong>相生循环</strong>：能量流动的良性循环，类似量子态跃迁</li>
+<li><strong>制化之克</strong>：适度的相克是系统自调节的量子机制</li>
+<li><strong>能量质量转化</strong>：从阴五行到阳五行的炼金术，类似量子能级跃迁</li>
+</ul>
+<h4>观察者效应（3条）</h4>
+<ul>
+<li><strong>觉知互动</strong>：在互动中保持觉知，不被情绪牵引</li>
+<li><strong>观察者影响系统</strong>：我们的觉知状态影响五行生克的走向</li>
+<li><strong>心性转化</strong>：从对抗性觉知到建设性觉知</li>
+</ul>
+<hr>
+<h3>11. 与《庄子》的连接（5条）</h3>
+<h4>三无境界（3条）</h4>
+<ul>
+<li><strong>无己</strong>：放下对自我的执着，化解木克土、金克木的冲突</li>
+<li><strong>无功</strong>：放下对功名的执着，化解火克金、水克火的冲突</li>
+<li><strong>无名</strong>：放下对名相的执着，化解土克水、木克土的冲突</li>
+</ul>
+<h4>齐物论（2条）</h4>
+<ul>
+<li><strong>万物齐一</strong>：五行相克与相生在本质上是统一的</li>
+<li><strong>两行</strong>：相生与相克并存，动态平衡</li>
+</ul>
+<hr>
+<h3>12. 与《老子》的连接（5条）</h3>
+<h4>道法自然（3条）</h4>
+<ul>
+<li><strong>道生一</strong>：五行生克是道的一体两面</li>
+<li><strong>一生二</strong>：相生与相克的分化</li>
+<li><strong>二生三</strong>：制化之克、乘侮之克、相生循环的三元动态平衡</li>
+</ul>
+<h4>柔弱胜刚强（2条）</h4>
+<ul>
+<li><strong>水的智慧</strong>：水克火的转化，用柔克刚</li>
+<li><strong>无为而治</strong>：化克为生的无为而治</li>
+</ul>
+<hr>
+<h2>📈 关联矩阵</h2>
+<table>
+<thead><tr>
+<th>理论体系</th>
+<th>关联数量</th>
+<th>核心关联</th>
+</tr></thead><tbody>
+<tr>
+<td>五行生克基本原理</td>
+<td>35</td>
+<td>五行化性通关点、五行人格心理学、心文化信仰体系、中医理论</td>
+</tr>
+<tr>
+<td>化克为生哲学智慧</td>
+<td>25</td>
+<td>象思维、心文化信仰体系、五行化性通关点、《老子》</td>
+</tr>
+<tr>
+<td>畏的双重性机制</td>
+<td>30</td>
+<td>象思维、五行人格心理学、心文化信仰体系、量子力学</td>
+</tr>
+<tr>
+<td>十组相克口诀解析</td>
+<td>40</td>
+<td>五行化性通关点、五行人格心理学、心文化信仰体系、中医理论</td>
+</tr>
+<tr>
+<td>三大实践路径</td>
+<td>35</td>
+<td>五行化性通关点、五行人格心理学、象思维、五色光思维</td>
+</tr>
+<tr>
+<td>现代心理学整合</td>
+<td>20</td>
+<td>五行人格心理学、现代管理学、大五人格、中医理论</td>
+</tr>
+<tr>
+<td>跨域连接</td>
+<td>130</td>
+<td>所有10大理论体系的深度整合</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🎯 知识图谱导航</h2>
+<h3>快速检索目录</h3>
+<ol>
+<li><strong>十组相克口诀深度解析</strong>：<code><a href="05-_00-_--_md-199bd55a.html">五行化克为生理论体系-原理-机制与实践路径</a></code></li>
+<li><strong>畏的双重性机制</strong>：<code><a href="05-_00-_--_md-199bd55a.html">五行化克为生理论体系-原理-机制与实践路径</a></code></li>
+<li><strong>三大实践路径</strong>：<code><a href="05-_00-_--_md-199bd55a.html">五行化克为生理论体系-原理-机制与实践路径</a></code></li>
+<li><strong>现代心理学整合</strong>：<code><a href="05-_00-_--_md-199bd55a.html">五行化克为生理论体系-原理-机制与实践路径</a></code></li>
+<li><strong>跨域连接</strong>：<code><a href="05-_00-_--_md-199bd55a.html">五行化克为生理论体系-原理-机制与实践路径</a></code></li>
+</ol>
+<h3>核心概念索引</h3>
+<ul>
+<li><strong>化克为生</strong>：将失衡的、破坏性的乘侮之克转化为建设性的制化之克与相生循环</li>
+<li><strong>畏的双重性</strong>：能量层面的制约（被克者对克者）+ 心理层面的敬畏（克者对被克者）</li>
+<li><strong>三元动态平衡</strong>：制化之克、乘侮之克、相生循环三元共存</li>
+<li><strong>能量质量转化</strong>：从阴五行到阳五行的炼金术</li>
+<li><strong>五德目标</strong>：仁（木）、礼（火）、信（土）、义（金）、智（水）</li>
+<li><strong>五行心法</strong>：达天时（火）、信因果（土）、找好处（金）、认不是（水）</li>
+</ul>
+<hr>
+<h2>🔗 双向链接网络</h2>
+<h3>主文档链接</h3>
+<ul>
+<li><code><a href="05-_00-_--_md-199bd55a.html">五行化克为生理论体系-原理-机制与实践路径</a></code>：主文档（~12,000字）</li>
+</ul>
+<h3>关联理论体系链接</h3>
+<ul>
+<li><code><a href="05-_00-__md-10615d35.html">五行化性通关点</a></code>：五行化性实践体系</li>
+<li><code><a href="08-OS_AI-OS<strong>OS</strong>_md-65337c17.html">象思维</a></code>：象思维系统</li>
+<li><code><a href="08-OS_AI-OS<strong>OS</strong>_md-09b62f01.html">五色光思维</a></code>：五色光思维系统</li>
+<li><code><a href="知行合一自我进化.html">知行合一自我进化</a></code>：知行合一三阶段转化</li>
+<li><code><a href="五行人格心理学OS.html">五行人格心理学OS</a></code>：三层有机智能体系统</li>
+<li><code><a href="心文化信仰体系.html">心文化信仰体系</a></code>：大圆满见地</li>
+</ul>
+<h3>应用场景链接</h3>
+<ul>
+<li><code><a href="木行人分智能体.html">木行人分智能体</a></code>：木行人专属分析</li>
+<li><code><a href="火行人分智能体.html">火行人分智能体</a></code>：火行人专属分析</li>
+<li><code><a href="土行人分智能体.html">土行人分智能体</a></code>：土行人专属分析</li>
+<li><code><a href="金行人分智能体.html">金行人分智能体</a></code>：金行人专属分析</li>
+<li><code><a href="水行人分智能体.html">水行人分智能体</a></code>：水行人专属分析</li>
+</ul>
+<hr>
+<h2>📝 使用指南</h2>
+<h3>知识图谱导航</h3>
+<ol>
+<li><strong>查找概念</strong>：使用"核心概念索引"快速定位</li>
+<li><strong>理解关系</strong>：查看"核心网络结构"Mermaid图谱</li>
+<li><strong>深度学习</strong>：点击双向链接跳转至主文档详细内容</li>
+<li><strong>跨域连接</strong>：查看"跨域知识联系网络"理解整合关系</li>
+</ol>
+<h3>知识图谱应用</h3>
+<ol>
+<li><strong>个人成长</strong>：通过十组相克口诀快速诊断自己的人格类型与当前状态</li>
+<li><strong>关系调和</strong>：识别双方五行属性，判断相克关系，运用"畏"机制与相生路径进行关系调和</li>
+<li><strong>职场关系</strong>：运用五行相生原理进行角色优化与互补，化解团队相克冲突</li>
+<li><strong>身心健康</strong>：根据五行相克原理提前预防疾病，饮食调理，环境调和</li>
+</ol>
+<hr>
+<p><strong>文档完成度</strong>：✅ 100%
+<strong>跨域知识联系</strong>：130条
+<strong>可视化图谱</strong>：2个Mermaid图谱
+<strong>双向链接</strong>：12个主链接
+<strong>核心金句</strong>：10句
+<strong>标签系统</strong>：23个标签</p>
+<hr>
+<blockquote><p><strong>文档状态</strong>：知识图谱已完成，包含130条跨域知识联系与2个可视化图谱。</p></blockquote>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

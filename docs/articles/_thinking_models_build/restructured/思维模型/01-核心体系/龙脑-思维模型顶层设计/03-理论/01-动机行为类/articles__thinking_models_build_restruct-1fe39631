@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保护动机理论 - 以观其妙书院</title>
+    <meta name="description" content="保护动机理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\保护动机理论.txt ｜ 字数：8199 ｜ 行数：81五色光分布（启发式）：白光40% 蓝光29% 黄光17% 绿光10% 红光2%象思维相关度：低（命中 5 次）一、核心定义核心定义（龙心OS精修）：“上周办公室3个同事接连感冒，我赶紧把口罩翻出来戴了，还每天泡两杯板蓝根”“我才不管呢，感">
+    <meta name="keywords" content="[思维模型, 理论模型, 结构化学习, 决策, 沟通]">
+    <meta name="author" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta property="og:title" content="保护动机理论">
+    <meta property="og:description" content="保护动机理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\保护动机理论.txt ｜ 字数：8199 ｜ 行数：81五色光分布（启发式）：白光40% 蓝光29% 黄光17% 绿光10% 红光2%象思维相关度：低（命中 5 次）一、核心定义核心定义（龙心OS精修）：“上周办公室3个同事接连感冒，我赶紧把口罩翻出来戴了，还每天泡两杯板蓝根”“我才不管呢，感">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/保护动机理论.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/保护动机理论.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "保护动机理论",
+      "description": "保护动机理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\保护动机理论.txt ｜ 字数：8199 ｜ 行数：81五色光分布（启发式）：白光40% 蓝光29% 黄光17% 绿光10% 红光2%象思维相关度：低（命中 5 次）一、核心定义核心定义（龙心OS精修）：“上周办公室3个同事接连感冒，我赶紧把口罩翻出来戴了，还每天泡两杯板蓝根”“我才不管呢，感",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-30",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>保护动机理论</h1>
+            <div class="meta">
+                <span>📅 2026-07-30</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            保护动机理论...
+        </div>
+        
+        <article>
+<h1>保护动机理论</h1>
+
+<blockquote><strong>龙心OS结构化编译</strong> | 分类：理论模型 | 五行属性：金 | 层级：C层</blockquote>
+<blockquote>源文件：<code>思维模型/理论模型\保护动机理论.txt</code> ｜ 字数：8199 ｜ 行数：81</blockquote>
+<blockquote>五色光分布（启发式）：白光40% 蓝光29% 黄光17% 绿光10% 红光2%</blockquote>
+<blockquote>象思维相关度：低（命中 5 次）</blockquote>
+
+<h2>一、核心定义</h2>
+
+<strong>核心定义（龙心OS精修）</strong>：“上周办公室3个同事接连感冒，我赶紧把口罩翻出来戴了，还每天泡两杯板蓝根”“我才不管呢，感冒而已，抗抗就过去了”——同样面对身边的感冒浪潮，你是前者还是后者？
+
+<h2>二、详细内容</h2>
+<blockquote>逐行挖掘原则：下文为原文<strong>全文逐行保留</strong>（编号 <code>行号│内容</code>），未删改、未遗漏，供龙心OS五引擎（知识学习/象思维/五色光/知行合一/五象限）随时调取精读。</blockquote>
+
+<h3>2.1 逐行精读（全文保留·81 行）</h3>
+<pre><code>0001│理论研究介绍 | 保护动机理论（Protection Motivation Theory）
+0002│“上周办公室3个同事接连感冒，我赶紧把口罩翻出来戴了，还每天泡两杯板蓝根”“我才不管呢，感冒而已，抗抗就过去了”——同样面对身边的感冒浪潮，你是前者还是后者？
+0003│
+0004│其实不只是应对感冒，生活中这样的差异选择随处可见。有人看到体检报告里的“轻度脂肪肝”就立刻调整饮食、规律运动；有人却觉得“小问题，不影响”依旧胡吃海喝。
+0005│
+0006│为什么面对同样的潜在威胁，人们的防护行为会天差地别？其实背后藏着一个心理学理论的“操控”——今天我们要聊的，就是“保护动机理论”。
+0007│
+0008│01
+0009│
+0010│理论基础
+0011│
+0012│保护动机理论（Protection Motivation Theory，PMT）最早由Rogers于1975年在恐惧诉求理论（相关理论可见理论介绍 | 恐惧管理理论 (Terror Management Theory, TMT)）基础上提出[1]，并于1983年进行了理论完善[2]。该理论指出人的行为不是偶然发生，而是一个认知评估的过程。我们对威胁的看法和对应对策略的看法，共同决定了最终是否采取行动[3]。
+0013│
+0014│
+0015│
+0016│PMT吸收了多种理论并进行整合，例如霍夫兰的驱动模型（Hovland's Drive Model）、麦主斯特的平行处理模型（Leventhal's Parallel Processing Model）、班杜拉的研究理论分享｜社会认知理论（Social Cognition Theory）等。保护动机理论融合了这些观点成分，形成了一个更综合的框架。它不仅关注恐惧本身，更重视认知评估过程在行为决策中的作用。
+0017│
+0018│
+0019│
+0020│图片
+0021│
+0022│图 基于Rogers（1983）修订的整合型模型
+0023│
+0024│
+0025│
+0026│02
+0027│
+0028│理论内涵
+0029│
+0030│1983年，Rogers提出了PMT的核心，即当个体面对潜在威胁时，并非被动地受恐惧驱使，而是会主动进行一个系统的认知评估过程。这一过程主要沿着“威胁评估”与“应对评估”两条相对独立又相互关联的认知路径展开。这种交互作用最终决定了个体是采取保护性的适应性行为，还是陷入非适应性的应对模式。
+0031│
+0032│
+0033│
+0034│威胁评估是个体对健康威胁本身特性的评价，包括三个核心成分：
+0035│
+0036│
+0037│
+0038│1.感知严重性（Perceived Severity）：个体对威胁后果严重程度的判断，涉及对生理、心理和社会后果的多维度评估。核心问题是“如果真的发生，会有多严重？”
+0039│
+0040│
+0041│
+0042│2.感知易感性（Perceived Vulnerability）：个体对自己遭受某领域的威胁可能性的主观判断。核心问题是“这种事发生在我身上的概率多大？”
+0043│
+0044│
+0045│
+0046│3.内部奖励与外部奖励（Intrinsic and Extrinsic Rewards）：个体从风险行为中获得的即时积极体验或收益，如吸烟的快感、不运动带来的舒适等。
+0047│
+0048│
+0049│
+0050│威胁评估整体水平的提高，会为个体采取行动提供初始动力。在PMT框架被引入信息与隐私研究后，Nicolaou和McKnight（2006）运用其提出人与人之间的感知风险成为评判信息交换的重要原则，证实威胁感知在非健康领域的适用性[4]。在信息资源领域，学者Youn（2005）指出不愿向网站提供信息的用户，也会采取其他方式保护个人信息，比如提供不完整信息或虚假信息，对新媒体时代平台内容核查提供新的思路[5]。
+0051│
+0052│
+0053│
+0054│应对评估是个体对推荐应对措施的评价，同样包含三个关键成分：
+0055│
+0056│
+0057│
+0058│1.反应效能（Response Efficacy）：个体对推荐的保护行为有效性的判断，涉及对措施科学性和实用性的双重认可。Neuwirth等人（2000）的研究实验表明，随着个人应对评估的增加，其执行应对行为的意愿也会增加[6]。
+0059│
+0060│
+0061│
+0062│2.自我效能（Self-efficacy）：个体对自己成功执行推荐保护行为能力的信心，也就是“我能否做到”。Rogers（1983）明确描述“自我效能”可独立克服健康信念模型（HBM）中的感知障碍。该维度也被Floyd等人（2000）证明是激发保护动机最稳定的预测因子[7]。
+0063│
+0064│
+0065│
+0066│3.反应成本（Response Costs）：个体感知的执行保护行为所付出的各种成本，包括经济成本、时间成本、心理不适等。例如，Ling等人（2019）研究发现接种疫苗的副作用、花费的时间与金钱都会降低居民的接种意愿[8]。
+0067│
+0068│图片
+0069│PMT认为，保护动机是“威胁评估”和“应对评估”共同作用的产物，而非简单的线性相加。重要的是，这两条路径存在明显的交互作用，即 “威胁—应对” 交互机制：
+0070│
+0071│
+0072│
+0073│1.协同增强效应：当应对评估水平提高时，提升威胁评估会有效增强个体的保护动机。此时，个体形成“威胁严重，但是我有办法应对”的认知，从而倾向于采取适应性行为，如戒烟、接种疫苗行为等。
+0074│
+0075│
+0076│
+0077│2.“回旋镖”效应：若应对评估水平低时，单纯提升威胁信息不仅无效，还会导致“回旋镖效应”，引发个体的防御性反应（如吸烟者因觉得戒烟无效，高威胁反而想多抽烟），解释了传统模型无法说明的“威胁无效”现象。
+0078│
+0079│
+0080│
+0081│
+0082│03
+0083│
+0084│理论应用
+0085│
+0086│01
+0087│
+0088│健康促进与疾病管理
+0089│
+0090│在重症患者护理中，基于保护动机理论和恐惧诉求理论制定方案，帮助重症患者提高自我护理能力，减少并发症。例如，周英凤（2023）等学者对妊娠期糖尿病孕妇血糖管理的健康教育中，基于PMT的干预显著改善了患者的症状和自我管理能力[9]。
+0091│
+0092│02
+0093│
+0094│网络安全行为
+0095│
+0096│新媒体时代，PMT和网络信息披露、互联网安全运用等行为紧密联系。申琦（2017）研究上海市的大学生在支付密码、网络账号等维度存在“隐私保护”行为；而对于朋友圈或其他自我展示平台会存在“隐私悖论”[10]。
+0097│
+0098│03
+0099│
+0100│地方灾害管理与风险沟通
+0101│
+0102│在地方性的气象灾害中，保护动机理论为设计有效的安全性宣传信息提供了理论基础。Oakley等人（2020）用该理论研究地区洪水预防，指出比起唤醒居民的恐惧，地区和政府应该通过设计信息来提升公众防疫、减灾、应对气候风险的行为动机[11]。
+0103│
+0104│04
+0105│
+0106│PMT与AI感知
+0107│
+0108│Yuniawan等人（2024）发现，当用户在使用AI技术时感知到较高的隐私风险或职业安全威胁，其对AI的采纳意愿会显著下降。这一结果表明，人们对AI的抵触并非单纯源于技术复杂性，而是源于对潜在风险的认知评估过程[12]。
+0109│
+0110│
+0111│
+0112│04
+0113│
+0114│案例分析
+0115│
+0116│移动APP用户隐私信息设置行为影响因素及其组态效应研究[13]
+0117│
+0118│朱侯 张明鑫
+0119│
+0120│摘要：【目的/意义】在APP隐私泄露问题日趋严峻的环境下，移动应用提供的隐私设置功能为用户保护自身的隐私信息提供了一种重要的途径，了解哪些因素会影响以及如何影响移动应用APP用户的隐私设置行为，有利于加强用户个人隐私保护和改进隐私设置功能。【方法/过程】本研究基于保护动机理论与社会认知理论的基本思想，提出七个条件变量并采用问卷调查法搜集数据，然后使用模糊集定性比较分析法对条件变量与用户隐私设置行为结果变量之间的多元因果路径进行分析。【结果/结论】用户主体因素（感知风险、感知隐私控制、隐私关注和行为效益）是用户隐私设置行为产生的必要条件；同时，用户隐私设置行为的条件组合路径包括了政策保障缺失型和隐私泄露负面经历驱动型等五条不同路径。【创新/局限】研究问题和研究思路具有一定创新性，例如关注移动APP用户隐私信息设置行为及其多元因果路径关系，但是也存在着研究变量数量较少，样本抽样方法值得改进等不足。
+0121│
+0122│关键词：隐私设置;隐私保护;模糊集定性比较分析;社会认知理论;保护动机理论
+0123│
+0124│文献来源：《情报科学》2021年39卷第7期
+0125│
+0126│Pro-environmental behavior of university students: Application of protection motivation theory[14]
+0127│
+0128│Arezu Shafiei, Hamideh Maleksaeidi
+0129│
+0130│Abstract：Environmental quality strongly depends on the human behavior patterns. University students as a part of the young people of the communityendure the burden of the past and current carelessness towards the environment. At the same time, they are the significant people who gain technical knowledge essential for advancing suitable solutions to change environmental behavior. Therefore, developing scientific knowledge on what inspire them to behave pro-environmentally is a significant area of concern that has practicable usages for moving on the way a sustainable future. In an examination of pro-environmentally related behavior, we used the protection motivation theory as a framework for explain ing pro-environmental behavior of a sample of 310 Iranian students. Analysis indicated that the protection motivation theory constructs along with environmental attitude are able for explaining a significant portion of the variance in pro-environmental behavior. Based on the results, environmental attitude, self-efficacy, perceived costs of pro environmental behavior and perceived intrinsic and extrinsic rewards of current envi ronmentally unfriendly behaviors were the direct determinants of pro-environmental behavior, while rewards indirectly influenced pro-environmental behavior via environ mental attitude and response costs. Also, response efficacy through self-efficacy had an indirect influence on pro-environmental behavior. Overall, considering the importance of environmental attitudes and self-efficacy, using measures and incentives to improve stu dents’ attitude on the necessity of environmental protection and improving their sense of self-efficacy can help increase the likelihood of pro-environmental behaviors in community.
+0131│
+0132│       环境质量在很大程度上取决于人类的行为模式。大学生作为社会青年群体的一部分，承受着过去和当前环境漠视所带来的负担，但同时也是掌握关键技术知识、能够推动环境行为变革的重要力量。因此，研究旨在激发其亲环境行为的深层动因，并认为这是一个具有重要实践意义的研究领域，可为通往可持续未来的道路提供行动依据。在针对亲环境行为的实证研究中，我们以保护动机理论为框架，对310名伊朗学生样本进行了分析。研究发现，保护动机理论各要素与环境态度共同解释了亲环境行为的大部分变异。具体而言，环境态度、自我效能感、亲环境行为感知成本以及当前非环保行为的感知内外在奖励，构成了亲环境行为的直接决定因素；而奖励因素通过环境态度与反应成本对亲环境行为产生间接影响。同时，反应效能通过自我效能感对亲环境行为产生间接作用。总体而言，鉴于环境态度与自我效能感的关键作用，通过制定相关措施和激励方案来提升学生对环境保护必要性的认知，并增强其自我效能感，将有效促进社会亲环境行为的发生。
+0133│
+0134│Keywords: Environmental attitude; Self-efficacy; Perceived vulnerability; Response-efficacy; Perceived severity
+0135│
+0136│文献来源：Global Ecology and Conservation Volume 22, June 2020.
+0137│
+0138│【参考文献】
+0139│
+0140│[1] Rogers, R. W. (1975). A protection motivation theory of fear appeals and attitude change1. The journal of psychology, 91(1), 93-114.
+0141│
+0142│[2] Rogers, R. W. (1983). Cognitive and physiological processes in fear appeals and attitude change: A revised theory of protection motivation. Social psychology: A source book, 153-176.
+0143│
+0144│[3] Marikyan, D., & Papagiannidis, S. (2023). Protection motivation theory: A review. TheoryHub Book: This handbook is based on the online theory resource: TheoryHub, 78-93.
+0145│
+0146│[4] Nicolaou, A. I., & McKnight, D. H. (2006). Perceived information quality in data exchanges: Effects on risk, trust, and intention to use. Information systems research, 17(4), 332-351.
+0147│
+0148│[5] Youn, S. (2005). Teenagers' perceptions of online privacy and coping behaviors: a risk–benefit appraisal approach. Journal of Broadcasting & Electronic Media, 49(1), 86-110.
+0149│
+0150│[6] Neuwirth, K., Dunwoody, S., & Griffin, R. J. (2000). Protection motivation and risk communication. Risk Analysis, 20(5), 721-734.
+0151│
+0152│[7] Floyd, D. L., Prentice‐Dunn, S., & Rogers, R. W. (2000). A meta‐analysis of research on protection motivation theory. Journal of applied social psychology, 30(2), 407-429.
+0153│
+0154│[8] Ling, M., Kothe, E. J., & Mullan, B. A. (2019). Predicting intention to receive a seasonal influenza vaccination using Protection Motivation Theory. Social Science & Medicine, 233, 87-92.
+0155│
+0156│[9] 周英凤,黄娜,李丽,等.基于保护动机理论的妊娠期糖尿病孕妇血糖管理决策行为模型的构建[J].中华护理杂志,2023,58(04):433-439.
+0157│
+0158│[10] 申琦.风险与成本的权衡:社交网络中的“隐私悖论”——以上海市大学生的微信移动社交应用(APP)为例[J].新闻与传播研究,2017,24(08):55-69+127.
+0159│
+0160│[11] Oakley, M., Mohun Himmelweit, S., Leinster, P., & Casado, M. (2020). Protection motivation theory: A proposed theoretical extension and moving beyond rationality—the case of flooding.
+0161│
+0162│[12] Yuniawan, A., Hersugondo, H., Mas’ ud, F., Latan, H., Ali, M., & Godinho Filho, M. (2025). Beyond the hype: understanding barriers to AI adoption through lens of protection motivation theory. Aslib Journal of Information Management.
+0163│
+0164│[13] 朱侯,张明鑫.移动APP用户隐私信息设置行为影响因素及其组态效应研究[J].情报科学,2021,39(07):54-62.
+0165│
+0166│[14] Shafiei, A., & Maleksaeidi, H. (2020). Pro-environmental behavior of university students: Application of protection motivation theory. Global Ecology and Conservation, 22, e00908.
+0167│
+0168│
+0169│
+0170│ 编辑 / 历梦妍
+0171│
+0172│审校 / 郭亦琛
+0173│
+0174│审核 / 于孟利
+0175│
+0176│
+0177│
+0178│声明
+0179│
+0180│如需转载文章，可在留言区留言，并附转载公众号名称+公众号ID。转载时烦请标清文章来源，不允许将内容用于其他用途，并严格禁止将内容用于任何目的的大模型训练，感谢您的支持！
+0181│
+0182│
+0183│
+0184│往期内容
+0185│
+0186│理论介绍 | 恐惧管理理论 (Terror Management Theory, TMT)
+0187│
+0188│研究理论介绍 | 消费价值理论（Theory of Consumption Values）
+0189│
+0190│研究理论介绍 | 欲望侵入理论（Elaborated Intrusion Theory）
+0191│
+0192│2025年国家社科基金重大项目立项解读 | 信息传播交叉学科研究新动向
+0193│
+0194│文献精读 | 在线分享体验中的复杂社交网络：自我定位与他者定位
+0195│
+0196│图片
+0197│
+0198│
+0199│
+0200│
+0201│图片
+</code></pre>
+
+<h2>三、关联文件（双向链接）</h2>
+<li>上游/总导航：[[00-总索引-思维模型]] ｜ 知识图谱：[[10-知识图谱-思维模型]] ｜ 概念手册：[[09-核心概念手册-思维模型]]</li>
+<li>跨文件同构（共享显著概念）：[[社会支持理论]]，[[恐惧管理理论]]，[[自我呈现理论]]，[[创新抵抗理论]]，[[认知-情感-意动框架]]，[[消费价值理论]]，[[情感事件理论]]，[[PERMA幸福理论]]</li>
+
+<h2>四、核心金句</h2>
+<blockquote>“上周办公室3个同事接连感冒，我赶紧把口罩翻出来戴了，还每天泡两杯板蓝根”“我才不管呢，感冒而已，抗抗就过去了”——同样面对身边的感冒浪潮，你是前者还是后者？</blockquote>
+<blockquote>为什么面对同样的潜在威胁，人们的防护行为会天差地别？其实背后藏着一个心理学理论的“操控”——今天我们要聊的，就是“保护动机理论”。</blockquote>
+<blockquote>威胁评估是个体对健康威胁本身特性的评价，包括三个核心成分：</blockquote>
+<blockquote>1.感知严重性（Perceived Severity）：个体对威胁后果严重程度的判断，涉及对生理、心理和社会后果的多维度评估。核心问题是“如果真的发生，会有多严重？”</blockquote>
+<blockquote>2.感知易感性（Perceived Vulnerability）：个体对自己遭受某领域的威胁可能性的主观判断。核心问题是“这种事发生在我身上的概率多大？”</blockquote>
+<blockquote>3.内部奖励与外部奖励（Intrinsic and Extrinsic Rewards）：个体从风险行为中获得的即时积极体验或收益，如吸烟的快感、不运动带来的舒适等。</blockquote>
+
+<h2>五、标签</h2>
+<li>领域：理论模型、思维模型、决策、沟通</li>
+<li>机制：知识学习(十项认知指令)、五色光思维(白红黄绿蓝)</li>
+<li>洞见：跨域同构、网状知识、双向链接、人机共生</li>
+
+<h2>六、龙心OS隐秘联系（跨域同构·龙心OS精修）</h2>
+
+<blockquote>以下为龙心OS在跨域同构（北极星能力）下发现的隐秘结构联系，供五引擎组合调取。</blockquote>
+
+<li><strong>概率思维⟷五色光蓝光（风险量化）</strong>：把不确定性转为概率分布，是蓝光思维的量化形态。</li>
+<li><strong>不确定性⟷复杂系统（涌现/黑天鹅）</strong>：概率思维是应对复杂系统的认知疫苗。</li>
+<li><strong>系统思维/涌现⟷五行生克网络</strong>：五行相生相克即系统要素互动的最小完备模型。</li>
+<li><strong>整体大于部分之和⟷格式塔关系场</strong>：系统涌现的格式塔解释，对应合道场域型组织。</li>
+<li><strong>SCAMPER⟷五色光绿光（创新）</strong>：替代/组合/调整/消除等七问即绿光『创新变革』的操作清单。</li>
+<li><strong>SCAMPER⟷五行木（生发）</strong>：创新是木之生发，SCAMPER 提供生发路径。</li>
+<li><strong>框架思维⟷龙心OS知行合一（表示空间）</strong>：框架即预先收敛的表示空间，是『压缩』的结晶。</li>
+<li><strong>思维模型⟷五行分类图谱（双向链接网络）</strong>：每个模型是一节点，模型间关系即图谱边。</li>
+<li><strong>跨文件同构</strong>：与 [[社会支持理论]]、[[恐惧管理理论]]、[[自我呈现理论]] 共享核心概念（详见「三、关联文件」章节），可在龙心OS知识学习引擎下做十项认知指令的对比推演。</li>
+
+<blockquote><strong>引擎路由</strong>：本文可由龙心OS五引擎组合调用——知识学习（十项认知指令深度学习）、象思维（物象→意象→原象）、五色光（白红黄绿蓝五维审查）、知行合一（表示→压缩→泛化）、人机协同五象限（[AI]/[人]/[⇄]分工定位）。</blockquote>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

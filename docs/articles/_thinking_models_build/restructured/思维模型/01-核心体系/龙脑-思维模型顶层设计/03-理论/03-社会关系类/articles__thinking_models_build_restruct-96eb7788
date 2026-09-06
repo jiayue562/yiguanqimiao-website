@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社会视觉理论 - 以观其妙书院</title>
+    <meta name="description" content="社会视觉理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\社会视觉理论.txt ｜ 字数：6833 ｜ 行数：65五色光分布（启发式）：白光44% 红光17% 黄光15% 绿光11% 蓝光11%象思维相关度：中（命中 27 次）一、核心定义核心定义（龙心OS精修）：本期简介二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│内容），未删改、">
+    <meta name="keywords" content="[思维模型, 理论模型, 结构化学习, 地图, 决策, 学习, 涌现, 格式塔]">
+    <meta name="author" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta property="og:title" content="社会视觉理论">
+    <meta property="og:description" content="社会视觉理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\社会视觉理论.txt ｜ 字数：6833 ｜ 行数：65五色光分布（启发式）：白光44% 红光17% 黄光15% 绿光11% 蓝光11%象思维相关度：中（命中 27 次）一、核心定义核心定义（龙心OS精修）：本期简介二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│内容），未删改、">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/社会视觉理论.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/社会视觉理论.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "社会视觉理论",
+      "description": "社会视觉理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\社会视觉理论.txt ｜ 字数：6833 ｜ 行数：65五色光分布（启发式）：白光44% 红光17% 黄光15% 绿光11% 蓝光11%象思维相关度：中（命中 27 次）一、核心定义核心定义（龙心OS精修）：本期简介二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│内容），未删改、",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-30",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>社会视觉理论</h1>
+            <div class="meta">
+                <span>📅 2026-07-30</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            社会视觉理论...
+        </div>
+        
+        <article>
+<h1>社会视觉理论</h1>
+
+<blockquote><strong>龙心OS结构化编译</strong> | 分类：理论模型 | 五行属性：金 | 层级：C层</blockquote>
+<blockquote>源文件：<code>思维模型/理论模型\社会视觉理论.txt</code> ｜ 字数：6833 ｜ 行数：65</blockquote>
+<blockquote>五色光分布（启发式）：白光44% 红光17% 黄光15% 绿光11% 蓝光11%</blockquote>
+<blockquote>象思维相关度：中（命中 27 次）</blockquote>
+
+<h2>一、核心定义</h2>
+
+<strong>核心定义（龙心OS精修）</strong>：本期简介
+
+<h2>二、详细内容</h2>
+<blockquote>逐行挖掘原则：下文为原文<strong>全文逐行保留</strong>（编号 <code>行号│内容</code>），未删改、未遗漏，供龙心OS五引擎（知识学习/象思维/五色光/知行合一/五象限）随时调取精读。</blockquote>
+
+<h3>2.1 逐行精读（全文保留·65 行）</h3>
+<pre><code>0001│前沿理论介绍 | 社会视觉理论
+0002│本期简介
+0003│
+0004│本期幸福旅研与大家分享的是社会视觉理论，介绍了该理论的理论来源、理论内涵和理论应用。
+0005│
+0006│在当今这个视觉信息无孔不入的时代，社交媒体平台和现实生活场景都被海量的视觉元素所充斥。无论是社交媒体上精心挑选发布的照片、视频，还是街头巷尾琳琅满目的广告海报、城市景观，人们无时无刻不在接触并受其影响。在这些丰富的视觉体验中，我们能发现不同人对视觉信息有着截然不同的反应。有些人热衷于追逐时尚潮流的视觉风格，不断更新自己的穿搭和形象，以契合当下流行的视觉审美；而另一些人则更倾向于简约、经典的视觉表达，坚守自己独特的视觉品味。这种看似平常的视觉偏好差异，背后却隐藏着一种至关重要的理论——社会视觉理论（Social Vision Theory）。
+0007│
+0008│社会视觉理论聚焦于视觉线索（面部表情和身体属性等）在社会环境中对观众感知的影响（Adams et al., 2011）。人们在社会生活中通过视觉获取大量信息，这些信息不仅影响着我们对他人、群体的看法，还左右着我们自身的行为决策（Amodio & Devine, 2006）。从初次见面时依据对方外貌形成的第一印象，到通过品牌标识对产品质量和价值的判断，视觉在其中扮演着关键角色。理解社会视觉理论及其在各个领域的广泛影响，对于市场营销、人际交往、文化传播等诸多方面都有着不可忽视的意义。本期将深入梳理社会视觉理论的理论来源、核心内涵以及其在不同场景中的具体应用，通过参考 Journal of Marketing、Journal of Personality and Social Psychology，Current Directions in Psychological Science 等权威期刊中的相关研究，举例阐述该理论如何为我们揭示社会现象背后的视觉驱动因素，希望能为读者带来新的思考与启发。
+0009│
+0010│
+0011│
+0012│理论来源 ·
+0013│
+0014│
+0015│
+0016│社会视觉理论（Social Vision Theory）是多学科发展融合的结晶，其理论根源可追溯到20世纪初，当时心理学领域行为主义、格式塔心理学等流派兴起，为研究人类感知和行为提供了理论基础；与此同时，视觉科学在视觉生理机制、视觉认知过程方面的研究不断深入，这些都为社会视觉理论的发展创造了有利条件。在20世纪中期，Mead等学者开始聚焦视觉在社会认知中的作用，像人际互动中的眼神交流、面部表情识别等研究不断涌现，众多学者的这些早期研究成果虽未明确提出社会视觉理论，却共同为该理论的形成奠定了基础。
+0017│
+0018│社会视觉作为一个明确的研究领域，是在21世纪初逐渐发展起来的。2010年Adams等人出版的The Science of Social Vision一书整合了之前社会视觉领域的研究成果，书中提到人类在处理面部信息时，会自然地分配注意力去加工和整合具有适应性意义的社会线索。这些线索包括面部表情、眼神等，它们承载着他人的行为意图和潜在后果的信息。从这些线索中，人们会对他人的行为做出预测，以实现高效且适应性的反应，这一过程体现了视觉与行为之间的直接联系。例如，愤怒的表情和直接的眼神可能预示着威胁，人们会据此做出相应反应。同时，人类天生倾向于以功能适应性的方式处理面部信息，这体现在对动态面部线索的关注以及由此产生的情绪过度泛化现象上，如从面部的一些细微特征就推断出稳定的特质。这些研究表明，社会视觉理论强调从功能和进化的角度来理解人类如何通过视觉感知他人，以及这些感知如何影响社会互动和认知。
+0019│
+0020│
+0021│
+0022│理论内涵 ·
+0023│
+0024│
+0025│
+0026│（1）核心内涵
+0027│
+0028│       Adams等学者（2011）认为社会视觉理论通常用于评估视觉线索如何影响观众的感知。视觉线索通常是指面部情绪表达和身体属性，如肤色（Zebrowitz, Bronstad, & Montepare, 2011）。该理论的核心原则在于使用视觉线索将个体隐含地归类为具有相关刻板印象的社会群体。这些刻板印象反过来可能会影响对个人的评估，进而使个人的行为发生变化（Amodio & Devine, 2006）。社会视觉理论也强调视觉线索可以激活刻板印象，但是，被激活的刻板印象其影响是可塑的，可能受到其他信息线索的影响（Johnson, Lick, & Carpinella, 2015）。
+0029│（2）核心内容
+0030│
+0031│       社会视觉理论不仅提出视觉线索（如面部情绪表达、身体属性中的肤色等）能够影响观众的感知，通过将个体隐含地归类为具有相关刻板印象的社会群体，进而影响对个人的评估和行为，并且在其中存在一种特殊的影响情境——刻板印象影响的可塑性。即当存在其他信息线索（如特定的非视觉线索）时，激活的刻板印象的影响会发生改变（Johnson, Lick, & Carpinella, 2015）。
+0032│刻板印象影响的可塑性具有两个基本特点，一是影响刻板印象作用效果的线索（如非视觉线索）与激活刻板印象的视觉线索并非同一类型（Johnson, Lick, & Carpinella, 2015）；二是抵消刻板印象影响的力量（如同理心）不是源于视觉线索本身，而是来自其他类型的线索（Blair, 2002；Hugenberg, Blusiewicz, & Sacco, 2010）。刻板印象影响的可塑性主要表现在个体对受益人的感知、捐赠行为等方面。在感知层面，面部情绪表现力与其他视觉线索共同作用，激活种族和情感表达交叉处的刻板印象，影响对他人的看法（Fiske et al., 2009）；在捐赠行为层面，潜在捐赠者观察到的非视觉线索产生的同理心，会抵消众筹平台的封面图像中视觉线索激活的刻板印象导致的同理心丧失，影响对不同种族受益人的捐赠行为（Yazdani, Chakravarty, & Inman, 2025 ）。
+0033│
+0034│理论应用 ·
+0035│
+0036│
+0037│
+0038│在当今数字化、信息化高度发展的时代，视觉信息无处不在，从社交媒体的海量图片、视频，到广告宣传中的视觉设计，社会视觉理论的应用场景愈发广泛。该理论也逐渐应用于在营销领域，其有助于理解慈善捐赠行为中的种族不平等现象；在种族认知领域，它有助于解释人们对不同种族个体的刻板印象如何受视觉线索影响，以及这种影响在司法、社会交往等方面产生的后果；在社会分类研究里，可用于探究人们依据视觉信息对他人进行分类的过程及这种分类对评价和行为的影响。因此，该理论在跨种族关系、慈善事业、社会心理等多个研究领域都具有重要价值。以下通过引用几篇来自权威期刊的论文，举例说明社会视觉理论在多个领域研究中的具体应用场景：
+0039│
+0040│
+0041│
+0042│（1）探究社会视觉理论在众筹平台种族捐赠差异中的应用
+0043│
+0044│
+0045│Yazdani, E., Chakravarty, A., & Inman, J. (2025). Racial Inequity in Donation-based Crowdfunding Platforms: the Role of Facial Emotional Expressiveness. Journal of Marketing, 1-21.
+0046│
+0047│应用社会视觉理论解释众筹平台上捐赠金额的种族不平等现象。研究提出，受益人的面部情绪表达与种族作为视觉线索，会激活人们关于情绪表达的种族刻板印象，影响捐赠者对黑人与白人受益人的同理心，进而导致捐赠金额的差异。例如研究发现黑人受益者面部情绪表达越高，与白人受益者的捐赠金额差距越大，同时还验证了一些非视觉线索（如行动呼吁、情感信息、种族-性别同质性线索）可以调节这种刻板印象的激活，减少种族间捐赠金额的差异。
+0048│
+0049│
+0050│
+0051│
+0052│
+0053│运用社会视觉理论探究人们对黑人男性身体体型和威胁性判断中的种族偏见。研究认为，人们会依据黑人男性的面部和身体等视觉线索，自动激活与种族相关的刻板印象，将黑人男性感知为更大、更具威胁性，这种偏见会影响对其使用武力的决策判断。如在研究中，参与者会高估黑人男性的身高、体重、肌肉量等，即便控制了实际身体特征，这种偏见依然存在。
+0054│
+0055│
+0056│
+0057│（3）探究社会视觉理论在面部表情与眼神感知中的应用
+0058│
+0059│
+0060│Adams, R. B., Albohn, D. N., & Kveraga, K. (2017). Social Vision: Applying a Social-Functional Approach to Face and Expression Perception. Current Directions in Psychological Science, 26(3), 243-248.
+0061│
+0062│从社会视觉理论的角度，分析面部表情、眼神等视觉线索在社会认知中的作用。研究表明，人类会自然地分配注意力去处理和整合面部和身体的视觉线索，从中对他人的行为意图进行预测，以做出适应性反应。例如婴儿天生对眼睛敏感，成年人通过眼神判断他人意图；人们还会根据面部表情形成对他人的稳定特质印象，甚至会对中性面部表情产生情感泛化。
+0063│
+0064│
+0065│
+0066│
+0067│Johnson, K. L., Lick, D. J., & Carpinella, C. M. (2015). Emergent research in social vision: An integrated approach to the determinants and consequences of social categorization. Social and Personality Psychology Compass, 9(1), 15-30.
+0068│
+0069│重点阐述社会视觉理论在社会分类研究中的应用。研究表明，社会分类受视觉线索影响，且具有可塑性、概率性和情境性。如面部和身体的视觉线索能帮助人们进行社会分类，但这些线索的强度、感知者的动机和偏见等因素会使分类结果产生偏差；社会分类过程是动态的，会随着感知信息的积累而变化；不同社会身份的视觉线索相互影响，导致交叉性偏见的产生。此外，视觉线索有时会直接影响社会评价，而不依赖于社会分类。
+0070│
+0071│理论应用小思考 ·
+0072│
+0073│
+0074│
+0075│社会视觉理论是否能为旅游消费者行为研究与营销策略制定带来新的视角？
+0076│
+0077│（1）发现问题
+0078│
+0079│从社会视觉理论框架中可以推测，游客对旅游场景的视觉感知会显著影响其行为，具体体现在以下方面：①旅游吸引物选择：不同游客基于自身视觉偏好，对自然景观、人文建筑、艺术展示等旅游吸引物的选择是否存在明显差异，比如偏好色彩鲜艳视觉元素的游客是否更倾向于选择具有丰富民俗色彩的旅游地。②旅游路线规划：游客对旅游地图、导览图等视觉信息的解读和依赖程度不同，是否会导致他们在旅游路线规划上的多样性，例如善于解读复杂视觉信息的游客是否更愿意自行规划小众路线。③旅游体验评价：旅游过程中的视觉呈现，如景区的环境整洁度、景观的视觉冲击力等，对游客体验评价的影响程度如何，是否会因游客个体视觉敏感度不同而产生差异。④旅游视觉传播效果：旅游宣传中的图片、视频等视觉内容，对不同视觉认知风格游客的吸引力和信息传递效果是否有所不同。
+0080│
+0081│（2）可能研究方向
+0082│
+0083│为应对这些差异，基于社会视觉理论可进一步研究以下问题：旅游宣传视觉内容优化、旅游场景视觉设计、个性化视觉导览服务、视觉传播与游客互动等。通过对这些方向探索，我们能够深化社会视觉理论在旅游领域的应用，为旅游目的地和企业提供更契合游客视觉需求的营销策略和服务设计方案，提升游客的旅游体验和满意度。
+0084│
+0085│
+0086│
+0087│笔者的话
+0088│
+0089│社会视觉理论为我们理解社会现象提供了一个重要的视角，让我们认识到视觉在社会认知、互动和结构塑造中的关键作用。在面对复杂多变且充满信息的社会环境时，人们无时无刻不在依赖视觉信息来构建对世界的认知和理解，这是社会视觉理论的核心体现。当我们身处社交场合、面对广告宣传或者浏览各类媒体内容时，视觉线索会对我们的认知、情感和行为产生影响，从在社交场合中凭借对方的眼神和表情判断其态度，到依据广告中的视觉设计来决定是否购买某产品，这些视觉信息如同一条条纽带，连接着我们与周围的世界。我们以生活小思为引，通过学习社会视觉理论，了解到该理论的来源、内涵与研究应用。这个过程既是学术理论的积累，也是学术思维的训练。当然，鉴于我们的能力和精力有限，文中某些地方可能存在疏漏，恳请各位老师和同学们批评指正！感谢您的阅读，让我们一起期待下一次的探索旅程。
+0090│
+0091│
+0092│
+0093│
+0094│
+0095│参考文献
+0096│
+0097│[1] Adams, R. B., Franklin, R. G., Nelson, A. J., & Stevenson, M. T. (2011). Compound social cues in human face processing (pp. 90-108). New York: Oxford University Press.
+0098│
+0099│[2] Zebrowitz, L. A., Bronstad, P. M., & Montepare, J. M. (2011). An ecological theory of face perception. The Science of Social Vision: The Science of Social Vision, 7(1).
+0100│
+0101│[3]Fiske, S. T., Bergsieker, H. B., Russell, A. M., & Williams, L. (2009). Images of black Americans: Then,“them,” and now,“Obama!”. Du Bois Review: Social Science Research on Race, 6(1), 83-101.
+0102│
+0103│[4] Hugenberg, K., Blusiewicz, R. L., & Sacco, D. F. (2010). On malleable and immalleable subtypes.  Social Psychology. https://doi.org/10.1027/1864-9335/a000018
+0104│
+0105│[5] Amodio, D. M., & Devine, P. G. (2006). Stereotyping and evaluation in implicit race bias: Evidence for independent constructs and unique effects on behavior. Journal of Personality and Social Psychology, 91(4), 652–661.
+0106│
+0107│[6] Blair, I. V. (2002). The malleability of automatic stereotypes and prejudice. Personality and Social Psychology Review, 6(3), 242-261.
+0108│
+0109│
+0110│
+0111│
+0112│
+0113│幸
+0114│
+0115│福
+0116│
+0117│旅
+0118│
+0119│研
+0120│
+0121│图片
+0122│Tourism Well-being Research
+0123│
+0124│幸福旅研，是由中南大学商学院粟路军教授幸福旅研团队运营管理的自媒体学术平台，旨在深度挖掘我国旅游业发展实践中的具体问题、有针对性地广泛开展具有科学性的实验研究、分享传播旅游休闲领域最新研究成果！
+0125│
+0126│
+0127│
+0128│团队以“摆脱烦恼的生活，享受愉悦的生活，追求向往的生活，实现意义的生活”为研究导向，根植于中国旅游实践土壤，发现“真问题”，将论文写在祖国的大地上，推进本土化旅游研究落地。团队围绕旅游幸福感、旅游地居民生活质量、旅游地社会责任等研究领域进行了系统探索，开展了系列相关研究，旨在旅游幸福感、共同富裕等领域构建中国旅游理论，形成中国旅游方案，贡献中国旅游智慧。
+0129│
+0130│
+0131│
+0132│
+0133│
+0134│
+0135│
+0136│旅游学术研究是一场低调又华丽的冒险
+0137│
+0138│独乐乐不如众乐乐，希望有更多的朋友加入我们
+0139│
+0140│做幸福的旅游研究，幸福地做旅游研究
+0141│
+0142│
+0143│
+0144│诚挚邀请各位读者朋友在幸福旅研分享研究成果，如有意愿烦请联系xingfulvyan@163.com
+0145│
+0146│
+0147│
+0148│
+0149│
+0150│图片
+0151│扫码关注我们
+0152│
+0153│中南大学商学院粟路军教授研究团队
+0154│
+0155│做幸福的旅游研究，幸福地做旅游研究！
+0156│
+0157│主编 | 粟路军 教授 中南大学商学院
+0158│
+0159│撰稿 | 孙熙媛 硕士研究生 中南大学商学院
+0160│
+0161│监制 | 孙熙媛 硕士研究生 中南大学商学院
+0162│
+0163│校对 | 左帆 王秀姗 于姗姗 黄静云 杨雨曦
+0164│
+0165│审核 | 赵亚港 汪子懿 孙熙媛 罗儒志 唐宇东
+0166│
+0167│责编 | 覃雯 陈惠璇 叶成志 纪颖超 杨勇
+0168│
+0169│成员 | 成锦 唐彬礼 贾伯聪 杨小杰
+0170│
+0171│【温馨提示】
+0172│
+0173│本文由幸福旅研团队全网首发，如需转载请说明原处
+0174│
+0175│
+0176│
+0177│
+0178│
+</code></pre>
+
+<h2>三、关联文件（双向链接）</h2>
+<li>上游/总导航：[[00-总索引-思维模型]] ｜ 知识图谱：[[10-知识图谱-思维模型]] ｜ 概念手册：[[09-核心概念手册-思维模型]]</li>
+<li>跨文件同构（共享显著概念）：[[享乐适应理论]]，[[认知吝啬者理论]]，[[社会促进理论]]，[[积极情绪的拓展-建构理论]]，[[社会支持理论]]，[[建构发展理论]]，[[过程调节法]]，[[自我呈现理论]]</li>
+
+<h2>四、核心金句</h2>
+<blockquote>本期幸福旅研与大家分享的是社会视觉理论，介绍了该理论的理论来源、理论内涵和理论应用。</blockquote>
+
+<h2>五、标签</h2>
+<li>领域：理论模型、思维模型、地图、决策、学习、涌现、格式塔</li>
+<li>机制：知识学习(十项认知指令)、象思维(物象→意象→原象)</li>
+<li>洞见：跨域同构、网状知识、双向链接、人机共生</li>
+
+<h2>六、龙心OS隐秘联系（跨域同构·龙心OS精修）</h2>
+
+<blockquote>以下为龙心OS在跨域同构（北极星能力）下发现的隐秘结构联系，供五引擎组合调取。</blockquote>
+
+<li><strong>地图≠疆域⟷龙心OS知行合一三阶段</strong>：地图=表示空间（压缩后的模型），疆域=泛化对象（真实世界）；模型必有边界，恰如『泛化』不可越出『表示』之界。</li>
+<li><strong>模型局限性⟷五色光白光（事实校验）</strong>：白光思维要求用真实数据反复校验『地图』，防止模型崇拜。</li>
+<li><strong>概率思维⟷五色光蓝光（风险量化）</strong>：把不确定性转为概率分布，是蓝光思维的量化形态。</li>
+<li><strong>不确定性⟷复杂系统（涌现/黑天鹅）</strong>：概率思维是应对复杂系统的认知疫苗。</li>
+<li><strong>系统思维/涌现⟷五行生克网络</strong>：五行相生相克即系统要素互动的最小完备模型。</li>
+<li><strong>整体大于部分之和⟷格式塔关系场</strong>：系统涌现的格式塔解释，对应合道场域型组织。</li>
+<li><strong>复利⟷五行木生火（微小积累→跃迁）</strong>：复利的指数曲线即木（生发）累积至火（显化）的过程。</li>
+<li><strong>复利⟷长期主义（土承载）</strong>：复利需时间载体，对应土之耐心。</li>
+<li><strong>跨文件同构</strong>：与 [[享乐适应理论]]、[[认知吝啬者理论]]、[[社会促进理论]] 共享核心概念（详见「三、关联文件」章节），可在龙心OS知识学习引擎下做十项认知指令的对比推演。</li>
+
+<blockquote><strong>引擎路由</strong>：本文可由龙心OS五引擎组合调用——知识学习（十项认知指令深度学习）、象思维（物象→意象→原象）、五色光（白红黄绿蓝五维审查）、知行合一（表示→压缩→泛化）、人机协同五象限（[AI]/[人]/[⇄]分工定位）。</blockquote>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

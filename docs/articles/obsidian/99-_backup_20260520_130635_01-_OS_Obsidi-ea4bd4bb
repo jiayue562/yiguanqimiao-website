@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Obsidian知识图谱可视化 - 以观其妙书院</title>
+<meta name="description" content="Obsidian知识图谱可视化 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="Obsidian知识图谱可视化">
+<meta property="og:description" content="Obsidian知识图谱可视化 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Obsidian知识图谱可视化",
+    "description": "Obsidian知识图谱可视化 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Obsidian知识图谱可视化</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>Obsidian知识图谱可视化</h1>
+<blockquote><p><strong>版本</strong>: v1.0 | <strong>创建</strong>: 2026-04-03 | <strong>维护者</strong>: 龙龟神将</p></blockquote>
+<hr>
+<h2>🎯 图谱概览</h2>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    Obsidian知识图谱系统                          │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│                        全局图谱                                  │
+│                      （知识全貌）                                │
+│                            │                                    │
+│              ┌─────────────┼─────────────┐                     │
+│              ↓             ↓             ↓                     │
+│         ┌────────┐   ┌────────┐   ┌────────┐                │
+│         │本地图谱 │   │主题聚类│   │路径搜索│                │
+│         │(局部)  │   │(过滤)  │   │(关联)  │                │
+│         └────────┘   └────────┘   └────────┘                │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>📊 第一部分：图谱类型详解</h2>
+<h3>1.1 全局图谱</h3>
+<pre><code>定义: 展示整个知识库所有笔记节点及其链接关系
+
+打开方式:
+  设置 → 外观 → 右侧边栏 → 开启"图形视图"
+  或快捷键: Ctrl/Cmd + Shift + G
+
+视图范围:
+  - 所有笔记
+  - 所有双向链接
+  - 所有标签关系
+
+核心用途:
+  1. 宏观看清知识全貌
+  2. 发现整体结构问题
+  3. 识别知识空白</code></pre>
+<h3>1.2 本地图谱</h3>
+<pre><code>定义: 聚焦于当前笔记，显示其直接相连的笔记（1-2层关系）
+
+打开方式:
+  当前笔记 → 右上角"更多选项" → "在本图谱中显示"
+  或：右键笔记 → "在本图谱中显示"
+
+视图范围:
+  - 当前笔记（中心节点）
+  - 第一层关联（直接链接）
+  - 第二层关联（链接的链接）
+
+核心用途:
+  1. 微观分析局部网络
+  2. 理解特定概念的关系网络
+  3. 发现潜在连接</code></pre>
+<hr>
+<h2>🎨 第二部分：节点与边的优化</h2>
+<h3>2.1 节点优化</h3>
+<pre><code>【大小设置】
+
+规则: 与连接数（度数）成正比
+效果:
+  - 连接数↑ → 节点越大
+  - 连接数↓ → 节点越小
+
+设置路径:
+  图形视图 → 三点菜单 → 外观 → 节点大小 → 连接数
+
+【颜色设置】
+
+规则: 按属性映射
+映射条件:
+  - 标签（#心理学 → 红色）
+  - 类型（type: 项目 → 蓝色）
+  - 状态（status: 进行中 → 绿色）
+
+设置路径:
+  图形视图 → 三点菜单 → 颜色 → 标签/类型/状态</code></pre>
+<h3>2.2 边（连接线）优化</h3>
+<pre><code>【边的类型】
+
+双向链接: ────── (实线)
+嵌入关系: ─ ─ ─ (虚线)
+共享标签: ┄┄┄┄ (点线)
+
+【边的颜色】
+
+规则: 按链接特征映射
+  - 同一文件夹 → 同色
+  - 同标签 → 同色
+  - 嵌入 → 特殊颜色
+
+【高级样式】
+
+使用Juggl插件可以实现：
+  - 节点渐变色
+  - 动态边宽度
+  - 箭头方向显示
+  - 动画效果</code></pre>
+<hr>
+<h2>🔍 第三部分：动态过滤</h2>
+<h3>3.1 标签过滤</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    标签过滤示例                                  │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  【场景】只看#AI相关的笔记                                      │
+│                                                                 │
+│  操作步骤:                                                      │
+│  1. 点击搜索框                                                 │
+│  2. 输入 #AI                                                  │
+│  3. 按回车                                                    │
+│                                                                 │
+│  结果:                                                          │
+│  → 只显示带有#AI标签的笔记                                     │
+│  → 只显示这些笔记之间的关系                                    │
+│  → 其他笔记隐藏                                                │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</code></pre>
+<h3>3.2 路径搜索</h3>
+<pre><code>【功能】
+
+查找从笔记A到笔记B的所有可能路径
+
+【使用场景】
+
+当你发现两个笔记看似无关，但想探索潜在联系时
+
+【操作步骤】
+
+1. 右键笔记A → "查找到此处的所有路径"
+2. 或：搜索框输入 "path:笔记A 笔记B"
+3. 系统展示所有中间节点和路径
+
+【解读】
+
+路径长度 = 关联紧密程度
+- 1步 = 直接链接
+- 2-3步 = 间接关联
+- 更多步 = 弱关联或可建立的新连接</code></pre>
+<h3>3.3 层级过滤</h3>
+<pre><code>【功能】
+
+控制图谱显示的关联层数
+
+【层级说明】
+
+第0层: 只显示当前笔记
+第1层: 显示直接链接（出链/入链）
+第2层: 显示链接的链接
+第3层+: 依此类推
+
+【推荐设置】
+
+日常使用: 1-2层
+全局分析: 2-3层
+深度探索: 按需展开</code></pre>
+<hr>
+<h2>💡 第四部分：图谱思维实践</h2>
+<h3>4.1 知识复盘三步法</h3>
+<pre><code>【第一步：识别孤立笔记】
+
+打开全局图谱 → 寻找没有连接的节点
+→ 思考：为什么孤立？
+
+【第二步：建立连接】
+
+策略1: 与现有主题建立链接
+策略2: 创建新的综述笔记
+策略3: 合并到已有主题
+
+【第三步：持续维护】
+
+每周一次图谱复盘
+保持知识网络的健康度</code></pre>
+<h3>4.2 学习规划应用</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    图谱驱动的学习规划                             │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  【识别知识密度】                                               │
+│                                                                 │
+│  密集区域 → 核心节点周围笔记很多                                │
+│  ↓                                                            │
+│  决策：向深处挖掘还是向广度拓展？                               │
+│                                                                 │
+│  【向深处挖掘】                                                │
+│  → 丰富核心节点的关联                                          │
+│  → 补充细节笔记                                                │
+│  → 深化理解                                                    │
+│                                                                 │
+│  【向广度拓展】                                                │
+│  → 连接新的孤立节点                                            │
+│  → 建立跨领域关联                                              │
+│  → 发现新主题                                                  │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</code></pre>
+<h3>4.3 创作启发</h3>
+<pre><code>【密集区域 → 成熟主题】
+
+信号: 多个笔记高度互联
+解读: 这个主题你已经积累充分
+行动: 可以开始输出（文章/课程/书籍）
+
+【稀疏区域 → 研究空白】
+
+信号: 笔记稀少或无关联
+解读: 这个领域你还没深入
+行动: 
+  - 深入研究（输入）
+  - 或暂时放下（不是你的方向）
+
+【断链区域 → 待连接】
+
+信号: 两个区域没有关联
+解读: 可能存在有趣的跨域联系
+行动: 主动建立连接 → 触发新想法</code></pre>
+<hr>
+<h2>🛠️ 第五部分：高级应用</h2>
+<h3>5.1 Dataview + Graph View</h3>
+<pre><code>【组合优势】
+
+Dataview: 查询特定条件的笔记
+Graph View: 可视化这些笔记的关系
+
+【操作流程】
+
+1. 用Dataview查询</code></pre>
+<p>   TABLE 评分, 标签
+   FROM ""
+   WHERE 评分 &gt;= 4</p>
+<pre><code>
+2. 将结果发送到Graph View
+
+3. 观察高质量笔记的分布
+
+4. 发现知识网络中的"明星节点"</code></pre>
+<h3>5.2 Juggl插件</h3>
+<pre><code>【Juggl高级功能】
+
+1. 交互式图形
+   - 拖拽节点
+   - 缩放平移
+   - 聚焦跟随
+
+2. 样式控制
+   - 节点形状（圆形/方形/图标）
+   - 渐变填充
+   - 阴影效果
+
+3. 布局算法
+   - 力导向布局
+   - 层级布局
+   - 环形布局
+
+4. 导出功能
+   - 导出为PNG/SVG
+   - 嵌入到笔记</code></pre>
+<hr>
+<h2>📐 第六部分：图谱可视化模板</h2>
+<h3>6.1 知识网络结构图</h3>
+<pre><code>【龙心OS知识网络结构示例】
+
+┌─────────────────────────────────────────────────────────────────┐
+│                    龙心OS知识网络                                 │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│                         ┌──────────┐                           │
+│                         │ 龙心OS   │ ← 核心节点（最大）         │
+│                         └────┬─────┘                           │
+│                              │                                   │
+│         ┌───────────────────┼───────────────────┐             │
+│         ↓                   ↓                   ↓             │
+│    ┌────────┐         ┌────────┐         ┌────────┐         │
+│    │ 象思维 │         │五色光  │         │知识学习│         │
+│    │ (木)  │ ←───────→│ (土)  │←───────→│ (金)  │         │
+│    └────┬───┘         └────────┘         └────────┘         │
+│         │                                                       │
+│         ↓                                                       │
+│    ┌────────┐                                                 │
+│    │人机协同│ ← 第二层级节点                                    │
+│    │ (手)  │                                                   │
+│    └────────┘                                                 │
+│                                                                 │
+│    图例: ←──────→ = 双向链接                                  │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</code></pre>
+<h3>6.2 五行知识网络图</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    五行知识网络图                                │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│                              木                                 │
+│                           （创新）                               │
+│                              ↑                                  │
+│              ┌───────────────┼───────────────┐                 │
+│              │               │               │                 │
+│              ↓               ↓               ↓                 │
+│             水    ←──────→   火    ←──────→   土             │
+│           （变通）            │               │                │
+│              │                │               │                │
+│              │                ↓               │                │
+│              │            金（精准）          │                │
+│              │               ↑               │                │
+│              └───────────────┴───────────────┘                 │
+│                      相生关系: 木→火→土→金→水→木             │
+│                      相克关系: 金克木, 木克土, 土克水           │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>🔗 关联文档</h2>
+<h3>核心关联</h3>
+<ul>
+<li><a href="Obsidian构建第二大脑完整指南.html">Obsidian构建第二大脑完整指南</a></li>
+<li><a href="Obsidian核心功能深度解析·双向链接与知识图谱.html">Obsidian核心功能深度解析·双向链接与知识图谱</a></li>
+</ul>
+<h3>龙心OS关联</h3>
+<ul>
+<li><a href="龙心OS知识神经网络架构.html">龙心OS知识神经网络架构</a></li>
+<li><a href="03-___md-4141fd4b.html">五行分类图谱</a></li>
+</ul>
+<hr>
+<h2>📊 知识图谱节点</h2>
+<pre><code>节点名称: Obsidian知识图谱
+五行属性: 木
+所属层级: B层（可视化/工具）
+核心洞察: 图谱是看见知识结构的方式，图谱思维是持续优化的方法
+象征符号: GraphView = 知识宇宙的星图
+来源: Obsidian指南深度学习
+应用场景:
+  - 知识结构可视化
+  - 孤立节点发现
+  - 学习规划指导
+关联节点:
+  ← [[Obsidian核心功能深度解析]]
+  → [[龙心OS知识神经网络架构]]
+  → [[五行分类图谱]]</code></pre>
+<hr>
+<p><strong>文档版本</strong>: 1.0
+<strong>最后更新</strong>: 2026-04-03
+<strong>维护者</strong>: 龙龟神将</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

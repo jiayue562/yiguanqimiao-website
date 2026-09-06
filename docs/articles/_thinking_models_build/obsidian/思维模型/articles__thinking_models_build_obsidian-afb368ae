@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09 核心概念手册 思维模型 - 以观其妙书院</title>
+    <meta name="description" content="09-核心概念手册 · 思维模型（龙心OS术语卡片）本手册收录 思维模型 理论 32 个核心概念，每张卡片含定义、关联文件（双向链接）、跨域同构。01. 思维模型（地图≠疆域）定义：对复杂世界的简化抽象、可复用认知捷径；本质是『地图≠疆域』——模型是表征而非现实，必有边界，需以事实持续校验。跨域同构：⟷ 知行合一三阶段 / 五色光白光（事实校验）02. 第一性原理定义：从最基础、不可分割的公理/事">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将">
+    <meta name="author" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta property="og:title" content="09 核心概念手册 思维模型">
+    <meta property="og:description" content="09-核心概念手册 · 思维模型（龙心OS术语卡片）本手册收录 思维模型 理论 32 个核心概念，每张卡片含定义、关联文件（双向链接）、跨域同构。01. 思维模型（地图≠疆域）定义：对复杂世界的简化抽象、可复用认知捷径；本质是『地图≠疆域』——模型是表征而非现实，必有边界，需以事实持续校验。跨域同构：⟷ 知行合一三阶段 / 五色光白光（事实校验）02. 第一性原理定义：从最基础、不可分割的公理/事">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/09-核心概念手册-思维模型.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/09-核心概念手册-思维模型.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "09 核心概念手册 思维模型",
+      "description": "09-核心概念手册 · 思维模型（龙心OS术语卡片）本手册收录 思维模型 理论 32 个核心概念，每张卡片含定义、关联文件（双向链接）、跨域同构。01. 思维模型（地图≠疆域）定义：对复杂世界的简化抽象、可复用认知捷径；本质是『地图≠疆域』——模型是表征而非现实，必有边界，需以事实持续校验。跨域同构：⟷ 知行合一三阶段 / 五色光白光（事实校验）02. 第一性原理定义：从最基础、不可分割的公理/事",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-30",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>09 核心概念手册 思维模型</h1>
+            <div class="meta">
+                <span>📅 2026-07-30</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            09 核心概念手册 思维模型...
+        </div>
+        
+        <article>
+<h1>09-核心概念手册 · 思维模型（龙心OS术语卡片）</h1>
+
+<blockquote>本手册收录 思维模型 理论 <strong>32</strong> 个核心概念，每张卡片含定义、关联文件（双向链接）、跨域同构。</blockquote>
+
+<h2>01. 思维模型（地图≠疆域）</h2>
+
+<strong>定义</strong>：对复杂世界的简化抽象、可复用认知捷径；本质是『地图≠疆域』——模型是表征而非现实，必有边界，需以事实持续校验。
+
+<strong>跨域同构</strong>：⟷ 知行合一三阶段 / 五色光白光（事实校验）
+
+<h2>02. 第一性原理</h2>
+
+<strong>定义</strong>：从最基础、不可分割的公理/事实出发，剥离一切假设、类比、表象，从头推演解决方案；区别于类比思维，是颠覆性创新的核心逻辑。
+
+<strong>关联文件</strong>：[[第一性原理]]、[[五维问题拆解法]]、[[思维模型——人类认知的底层操作系统]]、[[11种思维模型速查手册]]、[[从锚定方向到破局突围]]、[[第一层到第二层]]
+
+<strong>跨域同构</strong>：⟷ 知行合一(本质重构) / 五行(归本质)
+
+<h2>03. 二阶思维</h2>
+
+<strong>定义</strong>：超越直接后果，推演『后果的后果』与长期连锁反应；对应五色光蓝光的风险/长期维度。
+
+<strong>关联文件</strong>：[[思维模型——人类认知的底层操作系统]]、[[视角转换工具箱]]、[[苏格拉底6大提问框架]]、[[第一层到第二层]]、[[掌握这100个思维模型，开启你的「超级个体」时代！]]、[[从锚定方向到破局突围]]
+
+<strong>跨域同构</strong>：⟷ 五色光蓝光(风险/长期)
+
+<h2>04. 反脆弱性</h2>
+
+<strong>定义</strong>：系统能从波动、随机与压力中实际获益并变强（超越脆弱/稳健）；数学本质为对波动的凸性响应，方法含杠铃策略、冗余、选择权。
+
+<strong>关联文件</strong>：[[反脆弱性]]、[[比较分析法]]、[[他者]]、[[龙脑OS升级 · 专业建议]]
+
+<strong>跨域同构</strong>：⟷ 五行水生木 / 复杂系统自适应 / 凤爪OS
+
+<h2>05. 系统思维 / 涌现</h2>
+
+<strong>定义</strong>：强调整体大于部分之和、要素间反馈回路与涌现；五行生克网络即系统互动的最小完备模型。
+
+<strong>跨域同构</strong>：⟷ 五行生克网络 / 格式塔关系场
+
+<h2>06. 概率思维</h2>
+
+<strong>定义</strong>：以概率分布而非确定性幻觉看世界，用基础概率、贝叶斯更新量化不确定性；是五色光蓝光的量化形态。
+
+<strong>关联文件</strong>：[[概率思维]]、[[思维模型——人类认知的底层操作系统]]、[[第一层到第二层]]、[[过程调节法]]、[[资源保存理论]]、[[认知吝啬者理论]]
+
+<strong>跨域同构</strong>：⟷ 五色光蓝光(风险量化) / 贝叶斯更新
+
+<h2>07. 批判性思维</h2>
+
+<strong>定义</strong>：对思考本身的审视：清晰、准确、逻辑、公正地评估证据与论证，识别偏差与谬误；对应五色光蓝光（批判审查）。
+
+<strong>关联文件</strong>：[[批判性思维]]、[[框架-思维框架-框架思维]]、[[思维模式-方法论-解决问题”的模型]]、[[问题的答案]]、[[嵌入理论]]、[[价值聚焦]]
+
+<strong>跨域同构</strong>：⟷ 五色光蓝光(批判) / 知识学习(思辨)
+
+<h2>08. 双系统理论（System1/2）</h2>
+
+<strong>定义</strong>：System1快思（直觉/自动）与System2慢想（理性/受控）；二者协同即知行合一（直觉/反思）与五色光（红/白）。
+
+<strong>跨域同构</strong>：⟷ 知行合一(直觉/反思) / 五色光(红/白)
+
+<h2>09. 能力圈</h2>
+
+<strong>定义</strong>：真正理解、能高质量判断的领域边界；『不懂不做』，对应五行守边界/知止。
+
+<strong>关联文件</strong>：[[思维模型——人类认知的底层操作系统]]、[[问题的答案]]、[[道德基础理论]]、[[资源保存理论]]、[[认知吝啬者理论]]、[[苏格拉底6大提问框架]]
+
+<strong>跨域同构</strong>：⟷ 五行(守边界/知止)
+
+<h2>10. 复利</h2>
+
+<strong>定义</strong>：微小收益持续累积的指数增长；对应五行木生火（积累→显化）与长期主义。
+
+<strong>关联文件</strong>：[[思维模型——人类认知的底层操作系统]]、[[资源保存理论]]、[[社会视觉理论]]、[[激励相容理论]]、[[比较分析法]]、[[概率思维]]
+
+<strong>跨域同构</strong>：⟷ 五行木生火 / 长期主义
+
+<h2>11. MECE</h2>
+
+<strong>定义</strong>：相互独立、完全穷尽的结构化拆解原则；五行分类即天然 MECE 框架（木主分析）。
+
+<strong>关联文件</strong>：[[《麦肯锡思考工具》理论体系梳理与应用研究]]、[[框架-思维框架-框架思维]]、[[五维问题拆解法]]、[[金字塔原理]]、[[教员方法论]]、[[思维模式-方法论-解决问题”的模型]]
+
+<strong>跨域同构</strong>：⟷ 五行分类(天然MECE)
+
+<h2>12. 金字塔原理</h2>
+
+<strong>定义</strong>：结论先行、以上统下、归类分组（MECE）、逻辑递进的结构化表达；对应五行木（自上而下生发）。
+
+<strong>关联文件</strong>：[[金字塔原理]]、[[教员方法论]]、[[《麦肯锡思考工具》理论体系梳理与应用研究]]、[[11种思维模型速查手册]]、[[框架-思维框架-框架思维]]、[[第一层到第二层]]
+
+<strong>跨域同构</strong>：⟷ 五行木(自上而下)
+
+<h2>13. 5W2H</h2>
+
+<strong>定义</strong>：以7个固定维度（5W+2H）逐层追问的标准化检查清单；对应五色光五维排查与五行金（拆解）。
+
+<strong>关联文件</strong>：[[5W2H七维分析]]、[[思维模型框]]、[[11种思维模型速查手册]]、[[从锚定方向到破局突围]]、[[龙脑OS升级 · 专业建议]]、[[象道思维：“观·比·体·化”四字循环法2]]
+
+<strong>跨域同构</strong>：⟷ 五色光五维排查 / 五行金(拆解)
+
+<h2>14. SCAMPER</h2>
+
+<strong>定义</strong>：替代/组合/调整/消除/反转等七问创新法；对应五色光绿光（创新）与五行木（生发）。
+
+<strong>关联文件</strong>：[[SCAMPER奔驰法]]、[[《麦肯锡思考工具》理论体系梳理与应用研究]]、[[思维模型框]]、[[龙脑OS升级 · 专业建议]]、[[逆向思维工具箱]]、[[过程调节法]]
+
+<strong>跨域同构</strong>：⟷ 五色光绿光 / 五行木(生发)
+
+<h2>15. ORID</h2>
+
+<strong>定义</strong>：事实→感受→诠释→行动的焦点讨论四阶；对应人机协同五象限对话结构与五色光（白→红→黄→绿）递进。
+
+<strong>关联文件</strong>：[[ORID焦点讨论法]]、[[6种提问法速查手册]]、[[逆向思维工具箱]]、[[苏格拉底6大提问框架]]、[[十种知识整合方式]]、[[价值聚焦]]
+
+<strong>跨域同构</strong>：⟷ 人机协同五象限 / 五色光递进
+
+<h2>16. 逆向思维</h2>
+
+<strong>定义</strong>：从失败/反面推演，『反过来想』；对应五色光蓝光（反向风险）与『反者道之动』。
+
+<strong>关联文件</strong>：[[逆向思维工具箱]]、[[思维模型——人类认知的底层操作系统]]、[[11种思维模型速查手册]]、[[认知-情感-意动框架]]、[[社会支持理论]]、[[框架-思维框架-框架思维]]
+
+<strong>跨域同构</strong>：⟷ 五色光蓝光 / 反者道之动
+
+<h2>17. 思想实验</h2>
+
+<strong>定义</strong>：在表示空间内零成本穷尽可能性的逻辑推演；是知行合一（压缩→泛化）的演练。
+
+<strong>关联文件</strong>：[[思维模型——人类认知的底层操作系统]]、[[过程调节法]]、[[解释水平理论]]、[[情绪认知评价理论]]、[[恐惧管理理论]]、[[五维问题拆解法]]
+
+<strong>跨域同构</strong>：⟷ 知行合一(表示空间推演)
+
+<h2>18. 类比思维</h2>
+
+<strong>定义</strong>：借鉴他域经验（取象比类之逻辑版）；第一性原理要求脱离类比回归本质。
+
+<strong>关联文件</strong>：[[第一性原理]]、[[思维模型——人类认知的底层操作系统]]、[[认知-情感-意动框架]]、[[最佳唤醒理论]]、[[享乐适应理论]]、[[11种思维模型速查手册]]
+
+<strong>跨域同构</strong>：⟷ 五行取象比类
+
+<h2>19. 博弈论</h2>
+
+<strong>定义</strong>：多方策略互动的数学；对应五行相生相克的博弈化表达。
+
+<strong>关联文件</strong>：[[敏捷治理]]、[[如果X，那么Y]]、[[「五层分析法]]、[[8个沟通模型速查手册]]
+
+<strong>跨域同构</strong>：⟷ 五行相生相克
+
+<h2>20. 汉隆剃刀 / 奥卡姆剃刀</h2>
+
+<strong>定义</strong>：能解释为愚蠢/简单者勿归为恶意/复杂；对应五色光蓝光（简化批判）与五行金（收敛去繁）。
+
+<strong>跨域同构</strong>：⟷ 五色光蓝光 / 五行金(收敛)
+
+<h2>21. 黑天鹅</h2>
+
+<strong>定义</strong>：低概率高影响的极端事件；对应复杂系统肥尾，是反脆弱之必要背景。
+
+<strong>关联文件</strong>：[[反脆弱性]]、[[《麦肯锡思考工具》理论体系梳理与应用研究]]、[[思维模型——人类认知的底层操作系统]]、[[过程调节法]]、[[资源保存理论]]、[[认知吝啬者理论]]
+
+<strong>跨域同构</strong>：⟷ 复杂系统肥尾 / 反脆弱背景
+
+<h2>22. 黄金圈</h2>
+
+<strong>定义</strong>：由内而外（Why→How→What）；Why=五行土之核心，向外生发，与『一心统摄』同构。
+
+<strong>关联文件</strong>：[[PERMA幸福理论]]
+
+<strong>跨域同构</strong>：⟷ 五行土(核心) / 一心统摄
+
+<h2>23. 控制二分法</h2>
+
+<strong>定义</strong>：分清可控与不可控；对应五行『知止』/守边界。
+
+<strong>关联文件</strong>：[[如果X，那么Y]]
+
+<strong>跨域同构</strong>：⟷ 五行(知止/边界)
+
+<h2>24. 象思维三阶（物象→意象→原象）</h2>
+
+<strong>定义</strong>：龙心OS象思维引擎的方法论原典：观物象(表示)→感意象(压缩)→悟原象(泛化)。
+
+<strong>跨域同构</strong>：⟷ 龙心OS象思维引擎 / 知行合一三阶段
+
+<h2>25. 取象比类</h2>
+
+<strong>定义</strong>：通过类比联想建立现象与本质联系；五行分类图谱即天然双向链接网络。
+
+<strong>关联文件</strong>：[[以象入道，以化见真——释“象道思维”]]、[[象思维理论]]、[[象思维理论体系：回归原创之思与实践路径]]、[[象思维理论体系：回归原创之思与实]]、[[象道思维：“观·比·体·化”四字循环法高]]、[[象道思维：“观·比·体·化”四字循环法2]]
+
+<strong>跨域同构</strong>：⟷ 五行分类图谱(双向链接网络)
+
+<h2>26. 五行识人（象思维应用）</h2>
+
+<strong>定义</strong>：以一心三界五行模型为架构，把象思维转化为可操作的识人实践；对应凤爪OS五体系交叉验证。
+
+<strong>跨域同构</strong>：⟷ 凤爪OS五体系交叉验证
+
+<h2>27. 知行合一三阶段</h2>
+
+<strong>定义</strong>：表示空间→压缩→泛化，龙心OS知行合一引擎方法论骨架，贯穿全部思维模型。
+
+<strong>关联文件</strong>：[[象思维理论体系：回归原创之思与实践路径]]、[[象思维理论体系：回归原创之思与实]]、[[道德基础理论]]、[[逆向思维工具箱]]、[[过程调节法]]、[[象思维理论]]
+
+<strong>跨域同构</strong>：⟷ 象思维三阶 / 五行起手即全息
+
+<h2>28. 五色光思维</h2>
+
+<strong>定义</strong>：白(事实/金)红(直觉/火)绿(创新/木)黄(价值/土)蓝(风险/水)，与五行功能同构的五维审查。
+
+<strong>关联文件</strong>：[[《麦肯锡思考工具》理论体系梳理与应用研究]]、[[思维模型框]]、[[龙脑OS升级 · 专业建议]]、[[高低语境理论]]、[[问题的答案]]、[[金字塔原理]]
+
+<strong>跨域同构</strong>：⟷ 五行功能同构
+
+<h2>29. 人机协同五象限</h2>
+
+<strong>定义</strong>：Q1效率协作者→Q5未知共创者，以[AI]/[人]/[⇄]标注本能分工。
+
+<strong>关联文件</strong>：[[价值聚焦]]、[[如果X，那么Y]]、[[逆向思维工具箱]]、[[解释水平理论]]、[[苏格拉底6大提问框架]]、[[特质激活理论]]
+
+<strong>跨域同构</strong>：⟷ [AI]/[人]/[⇄]本能标注
+
+<h2>30. 框架思维</h2>
+
+<strong>定义</strong>：框架即预先收敛的表示空间（『压缩』的结晶）；好框架降认知负荷，但须警惕僵化（地图≠疆域）。
+
+<strong>关联文件</strong>：[[框架-思维框架-框架思维]]、[[思维模式-方法论-解决问题”的模型]]、[[十种知识整合方式]]、[[《麦肯锡思考工具》理论体系梳理与应用研究]]、[[11种思维模型速查手册]]、[[「五层分析法]]
+
+<strong>跨域同构</strong>：⟷ 知行合一(表示空间)
+
+<h2>31. 元认知</h2>
+
+<strong>定义</strong>：对思考之思考，对思考的反思与校准；对应知行合一泛化层的自我校准。
+
+<strong>关联文件</strong>：[[苏格拉底6大提问框架]]、[[框架-思维框架-框架思维]]、[[十种知识整合方式]]、[[6种提问法速查手册]]、[[龙脑OS升级 · 专业建议]]、[[《麦肯锡思考工具》理论体系梳理与应用研究]]
+
+<strong>跨域同构</strong>：⟷ 知行合一(泛化反思)
+
+<h2>32. 认知偏差</h2>
+
+<strong>定义</strong>：系统1启发式导致的系统性错误；识别偏差是五色光蓝光（批判）与知识学习（思辨）的反面教材。
+
+<strong>关联文件</strong>：[[双系统理论]]、[[思维模型——人类认知的底层操作系统]]、[[批判性思维]]、[[问题的答案]]、[[认知吝啬者理论]]、[[概率思维]]
+
+<strong>跨域同构</strong>：⟷ 五色光蓝光 / 知识学习(思辨)
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

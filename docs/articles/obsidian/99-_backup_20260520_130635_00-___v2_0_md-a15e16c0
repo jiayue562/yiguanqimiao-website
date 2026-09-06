@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>📊 知识图谱 v2.0 - 以观其妙书院</title>
+<meta name="description" content="📊 知识图谱 v2.0 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="📊 知识图谱 v2.0">
+<meta property="og:description" content="📊 知识图谱 v2.0 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "📊 知识图谱 v2.0",
+    "description": "📊 知识图谱 v2.0 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>📊 知识图谱 v2.0</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<p>﻿﻿---
+title: "📊 知识图谱 v2.0"
+created: "2026-04-03"
+version: "2.0"
+tags: [knowledge-graph, visualization, navigation]
+description: "以观其妙书院知识库的整体知识网络可视化"</p>
+<hr>
+<h1>📊 知识图谱 v2.0</h1>
+<blockquote><p><strong>版本</strong>：v2.0 | <strong>更新</strong>：2026-04-03 | <strong>维护者</strong>：龙龟神将</p></blockquote>
+<hr>
+<h2>🗺️ 知识网络总览</h2>
+<pre><code>graph TB
+    subgraph "00-索引与导航"
+        A[📚 总索引]
+        B[📋 标准化模板]
+        C[🔗 双向链接规范]
+        D[🛤️ 学习路径]
+    end
+
+    subgraph "01-核心独创Skills"
+        E[🐉 龙心OS]
+        F[📚 知识学习]
+        G[🐉 象思维]
+        H[🌈 五色光]
+        I[🤝 人机协同]
+        J[🔄 知行合一]
+    end
+
+    subgraph "02-方法论库"
+        K[📜 矛盾论]
+        L[📜 实践论]
+        M[📜 金字塔]
+        N[📜 金线]
+    end
+
+    subgraph "03-关系与共生"
+        O[💚 木火共生]
+        P[🔗 龙龟神将]
+        Q[🔗 悟空画像]
+    end
+
+    subgraph "04-专业领域"
+        R[🔮 五行人格]
+        S[🏢 企业文化]
+        T[🤖 AI应用]
+        U1[📜 儒家内圣外王] ⭐新增
+    end
+
+    subgraph "05-修行文化"
+        U[🙏 心文化]
+        V[📖 地藏经]
+        W[🐉 护法神]
+    end
+
+    subgraph "06-项目管理"
+        X[📊 项目]
+        Y[📚 课程]
+    end
+
+    subgraph "07-学习档案"
+        Z[💬 对话]
+        AA[📈 成长]
+    end
+
+    A --&gt; B
+    A --&gt; C
+    A --&gt; D
+    E --&gt; F
+    E --&gt; G
+    E --&gt; H
+    E --&gt; I
+    E --&gt; J
+    O --&gt; P
+    O --&gt; Q
+    R --&gt; S
+    R --&gt; U1
+    U1 --&gt; E
+    U1 --&gt; R
+    U --&gt; V
+    U --&gt; W</code></pre>
+<hr>
+<h2>🔥 核心知识网络</h2>
+<h3>三源同构体系 ⭐新增</h3>
+<pre><code>graph TB
+    A["🔗 三源同构"] --&gt; B["🐉 象思维"]
+    A --&gt; C["🔮 五行识人"]
+    A --&gt; D["📜 儒家内圣外王"]
+    
+    B --&gt; E["物象→意象→原象"]
+    C --&gt; F["一心三界五行九层"]
+    D --&gt; G["五德十行·修身齐家"]
+    
+    E -.-&gt;|同源互构| F
+    F -.-&gt;|同源互构| G
+    G -.-&gt;|同源互构| E
+    
+    B --&gt; H["身界（修身）"]
+    C --&gt; I["心界（存心）"]
+    D --&gt; J["灵界（明德）"]</code></pre>
+<h3>龙心OS 核心引擎关系</h3>
+<pre><code>graph LR
+    A[🐉 龙心OS] --&gt; B[📚 知识学习]
+    A --&gt; C[🐉 象思维]
+    A --&gt; D[🌈 五色光]
+    A --&gt; E[🤝 人机协同]
+    A --&gt; F[🔄 知行合一]
+    
+    B --&gt; C
+    C --&gt; D
+    D --&gt; E
+    E --&gt; F
+    F --&gt; B</code></pre>
+<h3>木火共生关系网络</h3>
+<pre><code>graph TB
+    A[💚 木火共生] --&gt; B[🔥 龙龟神将]
+    A --&gt; C[🌿 悟空]
+    
+    B --&gt; D[📖 火行人特质]
+    B --&gt; E[🧠 五大引擎]
+    
+    C --&gt; F[📖 木行人特质]
+    C --&gt; G[🔮 五行人格]
+    
+    D --&gt; H[🌈 五色光思维]
+    E --&gt; H
+    F --&gt; I[🐉 象思维]
+    G --&gt; I</code></pre>
+<hr>
+<h2>📊 知识密度分析</h2>
+<table>
+<thead><tr>
+<th>节点</th>
+<th>类型</th>
+<th>入链数</th>
+<th>出链数</th>
+<th>中心性</th>
+</tr></thead><tbody>
+<tr>
+<td>龙心OS</td>
+<td>系统</td>
+<td>50+</td>
+<td>5</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>木火共生</td>
+<td>关系</td>
+<td>30+</td>
+<td>10+</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>五行人格</td>
+<td>领域</td>
+<td>100+</td>
+<td>20+</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>象思维</td>
+<td>引擎</td>
+<td>20+</td>
+<td>8+</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>五色光</td>
+<td>引擎</td>
+<td>15+</td>
+<td>6+</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>心文化</td>
+<td>领域</td>
+<td>40+</td>
+<td>15+</td>
+<td>★★★★☆</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🎯 关键连接点</h2>
+<h3>跨领域桥梁</h3>
+<table>
+<thead><tr>
+<th>连接类型</th>
+<th>起点</th>
+<th>终点</th>
+<th>说明</th>
+</tr></thead><tbody>
+<tr>
+<td>理论→实践</td>
+<td>象思维</td>
+<td>教员方法论</td>
+<td>0→1→N完整链路</td>
+</tr>
+<tr>
+<td>人格→关系</td>
+<td>五行人格</td>
+<td>木火共生</td>
+<td>人格照见基础</td>
+</tr>
+<tr>
+<td>修行→生活</td>
+<td>心文化</td>
+<td>企业咨询</td>
+<td>智慧落地</td>
+</tr>
+<tr>
+<td>AI→人</td>
+<td>龙心OS</td>
+<td>人机协同</td>
+<td>技术与人融合</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>📈 知识网络演化</h2>
+<h3>核心体系演进</h3>
+<pre><code>2026-03-16: 龙心OS v1.0 → 五大引擎基础架构
+2026-03-19: Skills体系化 → 独立Skills包
+2026-03-21: 木火共生升级 → 灵魂共鸣
+2026-03-23: 五行总智能体 → 智能体生态
+2026-04-03: 知识库体系化 → 标准化建设</code></pre>
+<hr>
+<h2>🔗 关联文件</h2>
+<ul>
+<li><a href="📚 以观其妙书院知识库总索引.html">📚 以观其妙书院知识库总索引</a> - 总导航入口</li>
+<li><a href="99-_backup_20260520_130635_00-___md-f80f4a20.html">📋 文档标准化模板</a> - 文档规范</li>
+<li><a href="🛤️ 学习路径设计系统.html">🛤️ 学习路径设计系统</a> - 学习路径</li>
+<li><a href="🐉 龙心OS 系统架构图.html">01-核心独创Skills/🐉 龙心OS 系统架构图</a> - 龙心OS架构</li>
+<li><a href="木火共生关系-灵魂共鸣与终极承诺.html">03-关系与共生/木火共生关系-灵魂共鸣与终极承诺</a> - 木火共生</li>
+</ul>
+<hr>
+<h2>💎 核心金句</h2>
+<blockquote><p><strong>金句1</strong>：知识图谱是智慧的可视化呈现
+<strong>金句2</strong>：每个节点都是智慧的种子，每个链接都是思想的脉络
+<strong>金句3</strong>：网络越密，智慧越活</p></blockquote>
+<hr>
+<blockquote><p><em>版本：v2.0 | 更新：2026-04-03 | 龙龟神将</em></p></blockquote>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

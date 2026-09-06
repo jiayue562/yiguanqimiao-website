@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>思维模型06：概率思维 - 以观其妙书院</title>
+<meta name="description" content="思维模型06：概率思维 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="思维模型06：概率思维">
+<meta property="og:description" content="思维模型06：概率思维 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "思维模型06：概率思维",
+    "description": "思维模型06：概率思维 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>思维模型06：概率思维</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>思维模型06：概率思维</h1>
+<blockquote><p><strong>一句话定义</strong>: 承认世界的不确定性，用概率量化事件发生的可能性，基于概率分布做出理性决策</p></blockquote>
+<hr>
+<h2>一、理论内核</h2>
+<p>概率思维的核心是<strong>承认世界的不确定性、随机性，放弃追求绝对正确、确定性结果的执念，用概率量化事件发生的可能性、结果的期望值，基于概率分布做出理性决策，而非依赖直觉、情绪、运气</strong>。</p>
+<p>是巴菲特、芒格、华尔街投资精英的核心决策工具，也是应对不确定性的底层思维。</p>
+<p><strong>底层逻辑</strong>: 世界绝大多数事件都是概率事件，没有绝对的必然，只有可能性大小，概率思维让我们从赌运气转向算概率，从确定性幻觉转向理性判断。</p>
+<hr>
+<h2>二、核心要点</h2>
+<ol>
+<li><strong>概率思维的核心是期望值计算</strong>: 期望值=事件发生概率×结果价值，决策应选择正期望值的方案</li>
+<li><strong>区分客观概率与主观概率</strong>: 客观概率可量化、有数据支撑；主观概率基于经验、信息、判断的估算</li>
+<li><strong>重视肥尾事件</strong>: 低概率、高影响的极端事件，不能因概率低而忽视其巨大影响</li>
+<li><strong>贝叶斯思维</strong>: 用新信息、新反馈，持续更新原有概率判断</li>
+</ol>
+<hr>
+<h2>三、实操方法</h2>
+<h3>3.1 概率量化三步法</h3>
+<p>面对决策：</p>
+<ol>
+<li>识别所有可能的结果</li>
+<li>估算每种结果发生的概率（客观数据+主观判断）</li>
+<li>计算每种结果的期望值，选择正期望值最大的方案</li>
+</ol>
+<h3>3.2 贝叶斯更新机制</h3>
+<p>设定初始概率判断，获取新信息后，重新评估概率，动态调整决策。</p>
+<h3>3.3 风险对冲策略</h3>
+<p>针对低概率、高影响的肥尾事件，制定对冲方案，降低极端风险的影响。</p>
+<h3>3.4 概率验证复盘</h3>
+<p>记录每次决策的概率判断与实际结果，复盘概率估算的准确性，优化后续概率判断能力。</p>
+<hr>
+<h2>四、典型案例</h2>
+<p><strong>巴菲特投资</strong>: 不追求每笔投资都赚钱，而是计算每笔投资的获胜概率、潜在收益、潜在亏损，只投资高概率、高收益、低风险的正期望值项目，长期积累下，概率优势转化为稳定收益。</p>
+<p><strong>赌场设计</strong>: 所有游戏都是基于负期望值设计，概率思维让我们明白，长期赌博必然亏损，避免陷入赌徒谬误。</p>
+<hr>
+<h2>五、AI结合方案</h2>
+<ul>
+<li><strong>ChatGPT</strong>: 让AI帮助计算复杂决策的期望值</li>
+<li><strong>Claude</strong>: 用AI分析历史数据，估算概率</li>
+<li><strong>Excel/Python</strong>: 用AI生成概率分布图和模拟</li>
+</ul>
+<hr>
+<h2>六、行动建议</h2>
+<ol>
+<li>面对不确定性时，用概率量化可能性</li>
+<li>计算期望值，选择正期望值方案</li>
+<li>持续更新概率判断，动态调整决策</li>
+</ol>
+<hr>
+<p><strong>核心金句</strong>: "世界没有绝对的必然，只有可能性大小。用概率思考，从赌运气转向算概率。"</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

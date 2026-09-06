@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>消费价值理论 - 以观其妙书院</title>
+    <meta name="description" content="消费价值理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\消费价值理论.txt ｜ 字数：9417 ｜ 行数：111五色光分布（启发式）：黄光83% 白光9% 红光3% 蓝光1% 绿光1%象思维相关度：低（命中 8 次）一、核心定义核心定义（龙心OS精修）：“今晚最后一次优惠！”二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│内容），未">
+    <meta name="keywords" content="[思维模型, 理论模型, 结构化学习, 决策, 学习]">
+    <meta name="author" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta property="og:title" content="消费价值理论">
+    <meta property="og:description" content="消费价值理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\消费价值理论.txt ｜ 字数：9417 ｜ 行数：111五色光分布（启发式）：黄光83% 白光9% 红光3% 蓝光1% 绿光1%象思维相关度：低（命中 8 次）一、核心定义核心定义（龙心OS精修）：“今晚最后一次优惠！”二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│内容），未">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/消费价值理论.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/消费价值理论.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "消费价值理论",
+      "description": "消费价值理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\消费价值理论.txt ｜ 字数：9417 ｜ 行数：111五色光分布（启发式）：黄光83% 白光9% 红光3% 蓝光1% 绿光1%象思维相关度：低（命中 8 次）一、核心定义核心定义（龙心OS精修）：“今晚最后一次优惠！”二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│内容），未",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-30",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>消费价值理论</h1>
+            <div class="meta">
+                <span>📅 2026-07-30</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            消费价值理论...
+        </div>
+        
+        <article>
+<h1>消费价值理论</h1>
+
+<blockquote><strong>龙心OS结构化编译</strong> | 分类：理论模型 | 五行属性：金 | 层级：C层</blockquote>
+<blockquote>源文件：<code>思维模型/理论模型\消费价值理论.txt</code> ｜ 字数：9417 ｜ 行数：111</blockquote>
+<blockquote>五色光分布（启发式）：黄光83% 白光9% 红光3% 蓝光1% 绿光1%</blockquote>
+<blockquote>象思维相关度：低（命中 8 次）</blockquote>
+
+<h2>一、核心定义</h2>
+
+<strong>核心定义（龙心OS精修）</strong>：“今晚最后一次优惠！”
+
+<h2>二、详细内容</h2>
+<blockquote>逐行挖掘原则：下文为原文<strong>全文逐行保留</strong>（编号 <code>行号│内容</code>），未删改、未遗漏，供龙心OS五引擎（知识学习/象思维/五色光/知行合一/五象限）随时调取精读。</blockquote>
+
+<h3>2.1 逐行精读（全文保留·111 行）</h3>
+<pre><code>0001│研究理论介绍 | 消费价值理论（Theory of Consumption Values）
+0002│
+0003│
+0004│
+0005│
+0006│“今晚最后一次优惠！”
+0007│
+0008│“库存只剩最后十五件！”
+0009│
+0010│
+0011│
+0012│每到”双十一“”双十二“，原本只是随便逛逛直播间的你，却在主播的催促中，不知不觉按下了付款键。明明并不急需，却总觉得现在不买就亏了。
+0013│
+0014│为什么直播间比线下更容易让我们冲动消费？为什么节日促销的链接，总能精准击中我们的情绪与判断？
+0015│
+0016│很多消费行为看似一时冲动，其实并不是偶然发生的。消费价值理论（Theory of Consumption Values）正是用来解释这些购买决定背后究竟被哪些价值所推动。
+0017│
+0018│图片
+0019│
+0020│
+0021│理论背景
+0022│
+0023│20世纪末以来，随着市场经济的发展与消费者研究的深入，学界逐渐意识到：人们的购买行为并非如传统经济学设想的那样完全由理性主导。真实的消费情境往往更为复杂，情绪、文化、社会期望乃至外部环境，都会在无声中塑造我们的选择[1]。
+0024│
+0025│正是在这样的研究背景下，Sheth、Newman和Gross于1991年提出了消费价值理论（Theory of Consumption Values, TCV），这一理论框架至今仍在消费者行为领域具有重要影响力[2]。
+0026│
+0027│消费价值理论关注的核心问题十分朴素却意义深远：究竟是什么价值，驱动消费者做出某个购买决定？
+0028│
+0029│在此之前，主流研究多强调“功能性”或“经济理性”，认为消费者主要通过比较价格、质量与效用来做决策。然而，消费价值理论指出：消费者的决策不是单维度的计算，而是由多种价值共同作用的结果。情感的波动、社会的期待、环境的刺激、情境的变化等非理性因素与传统的功能价值共同构成了我们每一次购买背后的心理结构。
+0030│
+0031│
+0032│
+0033│理论内容
+0034│
+0035│
+0036│
+0037│根据Sheth、Newman与Gross的消费价值理论，以下五类价值彼此交织，在不同情境下相互强化或抵消，最终影响消费者选择“购买”或“放弃”[2]。
+0038│
+0039│图片
+0040│图1 消费价值理论模型
+0041│
+0042│
+0043│
+0044│1.功能价值
+0045│
+0046│（Functional value）
+0047│
+0048│功能价值指产品或服务在实用性、性能、质量与价格方面是否满足消费者的实际需求[3]。这一维度通常构成理性判断的基础，但在不同场景中表现形式各异：
+0049│
+0050│在家电或耐用品的购买场景中，消费者关注规格、寿命与性价比；
+0051│
+0052│在医疗服务或保险产品选择中，功能价值体现为可靠性与安全性；
+0053│
+0054│在订阅服务中，功能价值表现为内容质量、可用性与服务稳定性。
+0055│
+0056│功能价值常常是促成最终购买的必要条件，但单靠功能往往不足以激发即时购买。
+0057│
+0058│2.情感价值
+0059│
+0060│（Emotional value）
+0061│
+0062│情感价值关注消费能否提供愉悦、安慰、兴奋或减轻焦虑等情绪体验[1]。它在许多非必需消费中起主导作用：
+0063│
+0064│在餐饮与旅游选择中，消费者追求体验感与情绪满足；
+0065│
+0066│在奢侈品或礼品购买中，情感回报常是主要动机；
+0067│
+0068│在品牌传播或服务设计中，增强用户愉悦感可以提高忠诚度和复购率。
+0069│
+0070│情感价值往往决定了消费者是否愿意为某种“感觉”付出溢价。
+0071│
+0072│3.社会价值
+0073│
+0074│（Social value）
+0075│
+0076│社会价值指产品或服务是否能提升社会地位、获得他人认可或满足群体归属需求[4]。
+0077│
+0078│在职业场合，特定品牌或服务可能用于展示专业性；
+0079│
+0080│在社交消费中，购买行为具有展示与认同功能；
+0081│
+0082│在企业采购的服务中，社会认可也会影响决策。
+0083│
+0084│在某些情境中，社会价值甚至超过功能价值，成为首要驱动力。
+0085│
+0086│4.认知价值
+0087│
+0088│（Epistemic value）
+0089│
+0090│认知价值反映消费者对新颖性、好奇心与知识获取的追求[2]。
+0091│
+0092│科技新品、工艺创新或联名限量产品吸引早期尝试者；
+0093│
+0094│在教育、在线课程或专业训练中，认知价值体现在学习与能力提升的愿望；
+0095│
+0096│在文化创意产品与旅游体验中，新颖性与差异化驱动试用行为。
+0097│
+0098│认知价值尤其对愿意承担风险以获得新体验的消费群体有强烈吸引力。
+0099│
+0100│5.条件价值
+0101│
+0102│（Conditional value）
+0103│
+0104│条件价值是指特定时间、地点或情境下出现的附加价值[2]。常见触发条件包括促销活动、节庆节点、紧急需求或外部环境变化：
+0105│
+0106│季节促销、限时折扣与库存稀缺会提高短期购买可能性；
+0107│
+0108│在突发事件中，条件价值会改变对必需品与服务的判断；
+0109│
+0110│企业采购中的招标窗口、合约期等情境也构成条件价值。
+0111│
+0112│条件价值往往影响购买的时机与紧迫感，从“计划购买”变为“立即行动”。
+0113│
+0114│这五类价值在任何具体消费情境中往往同时存在，但强度与优先级会因产品类别、文化背景与具体情境而异。理解这些价值的交互机制，有助于更准确地解释与预测消费者在多样化场景下的行为，从一次性购买到长期使用，从个人消费到组织决策，均适用此理论框架。
+0115│
+0116│
+0117│
+0118│
+0119│
+0120│理论应用
+0121│
+0122│
+0123│
+0124│消费价值理论强调消费者决策是多维价值作用的结果，而这些价值不仅适用于单一的购物场景，而是在多种消费情境下都能解释消费者行为[2]。研究显示，消费价值理论已被广泛应用于理解传统商品购买、服务消费、数字产品采纳、绿色消费和跨文化市场等多种情境。
+0125│
+0126│1.商品与服务消费
+0127│
+0128│在传统商品和服务消费中，功能价值通常是基础，但情感、社会和认知价值同样不可忽视。例如，购买奢侈品或高端服务时，消费者往往不仅关注功能性指标，还会考虑品牌所传递的身份象征（社会价值）、使用过程的愉悦体验（情感价值），以及产品是否独特、新颖（认知价值）[3]。在酒店住宿、餐饮和教育培训等服务领域，条件价值也十分重要，例如节假日优惠或特定活动能显著改变消费者决策[2]。
+0129│
+0130│2.数字与技术产品
+0131│
+0132│在数字产品与技术采纳研究中，消费价值理论常被整合到用户行为模型中，用以解析消费者对线上产品或服务的多维价值感知如何影响采纳意图。例如，在分析移动银行（m-banking）应用使用行为时，研究者将消费价值理论纳入刺激-有机体-反应框架，发现感知有用性、情感价值与便利性等多维感知显著影响消费者对数字服务的价值判断与使用意图[5]。
+0133│
+0134│3.可持续与绿色消费
+0135│
+0136│在绿色消费领域，消费价值理论也被用于解释可持续产品的购买行为。实证研究表明，在绿色产品购买情境中，除了传统的功能价值外，情感价值、认知价值以及由电子口碑产生的社会影响等多种消费价值共同驱动绿色消费意图[6]。
+0137│
+0138│4.跨文化与国际市场
+0139│
+0140│消费价值理论也被用于跨文化消费研究。在不同文化背景下，消费者对功能、情感和社会价值的敏感度存在差异。例如，个体主义文化中，认知和情感价值可能比社会价值更显著；而集体主义文化中，社会价值和群体认同则更强[2]。因此，消费价值理论不仅能解释单一市场行为，也能帮助企业在国际化战略中理解不同文化消费者的决策逻辑。
+0141│
+0142│消费价值理论的核心优势在于它的多维度、可扩展性和适用性。从传统商品、服务，到数字产品、绿色消费，再到跨文化市场，消费价值理论都能够提供解释和预测消费者行为的框架。它不仅揭示了消费者为什么购买，更为企业和政策制定者提供了优化产品设计、营销策略和社会干预的理论依据。
+0143│
+0144│
+0145│
+0146│前沿研究
+0147│
+0148│
+0149│
+0150│1.系统性梳理理论发展与路径
+0151│
+0152│Tanrikulu（2021）对消费价值理论进行了系统综述，指出理论在传统商品、数字服务、社群平台等多种消费场景中的适用性，并提出未来研究应关注价值维度的文化差异、跨渠道消费行为及新兴服务消费的价值权重变化（如功能价值与情感价值的动态关系）[7]。这一综述为近年来的跨场景应用提供了理论基础与议题方向。
+0153│
+0154│2.元分析验证
+0155│
+0156│各价值维度的重要性差异
+0157│
+0158│Mason（2023）的元分析研究显示，在不同消费情境中，消费价值理论的各个维度对消费者行为的影响存在显著差异，但整体来看情感价值对行为的正向影响最稳定、最显著，同时其他价值的贡献也因产品类型与市场环境而异[8]。这一研究通过整合大量实证数据，为不同价值在预测消费行为中的相对作用提供了量化支持。
+0159│
+0160│3.线上与线下消费
+0161│
+0162│模式选择中的价值驱动因素
+0163│
+0164│Kim等（2024）在研究COVID‑19疫情背景下线上与线下购物选择时，利用消费价值理论识别出决定购物媒体选择的价值因素，表明功能性、情感性与条件性价值在不同购物渠道中具有不同权重，并影响媒介选择偏好，这一结论强调了消费价值理论在理解消费者渠道选择差异中的作用[9]。
+0165│
+0166│4.在非传统消费情景中的应用
+0167│
+0168│Lohwasser（2022）应用消费价值理论研究企业对企业（B2B）环境中接收与阅读新闻通讯的决策行为，突破了消费价值理论主要用于企业对消费者（B2C）的传统边界，发现不同消费价值维度同样能够解释在组织环境下的个人阅读选择行为，建议未来研究继续探索消费价值理论在更多非典型消费情境中的适用性[10]。
+0169│
+0170│
+0171│
+0172│案例分享
+0173│
+0174│
+0175│
+0176│“互联网+”时代网络个性化推荐采纳意愿影响因素研究[11]
+0177│
+0178│戴德宝 刘西洋 范体军
+0179│
+0180│摘要：时下，跨境电商和“互联网+”标志着中国经济的全互联网化，必将引致竞争力全面提升。个性化推荐技术具有强大的营销优势，它可以向消费者提供商品和信息的建议，模拟销售人员帮助客户完成购买决策过程。本研究基于消费者行为学理论、消费价值理论和相应假设，功能价值、情感价值、社交价值、认知价值和条件价值等消费价值为自变量，以采纳意愿为因变量,通过构建基于消费价值理论的个性化推荐采纳意愿模型进行调查实证分析，用以考察消费者采纳个性化推荐的各种消费价值因素影响程度。统计实证分析得出：消费价值理论能够有效解释个性化推荐采纳意愿；其五种消费价值因素对用户采纳个性化推荐都有一定影响；功能价值因素对采纳意愿的影响最为显著，社交价值因素和情感价值因素次之，功能价值因素和情感价值因素是重要的中介变量。基于实证分析和当今经济形势，最后提出一些提升个性化推荐服务的相关措施和建议，有助于进一步增强“互联网+”的国家经济和市场战略。
+0181│
+0182│关键词：互联网+；个性化推荐；消费价值；采纳意愿
+0183│
+0184│来源：《中国软科学》2015年第8期
+0185│
+0186│
+0187│
+0188│
+0189│
+0190│
+0191│
+0192│Mobile payment apps filling value gaps: Integrating consumption values with initial trust and customer involvement[12]
+0193│
+0194│D Chakraborty, A Siddiqui, M Siddiqui, NP Rana, G Dash
+0195│
+0196│
+0197│
+0198│Abstract:This study aims to understand the consumption values that positively influence the adoption of mobile payment apps (MPAs). The theory of consumption values and two more constructs, initial trust (INT) and customer involvement (COI) are used to create a model tested using structural equation modeling with data collected from 880 Indian consumers. The results obtained from the analysis identified functional (FUV), conditional (COV), epistemic (EPV), and emotional (EMV) values having a significant positive impact on MPA adoption intention. While INT mediated all consumption values, COI positively moderated the relationship of FUV, EPV, and EMV with adoption intention. The critical contribution is using INT and COI to test the mediating and moderating effect utilizing the theory of consumption values. It explains factors contributing directly and indirectly to MPA adoption intention. The study results demonstrate that all consumption values except social value (SOV) positively influence MPA adoption intention. The cross-sectional data was collected during the pandemic from the urban population, which may not be generalizable with other developed nations. The study suggests that promoters of MPAs must focus more on FUV, COV, EPV, and EMV. Governments can promote MPAs with an increased focus on building trust through policy measures and special drives to increase trustworthiness in MPAs. Businesses could increase efforts to involve customers when introducing MPAs and collate critical information from customer touch points for improved consumer involvement. Through greater usage of MPAs, governments can substantially reduce the cost of printing and handling currency bills, saving taxpayers’ money and diverting it to social spending.
+0199│
+0200│本研究旨在理解哪些消费价值会对移动支付应用（Mobile Payment Apps，MPAs）的采纳产生正向影响。研究以消费价值理论为基础，并引入初始信任（Initial Trust，INT）和顾客涉入（Customer Involvement，COI）两个构念，构建研究模型，并基于来自 880 名印度消费者的数据，采用结构方程模型进行检验。分析结果表明，功能价值（FUV）、条件价值（COV）、认知价值（EPV）和情感价值（EMV）对移动支付应用的采纳意图具有显著的正向影响。初始信任在所有消费价值与采纳意图之间发挥中介作用，而顾客涉入则正向调节了功能价值、认知价值和情感价值与采纳意图之间的关系。本研究的重要贡献在于，基于消费价值理论，引入初始信任和顾客涉入，系统检验了其中介效应与调节效应，从而解释了直接与间接影响移动支付应用采纳意图的因素。研究结果进一步表明，除社会价值（SOV）外，其余所有消费价值均对移动支付应用采纳意图产生显著正向影响。本研究使用的是在疫情期间从城市人群中收集的横截面数据，因此研究结论在其他发达国家情境下的可推广性可能有限。研究建议，移动支付应用的推广者应更加关注功能价值、条件价值、认知价值和情感价值。政府可以通过政策措施和专项推广活动，加强信任建设，从而提升移动支付应用的可信度。企业在推出移动支付应用时，应加大顾客涉入力度，并通过顾客接触点收集关键信息，以提升消费者涉入水平。通过更广泛地使用移动支付应用，政府可以显著降低纸币印制和流通成本，从而节省纳税人的资金，并将其转用于社会支出。
+0201│
+0202│Keywords: Mobile payment apps; Consumption values; Initial trust; Customer involvement; Mediation and moderation effect
+0203│
+0204│文献来源：Journal of Retailing and Consumer Services, Volume 66, 102946.
+0205│
+0206│
+0207│
+0208│
+0209│
+0210│参考文献
+0211│
+0212│[1]  Holbrook, M. B., & Hirschman, E. C. (1982). The experiential aspects of consumption: Consumer fantasies, feelings, and fun. Journal of consumer research, 9(2), 132140.
+0213│
+0214│[2]  Sheth, J. N., Newman, B. I., & Gross, B. L. (1991). Why we buy what we buy: A theory of consumption values. Journal of business research, 22(2), 159170.
+0215│
+0216│[3]  Sweeney, J. C., & Soutar, G. N. (2001). Consumer perceived value: The development of a multiple item scale. Journal of retailing, 77(2), 203220.
+0217│
+0218│[4]  Bearden, W. O., & Etzel, M. J. (1982). Reference group influence on product and brand purchase decisions. Journal of consumer research, 9(2), 183194.
+0219│
+0220│[5]  Palamidovska-Sterjadovska, N., Prodanova, J., & Ciunova-Shuleska, A. (2024). Why do customers value m-banking apps? A stimulus-organism-response perspective. Spanish Journal of Marketing-ESIC, 28(4), 481-499.
+0221│
+0222│[6]  Aravindan, K. L., Ramayah, T., Thavanethen, M., Raman, M., Ilhavenil, N., Annamalah, S., & Choong, Y. V. (2023). Modeling positive electronic word of mouth and purchase intention using theory of consumption value. Sustainability, 15(4), 3009.
+0223│
+0224│[7]  Tanrikulu, C. (2021). Theory of consumption values in consumer behaviour research: A review and future research agenda. International Journal of Consumer Studies, 45(6), 1176-1197.
+0225│
+0226│[8]  Mason, M. C., Oduro, S., Umar, R. M., & Zamparo, G. (2023). Effect of consumption values on consumer behavior: a Meta-analysis. Marketing Intelligence & Planning, 41(7), 923-944.
+0227│
+0228│[9]  Kim, W., & Chang, H. (2024). Applying Consumer Value Theory to Determine Consumer Behavior in Terms of Online and Offline Shopping During COVID-19 Pandemic. Journal of Distribution Science, 22(5), 67-79.
+0229│
+0230│[10]  Lohwasser, B. (2022). The Theory of Consumption Values: Exploring Why Leads Open (or Don’t) and View (or Don’t) E-Mail Newsletters in the German B2B Sector (Doctoral dissertation, University of Gloucestershire).
+0231│
+0232│[11]  戴德宝,刘西洋,范体军.“互联网+”时代网络个性化推荐采纳意愿影响因素研究[J].中国软科学,2015,(08):163-172.
+0233│
+0234│[12] Chakraborty, D., Siddiqui, A., Siddiqui, M., Rana, N. P., & Dash, G. (2022). Mobile payment apps filling value gaps: Integrating consumption values with initial trust and customer involvement. Journal of Retailing and Consumer Services, 66, 102946.
+0235│
+0236│
+0237│
+0238│
+0239│
+0240│图片
+0241│
+0242│
+0243│ 编辑 / 张佳悦
+0244│
+0245│审校 / 郭亦琛
+0246│
+0247│审核 / 于孟利
+0248│
+0249│
+0250│
+0251│声明
+0252│
+0253│如需转载文章，可在留言区留言，并附转载公众号名称+公众号ID。转载时烦请标清文章来源，不允许将内容用于其他用途，并严格禁止将内容用于任何目的的大模型训练，感谢您的支持！
+0254│
+0255│
+0256│
+0257│
+0258│
+0259│往期回顾
+0260│
+0261│研究理论介绍 | 欲望侵入理论（Elaborated Intrusion Theory）
+0262│
+0263│2025年国家社科基金重大项目立项解读 | 信息传播交叉学科研究新动向
+0264│
+0265│文献精读 | 在线分享体验中的复杂社交网络：自我定位与他者定位
+0266│
+0267│研究理论介绍 | 高低语境理论（High and Low Context Theory）
+0268│
+0269│南开大学信息与传播学院人才引进、教职工公开招聘、博士后招收公告
+0270│
+0271│
+</code></pre>
+
+<h2>三、关联文件（双向链接）</h2>
+<li>上游/总导航：[[00-总索引-思维模型]] ｜ 知识图谱：[[10-知识图谱-思维模型]] ｜ 概念手册：[[09-核心概念手册-思维模型]]</li>
+<li>跨文件同构（共享显著概念）：[[创新抵抗理论]]，[[认知-情感-意动框架]]，[[自我呈现理论]]，[[社会支持理论]]，[[情感事件理论]]，[[保护动机理论]]，[[道德基础理论]]，[[恐惧管理理论]]</li>
+
+<h2>四、核心金句</h2>
+<blockquote>条件价值是指特定时间、地点或情境下出现的附加价值[2]。常见触发条件包括促销活动、节庆节点、紧急需求或外部环境变化：</blockquote>
+<blockquote>消费价值理论关注的核心问题十分朴素却意义深远：究竟是什么价值，驱动消费者做出某个购买决定？</blockquote>
+<blockquote>功能价值指产品或服务在实用性、性能、质量与价格方面是否满足消费者的实际需求[3]。这一维度通常构成理性判断的基础，但在不同场景中表现形式各异：</blockquote>
+<blockquote>情感价值关注消费能否提供愉悦、安慰、兴奋或减轻焦虑等情绪体验[1]。它在许多非必需消费中起主导作用：</blockquote>
+<blockquote>关键词：互联网+；个性化推荐；消费价值；采纳意愿</blockquote>
+<blockquote>来源：《中国软科学》2015年第8期</blockquote>
+
+<h2>五、标签</h2>
+<li>领域：理论模型、思维模型、决策、学习</li>
+<li>机制：知识学习(十项认知指令)、五色光思维(白红黄绿蓝)</li>
+<li>洞见：跨域同构、网状知识、双向链接、人机共生</li>
+
+<h2>六、龙心OS隐秘联系（跨域同构·龙心OS精修）</h2>
+
+<blockquote>以下为龙心OS在跨域同构（北极星能力）下发现的隐秘结构联系，供五引擎组合调取。</blockquote>
+
+<li><strong>概率思维⟷五色光蓝光（风险量化）</strong>：把不确定性转为概率分布，是蓝光思维的量化形态。</li>
+<li><strong>不确定性⟷复杂系统（涌现/黑天鹅）</strong>：概率思维是应对复杂系统的认知疫苗。</li>
+<li><strong>系统思维/涌现⟷五行生克网络</strong>：五行相生相克即系统要素互动的最小完备模型。</li>
+<li><strong>整体大于部分之和⟷格式塔关系场</strong>：系统涌现的格式塔解释，对应合道场域型组织。</li>
+<li><strong>能力圈⟷五行（守边界/知止）</strong>：能力圈即五行所司之域，越界则乱；『知止』是五行守位之德。</li>
+<li><strong>能力圈⟷知行合一（知是行之始）</strong>：只在真懂之域决策，是『知』的诚实边界。</li>
+<li><strong>SCAMPER⟷五色光绿光（创新）</strong>：替代/组合/调整/消除等七问即绿光『创新变革』的操作清单。</li>
+<li><strong>SCAMPER⟷五行木（生发）</strong>：创新是木之生发，SCAMPER 提供生发路径。</li>
+<li><strong>跨文件同构</strong>：与 [[创新抵抗理论]]、[[认知-情感-意动框架]]、[[自我呈现理论]] 共享核心概念（详见「三、关联文件」章节），可在龙心OS知识学习引擎下做十项认知指令的对比推演。</li>
+
+<blockquote><strong>引擎路由</strong>：本文可由龙心OS五引擎组合调用——知识学习（十项认知指令深度学习）、象思维（物象→意象→原象）、五色光（白红黄绿蓝五维审查）、知行合一（表示→压缩→泛化）、人机协同五象限（[AI]/[人]/[⇄]分工定位）。</blockquote>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

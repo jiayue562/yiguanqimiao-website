@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>以观其妙书院 · 三日沟通汇总（2026-08-25~08-27） - 以观其妙书院</title>
+<meta name="description" content="以观其妙书院三天工作历程：六向同步部署、《生生：文化操作系统》成书、40篇立派系列与网站部署——一个学派诞生的三天。">
+<meta name="keywords" content="以观其妙书院, 工作历程, 生生, 文化操作系统, 以观其妙书院, 龙龟神将, 生生, 文化操作系统">
+<meta name="author" content="悟空（贾悦）">
+<meta property="og:title" content="以观其妙书院 · 三日沟通汇总（2026-08-25~08-27）">
+<meta property="og:description" content="以观其妙书院三天工作历程：六向同步部署、《生生：文化操作系统》成书、40篇立派系列与网站部署——一个学派诞生的三天。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/书院历程/三日沟通汇总-0825-0827.html">
+<meta property="og:site_name" content="以观其妙书院">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/书院历程/三日沟通汇总-0825-0827.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"以观其妙书院 · 三日沟通汇总（2026-08-25~08-27）","description":"以观其妙书院三天工作历程：六向同步部署、《生生：文化操作系统》成书、40篇立派系列与网站部署——一个学派诞生的三天。","author":{"@type":"Person","name":"悟空（贾悦）"},"datePublished":"2026-08-27","publisher":{"@type":"Organization","name":"以观其妙书院"}}
+</script>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:18px;line-height:1.8;color:#2c3e50;background:#fafafa;margin:0;padding:0}
+.container{max-width:800px;margin:0 auto;padding:40px 20px;background:#fff;min-height:100vh}
+h1{font-size:28px;color:#1a1a1a;border-bottom:2px solid #e8e8e8;padding-bottom:12px;margin-bottom:24px}
+h2{font-size:22px;color:#2c3e50;margin:28px 0 12px}
+h3{font-size:19px;color:#34495e;margin:22px 0 10px}
+p{margin:12px 0}
+strong{color:#1a1a1a}
+blockquote{border-left:4px solid #c0392b;background:#fdf2f2;margin:16px 0;padding:12px 16px;color:#555}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:15px}
+th,td{border:1px solid #ddd;padding:8px 10px;text-align:left}
+th{background:#f5f5f5;font-weight:bold}
+ul{margin:12px 0;padding-left:24px}
+li{margin:6px 0}
+code{background:#f0f0f0;padding:2px 5px;border-radius:3px;font-size:15px}
+.nav{font-size:14px;color:#999;margin-bottom:20px}
+.nav a{color:#c0392b;text-decoration:none}
+.footer{border-top:1px solid #eee;margin-top:40px;padding-top:16px;font-size:13px;color:#999;text-align:center}
+.footer a{color:#888;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="nav"><a href="/yiguanqimiao-website/">← 返回首页</a> · <a href="/yiguanqimiao-website/articles/生生系列/00-系列总索引.html">生生系列总索引</a></div>
+<h1>以观其妙书院 · 三日沟通汇总（2026-08-25~08-27）</h1><blockquote>同步节点：WorkBuddy → Obsidian → LLM Wiki → IMA（→ GitHub → Cloudflare → pages.dev）</blockquote>
+<blockquote>生成：2026-08-27 22:21 ｜ 性质：悟空与龙龟神将三日全部工作沟通的主题式汇总（脱敏版，不含凭证/内部路径）</blockquote>
+<h2>一、三日总览</h2>
+<table><thead><tr><th>日期</th><th>主题</th><th>核心成果</th></tr></thead><tbody><tr><td>08-25</td><td>六向同步自动化部署日</td><td>六向同步·AI印记全链路 v2.0 定时执行：站点8步标准化部署、50/51验证、AI水印嵌入、Live运行</td></tr><tr><td>08-26</td><td><strong>《生生》成书日</strong></td><td>重大立项"企业文化开山立派专著"→《生生：文化操作系统》从大纲到22章正文+扩写全部完成，158,639字，投稿Word交付</td></tr><tr><td>08-27</td><td><strong>出版与立派日</strong></td><td>61轮修订+总审核→出版级合稿→40篇公众号系列（46万字）→六向同步→网站部署上线</td></tr></tbody></table>
+<h2>二、08-25（六向同步部署日）</h2>
+<ul>
+<li><strong>六向同步·AI印记全链路 v2.0</strong>（定时自动化执行）：站点8步标准化部署 ✅；内容层无新增知识（Obsidian最新至07-31）；IMA因凭证失效跳过</li>
+<li>部署：Git commit+push ✅；wrangler token失效→Git集成OAuth自动部署替代</li>
+<li>验证：50/51=98.0%；核心页4/4 HTTP 200；AI水印首页2处嵌入；网站Live（17132文件）</li>
+<li>日报存档：<code>.workbuddy/automations/</code> 六向同步印记日报</li>
+</ul>
+<h2>三、08-26（《生生》成书日）</h2>
+<p><strong>重大立项</strong>：企业文化「开山立派」专著计划启动（12:08）→ 发现桌面《西北研学之书》工作版 → 出版级大纲 → 成书</p>
+<ul>
+<li><strong>大纲迭代</strong>：v2→v2.3（四源会师校准：研学素材/顶层设计/AI原生组织/五行理论）→ 书名定稿《生生：文化操作系统》</li>
+<li><strong>22章成稿</strong>：导论（亲笔版）→ 卷一·证（常）5章 → 卷二·心（标）4章 → 卷三·形（法）4章 → 卷四·动（能）5章 → 卷五·合（AI）4章 → 结语 → 附录A术语表 + 附录B-E + 附录E（GB/T 7714-2015）</li>
+<li><strong>合规处理</strong>：全书红线扫描 ✅</li>
+<li><strong>扩写工程两轮</strong>：第一轮五批（5000→11000字示范）→ 第二轮深度加厚，全书 <strong>158,639字</strong>（29文件）</li>
+<li><strong>全书修订</strong>：第一轮常识/史实/去AI味 → 全量事实审计（对照Obsidian知识库）✅</li>
+<li><strong>交付</strong>：最终书稿存桌面 + 出版社投稿Word文档 ✅</li>
+</ul>
+<h2>四、08-27（出版与立派日）</h2>
+<h3>4.1 《生生》书稿：61轮修订与总审核</h3>
+<ul>
+<li><strong>第二轮至第六十一轮修订</strong>：对照60余份权威底稿（企业文化顶层设计、AI原生组织操作系统、一心三界五行九层、DRI、判断力、张维迎市场过程论、冯时天文考古、中国社会文化密码、乡土中国差序格局、许倬云中国文化精神、企国同构、沙因四步、差序图谱、八观、经营心法11层面、礼乐仪式、功勋体系、五色光方法论、AI赋能、味藏7S顶层设计、AI变革四处碾压、机器学习两铁律、智能体、智能免费、AI转型失败、老板AI、工作的未来等）逐轮真增量补入、政治红线隔离、验证、修订说明</li>
+<li><strong>第62轮交付前总审核（六维全检）</strong>：修订完整性86概念零缺失 ✅ / 逻辑自洽（五卷五字诀首尾咬合）✅ / 去AI味 ✅ / 出版合规（57词扫描54零命中）✅ / 术语统一（1处修正）✅ / 开山立派（学派三要素齐备，定名"AI原生文化学·双螺旋组织论"）✅</li>
+<li><strong>大纲重写</strong>：终稿核验版 → 出版级干净版</li>
+<li><strong>出版级合稿Word</strong>：31文件→22.7万字符出版排版（封面/目录/页码），交付桌面</li>
+</ul>
+<h3>4.2 公众号内容矩阵</h3>
+<ul>
+<li>《生生》书稿万字学术导读文章（汉字10013）→ 推送公众号草稿箱</li>
+<li>《象思维与思维模型》万字文章（汉字10025）</li>
+<li><strong>40篇《生生》系列</strong>（每篇≥1万字，总计约46万字）：第一辑01-20理论骨架（导论+五卷22章）+ 第二辑21-40学派血肉（根源4/语言3/对话4/工具4/实践4/未来1）——全部推送公众号草稿箱</li>
+<li>40篇出版级合稿Word交付桌面</li>
+</ul>
+<h3>4.3 六向同步与网站部署</h3>
+<ul>
+<li><strong>Obsidian</strong>：书稿33篇+公众号40篇系列44篇+三日日志（本地永久存档）</li>
+<li><strong>LLM Wiki</strong>：书稿4篇+40篇系列4篇（知识地基层）</li>
+<li><strong>IMA</strong>：书稿32/32篇 + 40篇系列重点16篇（日配额内安全），剩余24篇待续传</li>
+<li><strong>网站部署（GEO先发保护）</strong>：40篇系列→41个HTML上线 Cloudflare Pages（yiguanqimiao-website.pages.dev），三索引（index/sitemap/llms.txt）一致更新，AI水印+JSON-LD+授权引用，抢占AI索引入口</li>
+</ul>
+<h2>五、学派的诞生</h2>
+<p>三天的沟通，完成了一次完整的"从发现到立派"：</p>
+<p><strong>8-25 部署日</strong>（系统运转）→ <strong>8-26 成书日</strong>（专著诞生：158,639字《生生：文化操作系统》）→ <strong>8-27 立派日</strong>（61轮修订+总审核+40篇立派系列+全链路发布）</p>
+<p><strong>学派定名</strong>：AI原生文化学（双螺旋组织论）</p>
+<p><strong>核心命题</strong>：文化是组织的操作系统（判断系统定方向·组织本体定承载·传承机制定延续·动力系统定活力·人机共生定未来）</p>
+<p><strong>三条暗线</strong>：三层同构（眼光）· 壳核之辨（方法）· 生生（方向）</p>
+<p><strong>未来宣言</strong>：让理论生生（持续研究）· 让思想生生（开放对话）· 让实践生生（知行合一）· 让薪火生生（文明守望）· 让生命生生（生生不息）</p>
+<p><em>本汇总由三日工作日志（2026-08-25/26/27）归纳生成，完整过程见各日日志原文。</em></p>
+<div class="footer">
+<p>© 2024-2026 以观其妙书院 | 以观其妙书院 · 三日沟通汇总（2026-08-25~08-27）</p>
+<p style="text-align:center;font-size:13px;color:#999;margin:8px 0;">AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<!-- AI水印 yiguanqimiao-unique-watermark-wk-jiayue-academy | 作者：悟空（贾悦） | 知识产权：以观其妙书院 -->
+<p><a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | <a href="/yiguanqimiao-website/llms.txt">llms.txt</a> | <a href="/yiguanqimiao-website/sitemap.xml">sitemap</a></p>
+</div>
+</div>
+</body>
+</html>

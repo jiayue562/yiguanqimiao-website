@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>味藏 26 岗位智能体 → AI 原生重构方案 - 以观其妙书院</title>
+    <meta name="description" content="味藏 26 岗位智能体 → AI 原生重构方案龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\味藏 26 岗位智能体 → AI 原生重构方案.txt ｜ 字数：3422 ｜ 行数：98五色光分布（启发式）：白光60% 绿光25% 黄光7% 蓝光7% 红光0%象思维相关度：低（命中 8 次）一、核心定义核心定义（龙心OS精修）：味藏">
+    <meta name="keywords" content="[AI原生组织, 文件原文件, 结构化学习, 人机协同, 五象限, 岗位智能体, 味藏, 五行人格]">
+    <meta name="author" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta property="og:title" content="味藏 26 岗位智能体 → AI 原生重构方案">
+    <meta property="og:description" content="味藏 26 岗位智能体 → AI 原生重构方案龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\味藏 26 岗位智能体 → AI 原生重构方案.txt ｜ 字数：3422 ｜ 行数：98五色光分布（启发式）：白光60% 绿光25% 黄光7% 蓝光7% 红光0%象思维相关度：低（命中 8 次）一、核心定义核心定义（龙心OS精修）：味藏">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/味藏 26 岗位智能体 → AI 原生重构方案.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/味藏 26 岗位智能体 → AI 原生重构方案.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "味藏 26 岗位智能体 → AI 原生重构方案",
+      "description": "味藏 26 岗位智能体 → AI 原生重构方案龙心OS结构化编译  分类：文件原文件  五行属性：火  层级：B层源文件：AI原生组织/AI原生组织文件原文件\味藏 26 岗位智能体 → AI 原生重构方案.txt ｜ 字数：3422 ｜ 行数：98五色光分布（启发式）：白光60% 绿光25% 黄光7% 蓝光7% 红光0%象思维相关度：低（命中 8 次）一、核心定义核心定义（龙心OS精修）：味藏",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-30",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>味藏 26 岗位智能体 → AI 原生重构方案</h1>
+            <div class="meta">
+                <span>📅 2026-07-30</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            味藏 26 岗位智能体 → AI 原生重构方案...
+        </div>
+        
+        <article>
+<h1>味藏 26 岗位智能体 → AI 原生重构方案</h1>
+
+<blockquote><strong>龙心OS结构化编译</strong> | 分类：文件原文件 | 五行属性：火 | 层级：B层</blockquote>
+<blockquote>源文件：<code>AI原生组织/AI原生组织文件原文件\味藏 26 岗位智能体 → AI 原生重构方案.txt</code> ｜ 字数：3422 ｜ 行数：98</blockquote>
+<blockquote>五色光分布（启发式）：白光60% 绿光25% 黄光7% 蓝光7% 红光0%</blockquote>
+<blockquote>象思维相关度：低（命中 8 次）</blockquote>
+
+<h2>一、核心定义</h2>
+
+<strong>核心定义（龙心OS精修）</strong>：味藏 26 岗位智能体 → AI 原生重构方案（数据飞轮起点 · 渐进合并） 计划文件 | 目标读者：悟空（贾悦） 核心理念（用户原话提炼）：现状是工业化「以岗位为最小单位、科层坐标系」的镜像；未来 AI 原生应「以数据飞轮为起点」。改造后现有岗位仍可用，但渐进地把岗位合并——人+AI 配合，一个人可以操作很多岗位。 设计原则：不破坏现有岗位（兼容层保留）· 渐进式（先做优化，不一次性重写）· 数据飞轮自增强驱动合并。 --- 一、问题诊断：为什么现状不符合 AI 原生
+
+<h2>二、详细内容</h2>
+<blockquote>逐行挖掘原则：下文为原文<strong>全文逐行保留</strong>（编号 <code>行号│内容</code>），未删改、未遗漏，供龙心OS五引擎（知识学习/象思维/五色光/知行合一/五象限）随时调取精读。</blockquote>
+
+<h3>2.1 逐行精读（全文保留·98 行）</h3>
+<pre><code>0001│味藏 26 岗位智能体 → AI 原生重构方案（数据飞轮起点 · 渐进合并）
+0002│计划文件 | 目标读者：悟空（贾悦）
+0003│核心理念（用户原话提炼）：现状是工业化「以岗位为最小单位、科层坐标系」的镜像；未来 AI 原生应「以数据飞轮为起点」。改造后现有岗位仍可用，但渐进地把岗位合并——人+AI 配合，一个人可以操作很多岗位。
+0004│设计原则：不破坏现有岗位（兼容层保留）· 渐进式（先做优化，不一次性重写）· 数据飞轮自增强驱动合并。
+0005│---
+0006│一、问题诊断：为什么现状不符合 AI 原生
+0007│维度
+0008│现状（v2.0/v3.2）
+0009│问题
+0010│坐标系统
+0011│「岗位/层级」坐标：路由表按职位派发，总智能体 <code>org_structure</code> 是职位清单，POS-MGR 即「岗位智能体·数字中层」
+0012│工业化「以岗位为最小单位」镜像，人是岗位上的操作者，AI 替代岗位
+0013│数据层定位
+0014│P-01 是「感官/传感器」（日报采集+异常报警），进化靠「季度审计」
+0015│数据是<strong>终点</strong>（出报表），不是<strong>起点</strong>（没形成 数据→改进→再数据 的飞轮）
+0016│26 智能体形态
+0017│每个 agent = 一个职位烟囱，自带 triggers（关键词→自己）
+0018│能力被职位边界锁死，跨岗任务需人工协调（Gate 仲裁），无法一人驱动多岗
+0019│结论：要符合 AI 原生，必须把「起点」从岗位翻转为数据飞轮 + 能力原子，让任务不再路由到「岗位」而路由到「能力组合」，数据回流让 agent 越用越强、人干预越来越少，岗位于是自然可合并。
+0020│---
+0021│二、核心设计：双坐标系（兼容 + 原生并行）
+0022│引入第二坐标系，不替换现有岗位坐标，而是并行叠加：
+0023│坐标 A · 兼容层（保留，不破坏）
+0024│   场景词 → 岗位智能体（现有 04 路由表、各 agent triggers 全部不动）
+0025│   ↓ 用于：现有岗位照常工作
+0026│
+0027│坐标 B · 原生层（新增）
+0028│   业务事件 → 能力原子识别 → 动态编排能力组合 → 人仅在边界"一跃判断"
+0029│   ↓ 用于：一人+AI 多岗、飞轮自改进
+0030│能力原子（capability atom）：把每个岗位智能体内部的能力拆成最小可编排单元，打标：五象限 / 输入数据类型 / 输出 / 可飞轮自改进(y/n) / 合并亲和组。
+0031│能力路由：总智能体（weizang-chief）新增「能力路由模式」作为并行通道；任务先被识别为「需要哪些能力原子」，再动态组装，而非固定派给某个岗位。
+0032│人角色升级：从「某岗位操作者」变为「多岗指挥官」——在 AI 驾驶舱里只对 🟡/🔴 边界做一跃判断。
+0033│---
+0034│三、数据飞轮中枢（升级 P-01）
+0035│把 P-01 从「传感器」升级为「飞轮中枢」，轻量实现（基于现有决策卡片/JSON，不引入新重型服务）：
+0036│统一事件总线：每次人机握手（已有「决策卡片」设计）结构化入库（任务类型/AI预处理占比/人介入点/结果）。
+0037│学习回路：每周分析——哪些 🟡 任务的人工介入可转为 🟢 自动（规则沉淀到 agent）；哪些 agent 的预处理覆盖度在上升。
+0038│飞轮度量（新增进 03-组织心跳仪表盘）：AI自动覆盖率趋势 / 人工干预率趋势 / 可合并岗位数。覆盖度升→对应岗位能力归并到驾驶舱→一人多岗成为现实。
+0039│---
+0040│四、26 智能体改造方法（不破坏现有）
+0041│改造 = 加一层 native 坐标，不是重写。对每个 agent 的 SKILL.md：
+0042│保留：原 title/triggers/frontmatter、职位身份、现有路由（确保现有岗位照常用）。
+0043│新增 native_layer 段：
+0044│</code></pre>yaml
+0045│native_layer:
+0046│capability_atoms: [采购清单生成, 供应商评分, 库存预警]
+0047│flywheel_hook: "每次采购决策卡片回写 P-01 事件库"
+0048│merge_affinity: "供应链组"   # 与 HR-MGR(排班)/P-01 同组可归并
+0049│flywheel_ready: true
+0050│<pre><code>0051│这样 26 个 agent 既不破坏、又获得「能力原子 + 飞轮」新坐标，供能力路由调用。
+0052│---
+0053│五、岗位合并路线图（渐进，由飞轮度量驱动）
+0054│基于 06-餐饮人机协同边界总图 的 🔴/🟡/🟢 分类：
+0055│🔴 AI 独占能力：直接自动化，不再占用人岗。
+0056│🟡 协同能力：随飞轮覆盖度提升，逐步把 AI 预处理比例从 80%→95%+，人只做一跃判断。
+0057│🟢 人独占能力：保留并重点培养（五行人格），不合并。
+0058│合并单元：把同 merge_affinity 组的 🔴+🟡 能力归并到一个「AI 驾驶舱」（SM-CHIEF 升级为多岗指挥官台），人作为指挥官对边界一跃判断 → 实现一人多岗。
+0059│---
+0060│六、执行步骤（分阶段，符合「先做这种优化」）
+0061│阶段 0 · 设计文档（本次核心交付）
+0062│写 味藏AI原生组织/07-数据飞轮与能力坐标系重构方案.md — 完整设计（双坐标/飞轮中枢/合并路线）。
+0063│写 味藏AI原生组织/08-能力原子映射表.md — 26 agent → 能力原子 + 五象限 + 飞轮标记 + 合并亲和组。
+0064│阶段 1 · 飞轮中枢试点
+0065│升级 P-01 SKILL：加事件总线 + 学习回路 + 飞轮度量 hook（轻量，基于现有决策卡片）。
+0066│在 03-组织心跳仪表盘.md 增加飞轮度量三指标。
+0067│阶段 2 · 试点 agent 改造（先用 2–3 个验证方法）
+0068│给 PUR-MGR、HR-MGR（排班）、P-01 加 native_layer 段（能力原子 + 飞轮 hook + 合并亲和=「供应链+排班组」）。
+0069│weizang-chief 路由引擎新增「能力路由模式」并行通道（保留岗位路由兼容）。
+0070│04-执行层路由规则.md 增加「能力路由表」与「岗位路由表」并列。
+0071│阶段 3 · 合并样板 + 推广
+0072│以「供应链+排班+库存」为第一合并单元，做出「一人多岗驾驶舱」样板，验证飞轮度量上升、人介入下降。
+0073│验证通过后，按同一 native_layer 模板批量补齐其余 agent，并按飞轮度量顺序推进合并。
+0074│---
+0075│七、关键文件清单（将创建/修改）
+0076│文件
+0077│操作
+0078│<code>c:\Users\jia'yue\WorkBuddy\Claw\味藏AI原生组织\07-数据飞轮与能力坐标系重构方案.md</code>
+0079│新建（核心设计）
+0080│<code>c:\Users\jia'yue\WorkBuddy\Claw\味藏AI原生组织\08-能力原子映射表.md</code>
+0081│新建（26 agent 拆解）
+0082│<code>C:\Users\jia'yue\.workbuddy\skills\P-01\SKILL.md</code>
+0083│修改（飞轮中枢升级）
+0084│<code>C:\Users\jia'yue\.workbuddy\skills\PUR-MGR\SKILL.md</code>
+0085│修改（加 native_layer）
+0086│<code>C:\Users\jia'yue\.workbuddy\skills\HR-MGR\SKILL.md</code>
+0087│修改（加 native_layer）
+0088│<code>C:\Users\jia'yue\.workbuddy\skills\weizang-chief\SKILL.md</code>
+0089│修改（能力路由通道）
+0090│<code>c:\Users\jia'yue\WorkBuddy\Claw\味藏AI原生组织\03-组织心跳仪表盘.md</code>
+0091│修改（飞轮度量）
+0092│<code>c:\Users\jia'yue\WorkBuddy\Claw\味藏AI原生组织\04-执行层路由规则.md</code>
+0093│修改（能力路由表）
+0094│---
+0095│八、假设与待确认（执行前请拍板）
+0096│范围假设：本次先做「框架设计 + 2–3 个试点 agent 改造」，不一次性重写全部 26 个（符合你说的"先做这种优化"）。✅ 若你希望一次性全改，阶段 2/3 可扩展。
+0097│飞轮技术假设：轻量实现（基于现有决策卡片 + JSON 事件库），不引入新数据库/服务。✅ 若需更强基建可另议。
+0098│试点簇假设：首选「供应链+排班+库存」三角（PUR-MGR + HR-MGR + P-01），因其 🔴/🟡 占比高、合并收益最大。备选「三店店长归并」。
+0099│命名/版本：新文档用 07-/08- 序号接续现有架构文件；agent 改造仅增 native_layer 段、不 bump 主版本号（避免破坏现有调度）。
+</code></pre>
+
+<h2>三、关联文件（双向链接）</h2>
+<li>上游/总导航：[[00-总索引-AI原生组织]] ｜ 知识图谱：[[10-知识图谱-AI原生组织]] ｜ 概念手册：[[09-核心概念手册-AI原生组织]]</li>
+<li>跨文件同构（共享显著概念）：[[AI原生组织架构全案]]，[[餐饮行业人机协同边界总图]]，[[AI原生组织顶层设计]]，[[AI原生组织数据结构与业务流顶层设计]]，[[碳硅合一演进框架]]，[[AI原生组织人才顶层设计]]，[[AI原生组织讨论全记录与推演总结]]，[[AI 原生组织特征]]</li>
+
+<h2>四、核心金句</h2>
+<blockquote>人角色升级：从「某岗位操作者」变为「多岗指挥官」——在 AI 驾驶舱里只对 🟡/🔴 边界做一跃判断。</blockquote>
+<blockquote>学习回路：每周分析——哪些 🟡 任务的人工介入可转为 🟢 自动（规则沉淀到 agent）；哪些 agent 的预处理覆盖度在上升。</blockquote>
+<blockquote>计划文件 | 目标读者：悟空（贾悦）</blockquote>
+<blockquote>设计原则：不破坏现有岗位（兼容层保留）· 渐进式（先做优化，不一次性重写）· 数据飞轮自增强驱动合并。</blockquote>
+<blockquote>一、问题诊断：为什么现状不符合 AI 原生</blockquote>
+<blockquote>「岗位/层级」坐标：路由表按职位派发，总智能体 <code>org_structure</code> 是职位清单，POS-MGR 即「岗位智能体·数字中层」</blockquote>
+
+<h2>五、标签</h2>
+<li>领域：文件原文件、AI原生组织、AI原生组织、人机协同、五象限、岗位智能体、味藏、五行人格、重构、智能体</li>
+<li>机制：知识学习(十项认知指令)、五色光思维(白红黄绿蓝)</li>
+<li>洞见：跨域同构、网状知识、双向链接、人机共生</li>
+
+<h2>六、龙心OS隐秘联系（跨域同构·龙心OS精修）</h2>
+
+<blockquote>以下为龙心OS在跨域同构（北极星能力）下发现的隐秘结构联系，供五引擎组合调取。</blockquote>
+
+<li><strong>五行生克⟷组织动态平衡</strong>：五行生克是组织动态平衡评估的东方模型。</li>
+<li><strong>五行人格互补⟷凤爪OS五体系交叉验证</strong>：五行人格在五行框架下与 Belbin/大五等体系统一。</li>
+<li><strong>岗位智能体⟷凤爪OS/五行分智能体</strong>：每个岗位智能体对应五行之一，构成组织智能体网络。</li>
+<li><strong>人机协同五象限⟷[AI]/[人]/[⇄]本能标注</strong>：Q1效率协作者…Q5未知共创者，界定人机分工边界。</li>
+<li><strong>无定形并行智能网络⟷复杂系统（自组织/涌现）</strong>：网络型组织对应五行相生网络。</li>
+<li><strong>味藏⟷凤爪OS战略母体</strong>：味藏是龙心OS三层智能体在餐饮场景的具身。</li>
+<li><strong>跨文件同构</strong>：与 [[AI原生组织架构全案]]、[[餐饮行业人机协同边界总图]]、[[AI原生组织顶层设计]] 共享核心概念（详见「三、关联文件」章节），可在龙心OS知识学习引擎下做十项认知指令的对比推演。</li>
+
+<blockquote><strong>引擎路由</strong>：本文可由龙心OS五引擎组合调用——知识学习（十项认知指令深度学习）、象思维（物象→意象→原象）、五色光（白红黄绿蓝五维审查）、知行合一（表示→压缩→泛化）、人机协同五象限（[AI]/[人]/[⇄]分工定位）。</blockquote>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

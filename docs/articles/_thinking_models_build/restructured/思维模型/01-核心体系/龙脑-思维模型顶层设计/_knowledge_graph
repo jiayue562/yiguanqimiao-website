@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_Knowledge_Graph - 以观其妙书院</title>
+    <meta name="description" content="龙脑·思维模型 — 知识图谱（跨层关联可视化）三层嵌套架构 + 关键跨层/跨域同构连线。返回 _index总索引。mermaidgraph TDL1"第一层：象思维（发动机）"L2"第二层：思维模型（分析引擎）"L3"第三层：理论（验证机制）"L1 -- L2L2 -- L3L3 -.验证.- L1L1 -.象思维三阶(物→意→原) ⟷ 思维模型结构化拆解(整体→部分).- L2L1 -.取象比类">
+    <meta name="keywords" content="五行人格, 以观其妙书院, 龙龟神将">
+    <meta name="author" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta property="og:title" content="_Knowledge_Graph">
+    <meta property="og:description" content="龙脑·思维模型 — 知识图谱（跨层关联可视化）三层嵌套架构 + 关键跨层/跨域同构连线。返回 _index总索引。mermaidgraph TDL1"第一层：象思维（发动机）"L2"第二层：思维模型（分析引擎）"L3"第三层：理论（验证机制）"L1 -- L2L2 -- L3L3 -.验证.- L1L1 -.象思维三阶(物→意→原) ⟷ 思维模型结构化拆解(整体→部分).- L2L1 -.取象比类">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/_knowledge_graph.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/_knowledge_graph.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "_Knowledge_Graph",
+      "description": "龙脑·思维模型 — 知识图谱（跨层关联可视化）三层嵌套架构 + 关键跨层/跨域同构连线。返回 _index总索引。mermaidgraph TDL1"第一层：象思维（发动机）"L2"第二层：思维模型（分析引擎）"L3"第三层：理论（验证机制）"L1 -- L2L2 -- L3L3 -.验证.- L1L1 -.象思维三阶(物→意→原) ⟷ 思维模型结构化拆解(整体→部分).- L2L1 -.取象比类",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-30",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>_Knowledge_Graph</h1>
+            <div class="meta">
+                <span>📅 2026-07-30</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            _Knowledge_Graph...
+        </div>
+        
+        <article>
+<h1>龙脑·思维模型 — 知识图谱（跨层关联可视化）</h1>
+
+<blockquote>三层嵌套架构 + 关键跨层/跨域同构连线。返回 [[_index|总索引]]。</blockquote>
+
+<pre><code>graph TD
+  L1["第一层：象思维（发动机）"]
+  L2["第二层：思维模型（分析引擎）"]
+  L3["第三层：理论（验证机制）"]
+  L1 --> L2
+  L2 --> L3
+  L3 -.验证.-> L1
+  L1 -.象思维三阶(物→意→原) ⟷ 思维模型结构化拆解(整体→部分).-> L2
+  L1 -.取象比类 ⟷ 理论类比/模型建构.-> L3
+  L2 -.第一性原理 ⟷ 理论层本质规律(保护动机/激励相容).-> L3
+  L2 -.双系统理论 ⟷ 认知吝啬者/解释水平理论.-> L3
+  L2 -.SCAMPER ⟷ 反脆弱性(变异增益).-> L3
+  L1 -.起手即全息 ⟷ 元认知类(框架/金字塔).-> L2
+</code></pre>
+
+<h2>概念体系（按层）</h2>
+
+<h3>第一层：象思维（内核 / 发动机）</h3>
+
+<li>[[以象入道，以化见真——释“象道思维”]]</li>
+<li>[[象思维理论]]</li>
+<li>[[象思维理论体系：回归原创之思与实]]</li>
+<li>[[象思维理论体系：回归原创之思与实践路径]]</li>
+<li>[[象道思维：“观·比·体·化”四字循环法]]</li>
+<li>[[象道思维：“观·比·体·化”四字循环法2]]</li>
+<li>[[象道思维：“观·比·体·化”四字循环法高]]</li>
+
+<h3>第二层：思维模型（分析引擎）</h3>
+
+<strong>元认知类</strong>
+  - [[思维模型——人类认知的底层操作系统]]
+  - [[思维模型框]]
+  - [[思维模式-方法论-解决问题”的模型]]
+  - [[掌握这100个思维模型，开启你的「超级个体」时代！]]
+  - [[框架-思维框架-框架思维]]
+  - [[第一性原理]]
+  - [[金字塔原理]]
+  - [[11种思维模型速查手册]]
+  - [[三步矫正思维陷阱]]
+  - [[十种知识整合方式]]
+  - [[批判性思维]]
+  - [[第一层到第二层]]
+<strong>问题分析类</strong>
+  - [[《麦肯锡思考工具》理论体系梳理与应用研究]]
+  - [[5W2H七维分析]]
+  - [[「五层分析法]]
+  - [[五维重构法]]
+  - [[五维问题拆解法]]
+  - [[从一团乱麻到清晰方案]]
+  - [[从复杂到简单]]
+  - [[从锚定方向到破局突围]]
+  - [[如果X，那么Y]]
+  - [[概率思维]]
+  - [[问题的答案]]
+<strong>提问工具类</strong>
+  - [[6种提问法速查手册]]
+  - [[7种高阶提问法速查手册]]
+  - [[ORID焦点讨论法]]
+  - [[苏格拉底6大提问框架]]
+<strong>创意创新类</strong>
+  - [[SCAMPER奔驰法]]
+  - [[逆向思维工具箱]]
+<strong>决策与沟通类</strong>
+  - [[8个沟通模型速查手册]]
+  - [[双系统理论]]
+  - [[视角转换工具箱]]
+<strong>自我管理类</strong>
+  - [[价值聚焦]]
+  - [[动力从来不是行动的前提]]
+<strong>易经卦变类</strong>
+  - [[易经错综复杂]]
+<strong>教员方法论类</strong>
+  - [[教员方法论]]
+
+<h3>第三层：理论（科学支撑 / 验证机制）</h3>
+
+<strong>动机行为类</strong>
+  - [[PERMA幸福理论]]
+  - [[享乐适应理论]]
+  - [[保护动机理论]]
+  - [[恐惧管理理论]]
+  - [[最佳唤醒理论]]
+  - [[消费价值理论]]
+  - [[激励相容理论]]
+  - [[积极情绪的拓展-建构理论]]
+  - [[资源保存理论]]
+<strong>社会认知类</strong>
+  - [[建构发展理论]]
+  - [[情感事件理论]]
+  - [[情绪认知评价理论]]
+  - [[意义构建理论]]
+  - [[特质激活理论]]
+  - [[组织信息加工理论]]
+  - [[解释水平理论]]
+  - [[认知-情感-意动框架]]
+  - [[认知吝啬者理论]]
+<strong>社会关系类</strong>
+  - [[主体间性理论]]
+  - [[交互记忆系统]]
+  - [[他者]]
+  - [[嵌入理论]]
+  - [[社会促进理论]]
+  - [[社会支持理论]]
+  - [[社会视觉理论]]
+  - [[自我呈现理论]]
+<strong>文化系统类</strong>
+  - [[创新抵抗理论]]
+  - [[反脆弱性]]
+  - [[敏捷治理]]
+  - [[文化维度理论]]
+  - [[道德基础理论]]
+  - [[高低语境理论]]
+<strong>分析方法类</strong>
+  - [[单文章元分析]]
+  - [[文本挖掘]]
+  - [[比较分析法]]
+  - [[过程调节法]]
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

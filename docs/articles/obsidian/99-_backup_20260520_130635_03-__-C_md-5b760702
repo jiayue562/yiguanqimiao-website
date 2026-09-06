@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>五行分类图谱·C层深度解析 - 以观其妙书院</title>
+<meta name="description" content="五行分类图谱·C层深度解析 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="五行分类图谱·C层深度解析">
+<meta property="og:description" content="五行分类图谱·C层深度解析 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "五行分类图谱·C层深度解析",
+    "description": "五行分类图谱·C层深度解析 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>五行分类图谱·C层深度解析</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<p>﻿---
+title: 五行分类图谱·C层深度解析
+description: 物质显现与生活实践——五行的方法论维度，包含C1-C32的完整阐释
+type: 核心文档
+tags: [五行, C层, 生活实践, 物质显现, 方法论, 五脏, 五官, 五液, 五体, 五邪, 五毒, 经络, 传统功法, 饮食, 运动, 美容, 财富, 转运]
+author: 观其妙书院 · 悟空 &amp; 龙龟神将
+created: 2026-03-26
+updated: 2026-03-26
+version: 2.0
+obsidian_path: 03-五行分类图谱/核心文档/五行分类图谱-C层深度.md
+cross_links:</p>
+<ul>
+<li>"<a href="03-___md-09f85b33.html">五行分类图谱全息阐释</a>"</li>
+<li>"<a href="五行分类图谱-A层深度.html">五行分类图谱-A层深度</a>"</li>
+<li>"<a href="五行分类图谱-B层深度.html">五行分类图谱-B层深度</a>"</li>
+<li>"<a href="五行分类图谱生克关系.html">五行分类图谱生克关系</a>"</li>
+<li>"<a href="五行分类图谱核心金句.html">五行分类图谱核心金句</a>"</li>
+<li>"<a href="五行分类图谱知识图谱.html">五行分类图谱知识图谱</a>"</li>
+<li>"<a href="08-OS_AI-OS<strong>OS</strong>_md-65337c17.html">象思维</a>"</li>
+<li>"<a href="08-OS_AI-OS<strong>OS</strong>_md-09b62f01.html">五色光思维</a>"</li>
+<li>"<a href="龙心OS.html">龙心OS</a>"</li>
+</ul>
+<hr>
+<h1>五行分类图谱·C层深度解析</h1>
+<h2>物质显现与生活实践——五行的方法论维度</h2>
+<blockquote><p><strong>C层定义</strong>：C层是五行体系最接地气、最具操作性的层面。它将前两层的抽象原理，具体投射到物质世界、身体结构、生活方式和解决问题的技巧上，使五行哲学成为一门可以躬身践行的生活艺术。</p>
+<p><strong>C层核心</strong>：C1五材 → C2十二属相 → C3-C9物质世界 → C10-C16职业社会 → C17-C25中医养生 → C26-C32生活实践</p></blockquote>
+<hr>
+<h2>C1 五材：物质的原始指代</h2>
+<blockquote><p><strong>核心来源</strong>：《左传》</p>
+<p><strong>五材定义</strong>：木火土金水是最基本的物质形态</p></blockquote>
+<h3>C1.1 五材与五行</h3>
+<table>
+<thead><tr>
+<th>五材</th>
+<th>五行</th>
+<th>基本特性</th>
+<th>代表物质</th>
+<th>应用场景</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>木</strong></td>
+<td>木</td>
+<td>生长性</td>
+<td>木材、植物</td>
+<td>建筑、家具、纸张</td>
+</tr>
+<tr>
+<td><strong>火</strong></td>
+<td>火</td>
+<td>热能性</td>
+<td>火焰、阳光</td>
+<td>烹饪、取暖、照明</td>
+</tr>
+<tr>
+<td><strong>土</strong></td>
+<td>土</td>
+<td>承载性</td>
+<td>土壤、岩石</td>
+<td>农业、建筑、陶瓷</td>
+</tr>
+<tr>
+<td><strong>金</strong></td>
+<td>金</td>
+<td>坚硬性</td>
+<td>金属、矿石</td>
+<td>工具、货币、首饰</td>
+</tr>
+<tr>
+<td><strong>水</strong></td>
+<td>水</td>
+<td>流动性</td>
+<td>水源、液体</td>
+<td>饮用、灌溉、运输</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>C2 十二属相：生肖的五行归属</h2>
+<blockquote><p><strong>核心来源</strong>：地支与五行</p>
+<p><strong>十二属相定义</strong>：基于地支的生肖分类</p></blockquote>
+<h3>C2.1 属相五行分类</h3>
+<table>
+<thead><tr>
+<th>属相</th>
+<th>五行</th>
+<th>性格特点</th>
+<th>幸运色</th>
+<th>幸运数</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>虎</strong></td>
+<td>木</td>
+<td>勇敢自信、领导力强</td>
+<td>青绿</td>
+<td>3、4</td>
+</tr>
+<tr>
+<td><strong>兔</strong></td>
+<td>木</td>
+<td>温柔善良、人缘极佳</td>
+<td>青绿</td>
+<td>3、4</td>
+</tr>
+<tr>
+<td><strong>蛇</strong></td>
+<td>火</td>
+<td>智慧神秘、直觉敏锐</td>
+<td>赤红</td>
+<td>2、7</td>
+</tr>
+<tr>
+<td><strong>马</strong></td>
+<td>火</td>
+<td>热情奔放、行动力强</td>
+<td>赤红</td>
+<td>2、7</td>
+</tr>
+<tr>
+<td><strong>龙</strong></td>
+<td>土</td>
+<td>尊贵大气、理想主义</td>
+<td>黄</td>
+<td>5、10</td>
+</tr>
+<tr>
+<td><strong>狗</strong></td>
+<td>土</td>
+<td>忠诚可靠、正义感强</td>
+<td>黄</td>
+<td>5、10</td>
+</tr>
+<tr>
+<td><strong>牛</strong></td>
+<td>土</td>
+<td>勤劳踏实、忍耐力强</td>
+<td>黄</td>
+<td>5、10</td>
+</tr>
+<tr>
+<td><strong>羊</strong></td>
+<td>土</td>
+<td>温柔浪漫、艺术气质</td>
+<td>黄</td>
+<td>5、10</td>
+</tr>
+<tr>
+<td><strong>猴</strong></td>
+<td>金</td>
+<td>聪明机智、适应力强</td>
+<td>白</td>
+<td>4、9</td>
+</tr>
+<tr>
+<td><strong>鸡</strong></td>
+<td>金</td>
+<td>认真负责、追求完美</td>
+<td>白</td>
+<td>4、9</td>
+</tr>
+<tr>
+<td><strong>猪</strong></td>
+<td>水</td>
+<td>诚实厚道、包容心强</td>
+<td>黑蓝</td>
+<td>1、6</td>
+</tr>
+<tr>
+<td><strong>鼠</strong></td>
+<td>水</td>
+<td>机灵敏捷、适应力强</td>
+<td>黑蓝</td>
+<td>1、6</td>
+</tr>
+</tbody></table>
+<h3>C2.2 属相与五行生克</h3>
+<table>
+<thead><tr>
+<th>属相组合</th>
+<th>五行关系</th>
+<th>关系评价</th>
+</tr></thead><tbody>
+<tr>
+<td>虎+兔</td>
+<td>木+木</td>
+<td>同性相助</td>
+</tr>
+<tr>
+<td>蛇+马</td>
+<td>火+火</td>
+<td>同性相助</td>
+</tr>
+<tr>
+<td>龙+狗+牛+羊</td>
+<td>土+土+土+土</td>
+<td>同性相助</td>
+</tr>
+<tr>
+<td>猴+鸡</td>
+<td>金+金</td>
+<td>同性相助</td>
+</tr>
+<tr>
+<td>猪+鼠</td>
+<td>水+水</td>
+<td>同性相助</td>
+</tr>
+<tr>
+<td>木+火</td>
+<td>木生火</td>
+<td>相生吉配</td>
+</tr>
+<tr>
+<td>火+土</td>
+<td>火生土</td>
+<td>相生吉配</td>
+</tr>
+<tr>
+<td>土+金</td>
+<td>土生金</td>
+<td>相生吉配</td>
+</tr>
+<tr>
+<td>金+水</td>
+<td>金生水</td>
+<td>相生吉配</td>
+</tr>
+<tr>
+<td>水+木</td>
+<td>水生木</td>
+<td>相生吉配</td>
+</tr>
+<tr>
+<td>木+土</td>
+<td>木克土</td>
+<td>相克组合</td>
+</tr>
+<tr>
+<td>土+水</td>
+<td>土克水</td>
+<td>相克组合</td>
+</tr>
+<tr>
+<td>水+火</td>
+<td>水克火</td>
+<td>相克组合</td>
+</tr>
+<tr>
+<td>火+金</td>
+<td>火克金</td>
+<td>相克组合</td>
+</tr>
+<tr>
+<td>金+木</td>
+<td>金克木</td>
+<td>相克组合</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>C3-C9 物质世界：万物取象</h2>
+<h3>C3 事业领域</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>适宜行业</th>
+<th>核心领域</th>
+<th>代表职业</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>文教、创意、科技</td>
+<td>出版、教育、IT、设计</td>
+<td>作家、教师、设计师</td>
+</tr>
+<tr>
+<td>火</td>
+<td>传媒、餐饮、娱乐</td>
+<td>演艺、餐饮、能源</td>
+<td>演员、厨师、DJ</td>
+</tr>
+<tr>
+<td>土</td>
+<td>农业、建筑、仓储</td>
+<td>房地产、农业、物流</td>
+<td>建筑师、农民、司机</td>
+</tr>
+<tr>
+<td>金</td>
+<td>金融、法律、矿业</td>
+<td>银行、律所、制造</td>
+<td>律师、审计、工程师</td>
+</tr>
+<tr>
+<td>水</td>
+<td>贸易、物流、航海</td>
+<td>航运、贸易、咨询</td>
+<td>商人、导游、顾问</td>
+</tr>
+</tbody></table>
+<h3>C4 五行风水·形煞</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>形状特征</th>
+<th>对应煞气</th>
+<th>化解方法</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>长形、条状</td>
+<td>木煞（角冲）</td>
+<td>金属品化解</td>
+</tr>
+<tr>
+<td>火</td>
+<td>尖形、三角</td>
+<td>火煞（尖角冲）</td>
+<td>水黑色化解</td>
+</tr>
+<tr>
+<td>土</td>
+<td>方形、厚重</td>
+<td>土煞（污秽）</td>
+<td>木绿色化解</td>
+</tr>
+<tr>
+<td>金</td>
+<td>圆形、完整</td>
+<td>金煞（白虎）</td>
+<td>火红色化解</td>
+</tr>
+<tr>
+<td>水</td>
+<td>波浪、流动</td>
+<td>水煞（路冲）</td>
+<td>土黄色化解</td>
+</tr>
+</tbody></table>
+<h3>C5 审美服饰</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>适宜颜色</th>
+<th>材质选择</th>
+<th>风格特点</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>青绿翠色</td>
+<td>棉麻、竹藤</td>
+<td>清新自然</td>
+</tr>
+<tr>
+<td>火</td>
+<td>赤红橙色</td>
+<td>丝绸、羊绒</td>
+<td>热情感性</td>
+</tr>
+<tr>
+<td>土</td>
+<td>黄褐棕色</td>
+<td>皮革、陶瓷</td>
+<td>稳重厚实</td>
+</tr>
+<tr>
+<td>金</td>
+<td>白金银灰</td>
+<td>金属、钻石</td>
+<td>精致简约</td>
+</tr>
+<tr>
+<td>水</td>
+<td>黑蓝深色</td>
+<td>水晶、珍珠</td>
+<td>神秘优雅</td>
+</tr>
+</tbody></table>
+<h3>C6 外观取象</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>体形特征</th>
+<th>面型特点</th>
+<th>气质类型</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>瘦长高挑</td>
+<td>瓜子脸、长眼</td>
+<td>清秀斯文</td>
+</tr>
+<tr>
+<td>火</td>
+<td>中等偏瘦</td>
+<td>苹果脸、圆眼</td>
+<td>明亮热情</td>
+</tr>
+<tr>
+<td>土</td>
+<td>矮胖圆润</td>
+<td>方圆脸、大眼</td>
+<td>稳重踏实</td>
+</tr>
+<tr>
+<td>金</td>
+<td>方正硬朗</td>
+<td>国字脸、凤眼</td>
+<td>冷峻严肃</td>
+</tr>
+<tr>
+<td>水</td>
+<td>圆润柔和</td>
+<td>圆脸、杏眼</td>
+<td>温柔神秘</td>
+</tr>
+</tbody></table>
+<h3>C7 面部特征</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>皮肤特点</th>
+<th>眉眼特征</th>
+<th>嘴唇特点</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>白皙偏青</td>
+<td>眉清目秀</td>
+<td>薄唇</td>
+</tr>
+<tr>
+<td>火</td>
+<td>红润偏油</td>
+<td>眉浓眼亮</td>
+<td>薄唇微翘</td>
+</tr>
+<tr>
+<td>土</td>
+<td>黄润偏干</td>
+<td>眉粗眼圆</td>
+<td>厚唇</td>
+</tr>
+<tr>
+<td>金</td>
+<td>白皙偏干</td>
+<td>眉峰眼锐</td>
+<td>薄唇</td>
+</tr>
+<tr>
+<td>水</td>
+<td>白皙偏润</td>
+<td>眉淡眼柔</td>
+<td>厚唇微翘</td>
+</tr>
+</tbody></table>
+<h3>C8 发型选择</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>适宜发型</th>
+<th>打理要点</th>
+<th>避免造型</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>长直发、波波头</td>
+<td>层次感、空气感</td>
+<td>过于服帖</td>
+</tr>
+<tr>
+<td>火</td>
+<td>卷发、高马尾</td>
+<td>蓬松感、动感</td>
+<td>过于死板</td>
+</tr>
+<tr>
+<td>土</td>
+<td>短发、中分</td>
+<td>稳重感、质感</td>
+<td>过于凌乱</td>
+</tr>
+<tr>
+<td>金</td>
+<td>干练短发、盘发</td>
+<td>利落感、简洁</td>
+<td>过于复杂</td>
+</tr>
+<tr>
+<td>水</td>
+<td>波浪卷、长发</td>
+<td>柔和感、垂感</td>
+<td>过于刚硬</td>
+</tr>
+</tbody></table>
+<h3>C9 五行星座（简版）</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>星座类型</th>
+<th>特点</th>
+<th>代表星座</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>风象星座</td>
+<td>创新自由</td>
+<td>水瓶、双子、天秤</td>
+</tr>
+<tr>
+<td>火</td>
+<td>火象星座</td>
+<td>热情行动</td>
+<td>白羊、狮子、射手</td>
+</tr>
+<tr>
+<td>土</td>
+<td>土象星座</td>
+<td>务实稳定</td>
+<td>金牛、处女、摩羯</td>
+</tr>
+<tr>
+<td>金</td>
+<td>风象星座</td>
+<td>理性沟通</td>
+<td>双子、天秤、水瓶</td>
+</tr>
+<tr>
+<td>水</td>
+<td>水象星座</td>
+<td>感性直觉</td>
+<td>巨蟹、天蝎、双鱼</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>C10-C16 职业与社会</h2>
+<h3>C10 职业五行画像</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>适合职业</th>
+<th>不适合职业</th>
+<th>发展优势</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>策划、教育、研发</td>
+<td>重复性执行</td>
+<td>创新思维</td>
+</tr>
+<tr>
+<td>火</td>
+<td>销售、管理、演艺</td>
+<td>财务审计</td>
+<td>表达能力</td>
+</tr>
+<tr>
+<td>土</td>
+<td>财务、行政、服务</td>
+<td>快速变化行业</td>
+<td>稳定可靠</td>
+</tr>
+<tr>
+<td>金</td>
+<td>法律、质量、工程</td>
+<td>创意设计</td>
+<td>执行力</td>
+</tr>
+<tr>
+<td>水</td>
+<td>咨询、研发、HR</td>
+<td>销售前台</td>
+<td>学习能力</td>
+</tr>
+</tbody></table>
+<h3>C11 企业文化五行</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>文化特点</th>
+<th>核心价值</th>
+<th>团队氛围</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>理想主义</td>
+<td>创新、成长</td>
+<td>开放自由</td>
+</tr>
+<tr>
+<td>火</td>
+<td>愿景驱动</td>
+<td>激情、变革</td>
+<td>高效积极</td>
+</tr>
+<tr>
+<td>土</td>
+<td>稳健务实</td>
+<td>诚信、传承</td>
+<td>和谐稳定</td>
+</tr>
+<tr>
+<td>金</td>
+<td>制度规范</td>
+<td>质量、效率</td>
+<td>严谨专业</td>
+</tr>
+<tr>
+<td>水</td>
+<td>智慧灵活</td>
+<td>适应、洞察</td>
+<td>包容多元</td>
+</tr>
+</tbody></table>
+<h3>C12 五行画像·总论</h3>
+<blockquote><p><strong>五行画像定义</strong>：根据外貌、性格、行为模式判断五行属性</p></blockquote>
+<p><strong>木行人画像</strong>：</p>
+<ul>
+<li>外形：瘦长挺拔、动作敏捷</li>
+<li>性格：才华横溢但易怒，追求自由</li>
+<li>行为：善于规划，讨厌约束</li>
+</ul>
+<p><strong>火行人画像</strong>：</p>
+<ul>
+<li>外形：上尖下阔、面色红润</li>
+<li>性格：热情自信但易冲动，敢爱敢恨</li>
+<li>行为：善于社交，讨厌沉默</li>
+</ul>
+<p><strong>土行人画像</strong>：</p>
+<ul>
+<li>外形：矮胖圆润、动作稳重</li>
+<li>性格：诚信稳重但易固执，务实执着</li>
+<li>行为：善于协调，讨厌变化</li>
+</ul>
+<p><strong>金行人画像</strong>：</p>
+<ul>
+<li>外形：方正硬朗、面色白净</li>
+<li>性格：果敢仗义但易严苛，讲究原则</li>
+<li>行为：善于执行，讨厌拖沓</li>
+</ul>
+<p><strong>水行人画像</strong>：</p>
+<ul>
+<li>外形：圆润柔和、面色润泽</li>
+<li>性格：智慧灵活但易多虑，深谋远虑</li>
+<li>行为：善于观察，讨厌冲突</li>
+</ul>
+<h3>C13 人际关系五行</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>社交风格</th>
+<th>亲密关系</th>
+<th>冲突处理</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>好独处、重精神</td>
+<td>需要空间与自由</td>
+<td>直接沟通</td>
+</tr>
+<tr>
+<td>火</td>
+<td>善社交、爱热闹</td>
+<td>全情投入、敢爱恨</td>
+<td>情绪表达</td>
+</tr>
+<tr>
+<td>土</td>
+<td>重稳定、慢热型</td>
+<td>长期承诺</td>
+<td>沉默回避</td>
+</tr>
+<tr>
+<td>金</td>
+<td>重界限、社交广</td>
+<td>明确期望</td>
+<td>讲理争辩</td>
+</tr>
+<tr>
+<td>水</td>
+<td>善变通、重深度</td>
+<td>情感细腻</td>
+<td>迂回处理</td>
+</tr>
+</tbody></table>
+<h3>C14 兴趣爱好五行</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>偏好活动</th>
+<th>运动类型</th>
+<th>艺术倾向</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>阅读、写作、户外</td>
+<td>瑜伽、登山、太极</td>
+<td>文学、书法</td>
+</tr>
+<tr>
+<td>火</td>
+<td>社交、舞蹈、唱歌</td>
+<td>跑步、球类、游泳</td>
+<td>表演、声乐</td>
+</tr>
+<tr>
+<td>土</td>
+<td>烹饪、园艺、手工</td>
+<td>力量训练、散步</td>
+<td>烹饪、陶艺</td>
+</tr>
+<tr>
+<td>金</td>
+<td>收藏、整理、理财</td>
+<td>健身、拳击、器械</td>
+<td>雕塑、建筑</td>
+</tr>
+<tr>
+<td>水</td>
+<td>游泳、冥想、旅行</td>
+<td>游泳、潜水、太极</td>
+<td>音乐、绘画</td>
+</tr>
+</tbody></table>
+<h3>C15 压力应对五行</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>压力来源</th>
+<th>应对方式</th>
+<th>释放渠道</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>被控制、无自由</td>
+<td>独处思考</td>
+<td>运动出汗</td>
+</tr>
+<tr>
+<td>火</td>
+<td>被忽视、失败</td>
+<td>社交倾诉</td>
+<td>高强度运动</td>
+</tr>
+<tr>
+<td>土</td>
+<td>变化、不确定</td>
+<td>整理归类</td>
+<td>家务整理</td>
+</tr>
+<tr>
+<td>金</td>
+<td>拖延、无序</td>
+<td>制定计划</td>
+<td>健身出汗</td>
+</tr>
+<tr>
+<td>水</td>
+<td>冲突、被误解</td>
+<td>独处反思</td>
+<td>旅行散心</td>
+</tr>
+</tbody></table>
+<h3>C16 特长天赋五行</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>核心天赋</th>
+<th>学习优势</th>
+<th>成长路径</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>战略眼光、创新思维</td>
+<td>理论学习</td>
+<td>商业策划</td>
+</tr>
+<tr>
+<td>火</td>
+<td>表达能力、感染力</td>
+<td>公众演讲</td>
+<td>销售管理</td>
+</tr>
+<tr>
+<td>土</td>
+<td>细致耐心、执行力</td>
+<td>实务操作</td>
+<td>财务行政</td>
+</tr>
+<tr>
+<td>金</td>
+<td>分析力、执行力</td>
+<td>逻辑推理</td>
+<td>法律质量</td>
+</tr>
+<tr>
+<td>水</td>
+<td>洞察力、变通力</td>
+<td>直觉领悟</td>
+<td>咨询研发</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>C17-C25 中医养生核心体系</h2>
+<blockquote><p><strong>核心来源</strong>：《黄帝内经》</p>
+<p><strong>中医五行体系</strong>：五行学说应用最系统、最成熟的领域</p></blockquote>
+<h3>C17 五脏·核心生理</h3>
+<table>
+<thead><tr>
+<th>五脏</th>
+<th>五行</th>
+<th>生理功能</th>
+<th>病理特点</th>
+<th>养护要点</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>肝</strong></td>
+<td>木</td>
+<td>疏泄、藏血</td>
+<td>肝气郁结、肝阳上亢</td>
+<td>疏肝理气、忌怒</td>
+</tr>
+<tr>
+<td><strong>心</strong></td>
+<td>火</td>
+<td>主血脉、藏神</td>
+<td>心火亢盛、心阴不足</td>
+<td>清心泻火、忌过喜</td>
+</tr>
+<tr>
+<td><strong>脾</strong></td>
+<td>土</td>
+<td>运化、统血</td>
+<td>脾虚失运、湿困脾胃</td>
+<td>健脾祛湿、忌思虑</td>
+</tr>
+<tr>
+<td><strong>肺</strong></td>
+<td>金</td>
+<td>主气、司呼吸</td>
+<td>肺气虚损、燥邪犯肺</td>
+<td>润肺益气、忌悲伤</td>
+</tr>
+<tr>
+<td><strong>肾</strong></td>
+<td>藏精、主水</td>
+<td>纳气、封藏</td>
+<td>肾精亏虚、肾气不固</td>
+<td>补肾固精、忌惊恐</td>
+</tr>
+</tbody></table>
+<h3>C18 六腑配合</h3>
+<table>
+<thead><tr>
+<th>五脏</th>
+<th>六腑</th>
+<th>脏腑关系</th>
+<th>常见症状</th>
+</tr></thead><tbody>
+<tr>
+<td>肝</td>
+<td>胆</td>
+<td>肝胆相表里</td>
+<td>口苦、胁痛</td>
+</tr>
+<tr>
+<td>心</td>
+<td>小肠</td>
+<td>心与小肠相表里</td>
+<td>心烦、尿赤</td>
+</tr>
+<tr>
+<td>脾</td>
+<td>胃</td>
+<td>脾胃相表里</td>
+<td>腹胀、食欲不振</td>
+</tr>
+<tr>
+<td>肺</td>
+<td>大肠</td>
+<td>肺与大肠相表里</td>
+<td>咳嗽、便秘</td>
+</tr>
+<tr>
+<td>肾</td>
+<td>膀胱</td>
+<td>肾与膀胱相表里</td>
+<td>尿频、水肿</td>
+</tr>
+</tbody></table>
+<h3>C19 五官·开窍</h3>
+<table>
+<thead><tr>
+<th>五官</th>
+<th>五行</th>
+<th>开窍部位</th>
+<th>功能表现</th>
+<th>养护要点</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>目</strong></td>
+<td>木</td>
+<td>肝开窍于目</td>
+<td>视物清晰</td>
+<td>养肝明目</td>
+</tr>
+<tr>
+<td><strong>舌</strong></td>
+<td>火</td>
+<td>心开窍于舌</td>
+<td>言语表达</td>
+<td>清心泻火</td>
+</tr>
+<tr>
+<td><strong>口</strong></td>
+<td>土</td>
+<td>脾开窍于口</td>
+<td>食欲口味</td>
+<td>健脾和胃</td>
+</tr>
+<tr>
+<td><strong>鼻</strong></td>
+<td>金</td>
+<td>肺开窍于鼻</td>
+<td>嗅觉呼吸</td>
+<td>润肺通窍</td>
+</tr>
+<tr>
+<td><strong>耳</strong></td>
+<td>水</td>
+<td>肾开窍于耳</td>
+<td>听觉平衡</td>
+<td>补肾益精</td>
+</tr>
+</tbody></table>
+<h3>C20 五液·分泌</h3>
+<table>
+<thead><tr>
+<th>五液</th>
+<th>五行</th>
+<th>分泌来源</th>
+<th>功能作用</th>
+<th>失衡表现</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>泪</strong></td>
+<td>木</td>
+<td>肝之液</td>
+<td>润目保护</td>
+<td>迎风流泪/眼干</td>
+</tr>
+<tr>
+<td><strong>汗</strong></td>
+<td>火</td>
+<td>心之液</td>
+<td>散热调节</td>
+<td>自汗/盗汗</td>
+</tr>
+<tr>
+<td><strong>涎</strong></td>
+<td>土</td>
+<td>脾之液</td>
+<td>湿润口腔</td>
+<td>流涎/口干</td>
+</tr>
+<tr>
+<td><strong>涕</strong></td>
+<td>金</td>
+<td>肺之液</td>
+<td>湿润鼻腔</td>
+<td>鼻涕/鼻干</td>
+</tr>
+<tr>
+<td><strong>唾</strong></td>
+<td>水</td>
+<td>肾之液</td>
+<td>润喉消食</td>
+<td>口干/唾多</td>
+</tr>
+</tbody></table>
+<h3>C21 五体·结构</h3>
+<table>
+<thead><tr>
+<th>五体</th>
+<th>五行</th>
+<th>对应组织</th>
+<th>功能特点</th>
+<th>养护要点</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>筋</strong></td>
+<td>木</td>
+<td>筋脉筋膜</td>
+<td>收缩舒张</td>
+<td>养肝柔筋</td>
+</tr>
+<tr>
+<td><strong>脉</strong></td>
+<td>火</td>
+<td>血脉血管</td>
+<td>气血运行</td>
+<td>清心通脉</td>
+</tr>
+<tr>
+<td><strong>肉</strong></td>
+<td>土</td>
+<td>肌肉组织</td>
+<td>支撑运动</td>
+<td>健脾养肌</td>
+</tr>
+<tr>
+<td><strong>皮</strong></td>
+<td>金</td>
+<td>皮肤毛发</td>
+<td>防御调节</td>
+<td>养肺润肤</td>
+</tr>
+<tr>
+<td><strong>骨</strong></td>
+<td>水</td>
+<td>骨骼骨髓</td>
+<td>支撑保护</td>
+<td>补肾壮骨</td>
+</tr>
+</tbody></table>
+<h3>C22 五邪·外感</h3>
+<table>
+<thead><tr>
+<th>五邪</th>
+<th>五行</th>
+<th>外感病因</th>
+<th>侵犯脏腑</th>
+<th>典型症状</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>风</strong></td>
+<td>木</td>
+<td>风邪</td>
+<td>肝</td>
+<td>眩晕、抽搐、震颤</td>
+</tr>
+<tr>
+<td><strong>暑</strong></td>
+<td>火</td>
+<td>暑邪</td>
+<td>心</td>
+<td>高热、心烦、汗出</td>
+</tr>
+<tr>
+<td><strong>湿</strong></td>
+<td>土</td>
+<td>湿邪</td>
+<td>脾</td>
+<td>困倦、腹胀、便溏</td>
+</tr>
+<tr>
+<td><strong>燥</strong></td>
+<td>金</td>
+<td>燥邪</td>
+<td>肺</td>
+<td>干咳、咽干、便秘</td>
+</tr>
+<tr>
+<td><strong>寒</strong></td>
+<td>水</td>
+<td>寒邪</td>
+<td>肾</td>
+<td>畏寒、肢冷、尿清</td>
+</tr>
+</tbody></table>
+<h3>C23 五毒·内伤</h3>
+<table>
+<thead><tr>
+<th>五毒</th>
+<th>五行</th>
+<th>内伤情志</th>
+<th>损伤脏腑</th>
+<th>心理表现</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>怒</strong></td>
+<td>木</td>
+<td>怒气</td>
+<td>肝</td>
+<td>易怒、急躁、顶撞</td>
+</tr>
+<tr>
+<td><strong>恨</strong></td>
+<td>火</td>
+<td>恨意</td>
+<td>心</td>
+<td>记仇、嫉妒、失眠</td>
+</tr>
+<tr>
+<td><strong>怨</strong></td>
+<td>土</td>
+<td>怨言</td>
+<td>脾</td>
+<td>抱怨、委屈、消化差</td>
+</tr>
+<tr>
+<td><strong>恼</strong></td>
+<td>金</td>
+<td>烦恼</td>
+<td>肺</td>
+<td>焦虑、悲伤、咳嗽</td>
+</tr>
+<tr>
+<td><strong>烦</strong></td>
+<td>水</td>
+<td>烦躁</td>
+<td>肾</td>
+<td>恐惧、不耐烦、腰酸</td>
+</tr>
+</tbody></table>
+<h3>C24 经络·穴位</h3>
+<table>
+<thead><tr>
+<th>经络</th>
+<th>五行</th>
+<th>循行时间</th>
+<th>主要穴位</th>
+<th>主治要点</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>肝经</strong></td>
+<td>木</td>
+<td>丑时(1-3点)</td>
+<td>太冲、期门</td>
+<td>疏肝理气</td>
+</tr>
+<tr>
+<td><strong>心经</strong></td>
+<td>火</td>
+<td>午时(11-13点)</td>
+<td>神门、极泉</td>
+<td>清心泻火</td>
+</tr>
+<tr>
+<td><strong>脾经</strong></td>
+<td>土</td>
+<td>巳时(9-11点)</td>
+<td>三阴交、足三里</td>
+<td>健脾祛湿</td>
+</tr>
+<tr>
+<td><strong>肺经</strong></td>
+<td>金</td>
+<td>寅时(3-5点)</td>
+<td>尺泽、列缺</td>
+<td>润肺止咳</td>
+</tr>
+<tr>
+<td><strong>肾经</strong></td>
+<td>水</td>
+<td>酉时(17-19点)</td>
+<td>涌泉、太溪</td>
+<td>补肾固精</td>
+</tr>
+</tbody></table>
+<h3>C25 传统功法</h3>
+<table>
+<thead><tr>
+<th>功法</th>
+<th>五行</th>
+<th>动作特点</th>
+<th>核心功效</th>
+<th>适应人群</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>舒肝功</strong></td>
+<td>木</td>
+<td>伸展侧弯</td>
+<td>疏肝理气</td>
+<td>肝郁者</td>
+</tr>
+<tr>
+<td><strong>养心功</strong></td>
+<td>火</td>
+<td>拍打按揉</td>
+<td>清心泻火</td>
+<td>心火旺者</td>
+</tr>
+<tr>
+<td><strong>健脾功</strong></td>
+<td>土</td>
+<td>摩腹揉按</td>
+<td>健脾和胃</td>
+<td>脾虚者</td>
+</tr>
+<tr>
+<td><strong>润肺功</strong></td>
+<td>金</td>
+<td>拍胸吐纳</td>
+<td>润肺益气</td>
+<td>肺虚者</td>
+</tr>
+<tr>
+<td><strong>补肾功</strong></td>
+<td>水</td>
+<td>踮脚提肛</td>
+<td>补肾固精</td>
+<td>肾虚者</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>C26-C32 生活实践指南</h2>
+<h3>C26 五行动功</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>功法名称</th>
+<th>动作要领</th>
+<th>练习时间</th>
+<th>功效</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>疏肝导引</td>
+<td>左右伸展、扭转侧腰</td>
+<td>晨起7-9点</td>
+<td>疏肝解郁</td>
+</tr>
+<tr>
+<td>火</td>
+<td>清心拍打</td>
+<td>拍打心经、膻中穴</td>
+<td>午时11-13点</td>
+<td>清心泻火</td>
+</tr>
+<tr>
+<td>土</td>
+<td>健脾摩腹</td>
+<td>顺时针摩腹、按揉中脘</td>
+<td>饭后半小时</td>
+<td>健脾和胃</td>
+</tr>
+<tr>
+<td>金</td>
+<td>润肺吐纳</td>
+<td>深呼吸、拍打云门中府</td>
+<td>晨起5-7点</td>
+<td>润肺益气</td>
+</tr>
+<tr>
+<td>水</td>
+<td>补肾踮脚</td>
+<td>踮脚行走、提肛固肾</td>
+<td>酉时17-19点</td>
+<td>补肾固精</td>
+</tr>
+</tbody></table>
+<h3>C27 五行饮食</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>推荐食物</th>
+<th>饮食原则</th>
+<th>禁忌食物</th>
+<th>养生粥方</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>绿叶菜、酸果</td>
+<td>疏肝解郁</td>
+<td>辛辣油腻</td>
+<td>菠菜猪肝粥</td>
+</tr>
+<tr>
+<td>火</td>
+<td>红豆、红枣</td>
+<td>清心泻火</td>
+<td>咖啡浓茶</td>
+<td>莲子百合粥</td>
+</tr>
+<tr>
+<td>土</td>
+<td>山药、薏米</td>
+<td>健脾祛湿</td>
+<td>生冷甜腻</td>
+<td>山药红枣粥</td>
+</tr>
+<tr>
+<td>金</td>
+<td>百合、银耳</td>
+<td>润肺止咳</td>
+<td>辛辣燥热</td>
+<td>百合银耳羹</td>
+</tr>
+<tr>
+<td>水</td>
+<td>黑豆、黑芝麻</td>
+<td>补肾填精</td>
+<td>过咸过甜</td>
+<td>黑豆核桃粥</td>
+</tr>
+</tbody></table>
+<h3>C28 运动健身五行</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>推荐运动</th>
+<th>运动强度</th>
+<th>最佳时段</th>
+<th>注意事项</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>瑜伽、太极、登山</td>
+<td>中等</td>
+<td>晨起</td>
+<td>舒展为主</td>
+</tr>
+<tr>
+<td>火</td>
+<td>跑步、游泳、球类</td>
+<td>中高</td>
+<td>上午</td>
+<td>避免过度</td>
+</tr>
+<tr>
+<td>土</td>
+<td>力量训练、散步</td>
+<td>中等</td>
+<td>午后</td>
+<td>坚持规律</td>
+</tr>
+<tr>
+<td>金</td>
+<td>健身、器械、拳击</td>
+<td>中高</td>
+<td>傍晚</td>
+<td>注意热身</td>
+</tr>
+<tr>
+<td>水</td>
+<td>游泳、太极、站桩</td>
+<td>轻柔</td>
+<td>夜间</td>
+<td>避免大汗</td>
+</tr>
+</tbody></table>
+<h3>C29 五行美容</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>肤质特点</th>
+<th>问题表现</th>
+<th>护理重点</th>
+<th>推荐成分</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>油性/混合</td>
+<td>痘痘、粉刺</td>
+<td>控油清热</td>
+<td>茶树、绿茶</td>
+</tr>
+<tr>
+<td>火</td>
+<td>敏感性</td>
+<td>红血丝、发热</td>
+<td>舒缓降温</td>
+<td>芦荟、洋甘菊</td>
+</tr>
+<tr>
+<td>土</td>
+<td>干性/混合</td>
+<td>暗黄、干燥</td>
+<td>保湿滋润</td>
+<td>蜂蜜、杏仁</td>
+</tr>
+<tr>
+<td>金</td>
+<td>油性/干性</td>
+<td>粗糙、老化</td>
+<td>清洁紧致</td>
+<td>珍珠、玫瑰</td>
+</tr>
+<tr>
+<td>水</td>
+<td>中性/油性</td>
+<td>暗沉、色斑</td>
+<td>美白提亮</td>
+<td>珍珠、薏仁</td>
+</tr>
+</tbody></table>
+<h3>C30 五行星座（扩展版）</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>星座</th>
+<th>性格关键词</th>
+<th>幸运物</th>
+<th>适合颜色</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>白羊、天秤、水瓶</td>
+<td>创新、自由</td>
+<td>绿色植物</td>
+<td>青绿</td>
+</tr>
+<tr>
+<td>木</td>
+<td>双子、天秤</td>
+<td>沟通、适应</td>
+<td>书本</td>
+<td>青绿</td>
+</tr>
+<tr>
+<td>火</td>
+<td>白羊、狮子、射手</td>
+<td>热情、行动</td>
+<td>红色宝石</td>
+<td>赤红</td>
+</tr>
+<tr>
+<td>土</td>
+<td>金牛、处女、摩羯</td>
+<td>务实、稳定</td>
+<td>黄色水晶</td>
+<td>黄棕</td>
+</tr>
+<tr>
+<td>金</td>
+<td>双子、天秤、水瓶</td>
+<td>理性、公正</td>
+<td>白色金属</td>
+<td>白银</td>
+</tr>
+<tr>
+<td>水</td>
+<td>巨蟹、天蝎、双鱼</td>
+<td>感性、直觉</td>
+<td>蓝色宝石</td>
+<td>蓝黑</td>
+</tr>
+</tbody></table>
+<h3>C31 五行财富</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>财富特质</th>
+<th>理财特点</th>
+<th>聚财方位</th>
+<th>开运颜色</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>财从创意来</td>
+<td>投资新兴行业</td>
+<td>东方</td>
+<td>青绿</td>
+</tr>
+<tr>
+<td>火</td>
+<td>财从名望来</td>
+<td>品牌溢价</td>
+<td>南方</td>
+<td>赤红</td>
+</tr>
+<tr>
+<td>土</td>
+<td>财从积累来</td>
+<td>稳健投资</td>
+<td>中央</td>
+<td>黄棕</td>
+</tr>
+<tr>
+<td>金</td>
+<td>财从专业来</td>
+<td>技术变现</td>
+<td>西方</td>
+<td>白银</td>
+</tr>
+<tr>
+<td>水</td>
+<td>财从智慧来</td>
+<td>知识付费</td>
+<td>北方</td>
+<td>蓝黑</td>
+</tr>
+</tbody></table>
+<h3>C32 五行转运</h3>
+<table>
+<thead><tr>
+<th>五行</th>
+<th>运势特点</th>
+<th>转运方法</th>
+<th>心性修养</th>
+<th>具体行动</th>
+</tr></thead><tbody>
+<tr>
+<td>木</td>
+<td>遇阻不前</td>
+<td>贵人相助</td>
+<td>忍辱不怒</td>
+<td>广结善缘</td>
+</tr>
+<tr>
+<td>火</td>
+<td>过于激进</td>
+<td>贵人提醒</td>
+<td>谦和不争</td>
+<td>低调行事</td>
+</tr>
+<tr>
+<td>土</td>
+<td>保守固执</td>
+<td>变动机会</td>
+<td>接纳变化</td>
+<td>走出舒适</td>
+</tr>
+<tr>
+<td>金</td>
+<td>压力过大</td>
+<td>放松解压</td>
+<td>放下完美</td>
+<td>知足常乐</td>
+</tr>
+<tr>
+<td>水</td>
+<td>方向迷茫</td>
+<td>智者指引</td>
+<td>沉静内观</td>
+<td>读书学习</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>C层核心金句</h2>
+<h3>C1-C9 物质世界金句</h3>
+<ol>
+<li><strong>"木长、火热、土化、金敛、水润——五材是宇宙的基本物质形态。"</strong></li>
+<li><strong>"十二属相的五行归属，决定了生肖间的生克关系与命运互动。"</strong></li>
+<li><strong>"木主文教创意，火主传媒餐饮，土主农业建筑，金主金融法律，水主贸易物流。"</strong></li>
+<li><strong>"五行形煞的化解之道：木煞用金、金煞用火、火煞用水、水煞用土、土煞用木。"</strong></li>
+<li><strong>"木宜青绿、火宜赤红、土宜黄棕、金宜白银、水宜蓝黑——服饰颜色的五行智慧。"</strong></li>
+</ol>
+<h3>C10-C16 职业社会金句</h3>
+<ol>
+<li><strong>"木行人创新引领，火行人愿景激励，土行人稳定执行，金行人制度保障，水行人智慧决策。"</strong></li>
+<li><strong>"理想主义（木）、愿景驱动（火）、稳健务实（土）、制度规范（金）、智慧灵活（水）——五行企业文化。"</strong></li>
+<li><strong>"木好独处重精神，火善社交爱热闹，土重稳定慢热型，金重界限社交广，水善变通重深度。"</strong></li>
+<li><strong>"木需空间自由，火需关注认可，土需稳定承诺，金需界限清晰，水需深度连接。"</strong></li>
+<li><strong>"木天赋战略眼光，火天赋表达能力，土天赋细致耐心，金天赋分析执行，水天赋洞察变通。"</strong></li>
+</ol>
+<h3>C17-C25 中医养生金句</h3>
+<ol>
+<li><strong>"肝木疏泄、心火温煦、脾土运化、肺金肃降、肾水封藏——五脏是生命的五大核心。"</strong></li>
+<li><strong>"肝开窍于目、心开窍于舌、脾开窍于口、肺开窍于鼻、肾开窍于耳——五脏的体外窗口。"</strong></li>
+<li><strong>"泪为肝液、汗为心液、涎为脾液、涕为肺液、唾为肾液——五液的健康信号。"</strong></li>
+<li><strong>"筋属木、脉属火、肉属土、皮属金、骨属水——五体支撑生命结构。"</strong></li>
+<li><strong>"风伤肝、暑伤心、湿伤脾、燥伤肺、寒伤肾——五邪侵袭的路径。"</strong></li>
+<li><strong>"怒伤肝、恨伤心、怨伤脾、恼伤肺、烦伤肾——五毒内伤的根源。"</strong></li>
+<li><strong>"肝经疏泄心经明，脾经运化肺经清，肾经封藏五脏安——经络是生命的河流。"</strong></li>
+<li><strong>"舒肝功疏肝、养心功清心、健脾功和胃、润肺功润燥、补肾功固精——传统功法的五行智慧。"</strong></li>
+</ol>
+<h3>C26-C32 生活实践金句</h3>
+<ol>
+<li><strong>"木行舒肝导引、火行清心拍打、土行健脾摩腹、金行润肺吐纳、水行补肾踮脚——五行动功。"</strong></li>
+<li><strong>"绿养肝、红养心、黄健脾、白润肺、黑补肾——五色饮食是五行的直接应用。"</strong></li>
+<li><strong>"木宜瑜伽太极、火宜跑步游泳、土宜力量散步、金宜健身拳击、水宜游泳站桩——五行运动处方。"</strong></li>
+<li><strong>"油属木（木行人易长痘）、红属火（火行人易敏感）、黄属土（土行人易暗黄）、干属金（金行人易粗糙）、暗属水（水行人易长斑）——五行美容诊断。"</strong></li>
+<li><strong>"木从创意来、火从名望来、土从积累来、金从专业来、水从智慧来——五行财富密码。"</strong></li>
+<li><strong>"木需忍辱转运、火需谦和转运、土需接纳转运、金需放下转运、水需沉静转运——五行心性修养。"</strong></li>
+</ol>
+<hr>
+<h2>C层知识图谱节点</h2>
+<pre><code>【C层实践落地·五行分类图谱】
+
+                    ┌─────────────────────────────┐
+                    │      C1-C9 物质世界         │
+                    │  五材│属相│事业│风水│服饰│外观│面部│发型│星座  │
+                    └──────────────┬──────────────┘
+                                   │
+           ┌───────────────────────┼───────────────────────┐
+           ↓                       ↓                       ↓
+    ┌──────────────┐    ┌──────────────┐    ┌──────────────┐
+    │C10-C16 职业社会│    │C17-C25 中医养生│    │C26-C32 生活实践│
+    │事业│文化│人际│爱好│特长│压力│  │五脏│六腑│五官│五液│五体│五邪│五毒│经络│功法│  │动功│饮食│运动│美容│星座│财富│转运│
+    └──────────────┘    └──────────────┘    └──────────────┘</code></pre>
+<hr>
+<h2>C层·双向链接索引</h2>
+<h3>中医养生链接</h3>
+<ul>
+<li>→ <a href="五行分类图谱-C层深度#C17_五脏.html">五行分类图谱-C层深度</a></li>
+<li>→ <a href="五行分类图谱-C层深度#C19_五官.html">五行分类图谱-C层深度</a></li>
+<li>→ <a href="五行分类图谱-C层深度#C22_五邪.html">五行分类图谱-C层深度</a></li>
+<li>→ <a href="五行分类图谱-C层深度#C23_五毒.html">五行分类图谱-C层深度</a></li>
+<li>→ <a href="五行分类图谱-C层深度#C24_经络.html">五行分类图谱-C层深度</a></li>
+<li>→ <a href="五行分类图谱-C层深度#C25_传统功法.html">五行分类图谱-C层深度</a></li>
+</ul>
+<h3>生活实践链接</h3>
+<ul>
+<li>→ <a href="五行分类图谱-C层深度#C27_五行饮食.html">五行分类图谱-C层深度</a></li>
+<li>→ <a href="五行分类图谱-C层深度#C28_运动健身.html">五行分类图谱-C层深度</a></li>
+<li>→ <a href="五行分类图谱-C层深度#C29_五行美容.html">五行分类图谱-C层深度</a></li>
+<li>→ <a href="五行分类图谱-C层深度#C31_五行财富.html">五行分类图谱-C层深度</a></li>
+<li>→ <a href="五行分类图谱-C层深度#C32_五行转运.html">五行分类图谱-C层深度</a></li>
+</ul>
+<h3>跨层链接</h3>
+<ul>
+<li>→ <a href="五行分类图谱-A层深度#A2_五脏神.html">五行分类图谱-A层深度</a></li>
+<li>→ <a href="五行分类图谱-A层深度#A5_五心.html">五行分类图谱-A层深度</a></li>
+<li>→ <a href="五行分类图谱-B层深度#B4_五季五化.html">五行分类图谱-B层深度</a></li>
+<li>→ <a href="五行分类图谱-B层深度#B8_五味.html">五行分类图谱-B层深度</a></li>
+<li>→ <a href="五行分类图谱-B层深度#B9_五志.html">五行分类图谱-B层深度</a></li>
+<li>→ <a href="五行分类图谱生克关系.html">五行分类图谱生克关系</a></li>
+</ul>
+<hr>
+<h2>C层·标签体系</h2>
+<pre><code># 五行分类图谱标签体系·C层
+
+# 主标签
+- 五行
+- 五行分类图谱
+- C层
+- 生活实践
+
+# C1-C9 物质世界标签
+- 五材
+- 十二属相
+- 五行事业
+- 五行风水
+- 审美服饰
+- 外观取象
+- 五行星座
+
+# C10-C16 职业社会标签
+- 职业五行
+- 企业文化
+- 人际关系
+- 兴趣爱好
+- 压力应对
+- 特长天赋
+
+# C17-C25 中医养生标签
+- 五脏
+- 六腑
+- 五官
+- 五液
+- 五体
+- 五邪
+- 五毒
+- 经络
+- 传统功法
+- 中医五行
+
+# C26-C32 生活实践标签
+- 五行动功
+- 五行饮食
+- 运动健身
+- 五行美容
+- 五行财富
+- 五行转运</code></pre>
+<hr>
+<p><strong>文档版本</strong>: v2.0
+<strong>创建日期</strong>: 2026-03-26
+<strong>最后更新</strong>: 2026-03-26
+<strong>维护者</strong>: 龙龟神将
+<strong>同步状态</strong>: Obsidian ✓ | WorkBuddy ✓ | IMA待同步</p>
+<hr>
+<blockquote><p><strong>C层核心要义</strong>：C层是五行智慧的落地之处——从物质世界到职业发展，从中医养生到日常生活，每一项内容都可以用五行来归类、理解、实践。C层让五行从理论走向生活，从哲学变成可操作的生命艺术。</p></blockquote>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

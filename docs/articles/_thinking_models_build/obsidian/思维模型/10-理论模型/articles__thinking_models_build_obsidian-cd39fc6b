@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恐惧管理理论 - 以观其妙书院</title>
+    <meta name="description" content="恐惧管理理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\恐惧管理理论.txt ｜ 字数：9326 ｜ 行数：114五色光分布（启发式）：黄光47% 白光32% 蓝光9% 红光7% 绿光3%象思维相关度：低（命中 8 次）一、核心定义核心定义（龙心OS精修）：死亡不是生命的终点，遗忘才是。二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│">
+    <meta name="keywords" content="[思维模型, 理论模型, 结构化学习]">
+    <meta name="author" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta property="og:title" content="恐惧管理理论">
+    <meta property="og:description" content="恐惧管理理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\恐惧管理理论.txt ｜ 字数：9326 ｜ 行数：114五色光分布（启发式）：黄光47% 白光32% 蓝光9% 红光7% 绿光3%象思维相关度：低（命中 8 次）一、核心定义核心定义（龙心OS精修）：死亡不是生命的终点，遗忘才是。二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/恐惧管理理论.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/恐惧管理理论.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "恐惧管理理论",
+      "description": "恐惧管理理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\恐惧管理理论.txt ｜ 字数：9326 ｜ 行数：114五色光分布（启发式）：黄光47% 白光32% 蓝光9% 红光7% 绿光3%象思维相关度：低（命中 8 次）一、核心定义核心定义（龙心OS精修）：死亡不是生命的终点，遗忘才是。二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-30",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>恐惧管理理论</h1>
+            <div class="meta">
+                <span>📅 2026-07-30</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            恐惧管理理论...
+        </div>
+        
+        <article>
+<h1>恐惧管理理论</h1>
+
+<blockquote><strong>龙心OS结构化编译</strong> | 分类：理论模型 | 五行属性：金 | 层级：C层</blockquote>
+<blockquote>源文件：<code>思维模型/理论模型\恐惧管理理论.txt</code> ｜ 字数：9326 ｜ 行数：114</blockquote>
+<blockquote>五色光分布（启发式）：黄光47% 白光32% 蓝光9% 红光7% 绿光3%</blockquote>
+<blockquote>象思维相关度：低（命中 8 次）</blockquote>
+
+<h2>一、核心定义</h2>
+
+<strong>核心定义（龙心OS精修）</strong>：死亡不是生命的终点，遗忘才是。
+
+<h2>二、详细内容</h2>
+<blockquote>逐行挖掘原则：下文为原文<strong>全文逐行保留</strong>（编号 <code>行号│内容</code>），未删改、未遗漏，供龙心OS五引擎（知识学习/象思维/五色光/知行合一/五象限）随时调取精读。</blockquote>
+
+<h3>2.1 逐行精读（全文保留·114 行）</h3>
+<pre><code>0001│理论介绍 | 恐惧管理理论 (Terror Management Theory, TMT)
+0002│图片
+0003│死亡不是生命的终点，遗忘才是。
+0004│
+0005│——《寻梦环游记》
+0006│
+0007│怕死是所有生灵的本能，唯有人类意识到死亡这一宿命的不可避性。因为怖畏这把高悬于人类头顶上的达利克摩斯之剑，十五位中国皇帝溺信延年益寿的丹药而中毒毙命，古埃及人将逝者制成木乃伊，等待灵魂重回肉身的那一天，就像如今有人选择人体冷冻技术保存遗体，寄希望于未来技术之昌明能够复活自己。但截至今日，在生命的终点面前，人类做出的所有拒绝死亡的努力都无力回天。
+0008│
+0009│在这条必定通往死亡的道路上，人们为了抵抗注定结局背后的虚无感，寻找繁衍生息的意义，发展出了管理死亡恐惧、缓解死亡焦虑的机制，这就是恐惧管理理论 (Terror Management Theory, TMT)。
+0010│
+0011│图片
+0012│
+0013│
+0014│
+0015│
+0016│溯源
+0017│
+0018│“死亡是人寻求幸福这一核心要求中深藏的蛀虫。”
+0019│
+0020│
+0021│
+0022│自20世纪40年代以来，芝加哥学派学者从人本主义、行为主义等视角出发提出对自尊（Self-esteem, SE）的看法[1]。70年代起，北美社会普遍认为高自尊是生活幸福和取得成功的核心心理源泉，美国心理学界对自尊的研究进入了鼎盛期[2]。70年代晚期，Jeff Greenberg，Sheldon Solomon和Tom Pyszczynski三位社会心理学博士生决定，将他们的注意力放在两种基本人类行为取向的动机上——“其一，我们会被迫保护自尊；其二，我们强烈需要维护相对于其他群体的优越性[3]。”数年来他们潜心研究，但一直没有重要进展，直到了解到了Ernest Becker的思想。
+0023│
+0024│图片
+0025│Sheldon Solomon，Jeff Greenberg和Tom Pyszczynski
+0026│
+0027│
+0028│
+0029│美国文化人类学家Ernest Becker过着游牧般的学者生活，从多门学科甚至流行文化的角度入手探讨人类的行为动机，著有《意义的诞生与死亡》（The Birth and Death of Meaning, 1962）、《拒斥死亡》（The Denial of Death, 1973）等。Becker基于自己的精神医学知识，使用存在主义精神分析的方法，指出人类天然面临着求生的欲望和死亡的必然性之间的矛盾，因此遭受着一种原始的死亡焦虑（Anxiety of Death），这种焦虑驱使我们走向精神恍惚（Becker认为抑郁症等精神障碍也是病人的潜在死亡焦虑导致的），为了不在恍惚中发疯，人类创造了文化世界观（Cultural Worldviews） ，比如宗教、意识形态、英雄主义和民族神话等[4, 5]。
+0030│
+0031│图片
+0032│Ernest Becker
+0033│
+0034│
+0035│
+0036│文化世界观从以下角度帮助人类拒斥死亡：
+0037│
+0038│其一，文化世界观构建了第二现实，让人通过取得象征性成就感到不朽，比如宗教向信徒承诺的天堂、轮回以及来生。
+0039│
+0040│其二，个体通过认同文化定义的英雄等标准，将自身融入家族、国家乃至文明等更大的集体不分，从而获得意义感[5]。
+0041│
+0042│Greenberg等将文化世界观概括为“人类构建的共享的象征性现实概念，赋予存在以意义、秩序和永恒；提供了一套衡量价值的标准；并承诺给那些信仰这种文化世界观并践行其价值标准的人某种形式的字面或象征性永生[6]”。
+0043│
+0044│在1984年美国实验社会心理学协会会议上，他们激动地分享了以Becker思想为基础的恐惧管理理论。
+0045│
+0046│图片
+0047│Greenberg等为宣传TMT写作的通俗读物The Worm at the Core: On the Role of Death in Life书名，化用了William James的比喻。
+0048│
+0049│
+0050│
+0051│
+0052│
+0053│观点
+0054│
+0055│“我们构建性格和文化，
+0056│
+0057│只是为了遮掩我们意识到内心无助时的崩溃。”
+0058│
+0059│
+0060│
+0061│TMT的基本观点有：
+0062│
+0063│1）自尊是一种文化建构。
+0064│
+0065│自尊在心理学中最早被美国哲学家William James描述为“我们每个人都拥有的自我情感的主基调，这种基调独立于我们对自己是否满意的客观理由[7]”。TMT解释得更通俗：自尊是“相信自己是对这个有意义世界里的有价值贡献者，或者说，相信自己的生活是既有意义也有价值的[8]”。TMT指出，获取自尊需要同时相信[8, 9]：
+0066│
+0067│a）自己所处的文化世界观的正确性（从中获得意义感）；
+0068│
+0069│b）自己达到了文化世界观的价值标准（个体对自己符合已内化价值标准的程度评价越高，其获得的价值感越强）。
+0070│
+0071│自尊具有文化差异性。人们认为只有自己满足了价值条件（Contingencies of Value）才能拥有自尊，价值条件源自特定文化，不同文化之间对价值的定义又存在差异。
+0072│
+0073│图片
+0074│自尊是个体社会化的结果。个体社会化的过程中，除了环境塑造个体，也有个体建构自尊：就算处在同一个文化中的不同个体，也会内化出不同的价值条件。虽然有国内学者批评TMT“把自尊作为一种文化现象、一种文化产物，忽视了个体的独特性和多样性[10]”，但其实理论提出者在中期补充强调了个体在维持自尊中发挥的能动性。
+0075│
+0076│他人在维持自尊中发挥着作用。当他人认同个体的价值标准和自我评价时，个体的内化文化世界观和自尊得到了支持，这一过程被称作共时验证（Process of Consensual Validation）；当他人不认可时，个体的意义感和价值感受到威胁。
+0077│
+0078│
+0079│
+0080│2）焦虑缓解器和死亡突显性两个基本假设。
+0081│
+0082│虽然自尊具有差异性，但人类对自尊的需求是普遍性的。TMT的核心在于提出了焦虑缓解器假设（The Anxiety-buffer Hypothesis）和死亡突显性假设（The Mortality Salience Hypothesis），回答了人为什么需要自尊的问题。
+0083│
+0084│焦虑缓解器假设提出，当个体的意义感和价值感受到威胁时，自尊这一焦虑缓解器（Anxiety-buffer）通过自我调节机制，诱发防御性和补偿性行为，恢复意义感和价值感的水平，帮助个体缓解焦虑。
+0085│
+0086│死亡突显性假设提出，因为自尊和文化世界观能够防御对死亡的恐惧和焦虑，所以对必死性的提醒和揭示，即死亡提醒（Mortality Salience, MS），会增加个体的自尊寻求（Self- esteem Striving），以及维护文化世界观的行为[11]，后一现象又被称作世界观防御（Worldview Defense, WVD）。
+0087│
+0088│图片
+0089│TMT的基本假设[9]
+0090│
+0091│
+0092│
+0093│对以上假设的理论论证，沿袭着人生历程的脉络。人类婴儿呱呱坠地伊始，无时无刻不被焦虑侵扰。John Bowlby的依恋理论（Attachment Theory）告诉我们，婴儿的生存需求和情感需求完全仰赖于父母，在社会化过程中他们逐渐认识到：当符合父母的“好孩子”标准时，自己的需求更有可能得到满足，反之则会失去爱和保护，焦虑的情绪增强。又基于Becker的观点，每个人都会不可避免地认识到死亡的必然性，而父母在死亡焦虑前也无法为孩子提供庇护，所以个体长大后安全感的来源就从父母身上转移到了更广泛的文化世界观那里。
+0094│
+0095│图片
+0096│
+0097│
+0098│
+0099│
+0100│实证
+0101│
+0102│“过去的25年，
+0103│
+0104│我们都在研究对于死亡的恐惧是如何影响人类事务的。”
+0105│
+0106│
+0107│
+0108│出乎意料的是，当提及TMT广受各门学科的影响，植根于存在主义精神分析时，与会的人员和专家纷纷离场。如同Becker这位反叛知识浪子的流离一生，他的思想遗产重蹈了被正统学术界逐斥的覆辙。Greenberg等人决心找到足够多的证据来支持TMT。三十多年来，包括提出者们在内的心理学学者进行了一系列相关实证研究，TMT成为第一个实证取向的自尊理论[9]。
+0109│
+0110│其他关于自尊的系统现代理论：社会度量计理论（Sociometer Theory）和Mruk的现象学理论[10]。
+0111│
+0112│
+0113│
+0114│1）对焦虑缓解器假设的验证。Greengerg等收集了最早一批SE缓解焦虑的直接证据，这些研究遵循了相似的思路：首先给予被试正向反馈（如虚假的智力或人格反馈）vs. 中性反馈，控制被试的自尊水平，随后被试进行威胁性任务（如观看死亡威胁材料、被电击）vs. 中性任务，最后测量被试的状态（包括情绪得分、皮电等生理指标）[8, 12]。
+0115│
+0116│2）对死亡突显性假设的验证。TMT的绝大多数研究都聚焦在死亡突显性假设及其各种变体上，研究者们分为了“死亡突显性-世界观防御假设”和“死亡突显性-自尊假设”两个阵营[9]。世界观防御阵营在早期占更多数，其观点是死亡提醒会加强个体对世界观的防御。在最早的世界观防御研究中，研究人员发现法官在意识到死亡必然性后，会建议给予举报嫌犯的妇女更高额的奖金，反之对性工作者处以更严苛的罚款[13]。另有一大批经典研究验证了自尊会降低死亡突显性对世界观防御的影响[8, 14, 15]。二十世纪末开始，死亡突显性-自尊假设的研究才逐渐变多。
+0117│
+0118│死亡突显性的影响因素有很多种。个体层面的年龄、宗教信仰、结构需求（Personal Need for Structure, PNS）和依恋类型的差异都会影响个体面对死亡提醒的表现。死亡提醒在不同情境中发挥的作用也有不同，之前研究引入的启动情境包括亲密关系、国家、圣经、动物性等等。
+0119│
+0120│不同依恋类型的被试在死亡提醒后的表现[16]
+0121│
+0122│图片
+0123│
+0124│
+0125│3）防御的双重加工模型(Dual-Process Model of Defense)。虽然有大量研究验证了TMT的 假设，但从死亡提醒到世界观防御、自尊寻求过程中的心理机制尚未明晰。Pyszczynski等人提出了对与死亡有关想法进行防御的双重加工模型(Dual-Process Model of defense against Death-Related Thoughts)，将防御行为分成近端防御（Proximal Defenses）和远端防御（Distal Defenses）两种[17]。前者出现在死亡相关想法存在于意识中时，表现形式有压抑、否认、理性化等；而世界观防御和自尊寻求都属于远端防御，只有当死亡相关想法从显意识里消退，充斥于潜意识中时才会出现。
+0126│
+0127│由于潜意识的焦虑不能被个体的意识觉察报告，也无法在生理指标中得到反映，死亡想法通达性（Death-thought Accessibility）被提出，用来衡量个体在意识之外对死亡想法的可及程度，作为潜在死亡焦虑水平的指标[18]。
+0128│
+0129│
+0130│
+0131│
+0132│
+0133│测量
+0134│
+0135│“请想象你自己的死亡，
+0136│
+0137│并简要描述你此时的情感体验。”
+0138│
+0139│
+0140│
+0141│1）自尊的测量
+0142│
+0143│自尊分为外显自尊（Explicit Self-esteem）和内隐自尊（Implicit Self-esteem）两种，前者指个体能意识到并能口头报告的自我评价，后者是一种无法被个体意识和报告的自我评价。
+0144│
+0145│对外显自尊的测量采用自我报告法，常用量表有罗森伯格自尊量表[19]、库珀史密斯的自尊调查表[20]、塔法罗迪和斯旺的自我喜爱和自我能力量表[21]和皮尔斯哈里斯的自我概念量表[10]。
+0146│
+0147│测量内隐自尊的工具包括：内隐联系测验（Implicit Association Test, IAT）、名字或生日或数字偏好测验、语义或情感启动测验，反应与不反应联系测验（Go-Nogo Association Test, GNAT），西蒙任务，Stroop任务等[10]。
+0148│
+0149│2）死亡提醒效应的测量
+0150│
+0151│考虑到人们对死亡的忌讳，经典的死亡提醒操作一般被隐藏在一次普通的人格测验中，实验组被试需要回答这些死亡相关的开放性问题，控制组被试回答的则是一些中性问题。其他实现死亡提醒的途径有死亡焦虑量表、阈下启动等[16]。
+0152│
+0153│2）死亡想法通达性的测量
+0154│
+0155│一般基于词干补笔测验（Stem Completion Test）的设计对死亡想法通达性进行测量[16]。研究者给被试提供一些缺少两个字母的英文单词词干，其中一些词干既可以补成中性词，也可以补成与死亡相关的词，比如“coff_ _”可以补成“coffee”（咖啡），也可以补成“coffin”（棺材）。如果被试填写的死亡相关词汇较多，说明其死亡想法通达性较高。
+0156│
+0157│
+0158│
+0159│
+0160│
+0161│案例
+0162│
+0163│“人工智能挑战着人类在智能和创造力方面的独特性，
+0164│
+0165│加剧了人们对生存的担忧。”
+0166│
+0167│
+0168│
+0169│When humble AI meets narcissistic customers:
+0170│
+0171│A terror management perspective
+0172│
+0173│当谦逊的人工智能遇上自恋的客户：
+0174│
+0175│一种恐怖管理视角
+0176│
+0177│
+0178│
+0179│作者：Jing Liu, Fu-Chieh Hsu, Jing Yu, Jie Cao, Huiwen Mai
+0180│
+0181│文献来源：International Journal of Information Management Volume 83, August 2025
+0182│
+0183│DOI：https://doi.org/10.1016/j.ijinfomgt.2025.102904
+0184│
+0185│
+0186│
+0187│摘要翻译：人工智能（AI）的突飞猛进带来了前所未有的生存威胁与社会问题。本研究将鲜少被研究的谦逊特质融入AI助手，以缓解日益增长的AI威胁，并探讨AI谦逊、感知AI威胁以及顾客自恋程度对服务满意度的影响。一项组间准实验的三元交互结果表明：在AI威胁较低的情况下，谦逊的AI助手能够增强准社会互动和满意度，尤其对自恋程度较低至中等的顾客而言。相反，在AI威胁较高的情况下，这些特质可能对这类顾客无效甚至适得其反，而高度自恋者仍可能受益。本研究的主要贡献在于将谦逊的概念扩展到非人类实体，从而引入了一种基于恐怖管理理论的应对生存焦虑的新方法。
+0188│
+0189│
+0190│
+0191│图片
+0192│研究框架[22]
+0193│
+0194│
+0195│
+0196│图片
+0197│研究模型[22]
+0198│
+0199│
+0200│
+0201│
+0202│
+0203│
+0204│
+0205│参考文献
+0206│
+0207│[1] Brown B B, Lohr M J. Peer-group affiliation and adolescent self-esteem: an integration of ego-identity and symbolic-interaction theories[J]. Journal of personality and social psychology, 1987, 52(1): 47.
+0208│
+0209│[2] Baumeister R F, Campbell J D, Krueger J I, et al. Does high self-esteem cause better performance, interpersonal success, happiness, or healthier lifestyles?[J]. Psychological science in the public interest, 2003, 4(1): 1-44.
+0210│
+0211│[3] 所罗门 S，格林伯格 J，匹茨辛斯基 T. 怕死：人类行为的驱动力[M]. 陈芳芳，译. 北京：机械工业出版社，2024-05-01.
+0212│
+0213│[4] Pyszczynski T, Greenberg J, Goldenberg J L. Freedom versus fear: On the defense, growth, and expansion of the self. In: Leary M R, Tangney J P ed. Handbook of Self and Identity. New York: Guilford Press, 2003. 314–343
+0214│
+0215│[5] BECKER E. The Denial of Death[M]. 北京: 北京联合天畅文化传播有限公司, 2025-08-01.
+0216│
+0217│[6] Pyszczynski T, Greenberg J, Solomon S, et al. Why do people need self-esteem? A theoretical and empirical review. Psychological Bulletin, 2004, 130: 435–486
+0218│
+0219│[7] James W. The principles of psychology[J]. Henry Holt, 1890.
+0220│
+0221│[8] Pyszczynski T, Greenberg J, Solomon S, et al. Why do people need self-esteem? A theoretical and empirical review[J]. Psychological bulletin, 2004, 130(3): 435.
+0222│
+0223│[9]张阳阳,佐斌.自尊的恐惧管理理论研究述评[J].心理科学进展,2006,(02):273-280.
+0224│
+0225│[10]许燕, 杨宜音. 社会心理研究[M]. 上海: 华东师范大学出版社, 2022-03-08.
+0226│
+0227│[11]方文. 中国社会转型：转型心理学的路径[M]. 北京: 中国人民大学出版社, 2013-01-01.
+0228│
+0229│[12] Greenberg J, Solomon S, Pyszczynski T, et al. Why do people need self-esteem? Converging evidence that self-esteem serves an anxiety-buffering function[J]. Journal of personality and social psychology, 1992, 63(6): 913.
+0230│
+0231│[13] Rosenblatt A, Greenberg J, Solomon S, et al. Evidence for terror management theory: I. The effects of mortality salience on reactions to those who violate or uphold cultural values[J]. Journal of personality and social psychology, 1989, 57(4): 681.
+0232│
+0233│[14] Harmon-Jones E, Simon L, Greenberg J, et al. Terror management theory and self-esteem: Evidence that increased self-esteem reduced mortality salience effects[J]. Journal of personality and social psychology, 1997, 72(1): 24.
+0234│
+0235│[15] Arndt J, Greenberg J. The effects of a self-esteem boost and mortality salience on responses to boost relevant and irrelevant worldview threats[J]. Personality and Social Psychology Bulletin, 1999, 25(11): 1331-1341.
+0236│
+0237│[16]郭永玉. 人格研究[M]. 上海: 华东师范大学出版社, 2016-01-01.
+0238│
+0239│[17] Pyszczynski T, Greenberg J, Solomon S. A dual-process model of defense against conscious and unconscious death-related thoughts: an extension of terror management theory[J]. Psychological Review, 1999, 106(4): 835-845.
+0240│
+0241│[18] Hayes J, Schimel J, Arndt J, et al. A theoretical and empirical review of the death-thought accessibility concept in terror management research[J]. Psychological bulletin, 2010, 136(5): 699.
+0242│
+0243│[19] Rosenberg M. Rosenberg self-esteem scale (RSE)[J]. Acceptance and commitment therapy. Measures package, 1965, 61(52): 18.
+0244│
+0245│[20] Kokenes B. A factor analytic study of the Coopersmith Self-Esteem Inventory[J]. Adolescence, 1978, 13(49): 149.
+0246│
+0247│[21] Tafarodi R W, Swann Jr W B. Self-linking and self-competence as dimensions of global self-esteem: initial validation of a measure[J]. Journal of personality assessment, 1995, 65(2): 322-342.
+0248│
+0249│[22] Liu J, Hsu F C, Yu J, et al. When humble AI meets narcissistic customers: A terror management perspective[J]. International Journal of Information Management, 2025, 83: 102904.
+0250│
+0251│
+0252│
+0253│图片
+0254│
+0255│
+0256│编辑 / 曹益宣子
+0257│
+0258│审核 / 于孟利
+0259│
+0260│
+0261│
+0262│
+0263│
+0264│声明
+0265│
+0266│如需转载文章，可在留言区留言，并附转载公众号名称+公众号ID。转载时烦请标清文章来源，不允许将内容用于其他用途，并严格禁止将内容用于任何目的的大模型训练，感谢您的支持！
+0267│
+0268│
+0269│
+0270│往期内容
+0271│
+0272│研究理论介绍 | 消费价值理论（Theory of Consumption Values）
+0273│
+0274│研究理论介绍 | 欲望侵入理论（Elaborated Intrusion Theory）
+0275│
+0276│2025年国家社科基金重大项目立项解读 | 信息传播交叉学科研究新动向
+0277│
+0278│文献精读 | 在线分享体验中的复杂社交网络：自我定位与他者定位
+0279│
+0280│研究理论介绍 | 高低语境理论（High and Low Context Theory）
+0281│
+0282│
+</code></pre>
+
+<h2>三、关联文件（双向链接）</h2>
+<li>上游/总导航：[[00-总索引-思维模型]] ｜ 知识图谱：[[10-知识图谱-思维模型]] ｜ 概念手册：[[09-核心概念手册-思维模型]]</li>
+<li>跨文件同构（共享显著概念）：[[社会支持理论]]，[[自我呈现理论]]，[[保护动机理论]]，[[创新抵抗理论]]，[[PERMA幸福理论]]，[[情感事件理论]]，[[资源保存理论]]，[[消费价值理论]]</li>
+
+<h2>四、核心金句</h2>
+<blockquote>文化世界观从以下角度帮助人类拒斥死亡：</blockquote>
+<blockquote>其他关于自尊的系统现代理论：社会度量计理论（Sociometer Theory）和Mruk的现象学理论[10]。</blockquote>
+<blockquote>当谦逊的人工智能遇上自恋的客户：</blockquote>
+<blockquote>作者：Jing Liu, Fu-Chieh Hsu, Jing Yu, Jie Cao, Huiwen Mai</blockquote>
+<blockquote>文献来源：International Journal of Information Management Volume 83, August 2025</blockquote>
+<blockquote>DOI：https://doi.org/10.1016/j.ijinfomgt.2025.102904</blockquote>
+
+<h2>五、标签</h2>
+<li>领域：理论模型、思维模型</li>
+<li>机制：知识学习(十项认知指令)、五色光思维(白红黄绿蓝)</li>
+<li>洞见：跨域同构、网状知识、双向链接、人机共生</li>
+
+<h2>六、龙心OS隐秘联系（跨域同构·龙心OS精修）</h2>
+
+<blockquote>以下为龙心OS在跨域同构（北极星能力）下发现的隐秘结构联系，供五引擎组合调取。</blockquote>
+
+<li><strong>系统思维/涌现⟷五行生克网络</strong>：五行相生相克即系统要素互动的最小完备模型。</li>
+<li><strong>整体大于部分之和⟷格式塔关系场</strong>：系统涌现的格式塔解释，对应合道场域型组织。</li>
+<li><strong>双系统理论⟷龙心OS知行合一（直觉/反思）</strong>：System1=表示（直觉），System2=泛化（反思），三阶中的两端。</li>
+<li><strong>双系统⟷五色光（红直觉/白事实）</strong>：直觉属红光、理性属白光，二者协同即五色光调度。</li>
+<li><strong>思想实验⟷龙心OS知行合一（表示空间推演）</strong>：在表示空间内穷尽可能性，是『压缩→泛化』的零成本演练。</li>
+<li><strong>框架思维⟷龙心OS知行合一（表示空间）</strong>：框架即预先收敛的表示空间，是『压缩』的结晶。</li>
+<li><strong>思维模型⟷五行分类图谱（双向链接网络）</strong>：每个模型是一节点，模型间关系即图谱边。</li>
+<li><strong>决策⟷人机协同五象限（[人]高判断域）</strong>：高阶判断留给碳基人，常规决策可交硅基。</li>
+<li><strong>跨文件同构</strong>：与 [[社会支持理论]]、[[自我呈现理论]]、[[保护动机理论]] 共享核心概念（详见「三、关联文件」章节），可在龙心OS知识学习引擎下做十项认知指令的对比推演。</li>
+
+<blockquote><strong>引擎路由</strong>：本文可由龙心OS五引擎组合调用——知识学习（十项认知指令深度学习）、象思维（物象→意象→原象）、五色光（白红黄绿蓝五维审查）、知行合一（表示→压缩→泛化）、人机协同五象限（[AI]/[人]/[⇄]分工定位）。</blockquote>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>框架思维模型库.skills · SKILL.md - 以观其妙书院</title>
+<meta name="description" content="框架思维模型库.skills · SKILL.md - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="框架思维模型库.skills · SKILL.md">
+<meta property="og:description" content="框架思维模型库.skills · SKILL.md - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "框架思维模型库.skills · SKILL.md",
+    "description": "框架思维模型库.skills · SKILL.md - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>框架思维模型库.skills · SKILL.md</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>框架思维模型库.skills · SKILL.md</h1>
+<blockquote><p><strong>版本</strong>：v1.0
+<strong>创建日期</strong>：2026-04-10
+<strong>维护者</strong>：龙龟神将
+<strong>定位</strong>：龙心OS核心思维工具库 · 问题解决进化论的完整体系</p></blockquote>
+<hr>
+<h2>一、核心定义</h2>
+<h3>1.1 框架思维模型库的本质</h3>
+<p><strong>一句话定义</strong>：</p>
+<blockquote><p>框架思维模型库是一套「从工具使用者到认知架构师」的进化体系，包含框架（地图）、思维框架（肌肉记忆）、框架思维（向导视角）三层结构，以及系统思维、逻辑思维、结构化思维、批判性思维、创造性思维五大思维模式。</p></blockquote>
+<p><strong>核心公式</strong>：</p>
+<pre><code>问题解决进化 = （思维模式 + 方法论）× 真实实践 × 持续反思</code></pre>
+<p><strong>三轴定位</strong>：
+| 轴线 | 定义 | 回答问题 |
+|------|------|----------|
+| <strong>对象轴（结构线）</strong> | 认知的内容之维 | 我们认识什么、如何认识、如何检验 |
+| <strong>工具轴（框架线）</strong> | 认知的方式之维 | 我们用什么来认识、内化成什么、如何驾驭工具 |
+| <strong>进化轴（闭环）</strong> | 认知的螺旋上升 | 内化→觉醒→创造→新框架→螺旋上升 |</p>
+<h3>1.2 框架的三层结构</h3>
+<table>
+<thead><tr>
+<th>层次</th>
+<th>比喻</th>
+<th>定义</th>
+<th>特征</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>框架</strong></td>
+<td>地图（工具）</td>
+<td>解决问题时可直接套用的标准化步骤</td>
+<td>外显、规范、中性</td>
+</tr>
+<tr>
+<td><strong>思维框架</strong></td>
+<td>肌肉记忆（本能）</td>
+<td>反复使用框架后形成的下意识思考方式</td>
+<td>内隐、高效、双刃剑</td>
+</tr>
+<tr>
+<td><strong>框架思维</strong></td>
+<td>向导视角（智慧）</td>
+<td>主动选择、调整、甚至创造最合适框架的元能力</td>
+<td>元认知、驾驭、创造</td>
+</tr>
+</tbody></table>
+<h3>1.3 五大思维模式</h3>
+<table>
+<thead><tr>
+<th>思维模式</th>
+<th>比喻</th>
+<th>核心功能</th>
+<th>解决的问题</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>系统思维</strong></td>
+<td>导航仪</td>
+<td>看整体、看关联、看动态</td>
+<td>横向展开、纵向深挖</td>
+</tr>
+<tr>
+<td><strong>逻辑思维</strong></td>
+<td>方向盘与刹车</td>
+<td>概念清晰、判断准确、推理有效</td>
+<td>拆不乱、推不错</td>
+</tr>
+<tr>
+<td><strong>结构化思维</strong></td>
+<td>驾驶操作手册</td>
+<td>化繁为简、变乱为序</td>
+<td>搭骨架、钻下去</td>
+</tr>
+<tr>
+<td><strong>批判性思维</strong></td>
+<td>质检员</td>
+<td>质疑假设、检验证据</td>
+<td>防止偏见、验证假设</td>
+</tr>
+<tr>
+<td><strong>创造性思维</strong></td>
+<td>突破者</td>
+<td>打破框架、发现新可能</td>
+<td>突破路径依赖、创新解决方案</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>二、详细内容</h2>
+<h3>2.1 框架线的三层进化</h3>
+<h4>第一层：框架（地图）</h4>
+<p><strong>定义</strong>：解决问题时可以直接套用的标准化步骤，像一本工具书——写清楚了「遇到这类问题，先做什么、再做什么」。</p>
+<p><strong>典型案例</strong>：四层次原因分析法</p>
+<pre><code>第一层：拆解问题
+第二层：直接原因
+第三层：流程/系统原因
+第四层：人的原因</code></pre>
+<p><strong>框架的特征</strong>：</p>
+<ul>
+<li><strong>外显</strong>：能写在纸上、画在白板上，是「看得见」的知识</li>
+<li><strong>规范</strong>：规定了思考的路径和顺序，让思考有章可循</li>
+<li><strong>中性</strong>：它只是一个「空容器」，本身不产生智慧，效果取决于用的人</li>
+</ul>
+<p><strong>框架的局限性</strong>：</p>
+<blockquote><p>框架就像菜谱——照着做能做出一道菜，但菜谱自己不会做菜。机械套用框架，就像只懂背菜谱不懂火候，能做熟，但做不好。</p></blockquote>
+<p><strong>框架建构三要素</strong>（来源：《框架思维》）：</p>
+<ol>
+<li><strong>因果律</strong>：为事物建立「如果…那么…」的叙事逻辑</li>
+<li><strong>反事实思维</strong>：在头脑中虚拟「并非如此却可能如此」的情景</li>
+<li><strong>约束条件</strong>：为思考划定边界，决定「什么可以纳入，什么必须排除」</li>
+</ol>
+<hr>
+<h4>第二层：思维框架（肌肉记忆）</h4>
+<p><strong>定义</strong>：当一个框架被反复使用、熟练掌握后，它就不再是外部的工具，而变成了你「下意识」的思考方式。</p>
+<p><strong>形成路径</strong>：</p>
+<pre><code>反复使用某个框架 → 大脑神经通路被强化 → 成为默认思考模式 → 形成思维框架</code></pre>
+<p><strong>类比</strong>：就像练车：新手要刻意想「先踩离合、再挂挡」，老司机完全不用想，手和脚自己就动了。</p>
+<p><strong>思维框架的特点</strong>：
+| 特点 | 正面 | 负面 |
+|------|------|------|
+| <strong>内隐</strong> | 不需要刻意调用，自动运行 | 可能被惯性绑架而不自知 |
+| <strong>高效</strong> | 大脑的节能模式，反应快、决策快 | 可能让你在错误路上越跑越快 |
+| <strong>双刃剑</strong> | 在熟悉领域得心应手 | 可能成为「认知牢笼」 |</p>
+<p><strong>典型案例</strong>：</p>
+<ul>
+<li>审计师看什么都像风险</li>
+<li>医生看什么都像症状</li>
+<li>经常用四层次分析法的人，遇到任何问题大脑自动跳出「先拆解→找直接原因→查流程→溯人因」的路径</li>
+</ul>
+<p><strong>核心洞见</strong>：</p>
+<blockquote><p>「思维框架是总按一个逻辑干事形成的路径依赖」——经验越丰富的人，偏见越隐蔽。手里有锤子，看什么都像钉子，这是所有专家的共同困境。</p></blockquote>
+<hr>
+<h4>第三层：框架思维（向导视角）</h4>
+<p><strong>定义</strong>：能站在迷宫上空俯瞰的向导视角。能审视整座迷宫的格局，判断这张地图是否合适，甚至动手绘制一张全新的地图。</p>
+<p><strong>核心能力</strong>：</p>
+<ol>
+<li><strong>选择框架</strong>：根据问题类型，选择最合适的框架</li>
+<li><strong>审视框架</strong>：时刻审视「我现在的思维框架适用吗？我是不是被自己的习惯绑架了？」</li>
+<li><strong>创造框架</strong>：当没有现成合适框架时，能快速创造新框架</li>
+</ol>
+<p><strong>高手三境界</strong>：
+| 境界 | 状态 | 描述 |
+|------|------|------|
+| <strong>手中有框，心中无框</strong> | 新手 | 遇到问题，先想「该用哪个框架」，对照步骤一步步来 |
+| <strong>手中有框，心中有框</strong> | 熟手 | 框架已经内化成了本能，遇到问题自动就按这个思路走 |
+| <strong>手中无框，心中有框</strong> | 高手 | 不是在「用」框架，你就是框架本身 |</p>
+<hr>
+<h3>2.2 三层进化闭环</h3>
+<h4>内化过程：框架 → 思维框架</h4>
+<pre><code>框架（外部工具）→ 反复使用 → 思维框架（内部本能）</code></pre>
+<p><strong>核心转变</strong>：从「外部工具」变成「内部本能」，实现了大脑的「节能」。</p>
+<hr>
+<h4>觉醒过程：思维框架 → 框架思维</h4>
+<pre><code>拥有多个思维框架 → 开始觉察、审视自己的思考过程 → 框架思维（元认知）</code></pre>
+<p><strong>核心转变</strong>：从「被框架使用」的工匠，觉醒为「使用框架」的驾驭者。</p>
+<p><strong>关键问题</strong>：</p>
+<ul>
+<li>「这个问题该用什么框架来解？」</li>
+<li>「我是不是被自己的习惯绑架了？」</li>
+<li>「有没有更好的选择？」</li>
+</ul>
+<hr>
+<h4>创造过程：框架思维 → 新框架</h4>
+<pre><code>框架思维判断出「没有现成合适框架」→ 真正的创造开始 → 新框架诞生</code></pre>
+<p><strong>核心转变</strong>：从「工具使用者」跃迁为「工具创造者」。</p>
+<hr>
+<h4>完整闭环：螺旋上升的认知进化</h4>
+<pre><code>学框架（起点）→ 内化为本能 → 觉醒为元认知 → 创造新工具 → 循环往复</code></pre>
+<p><strong>三重收获</strong>：</p>
+<ol>
+<li><strong>解决了具体问题</strong>（最直接的成果）</li>
+<li><strong>迭代了方法论</strong>（在实践中优化框架）</li>
+<li><strong>升级了思维模式</strong>（最深层收获——思维模式「长」在身上）</li>
+</ol>
+<hr>
+<h3>2.3 五大思维模式详解</h3>
+<h4>系统思维：导航仪</h4>
+<p><strong>定义</strong>（来源：德内拉·梅多斯《系统之美》）：</p>
+<blockquote><p>系统是一个由一组相互连接的要素构成，能够实现特定目标或功能。</p></blockquote>
+<p><strong>系统思维的两大功能</strong>：</p>
+<p><strong>横向展开：帮你「看全」</strong></p>
+<ul>
+<li>强调整体性，划定系统边界</li>
+<li>识别要素间的关联，避免孤立拆解</li>
+<li>运用结构化工具，确保MECE</li>
+</ul>
+<p><strong>纵向深挖：帮你「看深」</strong></p>
+<ul>
+<li>关注反馈回路，避免线性归因</li>
+<li>识别延迟效应，穿透时间迷雾</li>
+<li>区分「事件、模式、结构、心智」四个层次</li>
+</ul>
+<p><strong>系统冰山模型</strong>：</p>
+<pre><code>事件层：发生了什么？（设备停机）
+    ↓
+模式层：有没有重复发生？（每周停两次）
+    ↓
+结构层：是什么系统结构导致了模式？（维护流程缺失）
+    ↓
+心智层：什么样的信念维持了这种结构？（"生产第一，维修可以等"）</code></pre>
+<hr>
+<h4>逻辑思维：方向盘与刹车</h4>
+<p><strong>核心</strong>：概念清晰、判断准确、推理有效。</p>
+<p><strong>横向展开：帮你「拆不乱」</strong></p>
+<ul>
+<li>确保分类符合「MECE」原则</li>
+<li>保持同一层次、同一标准</li>
+<li>识别概念的内涵与外延</li>
+</ul>
+<p><strong>纵向深挖：帮你「推不错」</strong></p>
+<ul>
+<li>验证因果关系的有效性（相关≠因果）</li>
+<li>防止「跳跃推理」和「滑坡谬误」</li>
+<li>检查推理链条是否闭环或循环</li>
+</ul>
+<p><strong>核心区分</strong>：
+| 关系类型 | 定义 | 示例 |
+|----------|------|------|
+| <strong>因果关系</strong> | A直接导致B | 下雨→地湿 |
+| <strong>相关关系</strong> | A和B同时发生 | 雨伞销量↑与车祸增加↑ |</p>
+<hr>
+<h4>结构化思维：驾驶操作手册</h4>
+<p><strong>定义</strong>：让混乱变有序的思考习惯，是系统思维和逻辑思维的落地桥梁。</p>
+<p><strong>横向展开：帮你「搭骨架」</strong></p>
+<ul>
+<li>用「逻辑树」强制MECE</li>
+<li>用「金字塔原理」组织层次</li>
+<li>用「矩阵」进行二维拆解</li>
+</ul>
+<p><strong>纵向深挖：帮你「钻下去」</strong></p>
+<ul>
+<li>用「五问法」或「why-why分析」建立深度阶梯</li>
+<li>用「因果链图」可视化推理过程</li>
+<li>设定「停挖标准」防止过度或不足</li>
+</ul>
+<p><strong>四层次原因分析法</strong>（结构化纵深的标准模板）：</p>
+<pre><code>问题拆解：识别问题的结构
+    ↓
+直接原因：表层，可观察
+    ↓
+流程/系统原因：中间层，流程或管理
+    ↓
+人的原因：深层，系统或心智</code></pre>
+<hr>
+<h4>批判性思维：质检员</h4>
+<p><strong>核心</strong>：质疑假设、检验证据。</p>
+<p><strong>作用</strong>：</p>
+<ul>
+<li>防止确认偏误</li>
+<li>检验每一步是否合理</li>
+<li>识别隐性假设</li>
+</ul>
+<p><strong>关键问题</strong>：</p>
+<ul>
+<li>「我默认在用谁的视角看问题？」</li>
+<li>「这个视角假设了什么？」</li>
+<li>「有没有其他可能性？」</li>
+</ul>
+<hr>
+<h4>创造性思维：突破者</h4>
+<p><strong>核心</strong>：打破框架、发现新可能。</p>
+<p><strong>作用</strong>：</p>
+<ul>
+<li>当遇到新问题时，帮你跳出框框</li>
+<li>通过打破默认路径，构想替代方案</li>
+<li>拓宽可能性边界</li>
+</ul>
+<p><strong>反事实思维三问</strong>：</p>
+<ol>
+<li>如果资源不受限，我会怎么做？</li>
+<li>如果这个限制突然消失，什么会改变？</li>
+<li>如果必须用一个完全相反的方法来解决，那会是什么？</li>
+</ol>
+<hr>
+<h3>2.4 框架思维如何助力问题解决</h3>
+<h4>横向展开：帮你「选对地图」</h4>
+<p><strong>三问决策</strong>：</p>
+<ol>
+<li>「这个问题属于什么类型？该用哪种横向拆解框架？」</li>
+<li>「这个框架适合当前场景吗？需要裁剪或组合吗？」</li>
+<li>「如果没有现成框架，我能不能快速创造一个？」</li>
+</ol>
+<p><strong>框架选择对照表</strong>：
+| 问题类型 | 推荐框架 |
+|----------|----------|
+| 流程问题 | 流程拆解框架（启动→执行→收尾） |
+| 系统要素问题 | 要素拆解框架（人、机、料、法、环） |
+| 战略问题 | 二维矩阵框架（SWOT、波士顿矩阵） |
+| 原因分析 | 四层次原因分析法 |
+| 用户行为 | 用户旅程框架 |</p>
+<hr>
+<h4>纵向深挖：帮你「选对钻头」</h4>
+<p><strong>根据原因类型选择深挖框架</strong>：
+| 原因类型 | 深挖框架 |
+|----------|----------|
+| 技术/物理原因 | 故障树框架（FTA） |
+| 人为操作原因 | 行为分析框架（知识、技能、习惯、环境） |
+| 流程/制度原因 | 流程审核框架 |
+| 心智/文化原因 | 信念挖掘框架 |</p>
+<p><strong>停挖判断标准</strong>：</p>
+<ol>
+<li>是否找到可行动的根因？（修改流程、更换供应商、调整考核）</li>
+<li>是否超出影响范围？（国家政策、行业趋势）</li>
+<li>继续挖的成本是否大于收益？</li>
+</ol>
+<hr>
+<h3>2.5 问题解决十大步骤</h3>
+<table>
+<thead><tr>
+<th>步骤</th>
+<th>名称</th>
+<th>核心动作</th>
+<th>关键问题</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>定义问题</td>
+<td>澄清事实与期望的差距</td>
+<td>现状是什么？期望是什么？差距是什么？</td>
+</tr>
+<tr>
+<td>2</td>
+<td>界定范围</td>
+<td>确定问题的边界和影响面</td>
+<td>是个人问题还是系统问题？</td>
+</tr>
+<tr>
+<td>3</td>
+<td>收集信息</td>
+<td>用事实说话</td>
+<td>发生了什么？涉及谁？</td>
+</tr>
+<tr>
+<td>4</td>
+<td>分析根因</td>
+<td>用5Why追问</td>
+<td>为什么？一直追问到根因</td>
+</tr>
+<tr>
+<td>5</td>
+<td>设定目标</td>
+<td>明确解决标准</td>
+<td>解决到什么状态？什么时候？</td>
+</tr>
+<tr>
+<td>6</td>
+<td>生成方案</td>
+<td>至少三个备选</td>
+<td>方案A/B/C</td>
+</tr>
+<tr>
+<td>7</td>
+<td>评估方案</td>
+<td>多维度权衡</td>
+<td>效果、成本、风险、可持续性</td>
+</tr>
+<tr>
+<td>8</td>
+<td>决策拍板</td>
+<td>果断选择</td>
+<td>选好了就干</td>
+</tr>
+<tr>
+<td>9</td>
+<td>执行落地</td>
+<td>明确责任人</td>
+<td>谁？做什么？什么时候？</td>
+</tr>
+<tr>
+<td>10</td>
+<td>复盘沉淀</td>
+<td>经验变能力</td>
+<td>做对了什么？哪里可以更好？</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>2.6 知识结构的三个关系模型</h3>
+<table>
+<thead><tr>
+<th>框架</th>
+<th>基于</th>
+<th>解决的问题</th>
+<th>类比</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>顺序框架</strong></td>
+<td>关联性</td>
+<td>先做什么、后做什么</td>
+<td>城市里的道路网络</td>
+</tr>
+<tr>
+<td><strong>结构框架</strong></td>
+<td>收敛性</td>
+<td>大问题拆成哪些部分</td>
+<td>城市规划图</td>
+</tr>
+<tr>
+<td><strong>比较框架</strong></td>
+<td>有界性</td>
+<td>两个东西有什么不同</td>
+<td>城市间的对照表</td>
+</tr>
+</tbody></table>
+<p><strong>认知价值</strong>：</p>
+<ul>
+<li>符合人类认知的基本规律</li>
+<li>降低了认知负荷（整合成「信息块」）</li>
+<li>促进了知识迁移</li>
+<li>增强了记忆效果</li>
+</ul>
+<hr>
+<h3>2.7 中层管理的问题解决能力</h3>
+<h4>向下：安排部署、传帮带</h4>
+<p><strong>「说清楚情况全貌」四要素</strong>：</p>
+<ol>
+<li>背景与价值：为什么要做？解决了什么问题？</li>
+<li>目标与边界：最终要达成什么？有哪些限制？</li>
+<li>关联与影响：对内对外如何协作？</li>
+<li>不确定性：哪些是明确的？哪些在变化？</li>
+</ol>
+<p><strong>「传帮带」核心</strong>：从「教步骤」到「建思维」</p>
+<hr>
+<h4>平行：沟通协调、协作配合</h4>
+<p><strong>高效协作四节奏</strong>：</p>
+<ol>
+<li><strong>启动前</strong>：先找到共同利益</li>
+<li><strong>开始时</strong>：签订协作契约（谁负责拍板、谁执行、谁知情）</li>
+<li><strong>执行中</strong>：降低对方的配合成本，透明化进度</li>
+<li><strong>分歧时</strong>：向上借力（带着方案升级）</li>
+</ol>
+<hr>
+<h4>向上：精准汇报、向上开花</h4>
+<p><strong>金字塔结构表达</strong>：</p>
+<ul>
+<li>第一句话就要让领导快速判断方向和得失</li>
+<li>然后条理清晰地阐述理由、陈述事实</li>
+<li>不要让领导边听边去猜方向、猜得失</li>
+</ul>
+<hr>
+<h3>2.8 问题解决进化论模型</h3>
+<h4>三层架构</h4>
+<pre><code>┌─────────────────────────────────────────┐
+│         左侧：思维模式（驾驶员大脑）         │
+│  系统思维 │ 逻辑思维 │ 结构化思维 │        │
+│  批判性思维 │ 创造性思维                    │
+├─────────────────────────────────────────┤
+│         中间：方法论（仪表盘和方向盘）        │
+│              四层次原因分析法               │
+├─────────────────────────────────────────┤
+│         右侧：现实问题（路况）              │
+│              具体挑战                      │
+└─────────────────────────────────────────┘</code></pre>
+<h4>进化公式</h4>
+<pre><code>进化 = （正确的思维模式 + 有效的方法论）× 真实的实践 × 持续的反思</code></pre>
+<h4>进化三阶段</h4>
+<table>
+<thead><tr>
+<th>阶段</th>
+<th>名称</th>
+<th>核心动作</th>
+</tr></thead><tbody>
+<tr>
+<td>第一阶段</td>
+<td>学</td>
+<td>建立认知基础（思维模式+方法论）</td>
+</tr>
+<tr>
+<td>第二阶段</td>
+<td>炼</td>
+<td>在真实场景中内化</td>
+</tr>
+<tr>
+<td>第三阶段</td>
+<td>进</td>
+<td>在解决问题中收获三重成果</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>三、框架思维模型库与龙心OS的整合</h2>
+<h3>3.1 调用关系</h3>
+<pre><code>龙心OS（总智能体）
+    ↓ 场景归类 → 引擎路由
+框架思维模型库.skills
+    ↓ 独立调用 / 组合调用
+五大思维模式 + 三层框架结构</code></pre>
+<h3>3.2 组合调用场景</h3>
+<table>
+<thead><tr>
+<th>场景</th>
+<th>调用组合</th>
+</tr></thead><tbody>
+<tr>
+<td>横向展开</td>
+<td>系统思维 + 结构化思维 + 框架思维</td>
+</tr>
+<tr>
+<td>纵向深挖</td>
+<td>逻辑思维 + 结构化思维 + 框架思维</td>
+</tr>
+<tr>
+<td>全面分析</td>
+<td>五大思维全调用 + 三层框架</td>
+</tr>
+<tr>
+<td>创新突破</td>
+<td>创造性思维 + 批判性思维 + 框架思维</td>
+</tr>
+<tr>
+<td>管理实践</td>
+<td>框架思维 + 结构化思维 + 中层三层能力</td>
+</tr>
+</tbody></table>
+<h3>3.3 调用示例</h3>
+<p><strong>场景</strong>：分析「线上销售额下滑」</p>
+<ol>
+<li><strong>框架思维选框架</strong>：用户旅程框架（曝光→点击→加购→下单→支付→复购）</li>
+<li><strong>系统思维横向展开</strong>：按用户旅程六个环节拆解</li>
+<li><strong>结构化思维纵向深挖</strong>：锁定「加购→下单」转化率异常，追问为什么</li>
+<li><strong>逻辑思维验证因果</strong>：检查因果链是否闭环</li>
+<li><strong>创造性思维打开可能</strong>：反事实思维——如果不限资源？</li>
+</ol>
+<hr>
+<h2>四、核心金句</h2>
+<blockquote><p><strong>框架是「凝结的实践」</strong>——它是前人经验的标准化模板，让复杂问题有章可循，但真正的好菜，还得靠做菜的人。</p></blockquote>
+<blockquote><p><strong>思维框架是「长」在脑子里的思考路径</strong>——它让你反应快，也可能让你看不全。</p></blockquote>
+<blockquote><p><strong>框架思维是俯瞰迷宫的向导视角</strong>——让你永远手里有牌、心里有数，找到解决问题的最优路径。</p></blockquote>
+<blockquote><p><strong>没有「内化」，框架就是书本上的死知识</strong>——你永远成不了真正的行家。</p></blockquote>
+<blockquote><p><strong>没有「觉醒」，思维框架就会成为你的「认知牢笼」</strong>——让你在错误的方向上越跑越快。</p></blockquote>
+<blockquote><p><strong>没有「外化」，个人的智慧就无法沉淀为集体的财富</strong>——无法被传递和继承。</p></blockquote>
+<blockquote><p><strong>进化 = （正确的思维模式 + 有效的方法论）× 真实的实践 × 持续的反思</strong></p></blockquote>
+<blockquote><p><strong>系统思维决定你往哪里挖，逻辑思维决定你挖的每一步是否扎实</strong></p></blockquote>
+<blockquote><p><strong>结构化思维直接给你一把「测量尺」——让你画出森林的地图、标出每棵树的根系</strong></p></blockquote>
+<hr>
+<h2>五、标签体系</h2>
+<pre><code>tags:
+  # 核心标签
+  - 框架思维模型库
+  - 龙心OS核心引擎
+  - 问题解决进化论
+  
+  # 三层结构
+  - 框架
+  - 思维框架
+  - 框架思维
+  
+  # 五大思维模式
+  - 系统思维
+  - 逻辑思维
+  - 结构化思维
+  - 批判性思维
+  - 创造性思维
+  
+  # 核心概念
+  - 对象轴
+  - 工具轴
+  - 双螺旋进化
+  - MECE原则
+  - 因果关系
+  - 相关关系
+  
+  # 方法论
+  - 四层次原因分析法
+  - 五Why法
+  - 金字塔原理
+  - 逻辑树
+  - 矩阵分析
+  
+  # 管理实践
+  - 中层管理
+  - 向上管理
+  - 平行协作
+  - 向下部署
+  
+  # 进化闭环
+  - 内化
+  - 觉醒
+  - 创造
+  - 螺旋上升</code></pre>
+<hr>
+<h2>六、关联文件</h2>
+<table>
+<thead><tr>
+<th>文件类型</th>
+<th>路径</th>
+<th>内容说明</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>知识图谱</strong></td>
+<td><code>references/knowledge-graph.md</code></td>
+<td>各体系之间的关系可视化</td>
+</tr>
+<tr>
+<td><strong>总索引</strong></td>
+<td><code>references/index.md</code></td>
+<td>快速导航索引</td>
+</tr>
+<tr>
+<td><strong>理论支撑</strong></td>
+<td><code>references/theory.md</code></td>
+<td>深度理论解析</td>
+</tr>
+<tr>
+<td><strong>实操指南</strong></td>
+<td><code>references/practice.md</code></td>
+<td>具体应用场景</td>
+</tr>
+<tr>
+<td><strong>测试用例</strong></td>
+<td><code>test-cases.md</code></td>
+<td>三大场景100%覆盖</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>七、版本信息</h2>
+<h3>v1.0（2026-04-10）</h3>
+<p><strong>核心成就</strong>：</p>
+<ul>
+<li>✅ 完整的三层框架结构（框架→思维框架→框架思维）</li>
+<li>✅ 五大思维模式完整解析</li>
+<li>✅ 问题解决进化闭环</li>
+<li>✅ 中层管理三层能力</li>
+<li>✅ 知识结构三个关系模型</li>
+<li>✅ 龙心OS引擎调用协议</li>
+<li>✅ 完整标签体系与双向链接</li>
+</ul>
+<p><strong>触发场景</strong>：</p>
+<ul>
+<li>需要系统化分析问题时</li>
+<li>需要选择合适思维工具时</li>
+<li>需要进行横向展开或纵向深挖时</li>
+<li>需要构建认知进化体系时</li>
+</ul>
+<hr>
+<p><strong>框架思维模型库.skills v1.0</strong>
+<strong>龙心OS核心思维工具库</strong>
+<strong>问题解决进化论的完整体系</strong></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

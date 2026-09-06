@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>认知吝啬者理论 - 以观其妙书院</title>
+    <meta name="description" content="认知吝啬者理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\认知吝啬者理论.txt ｜ 字数：9918 ｜ 行数：104五色光分布（启发式）：白光50% 黄光16% 绿光15% 蓝光13% 红光5%象思维相关度：低（命中 6 次）一、核心定义核心定义（龙心OS精修）：本期简介二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│内容），未删改">
+    <meta name="keywords" content="[思维模型, 理论模型, 结构化学习, 博弈, 认知偏差, 决策]">
+    <meta name="author" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta property="og:title" content="认知吝啬者理论">
+    <meta property="og:description" content="认知吝啬者理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\认知吝啬者理论.txt ｜ 字数：9918 ｜ 行数：104五色光分布（启发式）：白光50% 黄光16% 绿光15% 蓝光13% 红光5%象思维相关度：低（命中 6 次）一、核心定义核心定义（龙心OS精修）：本期简介二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│内容），未删改">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/认知吝啬者理论.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/认知吝啬者理论.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "认知吝啬者理论",
+      "description": "认知吝啬者理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\认知吝啬者理论.txt ｜ 字数：9918 ｜ 行数：104五色光分布（启发式）：白光50% 黄光16% 绿光15% 蓝光13% 红光5%象思维相关度：低（命中 6 次）一、核心定义核心定义（龙心OS精修）：本期简介二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│内容），未删改",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-30",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>认知吝啬者理论</h1>
+            <div class="meta">
+                <span>📅 2026-07-30</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            认知吝啬者理论...
+        </div>
+        
+        <article>
+<h1>认知吝啬者理论</h1>
+
+<blockquote><strong>龙心OS结构化编译</strong> | 分类：理论模型 | 五行属性：金 | 层级：C层</blockquote>
+<blockquote>源文件：<code>思维模型/理论模型\认知吝啬者理论.txt</code> ｜ 字数：9918 ｜ 行数：104</blockquote>
+<blockquote>五色光分布（启发式）：白光50% 黄光16% 绿光15% 蓝光13% 红光5%</blockquote>
+<blockquote>象思维相关度：低（命中 6 次）</blockquote>
+
+<h2>一、核心定义</h2>
+
+<strong>核心定义（龙心OS精修）</strong>：本期简介
+
+<h2>二、详细内容</h2>
+<blockquote>逐行挖掘原则：下文为原文<strong>全文逐行保留</strong>（编号 <code>行号│内容</code>），未删改、未遗漏，供龙心OS五引擎（知识学习/象思维/五色光/知行合一/五象限）随时调取精读。</blockquote>
+
+<h3>2.1 逐行精读（全文保留·104 行）</h3>
+<pre><code>0001│前沿理论介绍 | 认知吝啬者理论
+0002│本期简介
+0003│
+0004│本期幸福旅研与大家分享的是认知吝啬者理论（Cognitive Miser Theory），本文将介绍该理论的理论来源、理论内涵、理论应用和理论应用思考等。
+0005│
+0006│
+0007│
+0008│在神经科学的视野中，人类拥有演化至今最为精密的大脑皮层，它足以支持我们建立复杂深奥的宏观逻辑模型，甚至创造出能够模拟人类思考的各种人工智能。然而，回到现实的决策场景中会发现，人们即使拥有卓越的心智潜能，在日常决策中也常常陷入一种低效的决策陷阱：
+0009│
+0010│为什么面对关乎法律风险的隐私协议，即便是受过高等教育的精英，也大多会选择不假思索地勾选“同意”？
+0011│
+0012│为什么在处理完一整天的高强度任务后，一个平日极其理性的成年人，会瞬间对高热量的巧克力蛋糕没有任何抵抗力？
+0013│
+0014│为什么在拥有近乎无限信息搜索权的数字时代，我们却越来越心安理得地困在算法推送到眼前的方寸信息之中？
+0015│
+0016│
+0017│
+0018│01
+0019│图片
+0020│02
+0021│图片
+0022│03
+0023│图片
+0024│
+0025│这些生活中的普通决策行为实际上反映出人类并非时刻都处于完全理性状态，在大多数决策场景下，我们的大脑并非丧失了思考的能力，而是演化出了一种舍不得思考的认知吝啬本能。本期将梳理认知吝啬者理论的理论来源、理论内涵与理论应用，通过解读Information Systems Research、Journal of Consumer Research、Journal of Experimental Social Psychology 等期刊中使用了认知吝啬者理论的文章，举例说明认知吝啬者理论在心理学、消费者行为学领域研究中的应用现状，以期为读者提供启发与借鉴。
+0026│
+0027│
+0028│理论来源 ·
+0029│
+0030│
+0031│
+0032│
+0033│
+0034│认知吝啬者理论（Cognitive Miser Theory）由美国社会心理学家苏珊·菲斯克（Susan Fiske）和雪莱·泰勒（Shelley Taylor）于1984年提出，该理论指出人类大脑天生倾向于节省思考资源，尽量减少复杂思考，以快速做出决定。这一理论常用以解释人们在社会认知过程中为何会依赖刻板印象和简单分类来决策判断。
+0035│
+0036│
+0037│
+0038│理论内涵 ·
+0039│
+0040│
+0041│
+0042│
+0043│
+0044│核心内涵
+0045│
+0046│认知吝啬是指人们在处理信息和做出决策时，倾向于采用简单、快捷的认知策略，从而节省认知资源和精力（Fiske & Taylor, 1984）。认知吝啬的本质是人们在面对复杂或不确定的信息时，会避免系统仔细地分析，仅仅依赖于头脑中已有的知识结构和经验直觉简化信息处理过程、减少认知负担、实现快速评估，采用这种认知策略的人通常称为“认知吝啬者”(See et al., 2009)。然而，这种认知策略倾向很可能造成判断失误、决策不当及问题解决能力下降等问题。因此，全面了解认知吝啬的本质，有助于准确识别和避免这些偏差，通过自觉调整或客观引导促进认知策略的优化，以提升决策质量和效率。
+0047│
+0048│
+0049│
+0050│核心内容
+0051│
+0052│
+0053│
+0054│认知吝啬者理论不仅阐释了人类认知吝啬形成的主要原因，也揭示了认知吝啬带来的正面和负面影响，有利于从认知吝啬视角明晰人类生活中决策失误和认知偏差行为的底层归因。
+0055│
+0056│
+0057│
+0058│（1）认知吝啬的形成机理。当个体暴露在信息不确定性、认知资源有限性和信息过载等条件下，大脑会倾向形成认知吝啬。认知吝啬的本质并非智力缺陷，而是一种心智层面的经济策略，其生成路径主要有两条。一是内在生理本能。人类大脑虽然只有体重的2%，但要消耗全身20%的能量，在漫长的人类进化史上，由于人类经历过资源匮乏、危机四伏的生存环境，能量对于个体而言极其宝贵，因此快速做出又准又好的判断，才能在“物竞天择，适者生存”的自然进化环境下存活下来而免受淘汰。因此，在过去那种信息不确定性和认知资源有限性背景下，人类大脑自然进化出优先处理即时威胁、内化经验模式的认知能力，并且逐步发展成为个人直觉以实现效率最大化，保证进化过程中的生存与繁衍。二是外在环境压力。社会的快速发展带来了信息的爆炸式增长，人类每天暴露在信息过载的环境下，认知资源的有限性使得很难对每一条信息进行深入分析和思考，而应对这种情况，大脑不得不通过认知吝啬这一更加经济的认知策略，依赖直觉、经验及规则帮助抓住重点、快速判断与高效决策，认知吝啬也逐渐演变成为一种人类必要的心理防御机制。
+0059│
+0060│除此之外，人类的心理舒适度和习惯性思维以及社会影响和文化背景，也影响着认知吝啬的形成。由于个体在坚持自己的观点信念和思维方式时更容易感知到心安和舒适，因此在面对与自己观点相悖的信息时倾向于忽视或简化这些信息以避免认知失调，导致不愿花费额外认知资源去评估和调整自己的观点信念，陷入认知吝啬陷阱。而在不同社会文化影响下，对传统观念以及威望者意见的遵循可能成为一种社会期望，导致个体对这类源于社会的道德规范或群体压力的信息倾向于遵从而非质疑，对其采取简单的认知策略，从而衍生出认知吝啬。
+0061│
+0062│
+0063│
+0064│（2）认知吝啬的积极与消极影响。在积极层面，认知吝啬使个体不假思索完成日常琐事，进而保证节约的宝贵认知资源能最大化地用于生活中的创新与复杂决策，提升效率。在消极层面，认知吝啬使个体倾向于在判断与决策中贪图简单省力而过度依赖简化的认知策略，导致个体未经缜密思考而忽视重要细节，倾向快速判断并形成定论，进而陷入认知偏见，做出错误的判断决策，因此，认知吝啬可能成为产生各种歧视偏见、传播虚假信息、产生冲动投资与冲动消费等行为的心理根源。
+0065│
+0066│
+0067│
+0068│（3）认知吝啬的常见表现及其下游效应。认知吝啬引导人类产生的心理捷径与思维定式可能滋生出许多认知偏见。比较常见的有：①从众效应（Chaiken, 1987），用别人的经验和决策代替自己的思考，如选择网红景点、网红餐厅或热门电影；②锚定效应(Bayraktar et al., 2015)，依赖最初获得的信息并将后面获得的信息与之进行比较，从而做出决策；③可及性启发(Lehtola et al., 2008)，倾向于依据相关信息在记忆中被提取的容易程度进行判断，可能认为发生的时间越近、越生动、印象越深刻等越容易想起的信息越重要、越常见、越容易发生；④确认偏误（Nickerson, 1988），在信息搜寻、解释和记忆过程中，倾向于选择、强化和回忆与既有信念一致的信息，同时忽视、贬低或回避不一致信息。
+0069│
+0070│
+0071│
+0072│
+0073│理论应用 ·
+0074│
+0075│
+0076│
+0077│
+0078│
+0079│自Fiske与Taylor（1984）提出认知吝啬者理论以来，该理论的应用已从最初的社会认知与判断研究，逐步拓展至消费者行为、风险感知、信息传播、数字决策与技术介入等多个研究领域。随着信息环境复杂化与决策情境高度媒介化，认知吝啬者理论不断被赋予新的解释维度，尤其在揭示个体如何在认知资源受限条件下选择信息加工策略、依赖启发式线索快速完成判断方面，展现出较强的情境适应性与跨领域解释力。现有研究大体沿两条路径展开：一方面，研究者通过操纵信息负荷、时间压力或线索显著性等外部条件，考察个体在不同认知成本结构下的加工深度选择，验证在高复杂或高不确定情境中，启发式加工相较系统性加工更易被激活的基本假设；另一方面，近年来的研究开始关注多线索并存或技术介入条件下的认知节约机制，探讨在算法推荐、默认选项或社会线索同时作用时，个体如何通过选择性注意与判断外包进一步降低认知努力，并由此影响其决策结果与主观体验。这一研究转向表明，认知吝啬者理论正由早期“认知资源有限—启发式依赖”的静态解释框架，逐步演化为强调情境调节、线索协同与策略切换的动态认知模型。以下将选取五篇具有代表性的研究加以说明，虽非穷尽性回顾，但旨在展示随着信息环境的日益复杂，认知吝啬者理论如何更好地解释消费者的决策行为，揭示作为认知吝啬者的消费者在不同情境下的决策逻辑。
+0080│
+0081│
+0082│
+0083│认知外包：生成式AI使用加剧人类认知吝啬
+0084│
+0085│Deng, Z., & Deng, Z. (2025). Becoming a cognitive miser? Antecedents and consequences of addictive ChatGPT use. Social Science & Medicine, 118467.
+0086│
+0087│
+0088│
+0089│该研究探讨了生成式AI（如ChatGPT）对人类认知模式的重塑作用。研究发现，对生成式AI的成瘾性使用会显著诱发个体的认知吝啬行为。由于生成式AI能够以极低成本提供完美的答案和多样化信息，使之成为了用户的外置大脑，用户的大脑会习惯性地进入省电模式，用户原本用于批判性分析的认知资源被闲置。这种认知外包现象长此以往会导致用户在解决问题时变得更加吝啬，不愿调用高能耗的反思系统。最终，这种认知上的偷懒不仅影响决策质量，还可能通过认知吝啬的中介作用，导致个体在现实社交和专业领域中的能力受损。
+0090│
+0091│
+0092│
+0093│图片
+0094│
+0095│
+0096│
+0097│
+0098│决策悖论：即使满足人类认知吝啬倾向也未能提升决策质量
+0099│
+0100│Jiang, D. L., Ye, S., Zhao, L., & Gu, B. (2025). Do reductions in search costs for partial information on online platforms lead to better consumer decisions? Evidence of cognitive miser behavior from a natural experiment. Information Systems Research, 36(3), 1780-1798.
+0101│
+0102│
+0103│
+0104│该研究借助Yelp和TripAdvisor平台的自然实验，构建面板数据集并采用双重差分法进行分析。实验通过引入AI图像分类对在线平台中的餐厅图片评论进行分类，降低消费者的视觉搜索成本，然而研究发现这种做法未能让消费者做出更优决策，相反由于消费者存在认知吝啬倾向，这种做法甚至可能损害其决策质量。这一结果表明消费者在处理信息时，由于大脑倾向于寻找认知捷径，当部分信息（如评分、价格或评论图片）变得极易获取时，认知吝啬者会过度依赖这些显著线索，而自动忽略那些虽然更重要但仍需更多认知投入和额外加工成本的关键内容和全局信息。这种对局部信息的启发式加工，限制了技术便利带来的决策红利，反而损害了决策质量，证明了人类在信息洪流中习惯保持着最小努力原则。
+0105│
+0106│
+0107│
+0108│图片
+0109│
+0110│
+0111│
+0112│
+0113│信任捷径：快速建立用户对电商平台的信任
+0114│
+0115│Liu, B. Q., & Goodhue, D. L. (2012). Two worlds of trust for potential e-commerce users: Humans as cognitive misers. Information Systems Research, 23(4), 1246-1262.
+0116│
+0117│
+0118│
+0119│对于认知吝啬者而言，研究复杂的平台协议和信用背书是极度耗能的。该研究发现，由于建立信任对于新用户而言是一个高难度的认知任务，因此认知吝啬者即使在初次接触平台时也可能会开启信任简化路径，他们可能不倾向深入分析复杂的制度保障（如审核平台的运营资质等法律条款），而是依赖于平台网站的视觉美感、第三方认证标识以及品牌名声等可视化周边线索。这种行为模式表明，电商平台可通过提供简洁、有序且易于识别的外观结构，有效顺应用户的认知吝啬本能，满足其认知心理捷径，快速建立起对陌生平台的安全感，从而降低用户的决策门槛。
+0120│
+0121│
+0122│
+0123│
+0124│
+0125│认知边界：显著的个体线索抑制认知吝啬倾向
+0126│
+0127│Navon, M., Ratliff, K. A., & Corneille, O. (2026). Individuating rather than group information dominates evaluations of members from newly learned social groups. Journal of Experimental Social Psychology, 123, 104851.
+0128│
+0129│
+0130│
+0131│该研究聚焦社会评估领域，通过两个实验探讨了人们在评价新群体成员时，是倾向使用简单的群体层面信息还是依赖详细的个体独特信息进行判断。虽然认知吝啬者理论表明人类更爱使用对某一群体的刻板印象这种省力的认知形式来判断个体，但该研究发现当个体的特征信息足够显著且也具有诊断性时，大脑会对这些信息投入资源进行加工，表现出策略性选择的特征。当认知吝啬者在特定情境下，如当个体线索的处理效率高于新群体形成阶段的模糊性群体线索时，人类也愿意投入更多认知资源去加工个体信息的细节，这也表明人类的认知吝啬存在一定的边界，并非总是盲目依赖最省力的信息标签，而是一种会受到信息质量和资源分配效率影响的动态选择。
+0132│
+0133│
+0134│
+0135│资源博弈：认知资源有限时认知吝啬驱动理性认知转向感性诱惑
+0136│
+0137│Shiv, B., & Fedorikhin, A. (1999). Heart and mind in conflict: The interplay of affect and cognition in consumer decision making. Journal of Consumer Research, 26(3), 278-292.
+0138│
+0139│
+0140│
+0141│该研究通过“巧克力蛋糕vs.水果沙拉”实验，探讨了认知负荷如何影响消费者的决策。该研究发现当消费者的认知资源被占用（例如被要求记住一个7位数的长数字）时，他们更倾向于选择诱人感性但健康程度较低的巧克力蛋糕；而当认知资源充足时（只需记住2位数），他们则更能通过理性思考选择健康的水果沙拉。这证明了人类作为认知吝啬者，在能量预算超支时会本能地启动节能模式。此时，大脑中耗能巨大的理性系统会选择掉线，让大脑退回到最省力、最直觉的感性加工系统。这启示营销者：在消费者疲劳或分心时，大脑由于认知吝啬容易放弃对欲望的抵抗，因此简单的视觉诱惑和感性诉求比复杂的理性认知更有效果。
+0142│
+0143│
+0144│
+0145│图片
+0146│
+0147│
+0148│理论应用思考 ·
+0149│
+0150│
+0151│
+0152│
+0153│
+0154│可能的研究方向
+0155│
+0156│
+0157│
+0158│认知吝啬者理论最初主要用于解释个体在面对复杂环境时通过启发式线索节省认知资源的路径机制，强调人类大脑在处理信息尤其是复杂信息时节省认知资源的本能，但随着生成式人工智能的深度介入、在线决策环境的高密度过载以及人机协作模式的常态化发展，该理论也逐步显现出新的应用潜力与拓展方向，值得进一步深化与系统研究：
+0159│
+0160│
+0161│
+0162│（1）从资源受限向主动配置的认知策略转向：传统的认知吝啬研究多聚焦于人类“被迫”节约资源的局限性方面，然而在AI助手和个性化算法推荐高度普及的今天，认知吝啬越来越多地作用于人类主动的认知资源配置，未来研究可关注消费者认知资源分配的特征，系统评估品牌如何通过在非必要环节顺应消费者认知吝啬本能，进而诱导其将剩余认知资源投入到深度品牌互动与品牌购买决策等消费环节中。
+0163│
+0164│
+0165│
+0166│（2）多感官信息的认知协调机制：在品牌传播与服务体验中，消费者接收到的视觉、听觉、触觉等交互信息存在密度差异。当多感官刺激信息复杂程度不一致时，可能加剧认知负荷，导致消费者陷入极端的认知吝啬，未来研究可聚焦多感官信息输入在缓解认知压力上的协调效应，探讨如何利用低能耗的感官线索（如简洁的听觉提示或直观的视觉符号）来提升高能耗的信息处理效率，为品牌在复杂场景中降低消费者认知阻碍、提升决策效率提供管理层面的理论支撑。
+0167│
+0168│
+0169│
+0170│（3）认知能力的长效演化评估：当前多数研究聚焦于认知吝啬行为对即时的购买决策与判断决策的影响，而忽视了其对个体认知能力的长期作用，未来研究有必要将认知吝啬者理论扩展至长期演化阶段，探索长期的认知吝啬行为是否会转化为不可逆的认知能力退化，是否可以通过引入适度决策阻力来激活消费者的深度认知。
+0171│
+0172│
+0173│
+0174│（4）AI时代决策主权的认知博弈：在高度智能化的决策环境中，认知吝啬者享受算法带来的便利时，正面临个体决策自主权被无形削弱的隐忧，因此未来研究可探讨消费者在顺应“最小努力原则”与维护决策自主意识之间如何动态博弈，研究何种认知介入能既满足消费者的认知吝啬的省力本能，又能在关键节点激活其理性决策。
+0175│
+0176│
+0177│
+0178│这些新的研究方向不仅推动了认知吝啬者理论从早期的认知心理学和实验心理学向品牌营销、人机交互等领域延伸，也为企业提升消费者决策质量设计高效的信息传播与营销路径提供了更具前瞻性的参考。
+0179│
+0180│
+0181│
+0182│笔者的话
+0183│
+0184│
+0185│
+0186│通过对认知吝啬者理论的梳理和探讨，我们不难发现，认知吝啬早已不再是心理学里的一个枯燥术语，而是正在深刻重塑我们数字生活的隐秘力量。认知吝啬者理论已从早期强调对思维偏误的警惕，发展到如今在AI交互、算法推荐和复杂决策环境中的积极应用，它提醒着我们：在这个“注意力比金子还贵”的时代，当我们沉溺于人工智能给出的现成答案、冲动下单于算法推荐的第一个选项时，我们在决策的过程中虽然节省了体力和认知资源，却也在无形中让渡了大脑的控制权。大脑的省电模式是为了生存，但现在过度的思维外包可能会导致反思能力的萎缩。作为一个认知吝啬者，我们本能地寻找捷径；但作为一个独立的个体，我们应当学会在信息的海洋中、在算法的温床里保留一份清醒的摩擦力，我们应当意识到，认知吝啬并非一成不变的懒惰，而是一种动态的资源分配。未来的研究可以进一步关注和思考如何在长期思维外包的环境下，保护和唤起个体的反思、批判和创新能力。最后，由于笔者能力有限，文中如有疏漏与不足，恳请各位老师与同学不吝指正。感谢您的阅读，让我们一起期待下一次的探索旅程。
+0187│
+0188│
+0189│
+0190│
+0191│
+0192│参考文献
+0193│
+0194│
+0195│
+0196│[1] Bayraktar, A., Uslay, C., & Ndubisi, N. O. (2015). The role of mindfulness in response to product cues and marketing communications. International Journal of Business Environment, 7(4), 347.
+0197│
+0198│[2] Deng, Z., & Deng, Z. (2025). Becoming a cognitive miser? Antecedents and consequences of addictive ChatGPT use. Social Science & Medicine, 118467.
+0199│
+0200│[3] Fiske, S. T., & Taylor, S. E. (1991). Social cognition (2nd ed.). Mcgraw-Hill Book Company.
+0201│
+0202│[4] Jiang, D. L., Ye, S., Zhao, L., & Gu, B. (2025). Do reductions in search costs for partial information on online platforms lead to better consumer decisions? Evidence of cognitive miser behavior from a natural experiment. Information Systems Research, 36(3), 1780-1798.
+0203│
+0204│[5] Lehtola, K., Luomala, H. T., Kauppinen-Räisänen, H., Kupiainen, T., & Tuuri, H. (2008). Consumers’ experience of food products: Effects of value activation and price cues. Journal of Customer Behaviour, 7(1), 19–29.
+0205│
+0206│[6] Liu, B. Q., & Goodhue, D. L. (2012). Two worlds of trust for potential e-commerce users: Humans as cognitive misers. Information Systems Research, 23(4), 1246-1262.
+0207│
+0208│[7] Navon, M., Ratliff, K. A., & Corneille, O. (2026). Individuating rather than group information dominates evaluations of members from newly learned social groups. Journal of Experimental Social Psychology, 123, 104851.
+0209│
+0210│[8] Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2(2), 175-220.
+0211│
+0212│[9] See, Y. H. M., Petty, R. E., & Evans, L. M. (2009). The impact of perceived message complexity and need for cognition on information processing and attitudes. Journal of Research in Personality, 43(5), 880–889.
+0213│
+0214│[10] Shiv, B., & Fedorikhin, A. (1999). Heart and mind in conflict: The interplay of affect and cognition in consumer decision making. Journal of Consumer Research, 26(3), 278-292.
+0215│
+0216│
+0217│
+0218│幸
+0219│
+0220│福
+0221│
+0222│旅
+0223│
+0224│研
+0225│
+0226│Tourism Well-being Research
+0227│
+0228│
+0229│
+0230│幸福旅研，是由中南大学商学院粟路军教授幸福旅研团队运营管理的自媒体学术平台，旨在深刻剖析我国社会发展中有关幸福美好生活的具体问题、深入推进数智化背景下幸福感领域的科学研究、深度分享幸福管理领域最新研究成果！
+0231│
+0232│
+0233│
+0234│
+0235│
+0236│团队使命 MISSION
+0237│
+0238│深耕学术研究，服务学术社群，
+0239│
+0240│解码幸福本质，智创美好未来！
+0241│
+0242│
+0243│
+0244│团队愿景 VISION
+0245│
+0246│
+0247│
+0248│成为引领幸福美好生活研究的具有国际影响力的数智学术平台，构建本土化幸福管理理论体系，推动幸福管理领域的科学实践，助力数智化时代的人民幸福美好生活与社会福祉提升。
+0249│
+0250│
+0251│
+0252│
+0253│
+0254│团队价值导向VALUE
+0255│
+0256│
+0257│
+0258│科学为基，本土为根，创新为源，
+0259│
+0260│责任为本，共创为道。
+0261│
+0262│
+0263│
+0264│团队研究领域FIELD
+0265│
+0266│
+0267│
+0268│团队以“摆脱烦恼的生活，享受愉悦的生活，追求向往的生活，实现意义的生活”为研究导向，根植于中国社会实践土壤，发现“真问题”，将论文写在祖国的大地上，推进本土化幸福美好生活研究落地。团队围绕数智化时代的幸福管理、文旅融合与幸福感等研究领域开展系列研究，旨在构建幸福管理的中国话语，形成幸福管理的中国方案，贡献幸福管理的中国智慧。
+0269│
+0270│
+0271│
+0272│
+0273│
+0274│
+0275│
+0276│学术研究是一场低调又华丽的冒险
+0277│
+0278│独乐乐不如众乐乐，希望有更多的朋友加入我们
+0279│
+0280│做幸福的研究，幸福地做研究
+0281│
+0282│
+0283│
+0284│诚挚邀请各位读者朋友在幸福旅研分享研究成果，如有意愿烦请联系xingfulvyan@163.com
+0285│
+0286│
+0287│
+0288│
+0289│
+0290│
+0291│
+0292│图片
+0293│图片
+0294│扫码关注我们丨幸福旅研
+0295│
+0296│中南大学商学院粟路军教授研究团队
+0297│
+0298│做幸福的研究，幸福地做研究！
+0299│
+0300│主编 | 粟路军 教授 中南大学商学院
+0301│
+0302│撰稿 | 左帆 博士研究生
+0303│
+0304│监制 | 左帆 博士研究生
+0305│
+0306│校对 | 汪子懿 孙熙媛 唐宇东
+0307│
+0308│        田晨旭 陈妍希
+0309│
+0310│审核 | 黄静云 杨雨曦 罗儒志
+0311│
+0312│        唐宇东 王秀姗
+0313│
+0314│责编 | 覃雯 叶成志 纪颖超
+0315│
+0316│        杨勇 龚丽琴
+0317│
+0318│成员 | 成锦 唐彬礼 贾伯聪
+0319│
+0320│        杨小杰 陈惠璇
+0321│
+0322│【温馨提示】
+0323│
+0324│本文部分图片来源于网络，如有侵权，烦请联系删除
+</code></pre>
+
+<h2>三、关联文件（双向链接）</h2>
+<li>上游/总导航：[[00-总索引-思维模型]] ｜ 知识图谱：[[10-知识图谱-思维模型]] ｜ 概念手册：[[09-核心概念手册-思维模型]]</li>
+<li>跨文件同构（共享显著概念）：[[积极情绪的拓展-建构理论]]，[[社会促进理论]]，[[过程调节法]]，[[道德基础理论]]，[[社会视觉理论]]，[[认知-情感-意动框架]]，[[最佳唤醒理论]]，[[享乐适应理论]]</li>
+
+<h2>四、核心金句</h2>
+<blockquote>认知外包：生成式AI使用加剧人类认知吝啬</blockquote>
+<blockquote>决策悖论：即使满足人类认知吝啬倾向也未能提升决策质量</blockquote>
+<blockquote>信任捷径：快速建立用户对电商平台的信任</blockquote>
+<blockquote>认知边界：显著的个体线索抑制认知吝啬倾向</blockquote>
+<blockquote>资源博弈：认知资源有限时认知吝啬驱动理性认知转向感性诱惑</blockquote>
+<blockquote>为什么面对关乎法律风险的隐私协议，即便是受过高等教育的精英，也大多会选择不假思索地勾选“同意”？</blockquote>
+
+<h2>五、标签</h2>
+<li>领域：理论模型、思维模型、博弈、认知偏差、决策</li>
+<li>机制：知识学习(十项认知指令)、五色光思维(白红黄绿蓝)</li>
+<li>洞见：跨域同构、网状知识、双向链接、人机共生</li>
+
+<h2>六、龙心OS隐秘联系（跨域同构·龙心OS精修）</h2>
+
+<blockquote>以下为龙心OS在跨域同构（北极星能力）下发现的隐秘结构联系，供五引擎组合调取。</blockquote>
+
+<li><strong>地图≠疆域⟷龙心OS知行合一三阶段</strong>：地图=表示空间（压缩后的模型），疆域=泛化对象（真实世界）；模型必有边界，恰如『泛化』不可越出『表示』之界。</li>
+<li><strong>模型局限性⟷五色光白光（事实校验）</strong>：白光思维要求用真实数据反复校验『地图』，防止模型崇拜。</li>
+<li><strong>概率思维⟷五色光蓝光（风险量化）</strong>：把不确定性转为概率分布，是蓝光思维的量化形态。</li>
+<li><strong>不确定性⟷复杂系统（涌现/黑天鹅）</strong>：概率思维是应对复杂系统的认知疫苗。</li>
+<li><strong>系统思维/涌现⟷五行生克网络</strong>：五行相生相克即系统要素互动的最小完备模型。</li>
+<li><strong>整体大于部分之和⟷格式塔关系场</strong>：系统涌现的格式塔解释，对应合道场域型组织。</li>
+<li><strong>能力圈⟷五行（守边界/知止）</strong>：能力圈即五行所司之域，越界则乱；『知止』是五行守位之德。</li>
+<li><strong>能力圈⟷知行合一（知是行之始）</strong>：只在真懂之域决策，是『知』的诚实边界。</li>
+<li><strong>跨文件同构</strong>：与 [[积极情绪的拓展-建构理论]]、[[社会促进理论]]、[[过程调节法]] 共享核心概念（详见「三、关联文件」章节），可在龙心OS知识学习引擎下做十项认知指令的对比推演。</li>
+
+<blockquote><strong>引擎路由</strong>：本文可由龙心OS五引擎组合调用——知识学习（十项认知指令深度学习）、象思维（物象→意象→原象）、五色光（白红黄绿蓝五维审查）、知行合一（表示→压缩→泛化）、人机协同五象限（[AI]/[人]/[⇄]分工定位）。</blockquote>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

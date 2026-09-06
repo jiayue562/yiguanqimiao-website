@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>思维模型库知识图谱 - 以观其妙书院</title>
+<meta name="description" content="思维模型库知识图谱 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="思维模型库知识图谱">
+<meta property="og:description" content="思维模型库知识图谱 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "思维模型库知识图谱",
+    "description": "思维模型库知识图谱 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>思维模型库知识图谱</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>思维模型库知识图谱</h1>
+<blockquote><p>可视化展示31个思维模型之间的关系网络</p></blockquote>
+<hr>
+<h2>一、模型层级结构</h2>
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│                    思维模型库·龙脑OS                          │
+├─────────────────────────────────────────────────────────────┤
+│  第一册·基础通用（9个）                                        │
+│  ├─ 认知边界层：01地图≠疆域                                    │
+│  ├─ 自我认知层：02能力圈                                       │
+│  ├─ 本质思考层：03第一性原理                                   │
+│  ├─ 探索验证层：04思想实验                                     │
+│  ├─ 长期推演层：05二阶思维                                     │
+│  ├─ 不确定性层：06概率思维                                     │
+│  ├─ 风险控制层：07逆向思维                                     │
+│  ├─ 简化决策层：08奥卡姆剃刀                                   │
+│  └─ 人际归因层：09汉隆剃刀                                     │
+├─────────────────────────────────────────────────────────────┤
+│  第二册·自然科学（22个）                                       │
+│  物理领域（9个）                                               │
+│  ├─ 增长层：10复利效应                                         │
+│  ├─ 阻力层：11惯性                                             │
+│  ├─ 混乱层：12熵增定律                                         │
+│  ├─ 转化层：13能量守恒                                         │
+│  ├─ 跃迁层：14临界点                                           │
+│  ├─ 放大层：15杠杆                                             │
+│  ├─ 循环层：16反馈回路                                         │
+│  ├─ 效率层：17摩擦力                                           │
+│  └─ 参照层：18相对论                                           │
+│  化学领域（6个）                                               │
+│  ├─ 19催化剂 ├─ 20活化能 ├─ 21化学键                           │
+│  ├─ 22化学平衡 ├─ 23自催化 ├─ 24氧化还原                       │
+│  生物领域（7个）                                               │
+│  ├─ 25进化 ├─ 26生态位 ├─ 27自然选择                           │
+│  ├─ 28适应性 ├─ 29共生 ├─ 30冗余 ├─ 31涌现                     │
+└─────────────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h2>二、核心关联网络</h2>
+<h3>高频核心模型网络</h3>
+<pre><code>                    ┌──────────────┐
+                    │ 03第一性原理  │
+                    │   (看本质)    │
+                    └──────┬───────┘
+                           │
+        ┌──────────────────┼──────────────────┐
+        │                  │                  │
+        ▼                  ▼                  ▼
+┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+│ 05二阶思维    │  │ 06概率思维    │  │ 07逆向思维    │
+│  (看长期)     │  │  (算风险)     │  │  (避失败)     │
+└──────┬───────┘  └──────┬───────┘  └──────┬───────┘
+       │                  │                  │
+       └──────────────────┼──────────────────┘
+                          │
+                          ▼
+                   ┌──────────────┐
+                   │ 决策分析套件  │
+                   │  (综合应用)   │
+                   └──────────────┘</code></pre>
+<h3>增长与进化网络</h3>
+<pre><code>┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+│ 10复利效应    │◄───►│ 14临界点      │◄───►│ 16反馈回路    │
+│  (积累)       │     │  (跃迁)       │     │  (循环)       │
+└──────┬───────┘     └──────┬───────┘     └──────┬───────┘
+       │                    │                    │
+       └────────────────────┼────────────────────┘
+                            │
+                            ▼
+                     ┌──────────────┐
+                     │ 25进化        │
+                     │  (迭代)       │
+                     └──────┬───────┘
+                            │
+                            ▼
+                     ┌──────────────┐
+                     │ 26生态位      │
+                     │  (定位)       │
+                     └──────────────┘</code></pre>
+<h3>系统优化网络</h3>
+<pre><code>┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+│ 12熵增定律    │◄───►│ 17摩擦力      │◄───►│ 19催化剂      │
+│  (混乱)       │     │  (阻力)       │     │  (加速)       │
+└──────┬───────┘     └──────┬───────┘     └──────┬───────┘
+       │                    │                    │
+       └────────────────────┼────────────────────┘
+                            │
+                            ▼
+                     ┌──────────────┐
+                     │ 系统优化      │
+                     │  (目标)       │
+                     └──────────────┘</code></pre>
+<hr>
+<h2>三、场景应用映射</h2>
+<h3>决策场景</h3>
+<pre><code>决策问题
+    │
+    ├─► 03第一性原理 → 看本质
+    ├─► 05二阶思维 → 看长期
+    ├─► 06概率思维 → 算风险
+    ├─► 07逆向思维 → 避失败
+    ├─► 13能量守恒 → 权衡利弊
+    └─► 18相对论 → 选择参照系</code></pre>
+<h3>创新场景</h3>
+<pre><code>创新问题
+    │
+    ├─► 03第一性原理 → 本质重构
+    ├─► 04思想实验 → 零成本试错
+    ├─► 14临界点 → 突破时机
+    ├─► 19催化剂 → 加速实现
+    ├─► 25进化 → 持续迭代
+    └─► 31涌现 → 系统创新</code></pre>
+<h3>个人成长场景</h3>
+<pre><code>成长问题
+    │
+    ├─► 02能力圈 → 明确边界
+    ├─► 10复利效应 → 长期积累
+    ├─► 20活化能 → 启动改变
+    ├─► 25进化 → 持续迭代
+    ├─► 26生态位 → 差异化定位
+    └─► 28适应性 → 适应变化</code></pre>
+<h3>组织管理场景</h3>
+<pre><code>管理问题
+    │
+    ├─► 11惯性 → 变革阻力
+    ├─► 12熵增定律 → 混乱管理
+    ├─► 16反馈回路 → 系统优化
+    ├─► 21化学键 → 关系构建
+    ├─► 29共生 → 协同发展
+    └─► 30冗余 → 风险管理</code></pre>
+<hr>
+<h2>四、模型属性标签</h2>
+<h3>按应用领域分类</h3>
+<table>
+<thead><tr>
+<th>应用领域</th>
+<th>相关模型</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>战略决策</strong></td>
+<td>03, 05, 06, 07, 13, 18</td>
+</tr>
+<tr>
+<td><strong>创新突破</strong></td>
+<td>03, 04, 14, 19, 25, 31</td>
+</tr>
+<tr>
+<td><strong>个人成长</strong></td>
+<td>02, 10, 20, 25, 26, 28</td>
+</tr>
+<tr>
+<td><strong>组织管理</strong></td>
+<td>11, 12, 16, 21, 29, 30</td>
+</tr>
+<tr>
+<td><strong>投资财务</strong></td>
+<td>02, 06, 07, 10, 13, 15</td>
+</tr>
+<tr>
+<td><strong>人际关系</strong></td>
+<td>09, 21, 26, 29</td>
+</tr>
+<tr>
+<td><strong>效率优化</strong></td>
+<td>08, 17, 19, 20</td>
+</tr>
+<tr>
+<td><strong>风险管理</strong></td>
+<td>06, 07, 12, 30</td>
+</tr>
+</tbody></table>
+<h3>按思维类型分类</h3>
+<table>
+<thead><tr>
+<th>思维类型</th>
+<th>相关模型</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>本质思维</strong></td>
+<td>01, 03, 04</td>
+</tr>
+<tr>
+<td><strong>系统思维</strong></td>
+<td>12, 16, 31</td>
+</tr>
+<tr>
+<td><strong>长期思维</strong></td>
+<td>05, 10, 25</td>
+</tr>
+<tr>
+<td><strong>概率思维</strong></td>
+<td>06, 18</td>
+</tr>
+<tr>
+<td><strong>逆向思维</strong></td>
+<td>07, 08, 09</td>
+</tr>
+<tr>
+<td><strong>增长思维</strong></td>
+<td>10, 14, 15, 23</td>
+</tr>
+<tr>
+<td><strong>进化思维</strong></td>
+<td>25, 26, 27, 28</td>
+</tr>
+<tr>
+<td><strong>关系思维</strong></td>
+<td>21, 29</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>五、跨域知识联系</h2>
+<h3>与五行人格心理学OS的联系</h3>
+<pre><code>思维模型库（龙脑OS）          五行人格心理学OS
+        │                            │
+        ├─► 认知工具 ────────────────┼─► 人格分析
+        ├─► 决策方法 ────────────────┼─► 行为设计
+        ├─► 系统思维 ────────────────┼─► 三界诊断
+        └─► 进化迭代 ────────────────┼─► 九层发展</code></pre>
+<h3>与龙心OS五大引擎的联系</h3>
+<pre><code>思维模型库                    龙心OS五大引擎
+    │                              │
+    ├─► 第一性原理 ────────────────┼─► 象思维（本质洞察）
+    ├─► 概率思维/二阶思维 ─────────┼─► 五色光思维（多角度）
+    ├─► 复利效应/进化 ─────────────┼─► 知行合一（迭代进化）
+    ├─► 能力圈/生态位 ─────────────┼─► 人机协同五象限（分工）
+    └─► 全模型库 ──────────────────┼─► 知识学习（深度学习）</code></pre>
+<hr>
+<h2>六、学习路径推荐</h2>
+<h3>初学者路径（10个核心模型）</h3>
+<pre><code>第一阶段（基础）：01 → 02 → 03
+第二阶段（决策）：05 → 06 → 07
+第三阶段（增长）：10 → 14 → 15
+第四阶段（进化）：25 → 26</code></pre>
+<h3>进阶者路径（20个高频模型）</h3>
+<pre><code>在初学者基础上增加：
+第四阶段（系统）：12 → 16 → 31
+第五阶段（优化）：08 → 17 → 19 → 20
+第六阶段（关系）：09 → 21 → 29
+第七阶段（突破）：04 → 11 → 13 → 18</code></pre>
+<h3>专家路径（全部31个模型）</h3>
+<pre><code>按顺序学习全部31个模型
+建立完整的思维格栅
+根据场景灵活组合应用</code></pre>
+<hr>
+<h2>七、核心金句网络</h2>
+<pre><code>"地图≠疆域" ──► 所有模型都是简化的地图
+       │
+       ▼
+"在能力圈内决策" ──► 明确边界，谨慎拓展
+       │
+       ▼
+"回归第一性原理" ──► 剥离表象，从头推演
+       │
+       ▼
+"反过来想" ──► 避开失败就是成功
+       │
+       ▼
+"复利效应" ──► 时间是最强大的杠杆
+       │
+       ▼
+"进化" ──► 适者生存，持续迭代</code></pre>
+<hr>
+<p><em>思维模型库知识图谱 | 版本1.0 | 龙脑OS知识库</em></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

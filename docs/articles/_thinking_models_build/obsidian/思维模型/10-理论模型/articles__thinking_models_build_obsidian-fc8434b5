@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情感事件理论 - 以观其妙书院</title>
+    <meta name="description" content="情感事件理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\情感事件理论.txt ｜ 字数：8513 ｜ 行数：103五色光分布（启发式）：红光35% 黄光28% 白光14% 蓝光11% 绿光9%象思维相关度：中（命中 23 次）一、核心定义核心定义（龙心OS精修）：2025年3月8日二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│内容）">
+    <meta name="keywords" content="[思维模型, 理论模型, 结构化学习, 决策]">
+    <meta name="author" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta property="og:title" content="情感事件理论">
+    <meta property="og:description" content="情感事件理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\情感事件理论.txt ｜ 字数：8513 ｜ 行数：103五色光分布（启发式）：红光35% 黄光28% 白光14% 蓝光11% 绿光9%象思维相关度：中（命中 23 次）一、核心定义核心定义（龙心OS精修）：2025年3月8日二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│内容）">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/情感事件理论.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/情感事件理论.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "情感事件理论",
+      "description": "情感事件理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\情感事件理论.txt ｜ 字数：8513 ｜ 行数：103五色光分布（启发式）：红光35% 黄光28% 白光14% 蓝光11% 绿光9%象思维相关度：中（命中 23 次）一、核心定义核心定义（龙心OS精修）：2025年3月8日二、详细内容逐行挖掘原则：下文为原文全文逐行保留（编号 行号│内容）",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-30",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>情感事件理论</h1>
+            <div class="meta">
+                <span>📅 2026-07-30</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            情感事件理论...
+        </div>
+        
+        <article>
+<h1>情感事件理论</h1>
+
+<blockquote><strong>龙心OS结构化编译</strong> | 分类：理论模型 | 五行属性：金 | 层级：C层</blockquote>
+<blockquote>源文件：<code>思维模型/理论模型\情感事件理论.txt</code> ｜ 字数：8513 ｜ 行数：103</blockquote>
+<blockquote>五色光分布（启发式）：红光35% 黄光28% 白光14% 蓝光11% 绿光9%</blockquote>
+<blockquote>象思维相关度：中（命中 23 次）</blockquote>
+
+<h2>一、核心定义</h2>
+
+<strong>核心定义（龙心OS精修）</strong>：2025年3月8日
+
+<h2>二、详细内容</h2>
+<blockquote>逐行挖掘原则：下文为原文<strong>全文逐行保留</strong>（编号 <code>行号│内容</code>），未删改、未遗漏，供龙心OS五引擎（知识学习/象思维/五色光/知行合一/五象限）随时调取精读。</blockquote>
+
+<h3>2.1 逐行精读（全文保留·103 行）</h3>
+<pre><code>0001│研究理论介绍 | 情感事件理论（Affective Events Theory）
+0002│
+0003│情感事件理论
+0004│
+0005│2025年3月8日
+0006│
+0007│星期日
+0008│
+0009│
+0010│
+0011│场景引入
+0012│
+0013│Introduction
+0014│
+0015│
+0016│
+0017│小李在公司群里提交了一份项目方案。十分钟后，部门负责人回复：“这个思路很有创新性，下午会上重点讨论。”
+0018│
+0019│小李的情绪立刻高涨，接下来一整天，他处理任务更积极，在会议上也更愿意发言。
+0020│
+0021│相反，如果这条消息换成：“方案逻辑不清，需要重做。”他的情绪可能迅速低落，甚至开始回避交流。
+0022│
+0023│这种“工作事件引发情感反应，进而影响工作态度和行为”的现象，正是情感事件理论(Affective Events Theory，AET)的核心研究内容。今天，我们将深入探讨这一理论如何揭示职场情感的秘密。
+0024│
+0025│
+0026│
+0027│理论起源
+0028│
+0029│Theoretical Origin
+0030│
+0031│
+0032│
+0033│情感事件理论由美国心理学家霍华德·韦斯(Howard M. Weiss)和罗素·克朗潘泽诺(Russell Cropanzano)于1996年正式提出[1]。他们的研究标志着组织行为学领域的“情感转向”。
+0034│
+0035│图片
+0036│
+0037│图1 Howard M. Weiss和
+0038│
+0039│Russell Cropanzano
+0040│
+0041│
+0042│
+0043│上世纪90年代前，组织研究主要关注认知因素，将员工视为的理性决策者。但随着情绪心理学的发展，如Richard S. Lazarus提出的认知评价理论，开始强调情感在个体反应中的关键作用[2]。Weiss和Cropanzano整合了情绪心理学、社会心理学和组织行为学的见解，构建了这一理论框架，试图解释“工作场所中的事件如何通过情感反应影响员工态度和行为”。
+0044│
+0045│
+0046│
+0047│理论基础
+0048│
+0049│Theoretical Basis
+0050│
+0051│
+0052│
+0053│在情感事件理论诞生前，学界主要从三个角度解释员工对工作的感受：认知判断取向(Cognitive Judgment Approach)，社会影响取向(Social Influences Approach)和特质取向(Dispositional Approach)。
+0054│
+0055│
+0056│
+0057│（1）认知判断取向
+0058│
+0059│
+0060│
+0061│认知判断取向认为，员工会对薪资、晋升机会等工作特征进行理性评估，从而形成满意度(见图2)。
+0062│
+0063│图片
+0064│
+0065│
+0066│（2）社会影响取向
+0067│
+0068│
+0069│
+0070│在20世纪70年代中后期，学者开始从社会影响角度研究工作满意度[3]。社会影响取向则强调社会信息的重要作用，认为同事、领导和组织氛围会影响员工对工作的认知评价(见图3)。
+0071│
+0072│图片
+0073│
+0074│
+0075│
+0076│
+0077│
+0078│（3）特质取向
+0079│
+0080│
+0081│
+0082│认知判断取向和社会影响取向的研究，都强调了工作环境对工作满意度的影响，但忽视了个体差异的影响。特质取向进一步指出，个体稳定的人格特质(如积极情感或消极情感倾向)也会影响工作满意度。
+0083│
+0084│
+0085│
+0086│情感事件理论在此基础上提出：工作中的具体事件及其引发的情感体验，是影响员工态度与行为的重要机制。
+0087│
+0088│
+0089│
+0090│相关研究关注了积极情感特质和消极情感特质这两种人格特质对工作满意度的影响。积极情感特质的人通常表现为积极、活跃、社交能力强，并且经常处于积极的情绪状态；而消极情感特质的人则更容易感到沮丧、不开心，并且倾向于关注事物的负面方面[4]。研究表明，不论从事何种工作，具有较高积极情感特质的人往往比较满意，相比之下，具有较低积极情感特质的人则工作满意度较低[5]。
+0091│
+0092│
+0093│
+0094│理论内容
+0095│
+0096│Theoretical Content
+0097│
+0098│
+0099│
+0100│情感事件理论强调工作满意度受到工作事件直接影响的观点。该理论包含的主要变量有工作环境特征、工作事件、情感反应、个体特质、工作态度、判断导向行为和情感导向行为(见图4)。这种理论认为，工作中发生的事件会直接影响员工的情绪反应和工作态度，从而影响其行为表现。
+0101│
+0102│图片
+0103│
+0104│
+0105│
+0106│
+0107│
+0108│（1）情感反应
+0109│
+0110│
+0111│
+0112│情感事件理论将情感反应分为“心境”和“情绪”两种成分，二者特点不同。
+0113│
+0114│
+0115│
+0116│心境(Mood)是一种强度较低但持续时间较长的情感背景，比如持续的轻松或莫名的烦闷。它往往没有明确原因，可能受工作事件影响，也可能仅仅因为天气好而感到愉快。
+0117│
+0118│
+0119│
+0120│情绪(Emotion)则是一种强烈而短暂的情感爆发，比如突然的兴奋或愤怒。它通常由具体事件直接引发，例如在会上被批评后立刻感到的愤怒。
+0121│
+0122│
+0123│
+0124│该理论强调，事件本身不直接引发情感，认知评价才是关键。认知评价先于情感产生，并分为两个步骤。
+0125│
+0126│
+0127│
+0128│1.初评：判断这件事是否与自己有关，以及关系有多大。
+0129│
+0130│
+0131│
+0132│2.次评：评估自己是否有能力或资源来应对这件事。
+0133│
+0134│
+0135│
+0136│简单来说，心境像持久的气候，情绪像突发的天气；而无论是哪种情感，都源于你如何看待遇到的事情。
+0137│
+0138│
+0139│
+0140│（2）工作环境特征与工作事件
+0141│
+0142│
+0143│
+0144│理解情感事件理论，首先要分清两个核心概念：工作环境特征与工作事件。主要区别在于：
+0145│
+0146│
+0147│
+0148│工作环境特征是稳定、持续的背景因素。如公司文化、薪酬制度、领导风格等。
+0149│
+0150│
+0151│
+0152│工作事件是离散、具体的偶发事情。如一次关键的会议、一场突发的冲突、一次意外的表扬等。
+0153│
+0154│
+0155│
+0156│二者可以相互转化。当某个工作事件变得频繁且可预测时，它就会转化为环境特征。例如，一次性的项目奖金是“事件”；而固定化的月度绩效奖金，就成了“制度性”的环境特征。
+0157│
+0158│
+0159│
+0160│我们的工作满意度、组织承诺等态度，主要通过以下两条路径形成：
+0161│
+0162│
+0163│
+0164│理性评价路径(Rational Evaluation Path)：我们像一个冷静的评估者，将工作环境特征(如薪资福利、晋升空间)与自己的期望、标准进行直接比较，从而形成理性判断。这个过程不必然涉及强烈情绪。
+0165│
+0166│
+0167│
+0168│情感体验路径(Emotional Experience Path)：这是情感事件理论的核心。工作环境特征会塑造或催生具体的工作事件，而这些事件会直接引发我们的情感反应，最终累积、影响整体态度。
+0169│
+0170│
+0171│
+0172│而情感事件理论进一步将工作事件分为两种类型：一种是麻烦或负面事件，另一种是令人振奋的事件。麻烦事件阻碍了工作目标的实现，并与消极情感相关联，而令人振奋的事件则促进了工作目标的实现，并与积极情感相关联。
+0173│
+0174│
+0175│
+0176│（3）特质
+0177│
+0178│
+0179│
+0180│情感事件理论继承了满意度特质取向理论的某些观点，认为特质是影响情感反应和工作满意度的因素之一。一方面，特质可以调节工作事件与情感反应之间的关系。例如，具有高积极情感特质的人对积极的情绪刺激(即工作事件)更为敏感，因此可能会产生更多的积极情感反应；而具有高消极情感特质的人则相反。另一方面，特质本身与工作满意度等工作态度密切相关，它会直接影响员工对工作事件的认知评价，进而影响他们的工作满意度。
+0181│
+0182│
+0183│（4）情感—驱动行为与判断—驱动行为
+0184│
+0185│
+0186│
+0187│情感—驱动行为(Affect-driven Behaviors)直接受情感影响，比如情绪状态直接影响的助人行为或应对负面情感的反应。这些行为对工作绩效有影响，但与情感与满意度之间的关系无直接联系。因此，情感—驱动行为反映了情感与绩效之间的直接联系，而不牵涉到满意度与绩效之间的关系。此外，由于情感随时间不断变化，情感—驱动行为的持续时间相对较短且不断变化。
+0188│
+0189│
+0190│
+0191│判断—驱动行为(Judgment-driven Behaviors)是在受到工作满意度影响后产生的，通常是经过深思熟虑的结果，涉及对工作的整体性判断。与情感—驱动行为相比，判断—驱动行为更加稳定，持续时间较长，并且变化较小。
+0192│
+0193│
+0194│
+0195│简而言之，情感事件理论揭示的核心路径：
+0196│
+0197│
+0198│
+0199│工作环境 → 工作事件 → 情感反应 → 工作态度 → 行为结果
+0200│
+0201│
+0202│
+0203│应用领域
+0204│
+0205│Application
+0206│
+0207│
+0208│
+0209│1.组织行为与管理领域
+0210│
+0211│
+0212│
+0213│孙利平(2021)通过研究发现，员工职场偏差行为对其自身的影响，探讨了偏差行为如何引发情绪并影响工作投入[6]。Silva等(2024)用最新实证研究下的日记法，检验微中断事件如何通过情绪影响心理健康[7]。
+0214│
+0215│
+0216│
+0217│2.媒介与信息系统领域
+0218│
+0219│
+0220│
+0221│杨聪聪等(2021)研究得出，信息系统领域中的情感事件理论应用主要集中在知识分享/隐藏、信息系统使用、在线工作中的情感冲突问题以及信息安全遵从4个方面，介绍AET如何被用于信息系统、数字情境下的情绪影响研究[8]。在服务领域，叶诗田等(2023)通过调查主题公园开展的顾客组织社会化的途径，得出顾客组织社会化能增强顾客的“兼职员工”身份，但缺乏其对顾客公民行为影响的讨论[9]。
+0222│
+0223│
+0224│
+0225│ 3. 消费者行为研究方向
+0226│
+0227│
+0228│
+0229│Zeng等(2024)基于AET检验顾客在获得特殊待遇后的情绪反应与后续的行为(如冲动购买、口碑推荐等)，将理论推向于更多消费场景分析[10]。
+0230│
+0231│
+0232│
+0233│案例应用
+0234│
+0235│Cases
+0236│
+0237│
+0238│
+0239│优势领导对员工知识共享行为的“双刃剑”效应——基于个体—人际二元情感机制[11]
+0240│
+0241│彭息强 田喜洲
+0242│
+0243│摘要：优势领导作为一种积极领导方式，指领导发现、运用和发展下属优势的管理行为。目前关于其正向效应的研究已然取得了较为丰富的成果，但关于优势领导可能存在的阴暗面却鲜有研究关注。对此，基于情感事件理论，本文通过收集三阶段275名员工的多源配对数据，从情感机制出发，探究优势领导对员工知识共享行为的“双刃剑”影响效应。结果表明：优势领导既会通过个体情感(鼓舞感)正向影响员工知识共享行为，也会通过人际情感(被嫉妒感)负向影响员工知识共享。员工导向人力资源管理实践正向调节鼓舞感在优势领导与知识共享关系间的中介作用，负向调节被嫉妒感在优势领导与知识共享关系间的中介作用。本研究揭示了优势领导的潜在负向影响，证实了优势领导并不只是过往研究所认为的单方面促进员工知识共享，还能为综合理解优势管理提供更为全面的轮廓；依据情感事件理论，从个体和人际二元情感机制出发，本文研究为优势领导“双刃剑”效应提供了新的解释，突破了过往研究主要依据的认知或行为机制，对鼓舞感和被嫉妒感的运用也进一步拓展了两者前因与后效研究；关注到了优势领导与人力资源管理实践的交互作用，弥补了以往研究关于优势领导边界条件对外部环境作用关注不足的局限。
+0244│
+0245│关键词：优势领导;知识共享;个体情感;员工导向;人力资源管理实践
+0246│
+0247│来源：《经济管理》第6期47卷(2025年)
+0248│
+0249│
+0250│
+0251│Effect of sincere social interaction on tourist inspiration: an affective events theory framework[12]
+0252│
+0253│Ye Chen,Ziming Jiang,Yingyan Liu
+0254│
+0255│ABSTRACT : Inspiration is crucial to the self-development and creative experiences of tourists, which has increasingly received research attention. However, the role of host–tourist interactions in arousing tourist inspiration has yet to be examined. This study applies affective events theory to investigate how sincere social interaction evokes tourist inspiration and the boundary of that relationship. An on-site questionnaire survey was administered to 402 tourists who visited the Wuyi Mountain Scenic Resort in China. Through structural equation modelling based on partial least squares, this study revealed that tourist inspiration was directly stimulated by sincere social interaction and that this link was mediated by tourist delight. Travel risk appraisal moderated both the direct impact of sincere social interaction on tourist delight and the indirect influence of sincere social interaction on tourist inspiration via tourist delight. These effects were significant only among tourists with low travel risk appraisal. The findings extend the application of affective events theory to host–tourist interactions, highlight the critical role of sincere social interaction in engendering tourist inspiration, and identify the boundary effects of travel risk appraisal at a destination.
+0256│
+0257│摘要：灵感对于游客的自我发展和创造性体验至关重要，并日益受到研究者的关注。然而，东道主与游客互动在激发游客灵感方面的作用尚未得到充分研究。本研究运用情感事件理论，探讨真诚的社会互动如何激发游客灵感及其影响范围。研究对402名到访中国武夷山风景名胜区的游客进行了现场问卷调查。通过基于偏最小二乘法的结构方程模型分析，结果表明，真诚的社会互动能够直接激发游客灵感，而游客愉悦感在其中起着中介作用。旅行风险评估调节了真诚的社会互动对游客愉悦感的直接影响以及真诚的社会互动通过游客愉悦感对游客灵感的间接影响。这些影响仅在旅行风险评估较低的游客中显著。研究结果拓展了情感事件理论在东道主与游客互动中的应用，强调了真诚的社会互动在激发游客灵感方面的关键作用，并揭示了旅行风险评估在目的地的影响范围。
+0258│
+0259│Keywords : Sincere social interaction；tourist delight；tourist inspiration；travel risk appraisal；affective events theory
+0260│
+0261│来源：Current Issues in Tourism, 第27卷(2024年)
+0262│
+0263│
+0264│
+0265│参考文献
+0266│
+0267│[1] Weiss,H.M.,& Cropanzano,R.(1996).Affective events theory:A theoretical discussionof the structure,causes and consequences ofaffective experiences at work.Researchin OrganizationalBehavior,18,1-74.
+0268│
+0269│[2] Lazarus, R. S. (1991). Emotion and adaptation. Oxford University Press.
+0270│
+0271│[3] Pollock, T. G., Whitbred, R. C., & Contractor, N. (2000). Social information processing and job characteristics. A simultaneous test of two theories with implications for job satisfaction. Human Communication Research, 26(2), 292-330.
+0272│
+0273│[4] Zhai, Q. G., Smyth, R., Nielsen, I., & Luan, X. Y. (2009, September). The role of positive and negative affectivity on job satisfaction and life satisfaction. In 2009 International Conference on Management Science and Engineering (pp. 1184-1189). IEEE.
+0274│
+0275│[5] Bouckenooghe, D., Raja, U., & Butt, A. N. (2013). Combined effects of positive and negative affectivity and job satisfaction on job performance and turnover intentions. The Journal of psychology, 147(2), 105-123.
+0276│
+0277│[6] 孙利平,陈晨,陈煊煊,等.员工职场偏差行为对其自身的影响：基于情感事件理论的探讨[J].外国经济与管理,2021,43(06):138-152.DOI:10.16538/j.cnki.fem.20201123.401.
+0278│
+0279│[7] Silva, A. J. (2024). Applying the affective events theory to explore the effect of daily micro-interruptions on mental health: The mediating role of affect and the moderating role of pets at work. The Spanish Journal of Psychology, 27, e1.
+0280│
+0281│[8] 杨聪聪,岳泉,袁勤俭.情感事件理论及其在信息系统研究领域的应用与展望[J].现代情报,2021,41(10):168-176.
+0282│
+0283│[9] 叶诗田,吴茂英,李秋成,等.主题公园顾客组织社会化对顾客公民行为的影响[J].旅游学刊,2023,38(01):53-65.DOI:10.19765/j.cnki.1002-5006.2023.01.010.
+0284│
+0285│[10] Ain, Q. U., Lim, W. M., Rasool, S., & Zeshan, M. (2024). How do customers react to preferential treatment? An affective events theory and time-lagged survey. Journal of Retailing and Consumer Services, 80, 103927.
+0286│
+0287│[11] 彭息强,田喜洲.优势领导对员工知识共享行为的“双刃剑”效应——基于个体—人际二元情感机制[J].经济管理,2025,47(06):187-208.DOI:10.19616/j.cnki.bmj.2025.06.010.[J]
+0288│
+0289│[12] Chen, Y., Jiang, Z., & Liu, Y. (2024). Effect of sincere social interaction on tourist inspiration: an affective events theorynframework. Current Issues in Tourism, 27(14), 2268-2286.
+0290│
+0291│
+0292│
+0293│图片
+0294│
+0295│
+0296│编辑 / 历梦妍
+0297│
+0298│审核 / 于孟利
+0299│
+0300│
+0301│
+0302│声明
+0303│
+0304│如需转载文章，可在留言区留言，并附转载公众号名称+公众号ID。转载时烦请标清文章来源，不允许将内容用于其他用途，并严格禁止将内容用于任何目的的大模型训练，感谢您的支持！
+0305│
+0306│往期回顾
+0307│
+0308│研究理论介绍 | 个人-环境匹配理论（Person-Environment Fit Theory，P-E Fit）
+0309│
+0310│研究理论介绍 | 自我呈现理论（Self-Presentation Theory）
+0311│
+0312│研究理论介绍 | 创新抵抗理论（Innovation Resistance Theory，IRT）
+0313│
+0314│研究理论介绍 | 认知-情感-意动框架（Cognition-Affect-Conation Perspective）
+0315│
+0316│新华社发布：2026年中国AI发展趋势前瞻
+0317│
+0318│
+</code></pre>
+
+<h2>三、关联文件（双向链接）</h2>
+<li>上游/总导航：[[00-总索引-思维模型]] ｜ 知识图谱：[[10-知识图谱-思维模型]] ｜ 概念手册：[[09-核心概念手册-思维模型]]</li>
+<li>跨文件同构（共享显著概念）：[[认知-情感-意动框架]]，[[自我呈现理论]]，[[社会支持理论]]，[[情绪认知评价理论]]，[[恐惧管理理论]]，[[创新抵抗理论]]，[[消费价值理论]]，[[资源保存理论]]</li>
+
+<h2>四、核心金句</h2>
+<blockquote>小李在公司群里提交了一份项目方案。十分钟后，部门负责人回复：“这个思路很有创新性，下午会上重点讨论。”</blockquote>
+<blockquote>相反，如果这条消息换成：“方案逻辑不清，需要重做。”他的情绪可能迅速低落，甚至开始回避交流。</blockquote>
+<blockquote>情感事件理论在此基础上提出：工作中的具体事件及其引发的情感体验，是影响员工态度与行为的重要机制。</blockquote>
+<blockquote>1.初评：判断这件事是否与自己有关，以及关系有多大。</blockquote>
+<blockquote>2.次评：评估自己是否有能力或资源来应对这件事。</blockquote>
+<blockquote>理解情感事件理论，首先要分清两个核心概念：工作环境特征与工作事件。主要区别在于：</blockquote>
+
+<h2>五、标签</h2>
+<li>领域：理论模型、思维模型、决策</li>
+<li>机制：知识学习(十项认知指令)、象思维(物象→意象→原象)</li>
+<li>洞见：跨域同构、网状知识、双向链接、人机共生</li>
+
+<h2>六、龙心OS隐秘联系（跨域同构·龙心OS精修）</h2>
+
+<blockquote>以下为龙心OS在跨域同构（北极星能力）下发现的隐秘结构联系，供五引擎组合调取。</blockquote>
+
+<li><strong>系统思维/涌现⟷五行生克网络</strong>：五行相生相克即系统要素互动的最小完备模型。</li>
+<li><strong>整体大于部分之和⟷格式塔关系场</strong>：系统涌现的格式塔解释，对应合道场域型组织。</li>
+<li><strong>能力圈⟷五行（守边界/知止）</strong>：能力圈即五行所司之域，越界则乱；『知止』是五行守位之德。</li>
+<li><strong>能力圈⟷知行合一（知是行之始）</strong>：只在真懂之域决策，是『知』的诚实边界。</li>
+<li><strong>SCAMPER⟷五色光绿光（创新）</strong>：替代/组合/调整/消除等七问即绿光『创新变革』的操作清单。</li>
+<li><strong>SCAMPER⟷五行木（生发）</strong>：创新是木之生发，SCAMPER 提供生发路径。</li>
+<li><strong>双系统理论⟷龙心OS知行合一（直觉/反思）</strong>：System1=表示（直觉），System2=泛化（反思），三阶中的两端。</li>
+<li><strong>双系统⟷五色光（红直觉/白事实）</strong>：直觉属红光、理性属白光，二者协同即五色光调度。</li>
+<li><strong>跨文件同构</strong>：与 [[认知-情感-意动框架]]、[[自我呈现理论]]、[[社会支持理论]] 共享核心概念（详见「三、关联文件」章节），可在龙心OS知识学习引擎下做十项认知指令的对比推演。</li>
+
+<blockquote><strong>引擎路由</strong>：本文可由龙心OS五引擎组合调用——知识学习（十项认知指令深度学习）、象思维（物象→意象→原象）、五色光（白红黄绿蓝五维审查）、知行合一（表示→压缩→泛化）、人机协同五象限（[AI]/[人]/[⇄]分工定位）。</blockquote>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

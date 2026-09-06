@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>思维模式图谱 - 以观其妙书院</title>
+<meta name="description" content="思维模式图谱 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="思维模式图谱">
+<meta property="og:description" content="思维模式图谱 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "思维模式图谱",
+    "description": "思维模式图谱 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>思维模式图谱</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>思维模式图谱</h1>
+<h2>🗺️ 图谱概述</h2>
+<p>本图谱可视化展示了从聊天记录3中提取的所有思维模式、管理方法和工具之间的关联关系，帮助理解和应用完整的认知框架。</p>
+<h2>🧭 核心思维模式网络</h2>
+<pre><code>graph TB
+    %% 核心思维模式
+    A[系统思维模式] --&gt; B[整体性思维]
+    A --&gt; C[关联性思维]
+    A --&gt; D[层次性思维]
+    A --&gt; E[动态性思维]
+    
+    F[矛盾思维模式] --&gt; G[根本矛盾识别]
+    F --&gt; H[主要矛盾定位]
+    F --&gt; I[矛盾转化分析]
+    F --&gt; J[矛盾解决策略]
+    
+    K[实验思维模式] --&gt; L[假设提出]
+    K --&gt; M[实验设计]
+    K --&gt; N[数据验证]
+    K --&gt; O[迭代优化]
+    
+    P[文化思维模式] --&gt; Q[传统智慧理解]
+    P --&gt; R[现代管理融合]
+    P --&gt; S[价值行为转化]
+    P --&gt; T[文化传播建设]
+    
+    U[人才思维模式] --&gt; V[人才培养体系]
+    U --&gt; W[激励机制设计]
+    U --&gt; X[成长路径规划]
+    U --&gt; Y[价值实现保障]
+    
+    %% 模式间关联
+    A -.-&gt; F
+    F -.-&gt; K
+    K -.-&gt; P
+    P -.-&gt; U
+    U -.-&gt; A
+    
+    %% 应用关联
+    B -.-&gt; G
+    C -.-&gt; H
+    D -.-&gt; I
+    E -.-&gt; J
+    
+    L -.-&gt; Q
+    M -.-&gt; R
+    N -.-&gt; S
+    O -.-&gt; T</code></pre>
+<h2>🔗 管理方法关联图</h2>
+<pre><code>graph LR
+    %% 核心管理方法
+    A[创业单元模式] --&gt; B[人才培养机制]
+    A --&gt; C[业务复制系统]
+    A --&gt; D[文化实验平台]
+    
+    E[分身理论应用] --&gt; F[战略思维延伸]
+    E --&gt; G[专业能力扩展]
+    E --&gt; H[决策权限授权]
+    
+    I[24节气市场理论] --&gt; J[天人合一理念]
+    I --&gt; K[文化自信构建]
+    I --&gt; L[差异化竞争策略]
+    
+    M[多层次激励机制] --&gt; N[总设计师激励]
+    M --&gt; O[团队集体激励]
+    M --&gt; P[全员参与激励]
+    
+    Q[文化落地路径] --&gt; R[理念理解阶段]
+    Q --&gt; S[行为习惯阶段]
+    Q --&gt; T[价值创造阶段]
+    Q --&gt; U[文化传承阶段]
+    
+    %% 方法间关联
+    A -.-&gt; E
+    E -.-&gt; I
+    I -.-&gt; M
+    M -.-&gt; Q
+    Q -.-&gt; A
+    
+    %% 实施关联
+    B -.-&gt; F
+    C -.-&gt; G
+    D -.-&gt; H
+    
+    J -.-&gt; N
+    K -.-&gt; O
+    L -.-&gt; P</code></pre>
+<h2>🛠️ 工具方法网络</h2>
+<pre><code>graph TB
+    %% 诊断分析工具
+    A[五维问题诊断法] --&gt; B[数据维度分析]
+    A --&gt; C[文化维度分析]
+    A --&gt; D[人才维度分析]
+    A --&gt; E[系统维度分析]
+    A --&gt; F[战略维度分析]
+    
+    %% 决策支持工具
+    G[决策支持矩阵] --&gt; H[问题类型识别]
+    G --&gt; I[分析工具选择]
+    G --&gt; J[解决策略设计]
+    G --&gt; K[验证指标制定]
+    
+    %% 评估监控工具
+    L[效果评估体系] --&gt; M[业务效果评估]
+    L --&gt; N[人才发展评估]
+    L --&gt; O[文化落地评估]
+    L --&gt; P[组织效率评估]
+    
+    %% 实施执行工具
+    Q[创业单元启动清单] --&gt; R[启动前准备]
+    Q --&gt; S[启动后跟进]
+    Q --&gt; T[问题解决机制]
+    Q --&gt; U[经验总结优化]
+    
+    %% 能力提升工具
+    V[分身能力评估表] --&gt; W[战略思维评估]
+    V --&gt; X[专业决策评估]
+    V --&gt; Y[资源整合评估]
+    V --&gt; Z[执行实施评估]
+    
+    %% 工具间关联
+    A -.-&gt; G
+    G -.-&gt; L
+    L -.-&gt; Q
+    Q -.-&gt; V
+    V -.-&gt; A</code></pre>
+<h2>🎯 应用场景关联图</h2>
+<pre><code>graph LR
+    %% 企业应用场景
+    A[战略规划制定] --&gt; B[年度计划设计]
+    A --&gt; C[发展路径规划]
+    A --&gt; D[资源配置优化]
+    
+    %% 组织应用场景
+    E[组织架构优化] --&gt; F[职责权限明确]
+    E --&gt; G[协作机制建立]
+    E --&gt; H[效率提升实施]
+    
+    %% 人才应用场景
+    I[人才培养体系] --&gt; J[输入标准制定]
+    I --&gt; K[培养路径设计]
+    I --&gt; L[输出质量评估]
+    I --&gt; M[成长通道建立]
+    
+    %% 文化应用场景
+    N[文化落地实施] --&gt; O[理念传播教育]
+    N --&gt; P[行为规范制定]
+    N --&gt; Q[激励机制配套]
+    N --&gt; R[案例分享传播]
+    
+    %% 市场应用场景
+    S[市场策略制定] --&gt; T[行业趋势分析]
+    S --&gt; U[竞争格局判断]
+    S --&gt; V[机会风险识别]
+    S --&gt; W[执行计划设计]
+    
+    %% 场景间关联
+    A -.-&gt; E
+    E -.-&gt; I
+    I -.-&gt; N
+    N -.-&gt; S
+    S -.-&gt; A</code></pre>
+<h2>🔄 学习成长路径图</h2>
+<pre><code>graph TB
+    %% 学习阶段
+    A[认知建立阶段] --&gt; B[理论学习]
+    A --&gt; C[概念理解]
+    A --&gt; D[框架掌握]
+    
+    E[应用实践阶段] --&gt; F[小问题实践]
+    E --&gt; G[工具应用]
+    E --&gt; H[方法掌握]
+    
+    I[融会贯通阶段] --&gt; J[模式组合]
+    I --&gt; K[复杂问题]
+    I --&gt; L[体系建立]
+    
+    M[创新传承阶段] --&gt; N[模式创新]
+    M --&gt; O[新领域应用]
+    M --&gt; P[经验传授]
+    
+    %% 成长路径
+    A --&gt; E
+    E --&gt; I
+    I --&gt; M
+    
+    %% 能力发展
+    B -.-&gt; F
+    C -.-&gt; G
+    D -.-&gt; H
+    
+    F -.-&gt; J
+    G -.-&gt; K
+    H -.-&gt; L
+    
+    J -.-&gt; N
+    K -.-&gt; O
+    L -.-&gt; P</code></pre>
+<h2>📊 效果评估关联图</h2>
+<pre><code>graph LR
+    %% 短期效果
+    A[3-6个月效果] --&gt; B[模式初步建立]
+    A --&gt; C[团队积极性提升]
+    A --&gt; D[业务数据改善]
+    A --&gt; E[文化开始落地]
+    
+    %% 中期效果
+    F[6-12个月效果] --&gt; G[人才培养成熟]
+    F --&gt; H[业务模式标准化]
+    F --&gt; I[组织效率提升]
+    F --&gt; J[文化深度融入]
+    
+    %% 长期效果
+    K[1-3年效果] --&gt; L[人才持续输出]
+    K --&gt; M[业务可复制模式]
+    K --&gt; N[组织能力强大]
+    K --&gt; O[文化底蕴深厚]
+    K --&gt; P[发展稳定可持续]
+    
+    %% 效果关联
+    A --&gt; F
+    F --&gt; K
+    
+    %% 指标关联
+    B -.-&gt; G
+    C -.-&gt; H
+    D -.-&gt; I
+    E -.-&gt; J
+    
+    G -.-&gt; L
+    H -.-&gt; M
+    I -.-&gt; N
+    J -.-&gt; O</code></pre>
+<h2>🌐 完整知识体系图</h2>
+<pre><code>graph TB
+    %% 核心层：思维模式
+    A[系统思维] --&gt; A1[整体关联]
+    A --&gt; A2[层次动态]
+    
+    B[矛盾思维] --&gt; B1[主次识别]
+    B --&gt; B2[转化解决]
+    
+    C[实验思维] --&gt; C1[假设验证]
+    C --&gt; C2[迭代优化]
+    
+    D[文化思维] --&gt; D1[传统现代]
+    D --&gt; D2[价值行为]
+    
+    E[人才思维] --&gt; E1[培养激励]
+    E --&gt; E2[成长实现]
+    
+    %% 中间层：管理方法
+    F[创业单元] --&gt; F1[人才培养]
+    F --&gt; F2[业务复制]
+    
+    G[分身理论] --&gt; G1[战略延伸]
+    G --&gt; G2[专业扩展]
+    
+    H[市场理论] --&gt; H1[文化融合]
+    H --&gt; H2[差异化策略]
+    
+    I[激励机制] --&gt; I1[多层次设计]
+    I --&gt; I2[价值导向]
+    
+    J[文化落地] --&gt; J1[路径设计]
+    J --&gt; J2[实施保障]
+    
+    %% 应用层：工具场景
+    K[诊断工具] --&gt; K1[五维分析]
+    K --&gt; K2[决策矩阵]
+    
+    L[评估工具] --&gt; L1[效果评估]
+    L --&gt; L2[能力评估]
+    
+    M[实施工具] --&gt; M1[启动清单]
+    M --&gt; M2[跟踪表格]
+    
+    N[企业场景] --&gt; N1[战略规划]
+    N --&gt; N2[组织优化]
+    
+    O[团队场景] --&gt; O1[能力提升]
+    O --&gt; O2[问题解决]
+    
+    P[个人场景] --&gt; P1[思维训练]
+    P --&gt; P2[职业发展]
+    
+    %% 层间关联
+    A -.-&gt; F
+    B -.-&gt; G
+    C -.-&gt; H
+    D -.-&gt; I
+    E -.-&gt; J
+    
+    F -.-&gt; K
+    G -.-&gt; L
+    H -.-&gt; M
+    I -.-&gt; N
+    J -.-&gt; O
+    K -.-&gt; P
+    
+    %% 跨层关联
+    A1 -.-&gt; F1
+    B1 -.-&gt; G1
+    C1 -.-&gt; H1
+    D1 -.-&gt; I1
+    E1 -.-&gt; J1</code></pre>
+<h2>🎨 图谱使用指南</h2>
+<h3>阅读顺序建议</h3>
+<ol>
+<li><strong>从核心思维模式开始</strong>：理解五种核心思维模式的基本概念</li>
+<li><strong>学习管理方法</strong>：掌握创业单元、分身理论等管理方法</li>
+<li><strong>熟悉工具方法</strong>：学习各种诊断、评估、实施工具的使用</li>
+<li><strong>探索应用场景</strong>：了解在企业、团队、个人不同场景的应用</li>
+<li><strong>跟踪学习路径</strong>：按照学习成长路径逐步提升能力</li>
+<li><strong>关注效果评估</strong>：了解短期、中期、长期的效果预期</li>
+</ol>
+<h3>图谱应用方法</h3>
+<ol>
+<li><strong>问题诊断</strong>：使用思维模式图谱分析问题的思维层面</li>
+<li><strong>方案设计</strong>：参考管理方法关联图设计解决方案</li>
+<li><strong>工具选择</strong>：根据工具方法网络选择适合的工具</li>
+<li><strong>场景匹配</strong>：对照应用场景关联图确定适用场景</li>
+<li><strong>路径规划</strong>：按照学习成长路径图规划个人发展</li>
+<li><strong>效果预期</strong>：参考效果评估关联图设定合理预期</li>
+</ol>
+<h3>交互使用方法</h3>
+<ol>
+<li><strong>双向链接跳转</strong>：点击图谱中的链接跳转到详细文档</li>
+<li><strong>图谱导航</strong>：使用图谱作为知识体系的导航工具</li>
+<li><strong>关联发现</strong>：通过图谱发现知识之间的隐藏关联</li>
+<li><strong>路径规划</strong>：使用图谱规划学习和应用路径</li>
+<li><strong>体系理解</strong>：通过图谱理解完整知识体系的架构</li>
+<li><strong>更新维护</strong>：根据实践反馈更新和维护图谱</li>
+</ol>
+<h3>图谱维护建议</h3>
+<ol>
+<li><strong>定期更新</strong>：每季度更新一次图谱，反映最新知识</li>
+<li><strong>案例补充</strong>：添加新的应用案例和实践经验</li>
+<li><strong>关联优化</strong>：优化知识之间的关联关系和路径</li>
+<li><strong>工具完善</strong>：补充新的工具方法和使用技巧</li>
+<li><strong>场景扩展</strong>：扩展新的应用场景和使用方法</li>
+<li><strong>效果跟踪</strong>：跟踪实际应用效果，优化效果评估</li>
+</ol>
+<hr>
+<p><strong>图谱类型</strong>：思维模式和管理方法可视化图谱  
+<strong>数据来源</strong>：聊天记录3分析和知识提炼  
+<strong>更新日期</strong>：2026年3月16日  
+<strong>维护周期</strong>：每季度更新维护  
+<strong>关联系统</strong>：Obsidian知识库双向链接系统  
+<strong>使用价值</strong>：知识体系可视化、关联关系理解、应用路径规划  
+<strong>交互功能</strong>：支持双向链接跳转和知识导航</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

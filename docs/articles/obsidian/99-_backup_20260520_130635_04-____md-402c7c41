@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>📊 五行创生系统知识图谱 - 以观其妙书院</title>
+<meta name="description" content="📊 五行创生系统知识图谱 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="📊 五行创生系统知识图谱">
+<meta property="og:description" content="📊 五行创生系统知识图谱 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "📊 五行创生系统知识图谱",
+    "description": "📊 五行创生系统知识图谱 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>📊 五行创生系统知识图谱</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>📊 五行创生系统知识图谱</h1>
+<h2>🌐 图谱概述</h2>
+<p><strong>核心定位</strong>：《五行创生：企业家精神觉醒与组织文化构建的系统实践》体系的知识图谱，为凤心OS智能调度提供结构化知识网络。</p>
+<p><strong>设计目的</strong>：</p>
+<ol>
+<li><strong>可视化连接</strong>：直观展示全书各章节、概念、理论的联系</li>
+<li><strong>智能调用</strong>：为凤心OS提供清晰的知识节点和路径</li>
+<li><strong>快速导航</strong>：支持凤脑OS快速检索和关联推理</li>
+</ol>
+<h2>🗺️ 核心架构图</h2>
+<pre><code>graph TB
+    %% 第一层：核心基础
+    A[一心（纯粹觉知）] --&gt; B[个人三界]
+    B --&gt; C[企业三体]
+    
+    %% 第二层：能量语言
+    D[张维迎企业家精神] --&gt; E[五行能量解码]
+    E --&gt; F[木·创新]
+    E --&gt; G[火·冒险]
+    E --&gt; H[土·套利整合]
+    E --&gt; I[金·决策规则]
+    E --&gt; J[水·适应洞察]
+    
+    %% 第三层：量化标尺
+    F --&gt; K[木能量九层光谱&lt;br/&gt;1级:主动创新 → 9级:盲目激进]
+    G --&gt; L[火能量九层光谱&lt;br/&gt;1级:果敢冒险 → 9级:冲动耗散]
+    H --&gt; M[土能量九层光谱&lt;br/&gt;1级:稳健整合 → 9级:保守僵化]
+    I --&gt; N[金能量九层光谱&lt;br/&gt;1级:规则高效 → 9级:刻板冷漠]
+    J --&gt; O[水能量九层光谱&lt;br/&gt;1级:灵活适应 → 9级:投机无守]
+    
+    %% 第四层：传导机制
+    B --&gt; P[一级传导：企业家→核心团队]
+    P --&gt; Q[二级传导：核心团队→组织文化]
+    Q --&gt; R[三级传导：文化场域→发展成果]
+    
+    %% 第五层：实践工具
+    R --&gt; S[[第四章:诊断术&lt;br/&gt;能量审计工具]]
+    R --&gt; T[[第五章:配伍术&lt;br/&gt;团队构建工具]]
+    R --&gt; U[[第六章:构建术&lt;br/&gt;文化落地工具]]
+    
+    %% 第六层：问题解决
+    S --&gt; V[[第七章:破局术&lt;br/&gt;五类组织困境方案]]
+    T --&gt; V
+    U --&gt; V
+    
+    %% 第七层：智能进化
+    V --&gt; W[[第八章:进化术&lt;br/&gt;能量升级路径]]
+    V --&gt; X[[第九章:驭器术&lt;br/&gt;AI智能赋能]]
+    
+    %% 第八层：终极回归
+    W --&gt; Y[企业家拔阴取阳修炼]
+    X --&gt; Z[组织能量智能监测]
+    Y --&gt; AA[回归一心]
+    Z --&gt; AA
+    
+    %% 样式定义
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style AA fill:#9f9,stroke:#333,stroke-width:4px
+    style V fill:#ff9,stroke:#333,stroke-width:2px
+    style S,T,U fill:#ccf,stroke:#333</code></pre>
+<h2>🔗 关键知识节点</h2>
+<h3>节点1：<strong>一心三界·三体同构</strong>（理论基石）</h3>
+<ul>
+<li><strong>位置</strong>：第一章核心</li>
+<li><strong>标签</strong>：<code>#一心三界</code> <code>#三体理论</code> <code>#同构性</code> <code>#本体论</code></li>
+<li><strong>连接</strong>：<ul>
+<li>↓ 个人三界 → 企业三体</li>
+<li>→ 张维迎企业家精神 → 五行能量解码</li>
+<li>→ 能量传导三级路径</li>
+</ul></li>
+<li><strong>智能调用</strong>：当需要理解企业家与企业的深层关系时调用</li>
+</ul>
+<h3>节点2：<strong>五行能量·九层光谱</strong>（核心语言）</h3>
+<ul>
+<li><strong>位置</strong>：第二章核心</li>
+<li><strong>标签</strong>：<code>#五行能量</code> <code>#九层光谱</code> <code>#张维迎</code> <code>#企业家精神</code></li>
+<li><strong>连接</strong>：<ul>
+<li>↑ 张维迎企业家精神（来源）</li>
+<li>↓ 九层诊断工具（应用）</li>
+<li>→ 五类组织类型（对应）</li>
+</ul></li>
+<li><strong>智能调用</strong>：当需要评估企业家能量状态或企业能量特征时调用</li>
+</ul>
+<h3>节点3：<strong>能量传导三级路径</strong>（核心机制）</h3>
+<ul>
+<li><strong>位置</strong>：第三章核心</li>
+<li><strong>标签</strong>：<code>#能量传导</code> <code>#三级路径</code> <code>#传导机制</code> <code>#生成论</code></li>
+<li><strong>连接</strong>：<ul>
+<li>↑ 个人三界·企业三体（起点）</li>
+<li>↑ 五行能量·九层光谱（内容）</li>
+<li>↓ 诊断术·配伍术·构建术（落地）</li>
+</ul></li>
+<li><strong>智能调用</strong>：当需要分析个人能量如何影响组织文化时调用</li>
+</ul>
+<h3>节点4：<strong>诊断-配伍-构建三术</strong>（落地工具）</h3>
+<ul>
+<li><strong>位置</strong>：第四、五、六章核心</li>
+<li><strong>标签</strong>：<code>#诊断术</code> <code>#配伍术</code> <code>#构建术</code> <code>#企业实践</code></li>
+<li><strong>连接</strong>：<ul>
+<li>↑ 能量传导三级路径（原理）</li>
+<li>↓ 破局术（问题解决）</li>
+<li>↓ 进化术（迭代升级）</li>
+</ul></li>
+<li><strong>智能调用</strong>：当需要具体的企业诊断或文化建设工具时调用</li>
+</ul>
+<h3>节点5：<strong>五类组织破局</strong>（问题解决）</h3>
+<ul>
+<li><strong>位置</strong>：第七章核心</li>
+<li><strong>标签</strong>：<code>#木型组织</code> <code>#火型组织</code> <code>#土型组织</code> <code>#金型组织</code> <code>#水型组织</code> <code>#破局术</code></li>
+<li><strong>连接</strong>：<ul>
+<li>↑ 五行能量·九层光谱（类型基础）</li>
+<li>↑ 诊断-配伍-构建三术（解决工具）</li>
+<li>↓ 进化术（持续优化）</li>
+</ul></li>
+<li><strong>智能调用</strong>：当遇到特定类型组织困境时调用</li>
+</ul>
+<h3>节点6：<strong>AI智能赋能</strong>（未来演进）</h3>
+<ul>
+<li><strong>位置</strong>：第九章核心</li>
+<li><strong>标签</strong>：<code>#AI赋能</code> <code>#智能诊断</code> <code>#能量监测</code> <code>#驭器术</code></li>
+<li><strong>连接</strong>：<ul>
+<li>↑ 所有诊断工具（数据来源）</li>
+<li>→ 凤心OS智能调度（系统集成）</li>
+<li>→ 未来企业智能（发展趋势）</li>
+</ul></li>
+<li><strong>智能调用</strong>：当考虑AI技术在企业文化领域的应用时调用</li>
+</ul>
+<h2>🧩 隐秘联系网络</h2>
+<h3>联系1：<strong>个人修炼 ↔ 组织构建</strong></h3>
+<pre><code>graph LR
+    A[企业家一心三界修练] --&gt; B[个人能量状态提升]
+    B --&gt; C[企业三体健康度改善]
+    C --&gt; D[组织文化优化]
+    D --&gt; E[企业发展成果增长]
+    E --&gt; F[企业家进化反哺]
+    F --&gt; A</code></pre>
+<p><strong>智能识别</strong>：凤心OS可监测此循环，当企业业绩下滑时提醒可能的企业家能量状态问题。</p>
+<h3>联系2：<strong>五行能量 ↔ 组织类型 ↔ 发展阶段</strong></h3>
+<table>
+<thead><tr>
+<th>发展阶段</th>
+<th>主导能量</th>
+<th>组织类型</th>
+<th>关键挑战</th>
+<th>调适方向</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>初创期</strong></td>
+<td>木+火</td>
+<td>创新驱动型</td>
+<td>创新失控风险</td>
+<td>引入金能量规范</td>
+</tr>
+<tr>
+<td><strong>成长期</strong></td>
+<td>土+金</td>
+<td>协同驱动型</td>
+<td>增长停滞风险</td>
+<td>注入木能量活力</td>
+</tr>
+<tr>
+<td><strong>成熟期</strong></td>
+<td>水+木</td>
+<td>适应驱动型</td>
+<td>惯性依赖风险</td>
+<td>注入火能量突破</td>
+</tr>
+<tr>
+<td><strong>转型期</strong></td>
+<td>火+水</td>
+<td>变革驱动型</td>
+<td>身份模糊风险</td>
+<td>注入土能量稳定</td>
+</tr>
+</tbody></table>
+<p><strong>智能调度</strong>：凤心OS可根据企业发展阶段推荐合适的能量调配方案。</p>
+<h3>联系3：<strong>诊断 ↔ 治疗 ↔ 预防</strong></h3>
+<pre><code>诊断术（发现问题）
+    ↓
+配伍术（构建团队）
+    ↓
+构建术（文化落地）
+    ↓
+进化术（持续迭代）
+    ↓
+AI赋能（智能预防）</code></pre>
+<p><strong>系统思维</strong>：凤心OS可建立企业的"能量健康档案"，实现从被动治疗到主动预防的升级。</p>
+<h2>🎯 凤心OS智能调度示例</h2>
+<h3>场景1：企业家能量诊断</h3>
+<p><strong>用户输入</strong>："我最近决策总是犹豫不决，创新动力也不足"</p>
+<p><strong>凤心OS调用路径</strong>：</p>
+<ol>
+<li>识别为"能量状态问题" → 调用[五行能量·九层光谱]节点</li>
+<li>分析"决策犹豫"可能对应金能量问题 → 调用[金能量九层]</li>
+<li>分析"创新不足"可能对应木能量问题 → 调用[木能量九层]</li>
+<li>综合判断可能为"金能量过强压制木能量" → 调用[五行平衡]原理</li>
+<li>推荐"化克为生"方案：金克木→金生水→水生木</li>
+</ol>
+<p><strong>输出建议</strong>：</p>
+<ul>
+<li>短期：运用水能量（适应洞察）缓解金能量压力</li>
+<li>中期：培养水能量支撑木能量生长</li>
+<li>长期：实现金-水-木相生循环</li>
+</ul>
+<h3>场景2：组织文化构建</h3>
+<p><strong>用户输入</strong>："我们公司创新氛围很好，但执行落地总有问题"</p>
+<p><strong>凤心OS调用路径</strong>：</p>
+<ol>
+<li>识别为"组织能量不平衡" → 调用[五行能量·九层光谱]节点</li>
+<li>判断"创新氛围好"对应木能量充沛 → 调用[木型组织破局]</li>
+<li>判断"执行问题"可能对应金能量不足 → 调用[金能量职能]</li>
+<li>识别为"木强·金弱"失衡 → 调用[能量传导三级路径]</li>
+<li>推荐"木→火→土→金"传导增强方案</li>
+</ol>
+<p><strong>输出建议</strong>：</p>
+<ul>
+<li>信息体：明确"创新有边界"价值观</li>
+<li>能量体：引入金型仪式（如"创新可行性评审会"）</li>
+<li>物质体：建立创新-落地衔接流程</li>
+</ul>
+<h3>场景3：团队冲突化解</h3>
+<p><strong>用户输入</strong>："我的销售总监和运营总监总是冲突"</p>
+<p><strong>凤心OS调用路径</strong>：</p>
+<ol>
+<li>识别为"团队能量相克" → 调用[五行配伍术]节点</li>
+<li>判断销售可能对应火能量，运营可能对应土能量</li>
+<li>识别为"火克土"相克关系 → 调用[化克为生]技术</li>
+<li>推荐"引入水能量调和"方案</li>
+</ol>
+<p><strong>输出建议</strong>：</p>
+<ul>
+<li>引入人力资源总监（水能量·适应洞察）作为调解者</li>
+<li>建立火→土能量转化机制：销售目标与运营资源的平衡会议</li>
+<li>设计水能量仪式：双方向我诉"流水账"分享会</li>
+</ul>
+<h2>📁 知识库集成</h2>
+<h3>Obsidian知识库文件结构</h3>
+<pre><code>观其妙书院/
+├── 04-五行人格与应用/
+│   ├── 📖 五行创生-全书索引.md
+│   ├── 📖 五行创生-第一章-本体论.md
+│   ├── 📖 五行创生-第二章-能量论.md
+│   ├── 📖 五行创生 -第三章-生成论.md (待创建)
+│   ├── 📖 五行创生 -第四章-诊断术.md (待创建)
+│   ├── 📖 五行创生 -第五章-配伍术.md (待创建)
+│   ├── 📖 五行创生 -第六章-构建术.md (待创建)
+│   ├── 📖 五行创生 -第七章-破局术.md (待创建)
+│   ├── 📖 五行创生 -第八章-进化术.md (待创建)
+│   ├── 📖 五行创生 -第九章-驭器术.md (待创建)
+│   ├── 📖 五行创生-终章-回归一心.md (待创建)
+│   └── 📊 五行创生系统知识图谱.md (本文件)</code></pre>
+<h3>凤心OS调度接口</h3>
+<p><strong>节点查询API</strong>：</p>
+<pre><code>凤心OS调用示例:
+  需求: "诊断企业家能量状态"
+  调用: 五行能量·九层光谱节点
+  返回: 五行能量状态评估 + 九层位置 + 调适建议
+  
+  需求: "构建企业文化"
+  调用: 诊断-配伍-构建三术节点链
+  返回: 诊断结果 + 团队配伍方案 + 文化落地工具</code></pre>
+<h2>🚀 未来扩展方向</h2>
+<h3>1. <strong>智能化升级</strong></h3>
+<ul>
+<li>开发AI五行能量测评系统（第九章愿景）</li>
+<li>实现组织能量流动可视化</li>
+<li>建立个性化能量赋能算法</li>
+</ul>
+<h3>2. <strong>跨域整合</strong></h3>
+<ul>
+<li>与五色光思维整合：白光事实诊断→绿光创新方案→蓝光风险评估</li>
+<li>与象思维整合：识别企业"原象"层面的文化本质</li>
+<li>与知行合一整合：将企业实践经验沉淀为知识资产</li>
+</ul>
+<h3>3. <strong>生态化应用</strong></h3>
+<ul>
+<li>企业家能量成长社区</li>
+<li>企业能量健康认证体系</li>
+<li>五行文化咨询师培训体系</li>
+</ul>
+<hr>
+<p><strong>创建时间</strong>: 2026-04-04  
+<strong>最后更新</strong>: 2026-04-04  
+<strong>维护者</strong>: 龙龟神将  
+<strong>知识状态</strong>: 🗺️ 已完整构建知识图谱，支持凤心OS智能调度</p>
+<hr>
+<blockquote><p>本知识图谱是《五行创生》系统的中枢神经系统，将全书的理论体系、实践工具、典型案例、智能调度融为一体，为凤心OS提供了"读懂企业能量"的智能之眼和"调适企业文化"的智能之手。</p></blockquote>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

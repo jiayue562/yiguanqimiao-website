@@ -1,5 +1,5 @@
 # Cloudflare Pages Headers
-# 生成时间: 2026-08-30 16:16
+# 生成时间: 2026-09-07 00:24
 # Clean URL文件（无扩展名）→ Content-Type: text/html
 # 规则：精确目录路径，避免路由异常
 
@@ -79,6 +79,18 @@
   Content-Type: text/html
 
 /articles/书院历程/*
+  Content-Type: text/html
+
+/articles/五行人格心理学-六坐标自照手册/*
+  Content-Type: text/html
+
+/articles/五行人格心理学书稿/*
+  Content-Type: text/html
+
+/articles/五行人格心理学公众号100讲/*
+  Content-Type: text/html
+
+/articles/五行人格心理学公众号二十讲/*
   Content-Type: text/html
 
 /articles/公众号文章-五行人格系列/*

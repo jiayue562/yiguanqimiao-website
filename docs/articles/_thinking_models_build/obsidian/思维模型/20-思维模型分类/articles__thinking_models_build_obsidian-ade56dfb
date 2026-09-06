@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>思维模型框 - 以观其妙书院</title>
+    <meta name="description" content="思维模型框龙心OS结构化编译  分类：思维模型分类  五行属性：木  层级：A层源文件：思维模型/思维模型分类\思维模型框.txt ｜ 字数：1305 ｜ 行数：59五色光分布（启发式）：黄光87% 白光4% 绿光4% 蓝光4% 红光0%象思维相关度：低（命中 2 次）一、核心定义核心定义（龙心OS精修）：（源文件内容为空或仅含表格/转写碎片，核心定义请结合「二、详细内容」逐行精读与「三、关联文件">
+    <meta name="keywords" content="[思维模型, 思维模型分类, 结构化学习, 金字塔, 5W2H, 五色光, 决策, 沟通]">
+    <meta name="author" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta property="og:title" content="思维模型框">
+    <meta property="og:description" content="思维模型框龙心OS结构化编译  分类：思维模型分类  五行属性：木  层级：A层源文件：思维模型/思维模型分类\思维模型框.txt ｜ 字数：1305 ｜ 行数：59五色光分布（启发式）：黄光87% 白光4% 绿光4% 蓝光4% 红光0%象思维相关度：低（命中 2 次）一、核心定义核心定义（龙心OS精修）：（源文件内容为空或仅含表格/转写碎片，核心定义请结合「二、详细内容」逐行精读与「三、关联文件">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/思维模型框.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/思维模型框.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "思维模型框",
+      "description": "思维模型框龙心OS结构化编译  分类：思维模型分类  五行属性：木  层级：A层源文件：思维模型/思维模型分类\思维模型框.txt ｜ 字数：1305 ｜ 行数：59五色光分布（启发式）：黄光87% 白光4% 绿光4% 蓝光4% 红光0%象思维相关度：低（命中 2 次）一、核心定义核心定义（龙心OS精修）：（源文件内容为空或仅含表格/转写碎片，核心定义请结合「二、详细内容」逐行精读与「三、关联文件",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-30",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>思维模型框</h1>
+            <div class="meta">
+                <span>📅 2026-07-30</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            思维模型框...
+        </div>
+        
+        <article>
+<h1>思维模型框</h1>
+
+<blockquote><strong>龙心OS结构化编译</strong> | 分类：思维模型分类 | 五行属性：木 | 层级：A层</blockquote>
+<blockquote>源文件：<code>思维模型/思维模型分类\思维模型框.txt</code> ｜ 字数：1305 ｜ 行数：59</blockquote>
+<blockquote>五色光分布（启发式）：黄光87% 白光4% 绿光4% 蓝光4% 红光0%</blockquote>
+<blockquote>象思维相关度：低（命中 2 次）</blockquote>
+
+<h2>一、核心定义</h2>
+
+<strong>核心定义（龙心OS精修）</strong>：（源文件内容为空或仅含表格/转写碎片，核心定义请结合「二、详细内容」逐行精读与「三、关联文件」章节综合研判。）
+
+<h2>二、详细内容</h2>
+<blockquote>逐行挖掘原则：下文为原文<strong>全文逐行保留</strong>（编号 <code>行号│内容</code>），未删改、未遗漏，供龙心OS五引擎（知识学习/象思维/五色光/知行合一/五象限）随时调取精读。</blockquote>
+
+<h3>2.1 逐行精读（全文保留·59 行）</h3>
+<pre><code>0001│思维模型框架
+0002│#思维决策工具
+0003│##德尔菲法：一种高效重要的判断预测工具
+0004│##五色光思维：有效实用的决策与沟通工具
+0005│##头脑风暴法：激发团队创新的有效决策
+0006│##5W2H分析法：种调查研究和思考问题的有效方法
+0007│#战略管理工具
+0008│##PEST分析：战略外部环境分析的基本工具
+0009│##波士顿矩阵法：制定公司层战略最流行的方法之一
+0010│##波特价值链分析模型：战略决策时资源分析的理论模型
+0011│##波特五力分析模型：行业竞争战略最流行的分析工具
+0012│##核心竞争力分析：分析企业有效竞争和成长的重要工具
+0013│##麦肯锡三层面法：企业设计战略规划实施工具
+0014│##SWOT分析：战略规划和竞争情报的经典分析工具
+0015│##GE矩阵：业务战略单元发展的分析工具
+0016│##利益相关者分析：战略制定和战略评价分析工具
+0017│##平衡计分卡：最具影响力的战略绩效管理工具
+0018│##KPI：国际通行的企业经营绩效成果测量和战略管理工具
+0019│#人力资源管理工具
+0020│##职位分析问卷法：最普遍和流行的人员导向职务分析系统
+0021│##海氏工作评价系统：国际上使用最为广泛的岗位评估工具
+0022│##360度绩效考核：推进员工行为改变最有效的工具之一
+0023│##霍兰德职业兴趣理论：通用的职业兴趣测验工具
+0024│##胜任素质模型：最实用的人岗匹配操作工具之一
+0025│##职业锚：职业测评运用最广泛、最有效的工具之一
+0026│#财务管理工具
+0027│##杜邦分析法：企业业绩评价体系中最为有效的工具之一
+0028│##比率分析法：财务分析最基本的工具
+0029│##财务分析雷达图：企业经济效益综合分析工具
+0030│##净现值法：企业投资决策中最常用的一种方法之一
+0031│##本量利分析：实施目标成本管理的一个重要工具
+0032│##经济附加值(EVA)：当今最热门的财务创意
+0033│#生产管理工具
+0034│##PDCA循环：有效控制管理过程和工作质量的工具
+0035│##JIT生产方式：使生产有效进行的新型生产方式
+0036│##6西格玛：世界最先进的质量管理法
+0037│##5S现场管理法：现场科学管理的基础工具
+0038│##大规模定制：21世纪最重要的、最具竞争优势的生产模式
+0039│##零缺陷管理法：企业质量管理方法的又一次革命
+0040│##品管圈：广为认可的品质管理的运作机制
+0041│##丰田生产方式：一套系统完整的生产管理方式
+0042│#营销服务管理工具
+0043│##顾客金字塔模型：有效的顾客细分管理工具
+0044│##满意镜：提高顾客满意与员工满意的工具
+0045│##推销方格理论：直观、有效的销售分析工具
+0046│##SPIN销售法：系统化挖掘客户需求的销售工具
+0047│##CS战略：企业提高市场占有率的有力工具
+0048│##服务利润链：服务管理最经典、最有效的分析工具之一
+0049│##4Ps营销组合模型：制定市场战略的一个最常用工具之一
+0050│##服务质量差距模型：分析服务质量简单有效的工具
+0051│#项目物流管理工具
+0052│##VMI模型：国际前沿的供应链库存管理模式
+0053│##快速反应策略：企业实现供应链竞争优势的有效管理工具
+0054│##ECR：一种新型的供应链管理策略
+0055│##SCOR模型：第一个标准的供应链流程参考模型
+0056│##PERT网络分析法：有效的项目进度管理工具
+0057│##工作分解结构：项目管理众多工具中最有价值的工具之一
+0058│##甘特图：最常用的项目控制管理的有效工具
+0059│##关键路径法：项目管理中应用最为广泛的方法之一
+</code></pre>
+
+<h2>三、关联文件（双向链接）</h2>
+<li>上游/总导航：[[00-总索引-思维模型]] ｜ 知识图谱：[[10-知识图谱-思维模型]] ｜ 概念手册：[[09-核心概念手册-思维模型]]</li>
+<li>跨文件同构（共享显著概念）：[[《麦肯锡思考工具》理论体系梳理与应用研究]]，[[框架-思维框架-框架思维]]，[[思维模型——人类认知的底层操作系统]]，[[掌握这100个思维模型，开启你的「超级个体」时代！]]，[[思维模式-方法论-解决问题”的模型]]，[[比较分析法]]，[[教员方法论]]，[[SCAMPER奔驰法]]</li>
+
+<h2>四、核心金句</h2>
+<blockquote>##SCOR模型：第一个标准的供应链流程参考模型</blockquote>
+<blockquote>##德尔菲法：一种高效重要的判断预测工具</blockquote>
+<blockquote>##五色光思维：有效实用的决策与沟通工具</blockquote>
+<blockquote>##头脑风暴法：激发团队创新的有效决策</blockquote>
+<blockquote>##5W2H分析法：种调查研究和思考问题的有效方法</blockquote>
+<blockquote>##PEST分析：战略外部环境分析的基本工具</blockquote>
+
+<h2>五、标签</h2>
+<li>领域：思维模型分类、思维模型、思维模型、金字塔、5W2H、五色光、决策、沟通</li>
+<li>机制：知识学习(十项认知指令)、五色光思维(白红黄绿蓝)</li>
+<li>洞见：跨域同构、网状知识、双向链接、人机共生</li>
+
+<h2>六、龙心OS隐秘联系（跨域同构·龙心OS精修）</h2>
+
+<blockquote>以下为龙心OS在跨域同构（北极星能力）下发现的隐秘结构联系，供五引擎组合调取。</blockquote>
+
+<li><strong>系统思维/涌现⟷五行生克网络</strong>：五行相生相克即系统要素互动的最小完备模型。</li>
+<li><strong>整体大于部分之和⟷格式塔关系场</strong>：系统涌现的格式塔解释，对应合道场域型组织。</li>
+<li><strong>金字塔原理⟷五行木（自上而下结构化）</strong>：顶层结论统摄下层论据，即木之生发有序。</li>
+<li><strong>5W2H⟷五色光五维排查</strong>：白(事实)红(直觉)绿(创新)黄(价值)蓝(风险)五光正是一份结构化检查清单。</li>
+<li><strong>5W2H⟷五行（金·拆解）</strong>：七问把事件拆为可核查维度，对应金之收敛剖析。</li>
+<li><strong>SCAMPER⟷五色光绿光（创新）</strong>：替代/组合/调整/消除等七问即绿光『创新变革』的操作清单。</li>
+<li><strong>SCAMPER⟷五行木（生发）</strong>：创新是木之生发，SCAMPER 提供生发路径。</li>
+<li><strong>五色光⟷五行功能同构</strong>：白=事实(金)、红=直觉(火)、绿=创新(木)、黄=价值(土)、蓝=风险(水)。</li>
+<li><strong>跨文件同构</strong>：与 [[《麦肯锡思考工具》理论体系梳理与应用研究]]、[[框架-思维框架-框架思维]]、[[思维模型——人类认知的底层操作系统]] 共享核心概念（详见「三、关联文件」章节），可在龙心OS知识学习引擎下做十项认知指令的对比推演。</li>
+
+<blockquote><strong>引擎路由</strong>：本文可由龙心OS五引擎组合调用——知识学习（十项认知指令深度学习）、象思维（物象→意象→原象）、五色光（白红黄绿蓝五维审查）、知行合一（表示→压缩→泛化）、人机协同五象限（[AI]/[人]/[⇄]分工定位）。</blockquote>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

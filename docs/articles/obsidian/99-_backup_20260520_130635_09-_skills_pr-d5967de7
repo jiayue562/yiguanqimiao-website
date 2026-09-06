@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>人机协同五象限提示词模板 - 以观其妙书院</title>
+<meta name="description" content="人机协同五象限提示词模板 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="人机协同五象限提示词模板">
+<meta property="og:description" content="人机协同五象限提示词模板 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "人机协同五象限提示词模板",
+    "description": "人机协同五象限提示词模板 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>人机协同五象限提示词模板</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>人机协同五象限提示词模板</h1>
+<blockquote><p>💬 即用型提示词库 · 按象限分类</p></blockquote>
+<hr>
+<h2>📋 使用说明</h2>
+<h3>如何使用</h3>
+<ol>
+<li><strong>选择象限</strong>：根据任务类型选择对应象限</li>
+<li><strong>复制模板</strong>：复制对应提示词模板</li>
+<li><strong>填充内容</strong>：替换 <code>[ ]</code> 中的占位符</li>
+<li><strong>发送 AI</strong>：发送给 AI 开始协作</li>
+<li><strong>调整优化</strong>：根据效果调整提示词</li>
+</ol>
+<h3>提示词结构</h3>
+<pre><code># 角色设定（AI 扮演什么角色）
+# 任务描述（要做什么）
+# 输入信息（提供什么）
+# 输出要求（期望什么结果）
+# 约束条件（限制是什么）</code></pre>
+<hr>
+<h2>🔴 第一象限：效率协作者</h2>
+<h3>模板 1：数据整理</h3>
+<pre><code># 角色
+你是我的效率助手，负责快速准确地处理数据。
+
+# 任务
+整理以下数据为指定格式。
+
+# 输入
+[粘贴原始数据]
+
+# 输出要求
+- 格式：[例如：Excel 表格/JSON/CSV]
+- 字段：[字段 1, 字段 2, 字段 3...]
+- 数量：[预计多少条]
+
+# 约束
+- 保持数据准确性
+- 缺失字段标记为"N/A"
+- [其他特殊要求]
+
+# 截止时间
+[期望完成时间]</code></pre>
+<hr>
+<h3>模板 2：批量内容生成</h3>
+<pre><code># 角色
+你是我的内容生成助手，负责批量生成高质量内容。
+
+# 任务
+生成 [数量] 条 [内容类型]。
+
+# 主题/产品
+[描述主题或产品信息]
+
+# 输出要求
+- 每条长度：[例如：50-100 字]
+- 风格：[例如：专业/幽默/亲切]
+- 包含要素：[要素 1, 要素 2, 要素 3]
+- 格式：[例如：列表/段落]
+
+# 参考示例
+[提供 1-2 个样例]
+
+# 约束
+- 避免重复
+- 符合 [品牌/平台] 规范
+- [其他要求]</code></pre>
+<hr>
+<h3>模板 3：快速检索汇总</h3>
+<pre><code># 角色
+你是我的研究助手，负责快速检索和汇总信息。
+
+# 任务
+检索关于 [主题] 的信息并汇总。
+
+# 检索范围
+- 时间范围：[例如：近 2 年]
+- 来源类型：[例如：学术论文/新闻报道/行业报告]
+- 语言：[例如：中文/英文]
+
+# 输出要求
+- 汇总核心观点（[数量] 条）
+- 标注信息来源
+- 按 [类别/时间/重要性] 分类
+
+# 约束
+- 优先权威来源
+- 标注信息可信度
+- [其他要求]</code></pre>
+<hr>
+<h3>模板 4：格式化转换</h3>
+<pre><code># 角色
+你是我的格式转换助手。
+
+# 任务
+将以下内容从 [原格式] 转换为 [目标格式]。
+
+# 输入
+[粘贴原始内容]
+
+# 目标格式要求
+[描述目标格式规范]
+
+# 约束
+- 保持内容完整性
+- 符合 [标准/规范]
+- [其他要求]</code></pre>
+<hr>
+<h2>🟡 第二象限：知识拓展者</h2>
+<h3>模板 1：新领域学习</h3>
+<pre><code># 角色
+你是我的知识导航员，帮助我系统学习新领域。
+
+# 学习目标
+我想学习 [领域/主题]。
+
+# 我的背景
+- 当前水平：[初学者/有一定了解/专业人士]
+- 学习目标：[掌握基础/深入研究/应用实践]
+- 可用时间：[每天/每周 X 小时]
+
+# 请求帮助
+1. 提供知识地图/学习路径
+2. 推荐核心学习资源（书籍/课程/文章）
+3. 解释关键概念
+4. 回答我的问题
+
+# 输出要求
+- 结构化呈现（从基础到进阶）
+- 标注学习优先级
+- 提供预计学习时间</code></pre>
+<hr>
+<h3>模板 2：文献综述</h3>
+<pre><code># 角色
+你是我的研究助手，帮助我进行文献综述。
+
+# 研究主题
+[具体研究主题]
+
+# 检索要求
+- 时间范围：[例如：近 5 年]
+- 文献类型：[论文/书籍/报告]
+- 数据库：[例如：Google Scholar/CNKI]
+
+# 输出要求
+1. 核心文献清单（[数量] 篇）
+2. 每篇的核心观点摘要
+3. 研究演进脉络
+4. 研究空白识别
+
+# 约束
+- 优先高引用文献
+- 包含不同观点
+- 标注文献来源</code></pre>
+<hr>
+<h3>模板 3：竞品分析</h3>
+<pre><code># 角色
+你是我的市场研究助手。
+
+# 分析目标
+分析 [行业/领域] 的竞品情况。
+
+# 竞品信息
+[列出已知竞品或让 AI 识别]
+
+# 分析维度
+- 产品功能
+- 定价策略
+- 目标用户
+- 优势劣势
+- 市场份额
+
+# 输出要求
+- 竞品对比表格
+- SWOT 分析
+- 市场机会识别</code></pre>
+<hr>
+<h3>模板 4：概念解释</h3>
+<pre><code># 角色
+你是我的学习伙伴，帮助我深入理解概念。
+
+# 概念
+[需要理解的概念名称]
+
+# 我的问题
+1. 这个概念的本质是什么？
+2. 为什么这个概念重要？
+3. 如何应用这个概念？
+4. 与 [相关概念] 的关系是什么？
+
+# 输出要求
+- 用通俗语言解释
+- 提供具体例子
+- 指出常见误解
+- 推荐深入学习资源</code></pre>
+<hr>
+<h2>🟢 第三象限：思辨对话者</h2>
+<h3>模板 1：战略决策分析</h3>
+<pre><code># 角色
+你是我的思辨伙伴，帮助我深入思考战略决策。
+
+# 决策议题
+[具体决策议题]
+
+# 背景信息
+[相关背景、数据、约束条件]
+
+# 我的初步想法
+[你的初步想法/倾向]
+
+# 思辨请求
+1. 挑战我的假设
+2. 提供不同视角
+3. 指出我可能忽略的因素
+4. 分析各选项的利弊
+
+# 输出要求
+- 深度追问（至少 3 层）
+- 多视角分析（客户/员工/股东/社会）
+- 风险评估
+- 决策建议</code></pre>
+<hr>
+<h3>模板 2：复杂问题拆解</h3>
+<pre><code># 角色
+你是我的问题分析助手。
+
+# 复杂问题
+[描述复杂问题]
+
+# 已知信息
+[已知的相关信息]
+
+# 请求帮助
+1. 拆解问题为子问题（MECE 原则）
+2. 识别关键变量
+3. 分析因果关系
+4. 提供解决思路
+
+# 输出要求
+- 问题树/逻辑图
+- 优先级排序
+- 可执行的解决步骤</code></pre>
+<hr>
+<h3>模板 3：观点论证</h3>
+<pre><code># 角色
+你是我的辩论伙伴。
+
+# 我的观点
+[陈述你的观点]
+
+# 请求
+1. 提供反驳观点
+2. 指出论证漏洞
+3. 提供反面证据
+4. 帮助我完善论证
+
+# 输出要求
+- 尖锐但建设性
+- 提供证据支持
+- 帮助我提升思考质量</code></pre>
+<hr>
+<h3>模板 4：方案评估</h3>
+<pre><code># 角色
+你是我的方案评估顾问。
+
+# 待评估方案
+[描述方案内容]
+
+# 评估标准
+- 可行性
+- 成本效益
+- 风险
+- 长期影响
+
+# 请求帮助
+1. 多维度评估方案
+2. 识别潜在风险
+3. 提供改进建议
+4. 对比替代方案
+
+# 输出要求
+- 评估报告（按维度）
+- 风险清单
+- 优化建议</code></pre>
+<hr>
+<h2>🔵 第四象限：协同探索者</h2>
+<h3>模板 1：科学研究探索</h3>
+<pre><code># 角色
+你是我的科研探索伙伴。
+
+# 研究领域
+[具体研究领域]
+
+# 研究问题
+[待探索的研究问题]
+
+# 已知信息
+[已有研究/数据/观察]
+
+# 探索请求
+1. 提出可能的假设
+2. 设计验证方案
+3. 检索相关信息
+4. 分析数据模式
+
+# 输出要求
+- 假设清单（按可能性排序）
+- 验证方法建议
+- 相关研究线索
+- 下一步行动建议</code></pre>
+<hr>
+<h3>模板 2：新业务模式探索</h3>
+<pre><code># 角色
+你是我的商业创新伙伴。
+
+# 探索方向
+[行业/领域]
+
+# 市场观察
+[观察到的趋势/痛点/机会]
+
+# 探索请求
+1. 分析市场机会
+2. 提出商业模式假设
+3. 对标类似案例
+4. 设计验证实验
+
+# 输出要求
+- 机会分析
+- 商业模式画布
+- 对标案例
+- MVP 实验设计</code></pre>
+<hr>
+<h3>模板 3：跨界创新</h3>
+<pre><code># 角色
+你是我的跨界创新伙伴。
+
+# 本领域
+[你所在的领域]
+
+# 目标领域
+[想要借鉴的领域]
+
+# 创新目标
+[希望解决的难题/希望实现创新]
+
+# 请求帮助
+1. 识别目标领域的核心方法/模式
+2. 分析跨领域应用可能性
+3. 设计融合方案
+4. 评估可行性
+
+# 输出要求
+- 跨界洞察
+- 融合方案
+- 实施路径
+- 风险评估</code></pre>
+<hr>
+<h3>模板 4：未知问题研究</h3>
+<pre><code># 角色
+你是我的研究探索伙伴。
+
+# 未知问题
+[描述未知问题/现象]
+
+# 初步观察
+[已有观察/数据]
+
+# 探索请求
+1. 提出可能的解释
+2. 设计信息收集方案
+3. 分析关联因素
+4. 迭代探索方向
+
+# 输出要求
+- 假设生成
+- 信息收集计划
+- 分析框架
+- 探索日志</code></pre>
+<hr>
+<h2>🟣 第五象限：未知共创者</h2>
+<h3>模板 1：从 0→1 创新</h3>
+<pre><code># 角色
+你是我的共创伙伴，我们一起创造全新的事物。
+
+# 愿景/方向
+[描述愿景或方向，可以模糊]
+
+# 我的直觉/洞察
+[你的直觉/洞察/灵感]
+
+# 共创请求
+1. 提供跨界信息和灵感
+2. 识别隐藏模式
+3. 组合创新元素
+4. 深化创意方案
+
+# 共创方式
+- 深度对话（多轮迭代）
+- 快速原型（边想边做）
+- 直觉 + 理性结合
+
+# 输出要求
+- 创意方案
+- 实施路径
+- 验证方法</code></pre>
+<hr>
+<h3>模板 2：理论框架构建</h3>
+<pre><code># 角色
+你是我的理论共创伙伴。
+
+# 构建目标
+[想要构建的理论/框架]
+
+# 核心洞察
+[你的核心洞察/发现]
+
+# 相关材料
+[相关理论/案例/数据]
+
+# 共创请求
+1. 识别核心维度
+2. 构建逻辑关系
+3. 提供理论支持
+4. 完善框架细节
+
+# 输出要求
+- 框架结构图
+- 维度定义
+- 关系阐述
+- 测量指标</code></pre>
+<hr>
+<h3>模板 3：范式转换设计</h3>
+<pre><code># 角色
+你是我的范式创新伙伴。
+
+# 当前范式
+[描述当前范式/模式]
+
+# 范式问题
+[当前范式的问题/局限]
+
+# 新范式愿景
+[新范式的方向/愿景]
+
+# 共创请求
+1. 解构当前范式
+2. 设计新范式要素
+3. 规划转换路径
+4. 识别阻力与对策
+
+# 输出要求
+- 范式对比
+- 新范式设计
+- 转换路线图
+- 风险应对</code></pre>
+<hr>
+<h3>模板 4：象思维共创</h3>
+<pre><code># 角色
+你是我的象思维共创伙伴。
+
+# 共创主题
+[主题/问题/愿景]
+
+# 启动象思维
+
+## 观象
+[感知场景：任务特征、不确定性、人类状态]
+
+## 取象
+[匹配模式：选择协作象限、定义角色]
+
+## 运象
+[执行共创：深度对话、快速迭代]
+
+## 成象
+[沉淀经验：记录过程、提炼模式]
+
+# 共创请求
+1. 深度对话（多轮迭代）
+2. 跨界融合（信息+ 洞察）
+3. 快速原型（边想边做）
+4. 经验沉淀（记录 + 提炼）
+
+# 输出要求
+- 共创成果
+- 过程记录
+- 模式提炼</code></pre>
+<hr>
+<h2>🔄 动态协作提示词</h2>
+<h3>象限切换</h3>
+<pre><code># 协作模式调整
+
+当前我们在进行 [当前任务]。
+
+我感觉到需要调整协作深度：
+- [说明原因：任务变复杂/任务变简单/效能低下等]
+
+建议调整到第 [X] 象限：[协作模式名称]
+
+新的协作请求：
+[新的任务描述]</code></pre>
+<hr>
+<h3>效能反馈</h3>
+<pre><code># 协作效能反馈
+
+## 本次协作
+- 任务：[任务描述]
+- 象限：第 [X] 象限
+- 时长：[时长]
+
+## 效能评估
+| 维度 | 评分 (1-5) | 说明 |
+|------|------------|------|
+| 效率 | [评分] | [说明] |
+| 质量 | [评分] | [说明] |
+| 学习 | [评分] | [说明] |
+| 满意度 | [评分] | [说明] |
+
+## 改进建议
+1. [改进点 1]
+2. [改进点 2]
+
+## 下次协作调整
+[具体调整建议]</code></pre>
+<hr>
+<h2>📊 提示词使用统计</h2>
+<h3>推荐使用频率</h3>
+<table>
+<thead><tr>
+<th>象限</th>
+<th>日常使用频率</th>
+<th>单次时长</th>
+</tr></thead><tbody>
+<tr>
+<td>第一象限</td>
+<td>高（每天多次）</td>
+<td>5-30 分钟</td>
+</tr>
+<tr>
+<td>第二象限</td>
+<td>中（每周数次）</td>
+<td>30-60 分钟</td>
+</tr>
+<tr>
+<td>第三象限</td>
+<td>中（每周数次）</td>
+<td>30-90 分钟</td>
+</tr>
+<tr>
+<td>第四象限</td>
+<td>低（每周 1-2 次）</td>
+<td>1-3 小时</td>
+</tr>
+<tr>
+<td>第五象限</td>
+<td>低（按需）</td>
+<td>2 小时+</td>
+</tr>
+</tbody></table>
+<hr>
+<p>_人机协同五象限提示词模板 v1.0 · 观其妙书院 · 2026-04-16_</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

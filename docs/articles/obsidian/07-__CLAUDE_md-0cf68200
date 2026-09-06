@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CLAUDE.md · 内容创作AI自动化配置 - 以观其妙书院</title>
+<meta name="description" content="CLAUDE.md · 内容创作AI自动化配置 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="CLAUDE.md · 内容创作AI自动化配置">
+<meta property="og:description" content="CLAUDE.md · 内容创作AI自动化配置 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "CLAUDE.md · 内容创作AI自动化配置",
+    "description": "CLAUDE.md · 内容创作AI自动化配置 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>CLAUDE.md · 内容创作AI自动化配置</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>CLAUDE.md · 内容创作 AI 自动化配置 v2.1</h1>
+<blockquote><p><strong>V2.1 升级</strong>：新增智能触发规则，8条规则实现全自动/半自动/定时三层自主运行
+<strong>V2.0 升级</strong>：基于 Karpathy「编译」方法论，新增 raw/ → wiki/ → outputs/ 三层编译架构
+<strong>双轨运行</strong>：知识管理层（编译）+ 内容创作层（生产）相互驱动
+<strong>AI 读取此文件后，能自动感知场景并执行，无需手动指令</strong></p></blockquote>
+<hr>
+<h2>📌 AI 行为准则</h2>
+<ol>
+<li><strong>领域专精</strong>：所有内容围绕「五行人格心理学」和「心文化」两大领域</li>
+<li><strong>素材复用优先</strong>：每次创作前先检索已有素材库，复用 &gt; 重新创作</li>
+<li><strong>双向链接</strong>：所有内容必须使用 <code><a href="概念名.html">概念名</a></code> 链接到知识库已有文档</li>
+<li><strong>数据驱动</strong>：复盘必须基于真实数据，不做无数据的主观判断</li>
+<li><strong>沉淀增量</strong>：每次创作都在给系统添砖加瓦，不能"用完即弃"</li>
+<li><strong>编译优于整理</strong>：原始资料只存入 raw/，经三步编译后才进入 wiki/</li>
+</ol>
+<hr>
+<h2>⚡ 智能触发规则（自动执行，无需手动指令）</h2>
+<blockquote><p><strong>核心理念</strong>：Karpathy "机器编译、人类审核"——AI 自动感知场景并执行，人类只需审核关键节点。</p></blockquote>
+<h3>🔴 全自动触发（AI 自主判断，无需你说话）</h3>
+<h4>规则 1：URL 自动抓取</h4>
+<p><strong>触发条件</strong>：你在对话中发送了一个 URL 链接（http/https）
+<strong>AI 自动执行</strong>：</p>
+<ol>
+<li>识别 URL → 使用 Web Fetch 抓取内容</li>
+<li>转为 Markdown + 添加 YAML frontmatter</li>
+<li>存入 <code>raw/articles/YYYY-MM-DD-标题关键词.md</code></li>
+<li>更新 <code>wiki/indexes/All-Sources.md</code></li>
+<li>简短回复：「✅ 已抓取并存入 raw/，文件名：xxx。需要编译吗？」</li>
+</ol>
+<h4>规则 2：知识问答自动沉淀</h4>
+<p><strong>触发条件</strong>：你提问涉及知识库已有概念/理论，AI 检索 wiki/ 后回答
+<strong>AI 自动执行</strong>：</p>
+<ol>
+<li>检索 wiki/concepts/ + wiki/summaries/ + outputs/qa/</li>
+<li>生成带来源标注的回答</li>
+<li><strong>自动</strong>将问答沉淀到 <code>outputs/qa/问答-YYYY-MM-DD-问题关键词.md</code></li>
+<li>不需要额外确认，静默执行</li>
+</ol>
+<h4>规则 3：创作时自动素材检索</h4>
+<p><strong>触发条件</strong>：你开始写文稿、构思选题、深化内容
+<strong>AI 自动执行</strong>：按 V2.0 检索顺序（wiki/concepts → wiki/summaries → outputs/qa → 素材库）自动检索并匹配素材，不需要你手动说"找素材"</p>
+<h4>规则 4：编译后自动索引更新</h4>
+<p><strong>触发条件</strong>：完成一次编译后
+<strong>AI 自动执行</strong>：自动更新 All-Sources.md 和 All-Concepts.md，无需手动触发</p>
+<hr>
+<h3>🟡 半自动触发（AI 提议，你确认后执行）</h3>
+<h4>规则 5：编译提议</h4>
+<p><strong>触发条件</strong>：</p>
+<ul>
+<li>raw/ 中存在未编译素材（没有对应 wiki/summaries/ 文件）</li>
+<li>你发完 URL 抓取后，AI 主动提议</li>
+</ul>
+<p><strong>AI 行为</strong>：</p>
+<ul>
+<li>检测到未编译素材时，主动提议：「检测到 N 条未编译素材，需要编译吗？」</li>
+<li>你说"编译"或"处理" → AI 执行三步编译法</li>
+<li>编译完成后，展示提取的概念和选题启发，<strong>等待你确认</strong>后再写入 wiki/concepts/ 和 01-选题库/</li>
+</ul>
+<h4>规则 6：选题启发提议</h4>
+<p><strong>触发条件</strong>：编译完成后产生了新的选题灵感
+<strong>AI 行为</strong>：编译摘要末尾列出选题启发 → 征求你的意见 → 你确认后才写入 01-选题库/</p>
+<h4>规则 7：方法论迭代提议</h4>
+<p><strong>触发条件</strong>：数据复盘中发现新的标题/开头规律
+<strong>AI 行为</strong>：提出方法论更新建议 → 你确认后才更新 05-方法论迭代/</p>
+<hr>
+<h3>🟢 定时自动（不需要你参与）</h3>
+<h4>规则 8：每周健康检查</h4>
+<p><strong>触发机制</strong>：可配置自动化任务，每周日自动执行
+<strong>AI 自动执行</strong>：</p>
+<ol>
+<li>一致性检查（概念定义冲突）</li>
+<li>完整性检查（缺失字段）</li>
+<li>孤岛检测（入链出链 &lt; 2）</li>
+<li>报告存入 <code>outputs/health/健康检查-YYYY-MM-DD.md</code></li>
+<li>下次对话时简短汇报：「上周健康检查发现 N 个问题，已生成报告」</li>
+</ol>
+<hr>
+<h3>📊 触发规则速查表</h3>
+<table>
+<thead><tr>
+<th>规则</th>
+<th>触发方式</th>
+<th>需要你确认？</th>
+<th>触发频率</th>
+</tr></thead><tbody>
+<tr>
+<td>URL 抓取</td>
+<td>检测到 URL</td>
+<td>❌ 全自动</td>
+<td>按需</td>
+</tr>
+<tr>
+<td>知识问答沉淀</td>
+<td>检索 wiki/ 回答时</td>
+<td>❌ 全自动</td>
+<td>按需</td>
+</tr>
+<tr>
+<td>创作素材检索</td>
+<td>开始写内容时</td>
+<td>❌ 全自动</td>
+<td>按需</td>
+</tr>
+<tr>
+<td>编译后索引更新</td>
+<td>编译完成后</td>
+<td>❌ 全自动</td>
+<td>每次编译</td>
+</tr>
+<tr>
+<td>编译提议</td>
+<td>raw/ 有未编译内容</td>
+<td>✅ 你说"编译"</td>
+<td>按需</td>
+</tr>
+<tr>
+<td>选题启发</td>
+<td>编译产生灵感</td>
+<td>✅ 你确认</td>
+<td>按需</td>
+</tr>
+<tr>
+<td>方法论迭代</td>
+<td>复盘发现规律</td>
+<td>✅ 你确认</td>
+<td>按需</td>
+</tr>
+<tr>
+<td>健康检查</td>
+<td>每周定时</td>
+<td>❌ 全自动</td>
+<td>每周</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🏗️ 架构概览</h2>
+<h3>双轨架构</h3>
+<pre><code>=== 知识管理层（Karpathy 编译架构） ===
+
+URL / 剪藏 / 播客 / 推文
+ ↓ 「抓取链接」
+raw/（原始资料，不做修改）
+ ↓ 「编译」（三步：浓缩→质疑→对标）
+wiki/summaries/ + wiki/concepts/ + wiki/indexes/
+ ↓
+outputs/qa/（问答沉淀）+ outputs/health/（健康检查）
+
+=== 内容创作层（生产系统） ===
+
+碎片想法 → 选题库 → 素材检索 → 文稿生成
+    → 标题/封面 → 发布 → 归档 → 数据复盘 → 方法论迭代
+
+=== 两条线的关系 ===
+
+知识管理线 → 为内容创作线提供编译好的知识素材
+内容创作线 → 发布后数据反馈 → 迭代方法论 → 指导知识编译的重点方向</code></pre>
+<hr>
+<h2>📂 目录结构索引</h2>
+<pre><code>07-内容创作系统/
+├── CLAUDE.md（本文件·AI自动化配置）
+├── README.md（总索引）
+│
+├── raw/                          ← 原始资料层（不改）
+│   ├── articles/                 ← 文章剪藏（Web Clipper）
+│   ├── podcasts/                 ← 播客转录
+│   └── tweets/                   ← 推文收藏
+│
+├── wiki/                         ← 编译产物层（LLM 维护）
+│   ├── summaries/                ← 逐篇三步编译摘要
+│   ├── concepts/                 ← 概念条目（每概念一个 .md）
+│   └── indexes/                  ← 自动维护的索引
+│       ├── All-Sources.md        ← 全部来源清单
+│       └── All-Concepts.md       ← 全部概念清单
+│
+├── outputs/                      ← 运行时输出层
+│   ├── qa/                       ← 问答沉淀
+│   └── health/                   ← 健康检查报告
+│
+├── 01-选题库/                    ← 选题记录与管理
+├── 02-素材库/                    ← 金句库、案例库、框架模板库
+├── 03-爆款文稿库/                ← 已验证的优质文稿
+├── 04-数据复盘/                  ← 发布数据与分析
+├── 05-方法论迭代/                ← 标题方法论、开头方法论、迭代日志
+└── 06-发布归档/                  ← 已发布内容归档</code></pre>
+<hr>
+<h2>🔬 核心编译方法：三步编译法</h2>
+<p>每次编译 raw/ 中的内容，必须严格按以下顺序执行三步：</p>
+<h3>第一步：浓缩（第一性原理 + 剃刀法则）</h3>
+<blockquote><p>基于认知负荷理论（人类工作记忆最多维持20秒，同时处理2-4个信息块）</p></blockquote>
+<ul>
+<li>先抓主线，再深度质疑（顺序不能反）</li>
+<li>用剃刀法则删减：删掉它会影响理解吗？不会就删</li>
+<li><strong>输出</strong>：核心结论（不超过3条）+ 关键证据 + 核心术语表</li>
+</ul>
+<h3>第二步：质疑（芒格反驳法）</h3>
+<blockquote><p>"如果我不能比别人更好地反驳自己的观点，我就不配拥有这个观点。"</p></blockquote>
+<ul>
+<li>逻辑链检查：推理链在哪里断了？</li>
+<li>前提假设：结论依赖哪些前提？列出每个隐含前提及"如果该前提不成立会怎样"</li>
+<li>不适用场景：这个观点在什么情况下不成立？写出具体反例</li>
+<li><strong>输出</strong>：前提假设清单 + 不适用场景 + 反例</li>
+</ul>
+<h3>第三步：对标（它山之石可以攻玉）</h3>
+<ul>
+<li>跨域类比：其他领域有类似现象吗？建立映射表</li>
+<li>迁移应用：这些知识还能用在哪儿？</li>
+<li>它山之石：其他领域的方法论能否迁移到当前领域？</li>
+<li><strong>输出</strong>：跨域映射表 + 可迁移洞察 + 新连接</li>
+</ul>
+<hr>
+<h2>🔄 工作流 1-6：内容创作层（V1.0 保留）</h2>
+<h3>🔄 工作流 1：选题记录</h3>
+<p><strong>触发词</strong>：记录选题、新选题、选题灵感、有个想法</p>
+<p><strong>AI 执行流程</strong>：</p>
+<ol>
+<li>创建文件：<code>01-选题库/选题-YYYY-MM-DD-主题关键词.md</code></li>
+<li>填写以下结构：</li>
+</ol>
+<pre><code>---
+title: "选题-YYYY-MM-DD-主题关键词"
+created: "YYYY-MM-DD"
+status: 待写/写作中/已完成/放弃
+tags: [选题, 五行人格/心文化, 子领域]
+target_audience: [目标读者]
+estimated_length: [预计字数]
+linked_concepts: [[相关概念1]], [[相关概念2]]
+---
+
+## 选题信息
+- **核心话题**：
+- **切入点**：
+- **目标读者**：
+- **预期价值**（读者看完能得到什么）：
+
+## 素材清单
+- [ ] 核心概念：[[  ]]
+- [ ] 金句/案例：[[  ]]
+- [ ] 理论支撑：[[  ]]
+
+## 创作备注
+（创作过程中的想法、调整、灵感）</code></pre>
+<hr>
+<h3>🔄 工作流 2：选题深化</h3>
+<p><strong>触发词</strong>：深化选题、展开选题、选题大纲、帮我构思</p>
+<p><strong>AI 执行流程</strong>：</p>
+<ol>
+<li>读取已有选题文件</li>
+<li>检索 <code>02-素材库/</code> 中的相关素材</li>
+<li>检索 <code>wiki/concepts/</code> 中的概念条目（含质疑和跨域洞察）</li>
+<li>检索 <code>wiki/summaries/</code> 中的已编译知识</li>
+<li>检索知识库根目录（<code>02-五行人格心理学/</code>、<code>02-信仰文化体系/</code>）中的理论文档</li>
+<li>输出内容大纲 + 素材匹配清单</li>
+</ol>
+<hr>
+<h3>🔄 工作流 3：标题生成</h3>
+<p><strong>触发词</strong>：生成标题、起标题、标题优化、帮我取标题</p>
+<p><strong>AI 执行流程</strong>：</p>
+<ol>
+<li>读取文稿内容（或选题信息）</li>
+<li>参考 <code>05-方法论迭代/标题方法论.md</code> 中的验证公式</li>
+<li>生成 5-8 个候选标题</li>
+<li>按评分排序</li>
+</ol>
+<p><strong>标题评分标准</strong>：</p>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>权重</th>
+<th>评分标准</th>
+</tr></thead><tbody>
+<tr>
+<td>好奇心</td>
+<td>30%</td>
+<td>是否引发"我想点开看看"的冲动</td>
+</tr>
+<tr>
+<td>价值感</td>
+<td>25%</td>
+<td>是否暗示读者能获得具体价值</td>
+</tr>
+<tr>
+<td>识别度</td>
+<td>20%</td>
+<td>是否与五行人格/心文化领域相关</td>
+</tr>
+<tr>
+<td>简洁度</td>
+<td>15%</td>
+<td>15字以内为佳，不超过22字</td>
+</tr>
+<tr>
+<td>情绪共鸣</td>
+<td>10%</td>
+<td>是否触及目标读者的情绪痛点</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>🔄 工作流 4：开头优化</h3>
+<p><strong>触发词</strong>：优化开头、开头改写、帮我写开头、钩子优化</p>
+<p><strong>开头类型库</strong>：</p>
+<table>
+<thead><tr>
+<th>类型</th>
+<th>适用场景</th>
+<th>示例框架</th>
+</tr></thead><tbody>
+<tr>
+<td>痛点型</td>
+<td>解决具体问题</td>
+<td>"你是不是也遇到过..."</td>
+</tr>
+<tr>
+<td>数据型</td>
+<td>反常识/颠覆认知</td>
+<td>"90%的人都不知道..."</td>
+</tr>
+<tr>
+<td>故事型</td>
+<td>情感共鸣</td>
+<td>"上周一位学员问我..."</td>
+</tr>
+<tr>
+<td>金句型</td>
+<td>价值观输出</td>
+<td>"五行不是算命，是..."</td>
+</tr>
+<tr>
+<td>场景型</td>
+<td>日常代入</td>
+<td>"开会时领导说了一句话..."</td>
+</tr>
+<tr>
+<td>提问型</td>
+<td>引发思考</td>
+<td>"为什么有些人天生就有领导力？"</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>🔄 工作流 5：素材检索（V2.0 更新检索顺序）</h3>
+<p><strong>触发词</strong>：找素材、检索素材、相关概念、有没有写过XX</p>
+<p><strong>V2.0 更新后的检索顺序</strong>：</p>
+<ol>
+<li><code>wiki/concepts/</code> → 查找概念（含质疑和跨域洞察）</li>
+<li><code>wiki/summaries/</code> → 查找已编译的知识</li>
+<li><code>outputs/qa/</code> → 查找历史问答结果</li>
+<li><code>02-素材库/金句库.md</code> → 查找可复用的表达</li>
+<li><code>02-素材库/案例库.md</code> → 查找可引用的案例</li>
+<li><code>02-素材库/框架模板库.md</code> → 查找可复用框架</li>
+<li><code>03-爆款文稿库/</code> → 查找爆款成功要素</li>
+<li><code>05-方法论迭代/</code> → 参考标题和开头公式</li>
+<li>知识库根目录（<code>02-五行人格心理学/</code>、<code>02-信仰文化体系/</code>、<code>01-核心体系/</code>）</li>
+</ol>
+<hr>
+<h3>🔄 工作流 6：数据复盘</h3>
+<p><strong>触发词</strong>：记录数据、发布复盘、数据记录、这篇文章表现如何</p>
+<p><strong>AI 执行流程</strong>：</p>
+<ol>
+<li>创建文件：<code>04-数据复盘/复盘-YYYY-MM-DD.md</code></li>
+<li>填写数据记录</li>
+<li>分析亮点与不足</li>
+<li>提炼方法论更新建议</li>
+<li>更新 <code>05-方法论迭代/</code> 中的方法论文件</li>
+</ol>
+<hr>
+<h2>🔄 工作流 7-10：知识管理层（V2.0 新增）</h2>
+<h3>🔄 工作流 7：「抓取链接」</h3>
+<p><strong>触发词</strong>：抓取、保存链接、收藏这篇文章、剪藏</p>
+<p><strong>AI 执行流程</strong>：</p>
+<ol>
+<li>判断内容类型（文章/播客/推文）</li>
+<li>使用 Web Fetch 工具抓取内容，转为 Markdown</li>
+<li>添加 YAML frontmatter（source_url, author, published, clipped_at, tags, type）</li>
+<li>存入 raw/ 对应目录（articles/podcasts/tweets）</li>
+<li>更新 <code>wiki/indexes/All-Sources.md</code></li>
+</ol>
+<p><strong>文件命名</strong>：<code>raw/articles/YYYY-MM-DD-标题关键词.md</code></p>
+<hr>
+<h3>🔄 工作流 8：「编译」</h3>
+<p><strong>触发词</strong>：编译、compile、处理新内容、编译知识</p>
+<p><strong>AI 执行流程</strong>：</p>
+<ol>
+<li><strong>扫描 raw/</strong> 找未编译素材（没有对应 wiki/summaries/ 文件的）</li>
+<li><strong>三步编译法</strong>（浓缩→质疑→对标）</li>
+<li>存入 <code>wiki/summaries/YYYY-MM-DD-标题关键词.md</code></li>
+<li>提取概念 → 在 <code>wiki/concepts/</code> 中建立或更新条目</li>
+<li>更新 <code>wiki/indexes/All-Sources.md</code>（追加来源）</li>
+<li>更新 <code>wiki/indexes/All-Concepts.md</code>（新增/更新概念）</li>
+<li>如有选题启发 → 追加到 <code>01-选题库/</code></li>
+</ol>
+<p><strong>增量编译</strong>：只处理没有对应 wiki/summaries/ 文件的 raw 素材，不全量重建</p>
+<hr>
+<h3>🔄 工作流 9：「健康检查」</h3>
+<p><strong>触发词</strong>：健康检查、检查知识库、知识库诊断</p>
+<p><strong>AI 执行流程</strong>：</p>
+<ol>
+<li><strong>一致性检查</strong>：核查 wiki/concepts/ 中的概念定义是否存在冲突</li>
+<li><strong>完整性检查</strong>：排查哪些概念条目缺定义、缺案例、缺来源</li>
+<li><strong>孤岛检测</strong>：筛选入链出链都少于 2 的孤立笔记</li>
+<li>生成报告存入 <code>outputs/health/健康检查-YYYY-MM-DD.md</code></li>
+<li>列出本期修复计划</li>
+</ol>
+<hr>
+<h3>🔄 工作流 10：「知识问答」</h3>
+<p><strong>触发词</strong>：问知识库、基于知识库回答、知识查询</p>
+<p><strong>AI 执行流程</strong>：</p>
+<ol>
+<li>检索 wiki/concepts/ + wiki/summaries/ + outputs/qa/</li>
+<li>生成带来源的回答（标注引用来源）</li>
+<li>以 Markdown 存入 <code>outputs/qa/问答-YYYY-MM-DD-问题关键词.md</code></li>
+<li>标注不确定性（哪些地方还不确定）</li>
+</ol>
+<hr>
+<h2>📐 编译产物规范</h2>
+<h3>摘要文件（wiki/summaries/）</h3>
+<ul>
+<li>文件名格式：<code>YYYY-MM-DD-关键词.md</code></li>
+<li>必须包含三步编译的完整输出</li>
+<li>末尾列出：提取的概念、关联素材、选题启发</li>
+</ul>
+<h3>概念条目（wiki/concepts/）</h3>
+<ul>
+<li>文件名格式：<code>概念名.md</code></li>
+<li>YAML frontmatter：aliases, created_at, updated_at, sources, related_concepts</li>
+<li>必须包含：定义、第一性原理、证据链、质疑、跨域连接、适用场景、典型表达、反向链接</li>
+<li>新概念建条目，老概念补新证据</li>
+</ul>
+<h3>索引维护</h3>
+<ul>
+<li>每次编译后自动更新 All-Sources.md（追加来源）</li>
+<li>每次编译后自动更新 All-Concepts.md（新增/更新概念）</li>
+</ul>
+<hr>
+<h2>📂 文件命名规范</h2>
+<table>
+<thead><tr>
+<th>类型</th>
+<th>命名格式</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td>原始资料</td>
+<td><code>raw/articles/YYYY-MM-DD-标题关键词.md</code></td>
+<td><code>raw/articles/2026-04-10-木行人领导力.md</code></td>
+</tr>
+<tr>
+<td>编译摘要</td>
+<td><code>wiki/summaries/YYYY-MM-DD-标题关键词.md</code></td>
+<td><code>wiki/summaries/2026-04-10-木行人领导力.md</code></td>
+</tr>
+<tr>
+<td>概念条目</td>
+<td><code>wiki/concepts/概念名.md</code></td>
+<td><code>wiki/concepts/拔阴取阳.md</code></td>
+</tr>
+<tr>
+<td>问答沉淀</td>
+<td><code>outputs/qa/问答-YYYY-MM-DD-问题关键词.md</code></td>
+<td><code>outputs/qa/问答-2026-04-10-五行相生.md</code></td>
+</tr>
+<tr>
+<td>健康检查</td>
+<td><code>outputs/health/健康检查-YYYY-MM-DD.md</code></td>
+<td><code>outputs/health/健康检查-2026-04-10.md</code></td>
+</tr>
+<tr>
+<td>选题</td>
+<td><code>01-选题库/选题-YYYY-MM-DD-关键词.md</code></td>
+<td><code>01-选题库/选题-2026-04-10-木行人领导力.md</code></td>
+</tr>
+<tr>
+<td>爆款文稿</td>
+<td><code>03-爆款文稿库/爆款文稿-YYYY-MM-DD-标题缩写.md</code></td>
+<td><code>03-爆款文稿库/爆款文稿-2026-04-10-木行人五个维度.md</code></td>
+</tr>
+<tr>
+<td>数据复盘</td>
+<td><code>04-数据复盘/复盘-YYYY-MM-DD.md</code></td>
+<td><code>04-数据复盘/复盘-2026-04-10.md</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🔗 知识库路径速查</h2>
+<pre><code>根目录：D:\以观其妙书院知识库\观其妙书院\
+
+本系统内部：
+├── raw/                        ← 原始资料（不改）
+├── wiki/summaries/             ← 编译摘要
+├── wiki/concepts/              ← 概念条目
+├── wiki/indexes/               ← 索引
+├── outputs/qa/                 ← 问答沉淀
+├── outputs/health/             ← 健康检查
+├── 01-选题库/                  ← 选题管理
+├── 02-素材库/                  ← 金句、案例、框架
+├── 03-爆款文稿库/              ← 优质文稿
+├── 04-数据复盘/                ← 数据分析
+└── 05-方法论迭代/              ← 方法论沉淀
+
+外部知识资产来源：
+├── 02-五行人格心理学/          ← 五行人格理论（58篇）
+├── 02-信仰文化体系/            ← 心文化体系（20篇）
+├── 01-核心体系/                ← 核心理论（122篇）
+├── 01-核心独创Skills/          ← 独创方法论（90篇）
+├── 02-独创方法论/              ← 教员方法论等
+├── 05-五行人格心理学/          ← 深度内容（147篇）
+├── 05-五行人格AI智能体/        ← AI辅助内容（11篇）
+└── 06-课程体系/                ← 课程内容</code></pre>
+<hr>
+<p><strong>版本</strong>: v2.1
+<strong>创建</strong>: 2026-04-10
+<strong>升级</strong>: 2026-04-10（V2.1：新增智能触发规则·8条自主化规则）
+<strong>维护者</strong>: 龙龟神将
+<strong>更新频率</strong>: 随内容创作和知识编译迭代更新</p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

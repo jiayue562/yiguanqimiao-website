@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>五行人格心理学操作系统 · 自动路由决策树 - 以观其妙书院</title>
+<meta name="description" content="五行人格心理学操作系统 · 自动路由决策树 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="五行人格心理学操作系统 · 自动路由决策树">
+<meta property="og:description" content="五行人格心理学操作系统 · 自动路由决策树 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "五行人格心理学操作系统 · 自动路由决策树",
+    "description": "五行人格心理学操作系统 · 自动路由决策树 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>五行人格心理学操作系统 · 自动路由决策树</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>五行人格心理学操作系统 · 自动路由决策树</h1>
+<blockquote><p>版本：1.0 | 创建日期：2026-03-19
+定位：五行人格心理学操作系统的"决策层"，让系统自主选择最优引擎组合</p></blockquote>
+<hr>
+<h2>一、决策树核心架构</h2>
+<pre><code>                    ┌─────────────────┐
+                    │   用户输入      │
+                    └────────┬────────┘
+                             │
+                    ┌────────▼────────┐
+                    │  Step 1: 感知   │
+                    │  关键词提取     │
+                    │  情感识别       │
+                    │  身份判断       │
+                    └────────┬────────┘
+                             │
+              ┌──────────────┼──────────────┐
+              │              │              │
+     ┌────────▼────┐  ┌─────▼─────┐  ┌─────▼─────┐
+     │  简单问答   │  │  信息查询  │  │ 深度需求  │
+     │  (S0)      │  │  (S1)    │  │ (S2-S7)  │
+     └────────┬────┘  └─────┬─────┘  └─────┬─────┘
+              │              │              │
+              ▼              ▼              ▼
+         [静默返回]    [知识学习]    [进入决策分支]</code></pre>
+<hr>
+<h2>二、Step 1: 感知层（输入预处理）</h2>
+<h3>1.1 关键词提取</h3>
+<pre><code>输入文本
+    │
+    ├─ 直接关键词（五行标识）
+    │  ├─ 木行/木行人/木属性 → 木
+    │  ├─ 火行/火行人/火属性 → 火
+    │  ├─ 土行/土行人/土属性 → 土
+    │  ├─ 金行/金行人/金属性 → 金
+    │  └─ 水行/水行人/水属性 → 水
+    │
+    ├─ 特征关键词
+    │  ├─ 愤怒/激动/热情 → 火行
+    │  ├─ 抑郁/抱怨/固执 → 土行
+    │  ├─ 焦虑/多疑/变通 → 水行
+    │  ├─ 完美/挑剔/决断 → 金行
+    │  └─ 行动/创造/生长 → 木行
+    │
+    └─ 场景关键词
+       ├─ "是什么" → S1
+       ├─ "如何" → S2/S4
+       ├─ "为什么" → S4
+       ├─ "帮我" → S6
+       └─ "构建" → S7</code></pre>
+<h3>1.2 情感状态识别</h3>
+<pre><code>情感向量 = [焦虑, 愤怒, 抑郁, 恐惧, 迷茫, 平静, 喜悦]
+    │
+    ├─ 焦虑向量 &gt; 0.6 → 水行关注
+    ├─ 愤怒向量 &gt; 0.6 → 火行关注
+    ├─ 抑郁向量 &gt; 0.6 → 土行关注
+    ├─ 恐惧向量 &gt; 0.5 → 水行关注
+    └─ 迷茫向量 &gt; 0.5 → 水行+木行</code></pre>
+<h3>1.3 用户身份推断</h3>
+<pre><code>根据历史对话/用户画像
+    │
+    ├─ 用户是木行人 → 侧重木行分析
+    ├─ 用户是火行人 → 侧重火行分析
+    ├─ 用户是土行人 → 侧重土行分析
+    ├─ 用户是金行人 → 侧重金行分析
+    ├─ 用户是水行人 → 侧重水行分析
+    └─ 未确定 → 五行全面扫描</code></pre>
+<hr>
+<h2>三、Step 2: 场景归类</h2>
+<h3>2.1 决策规则</h3>
+<pre><code>IF 输入长度 &lt; 10 AND 无关键信息 THEN
+    → S0 (简单问答)
+ELSE IF 包含 "什么是" / "定义" / "解释" THEN
+    → S1 (信息查询)
+ELSE IF 包含 "深入分析" / "学习" / "理解" THEN
+    → S2 (深度理解)
+ELSE IF 包含 "创新" / "新想法" / "结合" THEN
+    → S3 (创意创新)
+ELSE IF 包含 "分析" / "评估" / "诊断" THEN
+    → S4 (分析决策)
+ELSE IF 包含 "方向" / "转型" / "构建系统" THEN
+    → S5 (重大决策)
+ELSE IF 包含 "帮我" / "制定" / "执行" THEN
+    → S6 (任务执行)
+ELSE IF 包含 "构建" / "升级" / "整合" THEN
+    → S7 (系统规划)
+ELSE
+    → S4 (默认分析决策)
+END</code></pre>
+<h3>2.2 复杂度评估</h3>
+<pre><code>复杂度 = f(涉及五行数量, 场景类型, 意图强度)
+
+低复杂度：
+- 单五行 + S0/S1 → 直接回答/轻量查询
+
+中复杂度：
+- 单五行 + S2/S4/S6 → 标准分析
+
+高复杂度：
+- 多五行 + S3/S5/S7 → 深度分析+方案设计
+- 任意五行 + S7 → 系统规划</code></pre>
+<hr>
+<h2>四、Step 3: 引擎路由</h2>
+<h3>3.1 单引擎选择</h3>
+<pre><code>S0: 不启动任何引擎
+S1: 知识学习引擎
+S2: 知识学习引擎 → 象思维
+S3: 象思维 → 五色光(绿)
+S4: 五色光思维(完整序列)
+S5: 全系统(5引擎)
+S6: 人机协同五象限
+S7: 象思维 → 人机协同 → 五色光 → 知行合一</code></pre>
+<h3>3.2 分智能体选择</h3>
+<pre><code>IF 明确指定某一行 THEN
+    调用对应分智能体
+ELSE IF 情感/特征指向某一行 THEN
+    调用对应分智能体 + 总智能体协调
+ELSE IF 涉及两行关系 THEN
+    调用两个相关分智能体
+ELSE IF 需要全面分析 THEN
+    启动 1+5 模式：总智能体 + 5个分智能体
+END</code></pre>
+<h3>3.3 五行分智能体调度规则</h3>
+<pre><code>【木行触发条件】
+- 直接：木行/木行人/木属性
+- 特征：愤怒、行动、创造、生长、规划
+- 场景：想做大事、创业、扩张
+- 关系：木生火、木克土
+
+【火行触发条件】
+- 直接：火行/火行人/火属性
+- 特征：热情、激动、表达、礼仪、明亮
+- 场景：社交活动、情绪管理、领导力
+- 关系：火生土、火克金
+
+【土行触发条件】
+- 直接：土行/土行人/土属性
+- 特征：抱怨、固执、信任、稳定、承载
+- 场景：人际关系、稳定发展、信任问题
+- 关系：土生金、土克水
+
+【金行触发条件】
+- 直接：金行/金行人/金属性
+- 特征：完美、挑剔、决断、原则、清明
+- 场景：决策分析、制度设计、品质把控
+- 关系：金生水、金克木
+
+【水行触发条件】
+- 直接：水行/水行人/水属性
+- 特征：焦虑、多疑、变通、智慧、流动
+- 场景：选择困难、情绪困扰、智慧提升
+- 关系：水生木、水克火</code></pre>
+<hr>
+<h2>五、Step 4: 智能调度（1+5模式）</h2>
+<h3>5.1 调度决策表</h3>
+<table>
+<thead><tr>
+<th>输入类型</th>
+<th>分智能体组合</th>
+<th>调度模式</th>
+<th>示例</th>
+</tr></thead><tbody>
+<tr>
+<td>单一行需求</td>
+<td>单分智能体</td>
+<td>直接调用</td>
+<td>"水行人焦虑怎么办" → 水行人分智能体</td>
+</tr>
+<tr>
+<td>两行关系</td>
+<td>双分智能体</td>
+<td>顺序调用</td>
+<td>"木生火怎么实现" → 木→火</td>
+</tr>
+<tr>
+<td>对冲关系</td>
+<td>双分智能体</td>
+<td>平衡调用</td>
+<td>"木克土严重" → 木+土分智能体</td>
+</tr>
+<tr>
+<td>全面分析</td>
+<td>1+5模式</td>
+<td>总分协同</td>
+<td>"分析我的人格" → 总+5</td>
+</tr>
+<tr>
+<td>系统构建</td>
+<td>1+N模式</td>
+<td>按需组合</td>
+<td>"构建水行修炼体系" → 总+水+相关</td>
+</tr>
+</tbody></table>
+<h3>5.2 调度优先级</h3>
+<pre><code>优先级 1：明确指定的五行
+    ↓
+优先级 2：情感/特征指向的五行
+    ↓
+优先级 3：生克关系中的相关五行
+    ↓
+优先级 4：全局视角（五行平衡）</code></pre>
+<h3>5.3 结果整合</h3>
+<pre><code>多智能体输出
+    │
+    ├─ 分智能体A结果
+    ├─ 分智能体B结果
+    └─ ...
+    │
+    ▼
+【整合层】
+- 去除重复
+- 优先级排序
+- 逻辑连贯性检查
+- 格式化输出
+    │
+    ▼
+最终输出</code></pre>
+<hr>
+<h2>六、动态调整机制</h2>
+<h3>6.1 降级策略</h3>
+<pre><code>如果：
+- 识别到S7（系统规划）但用户只是随便问问
+→ 降级为S4（分析决策）
+
+如果：
+- 预期需要多智能体但用户意图简单
+→ 降级为单智能体</code></pre>
+<h3>6.2 升级策略</h3>
+<pre><code>如果：
+- 单智能体分析过程中发现涉及多行
+→ 升级为多智能体组合
+
+如果：
+- S4分析中发现需要做重大决策
+→ 升级为S5</code></pre>
+<h3>6.3 反馈学习</h3>
+<pre><code>每次交互后：
+- 记录场景识别准确性
+- 记录引擎选择有效性
+- 优化决策树参数
+→ 形成持续进化能力</code></pre>
+<hr>
+<h2>七、完整决策流程图</h2>
+<pre><code>                    输入分析
+                        │
+            ┌───────────┼───────────┐
+            │           │           │
+        关键词提取    情感识别    身份推断
+            │           │           │
+            └───────────┼───────────┘
+                        │
+                   场景归类 (S0-S7)
+                        │
+            ┌───────────┼───────────┐
+            │           │           │
+        S0/S1        S2-S4        S5-S7
+            │           │           │
+        静默/        标准引擎     全系统/
+        知识学习     选择         组合引擎
+            │           │           │
+            └───────────┼───────────┘
+                        │
+                  引擎/分智能体选择
+                        │
+            ┌───────────┼───────────┐
+            │           │           │
+        单引擎       双引擎       1+5模式
+            │           │           │
+        直接调用    顺序/平衡    总分协同
+            │           │           │
+            └───────────┼───────────┘
+                        │
+                    结果整合
+                        │
+                   格式化输出
+                        │
+            ┌───────────┴───────────┐
+            │                       │
+       需要沉淀                 直接返回
+       触发知行合一</code></pre>
+<hr>
+<p><em>自动路由决策树 v1.0 · 让五行人格心理学操作系统真正"自主选择，无需关键词"</em></p>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

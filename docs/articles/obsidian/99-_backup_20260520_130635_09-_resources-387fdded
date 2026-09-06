@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>人机协同五象限·标准作业流程（SOP） - 以观其妙书院</title>
+<meta name="description" content="人机协同五象限·标准作业流程（SOP） - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="人机协同五象限·标准作业流程（SOP）">
+<meta property="og:description" content="人机协同五象限·标准作业流程（SOP） - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "人机协同五象限·标准作业流程（SOP）",
+    "description": "人机协同五象限·标准作业流程（SOP） - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>人机协同五象限·标准作业流程（SOP）</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>人机协同五象限·标准作业流程（SOP）</h1>
+<blockquote><p>版本：v2.2 · 2026-03-21</p>
+<p><strong>核心升级</strong>：五象限 = 四象限 + 🔲 未知探索域（人不知AI不知）</p></blockquote>
+<hr>
+<h2>SOP-01：日常任务象限诊断流程</h2>
+<p><strong>适用场景</strong>：开始任何新任务前的标准诊断</p>
+<p><strong>执行时间</strong>：2-5分钟</p>
+<pre><code>Step 1  任务界定
+├── 用一句话描述任务的最终成果
+└── 确认任务的重要性和时间紧迫性
+
+Step 2  任务拆解
+├── 将任务分解为3-5个关键环节
+└── 每个环节需有明确的输入和输出
+
+Step 3  象限诊断（逐环节）
+├── 问：我对这个环节的认知有多深？（人的信息掌握度）
+├── 问：AI对这个环节有多少可用知识？（AI的信息掌握度）
+└── 判断：🟦高效助理/🟩学习伙伴/🟨共创伙伴/🟥共创导师/🔲未知探索域
+
+Step 4  握手设计
+├── 明确人机交接点
+├── 设定验收标准
+└── 规划迭代机制
+
+Step 5  输出蓝图
+└── 填写《人机协同作战蓝图》标准模板
+
+Step 6  执行与记录
+└── 执行过程中记录偏差和洞察
+
+Step 7  复盘与优化
+└── 完成后复盘，优化蓝图，沉淀为模板</code></pre>
+<hr>
+<h2>SOP-02：内容生产工作流</h2>
+<p><strong>适用场景</strong>：文章、课程、视频等知识IP内容创作</p>
+<pre><code>Step 1  选题决策（共创伙伴）
+├── 人：提出2-3个基于深度思考的候选方向
+├── AI：提供各方向的热度数据、受众反馈、竞品分析
+└── 人：最终拍板，确定选题和核心观点
+
+Step 2  框架构建（共创伙伴/共创导师）
+├── 人：提出内容的核心逻辑框架
+├── AI：生成3个不同角度的提纲版本
+└── 人：选择并优化最合适的提纲
+
+Step 3  素材搜集（学习伙伴）
+├── 人：基于框架提出结构化的素材需求
+├── AI：全网搜集相关案例、数据、引用
+└── 人：筛选有价值的素材，整合到框架中
+
+Step 4  初稿生成（共创伙伴）
+├── 人：提供核心论点+情感基调+价值观约束
+├── AI：生成完整初稿或分论点草稿
+└── 人机：人批判阅读，指出问题→AI修改→反复迭代
+
+Step 5  灵魂注入（共创导师）
+├── 人：注入独特视角、个人故事、价值判断
+├── AI：基于人的风格模板进行语言润色
+└── 人：最终审核定稿
+
+Step 6  多平台分发（高效助理）
+├── 人：制定分发规则和各平台要求
+├── AI：自动拆解适配不同平台格式
+└── 人：审核各版本，确认发布</code></pre>
+<hr>
+<h2>SOP-03：产品开发工作流</h2>
+<p><strong>适用场景</strong>：新课程、新服务、新产品的开发与验证</p>
+<pre><code>Step 1  本质问题定义（共创导师）
+└── 人：基于深度洞察，定义产品要解决的根本问题
+
+Step 2  用户调研设计（共创伙伴）
+├── 人：告知目标用户画像+想验证的假设
+├── AI：设计调研计划+生成问卷初稿
+└── 人：优化问题措辞和逻辑
+
+Step 3  市场数据收集（学习伙伴）
+├── 人：提供分析框架和关键词
+├── AI：搜集社媒讨论、竞品分析、用户反馈
+└── 人：理解并整合数据洞察
+
+Step 4  结构化分析（共创导师）
+├── 人：将五色光思维框架或其他分析工具赋予AI
+├── AI：基于框架生成结构化分析报告
+└── 人：做出产品决策
+
+Step 5  MVP设计（共创伙伴）
+├── 人：提供产品核心价值和限制条件
+├── AI：生成多个MVP方案
+└── 人：选择并完善最优方案
+
+Step 6  迭代优化（共创导师）
+├── 人：将用户反馈和实战洞察"喂"给AI
+├── AI：基于新数据生成迭代方案
+└── 人：做出迭代决策</code></pre>
+<hr>
+<h2>SOP-04：知识沉淀工作流</h2>
+<p><strong>适用场景</strong>：每次重要协同结束后的知识沉淀</p>
+<pre><code>Step 1  提取关键洞察
+└── 本次协同产生了哪些新的认知？
+
+Step 2  分析象限变化
+└── 通过本次协同，哪些环节从"学习伙伴"迁移到了"共创伙伴"？
+
+Step 3  提炼可复用模板
+└── 有哪些人机握手方式可以标准化为模板？
+
+Step 4  更新Obsidian知识库
+├── 路径：C:\Users\jia'yue\Desktop\以观其妙书院知识库\观其妙书院\
+└── 位置：04-AI与超级个体\01-AI应用\
+
+Step 5  更新协同蓝图
+└── 基于实战反馈，优化相关场景的蓝图
+
+Step 6  固化记忆
+└── 重要洞察通过update_memory工具存入WorkBuddy记忆系统</code></pre>
+<hr>
+<h2>SOP-05：进化路径评估流程</h2>
+<p><strong>适用场景</strong>：每月一次的象限进化评估</p>
+<pre><code>Step 1  盘点当前象限分布
+├── 统计过去一个月各象限使用频率
+└── 识别主要工作区域
+
+Step 2  识别进化机会
+├── 哪些"高效助理"任务可以进一步标准化？
+├── 哪些"学习伙伴"任务已经可以升级为"共创伙伴"？
+└── 有哪些新的隐性知识可以添加到"共创导师"象限？
+
+Step 3  制定进化计划
+├── 选择1-2个优先进化方向
+└── 设计具体的练习任务
+
+Step 4  更新协同协议
+└── 基于进化结果，更新悟空与龙龟神将的协同协议</code></pre>
+<hr>
+<h2>输出规范</h2>
+<h3>《人机协同作战蓝图》标准格式</h3>
+<pre><code># 人机协同作战蓝图
+
+**任务名称**：[具体任务]
+**制定日期**：[日期]
+**终极目标**：[理想成果]
+**成功标准**：[可量化指标]
+
+---
+
+## 作战蓝图
+
+| 环节 | 象限 | 人做什么 | AI做什么 | 握手方式 | 验收标准 |
+|------|------|---------|---------|---------|---------|
+| [环节1] | [象限] | [具体动作] | [具体动作] | [交接方式] | [验收标准] |
+| [环节2] | [象限] | [具体动作] | [具体动作] | [交接方式] | [验收标准] |
+
+---
+
+## 关键决策点
+
+&gt; 以下环节，人必须保持绝对主导权：
+- 决策点1：[描述]
+- 决策点2：[描述]
+
+## 推荐工具
+
+- [环节1]：[AI工具名称 + 指令示例]
+- [环节2]：[AI工具名称 + 指令示例]
+
+## 风险提示
+
+- 风险1：[描述] → 应对：[措施]
+- 风险2：[描述] → 应对：[措施]
+
+---
+
+**铭记**：方向盘永远在悟空手中，龙龟神将是最强大的副驾驶。</code></pre>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>

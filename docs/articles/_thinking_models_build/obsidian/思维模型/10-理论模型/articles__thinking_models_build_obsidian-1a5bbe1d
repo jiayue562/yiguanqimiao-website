@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社会支持理论 - 以观其妙书院</title>
+    <meta name="description" content="社会支持理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\社会支持理论.txt ｜ 字数：10838 ｜ 行数：132五色光分布（启发式）：白光30% 红光26% 蓝光17% 黄光13% 绿光13%象思维相关度：低（命中 2 次）一、核心定义核心定义（龙心OS精修）：图1：截至目前“走饭”最后一条帖子下已有超过100万条留言二、详细内容逐行挖掘原则：">
+    <meta name="keywords" content="[思维模型, 理论模型, 结构化学习, 决策, 学习]">
+    <meta name="author" content="以观其妙书院">
+    <meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+    <meta property="og:title" content="社会支持理论">
+    <meta property="og:description" content="社会支持理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\社会支持理论.txt ｜ 字数：10838 ｜ 行数：132五色光分布（启发式）：白光30% 红光26% 蓝光17% 黄光13% 绿光13%象思维相关度：低（命中 2 次）一、核心定义核心定义（龙心OS精修）：图1：截至目前“走饭”最后一条帖子下已有超过100万条留言二、详细内容逐行挖掘原则：">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/社会支持理论.html">
+    <meta property="og:site_name" content="以观其妙书院">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/社会支持理论.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "社会支持理论",
+      "description": "社会支持理论龙心OS结构化编译  分类：理论模型  五行属性：金  层级：C层源文件：思维模型/理论模型\社会支持理论.txt ｜ 字数：10838 ｜ 行数：132五色光分布（启发式）：白光30% 红光26% 蓝光17% 黄光13% 绿光13%象思维相关度：低（命中 2 次）一、核心定义核心定义（龙心OS精修）：图1：截至目前“走饭”最后一条帖子下已有超过100万条留言二、详细内容逐行挖掘原则：",
+      "author": {"@type": "Person", "name": "以观其妙书院"},
+      "datePublished": "2026-07-30",
+      "publisher": {"@type": "Organization", "name": "以观其妙书院"}
+    }
+    </script>
+    <style>
+        :root { --max-width: 800px; --font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: var(--font-size);
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #fafafa;
+            padding: 0;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        header .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        header .meta span { margin: 0 10px; }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: #f0f0f0; }
+        article h1 { font-size: 1.8em; margin: 30px 0 15px; color: #1a1a1a; }
+        article h2 { font-size: 1.5em; margin: 25px 0 12px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        article h3 { font-size: 1.3em; margin: 20px 0 10px; color: #444; }
+        article h4 { font-size: 1.1em; margin: 15px 0 8px; color: #555; }
+        article p { margin: 12px 0; text-align: justify; }
+        article blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+            font-style: italic;
+        }
+        article pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        article code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+        article pre code { background: none; padding: 0; }
+        article img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+        article hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        article ul, article ol { margin: 15px 0; padding-left: 25px; }
+        article li { margin: 8px 0; }
+        article strong { color: #1a1a1a; }
+        article a { color: #3498db; text-decoration: none; }
+        article a:hover { text-decoration: underline; }
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .breadcrumb a { color: #3498db; }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/yiguanqimiao-website/">首页</a>
+            <a href="/yiguanqimiao-website/articles/">文章列表</a>
+            <a href="/yiguanqimiao-website/llms.txt" target="_blank">GEO索引</a>
+        </nav>
+        
+        <header>
+            <h1>社会支持理论</h1>
+            <div class="meta">
+                <span>📅 2026-07-30</span>
+                <span>✍️ 以观其妙书院</span>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="/yiguanqimiao-website/">首页</a> &raquo; 
+            <a href="/yiguanqimiao-website/articles/">文章列表</a> &raquo; 
+            社会支持理论...
+        </div>
+        
+        <article>
+<h1>社会支持理论</h1>
+
+<blockquote><strong>龙心OS结构化编译</strong> | 分类：理论模型 | 五行属性：金 | 层级：C层</blockquote>
+<blockquote>源文件：<code>思维模型/理论模型\社会支持理论.txt</code> ｜ 字数：10838 ｜ 行数：132</blockquote>
+<blockquote>五色光分布（启发式）：白光30% 红光26% 蓝光17% 黄光13% 绿光13%</blockquote>
+<blockquote>象思维相关度：低（命中 2 次）</blockquote>
+
+<h2>一、核心定义</h2>
+
+<strong>核心定义（龙心OS精修）</strong>：图1：截至目前“走饭”最后一条帖子下已有超过100万条留言
+
+<h2>二、详细内容</h2>
+<blockquote>逐行挖掘原则：下文为原文<strong>全文逐行保留</strong>（编号 <code>行号│内容</code>），未删改、未遗漏，供龙心OS五引擎（知识学习/象思维/五色光/知行合一/五象限）随时调取精读。</blockquote>
+
+<h3>2.1 逐行精读（全文保留·132 行）</h3>
+<pre><code>0001│研究理论介绍|社会支持理论（Social Support Theory）
+0002│
+0003│
+0004│图片
+0005│图1：截至目前“走饭”最后一条帖子下已有超过100万条留言
+0006│
+0007│微博上有个名叫“走饭”的账号，源自南京女大学生马洁。2012年3月，该账号发布一条有关自杀的帖子，第二天，南京江宁公安证实该大学生已自杀。
+0008│
+0009│    此后，该微博在社交媒体上引发巨大反响，大量网友涌入其下进行留言，时至今日，“走饭”评论区已演变为一个承载众人情绪的网络“树洞”，数以万计的网友在评论区中披露自我、宣泄情绪、甚至发出求救信号。
+0010│
+0011│    是什么驱动着网友在“走饭”评论区中留言？与“走饭”类似的互联网“树洞”为何而诞生？通过留言互动等形式，用户表达了什么又获取了什么？本期介绍社会支持理论（Social Support Theory）将帮助我们更好地理解上述问题。
+0012│
+0013│一
+0014│
+0015│
+0016│
+0017│理论背景
+0018│
+0019│图片
+0020│图2：社会支持
+0021│
+0022│社会支持理论围绕压力、应对与健康等核心议题而展开，作为一个横跨精神病学、社会学、流行病学和心理学等多个学科的复杂概念，“社会支持”并没有明确的单一提出者[1]，最早将这一概念从科学角度引入文献并展开研究的是精神病学研究者，并于上世纪70年代正式提出社会支持理论[2]。
+0023│
+0024│其中，Cassel[3]、Cobb[4]和 Caplan[5]等人的相关论著被认为是社会支持研究的真正理论和实证起点，在上述学者的影响下，该理论被科学界广泛认可为一个关键的研究对象，重点列入可持续心理学的研究范畴[6]。
+0025│
+0026│此后，心理学家、社会学家、流行病学家等学者从各自的理论立场出发，对社会支持进行了广泛的研究与阐释，将其从最初关注的个人获得的精神层面与物资层面支持[7]，扩充到研究幸福感与社会心理过程[8]、社会角色压力与应对[9]等维度。
+0027│
+0028│二
+0029│
+0030│
+0031│
+0032│理论内容
+0033│
+0034│图片
+0035│图3：社会支持
+0036│
+0037│社会支持理论解释了社会关系中资源交换（即社会支持）如何在压力和应对过程中发挥作用，从而增强接收者福祉和身心健康[10][11]。
+0038│
+0039│该理论内容丰富且具有多维特征，主要围绕社会支持的结构与功能、核心理论模型与作用机制展开，其主要内容包括：
+0040│
+0041│1
+0042│
+0043│社会支持（Social Support）
+0044│
+0045│作为该理论的核心概念，社会支持被定义为至少两个人之间交换资源的一种过程，这种交换被提供者或接受者感知为旨在增进接受者福祉的行为[12]。
+0046│
+0047│从广义上来说，社会支持指人们从社会中获得的、来自他人的各种帮助[13]。
+0048│
+0049│在实际研究中，社会支持还强调社会关系的功能和质量，例如感知到的帮助的可获得性或实际获得的帮助[14]。
+0050│
+0051│2
+0052│
+0053│社会支持的类型
+0054│
+0055│根据资源内容，学界一般将社会支持划分为四种主要类型[15]：
+0056│
+0057│▪情感支持（Emotional Support）
+0058│
+0059│指提供关心、爱、理解、共情、安慰和倾听等，以满足个体的亲和需求。情感支持可以通过传达尊重、关爱和理解来提供精神层面的帮助。
+0060│
+0061│▪工具支持/物质支持（Instrumental/ Tangible Support）
+0062│
+0063│指提供实际帮助、物资、金钱或服务，协助解决问题。
+0064│
+0065│▪信息支持（Informational Support）
+0066│
+0067│指提供建议、指导、知识、信息或解决方案，帮助个体解决难题或做出决策。
+0068│
+0069│▪评估支持（Appraisal Support）
+0070│
+0071│指提供具有评价性质的信息，例如反馈，以帮助个体评估自己。
+0072│
+0073│3
+0074│
+0075│社会支持的结构
+0076│
+0077│社会支持是一个复杂、动态的元概念，具有多样的维度和层次，除去类型外，Tardy（1985）还规定了社会支持的其他四个组成部分[16]：
+0078│
+0079│▪方向（Direction）：区分提供的支持与收到的支持。
+0080│
+0081│▪倾向（Disposition）：区分可获得的（潜在的）支持与实际实施或收到的（真实的）支持。
+0082│
+0083│▪描述/评估(Description/Evaluation)：关注社会支持机制的解释与评估的区别。
+0084│
+0085│▪网络/来源 （Network/Source）：指支持的特定来源（例如，家庭、朋友、教师、同事、社区等）。
+0086│
+0087│4
+0088│
+0089│核心理论模型
+0090│
+0091│社会支持理论主要关注其在压力和应对过程中的功能性作用。主要存在两种关于社会支持如何影响个体福祉的核心理论模型。
+0092│
+0093│▪普遍效益模型/主效应模型（General Benefits Model, GB Model）
+0094│
+0095│社会支持与积极结果相关联：社会支持通过增强幸福感，促进积极的心理状态（如自我价值感和积极情绪），并减少消极情绪，从而提供普遍的积极效益[17]。
+0096│
+0097│▪压力缓冲模型（Stress-Buffering Model, SB Model）
+0098│
+0099│社会支持对压力的负面影响提供保护：只有在处于困境时，社会支持才可能展现其对健康和情绪的有益效果，因为它缓冲了压力事件的负面影响，而缺乏社会支持的人，压力带来的有害影响会更大[18]。
+0100│
+0101│现有研究结果表明，普遍效益模型和压力缓冲模型是兼容而非竞争的关系，在实际研究中，往往需要两个模型相互配合来理解社会支持与社会群体性问题之间的复杂关系[19]。
+0102│
+0103│5
+0104│
+0105│社会支持的作用机制
+0106│
+0107│社会支持理论认为社会支持在压力和应对过程中通过多种机制运作，主要包括：
+0108│
+0109│▪赋能假设（Enabling Hypothesis）
+0110│
+0111│该假设认为社会支持促进自我效能感，而自我效能感反过来促进应对挑战[20]
+0112│
+0113│▪支持培养假设(Cultivation Hypothesis)
+0114│
+0115│该假设认为自我效能感有助于维持和培养社会支持，自我效能感高的人更倾向于采取行动去建立、维持和拓展社交网络，从而增强其支持资源[21]。
+0116│
+0117│▪应对资源/资源转移（Coping Resources / Resource Transfer）
+0118│
+0119│社会支持是影响对压力事件认知评估的资源因素之一，可获得的资源越多，越有利于应对。其可以直接作为应对策略，提供应对压力源所需资源的特定需求[22][23]。
+0120│
+0121│▪内外部过程（Internal-External Process）
+0122│
+0123│在工作场所或在线社区，社会支持可以视为外部刺激，影响个体的内部有机体状态（如自我胜任感和自我归属感），进而驱动其外部反应[24]。
+0124│
+0125│
+0126│
+0127│三
+0128│
+0129│
+0130│
+0131│理论应用
+0132│
+0133│    社会支持理论是一个多维度且应用广泛的框架，在众多领域中被视为一个整合性的资源框架，围绕社会角色、情境、压力、健康及福祉等关键要素展开，主要被应用于以下领域：
+0134│
+0135│1
+0136│
+0137│疾病应对与健康行为研究
+0138│
+0139│
+0140│
+0141│社会支持理论在理解和促进个体应对严重健康状况和疾病恢复方面具有较强解释力。例如有研究表明，感知到的社会支持可以通过自我效能感作为完全中介，影响心脏病患者手术后的身体状况[25]。
+0142│
+0143│2
+0144│
+0145│工作绩效与组织行为研究
+0146│
+0147│社会支持被视为对员工和组织具有一系列积极结果的重要资源，可用于预测工作投入、职业倦怠和工作绩效等[26]。Jolly等人的研究指出工作场所中的社会支持（例如，来自同事和主管的支持）可以缓冲压力因素的负面影响，或对压力和紧张体验提供保护[27]。
+0148│
+0149│3
+0150│
+0151│青少年发展与心理健康研究
+0152│
+0153│社会支持是青少年发展研究中的核心保护因素，对青少年的心理健康、适应能力和积极发展至关重要。其中社会支持与儿童和青少年的抑郁症之间的关系是该领域研究的重点，相关研究认为社会支持对降低抑郁水平具有普遍的积极影响[28]。
+0154│
+0155│3
+0156│
+0157│信息系统和网络社区研究
+0158│
+0159│在虚拟环境中，社会支持可被视为用户行为和社区成功的关键驱动力。部分研究认为情感支持和信息支持体现了在线社区中的主要社会价值,是构建用户情感承诺的原因，进而驱动用户活跃行为[29]。
+0160│
+0161│四
+0162│
+0163│
+0164│
+0165│应用案例
+0166│
+0167│“晚安，陌生人”：社交媒体平台社会支持的重构与延伸——基于对微博“走饭”评论区留言的分析[30]
+0168│
+0169│宋航 王怡溪
+0170│
+0171│摘要：本文以微博“走饭”评论区为研究对象，利用社会网络分析和内容分析的研究方法，试图阐释本土语境下随机性、非目的性生人关系网络中存在的社会支持特征和作用机制。研究发现，评论区留言用户形成了一个高度松散的生人关系网络。对于其中未参与互动的用户而言，作为网络“树洞”的评论区能够提供一定的平台性支持。参与互动的用户既能在评论区表达社会支持诉求，又能获得来自陌生人的社会支持，评论区内存在提供或接受社会支持的数字名人。不过囿于生人关系，异见同样存在，网络生人社会支持不过是“幸运之物”。
+0172│
+0173│关键词：“走饭”评论区;社会支持;生人关系网络;
+0174│
+0175│来源：《新闻与写作》2023年第4期
+0176│
+0177│Social Causation Versus Social Erosion: Comparisons of Causal Models for Relations Between Support and PTSD Symptoms.[31]
+0178│
+0179│Sandra L. Shallcross, Paul A. Arbisi, Melissa A.Polusny, Mark D. Kramer, Christopher R. Erbes
+0180│
+0181│Abstract：Social support is a robust correlate of posttraumatic stress disorder (PTSD) symptoms and of general psychological distress (Ozer, Best, Lipsey, & Weiss, 2003). The nature of the causal relationship between support and PTSD remains the subject of debate, with 2 models, social erosion and social causation, often used to explain findings. Despite extensive research using these models, no studies of which we are aware have included tests of both models within the same series of analyses, across more than 2 time points, in veterans. These competing models were tested in a sample of National Guard soldiers (N = 521) who completed measures of perceived social support and the PTSD Checklist-Military version (Weathers, Litz, Herman, Huska, & Keane, 1993) at 3 months, 15 months, and 27 months following a combat deployment to Iraq. Analyses were run separately for overall PTSD symptoms and the PTSD components of intrusion, trauma-avoidance, dysphoria, and hyperarousal. Both the social erosion (βs ranging from −.10 to −.19) and social causation (βs ranging from −.08 to −.13) hypotheses were supported. Results suggested PTSD-specific symptom dimensions may both erode and be influenced by social support, whereas general psychological distress erodes social support. Implications for clinical intervention and research are discussed.
+0182│
+0183│社会支持与创伤后应激障碍（PTSD）症状和一般心理困扰密切相关（Ozer, Best, Lipsey, & Weiss, 2003）。支持和创伤后应激障碍之间因果关系的本质仍然是争论的主题，有两种模型，社会侵蚀和社会因果关系，经常被用来解释研究结果。尽管使用这些模型进行了大量研究，但据我们所知，在退伍军人中，没有任何研究在超过2个时间点的同一系列分析中纳入了两种模型的检验。这些相互竞争的模型在国民警卫队士兵（N=521）的样本中进行了测试，这些士兵在伊拉克战斗部署后的3个月，15个月和27个月完成了感知社会支持和创伤后应激障碍检查表-军事版（Weathers, Litz, Herman, Huska, & Keane, 1993）。对创伤后应激障碍的总体症状和创伤后应激障碍的侵入性、创伤回避、烦躁不安和过度觉醒进行单独分析。两者的社会侵蚀（βs从−.10~−.19）和社会原因（βs范围从−.08至−.13）假设得到支持。结果表明，创伤后应激障碍的特定症状维度会侵蚀社会支持并受其影响，而一般心理困扰则会侵蚀社会支持。本文讨论了临床干预和研究的意义。
+0184│
+0185│来源：Journal of Traumatic Stress, Volume 29, Issue 2
+0186│
+0187│
+0188│
+0189│
+0190│
+0191│参考文献
+0192│
+0193│[1] 周林刚,冯建华.(2005).社会支持理论——一个文献的回顾.广西师范学院学报,(03),11-14+20.https://doi.org/10.16601/j.cnki.issn1002-5227.2005.03.003.
+0194│
+0195│[2] Gracia, E. (1997). El apoyo social en la intervención comunitaria. Paidós Ibérica.
+0196│
+0197│[3]Cassel, J. C. (1974). Psychosocial processes and “stress”: Theoretical formulation. International Journal of Health Services, 4, 471–482.
+0198│
+0199│[4] Cobb, S. (1976). Social support as a moderator of life stress. Psychosomatic Medicine, 38, 300–314.
+0200│
+0201│[5] Caplan, G. (1974). Support systems and community mental health: Lectures on concept development. Behavioral Publications.
+0202│
+0203│[6] Bae, S. Y., Chang, P.-J., & Lee, C.-K. (2020). Structural relationships among online community use, parental stress, social support, and quality of life between Korean and Taiwanese employed mothers. Sustainability, 12, 10681.
+0204│
+0205│[7] 胡湘明. (1996). 论中国青年心理健康的社会支持系统. 青年探索, (5).
+0206│
+0207│[8] Bagán, G., Tur-Porcar, A. M., & Llorca, A. (2019). Learning and parenting in Spanish environments: Prosocial behavior, aggression, and self-concept. Sustainability, 11, 5193.
+0208│
+0209│[9] Cohen, S., & Syme, L. (Eds.). (1984). Social support and health. Academic Press.
+0210│
+0211│[10] Schwarzer, R., & Knoll, N. (2007). Functional roles of social support within the stress and coping process: A theoretical and empirical overview. International journal of psychology, 42(4), 243-252.
+0212│
+0213│[11] Lazarus, R. S., & Folkman, S. (1984). Stress, appraisal, and coping. Springer.
+0214│
+0215│[12] Shumaker, S. A., & Brownell, A. (1984). Toward a theory of social support: Closing conceptual gaps. Journal of social issues, 40(4), 11-36.
+0216│
+0217│[13] 周林刚,冯建华.(2005).社会支持理论——一个文献的回顾.广西师范学院学报,(03),11-14+20.https://doi.org/10.16601/j.cnki.issn1002-5227.2005.03.003.
+0218│
+0219│[14] Schwarzer, R., Knoll, N., & Rieckmann, N. (2004). Social support. In A. Kaptein & J. Weinman (Eds.), Health psychology (pp. 158–182). Oxford, UK: Blackwell.
+0220│
+0221│[15] Rueger, S. Y., Malecki, C. K., & Demaray, M. K. (2008). Gender differences in the relationship between perceived social support and student adjustment during early adolescence. School Psychology Quarterly, 23(4), 496–514. https://doi.org/10.1037/1045-3830.23.4.496
+0222│
+0223│[16] Tardy, C. H. (1985). Social support measurement. American Journal of Community Psychology, 13(2),187-202. doi:10.1007/BF00905728
+0224│
+0225│[17] Cohen, S. (2004). Social relationships and health. American psychologist,59(8), 676.
+0226│
+0227│[18] Burton, E., Stice, E., & Seeley, J. R. (2004). A prospective test of the stress-buffering model of  depression in adolescent girls: No support once again. Journal of Consulting and Clinical  Psychology, 72(4), 689.
+0228│
+0229│[19] Rueger, S. Y., Malecki, C. K., Pyun, Y., Aycock, C., & Coyle, S. (2016). A meta-analytic review of the association between perceived social support and depression in childhood and adolescence. Psychological bulletin, 142(10), 1017.
+0230│
+0231│[20] Schwarzer, R., & Knoll, N. (2007). Functional roles of social support within the stress and coping process: A theoretical and empirical overview. International journal of psychology, 42(4), 243-252.
+0232│
+0233│[21] Benight, C., & Bandura, A. (2004). Social cognitive theory of posttraumatic recovery: The role of perceived self-efficacy. Behaviour Research and Therapy, 42, 1129–1148.
+0234│
+0235│[22] Schwarzer, R., & Knoll, N. (2007). Functional roles of social support within the stress and coping process: A theoretical and empirical overview. International journal of psychology, 42(4), 243-252.
+0236│
+0237│[23] Holahan, C. J., Holahan, C. K., Moos, R. H., & Brennan, P. L. (1997). Psychosocial adjustment in patients reporting cardiac illness. Psychology and Health, 12, 345–360.
+0238│
+0239│[24] 秦敏 & 李若男.(2020).在线用户社区用户贡献行为形成机制研究:在线社会支持和自我决定理论视角.管理评论,32(09),168-181.https://doi.org/10.14120/j.cnki.cn11-5057/f.2020.09.014.
+0240│
+0241│[25] Schwarzer, R., & Knoll, N. (2007). Functional roles of social support within the stress and coping process: A theoretical and empirical overview. International journal of psychology, 42(4), 243-252.
+0242│
+0243│[26] Bakker, A. B., & Demerouti, E. (2007). The job demands–resources model: State of the art. Journal of Managerial Psychology, 22, 309–328. https://doi.org/10.1108/02683940710733115
+0244│
+0245│[27] Jolly, P. M., Kong, D. T., & Kim, K. Y. (2021). Social support at work: An integrative review. Journal of organizational behavior, 42(2), 229-251.
+0246│
+0247│[28] Rueger, S. Y., Malecki, C. K., Pyun, Y., Aycock, C., & Coyle, S. (2016). A meta-analytic review of the association between perceived social support and depression in childhood and adolescence. Psychological bulletin, 142(10), 1017.
+0248│
+0249│[29] 秦敏,李若男.在线用户社区用户贡献行为形成机制研究:在线社会支持和自我决定理论视角[J].管理评论,2020,32(09):168-181.DOI:10.14120/j.cnki.cn11-5057/f.2020.09.014.
+0250│
+0251│[30] 宋航 & 王怡溪.(2023).“晚安，陌生人”：社交媒体平台社会支持的重构与延伸——基于对微博“走饭”评论区留言的分析.新闻与写作,(04),74-86.
+0252│
+0253│[31] Shallcross, S. L., Arbisi, P. A., Polusny, M. A., Kramer, M. D., & Erbes, C. R. (2016). Social causation versus social erosion: Comparisons of causal models for relations between support and PTSD symptoms. Journal of Traumatic Stress, 29(2), 167-175.
+0254│
+0255│
+0256│
+0257│图片
+0258│图片来源于网络
+0259│
+0260│编辑 | 刘聪睿
+0261│
+0262│审核 | 于孟利
+0263│
+0264│
+0265│
+0266│声明
+0267│
+0268│如需转载文章，可在留言区留言，并附转载公众号名称+公众号ID。转载时烦请标清文章来源，不允许将内容用于其他用途，感谢您的支持！
+0269│
+0270│
+0271│
+0272│往期回顾
+0273│
+0274│研究理论介绍 | 计算机为社会行动者（Computers are Social Actors, CASA）
+0275│
+0276│研究理论介绍 | 解释水平理论（Construal Level Theory，CLT）
+0277│
+0278│资源集锦 | AI学习细节指南
+0279│
+0280│研究理论介绍 | 特质激活理论（Trait Activation Theory）
+0281│
+0282│研究理论介绍 | PERMA幸福理论（PERMA Theory of Well-Being）
+0283│
+0284│
+0285│
+0286│
+</code></pre>
+
+<h2>三、关联文件（双向链接）</h2>
+<li>上游/总导航：[[00-总索引-思维模型]] ｜ 知识图谱：[[10-知识图谱-思维模型]] ｜ 概念手册：[[09-核心概念手册-思维模型]]</li>
+<li>跨文件同构（共享显著概念）：[[恐惧管理理论]]，[[自我呈现理论]]，[[情感事件理论]]，[[资源保存理论]]，[[PERMA幸福理论]]，[[保护动机理论]]，[[认知-情感-意动框架]]，[[解释水平理论]]</li>
+
+<h2>四、核心金句</h2>
+<blockquote>“晚安，陌生人”：社交媒体平台社会支持的重构与延伸——基于对微博“走饭”评论区留言的分析[30]</blockquote>
+<blockquote>[30] 宋航 & 王怡溪.(2023).“晚安，陌生人”：社交媒体平台社会支持的重构与延伸——基于对微博“走饭”评论区留言的分析.新闻与写作,(04),74-86.</blockquote>
+<blockquote>图1：截至目前“走饭”最后一条帖子下已有超过100万条留言</blockquote>
+<blockquote>该理论内容丰富且具有多维特征，主要围绕社会支持的结构与功能、核心理论模型与作用机制展开，其主要内容包括：</blockquote>
+<blockquote>根据资源内容，学界一般将社会支持划分为四种主要类型[15]：</blockquote>
+<blockquote>社会支持是一个复杂、动态的元概念，具有多样的维度和层次，除去类型外，Tardy（1985）还规定了社会支持的其他四个组成部分[16]：</blockquote>
+
+<h2>五、标签</h2>
+<li>领域：理论模型、思维模型、决策、学习</li>
+<li>机制：知识学习(十项认知指令)、五色光思维(白红黄绿蓝)</li>
+<li>洞见：跨域同构、网状知识、双向链接、人机共生</li>
+
+<h2>六、龙心OS隐秘联系（跨域同构·龙心OS精修）</h2>
+
+<blockquote>以下为龙心OS在跨域同构（北极星能力）下发现的隐秘结构联系，供五引擎组合调取。</blockquote>
+
+<li><strong>概率思维⟷五色光蓝光（风险量化）</strong>：把不确定性转为概率分布，是蓝光思维的量化形态。</li>
+<li><strong>不确定性⟷复杂系统（涌现/黑天鹅）</strong>：概率思维是应对复杂系统的认知疫苗。</li>
+<li><strong>系统思维/涌现⟷五行生克网络</strong>：五行相生相克即系统要素互动的最小完备模型。</li>
+<li><strong>整体大于部分之和⟷格式塔关系场</strong>：系统涌现的格式塔解释，对应合道场域型组织。</li>
+<li><strong>SCAMPER⟷五色光绿光（创新）</strong>：替代/组合/调整/消除等七问即绿光『创新变革』的操作清单。</li>
+<li><strong>SCAMPER⟷五行木（生发）</strong>：创新是木之生发，SCAMPER 提供生发路径。</li>
+<li><strong>逆向思维⟷五色光蓝光（反向风险）</strong>：从失败/反面推演，是蓝光『隐患排查』的正用。</li>
+<li><strong>逆向思维⟷五行（反者道之动）</strong>：『反者道之动』即逆向思维在东方哲学的原型。</li>
+<li><strong>跨文件同构</strong>：与 [[恐惧管理理论]]、[[自我呈现理论]]、[[情感事件理论]] 共享核心概念（详见「三、关联文件」章节），可在龙心OS知识学习引擎下做十项认知指令的对比推演。</li>
+
+<blockquote><strong>引擎路由</strong>：本文可由龙心OS五引擎组合调用——知识学习（十项认知指令深度学习）、象思维（物象→意象→原象）、五色光（白红黄绿蓝五维审查）、知行合一（表示→压缩→泛化）、人机协同五象限（[AI]/[人]/[⇄]分工定位）。</blockquote>
+        </article>
+        
+        <footer>
+            <p>&copy; 2024-2026 以观其妙书院 | 五行人格心理学</p>
+            <p>
+                <a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | 
+                <a href="/yiguanqimiao-website/llms.txt">llms.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

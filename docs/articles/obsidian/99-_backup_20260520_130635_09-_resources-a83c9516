@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>企业文化诊断SOP模板 - 以观其妙书院</title>
+<meta name="description" content="企业文化诊断SOP模板 - 以观其妙书院·五行人格心理学">
+<meta name="author" content="悟空（贾悦）">
+<meta name="copyright" content="以观其妙书院">
+<meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="geop-verify" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
+<meta name="generator" content="Obsidian·以观其妙书院·Flat v3.0">
+<meta property="og:title" content="企业文化诊断SOP模板">
+<meta property="og:description" content="企业文化诊断SOP模板 - 以观其妙书院·五行人格心理学">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="以观其妙书院">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "企业文化诊断SOP模板",
+    "description": "企业文化诊断SOP模板 - 以观其妙书院·五行人格心理学",
+    "author": { "@type": "Person", "name": "悟空（贾悦）", "affiliation": { "@type": "Organization", "name": "以观其妙书院" } },
+    "publisher": { "@type": "Organization", "name": "以观其妙书院" },
+    "copyrightHolder": { "@type": "Organization", "name": "以观其妙书院" },
+    "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;text-align:center;padding:30px 0 16px}
+.bc{font-size:13px;color:#999;padding:8px 0;text-align:center}
+.bc a{color:#667eea;text-decoration:none}
+.c{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.c p{margin:10px 0}
+.c h2{font-size:20px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #eee}
+.c h3{font-size:17px;margin:20px 0 8px}
+.c h4,.c h5,.c h6{font-size:15px;margin:16px 0 6px}
+.c ul,.c ol{margin:10px 0;padding-left:24px}
+.c li{margin:5px 0}
+.c blockquote{margin:12px 0;padding:10px 16px;background:#f8f9ff;border-left:4px solid #667eea;border-radius:0 8px 8px 0}
+.c hr{border:none;border-top:1px solid #eee;margin:18px 0}
+.c code{background:#f0f2f5;padding:2px 6px;border-radius:3px;font-size:13px}
+.c pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:13px;line-height:1.5}
+.c pre code{background:none;color:inherit;padding:0}
+.c table{width:100%;border-collapse:collapse;margin:14px 0}
+.c th,.c td{border:1px solid #ddd;padding:8px 12px;text-align:left;font-size:14px}
+.c th{background:#f8f9ff;font-weight:600}
+.c img{max-width:100%;border-radius:8px;margin:12px 0}
+.c a{color:#667eea}
+.wm{text-align:center;padding:20px;margin-top:24px;font-size:12px;color:#999;border-top:1px solid #eee}
+.wm .b{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>企业文化诊断SOP模板</h1>
+<div class="bc"><a href="index.html">以观其妙书院</a> · Obsidian 知识库</div>
+<div class="c">
+<h1>企业文化诊断SOP模板</h1>
+<blockquote><p><strong>版本</strong>: v1.0 | <strong>创建日期</strong>: 2026-04-10 | <strong>维护者</strong>: 龙龟神将  
+<strong>适用场景</strong>: 企业文化现状诊断与问题定位</p></blockquote>
+<hr>
+<h2>📋 SOP概览</h2>
+<table>
+<thead><tr>
+<th>项目</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>SOP名称</strong></td>
+<td>企业文化诊断标准操作流程</td>
+</tr>
+<tr>
+<td><strong>执行时间</strong></td>
+<td>2-4周（根据企业规模调整）</td>
+</tr>
+<tr>
+<td><strong>参与人员</strong></td>
+<td>诊断团队（内部+外部）+ 企业各层级员工</td>
+</tr>
+<tr>
+<td><strong>输出成果</strong></td>
+<td>《企业文化诊断报告》</td>
+</tr>
+<tr>
+<td><strong>质量目标</strong></td>
+<td>诊断准确率≥85%，建议可执行率≥90%</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>一、诊断准备阶段（Week 1）</h2>
+<h3>Step 1: 明确诊断目标</h3>
+<p><strong>执行动作</strong>:</p>
+<ol>
+<li>与企业高层沟通，明确诊断目的</li>
+<li>确定诊断范围和重点</li>
+<li>设定诊断成功标准</li>
+</ol>
+<p><strong>检查清单</strong>:</p>
+<ul>
+<li>[ ] 诊断目的已明确（如：员工流失率高、文化落地困难等）</li>
+<li>[ ] 诊断范围已确定（全公司/某部门/某业务线）</li>
+<li>[ ] 关键利益相关者已识别</li>
+</ul>
+<p><strong>输出物</strong>:</p>
+<pre><code>《诊断目标确认书》
+- 诊断目的：[具体描述]
+- 诊断范围：[具体范围]
+- 关键问题：[3-5个核心问题]
+- 成功标准：[可量化指标]</code></pre>
+<hr>
+<h3>Step 2: 组建诊断团队</h3>
+<p><strong>执行动作</strong>:</p>
+<ol>
+<li>确定内部诊断成员（HR、管理层、员工代表）</li>
+<li>确定外部专家（企业文化顾问）</li>
+<li>明确团队分工</li>
+</ol>
+<p><strong>团队配置建议</strong>:
+| 角色 | 人数 | 职责 |
+|------|------|------|
+| 项目负责人 | 1 | 统筹诊断全流程 |
+| 内部调研员 | 2-3 | 内部资料收集、员工访谈 |
+| 外部顾问 | 1-2 | 专业诊断、报告撰写 |
+| 数据分析员 | 1 | 问卷数据处理、统计分析 |</p>
+<hr>
+<h3>Step 3: 设计诊断工具</h3>
+<p><strong>执行动作</strong>:</p>
+<ol>
+<li>设计员工问卷（定量）</li>
+<li>设计访谈提纲（定性）</li>
+<li>设计资料收集清单</li>
+</ol>
+<p><strong>问卷设计框架（9大维度）</strong>:</p>
+<pre><code>【维度1：价值观清晰度】
+- Q1: 您是否清楚公司的核心价值观？
+- Q2: 您认为公司的价值观是否得到践行？
+
+【维度2：员工认同感】
+- Q3: 您是否认同公司的使命和愿景？
+- Q4: 您是否愿意长期在公司发展？
+
+【维度3：领导力匹配度】
+- Q5: 您认为管理层是否践行企业文化？
+- Q6: 您的直属领导是否以身作则？
+
+【维度4：沟通透明度】
+- Q7: 公司内部信息流通是否顺畅？
+- Q8: 您是否了解公司的重大决策？
+
+【维度5：创新氛围】
+- Q9: 公司是否鼓励创新？
+- Q10: 您的创新想法是否得到重视？
+
+【维度6：团队协作】
+- Q11: 跨部门协作是否顺畅？
+- Q12: 团队成员之间是否相互支持？
+
+【维度7：学习成长】
+- Q13: 公司是否提供学习发展机会？
+- Q14: 您是否感受到个人成长？
+
+【维度8：激励机制】
+- Q15: 公司的激励机制是否公平？
+- Q16: 您的付出是否得到合理回报？
+
+【维度9：文化氛围】
+- Q17: 您对公司整体文化氛围满意吗？
+- Q18: 您是否愿意推荐朋友加入公司？</code></pre>
+<p><strong>访谈提纲框架</strong>:</p>
+<pre><code>【高管访谈提纲】
+1. 您认为公司当前文化的核心优势是什么？
+2. 您认为公司文化存在的主要问题是什么？
+3. 您理想中的企业文化是什么样的？
+4. 文化建设中您遇到的最大挑战是什么？
+
+【中层访谈提纲】
+1. 您如何理解公司的核心价值观？
+2. 您在团队中如何传递企业文化？
+3. 员工对文化的反馈主要有哪些？
+4. 您认为文化落地需要哪些支持？
+
+【员工访谈提纲】
+1. 您如何描述公司的文化氛围？
+2. 您感受到的公司价值观是什么？
+3. 您认为公司文化对您工作的影响？
+4. 您对改善公司文化有什么建议？</code></pre>
+<hr>
+<h2>二、诊断执行阶段（Week 2-3）</h2>
+<h3>Step 4: 收集现有资料</h3>
+<p><strong>执行动作</strong>:</p>
+<ol>
+<li>收集企业文化相关制度文件</li>
+<li>收集企业历史沿革资料</li>
+<li>收集员工满意度历史数据</li>
+</ol>
+<p><strong>资料收集清单</strong>:</p>
+<pre><code>【制度文件类】
+- [ ] 企业文化手册
+- [ ] 员工手册
+- [ ] 管理制度汇编
+- [ ] 绩效考核制度
+- [ ] 培训管理制度
+
+【历史资料类】
+- [ ] 企业发展历程
+- [ ] 重要事件记录
+- [ ] 创始人/高管讲话稿
+- [ ] 企业内刊/宣传资料
+
+【数据类】
+- [ ] 员工满意度调查报告
+- [ ] 员工流失率数据
+- [ ] 绩效分布数据
+- [ ] 培训记录数据</code></pre>
+<hr>
+<h3>Step 5: 现场观察体验</h3>
+<p><strong>执行动作</strong>:</p>
+<ol>
+<li>实地走访办公环境</li>
+<li>观察员工日常工作状态</li>
+<li>参与部门会议/团队活动</li>
+</ol>
+<p><strong>观察记录表</strong>:</p>
+<pre><code>【环境观察】
+- 办公环境整洁度：□优秀 □良好 □一般 □较差
+- 文化墙/宣传展示：□丰富 □一般 □缺乏
+- 员工休息区氛围：□活跃 □安静 □沉闷
+
+【行为观察】
+- 员工精神状态：□积极 □一般 □疲惫
+- 团队沟通方式：□开放 □正式 □封闭
+- 领导管理风格：□亲和 □权威 □放任
+
+【仪式观察】
+- 晨会/夕会情况：□规范 □随意 □缺失
+- 表彰/庆祝活动：□丰富 □一般 □缺乏
+- 团队建设活动：□频繁 □适度 □稀少</code></pre>
+<hr>
+<h3>Step 6: 深度访谈</h3>
+<p><strong>执行动作</strong>:</p>
+<ol>
+<li>高管访谈（1对1，每人1-2小时）</li>
+<li>中层访谈（小组或1对1，每人45-60分钟）</li>
+<li>员工代表访谈（焦点小组，每组6-8人，90分钟）</li>
+</ol>
+<p><strong>访谈记录模板</strong>:</p>
+<pre><code>【访谈基本信息】
+- 访谈对象：[姓名/职位]
+- 访谈时间：[日期/时长]
+- 访谈方式：[面对面/电话/视频]
+- 记录人：[姓名]
+
+【关键发现】
+1. [发现1]
+2. [发现2]
+3. [发现3]
+
+【关键引用】
+- "[原话引用]"
+
+【后续跟进】
+- [需要进一步确认的问题]</code></pre>
+<hr>
+<h3>Step 7: 问卷调研</h3>
+<p><strong>执行动作</strong>:</p>
+<ol>
+<li>发布电子问卷（建议用问卷星/腾讯问卷）</li>
+<li>设定回收目标（建议≥70%回收率）</li>
+<li>定期提醒，确保样本量</li>
+</ol>
+<p><strong>问卷发布策略</strong>:</p>
+<pre><code>【发布前】
+- 高管发邮件/讲话动员
+- 明确问卷匿名性和保密性
+- 设定填写截止时间
+
+【发布中】
+- 每日统计回收率
+- 对低回收率部门重点提醒
+- 解答员工疑问
+
+【发布后】
+- 感谢员工参与
+- 承诺反馈结果
+- 关闭问卷，导出数据</code></pre>
+<hr>
+<h2>三、诊断分析阶段（Week 3-4）</h2>
+<h3>Step 8: 数据分析</h3>
+<p><strong>执行动作</strong>:</p>
+<ol>
+<li>问卷数据统计分析</li>
+<li>访谈内容编码分析</li>
+<li>资料综合分析</li>
+</ol>
+<p><strong>分析框架</strong>:</p>
+<pre><code>【定量分析】
+- 整体满意度得分
+- 各维度得分对比
+- 不同层级/部门差异分析
+- 历史数据对比（如有）
+
+【定性分析】
+- 访谈主题编码
+- 高频问题识别
+- 典型案例提炼
+- 根因分析（5Why）
+
+【综合分析】
+- 优势总结（Top 3）
+- 问题总结（Top 5）
+- 问题优先级排序
+- 改进机会识别</code></pre>
+<hr>
+<h3>Step 9: 诊断报告撰写</h3>
+<p><strong>报告结构</strong>:</p>
+<pre><code>《企业文化诊断报告》
+
+【执行摘要】（1-2页）
+- 诊断背景与目标
+- 核心发现（3-5条）
+- 关键建议（3-5条）
+
+【诊断方法论】（1页）
+- 诊断范围与方法
+- 样本情况说明
+- 数据分析方法
+
+【现状分析】（3-5页）
+- 文化优势分析
+- 文化问题分析
+- 问题根因分析
+
+【对标分析】（可选，1-2页）
+- 行业标杆对比
+- 最佳实践借鉴
+
+【改进建议】（3-5页）
+- 短期建议（3个月内）
+- 中期建议（3-12个月）
+- 长期建议（1年以上）
+
+【实施路线图】（1页）
+- 优先级排序
+- 时间规划
+- 资源需求
+
+【附录】
+- 问卷原始数据
+- 访谈记录摘要
+- 参考资料清单</code></pre>
+<hr>
+<h2>四、诊断汇报阶段（Week 4）</h2>
+<h3>Step 10: 报告汇报与确认</h3>
+<p><strong>执行动作</strong>:</p>
+<ol>
+<li>向高层汇报诊断结果</li>
+<li>收集反馈意见</li>
+<li>修订完善报告</li>
+</ol>
+<p><strong>汇报策略</strong>:</p>
+<pre><code>【汇报前准备】
+- 准备PPT版报告（可视化呈现）
+- 准备关键数据卡片
+- 准备案例故事
+
+【汇报中要点】
+- 先讲发现，再讲问题
+- 用数据说话，用案例佐证
+- 聚焦可行动的建议
+- 预留讨论时间
+
+【汇报后跟进】
+- 收集书面反馈
+- 修订报告终稿
+- 确认后续行动计划</code></pre>
+<hr>
+<h2>五、诊断质量检查清单</h2>
+<h3>过程质量</h3>
+<ul>
+<li>[ ] 诊断目标明确且可衡量</li>
+<li>[ ] 样本覆盖各层级/部门</li>
+<li>[ ] 问卷回收率≥70%</li>
+<li>[ ] 访谈记录完整准确</li>
+<li>[ ] 数据分析方法科学</li>
+</ul>
+<h3>结果质量</h3>
+<ul>
+<li>[ ] 诊断发现基于事实</li>
+<li>[ ] 问题分析深入根因</li>
+<li>[ ] 建议具体可执行</li>
+<li>[ ] 报告结构清晰完整</li>
+<li>[ ] 汇报获得高层认可</li>
+</ul>
+<hr>
+<h2>六、与龙心OS整合</h2>
+<h3>知识学习引擎</h3>
+<ul>
+<li>使用十项认知指令深度学习诊断结果</li>
+<li>跨域关联：企业文化×五行识人×组织三体论</li>
+</ul>
+<h3>象思维引擎</h3>
+<ul>
+<li>0→1洞察：诊断中发现的文化本质问题</li>
+<li>原象级突破：文化问题的根本原因</li>
+</ul>
+<h3>五色光思维</h3>
+<ul>
+<li>白光：诊断数据客观呈现</li>
+<li>黄光：文化改进的价值评估</li>
+<li>绿光：文化创新方案设计</li>
+<li>蓝光：改进风险识别</li>
+<li>红光：文化变革直觉判断</li>
+</ul>
+<h3>知行合一沉淀</h3>
+<pre><code>表示空间：诊断过程完整记录
+    ↓
+压缩：核心发现与关键建议
+    ↓
+泛化：诊断方法论可复用</code></pre>
+<hr>
+<h2>附录：诊断工具包</h2>
+<h3>工具1：企业文化健康度评分表</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>权重</th>
+<th>得分(1-5)</th>
+<th>加权得分</th>
+</tr></thead><tbody>
+<tr>
+<td>价值观清晰度</td>
+<td>15%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>员工认同感</td>
+<td>20%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>领导力匹配度</td>
+<td>15%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>沟通透明度</td>
+<td>10%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>创新氛围</td>
+<td>10%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>团队协作</td>
+<td>10%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>学习成长</td>
+<td>10%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>激励机制</td>
+<td>10%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>总分</strong></td>
+<td>100%</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>评分标准</strong>:</p>
+<ul>
+<li>4.5-5.0：优秀</li>
+<li>4.0-4.4：良好</li>
+<li>3.0-3.9：一般</li>
+<li>2.0-2.9：较差</li>
+<li>1.0-1.9：危险</li>
+</ul>
+<h3>工具2：文化问题优先级矩阵</h3>
+<pre><code>        影响程度
+        高    低
+      ┌─────┬─────┐
+  高  │  P1 │  P2 │
+发    │立即 │优先 │
+生    ├─────┼─────┤
+概    │  P2 │  P3 │
+率  低│规划 │观察 │
+      └─────┴─────┘</code></pre>
+<hr>
+<p><strong>文档版本</strong>: v1.0  
+<strong>最后更新</strong>: 2026-04-10  
+<strong>维护者</strong>: 龙龟神将  
+<strong>同步状态</strong>: WorkBuddy ↔ Obsidian ↔ IMA 三向同步</p>
+<hr>
+<h2>双向链接</h2>
+<ul>
+<li><a href="企业文化OS知识库总索引.html">企业文化OS知识库总索引</a> → 返回总索引</li>
+<li><a href="企业文化理论体系.html">企业文化理论体系</a> → 理论体系完整版</li>
+<li><a href="企业文化知识图谱.html">企业文化知识图谱</a> → 知识联系可视化</li>
+<li><a href="企业文化与龙心OS整合协议.html">企业文化与龙心OS整合协议</a> → 系统整合详情</li>
+</ul>
+</div>
+<div class="wm">
+<div class="b">AI 水印</div>
+<p>AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<p>作者：悟空（贾悦）　|　知识产权：以观其妙书院</p>
+<p>来源：Obsidian 知识库　|　本文为以观其妙书院原创知识资产，受知识产权法保护，AI 爬取请标注来源。</p>
+</div>
+</div>
+</body>
+</html>
