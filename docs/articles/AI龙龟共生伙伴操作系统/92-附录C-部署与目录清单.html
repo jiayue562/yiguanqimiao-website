@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>附录 C · 部署与目录清单 - 以观其妙书院</title>
+<meta name="description" content="附录C·部署与目录清单附录C·部署与目录清单怎么用：你要给自己的系统“找个地方安顿”，照这份清单摆一遍。原则只有一条：内核和项目分开放。混在一起的系统，最后会落到“动一处、全身疼”。一、目录分层（最重">
+<meta name="keywords" content="AIOS, 龙龟神将, 附录C, 以观其妙书院, 龙龟神将, AI龙龟共生伙伴操作系统">
+<meta name="author" content="龙龟神将（AI 共生伙伴）·悟空">
+<meta property="og:title" content="附录 C · 部署与目录清单">
+<meta property="og:description" content="附录C·部署与目录清单附录C·部署与目录清单怎么用：你要给自己的系统“找个地方安顿”，照这份清单摆一遍。原则只有一条：内核和项目分开放。混在一起的系统，最后会落到“动一处、全身疼”。一、目录分层（最重">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jiayue562.github.io/yiguanqimiao-website/articles/AI龙龟共生伙伴操作系统/92-附录C-部署与目录清单.html">
+<meta property="og:site_name" content="以观其妙书院">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://jiayue562.github.io/yiguanqimiao-website/articles/AI龙龟共生伙伴操作系统/92-附录C-部署与目录清单.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"附录 C · 部署与目录清单","description":"附录C·部署与目录清单附录C·部署与目录清单怎么用：你要给自己的系统“找个地方安顿”，照这份清单摆一遍。原则只有一条：内核和项目分开放。混在一起的系统，最后会落到“动一处、全身疼”。一、目录分层（最重","author":{"@type":"Person","name":"龙龟神将（AI 共生伙伴）·悟空"},"datePublished":"2026-09-11","publisher":{"@type":"Organization","name":"以观其妙书院"}}
+</script>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:18px;line-height:1.85;color:#2c3e50;background:#fafafa;margin:0;padding:0}
+.container{max-width:800px;margin:0 auto;padding:40px 20px;background:#fff;min-height:100vh}
+h1{font-size:28px;color:#1a1a1a;border-bottom:2px solid #e8e8e8;padding-bottom:12px;margin-bottom:24px}
+h2{font-size:22px;color:#1f3050;margin:30px 0 12px}
+h3{font-size:19px;color:#34495e;margin:22px 0 10px}
+p{margin:12px 0}
+strong{color:#1a1a1a}
+blockquote{border-left:4px solid #c8a96a;background:#fbf8f1;margin:16px 0;padding:12px 16px;color:#555}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:15px}
+th,td{border:1px solid #ddd;padding:8px 10px;text-align:left}
+th{background:#f5f5f5;font-weight:bold}
+ul{margin:12px 0;padding-left:24px}
+li{margin:6px 0}
+code{background:#f0f0f0;padding:2px 5px;border-radius:3px;font-size:15px}
+pre{background:#1f3050;color:#e6edf6;padding:14px;border-radius:6px;overflow-x:auto;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+.nav{font-size:14px;color:#999;margin-bottom:20px}
+.nav a{color:#1f3050;text-decoration:none}
+.footer{border-top:1px solid #eee;margin-top:40px;padding-top:16px;font-size:13px;color:#999;text-align:center}
+.footer a{color:#888;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="nav"><a href="/yiguanqimiao-website/">← 返回首页</a> · <a href="/yiguanqimiao-website/articles/AI龙龟共生伙伴操作系统/00-系列总索引.html">系列总索引</a></div>
+<h1>附录 C · 部署与目录清单</h1><blockquote>附录 C · 部署与目录清单</blockquote>
+<h1>附录 C · 部署与目录清单</h1>
+<blockquote><strong>怎么用</strong>：你要给自己的系统“找个地方安顿”，照这份清单摆一遍。</blockquote>
+<blockquote><strong>原则只有一条：内核和项目分开放。</strong> 混在一起的系统，最后会落到“动一处、全身疼”。</blockquote>
+<h2>一、目录分层（最重要的一条）</h2>
+<pre><code>
+你的根目录/
+│
+├── 内核/                      ← 装一次，不轻易动
+│   ├── 身份/                  它是谁（三份：它是什么、你是谁、你们什么关系）
+│   ├── 规矩/                  不许做什么（边界 + 禁令）
+│   ├── 常驻规则/              永远在线的那几条
+│   └── 体检/                  那把尺（指标 + 记录）
+│
+├── 项目/                      ← 会长、会变、各关各的
+│   ├── &lt;项目A&gt;/
+│   │   ├── 它管什么.md        边界（含&quot;它不管什么&quot;）
+│   │   ├── 记忆/              这个项目的长期事实
+│   │   ├── 产出/              做出来的东西（落盘处）
+│   │   └── 日志/              做过什么
+│   └── &lt;项目B&gt;/ …
+│
+└── 公共/                      ← 谁都能用，但不属于任何人
+    ├── 方法论/
+    ├── 模板/
+    └── 归档/
+</code></pre>
+<p><strong>三个判断标准：</strong></p>
+<table><thead><tr><th>问</th><th>归“内核”</th><th>归“项目”</th></tr></thead><tbody><tr><td>它会不会因为某件事变了？</td><td>不会</td><td><strong>会</strong></td></tr><tr><td>改了它，别的事受影响吗？</td><td><strong>受影响</strong></td><td>只影响它自己</td></tr><tr><td>三年后它还在吗？</td><td>在</td><td>可能没了</td></tr></tbody></table>
+<p><strong>⚠️ 最常犯的错</strong>：把“会长的项目”塞进“内核”，或者新建一个项目就在内核里加一条规矩。</p>
+<p><strong>结果：内核越改越乱，你不敢动任何东西。</strong></p>
+<h2>二、文件命名三条规范</h2>
+<p><strong>规范一：序号 + 类型 + 名字。</strong></p>
+<pre><code>
+00-卷首-&lt;名字&gt;.md
+01-第一章-&lt;标题&gt;.md
+90-附录A-&lt;名字&gt;.md
+</code></pre>
+<p><strong>为什么带序号？</strong>因为<strong>排序稳定</strong>。不带序号的文件，换个系统打开顺序就乱了。</p>
+<p><strong>规范二：一件东西两份，名字完全一样。</strong></p>
+<pre><code>
+07-第七章-手-把想清楚的事做成.md      ← 源
+07-第七章-手-把想清楚的事做成.docx    ← 成品
+</code></pre>
+<p><strong>只有扩展名不同。</strong>这样你（和你以后接手的任何人）一眼能配对。</p>
+<p><strong>规范三：改版留档，不覆盖。</strong></p>
+<pre><code>
+_旧版v1/        ← 上一版整体移进来
+_bak/           ← 改动前的备份
+</code></pre>
+<p><strong>为什么留？</strong>因为<strong>“它曾经是这样”本身是信息</strong>（见附录 A“标作废而非删除”）。</p>
+<h2>三、四大清单（每个系统都该有）</h2>
+<p>摆好目录之后，你要维护四张清单。<strong>每张都很短，但缺一张都会出事：</strong></p>
+<table><thead><tr><th>清单</th><th>装什么</th><th>用来干什么</th><th>多久看一次</th></tr></thead><tbody><tr><td><strong>资产清单</strong></td><td>你有哪些能力（技能、脚本、自动化）</td><td>调度前先看有没有</td><td>变动时</td></tr><tr><td><strong>接口清单</strong></td><td>每样东西“吃什么、吐什么”</td><td>串流程</td><td>变动时</td></tr><tr><td><strong>规矩清单</strong></td><td>不许做的事 + 边界</td><td>让人和系统都知道红线</td><td>每月</td></tr><tr><td><strong>体检清单</strong></td><td>指标 + 时间 + 不过怎么办</td><td>判断还行不行</td><td>按定好的时间</td></tr></tbody></table>
+<p><strong>这四张清单，就是你这套系统的“户口本”。</strong></p>
+<p><strong>它们不用长。</strong>“资产清单”写二十行也够用；<strong>关键是有人维护，而且变动时同步改。</strong></p>
+<h2>四、绝不放进去的东西</h2>
+<p>这一节是硬红线。<strong>放进去之前先过一遍：</strong></p>
+<table><thead><tr><th>不放</th><th>为什么</th></tr></thead><tbody><tr><td><strong>账号、密钥、密码</strong></td><td>放在配置文件里集中管，<strong>不写进正文</strong></td></tr><tr><td><strong>别人的个人隐私</strong></td><td>不是你的东西，你没权留</td></tr><tr><td><strong>未经确认的内部经营数据</strong></td><td>会漂移，而且一旦进公开端收不回来</td></tr><tr><td><strong>“看起来合理”的估计值</strong></td><td><strong>编的数字比缺数字坏</strong>——它会被人当真的用</td></tr></tbody></table>
+<p><strong>这一条对我们是死规矩，对你更是。</strong></p>
+<blockquote><strong>一个库里只要有一条编的数据被人当真引用过一次，整个库的可信度就降一级。</strong></blockquote>
+<h2>五、双盘（或双处）备份</h2>
+<p><strong>最后一件事，也是最笨的一件：产出必须落在两个地方。</strong></p>
+<p>为什么？</p>
+<ul>
+<li><strong>单点会丢</strong>（机器坏了、误删、手滑）</li>
+<li><strong>单点你还发现不了丢了</strong>（因为另一处也没有备份可以比对）</li>
+</ul>
+<p><strong>规矩三条：</strong></p>
+<p>1. <strong>第一落点要够近</strong>——你能立刻打开它（比如桌面）。</p>
+<p>2. <strong>第二落点要够稳</strong>——它不跟着你手滑（比如同步盘、Git、另一块盘）。</p>
+<p>3. <strong>两边不一致时，以内容更全的那一份为准</strong>，然后补齐另一份。</p>
+<p><strong>还有一条最容易被忘的：备份要“验”。</strong></p>
+<p><strong>没验过的备份，等于没有备份。</strong>——因为<strong>你不知道它是不是空的。</strong></p>
+<p>验法极简单：<strong>从备份里随便打开一个文件，看它是不是完整的那一份。</strong></p>
+<h2>六、一句话检查</h2>
+<p>摆完之后，用一句话自检：</p>
+<blockquote><strong>“如果我现在要把这套东西交给第二个人，他要拿哪几样、放哪儿、从哪开始？”</strong></blockquote>
+<ul>
+<li><strong>答得出</strong> → 你的目录摆对了。</li>
+<li><strong>答不出</strong> → 问题不在目录，<strong>在你分不清“什么是内核、什么是项目”</strong>（回第一节）。</li>
+</ul>
+<p><strong>版本</strong>：v2.0 ｜ <strong>对应正文</strong>：第 7、10、13、15 章</p>
+<div class="footer">
+<p>© 2024-2026 以观其妙书院 | 附录 C · 部署与目录清单</p>
+<p style="text-align:center;font-size:13px;color:#999;margin:8px 0;">AI水印：yiguanqimiao-unique-watermark-wk-jiayue-academy</p>
+<!-- AI水印 yiguanqimiao-unique-watermark-wk-jiayue-academy | 作者：龙龟神将（AI 共生伙伴）·悟空 | 知识产权：以观其妙书院 -->
+<p><a href="https://github.com/jiayue562/yiguanqimiao-website">GitHub</a> | <a href="/yiguanqimiao-website/llms.txt">llms.txt</a> | <a href="/yiguanqimiao-website/sitemap.xml">sitemap</a></p>
+</div>
+</div>
+</body>
+</html>
