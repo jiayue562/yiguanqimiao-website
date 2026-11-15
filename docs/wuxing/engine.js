@@ -1,5 +1,11 @@
 /* ============================================================
-   五行人格学在线测评 · 计分引擎（一期网页版）
+   五行人格学在线测评 · 计分引擎（二期：百分制三步判定版）
+   判定流程（悟空 2026-11-15 指定）：
+     第一步 百分制换算——各行答是数（满分45）归一化为满分100；
+     第二步 类型判定——五属性得分最高者为主导类型；
+     第三步 阴阳判定——主导型内比较阳性能量（L1-L3 答是）与
+            阴性能量（L7-L9 答是）占比，L4-L6 为中间带；
+     第四步 层级判定——主导型内峰值层（平局取更深）＋起点层（最深非空层）。
    口径基线：九层三段＝健康(L1-L3)／一般(L4-L6)／不健康(L7-L9)，B0
    相生 木→火→土→金→水→木；相克 木克土→土克水→水克火→火克金→金克木
    起点规则（悟空 2026-11-15 确认）：建议一律以答「是」词中层位最深者
@@ -115,35 +121,83 @@ function scoreQuiz(ans, data) {
   const total = yesWords.length;
   const GHI = total > 0 ? Math.round(seg[1] / total * 100) : null;
 
-  // 主行定型（一期：健康段行分，0-15）
-  const sorted = ELEMENTS.slice().sort((a, b) => W[b] - W[a]);
+  /* 第一步 · 百分制换算：各行答是数（满分 45）归一化为满分 100 */
+  const P = {};
+  ELEMENTS.forEach(e => { P[e] = Math.round(R[e] / 45 * 100); });
+
+  /* 第二步 · 类型判定：百分制得分最高者为主导类型
+     阈值（一期经验值）：最高分 <11（不足 5 词）→ 能量未显；
+     最高分领先 ≥7（约 3 词差）→ 单一型，否则复合型 */
+  const sorted = ELEMENTS.slice().sort((a, b) => P[b] - P[a] || R[b] - R[a]);
   const top = sorted[0], second = sorted[1];
   let typeState, mainType = null, subType = null;
-  if (W[top] < 5) {
+  if (P[top] < 11) {
     typeState = "能量未显";
-  } else if (W[top] - W[second] >= 3) {
+  } else if (P[top] - P[second] >= 7) {
     typeState = "单一型"; mainType = top;
   } else {
     typeState = "复合型"; mainType = top; subType = second;
   }
 
-  // 峰值层（峰值法；层分平局取更深，与起点规则方向一致）
+  /* 第三步 · 阴阳判定（主导型内）：
+     阳＝该行 L1-L3 答是数；阴＝该行 L7-L9 答是数；L4-L6 为中间带。
+     阳占两极≥60% → 阳性主导；≤40% → 阴性主导；之间 → 阴阳并存；
+     两极皆无答是 → 阴阳未显（阈值为一期经验值） */
+  let yinYang = null;
+  if (mainType) {
+    const pole = { y: 0, m: 0, n: 0 };
+    yesWords.forEach(w => {
+      if (w.e !== mainType) return;
+      const s = segmentOf(w.layer);
+      if (s === 1) pole.y++; else if (s === 3) pole.n++; else pole.m++;
+    });
+    const poles = pole.y + pole.n;
+    const yangPct = poles > 0 ? Math.round(pole.y / poles * 100) : null;
+    const yinPct = poles > 0 ? 100 - yangPct : null;
+    let verdict;
+    if (poles === 0) verdict = "阴阳未显";
+    else if (yangPct >= 60) verdict = "阳性主导";
+    else if (yangPct <= 40) verdict = "阴性主导";
+    else verdict = "阴阳并存";
+    yinYang = { y: pole.y, m: pole.m, n: pole.n, yangPct, yinPct, verdict };
+  }
+
+  /* 第四步 · 层级判定（主导型内）：
+     行内峰值层＝该行答是词最集中的层（平局取更深）；行内起点层＝最深非空层 */
+  let mainLayers = null, mainPeak = null, mainPeakVal = 0, mainStart = null, mainStartWords = [];
+  if (mainType) {
+    mainLayers = {}; for (let k = 1; k <= 9; k++) mainLayers[k] = 0;
+    yesWords.forEach(w => { if (w.e === mainType) mainLayers[w.layer]++; });
+    let pv = -1;
+    for (let k = 1; k <= 9; k++) { if (mainLayers[k] >= pv) { pv = mainLayers[k]; mainPeak = k; } }
+    if (pv > 0) { mainPeakVal = pv; } else { mainPeak = null; }
+    for (let k = 9; k >= 1; k--) { if (mainLayers[k] > 0) { mainStart = k; break; } }
+    if (mainStart) {
+      mainStartWords = yesWords.filter(w => w.e === mainType && w.layer === mainStart)
+        .sort((a, b) => P[b.e] - P[a.e]).slice(0, 5);
+    }
+  }
+
+  // 峰值层（全九层，峰值法；层分平局取更深，与起点规则方向一致）
   let peak = null, peakVal = -1;
   for (let k = 1; k <= 9; k++) {
-    if (layers[k] > peakVal) { peakVal = layers[k]; peak = k; }
+    if (layers[k] >= peakVal) { peakVal = layers[k]; peak = k; }
   }
   peak = peakVal > 0 ? peak : null;
 
-  // 起点规则：答是词 L9→L1 第一个非空层
+  // 起点规则：答是词 L9→L1 第一个非空层（全九层口径，供建议流水线使用）
   let startLayer = null;
   for (let k = 9; k >= 1; k--) { if (layers[k] > 0) { startLayer = k; break; } }
   const startWords = startLayer
     ? yesWords.filter(w => w.layer === startLayer)
-        .sort((a, b) => W[b.e] - W[a.e])
+        .sort((a, b) => P[b.e] - P[a.e])
         .slice(0, 5)
     : [];
 
-  return { R, W, layers, seg, total, GHI, sorted, typeState, mainType, subType, peak, peakVal, startLayer, startWords, yesWords };
+  return { R, W, P, layers, mainLayers, seg, total, GHI,
+    sorted, typeState, mainType, subType,
+    yinYang, mainPeak, mainPeakVal, mainStart, mainStartWords,
+    peak, peakVal, startLayer, startWords, yesWords };
 }
 
 /* 起点建议文案生成（一期模板版；三模型流水线：拔阴取阳→化克为生→B=MAP） */
