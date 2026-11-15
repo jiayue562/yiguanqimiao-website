@@ -37,7 +37,10 @@
 <script>
 (function(){
   var KEYS = { self: "wxr_v1_self", other: "wxr_v1_other" };
+  var HISTKEYS = { self: "wxr_hist_v1_self", other: "wxr_hist_v1_other" };
   function load(k) { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch (e) { return null; } }
+  function loadHist(k) { try { var v = JSON.parse(localStorage.getItem(k) || "[]"); return Array.isArray(v) ? v : []; } catch (e) { return []; } }
+  function fmtDate(ts) { return new Date(ts).toLocaleDateString("zh-CN"); }
   var sSelf = load(KEYS.self), sOther = load(KEYS.other);
   var selfDone = !!(sSelf && sSelf.done), otherDone = !!(sOther && sOther.done);
   var params = new URLSearchParams(location.search);
@@ -116,6 +119,86 @@
       + "　有效作答 " + Object.keys(store.ans).filter(function(k){ return store.ans[k] === true; }).length + " 个「是」词";
   }
 
+  /* ---------- 测评历史与对比（持久化存档：wxr_hist_v1_self / wxr_hist_v1_other） ---------- */
+  window.HIST_CTX = {};
+  function histSection(sec, histKey, res, owner, curName) {
+    window.HIST_CTX[sec] = { histKey: histKey, curRes: res, owner: owner, curName: curName };
+    return "<h2>测评历史与对比（" + owner + "）</h2><div class='card' id='" + sec + "Box'><p class='muted'>加载中…</p></div>";
+  }
+  window.histFill = function(sec, idxStr) {
+    var c = window.HIST_CTX[sec]; if (!c) return;
+    var box = document.getElementById(sec + "Box"); if (!box) return;
+    var hist = loadHist(c.histKey);
+    if (!hist.length) {
+      box.innerHTML = "<p class='muted'>暂无历史存档。在入口页或答题页点「重新开始」重做并完成后，此处自动给出与上一轮的得分对比与连续变化。</p>";
+      return;
+    }
+    var idx = hist.length - 1;
+    if (idxStr !== undefined && idxStr !== null && idxStr !== "") {
+      var ni = parseInt(idxStr, 10);
+      if (!isNaN(ni)) idx = Math.min(Math.max(ni, 0), hist.length - 1);
+    }
+    var cur = c.curRes;
+    var base = scoreQuiz(hist[idx].ans, QUIZ_DATA);
+    var curMain = cur.mainType || cur.sorted[0];
+    var baseMain = base.mainType || base.sorted[0];
+    function dc(a, b) {
+      var d = b - a;
+      if (d > 0) return "<span style='color:#3B6D11;font-weight:600'>▲ +" + d + "</span>";
+      if (d < 0) return "<span style='color:#C0392B;font-weight:600'>▼ " + d + "</span>";
+      return "<span class='muted'>0</span>";
+    }
+    function typeStr(res) { return res.typeState === "能量未显" ? "能量未显" : (res.mainType || res.sorted[0]) + "行人"; }
+    function pctStr(res) {
+      var yy = res.yinYang;
+      if (!yy || yy.verdict === "阴阳未显") return "阴阳未显";
+      return "阳 " + yy.yangPct + "% / 阴 " + yy.yinPct + "%（" + yy.verdict + "）";
+    }
+    function layerStr(res) { return (res.mainPeak || res.peak) ? "L" + (res.mainPeak || res.peak) : "—"; }
+    function layerCmp(a, b) {
+      if (!a || !b) return "—";
+      if (b < a) return "<span style='color:#3B6D11;font-weight:600'>↑ L" + a + "→L" + b + "（向健康段移动）</span>";
+      if (b > a) return "<span style='color:#C0392B;font-weight:600'>↓ L" + a + "→L" + b + "（向深层移动）</span>";
+      return "持平（L" + b + "）";
+    }
+    var s = "";
+    if (hist.length > 1) {
+      s += "<p><strong>选择对比基准：</strong><select onchange=\"window.histFill('" + sec + "', this.value)\">";
+      for (var i = hist.length - 1; i >= 0; i--) {
+        s += "<option value='" + i + "'" + (i === idx ? " selected" : "") + ">第 " + (i + 1) + " 轮 · " + fmtDate(hist[i].ts) + (i === hist.length - 1 ? "（最近）" : "") + "</option>";
+      }
+      s += "</select></p>";
+    }
+    s += "<h4>五行得分对比（满分 100）：第 " + (idx + 1) + " 轮（" + fmtDate(hist[idx].ts) + "）→ 本次</h4>"
+      + "<table class='qtable'><tr><th>行</th><th>上次</th><th>本次</th><th>变化</th></tr>";
+    cur.sorted.forEach(function(e) {
+      s += "<tr><td><strong>" + e + "</strong>" + (curMain === e ? "（主行）" : "") + "</td><td>" + base.P[e] + "</td><td>" + cur.P[e] + "</td><td>" + dc(base.P[e], cur.P[e]) + "</td></tr>";
+    });
+    s += "</table>";
+    var typeChg = baseMain !== curMain;
+    s += "<h4 style='margin-top:12px'>关键判定变化</h4><ul>"
+      + "<li><strong>主导类型</strong>：" + typeStr(base) + "（" + base.P[baseMain] + "）→ " + typeStr(cur) + "（" + cur.P[curMain] + "）" + (typeChg ? "　<span style='color:#854F0B;font-weight:600'>⚠ 主行改变</span>" : "") + "</li>"
+      + "<li><strong>阴阳属性</strong>：" + pctStr(base) + " → " + pctStr(cur) + "</li>"
+      + "<li><strong>峰值层</strong>（主行内）：" + layerCmp(base.mainPeak, cur.mainPeak) + "</li>"
+      + "<li><strong>三段能量</strong>：健康 " + base.seg[1] + "→" + cur.seg[1] + "（" + dc(base.seg[1], cur.seg[1]) + "）｜一般 " + base.seg[2] + "→" + cur.seg[2] + "（" + dc(base.seg[2], cur.seg[2]) + "）｜不健康 " + base.seg[3] + "→" + cur.seg[3] + "（" + dc(base.seg[3], cur.seg[3]) + "；不健康段下降＝改善）</li>"
+      + "<li><strong>GHI</strong>：" + (base.GHI === null ? "—" : base.GHI) + " → " + (cur.GHI === null ? "—" : cur.GHI) + (base.GHI !== null && cur.GHI !== null ? "（" + dc(base.GHI, cur.GHI) + "）" : "") + "</li></ul>"
+      + "<p class='muted'>▲/绿＝数值升高，▼/红＝数值下降。五行得分与健康段计数升高通常为改善信号；不健康段计数与峰值层号下降为改善信号。</p>";
+    s += "<h4 style='margin-top:12px'>历次测评轨迹（含本次）</h4><table class='qtable'><tr><th>轮次</th><th>日期</th>"
+      + (sec === "histOther" ? "<th>对象</th>" : "") + "<th>主导型</th><th>主行得分</th><th>峰值层</th></tr>";
+    hist.forEach(function(rec, i) {
+      var r = scoreQuiz(rec.ans, QUIZ_DATA);
+      var mt = r.mainType || r.sorted[0];
+      s += "<tr><td>第 " + (i + 1) + " 轮</td><td>" + fmtDate(rec.ts) + "</td>"
+        + (sec === "histOther" ? "<td>" + (rec.name || "TA") + "</td>" : "")
+        + "<td>" + (r.typeState === "能量未显" ? "能量未显" : mt + "行人") + "</td><td>" + r.P[mt] + "</td><td>" + layerStr(r) + "</td></tr>";
+    });
+    s += "<tr style='background:#FAEEDA'><td><strong>本次</strong></td><td>" + fmtDate(Date.now()) + "</td>"
+      + (sec === "histOther" ? "<td>" + (c.curName || "TA") + "</td>" : "")
+      + "<td>" + typeStr(cur) + "</td><td>" + cur.P[curMain] + "</td><td>" + layerStr(cur) + "</td></tr>";
+    s += "</table><p class='muted'>历史存档保留最近 20 轮，存在你的浏览器本地，不上传服务器。</p>";
+    box.innerHTML = s;
+  };
+
   /* ---------- 模式A：自测报告 ---------- */
   if (mode === "self") {
     var a = buildAdvice(selfRes);
@@ -125,6 +208,7 @@
     h += "<h2>三段能量剖面</h2>" + segHtml(selfRes, "你");
     h += "<h2>九层定位</h2><div class='card'>" + layerHtml(selfRes, "你") + "</div>";
     h += "<h2>起点建议</h2><div class='card'>" + a.html + "</div>";
+    h += histSection("histSelf", HISTKEYS.self, selfRes, "你", "你");
     if (otherDone) {
       h += "<div class='card' style='background:#FAEEDA'><p>他测卷已完成——<a class='btn' href='report.html?mode=rel'>查看完整关系测评报告</a></p></div>";
     } else {
@@ -132,6 +216,7 @@
     }
     document.getElementById("actions").style.display = "block";
     root.innerHTML = h;
+    window.histFill("histSelf");
     return;
   }
 
@@ -143,6 +228,7 @@
     h += "<h2>五行得分与三步判定</h2><div class='card'>" + stepsPanel(otherRes, otherName) + "</div>";
     h += "<h2>三段能量剖面</h2>" + segHtml(otherRes, otherName);
     h += "<h2>九层定位</h2><div class='card'>" + layerHtml(otherRes, otherName) + "</div>";
+    h += histSection("histOther", HISTKEYS.other, otherRes, "你眼中的 " + otherName, otherName);
     if (selfDone) {
       h += "<div class='card' style='background:#FAEEDA'><p>自测卷已完成——<a class='btn' href='report.html?mode=rel'>查看完整关系测评报告</a></p></div>";
     } else {
@@ -150,6 +236,7 @@
     }
     document.getElementById("actions").style.display = "block";
     root.innerHTML = h;
+    window.histFill("histOther");
     return;
   }
 
@@ -176,6 +263,10 @@
   h += "<div class='card'>" + stepsPanel(rel.otherRes, otherName) + "</div>";
   h += segHtml(rel.otherRes, otherName);
   h += "<div class='card'>" + layerHtml(rel.otherRes, otherName) + "</div>";
+
+  /* 测评历史与对比（两卷各自与其历史存档对比；关系指标四档对比属二期复测报告） */
+  h += histSection("histSelf", HISTKEYS.self, rel.selfRes, "你", "你");
+  h += histSection("histOther", HISTKEYS.other, rel.otherRes, "你眼中的 " + otherName, otherName);
 
   /* 第三部分 · 关系篇 */
   h += "<h2>第三部分 · 关系篇</h2>";
@@ -255,10 +346,12 @@
   h += "<div class='lesson'>" + pack.daily + "</div>";
   h += "<div class='lesson'>" + pack.map90 + "</div>";
 
-  h += "<div class='card'><p><strong>复测提示</strong>：第 13 周（3 个月 ±7 天）用同一套卷重做双窗口，系统将对比克线（主克 K 分下降 ≥30%）与生线（主生 S 分维持 ≥95%）及双方峰值层位移，出四档判定（大效 / 显效 / 有效 / 未显效）。当前主克与主生词组请记录备查。</p></div>";
+  h += "<div class='card'><p><strong>复测提示</strong>：第 13 周（3 个月 ±7 天）用同一套卷重做双窗口，系统将对比克线（主克 K 分下降 ≥30%）与生线（主生 S 分维持 ≥95%）及双方峰值层位移，出四档判定（大效 / 显效 / 有效 / 未显效）。重做方式：入口页对应卷卡上点「重新开始」→ 重做完成 → 本报告「测评历史与对比」区自动给出与上一轮的得分差异与连续变化（关系指标四档对比属二期复测报告）。</p></div>";
 
   document.getElementById("actions").style.display = "block";
   root.innerHTML = h;
+  window.histFill("histSelf");
+  window.histFill("histOther");
 })();
 </script>
 </body>

@@ -52,6 +52,34 @@
   if (mode === "other" && !state.name) state.name = "TA";
   function save() { localStorage.setItem(KEY, JSON.stringify(state)); }
 
+  /* 历史存档：覆盖"已完成"作答的任何路径（重新开始 / 重做提交）先快照入历史，供报告页对比 */
+  var HISTKEY = mode === "other" ? "wxr_hist_v1_other" : "wxr_hist_v1_self";
+  function snapshotIfDone() {
+    if (!state.done) return;
+    var hist = [];
+    try { hist = JSON.parse(localStorage.getItem(HISTKEY) || "[]"); } catch (e) {}
+    var rec = { ts: state.ts || Date.now(), ans: state.ans };
+    if (mode === "other" && state.name) rec.name = state.name;
+    var last = hist[hist.length - 1];
+    if (last && JSON.stringify(last.ans) === JSON.stringify(rec.ans)) return; /* 与最近一轮完全相同不重复存 */
+    hist.push(rec);
+    while (hist.length > 20) hist.shift();
+    localStorage.setItem(HISTKEY, JSON.stringify(hist));
+  }
+
+  function restart() {
+    var n = Object.keys(state.ans).length;
+    if (n === 0 && !state.done) { renderIntro(); return; }
+    var msg = state.done
+      ? "本轮已完成，重做前会自动存入测评历史（报告页可与本次结果对比）。确定清空当前作答、从头重新开始吗？"
+      : "当前已作答 " + n + " 题（未完成，不会存入历史）。确定清空并从头开始吗？";
+    if (!confirm(msg)) return;
+    snapshotIfDone();
+    state = { ans: {}, page: 0, trans: 0, name: mode === "other" ? (state.name || "TA") : null };
+    save();
+    renderIntro();
+  }
+
   var root = document.getElementById("root");
   var PAGE = 10;
   var totalPages = Math.ceil(order.length / PAGE);
@@ -77,6 +105,7 @@
     var h = '<div class="card intro"><h2>答题说明</h2><p>' + lead + '</p>'
       + '<p class="muted">题目按 木→火→土→金→水 分为五段，每段 45 题（约 5 分钟），段内不混排。中途可随时退出，进度自动保存。</p>'
       + '<p class="muted">请凭第一印象作答，不必反复斟酌。</p>'
+      + '<p class="muted">已完成过一轮？重做并完成后，报告页会自动给出与上次结果的得分对比与连续变化。</p>'
       + '<p><button class="btn" id="startBtn">开始答题</button></p></div>';
     root.innerHTML = h;
     document.getElementById("startBtn").onclick = function() { renderPage(); };
@@ -91,9 +120,11 @@
       + (mode === "self" ? "你自己的" : (state.name || "TA") + "的") + next + '能量。</div>'
       + '<button class="btn" id="contBtn">继续</button> '
       + '<a class="btn ghost" href="index.html">先退出（进度已保存）</a>'
+      + '<div style="margin-top:14px"><button class="btn ghost" id="restartBtnT" style="font-size:13px">重新开始做题</button></div>'
       + '</div>';
     root.innerHTML = h;
     document.getElementById("contBtn").onclick = function() { renderPage(); };
+    document.getElementById("restartBtnT").onclick = restart;
   }
 
   function renderPage() {
@@ -121,10 +152,12 @@
     }
     h += '</div><div style="text-align:center;margin:16px 0">';
     if (state.page > 0) h += '<button class="btn ghost" id="prevBtn">上一页</button> ';
-    h += '<button class="btn" id="nextBtn">' + (end >= order.length ? "完成作答" : "下一页") + '</button></div>';
+    h += '<button class="btn" id="nextBtn">' + (end >= order.length ? "完成作答" : "下一页") + '</button></div>'
+      + '<div style="text-align:center;margin:0 0 18px"><button class="btn ghost" id="restartBtn" style="font-size:13px">重新开始做题</button></div>';
     root.innerHTML = h;
 
     if (state.page > 0) document.getElementById("prevBtn").onclick = function() { state.page--; save(); renderPage(); };
+    document.getElementById("restartBtn").onclick = restart;
     document.getElementById("nextBtn").onclick = function() {
       var missing = 0;
       for (var i = start; i < end; i++) {
@@ -147,6 +180,7 @@
   function finish() {
     var done = Object.keys(state.ans).length;
     if (!confirm("共 225 题，你已作答 " + done + " 题。完成作答并生成结果？")) { state.page = totalPages; save(); renderPage(); return; }
+    snapshotIfDone(); /* 若此前已有完成记录，先存入历史（供对比），再覆盖 */
     state.done = true; state.ts = Date.now();
     save();
     location.href = "report.html" + (mode === "other" ? "" : "?mode=self");

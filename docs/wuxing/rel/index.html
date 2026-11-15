@@ -17,6 +17,9 @@
   .duo .dcard .desc { font-size:13px; color:#5C564A; margin-top:8px; line-height:1.6; }
   .duo .dcard .st { font-size:12px; margin-top:8px; color:#8B8578; }
   .duo .dcard .st.done { color:#3B6D11; font-weight:600; }
+  .rstbtn { display:inline-block; margin-top:8px; padding:4px 12px; font-size:12px; border:1px solid #C9C2B0;
+    background:#FFFDF8; color:#854F0B; border-radius:8px; cursor:pointer; }
+  .rstbtn:hover { background:#FAEEDA; }
   .bigbtn { display:block; width:100%; max-width:420px; margin:10px auto; padding:15px 20px;
     background:#854F0B; color:#fff; border:none; border-radius:12px; font-size:19px; font-weight:700;
     cursor:pointer; text-align:center; }
@@ -45,6 +48,7 @@
       <div class="cnt">225 题 · 约 25 分钟</div>
       <div class="desc">按 木→火→土→金→水 五段作答，看清自己的五行能量与九层位置。</div>
       <div class="st" id="stSelf">未开始</div>
+      <button class="rstbtn" id="rstSelf" style="display:none" onclick="event.stopPropagation();restart('self')">重新开始</button>
     </div>
     <div class="dcard" id="cardOther" onclick="pick('other')">
       <div class="ico">👥</div>
@@ -53,6 +57,7 @@
       <div class="cnt">225 题 · 约 25 分钟</div>
       <div class="desc">凭你对 TA 的了解作答，答完可与自测卷合并，生成关系测评报告。</div>
       <div class="st" id="stOther">未开始</div>
+      <button class="rstbtn" id="rstOther" style="display:none" onclick="event.stopPropagation();restart('other')">重新开始</button>
     </div>
   </div>
 
@@ -65,13 +70,41 @@
   <div class="card" style="margin-top:14px">
     <p style="text-align:center;margin:0"><strong>两卷都完成后，自动生成《关系测评报告》</strong>——乔哈里四象限 + 相生/相克分型 + 双线功课（主生课 + 主克课 + 日课）+ 90 天行动地图。</p>
   </div>
-  <p class="muted" style="text-align:center;margin-top:10px">支持中途保存：进度自动存在你的浏览器里（不上传服务器），随时退出、随时续答。三个月后可用同一套卷复测，验证功课成效。</p>
+  <p class="muted" style="text-align:center;margin-top:10px">支持中途保存：进度自动存在你的浏览器里（不上传服务器），随时退出、随时续答。重新开始重做并完成后，报告页会自动给出与上一轮的得分对比与连续变化（历史存档保留最近 20 轮）。三个月后可用同一套卷复测，验证功课成效。</p>
 
   <div class="backline"><a href="../index.html">← 返回五行人格测评首页</a></div>
 </div>
 <script>
 var mode = "self";
 var KEYS = { self: "wxr_v1_self", other: "wxr_v1_other" };
+var HISTKEYS = { self: "wxr_hist_v1_self", other: "wxr_hist_v1_other" };
+function histCount(m) {
+  try { return JSON.parse(localStorage.getItem(HISTKEYS[m]) || "[]").length; } catch (e) { return 0; }
+}
+function snapshotDone(m, v) {
+  var hist = [];
+  try { hist = JSON.parse(localStorage.getItem(HISTKEYS[m]) || "[]"); } catch (e) {}
+  var rec = { ts: v.ts || Date.now(), ans: v.ans };
+  if (m === "other" && v.name) rec.name = v.name;
+  var last = hist[hist.length - 1];
+  if (last && JSON.stringify(last.ans) === JSON.stringify(rec.ans)) return;
+  hist.push(rec);
+  while (hist.length > 20) hist.shift();
+  localStorage.setItem(HISTKEYS[m], JSON.stringify(hist));
+}
+function restart(m) {
+  var k = KEYS[m];
+  var v = null;
+  try { v = JSON.parse(localStorage.getItem(k) || "null"); } catch (e) {}
+  if (!v || (!v.done && Object.keys(v.ans || {}).length === 0)) return;
+  var msg = v.done
+    ? "这轮测评已完成，重做前会自动存入测评历史（报告页可与本次结果对比）。确定清空当前作答、从头重新开始吗？"
+    : "当前作答未完成（不会存入历史）。确定清空并从头开始吗？";
+  if (!confirm(msg)) return;
+  if (v.done) snapshotDone(m, v);
+  localStorage.removeItem(k);
+  location.reload();
+}
 function pick(m) {
   mode = m;
   document.getElementById("cardSelf").className = "dcard" + (m === "self" ? " sel" : "");
@@ -80,18 +113,21 @@ function pick(m) {
   document.getElementById("goBtn").textContent =
     m === "self" ? "开始自测（我测自己）" : "开始他测（我测 TA）";
 }
-function stText(v) {
+function stText(v, m) {
   if (!v) return "未开始";
   var n = Object.keys(v.ans || {}).length;
-  if (v.done) return "✅ 已完成 " + new Date(v.ts).toLocaleDateString("zh-CN");
+  var hc = histCount(m);
+  if (v.done) return "✅ 已完成 " + new Date(v.ts).toLocaleDateString("zh-CN") + (hc ? " · 历史存档 " + hc + " 轮" : "");
   return "已答 " + n + " / 225" + (v.name ? "（" + v.name + "）" : "");
 }
 try {
   var s1 = JSON.parse(localStorage.getItem(KEYS.self) || "null");
   var s2 = JSON.parse(localStorage.getItem(KEYS.other) || "null");
   var e1 = document.getElementById("stSelf"), e2 = document.getElementById("stOther");
-  e1.textContent = stText(s1); if (s1 && s1.done) e1.className = "st done";
-  e2.textContent = stText(s2); if (s2 && s2.done) e2.className = "st done";
+  e1.textContent = stText(s1, "self"); if (s1 && s1.done) e1.className = "st done";
+  e2.textContent = stText(s2, "other"); if (s2 && s2.done) e2.className = "st done";
+  document.getElementById("rstSelf").style.display = (s1 && (s1.done || Object.keys(s1.ans || {}).length > 0)) ? "inline-block" : "none";
+  document.getElementById("rstOther").style.display = (s2 && (s2.done || Object.keys(s2.ans || {}).length > 0)) ? "inline-block" : "none";
   if (s1 && s2 && s1.done && s2.done) {
     var b = document.getElementById("goBtn");
     b.className = "bigbtn gold";
