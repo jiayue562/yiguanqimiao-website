@@ -62,6 +62,20 @@ if (!store || !store.order || store.order.length !== QUIZ_DATA.length) {
 var ans = store.ans || {};
 function save(){ store.ans = ans; localStorage.setItem(KEY, JSON.stringify(store)); }
 
+/* 匿名上传（D1 汇集，供信效度分析）：无 PII，失败静默，不影响本地流程 */
+function uploadResult() {
+  try {
+    if (!store.uploadId) {
+      store.uploadId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID()
+        : Date.now().toString(16) + "-" + Math.floor(Math.random() * 0xffffffffffff).toString(16);
+      save();
+    }
+    fetch("/api/wuxing-response", { method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ kind: "self", schema: "wxq_v1", ans: store.ans, ts: Date.now(), uid: store.uploadId })
+    }).catch(function () {});
+  } catch (e) {}
+}
+
 var page = parseInt(localStorage.getItem(KEY+"_page") || "0", 10) || 0;
 var maxPage = Math.ceil(QUIZ_DATA.length / PAGE) - 1;
 if (page > maxPage) page = maxPage;
@@ -120,6 +134,7 @@ document.getElementById("next").addEventListener("click", function(){
       if (!confirm("还有 " + (QUIZ_DATA.length - n) + " 题未作答。未答题不计入结果，报告可能不完整。确定现在生成报告吗？")) return;
     }
     save(); store.done = true; localStorage.setItem(KEY, JSON.stringify(store));
+    uploadResult();
     location.href = "report.html";
   }
 });

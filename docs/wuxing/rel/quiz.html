@@ -69,6 +69,20 @@
     localStorage.setItem(HISTKEY, JSON.stringify(hist));
   }
 
+  /* 匿名上传（D1 汇集，供信效度分析）：无 PII，失败静默，不影响本地流程 */
+  function uploadResult() {
+    try {
+      if (!state.uploadId) {
+        state.uploadId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID()
+          : Date.now().toString(16) + "-" + Math.floor(Math.random() * 0xffffffffffff).toString(16);
+        save();
+      }
+      fetch("/api/wuxing-response", { method: "POST", headers: { "content-type": "application/json" },
+        body: JSON.stringify({ kind: mode, schema: "wxr_v1", ans: state.ans, ts: state.ts, uid: state.uploadId })
+      }).catch(function () {});
+    } catch (e) {}
+  }
+
   function restart() {
     var n = Object.keys(state.ans).length;
     if (n === 0 && !state.done) { renderIntro(); return; }
@@ -185,6 +199,7 @@
     snapshotIfDone(); /* 若此前已有完成记录，先存入历史（供对比），再覆盖 */
     state.done = true; state.ts = Date.now();
     save();
+    uploadResult();
     location.href = "report.html" + (mode === "other" ? "" : "?mode=self");
   }
 
