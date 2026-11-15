@@ -1,4 +1,4 @@
-# Create Sub-Agent Skill - 交互式子代理创建
+﻿# Create Sub-Agent Skill - 交互式子代理创建
 
 ## 技能概述
 交互式创建专用子代理技能，根据用户需求动态创建专用子代理来处理特定任务。
@@ -88,3 +88,17 @@
 - 版本：1.0
 - 创建时间：2026-03-23
 - 作者：龙龟神将
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/agents_Skill 构建 SOP]] — Skill 构建 SOP - 龙心 OS 技能开发标准流程
+- [[01-核心体系/龙心OS_联合进化系统实践操作指南]] — 联合进化系统实践操作指南
+- [[01-核心体系/龙心OS_📖Harness-Engineering记忆层]] — Harness Engineering记忆层
+- [[09-技能库/agent-swarm/SKILL]] — Agent Swarm Skill - 多代理并行任务执行
+- [[ψ技能体系/30-tools/agent-swarm/SKILL]] — Agent Swarm Skill - 多代理并行任务执行
+- [[ψ技能体系/30-tools/create-sub-agent/SKILL]] — Create Sub-Agent Skill - 交互式子代理创建
+
+<!-- AI-LINKS-END -->

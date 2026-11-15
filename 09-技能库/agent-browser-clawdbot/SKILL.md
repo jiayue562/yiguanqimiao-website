@@ -1,4 +1,4 @@
----
+﻿---
 name: agent-browser
 description: Headless browser automation CLI optimized for AI agents with accessibility tree snapshots and ref-based element selection
 metadata: {"clawdbot":{"emoji":"🌐","requires":{"commands":["agent-browser"]},"homepage":"https://github.com/vercel-labs/agent-browser"}}
@@ -204,3 +204,17 @@ agent-browser install --with-deps         # Linux: + system deps
 Skill created by Yossi Elkrief ([@MaTriXy](https://github.com/MaTriXy))
 
 agent-browser CLI by [Vercel Labs](https://github.com/vercel-labs/agent-browser)
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/agent-memory-systems/SKILL]] — Agent Memory Systems
+- [[09-技能库/resources_FAQ]] — Frequently Asked Questions
+- [[09-技能库/skill-creator/SKILL]] — Skill Creator
+- [[09-技能库/技能创建指南/SKILL]] — Skill Creator
+- [[ψ技能体系/10-kernel/龙心OS/self-learning/references/skill_creation_guide]] — Skill Creator Guide
+- [[ψ技能体系/30-tools/agent-browser-clawdbot/SKILL]] — Agent Browser Skill
+
+<!-- AI-LINKS-END -->

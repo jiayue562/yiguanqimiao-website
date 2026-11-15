@@ -280,3 +280,17 @@ schema_definition:
 ---
 
 **LLMification Knowledge Builder · 从检索增强到知识编译的范式跃迁** 🏗️
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[16-工具与资源/projects_01-理论体系结构剖析]] — LLM Wiki 理论体系结构剖析
+- [[08-龙心OS核心系统/AI-OS知识库/🧠 龙脑OS·知识地基层/wiki·概念页/LLMification]] — LLMification（知识编译方法论）
+- [[08-龙心OS核心系统/AI-OS知识库/🧠 龙脑OS·知识地基层/wiki·概念页/知识编译]] — 知识编译
+- [[09-技能库/llmification-knowledge-builder/references/theory]] — Theory.md - LLMification 理论依据
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer1-raw/🧠 龙脑OS·知识地基层/wiki·概念页/LLMification]] — LLMification（知识编译方法论）
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer2-wiki/entities/LLMification]] — LLMification（知识编译方法论）
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# 麦肯锡思考框架 · 龙心OS调用协议
+﻿# 麦肯锡思考框架 · 龙心OS调用协议
 
 > **版本**: v1.0  
 > **创建**: 2026-04-09  
@@ -280,3 +280,20 @@
 **最后更新**: 2026-04-09  
 **维护者**: 龙龟神将  
 **系统地位**: 龙脑OS知识库 · 龙心OS调用协议
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[05-五行人格心理学/五行人格TXT知识地基/五行总智能体-结构化知识文档]] — 🌀 五行总智能体 · 结构化知识文档
+- [[09-技能库/AI龙龟共生伙伴操作系统/references/three-layer-architecture]] — AI OS 三层架构详解
+- [[09-技能库/思维模型库/references/integration]] — 思维模型库 · 龙心OS调用协议
+- [[09-技能库/龙脑OS/references/integration]] — 龙脑OS · 龙心OS调用协议
+- [[ψ技能体系/10-kernel/龙脑OS/models/思维模型库/references/integration]] — 思维模型库 · 龙心OS调用协议
+- [[ψ技能体系/10-kernel/龙脑OS/models/麦肯锡思考框架/references/integration]] — 麦肯锡思考框架 · 龙心OS调用协议
+- [[ψ技能体系/30-tools/workbuddy/思维模型库/references/integration]] — 思维模型库 · 龙心OS调用协议
+- [[ψ技能体系/99-archive/龙脑 OS/references/integration]] — 龙心OS调用协议
+- [[ψ技能体系/99-archive/龙脑OS/references/integration]] — 龙脑OS · 龙心OS调用协议
+
+<!-- AI-LINKS-END -->

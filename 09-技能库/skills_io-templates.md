@@ -1,4 +1,4 @@
-# 象思维 Skill 输入输出模板
+﻿# 象思维 Skill 输入输出模板
 
 > 📝 标准化输入输出格式 · 确保分析质量
 
@@ -288,3 +288,19 @@
 ---
 
 _输入输出模板 · 象思维 Skill · 龙心 OS · 2026-04-17_
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[03-知识地基层/象思维/核心方法]] — 象思维核心方法
+- [[05-五行人格心理学/理论基石/🐉 象思维·中国式认知的深层密码·完整体系]] — 象思维·中国式认知的深层密码·完整体系
+- [[09-技能库/skills_CHECKLIST]] — 象思维 Skill 检查清单
+- [[09-技能库/skills_COMPLETION_REPORT]] — 象思维 Skill 构建完成报告
+- [[ψ技能体系/10-kernel/龙心OS/engines/五色光思维/templates/io-templates]] — 五色光思维 Skill 输入输出模板
+- [[ψ技能体系/10-kernel/龙心OS/engines/人机协同五象限/templates/io-templates]] — 人机协同五象限输入输出模板
+- [[ψ技能体系/10-kernel/龙心OS/engines/象思维/templates/io-templates]] — 象思维 Skill 输入输出模板
+- [[ψ技能体系/99-archive/思维模型.skills/templates/io-templates]] — 思维模型.skills - 输入输出模板
+
+<!-- AI-LINKS-END -->

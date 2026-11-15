@@ -1,4 +1,4 @@
----
+﻿---
 name: self-learning
 description: "Autonomous skill generator that learns new technologies from the web. Use when, users want to learn about a new library/framework/tool, need to create a skill for an unfamiliar technology, want to research and document a technology's usage patterns, or invoke with `/learn <topic>`. This skill uses web search and browser tools to discover, extract, and synthesize documentation into a reusable skill."
 ---
@@ -131,3 +131,21 @@ Report:
 2. **Never invent APIs:** If documentation is unclear, ask the user what to do.
 3. **Ask for URLs:** If automated discovery fails, ask user for specific URLs.
 4. **Verify sources:** Prefer official sources over third-party tutorials.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/obsidian/SKILL]] — Obsidian
+- [[ψ技能体系/10-kernel/龙心OS/capability-evolver/README]] — 🧬 Evolver
+- [[ψ技能体系/10-kernel/龙心OS/self-learning/SKILL]] — Self-Learning Skill Generator
+- [[ψ技能体系/30-tools/agent-team-orchestration/references/patterns]] — Patterns
+- [[ψ技能体系/30-tools/api-gateway/references/notion/README]] — Notion Routing Reference
+- [[ψ技能体系/30-tools/deep-research/agents/web-search-agent]] — web-search-agent
+- [[ψ技能体系/30-tools/deep-research/agents/web-search-modules/general-web]] — General Web Module
+- [[ψ技能体系/30-tools/deep-research/agents/web-search-opencode]] — web-search-opencode
+- [[ψ技能体系/30-tools/deep-research/research-en/research-add-items/SKILL]] — Research Add Items - Supplement Research Objects
+- [[ψ技能体系/30-tools/markitdown-skill/SKILL]] — MarkItDown Skill
+
+<!-- AI-LINKS-END -->

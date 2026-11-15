@@ -1,4 +1,4 @@
-# Good Tools to Use Skill（推荐工具清单）
+﻿# Good Tools to Use Skill（推荐工具清单）
 
 ## 📖 技能定义
 
@@ -536,3 +536,19 @@ usage_stats:
 **AI龙龟共生伙伴操作系统版本**: v4.1
 **路径**: `C:\Users\jia'yue\.workbuddy\skills\推荐工具清单\SKILL.md`
 **更新说明**: v1.1更新对标20个提示词中的工具列表，补充Voicebox、AgentMail、Brave Search、LarryBrain Pro、find-skills等工具
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/AI龙龟共生伙伴操作系统/分章/NSDFEE9-92-附录C-部署与目录清单]] — AI 龙龟共生伙伴操作系统
+- [[01-核心体系/AI龙龟共生伙伴操作系统/分章/NSDFEE9-94-附录E-资产清单]] — AI 龙龟共生伙伴操作系统
+- [[01-核心体系/龙心OS_Claude-Code源码工程智慧与龙心OS融合框架]] — Claude Code源码工程智慧与龙心OS融合框架
+- [[03-知识地基层/记忆系统_LEARNINGS]] — LEARNINGS.md - 学习积累与知识沉淀
+- [[03-知识地基层/记忆系统_记忆系统安装完成报告-v3.0]] — 记忆系统安装完成报告 v3.0
+- [[16-工具与资源/NSF418C-04-01-软件工具]] — 04-01-软件工具
+- [[09-技能库/浏览器使用规则/SKILL]] — Browser Rules Skill（浏览器使用规则）
+- [[ψ技能体系/40-rules/浏览器使用规则/SKILL]] — Browser Rules Skill（浏览器使用规则）
+
+<!-- AI-LINKS-END -->

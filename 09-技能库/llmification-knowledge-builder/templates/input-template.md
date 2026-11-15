@@ -1,4 +1,4 @@
-# LLMification 输入模板
+﻿# LLMification 输入模板
 
 > **用途**：标准化LLMification Knowledge Builder的输入格式
 > **版本**：v1.0
@@ -326,3 +326,21 @@ error_recovery:
 **输入模板版本**：v1.0  
 **最后更新**：2026-04-08  
 **维护者**：龙龟神将
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[08-龙心OS核心系统/AI-OS知识库/❤️ 龙心OS·智能发动机层/五大引擎/知识学习]] — 知识学习
+- [[09-技能库/LLM-Wiki/templates/wiki-template]] — LLM Wiki · Wiki页面模板库
+- [[09-技能库/llmification-knowledge-builder/references/practice-guide]] — Practice Guide.md - LLMification 实操指南
+- [[09-技能库/llmification-knowledge-builder/references/theory]] — Theory.md - LLMification 理论依据
+- [[09-技能库/resources_LLM-Wiki 知识库建设]] — LLM Wiki 鐭ヨ瘑搴撳缓璁?- 鐭ヨ瘑瀛︿範鎶ュ憡
+- [[09-技能库/知识学习Skills/references/llm-wiki-architecture]] — LLM Wiki三层知识流水线架构详解
+- [[09-技能库/通信规则/SKILL]] — Communication Skill（通信规则）
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer2-wiki/entities/知识学习]] — 知识学习
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer3-schema/structure]] — LLM Wiki 三层架构规范
+- [[ψ技能体系/30-tools/knowledge-framework-builder/SKILL]] — 知识框架梳理（Knowledge Framework Builder）
+
+<!-- AI-LINKS-END -->

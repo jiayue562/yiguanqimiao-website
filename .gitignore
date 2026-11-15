@@ -1,14 +1,18 @@
-# Obsidian
+﻿# Obsidian
 .obsidian/workspace
-.obsidian/cache
+.obsidian/workspace.json
+.obsidian/cache/
 .obsidian/plugins/
+.smart-env/
 .trash/
-
-# OS
+# 内部工具缓存
+.workbuddy/
+.claude/
+.codebuddy/
+.cursor/
+# OS / 临时
 Thumbs.db
 .DS_Store
-
-# Temp
 _backups/
 *.tmp
 *.log

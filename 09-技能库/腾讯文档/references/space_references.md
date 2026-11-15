@@ -1,4 +1,4 @@
-# 知识库空间 API 参考
+﻿# 知识库空间 API 参考
 
 本文件包含腾讯文档 MCP 知识库空间相关工具的 API 说明，包括空间管理和节点操作。
 
@@ -280,3 +280,21 @@
 - `node_id` 即 `file_id`：空间节点的 `node_id` 同时也是文档的 `file_id`
 - 删除节点需谨慎：`delete_space_node` 默认仅删除当前节点（`remove_type=current`），使用 `all` 时会递归删除所有子节点
 - 分页查询：`query_space_list` 每页 100 条，`query_space_node` 每页 20 条，使用 `has_next` 判断是否有更多数据，页码从 0 开始
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_api_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/resources_sheet_references]] — Sheet 表格操作参考文档
+- [[09-技能库/腾讯文档/SKILL]] — 腾讯文档 MCP 使用指南
+- [[09-技能库/腾讯文档/doc/entry]] — Word 文档（doc）品类操作指引
+- [[09-技能库/腾讯文档/references/diagram_references]] — 图形化文档（思维导图 / 流程图）参考文档
+- [[09-技能库/腾讯文档/references/docengine_references]] — DOC 编辑引擎 API 参考
+- [[09-技能库/腾讯文档/references/manage_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/腾讯文档/references/slide_references]] — 幻灯片（Slide / PPT）参考文档
+- [[09-技能库/腾讯文档/sheet/api/mcp-api]] — 腾讯文档 Sheet MCP 工具完整参考
+- [[09-技能库/腾讯文档/sheet/api/operation-api]] — Sheet 表格操作参考文档
+
+<!-- AI-LINKS-END -->

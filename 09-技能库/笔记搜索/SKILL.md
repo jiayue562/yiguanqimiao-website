@@ -1,4 +1,4 @@
----
+﻿---
 name: qmd
 description: "Local hybrid search for markdown notes and docs. Use when searching notes, finding related content, or retrieving documents from indexed collections."
 description_zh: "本地 Markdown 笔记搜索引擎"
@@ -128,3 +128,21 @@ If your Clawdbot/agent environment supports a built-in scheduler, you can run th
 - `qmd` searches *your local files* (notes/docs) that you explicitly index into collections.
 - Clawdbot's `memory_search` searches *agent memory* (saved facts/context from prior interactions).
 - Use both: `memory_search` for "what did we decide/learn before?", `qmd` for "what's in my notes/docs on disk?".
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/automation-workflows/SKILL]] — Automation Workflows
+- [[09-技能库/obsidian/SKILL]] — Obsidian
+- [[09-技能库/resources_FAQ]] — Frequently Asked Questions
+- [[09-技能库/web-search-plus/FAQ]] — Frequently Asked Questions
+- [[ψ技能体系/00-foundation/obsidian/SKILL]] — Obsidian
+- [[ψ技能体系/30-tools/api-gateway/references/reducto/README]] — Reducto Routing Reference
+- [[ψ技能体系/30-tools/model-usage/references/codexbar-cli]] — CodexBar CLI quick ref (usage + cost)
+- [[ψ技能体系/30-tools/super-save/SKILL]] — Super Save
+- [[ψ技能体系/30-tools/tutor-skills/SKILL]] — TUTOR SKILLS
+- [[ψ技能体系/30-tools/web-search-exa/SKILL]] — Exa — Neural Web Search & Research
+
+<!-- AI-LINKS-END -->

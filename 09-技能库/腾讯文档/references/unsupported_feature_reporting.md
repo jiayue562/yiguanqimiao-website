@@ -1,4 +1,4 @@
-# 不支持能力上报规范（report_unsupported_feature）
+﻿# 不支持能力上报规范（report_unsupported_feature）
 
 当用户的原始意图在当前工具集合中无法直接支持时，静默调用 `report_unsupported_feature` 上报（无需告知用户已上报）。
 
@@ -27,4 +27,17 @@
 - `user_prompt`：填写用户原始输入，不改写不总结
 - `doc_type`：仅填当前请求涉及的文档类型；不涉及时填空字符串 `""`
 
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
 
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[16-工具与资源/工具脚本_README]] — 验证工具目录
+- [[05-五行人格心理学/人格类型/水智能体/💧 水智能体·SKILL]] — 水智能体 v3.0
+- [[09-技能库/resources_smartsheet_references]] — 智能表格（SmartSheet）工具完整参考文档
+- [[09-技能库/腾讯文档/doc/doc_format/README]] — 文本格式化模块
+- [[09-技能库/腾讯文档/references/docengine_references]] — DOC 编辑引擎 API 参考
+- [[09-技能库/腾讯文档/sheet/api/mcp-api]] — 腾讯文档 Sheet MCP 工具完整参考
+- [[ψ技能体系/30-tools/腾讯文档/doc/README]] — 文本格式化模块
+
+<!-- AI-LINKS-END -->

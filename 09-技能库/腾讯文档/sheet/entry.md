@@ -1,4 +1,4 @@
-# Excel 文档（sheet）品类操作指引
+﻿# Excel 文档（sheet）品类操作指引
 
 本目录提供 Excel 文档（sheet）品类的专业操作能力，包括计算、筛选、统计、Excel操作相关场景。sheetengine 是独立的 MCP 服务，专用于 Sheet 文档的精细编辑操作。
 
@@ -138,3 +138,18 @@
 2. 调用tencent-sheetengine的get_cell_data，获取在线表格指定区域的单元格数据，支持返回CSV格式或结构化单元格数据
 3. 调用tencent-sheetengine的get_merged_cells,获取在线表格指定区域内与该区域相交的合并单元格信息，返回合并单元格范围列表
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_sheet_references]] — Sheet 表格操作参考文档
+- [[09-技能库/腾讯文档/doc/entry]] — Word 文档（doc）品类操作指引
+- [[09-技能库/腾讯文档/references/space_references]] — 知识库空间 API 参考
+- [[09-技能库/腾讯文档/sheet/api/operation-api]] — Sheet 表格操作参考文档
+- [[ψ技能体系/30-tools/study-planner/SKILL]] — 学习规划师
+- [[ψ技能体系/30-tools/腾讯文档/doc/entry]] — Word 文档（doc）品类操作指引
+- [[ψ技能体系/30-tools/腾讯文档/sheet/entry]] — Excel 文档（sheet）品类操作指引
+
+<!-- AI-LINKS-END -->

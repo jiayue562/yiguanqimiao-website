@@ -1,4 +1,4 @@
-# Skill 质量底线体系 v1.0
+﻿# Skill 质量底线体系 v1.0
 
 > **核心定位**：不是追求100分，而是确保所有Skill都达到**统一的及格线**。及格线由11个必选项与7个增强项组成，通过结构化清单确保质量可控。
 
@@ -531,3 +531,19 @@ Skill Builder不仅是"构建工具"，更是"质量守门人"
 **创建时间**：2026-03-31  
 **维护者**：龙龜神將 + 悟空  
 **集成**：Skill Builder v1.0 + 龙心OS v2.0
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/AI-OS六层架构智能体/triggers/auto-trigger]] — AI-OS六层架构智能体 · 自动触发规则
+- [[09-技能库/skill-builder/standards/QUALITY_CHECKLIST_TEMPLATE]] — Skill质量检查表模板 v1.0
+- [[09-技能库/skill-builder/standards/QUALITY_MANAGEMENT_AUTO]] — Skill质量管理自动化系�?v1.0
+- [[09-技能库/人机共生OS/triggers/trigger-rules]] — 人机共生OS · 自动触发规则
+- [[09-技能库/企业文化OS知识库/references/agent-core-capabilities]] — 企业文化OS知识库智能体 · 核心能力文档
+- [[09-技能库/知行合一自我进化/SKILL-build-temp-06-触发机制设计]] — 触发机制设计
+- [[ψ技能体系/30-tools/skill-builder/references/quality-standards]] — Skill 质量底线标准
+- [[ψ技能体系/99-archive/知行合一自我进化/SKILL-build-temp-06-触发机制设计]] — 触发机制设计
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# Ghost SCA Scanner
+﻿# Ghost SCA Scanner
 
 AI-powered Software Composition Analysis (SCA) scanner that detects exploitable vulnerabilities in your dependencies. Uses [wraith](https://github.com/ghostsecurity/wraith) for vulnerability detection with AI analysis to filter false positives.
 
@@ -250,3 +250,21 @@ Example GitHub Actions:
 ---
 
 *Powered by Wraith and AI Exploitability Analysis*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-deps/agents/analyze/analyzer]] — Analyzer Agent
+- [[09-技能库/ghost-scan-deps/agents/analyze/template-finding]] — SCA Finding: <vuln_id> in <package_name>
+- [[09-技能库/ghost-scan-deps/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/ghost-scan-deps/agents/summarize/template-report]] — SCA Vulnerability Scan Report
+- [[ψ技能体系/30-tools/claude-code-learning/SKILL]] — Claude Code Learning Skill
+- [[ψ技能体系/30-tools/md-to-pdf-cjk/SKILL]] — Markdown to PDF (CJK Support)
+- [[ψ技能体系/30-tools/podcast-ops/SKILL]] — Version check (silent if up to date)
+- [[ψ技能体系/30-tools/提示词工程专家/GETTING_STARTED]] — How to Use This Prompt Engineering Expert Skill
+- [[ψ技能体系/50-security/ghost-scan-deps/agents/analyze/analyzer]] — Analyzer Agent
+- [[ψ技能体系/50-security/ghost-scan-deps/agents/summarize/template-report]] — SCA Vulnerability Scan Report
+
+<!-- AI-LINKS-END -->

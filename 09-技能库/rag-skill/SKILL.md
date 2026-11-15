@@ -1,4 +1,4 @@
----
+﻿---
 title: "rag-skill - 知识库RAG增强"
 created: "2026-03-27"
 tags: [rag, knowledge-base, vector, retrieval]
@@ -75,3 +75,21 @@ IMA笔记 ──────── 移动端快速记录
 ---
 
 **版本**: 1.0 | **维护者**: 龙龟神将 | **更新**: 2026-03-27
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[00-索引与导航/知识图谱/智能查询系统]] — 🔍 智能查询与推荐系�?
+- [[01-核心体系/龙心OS_Obsidian与龙心OS整合增强方案]] — Obsidian与龙心OS整合增强方案
+- [[01-核心体系/龙心OS_知行合一自我进化工作流程指南]] — 知行合一自我进化工作流程指南
+- [[01-核心体系/龙心OS_📚 知识库建设Skill]] — 📚 知识库建设 · 三层架构设计与实施指南
+- [[16-工具与资源/projects_01-理论体系结构剖析]] — LLM Wiki 理论体系结构剖析
+- [[05-五行人格心理学/00-入口/附录A-Obsidian标准模板]] — 附录A：Obsidian知识文档标准模板
+- [[09-技能库/agentdb-vector-search/SKILL]] — AgentDB Vector Search Skill - 向量语义搜索
+- [[09-技能库/context7/SKILL]] — context7 - 实时文档查询
+- [[ψ技能体系/30-tools/agentdb-vector-search/SKILL]] — AgentDB Vector Search Skill - 向量语义搜索
+- [[ψ技能体系/30-tools/context7/SKILL]] — context7 - 实时文档查询 Skills v1.1
+
+<!-- AI-LINKS-END -->

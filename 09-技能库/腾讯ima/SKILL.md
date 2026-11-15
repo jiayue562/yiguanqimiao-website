@@ -1,4 +1,4 @@
----
+﻿---
 name: ima-skills
 description: |
   统一的 IMA OpenAPI 技能，支持笔记管理和知识库操作。
@@ -220,3 +220,18 @@ if ($useUtf8Bytes) {
 ```
 
 > **总结：** 在 PowerShell 5.1 环境中，**所有** API 调用（无论 notes 还是 knowledge-base）都必须将 Body 显式转为 UTF-8 字节数组。不检测版本直接发请求 = 中文内容必乱码。这是 PowerShell 5.1 的已知设计缺陷，不是 bug 可以被修复。
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ima-skill/knowledge-base/references/api]] — IMA知识库 API
+- [[09-技能库/ima-skills/ima-skill/knowledge-base/references/api]] — IMA知识库 API
+- [[09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/knowledge-base/references/api]] — IMA知识库 API
+- [[09-技能库/ima笔记/SKILL]] — ima-note
+- [[09-技能库/resources_manual-test-guide]] — IMA API 手动测试指南
+- [[09-技能库/腾讯ima/knowledge-base/references/api]] — IMA知识库 API
+- [[ψ技能体系/00-foundation/ima/knowledge-base/references/api]] — IMA知识库 API
+
+<!-- AI-LINKS-END -->

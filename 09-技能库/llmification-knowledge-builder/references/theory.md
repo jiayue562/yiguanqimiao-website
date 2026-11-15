@@ -1,4 +1,4 @@
-# Theory.md - LLMification 理论依据
+﻿# Theory.md - LLMification 理论依据
 
 > **来源**：Andrej Karpathy的"LLM Wiki"方法论
 > **核心论文**：从检索增强（RAG）到知识编译（Knowledge Compilation）的范式跃迁
@@ -263,3 +263,21 @@ Raw Layer → Wiki Layer → 微调 → Internalization
 **理论文档版本**：v1.0  
 **最后更新**：2026-04-08  
 **维护者**：龙龟神将
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/核心Skills_知识学习Skills-v2.5-易经卦变整合]] — 知识学习Skills v2.5 · 易经卦变整合完整版
+- [[03-知识地基层/音乐与AI的本质联结/NSD58A1-07-第七章-实践启示与未来图景]] — 第七章·实践启示与未来图景
+- [[16-工具与资源/projects_01-理论体系结构剖析]] — LLM Wiki 理论体系结构剖析
+- [[08-龙心OS核心系统/AI-OS知识库/🧠 龙脑OS·知识地基层/象思维·原象库/LLM Wiki实战方法论]] — LLM Wiki 实战方法论：用AI管理个人知识库
+- [[09-技能库/LLM-Wiki/references/operation-flows]] — LLM Wiki 操作流程详解 v2.0
+- [[09-技能库/llmification-knowledge-builder/SKILL]] — SKILL.md - LLMification Knowledge Builder
+- [[09-技能库/llmification-knowledge-builder/references/practice-guide]] — Practice Guide.md - LLMification 实操指南
+- [[09-技能库/llmification-knowledge-builder/templates/input-template]] — LLMification 输入模板
+- [[09-技能库/resources_LLM-Wiki 知识库建设]] — LLM Wiki 鐭ヨ瘑搴撳缓璁?- 鐭ヨ瘑瀛︿範鎶ュ憡
+- [[09-技能库/知识学习Skills/SKILL]] — 知识学习Skills
+
+<!-- AI-LINKS-END -->

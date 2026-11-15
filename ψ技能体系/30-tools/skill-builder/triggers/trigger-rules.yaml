@@ -1,0 +1,132 @@
+# Skill Builder 触发规则
+
+## P0 关键词（权重 5 - 绝对触发）
+
+当用户输入包含以下任一关键词时，立即触发 Skill Builder：
+
+```yaml
+P0_keywords:
+  - "构建 Skill"
+  - "构建技能"
+  - "创建 Skill"
+  - "创建技能"
+  - "设计 Skill"
+  - "设计技能"
+  - "生成 Skill"
+  - "自动化 Skill"
+  - "Skill Builder"
+```
+
+---
+
+## P1 场景（权重 4 - 强触发）
+
+当用户描述以下场景时，建议触发 Skill Builder：
+
+```yaml
+P1_scenarios:
+  - "我有一个方法论，想变成可复用的技能"
+  - "这个流程能不能自动化"
+  - "如何把这个理论做成 Skill"
+  - "想把这个能力固化下来"
+  - "有没有办法标准化这个流程"
+  - "每次都要手动做，能不能自动"
+```
+
+---
+
+## P2 信号（权重 3 - 弱触发）
+
+当检测到以下信号时，可以询问用户是否需要 Skill Builder：
+
+```yaml
+P2_signals:
+  - 用户提供理论文档 + 询问如何落地
+  - 用户描述复杂流程 + 询问如何标准化
+  - 用户重复执行相同操作≥3 次
+  - 用户提到"每次都"、"总是"等重复性词汇
+```
+
+---
+
+## 触发决策逻辑
+
+```
+IF P0 关键词匹配 THEN
+    立即触发 Skill Builder
+    置信度 = 100%
+
+ELSE IF P1 场景匹配 THEN
+    触发 Skill Builder
+    置信度 = 80%
+    询问确认："检测到您可能需要创建 Skill，是否使用 Skill Builder？"
+
+ELSE IF P2 信号匹配 THEN
+    建议 Skill Builder
+    置信度 = 50%
+    询问："这个流程是否需要固化为可复用的 Skill？"
+
+ELSE
+    不触发
+```
+
+---
+
+## 与其他 Skills 的关系
+
+```yaml
+skill_routes:
+  - skill: skill-vetter
+    relation: 下游
+    description: Skill 构建完成后，自动进行安全审查
+    
+  - skill: self-improving-agent
+    relation: 并行
+    description: Skill 使用后，自动收集反馈用于进化
+    
+  - skill: cron-helper
+    relation: 下游
+    description: Skill 可配置定时触发
+    
+  - skill: memory-systems
+    relation: 并行
+    description: Skill 使用记录写入长期记忆
+```
+
+---
+
+## 自动激活规则
+
+```json
+{
+  "auto_activate": {
+    "enabled": true,
+    "conditions": [
+      {
+        "type": "keyword_match",
+        "keywords": ["构建 Skill", "创建技能"],
+        "action": "immediate_activate"
+      },
+      {
+        "type": "pattern_match",
+        "pattern": "如何.*标准化 | 怎么.*自动化",
+        "action": "suggest_activate"
+      }
+    ],
+    "global_scope": true,
+    "priority": "high"
+  }
+}
+```
+
+---
+
+## 触发日志
+
+| 日期 | 触发类型 | 匹配内容 | 结果 | 用户反馈 |
+|------|----------|----------|------|----------|
+| 2026-04-13 | P0 | "构建 Skill" | ✅ 触发 | - |
+
+---
+
+_最后更新：2026-04-13 · Skill Builder v1.0_

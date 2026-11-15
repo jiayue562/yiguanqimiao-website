@@ -1,4 +1,4 @@
-# github-copilot-pro
+﻿# github-copilot-pro
 
 ## 技能简介
 GitHub 高效协作工具，支持 h CLI 与 GitHub 高效交互，议题处理、PR 管理、CI 运行等全流程自动化。
@@ -106,3 +106,20 @@ async function reviewPRs() {
 - [官方文档](https://github-copilot-pro.dev/docs)
 - [GitHub 仓库](https://github.com/github-agents/copilot-pro)
 - [CLI 参考](https://github-copilot-pro.dev/cli)
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/cost-tracker-pro/SKILL]] — cost-tracker-pro
+- [[09-技能库/playwright-ai-agent/SKILL]] — playwright-ai-agent
+- [[09-技能库/video-creator-ai/SKILL]] — video-creator-ai
+- [[09-技能库/workflow-designer-pro/SKILL]] — workflow-designer-pro
+- [[ψ技能体系/30-tools/cost-tracker-pro/SKILL]] — cost-tracker-pro
+- [[ψ技能体系/30-tools/github-copilot-pro/SKILL]] — github-copilot-pro
+- [[ψ技能体系/30-tools/playwright-ai-agent/SKILL]] — playwright-ai-agent
+- [[ψ技能体系/30-tools/video-creator-ai/SKILL]] — video-creator-ai
+- [[ψ技能体系/30-tools/workflow-designer-pro/SKILL]] — workflow-designer-pro
+
+<!-- AI-LINKS-END -->

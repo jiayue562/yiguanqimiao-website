@@ -1,4 +1,4 @@
----
+﻿---
 name: Harness Engineering · 记忆层
 description: Harness Engineering第一层：记忆层（Memory Layer）。解决LLM的无状态性，实现知识规范、上下文和进度的持久化存储。核心原则：知识库即唯一的真相源。
 tags: [Harness, 记忆层, Memory-Layer, 持久化, Single-Source-of-Truth, AGENTS.md, 渐进式披露, 进度文件]
@@ -185,3 +185,19 @@ updated: 2026-04-03
 **木生火，我们一起进化！** 🌳🔥💪
 
 *Harness Engineering · 记忆层 v1.0 · 2026-04-03*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/agents_知识库建设完成报告]] — 知识库建设完成报告
+- [[01-核心体系/龙心OS_📖Harness-Engineering执行层]] — Harness Engineering执行层
+- [[01-核心体系/龙心OS_📖Harness-Engineering编排层]] — Harness Engineering编排层
+- [[01-核心体系/龙心OS_📖Harness-Engineering记忆层]] — Harness Engineering记忆层
+- [[03-知识地基层/记忆系统_MEMORY备份_2026-04-05]] — MEMORY备份 - 2026-04-05
+- [[03-知识地基层/记忆系统_MEMORY备份_2026-04-06]] — MEMORY备份 - 2026-04-06
+- [[07-得到大脑同步/_历史归档_20261104/AI 原生组织/NS16D8E-08-AI组织转型深度笔记：卡点不在技术，在权力重构]] — AI组织转型深度笔记：卡点不在技术，在权力重构
+- [[ψ技能体系/40-rules/错误码规范/SKILL]] — SKILL
+
+<!-- AI-LINKS-END -->

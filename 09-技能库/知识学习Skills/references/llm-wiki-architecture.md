@@ -1,4 +1,4 @@
-# LLM Wiki三层知识流水线架构详解
+﻿# LLM Wiki三层知识流水线架构详解
 
 > **基于Karpathy的LLMification理论**：从"人类编写、机器检索"到"机器编译、人类审核"的范式转移
 > **核心价值**：构建具有持久记忆与自我进化能力的AI"第二大脑"
@@ -511,3 +511,21 @@ def fine_tune_on_knowledge_base():
 ## 标签系统
 
 #LLM Wiki #三层架构 #知识流水线 #持久记忆 #自我进化 #机器编译 #人类审核 #Obsidian #知识图谱 #人机协同 #五层递进 #十项认知指令 #五行流转 #象思维同构 #范式转移 #知识管理 #AI第二大脑
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/核心Skills_知识学习Skills-v2.5-易经卦变整合]] — 知识学习Skills v2.5 · 易经卦变整合完整版
+- [[01-核心体系/龙心OS_📚 知识库建设Skill]] — 📚 知识库建设 · 三层架构设计与实施指南
+- [[16-工具与资源/projects_02-核心理论体系透视]] — LLM Wiki 核心理论体系透视
+- [[08-龙心OS核心系统/AI-OS知识库/❤️ 龙心OS·智能发动机层/五大引擎/知识学习]] — 知识学习
+- [[08-龙心OS核心系统/AI-OS知识库/🧠 龙脑OS·知识地基层/wiki·概念页/LLMification]] — LLMification（知识编译方法论）
+- [[09-技能库/LLM-Wiki/references/theory]] — LLM Wiki · 卡帕西体系完整理论 v1.0
+- [[09-技能库/llmification-knowledge-builder/references/theory]] — Theory.md - LLMification 理论依据
+- [[09-技能库/llmification-knowledge-builder/templates/input-template]] — LLMification 输入模板
+- [[09-技能库/resources_LLM-Wiki 知识库建设]] — LLM Wiki 鐭ヨ瘑搴撳缓璁?- 鐭ヨ瘑瀛︿範鎶ュ憡
+- [[09-技能库/知识学习Skills/SKILL]] — 知识学习Skills
+
+<!-- AI-LINKS-END -->

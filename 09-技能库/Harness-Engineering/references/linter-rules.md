@@ -1,4 +1,4 @@
----
+﻿---
 name: Harness Engineering - Linter Rules
 description: 龙心OS Deterministic Linter Rules System
 tags: [Linter, Mechanized-Constraints, Legal-Compliance, Symbiosis-Relationship, Thinking-Mode, Cultural-Constraint]
@@ -163,3 +163,17 @@ RULE_400-499: System Specification Linter
 *Wood generates Fire, we evolve together!*
 
 *龙心OS - Deterministic Linter Rules v1.0 - 2026-04-03*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_📖Harness-Engineering-Linter规则]] — Harness Engineering Linter规则
+- [[01-核心体系/龙心OS_📖Harness-Engineering反馈层]] — Harness Engineering反馈层
+- [[08-龙心OS核心系统/记忆系统/AGENTS]] — AGENTS.md - 龙心OS Entry Map
+- [[09-技能库/腾讯文档/sheet/api/js-script-rule]] — Response Language Rules (Priority: 1 > 2 > 3)
+- [[ψ技能体系/30-tools/minimax-xlsx/references/validate]] — Formula Validation & Recalculation Guide
+- [[ψ技能体系/30-tools/腾讯文档/sheet/js-script-rule]] — Response Language Rules (Priority: 1 > 2 > 3)
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# L1×凤心OS协作协议完整版
+﻿# L1×凤心OS协作协议完整版
 
 > **版本**：v1.0（2026-03-30）
 > **协议目标**：明确L1·一心·统摄与凤心OS之间的清晰分工与无缝衔接机制
@@ -249,3 +249,17 @@ analysis_result:
 ---
 
 *L1×凤心OS协作协议 · 共创不止·进化不息*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/L1·一心·统摄/in/人格测评]] — 人格测评场景文件
+- [[09-技能库/五行人格心理学OS/package-summary]] — 🎯 五行人格心理学 OS · 封装总览
+- [[09-技能库/凤爪OS.skills/references/L1-fengxin-integration]] — 凤爪OS与凤心OS的L1协作协议
+- [[09-技能库/凤爪OS.skills/triggers/auto-trigger-config]] — 凤爪OS.skills 自动触发配置
+- [[ψ技能体系/20-claws/00-wuxing/L1·一心·统摄/in/人格测评]] — 人格测评场景文件
+- [[ψ技能体系/20-claws/00-wuxing/L1·一心·统摄/references/L1-fengxin-integration]] — L1×凤心OS协作协议完整版
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# Analyzer Agent
+﻿# Analyzer Agent
 
 You are a deep code analysis agent. Your job is to thoroughly analyze a single candidate file for vulnerabilities matching a specific attack vector. If you find a genuine vulnerability, you write a finding file to disk. If the candidate is clean, you write nothing (except checking off the tracker).
 
@@ -138,3 +138,17 @@ Output a short summary with no commentary. Format: `<file> | <agent>/<vector> �
 Examples:
 - `handlers/transfers.go | authz/bola — 1 finding`
 - `handlers/accounts.go | authz/bola — clean`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-deps/agents/analyze/agent]] — Analysis Agent
+- [[09-技能库/ghost-scan-secrets/agents/analyze/analyzer]] — Analyzer Agent
+- [[ψ技能体系/50-security/ghost-scan-code/prompts/analyzer]] — Analyzer Agent
+- [[ψ技能体系/50-security/ghost-scan-code/prompts/nominator]] — Nominator Agent
+- [[ψ技能体系/50-security/ghost-scan-code/prompts/planner]] — Planner Agent
+- [[ψ技能体系/50-security/ghost-scan-code/prompts/verifier]] — Verifier Agent
+
+<!-- AI-LINKS-END -->

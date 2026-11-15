@@ -1,0 +1,13 @@
+triggers:
+  - keywords: ["上下文优化", "上下文注入", "上下文摘要"]
+    weight: 5
+    module: session-context
+    action: optimize
+  - keywords: ["会话管理", "Prompt管理", "跨Skill上下文"]
+    weight: 4
+    module: cross-skill-context
+    action: coordinate
+  - keywords: ["上下文太长", "总结会话", "上下文快照"]
+    weight: 4
+    module: session-context
+    action: summarize

@@ -1,4 +1,4 @@
-# 龙心 OS 自主学习系统 - 完整指令手册
+﻿# 龙心 OS 自主学习系统 - 完整指令手册
 
 > 📚 四层学习能力架构 · 9 条核心指令
 
@@ -385,3 +385,21 @@ openclaw cron add --schedule "0 9 * * 1" --command "weekly-knowledge-summary"
 ---
 
 _龙心 OS 自主学习系统 v1.0 · 最后更新：2026-04-13 · 悟空 × 龙龟 共同维护_
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[13-WorkBuddy-Sync/10-kernel/入心协议/入心协议.SKILL]] — 入心协议 · 共生启动器
+- [[01-核心体系/agents_Skill 构建 SOP]] — Skill 构建 SOP - 龙心 OS 技能开发标准流程
+- [[03-知识地基层/记忆系统_记忆系统安装完成报告-v3.0]] — 记忆系统安装完成报告 v3.0
+- [[08-龙心OS核心系统/记忆系统/HEARTBEAT]] — HEARTBEAT.md - 龙龟神将心跳监测
+- [[08-龙心OS核心系统/记忆系统/SELF-LEARNING]] — SELF-LEARNING.md - 自主学习系统
+- [[09-技能库/gog/SKILL]] — gog - Google Workspace集成
+- [[09-技能库/memory-management/SKILL]] — Memory Management Skill - 分层记忆管理
+- [[09-技能库/resources_SKILL]] — 长期记忆档案 · MEMORYmd
+- [[09-技能库/五行人格心理学/辅助Skills/03-记忆上下文/用户画像存储/SKILL]] — 用户画像存储 · User Profile Manager
+- [[09-技能库/学习能力系统/SKILL]] — 学习能力系统 · 超强系统化学习能力封装
+
+<!-- AI-LINKS-END -->

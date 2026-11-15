@@ -1,0 +1,132 @@
+{
+  "protocol": "企业文化OS MCP v1.0",
+  "version": "1.0",
+  "created": "2026-04-10",
+  "maintainer": "龙龟神将",
+
+  "sub_agents": {
+    "qiye-wenhua-zhenduan": {
+      "name": "企业文化诊断子智能体",
+      "endpoint": "skills/qiye-wenhua-zhenduan/SKILL.md",
+      "capabilities": ["diagnose", "survey", "interview", "analysis", "report"],
+      "input_schema": {
+        "type": "object",
+        "required": ["enterprise_name", "industry"],
+        "properties": {
+          "enterprise_name": {"type": "string", "description": "企业名称"},
+          "industry": {"type": "string", "description": "所属行业"},
+          "scale": {"type": "string", "description": "企业规模"},
+          "diagnosis_type": {"type": "string", "enum": ["全面", "快速", "专项"]}
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "report_path": {"type": "string"},
+          "health_score": {"type": "number"},
+          "key_issues": {"type": "array"},
+          "recommendations": {"type": "array"}
+        }
+      }
+    },
+
+    "rongru-shidai": {
+      "name": "融入时代子智能体",
+      "endpoint": "skills/rongru-shidai/SKILL.md",
+      "capabilities": ["era_analysis", "industry_analysis", "competition_analysis"],
+      "dependencies": [],
+      "input_schema": {
+        "type": "object",
+        "required": ["enterprise_name", "industry"],
+        "properties": {
+          "enterprise_name": {"type": "string"},
+          "industry": {"type": "string"},
+          "enterprise_data": {"type": "object"}
+        }
+      }
+    },
+
+    "jingying-xinfa": {
+      "name": "经营心法子智能体",
+      "endpoint": "skills/jingying-xinfa/SKILL.md",
+      "capabilities": ["mission", "vision", "values", "strategy", "business_model"],
+      "dependencies": ["rongru-shidai"],
+      "input_schema": {
+        "type": "object",
+        "required": ["era_analysis_result"],
+        "properties": {
+          "era_analysis_result": {"type": "object"},
+          "enterprise_data": {"type": "object"}
+        }
+      }
+    },
+
+    "fenwei-yingzao": {
+      "name": "氛围营造子智能体",
+      "endpoint": "skills/fenwei-yingzao/SKILL.md",
+      "capabilities": ["visual_identity", "auditory_identity", "behavior_identity"],
+      "dependencies": ["jingying-xinfa"]
+    },
+
+    "liyi-yishi": {
+      "name": "礼乐仪式子智能体",
+      "endpoint": "skills/liyi-yishi/SKILL.md",
+      "capabilities": ["ritual_design", "ceremony_planning", "music_system"],
+      "dependencies": ["jingying-xinfa"]
+    },
+
+    "gongxun-tixi": {
+      "name": "功勋体系子智能体",
+      "endpoint": "skills/gongxun-tixi/SKILL.md",
+      "capabilities": ["honor_system", "reward_mechanism", "recognition_program"],
+      "dependencies": ["jingying-xinfa"]
+    },
+
+    "qiye-shangxueyuan": {
+      "name": "企业商学院子智能体",
+      "endpoint": "skills/qiye-shangxueyuan/SKILL.md",
+      "capabilities": ["training_system", "curriculum_design", "lecturer_development"],
+      "dependencies": ["jingying-xinfa", "fenwei-yingzao", "liyi-yishi", "gongxun-tixi"]
+    },
+
+    "qiye-dashijian": {
+      "name": "企业大事件子智能体",
+      "endpoint": "skills/qiye-dashijian/SKILL.md",
+      "capabilities": ["story_mining", "event_recording", "culture_genealogy"],
+      "dependencies": []
+    }
+  },
+
+  "communication": {
+    "protocol": "json-rpc",
+    "transport": "file-based",
+    "encoding": "utf-8",
+    
+    "handshake": {
+      "type": "request-response",
+      "timeout_ms": 30000,
+      "retry_count": 3
+    },
+
+    "message_format": {
+      "request": {
+        "jsonrpc": "2.0",
+        "method": "string",
+        "params": {},
+        "id": "number"
+      },
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {},
+        "error": null,
+        "id": "number"
+      }
+    }
+  },
+
+  "data_sync": {
+    "shared_context_file": ".culture-os-context.json",
+    "sync_on": ["task_complete", "state_change", "error"],
+    "conflict_resolution": "last-writer-wins"
+  }
+}

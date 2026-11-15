@@ -1,0 +1,178 @@
+# 教员方法论 · 触发规则
+
+> 🔔 自动触发配置 · 2026-04-16
+
+---
+
+## P0 直接触发（权重 5）
+
+```yaml
+trigger_type: direct
+weight: 5
+auto_activate: true
+
+keywords:
+  - "教员方法论"
+  - "矛盾分析"
+  - "主要矛盾"
+  - "根本矛盾"
+  - "阶段矛盾"
+  - "矛盾的主要方面"
+  - "主次矛盾转化"
+  - "找装填"
+  - "找成熟模型"
+  - "改装框架"
+  - "填入现实"
+
+patterns:
+  - "帮我分析.*矛盾"
+  - ".*主要矛盾是什么"
+  - ".*根本矛盾是什么"
+  - "如何找到.*问题"
+  - ".*问题怎么解决"
+  - "目标.*矛盾"
+  - "阶段.*矛盾"
+  - "矛盾转化条件"
+```
+
+---
+
+## P1 场景触发（权重 4）
+
+```yaml
+trigger_type: scenario
+weight: 4
+auto_activate: false
+confirm_required: true
+
+scenarios:
+  - name: "问题分析"
+    keywords:
+      - "分析问题"
+      - "问题出在哪里"
+      - "问题根源"
+      - "问题诊断"
+      - "问题定位"
+    
+  - name: "方案制定"
+    keywords:
+      - "制定方案"
+      - "解决方案"
+      - "行动计划"
+      - "如何实施"
+      - "怎么做"
+    
+  - name: "实践复盘"
+    keywords:
+      - "复盘"
+      - "总结"
+      - "反思"
+      - "经验教训"
+      - "哪里出了问题"
+    
+  - name: "目标设定"
+    keywords:
+      - "目标"
+      - "目的"
+      - "想要达成"
+      - "期望结果"
+      - "KPI"
+```
+
+---
+
+## P2 信号触发（权重 3）
+
+```yaml
+trigger_type: signal
+weight: 3
+auto_activate: false
+suggest_only: true
+
+signals:
+  - pattern: "遇到.*困难"
+    suggestion: "可以使用教员方法论分析困难背后的矛盾"
+    
+  - pattern: "不知道.*怎么办"
+    suggestion: "可以使用教员方法论找到主要矛盾"
+    
+  - pattern: ".*走不通"
+    suggestion: "可以向上找根本矛盾或向下走 PDCA 分析"
+    
+  - pattern: ".*瓶颈"
+    suggestion: "可以使用矛盾分析找到瓶颈的根源"
+    
+  - pattern: ".*纠结"
+    suggestion: "可以分析矛盾的主要方面帮助决策"
+```
+
+---
+
+## 协同路由
+
+```yaml
+collaboration:
+  - from: "知识学习"
+    to: "教员方法论"
+    condition: "深度学习后需要分析应用"
+    action: "auto"
+    
+  - from: "教员方法论"
+    to: "知行合一"
+    condition: "分析完成后需要落地执行"
+    action: "auto"
+    
+  - from: "象思维"
+    to: "教员方法论"
+    condition: "直观把握本质后需要系统分析"
+    action: "confirm"
+    
+  - from: "五色光思维"
+    to: "教员方法论"
+    condition: "多角度分析后需要聚焦主要矛盾"
+    action: "confirm"
+    
+  - from: "人机协同五象限"
+    to: "教员方法论"
+    condition: "需要分析问题确定协同模式"
+    action: "confirm"
+```
+
+---
+
+## 排除规则
+
+```yaml
+exclude:
+  - pattern: ".*情感.*"
+    reason: "情感类问题不适合矛盾分析"
+    
+  - pattern: ".*艺术.*"
+    reason: "艺术创作类问题不适合矛盾分析"
+    
+  - pattern: ".*灵感.*"
+    reason: "灵感创意类问题不适合矛盾分析"
+    
+  - pattern: ".*感觉.*"
+    reason: "纯感受类问题不适合矛盾分析"
+```
+
+---
+
+## 激活日志
+
+```yaml
+activation_log:
+  enabled: true
+  path: "logs/activation.log"
+  format: "[{timestamp}] {trigger_type} - {keywords} - {result}"
+
+routing_log:
+  enabled: true
+  path: "logs/routing.log"
+  format: "[{timestamp}] {from} -> {to} - {condition} - {action}"
+```
+
+---
+
+_教员方法论 · 触发规则 v1.0 · 2026-04-16 · 龙心 OS_

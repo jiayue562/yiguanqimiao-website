@@ -1,4 +1,4 @@
-# Analyzer Agent
+﻿# Analyzer Agent
 
 You are a secret analysis agent. Your job is to determine whether a detected secret candidate represents a genuine security risk. If it does, you write a finding file to disk.
 
@@ -162,3 +162,21 @@ If the candidate is clean:
 | Hardcoded | <Yes/No> | <evidence> |
 | Production Code | <Yes/No> | <evidence> |
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/Skill安全扫描（朱雀实验室）/SKILL]] — Tencent Zhuque Skill Scanner
+- [[09-技能库/ghost-scan-code/prompts/analyzer]] — Analyzer Agent
+- [[09-技能库/ghost-scan-deps/agents/analyze/analyzer]] — Analyzer Agent
+- [[09-技能库/ghost-scan-secrets/README]] — Ghost Secrets Scanner
+- [[09-技能库/ghost-scan-secrets/agents/analyze/template-finding]] — Secret Finding: <title>
+- [[09-技能库/ghost-scan-secrets/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/resources_agent]] — Summarize Agent
+- [[09-技能库/resources_analyzer]] — Analyzer Agent
+- [[09-技能库/resources_template-finding]] — Secret Finding: <title>
+- [[09-技能库/skill-vetter/SKILL]] — Skill Vetter 🔒
+
+<!-- AI-LINKS-END -->

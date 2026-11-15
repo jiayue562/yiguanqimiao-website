@@ -1,0 +1,20 @@
+skill-routes:
+  self-learning:
+    direction: input
+    action: "学习完成 → 自动 Ingest"
+    description: "self-learning 学习的知识自动编译到 Wiki"
+
+  agent-memory-systems:
+    direction: output
+    action: "Wiki 编译 → 语义记忆提取"
+    description: "编译经验提取为语义记忆"
+
+  super-save:
+    direction: output
+    action: "重要知识 → 记忆系统"
+    description: "重要知识同时保存到记忆"
+
+  ima-skill:
+    direction: output
+    action: "Wiki 页面 → IMA 云端"
+    description: "本地 Wiki 同步到 IMA 知识库"

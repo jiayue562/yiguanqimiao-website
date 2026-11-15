@@ -1,4 +1,4 @@
----
+﻿---
 name: self-improving-agent
 description: A universal self-improving agent that learns from ALL skill experiences. Uses multi-memory architecture (semantic + episodic + working) to continuously evolve the codebase. Auto-triggers on skill completion/error with hooks-based self-correction.
 allowed-tools: Read, Write, Edit, Bash, Grep, Glob, WebSearch
@@ -406,3 +406,21 @@ After any skill completes, this agent automatically:
 - [Lifelong Learning of LLM based Agents](https://arxiv.org/html/2501.07278v1)
 - [Evo-Memory: DeepMind's Benchmark](https://shothota.medium.com/evo-memory-deepminds-new-benchmark)
 - [Let's Build a Self-Improving AI Agent](https://medium.com/@nomannayeem/lets-build-a-self-improving-ai-agent-that-learns-from-your-feedback-722d2ce9c2d9)
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/Harness-Engineering/references/orchestration-layer]] — Harness Engineering - Orchestration Layer
+- [[09-技能库/agent-memory-systems/SKILL]] — Agent Memory Systems
+- [[09-技能库/automation-workflows/SKILL]] — Automation Workflows
+- [[09-技能库/humanizer/README]] — Humanizer
+- [[09-技能库/resources_appendix]] — Appendix
+- [[09-技能库/self-improving-agent/README]] — Self-Improving Agent
+- [[09-技能库/self-improving-agent/references/appendix]] — Appendix
+- [[ψ技能体系/10-kernel/龙心OS/self-improving-agent/README]] — Self-Improving Agent
+- [[ψ技能体系/10-kernel/龙心OS/self-improving-agent/SKILL]] — Self-Improving Agent
+- [[ψ技能体系/10-kernel/龙心OS/self-improving-agent/references/appendix]] — Appendix
+
+<!-- AI-LINKS-END -->

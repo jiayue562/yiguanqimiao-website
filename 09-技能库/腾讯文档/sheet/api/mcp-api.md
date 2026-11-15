@@ -1,4 +1,4 @@
-# 腾讯文档 Sheet MCP 工具完整参考
+﻿# 腾讯文档 Sheet MCP 工具完整参考
 
 本文件包含腾讯文档 Sheet MCP 所有工具的通用 API 说明、详细调用示例、参数说明和返回值说明。
 
@@ -769,3 +769,21 @@
 ```json
 {}
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[21-学习档案/内容创作系统_All-Sources]] — 全部来源索引
+- [[09-技能库/resources_api_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/resources_sheet_references]] — Sheet 表格操作参考文档
+- [[09-技能库/resources_smartcanvas_references]] — 智能文档（SmartCanvas）工具完整参考文档
+- [[09-技能库/resources_smartsheet_references]] — 智能表格（SmartSheet）工具完整参考文档
+- [[09-技能库/腾讯会议/SKILL]] — tencent-meeting-mcp
+- [[09-技能库/腾讯会议/references/api_references]] — 腾讯会议 MCP 工具完整参考
+- [[09-技能库/腾讯文档/references/auth]] — 腾讯文档鉴权检查
+- [[09-技能库/腾讯文档/references/diagram_references]] — 图形化文档（思维导图 / 流程图）参考文档
+- [[09-技能库/腾讯文档/references/manage_references]] — 腾讯文档 MCP 工具完整参考
+
+<!-- AI-LINKS-END -->

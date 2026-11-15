@@ -1,4 +1,4 @@
-# Communication Skill（通信规则）
+﻿# Communication Skill（通信规则）
 
 ## 📖 技能定义
 
@@ -444,3 +444,17 @@ response_time:
 **对标来源**: OpenClaw Communication规则
 **AI龙龟共生伙伴操作系统版本**: v4.1
 **路径**: `C:\Users\jia'yue\.workbuddy\skills\通信规则\SKILL.md`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[13-WorkBuddy-Sync/04-Knowledge/附录B-AI龙龟共生OS-Skills生态全图]] — 附录B：AI龙龟共生OS · Skills生态全图
+- [[00-索引与导航/🔗 双向链接规范 v1.0]] — 🔗 双向链接规范 v1.0
+- [[01-核心体系/AI龙龟共生伙伴操作系统/合稿/合稿报告-AI龙龟共生伙伴操作系统-20260911]] — 《AI 龙龟共生伙伴操作系统》合稿报告
+- [[05-五行人格心理学/理论基石/系统配置_同步报告_20260326_0807]] — 三向同步报告 - 2026-03-26
+- [[09-技能库/llmification-knowledge-builder/references/practice-guide]] — Practice Guide.md - LLMification 实操指南
+- [[09-技能库/llmification-knowledge-builder/templates/input-template]] — LLMification 输入模板
+
+<!-- AI-LINKS-END -->

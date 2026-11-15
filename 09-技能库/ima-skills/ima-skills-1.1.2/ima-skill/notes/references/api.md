@@ -1,4 +1,4 @@
-# IMA笔记 API
+﻿# IMA笔记 API
 
 ## ⚠️ 必读约束
 
@@ -339,3 +339,21 @@ POST /openapi/note/v1/get_doc_content
 | 310001 | 笔记本不存在                                 |
 | 20002  | apiKey超过最大限频                           |
 | 20004  | apikey鉴权失败                               |
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[16-工具与资源/工具技能_PPT读取技能包]] — PPT读取技能包
+- [[09-技能库/ima-skill/notes/SKILL]] — Notes (笔记)
+- [[09-技能库/ima-skill/notes/references/api]] — IMA笔记 API
+- [[09-技能库/ima-skills/ima-skill/notes/SKILL]] — Notes (笔记)
+- [[09-技能库/ima-skills/ima-skill/notes/references/api]] — IMA笔记 API
+- [[09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/notes/SKILL]] — Notes (笔记)
+- [[09-技能库/ima笔记/references/api]] — IMA笔记 API
+- [[09-技能库/resources_api]] — IMA笔记 API
+- [[09-技能库/resources_usage-examples]] — IMA 技能使用示例
+- [[09-技能库/腾讯ima/notes/SKILL]] — Notes (笔记)
+
+<!-- AI-LINKS-END -->

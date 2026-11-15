@@ -1,0 +1,10 @@
+# 记忆语义检索 - Python 依赖
+
+# Embedding 模型
+sentence-transformers>=2.2.2
+
+# 相似度计算
+scikit-learn>=1.0.0
+
+# 数值计算
+numpy>=1.21.0

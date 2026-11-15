@@ -1,4 +1,4 @@
-# Finding: <title>
+﻿# Finding: <title>
 
 ## Metadata
 - **ID**: <finding_id>
@@ -42,3 +42,17 @@
 - **Reason**: <pending>
 - **Verified By**: <pending>
 - **Criteria Confirmed**: <pending>
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-deps/agents/analyze/template-finding]] — SCA Finding: <vuln_id> in <package_name>
+- [[09-技能库/ghost-scan-secrets/agents/analyze/template-finding]] — Secret Finding: <title>
+- [[09-技能库/resources_template-finding]] — Secret Finding: <title>
+- [[ψ技能体系/50-security/ghost-scan-code/prompts/template-finding]] — Finding: <title>
+- [[ψ技能体系/50-security/ghost-scan-deps/agents/analyze/template-finding]] — SCA Finding: <vuln_id> in <package_name>
+- [[ψ技能体系/50-security/ghost-scan-secrets/agents/analyze/template-finding]] — Secret Finding: <title>
+
+<!-- AI-LINKS-END -->

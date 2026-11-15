@@ -1,4 +1,4 @@
-# Knowledge Base (知识库)
+﻿# Knowledge Base (知识库)
 
 > Prerequisites: see root `../SKILL.md` for setup, credentials, and `ima_api()` helper.
 
@@ -519,3 +519,17 @@ ima_api "openapi/wiki/v1/get_addable_knowledge_base_list" '{"cursor": "", "limit
 - COS 上传脚本失败（非零退出码）时，不要继续调用 `add_knowledge`
 - COS 上传时 `--content-type` 应传入文件的实际 MIME 类型（如 `application/pdf`），而非通用的 `application/octet-stream`
 - 当用户提供 URL 添加到知识库时，必须先检测 URL 是否指向文件（通过 URL 路径扩展名 + HEAD 请求 Content-Type），文件型 URL 需下载后走上传流程；网页/微信文章型 URL 使用 `import_urls`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ima-skill/knowledge-base/references/api]] — IMA知识库 API
+- [[09-技能库/ima-skills/ima-skill/knowledge-base/references/api]] — IMA知识库 API
+- [[09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/knowledge-base/references/api]] — IMA知识库 API
+- [[09-技能库/腾讯ima/knowledge-base/references/api]] — IMA知识库 API
+- [[ψ技能体系/00-foundation/ima/knowledge-base/references/api]] — IMA知识库 API
+- [[ψ技能体系/30-tools/ima-skill/knowledge-base/references/api]] — IMA知识库 API
+
+<!-- AI-LINKS-END -->

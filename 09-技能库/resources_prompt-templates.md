@@ -1,4 +1,4 @@
-# 金行人格心理学提示词模板
+﻿# 金行人格心理学提示词模板
 
 > 本文档包含金行人分析、诊断、转化的各类提示词模板
 
@@ -323,3 +323,18 @@
 3. 阶段性计划
 4. 评估机制
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/五行人格心理学/references/prompt-templates]] — 五行人格心理学提示词模板
+- [[09-技能库/五行人格心理学/五行人格总智能体/土行人分智能体/references/prompt-templates]] — 土行人分智能体提示词模板
+- [[09-技能库/五行人格心理学/五行人格总智能体/水行人分智能体/references/prompt-templates]] — 水行人提示词模板集
+- [[09-技能库/五行人格心理学/五行人格总智能体/火行人分智能体/references/prompt-templates]] — 火行人分析提示词模板集
+- [[09-技能库/五行人格心理学/五行人格总智能体/金行人分智能体/references/prompt-templates]] — 金行人分智能体提示词模板
+- [[09-技能库/水行人格心理学/references/prompt-templates]] — 水行人格心理学提示词模板集
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/reference/prompts]] — LLM 提示词模板
+
+<!-- AI-LINKS-END -->

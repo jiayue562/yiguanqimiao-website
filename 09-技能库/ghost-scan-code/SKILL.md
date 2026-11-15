@@ -1,4 +1,4 @@
----
+﻿---
 name: "ghost-scan-code"
 description: "Ghost Security - SAST code scanner. Finds security vulnerabilities in source code by planning and executing targeted scans for issues like SQL injection, XSS, BOLA, BFLA, SSRF, and other OWASP categories. Supports applications (backend, frontend, mobile) and libraries (prototype pollution, unsafe deserialization, ReDoS, path traversal, zip slip). Use when the user asks for a code security audit, SAST scan, vulnerability scan of source code, or wants to find security flaws in a codebase or library."
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash
@@ -135,3 +135,21 @@ After all steps complete, report the scan results:
 1. List all finding files in `$scan_dir/findings/`
 2. Count verified vs rejected findings
 3. Present a summary to the user
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-code/prompts/nominator]] — Nominator Agent
+- [[09-技能库/ghost-scan-code/prompts/planner]] — Planner Agent
+- [[09-技能库/ghost-scan-deps/SKILL]] — Ghost Security SCA Scanner — Orchestrator
+- [[09-技能库/ghost-scan-secrets/SKILL]] — Ghost Security Secrets Scanner — Orchestrator
+- [[09-技能库/resources_nominator]] — Nominator Agent
+- [[09-技能库/resources_planner]] — Planner Agent
+- [[_index]] — Vault Index
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/xiaohongshu-skills-main/docs/superpowers/plans/2026-05-19-xhs-netlogger]] — XHS NetLogger Implementation Plan
+- [[ψ技能体系/30-tools/deep-research/research-en/research-add-fields/SKILL]] — Research Add Fields - Supplement Research Fields
+- [[ψ技能体系/30-tools/deep-research/research-en/research-add-items/SKILL]] — Research Add Items - Supplement Research Objects
+
+<!-- AI-LINKS-END -->

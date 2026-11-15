@@ -1,4 +1,4 @@
----
+﻿---
 name: baidu-search
 description: Search the web using Baidu AI Search Engine (BDSE). Use for live information, documentation, or research topics.
 metadata: { "openclaw": { "emoji": "🔍︎",  "requires": { "bins": ["python3"], "env":["BAIDU_API_KEY"]},"primaryEnv":"BAIDU_API_KEY" } }
@@ -61,3 +61,18 @@ python3 scripts/search.py '{
 ## Current Status
 
 Fully functional.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/baidu-search/references/apikey-fetch]] — Baidu API Key Setup Guide (OpenClaw)
+- [[09-技能库/ghost-scan-deps/agents/analyze/agent]] — Analysis Agent
+- [[09-技能库/resources_CHANGELOG]] — Changelog - Web Search Plus
+- [[09-技能库/resources_FAQ]] — Frequently Asked Questions
+- [[09-技能库/web-search-plus/FAQ]] — Frequently Asked Questions
+- [[ψ技能体系/30-tools/hermes-agent/SKILL]] — Hermes Agent Skill
+- [[ψ技能体系/30-tools/tavily/references/api-reference]] — Tavily API Reference
+
+<!-- AI-LINKS-END -->

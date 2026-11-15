@@ -1,4 +1,4 @@
----
+﻿---
 name: mcporter
 description: "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation."
 description_zh: "管理和调用 MCP 服务器与工具"
@@ -37,3 +37,18 @@ Codegen
 Notes
 - Config default: `./config/mcporter.json` (override with `--config`).
 - Prefer `--output json` for machine-readable results.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-secrets/agents/analyze/template-finding]] — Secret Finding: <title>
+- [[09-技能库/ghost-scan-secrets/agents/scan/agent]] — Scan Agent
+- [[09-技能库/resources_template-finding]] — Secret Finding: <title>
+- [[ψ技能体系/30-tools/MCP管理器/SKILL]] — mcporter
+- [[ψ技能体系/30-tools/api-gateway/references/sunsama-mcp/README]] — Sunsama MCP Routing Reference
+- [[ψ技能体系/30-tools/mcp-builder/reference/mcp_best_practices]] — MCP Server Best Practices
+- [[ψ技能体系/30-tools/mcporter/SKILL]] — mcporter
+
+<!-- AI-LINKS-END -->

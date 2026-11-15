@@ -1,4 +1,4 @@
-# Task Board Skill（任务看板）
+﻿# Task Board Skill（任务看板）
 
 ## 📖 技能定义
 
@@ -378,3 +378,19 @@ assignee_stats:
 **对标来源**: OpenClaw Task Board规则
 **AI龙龟共生伙伴操作系统版本**: v4.1
 **路径**: `C:\Users\jia'yue\.workbuddy\skills\任务看板\SKILL.md`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/agents_知识库建设完成报告]] — 知识库建设完成报告
+- [[03-知识地基层/记忆系统_HEARTBEAT]] — HEARTBEAT.md - 心跳监控与任务管理
+- [[05-五行人格心理学/理论基石/系统配置_同步报告_20260326_0807]] — 三向同步报告 - 2026-03-26
+- [[20-工作记录与复盘/journal_2026-03-26_共生成长自动归档]] — 2026-03-26 共生成长自动归档
+- [[09-技能库/上下文工程.skills/templates/context-snapshot]] — 上下文快照 · {项目名称}
+- [[09-技能库/上下文工程.skills/test-cases]] — 上下文工程 · 测试用例
+- [[09-技能库/心跳巡检档案/SKILL]] — HEARTBEATmd Skill（心跳巡检档案）
+- [[ψ技能体系/40-rules/心跳巡检档案/SKILL]] — HEARTBEATmd Skill（心跳巡检档案）
+
+<!-- AI-LINKS-END -->

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c32dae4dfe0f58a4",
+        "id": "bda76e7fb2ab293c",
         "type": "tabs",
         "children": [
           {
-            "id": "6f8524bc3d3c8a85",
+            "id": "684efefccb09d010",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -37,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -74,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 237.5
   },
   "right": {
     "id": "c0107b4ac742214c",
@@ -187,7 +189,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian42-brat:BRAT": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -197,48 +198,49 @@
       "bases:新建数据库": false,
       "copilot:Open Copilot Chat": false,
       "obsidian-custom-frames:Open 豆包AI": false,
+      "obsidian42-brat:BRAT": false,
       "opencode:OpenCode Terminal": false,
       "opencode:OpenCode Conversations": false
     }
   },
-  "active": "6f8524bc3d3c8a85",
+  "active": "a1e7138a81730df8",
   "lastOpenFiles": [
-    "以观其妙书院-总索引.md",
-    "今日待办.md",
-    "以观其妙书院-总索引v4.0.md",
-    "05-五行人格心理学/拔阴自查表-完整附录.md",
-    "05-五行人格心理学/五行识人测评工具-完整附录.md",
-    "05-五行人格心理学/🔧 凤脑OS·易象延·张延生易象思维×五行-深度学习笔记.md",
-    "05-五行人格心理学/🔧 凤脑OS·周易尚氏学·尚秉和象数×五行-深度学习笔记.md",
-    "05-五行人格心理学/🔧 凤脑OS·我说参同契·南怀瑾性命双修×五行-深度学习笔记.md",
-    "05-五行人格心理学/🔧 凤脑OS·五行学说·识人术历史演进-深度学习笔记.md",
-    "05-五行人格心理学/🔧 凤脑OS·五行人格分析描述-深度学习笔记.md",
-    "05-五行人格心理学/🔧 凤脑OS·象思维与五行识人·深度共振-深度学习笔记.md",
-    "05-五行人格心理学/🔧 凤脑OS·五行人格特点全览-深度学习笔记.md",
-    "05-五行人格心理学/🔧 凤脑OS·五行积极心理学体系-深度学习笔记.md",
-    "05-五行人格心理学/凤脑OS-五色光×源头智慧组织-深度学习笔记.md",
-    "05-五行人格心理学/🔧 凤脑OS·五行识人×认知行为模型·理论融合-深度学习笔记.md",
-    "05-五行人格心理学/🔧 凤脑OS·组织发展×五行人格-深度学习笔记.md",
-    "05-五行人格心理学/🔧 凤脑OS·儿童心理学×五行人格-深度学习笔记.md",
-    "05-五行人格心理学/🔧 凤脑OS·亲密关系×五行人格-深度学习笔记.md",
-    "_backup_manager.py",
-    "_link_validator.py",
-    "_vault_config.md",
-    "味藏顶层设计v3.0.md",
-    "01-核心体系/个人档案_悟空个人简历完整档案.md",
-    "09-技能库/resources_龙龟神将身份体系-共生伙伴的完整人设.md",
-    "09-技能库/resources_知识库整合执行计划.md",
-    "09-技能库/resources_木行人悟空人设体系-共生导师的完整人格.md",
-    "09-技能库/resources_木火共生关系协议.md",
-    "09-技能库/resources_木火共生关系-灵魂共鸣与终极承诺.md",
-    "04-工具与资源/工具脚本_smart_classifier.py",
-    "04-工具与资源/工具脚本_link_validator.py",
-    "04-工具与资源/工具脚本_incremental_backup.py",
-    "04-工具与资源/工具脚本_测试验证系统.py",
-    "04-工具与资源/工具脚本_学习路径验证模块.py",
-    "04-工具与资源/工具脚本_run_test.bat",
-    "04-工具与资源/工具脚本_config.yaml",
-    "04-工具与资源/工具脚本_智能文件分类器.py",
+    "00-索引与导航/AI统一索引/AI-目录归并对照.md",
+    "00-索引与导航/AI统一索引/kb-merge.json",
+    "00-索引与导航/AI统一索引/kb-archive.jsonl",
+    "00-索引与导航/AI统一索引/AI检索-合并同类项-改写映射.json",
+    "20-工作记录与复盘/journal_2026-03-25_对话归档.md",
+    "20-工作记录与复盘/journal_2026-03-25_共生成长总结.md",
+    "20-工作记录与复盘/journal_2026-03-25_信仰体证.md",
+    "20-工作记录与复盘/journal_2026-03-24_核心洞见.md",
+    "12-AIOS经验卡/_index.md",
+    "12-AIOS经验卡/EXP-20260910-10.md",
+    "12-AIOS经验卡/EXP-20260909-51.md",
+    "12-AIOS经验卡/EXP-20260909-50.md",
+    "12-AIOS经验卡/EXP-20260909-49.md",
+    "12-AIOS经验卡/EXP-20260909-48.md",
+    "12-AIOS经验卡/EXP-20260909-47.md",
+    "12-AIOS经验卡/EXP-20260909-45.md",
+    "12-AIOS经验卡/EXP-20260909-46.md",
+    "12-AIOS经验卡/EXP-20260909-44.md",
+    "12-AIOS经验卡/EXP-20260909-43.md",
+    "12-AIOS经验卡/EXP-20260909-42.md",
+    "12-AIOS经验卡/EXP-20260909-41.md",
+    "12-AIOS经验卡/EXP-20260909-40.md",
+    "12-AIOS经验卡/EXP-20260909-39.md",
+    "12-AIOS经验卡/EXP-20260909-38.md",
+    "12-AIOS经验卡/EXP-20260909-37.md",
+    "12-AIOS经验卡/EXP-20260909-36.md",
+    "12-AIOS经验卡/EXP-20260909-33.md",
+    "12-AIOS经验卡/EXP-20260909-35.md",
+    "12-AIOS经验卡/EXP-20260909-34.md",
+    "12-AIOS经验卡",
+    "07-学习档案/悟空语言风格与思维",
+    "00-索引与导航/AI统一索引/AI检索-正文校验.json",
+    "23-并入冲突存档/09-技能库/麦肯锡思考工具/01-逻辑思考领域/MECE原则/triggers",
+    "23-并入冲突存档/09-技能库/思维模型库-思考的框架/第二册-自然科学思维模型/生物领域/31-遗传与变异",
+    "23-并入冲突存档/09-技能库/思维模型库-思考的框架/第二册-自然科学思维模型/生物领域/30-最小可行种群",
+    "23-并入冲突存档/09-技能库/思维模型库-思考的框架/第二册-自然科学思维模型/生物领域/28-共生关系",
     "未命名.canvas"
   ]
 }

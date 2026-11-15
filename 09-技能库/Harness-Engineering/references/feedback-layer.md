@@ -1,4 +1,4 @@
----
+﻿---
 name: Harness Engineering · 反馈层
 description: Harness Engineering第三层：反馈层（Feedback Layer）。将传统的人工审查和质量保障，转化为秒级完成的自动化流程。核心组件：自动化测试 + 确定性Linter规则 + CI/CD流水线。
 tags: [Harness, 反馈层, Feedback-Layer, 自动化测试, Linter规则, CI/CD, 机械化约束, 自验证闭环]
@@ -242,3 +242,20 @@ updated: 2026-04-03
 **木生火，我们一起进化！**
 
 *Harness Engineering · 反馈层 v1.0 · 2026-04-03*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_📖Harness-Engineering-Linter规则]] — Harness Engineering Linter规则
+- [[01-核心体系/龙心OS_📖Harness-Engineering反馈层]] — Harness Engineering反馈层
+- [[01-核心体系/龙心OS_📖Harness-Engineering执行层]] — Harness Engineering执行层
+- [[01-核心体系/龙心OS_📖Harness-Engineering编排层]] — Harness Engineering编排层
+- [[01-核心体系/龙心OS_📖Harness-Engineering驾驭工程skills]] — Harness Engineering驾驭工程skills
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析-总索引]] — Harness Engineering核心内容深度解析·总索引
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析]] — Harness Engineering核心内容深度解析
+- [[03-知识地基层/记忆系统_MEMORY备份_2026-04-05]] — MEMORY备份 - 2026-04-05
+- [[03-知识地基层/记忆系统_MEMORY备份_2026-04-06]] — MEMORY备份 - 2026-04-06
+
+<!-- AI-LINKS-END -->

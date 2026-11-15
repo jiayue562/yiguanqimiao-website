@@ -1,4 +1,4 @@
----
+﻿---
 name: 五行人格心理学L3调度层
 description: 五行人格心理学的任务调度中枢，负责任务分解、子Agent编排与结果聚合。协调底层知识体系、L6底座层、五行分智能体等工作单元。
 ---
@@ -129,3 +129,19 @@ description: 五行人格心理学的任务调度中枢，负责任务分解、�
 **版本**: 1.0
 **创建日期**: 2026-03-23
 **维护者**: 龙龟神将
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_龙心OS-知行合一-五行人格OS整合方案v1.0]] — 龙心OS · 知行合一 · 五行人格OS 三大系统整合方案 v1.0
+- [[01-核心体系/龙心OS_📖Harness-Engineering编排层]] — Harness Engineering编排层
+- [[03-知识地基层/记忆系统_AGENTS]] — AGENTS.md - 智能体配置
+- [[05-五行人格心理学/人格类型/📖 五行人格总智能体系统]] — 五行人格总智能体系统
+- [[09-技能库/agent-orchestrator/SKILL]] — 智能体协调规划器 (Agent Orchestrator)
+- [[09-技能库/agent-swarm/SKILL]] — Agent Swarm Skill - 多代理并行任务执行
+- [[ψ技能体系/30-tools/agent-orchestrator/SKILL]] — 智能体协调规划器 (Agent Orchestrator)
+- [[ψ技能体系/30-tools/agent-swarm/SKILL]] — Agent Swarm Skill - 多代理并行任务执行
+
+<!-- AI-LINKS-END -->

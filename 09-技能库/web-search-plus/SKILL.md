@@ -1,4 +1,4 @@
----
+﻿---
 name: web-search-plus
 version: 2.9.0
 description: Unified search skill with Intelligent Auto-Routing. Uses multi-signal analysis to automatically select between Serper (Google), Tavily (Research), Querit (Multilingual AI Search), Exa (Neural), Perplexity (AI Answers), You.com (RAG/Real-time), and SearXNG (Privacy/Self-hosted) with confidence scoring.
@@ -256,3 +256,21 @@ If one provider fails (rate limit, timeout, error), the skill automatically trie
 - [Perplexity](https://www.perplexity.ai) — AI-Synthesized Answers (via [Kilo Gateway](https://kilo.ai))
 - [You.com](https://api.you.com) — RAG/Real-time Search
 - [SearXNG](https://docs.searxng.org) — Privacy-First Meta-Search
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_CHANGELOG]] — Changelog - Web Search Plus
+- [[09-技能库/resources_FAQ]] — Frequently Asked Questions
+- [[09-技能库/web-search-plus/CHANGELOG]] — Changelog - Web Search Plus
+- [[09-技能库/web-search-plus/FAQ]] — Frequently Asked Questions
+- [[ψ技能体系/30-tools/api-gateway/references/google-merchant/README]] — Google Merchant Routing Reference
+- [[ψ技能体系/30-tools/content-factory/prompts/argument-builder]] — Argument Builder — Persuasive Long-Form
+- [[ψ技能体系/30-tools/gmail/SKILL]] — Gmail
+- [[ψ技能体系/30-tools/note-organizer/tips]] — Tips for Joplin
+- [[ψ技能体系/30-tools/playwright-browser-automation/SKILL]] — Playwright Browser Automation
+- [[ψ技能体系/30-tools/web-search-exa/SKILL]] — Exa — Neural Web Search & Research
+
+<!-- AI-LINKS-END -->

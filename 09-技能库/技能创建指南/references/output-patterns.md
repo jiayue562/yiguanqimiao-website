@@ -1,4 +1,4 @@
-# Output Patterns
+﻿# Output Patterns
 
 Use these patterns when skills need to produce consistent, high-quality output.
 
@@ -80,3 +80,20 @@ Follow this style: type(scope): brief description, then detailed explanation.
 ```
 
 Examples help Claude understand the desired style and level of detail more clearly than descriptions alone.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/agent-memory-systems/SKILL]] — Agent Memory Systems
+- [[09-技能库/humanizer/SKILL]] — Humanizer: Remove AI Writing Patterns
+- [[09-技能库/resources_output-patterns]] — Output Patterns
+- [[09-技能库/resources_pattern-template]] — Pattern Template
+- [[09-技能库/self-improving-agent/templates/pattern-template]] — Pattern Template
+- [[09-技能库/skill-creator/references/output-patterns]] — Output Patterns
+- [[ψ技能体系/10-kernel/龙心OS/self-improving-agent/templates/pattern-template]] — Pattern Template
+- [[ψ技能体系/10-kernel/龙心OS/self-learning/references/skill_creation_guide]] — Skill Creator Guide
+- [[ψ技能体系/30-tools/skill-creator/references/output-patterns]] — Output Patterns
+
+<!-- AI-LINKS-END -->

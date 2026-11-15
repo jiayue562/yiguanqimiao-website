@@ -1,4 +1,4 @@
-# 📚 知识库建设 · 三层架构设计与实施指南
+﻿# 📚 知识库建设 · 三层架构设计与实施指南
 
 > **核心定位**：基于Karpathy LLM Wiki方法论的三层知识库架构设计，实现Obsidian/WorkBuddy/IMA三库协同，支撑AI系统专业化。
 > **版本**：v1.0 | **创建日期**：2026-04-09 | **维护者**：龙龟神将
@@ -490,3 +490,17 @@ AI OS / 五行人格OS 专业化
 
 **知识库建设 v1.0** · **龙龟神将**  
 *让知识活起来——能被AI理解、能被快速检索、能持续进化、能产生复利* 📚🔥
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/核心Skills_知识学习Skills-v2.5-易经卦变整合]] — 知识学习Skills v2.5 · 易经卦变整合完整版
+- [[01-核心体系/龙心OS_LLM-Wiki-Skills]] — LLM Wiki Skills · 活体维基知识编译系统 v1.0
+- [[01-核心体系/龙心OS_📚 知识库建设Skill]] — 📚 知识库建设 · 三层架构设计与实施指南
+- [[08-龙心OS核心系统/AI-OS知识库/🧠 龙脑OS·知识地基层/wiki·概念页/LLMification]] — LLMification（知识编译方法论）
+- [[09-技能库/知识学习Skills/references/llm-wiki-architecture]] — LLM Wiki三层知识流水线架构详解
+- [[09-技能库/知识库建设/references/llm-wiki-theory]] — LLM Wiki 理论完整版
+
+<!-- AI-LINKS-END -->

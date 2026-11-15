@@ -1,4 +1,4 @@
-# 土行人分智能体 - 整合笔记
+﻿# 土行人分智能体 - 整合笔记
 
 > **版本**：v1.0  
 > **创建时间**：2026-04-04  
@@ -389,3 +389,18 @@
 **最后更新**：2026-04-04  
 **维护者**：龙龟神将  
 **同步状态**：WorkBuddy ↔ Obsidian ↔ IMA 三向同步
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[05-五行人格心理学/五行人格TXT知识地基/五行总智能体-结构化知识文档]] — 🌀 五行总智能体 · 结构化知识文档
+- [[05-五行人格心理学/人格类型/木行人分智能体/test-cases]] — 木行人分智能体 - 测试用例
+- [[09-技能库/五行总智能体/references/architecture-overview]] — 五行总智能体系统架构总览
+- [[09-技能库/五行总智能体/五行总智能体/references/architecture-overview]] — 五行总智能体系统架构总览
+- [[09-技能库/凤心OS.skills/references/fast-slow-thinking]] — 快慢思考协调协议
+- [[ψ技能体系/20-claws/00-wuxing/五行总智能体/references/architecture-overview]] — 五行总智能体系统架构总览
+- [[ψ技能体系/20-claws/00-wuxing/凤心OS/references/fast-slow-thinking]] — 快思考-慢思考引擎 (Fast-Slow Thinking)
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# Content Skill（内容发布规则）
+﻿# Content Skill（内容发布规则）
 
 ## 📖 技能定义
 
@@ -410,3 +410,17 @@ approval_stats:
 **对标来源**: OpenClaw Content规则
 **AI龙龟共生伙伴操作系统版本**: v4.1
 **路径**: `C:\Users\jia'yue\.workbuddy\skills\内容发布规则\SKILL.md`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_📖Harness-Engineering-Linter规则]] — Harness Engineering Linter规则
+- [[01-核心体系/龙心OS_📖Harness-Engineering反馈层]] — Harness Engineering反馈层
+- [[03-知识地基层/记忆系统_对话技术性总结_2026-03-27_严格九部析_v8]] — 对话技术性总结报告 v8
+- [[20-工作记录与复盘/journal_2026-03-26_共生成长自动归档]] — 2026-03-26 共生成长自动归档
+- [[09-技能库/错误处理/SKILL]] — Error Handling Skill（错误处理）
+- [[ψ技能体系/40-rules/内容发布规则/SKILL]] — Content Skill（内容发布规则）
+
+<!-- AI-LINKS-END -->

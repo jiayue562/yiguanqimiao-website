@@ -1,4 +1,4 @@
----
+﻿---
 name: automation-workflows
 description: Design and implement automation workflows to save time and scale operations as a solopreneur. Use when identifying repetitive tasks to automate, building workflows across tools, setting up triggers and actions, or optimizing existing automations. Covers automation opportunity identification, workflow design, tool selection (Zapier, Make, n8n), testing, and maintenance. Trigger on "automate", "automation", "workflow automation", "save time", "reduce manual work", "automate my business", "no-code automation".
 ---
@@ -265,3 +265,21 @@ Payback: ($50 setup cost) / ($250/month value saved) = 0.2 months → Absolutely
 - **Not testing thoroughly.** A broken automation is worse than no automation — it creates incorrect data or missed tasks.
 - **Building too complex too fast.** Start with simple 2-3 step workflows. Add complexity only when the simple version works perfectly.
 - **Not documenting workflows.** Future you will forget how this works. Write it down.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/adaptive-subagents/SKILL]] — Adaptive Subagent Routing
+- [[09-技能库/ghost-scan-secrets/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/humanizer/SKILL]] — Humanizer: Remove AI Writing Patterns
+- [[09-技能库/resources_FAQ]] — Frequently Asked Questions
+- [[09-技能库/resources_workflows]] — Workflow Patterns
+- [[09-技能库/self-improving-agent/SKILL]] — Self-Improving Agent
+- [[09-技能库/self-improving/reflections]] — Self-Reflections Log
+- [[09-技能库/skill-creator/references/workflows]] — Workflow Patterns
+- [[09-技能库/web-search-plus/FAQ]] — Frequently Asked Questions
+- [[09-技能库/技能创建指南/references/workflows]] — Workflow Patterns
+
+<!-- AI-LINKS-END -->

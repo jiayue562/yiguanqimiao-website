@@ -1,0 +1,52 @@
+{
+  "report_id": "CR-20260520_131653",
+  "session_id": "test-001",
+  "timestamp": "2026-05-20T13:16:53.255558",
+  "context_count": 2,
+  "health": {
+    "healthy": true,
+    "checks": [
+      {
+        "name": "non_empty",
+        "passed": true,
+        "detail": "上下文项数: 2"
+      },
+      {
+        "name": "field_integrity",
+        "passed": true,
+        "detail": "字段缺失项: 0/2"
+      },
+      {
+        "name": "priority_range",
+        "passed": true,
+        "detail": "优先级越界: 0"
+      },
+      {
+        "name": "token_limit",
+        "passed": true,
+        "detail": "总 token: 24/4096"
+      }
+    ],
+    "score": 100
+  },
+  "quality": {
+    "score": 77.0,
+    "dimensions": {
+      "completeness": 100.0,
+      "relevance": 100.0,
+      "freshness": 0.0,
+      "diversity": 100.0,
+      "compactness": 60
+    },
+    "issues": [
+      "上下文项过于简短"
+    ]
+  },
+  "optimization": {
+    "original_score": 77.0,
+    "optimized_score": 77.0,
+    "tips": [
+      "上下文过于简短 (8 字)，建议补充更多信息"
+    ]
+  }
+}

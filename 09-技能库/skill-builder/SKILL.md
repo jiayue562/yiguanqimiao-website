@@ -790,3 +790,17 @@ P2_signals:
 
 **Skill Builder v1.1** · **龙龟神将**  
 *让每一个理论都能成为可用的工具，让每一个想法都能持续进化* 🚀
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_Skill Builder v1.0]] — Skill构建申请表
+- [[06-味藏/店长7S/references/SM-CHIEF开发文档_v1.0]] — SM-CHIEF 店长总控Skill智能体 · 完整开发文档 v1.0
+- [[20-工作记录与复盘/03-记忆系统/MEMORY备份_2026-04-08]] — MEMORY备份 2026-04-08
+- [[20-工作记录与复盘/journal_2026-04-10_周度汇总]] — 2026-04-10_周度汇总
+- [[09-技能库/skill-builder/references/theory]] — 📚 Skill Builder 理论基础完整版
+- [[09-技能库/五行人格心理学OS/package-summary]] — 🎯 五行人格心理学 OS · 封装总览
+
+<!-- AI-LINKS-END -->

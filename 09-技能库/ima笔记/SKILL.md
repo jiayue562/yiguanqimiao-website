@@ -1,4 +1,4 @@
----
+﻿---
 name: ima笔记
 description: IMA 个人笔记服务 API skill，用于管理用户的 IMA 笔记。支持搜索笔记、浏览笔记本、获取笔记内容、新建笔记和追加内容。当用户提到笔记、备忘录、记事、知识库，或者想要查找、阅读、创建、编辑笔记内容时，使用此 skill。即使用户没有明确说「笔记」，只要意图涉及个人文档的存取（如「帮我记一下」、「我之前写过一个关于XX的东西」、「把这段内容保存下来」），也应触发此 skill。
 description_zh: "ima笔记管理（读取、写入、检索），连接第二大脑"
@@ -236,3 +236,17 @@ ima_api "search_note_book" '{"search_type": 1, "query_info": {"content": "项目
 | 20002 | apiKey超过最大限频    |
 | 20004 | apikey 鉴权失败     | 检查凭证配置是否正确            |
 | 110037 | apikey 过期       | 请获取最新apikey：https://ima.qq.com/agent-interface          |
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ima-skill/SKILL]] — ima-skill
+- [[09-技能库/ima-skills/ima-skill/SKILL]] — ima-skill
+- [[09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/SKILL]] — ima-skill
+- [[09-技能库/腾讯ima/SKILL]] — ima-skill
+- [[ψ技能体系/00-foundation/ima/SKILL]] — ima-skill
+- [[ψ技能体系/30-tools/ima-skill/SKILL]] — ima-skill
+
+<!-- AI-LINKS-END -->

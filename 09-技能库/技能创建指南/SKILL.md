@@ -1,4 +1,4 @@
----
+﻿---
 name: skill-creator
 description: "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends agent capabilities with specialized knowledge, workflows, or tool integrations."
 description_zh: "创建和维护自定义技能的指南"
@@ -71,3 +71,21 @@ scripts/package_skill.py <path/to/skill-folder>
 
 - `references/workflows.md` - Sequential workflows and conditional logic
 - `references/output-patterns.md` - Template and example patterns
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/agent-browser-clawdbot/SKILL]] — Agent Browser Skill
+- [[09-技能库/find-skills/SKILL]] — Find Skills
+- [[09-技能库/resources_skill_creation_guide]] — Skill Creator Guide
+- [[09-技能库/self-learning/references/skill_creation_guide]] — Skill Creator Guide
+- [[09-技能库/skill-creator/SKILL]] — Skill Creator
+- [[ψ技能体系/10-kernel/龙心OS/self-learning/references/skill_creation_guide]] — Skill Creator Guide
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/SKILL]] — Find Skills
+- [[ψ技能体系/30-tools/find-skills/SKILL]] — Find Skills
+- [[ψ技能体系/30-tools/mcp-builder/SKILL]] — MCP Server Development Guide
+- [[ψ技能体系/30-tools/skill-creator/SKILL]] — Skill Creator
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# LLM Wiki Skills · 活体维基知识编译系统 v1.0
+﻿# LLM Wiki Skills · 活体维基知识编译系统 v1.0
 
 > **核心定位**：LLM Wiki 是基于卡帕西(Karpathy)「活体维基」体系的知识编译系统，将知识管理从"被动检索"升级为"主动编译"。
 > 
@@ -499,3 +499,17 @@ AI: [执行Lint扫描→报告死链接/矛盾/过时→建议修复]
 
 **LLM Wiki Skills v1.0** · **龙龟神将**
 *让知识编译驱动智慧增长，让知识库成为活的生命体* 🐉
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_LLM-Wiki-Skills]] — LLM Wiki Skills · 活体维基知识编译系统 v1.0
+- [[01-核心体系/龙心OS_📚 知识库建设Skill]] — 📚 知识库建设 · 三层架构设计与实施指南
+- [[16-工具与资源/projects_01-理论体系结构剖析]] — LLM Wiki 理论体系结构剖析
+- [[16-工具与资源/projects_02-核心理论体系透视]] — LLM Wiki 核心理论体系透视
+- [[08-龙心OS核心系统/AI-OS知识库/🧠 龙脑OS·知识地基层/wiki·概念页/LLMification]] — LLMification（知识编译方法论）
+- [[09-技能库/LLM-Wiki/references/theory]] — LLM Wiki · 卡帕西体系完整理论 v1.0
+
+<!-- AI-LINKS-END -->

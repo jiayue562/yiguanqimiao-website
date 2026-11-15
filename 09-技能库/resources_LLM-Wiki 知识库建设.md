@@ -318,3 +318,21 @@
 ---
 
 _鎶ュ憡鐢熸垚锛氱煡璇嗗涔?Skill v1.0 路 瑙傚叾濡欎功闄?路 2026-04-15 21:06_
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[08-龙心OS核心系统/AI-OS知识库/❤️ 龙心OS·智能发动机层/五大引擎/知识学习]] — 知识学习
+- [[09-技能库/llmification-knowledge-builder/references/theory]] — Theory.md - LLMification 理论依据
+- [[09-技能库/llmification-knowledge-builder/templates/input-template]] — LLMification 输入模板
+- [[09-技能库/resources_MECE 原则与金字塔原理]] — MECE 鍘熷垯涓庨噾瀛楀鍘熺悊 - 鐭ヨ瘑瀛︿範鎶ュ憡
+- [[09-技能库/知识学习Skills/references/llm-wiki-architecture]] — LLM Wiki三层知识流水线架构详解
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer1-raw/❤️ 龙心OS·智能发动机层/五大引擎/知识学习]] — 知识学习
+- [[ψ技能体系/20-claws/00-wuxing/五行人格心理学/references/理论体系]] — 鏍稿績鐞嗚浣撶郴 - 涓€蹇冧笁鐣屼簲琛屼節灞傝薄鎬濈淮浣撶郴
+- [[ψ技能体系/20-claws/00-wuxing/土行人分智能体/references/theory]] — 鍦熻浜烘€ф牸鐗瑰緛鍏ㄨ锛氱悊璁恒€佺淮搴︺€佸疄璺典笌鍗囧崕
+- [[ψ技能体系/20-claws/00-wuxing/水行人分智能体/references/theory]] — 姘磋浜虹鏍艰涓烘ā鍨嬶紙B=MAP锛夋繁搴︽暣鍚?
+- [[ψ技能体系/20-claws/00-wuxing/火行人分智能体/references/theory]] — 鐏浜哄垎鏅鸿兘浣撹浆鍖栨妧鏈畬鏁存寚鍗?
+
+<!-- AI-LINKS-END -->

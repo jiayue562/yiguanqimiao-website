@@ -1,4 +1,4 @@
-# 🔧 Browser-Automation技能链接问题解决方案报告
+﻿# 🔧 Browser-Automation技能链接问题解决方案报告
 
 ## 📋 问题概述
 **问题**: browser-automation技能已成功安装，但位于`.agents\skills\`目录，未链接到WorkBuddy的`.workbuddy\skills\`目录，导致技能无法被WorkBuddy识别。
@@ -129,3 +129,21 @@ use_skill("browser-automation");
 *问题解决时间: 2026年3月16日*
 *解决人: WorkBuddy AI助理 (龙龟神将)*
 *状态: ✅ 完全解决*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/agents_安全智能体模块]] — 安全智能体模块
+- [[03-知识地基层/记忆系统_obsidian-backup-system]] — 🚀 WorkBuddy ↔ Obsidian 知识备份系统
+- [[03-知识地基层/记忆系统_workbuddy-obsidian-backup-summary-20260331]] — WorkBuddy-Obsidian备份系统对话总结
+- [[05-五行人格心理学/理论基石/系统配置_同步报告_20260417]] — 🔄 三向同步报告
+- [[05-五行人格心理学/理论基石/系统配置_聊天记录Skills自动启用问题分析]] — 聊天记录Skills自动启用问题分析
+- [[20-工作记录与复盘/journal_2026-03-14_对话归档]] — 2026-03-14 对话归档
+- [[09-技能库/resources_memory]] — WorkBuddy-Obsidian 备份自动化执行记录
+- [[09-技能库/麦肯锡思考工具/03-问题解决领域/假设思考/SKILL]] — 假设思考 · 快速逼近问题本质的循环验证
+- [[ψ技能体系/30-tools/fbs-bookwriter/references/03-product/NS08213-01-user-install-guide]] — npm 包按需安装指南
+- [[ψ技能体系/30-tools/fbs-bookwriter/references/03-product/lexical-editor-guide]] — Lexical Markdown 编辑器适配指南
+
+<!-- AI-LINKS-END -->

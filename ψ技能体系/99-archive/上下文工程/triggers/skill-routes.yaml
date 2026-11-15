@@ -1,0 +1,16 @@
+skill-routes:
+  龙心OS:
+    direction: caller
+    action: "调用上下文工程Skill"
+  agent-memory-systems:
+    direction: output
+    action: "快照->语义记忆+情景记忆"
+  self-improving-agent:
+    direction: output
+    action: "模式提取->优化快照模板"
+  super-save:
+    direction: output
+    action: "关键决策->语义记忆"
+  skill-builder:
+    direction: input
+    action: "模板迭代"

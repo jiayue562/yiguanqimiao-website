@@ -1,4 +1,4 @@
----
+﻿---
 title: "龙脑OS - 知识库智能体"
 description: "龙心OS的知识库智能体，统一管理西方思维模型、五行人格、专业知识体系"
 version: "1.0"
@@ -271,3 +271,21 @@ tags: ["龙脑OS", "知识库", "思维模型", "五行人格", "智能体"]
 
 **龙脑OS v1.0** · **龙龟神将**  
 *用Skill结构承载智能体灵魂，让知识库真正活起来*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_企业文化OS知识库智能体架构]] — 企业文化OS知识库智能体 · 架构文档
+- [[09-技能库/skills_SKILL]] — 龙脑 OS Skill
+- [[09-技能库/企业文化OS知识库/SKILL]] — 企业文化OS知识库智能体 · SKILL.md
+- [[09-技能库/企业文化OS知识库/references/knowledge-graph]] — 企业文化OS知识库智能体 · 知识图谱
+- [[ψ技能体系/20-claws/00-wuxing/凤心OS/SKILL]] — 凤心OS · 五行人格心理学智能体发动机 v3.0
+- [[ψ技能体系/20-claws/02-culture/企业文化OS知识库/SKILL]] — 企业文化OS知识库智能体 · SKILL.md
+- [[ψ技能体系/99-archive/思维模型.skills/SKILL]] — 思维模型.skills
+- [[ψ技能体系/99-archive/龙爪 OS/SKILL]] — 龙爪 OS Skill
+- [[ψ技能体系/99-archive/龙脑 OS/SKILL]] — 龙脑 OS - 知识库智能体 v2.0
+- [[ψ技能体系/99-archive/龙脑OS/SKILL]] — 龙脑OS - 知识库智能体
+
+<!-- AI-LINKS-END -->

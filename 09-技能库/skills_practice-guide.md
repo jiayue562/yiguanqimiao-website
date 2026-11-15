@@ -1,4 +1,4 @@
-# 象思维实践指南
+﻿# 象思维实践指南
 
 > 🛠️ 从理论到实践 · 四步法操作手册
 
@@ -315,3 +315,17 @@
 ---
 
 _实践指南 · 象思维 Skill · 龙心 OS · 2026-04-17_
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[03-知识地基层/象思维/象思维核心概念]] — 象思维核心概念
+- [[09-技能库/skills_CHECKLIST]] — 象思维 Skill 检查清单
+- [[09-技能库/skills_COMPLETION_REPORT]] — 象思维 Skill 构建完成报告
+- [[ψ技能体系/10-kernel/龙心OS/engines/五色光思维/references/practice-guide]] — 五色光思维实践指南
+- [[ψ技能体系/10-kernel/龙心OS/engines/象思维/CHECKLIST]] — 象思维 Skill 检查清单
+- [[ψ技能体系/10-kernel/龙心OS/engines/象思维/references/practice-guide]] — 象思维实践指南
+
+<!-- AI-LINKS-END -->

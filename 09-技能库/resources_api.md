@@ -1,4 +1,4 @@
----
+﻿---
 name: IMA笔记
 description: |
   IMA笔记 - 腾讯IMA个人笔记管理工具。
@@ -342,3 +342,19 @@ POST /openapi/note/v1/get_doc_content
 | 20002 | apiKey超过最大限频              |
 | 20004 | apikey鉴权失败                |
 | 110037 | apikey 过期       |
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ima-skill/notes/references/api]] — IMA笔记 API
+- [[09-技能库/ima-skills/ima-skill/notes/references/api]] — IMA笔记 API
+- [[09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/notes/references/api]] — IMA笔记 API
+- [[09-技能库/ima笔记/references/api]] — IMA笔记 API
+- [[09-技能库/resources_usage-examples]] — IMA 技能使用示例
+- [[09-技能库/腾讯ima/notes/references/api]] — IMA笔记 API
+- [[ψ技能体系/00-foundation/ima/notes/references/api]] — IMA笔记 API
+- [[ψ技能体系/30-tools/ima-skill/notes/references/api]] — IMA笔记 API
+
+<!-- AI-LINKS-END -->

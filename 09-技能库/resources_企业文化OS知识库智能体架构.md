@@ -1,4 +1,4 @@
-# 企业文化OS知识库智能体 · 架构文档
+﻿# 企业文化OS知识库智能体 · 架构文档
 
 > **文档定位**：企业文化OS知识库智能体的完整架构说明
 > **版本**：v1.1（智能体架构升级） | **创建日期**：2026-04-10
@@ -315,3 +315,19 @@
 - 企业文化知识图谱.md
 - 企业文化诊断SOP.md
 - 企业文化与龙心OS整合协议.md
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_LLM-Wiki-Skills]] — LLM Wiki Skills · 活体维基知识编译系统 v1.0
+- [[01-核心体系/龙心OS_📖 象思维-知识学习skills]] — 🧠 象思维-知识学习skills
+- [[09-技能库/企业文化OS知识库/SKILL]] — 企业文化OS知识库智能体 · SKILL.md
+- [[09-技能库/企业文化OS知识库/references/agent-core-capabilities]] — 企业文化OS知识库智能体 · 核心能力文档
+- [[09-技能库/企业文化OS知识库/references/agent-invocation-protocol]] — 企业文化OS知识库智能体 · 调用协议
+- [[09-技能库/企业文化OS知识库/references/knowledge-graph]] — 企业文化OS知识库智能体 · 知识图谱
+- [[09-技能库/龙脑OS/SKILL]] — 龙脑OS - 知识库智能体
+- [[ψ技能体系/20-claws/02-culture/企业文化OS知识库/SKILL]] — 企业文化OS知识库智能体 · SKILL.md
+
+<!-- AI-LINKS-END -->

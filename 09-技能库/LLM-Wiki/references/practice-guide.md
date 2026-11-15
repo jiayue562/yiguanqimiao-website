@@ -1,4 +1,4 @@
-# LLM Wiki · 详细实操指南 v1.0
+﻿# LLM Wiki · 详细实操指南 v1.0
 
 > **核心定位**：本文档是LLM Wiki Skills的实操手册，提供从零构建到日常运维的完整SOP。
 
@@ -110,8 +110,8 @@
 - `[[争议]]` - 存在矛盾的观点
 - `[[待更新]]` - 需要更新的过时内容
 - `[[五行人格]]` - 五行相关
-- `[[企业文化]]` - 企业文化相关
-- `[[心文化]]` - 修行文化相关
+- `[[00-索引与导航/AI统一索引/AI-总索引|企业文化]]` - 企业文化相关
+- `[[00-索引与导航/AI统一索引/AI-总索引|心文化]]` - 修行文化相关
 
 ### 禁止的标签
 - ❌ 个人情感标签（如"我喜欢"）
@@ -590,3 +590,21 @@ YYYY-MM-DD by LLM Wiki编译
 **文档版本**: v1.0
 **最后更新**: 2026-04-11
 **维护者**: 龙龟神将
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[00-索引与导航/📋 文档标准化模板 v2.0]] — 📋 文档标准化模板 v2.0
+- [[01-核心体系/AI OS智能体激活框架/NSCDC1B-04-AI OS工作流与SOP·操作手册]] — AI OS工作流与SOP·操作手册
+- [[01-核心体系/agents_LLM Wiki 知识库激活完成报告]] — LLM Wiki 知识库激活完成报告
+- [[01-核心体系/龙心OS_联合进化系统实践操作指南]] — 联合进化系统实践操作指南
+- [[08-龙心OS核心系统/AI-OS知识库/🧠 龙脑OS·知识地基层/L7理论基石/AGENTS工作流SOP]] — AGENTS.md 工作流配置SOP
+- [[08-龙心OS核心系统/AI-OS知识库/🧠 龙脑OS·知识地基层/总索引]] — 🧠 龙脑OS·知识地基层
+- [[09-技能库/LLM-Wiki/templates/wiki-template]] — LLM Wiki · Wiki页面模板库
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer1-raw/🧠 龙脑OS·知识地基层/L7理论基石/AGENTS工作流SOP]] — AGENTS.md 工作流配置SOP
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer1-raw/🧠 龙脑OS·知识地基层/总索引]] — 🧠 龙脑OS·知识地基层
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer2-wiki/entities/AGENTS工作流SOP]] — AGENTS.md 工作流配置SOP
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+﻿# Frequently Asked Questions
 
 ## Caching (NEW in v2.7.0!)
 
@@ -261,3 +261,21 @@ python3 scripts/setup.py  # Re-run to configure new features
 ### Where can I report bugs or request features?
 - **GitHub Issues:** https://github.com/robbyczgw-cla/web-search-plus/issues
 - **ClawHub:** https://www.clawhub.ai/skills/web-search-plus
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[16-工具与资源/templates_area]] — {{TITLE}}
+- [[09-技能库/automation-workflows/SKILL]] — Automation Workflows
+- [[09-技能库/baidu-search/SKILL]] — Baidu Search
+- [[09-技能库/baidu-search/references/apikey-fetch]] — Baidu API Key Setup Guide (OpenClaw)
+- [[09-技能库/ghost-scan-secrets/agents/scan/agent]] — Scan Agent
+- [[09-技能库/resources_CHANGELOG]] — Changelog - Web Search Plus
+- [[09-技能库/resources_FAQ]] — Frequently Asked Questions
+- [[09-技能库/resources_TROUBLESHOOTING]] — Troubleshooting Guide
+- [[09-技能库/self-improving/corrections]] — Corrections Log — Template
+- [[09-技能库/super-search/SKILL]] — Super Search
+
+<!-- AI-LINKS-END -->

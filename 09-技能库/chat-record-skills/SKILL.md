@@ -1,4 +1,4 @@
-# 聊天记录分析技能包 (Chat Record Analysis Skills)
+﻿# 聊天记录分析技能包 (Chat Record Analysis Skills)
 
 > **技能名称**: chat-record-skills  
 > **中文名称**: 聊天记录.skills  
@@ -379,3 +379,17 @@ python scripts/debug_skill.py logs
 ---
 
 **系统状态**: ✅ 已集成 | **自动触发**: ✅ 已启用 | **版本**: 1.0.0 | **最后更新**: 2026-03-16
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_悟空人格与企业文化深度分析]] — 悟空人格与企业文化深度分析
+- [[01-核心体系/龙心OS_聊天记录.skills]] — 聊天记录.skills
+- [[01-核心体系/龙心OS_📖 象思维-知识学习skills]] — 🧠 象思维-知识学习skills
+- [[09-技能库/chat-record-skills/手动验证报告]] — 聊天记录.skills技能包手动验证报告
+- [[09-技能库/resources_手动验证报告]] — 聊天记录.skills技能包手动验证报告
+- [[09-技能库/resources_知行合一自我进化.skills]] — 知行合一自我进化.skills
+
+<!-- AI-LINKS-END -->

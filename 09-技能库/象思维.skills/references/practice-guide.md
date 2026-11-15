@@ -1,4 +1,4 @@
-# 象思维实践操作指南 v6.0
+﻿# 象思维实践操作指南 v6.0
 
 > **文档版本**: v6.0  
 > **创建时间**: 2026-04-08  
@@ -1370,3 +1370,17 @@ WHERE file.outlinks CONTAINS [[目标笔记]]
 - [[knowledge-graph.md|知识图谱可视化]]
 
 **标签**：#象思维 #实践指南 #操作手册 #日常修炼 #应用场景 #系统训练 #Obsidian #五行知识网络
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[03-知识地基层/凤脑OS_象思维·实操流程]] — 象思维·实操流程
+- [[09-技能库/resources_practice-guide]] — 象思维实践操作手册
+- [[09-技能库/五行人格心理学/五行人格总智能体/水行人分智能体/references/intervention-tools]] — 水行人干预工具集
+- [[09-技能库/五行人格心理学/五行人格总智能体/火行人分智能体/references/intervention-tools]] — 火行人干预工具集
+- [[09-技能库/象思维.skills/test-cases]] — 象思维.skills v5.0 · 测试用例
+- [[09-技能库/象思维/references/practice-guide]] — 象思维实践操作手册
+
+<!-- AI-LINKS-END -->

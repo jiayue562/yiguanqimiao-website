@@ -1,4 +1,4 @@
-# Changelog - Web Search Plus
+﻿# Changelog - Web Search Plus
 
 ## [2.9.0] - 2026-03-12
 
@@ -529,3 +529,21 @@ New `QueryAnalyzer` class with:
 - Provider-specific options (--depth, --category, --similar-url, etc.)
 - Domain filtering for Tavily/Exa
 - Date filtering for Exa
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_CHANGELOG]] — Changelog - Web Search Plus
+- [[09-技能库/resources_FAQ]] — Frequently Asked Questions
+- [[09-技能库/web-search-plus/FAQ]] — Frequently Asked Questions
+- [[09-技能库/web-search-plus/README]] — Web Search Plus
+- [[09-技能库/web-search-plus/SKILL]] — Web Search Plus
+- [[09-技能库/内容总结/SKILL]] — Summarize
+- [[ψ技能体系/00-foundation/llm-wiki/SKILL]] — Karpathy LLM Wiki
+- [[ψ技能体系/30-tools/cloudflare/SKILL]] — Cloudflare Platform Reference
+- [[ψ技能体系/30-tools/education/SKILL]] — EDUCATION SKILL
+- [[ψ技能体系/30-tools/hermes-agent/SKILL]] — Hermes Agent Skill
+
+<!-- AI-LINKS-END -->

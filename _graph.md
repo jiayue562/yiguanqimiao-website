@@ -1,4 +1,4 @@
----
+﻿---
 title: Knowledge Graph
 type: index
 updated: 2026-04-16
@@ -164,34 +164,34 @@ updated: 2026-04-16
 - [[README]]
 
 ### Cluster 3: overview (28 notes)
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
-- [[overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
+- [[00-索引与导航/AI统一索引/AI-总索引|overview]]
 
 ### Cluster 4: agent (18 notes)
 - [[agent]]
@@ -465,10 +465,24 @@ updated: 2026-04-16
 - [[木火共生关系协议]]
 
 ### Cluster 53: skill (2 notes)
-- [[skill]]
-- [[skill]]
+- [[00-索引与导航/AI统一索引/AI-总索引|skill]]
+- [[00-索引与导航/AI统一索引/AI-总索引|skill]]
 
 ### Cluster 54: api_references (2 notes)
 - [[api_references]]
 - [[api_references]]
 
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[00-索引与导航/知识图谱/link-validation_20260520_130624]] — 链接验证报告
+- [[01-核心体系/生生-文化操作系统/公众号40篇/NS86F45-01-IMA续传清单]] — 《生生》公众号40篇 · IMA 续传清单
+- [[16-工具与资源/templates_journal]] — {{DATE}}
+- [[05-五行人格心理学/理论基石/知识图谱/三源文件隐秘联系图谱]] — 五行人格心理学三源文件知识图谱
+- [[09-技能库/AI龙龟共生伙伴操作系统/references/integration-protocol]] — AI OS 三层整合协议
+- [[AGENT]] — Obsidian Knowledge Base — Agent Instructions
+- [[ψ技能体系/30-tools/content-factory/prompts/research-pipeline]] — Research-to-Article Pipeline
+
+<!-- AI-LINKS-END -->

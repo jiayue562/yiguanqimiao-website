@@ -1,4 +1,4 @@
-# TOOLSmd Skill（工具档案）
+﻿# TOOLSmd Skill（工具档案）
 
 ## 📖 技能定义
 
@@ -467,3 +467,17 @@ git push --tags
 **对标来源**: OpenClaw TOOLSmd规则
 **AI龙龟共生伙伴操作系统版本**: v4.1
 **路径**: `C:\Users\jia'yue\.workbuddy\skills\工具档案\SKILL.md`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[13-WorkBuddy-Sync/三向同步系统/QUICK_START]] — 🔗 三向同步系统 - 快速开始
+- [[03-知识地基层/记忆系统_BOOTSTRAP]] — BOOTSTRAP.md - 启动配置
+- [[03-知识地基层/记忆系统_MEMORY]] — MEMORY.md - 记忆系统架构 v2.1
+- [[03-知识地基层/记忆系统_记忆系统安装完成报告-v3.0]] — 记忆系统安装完成报告 v3.0
+- [[ψ技能体系/30-tools/工具档案/SKILL]] — TOOLSmd Skill（工具档案）
+- [[ψ技能体系/40-rules/工具档案/SKILL]] — TOOLSmd Skill（工具档案）
+
+<!-- AI-LINKS-END -->

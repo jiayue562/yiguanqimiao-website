@@ -1,4 +1,4 @@
-# 人机共生OS · 自动触发规则
+﻿# 人机共生OS · 自动触发规则
 
 ## 基本信息
 
@@ -110,3 +110,19 @@ else → 【不触发】静默观察
 
 **维护者**: 龙龟神将
 **核心金句**: "克就是滋养。约束即成长。"
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/核心Skills_人机共生OS-架构详解]] — 人机共生OS-架构详解
+- [[01-核心体系/核心Skills_人机共生OS]] — 人机共生OS · 完整架构白皮书 v5.0
+- [[03-知识地基层/象思维/NS6EED6-98-Skill 封装完成报告]] — 象思维 Skill 封装完成报告
+- [[09-技能库/AI-OS六层架构智能体/triggers/auto-trigger]] — AI-OS六层架构智能体 · 自动触发规则
+- [[09-技能库/skill-builder/standards/QUALITY_BASELINE]] — Skill 质量底线体系 v1.0
+- [[09-技能库/skill-builder/standards/QUALITY_CHECKLIST_TEMPLATE]] — Skill质量检查表模板 v1.0
+- [[09-技能库/人机共生OS/references/NS78497-01-architecture]] — 人机共生OS · 各章节详细内容 v5.0
+- [[09-技能库/教员方法论/triggers/auto-activate-rules]] — 教员方法论 Skill 自动触发规则
+
+<!-- AI-LINKS-END -->

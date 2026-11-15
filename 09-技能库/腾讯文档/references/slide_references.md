@@ -1,4 +1,4 @@
-# 幻灯片（Slide / PPT）参考文档
+﻿# 幻灯片（Slide / PPT）参考文档
 
 本文件包含腾讯文档 MCP 幻灯片相关工具的使用指南和注意事项。
 
@@ -160,3 +160,21 @@ ERROR:<error_message>
 # 用户上传了材料，agent 解析后传入
 node generate_slide.js --description "用户原话" --reference_context "解析后的材料文本"
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[16-工具与资源/工具技能_PPT读取技能包]] — PPT读取技能包
+- [[09-技能库/PPT读取/test-cases]] — PPT读取 Skill 测试用例
+- [[09-技能库/resources_api_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/resources_sheet_references]] — Sheet 表格操作参考文档
+- [[09-技能库/腾讯文档/SKILL]] — 腾讯文档 MCP 使用指南
+- [[09-技能库/腾讯文档/references/manage_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/腾讯文档/references/space_references]] — 知识库空间 API 参考
+- [[09-技能库/腾讯文档/sheet/api/operation-api]] — Sheet 表格操作参考文档
+- [[ψ技能体系/30-tools/markitdown-local/SKILL]] — markitdown-local - 统一文档转换
+- [[ψ技能体系/30-tools/腾讯文档/SKILL]] — 腾讯文档 MCP 使用指南
+
+<!-- AI-LINKS-END -->

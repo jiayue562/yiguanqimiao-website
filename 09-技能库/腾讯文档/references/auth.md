@@ -1,4 +1,4 @@
-# 腾讯文档鉴权检查
+﻿# 腾讯文档鉴权检查
 
 腾讯文档授权流程，**必须按以下步骤执行**：
 
@@ -86,3 +86,18 @@ mcporter config add tencent-sheetengine "https://docs.qq.com/api/v6/sheet/mcp" \
 | `ERROR:save_token_failed` | Token 写入配置失败 |
 | `ERROR:no_code` | 未找到授权码，需重新执行第一步 |
 | `ERROR:network` | 网络请求失败，检查网络后重试 |
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/AI智能体_01-02-技能库]] — 01-02-技能库
+- [[01-核心体系/龙心OS_📖Harness-Engineering反馈层]] — Harness Engineering反馈层
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析]] — Harness Engineering核心内容深度解析
+- [[09-技能库/resources_sheet_references]] — Sheet 表格操作参考文档
+- [[09-技能库/腾讯文档/references/docengine_references]] — DOC 编辑引擎 API 参考
+- [[09-技能库/腾讯文档/sheet/api/mcp-api]] — 腾讯文档 Sheet MCP 工具完整参考
+- [[ψ技能体系/30-tools/web-access/references/migration-2.5.3]] — v2.5.3 迁移指南：/new 和 /navigate 改 POST body
+
+<!-- AI-LINKS-END -->

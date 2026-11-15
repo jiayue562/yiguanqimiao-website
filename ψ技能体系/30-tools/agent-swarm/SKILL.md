@@ -1,0 +1,92 @@
+﻿---
+name: agent-swarm
+parent_skill: ai-os
+description: agent-swarm skill converted from WorkBuddy
+---
+
+# Agent Swarm Skill - 多代理并行任务执行
+
+## 技能概述
+多代理并行任务执行技能，支持同时调度多个子代理协同完成复杂任务。
+
+## 核心功能
+
+### 1. 任务并行化
+- **并行执行**：同时启动多个子代理执行独立任务
+- **任务分发**：将复杂任务分解为可并行的子任务
+- **负载均衡**：智能分配任务给空闲代理
+
+### 2. 子代理管理
+- **代理池管理**：维护可用代理列表和状态
+- **生命周期管理**：代理的创建、监控、销毁
+- **资源调度**：控制并发数量，避免资源过载
+
+### 3. 结果聚合
+- **结果收集**：收集各子代理的执行结果
+- **冲突处理**：处理并行任务的结果冲突
+- **最终整合**：将分散结果整合为统一输出
+
+## 触发关键词
+- 并行执行、多代理
+- 同时进行、分布式
+- 代理池、任务分发
+
+## 使用场景
+
+### 场景1：多个独立任务并行
+```
+用户：帮我查一下最近的经济新闻、行业动态、科技趋势
+→ 同时启动3个代理分别查询，最后聚合结果
+```
+
+### 场景2：复杂任务分解并行
+```
+用户：分析这个项目的市场前景
+→ 分解为：市场分析+技术评估+竞品分析+风险评估，并行执行
+```
+
+## 配置参数
+
+```yaml
+并发配置:
+  max_concurrent: 5  # 最大并发数
+  timeout: 300       # 单任务超时时间(秒)
+  retry: 2          # 失败重试次数
+
+代理配置:
+  default_agent: gpt-4
+  specialized_agents:
+    - research: gpt-4
+    - code: claude
+    - analysis: gpt-4
+```
+
+## 与其他Skills的整合
+
+### 与agent-orchestrator整合
+- 作为编排的下层执行层
+- 接收分解后的子任务并执行
+
+### 与task-router整合
+- 根据任务类型选择合适的执行模式
+
+## 版本信息
+- 版本：1.0
+- 创建时间：2026-03-23
+- 作者：龙龟神将
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_龙心OS-知行合一-五行人格OS整合方案v1.0]] — 龙心OS · 知行合一 · 五行人格OS 三大系统整合方案 v1.0
+- [[03-知识地基层/记忆系统_AGENTS]] — AGENTS.md - 智能体配置
+- [[09-技能库/agent-orchestrator/SKILL]] — 智能体协调规划器 (Agent Orchestrator)
+- [[09-技能库/agent-swarm/SKILL]] — Agent Swarm Skill - 多代理并行任务执行
+- [[09-技能库/create-sub-agent/SKILL]] — Create Sub-Agent Skill - 交互式子代理创建
+- [[09-技能库/五行人格心理学/L3调度层/SKILL]] — 五行人格心理学L3调度层Skills
+- [[ψ技能体系/30-tools/agent-orchestrator/SKILL]] — 智能体协调规划器 (Agent Orchestrator)
+- [[ψ技能体系/30-tools/create-sub-agent/SKILL]] — Create Sub-Agent Skill - 交互式子代理创建
+
+<!-- AI-LINKS-END -->

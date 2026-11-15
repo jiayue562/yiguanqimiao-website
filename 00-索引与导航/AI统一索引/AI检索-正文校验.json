@@ -1,0 +1,9 @@
+{
+  "generated": "2026-11-14 12:37:36",
+  "scope": "全量规范化第二轮",
+  "checked": 3666,
+  "inconsistent": 0,
+  "result": "PASS",
+  "detail": [],
+  "method": "原始字节按计划 changes 用同一正则正向重建，逐字节比对落盘文件"
+}

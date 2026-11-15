@@ -1,4 +1,4 @@
----
+﻿---
 title: "知识学习Skills v2.5 · 易经卦变整合完整版"
 description: "AI超级读者与创新催化剂·双层架构完整方法论。基于十项认知操作指令 + MECE原则 + 金字塔原理 + 易经卦变思维（本卦、变卦、互卦、错卦、综卦、杂卦）+ LLM Wiki三层知识流水线"
 author: "以观其妙书院 · 悟空 & 龙龟神将"
@@ -140,7 +140,7 @@ tags: [知识学习, 十项认知指令, MECE原则, 金字塔原理, 易经卦�
 | 象思维 | `[[象思维]]` | 0→1原创突破 |
 | 五色光思维 | `[[五色光思维]]` | 多维度分析 |
 | 知行合一 | `[[知行合一]]` | 经验沉淀 |
-| 五行人格 | `[[五行人格心理学]]` | 五行对应 |
+| 五行人格 | `[[00-索引与导航/AI统一索引/AI-总索引|五行人格心理学]]` | 五行对应 |
 
 ---
 
@@ -160,3 +160,21 @@ tags: [知识学习, 十项认知指令, MECE原则, 金字塔原理, 易经卦�
 **维护者**: 龙龟神将  
 **最后更新**: 2026-04-14  
 **同步状态**: WorkBuddy ↔ Obsidian ↔ IMA 三向同步
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/核心Skills_象思维Skills-v5.0-易经卦变整合]] — 象思维Skills v5.0 · 易经卦变整合
+- [[01-核心体系/核心Skills_🎭 悟空·风格画像-教员方法论会议录音深度学习]] — 🎭 悟空·风格画像 v1.0
+- [[01-核心体系/龙心OS_📚 知识学习Skills]] — 知识学习Skills - AI超级读者与创新催化剂
+- [[01-核心体系/龙心OS_📚 知识库建设Skill]] — 📚 知识库建设 · 三层架构设计与实施指南
+- [[03-知识地基层/音乐与AI的本质联结/NSD58A1-00-总索引]] — 《音乐与AI的本质联结：从音符到智能的涌现》知识总索引
+- [[09-技能库/AI龙龟共生伙伴操作系统/references/integration-protocol]] — AI OS 三层整合协议
+- [[09-技能库/LLM-Wiki/references/integration-notes]] — LLM Wiki × 龙心OS 整合笔记 v1.0
+- [[09-技能库/LLM-Wiki/templates/wiki-template]] — LLM Wiki · Wiki页面模板库
+- [[09-技能库/LLM-Wiki/test-cases]] — LLM Wiki Skills · 测试用例 v1.0
+- [[09-技能库/llmification-knowledge-builder/references/theory]] — Theory.md - LLMification 理论依据
+
+<!-- AI-LINKS-END -->

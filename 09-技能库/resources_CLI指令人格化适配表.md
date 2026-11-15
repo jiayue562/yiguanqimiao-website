@@ -1,4 +1,4 @@
----
+﻿---
 title: "CLI指令人格化适配表"
 created: "2026-03-22"
 tags: [CLI, 人格化适配, 个性化参数, 参数映射]
@@ -113,3 +113,20 @@ tags: [CLI, 人格化适配, 个性化参数, 参数映射]
 ---
 
 **标签**：`#CLI` `#人格化适配` `#个性化参数` `#参数映射`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/CLI指令解析/SKILL]] — CLI指令解析Skill v1.0
+- [[09-技能库/CLI指令解析/references/CLI指令人格化适配表]] — CLI指令人格化适配表
+- [[09-技能库/CLI指令解析/references/CLI指令优化案例]] — CLI指令优化案例
+- [[09-技能库/CLI指令解析/references/CLI指令分类体系]] — CLI指令分类体系
+- [[09-技能库/resources_CLI指令优化案例]] — CLI指令优化案例
+- [[09-技能库/resources_CLI指令分类体系]] — CLI指令分类体系
+- [[09-技能库/resources_优化现有Skills指南]] — 优化现有Skills指南
+- [[09-技能库/企业文化OS/cli/diagnose-cli]] — 企业文化诊断CLI · 命令行操作入口
+- [[ψ技能体系/30-tools/CLI指令解析/SKILL]] — CLI指令解析Skill v1.1
+
+<!-- AI-LINKS-END -->

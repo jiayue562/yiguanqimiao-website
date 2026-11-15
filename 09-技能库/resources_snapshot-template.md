@@ -1,4 +1,4 @@
-# 上下文快照模板 v1
+﻿# 上下文快照模板 v1
 
 > 📋 标准化的上下文快照格式
 
@@ -139,3 +139,20 @@
 ---
 
 *此快照用于跨会话任务连续性管理，请妥善保存*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[20-工作记录与复盘/_从根目录迁入/日签/今日待办]] — 今日待办
+- [[09-技能库/上下文工程.skills/templates/context-snapshot]] — 上下文快照 · {项目名称}
+- [[09-技能库/上下文工程/上下文工程]] — 上下文工程 Skill
+- [[ψ技能体系/30-tools/material-organizer/references/output-schema]] — 输出文档格式规范
+- [[ψ技能体系/99-archive/上下文工程.skills/prompt-context/templates/summary-prompt]] — summary-prompt
+- [[ψ技能体系/99-archive/上下文工程.skills/templates/output-snapshot]] — 上下文快照
+- [[ψ技能体系/99-archive/上下文工程/references/prompts]] — 提示词模板
+- [[ψ技能体系/99-archive/上下文工程/references/sop]] — SOP
+- [[ψ技能体系/99-archive/上下文工程/templates/output-snapshot]] — 上下文快照: {{project_name}}
+
+<!-- AI-LINKS-END -->

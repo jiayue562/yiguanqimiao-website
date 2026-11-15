@@ -1,4 +1,4 @@
-# Humanizer
+﻿# Humanizer
 
 A Clawdbot skill that removes signs of AI-generated writing from text, making it sound more natural and human.
 
@@ -80,3 +80,17 @@ Based on [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikip
 ## License
 
 MIT
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/humanizer/README]] — Humanizer
+- [[09-技能库/humanizer/SKILL]] — Humanizer: Remove AI Writing Patterns
+- [[09-技能库/resources_CHANGELOG]] — Changelog - Web Search Plus
+- [[09-技能库/去AI味/SKILL]] — Humanizer: Remove AI Writing Patterns
+- [[ψ技能体系/30-tools/humanizer/README]] — Humanizer
+- [[ψ技能体系/30-tools/humanizer/SKILL]] — Humanizer: Remove AI Writing Patterns
+
+<!-- AI-LINKS-END -->

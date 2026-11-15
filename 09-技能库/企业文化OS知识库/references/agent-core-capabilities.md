@@ -1,4 +1,4 @@
-# 企业文化OS知识库智能体 · 核心能力文档
+﻿# 企业文化OS知识库智能体 · 核心能力文档
 
 > **文档定位**：定义智能体的三大核心能力（感知-决策-学习）
 > **版本**：v1.0 | **创建日期**：2026-04-10 | **维护者**：龙龟神将
@@ -302,3 +302,18 @@
 **创建日期**: 2026-04-10  
 **维护者**: 龙龟神将  
 **关联文档**: SKILL.md、integration.md、framework-autonomy.md
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/核心Skills_象思维Skills-v5.0-易经卦变整合]] — 象思维Skills v5.0 · 易经卦变整合
+- [[01-核心体系/龙心OS_LLM-Wiki-Skills]] — LLM Wiki Skills · 活体维基知识编译系统 v1.0
+- [[01-核心体系/龙心OS_📚 知识库建设Skill]] — 📚 知识库建设 · 三层架构设计与实施指南
+- [[09-技能库/AI-OS六层架构智能体/triggers/auto-trigger]] — AI-OS六层架构智能体 · 自动触发规则
+- [[09-技能库/resources_企业文化OS知识库智能体架构]] — 企业文化OS知识库智能体 · 架构文档
+- [[09-技能库/skill-builder/standards/QUALITY_BASELINE]] — Skill 质量底线体系 v1.0
+- [[09-技能库/企业文化OS知识库/references/agent-invocation-protocol]] — 企业文化OS知识库智能体 · 调用协议
+
+<!-- AI-LINKS-END -->

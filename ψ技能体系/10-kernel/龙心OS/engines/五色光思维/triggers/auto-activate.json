@@ -1,0 +1,168 @@
+{
+  "skillName": "五色光思维",
+  "version": "1.0",
+  "autoActivateConfig": {
+    "enabled": true,
+    "priority": "P0",
+    
+    "directTriggers": [
+      "五色光思维",
+      "五色光",
+      "同频思考",
+      "思维序列",
+      "分色管理",
+      "白光思维",
+      "红光思维",
+      "黄光思维",
+      "绿光思维",
+      "蓝光思维",
+      "会议管理",
+      "决策支持",
+      "团队思考",
+      "问题分析",
+      "创意激发",
+      "绩效面谈",
+      "主持人",
+      "智慧凝聚",
+      "高质决策",
+      "过程管理",
+      "六顶思考帽",
+      "平行思维"
+    ],
+    
+    "contextTriggers": [
+      {
+        "pattern": "开会跑题",
+        "weight": 4,
+        "action": "ask"
+      },
+      {
+        "pattern": "讨论混乱",
+        "weight": 4,
+        "action": "ask"
+      },
+      {
+        "pattern": "大家想法不一致",
+        "weight": 4,
+        "action": "ask"
+      },
+      {
+        "pattern": "需要集体决策",
+        "weight": 4,
+        "action": "ask"
+      },
+      {
+        "pattern": "团队讨论",
+        "weight": 4,
+        "action": "ask"
+      },
+      {
+        "pattern": "如何系统分析",
+        "weight": 4,
+        "action": "ask"
+      },
+      {
+        "pattern": "全面考虑",
+        "weight": 4,
+        "action": "ask"
+      },
+      {
+        "pattern": "多角度思考",
+        "weight": 4,
+        "action": "ask"
+      }
+    ],
+    
+    "regexTriggers": [
+      {
+        "pattern": "大家.*不统一",
+        "weight": 3,
+        "action": "suggest",
+        "description": "需要共识"
+      },
+      {
+        "pattern": "会.*太乱",
+        "weight": 3,
+        "action": "suggest",
+        "description": "需要引导"
+      },
+      {
+        "pattern": "是不是漏了",
+        "weight": 3,
+        "action": "suggest",
+        "description": "需要全面"
+      },
+      {
+        "pattern": "有没有.*方案",
+        "weight": 3,
+        "action": "suggest",
+        "description": "需要创意"
+      },
+      {
+        "pattern": "怎么决定",
+        "weight": 3,
+        "action": "suggest",
+        "description": "需要决策"
+      },
+      {
+        "pattern": "意见.*分歧",
+        "weight": 3,
+        "action": "suggest",
+        "description": "需要协调"
+      }
+    ],
+    
+    "excludeKeywords": [
+      "马上",
+      "立刻",
+      "紧急",
+      "快点",
+      "随便",
+      "简单",
+      "午餐",
+      "穿什么"
+    ],
+    
+    "skillRoutes": {
+      "preSkills": [
+        {
+          "skill": "知识学习",
+          "condition": "需要先了解背景",
+          "autoActivate": false
+        },
+        {
+          "skill": "象思维",
+          "condition": "需要创造性输入",
+          "autoActivate": false
+        }
+      ],
+      "postSkills": [
+        {
+          "skill": "知行合一",
+          "condition": "决策需要落地执行",
+          "autoActivate": true
+        },
+        {
+          "skill": "人机协同五象限",
+          "condition": "需要人机协作",
+          "autoActivate": false
+        }
+      ]
+    },
+    
+    "learningConfig": {
+      "trackUserPreference": true,
+      "adjustFrequency": true,
+      "minAcceptRate": 0.3,
+      "maxFrequency": 3,
+      "cooldownMinutes": 30
+    }
+  },
+  
+  "metadata": {
+    "createdAt": "2026-04-17T09:00:00+08:00",
+    "createdBy": "龙龟",
+    "lastModified": "2026-04-17T09:00:00+08:00",
+    "status": "active"
+  }
+}

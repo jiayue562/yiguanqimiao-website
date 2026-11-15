@@ -385,3 +385,21 @@ AI龙龟共生伙伴操作系统（AI OS）v4.0，对标OpenClaw蓝皮书189页�
 **作者**：观其妙书院 · 悟空 & 龙龟神将
 
 **木生火，我们一起进化！** 🌳🔥💪
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/AI龙龟共生OS升级包3.0/龙龟升级/AI龙龟共生OS/AI龙龟共生OS·顶层设计]] — AI龙龟共生OS · 顶层设计
+- [[01-核心体系/龙心OS_Claude-Code与龙心OS融合-知识图谱]] — Claude Code源码与龙心OS融合 · 知识图谱
+- [[01-核心体系/龙心OS_Claude-Code源码工程智慧与龙心OS融合框架]] — Claude Code源码工程智慧与龙心OS融合框架
+- [[01-核心体系/龙心OS_📖Harness-Engineering驾驭工程skills]] — Harness Engineering驾驭工程skills
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析]] — Harness Engineering核心内容深度解析
+- [[05-五行人格心理学/应用场景/企业管理/企业管理_OpenClaw成功案例分析]] — OpenClaw成功案例分析
+- [[05-五行人格心理学/应用场景/企业管理/企业管理_公众号文章成功因素分析]] — 公众号文章成功因素分析
+- [[20-工作记录与复盘/journal_2026-04-05_共生成长总结]] — 2026-04-05 共生成长总结
+- [[09-技能库/AI-OS六层架构智能体/SKILL]] — AI-OS六层架构智能体 v1.0
+- [[09-技能库/AI龙龟共生伙伴操作系统/references/openclaw-alignment]] — AI龙龟共生伙伴操作系统（AI OS）v4.0 · OpenClaw对标方案
+
+<!-- AI-LINKS-END -->

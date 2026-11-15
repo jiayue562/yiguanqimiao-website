@@ -1,4 +1,4 @@
----
+﻿---
 name: find-skills
 description: Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.
 ---
@@ -131,3 +131,17 @@ I can still help you with this task directly! Would you like me to proceed?
 If this is something you do often, you could create your own skill:
 npx skills init my-xyz-skill
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/browser-automation/SKILL]] — Browser Automation
+- [[09-技能库/skill-creator/SKILL]] — Skill Creator
+- [[09-技能库/技能创建指南/SKILL]] — Skill Creator
+- [[ψ技能体系/10-kernel/龙心OS/self-learning/references/skill_creation_guide]] — Skill Creator Guide
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/SKILL]] — Find Skills
+- [[ψ技能体系/30-tools/find-skills/SKILL]] — Find Skills
+
+<!-- AI-LINKS-END -->

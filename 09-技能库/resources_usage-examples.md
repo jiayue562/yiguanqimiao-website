@@ -1,4 +1,4 @@
-# IMA 技能使用示例
+﻿# IMA 技能使用示例
 
 ## 场景1：搜索并阅读笔记
 
@@ -104,3 +104,21 @@ setx IMA_OPENAPI_APIKEY "your_api_key"
 3. 如果用户同意拆分：
    - 将内容按段落拆分
    - 创建多篇笔记或使用 `append_doc` 接口分批写入
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[00-索引与导航/🔗 双向链接规范 v1.0]] — 🔗 双向链接规范 v1.0
+- [[09-技能库/ima-skill/notes/references/api]] — IMA笔记 API
+- [[09-技能库/ima-skills/ima-skill/notes/references/api]] — IMA笔记 API
+- [[09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/notes/references/api]] — IMA笔记 API
+- [[09-技能库/ima笔记/references/api]] — IMA笔记 API
+- [[09-技能库/resources_api]] — IMA笔记 API
+- [[09-技能库/wechat-articles/SKILL]] — 微信公众号文章搜索技能
+- [[09-技能库/腾讯ima/notes/references/api]] — IMA笔记 API
+- [[ψ技能体系/30-tools/multi-search-engine/CHANNELLOG]] — Multi Search Engine
+- [[ψ技能体系/30-tools/wechat-article-search/SKILL]] — 微信公众号文章搜索说明
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# Mission Control Skill（任务控制台）
+﻿# Mission Control Skill（任务控制台）
 
 ## 📖 技能定义
 
@@ -435,3 +435,19 @@ audit_log:
 **对标来源**: OpenClaw Mission Control规则
 **AI龙龟共生伙伴操作系统版本**: v4.1
 **路径**: `C:\Users\jia'yue\.workbuddy\skills\任务控制台\SKILL.md`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[02-信仰文化体系/项目实践_02-项目与实践]] — 02-项目与实践
+- [[03-知识地基层/记忆系统_obsidian-backup-system]] — 🚀 WorkBuddy ↔ Obsidian 知识备份系统
+- [[03-知识地基层/记忆系统_记忆系统安装完成报告-v3.0]] — 记忆系统安装完成报告 v3.0
+- [[20-工作记录与复盘/journal_2026-03-26_共生成长自动归档]] — 2026-03-26 共生成长自动归档
+- [[09-技能库/岗位智能体/v3.0/龙爪实测反推修改文档]] — 岗位智能体 · 龙爪实测反推修改文档
+- [[09-技能库/心跳巡检档案/SKILL]] — HEARTBEATmd Skill（心跳巡检档案）
+- [[ψ技能体系/30-tools/任务控制台/SKILL]] — Mission Control Skill（任务控制台）
+- [[ψ技能体系/40-rules/心跳巡检档案/SKILL]] — HEARTBEATmd Skill（心跳巡检档案）
+
+<!-- AI-LINKS-END -->

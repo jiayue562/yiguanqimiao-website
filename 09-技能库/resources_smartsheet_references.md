@@ -1,4 +1,4 @@
-# 智能表格（SmartSheet）工具完整参考文档
+﻿# 智能表格（SmartSheet）工具完整参考文档
 
 腾讯文档智能表格（SmartSheet）提供了一套完整的表格操作 API，支持对工作表、视图、字段、记录进行增删改查操作。
 
@@ -1048,3 +1048,21 @@
 
 - **图片字段写入**：向图片类型字段（field_type=5）写入数据时，需先调用 `upload_image` 工具上传图片获取 `imageID`，再以 `[{"imageID": "xxx"}]` 格式填入字段值
 - **字段类型不可变**：`update_fields` 时 `field_type` 不能修改，但必须传入原值；支持的字段类型详见第 5 节字段类型枚举表
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_api_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/resources_smartcanvas_references]] — 智能文档（SmartCanvas）工具完整参考文档
+- [[09-技能库/腾讯文档/SKILL]] — 腾讯文档 MCP 使用指南
+- [[09-技能库/腾讯文档/references/manage_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/腾讯文档/references/smartsheet_references]] — 智能表格（SmartSheet）工具完整参考文档
+- [[09-技能库/腾讯文档/references/unsupported_feature_reporting]] — 不支持能力上报规范（report_unsupported_feature）
+- [[09-技能库/腾讯文档/references/workflows]] — 公共接口与常见工作流
+- [[09-技能库/腾讯文档/sheet/api/mcp-api]] — 腾讯文档 Sheet MCP 工具完整参考
+- [[09-技能库/腾讯文档/smartcanvas/entry]] — 文档（SmartCanvas）工具完整参考文档
+- [[ψ技能体系/30-tools/deep-research/research-add-fields/SKILL]] — Research Add Fields - 琛ュ厖璋冪爺瀛楁
+
+<!-- AI-LINKS-END -->

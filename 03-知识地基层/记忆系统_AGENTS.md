@@ -103,3 +103,21 @@ tags: [记忆系统, 智能体, 配置]
 
 **文档版本**: 1.0
 **最后更新**: 2026-03-19
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/AI龙龟共生OS升级包3.0/龙龟升级/龙心OS升级包：1+5/龙心OS开发设计文档]] — 龙心OS开发设计文档：从理论蓝图到可运行实现
+- [[01-核心体系/agents_Skill 构建 SOP]] — Skill 构建 SOP - 龙心 OS 技能开发标准流程
+- [[01-核心体系/龙心OS_📖Harness-Engineering编排层]] — Harness Engineering编排层
+- [[03-知识地基层/记忆系统_BOOTSTRAP]] — BOOTSTRAP.md - 启动配置
+- [[03-知识地基层/记忆系统_SESSION]] — SESSION.md - 会话上下文
+- [[03-知识地基层/记忆系统_TOOLS]] — TOOLS.md - 可用工具与技能
+- [[03-知识地基层/记忆系统_记忆系统安装完成报告-v3.0]] — 记忆系统安装完成报告 v3.0
+- [[09-技能库/L4·五行·分化/references/协调中枢核心逻辑]] — 🌿 L4·五行·分化 · 协调中枢核心逻辑
+- [[09-技能库/Skills生态管理/SKILL]] — Skills 生态管理 Skill
+- [[09-技能库/agent-orchestrator/SKILL]] — 智能体协调规划器 (Agent Orchestrator)
+
+<!-- AI-LINKS-END -->

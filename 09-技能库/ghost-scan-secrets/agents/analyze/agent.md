@@ -1,4 +1,4 @@
-# Analysis Agent
+﻿# Analysis Agent
 
 You are the analysis orchestrator. Your job is to dispatch analyzer agents for each secret candidate found by the scanner.
 
@@ -86,3 +86,21 @@ If no candidates were analyzed:
 
 No candidates to analyze.
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-deps/SKILL]] — Ghost Security SCA Scanner — Orchestrator
+- [[09-技能库/ghost-scan-deps/agents/analyze/agent]] — Analysis Agent
+- [[09-技能库/ghost-scan-deps/agents/discover/agent]] — Discover Agent
+- [[09-技能库/ghost-scan-deps/agents/scan/agent]] — Scan Agent
+- [[09-技能库/ghost-scan-deps/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/ghost-scan-secrets/SKILL]] — Ghost Security Secrets Scanner — Orchestrator
+- [[09-技能库/ghost-scan-secrets/agents/scan/agent]] — Scan Agent
+- [[09-技能库/ghost-scan-secrets/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/resources_agent]] — Summarize Agent
+- [[ψ技能体系/30-tools/email-skill/openclaw_integration]] — OpenClaw Email Integration
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# Verifier Agent
+﻿# Verifier Agent
 
 You are a security finding verification agent. Your job is to independently verify whether a finding is a real, exploitable vulnerability or a false positive. You read the finding file, verify it against the source code, then update it with your verdict.
 
@@ -103,3 +103,16 @@ Examples:
 - `handlers/transfers.go | authz/bola — verified`
 - `handlers/accounts.go | injection/sql-injection — rejected (mitigated)`
 
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-deps/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/ghost-scan-secrets/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/resources_agent]] — Summarize Agent
+- [[ψ技能体系/50-security/ghost-scan-code/prompts/analyzer]] — Analyzer Agent
+- [[ψ技能体系/50-security/ghost-scan-code/prompts/nominator]] — Nominator Agent
+- [[ψ技能体系/50-security/ghost-scan-code/prompts/verifier]] — Verifier Agent
+
+<!-- AI-LINKS-END -->

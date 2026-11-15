@@ -1,4 +1,4 @@
-# Task Router Skill - 智能任务路由
+﻿# Task Router Skill - 智能任务路由
 
 ## 技能概述
 智能任务路由技能，分析用户请求并生成确定性调度计划，将任务分发到合适的处理单元。
@@ -80,3 +80,17 @@
 - 版本：1.0
 - 创建时间：2026-03-23
 - 作者：龙龟神将
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[03-知识地基层/记忆系统_TOOLS]] — TOOLS.md - 可用工具与技能
+- [[05-五行人格心理学/融合体系/五行AI_路由系统]] — 五行人格AI智能体路由系统
+- [[09-技能库/AI-OS六层架构智能体/references/决策层]] — 决策层 v1.0
+- [[09-技能库/AI龙龟共生伙伴操作系统/references/three-layer-architecture]] — AI OS 三层架构详解
+- [[09-技能库/agent-orchestrator/SKILL]] — 智能体协调规划器 (Agent Orchestrator)
+- [[ψ技能体系/30-tools/task-router/SKILL]] — Task Router Skill - 智能任务路由
+
+<!-- AI-LINKS-END -->

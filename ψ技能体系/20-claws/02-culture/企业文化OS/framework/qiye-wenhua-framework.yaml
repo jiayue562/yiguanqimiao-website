@@ -1,0 +1,150 @@
+# 企业文化OS Framework配置
+# 任务调度、状态管理、执行监控
+
+version: "1.0"
+name: 企业文化OS调度框架
+created: 2026-04-10
+maintainer: 龙龟神将
+
+# ========================
+# 调度器配置
+# ========================
+scheduler:
+  type: dag  # 有向无环图调度
+  max_concurrent_tasks: 3
+  retry_policy:
+    max_retries: 3
+    retry_delay_seconds: 60
+    retry_on: [timeout, network_error, service_unavailable]
+
+  # 任务队列
+  queues:
+    diagnose_queue:
+      priority: high
+      workers: 2
+    design_queue:
+      priority: high
+      workers: 3
+    implement_queue:
+      priority: normal
+      workers: 2
+    knowledge_queue:
+      priority: low
+      workers: 1
+
+# ========================
+# 任务定义
+# ========================
+tasks:
+  diagnose:
+    type: pipeline
+    steps:
+      - collect_data
+      - design_survey
+      - execute_survey
+      - conduct_interviews
+      - analyze_data
+      - generate_report
+    timeout_minutes: 120
+
+  design_culture:
+    type: pipeline
+    steps:
+      - rongru_shidai      # 融入时代
+      - jingying_xinfa     # 经营心法
+      - fenwei_yingzao     # 氛围营造
+      - liyi_yishi         # 礼乐仪式
+      - gongxun_tixi       # 功勋体系
+      - shangxueyuan       # 企业商学院
+      - integrate          # 方案整合
+    dependencies:
+      - diagnose
+    timeout_minutes: 180
+
+  implement:
+    type: pipeline
+    steps:
+      - phase1_concept
+      - phase2_atmosphere
+      - phase3_system
+      - phase4_ritual
+      - phase5_inherit
+    dependencies:
+      - design_culture
+    timeout_minutes: 300
+
+  evaluate:
+    type: single
+    dependencies:
+      - implement
+    timeout_minutes: 60
+
+# ========================
+# 状态管理
+# ========================
+state_management:
+  storage: local_filesystem
+  path: ./.culture-os-state/
+  
+  states:
+    - pending      # 等待执行
+    - running      # 执行中
+    - completed    # 已完成
+    - failed       # 执行失败
+    - paused       # 已暂停
+    - cancelled    # 已取消
+
+  # 状态流转
+  transitions:
+    pending -> running
+    running -> completed | failed | paused
+    paused -> running | cancelled
+
+# ========================
+# 监控告警
+# ========================
+monitoring:
+  enabled: true
+  
+  metrics:
+    - task_completion_rate
+    - avg_execution_time
+    - error_rate
+    - queue_depth
+  
+  alerts:
+    - condition: error_rate > 0.1
+      severity: warning
+      action: notify_admin
+    
+    - condition: task_execution_time > 2x_expected
+      severity: info
+      action: log_and_continue
+    
+    - condition: queue_depth > 10
+      severity: warning
+      action: scale_workers
+
+# ========================
+# 资源分配
+# ========================
+resources:
+  diagnose:
+    cpu: 1
+    memory: "512MB"
+    priority: high
+  
+  design:
+    cpu: 2
+    memory: "1GB"
+    priority: high
+  
+  implement:
+    cpu: 1
+    memory: "512MB"
+    priority: normal
+  
+  evaluate:
+    cpu: 0.5
+    memory: "256MB"
+    priority: low

@@ -1,4 +1,4 @@
----
+﻿---
 name: 五行人格-会话上下文管理
 description: 五行人格心理学AI智能体的会话连续性管理系统，确保多轮对话中的逻辑一致性、上下文衔接和话题追踪，让长对话不丢线。
 version: "1.0"
@@ -167,3 +167,17 @@ tags: [记忆上下文, 会话管理, 连续性, 智能体]
 ---
 
 **版本**: v1.0 | **归属**: 五行人格心理学智能体·记忆上下文层
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[03-知识地基层/记忆系统_SESSION]] — SESSION.md - 会话上下文
+- [[08-龙心OS核心系统/记忆系统/SESSION]] — SESSION.md - 会话上下文
+- [[09-技能库/user-context/SKILL]] — User Context Skill - 用户画像管理
+- [[09-技能库/上下文工程.skills/templates/context-snapshot]] — 上下文快照 · {项目名称}
+- [[09-技能库/上下文工程/上下文工程]] — 上下文工程 Skill
+- [[ψ技能体系/30-tools/user-context/SKILL]] — User Context Skill - 用户画像管理
+
+<!-- AI-LINKS-END -->

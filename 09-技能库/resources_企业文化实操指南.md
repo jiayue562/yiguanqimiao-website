@@ -1,4 +1,4 @@
----
+﻿---
 title: "企业文化实操指南"
 description: "企业文化建设的七步落地方法，从需求诊断到持续进化"
 created: "2026-04-10"
@@ -255,3 +255,21 @@ Plan（计划）→ Do（执行）→ Check（检查）→ Act（改进）
 **创建时间**: 2026-04-10  
 **维护者**: 龙龟神将  
 **同步状态**: WorkBuddy ↔ Obsidian ↔ IMA 三向同步
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/agents_Skill 构建 SOP-5 阶 20 步完整版]] — Skill 构建 SOP - 5 阶 20 步完整版
+- [[16-工具与资源/areas_企业文化 OS]] — 企业文化 OS
+- [[05-五行人格心理学/应用场景/企业管理/企业管理_文化诊断工具]] — 企业文化诊断工具
+- [[09-技能库/resources_企业文化诊断体系：迪尔文化审计与本土化工具融合]] — 企业文化诊断体系：迪尔文化审计与本土化工具融合
+- [[09-技能库/企业文化/references/practice]] — 企业文化实操指南
+- [[09-技能库/教员方法论/templates/strategic-planning-template]] — 教员方法论 · 战略规划模板
+- [[09-技能库/麦肯锡思考工具/03-问题解决领域/重要度紧急度矩阵/SKILL]] — 重要度/紧急度矩阵 · 任务优先级排序
+- [[09-技能库/龙爪OS/references/workflow-guide]] — 龙爪OS工作流操作指南
+- [[ψ技能体系/20-claws/02-culture/企业文化OS/skills/qiye-shangxueyuan/SKILL]] — 企业商学院子智能体
+- [[ψ技能体系/20-claws/02-culture/企业文化OS/sop/implement-sop]] — 企业文化落地SOP
+
+<!-- AI-LINKS-END -->

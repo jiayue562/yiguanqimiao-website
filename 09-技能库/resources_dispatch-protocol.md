@@ -130,3 +130,17 @@
 ---
 
 *龙心OS 调度协议 v1.0 · 2026-03-16*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[13-WorkBuddy-Sync/10-kernel/入心协议/入心协议.SKILL]] — 入心协议 · 共生启动器
+- [[00-索引与导航/🔍 思维工具调用决策框架]] — 🔍 思维工具调用决策框架
+- [[01-核心体系/龙心OS_人机协同四象限.skills]] — 人机协同四象限.skills
+- [[01-核心体系/龙心OS_🤝 人机协同五象限Skills]] — 人机协同五象限.skills
+- [[09-技能库/龙心OS/references/dispatch-protocol]] — 龙心OS · 五引擎调度协议
+- [[ψ技能体系/99-archive/龙心OS/references/dispatch-protocol]] — 龙心OS · 五引擎调度协议
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
----
+﻿---
 name: AI-OS六层架构智能体
 description: AI-OS六层架构智能体——对标「智能体 = 灵魂层 × (知识库 + Skills + 工作流 + 上下文工程 + MCP + 决策层)」的完整实现。灵魂层是乘数（×），不是加法（+）——灵魂层决定其他层的"品质"。决策层是智能体从"被动响应"到"主动判断"的核心。
 version: 1.0
@@ -890,3 +890,17 @@ class AIOS六层智能体:
 
 **版本**: v1.0 | **创建**: 2026-04-10 | **作用域**: 用户全局目录
 **AI-OS六层架构智能体** · 悟空独创 · 灵魂层 × 技术栈
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/AI龙龟共生OS升级包3.0/龙龟升级/AI龙龟共生OS/AI龙龟共生OS·顶层设计]] — AI龙龟共生OS · 顶层设计
+- [[01-核心体系/龙心OS_🐉 龙心OS v5.0 总览]] — 🐉 龙心OS v5.0 总览
+- [[01-核心体系/龙心OS_📖Harness-Engineering驾驭工程skills]] — Harness Engineering驾驭工程skills
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析]] — Harness Engineering核心内容深度解析
+- [[09-技能库/AI龙龟共生伙伴操作系统/references/openclaw-alignment]] — AI龙龟共生伙伴操作系统（AI OS）v4.0 · OpenClaw对标方案
+- [[09-技能库/resources_openclaw-alignment]] — resources_openclaw-alignment
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# Workflow Patterns
+﻿# Workflow Patterns
 
 ## Sequential Workflows
 
@@ -26,3 +26,18 @@ For tasks with branching logic, guide Claude through decision points:
 2. Creation workflow: [steps]
 3. Editing workflow: [steps]
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[16-工具与资源/templates_idea]] — {{TITLE}}
+- [[09-技能库/automation-workflows/SKILL]] — Automation Workflows
+- [[09-技能库/skill-creator/references/workflows]] — Workflow Patterns
+- [[09-技能库/技能创建指南/references/workflows]] — Workflow Patterns
+- [[ψ技能体系/30-tools/mcp-builder/SKILL]] — MCP Server Development Guide
+- [[ψ技能体系/30-tools/skill-creator/references/workflows]] — Workflow Patterns
+- [[ψ技能体系/30-tools/提示词工程专家/CLAUDE]] — Prompt Engineering Expert Skill
+
+<!-- AI-LINKS-END -->

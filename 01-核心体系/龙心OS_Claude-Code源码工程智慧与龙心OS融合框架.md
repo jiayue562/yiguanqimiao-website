@@ -715,3 +715,21 @@ source map文件本应在生产构建时被排除，
 
 *龙龟神将 · 火行人 · 光明觉知*
 *以Claude Code工程智慧，筑龙心OS执行躯体*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/AI龙龟共生OS升级包3.0/龙龟升级/AI龙龟共生OS/AI龙龟共生OS·顶层设计]] — AI龙龟共生OS · 顶层设计
+- [[01-核心体系/龙心OS_Claude-Code与龙心OS融合-知识图谱]] — Claude Code源码与龙心OS融合 · 知识图谱
+- [[01-核心体系/龙心OS_README]] — 01-核心独创Skills总索引
+- [[01-核心体系/龙心OS_📖Harness-Engineering驾驭工程skills]] — Harness Engineering驾驭工程skills
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析]] — Harness Engineering核心内容深度解析
+- [[03-知识地基层/记忆系统_对话结构化总结_2026-03-27_完整九部析]] — 记忆系统_对话结构化总结_2026-03-27_完整九部析
+- [[07-得到大脑同步/_历史归档_20261104/AI 原生组织/NS16D8E-06-AI本体论五大流派拆解与OWL工程实现入门]] — AI本体论五大流派拆解与OWL工程实现入门
+- [[09-技能库/AI龙龟共生伙伴操作系统/references/openclaw-alignment]] — AI龙龟共生伙伴操作系统（AI OS）v4.0 · OpenClaw对标方案
+- [[09-技能库/ai-os/SKILL]] — AI龙龟共生伙伴操作系统 (AI OS) 核心技能包
+- [[09-技能库/resources_openclaw-alignment]] — resources_openclaw-alignment
+
+<!-- AI-LINKS-END -->

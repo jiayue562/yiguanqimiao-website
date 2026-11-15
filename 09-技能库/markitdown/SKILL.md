@@ -1,4 +1,4 @@
----
+﻿---
 name: markitdown
 version: 1.0
 description: 将 PDF/DOCX/PPTX/Excel 等文档转换为 Markdown 格式
@@ -61,3 +61,17 @@ D:\文档\报告.pdf
 1. 直接读取纯文本文件（.txt, .md）
 2. 使用read_file工具读取图片并进行OCR
 3. 尝试其他在线转换服务
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/AI智能体_01-02-技能库]] — 01-02-技能库
+- [[16-工具与资源/工具技能_PPT读取技能包]] — PPT读取技能包
+- [[20-工作记录与复盘/journal_2026-04-14_每日备份报告]] — 2026-04-14 Obsidian备份执行报告
+- [[09-技能库/PPT读取/test-cases]] — PPT读取 Skill 测试用例
+- [[09-技能库/ima-skill/notes/references/api]] — IMA笔记 API
+- [[09-技能库/腾讯文档/references/docengine_references]] — DOC 编辑引擎 API 参考
+
+<!-- AI-LINKS-END -->

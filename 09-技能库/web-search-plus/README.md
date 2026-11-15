@@ -1,4 +1,4 @@
-# Web Search Plus
+﻿# Web Search Plus
 
 > Unified multi-provider web search with **Intelligent Auto-Routing** — uses multi-signal analysis to automatically select between **Serper**, **Tavily**, **Querit**, **Exa**, **Perplexity (Sonar Pro)**, **You.com**, and **SearXNG** with confidence scoring.
 
@@ -798,3 +798,17 @@ MIT
 - [Tavily](https://tavily.com) — AI Research Search
 - [Exa](https://exa.ai) — Neural Search
 - [ClawHub](https://clawhub.ai) — OpenClaw Skills
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_CHANGELOG]] — Changelog - Web Search Plus
+- [[09-技能库/resources_FAQ]] — Frequently Asked Questions
+- [[09-技能库/web-search-plus/CHANGELOG]] — Changelog - Web Search Plus
+- [[09-技能库/web-search-plus/FAQ]] — Frequently Asked Questions
+- [[ψ技能体系/30-tools/web-search-plus/CHANGELOG]] — Changelog - Web Search Plus
+- [[ψ技能体系/30-tools/web-search-plus/FAQ]] — Frequently Asked Questions
+
+<!-- AI-LINKS-END -->

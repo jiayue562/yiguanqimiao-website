@@ -1,4 +1,4 @@
----
+﻿---
 name: humanizer
 version: 2.1.1
 description: "去除文本中 AI 生成的痕迹。用于编辑或审阅文本，使其更加自然和人性化。基于维基百科的「AI 写作痕迹」指南，检测并修复包括夸大象征意义、推销性语言、浅层分析、模糊引用、破折号滥用、三段式、AI 常用词汇、消极排比和过多连接词等模式。"
@@ -429,3 +429,21 @@ Provide:
 This skill is based on [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup. The patterns documented there come from observations of thousands of instances of AI-generated text on Wikipedia.
 
 Key insight from Wikipedia: "LLMs use statistical algorithms to guess what should come next. The result tends toward the most statistically likely result that applies to the widest variety of cases."
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/automation-workflows/SKILL]] — Automation Workflows
+- [[09-技能库/browser-automation/SKILL]] — Browser Automation
+- [[09-技能库/humanizer/README]] — Humanizer
+- [[09-技能库/resources_output-patterns]] — Output Patterns
+- [[09-技能库/skill-creator/references/output-patterns]] — Output Patterns
+- [[09-技能库/去AI味/README]] — Humanizer
+- [[09-技能库/去AI味/SKILL]] — Humanizer: Remove AI Writing Patterns
+- [[09-技能库/技能创建指南/references/output-patterns]] — Output Patterns
+- [[ψ技能体系/10-kernel/龙心OS/capability-evolver/SKILL]] — Evolver
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/AGENTS]] — AGENTS.md - Your Workspace
+
+<!-- AI-LINKS-END -->

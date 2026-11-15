@@ -1,4 +1,4 @@
-# 知识学习 Skill 检查清单
+﻿# 知识学习 Skill 检查清单
 
 > 待完成项追踪 · 质量检查标准
 
@@ -45,3 +45,21 @@
 ---
 
 _龙心 OS 知识学习 Skill 检查清单 v1.0 · 2026-04-15_
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_COMPLETION_REPORT]] — 知识学习 Skill 构建完成报告
+- [[09-技能库/skill-builder/BUILD_LOG-金行人分智能体封装]] — 🏭 金行人分智能�?skills · Skill Builder 构建日志
+- [[09-技能库/skill-builder/完成报告-土行人分智能体封装]] — 🌟 土行人分智能体独立封装·完成报�?
+- [[09-技能库/上下文工程.skills/CHECKLIST]] — 上下文工程.skills 构建检查清单
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/CHECKLIST]] — LLM Wiki 知识库 Skill — 构建检查清单
+- [[ψ技能体系/10-kernel/龙心OS/engines/知行合一/CHECKLIST]] — 知行合一 Skill 检查清单
+- [[ψ技能体系/30-tools/skill-builder/templates/output_template]] — Skill Builder 输出模板
+- [[ψ技能体系/30-tools/study-planner/references/lessons-learned]] — lessons-learned · study-planner 真实踩坑案例
+- [[ψ技能体系/99-archive/上下文工程.skills/CHECKLIST]] — 上下文工程.skills 构建检查清单
+- [[ψ技能体系/99-archive/上下文工程/CHECKLIST]] — 上下文工程 Skill 检查清单
+
+<!-- AI-LINKS-END -->

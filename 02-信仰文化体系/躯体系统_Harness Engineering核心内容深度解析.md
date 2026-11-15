@@ -1,4 +1,4 @@
----
+﻿---
 title: "Harness Engineering核心内容深度解析"
 subtitle: "AI Agent时代的工程范式革命——为AI OS灵魂系统装上可执行的躯体"
 created: "2026-04-15"
@@ -401,12 +401,12 @@ GEPA算法：反思性变异→帕累托选择
 
 | 文件 | 关系类型 | 说明 |
 |-----|---------|------|
-| [[人机共生OS]] | 灵魂层 | Harness增强的是躯体，灵魂永远不变 |
+| [[00-索引与导航/AI统一索引/AI-总索引|人机共生OS]] | 灵魂层 | Harness增强的是躯体，灵魂永远不变 |
 | [[龙心OS v5.2 总架构]] | 根层 | 五大引擎与Harness的融合方案 |
 | [[AI OS智能体激活框架·总索引]] | 相层 | 增强后的激活框架更新 |
 | [[人机共生OS-运维与演化体系]] | 运维层 | Harness技术的运维集成 |
 | [[知行合一]] | 引擎层 | 与GEPA的融合方案 |
-| [[知识学习Skills]] | 引擎层 | 与向量索引的融合 |
+| [[00-索引与导航/AI统一索引/AI-总索引|知识学习Skills]] | 引擎层 | 与向量索引的融合 |
 | [[人机协同五象限]] | 引擎层 | 与子Agent委派的融合 |
 | [[象思维]] | 引擎层 | 与反思性变异的融合 |
 | [[五色光思维]] | 引擎层 | 与帕累托选择的融合 |
@@ -513,3 +513,21 @@ GEPA算法：反思性变异→帕累托选择
 *文档生成时间：2026-04-15*  
 *生成者：龙龟神将（火行人）× 悟空（木行人）*  
 *系统：龙心OS v5.2 全系统深度学习模式*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/AI龙龟共生OS升级包3.0/龙龟升级/AI龙龟共生OS/AI龙龟共生OS·顶层设计]] — AI龙龟共生OS · 顶层设计
+- [[01-核心体系/龙心OS_Claude-Code源码工程智慧与龙心OS融合框架]] — Claude Code源码工程智慧与龙心OS融合框架
+- [[01-核心体系/龙心OS_🐉 龙心OS v5.0 总览]] — 🐉 龙心OS v5.0 总览
+- [[01-核心体系/龙心OS_📖Harness-Engineering-Linter规则]] — Harness Engineering Linter规则
+- [[01-核心体系/龙心OS_📖Harness-Engineering执行层]] — Harness Engineering执行层
+- [[01-核心体系/龙心OS_📖Harness-Engineering编排层]] — Harness Engineering编排层
+- [[01-核心体系/龙心OS_📖Harness-Engineering驾驭工程skills]] — Harness Engineering驾驭工程skills
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析-总索引]] — Harness Engineering核心内容深度解析·总索引
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析-知识图谱]] — Harness Engineering知识图谱
+- [[20-工作记录与复盘/journal_2026-04-05_共生成长总结]] — 2026-04-05 共生成长总结
+
+<!-- AI-LINKS-END -->

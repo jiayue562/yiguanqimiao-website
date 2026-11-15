@@ -1,0 +1,16 @@
+trigger-rules:
+  # 直接触发 (P0, weight 5)
+  - keywords: ["编译到 Wiki", "录入知识", "保存到知识库"]
+    weight: 5
+
+  # 场景触发 (P1, weight 4)
+  - keywords: ["查询知识", "搜索概念", "Wiki 里有"]
+    weight: 4
+
+  # 检查触发 (P2, weight 3)
+  - keywords: ["健康检查", "重建索引", "检查 Wiki"]
+    weight: 3
+
+  # 信号触发 (P3, weight 2)
+  - keywords: ["归档", "记住这个", "保存到知识库"]
+    weight: 2

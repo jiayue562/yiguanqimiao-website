@@ -1,4 +1,4 @@
----
+﻿---
 name: summarize
 description: "Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube)."
 description_zh: "总结网页、PDF、音频和视频内容"
@@ -50,3 +50,18 @@ Optional config file: `~/.summarize/config.json`
 Optional services:
 - `FIRECRAWL_API_KEY` for blocked sites
 - `APIFY_API_TOKEN` for YouTube fallback
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-secrets/agents/scan/agent]] — Scan Agent
+- [[09-技能库/resources_CHANGELOG]] — Changelog - Web Search Plus
+- [[09-技能库/resources_FAQ]] — Frequently Asked Questions
+- [[09-技能库/resources_TROUBLESHOOTING]] — Troubleshooting Guide
+- [[09-技能库/web-search-plus/CHANGELOG]] — Changelog - Web Search Plus
+- [[ψ技能体系/30-tools/summarize/SKILL]] — Summarize
+- [[ψ技能体系/30-tools/内容总结/SKILL]] — Summarize
+
+<!-- AI-LINKS-END -->

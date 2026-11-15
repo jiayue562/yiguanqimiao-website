@@ -1,0 +1,38 @@
+# WorkBuddy 三向同步自动化任务
+
+name = "WorkBuddy 三向同步"
+prompt = """
+执行完整的三向同步任务：WorkBuddy → Obsidian → IMA
+
+## 执行步骤
+
+1. **运行三向同步脚本**
+   - 脚本路径: C:\\Users\\jia'yue\\.workbuddy\\scripts\\tri_sync_with_ima.py
+   - 配置文件: C:\\Users\\jia'yue\\.workbuddy\\skills\\workbuddy-obsidian-backup\\config.json
+
+2. **同步内容**
+   - WorkBuddy → Obsidian: 技能库、记忆系统、自动化配置
+   - WorkBuddy → IMA: 核心记忆文件（SOUL.md, USER.md, MEMORY.md, IDENTITY.md）
+   - IMA 笔记本: 观其妙书院
+
+3. **验证结果**
+   - 检查同步报告是否生成
+   - 确认文件数量正确
+   - 记录同步日志
+
+## 配置信息
+
+- Obsidian 路径: D:\\以观其妙书院知识库\\观其妙书院
+- WorkBuddy 路径: C:\\Users\\jia'yue\\.workbuddy
+- IMA Client ID: 59a1edb848ec905552c0fbc8041213bf
+- IMA API Key: 已配置
+
+## 输出要求
+
+- 完成后生成同步报告
+- 保存到 Obsidian: 05-系统配置/同步报告_YYYYMMDD.md
+- 记录到工作日志: c:\\Users\\jia'yue\\WorkBuddy\\20260321092748\\.workbuddy\\memory\\YYYY-MM-DD.md
+"""
+rrule = "FREQ=DAILY;BYHOUR=23;BYMINUTE=30"
+cwds = ["C:\\Users\\jia'yue\\.workbuddy"]
+status = "ACTIVE"

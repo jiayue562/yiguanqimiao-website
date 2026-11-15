@@ -1,4 +1,4 @@
-# Skill Creator Guide
+﻿# Skill Creator Guide
 
 This reference provides guidance for creating effective skills.
 
@@ -348,3 +348,17 @@ After testing the skill, users may request improvements. Often this happens righ
 2. Notice struggles or inefficiencies
 3. Identify how SKILL.md or bundled resources should be updated
 4. Implement changes and test again
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/skill-creator/SKILL]] — Skill Creator
+- [[09-技能库/技能创建指南/SKILL]] — Skill Creator
+- [[ψ技能体系/10-kernel/龙心OS/self-learning/references/skill_creation_guide]] — Skill Creator Guide
+- [[ψ技能体系/30-tools/skill-creator/SKILL]] — Skill Creator
+- [[ψ技能体系/30-tools/技能创建指南/SKILL]] — Skill Creator
+- [[ψ技能体系/30-tools/提示词工程专家/CLAUDE]] — Prompt Engineering Expert Skill
+
+<!-- AI-LINKS-END -->

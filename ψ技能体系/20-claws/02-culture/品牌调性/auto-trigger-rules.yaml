@@ -1,0 +1,114 @@
+# 味藏品牌调性 - 自动触发规则
+# 龙心OS P=93 自动调度 | Skill Builder 5阶20步封装
+# 版本: v1.1.0 | 更新: 2026-06-15
+
+trigger_rules:
+  # ========== P0 核心触发词（9个） ==========
+  P0_core:
+    keywords:
+      - 味藏品牌
+      - 味藏调性
+      - 味藏视觉
+      - 味藏LOGO
+      - 味藏logo
+      - 味藏色彩
+      - MIKURA
+      - 品牌PPT
+      - VI设计
+      - 配色方案
+    priority: immediate
+    action: full_activation
+    context: "用户需要品牌视觉规范指导"
+
+  # ========== P1 上下文触发词（9个） ==========
+  P1_context:
+    keywords:
+      - 封面页
+      - 章节页
+      - 内容页
+      - 数据展示
+      - 品牌字体
+      - 味藏红
+      - 翡翠绿
+      - 暖白底
+      - 视觉禁区
+      - 页面模板
+    priority: high
+    action: context_aware
+    context: "用户正在设计具体页面或询问规范细节"
+
+  # ========== P2 扩展触发词（8个） ==========
+  P2_extend:
+    keywords:
+      - 品牌物料
+      - 门店招牌
+      - 菜单设计
+      - 名片
+      - 海报
+      - 工牌
+      - 包装
+      - 空间导视
+    priority: medium
+    action: extended_support
+    context: "用户需要将品牌调性扩展到非PPT场景"
+
+# ========== 场景路由矩阵 ==========
+scene_routing:
+  S1_color_query:
+    triggers: [味藏色彩, 配色方案, 味藏红, 翡翠绿]
+    engine: E1_color_system
+    output: 色谱表 + Hex值 + 使用场景
+
+  S2_font_query:
+    triggers: [品牌字体, 字体规范, H1, H2, 封面标题]
+    engine: E2_font_hierarchy
+    output: 字体层级表 + 大小 + 使用场景
+
+  S3_template_request:
+    triggers: [封面页, 章节页, 内容页, 数据展示, 页面模板]
+    engine: E3_template_factory
+    output: ASCII布局图 + 规格参数
+
+  S4_guardian_check:
+    triggers: [视觉禁区, 禁止, 可以用吗, 允许吗]
+    engine: E4_guardian
+    output: 禁区列表 + 正确做法建议
+
+  S5_code_integration:
+    triggers: [pptxgenjs, 代码, weizangTheme, 配置对象]
+    engine: E5_code_bridge
+    output: JavaScript代码块 + 使用说明
+
+  S6_tone_guidance:
+    triggers: [品牌调性, 风格, 感觉, 匠心, 雅致, 禅意]
+    engine: E6_tone_triangle
+    output: 调性关键词 + 视觉表达 + 反面示例
+
+  S7_eco_collaboration:
+    triggers: [ppt-design, pptx-generator, 企业文化, CHNM-BRAIN]
+    engine: E7_eco_link
+    output: 协作Skill列表 + 触发条件
+
+# ========== 抑制规则 ==========
+suppression_rules:
+  - condition: "非味藏相关品牌查询"
+    action: "不激活，建议使用通用设计Skill"
+  - condition: "仅询问颜色转换（RGB/CMYK/HSL）"
+    action: "仅提供颜色工具，不加载完整Skill"
+  - condition: "代码开发问题（与品牌视觉无关）"
+    action: "路由至编程相关Skill"
+
+# ========== 输出协议 ==========
+output_protocol:
+  style: "园丁式导航"
+  tone: "温度感|严谨性|匠心人格"
+  color_format: "#HEX (色名)"
+  warning_format: "⚠️ [违规类型] → 建议：[正确做法]"
+  version_declaration: "任何输出必须声明色系版本"
+
+# ========== 龙心OS接口 ==========
+dragonheart_os_interface:
+  priority: 93
+  auto_dispatch: true
+  five_engines: [象思维, 知识学习, 五色光, 人机协同, 知行合一]
+  integration_status: native  # 原生整合

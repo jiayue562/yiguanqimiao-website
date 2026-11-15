@@ -469,3 +469,21 @@ skill-builder/
 
 **Skill Builder v1.0** · **龙龟神将**  
 *让每一个理论都能成为可用的工具，让每一个想法都能持续进化* 🚀
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_LLM-Wiki-Skills]] — LLM Wiki Skills · 活体维基知识编译系统 v1.0
+- [[05-五行人格心理学/理论基石/🔧 凤脑OS构建笔记]] — 🔧 凤脑OS构建笔记
+- [[06-味藏/店长7S/references/SM-CHIEF开发文档_v1.0]] — SM-CHIEF 店长总控Skill智能体 · 完整开发文档 v1.0
+- [[20-工作记录与复盘/journal_2026-04-10_周度汇总]] — 2026-04-10_周度汇总
+- [[09-技能库/agent-orchestrator/SKILL]] — 智能体协调规划器 (Agent Orchestrator)
+- [[09-技能库/skill-builder/BUILD_SUMMARY]] — ✅ Skill Builder v1.0 · 构建完成总结
+- [[09-技能库/skill-builder/SKILL]] — 🔨 Skill Builder · 元级Skill构建工具 v1.1
+- [[09-技能库/skill-builder/references/theory]] — 📚 Skill Builder 理论基础完整版
+- [[09-技能库/skill-builder/standards/QUALITY_MANAGEMENT_AUTO]] — Skill质量管理自动化系�?v1.0
+- [[09-技能库/skill-builder/templates/input_template]] — Skill 构建申请表（标准输入模板）
+
+<!-- AI-LINKS-END -->

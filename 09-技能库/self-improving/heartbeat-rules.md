@@ -1,4 +1,4 @@
-# Heartbeat Rules
+﻿# Heartbeat Rules
 
 Use heartbeat to keep `~/self-improving/` organized without creating churn or losing data.
 
@@ -52,3 +52,21 @@ Keep `~/self-improving/heartbeat-state.md` simple:
 
 Heartbeat exists to keep the memory system tidy and trustworthy.
 If no rule is clearly violated, do nothing.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/baidu-search/references/apikey-fetch]] — Baidu API Key Setup Guide (OpenClaw)
+- [[09-技能库/self-improving/HEARTBEAT]] — HEARTBEAT
+- [[09-技能库/self-improving/SKILL]] — SKILL
+- [[09-技能库/self-improving/corrections]] — Corrections Log — Template
+- [[09-技能库/self-improving/heartbeat-state]] — Heartbeat State Template
+- [[09-技能库/self-improving/learning]] — Learning Mechanics
+- [[09-技能库/self-improving/memory-template]] — Memory Template
+- [[09-技能库/self-improving/memory]] — HOT Memory — Template
+- [[09-技能库/self-improving/openclaw-heartbeat]] — openclaw-heartbeat
+- [[09-技能库/self-improving/operations]] — Memory Operations
+
+<!-- AI-LINKS-END -->

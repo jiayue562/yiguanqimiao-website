@@ -1,4 +1,4 @@
----
+﻿---
 title: "优化现有Skills指南"
 created: "2026-03-22"
 tags: [Skills优化, CLI, MCP, 整合]
@@ -164,3 +164,21 @@ tags: [Skills优化, CLI, MCP, 整合]
 ---
 
 **标签**：`#Skills优化` `#CLI` `#MCP` `#整合`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/AI龙龟共生伙伴操作系统/优化现有Skills指南]] — 优化现有Skills指南
+- [[09-技能库/CLI指令解析/references/CLI指令人格化适配表]] — CLI指令人格化适配表
+- [[09-技能库/MCP协议通信/references/MCP协议使用案例]] — MCP协议使用案例
+- [[09-技能库/MCP协议通信/references/MCP协议定义]] — MCP协议定义
+- [[09-技能库/resources_CLI指令人格化适配表]] — CLI指令人格化适配表
+- [[09-技能库/resources_MCP协议使用案例]] — MCP协议使用案例
+- [[09-技能库/resources_MCP协议定义]] — MCP协议定义
+- [[09-技能库/企业文化OS知识库/references/framework-autonomy]] — 企业文化OS知识库智能体 · Framework层突破文档
+- [[ψ技能体系/30-tools/CLI指令解析/SKILL]] — CLI指令解析Skill v1.1
+- [[ψ技能体系/99-archive/AI龙龟共生伙伴操作系统/docs/优化现有Skills指南]] — 优化现有Skills指南
+
+<!-- AI-LINKS-END -->

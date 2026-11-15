@@ -1,4 +1,4 @@
-# 火行人干预工具集
+﻿# 火行人干预工具集
 
 > **版本**：v2.0  
 > **目标**：火行人觉察、转化、关系与发展
@@ -301,3 +301,18 @@
 - SKILL.md主文件：../SKILL.md
 - 完整方法论：./full-methodology.md
 - 提示词模板：./prompt-templates.md
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[05-五行人格心理学/人格类型/火行人自我成长实践方案]] — 🚀 火行人自我成长实践方案
+- [[09-技能库/五行人格心理学/references/intervention-tools]] — 五行人格心理学干预工具集
+- [[09-技能库/五行人格心理学/五行人格总智能体/土行人分智能体/references/intervention-tools]] — 土行人干预工具集
+- [[09-技能库/五行人格心理学/五行人格总智能体/土行人分智能体/references/one-mind]] — 土行人·一心
+- [[09-技能库/五行人格心理学/五行人格总智能体/水行人分智能体/references/intervention-tools]] — 水行人干预工具集
+- [[09-技能库/水行人格心理学/references/intervention-tools]] — 水行人格心理学干预工具集
+- [[09-技能库/象思维.skills/references/practice-guide]] — 象思维实践操作指南 v6.0
+
+<!-- AI-LINKS-END -->

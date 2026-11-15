@@ -1,4 +1,4 @@
----
+﻿---
 name: obsidian
 description: Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.
 homepage: https://help.obsidian.md
@@ -53,3 +53,21 @@ Delete
 - `obsidian-cli delete "path/note"`
 
 Prefer direct edits when appropriate: open the `.md` file and change it; Obsidian will pick it up.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_FAQ]] — Frequently Asked Questions
+- [[09-技能库/self-learning/SKILL]] — Self-Learning Skill Generator
+- [[09-技能库/笔记搜索/SKILL]] — qmd - Quick Markdown Search
+- [[AGENT]] — Obsidian Knowledge Base — Agent Instructions
+- [[ψ技能体系/00-foundation/llm-wiki/SKILL]] — Karpathy LLM Wiki
+- [[ψ技能体系/00-foundation/obsidian/SKILL]] — Obsidian
+- [[ψ技能体系/10-kernel/龙心OS/self-learning/SKILL]] — Self-Learning Skill Generator
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/TOOLS]] — TOOLS.md - Local Notes
+- [[ψ技能体系/30-tools/Word 文档生成/SKILL]] — minimax-docx
+- [[ψ技能体系/30-tools/api-gateway/references/outlook/README]] — Outlook Routing Reference
+
+<!-- AI-LINKS-END -->

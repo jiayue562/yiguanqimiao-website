@@ -1,4 +1,4 @@
----
+﻿---
 name: agent-memory-systems
 description: "Memory is the cornerstone of intelligent agents. Without it, every interaction starts from zero. This skill covers the architecture of agent memory: short-term (context window), long-term (vector s..."
 risk: unknown
@@ -70,3 +70,21 @@ Works well with: `autonomous-agents`, `multi-agent-orchestration`, `llm-architec
 
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/agent-browser-clawdbot/SKILL]] — Agent Browser Skill
+- [[09-技能库/browser-automation/SKILL]] — Browser Automation
+- [[09-技能库/ghost-scan-secrets/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/resources_agent]] — Summarize Agent
+- [[09-技能库/resources_output-patterns]] — Output Patterns
+- [[09-技能库/self-improving-agent/SKILL]] — Self-Improving Agent
+- [[09-技能库/skill-creator/references/output-patterns]] — Output Patterns
+- [[09-技能库/技能创建指南/references/output-patterns]] — Output Patterns
+- [[ψ技能体系/00-foundation/llm-wiki/SKILL]] — Karpathy LLM Wiki
+- [[ψ技能体系/10-kernel/龙心OS/self-improving-agent/SKILL]] — Self-Improving Agent
+
+<!-- AI-LINKS-END -->

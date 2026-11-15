@@ -1,4 +1,4 @@
----
+﻿---
 name: "ghost-scan-deps"
 description: |
   Ghost Security - Software Composition Analysis (SCA) scanner. Scans dependency lockfiles for known vulnerabilities, identifies CVEs, and generates findings with severity levels and remediation guidance. Use when the user asks about dependency vulnerabilities, vulnerable packages, CVE checks, security audits of dependencies, or wants to scan lockfiles like package-lock.json, yarn.lock, go.sum, or Gemfile.lock.
@@ -119,3 +119,21 @@ After executing all the tasks, report the scan results to the user.
 ## Error Handling
 
 If any Task call fails, retry it **once**. If it fails again, stop and report the failure.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/Skill安全扫描（朱雀实验室）/SKILL]] — Tencent Zhuque Skill Scanner
+- [[09-技能库/ghost-scan-code/SKILL]] — Find Issues
+- [[09-技能库/ghost-scan-code/prompts/nominator]] — Nominator Agent
+- [[09-技能库/ghost-scan-deps/agents/analyze/agent]] — Analysis Agent
+- [[09-技能库/ghost-scan-deps/agents/scan/agent]] — Scan Agent
+- [[09-技能库/ghost-scan-deps/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/ghost-scan-secrets/agents/analyze/agent]] — Analysis Agent
+- [[09-技能库/ghost-scan-secrets/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/resources_agent]] — Summarize Agent
+- [[09-技能库/resources_nominator]] — Nominator Agent
+
+<!-- AI-LINKS-END -->

@@ -135,3 +135,21 @@ ima-skills/
 ---
 
 **IMA 技能已安装完成，现在你可以开始使用它来管理你的个人笔记了！**
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[13-WorkBuddy-Sync/三向同步系统/QUICK_START]] — 🔗 三向同步系统 - 快速开始
+- [[13-WorkBuddy-Sync/三向同步系统/scripts/IMA_API测试报告]] — IMA API同步测试报告
+- [[20-工作记录与复盘/三向同步_三向同步系统整合方案]] — 第六步：三向同步系统整合方案 v1.0
+- [[09-技能库/resources_curl-test-guide]] — 🔧 curl 命令行测试 IMA API 连接
+- [[09-技能库/resources_manual-test-guide]] — IMA API 手动测试指南
+- [[09-技能库/resources_test-status]] — IMA 技能连接测试状态报告
+- [[ψ技能体系/00-foundation/三向同步系统/QUICK_START]] — 🔗 三向同步系统 - 快速开始
+- [[ψ技能体系/00-foundation/三向同步系统/scripts/IMA_API测试报告]] — IMA API同步测试报告
+- [[ψ技能体系/30-tools/工具档案/SKILL]] — TOOLSmd Skill（工具档案）
+- [[ψ技能体系/40-rules/API规范/SKILL]] — SKILL
+
+<!-- AI-LINKS-END -->

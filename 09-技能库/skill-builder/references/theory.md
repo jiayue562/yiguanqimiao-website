@@ -1,4 +1,4 @@
-# 📚 Skill Builder 理论基础完整版
+﻿# 📚 Skill Builder 理论基础完整版
 
 > **本文档**：Skill Builder背后的系统理论、问题诊断、解决方案设计
 > **适读人群**：想深入理解Skill构建哲学的进阶用户
@@ -347,3 +347,18 @@ skill-name/
 ---
 
 **Skill Builder 理论基础** · **龙龟神将** · v1.0
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[13-WorkBuddy-Sync/04-Knowledge/附录B-AI龙龟共生OS-Skills生态全图]] — 附录B：AI龙龟共生OS · Skills生态全图
+- [[01-核心体系/AI龙龟共生伙伴操作系统/分章/NSDFEE9-05-第五章-心-把一团乱变成一个真问题]] — AI 龙龟共生伙伴操作系统
+- [[01-核心体系/agents_Skill 构建 SOP-5 阶 20 步完整版]] — Skill 构建 SOP - 5 阶 20 步完整版
+- [[01-核心体系/龙心OS_Claude-Code源码工程智慧与龙心OS融合框架]] — Claude Code源码工程智慧与龙心OS融合框架
+- [[01-核心体系/龙心OS_Skill Builder v1.0]] — Skill构建申请表
+- [[03-知识地基层/记忆系统_workbuddy-obsidian-backup-summary-20260331]] — WorkBuddy-Obsidian备份系统对话总结
+- [[09-技能库/skill-builder/SKILL]] — 🔨 Skill Builder · 元级Skill构建工具 v1.1
+
+<!-- AI-LINKS-END -->

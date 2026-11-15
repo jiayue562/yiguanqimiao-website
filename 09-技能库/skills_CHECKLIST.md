@@ -1,4 +1,4 @@
-# 象思维 Skill 检查清单
+﻿# 象思维 Skill 检查清单
 
 > 🌀 四步法质量检验 · 确保原创突破质量
 
@@ -136,3 +136,21 @@
 ---
 
 _象思维 Skill v1.0 · 龙心 OS · 2026-04-17_
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[03-知识地基层/象思维/核心方法]] — 象思维核心方法
+- [[21-学习档案/ideas_象思维训练课程]] — 象思维训练课程
+- [[09-技能库/resources_theory-v2]] — 象思维理论体系·v2.0完整版
+- [[09-技能库/skills_COMPLETION_REPORT]] — 象思维 Skill 构建完成报告
+- [[09-技能库/skills_io-templates]] — 象思维 Skill 输入输出模板
+- [[09-技能库/skills_practice-guide]] — 象思维实践指南
+- [[ψ技能体系/10-kernel/龙心OS/engines/五色光思维/CHECKLIST]] — 五色光思维 Skill 检查清单
+- [[ψ技能体系/10-kernel/龙心OS/engines/象思维/CHECKLIST]] — 象思维 Skill 检查清单
+- [[ψ技能体系/10-kernel/龙心OS/engines/象思维/COMPLETION_REPORT]] — 象思维 Skill 构建完成报告
+- [[ψ技能体系/10-kernel/龙心OS/engines/象思维/references/practice-guide]] — 象思维实践指南
+
+<!-- AI-LINKS-END -->

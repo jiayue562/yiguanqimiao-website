@@ -1,4 +1,4 @@
-# LLM Wiki · 卡帕西体系完整理论 v1.0
+﻿# LLM Wiki · 卡帕西体系完整理论 v1.0
 
 > **核心定位**：本文档是LLM Wiki Skills的理论基石，完整呈现卡帕西「活体维基」体系的核心思想与实施路径。
 
@@ -385,3 +385,19 @@ Agent自主完成：
 **文档版本**: v1.0
 **最后更新**: 2026-04-11
 **维护者**: 龙龟神将
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_LLM-Wiki-Skills]] — LLM Wiki Skills · 活体维基知识编译系统 v1.0
+- [[16-工具与资源/projects_01-理论体系结构剖析]] — LLM Wiki 理论体系结构剖析
+- [[16-工具与资源/projects_02-核心理论体系透视]] — LLM Wiki 核心理论体系透视
+- [[16-工具与资源/projects_08-知行合一沉淀]] — LLM Wiki知识库建设·知行合一沉淀：三阶段转化
+- [[09-技能库/LLM-Wiki/SKILL]] — LLM Wiki Skills · 活体维基知识编译系统 v1.0
+- [[09-技能库/知识学习Skills/references/llm-wiki-architecture]] — LLM Wiki三层知识流水线架构详解
+- [[09-技能库/知识库建设/references/llm-wiki-theory]] — LLM Wiki 理论完整版
+- [[ψ技能体系/99-archive/上下文工程/references/theory]] — 上下文工程理论
+
+<!-- AI-LINKS-END -->

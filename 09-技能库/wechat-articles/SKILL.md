@@ -1,4 +1,4 @@
----
+﻿---
 name: wechat-articles
 version: 1.0
 description: 搜索并提取微信公众号内容，具备双模式爬取功能确保高可用性
@@ -43,3 +43,18 @@ tags: [wechat, 微信公众号, 文章搜索, 内容提取, 微信]
 ## 注意事项
 - 部分公众号文章可能需要登录才能访问
 - 请确保遵守微信平台相关规定
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/agents_Skill 构建 SOP]] — Skill 构建 SOP - 龙心 OS 技能开发标准流程
+- [[16-工具与资源/工具技能_PPT读取技能包]] — PPT读取技能包
+- [[21-学习档案/内容创作系统_README]] — 内容创作系统 · 总索引
+- [[09-技能库/resources_usage-examples]] — IMA 技能使用示例
+- [[ψ技能体系/20-claws/03-academy/wechat-publisher/example]] — wechat-publisher 测试文章
+- [[ψ技能体系/30-tools/wechat-article-search/SKILL]] — 微信公众号文章搜索说明
+- [[ψ技能体系/30-tools/wechat-articles/SKILL]] — 微信公众号文章搜索技能
+
+<!-- AI-LINKS-END -->

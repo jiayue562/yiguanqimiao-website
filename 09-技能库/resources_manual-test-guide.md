@@ -1,4 +1,4 @@
-# IMA API 手动测试指南
+﻿# IMA API 手动测试指南
 
 ## 准备工作
 
@@ -149,3 +149,21 @@ python test.py
 - "创建一篇新笔记"
 - "列出我的笔记本"
 - "在笔记里添加内容"
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[13-WorkBuddy-Sync/三向同步系统/QUICK_START]] — 🔗 三向同步系统 - 快速开始
+- [[20-工作记录与复盘/三向同步_三向同步系统整合方案]] — 第六步：三向同步系统整合方案 v1.0
+- [[09-技能库/ima-skill/SKILL]] — ima-skill
+- [[09-技能库/ima-skill/knowledge-base/references/api]] — IMA知识库 API
+- [[09-技能库/ima-skills/ima-skill/SKILL]] — ima-skill
+- [[09-技能库/ima-skills/ima-skill/knowledge-base/references/api]] — IMA知识库 API
+- [[09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/SKILL]] — ima-skill
+- [[09-技能库/resources_curl-test-guide]] — 🔧 curl 命令行测试 IMA API 连接
+- [[09-技能库/resources_quick-start]] — IMA 技能快速使用指南
+- [[09-技能库/resources_test-status]] — IMA 技能连接测试状态报告
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
----
+﻿---
 title: "context7 - 实时文档查询"
 created: "2026-03-27"
 tags: [context7, documentation, realtime, api]
@@ -65,3 +65,17 @@ version: "1.0"
 ---
 
 **版本**: 1.0 | **维护者**: 龙龟神将 | **更新**: 2026-03-27
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[00-索引与导航/知识图谱/智能查询系统]] — 🔍 智能查询与推荐系�?
+- [[00-索引与导航/🔗 双向链接规范 v1.0]] — 🔗 双向链接规范 v1.0
+- [[09-技能库/rag-skill/SKILL]] — rag-skill - 知识库RAG增强
+- [[10-系统配置/同步报告_20260515]] — 三向同步报告
+- [[ψ技能体系/30-tools/context7/SKILL]] — context7 - 实时文档查询 Skills v1.1
+- [[ψ技能体系/30-tools/deep-research/agents/web-search-modules/general-web]] — General Web Module
+
+<!-- AI-LINKS-END -->

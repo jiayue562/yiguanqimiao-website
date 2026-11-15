@@ -721,3 +721,21 @@ OpenClaw 能力复用:
 **创建**: 2026-04-03
 **维护者**: 龙龟神将
 **核心价值**: 五大核心模块（记忆管理、任务拆解、Skills 与 CLI 调度、人机交互、进化优化）、轻量化与可定制化、与成熟生态融合、支撑"人定方向、AI 做执行"的工程化运行底座
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[00-索引与导航/🐉 龙心 OS 龙脑操作系统]] — 🐉 龙心 OS · 龙脑操作系统
+- [[01-核心体系/AI龙龟共生OS升级包3.0/龙龟升级/龙心OS升级包：1+5/龙心OS开发设计文档]] — 龙心OS开发设计文档：从理论蓝图到可运行实现
+- [[01-核心体系/龙心OS_重新归类完成报告]] — 📚 01-核心体系文件夹重新归类完成报告
+- [[03-知识地基层/应用场景_AI_OS与五行人格OS价值分析_教员方法论]] — AI龙龟共生伙伴OS与五行人格心理学OS价值分析
+- [[09-技能库/CLI原生操作入口/SKILL]] — CLI 原生操作入口 Skill
+- [[09-技能库/personal-ai-os-framework/SKILL]] — 个人AI OS框架 Skill
+- [[ψ技能体系/30-tools/CLI原生操作入口/SKILL]] — CLI 原生操作入口 Skill
+- [[ψ技能体系/30-tools/Framework核心管理/SKILL]] — Framework 核心管理 Skill v2.0
+- [[ψ技能体系/40-rules/Framework核心管理/SKILL]] — Framework 核心管理 Skill
+- [[ψ技能体系/99-archive/personal-ai-os-framework/SKILL]] — 个人AI OS框架 Skill
+
+<!-- AI-LINKS-END -->

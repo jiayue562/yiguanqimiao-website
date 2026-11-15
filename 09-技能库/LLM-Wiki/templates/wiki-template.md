@@ -1,4 +1,4 @@
-# LLM Wiki · Wiki页面模板库
+﻿# LLM Wiki · Wiki页面模板库
 
 > **核心定位**：提供LLM Wiki Skills的标准模板，确保生成的Wiki页面格式统一。
 
@@ -492,7 +492,7 @@ type: index
 
 ## 🔍 搜索
 
-[[search|在知识库中搜索...]]
+[[00-索引与导航/AI统一索引/AI-总索引|search]]
 
 ---
 
@@ -542,3 +542,20 @@ type: index
 **文档版本**: v1.0
 **最后更新**: 2026-04-11
 **维护者**: 龙龟神将
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/agents_LLM Wiki 知识库激活完成报告]] — LLM Wiki 知识库激活完成报告
+- [[01-核心体系/核心Skills_知识学习Skills-v2.5-易经卦变整合]] — 知识学习Skills v2.5 · 易经卦变整合完整版
+- [[16-工具与资源/projects_entity-任正非]] — entity-任正非
+- [[08-龙心OS核心系统/AI-OS知识库/🧠 龙脑OS·知识地基层/wiki·实体页/总索引]] — wiki·实体页
+- [[09-技能库/LLM-Wiki/references/practice-guide]] — LLM Wiki · 详细实操指南 v1.0
+- [[09-技能库/LLM-Wiki/test-cases]] — LLM Wiki Skills · 测试用例 v1.0
+- [[09-技能库/llmification-knowledge-builder/templates/input-template]] — LLMification 输入模板
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer1-raw/🧠 龙脑OS·知识地基层/wiki·实体页/总索引]] — wiki·实体页
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/templates/entity-template]] — {{entity_name}}
+
+<!-- AI-LINKS-END -->

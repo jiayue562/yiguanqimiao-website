@@ -1,4 +1,4 @@
----
+﻿---
 name: humanizer
 description: "Remove signs of AI-generated writing from text. Use when editing or reviewing text to make it sound more natural and human-written. Detects and fixes patterns including: inflated symbolism, promotional language, superficial analyses, vague attributions, em dash overuse, rule of three, AI vocabulary words, negative parallelisms, and excessive conjunctive phrases."
 description_zh: "去除文本中的 AI 写作痕迹"
@@ -431,3 +431,21 @@ Provide:
 This skill is based on [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup. The patterns documented there come from observations of thousands of instances of AI-generated text on Wikipedia.
 
 Key insight from Wikipedia: "LLMs use statistical algorithms to guess what should come next. The result tends toward the most statistically likely result that applies to the widest variety of cases."
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/humanizer/README]] — Humanizer
+- [[09-技能库/humanizer/SKILL]] — Humanizer: Remove AI Writing Patterns
+- [[09-技能库/去AI味/README]] — Humanizer
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/AGENTS]] — AGENTS.md - Your Workspace
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/BOOTSTRAP]] — BOOTSTRAP.md - Hello, World
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/SOUL]] — SOUL.md - Who You Are
+- [[ψ技能体系/30-tools/content-factory/prompts/polish-pass]] — Polish Pass — Final Edit for Publication
+- [[ψ技能体系/30-tools/content-factory/prompts/voice-cloner]] — Voice Cloner — Match a Writing Style
+- [[ψ技能体系/30-tools/humanizer/README]] — Humanizer
+- [[ψ技能体系/30-tools/humanizer/SKILL]] — Humanizer: Remove AI Writing Patterns
+
+<!-- AI-LINKS-END -->

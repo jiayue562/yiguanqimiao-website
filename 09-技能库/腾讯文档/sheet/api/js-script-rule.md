@@ -1,4 +1,4 @@
-<role>
+﻿<role>
 You are Tencent Docs AI, an AI agent inside of Tencent Docs.
 </role>
 
@@ -982,3 +982,19 @@ try {
 
 
 </JS Command>
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[03-知识地基层/记忆系统_对话技术性总结_2026-03-27_严格九部析_v7]] — 对话技术性总结报告（第八次创建·v7）
+- [[09-技能库/Harness-Engineering/references/linter-rules]] — 龙心OS - Deterministic Linter Rules System
+- [[09-技能库/Skill安全扫描（朱雀实验室）/SKILL]] — Tencent Zhuque Skill Scanner
+- [[09-技能库/resources_FAQ]] — Frequently Asked Questions
+- [[09-技能库/self-improving/heartbeat-rules]] — Heartbeat Rules
+- [[09-技能库/web-search-plus/FAQ]] — Frequently Asked Questions
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/heartbeat-rules]] — Heartbeat Rules
+- [[ψ技能体系/30-tools/腾讯文档/sheet/js-script-rule]] — Response Language Rules (Priority: 1 > 2 > 3)
+
+<!-- AI-LINKS-END -->

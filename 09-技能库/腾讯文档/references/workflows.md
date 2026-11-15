@@ -1,4 +1,4 @@
-# 公共接口与常见工作流
+﻿# 公共接口与常见工作流
 
 本文件包含两部分内容：
 1. **公共接口**：不归属于任何特定品类的通用工具 API
@@ -232,3 +232,18 @@
 2. 立即调用 scrape_progress 传入 task_id 查询进度（每隔2秒轮询一次）
 3. 当 status=2 时任务完成，服务端已自动创建智能文档，直接从响应获取 file_id 和 file_url，无需再调用其他创建文档工具
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_api_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/resources_sheet_references]] — Sheet 表格操作参考文档
+- [[09-技能库/resources_smartsheet_references]] — 智能表格（SmartSheet）工具完整参考文档
+- [[09-技能库/腾讯文档/references/docengine_references]] — DOC 编辑引擎 API 参考
+- [[09-技能库/腾讯文档/sheet/api/mcp-api]] — 腾讯文档 Sheet MCP 工具完整参考
+- [[09-技能库/腾讯文档/sheet/api/operation-api]] — Sheet 表格操作参考文档
+- [[ψ技能体系/30-tools/腾讯文档/sheet/mcp-api]] — 腾讯文档 Sheet MCP 工具完整参考
+
+<!-- AI-LINKS-END -->

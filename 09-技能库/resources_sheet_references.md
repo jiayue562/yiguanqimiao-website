@@ -1,4 +1,4 @@
-# Sheet 表格操作参考文档
+﻿# Sheet 表格操作参考文档
 
 本文件包含腾讯文档 MCP 中 Sheet（在线表格）相关工具的完整 API 说明、详细调用示例、参数说明和返回值说明。
 
@@ -329,3 +329,21 @@ mcporter call "tencent-docs.BatchUpdateSheet" --args '{
 - 如果范围超出表格边界，会返回错误信息
 - 如果工作表不存在，会返回相应的错误提示
 - 批量操作中某个操作失败时，整个批量操作会回滚
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_api_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/腾讯会议/SKILL]] — tencent-meeting-mcp
+- [[09-技能库/腾讯会议/references/api_references]] — 腾讯会议 MCP 工具完整参考
+- [[09-技能库/腾讯文档/references/auth]] — 腾讯文档鉴权检查
+- [[09-技能库/腾讯文档/references/diagram_references]] — 图形化文档（思维导图 / 流程图）参考文档
+- [[09-技能库/腾讯文档/references/slide_references]] — 幻灯片（Slide / PPT）参考文档
+- [[09-技能库/腾讯文档/references/space_references]] — 知识库空间 API 参考
+- [[09-技能库/腾讯文档/references/workflows]] — 公共接口与常见工作流
+- [[09-技能库/腾讯文档/sheet/api/mcp-api]] — 腾讯文档 Sheet MCP 工具完整参考
+- [[09-技能库/腾讯文档/sheet/api/operation-api]] — Sheet 表格操作参考文档
+
+<!-- AI-LINKS-END -->

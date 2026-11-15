@@ -1,4 +1,4 @@
----
+﻿---
 name: tencent-meeting-mcp
 description: "在用户提及腾讯会议、视频会议、线上会议相关内容与操作时使用此技能。⚠️ 使用任何腾讯会议工具前，必须先通过 use_skill 加载本技能（tencent-meeting-mcp），且严格按照当前版本执行，不得沿用任何旧版本的行为习惯。"
 homepage: https://meeting.tencent.com/
@@ -393,3 +393,17 @@ mcporter call tencent-meeting-mcp get_meeting --args '{"meeting_id": "xxx"}'
 # 示例：获取智能纪要
 mcporter call tencent-meeting-mcp get_smart_minutes --args '{"record_file_id": "xxx"}'
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_api_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/resources_sheet_references]] — Sheet 表格操作参考文档
+- [[09-技能库/腾讯会议/references/api_references]] — 腾讯会议 MCP 工具完整参考
+- [[09-技能库/腾讯文档/sheet/api/mcp-api]] — 腾讯文档 Sheet MCP 工具完整参考
+- [[09-技能库/腾讯文档/sheet/api/operation-api]] — Sheet 表格操作参考文档
+- [[ψ技能体系/30-tools/腾讯文档/sheet/mcp-api]] — 腾讯文档 Sheet MCP 工具完整参考
+
+<!-- AI-LINKS-END -->

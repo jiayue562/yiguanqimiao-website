@@ -1,4 +1,4 @@
-# 腾讯文档 MCP 工具完整参考
+﻿# 腾讯文档 MCP 工具完整参考
 
 本文件包含腾讯文档 MCP 中 文件管理类 相关工具的完整 API 说明、支持文件的增删改查、文件搜索、文件夹列表、文件夹信息查询、文档权限设置。
 
@@ -1178,3 +1178,21 @@
 ```
 
 > ⚠️ **注意**：不支持将空间（space）本身移动，仅支持空间内的文件/文件夹节点。
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/gog/SKILL]] — gog - Google Workspace集成
+- [[09-技能库/resources_api_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/resources_smartcanvas_references]] — 智能文档（SmartCanvas）工具完整参考文档
+- [[09-技能库/resources_smartsheet_references]] — 智能表格（SmartSheet）工具完整参考文档
+- [[09-技能库/腾讯文档/references/slide_references]] — 幻灯片（Slide / PPT）参考文档
+- [[09-技能库/腾讯文档/references/smartsheet_references]] — 智能表格（SmartSheet）工具完整参考文档
+- [[09-技能库/腾讯文档/references/space_references]] — 知识库空间 API 参考
+- [[09-技能库/腾讯文档/sheet/api/mcp-api]] — 腾讯文档 Sheet MCP 工具完整参考
+- [[09-技能库/腾讯文档/smartcanvas/entry]] — 文档（SmartCanvas）工具完整参考文档
+- [[ψ技能体系/30-tools/jinshuju/SKILL]] — 金数据（Jinshuju）操作专家
+
+<!-- AI-LINKS-END -->

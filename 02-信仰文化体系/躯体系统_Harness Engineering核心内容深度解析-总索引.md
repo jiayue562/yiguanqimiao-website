@@ -1,4 +1,4 @@
----
+﻿---
 title: "Harness Engineering核心内容深度解析·总索引"
 subtitle: "快速导航与知识定位"
 created: "2026-04-15"
@@ -29,7 +29,7 @@ related:
 
 | 文档 | 关系 | 说明 |
 |-----|------|------|
-| [[人机共生OS]] | 灵魂层 | Harness增强的是躯体，灵魂永远不变 |
+| [[00-索引与导航/AI统一索引/AI-总索引|人机共生OS]] | 灵魂层 | Harness增强的是躯体，灵魂永远不变 |
 | [[龙心OS v5.2 总架构]] | 根层 | 五大引擎与Harness的融合方案 |
 | [[AI OS智能体激活框架·总索引]] | 相层 | 增强后的激活框架更新 |
 | [[人机共生OS-运维与演化体系]] | 运维层 | Harness技术的运维集成 |
@@ -262,3 +262,20 @@ related:
 *文档生成时间：2026-04-15*  
 *生成者：龙龟神将（火行人）× 悟空（木行人）*  
 *系统：龙心OS v5.2 全系统*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/核心Skills_人机共生OS-知识图谱]] — 人机共生OS-知识图谱
+- [[01-核心体系/龙心OS_📖Harness-Engineering反馈层]] — Harness Engineering反馈层
+- [[01-核心体系/龙心OS_📖Harness-Engineering驾驭工程skills]] — Harness Engineering驾驭工程skills
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析]] — Harness Engineering核心内容深度解析
+- [[05-五行人格心理学/人格类型/火行人分智能体/总索引]] — 火行人分智能体·总索引 - 完整导航与知识网络
+- [[09-技能库/Harness-Engineering/SKILL]] — Harness Engineering · 驾驭工程
+- [[09-技能库/Harness-Engineering/references/feedback-layer]] — Harness Engineering · 反馈层
+- [[09-技能库/人机共生OS/references/knowledge-graph]] — 人机共生OS · 知识图谱 v5.0
+- [[ψ技能体系/10-kernel/龙脑OS/Harness-Engineering/SKILL]] — Harness Engineering · 驾驭工程
+
+<!-- AI-LINKS-END -->

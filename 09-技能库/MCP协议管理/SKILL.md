@@ -1,4 +1,4 @@
----
+﻿---
 title: "MCP 协议管理 Skill v2.0"
 created: "2026-04-15"
 version: "2.0"
@@ -496,3 +496,18 @@ tags: [AI-OS, 技术栈, MCP, 协同语言, 双向MCP, 子Agent]
 **升级日期**: 2026-04-15
 **维护者**: 龙龟神将
 **核心升级**: 双向MCP + 子Agent协同 + 1+5并行模式
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_龙心OS-知行合一-五行人格OS整合方案v1.0]] — 龙心OS · 知行合一 · 五行人格OS 三大系统整合方案 v1.0
+- [[01-核心体系/龙心OS_📖Harness-Engineering编排层]] — Harness Engineering编排层
+- [[09-技能库/AI-OS六层架构智能体/references/MCP协议层]] — MCP层 · 多协议协同总线
+- [[09-技能库/MCP协议通信/references/MCP协议定义]] — MCP协议定义
+- [[09-技能库/resources_MCP协议定义]] — MCP协议定义
+- [[ψ技能体系/30-tools/多智能体管理/SKILL]] — 多智能体管理 Skill v2.1
+- [[ψ技能体系/40-rules/MCP协议管理/SKILL]] — MCP 协议管理 Skill v3.0
+
+<!-- AI-LINKS-END -->

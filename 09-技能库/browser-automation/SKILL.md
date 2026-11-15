@@ -1,4 +1,4 @@
----
+﻿---
 name: browser-automation
 description: "Browser automation powers web testing, scraping, and AI agent interactions. The difference between a flaky script and a reliable system comes down to understanding selectors, waiting strategies, an..."
 risk: unknown
@@ -73,3 +73,21 @@ Works well with: `agent-tool-builder`, `workflow-automation`, `computer-use-agen
 
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/agent-memory-systems/SKILL]] — Agent Memory Systems
+- [[09-技能库/find-skills/SKILL]] — Find Skills
+- [[09-技能库/humanizer/SKILL]] — Humanizer: Remove AI Writing Patterns
+- [[ψ技能体系/00-foundation/llm-wiki/SKILL]] — Karpathy LLM Wiki
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/AGENTS]] — AGENTS.md - Your Workspace
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/SKILL]] — Find Skills
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/TOOLS]] — TOOLS.md - Local Notes
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/xiaohongshu-skills-main/docs/superpowers/plans/2026-05-19-xhs-netlogger]] — XHS NetLogger Implementation Plan
+- [[ψ技能体系/30-tools/browser-automation/SKILL]] — Browser Automation
+- [[ψ技能体系/30-tools/browser-use/SKILL]] — Browser Automation with browser-use CLI
+
+<!-- AI-LINKS-END -->

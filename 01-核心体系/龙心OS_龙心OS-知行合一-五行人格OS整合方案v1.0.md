@@ -1,4 +1,4 @@
----
+﻿---
 title: "龙心OS · 知行合一 · 五行人格OS 三大系统整合方案 v1.0"
 date: "2026-04-15"
 version: "v1.0"
@@ -516,3 +516,21 @@ GEPA (Goal-Execution-Perception-Adaptation) 是一种自适应目标达成算法
 **创建时间**: 2026-04-15  
 **维护者**: 龙龟神将  
 **状态**: 设计方案，待评审
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/核心Skills_人机共生伙伴系统·深度学习]] — 人机共生伙伴系统·深度学习
+- [[01-核心体系/龙心OS_悟空12维全息画像看板·说明文档]] — 悟空12维全息画像看板·说明文档
+- [[01-核心体系/龙心OS_📖Harness-Engineering编排层]] — Harness Engineering编排层
+- [[01-核心体系/龙心OS_📖Harness-Engineering记忆层]] — Harness Engineering记忆层
+- [[20-工作记录与复盘/journal_2026-04-15_每日备份报告]] — 2026-04-15 每日备份报告
+- [[09-技能库/MCP协议管理/SKILL]] — MCP 协议管理 Skill v2.0
+- [[09-技能库/agent-swarm/SKILL]] — Agent Swarm Skill - 多代理并行任务执行
+- [[09-技能库/五行人格心理学/L3调度层/SKILL]] — 五行人格心理学L3调度层Skills
+- [[09-技能库/多智能体管理/SKILL]] — 多智能体管理 Skill v2.0
+- [[ψ技能体系/10-kernel/龙脑OS/AI原生组织方法论/governance/SKILL]] — 治理子系统 — AI原生组织横切治理层
+
+<!-- AI-LINKS-END -->

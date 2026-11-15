@@ -1,4 +1,4 @@
-# HEARTBEATmd Skill（心跳巡检档案）
+﻿# HEARTBEATmd Skill（心跳巡检档案）
 
 ## 📖 技能定义
 
@@ -346,3 +346,17 @@ heartbeat:
 **对标来源**: OpenClaw HEARTBEATmd规则
 **AI龙龟共生伙伴操作系统版本**: v4.1
 **路径**: `C:\Users\jia'yue\.workbuddy\skills\心跳巡检档案\SKILL.md`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_Claude-Code源码工程智慧与龙心OS融合框架]] — Claude Code源码工程智慧与龙心OS融合框架
+- [[03-知识地基层/记忆系统_记忆系统安装完成报告-v3.0]] — 记忆系统安装完成报告 v3.0
+- [[09-技能库/任务控制台/SKILL]] — Mission Control Skill（任务控制台）
+- [[09-技能库/任务看板/SKILL]] — Task Board Skill（任务看板）
+- [[ψ技能体系/30-tools/任务控制台/SKILL]] — Mission Control Skill（任务控制台）
+- [[ψ技能体系/40-rules/心跳巡检档案/SKILL]] — HEARTBEATmd Skill（心跳巡检档案）
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# LLM Wiki 理论完整版
+﻿# LLM Wiki 理论完整版
 
 > **来源**：Andrej Karpathy 的 LLMification 方法论
 > **核心范式**：从"人类编写、机器检索"到"机器编译、人类审核"
@@ -222,3 +222,21 @@ Karpathy的知识库构建方法，通过"原始资料-Wiki-Schema"的三层架�
 > "知识只需编译一次，即可在后续交互中持续复用与迭代。"
 
 > "让知识活起来——能被AI理解、能被快速检索、能持续进化、能产生复利。"
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/核心Skills_知识学习Skills-v2.5-易经卦变整合]] — 知识学习Skills v2.5 · 易经卦变整合完整版
+- [[01-核心体系/龙心OS_📚 知识库建设Skill]] — 📚 知识库建设 · 三层架构设计与实施指南
+- [[16-工具与资源/projects_01-理论体系结构剖析]] — LLM Wiki 理论体系结构剖析
+- [[08-龙心OS核心系统/AI-OS知识库/🧠 龙脑OS·知识地基层/wiki·概念页/LLMification]] — LLMification（知识编译方法论）
+- [[09-技能库/LLM-Wiki/references/theory]] — LLM Wiki · 卡帕西体系完整理论 v1.0
+- [[09-技能库/llmification-knowledge-builder/references/theory]] — Theory.md - LLMification 理论依据
+- [[09-技能库/知识学习Skills/SKILL]] — 知识学习Skills
+- [[09-技能库/知识学习Skills/references/llm-wiki-architecture]] — LLM Wiki三层知识流水线架构详解
+- [[09-技能库/知识库建设/SKILL]] — 📚 知识库建设 · 三层架构设计与实施指南
+- [[ψ技能体系/00-foundation/llm-wiki/LLM Wiki 知识库管理/SKILL]] — LLM Wiki 知识库管理 Skill
+
+<!-- AI-LINKS-END -->

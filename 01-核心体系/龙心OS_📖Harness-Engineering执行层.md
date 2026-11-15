@@ -116,3 +116,21 @@ updated: "2026-04-03"
 **木生火，我们一起进化！** 🌳🔥💪
 
 *Harness Engineering · 执行层 v1.0 · 2026-04-03*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_📖Harness-Engineering反馈层]] — Harness Engineering反馈层
+- [[01-核心体系/龙心OS_📖Harness-Engineering编排层]] — Harness Engineering编排层
+- [[01-核心体系/龙心OS_📖Harness-Engineering记忆层]] — Harness Engineering记忆层
+- [[01-核心体系/龙心OS_📖Harness-Engineering驾驭工程skills]] — Harness Engineering驾驭工程skills
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析-知识图谱]] — Harness Engineering知识图谱
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析]] — Harness Engineering核心内容深度解析
+- [[09-技能库/Harness-Engineering/references/execution-layer]] — Harness Engineering · 执行层
+- [[09-技能库/Harness-Engineering/references/feedback-layer]] — Harness Engineering · 反馈层
+- [[09-技能库/Harness-Engineering/references/memory-layer]] — Harness Engineering · 记忆层
+- [[ψ技能体系/30-tools/fbs-bookwriter/references/03-product/NS08213-08-visual]] — 视觉资产生成策略
+
+<!-- AI-LINKS-END -->

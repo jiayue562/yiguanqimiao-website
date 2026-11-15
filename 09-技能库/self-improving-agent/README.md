@@ -1,4 +1,4 @@
-# Self-Improving Agent
+﻿# Self-Improving Agent
 
 A universal self-improvement system that learns from ALL skill experiences and continuously updates the codebase.
 
@@ -134,3 +134,18 @@ Reusable templates live in `skills/self-improving-agent/templates`:
 ## License
 
 MIT
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/humanizer/README]] — Humanizer
+- [[09-技能库/resources_appendix]] — Appendix
+- [[09-技能库/self-improving-agent/SKILL]] — Self-Improving Agent
+- [[09-技能库/self-improving-agent/references/appendix]] — Appendix
+- [[ψ技能体系/10-kernel/龙心OS/self-improving-agent/README]] — Self-Improving Agent
+- [[ψ技能体系/10-kernel/龙心OS/self-improving-agent/SKILL]] — Self-Improving Agent
+- [[ψ技能体系/10-kernel/龙心OS/self-improving-agent/references/appendix]] — Appendix
+
+<!-- AI-LINKS-END -->

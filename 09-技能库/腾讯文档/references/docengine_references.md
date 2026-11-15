@@ -1,4 +1,4 @@
-# DOC 编辑引擎 API 参考
+﻿# DOC 编辑引擎 API 参考
 
 本文件包含腾讯文档 DOC 编辑引擎（docengine）的所有工具 API 说明。这些工具专用于 Word 文档的编辑操作，包括用 Markdown 创建文档（create_with_markdown）、插入markdown(一般与创建文档组合使用，1.创建文档 2.插入markdown)，文本插入、替换、查找、段落设置、文本属性修改、任务插入、图片插入、分页符和表格插入等。
 
@@ -1127,3 +1127,21 @@
 - `create_with_markdown` 可一步完成 Word 文档的创建和内容写入，无需先 `manage.create_file` 再 `insert_markdown`，适合快速生成 Word 文档的场景
 - `insert_comment` 的 `range` 必须在文档有效范围内，建议先用 `find` 获取精确范围
 - `replace_image` 需要通过 `old_image_url` 或 `old_attachment_id` 定位旧图片，新图片通过 `image_id` 或 `content`（base64）指定
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/markitdown/SKILL]] — Markitdown 技能
+- [[09-技能库/resources_api_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/resources_smartcanvas_references]] — 智能文档（SmartCanvas）工具完整参考文档
+- [[09-技能库/腾讯文档/SKILL]] — 腾讯文档 MCP 使用指南
+- [[09-技能库/腾讯文档/doc/entry]] — Word 文档（doc）品类操作指引
+- [[09-技能库/腾讯文档/references/auth]] — 腾讯文档鉴权检查
+- [[09-技能库/腾讯文档/references/space_references]] — 知识库空间 API 参考
+- [[09-技能库/腾讯文档/references/unsupported_feature_reporting]] — 不支持能力上报规范（report_unsupported_feature）
+- [[09-技能库/腾讯文档/references/workflows]] — 公共接口与常见工作流
+- [[09-技能库/腾讯文档/sheet/api/operation-api]] — Sheet 表格操作参考文档
+
+<!-- AI-LINKS-END -->

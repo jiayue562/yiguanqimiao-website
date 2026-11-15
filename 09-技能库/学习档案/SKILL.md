@@ -1,4 +1,4 @@
----
+﻿---
 name: 学习档案
 description: 学习档案（LEARNINGSmd）——AI代理的错误闭环学习机制。通过强制记录错误、编写防错规则、会话前复盘，实现持续迭代，避免重复犯错。核心铁律：同一错误犯两次，绝对不可原谅。对标OpenClaw的LEARNINGSmd规则。
 version: 1.0
@@ -590,3 +590,20 @@ updated: 2026-03-23
 ---
 
 **同一错误犯两次，绝对不可原谅！** 🚫
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/AI龙龟共生伙伴操作系统/references/openclaw-alignment]] — AI龙龟共生伙伴操作系统（AI OS）v4.0 · OpenClaw对标方案
+- [[09-技能库/resources_openclaw-alignment]] — resources_openclaw-alignment
+- [[09-技能库/安全规则/SKILL]] — 安全规则（Security Rules）
+- [[09-技能库/状态更新规则/SKILL]] — 状态更新规则（Status Updates）
+- [[09-技能库/自主权限规则/SKILL]] — 自主权限规则（Autonomy）
+- [[ψ技能体系/30-tools/学习档案/SKILL]] — 学习档案（LEARNINGSmd）
+- [[ψ技能体系/40-rules/学习档案/SKILL]] — 学习档案（LEARNINGSmd）
+- [[ψ技能体系/40-rules/安全规则/SKILL]] — 安全规则（Security Rules）
+- [[ψ技能体系/40-rules/自主权限规则/SKILL]] — 自主权限规则（Autonomy）
+
+<!-- AI-LINKS-END -->

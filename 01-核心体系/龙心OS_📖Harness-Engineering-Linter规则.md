@@ -220,3 +220,21 @@ P2违规：提示，优化，不阻断
 **木生火，我们一起进化！** 🌳🔥💪
 
 *龙心OS · 确定性Linter规则体系 v1.0 · 2026-04-03*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_📖Harness-Engineering反馈层]] — Harness Engineering反馈层
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析]] — Harness Engineering核心内容深度解析
+- [[09-技能库/Harness-Engineering/references/feedback-layer]] — Harness Engineering · 反馈层
+- [[09-技能库/Harness-Engineering/references/linter-rules]] — 龙心OS - Deterministic Linter Rules System
+- [[09-技能库/人机共生OS/templates/动态权重计算表]] — 动态权重计算表
+- [[09-技能库/内容发布规则/SKILL]] — Content Skill（内容发布规则）
+- [[09-技能库/思维模型库/瓶颈理论/SKILL]] — 瓶颈理论
+- [[09-技能库/龙心OS-规则体系/references/法律合规检查机制]] — 法律合规检查机制 - 龙心OS合规体系
+- [[09-技能库/龙心OS/第六模块-法律合规/SKILL]] — 🛡️ 龙心OS 第六模块：法律合规模块
+- [[ψ技能体系/10-kernel/龙脑OS/models/思维模型库/瓶颈理论/SKILL]] — 瓶颈理论
+
+<!-- AI-LINKS-END -->

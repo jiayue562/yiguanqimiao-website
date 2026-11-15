@@ -1,4 +1,4 @@
----
+﻿---
 title: "凤爪OS与凤心OS的L1协作协议"
 created: "2026-04-05"
 version: "1.0"
@@ -346,3 +346,21 @@ START（L1 接收请求）
 **最后更新**: 2026-04-05  
 **维护者**: 龙龟神将  
 **存储位置**: `C:\Users\jia'yue\.workbuddy\skills\凤爪OS.skills\references\L1-fengxin-integration.md`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[05-五行人格心理学/00-入口/📊 资产盘点与缺口分析]] — 资产盘点与缺口分析
+- [[05-五行人格心理学/融合体系/🌟 凤爪OS]] — 凤爪OS - 一心·统?
+- [[09-技能库/L1·一心·统摄/references/L1-fengxin-integration]] — L1×凤心OS协作协议完整版
+- [[09-技能库/凤爪OS.skills/SKILL]] — 凤爪OS - L1·一心·统摄
+- [[09-技能库/凤爪OS.skills/package-summary]] — 凤爪OS.skills · 独立封装包
+- [[09-技能库/凤爪OS.skills/triggers/auto-trigger-config]] — 凤爪OS.skills 自动触发配置
+- [[ψ技能体系/20-claws/00-wuxing/L1·一心·统摄/references/L1-fengxin-integration]] — L1×凤心OS协作协议完整版
+- [[ψ技能体系/20-claws/00-wuxing/凤心OS/references/fast-slow-thinking]] — 快思考-慢思考引擎 (Fast-Slow Thinking)
+- [[ψ技能体系/20-claws/00-wuxing/凤爪OS/SKILL]] — 凤爪OS · 一心统摄·知音接待台 v3.0
+- [[ψ技能体系/20-claws/00-wuxing/凤爪OS/references/L1-fengxin-integration]] — L1-凤心集成接口
+
+<!-- AI-LINKS-END -->

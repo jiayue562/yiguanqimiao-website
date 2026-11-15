@@ -1,4 +1,4 @@
-# 龙爪OS整合协议
+﻿# 龙爪OS整合协议
 
 > **版本**: v1.0  
 > **创建日期**: 2026-04-10  
@@ -550,3 +550,17 @@ interface WuXingAnalysisResponse {
 ---
 
 **龙爪OS整合协议** · 确保三层架构有机协同 🐾
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_Obsidian与龙心OS整合增强方案]] — Obsidian与龙心OS整合增强方案
+- [[09-技能库/AI龙龟共生伙伴操作系统/references/integration-protocol]] — AI OS 三层整合协议
+- [[09-技能库/resources_企业文化与龙心OS整合协议]] — 企业文化OS知识库 · 与龙心OS整合协议
+- [[09-技能库/企业文化OS知识库/references/integration]] — 企业文化OS知识库 · 与龙心OS整合协议
+- [[09-技能库/知行合一自我进化/references/integration-notes]] — 知行合一与龙心OS整合笔记
+- [[ψ技能体系/99-archive/知行合一自我进化/references/integration-notes]] — 知行合一与龙心OS整合笔记
+
+<!-- AI-LINKS-END -->

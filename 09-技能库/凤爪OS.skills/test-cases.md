@@ -1,4 +1,4 @@
----
+﻿---
 title: "凤爪OS.skills · 测试用例"
 created: "2026-04-05"
 version: "1.0"
@@ -430,3 +430,18 @@ tags: [凤爪OS, L1, 测试用例, 场景验证]
 **最后更新**: 2026-04-05
 **维护者**: 龙龟神将
 **测试状态**: 待执行（15个测试用例准备就绪）
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[05-五行人格心理学/融合体系/🌟 凤爪OS]] — 凤爪OS - 一心·统?
+- [[09-技能库/L1·一心·统摄/references/scene-mapping]] — 八大应用场景映射图完整版
+- [[09-技能库/五行人格心理学OS/test-cases]] — 五行人格心理学 OS · 测试用例
+- [[09-技能库/凤爪OS.skills/triggers/auto-trigger-config]] — 凤爪OS.skills 自动触发配置
+- [[ψ技能体系/20-claws/00-wuxing/L1·一心·统摄/references/scene-mapping]] — 八大应用场景映射图完整版
+- [[ψ技能体系/20-claws/00-wuxing/五行人格心理学OS/test-cases]] — 五行人格心理学 OS · 测试用例
+- [[ψ技能体系/20-claws/00-wuxing/凤爪OS/references/scene-mapping/亲密关系]] — 亲密关系场景 · 凤爪OS场景映射参考
+
+<!-- AI-LINKS-END -->

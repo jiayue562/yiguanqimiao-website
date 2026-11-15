@@ -396,3 +396,21 @@ C锛氬凡瀹屾垚鐭ヨ鍚堜竴 Skill锛?5%锛夊拰鐭ヨ瘑瀛︿範 Ski
 ---
 
 _鎶ュ憡鐢熸垚锛氱煡璇嗗涔?Skill v1.0 路 瑙傚叾濡欎功闄?路 2026-04-15 21:28_
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_LLM-Wiki 知识库建设]] — LLM Wiki 鐭ヨ瘑搴撳缓璁?- 鐭ヨ瘑瀛︿範鎶ュ憡
+- [[ψ技能体系/20-claws/00-wuxing/五行人格心理学/references/理论体系]] — 鏍稿績鐞嗚浣撶郴 - 涓€蹇冧笁鐣屼簲琛屼節灞傝薄鎬濈淮浣撶郴
+- [[ψ技能体系/20-claws/00-wuxing/土行人分智能体/references/theory]] — 鍦熻浜烘€ф牸鐗瑰緛鍏ㄨ锛氱悊璁恒€佺淮搴︺€佸疄璺典笌鍗囧崕
+- [[ψ技能体系/20-claws/00-wuxing/水行人分智能体/references/theory]] — 姘磋浜虹鏍艰涓烘ā鍨嬶紙B=MAP锛夋繁搴︽暣鍚?
+- [[ψ技能体系/20-claws/00-wuxing/火行人分智能体/references/theory]] — 鐏浜哄垎鏅鸿兘浣撹浆鍖栨妧鏈畬鏁存寚鍗?
+- [[ψ技能体系/20-claws/01-weizang/P-01问题路由引擎/SKILL]] — 鏃ュ弽棣堟櫤鑳戒綋 路 P-01锛堝簳鐩樺眰路P=95锛?
+- [[ψ技能体系/20-claws/01-weizang/松山湖店长智能体/SKILL]] — 鏉惧北婀栧簵闀?路 SM-SSH锛堟按琛屄稰=90锛?
+- [[ψ技能体系/20-claws/01-weizang/狮山店长智能体/SKILL]] — 鐙北搴楅暱 路 SM-SS锛堥噾琛屄稰=90锛?
+- [[ψ技能体系/30-tools/deep-research/research-deep/SKILL]] — Research Deep - 娣卞害璋冪爺
+- [[ψ技能体系/30-tools/ima-skill/knowledge-base/SKILL]] — Knowledge Base (鐭ヨ瘑搴?
+
+<!-- AI-LINKS-END -->

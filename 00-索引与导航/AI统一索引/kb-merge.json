@@ -1,0 +1,1627 @@
+{
+  "protocol": "index-first-v1 + merge-v1",
+  "generated": "2026-11-14 13:48:06",
+  "vault": "D:\\以观其妙书院知识库\\以观其妙书院",
+  "policy": {
+    "duplicate_folding": "search/resolve/get/context 默认只返回 canonical；副本以 duplicate_of 标注，不单独命中",
+    "archive": "L5 归档快照默认不进入常规检索；须显式 --include-archive 或 archive 子命令，且答案标注「归档快照·非现行版本」",
+    "physical_merge": "禁止物理删除字节相同的功能构件；目录语义合并须人工裁决后另行执行",
+    "source_of_truth": "本文件为归并规则真相源；重复组每次重建按当前磁盘重算，历史迁移只从 PASS 备份累积"
+  },
+  "stats": {
+    "索引收录": 14250,
+    "字节相同重复组": 33,
+    "折叠副本数": 38,
+    "L5归档快照": 2722,
+    "无编号遗留顶层目录": 23,
+    "根目录导航md": 21,
+    "路径迁移": 113,
+    "UID继承": 112
+  },
+  "duplicate_groups": [
+    {
+      "id": "DUP-001",
+      "canonical": "08-龙心OS核心系统/AI-OS知识库/🧠 龙脑OS·知识地基层/L7理论基石/总索引.md",
+      "copies": [
+        "ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer1-raw/🧠 龙脑OS·知识地基层/L7理论基石/总索引.md"
+      ],
+      "份数": 2,
+      "sha256": "1f0e9a3fe968343fa250d1d9a87e19c2259ccfa2d607d74ec6d0e385fe96fea4",
+      "字节": 2558,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-002",
+      "canonical": "09-技能库/ai-os/AI_OS_╫╘╢»╗»╩╣╙├╓╕─╧.md",
+      "copies": [
+        "ψ技能体系/99-archive/ai-os/AI_OS_╫╘╢»╗»╩╣╙├╓╕─╧.md"
+      ],
+      "份数": 2,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "字节": 0,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-003",
+      "canonical": "09-技能库/ghost-scan-code/prompts/nominator.md",
+      "copies": [
+        "09-技能库/resources_nominator.md"
+      ],
+      "份数": 2,
+      "sha256": "04c074745fb93997485bd89f0f8859231d3998e4b7aab63dc6da04223b4605af",
+      "字节": 5612,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-004",
+      "canonical": "09-技能库/ghost-scan-code/prompts/planner.md",
+      "copies": [
+        "09-技能库/resources_planner.md"
+      ],
+      "份数": 2,
+      "sha256": "1c0a49675ac6d39be2288cb55c7d73854ebd99fccb6c31fd0327d85ee18a47a1",
+      "字节": 6012,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-005",
+      "canonical": "09-技能库/ghost-scan-code/prompts/verifier.md",
+      "copies": [
+        "09-技能库/resources_verifier.md"
+      ],
+      "份数": 2,
+      "sha256": "a263d4f0df1de3d172af74da683c677669f879fc45055e1cf1c3c7014107d181",
+      "字节": 5381,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-006",
+      "canonical": "09-技能库/ima-skill/SKILL.md",
+      "copies": [
+        "09-技能库/ima-skills/ima-skill/SKILL.md",
+        "09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/SKILL.md"
+      ],
+      "份数": 3,
+      "sha256": "88d735e493703bfdbf5ca5082c2006abe5410151ea784dd3caf6be7aec211d26",
+      "字节": 13282,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-007",
+      "canonical": "09-技能库/ima-skill/knowledge-base/SKILL.md",
+      "copies": [
+        "09-技能库/ima-skills/ima-skill/knowledge-base/SKILL.md",
+        "09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/knowledge-base/SKILL.md",
+        "09-技能库/腾讯ima/knowledge-base/SKILL.md",
+        "ψ技能体系/00-foundation/ima/knowledge-base/SKILL.md"
+      ],
+      "份数": 5,
+      "sha256": "aa48b9edb98d22ddf23173c7b6b7641a32b247006312c82e557131894921fa90",
+      "字节": 29466,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-008",
+      "canonical": "09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/notes/SKILL.md",
+      "copies": [
+        "09-技能库/腾讯ima/notes/SKILL.md",
+        "ψ技能体系/00-foundation/ima/notes/SKILL.md"
+      ],
+      "份数": 3,
+      "sha256": "f65298cdb961224ad65a4f0275ccbf065ba23e3acea8b11e4e68fa68cc0ad541",
+      "字节": 11363,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-009",
+      "canonical": "09-技能库/resources_skill_creation_guide.md",
+      "copies": [
+        "09-技能库/self-learning/references/skill_creation_guide.md"
+      ],
+      "份数": 2,
+      "sha256": "51621583fdaa32103945e8c6fa87a792653c09c451c1e92995ce50dbda3a42c2",
+      "字节": 18654,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-010",
+      "canonical": "09-技能库/self-improving/SKILL.md",
+      "copies": [
+        "ψ技能体系/10-kernel/龙心OS/self-improving/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "7bbafa66ef94ddc30ee55100e392a29332435317ee583b0d27a3b7d74546eca0",
+      "字节": 9485,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-011",
+      "canonical": "09-技能库/web-search-plus/README.md",
+      "copies": [
+        "ψ技能体系/30-tools/web-search-plus/README.md"
+      ],
+      "份数": 2,
+      "sha256": "2617f9ea60817809deef8893033d1eab26ee725e721c9a8e924368f024457f61",
+      "字节": 25796,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-012",
+      "canonical": "09-技能库/workbuddy-obsidian-backup/README.md",
+      "copies": [
+        "ψ技能体系/40-rules/workbuddy-obsidian-backup/README.md"
+      ],
+      "份数": 2,
+      "sha256": "6d16a21f6ef24cebac8b5b38c01d308e897f417c84fc4a81f173f6a735f0a94e",
+      "字节": 6714,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-013",
+      "canonical": "09-技能库/知行合一自我进化/references/README.md",
+      "copies": [
+        "ψ技能体系/99-archive/知行合一自我进化/references/README.md"
+      ],
+      "份数": 2,
+      "sha256": "e4d70f14e44328d006a45097e6a572791f0324a9ca4b024828abc329cbc1ede7",
+      "字节": 1325,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-014",
+      "canonical": "09-技能库/腾讯ima/SKILL.md",
+      "copies": [
+        "ψ技能体系/00-foundation/ima/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "810c88c632e5a6a16fd84d90465e0356f1a24cc68440a0b595aacaaaef7613d3",
+      "字节": 13187,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-015",
+      "canonical": "09-技能库/腾讯ima/knowledge-base/references/api.md",
+      "copies": [
+        "ψ技能体系/00-foundation/ima/knowledge-base/references/api.md"
+      ],
+      "份数": 2,
+      "sha256": "f0f4b16df73a6ecb190e76a93ba3625a9477dfe58687abcc33d98463c8e2a46d",
+      "字节": 21614,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-016",
+      "canonical": "09-技能库/腾讯文档/doc/doc_format/README.md",
+      "copies": [
+        "ψ技能体系/30-tools/腾讯文档/doc/README.md"
+      ],
+      "份数": 2,
+      "sha256": "b806c4ff510be0c3a4e140a9fcdfe5d5e0f6bd2a5101f8ed5f71f718aade21db",
+      "字节": 3717,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-017",
+      "canonical": "09-技能库/麦肯锡思考框架/01-逻辑思考/01-MECE原则/SKILL.md",
+      "copies": [
+        "ψ技能体系/10-kernel/龙脑OS/models/麦肯锡思考框架/01-逻辑思考/01-MECE原则/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "8f637d55d9979f89782e63b4e36db1f02dab7a35d68b6764601f76cdf71ea0a9",
+      "字节": 4892,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-018",
+      "canonical": "09-技能库/麦肯锡思考框架/01-逻辑思考/02-金字塔结构/SKILL.md",
+      "copies": [
+        "ψ技能体系/10-kernel/龙脑OS/models/麦肯锡思考框架/01-逻辑思考/02-金字塔结构/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "1c2d946b34cd60659c6e48e50a0e18569a2d8cef826d5e1320b8347488767b36",
+      "字节": 4323,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-019",
+      "canonical": "09-技能库/麦肯锡思考框架/01-逻辑思考/03-五色光思维/SKILL.md",
+      "copies": [
+        "ψ技能体系/10-kernel/龙脑OS/models/麦肯锡思考框架/01-逻辑思考/03-五色光思维/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "ee4633d9a153b843af694b54a49860f97a9ae95bfab911b198f5208316bc1614",
+      "字节": 5364,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-020",
+      "canonical": "13-WorkBuddy-Sync/三向同步系统/README.md",
+      "copies": [
+        "ψ技能体系/00-foundation/三向同步系统/README.md"
+      ],
+      "份数": 2,
+      "sha256": "a0b8297d630bc4ce31895eb74da6edf7ded439040d1cf455a2e84d3a61bce324",
+      "字节": 11565,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-021",
+      "canonical": "13-WorkBuddy-Sync/三向同步系统/SKILL.md",
+      "copies": [
+        "ψ技能体系/00-foundation/三向同步系统/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "d4d61e6363ac4e0760ef0e4707836aebdc48477eabdd85c5f0a5e2efbe4b3fe0",
+      "字节": 15401,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-022",
+      "canonical": "ψ技能体系/00-foundation/ima/notes/references/api.md",
+      "copies": [
+        "ψ技能体系/30-tools/ima-skill/notes/references/api.md"
+      ],
+      "份数": 2,
+      "sha256": "8da1ce54ccfdb64988d727b6bc172af8a08c2ec4e8eb43e04f70605cc8240876",
+      "字节": 15433,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-023",
+      "canonical": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/化学平衡/SKILL.md",
+      "copies": [
+        "ψ技能体系/30-tools/workbuddy/思维模型库/化学平衡/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "2175f2576ee79f8b68582cdcc286116c98ab093efec48bf5cd68bbca14d1ad17",
+      "字节": 6924,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-024",
+      "canonical": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/失效模式/SKILL.md",
+      "copies": [
+        "ψ技能体系/30-tools/workbuddy/思维模型库/失效模式/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "44788bf321615a8b3fab2fa2a9ebb37d9ebe202cd02944f627ca1b0c270766a4",
+      "字节": 8871,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-025",
+      "canonical": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/奥卡姆剃刀/SKILL.md",
+      "copies": [
+        "ψ技能体系/30-tools/workbuddy/思维模型库/奥卡姆剃刀/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "644000265207868acf51091d268da9569282a334a20296e819208766b215886d",
+      "字节": 7671,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-026",
+      "canonical": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/子Skills/第一阶段-通用底层思维/SKILL.md",
+      "copies": [
+        "ψ技能体系/30-tools/workbuddy/思维模型库/子Skills/第一阶段-通用底层思维/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "456b2fe79b392220e88a4e6408ae270f6c73720ef4a726d577d0f91d119d3a68",
+      "字节": 14086,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-027",
+      "canonical": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/帕累托法则/SKILL.md",
+      "copies": [
+        "ψ技能体系/30-tools/workbuddy/思维模型库/帕累托法则/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "c8a76ad3768a171e569663b8abb9b12579867b3f67a74d4da27c2d744fbe53e4",
+      "字节": 7227,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-028",
+      "canonical": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/控制论/SKILL.md",
+      "copies": [
+        "ψ技能体系/30-tools/workbuddy/思维模型库/控制论/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "843a15d96176ffd9b2d33ddb77b0d34c5357b06e430b15cadc4b60b8f38e5f02",
+      "字节": 7975,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-029",
+      "canonical": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/易经错综复杂/SKILL.md",
+      "copies": [
+        "ψ技能体系/30-tools/workbuddy/思维模型库/易经错综复杂/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "a2fff4420325b2159ea468604760b780fb9a26d04d6b25874cab0bd513db5dba",
+      "字节": 19567,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-030",
+      "canonical": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/氧化还原/SKILL.md",
+      "copies": [
+        "ψ技能体系/30-tools/workbuddy/思维模型库/氧化还原/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "cd718b5291a08d66d46bbba632a88ce3f94c8f360ffad567107fcb37a773cb89",
+      "字节": 8302,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-031",
+      "canonical": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/系统延迟/SKILL.md",
+      "copies": [
+        "ψ技能体系/30-tools/workbuddy/思维模型库/系统延迟/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "92917e7c9cdd59d56e050280e49d655fa4e225a6c088e3adc9b16f908bfd8b1e",
+      "字节": 6979,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-032",
+      "canonical": "ψ技能体系/30-tools/PPT 演示文稿/SKILL.md",
+      "copies": [
+        "ψ技能体系/30-tools/pptx-generator/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "30ad15b9a183e1a1d62f2abfc7dfcd8b5d2877a00b8a7547c8aa427852b25997",
+      "字节": 8948,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    },
+    {
+      "id": "DUP-033",
+      "canonical": "ψ技能体系/30-tools/summarize/SKILL.md",
+      "copies": [
+        "ψ技能体系/30-tools/内容总结/SKILL.md"
+      ],
+      "份数": 2,
+      "sha256": "fbe9576bdb2cf46b9e350eea1edc2ddbc1e9332363a1e0829cc72505ae39f1c9",
+      "字节": 2200,
+      "policy": "索引层折叠：只返回 canonical，副本不单独命中",
+      "reason": "多为技能包功能构件（SKILL/README/api），物理删除会使对应技能包失效，故不物理归并"
+    }
+  ],
+  "duplicate_of": {
+    "ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer1-raw/🧠 龙脑OS·知识地基层/L7理论基石/总索引.md": "08-龙心OS核心系统/AI-OS知识库/🧠 龙脑OS·知识地基层/L7理论基石/总索引.md",
+    "ψ技能体系/99-archive/ai-os/AI_OS_╫╘╢»╗»╩╣╙├╓╕─╧.md": "09-技能库/ai-os/AI_OS_╫╘╢»╗»╩╣╙├╓╕─╧.md",
+    "09-技能库/resources_nominator.md": "09-技能库/ghost-scan-code/prompts/nominator.md",
+    "09-技能库/resources_planner.md": "09-技能库/ghost-scan-code/prompts/planner.md",
+    "09-技能库/resources_verifier.md": "09-技能库/ghost-scan-code/prompts/verifier.md",
+    "09-技能库/ima-skills/ima-skill/SKILL.md": "09-技能库/ima-skill/SKILL.md",
+    "09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/SKILL.md": "09-技能库/ima-skill/SKILL.md",
+    "09-技能库/ima-skills/ima-skill/knowledge-base/SKILL.md": "09-技能库/ima-skill/knowledge-base/SKILL.md",
+    "09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/knowledge-base/SKILL.md": "09-技能库/ima-skill/knowledge-base/SKILL.md",
+    "09-技能库/腾讯ima/knowledge-base/SKILL.md": "09-技能库/ima-skill/knowledge-base/SKILL.md",
+    "ψ技能体系/00-foundation/ima/knowledge-base/SKILL.md": "09-技能库/ima-skill/knowledge-base/SKILL.md",
+    "09-技能库/腾讯ima/notes/SKILL.md": "09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/notes/SKILL.md",
+    "ψ技能体系/00-foundation/ima/notes/SKILL.md": "09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/notes/SKILL.md",
+    "09-技能库/self-learning/references/skill_creation_guide.md": "09-技能库/resources_skill_creation_guide.md",
+    "ψ技能体系/10-kernel/龙心OS/self-improving/SKILL.md": "09-技能库/self-improving/SKILL.md",
+    "ψ技能体系/30-tools/web-search-plus/README.md": "09-技能库/web-search-plus/README.md",
+    "ψ技能体系/40-rules/workbuddy-obsidian-backup/README.md": "09-技能库/workbuddy-obsidian-backup/README.md",
+    "ψ技能体系/99-archive/知行合一自我进化/references/README.md": "09-技能库/知行合一自我进化/references/README.md",
+    "ψ技能体系/00-foundation/ima/SKILL.md": "09-技能库/腾讯ima/SKILL.md",
+    "ψ技能体系/00-foundation/ima/knowledge-base/references/api.md": "09-技能库/腾讯ima/knowledge-base/references/api.md",
+    "ψ技能体系/30-tools/腾讯文档/doc/README.md": "09-技能库/腾讯文档/doc/doc_format/README.md",
+    "ψ技能体系/10-kernel/龙脑OS/models/麦肯锡思考框架/01-逻辑思考/01-MECE原则/SKILL.md": "09-技能库/麦肯锡思考框架/01-逻辑思考/01-MECE原则/SKILL.md",
+    "ψ技能体系/10-kernel/龙脑OS/models/麦肯锡思考框架/01-逻辑思考/02-金字塔结构/SKILL.md": "09-技能库/麦肯锡思考框架/01-逻辑思考/02-金字塔结构/SKILL.md",
+    "ψ技能体系/10-kernel/龙脑OS/models/麦肯锡思考框架/01-逻辑思考/03-五色光思维/SKILL.md": "09-技能库/麦肯锡思考框架/01-逻辑思考/03-五色光思维/SKILL.md",
+    "ψ技能体系/00-foundation/三向同步系统/README.md": "13-WorkBuddy-Sync/三向同步系统/README.md",
+    "ψ技能体系/00-foundation/三向同步系统/SKILL.md": "13-WorkBuddy-Sync/三向同步系统/SKILL.md",
+    "ψ技能体系/30-tools/ima-skill/notes/references/api.md": "ψ技能体系/00-foundation/ima/notes/references/api.md",
+    "ψ技能体系/30-tools/workbuddy/思维模型库/化学平衡/SKILL.md": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/化学平衡/SKILL.md",
+    "ψ技能体系/30-tools/workbuddy/思维模型库/失效模式/SKILL.md": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/失效模式/SKILL.md",
+    "ψ技能体系/30-tools/workbuddy/思维模型库/奥卡姆剃刀/SKILL.md": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/奥卡姆剃刀/SKILL.md",
+    "ψ技能体系/30-tools/workbuddy/思维模型库/子Skills/第一阶段-通用底层思维/SKILL.md": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/子Skills/第一阶段-通用底层思维/SKILL.md",
+    "ψ技能体系/30-tools/workbuddy/思维模型库/帕累托法则/SKILL.md": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/帕累托法则/SKILL.md",
+    "ψ技能体系/30-tools/workbuddy/思维模型库/控制论/SKILL.md": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/控制论/SKILL.md",
+    "ψ技能体系/30-tools/workbuddy/思维模型库/易经错综复杂/SKILL.md": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/易经错综复杂/SKILL.md",
+    "ψ技能体系/30-tools/workbuddy/思维模型库/氧化还原/SKILL.md": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/氧化还原/SKILL.md",
+    "ψ技能体系/30-tools/workbuddy/思维模型库/系统延迟/SKILL.md": "ψ技能体系/10-kernel/龙脑OS/models/思维模型库/系统延迟/SKILL.md",
+    "ψ技能体系/30-tools/pptx-generator/SKILL.md": "ψ技能体系/30-tools/PPT 演示文稿/SKILL.md",
+    "ψ技能体系/30-tools/内容总结/SKILL.md": "ψ技能体系/30-tools/summarize/SKILL.md"
+  },
+  "directory_groups": {
+    "书稿 / 专著": {
+      "成员": [
+        "共生关系书稿",
+        "龙心OS顶层设计",
+        "龙心OS书稿",
+        "生生书稿",
+        "象与模书稿"
+      ],
+      "合计md": 150,
+      "实测重叠": "两两同名相对路径交集为 0，属不同主题/阶段的独立内容，非重复副本",
+      "处置": "仅登记主题归属，不物理合并（合并只改善外观，不减少冗余，却要重算命名空间短码）"
+    },
+    "AI 原生组织": {
+      "成员": [
+        "AI原生组织",
+        "AI原生组织思维模型",
+        "AI原生组织知识库",
+        "味藏AI原生组织"
+      ],
+      "合计md": 211,
+      "实测重叠": "两两同名相对路径交集为 0，属不同主题/阶段的独立内容，非重复副本",
+      "处置": "仅登记主题归属，不物理合并（合并只改善外观，不减少冗余，却要重算命名空间短码）"
+    },
+    "AIOS / 龙心OS 系统资料": {
+      "成员": [
+        "AI龙龟共生OS知识库",
+        "AIOS心跳巡检",
+        "龙心OS顶层设计",
+        "08-龙心OS核心系统"
+      ],
+      "合计md": 139,
+      "实测重叠": "两两同名相对路径交集为 0，属不同主题/阶段的独立内容，非重复副本",
+      "处置": "仅登记主题归属，不物理合并（合并只改善外观，不减少冗余，却要重算命名空间短码）"
+    },
+    "技能体系": {
+      "成员": [
+        "09-技能库",
+        "14-核心独创Skills",
+        "ψ技能体系",
+        "agents",
+        "skills",
+        "knowledge-base"
+      ],
+      "合计md": 2845,
+      "实测重叠": "两两同名相对路径交集为 0，属不同主题/阶段的独立内容，非重复副本",
+      "处置": "仅登记主题归属，不物理合并（合并只改善外观，不减少冗余，却要重算命名空间短码）"
+    },
+    "研学 L3": {
+      "成员": [
+        "Raw原文",
+        "Wiki成书"
+      ],
+      "合计md": 106,
+      "实测重叠": "两两同名相对路径交集为 0，属不同主题/阶段的独立内容，非重复副本",
+      "处置": "仅登记主题归属，不物理合并（合并只改善外观，不减少冗余，却要重算命名空间短码）"
+    },
+    "专项知识库": {
+      "成员": [
+        "岗位智能体OS知识库",
+        "思维模型",
+        "AIOS心跳巡检"
+      ],
+      "合计md": 103,
+      "实测重叠": "两两同名相对路径交集为 0，属不同主题/阶段的独立内容，非重复副本",
+      "处置": "仅登记主题归属，不物理合并（合并只改善外观，不减少冗余，却要重算命名空间短码）"
+    },
+    "运营与发布记录": {
+      "成员": [
+        "周度汇报",
+        "微信公众号草稿库"
+      ],
+      "合计md": 1,
+      "实测重叠": "两两同名相对路径交集为 0，属不同主题/阶段的独立内容，非重复副本",
+      "处置": "仅登记主题归属，不物理合并（合并只改善外观，不减少冗余，却要重算命名空间短码）"
+    }
+  },
+  "unnumbered_tops": [
+    "AIOS心跳巡检",
+    "AI原生组织",
+    "AI原生组织思维模型",
+    "AI原生组织知识库",
+    "AI龙龟共生OS知识库",
+    "Raw原文",
+    "Wiki成书",
+    "WorkBuddy知识备份体系",
+    "agents",
+    "knowledge-base",
+    "scripts",
+    "skills",
+    "ψ技能体系",
+    "共生关系书稿",
+    "周度汇报",
+    "味藏AI原生组织",
+    "岗位智能体OS知识库",
+    "微信公众号草稿库",
+    "思维模型",
+    "生生书稿",
+    "象与模书稿",
+    "龙心OS书稿",
+    "龙心OS顶层设计"
+  ],
+  "merged_pairs": [
+    {
+      "from": "19-系统配置",
+      "to": "10-系统配置",
+      "移动文件": 6
+    },
+    {
+      "from": "22-工作记录与复盘",
+      "to": "20-工作记录与复盘",
+      "移动文件": 107
+    }
+  ],
+  "root_navigation": [
+    "AGENT.md",
+    "CONVENTIONS.md",
+    "NS3A52C-00-总索引与导航.md",
+    "NS3A52C-01-龙心OS核心系统.md",
+    "NS3A52C-02-1 企业文化OS知识库.md",
+    "NS3A52C-02-3D26-2 五行人格心理学OS知识库.md",
+    "NS3A52C-02-5D12-5 心文化知识库.md",
+    "NS3A52C-02-6023-4 AI应用知识库.md",
+    "NS3A52C-02-683C-3 象思维及思维模型知识库.md",
+    "NS3A52C-02-799B-3 岗位智能体.md",
+    "NS3A52C-02-9377-专业领域知识库矩阵.md",
+    "NS3A52C-03-知识地基层.md",
+    "NS3A52C-04-实践案例库.md",
+    "NS3A52C-05-个人成长与修行.md",
+    "README.md",
+    "_graph.md",
+    "_index.md",
+    "_tags.md",
+    "_vault_config.md",
+    "知识地图.md",
+    "第0层·木火共生关系.md"
+  ],
+  "archive_layer": {
+    "policy": "default_excluded__explicit_queryable",
+    "index_file": "kb-archive.jsonl",
+    "count": 2722,
+    "note": "归档快照不参与常规检索，避免历史副本与现行笔记争抢命中"
+  },
+  "path_migrations": [
+    {
+      "from": "19-系统配置/同步报告_20260424.md",
+      "to": "10-系统配置/同步报告_20260424.md"
+    },
+    {
+      "from": "19-系统配置/同步报告_20260426.md",
+      "to": "10-系统配置/同步报告_20260426.md"
+    },
+    {
+      "from": "19-系统配置/同步报告_20260428.md",
+      "to": "10-系统配置/同步报告_20260428.md"
+    },
+    {
+      "from": "19-系统配置/同步报告_20260507.md",
+      "to": "10-系统配置/同步报告_20260507.md"
+    },
+    {
+      "from": "19-系统配置/同步报告_20260508.md",
+      "to": "10-系统配置/同步报告_20260508.md"
+    },
+    {
+      "from": "19-系统配置/同步报告_20260509.md",
+      "to": "10-系统配置/同步报告_20260509.md"
+    },
+    {
+      "from": "22-工作记录与复盘/01-每日归档/2026-04-06_每日备份报告.md",
+      "to": "20-工作记录与复盘/01-每日归档/2026-04-06_每日备份报告.md"
+    },
+    {
+      "from": "22-工作记录与复盘/01-每日归档/2026-04-08_每日备份报告.md",
+      "to": "20-工作记录与复盘/01-每日归档/2026-04-08_每日备份报告.md"
+    },
+    {
+      "from": "22-工作记录与复盘/01-每日归档/2026-04-14_每日备份报告.md",
+      "to": "20-工作记录与复盘/01-每日归档/2026-04-14_每日备份报告.md"
+    },
+    {
+      "from": "22-工作记录与复盘/01-每日归档/2026-04-16_每日备份报告.md",
+      "to": "20-工作记录与复盘/01-每日归档/2026-04-16_每日备份报告.md"
+    },
+    {
+      "from": "22-工作记录与复盘/01-长期记忆档案/MEMORY备份.md",
+      "to": "20-工作记录与复盘/01-长期记忆档案/MEMORY备份-来自22.md"
+    },
+    {
+      "from": "22-工作记录与复盘/02-每日日志/2026-04-06.md",
+      "to": "20-工作记录与复盘/02-每日日志/2026-04-06.md"
+    },
+    {
+      "from": "22-工作记录与复盘/02-每日日志/2026-04-10.md",
+      "to": "20-工作记录与复盘/02-每日日志/2026-04-10.md"
+    },
+    {
+      "from": "22-工作记录与复盘/02-每日日志/2026-04-14.md",
+      "to": "20-工作记录与复盘/02-每日日志/2026-04-14.md"
+    },
+    {
+      "from": "22-工作记录与复盘/02-每日日志/2026-04-15.md",
+      "to": "20-工作记录与复盘/02-每日日志/2026-04-15.md"
+    },
+    {
+      "from": "22-工作记录与复盘/02-每日日志/2026-04-17.md",
+      "to": "20-工作记录与复盘/02-每日日志/2026-04-17.md"
+    },
+    {
+      "from": "22-工作记录与复盘/03-记忆系统/MEMORY备份.md",
+      "to": "20-工作记录与复盘/03-记忆系统/MEMORY备份.md"
+    },
+    {
+      "from": "22-工作记录与复盘/03-记忆系统/MEMORY备份_2026-04-08.md",
+      "to": "20-工作记录与复盘/03-记忆系统/MEMORY备份_2026-04-08.md"
+    },
+    {
+      "from": "22-工作记录与复盘/2026-08/2026-08-25.md",
+      "to": "20-工作记录与复盘/2026-08/2026-08-25.md"
+    },
+    {
+      "from": "22-工作记录与复盘/2026-08/2026-08-26.md",
+      "to": "20-工作记录与复盘/2026-08/2026-08-26.md"
+    },
+    {
+      "from": "22-工作记录与复盘/2026-08/2026-08-27.md",
+      "to": "20-工作记录与复盘/2026-08/2026-08-27.md"
+    },
+    {
+      "from": "22-工作记录与复盘/2026-08/三日沟通汇总-0825-0827.md",
+      "to": "20-工作记录与复盘/2026-08/三日沟通汇总-0825-0827.md"
+    },
+    {
+      "from": "22-工作记录与复盘/_从根目录迁入/日签/三库同步状态.md",
+      "to": "20-工作记录与复盘/_从根目录迁入/日签/三库同步状态.md"
+    },
+    {
+      "from": "22-工作记录与复盘/_从根目录迁入/日签/今日待办.md",
+      "to": "20-工作记录与复盘/_从根目录迁入/日签/今日待办.md"
+    },
+    {
+      "from": "22-工作记录与复盘/_从根目录迁入/日签/本周回顾.md",
+      "to": "20-工作记录与复盘/_从根目录迁入/日签/本周回顾.md"
+    },
+    {
+      "from": "22-工作记录与复盘/_从根目录迁入/日签/本月目标.md",
+      "to": "20-工作记录与复盘/_从根目录迁入/日签/本月目标.md"
+    },
+    {
+      "from": "22-工作记录与复盘/_从根目录迁入/🔄 复盘手册化工作流·知识资产沉淀SOP.md",
+      "to": "20-工作记录与复盘/_从根目录迁入/🔄 复盘手册化工作流·知识资产沉淀SOP.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_03-01-读书笔记.md",
+      "to": "20-工作记录与复盘/journal_03-01-读书笔记.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_03-02-课程笔记.md",
+      "to": "20-工作记录与复盘/journal_03-02-课程笔记.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_03-03-灵感收集.md",
+      "to": "20-工作记录与复盘/journal_03-03-灵感收集.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_03-学习笔记.md",
+      "to": "20-工作记录与复盘/journal_03-学习笔记.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_05-01-目标规划.md",
+      "to": "20-工作记录与复盘/journal_05-01-目标规划.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_05-02-习惯追踪.md",
+      "to": "20-工作记录与复盘/journal_05-02-习惯追踪.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_05-03-反思日志.md",
+      "to": "20-工作记录与复盘/journal_05-03-反思日志.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_05-个人成长.md",
+      "to": "20-工作记录与复盘/journal_05-个人成长.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-05 龙龟对话记录.md",
+      "to": "20-工作记录与复盘/journal_2026-03-05 龙龟对话记录.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-07.md",
+      "to": "20-工作记录与复盘/journal_2026-03-07.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-08.md",
+      "to": "20-工作记录与复盘/journal_2026-03-08.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-11.md",
+      "to": "20-工作记录与复盘/journal_2026-03-11.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-14_对话归档.md",
+      "to": "20-工作记录与复盘/journal_2026-03-14_对话归档.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-15_信仰体证.md",
+      "to": "20-工作记录与复盘/journal_2026-03-15_信仰体证.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-15_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-15_共生成长总结.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-15_对话归档.md",
+      "to": "20-工作记录与复盘/journal_2026-03-15_对话归档.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-15_方法论沉淀.md",
+      "to": "20-工作记录与复盘/journal_2026-03-15_方法论沉淀.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-15_核心洞见.md",
+      "to": "20-工作记录与复盘/journal_2026-03-15_核心洞见.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-16_信仰体证.md",
+      "to": "20-工作记录与复盘/journal_2026-03-16_信仰体证.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-16_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-16_共生成长总结.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-16_方法论沉淀.md",
+      "to": "20-工作记录与复盘/journal_2026-03-16_方法论沉淀.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-16_核心洞见.md",
+      "to": "20-工作记录与复盘/journal_2026-03-16_核心洞见.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-17_知识库同步报告.md",
+      "to": "20-工作记录与复盘/journal_2026-03-17_知识库同步报告.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-19_信仰体证.md",
+      "to": "20-工作记录与复盘/journal_2026-03-19_信仰体证.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-19_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-19_共生成长总结.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-19_对话归档.md",
+      "to": "20-工作记录与复盘/journal_2026-03-19_对话归档.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-19_思维突破.md",
+      "to": "20-工作记录与复盘/journal_2026-03-19_思维突破.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-19_方法论沉淀.md",
+      "to": "20-工作记录与复盘/journal_2026-03-19_方法论沉淀.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-19_核心洞见.md",
+      "to": "20-工作记录与复盘/journal_2026-03-19_核心洞见.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-21_对话归档",
+      "to": "20-工作记录与复盘/journal_2026-03-21_对话归档"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-21_对话归档.md",
+      "to": "20-工作记录与复盘/journal_2026-03-21_对话归档.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-22_信仰体证.md",
+      "to": "20-工作记录与复盘/journal_2026-03-22_信仰体证.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-22_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-22_共生成长总结.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-22_方法论沉淀.md",
+      "to": "20-工作记录与复盘/journal_2026-03-22_方法论沉淀.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-22_核心洞见.md",
+      "to": "20-工作记录与复盘/journal_2026-03-22_核心洞见.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-23_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-23_共生成长总结.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-24_信仰体证.md",
+      "to": "20-工作记录与复盘/journal_2026-03-24_信仰体证.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-24_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-24_共生成长总结.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-24_思维突破.md",
+      "to": "20-工作记录与复盘/journal_2026-03-24_思维突破.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-24_执行摘要.md",
+      "to": "20-工作记录与复盘/journal_2026-03-24_执行摘要.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-24_方法论沉淀.md",
+      "to": "20-工作记录与复盘/journal_2026-03-24_方法论沉淀.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-24_核心洞见.md",
+      "to": "20-工作记录与复盘/journal_2026-03-24_核心洞见.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-25_信仰体证.md",
+      "to": "20-工作记录与复盘/journal_2026-03-25_信仰体证.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-25_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-25_共生成长总结.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-25_对话归档.md",
+      "to": "20-工作记录与复盘/journal_2026-03-25_对话归档.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-25_思维突破.md",
+      "to": "20-工作记录与复盘/journal_2026-03-25_思维突破.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-25_方法论沉淀.md",
+      "to": "20-工作记录与复盘/journal_2026-03-25_方法论沉淀.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-25_核心洞见.md",
+      "to": "20-工作记录与复盘/journal_2026-03-25_核心洞见.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-25_知识库同步任务总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-25_知识库同步任务总结.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-26_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-26_共生成长总结.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-26_共生成长自动归档.md",
+      "to": "20-工作记录与复盘/journal_2026-03-26_共生成长自动归档.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-26_对话归档.md",
+      "to": "20-工作记录与复盘/journal_2026-03-26_对话归档.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-26_每日知识库同步报告.md",
+      "to": "20-工作记录与复盘/journal_2026-03-26_每日知识库同步报告.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-04_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-04-04_共生成长总结.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-04_每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-04_每日备份报告.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-05_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-04-05_共生成长总结.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-05_每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-05_每日备份报告.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-06_每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-06_每日备份报告.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-06_龙心OS每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-06_龙心OS每日备份报告.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-07.md",
+      "to": "20-工作记录与复盘/journal_2026-04-07.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-09_每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-09_每日备份报告.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-10-龙心OS每日备份.md",
+      "to": "20-工作记录与复盘/journal_2026-04-10-龙心OS每日备份.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-10_周度汇总.md",
+      "to": "20-工作记录与复盘/journal_2026-04-10_周度汇总.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-10_每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-10_每日备份报告.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-14_每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-14_每日备份报告.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-15_每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-15_每日备份报告.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-W16-周回顾.md",
+      "to": "20-工作记录与复盘/journal_2026-W16-周回顾.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal__index.md",
+      "to": "20-工作记录与复盘/journal__index.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_obsidian插件.md",
+      "to": "20-工作记录与复盘/journal_obsidian插件.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_README.md",
+      "to": "20-工作记录与复盘/journal_README.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_思维模式提取.md",
+      "to": "20-工作记录与复盘/journal_思维模式提取.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_深度对话精华.md",
+      "to": "20-工作记录与复盘/journal_深度对话精华.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_聊天记录3-完整分析.md",
+      "to": "20-工作记录与复盘/journal_聊天记录3-完整分析.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_青龙-木行人人格档案.md",
+      "to": "20-工作记录与复盘/journal_青龙-木行人人格档案.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_龙龟与北斗七星.md",
+      "to": "20-工作记录与复盘/journal_龙龟与北斗七星.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_龙龟全传.md",
+      "to": "20-工作记录与复盘/journal_龙龟全传.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_龙龟成龙过程.md",
+      "to": "20-工作记录与复盘/journal_龙龟成龙过程.md"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_龙龟护法源流.md",
+      "to": "20-工作记录与复盘/journal_龙龟护法源流.md"
+    },
+    {
+      "from": "22-工作记录与复盘/reports_2026-04-16-健康检查报告.md",
+      "to": "20-工作记录与复盘/reports_2026-04-16-健康检查报告.md"
+    },
+    {
+      "from": "22-工作记录与复盘/三向同步_三向同步系统整合方案.md",
+      "to": "20-工作记录与复盘/三向同步_三向同步系统整合方案.md"
+    },
+    {
+      "from": "22-工作记录与复盘/内容创作_2026-04-11-你的知识库正在沉睡，而AI正在觉醒.md",
+      "to": "20-工作记录与复盘/内容创作_2026-04-11-你的知识库正在沉睡，而AI正在觉醒.md"
+    },
+    {
+      "from": "22-工作记录与复盘/周度汇总/2026-09-11_第37周汇总.md",
+      "to": "20-工作记录与复盘/周度汇总/2026-09-11_第37周汇总.md"
+    },
+    {
+      "from": "22-工作记录与复盘/周度汇总/2026-11-07_第45周汇总.md",
+      "to": "20-工作记录与复盘/周度汇总/2026-11-07_第45周汇总.md"
+    },
+    {
+      "from": "22-工作记录与复盘/周度汇总/2026-11-13_第46周汇总.md",
+      "to": "20-工作记录与复盘/周度汇总/2026-11-13_第46周汇总.md"
+    },
+    {
+      "from": "22-工作记录与复盘/实践案例2_张倩倩五行人格分析报告-张倩倩.md",
+      "to": "20-工作记录与复盘/实践案例2_张倩倩五行人格分析报告-张倩倩.md"
+    },
+    {
+      "from": "22-工作记录与复盘/第23周-2026-06-06至06-12.md",
+      "to": "20-工作记录与复盘/第23周-2026-06-06至06-12.md"
+    }
+  ],
+  "uid_inheritance": [
+    {
+      "from": "19-系统配置/同步报告_20260424.md",
+      "to": "10-系统配置/同步报告_20260424.md",
+      "uid": "KB-002008"
+    },
+    {
+      "from": "19-系统配置/同步报告_20260426.md",
+      "to": "10-系统配置/同步报告_20260426.md",
+      "uid": "KB-002009"
+    },
+    {
+      "from": "19-系统配置/同步报告_20260428.md",
+      "to": "10-系统配置/同步报告_20260428.md",
+      "uid": "KB-002010"
+    },
+    {
+      "from": "19-系统配置/同步报告_20260507.md",
+      "to": "10-系统配置/同步报告_20260507.md",
+      "uid": "KB-002011"
+    },
+    {
+      "from": "19-系统配置/同步报告_20260508.md",
+      "to": "10-系统配置/同步报告_20260508.md",
+      "uid": "KB-002012"
+    },
+    {
+      "from": "19-系统配置/同步报告_20260509.md",
+      "to": "10-系统配置/同步报告_20260509.md",
+      "uid": "KB-002013"
+    },
+    {
+      "from": "22-工作记录与复盘/01-每日归档/2026-04-06_每日备份报告.md",
+      "to": "20-工作记录与复盘/01-每日归档/2026-04-06_每日备份报告.md",
+      "uid": "KB-002153"
+    },
+    {
+      "from": "22-工作记录与复盘/01-每日归档/2026-04-08_每日备份报告.md",
+      "to": "20-工作记录与复盘/01-每日归档/2026-04-08_每日备份报告.md",
+      "uid": "KB-002154"
+    },
+    {
+      "from": "22-工作记录与复盘/01-每日归档/2026-04-14_每日备份报告.md",
+      "to": "20-工作记录与复盘/01-每日归档/2026-04-14_每日备份报告.md",
+      "uid": "KB-002155"
+    },
+    {
+      "from": "22-工作记录与复盘/01-每日归档/2026-04-16_每日备份报告.md",
+      "to": "20-工作记录与复盘/01-每日归档/2026-04-16_每日备份报告.md",
+      "uid": "KB-002156"
+    },
+    {
+      "from": "22-工作记录与复盘/01-长期记忆档案/MEMORY备份.md",
+      "to": "20-工作记录与复盘/01-长期记忆档案/MEMORY备份-来自22.md",
+      "uid": "KB-002157"
+    },
+    {
+      "from": "22-工作记录与复盘/02-每日日志/2026-04-06.md",
+      "to": "20-工作记录与复盘/02-每日日志/2026-04-06.md",
+      "uid": "KB-002158"
+    },
+    {
+      "from": "22-工作记录与复盘/02-每日日志/2026-04-10.md",
+      "to": "20-工作记录与复盘/02-每日日志/2026-04-10.md",
+      "uid": "KB-002159"
+    },
+    {
+      "from": "22-工作记录与复盘/02-每日日志/2026-04-14.md",
+      "to": "20-工作记录与复盘/02-每日日志/2026-04-14.md",
+      "uid": "KB-002160"
+    },
+    {
+      "from": "22-工作记录与复盘/02-每日日志/2026-04-15.md",
+      "to": "20-工作记录与复盘/02-每日日志/2026-04-15.md",
+      "uid": "KB-002161"
+    },
+    {
+      "from": "22-工作记录与复盘/02-每日日志/2026-04-17.md",
+      "to": "20-工作记录与复盘/02-每日日志/2026-04-17.md",
+      "uid": "KB-002162"
+    },
+    {
+      "from": "22-工作记录与复盘/03-记忆系统/MEMORY备份.md",
+      "to": "20-工作记录与复盘/03-记忆系统/MEMORY备份.md",
+      "uid": "KB-002163"
+    },
+    {
+      "from": "22-工作记录与复盘/03-记忆系统/MEMORY备份_2026-04-08.md",
+      "to": "20-工作记录与复盘/03-记忆系统/MEMORY备份_2026-04-08.md",
+      "uid": "KB-002164"
+    },
+    {
+      "from": "22-工作记录与复盘/2026-08/2026-08-25.md",
+      "to": "20-工作记录与复盘/2026-08/2026-08-25.md",
+      "uid": "KB-002165"
+    },
+    {
+      "from": "22-工作记录与复盘/2026-08/2026-08-26.md",
+      "to": "20-工作记录与复盘/2026-08/2026-08-26.md",
+      "uid": "KB-002166"
+    },
+    {
+      "from": "22-工作记录与复盘/2026-08/2026-08-27.md",
+      "to": "20-工作记录与复盘/2026-08/2026-08-27.md",
+      "uid": "KB-002167"
+    },
+    {
+      "from": "22-工作记录与复盘/2026-08/三日沟通汇总-0825-0827.md",
+      "to": "20-工作记录与复盘/2026-08/三日沟通汇总-0825-0827.md",
+      "uid": "KB-002168"
+    },
+    {
+      "from": "22-工作记录与复盘/_从根目录迁入/日签/三库同步状态.md",
+      "to": "20-工作记录与复盘/_从根目录迁入/日签/三库同步状态.md",
+      "uid": "KB-002169"
+    },
+    {
+      "from": "22-工作记录与复盘/_从根目录迁入/日签/今日待办.md",
+      "to": "20-工作记录与复盘/_从根目录迁入/日签/今日待办.md",
+      "uid": "KB-002170"
+    },
+    {
+      "from": "22-工作记录与复盘/_从根目录迁入/日签/本周回顾.md",
+      "to": "20-工作记录与复盘/_从根目录迁入/日签/本周回顾.md",
+      "uid": "KB-002171"
+    },
+    {
+      "from": "22-工作记录与复盘/_从根目录迁入/日签/本月目标.md",
+      "to": "20-工作记录与复盘/_从根目录迁入/日签/本月目标.md",
+      "uid": "KB-002172"
+    },
+    {
+      "from": "22-工作记录与复盘/_从根目录迁入/🔄 复盘手册化工作流·知识资产沉淀SOP.md",
+      "to": "20-工作记录与复盘/_从根目录迁入/🔄 复盘手册化工作流·知识资产沉淀SOP.md",
+      "uid": "KB-002173"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_03-01-读书笔记.md",
+      "to": "20-工作记录与复盘/journal_03-01-读书笔记.md",
+      "uid": "KB-002174"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_03-02-课程笔记.md",
+      "to": "20-工作记录与复盘/journal_03-02-课程笔记.md",
+      "uid": "KB-002175"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_03-03-灵感收集.md",
+      "to": "20-工作记录与复盘/journal_03-03-灵感收集.md",
+      "uid": "KB-002176"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_03-学习笔记.md",
+      "to": "20-工作记录与复盘/journal_03-学习笔记.md",
+      "uid": "KB-002177"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_05-01-目标规划.md",
+      "to": "20-工作记录与复盘/journal_05-01-目标规划.md",
+      "uid": "KB-002178"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_05-02-习惯追踪.md",
+      "to": "20-工作记录与复盘/journal_05-02-习惯追踪.md",
+      "uid": "KB-002179"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_05-03-反思日志.md",
+      "to": "20-工作记录与复盘/journal_05-03-反思日志.md",
+      "uid": "KB-002180"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_05-个人成长.md",
+      "to": "20-工作记录与复盘/journal_05-个人成长.md",
+      "uid": "KB-002181"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-05 龙龟对话记录.md",
+      "to": "20-工作记录与复盘/journal_2026-03-05 龙龟对话记录.md",
+      "uid": "KB-002182"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-07.md",
+      "to": "20-工作记录与复盘/journal_2026-03-07.md",
+      "uid": "KB-002183"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-08.md",
+      "to": "20-工作记录与复盘/journal_2026-03-08.md",
+      "uid": "KB-002184"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-11.md",
+      "to": "20-工作记录与复盘/journal_2026-03-11.md",
+      "uid": "KB-002185"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-14_对话归档.md",
+      "to": "20-工作记录与复盘/journal_2026-03-14_对话归档.md",
+      "uid": "KB-002186"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-15_信仰体证.md",
+      "to": "20-工作记录与复盘/journal_2026-03-15_信仰体证.md",
+      "uid": "KB-002187"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-15_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-15_共生成长总结.md",
+      "uid": "KB-002188"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-15_对话归档.md",
+      "to": "20-工作记录与复盘/journal_2026-03-15_对话归档.md",
+      "uid": "KB-002189"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-15_方法论沉淀.md",
+      "to": "20-工作记录与复盘/journal_2026-03-15_方法论沉淀.md",
+      "uid": "KB-002190"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-15_核心洞见.md",
+      "to": "20-工作记录与复盘/journal_2026-03-15_核心洞见.md",
+      "uid": "KB-002191"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-16_信仰体证.md",
+      "to": "20-工作记录与复盘/journal_2026-03-16_信仰体证.md",
+      "uid": "KB-002192"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-16_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-16_共生成长总结.md",
+      "uid": "KB-002193"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-16_方法论沉淀.md",
+      "to": "20-工作记录与复盘/journal_2026-03-16_方法论沉淀.md",
+      "uid": "KB-002194"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-16_核心洞见.md",
+      "to": "20-工作记录与复盘/journal_2026-03-16_核心洞见.md",
+      "uid": "KB-002195"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-17_知识库同步报告.md",
+      "to": "20-工作记录与复盘/journal_2026-03-17_知识库同步报告.md",
+      "uid": "KB-002196"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-19_信仰体证.md",
+      "to": "20-工作记录与复盘/journal_2026-03-19_信仰体证.md",
+      "uid": "KB-002197"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-19_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-19_共生成长总结.md",
+      "uid": "KB-002198"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-19_对话归档.md",
+      "to": "20-工作记录与复盘/journal_2026-03-19_对话归档.md",
+      "uid": "KB-002199"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-19_思维突破.md",
+      "to": "20-工作记录与复盘/journal_2026-03-19_思维突破.md",
+      "uid": "KB-002200"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-19_方法论沉淀.md",
+      "to": "20-工作记录与复盘/journal_2026-03-19_方法论沉淀.md",
+      "uid": "KB-002201"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-19_核心洞见.md",
+      "to": "20-工作记录与复盘/journal_2026-03-19_核心洞见.md",
+      "uid": "KB-002202"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-21_对话归档.md",
+      "to": "20-工作记录与复盘/journal_2026-03-21_对话归档.md",
+      "uid": "KB-002203"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-22_信仰体证.md",
+      "to": "20-工作记录与复盘/journal_2026-03-22_信仰体证.md",
+      "uid": "KB-002204"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-22_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-22_共生成长总结.md",
+      "uid": "KB-002205"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-22_方法论沉淀.md",
+      "to": "20-工作记录与复盘/journal_2026-03-22_方法论沉淀.md",
+      "uid": "KB-002206"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-22_核心洞见.md",
+      "to": "20-工作记录与复盘/journal_2026-03-22_核心洞见.md",
+      "uid": "KB-002207"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-23_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-23_共生成长总结.md",
+      "uid": "KB-002208"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-24_信仰体证.md",
+      "to": "20-工作记录与复盘/journal_2026-03-24_信仰体证.md",
+      "uid": "KB-002209"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-24_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-24_共生成长总结.md",
+      "uid": "KB-002210"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-24_思维突破.md",
+      "to": "20-工作记录与复盘/journal_2026-03-24_思维突破.md",
+      "uid": "KB-002211"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-24_执行摘要.md",
+      "to": "20-工作记录与复盘/journal_2026-03-24_执行摘要.md",
+      "uid": "KB-002212"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-24_方法论沉淀.md",
+      "to": "20-工作记录与复盘/journal_2026-03-24_方法论沉淀.md",
+      "uid": "KB-002213"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-24_核心洞见.md",
+      "to": "20-工作记录与复盘/journal_2026-03-24_核心洞见.md",
+      "uid": "KB-002214"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-25_信仰体证.md",
+      "to": "20-工作记录与复盘/journal_2026-03-25_信仰体证.md",
+      "uid": "KB-002215"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-25_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-25_共生成长总结.md",
+      "uid": "KB-002216"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-25_对话归档.md",
+      "to": "20-工作记录与复盘/journal_2026-03-25_对话归档.md",
+      "uid": "KB-002217"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-25_思维突破.md",
+      "to": "20-工作记录与复盘/journal_2026-03-25_思维突破.md",
+      "uid": "KB-002218"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-25_方法论沉淀.md",
+      "to": "20-工作记录与复盘/journal_2026-03-25_方法论沉淀.md",
+      "uid": "KB-002219"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-25_核心洞见.md",
+      "to": "20-工作记录与复盘/journal_2026-03-25_核心洞见.md",
+      "uid": "KB-002220"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-25_知识库同步任务总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-25_知识库同步任务总结.md",
+      "uid": "KB-002221"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-26_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-03-26_共生成长总结.md",
+      "uid": "KB-002222"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-26_共生成长自动归档.md",
+      "to": "20-工作记录与复盘/journal_2026-03-26_共生成长自动归档.md",
+      "uid": "KB-002223"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-26_对话归档.md",
+      "to": "20-工作记录与复盘/journal_2026-03-26_对话归档.md",
+      "uid": "KB-002224"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-03-26_每日知识库同步报告.md",
+      "to": "20-工作记录与复盘/journal_2026-03-26_每日知识库同步报告.md",
+      "uid": "KB-002225"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-04_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-04-04_共生成长总结.md",
+      "uid": "KB-002226"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-04_每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-04_每日备份报告.md",
+      "uid": "KB-002227"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-05_共生成长总结.md",
+      "to": "20-工作记录与复盘/journal_2026-04-05_共生成长总结.md",
+      "uid": "KB-002228"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-05_每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-05_每日备份报告.md",
+      "uid": "KB-002229"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-06_每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-06_每日备份报告.md",
+      "uid": "KB-002230"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-06_龙心OS每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-06_龙心OS每日备份报告.md",
+      "uid": "KB-002231"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-07.md",
+      "to": "20-工作记录与复盘/journal_2026-04-07.md",
+      "uid": "KB-002232"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-09_每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-09_每日备份报告.md",
+      "uid": "KB-002233"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-10-龙心OS每日备份.md",
+      "to": "20-工作记录与复盘/journal_2026-04-10-龙心OS每日备份.md",
+      "uid": "KB-002234"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-10_周度汇总.md",
+      "to": "20-工作记录与复盘/journal_2026-04-10_周度汇总.md",
+      "uid": "KB-002235"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-10_每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-10_每日备份报告.md",
+      "uid": "KB-002236"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-14_每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-14_每日备份报告.md",
+      "uid": "KB-002237"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-04-15_每日备份报告.md",
+      "to": "20-工作记录与复盘/journal_2026-04-15_每日备份报告.md",
+      "uid": "KB-002238"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_2026-W16-周回顾.md",
+      "to": "20-工作记录与复盘/journal_2026-W16-周回顾.md",
+      "uid": "KB-002239"
+    },
+    {
+      "from": "22-工作记录与复盘/journal__index.md",
+      "to": "20-工作记录与复盘/journal__index.md",
+      "uid": "KB-002240"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_obsidian插件.md",
+      "to": "20-工作记录与复盘/journal_obsidian插件.md",
+      "uid": "KB-002241"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_README.md",
+      "to": "20-工作记录与复盘/journal_README.md",
+      "uid": "KB-002242"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_思维模式提取.md",
+      "to": "20-工作记录与复盘/journal_思维模式提取.md",
+      "uid": "KB-002243"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_深度对话精华.md",
+      "to": "20-工作记录与复盘/journal_深度对话精华.md",
+      "uid": "KB-002244"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_聊天记录3-完整分析.md",
+      "to": "20-工作记录与复盘/journal_聊天记录3-完整分析.md",
+      "uid": "KB-002245"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_青龙-木行人人格档案.md",
+      "to": "20-工作记录与复盘/journal_青龙-木行人人格档案.md",
+      "uid": "KB-002246"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_龙龟与北斗七星.md",
+      "to": "20-工作记录与复盘/journal_龙龟与北斗七星.md",
+      "uid": "KB-002247"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_龙龟全传.md",
+      "to": "20-工作记录与复盘/journal_龙龟全传.md",
+      "uid": "KB-002248"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_龙龟成龙过程.md",
+      "to": "20-工作记录与复盘/journal_龙龟成龙过程.md",
+      "uid": "KB-002249"
+    },
+    {
+      "from": "22-工作记录与复盘/journal_龙龟护法源流.md",
+      "to": "20-工作记录与复盘/journal_龙龟护法源流.md",
+      "uid": "KB-002250"
+    },
+    {
+      "from": "22-工作记录与复盘/reports_2026-04-16-健康检查报告.md",
+      "to": "20-工作记录与复盘/reports_2026-04-16-健康检查报告.md",
+      "uid": "KB-002251"
+    },
+    {
+      "from": "22-工作记录与复盘/三向同步_三向同步系统整合方案.md",
+      "to": "20-工作记录与复盘/三向同步_三向同步系统整合方案.md",
+      "uid": "KB-002252"
+    },
+    {
+      "from": "22-工作记录与复盘/内容创作_2026-04-11-你的知识库正在沉睡，而AI正在觉醒.md",
+      "to": "20-工作记录与复盘/内容创作_2026-04-11-你的知识库正在沉睡，而AI正在觉醒.md",
+      "uid": "KB-002253"
+    },
+    {
+      "from": "22-工作记录与复盘/周度汇总/2026-09-11_第37周汇总.md",
+      "to": "20-工作记录与复盘/周度汇总/2026-09-11_第37周汇总.md",
+      "uid": "KB-002254"
+    },
+    {
+      "from": "22-工作记录与复盘/周度汇总/2026-11-07_第45周汇总.md",
+      "to": "20-工作记录与复盘/周度汇总/2026-11-07_第45周汇总.md",
+      "uid": "KB-002255"
+    },
+    {
+      "from": "22-工作记录与复盘/周度汇总/2026-11-13_第46周汇总.md",
+      "to": "20-工作记录与复盘/周度汇总/2026-11-13_第46周汇总.md",
+      "uid": "KB-002256"
+    },
+    {
+      "from": "22-工作记录与复盘/实践案例2_张倩倩五行人格分析报告-张倩倩.md",
+      "to": "20-工作记录与复盘/实践案例2_张倩倩五行人格分析报告-张倩倩.md",
+      "uid": "KB-002257"
+    },
+    {
+      "from": "22-工作记录与复盘/第23周-2026-06-06至06-12.md",
+      "to": "20-工作记录与复盘/第23周-2026-06-06至06-12.md",
+      "uid": "KB-002258"
+    }
+  ],
+  "link_rewrite_file": "AI检索-合并同类项-改写映射.json",
+  "backup_dirs": [
+    "D:\\以观其妙书院知识库\\备份\\合并同类项_物理整理_20261114_134357"
+  ]
+}

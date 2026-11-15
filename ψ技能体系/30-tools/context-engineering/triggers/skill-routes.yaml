@@ -1,0 +1,54 @@
+# 上下文工程协同路由
+
+## 前置 Skills
+
+| Skill | 条件 | 动作 |
+|-------|------|------|
+| agent-memory-systems | 需要记忆上下文 | 从记忆系统加载上下文 |
+| memory_search | 需要相关记忆 | 搜索相关记忆注入上下文 |
+
+## 协同 Skills
+
+| Skill | 条件 | 动作 |
+|-------|------|------|
+| llm-wiki-manager | Wiki 知识编译 | 提供上下文协议 |
+| self-learning | 自主学习 | 注入学习历史上下文 |
+| super-save | 保存重要知识 | 优化保存上下文 |
+| super-search | 搜索记忆 | 提供搜索上下文 |
+
+## 后置 Skills
+
+| Skill | 条件 | 动作 |
+|-------|------|------|
+| self-improving-agent | 上下文质量低 | 触发自我改进 |
+| 无 | 上下文质量高 | 无需后续 |
+
+## 上下文协议
+
+### 标准上下文格式
+
+```json
+{
+  "session_id": "会话 ID",
+  "timestamp": "时间戳",
+  "context_type": "session|prompt|cross-skill",
+  "priority": "critical|high|medium|low",
+  "tokens": 1234,
+  "content": "上下文内容",
+  "metadata": {
+    "user": "用户 ID",
+    "skill": "技能名称",
+    "quality_score": 0.85
+  }
+}
+```
+
+### 跨 Skill 上下文共享
+
+- 使用统一协议
+- 共享存储位置：`~/.agents/context-store/`
+- 依赖追踪：记录上下文来源
+
+---
+
+_上下文工程协同路由 v1.0 · 2026-04-17 · 龙心 OS_

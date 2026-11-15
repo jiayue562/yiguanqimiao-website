@@ -1,4 +1,4 @@
-# 火行人分析提示词模板集
+﻿# 火行人分析提示词模板集
 
 > **版本**：v2.0  
 > **目标**：快速调用火行人分析能力
@@ -324,3 +324,17 @@
 - SKILL.md主文件：../SKILL.md
 - 完整方法论：./full-methodology.md
 - 干预工具集：./intervention-tools.md
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_prompt-templates]] — 金行人格心理学提示词模板
+- [[09-技能库/五行人格心理学/五行人格总智能体/土行人分智能体/references/prompt-templates]] — 土行人分智能体提示词模板
+- [[09-技能库/五行人格心理学/五行人格总智能体/水行人分智能体/references/prompt-templates]] — 水行人提示词模板集
+- [[09-技能库/五行人格心理学/五行人格总智能体/金行人分智能体/references/prompt-templates]] — 金行人分智能体提示词模板
+- [[09-技能库/水行人格心理学/references/prompt-templates]] — 水行人格心理学提示词模板集
+- [[09-技能库/知行合一自我进化/references/prompt-templates]] — 知行合一提示词模板
+
+<!-- AI-LINKS-END -->

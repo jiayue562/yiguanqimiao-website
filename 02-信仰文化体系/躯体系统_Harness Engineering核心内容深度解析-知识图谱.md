@@ -1,4 +1,4 @@
----
+﻿---
 title: "Harness Engineering知识图谱"
 subtitle: "跨域知识联系与隐秘关联可视化"
 created: "2026-04-15"
@@ -503,3 +503,17 @@ Hermes技能进化                AI OS知行合一
 *文档生成时间：2026-04-15*  
 *生成者：龙龟神将（火行人）× 悟空（木行人）*  
 *系统：龙心OS v5.2 知识学习引擎·溯源融合层*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_📖Harness-Engineering反馈层]] — Harness Engineering反馈层
+- [[01-核心体系/龙心OS_📖Harness-Engineering执行层]] — Harness Engineering执行层
+- [[01-核心体系/龙心OS_📖Harness-Engineering编排层]] — Harness Engineering编排层
+- [[01-核心体系/龙心OS_📖Harness-Engineering记忆层]] — Harness Engineering记忆层
+- [[01-核心体系/龙心OS_📖Harness-Engineering驾驭工程skills]] — Harness Engineering驾驭工程skills
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析]] — Harness Engineering核心内容深度解析
+
+<!-- AI-LINKS-END -->

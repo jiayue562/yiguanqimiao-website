@@ -1,4 +1,4 @@
-# IMA 技能连接测试状态报告
+﻿# IMA 技能连接测试状态报告
 
 ## 📅 报告时间
 2026年3月19日
@@ -91,3 +91,21 @@ try {
 **技能已完全安装并配置完成，只需手动验证API连接即可开始使用。**
 
 IMA 技能将自动触发，管理你的个人笔记系统。
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[13-WorkBuddy-Sync/三向同步系统/QUICK_START]] — 🔗 三向同步系统 - 快速开始
+- [[13-WorkBuddy-Sync/三向同步系统/scripts/IMA_API测试报告]] — IMA API同步测试报告
+- [[16-工具与资源/工具脚本_使用说明]] — 📚 知识库验证系统 - 使用说明
+- [[20-工作记录与复盘/三向同步_三向同步系统整合方案]] — 第六步：三向同步系统整合方案 v1.0
+- [[09-技能库/chat-record-skills/手动验证报告]] — 聊天记录.skills技能包手动验证报告
+- [[09-技能库/resources_curl-test-guide]] — 🔧 curl 命令行测试 IMA API 连接
+- [[09-技能库/resources_manual-test-guide]] — IMA API 手动测试指南
+- [[09-技能库/resources_quick-start]] — IMA 技能快速使用指南
+- [[09-技能库/resources_手动验证报告]] — 聊天记录.skills技能包手动验证报告
+- [[ψ技能体系/00-foundation/三向同步系统/scripts/IMA_API测试报告]] — IMA API同步测试报告
+
+<!-- AI-LINKS-END -->

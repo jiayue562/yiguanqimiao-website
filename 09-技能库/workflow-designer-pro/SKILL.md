@@ -1,4 +1,4 @@
-# workflow-designer-pro
+﻿# workflow-designer-pro
 
 ## 技能简介
 自动化工作流设计工具，识别重复任务，跨工具构建工作流，优化自动化流程，实现企业级流程自动化。
@@ -114,3 +114,21 @@ const result = await workflow.execute({
 - [官方文档](https://workflow-designer-pro.dev/docs)
 - [GitHub 仓库](https://github.com/automation-agents/workflow-designer-pro)
 - [模板市场](https://workflow-designer-pro.dev/templates)
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/composio-hub/SKILL]] — composio-hub
+- [[09-技能库/cost-tracker-pro/SKILL]] — cost-tracker-pro
+- [[09-技能库/data-analyzer-pro/SKILL]] — data-analyzer-pro
+- [[09-技能库/github-copilot-pro/SKILL]] — github-copilot-pro
+- [[09-技能库/office-automation-pro/SKILL]] — office-automation-pro
+- [[09-技能库/video-creator-ai/SKILL]] — video-creator-ai
+- [[ψ技能体系/30-tools/composio-hub/SKILL]] — composio-hub
+- [[ψ技能体系/30-tools/cost-tracker-pro/SKILL]] — cost-tracker-pro
+- [[ψ技能体系/30-tools/data-analyzer-pro/SKILL]] — data-analyzer-pro
+- [[ψ技能体系/30-tools/github-copilot-pro/SKILL]] — github-copilot-pro
+
+<!-- AI-LINKS-END -->

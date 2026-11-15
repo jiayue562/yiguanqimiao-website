@@ -1,4 +1,4 @@
----
+﻿---
 title: "人机协同五象限·知识图谱 v3.0"
 created: "2026-04-08"
 version: "3.0"
@@ -204,7 +204,7 @@ graph LR
 - [[知识学习SKILL]]
 - [[五色光思维SKILL]]
 - [[知行合一SKILL]]
-- [[五行人格心理学OS]]
+- [[00-索引与导航/AI统一索引/AI-总索引|五行人格心理学OS]]
 
 ### 理论来源
 - [[SECI模型·知识创造理论]]
@@ -220,3 +220,19 @@ graph LR
 **维护者**: 龙龟神将
 **跨域联系数**: 45+
 **标签数**: 25+
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_🐉 Dragon OS 系统架构图]] — 🐉 龙心OS · 系统架构图
+- [[16-工具与资源/areas_人机协同方法论]] — 人机协同方法论
+- [[08-龙心OS核心系统/AI-OS知识库/❤️ 龙心OS·智能发动机层/AI原生组织-知识图谱]] — AI原生组织知识图谱
+- [[08-龙心OS核心系统/AI-OS知识库/❤️ 龙心OS·智能发动机层/五大引擎/人机协同五象限]] — 人机协同五象限
+- [[09-技能库/人机协同五象限/test-cases]] — 人机协同五象限·测试用例 v3.0
+- [[09-技能库/立人设.skills/references/practice]] — 立人设实操指南
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer1-raw/❤️ 龙心OS·智能发动机层/五大引擎/人机协同五象限]] — 人机协同五象限
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer2-wiki/entities/人机协同五象限]] — 人机协同五象限
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# 上下文快照 · {项目名称}
+﻿# 上下文快照 · {项目名称}
 
 ## 项目/任务信息
 - **名称**: {项目名}
@@ -69,3 +69,21 @@
 ### 相关快照文件
 - 本文件: `{当前文件路径}`
 - 上一个快照: `{上一个文件路径}`（如有）
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[20-工作记录与复盘/_从根目录迁入/日签/今日待办]] — 今日待办
+- [[08-龙心OS核心系统/记忆系统/SESSION]] — SESSION.md - 会话上下文
+- [[09-技能库/resources_snapshot-template]] — 上下文快照模板 v1
+- [[09-技能库/上下文工程.skills/references/practice-guide]] — 上下文工程 · 实操指南
+- [[09-技能库/上下文工程/上下文工程]] — 上下文工程 Skill
+- [[09-技能库/五行人格心理学/辅助Skills/03-记忆上下文/会话上下文管理/SKILL]] — 会话上下文管理 · Session Context Manager
+- [[09-技能库/任务看板/SKILL]] — Task Board Skill（任务看板）
+- [[ψ技能体系/30-tools/fbs-bookwriter/references/01-core/ux-optimization-rules]] — UX 优化统一规则中心（v2.1.1）
+- [[ψ技能体系/30-tools/material-organizer/references/output-schema]] — 输出文档格式规范
+- [[ψ技能体系/30-tools/任务看板/SKILL]] — Task Board Skill（任务看板）
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# Setup — Self-Improving Agent
+﻿# Setup — Self-Improving Agent
 
 ## First-Time Setup
 
@@ -194,3 +194,18 @@ Add this section to your `HEARTBEAT.md`:
 
 Keep this in the same default setup flow as the AGENTS and SOUL additions so recurring maintenance is installed consistently.
 If your installed skills path differs, keep the same three lines but point the first line at the installed copy of `heartbeat-rules.md`.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-deps/SKILL]] — Ghost Security SCA Scanner — Orchestrator
+- [[09-技能库/self-improving/SKILL]] — SKILL
+- [[09-技能库/self-improving/heartbeat-rules]] — Heartbeat Rules
+- [[09-技能库/self-improving/memory-template]] — Memory Template
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/SKILL]] — SKILL
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/memory-template]] — Memory Template
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/setup]] — Setup — Self-Improving Agent
+
+<!-- AI-LINKS-END -->

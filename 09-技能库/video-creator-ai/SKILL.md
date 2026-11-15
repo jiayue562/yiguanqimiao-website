@@ -1,4 +1,4 @@
-# video-creator-ai
+﻿# video-creator-ai
 
 ## 技能简介
 短视频全流程自动化创作工具，支持选题、脚本、剪辑、配音、字幕、发布等智能操作，实现短视频内容自动化生产。
@@ -111,3 +111,17 @@ async function createShortVideo(topic, duration) {
 - [官方文档](https://video-creator-ai.dev/docs)
 - [GitHub 仓库](https://github.com/content-agents/video-creator-ai)
 - [示例项目](https://github.com/video-creator-ai/examples)
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/cost-tracker-pro/SKILL]] — cost-tracker-pro
+- [[09-技能库/github-copilot-pro/SKILL]] — github-copilot-pro
+- [[09-技能库/office-automation-pro/SKILL]] — office-automation-pro
+- [[09-技能库/workflow-designer-pro/SKILL]] — workflow-designer-pro
+- [[ψ技能体系/30-tools/github-copilot-pro/SKILL]] — github-copilot-pro
+- [[ψ技能体系/30-tools/video-creator-ai/SKILL]] — video-creator-ai
+
+<!-- AI-LINKS-END -->

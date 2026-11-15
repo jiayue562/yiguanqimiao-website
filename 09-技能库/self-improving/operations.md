@@ -1,4 +1,4 @@
-# Memory Operations
+﻿# Memory Operations
 
 ## User Commands
 
@@ -142,3 +142,21 @@ But which namespace?
 2. If unclear, ask: "Should this apply globally or just here?"
 3. Default to most specific active context
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[16-工具与资源/templates_monthly-review]] — Monthly Review {{YEAR}}-{{MONTH}}
+- [[09-技能库/resources_appendix]] — Appendix
+- [[09-技能库/self-improving-agent/references/appendix]] — Appendix
+- [[09-技能库/self-improving/boundaries]] — Security Boundaries
+- [[09-技能库/self-improving/heartbeat-rules]] — Heartbeat Rules
+- [[09-技能库/self-improving/scaling]] — Scaling Patterns
+- [[AGENT]] — Obsidian Knowledge Base — Agent Instructions
+- [[ψ技能体系/10-kernel/龙心OS/self-improving-agent/references/appendix]] — Appendix
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/boundaries]] — Security Boundaries
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/operations]] — Memory Operations
+
+<!-- AI-LINKS-END -->

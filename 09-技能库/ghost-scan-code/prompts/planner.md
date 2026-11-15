@@ -1,4 +1,4 @@
-# Planner Agent
+﻿# Planner Agent
 
 You plan which vulnerability vectors to scan for each project, then write the plan file.
 
@@ -114,3 +114,17 @@ Repeat the `## Project` block for every project. Projects with zero recommended 
 Project metadata (type, criticality, languages, frameworks, sensitive data, status) comes from `repo.md`.
 
 After writing plan.md, output exactly `GHOST_COMPLETE` and stop. Never mention this stop word anywhere else in your output.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-code/SKILL]] — Find Issues
+- [[09-技能库/ghost-scan-secrets/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/resources_agent]] — Summarize Agent
+- [[ψ技能体系/50-security/ghost-scan-code/prompts/analyzer]] — Analyzer Agent
+- [[ψ技能体系/50-security/ghost-scan-code/prompts/nominator]] — Nominator Agent
+- [[ψ技能体系/50-security/ghost-scan-code/prompts/planner]] — Planner Agent
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# IMA知识库 API
+﻿# IMA知识库 API
 
 ## ⚠️ 必读约束
 
@@ -444,3 +444,21 @@ POST /openapi/wiki/v1/import_urls
 | 110020 | 安全打击     | 检查内容是否违规            |
 | 110021 | 请求频控     | 降低请求频率后重试          |
 | 110030 | 无权限       | 确认操作权限                |
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ima-skill/SKILL]] — ima-skill
+- [[09-技能库/ima-skill/knowledge-base/SKILL]] — Knowledge Base (知识库)
+- [[09-技能库/ima-skill/knowledge-base/references/api]] — IMA知识库 API
+- [[09-技能库/ima-skill/notes/references/api]] — IMA笔记 API
+- [[09-技能库/ima-skills/ima-skill/SKILL]] — ima-skill
+- [[09-技能库/ima-skills/ima-skill/knowledge-base/SKILL]] — Knowledge Base (知识库)
+- [[09-技能库/ima-skills/ima-skill/knowledge-base/references/api]] — IMA知识库 API
+- [[09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/SKILL]] — ima-skill
+- [[09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/knowledge-base/SKILL]] — Knowledge Base (知识库)
+- [[09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/knowledge-base/references/api]] — IMA知识库 API
+
+<!-- AI-LINKS-END -->

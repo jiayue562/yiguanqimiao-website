@@ -1,4 +1,4 @@
-# 图形化文档（思维导图 / 流程图）参考文档
+﻿# 图形化文档（思维导图 / 流程图）参考文档
 
 本文件包含腾讯文档 MCP 中思维导图和流程图的创建工具说明。
 
@@ -80,3 +80,18 @@
 ## 注意事项
 
 - 两个工具均支持 `parent_id` 参数，可将文档创建到指定目录；不填则在根目录创建
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_api_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/resources_sheet_references]] — Sheet 表格操作参考文档
+- [[09-技能库/腾讯文档/references/space_references]] — 知识库空间 API 参考
+- [[09-技能库/腾讯文档/sheet/api/mcp-api]] — 腾讯文档 Sheet MCP 工具完整参考
+- [[09-技能库/腾讯文档/sheet/api/operation-api]] — Sheet 表格操作参考文档
+- [[ψ技能体系/30-tools/腾讯文档/sheet/mcp-api]] — 腾讯文档 Sheet MCP 工具完整参考
+- [[ψ技能体系/30-tools/腾讯文档/sheet/operation-api]] — Sheet 表格操作参考文档
+
+<!-- AI-LINKS-END -->

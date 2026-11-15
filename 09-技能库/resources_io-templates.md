@@ -1,4 +1,4 @@
-# 知识学习输入输出模板
+﻿# 知识学习输入输出模板
 
 ---
 
@@ -184,3 +184,20 @@ _报告生成：知识学习 Skill v1.0 · 观其妙书院_
 ---
 
 _龙心 OS 知识学习模板 v1.0 · 2026-04-15_
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[03-知识地基层/文化研究/马克思主义与传统叙事扬弃-04-溯源融合启发映射]] — 🌿 马克思主义与传统叙事扬弃·深度学习 | 溯源+融合+启发+映射
+- [[05-五行人格心理学/五行人格TXT知识地基/马克思主义哲学-水层推演思辨-结构化知识文档]] — 马克思主义哲学·水层：推演+思辨 — 结构化知识文档
+- [[09-技能库/resources_COMPLETION_REPORT]] — 知识学习 Skill 构建完成报告
+- [[ψ技能体系/10-kernel/龙心OS/engines/人机协同五象限/templates/io-templates]] — 人机协同五象限输入输出模板
+- [[ψ技能体系/10-kernel/龙心OS/engines/知行合一/templates/io-templates]] — 知行合一输入输出模板
+- [[ψ技能体系/99-archive/思维模型.skills/templates/io-templates]] — 思维模型.skills - 输入输出模板
+- [[ψ技能体系/99-archive/知识学习/ENCAPSULATION_REPORT]] — 知识学习 Skill 封装完成报告
+- [[ψ技能体系/99-archive/知识学习/references/practice-guide]] — 知识学习实践指南
+- [[ψ技能体系/99-archive/知识学习/templates/io-templates]] — 知识学习 Skill 输入输出模板
+
+<!-- AI-LINKS-END -->

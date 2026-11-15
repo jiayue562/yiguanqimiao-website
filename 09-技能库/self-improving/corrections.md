@@ -1,4 +1,4 @@
-# Corrections Log — Template
+﻿# Corrections Log — Template
 
 > This file is created in `~/self-improving/corrections.md` when you first use the skill.
 > Keeps the last 50 corrections. Older entries are evaluated for promotion or archived.
@@ -34,3 +34,19 @@ Each entry includes:
 - **Context** — What triggered it
 - **Count** — How many times (for promotion tracking)
 - **Action** — Where it was stored (if promoted)
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_FAQ]] — Frequently Asked Questions
+- [[09-技能库/self-improving/heartbeat-rules]] — Heartbeat Rules
+- [[09-技能库/self-improving/memory]] — HOT Memory — Template
+- [[09-技能库/self-improving/reflections]] — Self-Reflections Log
+- [[09-技能库/web-search-plus/FAQ]] — Frequently Asked Questions
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/corrections]] — Corrections Log — Template
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/memory]] — HOT Memory — Template
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/reflections]] — Self-Reflections Log
+
+<!-- AI-LINKS-END -->

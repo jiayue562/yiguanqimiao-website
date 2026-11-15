@@ -1,4 +1,4 @@
-# 第一阶段：通用底层思维 · 子Skill
+﻿# 第一阶段：通用底层思维 · 子Skill
 
 > **版本**: v1.0  
 > **创建**: 2026-04-09  
@@ -439,3 +439,17 @@ A：推出差异化功能+提升服务质量
 **模型数**: 15个  
 **父Skill**: 思维模型库  
 **最后更新**: 2026-04-09
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_第一性原理思维skills]] — 第一性原理思维skills
+- [[09-技能库/思维模型库/references/model-index]] — 思维模型库 · 100个模型完整索引
+- [[09-技能库/龙脑OS/references/knowledge-base-index]] — 龙脑OS · 知识库完整索引
+- [[ψ技能体系/10-kernel/龙脑OS/models/思维模型库/references/model-index]] — 思维模型库 · 100个模型完整索引
+- [[ψ技能体系/30-tools/workbuddy/思维模型库/references/model-index]] — 思维模型库 · 100个模型完整索引
+- [[ψ技能体系/99-archive/龙脑OS/references/knowledge-base-index]] — 龙脑OS · 知识库完整索引
+
+<!-- AI-LINKS-END -->

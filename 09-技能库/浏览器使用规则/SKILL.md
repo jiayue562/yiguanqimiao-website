@@ -1,4 +1,4 @@
-# Browser Rules Skill（浏览器使用规则）
+﻿# Browser Rules Skill（浏览器使用规则）
 
 ## 📖 技能定义
 
@@ -379,3 +379,17 @@ browser_usage:
 **对标来源**: OpenClaw Browser Rules规则
 **AI龙龟共生伙伴操作系统版本**: v4.1
 **路径**: `C:\Users\jia'yue\.workbuddy\skills\浏览器使用规则\SKILL.md`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[03-知识地基层/记忆系统_记忆系统安装完成报告-v3.0]] — 记忆系统安装完成报告 v3.0
+- [[09-技能库/L1·一心·统摄/验证-L1技能包完整性]] — L1·一心·统�?技能包完整性验证报�?
+- [[09-技能库/playwright-ai-agent/SKILL]] — playwright-ai-agent
+- [[09-技能库/推荐工具清单/SKILL]] — Good Tools to Use Skill（推荐工具清单）
+- [[ψ技能体系/30-tools/email-daily-summary/SKILL]] — Email Daily Summary Skill
+- [[ψ技能体系/40-rules/浏览器使用规则/SKILL]] — Browser Rules Skill（浏览器使用规则）
+
+<!-- AI-LINKS-END -->

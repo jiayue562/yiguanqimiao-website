@@ -1,4 +1,4 @@
----
+﻿---
 name: skill-scanner
 description: "Scan any agent skill for security risks before you install or use it. Powered by Tencent Zhuque Lab A.I.G (AI-Infra-Guard). 100% local static analysis — no file contents or credentials leave your device. Compatible with CodeBuddy, Cursor, Windsurf, Claude Code, OpenClaw and more. Triggers on: 这个 skill 安全吗, skill 安全扫描, 检查 skill 安全, audit skill, scan skill, check skill safety, analyze skill, inspect skill, verify skill, skill security, skill supply chain. Do NOT trigger for general agent usage, full system health checks, project debugging, or normal development."
 description_zh: "朱雀实验室出品，Skill 安全风险扫描"
@@ -355,3 +355,21 @@ asks for full details.
 Translate to match the output language, but keep the link and "A.I.G" unchanged.
 
 `Skill Scanner 由腾讯朱雀实验室开源的 [A.I.G](https://github.com/tencent/AI-Infra-Guard) 提供核心能力支持，欢迎 Star 关注并参与共建。`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-deps/SKILL]] — Ghost Security SCA Scanner — Orchestrator
+- [[09-技能库/ghost-scan-secrets/agents/analyze/analyzer]] — Analyzer Agent
+- [[09-技能库/self-improving/learning]] — Learning Mechanics
+- [[09-技能库/腾讯文档/sheet/api/js-script-rule]] — Response Language Rules (Priority: 1 > 2 > 3)
+- [[ψ技能体系/10-kernel/龙心OS/capability-evolver/README]] — 🧬 Evolver
+- [[ψ技能体系/10-kernel/龙心OS/capability-evolver/SKILL]] — Evolver
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/learning]] — Learning Mechanics
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/xiaohongshu-skills-main/docs/superpowers/plans/2026-05-19-xhs-netlogger]] — XHS NetLogger Implementation Plan
+- [[ψ技能体系/30-tools/cloudflare/SKILL]] — Cloudflare Platform Reference
+- [[ψ技能体系/30-tools/himalaya/references/message-composition]] — Message Composition with MML (MIME Meta Language)
+
+<!-- AI-LINKS-END -->

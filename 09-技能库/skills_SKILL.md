@@ -1,4 +1,4 @@
-# 龙脑 OS Skill
+﻿# 龙脑 OS Skill
 
 > 🧠 龙心 OS 方法论引擎 · 思维模型调度中枢 · 2026-04-16
 
@@ -251,3 +251,21 @@
 ---
 
 _龙脑 OS Skill v1.0 · 2026-04-16 · 龙心 OS_
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/企业文化OS知识库/SKILL]] — 企业文化OS知识库智能体 · SKILL.md
+- [[09-技能库/企业文化OS知识库/references/knowledge-graph]] — 企业文化OS知识库智能体 · 知识图谱
+- [[09-技能库/龙爪OS/references/architecture]] — 龙爪OS架构设计文档
+- [[09-技能库/龙脑OS/SKILL]] — 龙脑OS - 知识库智能体
+- [[ψ技能体系/20-claws/00-wuxing/凤心OS/SKILL]] — 凤心OS · 五行人格心理学智能体发动机 v3.0
+- [[ψ技能体系/20-claws/02-culture/企业文化OS知识库/SKILL]] — 企业文化OS知识库智能体 · SKILL.md
+- [[ψ技能体系/99-archive/思维模型.skills/SKILL]] — 思维模型.skills
+- [[ψ技能体系/99-archive/龙心 OS/SKILL]] — 龙心 OS Skill v2.0
+- [[ψ技能体系/99-archive/龙心 OS/framework/core.py]] — 龙心 OS Framework 层
+- [[ψ技能体系/99-archive/龙心 OS/references/scene-classification-guide]] — 龙心 OS 架构指南
+
+<!-- AI-LINKS-END -->

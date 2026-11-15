@@ -1,4 +1,4 @@
-# AgentDB Vector Search Skill - 向量语义搜索
+﻿# AgentDB Vector Search Skill - 向量语义搜索
 
 ## 技能概述
 向量语义搜索技能，智能文档检索和相似度匹配，基于语义理解的知识发现。
@@ -68,3 +68,17 @@
 - 版本：1.0
 - 创建时间：2026-03-23
 - 作者：龙龟神将
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[00-索引与导航/知识图谱/智能查询系统]] — 🔍 智能查询与推荐系�?
+- [[00-索引与导航/🔗 双向链接规范 v1.0]] — 🔗 双向链接规范 v1.0
+- [[01-核心体系/龙心OS_LLM-Wiki-Skills]] — LLM Wiki Skills · 活体维基知识编译系统 v1.0
+- [[09-技能库/rag-skill/SKILL]] — rag-skill - 知识库RAG增强
+- [[09-技能库/五行人格心理学/L6底座层/SKILL]] — 五行人格心理学L6底座层Skills
+- [[ψ技能体系/30-tools/agentdb-vector-search/SKILL]] — AgentDB Vector Search Skill - 向量语义搜索
+
+<!-- AI-LINKS-END -->

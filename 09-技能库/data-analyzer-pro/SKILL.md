@@ -1,4 +1,4 @@
-# data-analyzer-pro
+﻿# data-analyzer-pro
 
 ## 技能简介
 专业级数据分析工具，支持自然语言查询、可视化图表生成、SQL/NoSQL 数据连接和高级统计分析。
@@ -64,3 +64,18 @@ stats = analyzer.analyze_statistics(
 - [官方文档](https://data-analyzer-pro.dev/docs)
 - [GitHub 仓库](https://github.com/data-science-agents/data-analyzer-pro)
 - [示例项目](https://github.com/data-analyzer-pro/examples)
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/composio-hub/SKILL]] — composio-hub
+- [[09-技能库/office-automation-pro/SKILL]] — office-automation-pro
+- [[09-技能库/workflow-designer-pro/SKILL]] — workflow-designer-pro
+- [[ψ技能体系/30-tools/composio-hub/SKILL]] — composio-hub
+- [[ψ技能体系/30-tools/data-analyzer-pro/SKILL]] — data-analyzer-pro
+- [[ψ技能体系/30-tools/office-automation-pro/SKILL]] — office-automation-pro
+- [[ψ技能体系/30-tools/workflow-designer-pro/SKILL]] — workflow-designer-pro
+
+<!-- AI-LINKS-END -->

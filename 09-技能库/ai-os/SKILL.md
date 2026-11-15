@@ -387,3 +387,18 @@ workflow_id = engine.create_workflow(
 ---
 
 **系统状态**: ✅ 已集成 | **版本**: 1.0.0 | **最后更新**: 2026-03-15
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/核心Skills_人机共生伙伴系统·深度学习]] — 人机共生伙伴系统·深度学习
+- [[01-核心体系/龙心OS_Claude-Code源码工程智慧与龙心OS融合框架]] — Claude Code源码工程智慧与龙心OS融合框架
+- [[01-核心体系/龙心OS_知行合一三阶段自进化机制]] — 🧠 知行合一三阶段转化模型自进化机制
+- [[01-核心体系/龙心OS_聊天记录.skills]] — 聊天记录.skills
+- [[08-龙心OS核心系统/🏗️ 全新龙心OS架构设计·改变世界蓝图]] — 🏗️ 全新龙心OS架构设计·改变世界蓝图
+- [[09-技能库/AI龙龟共生伙伴操作系统/references/openclaw-alignment]] — AI龙龟共生伙伴操作系统（AI OS）v4.0 · OpenClaw对标方案
+- [[09-技能库/resources_openclaw-alignment]] — resources_openclaw-alignment
+
+<!-- AI-LINKS-END -->

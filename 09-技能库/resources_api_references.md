@@ -1,4 +1,4 @@
-# 腾讯文档 MCP 工具完整参考
+﻿# 腾讯文档 MCP 工具完整参考
 
 本文件包含腾讯文档 MCP 所有工具的通用 API 说明、详细调用示例、参数说明和返回值说明。
 
@@ -550,3 +550,21 @@ PPT 必须遵循严格的层级结构：
   "trace_id": "trace_1234567890"
 }
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_sheet_references]] — Sheet 表格操作参考文档
+- [[09-技能库/resources_smartsheet_references]] — 智能表格（SmartSheet）工具完整参考文档
+- [[09-技能库/腾讯会议/SKILL]] — tencent-meeting-mcp
+- [[09-技能库/腾讯会议/references/api_references]] — 腾讯会议 MCP 工具完整参考
+- [[09-技能库/腾讯文档/SKILL]] — 腾讯文档 MCP 使用指南
+- [[09-技能库/腾讯文档/references/diagram_references]] — 图形化文档（思维导图 / 流程图）参考文档
+- [[09-技能库/腾讯文档/references/docengine_references]] — DOC 编辑引擎 API 参考
+- [[09-技能库/腾讯文档/references/manage_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/腾讯文档/references/slide_references]] — 幻灯片（Slide / PPT）参考文档
+- [[09-技能库/腾讯文档/references/smartsheet_references]] — 智能表格（SmartSheet）工具完整参考文档
+
+<!-- AI-LINKS-END -->

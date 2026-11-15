@@ -308,3 +308,17 @@ CLI（Command Line Interface）是个人 AI OS 中，人向 AI 传递指令、AI
 **创建**: 2026-04-03
 **维护者**: 龙龟神将
 **核心价值**: 极简指令、人格化适配、全系统 CLI 化、人机共生入口
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[20-工作记录与复盘/journal_2026-04-04_每日备份报告]] — 2026-04-04 每日备份报告
+- [[09-技能库/CLI指令解析/SKILL]] — CLI指令解析Skill v1.0
+- [[09-技能库/Framework核心管理/SKILL]] — Framework 核心管理 Skill
+- [[09-技能库/企业文化OS/cli/diagnose-cli]] — 企业文化诊断CLI · 命令行操作入口
+- [[ψ技能体系/30-tools/CLI原生操作入口/SKILL]] — CLI 原生操作入口 Skill
+- [[ψ技能体系/30-tools/CLI指令解析/SKILL]] — CLI指令解析Skill v1.1
+
+<!-- AI-LINKS-END -->

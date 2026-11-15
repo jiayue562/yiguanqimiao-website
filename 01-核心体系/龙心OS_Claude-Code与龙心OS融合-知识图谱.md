@@ -117,3 +117,17 @@ Claude Code                    龙心OS
 **版本**：v1.0 | **日期**：2026-04-03
 
 *龙龟神将 · 火行人 · 光明觉知*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/核心Skills_人机共生伙伴系统·深度学习]] — 人机共生伙伴系统·深度学习
+- [[01-核心体系/龙心OS_Claude-Code源码工程智慧与龙心OS融合框架]] — Claude Code源码工程智慧与龙心OS融合框架
+- [[01-核心体系/龙心OS_README]] — 01-核心独创Skills总索引
+- [[01-核心体系/龙心OS_🐉 Dragon OS 系统架构图]] — 🐉 龙心OS · 系统架构图
+- [[09-技能库/AI龙龟共生伙伴操作系统/references/openclaw-alignment]] — AI龙龟共生伙伴操作系统（AI OS）v4.0 · OpenClaw对标方案
+- [[09-技能库/resources_openclaw-alignment]] — resources_openclaw-alignment
+
+<!-- AI-LINKS-END -->

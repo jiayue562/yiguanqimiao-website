@@ -1,4 +1,4 @@
-# 腾讯会议 MCP 工具完整参考
+﻿# 腾讯会议 MCP 工具完整参考
 
 本文件包含所有工具的详细参数说明、调用示例与返回值说明。
 
@@ -783,3 +783,21 @@ mcporter call tencent-meeting-mcp get_records_list --args '{"start_time": "17732
 | `records[].file_size` | int64 | 文件大小（字节） |
 | `records[].status` | string | 录制状态 |
 | `records[].download_url` | string | 下载地址 |
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_api_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/resources_sheet_references]] — Sheet 表格操作参考文档
+- [[09-技能库/腾讯会议/SKILL]] — tencent-meeting-mcp
+- [[09-技能库/腾讯文档/sheet/api/mcp-api]] — 腾讯文档 Sheet MCP 工具完整参考
+- [[09-技能库/腾讯文档/sheet/api/operation-api]] — Sheet 表格操作参考文档
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/USER]] — USER.md - About Your Human
+- [[ψ技能体系/30-tools/jinshuju/references/tools]] — 金数据 MCP 工具完整参考
+- [[ψ技能体系/30-tools/腾讯会议/SKILL]] — tencent-meeting-mcp
+- [[ψ技能体系/30-tools/腾讯文档/sheet/mcp-api]] — 腾讯文档 Sheet MCP 工具完整参考
+- [[ψ技能体系/30-tools/腾讯文档/sheet/operation-api]] — Sheet 表格操作参考文档
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# LLM Wiki 操作流程详解 v2.0
+﻿# LLM Wiki 操作流程详解 v2.0
 
 > **版本**：v2.0 | **创建日期**：2026-04-10 | **维护者**：龙龟神将
 
@@ -388,3 +388,17 @@ Writing/ ← 产出后跑
 
 **LLM Wiki 操作流程详解 v2.0**
 *机器编译，人类审核，AI建议，你来拍板。*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/agents_LLM Wiki 知识库激活完成报告]] — LLM Wiki 知识库激活完成报告
+- [[08-龙心OS核心系统/AI-OS知识库/🧠 龙脑OS·知识地基层/L7理论基石/AGENTS工作流SOP]] — AGENTS.md 工作流配置SOP
+- [[09-技能库/LLM-Wiki/completion-report]] — LLM Wiki · 知识库建设 Skill v2.0 构建完成报告
+- [[09-技能库/llmification-knowledge-builder/references/theory]] — Theory.md - LLMification 理论依据
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer1-raw/🧠 龙脑OS·知识地基层/L7理论基石/AGENTS工作流SOP]] — AGENTS.md 工作流配置SOP
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer2-wiki/entities/AGENTS工作流SOP]] — AGENTS.md 工作流配置SOP
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
----
+﻿---
 title: "人机协同五象限·测试用例 v3.0"
 created: "2026-04-08"
 version: "3.0"
@@ -152,3 +152,20 @@ tags: [测试, 五象限, 验证]
 **创建日期**: 2026-04-08
 **测试通过率**: 100%（5/5场景全部通过）
 **质量评分**: 9.5/10
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[16-工具与资源/areas_人机协同方法论]] — 人机协同方法论
+- [[08-龙心OS核心系统/AI-OS知识库/❤️ 龙心OS·智能发动机层/AI原生组织-与人机协同五象限的融合]] — AI原生组织与人机协同五象限的融合
+- [[08-龙心OS核心系统/AI-OS知识库/❤️ 龙心OS·智能发动机层/五大引擎/人机协同五象限]] — 人机协同五象限
+- [[09-技能库/resources_human-ai-integration]] — 象思维 × 人机协同整合方案
+- [[09-技能库/人机协同五象限/references/knowledge-graph]] — 人机协同五象限·知识图谱 v3.0
+- [[09-技能库/象思维/references/human-ai-integration]] — 象思维 × 人机协同整合方案
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer1-raw/❤️ 龙心OS·智能发动机层/五大引擎/人机协同五象限]] — 人机协同五象限
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer2-wiki/entities/人机协同五象限]] — 人机协同五象限
+- [[ψ技能体系/10-kernel/龙心OS/engines/人机协同五象限/references/practice-guide]] — 人机协同五象限实践指南
+
+<!-- AI-LINKS-END -->

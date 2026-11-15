@@ -1,4 +1,4 @@
-# LLM Wiki · 知识库建设 Skill v2.0 构建完成报告
+﻿# LLM Wiki · 知识库建设 Skill v2.0 构建完成报告
 
 > **构建日期**：2026-04-08（v1.0）
 > **升级日期**：2026-04-10（v2.0）
@@ -204,3 +204,21 @@ LLM Wiki v2.0（五层架构 + 三大流程）
 > **核心理念**：知识是弹药库，产出才是开枪。
 > **操作哲学**：机器编译，人类审核，AI建议，你来拍板。
 > **立即使用**：说"升级知识库"或"用 LLM Wiki 管理知识"即可调用！
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/agents_知识库建设完成报告]] — 知识库建设完成报告
+- [[03-知识地基层/五色光思维/NSA05D4-96-Skill 封装完成报告]] — 五色光思维 Skill 封装完成报告
+- [[03-知识地基层/象思维/NS6EED6-98-Skill 封装完成报告]] — 象思维 Skill 封装完成报告
+- [[16-工具与资源/projects_04-跨域知识融合]] — LLM Wiki知识库建设·第四层：跨域知识融合
+- [[09-技能库/LLM-Wiki/references/operation-flows]] — LLM Wiki 操作流程详解 v2.0
+- [[09-技能库/llmification-knowledge-builder/references/practice-guide]] — Practice Guide.md - LLMification 实操指南
+- [[09-技能库/skill-builder/templates/output_template]] — Skill 构建完成报告（标准输出模板）
+- [[09-技能库/五行总智能体/references/links/sub-agents]] — 五个分智能体链接
+- [[09-技能库/五行总智能体/五行总智能体/references/links/sub-agents]] — 五个分智能体链接
+- [[09-技能库/框架思维模型库.skills/references/index]] — 框架思维模型库 · 总索引
+
+<!-- AI-LINKS-END -->

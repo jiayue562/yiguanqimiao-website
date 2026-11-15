@@ -1,4 +1,4 @@
-# 🔗 火行人分智能体·与其他Skills整合说明
+﻿# 🔗 火行人分智能体·与其他Skills整合说明
 
 > **版本**: v1.0 | **火行人分智能体独立封装** | **用途**: 跨Skill协作协议
 
@@ -476,3 +476,17 @@ IMA笔记
 > 2. 包含与五行总智能体、其他分智能体、龙心OS五大引擎的协作方式  
 > 3. 提供跨Skills协作的技术实现和最佳实践  
 > 4. 作为Skills生态协同的基础协议文档
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[05-五行人格心理学/人格类型/📖 五行人格总智能体系统]] — 五行人格总智能体系统
+- [[09-技能库/五行总智能体/references/architecture-overview]] — 五行总智能体系统架构总览
+- [[09-技能库/五行总智能体/五行总智能体/references/architecture-overview]] — 五行总智能体系统架构总览
+- [[09-技能库/凤心OS.skills/references/scene-router]] — 场景识别矩阵（S0-S8）
+- [[09-技能库/凤心OS/references/scene-router]] — 凤心OS · 场景识别矩阵 + 智能路由决策树
+- [[ψ技能体系/20-claws/00-wuxing/五行总智能体/references/architecture-overview]] — 五行总智能体系统架构总览
+
+<!-- AI-LINKS-END -->

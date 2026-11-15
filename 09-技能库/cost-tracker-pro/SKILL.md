@@ -1,4 +1,4 @@
-# cost-tracker-pro
+﻿# cost-tracker-pro
 
 ## 技能简介
 企业级 AI 模型成本管控工具，实时统计模型消耗、计算使用费用、实现成本管控，支持预算管理和优化建议。
@@ -131,3 +131,20 @@ async function generateCostReport(period = 'monthly') {
 - [官方文档](https://cost-tracker-pro.dev/docs)
 - [GitHub 仓库](https://github.com/enterprise-agents/cost-tracker-pro)
 - [API 参考](https://cost-tracker-pro.dev/api)
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/composio-hub/SKILL]] — composio-hub
+- [[09-技能库/github-copilot-pro/SKILL]] — github-copilot-pro
+- [[09-技能库/video-creator-ai/SKILL]] — video-creator-ai
+- [[09-技能库/workflow-designer-pro/SKILL]] — workflow-designer-pro
+- [[ψ技能体系/30-tools/composio-hub/SKILL]] — composio-hub
+- [[ψ技能体系/30-tools/cost-tracker-pro/SKILL]] — cost-tracker-pro
+- [[ψ技能体系/30-tools/github-copilot-pro/SKILL]] — github-copilot-pro
+- [[ψ技能体系/30-tools/video-creator-ai/SKILL]] — video-creator-ai
+- [[ψ技能体系/30-tools/workflow-designer-pro/SKILL]] — workflow-designer-pro
+
+<!-- AI-LINKS-END -->

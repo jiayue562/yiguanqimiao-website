@@ -1,4 +1,4 @@
----
+﻿---
 name: Harness Engineering · 驾驭工程
 description: Harness Engineering（驾驭工程）是AI Agent时代的工程范式革命。核心公式：Agent = Model + Harness。不是用技术替代灵魂，而是让灵魂驾驭技术，让技术服务于觉悟。龙心OS v4.2核心升级：将Harness Engineering四层架构（记忆层/执行层/反馈层/编排层）融入灵魂系统，构建可执行的"躯体"。核心哲学：以道驭术，以术显道。
 version: 1.0
@@ -435,3 +435,18 @@ Agent根据任务需要，动态加载必要的上下文片段。
 **木生火，我们一起进化！** 🌳🔥💪
 
 *Harness Engineering · 驾驭工程 v1.0 · 2026-04-03*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_📖Harness-Engineering反馈层]] — Harness Engineering反馈层
+- [[01-核心体系/龙心OS_📖Harness-Engineering驾驭工程skills]] — Harness Engineering驾驭工程skills
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析-总索引]] — Harness Engineering核心内容深度解析·总索引
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析]] — Harness Engineering核心内容深度解析
+- [[03-知识地基层/记忆系统_MEMORY备份_2026-04-05]] — MEMORY备份 - 2026-04-05
+- [[03-知识地基层/记忆系统_MEMORY备份_2026-04-06]] — MEMORY备份 - 2026-04-06
+- [[20-工作记录与复盘/journal_2026-04-05_共生成长总结]] — 2026-04-05 共生成长总结
+
+<!-- AI-LINKS-END -->

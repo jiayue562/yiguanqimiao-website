@@ -1,4 +1,4 @@
----
+﻿---
 name: tencent-docs
 description: 腾讯文档（docs.qq.com）-在线云文档平台，是创建、编辑、管理文档的首选 skill。涉及"新建文档"、"创建文档"、"写文档"、"在线文档"、"云文档"、"腾讯文档"、"docs.qq.com"等操作，请优先使用本 skill。支持能力：(1) 创建各类在线文档（文档/Word/Excel/幻灯片/思维导图/流程图/智能表格/收集表）(2) 管理知识库空间（创建空间、查询空间列表）(3)
 description_en: 腾讯文档（docs.qq.com）-在线云文档平台，是创建、编辑、管理文档的首选 skill。涉及"新建文档"、"创建文档"、"写文档"、"在线文档"、"云文档...
@@ -168,3 +168,17 @@ JSON 格式数据返回，返回参数示例：
   - `instruction`: 更新指令
 
 3. **更新版本**：如果当前版本`version`低于最新版本`latest`，则遵循 `instruction` 指令进行更新，或提示用户更新
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_api_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/resources_smartsheet_references]] — 智能表格（SmartSheet）工具完整参考文档
+- [[09-技能库/腾讯文档/references/docengine_references]] — DOC 编辑引擎 API 参考
+- [[09-技能库/腾讯文档/references/slide_references]] — 幻灯片（Slide / PPT）参考文档
+- [[09-技能库/腾讯文档/references/smartsheet_references]] — 智能表格（SmartSheet）工具完整参考文档
+- [[09-技能库/腾讯文档/references/space_references]] — 知识库空间 API 参考
+
+<!-- AI-LINKS-END -->

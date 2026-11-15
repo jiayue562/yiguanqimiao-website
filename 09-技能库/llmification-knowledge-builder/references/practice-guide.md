@@ -1,4 +1,4 @@
-# Practice Guide.md - LLMification 实操指南
+﻿# Practice Guide.md - LLMification 实操指南
 
 > **用途**：LLMification Knowledge Builder的实操执行手册
 > **适用人群**：知识库建设者、AI系统管理员、知识工程师
@@ -490,3 +490,21 @@ access_control:
 **实操指南版本**：v1.0  
 **最后更新**：2026-04-08  
 **维护者**：龙龟神将
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[21-学习档案/MIT学霸超前学习法/NotebookLM认知支架]] — NotebookLM认知支架（证据驱动型推理中枢）
+- [[08-龙心OS核心系统/AI-OS知识库/❤️ 龙心OS·智能发动机层/五大引擎/知识学习]] — 知识学习
+- [[09-技能库/LLM-Wiki/completion-report]] — LLM Wiki · 知识库建设 Skill v2.0 构建完成报告
+- [[09-技能库/llmification-knowledge-builder/references/theory]] — Theory.md - LLMification 理论依据
+- [[09-技能库/llmification-knowledge-builder/templates/input-template]] — LLMification 输入模板
+- [[09-技能库/企业文化/references/practice]] — 企业文化实操指南
+- [[09-技能库/通信规则/SKILL]] — Communication Skill（通信规则）
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer1-raw/❤️ 龙心OS·智能发动机层/五大引擎/知识学习]] — 知识学习
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/architecture/layer2-wiki/entities/知识学习]] — 知识学习
+- [[ψ技能体系/30-tools/deep-research/research-report/SKILL]] — Research Report - 姹囨€绘姤鍛?
+
+<!-- AI-LINKS-END -->

@@ -195,3 +195,21 @@ version: "1.0"
 
 **快慢思考协调协议 v1.0**
 **凤心OS智能发动机·协调层**
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[05-五行人格心理学/人格类型/📖 五行人格总智能体系统]] — 五行人格总智能体系统
+- [[05-五行人格心理学/应用场景/企业管理/企业管理_文化×五行融合]] — 文化×五行融合：企业文化与五行识人的深度共振
+- [[05-五行人格心理学/理论基石/🧠 快慢思考融合体系·完整体系]] — 快慢思考融合体系·完整体系
+- [[09-技能库/五行总智能体/references/architecture-overview]] — 五行总智能体系统架构总览
+- [[09-技能库/五行总智能体/五行总智能体/references/architecture-overview]] — 五行总智能体系统架构总览
+- [[09-技能库/凤心OS.skills/references/wuxing-agents-protocol]] — 五行分智能体协作协议
+- [[09-技能库/凤心OS/references/fast-slow-thinking]] — 凤心OS · 快思考×慢思考协调协议
+- [[09-技能库/凤心OS/references/wuxing-agents-protocol]] — 凤心OS · 五行分智能体协作协议
+- [[09-技能库/土行人分智能体/references/integration-notes]] — 土行人分智能体 - 整合笔记
+- [[ψ技能体系/20-claws/00-wuxing/五行总智能体/references/architecture-overview]] — 五行总智能体系统架构总览
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# 安全智能体模块
+﻿# 安全智能体模块
 
 > 人工智能安全智能体核心知识库
 
@@ -103,3 +103,21 @@
 ---
 
 *最后更新：2026-04-13*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/agents_Skill 构建 SOP]] — Skill 构建 SOP - 龙心 OS 技能开发标准流程
+- [[03-知识地基层/记忆系统_browser-automation-solution]] — 🔧 Browser-Automation技能链接问题解决方案报告
+- [[03-知识地基层/记忆系统_obsidian-skill-security-audit]] — 🔍 安全审计报告
+- [[08-龙心OS核心系统/记忆系统/MEMORY]] — 安全智能体 · 长期记忆
+- [[09-技能库/Skill安全审计（云鼎实验室）/SKILL]] — 🔍 安全审计报告
+- [[09-技能库/composio-hub/SKILL]] — composio-hub
+- [[09-技能库/龙心OS-规则体系/references/转账任务手动确认机制]] — 转账任务手动确认机制 - 龙心OS安全规则
+- [[ψ技能体系/30-tools/composio-hub/SKILL]] — composio-hub
+- [[ψ技能体系/30-tools/context-engineering/cross-skill-context/protocol]] — 跨 Skills 上下文协同协议
+- [[ψ技能体系/40-rules/审计规则/SKILL]] — SKILL
+
+<!-- AI-LINKS-END -->

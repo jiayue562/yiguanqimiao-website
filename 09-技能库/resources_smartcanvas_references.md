@@ -1,4 +1,4 @@
-# 智能文档（SmartCanvas）工具完整参考文档
+﻿# 智能文档（SmartCanvas）工具完整参考文档
 
 腾讯文档智能文档（SmartCanvas）提供了一套完整的文档元素操作 API，支持对页面、文本、标题、待办事项等元素进行增删改查操作。
 
@@ -791,3 +791,17 @@ file_id（文档）
 > - 所有操作都需要先获取 `file_id`，可通过 `search_space_file` 搜索文档获取，或在创建文档时从返回结果中获取。
 > - 操作元素前，建议先调用 `smartcanvas.get_top_level_pages` 了解文档结构，再调用 `smartcanvas.get_page_info` 获取具体元素 ID。
 > - `Text`、`Heading`、`Task` 元素必须挂载在 `Page` 下，创建时 `parent_id` 必须为 Page 类型元素的 ID。
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_smartsheet_references]] — 智能表格（SmartSheet）工具完整参考文档
+- [[09-技能库/腾讯文档/references/docengine_references]] — DOC 编辑引擎 API 参考
+- [[09-技能库/腾讯文档/references/manage_references]] — 腾讯文档 MCP 工具完整参考
+- [[09-技能库/腾讯文档/references/smartsheet_references]] — 智能表格（SmartSheet）工具完整参考文档
+- [[09-技能库/腾讯文档/sheet/api/mcp-api]] — 腾讯文档 Sheet MCP 工具完整参考
+- [[09-技能库/腾讯文档/smartcanvas/entry]] — 文档（SmartCanvas）工具完整参考文档
+
+<!-- AI-LINKS-END -->

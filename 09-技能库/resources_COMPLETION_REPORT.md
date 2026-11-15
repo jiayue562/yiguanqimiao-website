@@ -1,4 +1,4 @@
-# 知识学习 Skill 构建完成报告
+﻿# 知识学习 Skill 构建完成报告
 
 > 🎉 龙心 OS 五大 Skill 之二完成
 
@@ -108,3 +108,21 @@
 ---
 
 _龙心 OS 知识学习 Skill 构建完成报告 v1.0 · 观其妙书院 · 2026-04-15_
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[03-知识地基层/五色光思维/NSA05D4-96-Skill 封装完成报告]] — 五色光思维 Skill 封装完成报告
+- [[09-技能库/resources_CHECKLIST]] — 知识学习 Skill 检查清单
+- [[09-技能库/resources_io-templates]] — 知识学习输入输出模板
+- [[09-技能库/resources_易经错综复杂思维模型]] — 易经错综复杂思维模型 - 知识学习报告
+- [[09-技能库/skill-builder/templates/output_template]] — Skill 构建完成报告（标准输出模板）
+- [[09-技能库/skills_COMPLETION_REPORT]] — 象思维 Skill 构建完成报告
+- [[ψ技能体系/10-kernel/龙心OS/engines/五色光思维/COMPLETION_REPORT]] — 五色光思维 Skill 构建完成报告
+- [[ψ技能体系/10-kernel/龙心OS/engines/知行合一/COMPLETION_REPORT]] — 知行合一 Skill 构建完成报告
+- [[ψ技能体系/10-kernel/龙心OS/engines/象思维/COMPLETION_REPORT]] — 象思维 Skill 构建完成报告
+- [[ψ技能体系/30-tools/skill-builder/templates/output_template]] — Skill Builder 输出模板
+
+<!-- AI-LINKS-END -->

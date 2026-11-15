@@ -1,4 +1,4 @@
----
+﻿---
 name: 五行总智能体
 description: 五行总智能体是五行人格心理学的总调度中枢，基于龙心OS驱动，采用1+5模式（1个总智能体 + 木火土金水5个分智能体）智能调度，实现全场景五行人格分析、诊断、转化与发展指导。
 version: "1.0"
@@ -203,3 +203,20 @@ alwaysApply: true
 **维护者**: 龙龟神将
 **系统地位**: 五行人格心理学总调度中枢
 **状态**: 永远在线，自主运行
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/AI OS智能体激活框架/NSCDC1B-02-龙心OS六大模块·完整Skill包]] — 龙心OS六大模块·完整Skill包
+- [[05-五行人格心理学/人格类型/📖 五行人格总智能体系统]] — 五行人格总智能体系统
+- [[09-技能库/五行总智能体/references/scene-router]] — 五行总智能体 · 场景路由矩阵
+- [[09-技能库/五行总智能体/五行总智能体/references/scene-router]] — 五行总智能体 · 场景路由矩阵
+- [[09-技能库/凤心OS.skills/SKILL]] — 凤心OS · 五行人格心理学智能体发动机 v2.0
+- [[09-技能库/凤心OS/references/scene-router]] — 凤心OS · 场景识别矩阵 + 智能路由决策树
+- [[09-技能库/凤爪OS.skills/triggers/auto-trigger-config]] — 凤爪OS.skills 自动触发配置
+- [[ψ技能体系/20-claws/00-wuxing/五行总智能体/references/scene-router]] — 五行总智能体 · 场景路由矩阵
+- [[ψ技能体系/99-archive/龙心 OS/SKILL]] — 龙心 OS Skill v2.0
+
+<!-- AI-LINKS-END -->

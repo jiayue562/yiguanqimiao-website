@@ -1,4 +1,4 @@
----
+﻿---
 title: "瓶颈理论"
 subtitle: "Theory of Constraints"
 category: "Engineering"
@@ -239,3 +239,17 @@ Step 5: 验证瓶颈
 **领域**: 技术工程 · 运营管理  
 **质量评级**: ⭐⭐⭐⭐⭐  
 **完成度**: 100%
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_📖Harness-Engineering-Linter规则]] — Harness Engineering Linter规则
+- [[01-核心体系/龙脑-思维模型顶层设计/03-理论/认知吝啬者理论]] — 认知吝啬者理论
+- [[02-信仰文化体系/五行心理学_09-拔阴取阳法]] — 拔阴取阳法
+- [[09-技能库/思维模型库/帕累托法则/SKILL]] — 帕累托法则
+- [[ψ技能体系/10-kernel/龙脑OS/models/思维模型库/瓶颈理论/SKILL]] — 瓶颈理论
+- [[ψ技能体系/30-tools/workbuddy/思维模型库/瓶颈理论/SKILL]] — 瓶颈理论
+
+<!-- AI-LINKS-END -->

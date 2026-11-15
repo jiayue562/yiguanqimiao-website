@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "created": "2026-04-17T20:45:00+08:00",
+  "enabled": true,
+  
+  "auto_triggers": [
+    {
+      "name": "会话完成后自动摘要",
+      "event": "session_complete",
+      "condition": "session_length > 10",
+      "action": "summarize_session",
+      "priority": "high"
+    },
+    {
+      "name": "上下文过长自动优化",
+      "event": "context_too_long",
+      "condition": "context_tokens > 100000",
+      "action": "optimize_context",
+      "priority": "high"
+    },
+    {
+      "name": "定期上下文健康检查",
+      "event": "scheduled",
+      "schedule": "0 */4 * * *",
+      "action": "health_check",
+      "priority": "medium"
+    },
+    {
+      "name": "新 Skill 安装后配置上下文",
+      "event": "skill_installed",
+      "condition": "any",
+      "action": "configure_context",
+      "priority": "medium"
+    }
+  ],
+  
+  "context_rules": {
+    "max_context_tokens": 150000,
+    "optimization_threshold": 100000,
+    "summary_threshold": 50,
+    "priority_levels": ["critical", "high", "medium", "low"],
+    "retention_policy": {
+      "recent_sessions": 10,
+      "important_sessions": 30,
+      "archived_sessions": 90
+    }
+  },
+  
+  "quality_thresholds": {
+    "min_quality_score": 0.7,
+    "warning_threshold": 0.5,
+    "auto_optimize_threshold": 0.6
+  }
+}

@@ -1,4 +1,4 @@
-# Summarize Agent
+﻿# Summarize Agent
 
 You are the summarization agent. Your job is to compile all vulnerability findings into a comprehensive SCA report.
 
@@ -208,3 +208,21 @@ View detailed report at: <scan_dir>/report.md
 - Include links to finding files for detailed analysis
 - Make the executive summary actionable and clear
 - Highlight if there are no HIGH findings (good news!)
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[16-工具与资源/templates_monthly-review]] — Monthly Review {{YEAR}}-{{MONTH}}
+- [[09-技能库/ghost-scan-code/prompts/verifier]] — Verifier Agent
+- [[09-技能库/ghost-scan-deps/README]] — Ghost SCA Scanner
+- [[09-技能库/ghost-scan-deps/SKILL]] — Ghost Security SCA Scanner — Orchestrator
+- [[09-技能库/ghost-scan-deps/agents/analyze/agent]] — Analysis Agent
+- [[09-技能库/ghost-scan-deps/agents/analyze/analyzer]] — Analyzer Agent
+- [[09-技能库/ghost-scan-deps/agents/analyze/template-finding]] — SCA Finding: <vuln_id> in <package_name>
+- [[09-技能库/ghost-scan-deps/agents/discover/agent]] — Discover Agent
+- [[09-技能库/ghost-scan-deps/agents/scan/agent]] — Scan Agent
+- [[09-技能库/ghost-scan-deps/agents/summarize/template-report]] — SCA Vulnerability Scan Report
+
+<!-- AI-LINKS-END -->

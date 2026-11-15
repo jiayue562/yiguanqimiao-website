@@ -1,4 +1,4 @@
----
+﻿---
 name: "ghost-scan-secrets"
 description: |
   Ghost Security - Secrets and credentials scanner. Scans codebase for leaked API keys, tokens, passwords, and sensitive data. Detects hardcoded secrets and generates findings with severity and remediation guidance. Use when the user asks to check for leaked secrets, scan for credentials, find hardcoded API keys or passwords, detect exposed .env values, or audit code for sensitive data exposure.
@@ -103,3 +103,21 @@ After executing all the tasks, report the scan results to the user.
 ## Error Handling
 
 If any Task call fails, retry it **once**. If it fails again, stop and report the failure.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-code/SKILL]] — Find Issues
+- [[09-技能库/ghost-scan-deps/agents/analyze/agent]] — Analysis Agent
+- [[09-技能库/ghost-scan-deps/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/ghost-scan-secrets/agents/analyze/agent]] — Analysis Agent
+- [[09-技能库/ghost-scan-secrets/agents/scan/agent]] — Scan Agent
+- [[09-技能库/ghost-scan-secrets/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/resources_agent]] — Summarize Agent
+- [[ψ技能体系/30-tools/api-gateway/SKILL]] — API Gateway
+- [[ψ技能体系/30-tools/imap-smtp-email/SKILL]] — IMAP/SMTP Email Tool
+- [[ψ技能体系/30-tools/model-usage/SKILL]] — Model usage
+
+<!-- AI-LINKS-END -->

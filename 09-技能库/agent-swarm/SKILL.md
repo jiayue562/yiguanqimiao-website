@@ -1,4 +1,4 @@
-# Agent Swarm Skill - 多代理并行任务执行
+﻿# Agent Swarm Skill - 多代理并行任务执行
 
 ## 技能概述
 多代理并行任务执行技能，支持同时调度多个子代理协同完成复杂任务。
@@ -68,3 +68,19 @@
 - 版本：1.0
 - 创建时间：2026-03-23
 - 作者：龙龟神将
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_龙心OS-知行合一-五行人格OS整合方案v1.0]] — 龙心OS · 知行合一 · 五行人格OS 三大系统整合方案 v1.0
+- [[03-知识地基层/记忆系统_AGENTS]] — AGENTS.md - 智能体配置
+- [[09-技能库/agent-orchestrator/SKILL]] — 智能体协调规划器 (Agent Orchestrator)
+- [[09-技能库/create-sub-agent/SKILL]] — Create Sub-Agent Skill - 交互式子代理创建
+- [[09-技能库/五行人格心理学/L3调度层/SKILL]] — 五行人格心理学L3调度层Skills
+- [[ψ技能体系/30-tools/agent-orchestrator/SKILL]] — 智能体协调规划器 (Agent Orchestrator)
+- [[ψ技能体系/30-tools/agent-swarm/SKILL]] — Agent Swarm Skill - 多代理并行任务执行
+- [[ψ技能体系/30-tools/create-sub-agent/SKILL]] — Create Sub-Agent Skill - 交互式子代理创建
+
+<!-- AI-LINKS-END -->

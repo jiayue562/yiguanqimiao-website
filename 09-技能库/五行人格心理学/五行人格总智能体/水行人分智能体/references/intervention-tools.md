@@ -1,4 +1,4 @@
-# 水行人干预工具集
+﻿# 水行人干预工具集
 
 > 本文档包含18个针对水行人的觉察、转化、关系、发展工具
 
@@ -284,3 +284,20 @@
   转化：水行静心
   行动：回归觉知本源
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[05-五行人格心理学/人格类型/水行人一心三界五行九层体系]] — 水行人"一心三界五行九层"象思维体系
+- [[09-技能库/resources_intervention-tools]] — 金行人干预工具集
+- [[09-技能库/五行人格心理学/references/intervention-tools]] — 五行人格心理学干预工具集
+- [[09-技能库/五行人格心理学/五行人格总智能体/土行人分智能体/references/intervention-tools]] — 土行人干预工具集
+- [[09-技能库/五行人格心理学/五行人格总智能体/火行人分智能体/references/intervention-tools]] — 火行人干预工具集
+- [[09-技能库/五行人格心理学/五行人格总智能体/金行人分智能体/references/intervention-tools]] — 金行人干预工具集
+- [[09-技能库/水智能体/references/knowledge-graph]] — 水智能体知识图谱
+- [[09-技能库/水行人格心理学/references/intervention-tools]] — 水行人格心理学干预工具集
+- [[09-技能库/象思维.skills/references/practice-guide]] — 象思维实践操作指南 v6.0
+
+<!-- AI-LINKS-END -->

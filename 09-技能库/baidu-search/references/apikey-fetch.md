@@ -1,4 +1,4 @@
-# Baidu API Key Setup Guide (OpenClaw)
+﻿# Baidu API Key Setup Guide (OpenClaw)
 
 ## BAIDU_API_KEY Not Configured
 
@@ -56,3 +56,21 @@ python3 scripts/search.py '{"query": "test search"}'
 - Restart OpenClaw after configuration changes
 
 **Recommended**: Use OpenClaw configuration file for centralized management
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[16-工具与资源/templates_idea]] — {{TITLE}}
+- [[09-技能库/baidu-search/SKILL]] — Baidu Search
+- [[09-技能库/resources_FAQ]] — Frequently Asked Questions
+- [[09-技能库/resources_TROUBLESHOOTING]] — Troubleshooting Guide
+- [[09-技能库/self-improving/heartbeat-rules]] — Heartbeat Rules
+- [[09-技能库/web-search-plus/FAQ]] — Frequently Asked Questions
+- [[09-技能库/web-search-plus/TROUBLESHOOTING]] — Troubleshooting Guide
+- [[ψ技能体系/10-kernel/龙心OS/capability-evolver/CONTRIBUTING]] — CONTRIBUTING
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/HEARTBEAT]] — HEARTBEAT.md
+- [[ψ技能体系/30-tools/baidu-search/SKILL]] — Baidu Search
+
+<!-- AI-LINKS-END -->

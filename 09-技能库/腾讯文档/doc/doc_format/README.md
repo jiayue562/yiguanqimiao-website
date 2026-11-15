@@ -1,4 +1,4 @@
-# 文本格式化模块
+﻿# 文本格式化模块
 
 纯文本 → 结构化 XML → 样式美化的工程化流程。
 
@@ -113,3 +113,17 @@ doc_format/
 ```json
 {"text": "合同（以下简称\"本合同\"）"}
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/agents_Skill 构建 SOP-5 阶 20 步完整版]] — Skill 构建 SOP - 5 阶 20 步完整版
+- [[03-知识地基层/记忆系统_HEARTBEAT]] — HEARTBEAT.md - 心跳监控与任务管理
+- [[03-知识地基层/记忆系统_对话技术性总结_2026-03-27_严格九部析_v8]] — 对话技术性总结报告 v8
+- [[16-工具与资源/工具技能_PPT读取技能包]] — PPT读取技能包
+- [[09-技能库/PPT读取/test-cases]] — PPT读取 Skill 测试用例
+- [[09-技能库/腾讯文档/references/unsupported_feature_reporting]] — 不支持能力上报规范（report_unsupported_feature）
+
+<!-- AI-LINKS-END -->

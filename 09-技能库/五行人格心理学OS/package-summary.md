@@ -1,4 +1,4 @@
-# 🎯 五行人格心理学 OS · 封装总览
+﻿# 🎯 五行人格心理学 OS · 封装总览
 
 > **版本**: v1.0 | **封装日期**: 2026-04-05 | **维护者**: 龙神将  
 > **采用工具**: Skill Builder v1.0（五阶20步工业化流程）
@@ -264,3 +264,21 @@ C:\Users\jia'yue\.workbuddy\skills\五行人格心理学OS\
 ---
 
 **五行人格心理学 OS · 从理论到实战的完整跃迁** ✅
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_Skill Builder v1.0]] — Skill构建申请表
+- [[20-工作记录与复盘/01-长期记忆档案/MEMORY备份-来自22]] — MEMORY备份.md - 龙龟神将长期记忆
+- [[20-工作记录与复盘/03-记忆系统/MEMORY备份]] — MEMORY.md - 龙龟神将长期记忆（Obsidian备份�?
+- [[20-工作记录与复盘/03-记忆系统/MEMORY备份_2026-04-08]] — MEMORY备份 2026-04-08
+- [[20-工作记录与复盘/journal_2026-04-10_周度汇总]] — 2026-04-10_周度汇总
+- [[09-技能库/L1·一心·统摄/references/L1-fengxin-integration]] — L1×凤心OS协作协议完整版
+- [[09-技能库/skill-builder/SKILL]] — 🔨 Skill Builder · 元级Skill构建工具 v1.1
+- [[09-技能库/五行人格心理学OS/SKILL]] — 🔨 五行人格心理学 OS · 三层架构完整系统
+- [[09-技能库/五行人格心理学OS/completion-report]] — 🎉 五行人格心理�?OS 封装完成报告
+- [[ψ技能体系/20-claws/00-wuxing/L1·一心·统摄/references/L1-fengxin-integration]] — L1×凤心OS协作协议完整版
+
+<!-- AI-LINKS-END -->

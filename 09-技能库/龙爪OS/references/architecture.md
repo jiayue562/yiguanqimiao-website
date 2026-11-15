@@ -1,4 +1,4 @@
-# 龙爪OS架构设计文档
+﻿# 龙爪OS架构设计文档
 
 > **版本**: v1.0  
 > **创建日期**: 2026-04-10  
@@ -461,3 +461,17 @@ interface ModelSelectionCache {
 ---
 
 **龙爪OS架构设计** · 让项目执行智能化、标准化、可进化 🐾
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[03-知识地基层/记忆系统_obsidian-backup-system]] — 🚀 WorkBuddy ↔ Obsidian 知识备份系统
+- [[03-知识地基层/记忆系统_skills-sync-summary]] — Skills文档同步检查报告
+- [[03-知识地基层/记忆系统_对话总结-2026-03-30-0942]] — 对话总结：WorkBuddy-Obsidian备份任务分析（2026-03-30 09:42）
+- [[09-技能库/skills_SKILL]] — 龙脑 OS Skill
+- [[09-技能库/企业文化OS知识库/references/framework-autonomy]] — 企业文化OS知识库智能体 · Framework层突破文档
+- [[09-技能库/企业文化OS知识库/references/knowledge-graph]] — 企业文化OS知识库智能体 · 知识图谱
+
+<!-- AI-LINKS-END -->

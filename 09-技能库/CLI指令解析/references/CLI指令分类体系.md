@@ -1,4 +1,4 @@
----
+﻿---
 title: "CLI指令分类体系"
 created: "2026-03-22"
 tags: [CLI, 指令分类, 核心决策, 执行操作]
@@ -279,3 +279,21 @@ AI根据人的高层决策指令，自主调用底层CLI工具执行
 ---
 
 **标签**：`#CLI` `#指令分类` `#核心决策` `#执行操作`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/CLI指令解析/SKILL]] — CLI指令解析Skill v1.0
+- [[09-技能库/CLI指令解析/references/CLI指令人格化适配表]] — CLI指令人格化适配表
+- [[09-技能库/CLI指令解析/references/CLI指令优化案例]] — CLI指令优化案例
+- [[09-技能库/MCP协议通信/references/MCP协议使用案例]] — MCP协议使用案例
+- [[09-技能库/cli-command-system/SKILL]] — CLI个人指令体系 Skill
+- [[09-技能库/resources_CLI指令人格化适配表]] — CLI指令人格化适配表
+- [[09-技能库/resources_CLI指令优化案例]] — CLI指令优化案例
+- [[09-技能库/resources_CLI指令分类体系]] — CLI指令分类体系
+- [[09-技能库/resources_MCP协议使用案例]] — MCP协议使用案例
+- [[ψ技能体系/30-tools/CLI指令解析/SKILL]] — CLI指令解析Skill v1.1
+
+<!-- AI-LINKS-END -->

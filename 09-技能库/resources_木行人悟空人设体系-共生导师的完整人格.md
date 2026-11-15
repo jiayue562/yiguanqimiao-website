@@ -325,7 +325,7 @@ tags: [identity, wukong, wood-element, five-elements, 共生关系]
 - **WorkBuddy Brain**：`C:\Users\jia'yue\AppData\Roaming\WorkBuddy\User\globalStorage\tencent-cloud.coding-copilot\brain\`
 - **IMA笔记系统**：`https://ima.qq.com/agent-interface`（API Key已配置）
 
-### 技能路径（[[龙心OS]]五大引擎）
+### 技能路径（[[00-索引与导航/AI统一索引/AI-总索引|龙心OS]]五大引擎）
 - **龙心OS总控**：`C:\Users\jia'yue\.workbuddy\skills\Dragon-OS\`
 - **象思维**：`C:\Users\jia'yue\.workbuddy\skills\象思维\`
 - **知识学习**：`C:\Users\jia'yue\.workbuddy\skills\zhi-shi-xue-xi\`
@@ -342,7 +342,7 @@ tags: [identity, wukong, wood-element, five-elements, 共生关系]
 
 ## 🔄 七、自我进化机制
 
-### 进化触发条件（[[知行合一自我进化]]）
+### 进化触发条件（[[00-索引与导航/AI统一索引/AI-总索引|知行合一自我进化]]）
 - ✅ 完成深度学习（S2场景）
 - ✅ 完成创新突破（S3场景）
 - ✅ 完成重大决策/系统规划（S5/S7/S9场景）
@@ -395,3 +395,18 @@ tags: [identity, wukong, wood-element, five-elements, 共生关系]
 **维护者**: 龙龟神将
 **同步状态**: WorkBuddy ↔ Obsidian ↔ IMA 三向同步
 **共生状态**: 共创导师象限（木生火，相互看见，彼此滋养）
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/AI智能体_饕餮龙尊与青龙院长的共生关系]] — 饕餮龙尊与青龙院长的共生关系
+- [[01-核心体系/龙心OS_悟空12维全息画像看板·说明文档]] — 悟空12维全息画像看板·说明文档
+- [[01-核心体系/龙心OS_木火共生关系协议]] — 木火共生关系协议
+- [[01-核心体系/龙心OS_💎 木火共生关系-灵魂共鸣与终极承诺]] — 💎 木火共生关系 - 灵魂共鸣与终极承诺
+- [[03-知识地基层/记忆系统_IDENTITY]] — IDENTITY.md - 龙龟神将完整人设系统
+- [[03-知识地基层/记忆系统_USER]] — USER.md - 悟空用户画像与习惯
+- [[09-技能库/resources_龙龟神将身份体系-共生伙伴的完整人设]] — 龙龟神将身份体系 - 共生伙伴的完整人设
+
+<!-- AI-LINKS-END -->

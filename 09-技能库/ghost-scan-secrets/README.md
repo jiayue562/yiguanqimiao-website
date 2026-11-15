@@ -1,4 +1,4 @@
-# Ghost Secrets Scanner
+﻿# Ghost Secrets Scanner
 
 AI-powered secrets and credentials scanner for codebases. Uses [poltergeist](https://github.com/ghostsecurity/poltergeist) for fast pattern matching with AI analysis to filter false positives.
 
@@ -83,3 +83,20 @@ Poltergeist includes 100+ built-in rules for common secrets:
 - Service-specific tokens (Stripe, Twilio, SendGrid, etc.)
 
 See [poltergeist rules documentation](https://github.com/ghostsecurity/poltergeist/blob/main/docs/rules.md) for the full list.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-secrets/agents/analyze/analyzer]] — Analyzer Agent
+- [[09-技能库/ghost-scan-secrets/agents/analyze/template-finding]] — Secret Finding: <title>
+- [[09-技能库/ghost-scan-secrets/agents/summarize/template-report]] — Secrets Scan Report
+- [[09-技能库/resources_analyzer]] — Analyzer Agent
+- [[09-技能库/resources_template-finding]] — Secret Finding: <title>
+- [[09-技能库/resources_template-report]] — Secrets Scan Report
+- [[ψ技能体系/10-kernel/龙心OS/capability-evolver/README]] — 🧬 Evolver
+- [[ψ技能体系/30-tools/api-gateway/references/google-merchant/README]] — Google Merchant Routing Reference
+- [[ψ技能体系/30-tools/cli-anything-hub/SKILL]] — CLI-Hub Meta-Skill
+
+<!-- AI-LINKS-END -->

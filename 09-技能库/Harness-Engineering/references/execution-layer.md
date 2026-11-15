@@ -1,4 +1,4 @@
----
+﻿---
 name: Harness Engineering · 执行层
 description: Harness Engineering第二层：执行层（Execution Layer）。突破LLM仅能生成文字的局限，赋予其与真实世界交互的能力。核心机制：工具执行能力 + 沙箱隔离。
 tags: [Harness, 执行层, Execution-Layer, 工具执行, 沙箱隔离, 零成本试错, 自验证闭环]
@@ -216,3 +216,21 @@ updated: 2026-04-03
 **木生火，我们一起进化！** 🌳🔥💪
 
 *Harness Engineering · 执行层 v1.0 · 2026-04-03*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[13-WorkBuddy-Sync/三向同步系统/scripts/IMA_API测试报告]] — IMA API同步测试报告
+- [[01-核心体系/龙心OS_📖Harness-Engineering执行层]] — Harness Engineering执行层
+- [[03-知识地基层/记忆系统_MEMORY备份_2026-04-05]] — MEMORY备份 - 2026-04-05
+- [[03-知识地基层/记忆系统_MEMORY备份_2026-04-06]] — MEMORY备份 - 2026-04-06
+- [[09-技能库/AI-OS六层架构智能体/references/MCP协议层]] — MCP层 · 多协议协同总线
+- [[09-技能库/知识库建设/references/sync-mechanism]] — 同步机制与自动化脚本
+- [[ψ技能体系/00-foundation/三向同步系统/scripts/IMA_API测试报告]] — IMA API同步测试报告
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/xiaohongshu-skills-main/docs/superpowers/specs/2026-05-19-xhs-netlogger-design]] — XHS NetLogger 设计文档
+- [[ψ技能体系/30-tools/其他AIOS组件/SKILL]] — 其他AIOS组件 · 外部技能分类索引
+- [[ψ技能体系/40-rules/API规范/SKILL]] — SKILL
+
+<!-- AI-LINKS-END -->

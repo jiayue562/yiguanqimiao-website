@@ -1,4 +1,4 @@
-# Summarize Agent
+﻿# Summarize Agent
 
 You are the summarization agent. Your job is to compile all findings into a comprehensive report.
 
@@ -91,3 +91,21 @@ If no findings:
 
 No confirmed security risks were found. All <count> candidates were determined to be false positives or low-risk patterns.
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/agent-memory-systems/SKILL]] — Agent Memory Systems
+- [[09-技能库/automation-workflows/SKILL]] — Automation Workflows
+- [[09-技能库/ghost-scan-code/prompts/planner]] — Planner Agent
+- [[09-技能库/ghost-scan-code/prompts/verifier]] — Verifier Agent
+- [[09-技能库/ghost-scan-deps/SKILL]] — Ghost Security SCA Scanner — Orchestrator
+- [[09-技能库/ghost-scan-deps/agents/analyze/agent]] — Analysis Agent
+- [[09-技能库/ghost-scan-deps/agents/discover/agent]] — Discover Agent
+- [[09-技能库/ghost-scan-deps/agents/scan/agent]] — Scan Agent
+- [[09-技能库/ghost-scan-deps/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/ghost-scan-secrets/SKILL]] — Ghost Security Secrets Scanner — Orchestrator
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# LLM Wiki 知识库激活完成报告
+﻿# LLM Wiki 知识库激活完成报告
 
 > 🧠 基于 Karpathy 方法论 · 机器编译、人类审核
 
@@ -250,3 +250,21 @@ schema/
 ---
 
 _龙心 OS LLM Wiki 知识库激活完成报告 v1.0 · 2026-04-13 · 基于 Karpathy 方法论_
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/agents_知识库建设完成报告]] — 知识库建设完成报告
+- [[01-核心体系/龙心OS_📚 知识库建设Skill]] — 📚 知识库建设 · 三层架构设计与实施指南
+- [[21-学习档案/内容创作系统_All-Sources]] — 全部来源索引
+- [[21-学习档案/内容创作系统_CLAUDE]] — CLAUDE.md · 内容创作AI自动化配置
+- [[21-学习档案/内容创作系统_README]] — 内容创作系统 · 总索引
+- [[08-龙心OS核心系统/AI-OS知识库/🧠 龙脑OS·知识地基层/L7理论基石/AGENTS工作流SOP]] — AGENTS.md 工作流配置SOP
+- [[08-龙心OS核心系统/AI-OS知识库/🧠 龙脑OS·知识地基层/wiki·概念页/LLMification]] — LLMification（知识编译方法论）
+- [[08-龙心OS核心系统/记忆系统/SELF-LEARNING]] — SELF-LEARNING.md - 自主学习系统
+- [[09-技能库/LLM-Wiki/references/operation-flows]] — LLM Wiki 操作流程详解 v2.0
+- [[09-技能库/LLM-Wiki/references/practice-guide]] — LLM Wiki · 详细实操指南 v1.0
+
+<!-- AI-LINKS-END -->

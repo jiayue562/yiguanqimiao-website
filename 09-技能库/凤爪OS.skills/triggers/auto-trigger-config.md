@@ -1,4 +1,4 @@
----
+﻿---
 title: "凤爪OS.skills 自动触发配置"
 created: "2026-04-05"
 version: "1.0"
@@ -249,3 +249,21 @@ created: "2026-04-05"
 **最后更新**: 2026-04-05
 **维护者**: 龙龟神将
 **存储位置**: `C:\Users\jia'yue\.workbuddy\skills\凤爪OS.skills\triggers\auto-trigger-config.md`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[05-五行人格心理学/融合体系/🌟 凤爪OS]] — 凤爪OS - 一心·统?
+- [[09-技能库/AI-OS六层架构智能体/triggers/auto-trigger]] — AI-OS六层架构智能体 · 自动触发规则
+- [[09-技能库/L1·一心·统摄/SKILL]] — L1·一心·统摄·应用顶层觉知接待台
+- [[09-技能库/L1·一心·统摄/references/L1-fengxin-integration]] — L1×凤心OS协作协议完整版
+- [[09-技能库/L1·一心·统摄/验证-L1技能包完整性]] — L1·一心·统�?技能包完整性验证报�?
+- [[09-技能库/五行总智能体.skills/SKILL]] — 五行总智能体系统 v1.0
+- [[09-技能库/凤心OS.skills/SKILL]] — 凤心OS · 五行人格心理学智能体发动机 v2.0
+- [[09-技能库/凤爪OS.skills/SKILL]] — 凤爪OS - L1·一心·统摄
+- [[09-技能库/凤爪OS.skills/package-summary]] — 凤爪OS.skills · 独立封装包
+- [[09-技能库/凤爪OS.skills/references/L1-fengxin-integration]] — 凤爪OS与凤心OS的L1协作协议
+
+<!-- AI-LINKS-END -->

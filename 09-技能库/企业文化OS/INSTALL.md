@@ -1,4 +1,4 @@
-# 企业文化OS · 技术栈安装指南
+﻿# 企业文化OS · 技术栈安装指南
 
 > **版本**: v1.0 | **创建**: 2026-04-10 | **维护者**: 龙龟神将
 
@@ -173,3 +173,21 @@
 ---
 
 **企业文化OS · 技术栈安装指南** · 龙龟神将维护
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_企业文化Skill总索引]] — 企业文化.skills · 总索引
+- [[09-技能库/resources_味藏文化手册·总索引]] — 味藏文化手册 · 总索引
+- [[09-技能库/企业文化/references/integration]] — 企业文化.skills · 协同整合协议
+- [[09-技能库/企业文化/references/theory]] — 企业文化理论完整版
+- [[ψ技能体系/20-claws/02-culture/企业文化OS/INSTALL]] — 企业文化OS · 技术栈安装指南
+- [[ψ技能体系/20-claws/02-culture/企业文化OS/SKILL]] — 企业文化OS
+- [[ψ技能体系/20-claws/02-culture/企业文化OS/cli/design-cli]] — 企业文化设计CLI · 命令行操作入口
+- [[ψ技能体系/20-claws/02-culture/企业文化OS/cli/implement-cli]] — 企业文化落地CLI · 命令行操作入口
+- [[ψ技能体系/20-claws/02-culture/企业文化OS/skills/gongxun-tixi/SKILL]] — 功勋体系子智能体
+- [[ψ技能体系/20-claws/02-culture/企业文化OS/skills/jingying-xinfa/SKILL]] — 经营心法子智能体
+
+<!-- AI-LINKS-END -->

@@ -1,0 +1,206 @@
+{
+ "nodes": [
+  {
+   "id": "img",
+   "type": "file",
+   "file": "05-五行人格心理学/00-入口/附件/五行人格学-一心三界五行九层象思维架构示意图.png",
+   "x": 0,
+   "y": 0,
+   "width": 760,
+   "height": 760
+  },
+  {
+   "id": "n1",
+   "type": "file",
+   "file": "05-五行人格心理学/00-入口/01-一心·体-入口.md",
+   "x": 880,
+   "y": 0,
+   "width": 360,
+   "height": 100,
+   "color": "1"
+  },
+  {
+   "id": "n2",
+   "type": "file",
+   "file": "05-五行人格心理学/00-入口/02-三界·相-入口.md",
+   "x": 880,
+   "y": 130,
+   "width": 360,
+   "height": 100,
+   "color": "1"
+  },
+  {
+   "id": "n3",
+   "type": "file",
+   "file": "05-五行人格心理学/00-入口/03-五行·用-入口.md",
+   "x": 880,
+   "y": 260,
+   "width": 360,
+   "height": 100,
+   "color": "1"
+  },
+  {
+   "id": "n4",
+   "type": "file",
+   "file": "05-五行人格心理学/00-入口/04-九层·度-入口.md",
+   "x": 880,
+   "y": 390,
+   "width": 360,
+   "height": 100,
+   "color": "1"
+  },
+  {
+   "id": "n5",
+   "type": "file",
+   "file": "05-五行人格心理学/00-入口/05-象思维·法-入口.md",
+   "x": 880,
+   "y": 520,
+   "width": 360,
+   "height": 100,
+   "color": "1"
+  },
+  {
+   "id": "hub",
+   "type": "file",
+   "file": "05-五行人格心理学/00-入口/00-总览图·一心三界五行九层.md",
+   "x": 880,
+   "y": -150,
+   "width": 360,
+   "height": 100,
+   "color": "5"
+  },
+  {
+   "id": "left",
+   "type": "text",
+   "x": 0,
+   "y": 800,
+   "width": 350,
+   "height": 130,
+   "text": "**由体到用 · 由隐到显**　↓\n\n人格形成的秩序：觉知 → 三界 → 五行 → 九层"
+  },
+  {
+   "id": "right",
+   "type": "text",
+   "x": 380,
+   "y": 800,
+   "width": 380,
+   "height": 130,
+   "text": "**由用返体 · 由显归隐**　↑\n\n生命成长的方向：九层 → 五行 → 三界 → 一心"
+  },
+  {
+   "id": "x1",
+   "type": "file",
+   "file": "05-五行人格心理学/00-入口/07-应用出口·八大场景.md",
+   "x": 1360,
+   "y": 0,
+   "width": 340,
+   "height": 90,
+   "color": "4"
+  },
+  {
+   "id": "x2",
+   "type": "file",
+   "file": "05-五行人格心理学/00-入口/08-系统元层·索引与配置.md",
+   "x": 1360,
+   "y": 130,
+   "width": 340,
+   "height": 90,
+   "color": "4"
+  },
+  {
+   "id": "x3",
+   "type": "file",
+   "file": "05-五行人格心理学/00-入口/09-融合素材·心理学与哲学.md",
+   "x": 1360,
+   "y": 260,
+   "width": 340,
+   "height": 90,
+   "color": "4"
+  },
+  {
+   "id": "aud",
+   "type": "file",
+   "file": "05-五行人格心理学/00-入口/06-归位对账表.md",
+   "x": 1360,
+   "y": -150,
+   "width": 340,
+   "height": 90,
+   "color": "6"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e1",
+   "fromNode": "n1",
+   "fromSide": "bottom",
+   "toNode": "n2",
+   "toSide": "top",
+   "toEnd": "arrow"
+  },
+  {
+   "id": "e2",
+   "fromNode": "n2",
+   "fromSide": "bottom",
+   "toNode": "n3",
+   "toSide": "top",
+   "toEnd": "arrow"
+  },
+  {
+   "id": "e3",
+   "fromNode": "n3",
+   "fromSide": "bottom",
+   "toNode": "n4",
+   "toSide": "top",
+   "toEnd": "arrow"
+  },
+  {
+   "id": "e4",
+   "fromNode": "n4",
+   "fromSide": "bottom",
+   "toNode": "n5",
+   "toSide": "top",
+   "toEnd": "arrow"
+  },
+  {
+   "id": "e5",
+   "fromNode": "n4",
+   "fromSide": "right",
+   "toNode": "n2",
+   "toSide": "right",
+   "toEnd": "arrow",
+   "label": "由用返体"
+  },
+  {
+   "id": "e6",
+   "fromNode": "hub",
+   "fromSide": "bottom",
+   "toNode": "n1",
+   "toSide": "top",
+   "toEnd": "arrow"
+  },
+  {
+   "id": "e7",
+   "fromNode": "n5",
+   "fromSide": "right",
+   "toNode": "x1",
+   "toSide": "left",
+   "toEnd": "arrow"
+  },
+  {
+   "id": "e8",
+   "fromNode": "n5",
+   "fromSide": "right",
+   "toNode": "x2",
+   "toSide": "left",
+   "toEnd": "arrow"
+  },
+  {
+   "id": "e9",
+   "fromNode": "n5",
+   "fromSide": "right",
+   "toNode": "x3",
+   "toSide": "left",
+   "toEnd": "arrow"
+  }
+ ]
+}

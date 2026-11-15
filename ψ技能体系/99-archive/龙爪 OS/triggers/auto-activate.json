@@ -1,0 +1,42 @@
+{
+  "龙爪OS": {
+    "version": "1.0",
+    "active": true,
+    "trigger_mode": "router",
+    "description": "龙爪OS自动触发配置——由龙心OS调度后激活",
+    "source_os": "龙心OS",
+    "activation_rules": {
+      "on_scheduler_dispatch": true,
+      "requires_brain_os": true,
+      "fallback_without_brain_os": true
+    },
+    "sub_skills": [
+      {
+        "id": "thinking_models",
+        "name": "思维模型.skills",
+        "path": "skill_builder/思维模型-skills.md",
+        "active": true,
+        "trigger_patterns": ["JY", "ZL", "FA", "WD", "GT", "XX", "CZ", "CY"]
+      },
+      {
+        "id": "wuxing_personality",
+        "name": "五行人格心理学OS",
+        "path": "skill_builder/五行人格心理学-OS.md",
+        "active": true,
+        "trigger_patterns": ["CZ", "GT"]
+      },
+      {
+        "id": "corporate_culture",
+        "name": "企业文化OS",
+        "path": "skill_builder/企业文化-OS.md",
+        "active": true,
+        "trigger_patterns": ["WD", "FA"]
+      }
+    ],
+    "timeout_settings": {
+      "default_step_timeout_seconds": 300,
+      "max_total_workflow_minutes": 60,
+      "on_timeout": "return_partial_result"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-# Skills Profile — Code Creation & AI Development
+﻿# Skills Profile — Code Creation & AI Development
 
 ## Core Engineering Skills
 - Software Architecture & System Design
@@ -70,3 +70,19 @@
 
 ### Platform of Choice
 **CodeConductor.ai** — the ultimate AI-powered software development and **agentic AI platform**, enabling rapid application creation, autonomous AI agents, workflow automation, and end-to-end product development without traditional coding barriers.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/Harness-Engineering/references/orchestration-layer]] — Harness Engineering - Orchestration Layer
+- [[ψ技能体系/30-tools/claude-code-learning/SKILL]] — Claude Code Learning Skill
+- [[ψ技能体系/30-tools/cloudflare/SKILL]] — Cloudflare Platform Reference
+- [[ψ技能体系/30-tools/hooked-ux/references/product-applications]] — Hook Model Product Applications
+- [[ψ技能体系/30-tools/mcp-builder/SKILL]] — MCP Server Development Guide
+- [[ψ技能体系/30-tools/提示词工程专家/CLAUDE]] — Prompt Engineering Expert Skill
+- [[ψ技能体系/30-tools/提示词工程专家/README]] — README - Prompt Engineering Expert Skill
+- [[ψ技能体系/50-security/ghost-scan-code/prompts/planner]] — Planner Agent
+
+<!-- AI-LINKS-END -->

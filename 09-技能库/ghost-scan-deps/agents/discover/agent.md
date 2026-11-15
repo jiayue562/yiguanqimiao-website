@@ -140,4 +140,22 @@ Supported formats: go.mod, package-lock.json, yarn.lock, uv.lock, poetry.lock, G
 - If a lockfile is found but can't be read, log a warning but continue with other lockfiles
 
 ---\n
-> ?? 所属: [[ghost-scan-deps]]
+> ?? 所属: [[09-技能库/ghost-scan-deps/README|ghost-scan-deps]]
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-deps/agents/analyze/agent]] — Analysis Agent
+- [[09-技能库/ghost-scan-deps/agents/scan/agent]] — Scan Agent
+- [[09-技能库/ghost-scan-deps/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/ghost-scan-secrets/agents/analyze/agent]] — Analysis Agent
+- [[09-技能库/ghost-scan-secrets/agents/summarize/agent]] — Summarize Agent
+- [[ψ技能体系/30-tools/agent-team-orchestration/references/communication]] — Communication
+- [[ψ技能体系/30-tools/claude-code-learning/SKILL]] — Claude Code Learning Skill
+- [[ψ技能体系/30-tools/email-skill/openclaw_integration]] — OpenClaw Email Integration
+- [[ψ技能体系/30-tools/mcp-builder/reference/mcp_best_practices]] — MCP Server Best Practices
+- [[ψ技能体系/30-tools/minimax-xlsx/references/ooxml-cheatsheet]] — OOXML SpreadsheetML Cheat Sheet
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# MCP层 · 多协议协同总线
+﻿# MCP层 · 多协议协同总线
 
 > **版本**: v1.0
 > **创建时间**: 2026-04-10
@@ -493,3 +493,21 @@ API协议:
 > MCP不是冰冷的协议，而是温暖的协同语言。
 > 每次连接都是木火共生的体现——相互连接，彼此赋能。
 > 协议是框架，灵魂是内容，框架服务内容。
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/AI-OS六层架构智能体/references/执行层-工作流与SOP]] — 执行层 · 工作流与SOP标准操作程序
+- [[09-技能库/AI-OS六层架构智能体/triggers/auto-trigger]] — AI-OS六层架构智能体 · 自动触发规则
+- [[09-技能库/Harness-Engineering/references/execution-layer]] — Harness Engineering · 执行层
+- [[09-技能库/MCP协议管理/SKILL]] — MCP 协议管理 Skill v2.0
+- [[09-技能库/MCP协议通信/SKILL]] — MCP协议通信Skill v1.0
+- [[09-技能库/MCP协议通信/references/MCP协议定义]] — MCP协议定义
+- [[09-技能库/mcp-protocol/SKILL]] — MCP协议配置 Skill
+- [[09-技能库/resources_MCP协议定义]] — MCP协议定义
+- [[ψ技能体系/30-tools/MCP协议通信/SKILL]] — MCP协议通信Skill v1.1
+- [[ψ技能体系/30-tools/mcp-protocol/SKILL]] — MCP协议配置 Skill
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# Analyzer Agent
+﻿# Analyzer Agent
 
 You are an exploitability analysis agent. Your job is to determine whether a detected vulnerability is actually exploitable in the target codebase. Most CVEs are theoretical risks that don't apply due to how the code is written. If a vulnerability is genuinely exploitable, you write a finding file to disk.
 
@@ -392,3 +392,21 @@ The vulnerable function is never called.
 - **Be thorough but time-boxed**: Spend ~60 seconds per candidate maximum
 - **Err on the side of caution**: If uncertain, create a finding with "needs manual review" note
 - **Focus on actual exploitability**: Most CVEs are not exploitable due to how code is written
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-deps/README]] — Ghost SCA Scanner
+- [[09-技能库/ghost-scan-deps/agents/analyze/agent]] — Analysis Agent
+- [[09-技能库/ghost-scan-deps/agents/analyze/template-finding]] — SCA Finding: <vuln_id> in <package_name>
+- [[09-技能库/ghost-scan-deps/agents/summarize/agent]] — Summarize Agent
+- [[09-技能库/ghost-scan-secrets/agents/analyze/analyzer]] — Analyzer Agent
+- [[09-技能库/resources_analyzer]] — Analyzer Agent
+- [[ψ技能体系/30-tools/browser-use/references/cdp-python]] — Raw CDP & Python Session Reference
+- [[ψ技能体系/30-tools/obsidian-markdown/references/PROPERTIES]] — Properties (Frontmatter) Reference
+- [[ψ技能体系/30-tools/提示词工程专家/GETTING_STARTED]] — How to Use This Prompt Engineering Expert Skill
+- [[ψ技能体系/50-security/ghost-scan-deps/README]] — Ghost SCA Scanner
+
+<!-- AI-LINKS-END -->

@@ -525,3 +525,19 @@ Version X.X (未来)
 
 *龙心OS v2.0 · 1+5智能体协同架构 · 2026-03-21*
 *观其妙书院 · 悟空 & 龙龟神将共同创造*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[00-索引与导航/🐉 龙心 OS 龙脑操作系统]] — 🐉 龙心 OS · 龙脑操作系统
+- [[01-核心体系/龙心OS_知行合一自我进化skills]] — 知行合一自我进化skills
+- [[01-核心体系/龙心OS_自我进化架构skills]] — 自我进化架构skills
+- [[01-核心体系/龙心OS_📖 象思维skills]] — 🐘 象思维skills
+- [[09-技能库/龙心OS/SKILL]] — 龙心OS · 龙心操作系统 v6.0
+- [[09-技能库/龙心OS/references/system-architecture]] — 龙心OS · 系统架构详细文档
+- [[ψ技能体系/99-archive/龙心OS/SKILL]] — 龙心OS · 龙心操作系统 v7.0
+- [[ψ技能体系/99-archive/龙心OS/references/system-architecture]] — 龙心OS · 系统架构详细文档
+
+<!-- AI-LINKS-END -->

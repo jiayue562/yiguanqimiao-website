@@ -1,4 +1,4 @@
-# office-automation-pro
+﻿# office-automation-pro
 
 ## 技能简介
 企业级办公自动化套件，覆盖日程、邮件、文档、数据四大场景，实现办公全流程自动化。
@@ -88,3 +88,20 @@ async processEmails() {
 - [官方文档](https://office-automation-pro.dev/docs)
 - [GitHub 仓库](https://github.com/productivity-agents/office-automation-pro)
 - [企业案例](https://office-automation-pro.dev/cases)
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/AI智能体_01-02-技能库]] — 01-02-技能库
+- [[09-技能库/composio-hub/SKILL]] — composio-hub
+- [[09-技能库/data-analyzer-pro/SKILL]] — data-analyzer-pro
+- [[09-技能库/video-creator-ai/SKILL]] — video-creator-ai
+- [[09-技能库/workflow-designer-pro/SKILL]] — workflow-designer-pro
+- [[ψ技能体系/30-tools/data-analyzer-pro/SKILL]] — data-analyzer-pro
+- [[ψ技能体系/30-tools/office-automation-pro/SKILL]] — office-automation-pro
+- [[ψ技能体系/30-tools/video-creator-ai/SKILL]] — video-creator-ai
+- [[ψ技能体系/30-tools/workflow-designer-pro/SKILL]] — workflow-designer-pro
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# composio-hub
+﻿# composio-hub
 
 ## 技能简介
 企业级 API 连接平台，支持 150+ 主流 API 连接，提供托管式 OAuth 认证和统一 API 管理。
@@ -62,3 +62,21 @@ async function createGitHubIssue(repo, title, body) {
 - [官方文档](https://docs.composio.dev)
 - [GitHub 仓库](https://github.com/composio/agent-skills)
 - [API 目录](https://composio.dev/apis)
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/agents_安全智能体模块]] — 安全智能体模块
+- [[09-技能库/cost-tracker-pro/SKILL]] — cost-tracker-pro
+- [[09-技能库/data-analyzer-pro/SKILL]] — data-analyzer-pro
+- [[09-技能库/office-automation-pro/SKILL]] — office-automation-pro
+- [[09-技能库/workflow-designer-pro/SKILL]] — workflow-designer-pro
+- [[ψ技能体系/30-tools/composio-hub/SKILL]] — composio-hub
+- [[ψ技能体系/30-tools/cost-tracker-pro/SKILL]] — cost-tracker-pro
+- [[ψ技能体系/30-tools/data-analyzer-pro/SKILL]] — data-analyzer-pro
+- [[ψ技能体系/30-tools/office-automation-pro/SKILL]] — office-automation-pro
+- [[ψ技能体系/30-tools/workflow-designer-pro/SKILL]] — workflow-designer-pro
+
+<!-- AI-LINKS-END -->

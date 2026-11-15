@@ -458,3 +458,21 @@ theory.md ──→ 学习理解 ──→ 场景应用 ──→ 实践验证 �
 
 **企业文化OS知识库智能体·知识图谱 v1.1** · **龙龟神将**
 *让知识之间的联系清晰可见，让智能体主动服务用户* 🔗🤖✨
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_企业文化OS知识库智能体架构]] — 企业文化OS知识库智能体 · 架构文档
+- [[09-技能库/skills_SKILL]] — 龙脑 OS Skill
+- [[09-技能库/企业文化OS知识库/SKILL]] — 企业文化OS知识库智能体 · SKILL.md
+- [[09-技能库/企业文化OS知识库/references/agent-invocation-protocol]] — 企业文化OS知识库智能体 · 调用协议
+- [[09-技能库/企业文化OS知识库/references/framework-autonomy]] — 企业文化OS知识库智能体 · Framework层突破文档
+- [[09-技能库/水行人分智能体.skills/水行人分智能体/SKILL]] — 💧 水行人分智能体 v1.0
+- [[09-技能库/龙爪OS/references/architecture]] — 龙爪OS架构设计文档
+- [[09-技能库/龙脑OS/SKILL]] — 龙脑OS - 知识库智能体
+- [[ψ技能体系/20-claws/00-wuxing/凤心OS/SKILL]] — 凤心OS · 五行人格心理学智能体发动机 v3.0
+- [[ψ技能体系/20-claws/02-culture/企业文化OS知识库/SKILL]] — 企业文化OS知识库智能体 · SKILL.md
+
+<!-- AI-LINKS-END -->

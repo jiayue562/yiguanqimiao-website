@@ -1,4 +1,4 @@
-# 企业文化OS知识库 · 与龙心OS整合协议
+﻿# 企业文化OS知识库 · 与龙心OS整合协议
 
 > **文档定位**：定义企业文化OS知识库与龙心OS五大引擎的协同协议  
 > **版本**：v1.0 | **创建日期**：2026-04-10 | **维护者**：龙龟神将
@@ -388,3 +388,18 @@ handshake:
 - [[企业文化知识图谱]] → 知识联系可视化
 - [[企业文化诊断SOP]] → 实战操作模板
 - [[龙心OS v5.0 总览]] → 龙心OS系统架构
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/核心Skills_象思维Skills-v5.0-易经卦变整合]] — 象思维Skills v5.0 · 易经卦变整合
+- [[01-核心体系/龙心OS_Obsidian与龙心OS整合增强方案]] — Obsidian与龙心OS整合增强方案
+- [[09-技能库/企业文化/references/integration]] — 企业文化.skills · 协同整合协议
+- [[09-技能库/企业文化OS知识库/references/integration]] — 企业文化OS知识库 · 与龙心OS整合协议
+- [[09-技能库/知行合一自我进化/references/integration-notes]] — 知行合一与龙心OS整合笔记
+- [[09-技能库/龙爪OS/references/integration]] — 龙爪OS整合协议
+- [[ψ技能体系/99-archive/知行合一自我进化/references/integration-notes]] — 知行合一与龙心OS整合笔记
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# WorkBuddy → Obsidian 备份技能
+﻿# WorkBuddy → Obsidian 备份技能
 
 ## 🎯 简介
 
@@ -243,3 +243,17 @@ MIT License
 ---
 
 **祝您备份顺利，知识沉淀有序！** 🚀
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[03-知识地基层/记忆系统_obsidian-backup-system]] — 🚀 WorkBuddy ↔ Obsidian 知识备份系统
+- [[03-知识地基层/记忆系统_workbuddy-obsidian-backup-summary-20260331]] — WorkBuddy-Obsidian备份系统对话总结
+- [[03-知识地基层/记忆系统_对话总结-2026-03-30-0935]] — 对话总结 - 2026-03-30 09:35
+- [[03-知识地基层/记忆系统_对话总结-2026-03-30-0942]] — 对话总结：WorkBuddy-Obsidian备份任务分析（2026-03-30 09:42）
+- [[09-技能库/workbuddy-obsidian-backup/对话总结-2026-03-27-0929]] — AI龙龟共生伙伴操作系统 · 工作日志
+- [[ψ技能体系/40-rules/workbuddy-obsidian-backup/对话总结-2026-03-27-0929]] — AI龙龟共生伙伴操作系统 · 工作日志
+
+<!-- AI-LINKS-END -->

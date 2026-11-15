@@ -1,4 +1,4 @@
-# Error Handling Skill（错误处理）
+﻿# Error Handling Skill（错误处理）
 
 ## 📖 技能定义
 
@@ -456,3 +456,19 @@ repeat_detection:
 **对标来源**: OpenClaw Error Handling规则
 **AI龙龟共生伙伴操作系统版本**: v4.1
 **路径**: `C:\Users\jia'yue\.workbuddy\skills\错误处理\SKILL.md`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[13-WorkBuddy-Sync/10-kernel/入心协议/入心协议.SKILL]] — 入心协议 · 共生启动器
+- [[01-核心体系/龙心OS_知行合一自我进化工作流程指南]] — 知行合一自我进化工作流程指南
+- [[01-核心体系/龙心OS_📖Harness-Engineering反馈层]] — Harness Engineering反馈层
+- [[03-知识地基层/记忆系统_对话总结-2026-03-30-0935]] — 对话总结 - 2026-03-30 09:35
+- [[20-工作记录与复盘/journal_2026-03-25_对话归档]] — 2026-03-25_对话归档
+- [[20-工作记录与复盘/journal_2026-03-26_共生成长自动归档]] — 2026-03-26 共生成长自动归档
+- [[09-技能库/内容发布规则/SKILL]] — Content Skill（内容发布规则）
+- [[ψ技能体系/40-rules/内容发布规则/SKILL]] — Content Skill（内容发布规则）
+
+<!-- AI-LINKS-END -->

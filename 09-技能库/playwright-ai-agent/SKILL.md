@@ -1,4 +1,4 @@
-# playwright-ai-agent
+﻿# playwright-ai-agent
 
 ## 技能简介
 基于 Rust 的无头浏览器自动化技能，支持网页导航、点击、输入、截图、数据抓取等高级功能。
@@ -49,3 +49,19 @@ async function screenshotPage(url, outputPath) {
 - [官方文档](https://playwright.dev/docs/ai-agent)
 - [GitHub 仓库](https://github.com/vercel-labs/agent-skills/tree/main/playwright-ai-agent)
 - [示例项目](https://github.com/playwright-ai-agent/examples)
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/AI智能体_01-02-技能库]] — 01-02-技能库
+- [[01-核心体系/agents_Skill 构建 SOP]] — Skill 构建 SOP - 龙心 OS 技能开发标准流程
+- [[16-工具与资源/工具脚本_使用说明]] — 📚 知识库验证系统 - 使用说明
+- [[09-技能库/github-copilot-pro/SKILL]] — github-copilot-pro
+- [[09-技能库/浏览器使用规则/SKILL]] — Browser Rules Skill（浏览器使用规则）
+- [[ψ技能体系/30-tools/playwright-ai-agent/SKILL]] — playwright-ai-agent
+- [[ψ技能体系/30-tools/其他AIOS组件/SKILL]] — 其他AIOS组件 · 外部技能分类索引
+- [[ψ技能体系/40-rules/浏览器使用规则/SKILL]] — Browser Rules Skill（浏览器使用规则）
+
+<!-- AI-LINKS-END -->

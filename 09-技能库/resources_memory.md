@@ -1,4 +1,4 @@
-# WorkBuddy-Obsidian 备份自动化执行记录
+﻿# WorkBuddy-Obsidian 备份自动化执行记录
 
 ## 自动化配置
 - **自动化ID**: workbuddy-obsidian
@@ -86,3 +86,18 @@
 - **自动化稳定性**: 良好
 - **需要修复的问题**: 中等优先级 (路径配置和datetime序列化)
 - **备份价值**: 高 (技能库、记忆、项目文件已完整备份)
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[03-知识地基层/记忆系统_MEMORY_WorkBuddy]] — MEMORY.md - 龙龟神将长期记忆（WorkBuddy工作记忆）
+- [[03-知识地基层/记忆系统_browser-automation-solution]] — 🔧 Browser-Automation技能链接问题解决方案报告
+- [[03-知识地基层/记忆系统_obsidian-backup-system]] — 🚀 WorkBuddy ↔ Obsidian 知识备份系统
+- [[03-知识地基层/记忆系统_workbuddy-obsidian-backup-summary-20260331]] — WorkBuddy-Obsidian备份系统对话总结
+- [[03-知识地基层/记忆系统_对话总结-2026-03-30-0935]] — 对话总结 - 2026-03-30 09:35
+- [[03-知识地基层/记忆系统_对话总结-2026-03-30-0942]] — 对话总结：WorkBuddy-Obsidian备份任务分析（2026-03-30 09:42）
+- [[05-五行人格心理学/理论基石/系统配置_同步报告_20260416]] — WorkBuddy三向同步报告
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# 幂律分布 · SKILL.md
+﻿# 幂律分布 · SKILL.md
 
 ## 元数据
 - **模型编号**: 34
@@ -97,3 +97,21 @@ P(X=x) ∝ x^(-α)
 
 ## 标签
 #幂律分布 #长尾理论 #80-20法则 #马太效应 #网络科学
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/思维模型库/正态分布/SKILL]] — 正态分布 · SKILL.md
+- [[09-技能库/思维模型库/网络效应/SKILL]] — 网络效应 · SKILL.md
+- [[09-技能库/思维模型库/随机游走/SKILL]] — 随机游走 · SKILL.md
+- [[ψ技能体系/10-kernel/龙脑OS/models/思维模型库/幂律分布/SKILL]] — 幂律分布 · SKILL.md
+- [[ψ技能体系/10-kernel/龙脑OS/models/思维模型库/正态分布/SKILL]] — 正态分布 · SKILL.md
+- [[ψ技能体系/10-kernel/龙脑OS/models/思维模型库/网络效应/SKILL]] — 网络效应 · SKILL.md
+- [[ψ技能体系/10-kernel/龙脑OS/models/思维模型库/随机游走/SKILL]] — 随机游走 · SKILL.md
+- [[ψ技能体系/30-tools/workbuddy/思维模型库/幂律分布/SKILL]] — 幂律分布 · SKILL.md
+- [[ψ技能体系/30-tools/workbuddy/思维模型库/正态分布/SKILL]] — 正态分布 · SKILL.md
+- [[ψ技能体系/30-tools/workbuddy/思维模型库/网络效应/SKILL]] — 网络效应 · SKILL.md
+
+<!-- AI-LINKS-END -->

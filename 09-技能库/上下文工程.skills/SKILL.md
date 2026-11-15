@@ -1,4 +1,4 @@
-# 上下文工程.skills
+﻿# 上下文工程.skills
 
 > 会话上下文的优化、注入和质量评估 · 跨 Skills 上下文协同
 
@@ -134,3 +134,17 @@ quality-assessment/scorer.py -> 质量评分
 ├── triggers/             # 触发配置
 └── references/           # 参考文档
 ```
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[03-知识地基层/五色光思维/NSA05D4-96-Skill 封装完成报告]] — 五色光思维 Skill 封装完成报告
+- [[09-技能库/AI-OS六层架构智能体/triggers/auto-trigger]] — AI-OS六层架构智能体 · 自动触发规则
+- [[09-技能库/上下文工程.skills/references/references/prompts]] — 上下文工程提示词模板
+- [[09-技能库/上下文工程.skills/references/references/sop]] — 上下文工程标准操作流程
+- [[09-技能库/上下文工程.skills/references/references/theory]] — 上下文工程理论
+- [[ψ技能体系/99-archive/上下文工程.skills/references/theory]] — 上下文工程理论
+
+<!-- AI-LINKS-END -->

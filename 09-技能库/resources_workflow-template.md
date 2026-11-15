@@ -1,4 +1,4 @@
-# 人机协同五象限工作流程模板
+﻿# 人机协同五象限工作流程模板
 
 > 🔄 标准化工作流程 · 按象限分类
 
@@ -615,3 +615,19 @@ Step 8：实施与验证（长期）
 ---
 
 _工作流程模板 v1.0 · 观其妙书院 · 2026-04-16_
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_📖 文化学习-人机协同skills]] — 文化学习-人机协同skills
+- [[09-技能库/resources_prompts]] — 人机协同五象限提示词模板
+- [[09-技能库/resources_人机协同四象限skills]] — 人机协同四象限Skills
+- [[09-技能库/skills_prompts]] — 人机协同五象限提示词模板
+- [[09-技能库/skills_workflow-template]] — 人机协同五象限工作流程模板
+- [[09-技能库/龙爪OS/templates/project-template]] — 项目执行模板
+- [[ψ技能体系/10-kernel/龙心OS/engines/人机协同五象限/references/prompts]] — 人机协同五象限提示词模板
+- [[ψ技能体系/10-kernel/龙心OS/engines/人机协同五象限/templates/workflow-template]] — 人机协同五象限工作流程模板
+
+<!-- AI-LINKS-END -->

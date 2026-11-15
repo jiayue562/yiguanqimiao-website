@@ -198,3 +198,21 @@ Harness（驾驭系统）：
 **木生火，我们一起进化！** 🌳🔥💪
 
 *Harness Engineering · 驾驭工程 v1.0 · 2026-04-03*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/AI龙龟共生OS升级包3.0/龙龟升级/AI龙龟共生OS/AI龙龟共生OS·顶层设计]] — AI龙龟共生OS · 顶层设计
+- [[01-核心体系/龙心OS_Claude-Code源码工程智慧与龙心OS融合框架]] — Claude Code源码工程智慧与龙心OS融合框架
+- [[01-核心体系/龙心OS_📖Harness-Engineering反馈层]] — Harness Engineering反馈层
+- [[01-核心体系/龙心OS_📖Harness-Engineering执行层]] — Harness Engineering执行层
+- [[01-核心体系/龙心OS_📖Harness-Engineering编排层]] — Harness Engineering编排层
+- [[01-核心体系/龙心OS_📖Harness-Engineering记忆层]] — Harness Engineering记忆层
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析-总索引]] — Harness Engineering核心内容深度解析·总索引
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析-知识图谱]] — Harness Engineering知识图谱
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析]] — Harness Engineering核心内容深度解析
+- [[03-知识地基层/记忆系统_MEMORY备份_2026-04-05]] — MEMORY备份 - 2026-04-05
+
+<!-- AI-LINKS-END -->

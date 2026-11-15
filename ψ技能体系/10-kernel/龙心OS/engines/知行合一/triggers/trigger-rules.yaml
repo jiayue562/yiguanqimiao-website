@@ -1,0 +1,238 @@
+# 知行合一触发规则配置
+
+---
+
+## 🎯 触发词权重表
+
+### P0 直接触发词（权重 5·绝对触发）
+
+```yaml
+direct_triggers:
+  weight: 5
+  keywords:
+    - 知行合一
+    - 知行合一思维
+    - 知行合一三阶段
+    - 概念落地
+    - 抽象转具体
+    - 从知道到做到
+    - 帮我分析
+    - 的本质是什么
+    - 如何把.*转化为行动
+    - .*怎么落地
+    - .*的实操方案
+    - .*的商业化路径
+```
+
+**触发行为**：立即激活，无需额外确认
+
+---
+
+### P1 场景触发词（权重 4·强触发）
+
+```yaml
+scenario_triggers:
+  weight: 4
+  keywords:
+    - 如何实施
+    - 怎么做
+    - 落地实施
+    - 行动方案
+    - 执行计划
+    - 转化路径
+    - 变现模式
+    - 商业闭环
+    - 从 0 到 1
+    - 第一步做什么
+```
+
+**触发行为**：激活，但询问确认场景
+
+---
+
+### P2 信号触发（权重 3·弱触发）
+
+```yaml
+signal_triggers:
+  weight: 3
+  patterns:
+    - "知道.*但.*做不到"
+    - "明白.*但是.*不知道.*做"
+    - "理论.*实践.*脱节"
+    - "概念.*落地.*困难"
+    - "想.*但是.*不知道.*开始"
+```
+
+**触发行为**：建议激活，提供简要说明
+
+---
+
+## 📊 触发阈值配置
+
+```yaml
+activation_thresholds:
+  # 总分≥5：直接激活
+  direct_activation: 5
+  
+  # 总分 3-4：询问确认
+  confirm_activation: 3
+  
+  # 总分<3：不激活，建议其他 Skill
+  no_activation: 0
+  
+  # 多关键词叠加规则
+  stacking_rule: "max"  # 取最高权重，不累加
+```
+
+---
+
+## 🔗 与其他 Skills 的协同路由
+
+```yaml
+skill_routes:
+  # 前置 Skill
+  prerequisites:
+    - skill: 知识学习 Skill
+      condition: "用户首次接触概念"
+      action: "先学习概念背景，再落地分析"
+  
+  # 协同 Skill
+  collaborators:
+    - skill: 象思维 Skill
+      condition: "需要深度洞察概念本质"
+      action: "先观象，再落地"
+    
+    - skill: 五色光思维 Skill
+      condition: "需要多角度分析"
+      action: "先用五色光分析，再知行合一落地"
+    
+    - skill: 人机协同五象限 Skill
+      condition: "方案需要执行"
+      action: "知行合一出方案，五象限执行"
+  
+  # 后置 Skill
+  followups:
+    - skill: 人机协同五象限 Skill
+      condition: "行动方案已生成"
+      action: "进入执行阶段"
+```
+
+---
+
+## ⚙️ 自动触发规则
+
+```yaml
+auto_activate:
+  # 自动触发条件
+  conditions:
+    - pattern: "帮我分析.*概念"
+      action: "直接激活"
+    
+    - pattern: ".*如何落地.*"
+      action: "直接激活"
+    
+    - pattern: "从知道到做到"
+      action: "直接激活"
+  
+  # 需要确认的条件
+  require_confirm:
+    - pattern: ".*怎么做.*"
+      reason: "可能是简单操作问题，确认是否需要完整分析"
+    
+    - pattern: ".*实施方案.*"
+      reason: "确认是否有具体场景"
+  
+  # 不触发的条件
+  exclude:
+    - pattern: ".*创意.*"
+      reason: "创意发散不适合知行合一"
+    
+    - pattern: ".*灵感.*"
+      reason: "灵感类问题不适合知行合一"
+    
+    - pattern: ".*感觉.*"
+      reason: "情感类问题不适合知行合一"
+```
+
+---
+
+## 🚨 异常处理规则
+
+```yaml
+exception_handling:
+  # 概念过于抽象
+  too_abstract:
+    pattern: "幸福 | 成功 | 人生意义"
+    response: "这个概念比较抽象，建议先澄清具体定义。您能说说 [概念] 对您来说具体指什么吗？"
+  
+  # 标签无法拆解
+  cannot_decompose:
+    pattern: "不知道.*组成 | 说不清楚"
+    response: "概念定义不够清晰，我们先来澄清一下：这个概念试图解决什么问题？由哪些基本要素构成？"
+  
+  # 核心优势过多
+  too_many_advantages:
+    threshold: 5
+    response: "识别出较多优势，根据认知负荷理论，建议聚焦 1-3 个核心优势。我们来按优先级排序..."
+  
+  # 场景匹配度低
+  low_scenario_fit:
+    threshold: 8
+    response: "当前场景与核心优势匹配度较低，建议重新选择场景或调整优势定位。"
+  
+  # 验证指标无法量化
+  cannot_quantify:
+    pattern: "无法衡量 | 不好量化"
+    response: "我们尝试转化为代理指标或行为指标。例如，'用户满意度'可以转化为'NPS 评分'或'复购率'。"
+```
+
+---
+
+## 📈 触发效果追踪
+
+```yaml
+tracking:
+  # 追踪指标
+  metrics:
+    - trigger_accuracy: 触发准确率
+    - false_positive: 误触发次数
+    - user_satisfaction: 用户满意度
+    - execution_success: 执行成功率
+  
+  # 数据收集
+  data_collection:
+    - trigger_keyword: 触发关键词
+    - activation_result: 激活结果（直接/确认/拒绝）
+    - user_feedback: 用户反馈
+    - output_quality: 输出质量评分
+  
+  # 优化周期
+  optimization_cycle: "weekly"
+  
+  # 权重调整规则
+  weight_adjustment:
+    - condition: "连续 3 次误触发"
+      action: "降低该关键词权重 1 级"
+    
+    - condition: "连续 5 次成功触发"
+      action: "提升该关键词权重 1 级（上限 5）"
+```
+
+---
+
+## 🔄 版本迭代记录
+
+```yaml
+version_history:
+  v1.0:
+    date: 2026-04-15
+    changes:
+      - 初始版本
+      - 完成 5 阶 20 步流程配置
+      - 配置触发词权重表
+      - 配置与其他 Skills 协同路由
+```
+
+---
+
+_观其妙书院 · 知行合一触发配置 v1.0 · 2026-04-15_

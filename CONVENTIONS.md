@@ -1,4 +1,4 @@
----
+﻿---
 title: Writing & Agent Conventions
 type: meta
 updated: 2026-03-27
@@ -77,3 +77,21 @@ obsidian-agent sync                 # Rebuild indices
 ```
 
 The CLI handles frontmatter, linking, and index updates automatically.
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[16-工具与资源/templates_project]] — {{TITLE}}
+- [[16-工具与资源/templates_resource]] — {{TITLE}}
+- [[16-工具与资源/templates_weekly-review]] — Weekly Review {{WEEK}}
+- [[20-工作记录与复盘/journal__index]] — journal index
+- [[09-技能库/automation-workflows/SKILL]] — Automation Workflows
+- [[09-技能库/resources_CHANGELOG]] — Changelog - Web Search Plus
+- [[09-技能库/self-improving/heartbeat-rules]] — Heartbeat Rules
+- [[AGENT]] — Obsidian Knowledge Base — Agent Instructions
+- [[_index]] — Vault Index
+- [[ψ技能体系/10-kernel/龙心OS/capability-evolver/CONTRIBUTING]] — CONTRIBUTING
+
+<!-- AI-LINKS-END -->

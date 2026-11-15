@@ -1,4 +1,4 @@
----
+﻿---
 title: "gog - Google Workspace集成"
 created: "2026-03-27"
 tags: [gog, google, gmail, calendar, drive, workspace]
@@ -82,3 +82,17 @@ version: "1.0"
 ---
 
 **版本**: 1.0 | **维护者**: 龙龟神将 | **更新**: 2026-03-27
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/AI智能体_01-02-技能库]] — 01-02-技能库
+- [[01-核心体系/agents_Skill 构建 SOP]] — Skill 构建 SOP - 龙心 OS 技能开发标准流程
+- [[01-核心体系/agents_龙心 OS 自主学习系统指令手册]] — 龙心 OS 自主学习系统 - 完整指令手册
+- [[03-知识地基层/记忆系统_obsidian-backup-system]] — 🚀 WorkBuddy ↔ Obsidian 知识备份系统
+- [[09-技能库/resources_周回顾 SOP]] — 周回顾 SOP - 标准操作流程
+- [[09-技能库/腾讯文档/references/manage_references]] — 腾讯文档 MCP 工具完整参考
+
+<!-- AI-LINKS-END -->

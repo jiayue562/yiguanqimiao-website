@@ -122,3 +122,21 @@ updated: "2026-04-03"
 **木生火，我们一起进化！** 🌳🔥💪
 
 *Harness Engineering · 记忆层 v1.0 · 2026-04-03*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_龙心OS-知行合一-五行人格OS整合方案v1.0]] — 龙心OS · 知行合一 · 五行人格OS 三大系统整合方案 v1.0
+- [[01-核心体系/龙心OS_📖Harness-Engineering执行层]] — Harness Engineering执行层
+- [[01-核心体系/龙心OS_📖Harness-Engineering编排层]] — Harness Engineering编排层
+- [[01-核心体系/龙心OS_📖Harness-Engineering驾驭工程skills]] — Harness Engineering驾驭工程skills
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析-知识图谱]] — Harness Engineering知识图谱
+- [[03-知识地基层/记忆系统_MEMORY备份_2026-04-05]] — MEMORY备份 - 2026-04-05
+- [[03-知识地基层/记忆系统_MEMORY备份_2026-04-06]] — MEMORY备份 - 2026-04-06
+- [[09-技能库/Harness-Engineering/references/memory-layer]] — Harness Engineering · 记忆层
+- [[09-技能库/create-sub-agent/SKILL]] — Create Sub-Agent Skill - 交互式子代理创建
+- [[09-技能库/memory-management/SKILL]] — Memory Management Skill - 分层记忆管理
+
+<!-- AI-LINKS-END -->

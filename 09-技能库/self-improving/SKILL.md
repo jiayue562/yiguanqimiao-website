@@ -1,4 +1,4 @@
----
+﻿---
 name: Self-Improving + Proactive Agent
 slug: self-improving
 version: 1.2.16
@@ -248,3 +248,19 @@ Install with `clawhub install <slug>` if user confirms:
 
 - If useful: `clawhub star self-improving`
 - Stay updated: `clawhub sync`
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/self-improving/heartbeat-rules]] — Heartbeat Rules
+- [[09-技能库/self-improving/reflections]] — Self-Reflections Log
+- [[09-技能库/self-improving/setup]] — Setup — Self-Improving Agent
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/heartbeat-rules]] — Heartbeat Rules
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/reflections]] — Self-Reflections Log
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/setup]] — Setup — Self-Improving Agent
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/AGENTS]] — AGENTS.md - Your Workspace
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/BOOTSTRAP]] — BOOTSTRAP.md - Hello, World
+
+<!-- AI-LINKS-END -->

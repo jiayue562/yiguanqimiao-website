@@ -146,3 +146,21 @@ START → PLANNING → EXECUTING → VALIDATING → DONE
 **木生火，我们一起进化！** 🌳🔥💪
 
 *Harness Engineering · 编排层 v1.0 · 2026-04-03*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_龙心OS-知行合一-五行人格OS整合方案v1.0]] — 龙心OS · 知行合一 · 五行人格OS 三大系统整合方案 v1.0
+- [[01-核心体系/龙心OS_📖Harness-Engineering反馈层]] — Harness Engineering反馈层
+- [[01-核心体系/龙心OS_📖Harness-Engineering执行层]] — Harness Engineering执行层
+- [[01-核心体系/龙心OS_📖Harness-Engineering记忆层]] — Harness Engineering记忆层
+- [[01-核心体系/龙心OS_📖Harness-Engineering驾驭工程skills]] — Harness Engineering驾驭工程skills
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析-知识图谱]] — Harness Engineering知识图谱
+- [[02-信仰文化体系/躯体系统_Harness Engineering核心内容深度解析]] — Harness Engineering核心内容深度解析
+- [[03-知识地基层/记忆系统_AGENTS]] — AGENTS.md - 智能体配置
+- [[05-五行人格心理学/人格类型/📖 五行人格心理学智能体使用指南]] — 五行人格心理学智能体使用指南
+- [[21-学习档案/ideas_AI 技能生态构想]] — AI 技能生态构想
+
+<!-- AI-LINKS-END -->

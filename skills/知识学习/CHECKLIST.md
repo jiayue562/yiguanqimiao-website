@@ -1,0 +1,65 @@
+﻿# 知识学习 Skill 检查清单
+
+> 待完成项追踪 · 质量检查标准
+
+---
+
+## ✅ 已完成项（70%）
+
+### 阶段一：理论解析（Step 1-4）✅ 100%
+### 阶段二：架构设计（Step 5-8）✅ 100%
+### 阶段三：SKILL.md 编码（Step 9-12）✅ 100%
+### 阶段四：测试验证（Step 13-15）⏳ 0%
+### 阶段五：部署上线（Step 16-20）✅ 60%
+
+---
+
+## 📋 待完成项（30%）
+
+### 高优先级 🔴
+- [ ] 补充真实案例（至少 3 个）
+- [ ] 完善 LLM Wiki 三层架构配置
+- [ ] 配置知识编译引擎参数
+
+### 中优先级 🟡
+- [ ] 编写 references/prompts.md
+- [ ] 测试触发准确率
+- [ ] Obsidian 同步 + 双向链接
+
+### 低优先级 🟢
+- [ ] 配置 auto-activate.json
+- [ ] 添加更多测试用例
+
+---
+
+## 📊 质量检查
+
+| 标准 | 目标值 | 当前值 | 状态 |
+|------|--------|--------|------|
+| 核心定义 <30 字 | <30 | 28 | ✅ |
+| 十项指令完整 | 10 | 10 | ✅ |
+| 测试用例 ≥3 | ≥3 | 0 | ❌ |
+| 真实案例 ≥3 | ≥3 | 0 | ❌ |
+| 文档完整度 | ≥80% | 70% | ⚠️ |
+
+---
+
+_龙心 OS 知识学习 Skill 检查清单 v1.0 · 2026-04-15_
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/resources_CHECKLIST]] — 知识学习 Skill 检查清单
+- [[09-技能库/resources_COMPLETION_REPORT]] — 知识学习 Skill 构建完成报告
+- [[09-技能库/skill-builder/BUILD_LOG-金行人分智能体封装]] — 🏭 金行人分智能�?skills · Skill Builder 构建日志
+- [[09-技能库/skill-builder/完成报告-土行人分智能体封装]] — 🌟 土行人分智能体独立封装·完成报�?
+- [[09-技能库/上下文工程.skills/CHECKLIST]] — 上下文工程.skills 构建检查清单
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/CHECKLIST]] — LLM Wiki 知识库 Skill — 构建检查清单
+- [[ψ技能体系/10-kernel/龙心OS/engines/知行合一/CHECKLIST]] — 知行合一 Skill 检查清单
+- [[ψ技能体系/30-tools/skill-builder/templates/output_template]] — Skill Builder 输出模板
+- [[ψ技能体系/99-archive/上下文工程.skills/CHECKLIST]] — 上下文工程.skills 构建检查清单
+- [[ψ技能体系/99-archive/上下文工程/CHECKLIST]] — 上下文工程 Skill 检查清单
+
+<!-- AI-LINKS-END -->

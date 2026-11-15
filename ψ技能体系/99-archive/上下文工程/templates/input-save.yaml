@@ -1,0 +1,10 @@
+action: save_snapshot
+project:
+  name: ""
+  type: ""
+  priority: ""
+context:
+  completed: ""
+  decisions: ""
+  todos: ""
+  key_data: ""

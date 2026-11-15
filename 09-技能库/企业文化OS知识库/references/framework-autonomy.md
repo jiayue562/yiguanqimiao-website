@@ -1,4 +1,4 @@
-# 企业文化OS知识库智能体 · Framework层突破文档
+﻿# 企业文化OS知识库智能体 · Framework层突破文档
 
 > **文档定位**：定义智能体如何通过Framework层实现自主调度能力
 > **版本**：v1.0 | **创建日期**：2026-04-10 | **维护者**：龙龟神将
@@ -358,3 +358,18 @@
 **创建日期**: 2026-04-10  
 **维护者**: 龙龟神将  
 **关联文档**: SKILL.md、agent-core-capabilities.md、integration.md
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/AI龙龟共生伙伴操作系统/优化现有Skills指南]] — 优化现有Skills指南
+- [[09-技能库/MCP协议通信/references/MCP协议使用案例]] — MCP协议使用案例
+- [[09-技能库/resources_MCP协议使用案例]] — MCP协议使用案例
+- [[09-技能库/resources_优化现有Skills指南]] — 优化现有Skills指南
+- [[09-技能库/企业文化OS知识库/references/agent-invocation-protocol]] — 企业文化OS知识库智能体 · 调用协议
+- [[09-技能库/企业文化OS知识库/references/knowledge-graph]] — 企业文化OS知识库智能体 · 知识图谱
+- [[09-技能库/龙爪OS/references/architecture]] — 龙爪OS架构设计文档
+
+<!-- AI-LINKS-END -->

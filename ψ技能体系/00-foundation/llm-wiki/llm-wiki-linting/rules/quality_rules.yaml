@@ -1,0 +1,38 @@
+# LLM Wiki Linting - 检查规则配置
+
+# 质量检查规则
+quality:
+  empty_content_threshold: 50  # 内容少于 50 字符视为空
+  max_line_length: 200  # 单行最大字符数
+  min_content_lines: 3  # 最少内容行数
+  require_title: true  # 必须有标题
+
+# 时效性检查规则
+freshness:
+  stale_threshold_days: 90  # 超过 90 天未更新视为过时
+  critical_threshold_days: 180  # 超过 180 天视为严重过时
+
+# 一致性检查规则
+consistency:
+  check_internal_links: true  # 检查内部链接
+  check_term_conflicts: true  # 检查术语冲突
+  check_info_contradictions: true  # 检查信息矛盾
+
+# 完整性检查规则
+completeness:
+  check_orphan_nodes: true  # 检查孤立节点
+  require_examples: false  # 要求有示例（可选）
+  require_references: false  # 要求有参考（可选）
+
+# 评分权重
+weights:
+  quality: 40
+  freshness: 30
+  consistency: 20
+  completeness: 10
+
+# 自动修复配置
+auto_fix:
+  enabled: true
+  backup_before_fix: true  # 修复前备份
+  ask_before_fix: true  # 修复前询问

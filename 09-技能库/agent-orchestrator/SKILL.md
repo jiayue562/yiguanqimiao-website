@@ -1,4 +1,4 @@
----
+﻿---
 name: agent-orchestrator
 user-invokable: true
 description: "智能体协调规划器 - 根据具体任务，指挥、安排、协调多个skills和智能体来完成任务。提供任务分解、资源分配、进度监控和结果整合功能。"
@@ -219,3 +219,21 @@ description: "智能体协调规划器 - 根据具体任务，指挥、安排、
 **创建时间**: 2026-03-15  
 **适用场景**: 需要协调多个智能体/skills的复杂任务  
 **核心价值**: 提供智能、高效、可靠的智能体协调服务
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙心OS_Skill Builder v1.0]] — Skill构建申请表
+- [[01-核心体系/龙心OS_联合进化系统实践操作指南]] — 联合进化系统实践操作指南
+- [[03-知识地基层/记忆系统_AGENTS]] — AGENTS.md - 智能体配置
+- [[03-知识地基层/记忆系统_TOOLS]] — TOOLS.md - 可用工具与技能
+- [[05-五行人格心理学/理论基石/系统配置_Skills技能系统架构]] — 🛠️ Skills技能系统完整架构
+- [[09-技能库/agent-swarm/SKILL]] — Agent Swarm Skill - 多代理并行任务执行
+- [[09-技能库/task-router/SKILL]] — Task Router Skill - 智能任务路由
+- [[09-技能库/五行人格心理学/L3调度层/SKILL]] — 五行人格心理学L3调度层Skills
+- [[ψ技能体系/30-tools/agent-orchestrator/SKILL]] — 智能体协调规划器 (Agent Orchestrator)
+- [[ψ技能体系/30-tools/agent-swarm/SKILL]] — Agent Swarm Skill - 多代理并行任务执行
+
+<!-- AI-LINKS-END -->

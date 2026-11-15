@@ -1,4 +1,4 @@
-# PPT读取 Skill 测试用例
+﻿# PPT读取 Skill 测试用例
 
 ## 测试用例1：标准PPT转换
 
@@ -91,3 +91,21 @@
 - 提示用户检查文件路径
 
 **状态**: ⬜ 待测试
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[16-工具与资源/工具技能_PPT读取技能包]] — PPT读取技能包
+- [[20-工作记录与复盘/journal_2026-04-14_每日备份报告]] — 2026-04-14 Obsidian备份执行报告
+- [[09-技能库/PPT读取/SKILL]] — PPT读取 · 文档转换Skill
+- [[09-技能库/markitdown/SKILL]] — Markitdown 技能
+- [[09-技能库/ppt-generator/SKILL]] — ppt-generator - PPT智能生成
+- [[09-技能库/腾讯文档/doc/doc_format/README]] — 文本格式化模块
+- [[09-技能库/腾讯文档/references/slide_references]] — 幻灯片（Slide / PPT）参考文档
+- [[ψ技能体系/30-tools/PPT读取/SKILL]] — PPT读取 · 文档转换Skill
+- [[ψ技能体系/30-tools/fbs-bookwriter/references/03-product/lexical-editor-guide]] — Lexical Markdown 编辑器适配指南
+- [[ψ技能体系/30-tools/markitdown-local/SKILL]] — markitdown-local - 统一文档转换
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# 思维模型库 · 100个模型完整索引
+﻿# 思维模型库 · 100个模型完整索引
 
 > **版本**: v1.0  
 > **创建**: 2026-04-09  
@@ -262,3 +262,21 @@
 **覆盖阶段**: 6个  
 **独立调用模型**: 10个  
 **最后更新**: 2026-04-09
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙脑-思维模型顶层设计/02-思维模型/09-系统总览类/掌握这100个思维模型]] — 掌握这100个思维模型
+- [[09-技能库/思维模型库/references/integration]] — 思维模型库 · 龙心OS调用协议
+- [[09-技能库/思维模型库/子Skills/第一阶段-通用底层思维/SKILL]] — 第一阶段：通用底层思维 · 子Skill
+- [[09-技能库/龙脑OS/references/knowledge-base-index]] — 龙脑OS · 知识库完整索引
+- [[ψ技能体系/10-kernel/龙脑OS/models/思维模型库/references/integration]] — 思维模型库 · 龙心OS调用协议
+- [[ψ技能体系/10-kernel/龙脑OS/models/思维模型库/references/model-index]] — 思维模型库 · 100个模型完整索引
+- [[ψ技能体系/10-kernel/龙脑OS/models/思维模型库/子Skills/第一阶段-通用底层思维/SKILL]] — 第一阶段：通用底层思维 · 子Skill
+- [[ψ技能体系/30-tools/workbuddy/思维模型库/references/integration]] — 思维模型库 · 龙心OS调用协议
+- [[ψ技能体系/30-tools/workbuddy/思维模型库/references/model-index]] — 思维模型库 · 100个模型完整索引
+- [[ψ技能体系/30-tools/workbuddy/思维模型库/子Skills/第一阶段-通用底层思维/SKILL]] — 第一阶段：通用底层思维 · 子Skill
+
+<!-- AI-LINKS-END -->

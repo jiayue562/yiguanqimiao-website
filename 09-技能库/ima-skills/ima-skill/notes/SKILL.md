@@ -1,4 +1,4 @@
-# Notes (笔记)
+﻿# Notes (笔记)
 
 > Prerequisites: see root `../SKILL.md` for setup, credentials, and `ima_api()` helper.
 
@@ -175,3 +175,20 @@ ima_api "openapi/note/v1/search_note_book" '{"search_type": 1, "query_info": {"c
 | 310001 | 笔记本不存在           | 检查 `folder_id` 是否正确    |
 | 20002  | apiKey超过最大限频     |
 | 20004  | apikey 鉴权失败        | 检查凭证配置是否正确         |
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ima-skill/notes/SKILL]] — Notes (笔记)
+- [[09-技能库/ima-skill/notes/references/api]] — IMA笔记 API
+- [[09-技能库/ima-skills/ima-skill/notes/references/api]] — IMA笔记 API
+- [[09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/notes/SKILL]] — Notes (笔记)
+- [[09-技能库/ima-skills/ima-skills-1.1.2/ima-skill/notes/references/api]] — IMA笔记 API
+- [[09-技能库/ima笔记/references/api]] — IMA笔记 API
+- [[09-技能库/腾讯ima/notes/SKILL]] — Notes (笔记)
+- [[ψ技能体系/00-foundation/ima/notes/SKILL]] — Notes (笔记)
+- [[ψ技能体系/30-tools/ima-skill/notes/SKILL]] — Notes (绗旇)
+
+<!-- AI-LINKS-END -->

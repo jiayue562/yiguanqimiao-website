@@ -1,0 +1,69 @@
+# 龙爪OS触发规则
+# 定义龙心OS调度器dispatch到龙爪OS时，如何路由到正确子技能
+
+version: "1.0"
+updated: "2026-07-28"
+
+routing_rules:
+  - task_type: "JY"
+    description: "经营分析型"
+    priority: 1
+    sub_skill: "thinking_models"
+    workflow_template: "JY经营分析型"
+    requires_human_confirm: false
+
+  - task_type: "ZL"
+    description: "战略决策型"
+    priority: 1
+    sub_skill: "thinking_models"
+    workflow_template: "ZL战略决策型"
+    requires_human_confirm: true
+
+  - task_type: "FA"
+    description: "方案设计型"
+    priority: 1
+    sub_skill: "thinking_models"
+    workflow_template: "FA方案设计型"
+    requires_human_confirm: false
+
+  - task_type: "WD"
+    description: "问题诊断型"
+    priority: 1
+    sub_skill: "thinking_models"
+    workflow_template: "WD问题诊断型"
+    requires_human_confirm: false
+
+  - task_type: "GT"
+    description: "沟通协作型"
+    priority: 1
+    sub_skill: "thinking_models"
+    workflow_template: "GT沟通协作型"
+    requires_human_confirm: false
+
+  - task_type: "XX"
+    description: "学习研究型"
+    priority: 1
+    sub_skill: "thinking_models"
+    workflow_template: "XX学习研究型"
+    requires_human_confirm: false
+
+  - task_type: "CZ"
+    description: "自我成长型"
+    priority: 1
+    sub_skill: "thinking_models"
+    workflow_template: "CZ自我成长型"
+    requires_human_confirm: false
+    alternative_sub_skills: ["wuxing_personality"]
+
+  - task_type: "CY"
+    description: "创意创新型"
+    priority: 1
+    sub_skill: "thinking_models"
+    workflow_template: "CY创意创新型"
+    requires_human_confirm: false
+
+fallback:
+  default_sub_skill: "thinking_models"
+  default_workflow: "FA方案设计型"
+  on_timeout: "return_partial_result"
+  on_missing_skill: "notify_human"

@@ -1,4 +1,4 @@
-# Troubleshooting Guide
+﻿# Troubleshooting Guide
 
 ## Caching Issues (v2.7.0+)
 
@@ -313,3 +313,21 @@ python3 scripts/search.py -p tavily -q "query" --verbose
 2. Run the setup wizard: `python3 scripts/setup.py`
 3. Review `FAQ.md` for common questions
 4. Open an issue: https://github.com/robbyczgw-cla/web-search-plus/issues
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/baidu-search/references/apikey-fetch]] — Baidu API Key Setup Guide (OpenClaw)
+- [[09-技能库/resources_FAQ]] — Frequently Asked Questions
+- [[09-技能库/web-search-plus/FAQ]] — Frequently Asked Questions
+- [[09-技能库/web-search-plus/TROUBLESHOOTING]] — Troubleshooting Guide
+- [[09-技能库/内容总结/SKILL]] — Summarize
+- [[ψ技能体系/30-tools/gog/SKILL]] — gog
+- [[ψ技能体系/30-tools/summarize/SKILL]] — Summarize
+- [[ψ技能体系/30-tools/tavily/references/api-reference]] — Tavily API Reference
+- [[ψ技能体系/30-tools/web-search-plus/FAQ]] — Frequently Asked Questions
+- [[ψ技能体系/30-tools/web-search-plus/TROUBLESHOOTING]] — Troubleshooting Guide
+
+<!-- AI-LINKS-END -->

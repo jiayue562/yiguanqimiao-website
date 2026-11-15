@@ -1,4 +1,4 @@
-# 🔧 curl 命令行测试 IMA API 连接
+﻿# 🔧 curl 命令行测试 IMA API 连接
 
 ## 🚀 一键测试方法
 
@@ -136,3 +136,17 @@ curl -s -o /dev/null -w "%{http_code}" -X POST ...
 ```
 
 如果返回 `200` 表示 HTTP 层连接成功。
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[13-WorkBuddy-Sync/三向同步系统/QUICK_START]] — 🔗 三向同步系统 - 快速开始
+- [[05-五行人格心理学/理论基石/系统配置_同步报告_20260323_2330]] — 三向同步报告 2026-03-23 晚间
+- [[09-技能库/resources_manual-test-guide]] — IMA API 手动测试指南
+- [[09-技能库/resources_quick-start]] — IMA 技能快速使用指南
+- [[09-技能库/resources_test-status]] — IMA 技能连接测试状态报告
+- [[ψ技能体系/99-archive/AI龙龟共生伙伴操作系统/docs/用户测试指南]] — AI龙龟共生伙伴操作系统 - 用户测试指南
+
+<!-- AI-LINKS-END -->

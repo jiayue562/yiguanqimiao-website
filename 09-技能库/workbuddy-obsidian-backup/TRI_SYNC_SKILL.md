@@ -1,4 +1,4 @@
----
+﻿---
 name: workbuddy-tri-sync
 description: "WorkBuddy三向同步技能：将WorkBuddy所有内容备份到Obsidian知识库和IMA观其妙书院（悟空）知识库，实现知识资产的完整沉淀。"
 homepage: https://www.codebuddy.cn/docs/workbuddy/Overview
@@ -288,3 +288,18 @@ python tri_sync.py --debug --dry-run
 **最后更新**: 2026-04-09  
 **维护者**: 龙龟神将  
 **状态**: ✅ 生产就绪
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/龙脑-思维模型顶层设计/NS3491F-04-三库同步指引]] — 三库同步指引
+- [[03-知识地基层/记忆系统_obsidian-backup-system]] — 🚀 WorkBuddy ↔ Obsidian 知识备份系统
+- [[03-知识地基层/记忆系统_同步报告_20260410]] — WorkBuddy三向同步报告
+- [[05-五行人格心理学/理论基石/系统配置_Obsidian知识库同步机制]] — 🔄 Obsidian知识库同步机制
+- [[05-五行人格心理学/理论基石/系统配置_同步报告_20260416]] — WorkBuddy三向同步报告
+- [[09-技能库/知识库建设/references/three-vault-architecture]] — 三库架构详解
+- [[ψ技能体系/40-rules/workbuddy-obsidian-backup/TRI_SYNC_SKILL]] — WorkBuddy 三向同步技能 v2.0
+
+<!-- AI-LINKS-END -->

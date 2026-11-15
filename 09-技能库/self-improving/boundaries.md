@@ -1,4 +1,4 @@
-# Security Boundaries
+﻿# Security Boundaries
 
 ## Never Store
 
@@ -57,3 +57,21 @@ User says "forget everything":
 | Inferred preferences | Ask after 3 observations |
 | Context/project data | Ask when first detected |
 | Cross-session patterns | Explicit opt-in required |
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/ghost-scan-secrets/agents/analyze/template-finding]] — Secret Finding: <title>
+- [[09-技能库/resources_template-finding]] — Secret Finding: <title>
+- [[09-技能库/self-improving/learning]] — Learning Mechanics
+- [[09-技能库/self-improving/operations]] — Memory Operations
+- [[09-技能库/self-improving/scaling]] — Scaling Patterns
+- [[09-技能库/super-search/SKILL]] — Super Search
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/boundaries]] — Security Boundaries
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/learning]] — Learning Mechanics
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/operations]] — Memory Operations
+- [[ψ技能体系/10-kernel/龙心OS/self-improving/scaling]] — Scaling Patterns
+
+<!-- AI-LINKS-END -->

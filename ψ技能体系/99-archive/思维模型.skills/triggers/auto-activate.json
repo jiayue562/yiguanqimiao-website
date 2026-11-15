@@ -1,0 +1,52 @@
+{
+  "version": "1.0",
+  "created": "2026-04-17",
+  "name": "思维模型.skills",
+  "description": "思维模型.skills 自动触发配置",
+  
+  "auto_activate": {
+    "enabled": true,
+    "always_on": true,
+    "priority": "medium"
+  },
+  
+  "triggers": {
+    "p0_direct": [
+      "思维模型",
+      "用什么模型",
+      "哪个模型适合",
+      "推荐模型",
+      "模型组合",
+      "高频模型",
+      "中频模型",
+      "低频模型"
+    ],
+    "p1_scene": [
+      "这个项目用什么",
+      "这个步骤用什么",
+      "工作流",
+      "SOP",
+      "项目步骤",
+      "如何分析",
+      "如何决策",
+      "如何创新"
+    ],
+    "p2_signal": [
+      "需要.*模型",
+      "用什么.*分析",
+      "用什么.*思考",
+      "用什么.*决策"
+    ]
+  },
+  
+  "routes": {
+    "default": "model_recommend",
+    "fallback": "model_query"
+  },
+  
+  "协同": {
+    "前置": ["龙脑 OS"],
+    "后置": ["知行合一"],
+    "并行": ["五色光思维"]
+  }
+}

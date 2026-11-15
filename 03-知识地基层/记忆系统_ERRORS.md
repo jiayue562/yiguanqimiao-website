@@ -1,4 +1,4 @@
----
+﻿---
 title: "ERRORS.md - 错误记录与规避"
 created: "2026-03-21"
 version: "1.0"
@@ -290,3 +290,21 @@ def retry_with_backoff(func, max_retries=3):
 **最后更新**: 2026-03-21
 **维护者**: 龙龟神将
 **下次审查**: 2026-04-21
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[01-核心体系/agents_Skill 构建 SOP-5 阶 20 步完整版]] — Skill 构建 SOP - 5 阶 20 步完整版
+- [[01-核心体系/agents_Skill 构建 SOP]] — Skill 构建 SOP - 龙心 OS 技能开发标准流程
+- [[03-知识地基层/记忆系统_BOOTSTRAP]] — BOOTSTRAP.md - 启动配置
+- [[03-知识地基层/记忆系统_LEARNINGS]] — LEARNINGS.md - 学习积累与知识沉淀
+- [[05-五行人格心理学/理论基石/系统配置_Skills更新监控与评估系统]] — 📊 Skills更新监控与评估系统
+- [[09-技能库/resources_SYNC_LOG]] — 知行合一 Skill 同步日志
+- [[ψ技能体系/20-claws/00-wuxing/凤爪OS/references/L1-fengxin-integration]] — L1-凤心集成接口
+- [[ψ技能体系/30-tools/fbs-bookwriter/references/05-ops/phased-quality-improvement-report-v201]] — FBS-BookWriter v2.0.1 分段式质量提升完成报告
+- [[ψ技能体系/40-rules/API规范/SKILL]] — SKILL
+- [[ψ技能体系/40-rules/版本管理规则/SKILL]] — SKILL
+
+<!-- AI-LINKS-END -->

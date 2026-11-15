@@ -1,4 +1,4 @@
----
+﻿---
 name: skill-creator
 description: "技能创建指南。当用户希望创建新技能或更新现有技能，以扩展 CodeBuddy 的专业知识、工作流程或工具集成能力时使用。"
 ---
@@ -68,3 +68,21 @@ scripts/package_skill.py <path/to/skill-folder>
 
 - `references/workflows.md` - Sequential workflows and conditional logic
 - `references/output-patterns.md` - Template and example patterns
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/agent-browser-clawdbot/SKILL]] — Agent Browser Skill
+- [[09-技能库/find-skills/SKILL]] — Find Skills
+- [[09-技能库/resources_skill_creation_guide]] — Skill Creator Guide
+- [[09-技能库/self-learning/references/skill_creation_guide]] — Skill Creator Guide
+- [[09-技能库/技能创建指南/SKILL]] — Skill Creator
+- [[ψ技能体系/10-kernel/龙心OS/self-learning/references/skill_creation_guide]] — Skill Creator Guide
+- [[ψ技能体系/20-claws/03-academy/xhs-publish-note/SKILL]] — Find Skills
+- [[ψ技能体系/30-tools/agent-browser-clawdbot/SKILL]] — Agent Browser Skill
+- [[ψ技能体系/30-tools/cli-anything-hub/SKILL]] — CLI-Hub Meta-Skill
+- [[ψ技能体系/30-tools/cloudflare/SKILL]] — Cloudflare Platform Reference
+
+<!-- AI-LINKS-END -->

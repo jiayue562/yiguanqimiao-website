@@ -1,4 +1,4 @@
-# 企业文化诊断CLI · 命令行操作入口
+﻿# 企业文化诊断CLI · 命令行操作入口
 
 > **版本**: v1.0 | **创建**: 2026-04-10 | **维护者**: 龙龟神将
 
@@ -230,3 +230,20 @@ CLI命令将自动触发对应的Skill：
 ---
 
 **企业文化诊断CLI** · 龙龟神将设计 · 极简·语义·人格化
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/AI龙龟共生伙伴操作系统/优化现有Skills指南]] — 优化现有Skills指南
+- [[09-技能库/CLI原生操作入口/SKILL]] — CLI 原生操作入口 Skill
+- [[09-技能库/CLI指令解析/references/CLI指令人格化适配表]] — CLI指令人格化适配表
+- [[09-技能库/resources_CLI指令人格化适配表]] — CLI指令人格化适配表
+- [[ψ技能体系/20-claws/02-culture/企业文化OS/cli/design-cli]] — 企业文化设计CLI · 命令行操作入口
+- [[ψ技能体系/20-claws/02-culture/企业文化OS/cli/diagnose-cli]] — 企业文化诊断CLI · 命令行操作入口
+- [[ψ技能体系/20-claws/02-culture/企业文化OS/cli/implement-cli]] — 企业文化落地CLI · 命令行操作入口
+- [[ψ技能体系/30-tools/CLI原生操作入口/SKILL]] — CLI 原生操作入口 Skill
+- [[ψ技能体系/30-tools/CLI指令解析/SKILL]] — CLI指令解析Skill v1.1
+
+<!-- AI-LINKS-END -->

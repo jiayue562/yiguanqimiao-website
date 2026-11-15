@@ -1,4 +1,4 @@
-# 人机协同五象限提示词模板
+﻿# 人机协同五象限提示词模板
 
 > 💬 即用型提示词库 · 按象限分类
 
@@ -663,3 +663,21 @@
 ---
 
 _人机协同五象限提示词模板 v1.0 · 观其妙书院 · 2026-04-16_
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[16-工具与资源/areas_人机协同方法论]] — 人机协同方法论
+- [[09-技能库/resources_workflow-template]] — 人机协同五象限工作流程模板
+- [[09-技能库/skills_prompts]] — 人机协同五象限提示词模板
+- [[09-技能库/skills_workflow-template]] — 人机协同五象限工作流程模板
+- [[09-技能库/岗位智能体/v2.0/output_template]] — 岗位智能体 · 标准输出模板参考
+- [[09-技能库/知识学习Skills/references/prompt-templates]] — 知识学习Skills — 十项认知操作提示词模板库
+- [[ψ技能体系/00-foundation/llm-wiki/llm-wiki-knowledge-base/reference/prompts]] — LLM 提示词模板
+- [[ψ技能体系/10-kernel/龙心OS/engines/人机协同五象限/references/practice-guide]] — 人机协同五象限实践指南
+- [[ψ技能体系/10-kernel/龙心OS/engines/人机协同五象限/references/prompts]] — 人机协同五象限提示词模板
+- [[ψ技能体系/10-kernel/龙心OS/engines/人机协同五象限/templates/workflow-template]] — 人机协同五象限工作流程模板
+
+<!-- AI-LINKS-END -->

@@ -1,4 +1,4 @@
-# MCP协议配置 Skill
+﻿# MCP协议配置 Skill
 
 ## 核心定位
 
@@ -197,3 +197,18 @@ python mcp_validator.py --protocol extension --file service.json
 ---
 
 *MCP协议配置 Skill v1.0 · 2026-03-19*
+
+<!-- AI-LINKS-BEGIN -->
+## 🔗 AI 关联笔记（统一索引生成 · 2026-11-14）
+
+> 由 `00-索引与导航/AI统一索引` 生成；可重跑覆盖，可用回滚脚本还原。
+
+- [[09-技能库/AI-OS六层架构智能体/references/MCP协议层]] — MCP层 · 多协议协同总线
+- [[09-技能库/AI-OS六层架构智能体/triggers/auto-trigger]] — AI-OS六层架构智能体 · 自动触发规则
+- [[09-技能库/MCP协议通信/references/MCP协议使用案例]] — MCP协议使用案例
+- [[09-技能库/MCP协议通信/references/MCP协议定义]] — MCP协议定义
+- [[09-技能库/resources_MCP协议使用案例]] — MCP协议使用案例
+- [[09-技能库/resources_MCP协议定义]] — MCP协议定义
+- [[ψ技能体系/30-tools/MCP协议通信/SKILL]] — MCP协议通信Skill v1.1
+
+<!-- AI-LINKS-END -->
