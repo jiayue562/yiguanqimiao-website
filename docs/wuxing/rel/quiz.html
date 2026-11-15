@@ -83,7 +83,7 @@
   }
 
   var root = document.getElementById("root");
-  var PAGE = 10;
+  var PAGE = 9; /* 每页 9 题 = 一个维度的 L1→L9 九层阶梯（维度连排下分页与维度块天然对齐） */
   var totalPages = Math.ceil(order.length / PAGE);
 
   function segOf(idx) { return Math.floor(idx / 45); } /* 0-4 */
@@ -105,7 +105,7 @@
       ? "这份卷子评的是<strong>你自己</strong>。请回想你自己的近期状态：下列陈述，符合就选「是」，不符合就选「否」。"
       : "这份卷子评的是<strong>" + nm + "</strong>（你眼中的 TA）。请凭你对 TA 的了解：下列陈述，符合 TA 的近期表现就选「是」，不符合就选「否」。";
     var h = '<div class="card intro"><h2>答题说明</h2><p>' + lead + '</p>'
-      + '<p class="muted">题目按 木→火→土→金→水 分为五段，每段 45 题（约 5 分钟），段内不混排。段内按维度（原象词）连排——每个维度从 L1 连续走到 L9，看清一个能量的完整九层递变。</p>'
+      + '<p class="muted">题目按 木→火→土→金→水 分为五段，每段 45 题（约 5 分钟），段内不混排。段内按维度（原象词）连排——每页恰好呈现一个维度从 L1 到 L9 的完整九层递变，看清一个能量的生与灭。</p>'
       + '<p class="muted">请凭第一印象作答，不必反复斟酌。</p>'
       + '<p class="muted">已完成过一轮？重做并完成后，报告页会自动给出与上次结果的得分对比与连续变化。</p>'
       + '<p><button class="btn" id="startBtn">开始答题</button></p></div>';
