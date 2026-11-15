@@ -60,7 +60,7 @@ footer { margin: 48px 0 24px; border-top: 1px solid #D3D1C7; padding-top: 14px; 
 .bar-row { display: flex; align-items: center; margin: 6px 0; }
 .bar-row .lbl { width: 108px; font-size: 13px; color: #5F5E5A; flex-shrink: 0; }
 .bar-row .track { flex: 1; height: 14px; background: #EFECE4; border-radius: 4px; overflow: hidden; }
-.bar-row .fill { height: 100%; }
+.bar-row .fill { height: 100%; border: 1px solid #D3D1C7; box-sizing: border-box; }
 .bar-row .val { width: 46px; text-align: right; font-size: 12px; color: #888780; }
 .stat3 { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0; }
 .stat { flex: 1; min-width: 130px; background: #FFFDF8; border: 1px solid #D3D1C7; border-radius: 12px; padding: 14px; text-align: center; }
