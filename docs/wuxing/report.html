@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>测评报告 · 五行人格学在线测评</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="../index.html">以观其妙书院</a>
+  <nav><a href="index.html">五行测评</a> <a href="quiz.html">重新作答</a></nav>
+</header>
+<div class="wrap" id="root">
+  <h1>你的五行人格测评报告</h1>
+  <p class="muted" id="meta"></p>
+  <div id="report"></div>
+  <div class="card noprint" style="text-align:center">
+    <button class="btn ghost" onclick="window.print()">保存 / 打印报告</button>
+    <a class="btn" href="quiz.html" style="margin-left:10px">重新测评</a>
+    <p class="muted" style="margin-top:10px">建议三个月后复测，对比九层位置变化，验证功课是否有效。</p>
+  </div>
+  <footer>以观其妙书院 · 五行人格学在线测评 · 结果为自我探索与成长参考，属能量状态描述，非医学诊断。</footer>
+</div>
+<script src="data.js"></script>
+<script src="engine.js"></script>
+<script>
+(function(){
+  var store = null;
+  try { store = JSON.parse(localStorage.getItem("wxq_v1")); } catch(e) {}
+  var root = document.getElementById("report");
+  if (!store || !store.ans) {
+    root.innerHTML = "<div class='card'><p>未找到作答记录。请先完成答题。</p><p><a class='btn' href='quiz.html'>去答题</a></p></div>";
+    return;
+  }
+  var res = scoreQuiz(store.ans, QUIZ_DATA);
+  document.getElementById("meta").textContent =
+    "作答 " + new Date(store.ts || Date.now()).toLocaleDateString("zh-CN")
+    + " ｜ 有效作答 " + res.total + " / 225 题";
+
+  var h = "";
+  if (res.total === 0) {
+    root.innerHTML = "<div class='card'><p>本次作答全部为「否」，无法生成报告。请重新作答。</p><p><a class='btn' href='quiz.html'>重新作答</a></p></div>";
+    return;
+  }
+
+  /* 一 · 类型总纲卡 */
+  var t = res.typeState === "能量未显" ? null : TYPES[res.mainType];
+  var mainColor = ELEMENT_COLOR[res.mainType || res.sorted[0]];
+  h += "<div class='card' style='background:" + mainColor.light + "'>";
+  if (res.typeState === "能量未显") {
+    h += "<h2 style='border-color:inherit'>能量未显</h2>"
+      + "<p>你的健康段行分最高为 " + res.W[res.sorted[0]] + "（" + res.sorted[0] + "行，满分 15），尚未达到定型标准（≥5）。本次报告不出类型结论，转为<strong>能量状态描述</strong>：建议先完成一轮能量功课再复测。</p>";
+  } else {
+    h += "<h2 style='color:" + mainColor.main + "'>" + t.name + "（" + t.xiang + "）</h2>"
+      + "<p class='muted'>定型形态：" + (res.typeState === "复合型" ? "复合型（" + res.mainType + "＋" + res.subType + "）" : "单一型") + "　｜　健康段行分 " + res.W[res.mainType] + "/15</p>"
+      + "<p><em>" + t.metaphor + "</em></p>"
+      + "<p>" + t.core + "</p>";
+  }
+  h += "</div>";
+
+  /* 二 · 性格特点与优势 */
+  if (t) {
+    h += "<h2>性格特点</h2><div class='card'><ul>";
+    t.traits.forEach(function(s){ h += "<li>" + s + "</li>"; });
+    h += "</ul></div>";
+    h += "<h2>你的优势</h2><div class='card'><ul>";
+    t.strengths.forEach(function(s){ h += "<li>" + s + "</li>"; });
+    h += "</ul><p class='muted'>" + t.watch + "</p></div>";
+  }
+
+  /* 三 · 能量剖面 */
+  h += "<h2>三段能量剖面</h2><div class='stat3'>"
+    + "<div class='stat'><div class='num' style='color:#3B6D11'>" + res.seg[1] + "</div><div class='cap'>健康段答「是」</div></div>"
+    + "<div class='stat'><div class='num' style='color:#854F0B'>" + res.seg[2] + "</div><div class='cap'>一般段答「是」</div></div>"
+    + "<div class='stat'><div class='num' style='color:#A32D2D'>" + res.seg[3] + "</div><div class='cap'>不健康段答「是」</div></div>"
+    + "<div class='stat'><div class='num'>" + (res.GHI === null ? "—" : res.GHI) + "</div><div class='cap'>健康能量占比 GHI（0-100）</div></div>"
+    + "</div>";
+  h += "<div class='card'><p>同一五行能量：在健康段是<strong>特质</strong>，在一般段是<strong>状态</strong>，在不健康段是<strong>标记</strong>——三者方向不同，不可加总为一个「好/坏」分数。GHI 反映你答「是」的能量中健康段的占比。</p></div>";
+
+  /* 四 · 九层定位 */
+  h += "<h2>九层定位</h2><div class='card'>";
+  for (var k = 9; k >= 1; k--) {
+    var seg = k <= 3 ? 1 : (k <= 6 ? 2 : 3);
+    var col = seg === 1 ? "#3B6D11" : (seg === 2 ? "#854F0B" : "#A32D2D");
+    var v = res.layers[k], max = Math.max(1, res.peakVal || 1);
+    h += "<div class='bar-row'><div class='lbl'>L" + k + " " + LAYER_NAMES[k] + "</div>"
+      + "<div class='track'><div class='fill' style='width:" + (v / max * 100) + "%;background:" + col + "'></div></div>"
+      + "<div class='val'>" + v + "</div></div>";
+  }
+  if (res.peak) {
+    var pseg = res.peak <= 3 ? "健康段" : (res.peak <= 6 ? "一般段" : "不健康段");
+    h += "<p style='margin-top:12px'>当前<strong>峰值层：L" + res.peak + " " + LAYER_NAMES[res.peak] + "（" + pseg + "）</strong>——你答「是」的能量最集中的层级。</p>";
+  }
+  h += "</div>";
+
+  /* 五 · 起点建议（起点规则：从最深答是词开始；三模型流水线） */
+  h += "<h2>起点建议</h2><div class='card'>" + buildAdvice(res).html + "</div>";
+
+  /* 六 · 答是词画像 */
+  h += "<h2>你的答「是」词画像</h2>";
+  var segOrder = [3, 2, 1], segTitles = { 1: "健康段（特质）", 2: "一般段（状态）", 3: "不健康段（标记）" };
+  segOrder.forEach(function(s) {
+    var ws = res.yesWords.filter(function(w){ return segmentOf(w.layer) === s; })
+      .sort(function(a,b){ return b.layer - a.layer; });
+    if (!ws.length) return;
+    h += "<div class='card'><h3>" + segTitles[s] + "（" + ws.length + " 词）</h3><div class='wordchips'>";
+    ws.forEach(function(w) {
+      var c = ELEMENT_COLOR[w.e];
+      h += "<span class='chip' style='color:" + c.main + ";border-color:" + c.main + "'>" + w.word + " <span class='muted'>L" + w.layer + "</span></span>";
+    });
+    h += "</div></div>";
+  });
+
+  root.innerHTML = h;
+})();
+</script>
+</body>
+</html>

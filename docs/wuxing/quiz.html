@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>答题 · 五行人格学在线测评</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="../index.html">以观其妙书院</a>
+  <nav><a href="index.html">五行测评</a> <a href="quiz.html">答题</a></nav>
+</header>
+<div class="wrap">
+  <h1>五行人格学测评</h1>
+  <div class="progressbar"><div id="pbar" style="width:0%"></div></div>
+  <p class="muted"><span id="ptext"></span> ｜ 凭第一反应作答，没有对错；进度自动保存。</p>
+  <div id="qlist"></div>
+  <div class="qnav noprint">
+    <button class="btn ghost" id="prev">上一页</button>
+    <button class="btn" id="next">下一页</button>
+  </div>
+  <p class="muted noprint" id="hint"></p>
+</div>
+<script src="data.js"></script>
+<script>
+/* 顺序生成：按原象词分桶，桶内洗牌，round-robin 交错 → 同一词的九题两两间隔 ≥25 题 */
+function buildOrder() {
+  var buckets = {};
+  QUIZ_DATA.forEach(function(it, i) {
+    var key = it.e + "|" + it.xiang;
+    (buckets[key] = buckets[key] || []).push(i);
+  });
+  Object.keys(buckets).forEach(function(k) {
+    var b = buckets[k];
+    for (var i = b.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = b[i]; b[i] = b[j]; b[j] = t;
+    }
+  });
+  var keys = Object.keys(buckets);
+  var order = [], round = 0;
+  while (order.length < QUIZ_DATA.length) {
+    var ks = keys.slice().sort(function(){ return Math.random() - 0.5; });
+    ks.forEach(function(k) {
+      var b = buckets[k];
+      if (round < b.length) order.push(b[round]);
+    });
+    round++;
+    if (round > 60) break;
+  }
+  return order;
+}
+
+var KEY = "wxq_v1";
+var PAGE = 10;
+var store = null;
+try { store = JSON.parse(localStorage.getItem(KEY)); } catch(e) {}
+if (!store || !store.order || store.order.length !== QUIZ_DATA.length) {
+  store = { order: buildOrder(), ans: {}, done: false };
+}
+var ans = store.ans || {};
+function save(){ store.ans = ans; localStorage.setItem(KEY, JSON.stringify(store)); }
+
+var page = parseInt(localStorage.getItem(KEY+"_page") || "0", 10) || 0;
+var maxPage = Math.ceil(QUIZ_DATA.length / PAGE) - 1;
+if (page > maxPage) page = maxPage;
+
+function answeredCount() {
+  var n = 0; store.order.forEach(function(i){ if (ans[i] === true || ans[i] === false) n++; });
+  return n;
+}
+function render() {
+  var el = document.getElementById("qlist");
+  el.innerHTML = "";
+  var start = page * PAGE;
+  for (var p = start; p < Math.min(start + PAGE, store.order.length); p++) {
+    var idx = store.order[p], it = QUIZ_DATA[idx];
+    var card = document.createElement("div");
+    card.className = "qcard";
+    card.innerHTML = "<div class='qtext'>" + (p+1) + ". " + it.q + "</div>"
+      + "<div class='qopts'>"
+      + "<label><input type='radio' name='q" + idx + "' value='yes' " + (ans[idx]===true?"checked":"") + "><span>是</span></label>"
+      + "<label><input type='radio' name='q" + idx + "' value='no' " + (ans[idx]===false?"checked":"") + "><span>否</span></label>"
+      + "</div>";
+    card.querySelectorAll("input").forEach(function(inp){
+      inp.addEventListener("change", function(){
+        ans[idx] = (inp.value === "yes");
+        save(); updateProgress();
+      });
+    });
+    el.appendChild(card);
+  }
+  updateProgress();
+  localStorage.setItem(KEY+"_page", String(page));
+  window.scrollTo(0, 0);
+}
+function updateProgress() {
+  var n = answeredCount(), total = QUIZ_DATA.length;
+  document.getElementById("pbar").style.width = (n/total*100).toFixed(1) + "%";
+  document.getElementById("ptext").textContent = "进度 " + n + " / " + total + "（第 " + (page+1) + " / " + (maxPage+1) + " 页）";
+}
+document.getElementById("prev").addEventListener("click", function(){
+  if (page > 0) { page--; render(); }
+});
+document.getElementById("next").addEventListener("click", function(){
+  var start = page * PAGE, missing = 0;
+  for (var p = start; p < Math.min(start + PAGE, store.order.length); p++) {
+    var idx = store.order[p];
+    if (ans[idx] !== true && ans[idx] !== false) missing++;
+  }
+  if (missing > 0) {
+    document.getElementById("hint").textContent = "本页还有 " + missing + " 题未作答——可以跳过继续，但未答的题不计入结果。";
+  }
+  if (page < maxPage) { page++; render(); }
+  else {
+    var n = answeredCount();
+    if (n < QUIZ_DATA.length) {
+      if (!confirm("还有 " + (QUIZ_DATA.length - n) + " 题未作答。未答题不计入结果，报告可能不完整。确定现在生成报告吗？")) return;
+    }
+    save(); store.done = true; localStorage.setItem(KEY, JSON.stringify(store));
+    location.href = "report.html";
+  }
+});
+render();
+</script>
+</body>
+</html>
