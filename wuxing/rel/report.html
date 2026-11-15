@@ -180,8 +180,9 @@
   /* 第三部分 · 关系篇 */
   h += "<h2>第三部分 · 关系篇</h2>";
 
-  /* 关系篇一 · 关系窗（四象限） */
-  h += "<h3>关系窗 · 乔哈里四象限词级分布</h3><div class='quad4'>";
+  /* 关系篇一 · 关系窗（四象限，仅双方主行词库） */
+  h += "<h3>关系窗 · 乔哈里四象限词级分布</h3>";
+  h += "<p class='muted'>统计范围：双方主行词库（<strong>" + rel.scopeText + "，你=" + rel.P.mainType + " / " + otherName + "=" + rel.Q.mainType + "）</strong>——其他行词不参与整理与统计。空白区聚合表同理仅列主行。</p><div class='quad4'>";
   var qn = [["resonance", "共鸣区", "我认己亦见人——关系的共同语言（起点区）", "#3B6D11"],
             ["projection", "投射区", "我在 TA 身上看见、却不在自己身上选出的词——先求证，后定义", "#185FA5"],
             ["defense", "防御区", "我身上呈现而 TA 未回应的部分——暴露练习", "#854F0B"],
@@ -200,7 +201,8 @@
     h += "<div class='card'><h4>空白区聚合（行 × 层计数，不逐词）</h4><table class='qtable'><tr><th>行</th>";
     for (var k = 1; k <= 9; k++) h += "<th>L" + k + "</th>";
     h += "</tr>";
-    REL_ELS.forEach(function(e) {
+    rel.scopeRows.forEach(function(e) {
+      if (!rel.blankGrid[e]) return;
       h += "<tr><td><strong>" + e + "</strong></td>";
       for (var k2 = 1; k2 <= 9; k2++) h += "<td>" + (rel.blankGrid[e][k2] || "") + "</td>";
       h += "</tr>";
@@ -211,9 +213,8 @@
   /* 关系篇二 · 关系分型 */
   h += "<h3>关系分型 · 相生 / 相克判定</h3><div class='card'>";
   h += "<p class='vbig'>" + rel.verdict + "</p>";
-  if (rel.verdictNote) h += "<p class='muted'>" + rel.verdictNote + "</p>";
-  h += "<p>判定依据（" + rel.usedScope + "）：共鸣区生证据 S = <strong>" + rel.sR + "</strong>，克证据 K = <strong>" + rel.kR + "</strong>（阈值：S ≥ K+2 判相生，K ≥ S+2 判相克，差值 &lt;2 启用全量）；全量生证据 " + rel.sAll + "，克证据 " + rel.kAll + "。</p>";
-  if (rel.bg) h += "<p>行际生克背景（仅背景，不作判定依据）：" + rel.bg + "。</p>";
+  h += "<p><strong>" + rel.dirText + "</strong>——关系方向按双方主类型判定（相生：木→火→土→金→水→木；相克：木克土→土克水→水克火→火克金→金克木）。</p>";
+  h += "<p>统计范围：双方主行词库（<strong>" + rel.scopeText + "</strong>）。范围内生证据 S = <strong>" + rel.sAll + "</strong>（其中共鸣区 " + rel.sR + "），克证据 K = <strong>" + rel.kAll + "</strong>（其中共鸣区 " + rel.kR + "）——作为方向佐证与功课素材呈现。</p>";
   if (rel.rl) h += "<p>关系层级指数 RL = <strong>L" + rel.rl + " " + LAYER_NAMES[rel.rl] + "</strong>（双方峰值层中更深的一方拖住关系整体）。克证据规则：阴面词克阳面词才计入（阳对阳克＝调节磨合，不计损伤）。</p>";
   h += "<h4>克证据对表（按 K 分降序，前 10）</h4>";
   if (rel.kePairs.length) {

@@ -49,22 +49,49 @@ function computeRelation(selfAns, otherAns, data) {
   }
   var P = personOf(selfRes), Q = personOf(otherRes);
 
-  /* 词级四象限分布 */
+  /* 统计范围（悟空 2026-11-15 令）：只整理双方主行的词，其他行不参与四象限与统计 */
+  var scopeRows = [P.mainType];
+  if (scopeRows.indexOf(Q.mainType) === -1) scopeRows.push(Q.mainType);
+  var scopeText = scopeRows.join("＋") + "行";
+
+  /* 关系方向（悟空 2026-11-15 令）：按双方主类型判定——
+     相生 木→火→土→金→水→木；相克 木克土→土克水→水克火→火克金→金克木 */
+  var dirText, dirType;
+  if (Q.mainType === P.mainType) {
+    dirType = "tongqi";
+    dirText = P.mainType + "行同气比和（双方主行同行，无生克损伤路径）";
+  } else if (REL_SHENG[Q.mainType] === P.mainType) {
+    dirType = "sheng";
+    dirText = Q.mainType + "生" + P.mainType + "（对方主行生助我方主行）";
+  } else if (REL_SHENG[P.mainType] === Q.mainType) {
+    dirType = "sheng";
+    dirText = P.mainType + "生" + Q.mainType + "（我方主行生助对方主行）";
+  } else if (REL_KE[P.mainType] === Q.mainType) {
+    dirType = "ke";
+    dirText = P.mainType + "克" + Q.mainType + "（我方主行克对方主行）";
+  } else {
+    dirType = "ke";
+    dirText = Q.mainType + "克" + P.mainType + "（对方主行克我方主行）";
+  }
+
+  /* 词级四象限分布（仅主行范围词库） */
   var quad = { resonance: [], projection: [], defense: [], blank: [] };
   data.forEach(function(it, i) {
+    if (scopeRows.indexOf(it.e) === -1) return;
     quad[relQuadrant(i, selfAns, otherAns)].push({ it: it, i: i });
   });
 
-  /* 行×层聚合（空白区专用，不逐词） */
+  /* 行×层聚合（空白区专用，不逐词；仅主行范围） */
   var blankGrid = {};
-  REL_ELS.forEach(function(e) { blankGrid[e] = {}; for (var k = 1; k <= 9; k++) blankGrid[e][k] = 0; });
+  scopeRows.forEach(function(e) { blankGrid[e] = {}; for (var k = 1; k <= 9; k++) blankGrid[e][k] = 0; });
   quad.blank.forEach(function(w) { blankGrid[w.it.e][w.it.layer]++; });
 
-  /* 证据对采集（词级全组合）：
+  /* 证据对采集（词级全组合，仅主行范围内）：
      生证据：阳面词(源) 生 阳面词(靶)；克证据：阴面词(源) 克 阳面词(靶)；阳对阳克不计 */
   var shengPairs = [], kePairs = [];
   var selfWords = [], otherWords = [];
   data.forEach(function(it, i) {
+    if (scopeRows.indexOf(it.e) === -1) return;
     if (selfAns[i] === true) { var w = {}; for (var k in it) w[k] = it[k]; w.i = i; selfWords.push(w); }
     if (otherAns[i] === true) { var w2 = {}; for (var k2 in it) w2[k2] = it[k2]; w2.i = i; otherWords.push(w2); }
   });
@@ -112,22 +139,18 @@ function computeRelation(selfAns, otherAns, data) {
     }
   }
 
-  /* 分型判定（三步）：
-     1. 共鸣区证据优先（源词与靶词均在共鸣区）；
-     2. 差值 <2 加入全量证据重算；
-     3. 仍平局 → 判相生 + 复测标注（乐观基线，J2/K4 沿用） */
+  /* 分型判定（悟空 2026-11-15 令）：关系方向由双方主类型直接判定
+     （如 我木 TA水 → 水生木 → 相生关系型）；主行范围内生/克证据对
+     作为佐证统计呈现，不再由跨行词证据投票决定方向 */
   var sR = shengPairs.filter(function(p) { return p.bothRes; }).length;
   var kR = kePairs.filter(function(p) { return p.bothRes; }).length;
-  var verdict, verdictNote = "", usedScope;
-  if (sR >= kR + 2) { verdict = "相生关系型"; usedScope = "共鸣区证据"; }
-  else if (kR >= sR + 2) { verdict = "相克关系型"; usedScope = "共鸣区证据"; }
-  else {
-    var sAll = shengPairs.length, kAll = kePairs.length;
-    usedScope = "全量证据（含投射区、防御区）";
-    if (sAll >= kAll + 2) { verdict = "相生关系型"; verdictNote = "共鸣区证据接近，已启用全量证据重算。"; }
-    else if (kAll >= sAll + 2) { verdict = "相克关系型"; verdictNote = "共鸣区证据接近，已启用全量证据重算。"; }
-    else { verdict = "相生关系型"; verdictNote = "证据接近（共鸣区 S=" + sR + "/K=" + kR + "，全量 S=" + sAll + "/K=" + kAll + "），按乐观基线判相生——建议间隔 ≥1 天复测验证。"; }
-  }
+  var sAll = shengPairs.length, kAll = kePairs.length;
+  var verdict, usedScope = "主行范围（" + scopeText + "）证据";
+  if (dirType === "tongqi") verdict = "同气比和型";
+  else if (dirType === "sheng") verdict = "相生关系型";
+  else verdict = "相克关系型";
+  var verdictNote = "关系方向按主类型判定：" + dirText
+    + "。范围内佐证统计：生证据 S = " + sAll + "（其中共鸣区 " + sR + "），克证据 K = " + kAll + "（其中共鸣区 " + kR + "）。";
 
   /* 关系层级指数 RL = 双方峰值层中更深的一方 */
   var rl = null;
@@ -135,27 +158,18 @@ function computeRelation(selfAns, otherAns, data) {
   else if (selfRes.peak) rl = selfRes.peak;
   else if (otherRes.peak) rl = otherRes.peak;
 
-  /* 行际生克背景（仅背景说明，不作判定依据） */
-  var bg = null;
-  if (selfRes.mainType && otherRes.mainType) {
-    bg = REL_SHENG[P.mainType] === Q.mainType ? "我方主行生对方主行（" + P.mainType + "生" + Q.mainType + "）"
-      : REL_SHENG[Q.mainType] === P.mainType ? "对方主行生我方主行（" + Q.mainType + "生" + P.mainType + "）"
-      : REL_KE[P.mainType] === Q.mainType ? "我方主行克对方主行（" + P.mainType + "克" + Q.mainType + "）"
-      : REL_KE[Q.mainType] === P.mainType ? "对方主行克我方主行（" + Q.mainType + "克" + P.mainType + "）"
-      : "两主行无直接生克";
-  }
-
   /* 双线 Top3 推荐 */
   kePairs.sort(function(a, b) { return b.score - a.score; });
   shengPairs.sort(function(a, b) { return b.score - a.score; });
 
   return {
     selfRes: selfRes, otherRes: otherRes, P: P, Q: Q,
+    scopeRows: scopeRows, scopeText: scopeText, dirText: dirText, dirType: dirType,
     quad: quad, blankGrid: blankGrid,
     shengPairs: shengPairs, kePairs: kePairs,
     sR: sR, kR: kR, sAll: shengPairs.length, kAll: kePairs.length,
     verdict: verdict, verdictNote: verdictNote, usedScope: usedScope,
-    rl: rl, bg: bg,
+    rl: rl,
     topKe: kePairs.slice(0, 3), topSheng: shengPairs.slice(0, 3)
   };
 }
