@@ -32,7 +32,9 @@
   var ELS = ["木", "火", "土", "金", "水"];
   var ELCOL = { 木:"#3B6D11", 火:"#A32D2D", 土:"#D4A825", 金:"#5F5E5A", 水:"#185FA5" };
 
-  /* 五行分段固定序：木→火→土→金→水，段内 L1→L9 词汇表原序（不洗牌不混编） */
+  /* 五行分段固定序：木→火→土→金→水各45题。段内维度（原象词）连排，
+     维度内按原始题号升序（L1→L9），维度顺序保持题库首现顺序（悟空 2026-11-16 令）
+     —— data.js 本身按 行→维度→层 分块存储，故同行内按原始索引排序即为该排列 */
   var order = [];
   ELS.forEach(function(e) {
     data.forEach(function(it, i) {
@@ -42,7 +44,7 @@
   order.sort(function(a, b) {
     var A = data[a], B = data[b];
     if (ELS.indexOf(A.e) !== ELS.indexOf(B.e)) return ELS.indexOf(A.e) - ELS.indexOf(B.e);
-    return A.layer - B.layer;
+    return a - b;
   });
   /* order 中先按元素序排（data 本身按元素分块，层序由 sort 保证） */
 
@@ -92,8 +94,8 @@
       var pct = s < seg ? 100 : (s === seg ? inSeg : 0);
       h += '<div style="width:20%;background:' + (pct > 0 ? ELCOL[e] : "transparent") + '"></div>';
     });
-    h += '</div><div class="seglabel">当前：' + ELS[seg] + '行 · 第 ' + (seg * 45 + inSeg) + ' / 225 题'
-      + '（共五段：木→火→土→金→水）</div>';
+    h += '</div><div class="seglabel">当前：' + ELS[seg] + '行 · ' + data[order[cur]].xiang
+      + ' · 第 ' + (seg * 45 + inSeg) + ' / 225 题（维度内 L1→L9 连排）</div>';
     return h;
   }
 
@@ -103,7 +105,7 @@
       ? "这份卷子评的是<strong>你自己</strong>。请回想你自己的近期状态：下列陈述，符合就选「是」，不符合就选「否」。"
       : "这份卷子评的是<strong>" + nm + "</strong>（你眼中的 TA）。请凭你对 TA 的了解：下列陈述，符合 TA 的近期表现就选「是」，不符合就选「否」。";
     var h = '<div class="card intro"><h2>答题说明</h2><p>' + lead + '</p>'
-      + '<p class="muted">题目按 木→火→土→金→水 分为五段，每段 45 题（约 5 分钟），段内不混排。中途可随时退出，进度自动保存。</p>'
+      + '<p class="muted">题目按 木→火→土→金→水 分为五段，每段 45 题（约 5 分钟），段内不混排。段内按维度（原象词）连排——每个维度从 L1 连续走到 L9，看清一个能量的完整九层递变。</p>'
       + '<p class="muted">请凭第一印象作答，不必反复斟酌。</p>'
       + '<p class="muted">已完成过一轮？重做并完成后，报告页会自动给出与上次结果的得分对比与连续变化。</p>'
       + '<p><button class="btn" id="startBtn">开始答题</button></p></div>';
