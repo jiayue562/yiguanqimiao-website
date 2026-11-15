@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关系测评报告 · 五行人格学</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+  .qtable { width:100%; border-collapse:collapse; font-size:13px; margin-top:8px; }
+  .qtable th, .qtable td { border:1px solid #E3DCCB; padding:6px 8px; text-align:left; }
+  .qtable th { background:#FAEEDA; }
+  .vbig { font-size:22px; font-weight:700; color:#854F0B; }
+  .quad4 { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px; }
+  .quad4 .qb { border:1px solid #E3DCCB; border-radius:10px; padding:12px; background:#FFFDF8; }
+  .quad4 .qb h4 { margin:0 0 6px; font-size:15px; }
+  .quad4 .qb .n { font-size:20px; font-weight:700; }
+  .lesson { border:2px solid #854F0B; border-radius:12px; padding:16px; margin-top:14px; background:#FFFDF8; }
+  .lesson h3 { margin-top:0; color:#854F0B; }
+</style>
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="../../index.html">以观其妙书院</a>
+  <nav><a href="index.html">关系测评</a> <a href="quiz.html?mode=self">补自测卷</a> <a href="quiz.html?mode=other">补他测卷</a></nav>
+</header>
+<div class="wrap" id="root"><div class="card"><p>加载中…</p></div></div>
+<div class="wrap" id="actions" style="display:none">
+  <div class="card noprint" style="text-align:center">
+    <button class="btn ghost" onclick="window.print()">保存 / 打印报告</button>
+    <a class="btn" href="index.html" style="margin-left:10px">返回关系测评入口</a>
+  </div>
+  <footer>以观其妙书院 · 五行人格关系测评 · 结果为自我探索与关系成长参考，属能量状态描述，非医学诊断。</footer>
+</div>
+<script src="../data.js"></script>
+<script src="../engine.js"></script>
+<script src="engine_rel.js"></script>
+<script>
+(function(){
+  var KEYS = { self: "wxr_v1_self", other: "wxr_v1_other" };
+  function load(k) { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch (e) { return null; } }
+  var sSelf = load(KEYS.self), sOther = load(KEYS.other);
+  var selfDone = !!(sSelf && sSelf.done), otherDone = !!(sOther && sOther.done);
+  var params = new URLSearchParams(location.search);
+  var mode = params.get("mode");
+  if (!mode) mode = selfDone && otherDone ? "rel" : (selfDone ? "self" : (otherDone ? "other" : "none"));
+  var root = document.getElementById("root");
+  var h = "";
+
+  if (mode === "none") {
+    root.innerHTML = "<div class='card'><p>未找到作答记录。请先完成自测卷或他测卷。</p><p><a class='btn' href='index.html'>返回入口</a></p></div>";
+    return;
+  }
+
+  var selfRes = selfDone ? scoreQuiz(sSelf.ans, QUIZ_DATA) : null;
+  var otherRes = otherDone ? scoreQuiz(sOther.ans, QUIZ_DATA) : null;
+  var otherName = (sOther && sOther.name) ? sOther.name : "TA";
+
+  /* ---------- 共用渲染件 ---------- */
+  function typeCard(res, owner) {
+    var t = res.typeState === "能量未显" ? null : TYPES[res.mainType];
+    var c = ELEMENT_COLOR[res.mainType || res.sorted[0]];
+    var s = "<div class='card' style='background:" + c.light + "'>";
+    if (!t) {
+      s += "<h2>能量未显（" + owner + "）</h2><p>得分最高为 " + res.P[res.sorted[0]] + " 分（" + res.sorted[0] + " 行，满分 100），未达定型标准（≥11 分）。暂以得分最高行（" + res.sorted[0] + "）作暂定主行，转能量状态描述。</p>";
+    } else {
+      s += "<h2 style='color:" + c.main + "'>" + owner + "：" + t.name + "（" + t.xiang + "）</h2>"
+        + "<p class='muted'>定型形态：" + (res.typeState === "复合型" ? "复合型（" + res.mainType + "＋" + res.subType + "）" : "单一型") + "　｜　" + res.mainType + " 行得分 " + res.P[res.mainType] + " / 100</p>"
+        + "<p><em>" + t.metaphor + "</em></p><p>" + t.core + "</p>";
+    }
+    return s + "</div>";
+  }
+  function stepsPanel(res, owner) {
+    var s = "<h3>三步判定（" + owner + "）</h3>";
+    var pMax = Math.max(1, res.P[res.sorted[0]]);
+    res.sorted.forEach(function(e) {
+      var c = ELEMENT_COLOR[e];
+      s += "<div class='bar-row'><div class='lbl'>" + e + "</div><div class='track'><div class='fill' style='width:" + (res.P[e] / pMax * 100) + "%;background:" + c.main + "'></div></div><div class='val'>" + res.P[e] + "</div></div>";
+    });
+    var yy = res.yinYang;
+    if (yy) {
+      s += "<p class='muted'>阴阳判定：" + res.mainType + "行内 阳 " + yy.y + " 词 / 中间带 " + yy.m + " 词 / 阴 " + yy.n + " 词"
+        + (yy.verdict === "阴阳未显" ? " → 阴阳未显" : " → 阳 " + yy.yangPct + "% vs 阴 " + yy.yinPct + "%，" + yy.verdict) + "；行内峰值层 L" + res.mainPeak + "，起点层 L" + res.mainStart + "。</p>";
+    }
+    return s;
+  }
+  function segHtml(res, owner) {
+    return "<div class='stat3'>"
+      + "<div class='stat'><div class='num' style='color:#3B6D11'>" + res.seg[1] + "</div><div class='cap'>健康段（" + owner + "）</div></div>"
+      + "<div class='stat'><div class='num' style='color:#854F0B'>" + res.seg[2] + "</div><div class='cap'>一般段（" + owner + "）</div></div>"
+      + "<div class='stat'><div class='num' style='color:#A32D2D'>" + res.seg[3] + "</div><div class='cap'>不健康段（" + owner + "）</div></div>"
+      + "<div class='stat'><div class='num'>" + (res.GHI === null ? "—" : res.GHI) + "</div><div class='cap'>GHI（" + owner + "）</div></div></div>";
+  }
+  function layerHtml(res, owner) {
+    var s = "";
+    for (var k = 9; k >= 1; k--) {
+      var seg = k <= 3 ? 1 : (k <= 6 ? 2 : 3);
+      var col = seg === 1 ? "#3B6D11" : (seg === 2 ? "#854F0B" : "#A32D2D");
+      var v = res.layers[k], mx = Math.max(1, res.peakVal || 1);
+      s += "<div class='bar-row'><div class='lbl'>L" + k + " " + LAYER_NAMES[k] + "</div><div class='track'><div class='fill' style='width:" + (v / mx * 100) + "%;background:" + col + "'></div></div><div class='val'>" + v + "</div></div>";
+    }
+    if (res.peak) s += "<p style='margin-top:10px'>" + owner + "峰值层：<strong>L" + res.peak + " " + LAYER_NAMES[res.peak] + "</strong></p>";
+    return s;
+  }
+  function wordChips(words, cap) {
+    var n = Math.min(words.length, cap || 40);
+    var s = "<div class='wordchips'>";
+    for (var i = 0; i < n; i++) {
+      var w = words[i].it || words[i];
+      var c = ELEMENT_COLOR[w.e];
+      s += "<span class='chip' style='color:" + c.main + ";border-color:" + c.main + "'>" + w.word + " <span class='muted'>L" + w.layer + "</span></span>";
+    }
+    return s + "</div>" + (words.length > n ? "<p class='muted'>（显示前 " + n + " 词，共 " + words.length + " 词）</p>" : "");
+  }
+  function metaLine(store, label) {
+    return label + "　作答 " + new Date(store.ts || Date.now()).toLocaleDateString("zh-CN")
+      + "　有效作答 " + Object.keys(store.ans).filter(function(k){ return store.ans[k] === true; }).length + " 个「是」词";
+  }
+
+  /* ---------- 模式A：自测报告 ---------- */
+  if (mode === "self") {
+    var a = buildAdvice(selfRes);
+    h += "<h1>自测报告（关系测评 · 模式A）</h1><p class='muted'>" + metaLine(sSelf, "本人自测卷") + "</p>";
+    h += typeCard(selfRes, "你");
+    h += "<h2>五行得分与三步判定</h2><div class='card'>" + stepsPanel(selfRes, "你") + "</div>";
+    h += "<h2>三段能量剖面</h2>" + segHtml(selfRes, "你");
+    h += "<h2>九层定位</h2><div class='card'>" + layerHtml(selfRes, "你") + "</div>";
+    h += "<h2>起点建议</h2><div class='card'>" + a.html + "</div>";
+    if (otherDone) {
+      h += "<div class='card' style='background:#FAEEDA'><p>他测卷已完成——<a class='btn' href='report.html?mode=rel'>查看完整关系测评报告</a></p></div>";
+    } else {
+      h += "<div class='card'><p>完成他测卷（我测 " + otherName + "）后，将自动生成<strong>关系测评报告</strong>（四象限 + 生克分型 + 双线功课）。</p><p><a class='btn' href='quiz.html?mode=other'>去做他测卷</a></p></div>";
+    }
+    document.getElementById("actions").style.display = "block";
+    root.innerHTML = h;
+    return;
+  }
+
+  /* ---------- 他测摘要 ---------- */
+  if (mode === "other") {
+    h += "<h1>他测摘要（你眼中的 " + otherName + "）</h1><p class='muted'>" + metaLine(sOther, "他测卷") + "</p>";
+    h += "<div class='card' style='background:#FAEEDA'><p><strong>视角边界</strong>：以下为「你眼中 " + otherName + "」的能量画像——是他测窗口的数据，不是 " + otherName + " 的自知。报告据此做关系分析，不作为对 " + otherName + " 的独立人格论断。</p></div>";
+    h += typeCard(otherRes, otherName + "（你眼中）");
+    h += "<h2>五行得分与三步判定</h2><div class='card'>" + stepsPanel(otherRes, otherName) + "</div>";
+    h += "<h2>三段能量剖面</h2>" + segHtml(otherRes, otherName);
+    h += "<h2>九层定位</h2><div class='card'>" + layerHtml(otherRes, otherName) + "</div>";
+    if (selfDone) {
+      h += "<div class='card' style='background:#FAEEDA'><p>自测卷已完成——<a class='btn' href='report.html?mode=rel'>查看完整关系测评报告</a></p></div>";
+    } else {
+      h += "<div class='card'><p>完成自测卷后，将自动生成<strong>关系测评报告</strong>。</p><p><a class='btn' href='quiz.html?mode=self'>去做自测卷</a></p></div>";
+    }
+    document.getElementById("actions").style.display = "block";
+    root.innerHTML = h;
+    return;
+  }
+
+  /* ---------- 模式B：完整关系测评报告 ---------- */
+  var rel = computeRelation(sSelf.ans, sOther.ans, QUIZ_DATA);
+  rel.otherName = otherName;
+  var pack = relLessonPack(rel);
+  var aSelf = buildAdvice(rel.selfRes);
+
+  h += "<h1>关系测评报告</h1><p class='muted'>" + metaLine(sSelf, "自测卷") + "　｜　" + metaLine(sOther, "他测卷（" + otherName + "）") + "</p>";
+
+  /* 第一部分 · 本人测评 */
+  h += "<h2>第一部分 · 你的测评</h2>";
+  h += typeCard(rel.selfRes, "你");
+  h += "<div class='card'>" + stepsPanel(rel.selfRes, "你") + "</div>";
+  h += segHtml(rel.selfRes, "你");
+  h += "<div class='card'>" + layerHtml(rel.selfRes, "你") + "</div>";
+  h += "<div class='card'>" + aSelf.html + "</div>";
+
+  /* 第二部分 · 测他摘要 */
+  h += "<h2>第二部分 · 测他摘要（你眼中的 " + otherName + "）</h2>";
+  h += "<div class='card' style='background:#FAEEDA'><p><strong>视角边界</strong>：此为你眼中 " + otherName + " 的画像（他测窗口），非对方自知，不作为对 " + otherName + " 的独立人格论断。</p></div>";
+  h += typeCard(rel.otherRes, otherName + "（你眼中）");
+  h += "<div class='card'>" + stepsPanel(rel.otherRes, otherName) + "</div>";
+  h += segHtml(rel.otherRes, otherName);
+  h += "<div class='card'>" + layerHtml(rel.otherRes, otherName) + "</div>";
+
+  /* 第三部分 · 关系篇 */
+  h += "<h2>第三部分 · 关系篇</h2>";
+
+  /* 关系篇一 · 关系窗（四象限） */
+  h += "<h3>关系窗 · 乔哈里四象限词级分布</h3><div class='quad4'>";
+  var qn = [["resonance", "共鸣区", "我认己亦见人——关系的共同语言（起点区）", "#3B6D11"],
+            ["projection", "投射区", "我在 TA 身上看见、却不在自己身上选出的词——先求证，后定义", "#185FA5"],
+            ["defense", "防御区", "我身上呈现而 TA 未回应的部分——暴露练习", "#854F0B"],
+            ["blank", "空白区", "双方都未激活的词——关系未开发区（只聚合，不逐词）", "#8B8578"]];
+  qn.forEach(function(q) {
+    h += "<div class='qb'><h4>" + q[1] + "　<span class='n' style='color:" + q[3] + "'>" + rel.quad[q[0]].length + " 词</span></h4>"
+      + "<p class='muted'>" + q[2] + "</p></div>";
+  });
+  h += "</div>";
+  ["resonance", "projection", "defense"].forEach(function(q) {
+    if (rel.quad[q].length) {
+      h += "<div class='card'><h4>" + relQName(q) + "词清单（" + rel.quad[q].length + " 词）</h4>" + wordChips(rel.quad[q], 40) + "</div>";
+    }
+  });
+  if (rel.quad.blank.length) {
+    h += "<div class='card'><h4>空白区聚合（行 × 层计数，不逐词）</h4><table class='qtable'><tr><th>行</th>";
+    for (var k = 1; k <= 9; k++) h += "<th>L" + k + "</th>";
+    h += "</tr>";
+    REL_ELS.forEach(function(e) {
+      h += "<tr><td><strong>" + e + "</strong></td>";
+      for (var k2 = 1; k2 <= 9; k2++) h += "<td>" + (rel.blankGrid[e][k2] || "") + "</td>";
+      h += "</tr>";
+    });
+    h += "</table></div>";
+  }
+
+  /* 关系篇二 · 关系分型 */
+  h += "<h3>关系分型 · 相生 / 相克判定</h3><div class='card'>";
+  h += "<p class='vbig'>" + rel.verdict + "</p>";
+  if (rel.verdictNote) h += "<p class='muted'>" + rel.verdictNote + "</p>";
+  h += "<p>判定依据（" + rel.usedScope + "）：共鸣区生证据 S = <strong>" + rel.sR + "</strong>，克证据 K = <strong>" + rel.kR + "</strong>（阈值：S ≥ K+2 判相生，K ≥ S+2 判相克，差值 &lt;2 启用全量）；全量生证据 " + rel.sAll + "，克证据 " + rel.kAll + "。</p>";
+  if (rel.bg) h += "<p>行际生克背景（仅背景，不作判定依据）：" + rel.bg + "。</p>";
+  if (rel.rl) h += "<p>关系层级指数 RL = <strong>L" + rel.rl + " " + LAYER_NAMES[rel.rl] + "</strong>（双方峰值层中更深的一方拖住关系整体）。克证据规则：阴面词克阳面词才计入（阳对阳克＝调节磨合，不计损伤）。</p>";
+  h += "<h4>克证据对表（按 K 分降序，前 10）</h4>";
+  if (rel.kePairs.length) {
+    h += "<table class='qtable'><tr><th>源词（克方）</th><th>靶词（被克方·阳面）</th><th>K 分</th><th>计入共鸣区判定</th></tr>";
+    rel.kePairs.slice(0, 10).forEach(function(p) {
+      h += "<tr><td>" + (p.side === "self" ? "我" : otherName) + "的「" + p.src.word + "」（" + p.src.e + " L" + p.src.layer + "，" + relQName(p.srcQ) + "）</td>"
+        + "<td>" + (p.side === "self" ? otherName : "我") + "的「" + p.tgt.word + "」（" + p.tgt.e + " L" + p.tgt.layer + "）</td>"
+        + "<td>" + p.score.toFixed(3) + "</td><td>" + (p.bothRes ? "✓" : "—") + "</td></tr>";
+    });
+    h += "</table><p class='muted'>共 " + rel.kePairs.length + " 条克证据对（完整对表可向施测者导出）。</p>";
+  } else {
+    h += "<p>克证据对为零——无阴克阳损伤路径（相生关系的常见形态）。</p>";
+  }
+  h += "<h4>生证据对表（按 S 分降序，前 10）</h4>";
+  if (rel.shengPairs.length) {
+    h += "<table class='qtable'><tr><th>源词（生方·阳面）</th><th>靶词（被生方·阳面）</th><th>S 分</th><th>计入共鸣区判定</th></tr>";
+    rel.shengPairs.slice(0, 10).forEach(function(p) {
+      h += "<tr><td>" + (p.side === "self" ? "我" : otherName) + "的「" + p.src.word + "」（" + p.src.e + " L" + p.src.layer + "）</td>"
+        + "<td>" + (p.side === "self" ? otherName : "我") + "的「" + p.tgt.word + "」（" + p.tgt.e + " L" + p.tgt.layer + "）</td>"
+        + "<td>" + p.score.toFixed(3) + "</td><td>" + (p.bothRes ? "✓" : "—") + "</td></tr>";
+    });
+    h += "</table><p class='muted'>共 " + rel.shengPairs.length + " 条生证据对。</p>";
+  } else {
+    h += "<p>生证据对为零（罕见）——建议复测核实。</p>";
+  }
+  h += "</div>";
+
+  /* 关系篇三 · 关系行动 */
+  h += "<h3>关系行动 · 四象限分区措施</h3><div class='card'><ul>"
+    + "<li><strong>共鸣区（起点区）</strong>：所有关系改善从共识的词出发——相生措施把生链互动固化为习惯锚点；克对在克源词上落通关点修炼。首月只做共鸣区（起点纪律）。</li>"
+    + "<li><strong>投射区（" + rel.quad.projection.length + " 词）</strong>：求证练习——以具体事例核对该词是否属实，避免标签化 " + otherName + "；同时自照检查自己是否也有此词（自照用「找好处」降低防御）。</li>"
+    + "<li><strong>防御区（" + rel.quad.defense.length + " 词）</strong>：暴露练习——「在我感到 X 之后，我告诉对方这个词」的词级表达微行为。</li>"
+    + "<li><strong>空白区（" + rel.quad.blank.length + " 词）</strong>：不强制行动，聚合呈现「共同未开发区」——见上方行 × 层计数表。</li></ul></div>";
+
+  h += "<h2>功课包（本轮 3 个月 · 双主线）</h2>";
+  if (pack.shengCard) h += "<div class='lesson'>" + pack.shengCard + "</div>";
+  if (pack.keCard) h += "<div class='lesson'>" + pack.keCard + "</div>";
+  h += "<div class='lesson'>" + pack.daily + "</div>";
+  h += "<div class='lesson'>" + pack.map90 + "</div>";
+
+  h += "<div class='card'><p><strong>复测提示</strong>：第 13 周（3 个月 ±7 天）用同一套卷重做双窗口，系统将对比克线（主克 K 分下降 ≥30%）与生线（主生 S 分维持 ≥95%）及双方峰值层位移，出四档判定（大效 / 显效 / 有效 / 未显效）。当前主克与主生词组请记录备查。</p></div>";
+
+  document.getElementById("actions").style.display = "block";
+  root.innerHTML = h;
+})();
+</script>
+</body>
+</html>

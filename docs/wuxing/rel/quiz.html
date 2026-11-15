@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>答题 · 五行人格关系测评</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+  .segbar { display:flex; gap:3px; margin:14px 0 6px; height:14px; border-radius:7px; overflow:hidden; background:#E9E4D6; }
+  .segbar div { transition:width .3s; }
+  .seglabel { font-size:13px; color:#8B8578; text-align:center; margin-bottom:12px; }
+  .trans { text-align:center; padding:30px 16px; }
+  .trans .done { font-size:40px; }
+  .trans h2 { margin:12px 0 6px; }
+  .trans .next { font-size:15px; color:#5C564A; margin-bottom:18px; }
+  .intro { margin-bottom:14px; }
+</style>
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="../../index.html">以观其妙书院</a>
+  <nav><a href="index.html">关系测评</a> <a href="../quiz.html">单人自测</a></nav>
+</header>
+<div class="wrap" id="root"></div>
+<script src="../data.js"></script>
+<script>
+(function(){
+  var params = new URLSearchParams(location.search);
+  var mode = params.get("mode") === "other" ? "other" : "self";
+  var KEY = mode === "other" ? "wxr_v1_other" : "wxr_v1_self";
+  var ELS = ["木", "火", "土", "金", "水"];
+  var ELCOL = { 木:"#3B6D11", 火:"#A32D2D", 土:"#854F0B", 金:"#5F5E5A", 水:"#185FA5" };
+
+  /* 五行分段固定序：木→火→土→金→水，段内 L1→L9 词汇表原序（不洗牌不混编） */
+  var order = [];
+  ELS.forEach(function(e) {
+    data.forEach(function(it, i) {
+      if (it.e === e) order.push(i);
+    });
+  });
+  order.sort(function(a, b) {
+    var A = data[a], B = data[b];
+    if (ELS.indexOf(A.e) !== ELS.indexOf(B.e)) return ELS.indexOf(A.e) - ELS.indexOf(B.e);
+    return A.layer - B.layer;
+  });
+  /* order 中先按元素序排（data 本身按元素分块，层序由 sort 保证） */
+
+  var state = null;
+  try { state = JSON.parse(localStorage.getItem(KEY) || "null"); } catch (e) {}
+  if (!state || !state.ans) state = { ans: {}, page: 0, trans: 0, name: mode === "other" ? "TA" : null };
+  if (mode === "other" && !state.name) state.name = "TA";
+  function save() { localStorage.setItem(KEY, JSON.stringify(state)); }
+
+  var root = document.getElementById("root");
+  var PAGE = 10;
+  var totalPages = Math.ceil(order.length / PAGE);
+
+  function segOf(idx) { return Math.floor(idx / 45); } /* 0-4 */
+
+  function segBar(cur, seg, inSeg) {
+    var h = '<div class="segbar">';
+    ELS.forEach(function(e, s) {
+      var pct = s < seg ? 100 : (s === seg ? inSeg : 0);
+      h += '<div style="width:20%;background:' + (pct > 0 ? ELCOL[e] : "transparent") + '"></div>';
+    });
+    h += '</div><div class="seglabel">当前：' + ELS[seg] + '行 · 第 ' + (seg * 45 + inSeg) + ' / 225 题'
+      + '（共五段：木→火→土→金→水）</div>';
+    return h;
+  }
+
+  function renderIntro() {
+    var nm = state.name || "TA";
+    var lead = mode === "self"
+      ? "这份卷子评的是<strong>你自己</strong>。请回想你自己的近期状态：下列陈述，符合就选「是」，不符合就选「否」。"
+      : "这份卷子评的是<strong>" + nm + "</strong>（你眼中的 TA）。请凭你对 TA 的了解：下列陈述，符合 TA 的近期表现就选「是」，不符合就选「否」。";
+    var h = '<div class="card intro"><h2>答题说明</h2><p>' + lead + '</p>'
+      + '<p class="muted">题目按 木→火→土→金→水 分为五段，每段 45 题（约 5 分钟），段内不混排。中途可随时退出，进度自动保存。</p>'
+      + '<p class="muted">请凭第一印象作答，不必反复斟酌。</p>'
+      + '<p><button class="btn" id="startBtn">开始答题</button></p></div>';
+    root.innerHTML = h;
+    document.getElementById("startBtn").onclick = function() { renderPage(); };
+  }
+
+  function renderTrans(seg) {
+    var prev = ELS[seg - 1], next = ELS[seg];
+    var h = '<div class="card trans">'
+      + '<div class="done">✅</div>'
+      + '<h2>' + prev + '行 45 题已完成</h2>'
+      + '<div class="next">接下来：' + next + '行（第 ' + (seg + 1) + ' 段 / 共 5 段，约 5 分钟）——'
+      + (mode === "self" ? "你自己的" : (state.name || "TA") + "的") + next + '能量。</div>'
+      + '<button class="btn" id="contBtn">继续</button> '
+      + '<a class="btn ghost" href="index.html">先退出（进度已保存）</a>'
+      + '</div>';
+    root.innerHTML = h;
+    document.getElementById("contBtn").onclick = function() { renderPage(); };
+  }
+
+  function renderPage() {
+    var start = state.page * PAGE;
+    if (start >= order.length) { finish(); return; }
+    var seg = segOf(start);
+    /* 段间过渡：本页起点落在新段开头且该过渡未展示过 */
+    if (start > 0 && start % 45 === 0 && state.trans < seg) {
+      state.trans = seg; save();
+      renderTrans(seg); return;
+    }
+    var end = Math.min(start + PAGE, order.length);
+    var h = segBar(start, seg, start % 45 + 1)
+      + '<div class="progresswrap"><div class="progressbar"><div style="width:' + (start / order.length * 100) + '%"></div></div>'
+      + '<div class="progresslabel">' + start + ' / ' + order.length + '</div></div>';
+    h += '<div id="qlist">';
+    for (var i = start; i < end; i++) {
+      var it = data[order[i]];
+      h += '<div class="qcard"><div class="qno">Q' + (i + 1) + ' · ' + it.e + '行 · L' + it.layer + '</div>'
+        + '<div class="qtext">' + it.q + '</div>'
+        + '<div class="qopts">'
+        + '<label><input type="radio" name="q' + i + '" value="yes"' + (state.ans[i] === true ? " checked" : "") + '><span>是</span></label>'
+        + '<label><input type="radio" name="q' + i + '" value="no"' + (state.ans[i] === false ? " checked" : "") + '><span>否</span></label>'
+        + '</div></div>';
+    }
+    h += '</div><div style="text-align:center;margin:16px 0">';
+    if (state.page > 0) h += '<button class="btn ghost" id="prevBtn">上一页</button> ';
+    h += '<button class="btn" id="nextBtn">' + (end >= order.length ? "完成作答" : "下一页") + '</button></div>';
+    root.innerHTML = h;
+
+    if (state.page > 0) document.getElementById("prevBtn").onclick = function() { state.page--; save(); renderPage(); };
+    document.getElementById("nextBtn").onclick = function() {
+      var missing = 0;
+      for (var i = start; i < end; i++) {
+        var v = document.querySelector('input[name="q' + i + '"]:checked');
+        if (!v) { missing++; continue; }
+        state.ans[i] = (v.value === "yes");
+      }
+      if (missing > 0) {
+        if (!confirm("本页还有 " + missing + " 题未作答，确定跳过吗？（未答按「否」计）")) return;
+        for (var i2 = start; i2 < end; i2++) {
+          if (state.ans[i2] !== true) state.ans[i2] = false;
+        }
+      }
+      state.page++;
+      save();
+      renderPage();
+    };
+  }
+
+  function finish() {
+    var done = Object.keys(state.ans).length;
+    if (!confirm("共 225 题，你已作答 " + done + " 题。完成作答并生成结果？")) { state.page = totalPages; save(); renderPage(); return; }
+    state.done = true; state.ts = Date.now();
+    save();
+    location.href = "report.html" + (mode === "other" ? "" : "?mode=self");
+  }
+
+  /* 恢复：已有作答则直接进页（page 0 且无作答时先给说明） */
+  if (state.page === 0 && Object.keys(state.ans).length === 0) renderIntro();
+  else renderPage();
+})();
+</script>
+</body>
+</html>

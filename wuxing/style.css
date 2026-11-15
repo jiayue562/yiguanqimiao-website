@@ -51,6 +51,10 @@ footer { margin: 48px 0 24px; border-top: 1px solid #D3D1C7; padding-top: 14px; 
 .progressbar { height: 8px; background: #D3D1C7; border-radius: 999px; overflow: hidden; margin: 10px 0 4px; }
 .progressbar > div { height: 100%; background: #854F0B; transition: width .3s; }
 .qnav { display: flex; justify-content: space-between; margin: 18px 0; }
+.qno { font-size: 12px; color: #8B8578; margin-bottom: 6px; }
+.progresswrap { display: flex; align-items: center; gap: 10px; }
+.progresswrap .progressbar { flex: 1; margin: 0; }
+.progresslabel { font-size: 12px; color: #8B8578; flex-shrink: 0; }
 
 /* 报告页 */
 .bar-row { display: flex; align-items: center; margin: 6px 0; }
