@@ -25,6 +25,7 @@
 <script src="../data.js"></script>
 <script>
 (function(){
+  var data = QUIZ_DATA; /* 题库全局变量（data.js 定义为 const QUIZ_DATA） */
   var params = new URLSearchParams(location.search);
   var mode = params.get("mode") === "other" ? "other" : "self";
   var KEY = mode === "other" ? "wxr_v1_other" : "wxr_v1_self";
