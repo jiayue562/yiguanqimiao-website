@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五行人格学在线测评 · 以观其妙书院</title>
+<meta name="description" content="五行人格学在线测评：225 词九层自陈式测评，答题后自动生成个人测评报告——五行类型、能量剖面、九层定位与起点建议。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="../index.html">以观其妙书院</a>
+  <nav><a href="index.html">五行测评</a></nav>
+</header>
+<div class="wrap">
+
+  <h1>五行人格学在线测评</h1>
+  <p class="muted">以观其妙书院 · 一心三界五行九层 · 独立测评入口</p>
+
+  <div class="card">
+    <p>每个人身上都有木、火、土、金、水五种能量，但有一个主导的底色；同一种能量，又会沿着九个层级呈现出从健康到不健康的完整光谱。<strong>五行人格学在线测评</strong>用 225 个词、每词一句自陈式陈述，帮你看见：自己属于哪一行的人、阴面与阳面的能量分布、以及当下处在九层中的哪一层。</p>
+    <p><a class="btn" href="quiz.html">开始测评（225 题 · 约 25 分钟）</a></p>
+    <p class="muted">支持中途保存：答题进度自动保存在你自己的浏览器中，随时退出、随时继续。答案只保存在本地，不上传服务器。</p>
+  </div>
+
+  <h2>什么是五行人格学</h2>
+  <p>五行人格学以「<strong>一心三界五行九层</strong>」为总体架构：<strong>一心</strong>是觉知本源，是人得以观察自己的那个起点；<strong>三界</strong>把人的存在分为信息体、能量体、物质体三个层面；<strong>五行</strong>用木、火、土、金、水五种能量形态刻画人格的阳面与阴面；<strong>九层</strong>则把每一种五行能量展开为九个层级——L1–L3 为健康段（解放、心理能力、社会价值），L4–L6 为一般段（失衡、人际控制、过度补偿），L7–L9 为不健康段（侵害、妄想强迫、病态破坏）。</p>
+  <p>同一种五行能量，在健康段是特质、在一般段是状态、在不健康段是标记——三者方向不同，因此本测评不做单一的「好/坏总分」，而是给你一张<strong>结构的画像</strong>：类型、能量剖面、九层定位、以及词级的转化起点。</p>
+
+  <h2>理论渊源</h2>
+  <p>五行学说源自《尚书·洪范》对「五行：一曰水，二曰火，三曰木，四曰金，五曰土」的经典论述，是描述万物能量形态与生克关系的东方基础模型。五行人格学在此基础上，融合传统性理学说对「怒、恨、怨、恼、烦」五种阴面情绪及其转化的梳理，并参照现代人格测量学的自陈式量表方法（是/否作答、九层计分、剖面呈现），整理建构为一套可施测、可复测的人格学体系。</p>
+  <p class="muted">本体系由以观其妙书院整理建构，详细论述见书院知识库「五行人格心理学」相关文章。</p>
+
+  <h2>五行 · 五型人格</h2>
+  <div class="typegrid" id="typegrid"></div>
+
+  <h2>测评说明</h2>
+  <ul>
+    <li><strong>题量与时长</strong>：225 题，每题一句陈述句，答「是」或「否」，约 25 分钟。建议一次连续完成。</li>
+    <li><strong>作答原则</strong>：凭第一反应作答，不揣摩「正确答案」——本测评没有好坏对错，越真实越准确。</li>
+    <li><strong>报告内容</strong>：五行类型与性格特点、阳面优势、三段能量剖面、九层定位、以及按「起点规则」生成的转化建议（从你最需要转化的词开始，配合化克为生与具体微行为方案）。</li>
+    <li><strong>隐私</strong>：所有作答与报告仅保存在你自己的浏览器中，不上传、不收集。</li>
+    <li><strong>边界</strong>：测评结果为自我探索与成长参考，属能量状态描述，<strong>非医学诊断</strong>；如状态明显影响生活，请寻求专业支持。</li>
+  </ul>
+
+  <div class="card" style="text-align:center">
+    <p>准备好了，就从第一个词开始。</p>
+    <a class="btn" href="quiz.html">开始测评</a>
+  </div>
+
+  <footer>以观其妙书院 · 五行人格学在线测评 · 一期（主卷 225 题 · 基本属性）｜亲密关系、团队、亲子场景卷陆续推出</footer>
+</div>
+<script src="data.js"></script>
+<script>
+  var grid = document.getElementById("typegrid");
+  ELEMENTS.forEach(function(e){
+    var t = TYPES[e], c = ELEMENT_COLOR[e];
+    var div = document.createElement("div");
+    div.className = "typecard";
+    div.style.background = c.light;
+    div.innerHTML = "<h3 style='color:" + c.main + "'>" + t.name + "（" + t.xiang + "）</h3>"
+      + "<p class='muted'>" + t.metaphor + "</p>"
+      + "<p>" + t.core.slice(0, 60) + "……</p>"
+      + "<p style='font-size:13px'><strong>优势：</strong>" + t.strengths.slice(0,2).join("；") + "</p>";
+    grid.appendChild(div);
+  });
+</script>
+</body>
+</html>
