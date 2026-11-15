@@ -143,7 +143,7 @@
     h += '<div id="qlist">';
     for (var i = start; i < end; i++) {
       var it = data[order[i]];
-      h += '<div class="qcard"><div class="qno">Q' + (i + 1) + ' · ' + it.e + '行 · L' + it.layer + '</div>'
+      h += '<div class="qcard"><div class="qno">Q' + (i + 1) + ' · ' + it.e + '行 · L' + it.layer + ' · ' + it.xiang + ' · ' + it.word + '</div>'
         + '<div class="qtext">' + it.q + '</div>'
         + '<div class="qopts">'
         + '<label><input type="radio" name="q' + i + '" value="yes"' + (state.ans[i] === true ? " checked" : "") + '><span>是</span></label>'

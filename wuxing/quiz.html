@@ -78,7 +78,8 @@ function render() {
     var idx = store.order[p], it = QUIZ_DATA[idx];
     var card = document.createElement("div");
     card.className = "qcard";
-    card.innerHTML = "<div class='qtext'>" + (p+1) + ". " + it.q + "</div>"
+    card.innerHTML = "<div class='qno'>Q" + (p+1) + " · " + it.e + "行 · L" + it.layer + " · " + it.xiang + " · " + it.word + "</div>"
+      + "<div class='qtext'>" + it.q + "</div>"
       + "<div class='qopts'>"
       + "<label><input type='radio' name='q" + idx + "' value='yes' " + (ans[idx]===true?"checked":"") + "><span>是</span></label>"
       + "<label><input type='radio' name='q" + idx + "' value='no' " + (ans[idx]===false?"checked":"") + "><span>否</span></label>"
