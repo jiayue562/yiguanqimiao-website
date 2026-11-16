@@ -72,7 +72,7 @@
 <script src="knowledge.js?v=20261116b"></script>
 <script src="../engine.js?v=20261116b"></script>
 <script src="engine_rel.js?v=20261116b"></script>
-<script src="report_text.js?v=20261116bb"></script>
+<script src="report_text.js?v=20261116c"></script>
 <script>
 (function(){
   var KEYS = { self: "wxr_v1_self", other: "wxr_v1_other" };
@@ -85,6 +85,23 @@
   var params = new URLSearchParams(location.search);
   var mode = params.get("mode");
   if (!mode) mode = selfDone && otherDone ? "rel" : (selfDone ? "self" : (otherDone ? "other" : "none"));
+  /* rel 模式守卫：双卷齐备才进关系报告，缺卷回落 */
+  if (mode === "rel" && !(selfDone && otherDone)) {
+    mode = selfDone ? "self" : (otherDone ? "other" : "none");
+  }
+  /* 断法自选（R4 输入，存本地） */
+  var DUAN_KEY = "wxr_rel_duan_v1";
+  function loadDuan() {
+    try { var v = JSON.parse(localStorage.getItem(DUAN_KEY) || "null"); return (v && ["水","金","木","火","土"].indexOf(v.duan) !== -1) ? v : null; } catch (e) { return null; }
+  }
+  window.pickDuan = function(d) {
+    localStorage.setItem(DUAN_KEY, JSON.stringify({ duan: d, ts: Date.now() }));
+    location.reload();
+  };
+  window.resetDuan = function() {
+    localStorage.removeItem(DUAN_KEY);
+    location.reload();
+  };
   var root = document.getElementById("root");
   var h = "";
 
@@ -494,32 +511,77 @@
     return;
   }
 
-  /* ---------- 模式B：完整关系测评报告 ---------- */
+  /* ---------- 模式B：完整关系测评报告（八块叙事 · v1.2 第一批） ---------- */
   var rel = computeRelation(sSelf.ans, sOther.ans, QUIZ_DATA);
   rel.otherName = otherName;
   var pack = relLessonPack(rel);
+  var RT_R = RT.relText;
+  var duanSel = loadDuan();
+  var D = duanSel ? duanSel.duan : null;
 
   h += "<h1>关系测评报告</h1><p class='muted'>" + metaLine(sSelf, "自测卷") + "　｜　" + metaLine(sOther, "他测卷（" + otherName + "）") + "</p>";
 
-  /* 第一部分 · 本人测评（与模式A同一渲染件） */
-  h += "<h2>第一部分 · 你的测评</h2>";
-  h += renderSelfCore(rel.selfRes, sSelf.ans, "你", sSelf);
+  /* 断法自选卡（未认领时只渲染此卡——R4 输入） */
+  if (!D) {
+    h += "<div class='card'><h3>先认领一件事：你们卡在哪一断</h3>"
+      + "<p>一段关系从「感觉到对方」到「真正碰上」，中间有五步。五步走完，一次接触才闭合；中间哪一步断了，关系就在哪一步卡住。填的时候只看一条：<strong>你们俩反复吵的那件事，最像下面哪一句？</strong></p>";
+    ["水", "金", "木", "火", "土"].forEach(function(d) {
+      h += "<p class='li-row'><button class='btn ghost' style='margin-right:8px' onclick=\"window.pickDuan('" + d + "')\">选 " + d + " 断</button>" + RT_R.duanQuote[d]
+        + "　<span class='muted'>" + RT_R.duanTab[d].name + "</span></p>";
+    });
+    h += "<p class='muted'>认领后报告生成完整结构；进报告后可随时在「卡点定位」区重选。只挑最主要的那一个——给三个动作等于没给。</p></div>";
+    document.getElementById("actions").style.display = "block";
+    root.innerHTML = h;
+    return;
+  }
 
-  /* 第二部分 · 测他摘要（同一渲染件 + 视角边界） */
-  h += "<h2>第二部分 · 测他摘要（你眼中的 " + otherName + "）</h2>";
+  /* R1 一页速览（七行铁律，每行 ≤30 字） */
+  function peakOf(res) { return res.mainPeak || res.peak || null; }
+  function yinStr(res) {
+    var yy = res.yinYang;
+    if (!yy || yy.verdict === "阴阳未显") return "阴阳未显";
+    return yy.verdict;
+  }
+  function peakStr(res) {
+    var p = peakOf(res);
+    return p ? "第 " + p + " 层，" + yinStr(res) : "层位未显，" + yinStr(res);
+  }
+  var structShort = rel.dirText.split("（")[0];
+  var r1 = "<h2>一页速览——你们卡在哪一句</h2><div class='card'><table class='concl'>"
+    + "<tr><td>关系</td><td><strong>你（" + rel.P.mainType + "）与 " + otherName + "（" + rel.Q.mainType + "，在你眼中）</strong></td></tr>"
+    + "<tr><td>结构</td><td>" + structShort + " · " + rel.verdict + "</td></tr>"
+    + "<tr><td>" + otherName + "</td><td>" + peakStr(rel.otherRes) + "（按你的判断）</td></tr>"
+    + "<tr><td>你</td><td>" + peakStr(rel.selfRes) + "</td></tr>"
+    + "<tr><td>卡点</td><td>" + RT_R.duanTab[D].name.split("（")[0] + "——" + RT_R.duanKadian[D] + "</td></tr>"
+    + "<tr><td>最像你们</td><td><strong>" + RT_R.duanQuote[D] + "</strong></td></tr>"
+    + "<tr><td>下一步（只做一件事）</td><td>" + RT_R.duanTab[D].fix + "</td></tr>"
+    + "</table>"
+    + "<p class='muted' style='margin-top:10px'>「这一句最像你们」是全篇的灵魂——如果它戳中了，往下读；如果都不像，重选一断或直接看生克结构。</p></div>";
+  h += r1;
+
+  /* 三种数据来源标明（横切：决定数据质量） */
+  h += "<div class='card' style='background:#FAEEDA'><p><strong>数据来源标明</strong>：" + RT_R.threeSrcBoth.replace(/\{name\}/g, otherName) + "</p>"
+    + "<p class='muted'>" + RT_R.threeSrcWord + "</p></div>";
+
+  /* 第一块 · 两人坐标（你的完整画像，自测窗口） */
+  h += "<h2>第一块 · 两人坐标——你（自测窗口）</h2>";
+  h += renderSelfCore(rel.selfRes, sSelf.ans, "你", sSelf, false);
+
+  /* 第二块 · 两人坐标（测他摘要，他测窗口） */
+  h += "<h2>第二块 · 两人坐标——你眼中的 " + otherName + "（他测窗口）</h2>";
   h += "<div class='card' style='background:#FAEEDA'><p><strong>视角边界</strong>：此为你眼中 " + otherName + " 的画像（他测窗口），非对方自知，不作为对 " + otherName + " 的独立人格论断。</p></div>";
-  h += renderSelfCore(rel.otherRes, sOther.ans, "你眼中的 " + otherName, sOther);
+  h += renderSelfCore(rel.otherRes, sOther.ans, "你眼中的 " + otherName, sOther, false);
 
   /* 测评历史与对比（两卷各自与其历史存档对比；关系指标四档对比属二期复测报告） */
   h += histSection("histSelf", HISTKEYS.self, rel.selfRes, "你", "你");
   h += histSection("histOther", HISTKEYS.other, rel.otherRes, "你眼中的 " + otherName, otherName);
 
-  /* 第三部分 · 关系篇 */
-  h += "<h2>第三部分 · 关系篇</h2>";
+  /* 第三块 · 生克结构（关系窗四象限 + 关系分型） */
+  h += "<h2>第三块 · 生克结构——这两股能量撞在一起会怎样</h2>";
 
   /* 关系篇一 · 关系窗（四象限，仅双方主行词库） */
   h += "<h3>关系窗 · 关系四象限词级分布</h3>";
-  h += "<p class='muted'>统计范围：双方主行词库（<strong>" + rel.scopeText + "，你=" + rel.P.mainType + " / " + otherName + "=" + rel.Q.mainType + "）</strong>——其他行词不参与整理与统计。空白区聚合表同理仅列主行。</p><div class='quad4'>";
+  h += "<p class='muted'>统计范围：双方主行词库（<strong>" + rel.scopeText + "，你=" + rel.P.mainType + " / " + otherName + "=" + rel.Q.mainType + "）</strong>——其他行词不参与整理与统计。空白区聚合表同理仅列主行。<strong>词来源标签</strong>：你的词＝自测卷；" + otherName + " 的词＝他测卷（你眼中）。</p><div class='quad4'>";
   var qn = [["resonance", "共鸣区", "我认己亦见人——关系的共同语言（起点区）", "#3B6D11"],
             ["projection", "投射区", "我在 TA 身上看见、却不在自己身上选出的词——先求证，后定义", "#185FA5"],
             ["defense", "防御区", "我身上呈现而 TA 未回应的部分——暴露练习", "#854F0B"],
@@ -566,7 +628,7 @@
   if (rel.kePairs.length) {
     h += "<table class='qtable'><tr><th>源词（克方）</th><th>靶词（被克方·阳面）</th><th>K 分</th><th>计入共鸣区判定</th></tr>";
     rel.kePairs.slice(0, 10).forEach(function(p) {
-      h += "<tr><td>" + (p.side === "self" ? "我" : otherName) + "的「" + p.src.word + "」（" + p.src.e + " L" + p.src.layer + "，" + relQName(p.srcQ) + "）</td>"
+      h += "<tr><td>" + (p.side === "self" ? "我（自测）" : otherName + "（他测）") + "的「" + p.src.word + "」（" + p.src.e + " L" + p.src.layer + "，" + relQName(p.srcQ) + "）</td>"
         + "<td>" + (p.side === "self" ? otherName : "我") + "的「" + p.tgt.word + "」（" + p.tgt.e + " L" + p.tgt.layer + "）</td>"
         + "<td>" + p.score.toFixed(3) + "</td><td>" + (p.bothRes ? "✓" : "—") + "</td></tr>";
     });
@@ -578,7 +640,7 @@
   if (rel.shengPairs.length) {
     h += "<table class='qtable'><tr><th>源词（生方·阳面）</th><th>靶词（被生方·阳面）</th><th>S 分</th><th>计入共鸣区判定</th></tr>";
     rel.shengPairs.slice(0, 10).forEach(function(p) {
-      h += "<tr><td>" + (p.side === "self" ? "我" : otherName) + "的「" + p.src.word + "」（" + p.src.e + " L" + p.src.layer + "）</td>"
+      h += "<tr><td>" + (p.side === "self" ? "我（自测）" : otherName + "（他测）") + "的「" + p.src.word + "」（" + p.src.e + " L" + p.src.layer + "）</td>"
         + "<td>" + (p.side === "self" ? otherName : "我") + "的「" + p.tgt.word + "」（" + p.tgt.e + " L" + p.tgt.layer + "）</td>"
         + "<td>" + p.score.toFixed(3) + "</td><td>" + (p.bothRes ? "✓" : "—") + "</td></tr>";
     });
@@ -588,6 +650,44 @@
   }
   h += "</div>";
 
+  /* 第四块 · 卡点定位（断法 = 两池能量的断裂处；判断依据引两池证据） */
+  h += "<h3>第四块 · 卡点定位——你们卡在哪一断</h3><div class='card'>";
+  h += "<p class='muted' style='margin-top:0'>一段关系从「感觉到对方」到「真正碰上」，中间有五步——五步各归一行，因为每一行本来就是一种「动」的方式：</p><ul>";
+  RT_R.huanjie.forEach(function(hj) {
+    h += "<li><strong>" + hj[0] + "</strong>：" + hj[1] + "。</li>";
+  });
+  h += "</ul><p>五步走完，一次接触才闭合。中间哪一步断了，关系就在哪一步卡住。</p>";
+  /* 主断四段写法 */
+  var dt = RT_R.duanTab[D], hjRow = RT_R.huanjie[RT_R.duanHuan[D]];
+  h += "<h4>① 你们卡在哪一断</h4><p><strong>" + dt.name + "</strong>——" + RT_R.duanKadian[D] + "。</p>";
+  h += "<h4>② 判断依据</h4><p>你自己认领了这一断（反复吵的事最像「" + RT_R.duanQuote[D] + "」）。";
+  if (rel.topKe.length) {
+    var kp = rel.topKe[0];
+    h += "佐证：" + (kp.side === "self" ? "我（自测）" : otherName + "（他测）") + "的「" + kp.src.word + "」（" + kp.src.e + " L" + kp.src.layer + "，" + relQName(kp.srcQ) + "）正在克伤 " + (kp.side === "self" ? otherName + "（他测）" : "我（自测）") + "的「" + kp.tgt.word + "」（" + kp.tgt.e + " L" + kp.tgt.layer + "，阳面）——与" + D + "断同向。";
+  } else {
+    h += "本次克证据对为零——以你的认领为准，克点留待复测核对。";
+  }
+  h += "</p><p class='muted'>其余四种断法（" + ["水", "金", "木", "火", "土"].filter(function(x) { return x !== D; }).join("／") + "）也可能同时存在——只挑最主要的一个，其余一句带过，给三个动作等于没给。</p>";
+  h += "<h4>③ 这一断的机制</h4><p>" + dt.stuck + "。环节对照：<strong>" + hjRow[0] + "</strong>——" + hjRow[1] + "。</p>";
+  h += "<h4>④ 一个修复动作（就一个，具体到下一次开口）</h4><p><strong>" + dt.fix + "</strong>。</p>";
+  h += "<p style='margin-top:10px'><button class='btn ghost' onclick='window.resetDuan()'>重选断法</button></p></div>";
+
+  /* 第五块 · 层级与难度（层级决定语气；层级差大专项） */
+  h += "<h3>第五块 · 层级与难度——这个卡点好不好解</h3><div class='card'>";
+  function segOfP(p) { return p == null ? null : (p <= 3 ? 1 : (p <= 6 ? 2 : 3)); }
+  var sp = peakOf(rel.selfRes), op = peakOf(rel.otherRes);
+  h += "<table class='qtable'><tr><th>人</th><th>层级</th><th>这一层的修复方式</th></tr>";
+  [["你（自测）", sp], [otherName + "（你眼中，他测）", op]].forEach(function(rw) {
+    var sg = segOfP(rw[1]);
+    h += "<tr><td><strong>" + rw[0] + "</strong></td><td>" + (rw[1] ? "L" + rw[1] + " " + LAYER_NAMES[rw[1]] : "层位未显") + "</td><td>" + (sg ? RT_R.fixWay[sg] : "层位未显——先看该卷九层定位。") + "</td></tr>";
+  });
+  h += "</table>";
+  var gap = (sp != null && op != null) ? Math.abs(sp - op) : null;
+  if (gap != null && gap >= 3) h += "<div class='blurbox'><strong>层级差专项</strong>：" + RT_R.gapBig + "</div>";
+  var deepPeak = rel.rl || (sp != null && op != null ? Math.max(sp, op) : (sp != null ? sp : op));
+  h += "<div class='closing'>你们卡在" + D + "断，第 " + deepPeak + " 层，" + RT_R.duanKadian[D] + "。下一步只做一件事：" + dt.fix + "。</div>"
+    + "<p class='muted'>这一句把「卡在哪、多难、怎么办」压进了一句话——你会记住这一句，其他都记不住。</p></div>";
+
   /* 关系篇三 · 关系行动 */
   h += "<h3>关系行动 · 四象限分区措施</h3><div class='card'><ul>"
     + "<li><strong>共鸣区（起点区）</strong>：所有关系改善从共识的词出发——相生措施把生链互动固化为习惯锚点；克对在克源词上落通关点修炼。首月只做共鸣区（起点纪律）。</li>"
@@ -595,13 +695,23 @@
     + "<li><strong>防御区（" + rel.quad.defense.length + " 词）</strong>：暴露练习——「在我感到 X 之后，我告诉对方这个词」的词级表达微行为。</li>"
     + "<li><strong>空白区（" + rel.quad.blank.length + " 词）</strong>：不强制行动，聚合呈现「共同未开发区」——见上方行 × 层计数表。</li></ul></div>";
 
-  h += "<h2>功课包（本轮 3 个月 · 双主线）</h2>";
+  h += "<h2>第六、七块 · 关系功课——化克为生与下一次开口</h2>";
   if (pack.shengCard) h += "<div class='lesson'>" + pack.shengCard + "</div>";
   if (pack.keCard) h += "<div class='lesson'>" + pack.keCard + "</div>";
   h += "<div class='lesson'>" + pack.daily + "</div>";
   h += "<div class='lesson'>" + pack.map90 + "</div>";
 
   h += "<div class='card'><p><strong>复测提示</strong>：第 13 周（3 个月 ±7 天）用同一套卷重做双窗口，系统将对比克线（主克 K 分下降 ≥30%）与生线（主生 S 分维持 ≥95%）及双方峰值层位移，出四档判定（大效 / 显效 / 有效 / 未显效）。重做方式：入口页对应卷卡上点「重新开始」→ 重做完成 → 本报告「测评历史与对比」区自动给出与上一轮的得分差异与连续变化（关系指标四档对比属二期复测报告）。</p></div>";
+
+  /* 第八块 · 附录（关系版边界，比自测报告更重） */
+  h += "<h2>附录 · 这份关系报告的边界与可信度</h2><div class='card appx'>"
+    + "<h4>1．边界声明（先说做不到的）</h4><p>" + RT_R.relAppx.boundary + "</p>"
+    + "<div class='closing'>" + RT_R.relAppx.fixed + "</div>"
+    + "<h4>2．它可能错在哪里</h4><p>" + RT_R.relAppx.wrong + "</p>"
+    + "<h4>3．怎么验证</h4><p>" + RT_R.relAppx.verify + "</p>"
+    + "<h4>4．数据来源标明</h4><p>" + RT_R.threeSrcBoth.replace(/\{name\}/g, otherName) + "</p><p class='muted'>" + RT_R.threeSrcWord + "</p>"
+    + "<h4>5．概念速查</h4><p>一心三界五行九层三段、相生相克方向、五种断法、关系四象限（非乔哈里视窗）——完整口径见 <a href='baike.html'>百科与方法论</a>。</p>"
+    + "</div>";
 
   document.getElementById("actions").style.display = "block";
   root.innerHTML = h;
