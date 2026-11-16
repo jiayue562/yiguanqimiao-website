@@ -88,7 +88,7 @@ function answeredCount() {
   var n = 0; store.order.forEach(function(i){ if (ans[i] === true || ans[i] === false) n++; });
   return n;
 }
-function render() {
+function render(scrollToQuiz) {
   var el = document.getElementById("qlist");
   el.innerHTML = "";
   var start = page * PAGE;
@@ -112,7 +112,13 @@ function render() {
   }
   updateProgress();
   localStorage.setItem(KEY+"_page", String(page));
-  window.scrollTo(0, 0);
+  /* 翻页后定位到本页答题区顶部（进度条处），上一页/下一页行为一致 */
+  if (scrollToQuiz) {
+    var anchor = document.querySelector(".progressbar") || document.getElementById("qlist");
+    if (anchor && anchor.scrollIntoView) anchor.scrollIntoView(); else window.scrollTo(0, 0);
+  } else {
+    window.scrollTo(0, 0);
+  }
 }
 function updateProgress() {
   var n = answeredCount(), total = QUIZ_DATA.length;
@@ -120,7 +126,7 @@ function updateProgress() {
   document.getElementById("ptext").textContent = "进度 " + n + " / " + total + "（第 " + (page+1) + " / " + (maxPage+1) + " 页）";
 }
 document.getElementById("prev").addEventListener("click", function(){
-  if (page > 0) { page--; render(); }
+  if (page > 0) { page--; render(true); }
 });
 document.getElementById("next").addEventListener("click", function(){
   var start = page * PAGE, missing = 0;
@@ -131,7 +137,7 @@ document.getElementById("next").addEventListener("click", function(){
   if (missing > 0) {
     document.getElementById("hint").textContent = "本页还有 " + missing + " 题未作答——可以跳过继续，但未答的题不计入结果。";
   }
-  if (page < maxPage) { page++; render(); }
+  if (page < maxPage) { page++; render(true); }
   else {
     var n = answeredCount();
     if (n < QUIZ_DATA.length) {

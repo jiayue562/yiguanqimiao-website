@@ -143,11 +143,11 @@
       + '<div style="margin-top:14px"><button class="btn ghost" id="restartBtnT" style="font-size:13px">重新开始做题</button></div>'
       + '</div>';
     root.innerHTML = h;
-    document.getElementById("contBtn").onclick = function() { renderPage(); };
+    document.getElementById("contBtn").onclick = function() { renderPage(true); };
     document.getElementById("restartBtnT").onclick = restart;
   }
 
-  function renderPage() {
+  function renderPage(scrollToQuiz) {
     var start = state.page * PAGE;
     if (start >= order.length) { finish(); return; }
     var seg = segOf(start);
@@ -175,8 +175,13 @@
     h += '<button class="btn" id="nextBtn">' + (end >= order.length ? "完成作答" : "下一页") + '</button></div>'
       + '<div style="text-align:center;margin:0 0 18px"><button class="btn ghost" id="restartBtn" style="font-size:13px">重新开始做题</button></div>';
     root.innerHTML = h;
+    /* 翻页/过场续答后定位到本页答题区顶部（进度条处），上一页/下一页行为一致 */
+    if (scrollToQuiz) {
+      var anchor = document.querySelector(".segbar") || document.getElementById("qlist");
+      if (anchor && anchor.scrollIntoView) anchor.scrollIntoView(); else window.scrollTo(0, 0);
+    }
 
-    if (state.page > 0) document.getElementById("prevBtn").onclick = function() { state.page--; save(); renderPage(); };
+    if (state.page > 0) document.getElementById("prevBtn").onclick = function() { state.page--; save(); renderPage(true); };
     document.getElementById("restartBtn").onclick = restart;
     document.getElementById("nextBtn").onclick = function() {
       var missing = 0;
@@ -193,7 +198,7 @@
       }
       state.page++;
       save();
-      renderPage();
+      renderPage(true);
     };
   }
 
