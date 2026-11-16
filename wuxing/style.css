@@ -180,7 +180,7 @@ li.wordli .wd { display: block; font-size: 13px; color: #5F5E5A; margin-top: 3px
   display: flex; align-items: center; gap: 12px; padding: 9px 14px; margin: 6px 0;
   background: #FFFDF8; border: 1px solid #E3DCCB; border-left: 6px solid var(--sc, #6E6E68); border-radius: 10px;
 }
-.lrow .ln { font-size: 13px; font-weight: 700; color: var(--sc, #6E6E68); width: 30px; flex-shrink: 0; }
+.lrow .ln { font-size: 13px; font-weight: 700; color: var(--sc, #6E6E68); width: 52px; flex-shrink: 0; white-space: nowrap; }
 .lrow .lname { font-size: 15px; font-weight: 600; width: 92px; flex-shrink: 0; }
 .lrow .ldesc { font-size: 13px; color: #5F5E5A; }
 .seglead { font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #5F5E5A; margin: 18px 0 2px; }
