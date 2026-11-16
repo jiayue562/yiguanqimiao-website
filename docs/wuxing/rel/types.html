@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人格类型 · 五行速览 · 五行人格学</title>
+<meta name="description" content="五行人格类型速览：木行人、火行人、土行人、金行人、水行人各自的能量底色、五个维度、阳面优势、阴面病链条与通关功课，一张表看清五行的差别。">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="../../index.html">以观其妙书院</a>
+  <nav>
+    <a href="index.html">关系测评</a>
+    <a href="../index.html">单人测评</a>
+    <a href="baike.html">人格百科</a>
+    <a href="method.html">方法论</a>
+    <a href="types.html" class="cur">人格类型</a>
+    <a href="camp.html">陪跑营</a>
+  </nav>
+</header>
+<div class="wrap">
+
+  <div class="pagehero">
+    <span class="kicker">人 格 类 型</span>
+    <h1>五种底色，各有各的功课</h1>
+    <p>先纠正一个常见误会：五行不是把人分成五堆。每个人身上五行俱全，只是<strong>有一股是主导底色</strong>——顺境时它让你出彩，逆境时也是它先给你惹麻烦。所以看类型不是为了认领标签，是为了认出<strong>自己的那股劲</strong>，以及它配套的那门功课。</p>
+    <div class="hrow">
+      <a class="btn" href="index.html">测出我的主导行</a>
+      <a class="btn ghost" href="baike.html">查 225 个词</a>
+    </div>
+  </div>
+
+  <h2>五行速览</h2>
+  <div class="tblwrap">
+    <table class="plain" id="quicktbl">
+      <thead>
+        <tr><th style="width:96px">类型</th><th style="width:120px">主导能量</th><th>阳面一句话</th><th style="width:170px">阴面 · 病链条</th><th style="width:110px">通关功夫</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <p class="muted">主导行由 225 题百分制判定：每行答「是」数（满分 45）归一化为百分制，最高者为主导类型；再在该行内比较 L1–L3（阳）与 L7–L9（阴）的占比，判定阴阳倾向。</p>
+
+  <div id="typesroot"></div>
+
+  <div class="notebox" style="margin-top:24px">
+    <strong>先说清楚边界。</strong>行是能量底色，不是行为许可——"我就是金行人所以说话直"这句话在本体系里不成立：同一行的 L1 与 L7，做人方式天差地别。类型只回答"你惯用哪股劲"，九层才回答"这股劲现在走得正不正"。本页描述为取向性概括，用于自我观察，<strong>非人格论断、非医学诊断</strong>。
+  </div>
+
+  <div class="backline between">
+    <a href="index.html">← 关系测评主页</a>
+    <a href="method.html">方法论</a>
+    <a href="camp.html">陪跑营 →</a>
+  </div>
+</div>
+
+<script src="../data.js"></script>
+<script src="../engine.js"></script>
+<script>
+(function () {
+  var root = document.getElementById("typesroot");
+  var tbody = document.querySelector("#quicktbl tbody");
+  var order = (typeof ELEMENTS !== "undefined") ? ELEMENTS : ["木", "火", "土", "金", "水"];
+
+  if (typeof TYPES === "undefined") {
+    root.innerHTML = "<p class='emptyhint'>类型文案未加载（engine.js 缺失或未部署）。</p>";
+    return;
+  }
+
+  var quick = "", cards = "", idx = 0;
+  order.forEach(function (el) {
+    var t = TYPES[el], col = ELEMENT_COLOR[el], txt = EL_TEXT[el];
+    var chain = (typeof ILLNESS_CHAINS !== "undefined") ? ILLNESS_CHAINS[el] : "";
+    var cp = (typeof CHECKPOINTS !== "undefined") ? CHECKPOINTS[el] : null;
+    var dims = (typeof WUXING_META !== "undefined" && WUXING_META[el]) ? WUXING_META[el] : [];
+    idx++;
+
+    quick += "<tr>"
+      + "<td><strong style='color:" + txt + "'>" + t.name + "</strong></td>"
+      + "<td>" + t.xiang + "</td>"
+      + "<td>" + t.metaphor + "</td>"
+      + "<td>" + chain + "</td>"
+      + "<td>" + (cp ? cp.name : "") + "</td>"
+      + "</tr>";
+
+    cards += "<section class='tcard' style='--tm:" + txt + ";--tl:" + col.light + "'>"
+      + "<div class='thead'><h2>" + t.name + "</h2>"
+      + "<div class='tmeta'><em>" + t.xiang + "</em>　" + t.metaphor + "</div></div>"
+      + "<div class='tbody'>"
+      + (dims.length ? "<h4>这一行的五个维度</h4><div class='tagline'>"
+          + dims.map(function (d) { return "<span>" + d + "</span>"; }).join("") + "</div>" : "")
+      + "<h4>底色</h4><p style='font-size:14px;margin:0'>" + t.core + "</p>"
+      + "<h4>常见特质</h4><ul>" + t.traits.map(function (x) { return "<li>" + x + "</li>"; }).join("") + "</ul>"
+      + "<h4>阳面优势 · 用得上时</h4><ul>" + t.strengths.map(function (x) { return "<li>" + x + "</li>"; }).join("") + "</ul>"
+      + "<h4>阴面与病链条 · 走偏时</h4><div class='warnbox'>" + t.watch
+      + (chain ? "<br><strong>病链条：</strong>" + chain : "")
+      + (cp ? "<br><strong>通关点：</strong>" + cp.name + "（" + el + "→" + cp.to + "）—— " + cp.how : "")
+      + "</div>"
+      + "<h4>功课 · 怎么转身</h4><div class='growbox'>" + t.growth + "</div>"
+      + "</div></section>";
+  });
+
+  tbody.innerHTML = quick;
+  root.innerHTML = "<h2>五种类型，逐个看</h2>" + cards;
+})();
+</script>
+</body>
+</html>
