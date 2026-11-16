@@ -162,6 +162,44 @@ function computeRelation(selfAns, otherAns, data) {
   kePairs.sort(function(a, b) { return b.score - a.score; });
   shengPairs.sort(function(a, b) { return b.score - a.score; });
 
+  /* ============================================================
+     R3.5 层面生克图谱（v1.2）：三段层面 × 词对 × 生克价判定矩阵
+     矩阵：相生组 阳面=生点/中=观察带/阴面=变相克点（生过头）；
+           相克组 阳面=生点（克得其所）/中=摩擦带/阴面=克点；
+           同气组 阳面=生点/中=观察带/阴面=克点（盲区重合）。
+     词对：两池各取一词，行关系满足 生/克/同行，且两词同处一个层面段。
+     ============================================================ */
+  function segOfL(layer) { return layer <= 3 ? 1 : (layer <= 6 ? 2 : 3); }
+  var SEG_VAL = {
+    sheng: { 1: "生点", 2: "观察带", 3: "变相克点" },
+    ke: { 1: "生点", 2: "摩擦带", 3: "克点" },
+    tongqi: { 1: "生点", 2: "观察带", 3: "克点" }
+  };
+  var segMap = {};
+  [1, 2, 3].forEach(function(seg) {
+    var valence = SEG_VAL[dirType][seg];
+    var pts = [];
+    /* 生克方向按组合类型取对应环：相生用生环、相克用克环、同气同行 */
+    var relFn = dirType === "ke" ? REL_KE : REL_SHENG;
+    selfWords.forEach(function(w1) {
+      otherWords.forEach(function(w2) {
+        if (segOfL(w1.layer) !== seg || segOfL(w2.layer) !== seg) return;
+        var src, tgt, side;
+        if (dirType === "tongqi") {
+          if (w1.e !== w2.e) return;
+          src = w1; tgt = w2; side = "self";
+        } else if (relFn[w1.e] === w2.e) { src = w1; tgt = w2; side = "self"; }
+        else if (relFn[w2.e] === w1.e) { src = w2; tgt = w1; side = "other"; }
+        else return;
+        pts.push({ src: src, tgt: tgt, side: side, seg: seg, valence: valence });
+      });
+    });
+    /* 排序：克点/变相克点取层位最深的词对（冲突主场）；生点取层位最浅的（最通畅） */
+    pts.sort(function(a, b) { return (b.src.layer + b.tgt.layer) - (a.src.layer + a.tgt.layer); });
+    if (valence === "生点") pts.reverse();
+    segMap[seg] = { valence: valence, points: pts.slice(0, 4), total: pts.length };
+  });
+
   return {
     selfRes: selfRes, otherRes: otherRes, P: P, Q: Q,
     scopeRows: scopeRows, scopeText: scopeText, dirText: dirText, dirType: dirType,
@@ -170,6 +208,7 @@ function computeRelation(selfAns, otherAns, data) {
     sR: sR, kR: kR, sAll: shengPairs.length, kAll: kePairs.length,
     verdict: verdict, verdictNote: verdictNote, usedScope: usedScope,
     rl: rl,
+    segMap: segMap, segTypeKey: dirType,
     topKe: kePairs.slice(0, 3), topSheng: shengPairs.slice(0, 3)
   };
 }

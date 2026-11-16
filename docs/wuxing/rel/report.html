@@ -71,8 +71,8 @@
 <script src="../data.js?v=20261116b"></script>
 <script src="knowledge.js?v=20261116b"></script>
 <script src="../engine.js?v=20261116b"></script>
-<script src="engine_rel.js?v=20261116b"></script>
-<script src="report_text.js?v=20261116c"></script>
+<script src="engine_rel.js?v=20261116c"></script>
+<script src="report_text.js?v=20261116e"></script>
 <script>
 (function(){
   var KEYS = { self: "wxr_v1_self", other: "wxr_v1_other" };
@@ -91,6 +91,7 @@
   }
   /* 断法自选（R4 输入，存本地） */
   var DUAN_KEY = "wxr_rel_duan_v1";
+  var REV_KEY = "wxr_rel_review_v1";
   function loadDuan() {
     try { var v = JSON.parse(localStorage.getItem(DUAN_KEY) || "null"); return (v && ["水","金","木","火","土"].indexOf(v.duan) !== -1) ? v : null; } catch (e) { return null; }
   }
@@ -100,6 +101,16 @@
   };
   window.resetDuan = function() {
     localStorage.removeItem(DUAN_KEY);
+    location.reload();
+  };
+  /* 复盘预约（R7 输入：方式 + 默认第 13 周复测日） */
+  window.saveReview = function(way) {
+    var d = new Date(Date.now() + 13 * 7 * 86400000).toISOString().slice(0, 10);
+    localStorage.setItem(REV_KEY, JSON.stringify({ way: way, date: d, ts: Date.now() }));
+    location.reload();
+  };
+  window.resetReview = function() {
+    localStorage.removeItem(REV_KEY);
     location.reload();
   };
   var root = document.getElementById("root");
@@ -572,6 +583,32 @@
   h += "<div class='card' style='background:#FAEEDA'><p><strong>视角边界</strong>：此为你眼中 " + otherName + " 的画像（他测窗口），非对方自知，不作为对 " + otherName + " 的独立人格论断。</p></div>";
   h += renderSelfCore(rel.otherRes, sOther.ans, "你眼中的 " + otherName, sOther, false);
 
+  /* R2 收束 · 双池对照（驱动力表 + 关系化阴阳面） */
+  h += "<h3>双池对照 · 他要的和你给的不是一回事</h3><div class='card'>";
+  h += "<h4 style='margin-top:0'>核心驱动力表</h4><table class='qtable'><tr><th>人</th><th>行</th><th>核心驱动力</th><th>在关系里最想要的是</th></tr>"
+    + "<tr><td><strong>你</strong></td><td>" + rel.P.mainType + "</td><td>" + RT_R.driveRow[rel.P.mainType][0] + "</td><td>" + RT_R.driveRow[rel.P.mainType][1] + "</td></tr>"
+    + "<tr><td><strong>" + otherName + "（你眼中）</strong></td><td>" + rel.Q.mainType + "</td><td>" + RT_R.driveRow[rel.Q.mainType][0] + "</td><td>" + RT_R.driveRow[rel.Q.mainType][1] + "</td></tr></table>"
+    + "<p class='muted'>大多数关系里的委屈，不是对方不给，是给错了东西。</p>";
+  function relFaces(res, tag) {
+    var mw2 = mainWords(res);
+    var yin = mw2.filter(function(w) { return w.layer >= 7; }).sort(function(a, b) { return b.layer - a.layer; }).slice(0, 4);
+    var yang = mw2.filter(function(w) { return w.layer <= 3; }).sort(function(a, b) { return a.layer - b.layer; }).slice(0, 3);
+    var s = "<ul>";
+    yang.forEach(function(w) {
+      s += "<li><strong style='color:" + EL_TEXT[w.e] + "'>" + w.word + "</strong>（L" + w.layer + " 阳面）——" + (w.def || "") + "</li>";
+    });
+    if (yin.length) {
+      yin.forEach(function(w) {
+        s += "<li><strong style='color:" + EL_TEXT[w.e] + "'>" + w.word + "</strong>（L" + w.layer + "）——在这段关系里，通常表现成：" + (RT_R.dimRel[w.xiang] || "受限时的惯性表达") + "</li>";
+      });
+    } else {
+      s += "<li class='muted'>本次确认的不健康段词不足——不硬写，这是好状态。</li>";
+    }
+    return s + "</ul>";
+  }
+  h += "<div class='pairgrid'><div class='pcol'><h4>你的阴阳面（自测池 · 关系化）</h4>" + relFaces(rel.selfRes, "你") + "</div>"
+    + "<div class='pcol'><h4>" + otherName + " 的阴阳面（他测池 · 你眼中）</h4>" + relFaces(rel.otherRes, "TA") + "</div></div></div>";
+
   /* 测评历史与对比（两卷各自与其历史存档对比；关系指标四档对比属二期复测报告） */
   h += histSection("histSelf", HISTKEYS.self, rel.selfRes, "你", "你");
   h += histSection("histOther", HISTKEYS.other, rel.otherRes, "你眼中的 " + otherName, otherName);
@@ -618,6 +655,15 @@
     h += "</table></div>";
   }
 
+  /* 差值 · 最大误解（双向对填升级位 + 当前误解线索） */
+  h += "<h3>最大误解 · 我怎么看他 vs 我怎么看自己</h3><div class='card'>";
+  h += "<p style='margin-top:0'>" + RT_R.maxMis + "</p><ul>";
+  [["projection", "投射区（你判断 TA 有、你不认自己有的词）"], ["defense", "防御区（你身上有、TA 未回应的词）"]].forEach(function(qd) {
+    var ws = rel.quad[qd[0]].slice(0, 3).map(function(w) { return "「" + (w.it || w).word + "」"; }).join("、");
+    h += "<li><strong>" + qd[1] + "</strong>：" + (ws || "该区为空——不硬给") + (rel.quad[qd[0]].length > 3 ? "（前 3 / 共 " + rel.quad[qd[0]].length + "）" : "") + "</li>";
+  });
+  h += "</ul><p class='muted'>这两区就是单向数据下的误解线索：投射区的词先求证后定义，防御区的词先表达后期待——差异最大的几项，就是误解最深的地方。</p></div>";
+
   /* 关系篇二 · 关系分型 */
   h += "<h3>关系分型 · 相生 / 相克判定</h3><div class='card'>";
   h += "<p class='vbig'>" + rel.verdict + "</p>";
@@ -648,6 +694,48 @@
   } else {
     h += "<p>生证据对为零（罕见）——建议复测核实。</p>";
   }
+  h += "</div>";
+
+  /* 第三块之二 · 层面生克图谱（R3.5 四件套：判定/原因/生克点/策略） */
+  function segStrategy(pt, vn) {
+    var tgtWho = pt.side === "self" ? otherName : "你";
+    var srcWho = pt.side === "self" ? "你" : otherName;
+    if (vn === "生点") {
+      if (pt.side === "self") return "助生固本——用你的「" + pt.src.word + "」继续滋养 " + otherName + " 的「" + pt.tgt.word + "」：每周一次主动共处，当面说一个具体好处。";
+      return "接住这份滋养——" + otherName + " 的「" + pt.src.word + "」一直在滋养你的「" + pt.tgt.word + "」：当面点名这个好处，让它显形。";
+    }
+    if (vn === "变相克点") {
+      var cpS = CHECKPOINTS[pt.src.e];
+      return "拔阴取阳——" + srcWho + "把「" + pt.src.word + "」拔向" + cpS.to + "行（通关点修「" + cpS.name + "」：" + cpS.how + "）。生过头处做减法：精简节奏、留无计划日。";
+    }
+    if (vn === "克点") {
+      var yRow = REL_SHENG[pt.tgt.e];
+      return "化克为生——被克方（" + tgtWho + "）养" + yRow + "行：" + RT_R.yCarrier[yRow] + "。把「" + pt.tgt.word + "」的需求变成可执行动作，不硬顶「" + pt.src.word + "」。";
+    }
+    return null; /* 观察带/摩擦带不给策略 */
+  }
+  h += "<h3>层面生克图谱——生在哪里、克在哪里</h3><div class='card'>";
+  h += "<p style='margin-top:0'><strong>关系判定：" + rel.verdict + "。</strong>" + rel.dirText + "。</p>";
+  h += "<h4>原因说明</h4><p>" + RT_R.segCause[rel.segTypeKey] + "</p>";
+  h += "<h4>生克点清单（三段层面 × 词对，每段至多 4 点）</h4>";
+  [1, 2, 3].forEach(function(seg) {
+    var sm = rel.segMap[seg], vn = sm.valence;
+    h += "<h4 style='margin-top:12px'>" + RT_R.segName[seg] + " · 判定：<strong>" + vn + "</strong>（词对 " + sm.total + " 组）</h4>";
+    h += "<p class='muted' style='margin-top:0'>" + RT_R.segReason[rel.segTypeKey + seg] + "。</p>";
+    if (!sm.points.length) {
+      h += "<p class='muted'>该层面两池没有可配的词对——不硬给。</p>";
+      return;
+    }
+    sm.points.forEach(function(pt) {
+      var srcTag = pt.side === "self" ? "我（自测）" : otherName + "（他测）";
+      var tgtTag = pt.side === "self" ? otherName + "（他测）" : "我（自测）";
+      h += "<p class='li-row'><span class='lw'>" + srcTag + "的「" + pt.src.word + "」（" + pt.src.e + " L" + pt.src.layer + "）× " + tgtTag + "的「" + pt.tgt.word + "」（" + pt.tgt.e + " L" + pt.tgt.layer + "）</span>"
+        + "<br><span class='lf'>" + RT_R.segReason[rel.segTypeKey + seg] + "。</span>";
+      var strat = segStrategy(pt, vn);
+      if (strat) h += "<br><strong>策略：</strong>" + strat;
+      h += "</p>";
+    });
+  });
   h += "</div>";
 
   /* 第四块 · 卡点定位（断法 = 两池能量的断裂处；判断依据引两池证据） */
@@ -700,6 +788,40 @@
   if (pack.keCard) h += "<div class='lesson'>" + pack.keCard + "</div>";
   h += "<div class='lesson'>" + pack.daily + "</div>";
   h += "<div class='lesson'>" + pack.map90 + "</div>";
+
+  /* R6.6 · 化克为生落点（克点词对直接对接为策略） */
+  if (rel.segTypeKey === "ke" && rel.segMap[3].points.length) {
+    h += "<div class='lesson'><h3>化克为生落点（来自层面生克图谱的克点）</h3><ul>";
+    rel.segMap[3].points.forEach(function(pt) {
+      var yRow = REL_SHENG[pt.tgt.e];
+      var tgtWho = pt.side === "self" ? otherName : "你";
+      h += "<li><strong>" + (pt.side === "self" ? "我（自测）" : otherName + "（他测）") + "的「" + pt.src.word + "」克" + tgtWho + "的「" + pt.tgt.word + "」</strong> → " + tgtWho + "养" + yRow + "行：" + RT_R.yCarrier[yRow] + "。</li>";
+    });
+    h += "</ul><p class='muted'>两条铁律：杠杆点在「生」处不在「克」处——不去顶压你的力量，去养中间那一行；谁难受谁改变——先从自己这一侧动。内圈不由你来克：最亲的关系里，克交给第三方（制度/规则/双方都接受的人）。</p></div>";
+  }
+
+  /* 第七块 · 关系功课（四原则 + 下一次开口 + 复盘预约） */
+  h += "<h3>关系功课 · 四条原则与下一次开口</h3><div class='card'>";
+  h += "<h4 style='margin-top:0'>四条关系原则</h4><ul>";
+  RT_R.r7Principles.forEach(function(p) { h += "<li><strong>" + p[0] + "</strong>：" + p[1] + "。</li>"; });
+  h += "</ul>";
+  h += "<h4>下一次开口，可以这样说（按你认领的" + D + "断）</h4>"
+    + "<p><strong>" + RT_R.duanSay[D][0] + "</strong>　<span class='muted'>" + RT_R.duanSay[D][1] + "</span></p>"
+    + "<p class='muted'>其余断法的开口句（一句带过）：" + ["水", "金", "木", "火", "土"].filter(function(x) { return x !== D; }).map(function(x) { return x + "断" + RT_R.duanSay[x][0]; }).join("；") + "。</p>";
+  h += "<h4>一个微行为（B=MAP，只给一个）</h4><p class='muted'>见上方功课包「主克课 / 主生课」——动机 / 能力 / 提示三件套已按克源词锚定，不再重复给第二个。给三个动作等于没给。</p>";
+  /* 复盘预约（交互） */
+  var rev = load(REV_KEY);
+  h += "<h4>复盘预约（不预约，这一块就是空的）</h4><p>" + RT_R.reviewIntro + "</p>";
+  var defDate = new Date(Date.now() + 13 * 7 * 86400000).toISOString().slice(0, 10);
+  if (rev && rev.way && rev.date) {
+    h += "<div class='closing'>已预约：复测日 " + rev.date + " · " + (rev.way === "both" ? "两个人一起看" : "各自看，再对笔记") + "。</div>"
+      + "<p>" + RT_R.reviewLook + "</p>"
+      + "<p><button class='btn ghost' onclick='window.resetReview()'>改约</button></p>";
+  } else {
+    h += "<p class='li-row'><strong>方式</strong>：<button class='btn ghost' onclick=\"window.saveReview('both')\">两个人一起看</button> <button class='btn ghost' style='margin-left:6px' onclick=\"window.saveReview('solo')\">各自看，再对笔记</button></p>"
+      + "<p class='muted'>默认复测日为第 13 周（" + defDate + "），预约后可在报告里改约。</p>";
+  }
+  h += "</div>";
 
   h += "<div class='card'><p><strong>复测提示</strong>：第 13 周（3 个月 ±7 天）用同一套卷重做双窗口，系统将对比克线（主克 K 分下降 ≥30%）与生线（主生 S 分维持 ≥95%）及双方峰值层位移，出四档判定（大效 / 显效 / 有效 / 未显效）。重做方式：入口页对应卷卡上点「重新开始」→ 重做完成 → 本报告「测评历史与对比」区自动给出与上一轮的得分差异与连续变化（关系指标四档对比属二期复测报告）。</p></div>";
 
