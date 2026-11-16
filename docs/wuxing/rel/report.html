@@ -16,6 +16,13 @@
   .quad4 .qb .n { font-size:20px; font-weight:700; }
   .lesson { border:2px solid #854F0B; border-radius:12px; padding:16px; margin-top:14px; background:#FFFDF8; }
   .lesson h3 { margin-top:0; color:#854F0B; }
+  details.kb { margin:8px 0; border:1px solid #E3DCCB; border-radius:10px; background:#FFFDF8; }
+  details.kb summary { cursor:pointer; padding:10px 12px; font-size:14px; }
+  details.kb .card { margin:0; border:0; border-top:1px solid #E3DCCB; border-radius:0 0 10px 10px; }
+  ul.kblist { margin:6px 0 12px; padding-left:20px; }
+  ul.kblist li { margin:8px 0; line-height:1.7; }
+  .kbdef { color:#5F5E5A; font-size:13px; }
+  .kbmeta { font-size:12px; color:#8B8578; }
 </style>
 </head>
 <body>
@@ -32,6 +39,7 @@
   <footer>以观其妙书院 · 五行人格关系测评 · 结果为自我探索与关系成长参考，属能量状态描述，非医学诊断。</footer>
 </div>
 <script src="../data.js"></script>
+<script src="knowledge.js"></script>
 <script src="../engine.js"></script>
 <script src="engine_rel.js"></script>
 <script>
@@ -113,6 +121,44 @@
       s += "<span class='chip' style='color:" + EL_TEXT[w.e] + ";border-color:" + EL_TEXT[w.e] + "'>" + w.word + " <span class='muted'>L" + w.layer + "</span></span>";
     }
     return s + "</div>" + (words.length > n ? "<p class='muted'>（显示前 " + n + " 词，共 " + words.length + " 词）</p>" : "");
+  }
+
+  /* ---------- 知识库延伸：按「答是」的词逐条给出定稿解释与归类坐标 ---------- */
+  function kbSection(ans, who) {
+    if (!window.WXKB || !ans) return "";
+    var byRow = {}, total = 0;
+    QUIZ_DATA.forEach(function(it, i) {
+      if (ans[i] !== true) return;
+      (byRow[it.e] = byRow[it.e] || []).push(it);
+      total++;
+    });
+    var rows = ["木", "火", "土", "金", "水"].filter(function(e) { return byRow[e]; });
+    if (!rows.length) return "";
+    var s = "<h2>知识库延伸 · " + who + "确认的词汇释义</h2>"
+      + "<p class='muted'>本卷共答「是」<strong>" + total + "</strong> 个词。以下释义取自《五行人格学人格词汇分类与解释表（定稿）》，按行折叠——可核对" + who + "对这些词的理解是否与体系口径一致；同一维度内的词互为边界，读释义末句「区别于……」即可辨同异。</p>";
+    rows.forEach(function(e) {
+      var list = byRow[e];
+      s += "<details class='kb'><summary><strong>" + e + "行</strong> · 确认 " + list.length + " 词 · 展开看释义与归类</summary><div class='card'>";
+      var byX = {}, order = [];
+      list.forEach(function(it) {
+        if (!byX[it.xiang]) { byX[it.xiang] = []; order.push(it.xiang); }
+        byX[it.xiang].push(it);
+      });
+      order.forEach(function(x) {
+        s += "<h4>" + x + " 维度</h4><ul class='kblist'>";
+        byX[x].sort(function(a, b) { return a.layer - b.layer; }).forEach(function(it) {
+          var k = (window.WXKB.words || {})[it.word] || {};
+          s += "<li><strong>" + it.word + "</strong>　<span class='muted'>L" + it.layer + (k.f ? " · " + k.f : " · 题库词条") + "</span><br>"
+            + "<span class='kbdef'>" + (k.d || it.def || "") + "</span></li>";
+        });
+        s += "</ul>";
+      });
+      s += "</div></details>";
+    });
+    s += "<p class='kbmeta'>出处：" + (window.WXKB.meta && window.WXKB.meta.src ? window.WXKB.meta.src : "《五行人格学人格词汇分类与解释表（定稿）》")
+      + (window.WXKB.meta && window.WXKB.meta.srcUrl ? "　<a href='" + window.WXKB.meta.srcUrl + "' target='_blank' rel='noopener'>在公开知识库查看原表 →</a>" : "")
+      + "　（释义随版本编译固定，保证同一份报告可复现、可追溯）</p>";
+    return s;
   }
   function metaLine(store, label) {
     return label + "　作答 " + new Date(store.ts || Date.now()).toLocaleDateString("zh-CN")
@@ -208,6 +254,7 @@
     h += "<h2>三段能量剖面</h2>" + segHtml(selfRes, "你");
     h += "<h2>九层定位</h2><div class='card'>" + layerHtml(selfRes, "你") + "</div>";
     h += "<h2>起点建议</h2><div class='card'>" + a.html + "</div>";
+    h += kbSection(sSelf.ans, "你");
     h += histSection("histSelf", HISTKEYS.self, selfRes, "你", "你");
     if (otherDone) {
       h += "<div class='card' style='background:#FAEEDA'><p>他测卷已完成——<a class='btn' href='report.html?mode=rel'>查看完整关系测评报告</a></p></div>";
@@ -228,6 +275,7 @@
     h += "<h2>五行得分与三步判定</h2><div class='card'>" + stepsPanel(otherRes, otherName) + "</div>";
     h += "<h2>三段能量剖面</h2>" + segHtml(otherRes, otherName);
     h += "<h2>九层定位</h2><div class='card'>" + layerHtml(otherRes, otherName) + "</div>";
+    h += kbSection(sOther.ans, "你眼中的 " + otherName);
     h += histSection("histOther", HISTKEYS.other, otherRes, "你眼中的 " + otherName, otherName);
     if (selfDone) {
       h += "<div class='card' style='background:#FAEEDA'><p>自测卷已完成——<a class='btn' href='report.html?mode=rel'>查看完整关系测评报告</a></p></div>";
@@ -255,6 +303,7 @@
   h += segHtml(rel.selfRes, "你");
   h += "<div class='card'>" + layerHtml(rel.selfRes, "你") + "</div>";
   h += "<div class='card'>" + aSelf.html + "</div>";
+  h += kbSection(sSelf.ans, "你");
 
   /* 第二部分 · 测他摘要 */
   h += "<h2>第二部分 · 测他摘要（你眼中的 " + otherName + "）</h2>";
@@ -263,6 +312,7 @@
   h += "<div class='card'>" + stepsPanel(rel.otherRes, otherName) + "</div>";
   h += segHtml(rel.otherRes, otherName);
   h += "<div class='card'>" + layerHtml(rel.otherRes, otherName) + "</div>";
+  h += kbSection(sOther.ans, "你眼中的 " + otherName);
 
   /* 测评历史与对比（两卷各自与其历史存档对比；关系指标四档对比属二期复测报告） */
   h += histSection("histSelf", HISTKEYS.self, rel.selfRes, "你", "你");
