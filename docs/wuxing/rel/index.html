@@ -23,29 +23,40 @@
 }
 </script>
 <style>
-  .duo { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:18px 0; }
-  .duo .dcard { border:2px solid #E3DCCB; border-radius:12px; padding:18px 14px; text-align:center;
-    cursor:pointer; background:#FFFDF8; transition:all .15s; }
-  .duo .dcard.sel { border-color:#854F0B; background:#FAEEDA; box-shadow:0 2px 10px rgba(133,79,11,.12); }
-  .duo .dcard .ico { font-size:34px; }
-  .duo .dcard h3 { margin:8px 0 2px; font-size:18px; }
-  .duo .dcard .sub { color:#854F0B; font-weight:600; font-size:14px; }
-  .duo .dcard .cnt { color:#8B8578; font-size:13px; margin-top:6px; }
-  .duo .dcard .desc { font-size:13px; color:#5C564A; margin-top:8px; line-height:1.6; }
-  .duo .dcard .st { font-size:12px; margin-top:8px; color:#8B8578; }
+  .duo { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:26px 0; }
+  .duo .dcard { min-width:0; border:2px solid #E3DCCB; border-radius:16px; padding:26px 20px; text-align:center;
+    cursor:pointer; background:#FFFDF8; transition:all .18s; box-shadow:0 2px 12px rgba(44,44,42,.04); }
+  .duo .dcard:hover { border-color:#C9A96A; transform:translateY(-2px); box-shadow:0 6px 20px rgba(44,44,42,.08); }
+  .duo .dcard.sel { border-color:#854F0B; background:#FAEEDA; box-shadow:0 4px 16px rgba(133,79,11,.14); }
+  .duo .dcard .ico { font-size:40px; line-height:1.2; }
+  .duo .dcard h3 { margin:12px 0 4px; font-size:21px; }
+  .duo .dcard .sub { color:#854F0B; font-weight:600; font-size:15px; }
+  .duo .dcard .cnt { color:#8B8578; font-size:14px; margin-top:8px; }
+  .duo .dcard .desc { font-size:14.5px; color:#5C564A; margin-top:12px; line-height:1.75; }
+  .duo .dcard .st { font-size:13.5px; margin-top:12px; color:#8B8578; }
   .duo .dcard .st.done { color:#3B6D11; font-weight:600; }
-  .rstbtn { display:inline-block; margin-top:8px; padding:4px 12px; font-size:12px; border:1px solid #C9C2B0;
+  .rstbtn { display:inline-block; margin-top:10px; padding:6px 14px; font-size:13px; border:1px solid #C9C2B0;
     background:#FFFDF8; color:#854F0B; border-radius:8px; cursor:pointer; }
   .rstbtn:hover { background:#FAEEDA; }
-  .bigbtn { display:block; width:100%; max-width:420px; margin:10px auto; padding:15px 20px;
-    background:#854F0B; color:#fff; border:none; border-radius:12px; font-size:19px; font-weight:700;
-    cursor:pointer; text-align:center; }
+  .bigbtn { display:block; width:100%; max-width:460px; margin:16px auto; padding:17px 22px;
+    background:#854F0B; color:#fff; border:none; border-radius:14px; font-size:19px; font-weight:700;
+    cursor:pointer; text-align:center; box-shadow:0 4px 14px rgba(133,79,11,.18); transition:all .18s; }
+  .bigbtn:hover { background:#6E400A; transform:translateY(-1px); box-shadow:0 8px 22px rgba(133,79,11,.26); }
   .bigbtn.gold { background:#A3720B; }
-  .namebox { display:none; max-width:420px; margin:0 auto 10px; }
-  .namebox input { width:100%; padding:11px 14px; border:2px solid #E3DCCB; border-radius:10px;
-    font-size:15px; box-sizing:border-box; }
-  .backline { text-align:center; margin-top:16px; }
+  .bigbtn.gold:hover { background:#8A5F09; }
+  .namebox { display:none; max-width:460px; margin:0 auto 12px; }
+  .namebox input { width:100%; padding:12px 15px; border:2px solid #E3DCCB; border-radius:10px;
+    font-size:15.5px; box-sizing:border-box; }
+  .backline { text-align:center; margin-top:22px; }
   .backline a { color:#854F0B; }
+  @media (max-width:560px) {
+    .duo { grid-template-columns:1fr; gap:14px; margin:20px 0; }
+    .duo .dcard { padding:20px 16px; }
+    .duo .dcard .ico { font-size:34px; }
+    .duo .dcard h3 { font-size:20px; }
+    .duo .dcard .desc { font-size:14px; }
+    .bigbtn { font-size:17.5px; padding:15px 16px; border-radius:12px; }
+  }
 </style>
 </head>
 <body>

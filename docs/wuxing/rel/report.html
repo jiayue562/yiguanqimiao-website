@@ -6,23 +6,29 @@
 <title>关系测评报告 · 五行人格学</title>
 <link rel="stylesheet" href="../style.css">
 <style>
-  .qtable { width:100%; border-collapse:collapse; font-size:13px; margin-top:8px; }
-  .qtable th, .qtable td { border:1px solid #E3DCCB; padding:6px 8px; text-align:left; }
-  .qtable th { background:#FAEEDA; }
-  .vbig { font-size:22px; font-weight:700; color:#854F0B; }
-  .quad4 { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px; }
-  .quad4 .qb { border:1px solid #E3DCCB; border-radius:10px; padding:12px; background:#FFFDF8; }
-  .quad4 .qb h4 { margin:0 0 6px; font-size:15px; }
-  .quad4 .qb .n { font-size:20px; font-weight:700; }
-  .lesson { border:2px solid #854F0B; border-radius:12px; padding:16px; margin-top:14px; background:#FFFDF8; }
+  .qtable { width:100%; border-collapse:collapse; font-size:14px; margin-top:10px; }
+  .qtable th, .qtable td { border:1px solid #E3DCCB; padding:9px 11px; text-align:left; }
+  .qtable th { background:#FAEEDA; font-weight:700; }
+  .vbig { font-size:25px; font-weight:700; color:#854F0B; }
+  .quad4 { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px; }
+  .quad4 .qb { min-width:0; border:1px solid #E3DCCB; border-radius:12px; padding:16px; background:#FFFDF8; }
+  .quad4 .qb h4 { margin:0 0 8px; font-size:16px; }
+  .quad4 .qb .n { font-size:23px; font-weight:700; }
+  .lesson { border:2px solid #854F0B; border-radius:14px; padding:20px; margin-top:18px; background:#FFFDF8; }
   .lesson h3 { margin-top:0; color:#854F0B; }
-  details.kb { margin:8px 0; border:1px solid #E3DCCB; border-radius:10px; background:#FFFDF8; }
-  details.kb summary { cursor:pointer; padding:10px 12px; font-size:14px; }
+  details.kb { margin:10px 0; border:1px solid #E3DCCB; border-radius:10px; background:#FFFDF8; }
+  details.kb summary { cursor:pointer; padding:12px 14px; font-size:15px; }
   details.kb .card { margin:0; border:0; border-top:1px solid #E3DCCB; border-radius:0 0 10px 10px; }
-  ul.kblist { margin:6px 0 12px; padding-left:20px; }
-  ul.kblist li { margin:8px 0; line-height:1.7; }
-  .kbdef { color:#5F5E5A; font-size:13px; }
-  .kbmeta { font-size:12px; color:#8B8578; }
+  ul.kblist { margin:8px 0 14px; padding-left:20px; }
+  ul.kblist li { margin:9px 0; line-height:1.8; font-size:15px; }
+  .kbdef { color:#5F5E5A; font-size:14px; }
+  .kbmeta { font-size:13px; color:#8B8578; }
+  @media (max-width:560px) {
+    .quad4 { grid-template-columns:1fr; gap:10px; }
+    .qtable { font-size:13px; }
+    .qtable th, .qtable td { padding:7px 8px; }
+    .lesson { padding:16px; }
+  }
 </style>
 </head>
 <body>
