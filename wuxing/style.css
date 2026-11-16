@@ -228,6 +228,9 @@ li.wordli .wd { display: block; font-size: 13px; color: #5F5E5A; margin-top: 3px
 .seglead { font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #5F5E5A; margin: 18px 0 2px; }
 .shengke { display: grid; grid-template-columns: minmax(0, 340px) 1fr; gap: 18px; align-items: center; }
 .shengke svg { width: 100%; height: auto; max-width: 340px; display: block; margin: 0 auto; }
+.shengke.grid2 { grid-template-columns: 1fr 1fr; align-items: start; }
+.shengke.grid-logo { grid-template-columns: 340px 1fr; align-items: stretch; }
+.shengke.grid-founder { grid-template-columns: 300px 1fr; align-items: start; }
 .legend { font-size: 13px; color: #5F5E5A; }
 .legend li { list-style: none; margin-bottom: 8px; padding-left: 22px; position: relative; }
 .legend li::before { content: ""; position: absolute; left: 0; top: 8px; width: 14px; height: 0; border-top-width: 3px; border-top-style: solid; }
@@ -289,6 +292,7 @@ table.plain tbody tr:hover td { background: #FBF7EC; }
 
 @media (max-width: 620px) {
   .shengke { grid-template-columns: 1fr; }
+  .shengke.grid2, .shengke.grid-logo, .shengke.grid-founder { grid-template-columns: 1fr; }
   .hubgrid { grid-template-columns: 1fr 1fr; gap: 10px; }
   .hubcard { padding: 14px 12px 12px 16px; }
   .hubcard h3 { font-size: 15px; }
