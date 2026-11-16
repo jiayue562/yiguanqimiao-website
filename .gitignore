@@ -20,3 +20,5 @@ __pycache__/
 
 # 构建产物目录(历史遗留, 不应再提交)
 dist/
+
+node_modules/
