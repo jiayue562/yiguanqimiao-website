@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人格百科 · 225 词全解 · 五行人格学</title>
+<meta name="description" content="五行人格学人格百科：225 个人格词汇、25 个子维度，逐词给出层位、归类与释义，按木火土金水五段编排，可检索、可溯源到定稿词表。">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="../../index.html">以观其妙书院</a>
+  <nav>
+    <a href="index.html">关系测评</a>
+    <a href="../index.html">单人测评</a>
+    <a href="baike.html" class="cur">人格百科</a>
+    <a href="method.html">方法论</a>
+    <a href="types.html">人格类型</a>
+    <a href="camp.html">陪跑营</a>
+  </nav>
+</header>
+<div class="wrap">
+
+  <div class="pagehero">
+    <span class="kicker">人 格 百 科</span>
+    <h1>225 个词，构成一张人格地图</h1>
+    <p>五行人格学不用形容词给人贴标签，而用 <strong>225 个可判定的词</strong>来描述一个人：每个词对应一句自陈式陈述，落在 <strong>5 行 × 5 子维度 × 9 层</strong> 的坐标上。同一个词，在 L1–L3 是能力、在 L4–L6 是状态、在 L7–L9 是标记——这就是「词级画像」与「类型标签」的区别。</p>
+    <div class="hrow">
+      <a class="btn" href="index.html">用这套词测一段关系</a>
+      <a class="btn ghost" href="../index.html">单人自测（225 题）</a>
+    </div>
+  </div>
+
+  <h2>怎么用这份百科</h2>
+  <p>三种读法，各有用处：<strong>一是查词</strong>——看到某个词不确定体系口径，直接搜；<strong>二是辨异</strong>——同一子维度内的词互为边界，释义末句常以「区别于……」点明差别，连起来读才分得清；<strong>三是定位</strong>——每个词后面标的 L1–L9 是它所在的层位，同一行里层位越深，越接近需要转化的地方。</p>
+  <p class="muted">层位配色：<span class="lbadge lb1">L1–L3 健康段</span> 是能力与价值；<span class="lbadge lb2">L4–L6 一般段</span> 是失衡与补偿；<span class="lbadge lb3">L7–L9 不健康段</span> 是侵害与破坏。同一句话在不同层位，含义完全不同。</p>
+
+  <div class="filterbar">
+    <button class="fbtn on" data-el="all">全部 225 词</button>
+    <button class="fbtn" data-el="木">木</button>
+    <button class="fbtn" data-el="火">火</button>
+    <button class="fbtn" data-el="土">土</button>
+    <button class="fbtn" data-el="金">金</button>
+    <button class="fbtn" data-el="水">水</button>
+    <input class="searchbox" id="kw" type="search" placeholder="搜词或搜释义，如：忍辱 / 顶撞 / 沉稳">
+  </div>
+  <p class="muted" id="statline">正在加载词条……</p>
+
+  <div id="kbroot"></div>
+
+  <div class="notebox" style="margin-top:26px">
+    <strong>口径与溯源。</strong>本页释义由《五行人格学人格词汇分类与解释表（定稿）》与 225 题题库在构建时编译而成，随站点发布固定，不运行时抓取——因此同一份内容可复现、可审计、离线可读。词条与题目的排列以《五行人格学-关系测评题目重排清单》为<strong>唯一标准</strong>。
+    <span id="srcline"></span>
+  </div>
+
+  <div class="backline between">
+    <a href="index.html">← 关系测评主页</a>
+    <a href="method.html">方法论 →</a>
+    <a href="types.html">人格类型 →</a>
+  </div>
+</div>
+
+<script src="../data.js"></script>
+<script src="knowledge.js"></script>
+<script>
+(function () {
+  var ELS = ["木", "火", "土", "金", "水"];
+  var COLOR = {
+    "木": { m: "#3B6D11", l: "#EAF3DE" },
+    "火": { m: "#A32D2D", l: "#FCEBEB" },
+    "土": { m: "#9A7B0A", l: "#FBF3D9" },
+    "金": { m: "#5F5E5A", l: "#F1EFE8" },
+    "水": { m: "#185FA5", l: "#E6F1FB" }
+  };
+  var SEGCLS = function (l) { return l <= 3 ? "lb1" : (l <= 6 ? "lb2" : "lb3"); };
+
+  var W = window.WXKB;
+  if (!W || !W.words) {
+    document.getElementById("kbroot").innerHTML = "<p class='emptyhint'>词库未加载（knowledge.js 缺失或未部署）。</p>";
+    document.getElementById("statline").textContent = "";
+    return;
+  }
+
+  /* 层位与子维度归属：以题库（唯一标准的那 225 题）为准 */
+  var layerOf = {}, csvCount = 0, totalWords = 0;
+  for (var k in W.words) { if (W.words[k]) { totalWords++; if (W.words[k].s === "csv") csvCount++; } }
+  QUIZ_DATA.forEach(function (it) {
+    if (layerOf[it.word] === undefined) layerOf[it.word] = it.layer;
+  });
+
+  /* 行的维度顺序 = 题目重排清单里首次出现的顺序，不另立第二套排列 */
+  var dimsByEl = {};
+  QUIZ_DATA.forEach(function (it) {
+    dimsByEl[it.e] = dimsByEl[it.e] || [];
+    if (dimsByEl[it.e].indexOf(it.xiang) < 0) dimsByEl[it.e].push(it.xiang);
+  });
+
+  function elWords(el) {
+    var n = 0;
+    (dimsByEl[el] || []).forEach(function (x) { n += (W.dims[el + "|" + x] || []).length; });
+    return n;
+  }
+
+  function wordHtml(word, kw) {
+    var m = W.words[word] || {};
+    var l = layerOf[word];
+    var def = m.d || "";
+    var mark = m.f ? m.f : "题库词条";
+    var hit = "";
+    if (kw) {
+      if (word.indexOf(kw) >= 0) {
+        hit = word.replace(new RegExp(kw.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g"), "<mark>$&</mark>");
+      }
+      if (def.indexOf(kw) >= 0) {
+        def = def.replace(new RegExp(kw.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g"), "<mark>$&</mark>");
+      }
+    }
+    return "<li class='wordli'><span class='wt'>" + (hit || word) + "</span>"
+      + (l ? "<span class='lbadge " + SEGCLS(l) + "'>L" + l + "</span>" : "")
+      + "<span class='wm'>" + mark + "</span>"
+      + "<span class='wd'>" + def + "</span></li>";
+  }
+
+  function render(kw, elFilter) {
+    var html = "", shown = 0, openAll = !!kw;
+    var blocks = 0;
+    ELS.forEach(function (el) {
+      if (elFilter !== "all" && elFilter !== el) return;
+      var c = COLOR[el];
+      var dims = dimsByEl[el] || [];
+      var body = "", elShown = 0, dimShown = 0;
+      dims.forEach(function (x) {
+        var list = (W.dims[el + "|" + x] || []).slice();
+        list.sort(function (a, b) { return (layerOf[a] || 99) - (layerOf[b] || 99); });
+        var li = "";
+        list.forEach(function (w) {
+          if (kw) {
+            var m = W.words[w] || {};
+            if (w.indexOf(kw) < 0 && (m.d || "").indexOf(kw) < 0) return;
+          }
+          li += wordHtml(w, kw);
+          elShown++;
+        });
+        if (!li) return;
+        dimShown++;
+        var dimName = x;
+        body += "<details class='dim'" + (openAll ? " open" : "") + ">"
+          + "<summary><span class='dimn'>" + dimName + " <span class='muted'>维度</span></span>"
+          + "<span class='dimc'>" + list.length + " 词</span></summary>"
+          + "<div class='dimtip'>「" + dimName + "」是" + el + "行的原象词之一，题号连排。" + (kw ? "" : "点开看这一维度下全部词条与层位。") + "</div>"
+          + "<ul class='dimlist'>" + li + "</ul></details>";
+      });
+      if (!body) return;
+      shown += elShown; blocks++;
+      html += "<section class='elblock' style='--ac:" + c.m + "'>"
+        + "<div class='elhead'><h2>" + el + " 行</h2>"
+        + "<span class='elcount'>共 " + elWords(el) + " 词 · " + dims.length + " 个子维度"
+        + (kw || elFilter !== "all" ? " · 命中 " + elShown + " 词" : "") + "</span></div>"
+        + body + "</section>";
+    });
+    document.getElementById("kbroot").innerHTML = html || "<p class='emptyhint'>没有匹配的词，换个关键词试试（如「忍辱」「沉稳」「顶撞」）。</p>";
+    document.getElementById("statline").innerHTML = kw
+      ? "关键词「<strong>" + kw + "</strong>」命中 <strong>" + shown + "</strong> 词。搜索结果已展开全部维度。"
+      : "共 <strong>" + totalWords + "</strong> 词 · 25 个子维度 —— 其中 <strong>" + csvCount + "</strong> 词的释义取自定稿词表，其余 " + (totalWords - csvCount) + " 词取题库原释义（标注为「题库词条」）。";
+  }
+
+  var elNow = "all", kwNow = "", timer = null;
+  document.querySelectorAll(".fbtn").forEach(function (b) {
+    b.addEventListener("click", function () {
+      document.querySelectorAll(".fbtn").forEach(function (x) { x.classList.remove("on"); });
+      b.classList.add("on");
+      elNow = b.getAttribute("data-el");
+      render(kwNow, elNow);
+    });
+  });
+  var box = document.getElementById("kw");
+  box.addEventListener("input", function () {
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      kwNow = (box.value || "").trim();
+      render(kwNow, elNow);
+    }, 180);
+  });
+
+  /* 溯源链接 */
+  var m = W.meta || {}, links = [];
+  if (m.srcUrl) links.push("<a href='" + m.srcUrl + "' target='_blank' rel='noopener'>定稿词表 →</a>");
+  if (m.stdUrl) links.push("<a href='" + m.stdUrl + "' target='_blank' rel='noopener'>题目重排清单（唯一标准）→</a>");
+  if (m.quizUrl) links.push("<a href='" + m.quizUrl + "' target='_blank' rel='noopener'>在线做一遍 →</a>");
+  document.getElementById("srcline").innerHTML = links.length
+    ? "<br>编译版本：" + (m.built || "") + "　" + links.join("　｜　")
+    : "";
+
+  render("", "all");
+})();
+</script>
+</body>
+</html>
