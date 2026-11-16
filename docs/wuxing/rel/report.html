@@ -157,6 +157,8 @@
     });
     s += "<p class='kbmeta'>出处：" + (window.WXKB.meta && window.WXKB.meta.src ? window.WXKB.meta.src : "《五行人格学人格词汇分类与解释表（定稿）》")
       + (window.WXKB.meta && window.WXKB.meta.srcUrl ? "　<a href='" + window.WXKB.meta.srcUrl + "' target='_blank' rel='noopener'>在公开知识库查看原表 →</a>" : "")
+      + (window.WXKB.meta && window.WXKB.meta.stdUrl ? "　｜　<a href='" + window.WXKB.meta.stdUrl + "' target='_blank' rel='noopener'>题目重排清单（唯一标准）→</a>" : "")
+      + (window.WXKB.meta && window.WXKB.meta.quizUrl ? "　｜　<a href='" + window.WXKB.meta.quizUrl + "' target='_blank' rel='noopener'>重做测评 →</a>" : "")
       + "　（释义随版本编译固定，保证同一份报告可复现、可追溯）</p>";
     return s;
   }
