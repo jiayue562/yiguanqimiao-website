@@ -31,7 +31,7 @@
 </header>
 <div class="wrap">
 
-  <div class="pagehero">
+  <div class="pagehero" style="--ac:#A32D2D">
     <span class="kicker">人 格 类 型</span>
     <h1>五种底色，各有各的功课</h1>
     <p>先纠正一个常见误会：五行不是把人分成五堆。每个人身上五行俱全，只是<strong>有一股是主导底色</strong>——顺境时它让你出彩，逆境时也是它先给你惹麻烦。所以看类型不是为了认领标签，是为了认出<strong>自己的那股劲</strong>，以及它配套的那门功课。</p>
@@ -95,14 +95,17 @@
       + "</tr>";
 
     cards += "<section class='tcard' style='--tm:" + txt + ";--tl:" + col.light + "'>"
-      + "<div class='thead'><h2>" + t.name + "</h2>"
+      + "<div class='thead'><div class='tmain'><h2>" + t.name + "</h2>"
       + "<div class='tmeta'><em>" + t.xiang + "</em>　" + t.metaphor + "</div></div>"
+      + "<div class='ebadge'>" + el + "</div></div>"
       + "<div class='tbody'>"
       + (dims.length ? "<h4>这一行的五个维度</h4><div class='tagline'>"
           + dims.map(function (d) { return "<span>" + d + "</span>"; }).join("") + "</div>" : "")
       + "<h4>底色</h4><p style='font-size:14px;margin:0'>" + t.core + "</p>"
-      + "<h4>常见特质</h4><ul>" + t.traits.map(function (x) { return "<li>" + x + "</li>"; }).join("") + "</ul>"
-      + "<h4>阳面优势 · 用得上时</h4><ul>" + t.strengths.map(function (x) { return "<li>" + x + "</li>"; }).join("") + "</ul>"
+      + "<div class='twocol'>"
+      + "<div><h4>常见特质</h4><ul>" + t.traits.map(function (x) { return "<li>" + x + "</li>"; }).join("") + "</ul></div>"
+      + "<div><h4>阳面优势 · 用得上时</h4><ul>" + t.strengths.map(function (x) { return "<li>" + x + "</li>"; }).join("") + "</ul></div>"
+      + "</div>"
       + "<h4>阴面与病链条 · 走偏时</h4><div class='warnbox'>" + t.watch
       + (chain ? "<br><strong>病链条：</strong>" + chain : "")
       + (cp ? "<br><strong>通关点：</strong>" + cp.name + "（" + el + "→" + cp.to + "）—— " + cp.how : "")

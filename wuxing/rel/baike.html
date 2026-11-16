@@ -20,7 +20,7 @@
 </header>
 <div class="wrap">
 
-  <div class="pagehero">
+  <div class="pagehero" style="--ac:#185FA5">
     <span class="kicker">百 科 与 方 法 论</span>
     <h1>先立骨架，再查词条</h1>
     <p>这一页分两部分。<strong>第一部分是方法论</strong>——一心三界五行九层怎么咬合、相生相克怎么看方向、九层三段怎么判读、功课从哪一步做起；<strong>第二部分是人格百科</strong>——225 个可判定的词，每个词落在 5 行 × 5 子维度 × 9 层 的坐标上。骨架立住了，词条才查得准：同一个词，在 L1–L3 是能力、在 L4–L6 是状态、在 L7–L9 是标记。</p>
@@ -28,6 +28,13 @@
       <a class="btn" href="index.html">用这套词测一段关系</a>
       <a class="btn ghost" href="#wiki">直达词条库 ↓</a>
     </div>
+  </div>
+
+  <div class="statrow" style="--ac:#185FA5">
+    <div class="stat"><div class="num">225</div><div class="cap">可判定的词</div></div>
+    <div class="stat"><div class="num">25</div><div class="cap">子维度</div></div>
+    <div class="stat"><div class="num">5</div><div class="cap">五行能量</div></div>
+    <div class="stat"><div class="num">9</div><div class="cap">九层层位</div></div>
   </div>
 
   <h2 id="method">第一部分 · 方法论</h2>
@@ -266,14 +273,14 @@
         });
         if (!li) return;
         body += "<details class='dim'" + (openAll ? " open" : "") + ">"
-          + "<summary><span class='dimn'>" + x + " <span class='muted'>维度</span></span>"
+          + "<summary><span class='dimn'>" + x + "<span class='dtag'>维度</span></span>"
           + "<span class='dimc'>" + list.length + " 词</span></summary>"
           + "<div class='dimtip'>「" + x + "」是" + el + "行的原象词之一，题号连排。" + (kw ? "" : "点开看这一维度下全部词条与层位。") + "</div>"
           + "<ul class='dimlist'>" + li + "</ul></details>";
       });
       if (!body) return;
       shown += elShown;
-      html += "<section class='elblock' style='--ac:" + c.m + "'>"
+      html += "<section class='elblock' style='--ac:" + c.m + ";--al:" + c.l + "'>"
         + "<div class='elhead'><h2>" + el + " 行</h2>"
         + "<span class='elcount'>共 " + elWords(el) + " 词 · " + dims.length + " 个子维度"
         + (kw || elFilter !== "all" ? " · 命中 " + elShown + " 词" : "") + "</span></div>"
