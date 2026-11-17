@@ -81,8 +81,24 @@
           : Date.now().toString(16) + "-" + Math.floor(Math.random() * 0xffffffffffff).toString(16);
         save();
       }
+      // 主型轻量判定：按答「是」题数取最多的行（与计分引擎 P 同向，仅用于数据标注，不进报告）
+      // data.js 每题含 e 字段（木火土金水），下标即题号；此处不引入 engine.js，避免拖慢答题页
+      var mainType = null;
+      try {
+        if (typeof QUIZ_DATA !== "undefined" && QUIZ_DATA.length) {
+          var cnt = { "木": 0, "火": 0, "土": 0, "金": 0, "水": 0 };
+          Object.keys(state.ans).forEach(function (k) {
+            if (state.ans[k] === true && QUIZ_DATA[Number(k)] && cnt[QUIZ_DATA[Number(k)].e] !== undefined)
+              cnt[QUIZ_DATA[Number(k)].e]++;
+          });
+          var best = "木";
+          ["火", "土", "金", "水"].forEach(function (e) { if (cnt[e] > cnt[best]) best = e; });
+          var max = cnt[best], tied = ["木", "火", "土", "金", "水"].filter(function (e) { return cnt[e] === max; });
+          if (max >= 5 && tied.length === 1) mainType = best; // 与引擎定型门槛一致：≥5 题且唯一领先
+        }
+      } catch (e) {}
       fetch("/api/wuxing-response", { method: "POST", headers: { "content-type": "application/json" },
-        body: JSON.stringify({ kind: mode, schema: "wxr_v1", ans: state.ans, ts: state.ts, uid: state.uploadId })
+        body: JSON.stringify({ kind: mode, schema: "wxr_v1", ans: state.ans, ts: state.ts, uid: state.uploadId, mainType: mainType })
       }).catch(function () {});
     } catch (e) {}
   }

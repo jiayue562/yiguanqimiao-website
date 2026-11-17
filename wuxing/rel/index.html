@@ -61,6 +61,12 @@
 }
 </script>
 <style>
+  .statband { margin:22px auto 4px; max-width:620px; text-align:center; padding:18px 20px 16px;
+    border:1px solid #E3DCCB; border-radius:14px; background:linear-gradient(180deg,#FFFDF8,#FBF7EE); }
+  .statnum { font-size:72px; line-height:1; font-weight:800; letter-spacing:-2px;
+    background:linear-gradient(90deg,#3B6D11,#D4A825,#185FA5); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .statlabel { font-size:17px; font-weight:700; color:#3E3A32; margin-top:6px; }
+  .statfoot { font-size:12px; color:#8B8578; margin-top:4px; }
   .duo { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:26px 0; }
   .duo .dcard { min-width:0; border:2px solid #E3DCCB; border-radius:16px; padding:26px 20px; text-align:center;
     cursor:pointer; background:#FFFDF8; transition:all .18s; box-shadow:0 2px 12px rgba(44,44,42,.04); }
@@ -111,6 +117,12 @@
 <div class="wrap">
   <h1 style="text-align:center">五行人格关系测评</h1>
   <p style="text-align:center;color:#8B8578">看见自己，也看见你与 TA 的能量关系</p>
+
+  <div id="statBand" class="statband" aria-live="polite">
+    <div class="statnum" id="statNum">—</div>
+    <div class="statlabel">人次已完成测评</div>
+    <div class="statfoot" id="statFoot">数据实时更新 · 匿名提交</div>
+  </div>
 
   <div class="duo">
     <div class="dcard sel" id="cardSelf" onclick="pick('self')">
@@ -175,9 +187,24 @@
     </div>
   </div>
 
-  <div class="backline"><a href="index.html">← 返回关系测评主页</a></div>
+  <div class="backline"><a href="index.html">← 返回关系测评主页</a> ｜ <a href="data.html" style="color:#8B8578;font-size:13px">数据查看（内部）</a></div>
 </div>
 <script>
+/* 完成测评人数统计：从 D1 统计接口取 count(*)，与数据库实际行数一致；失败则隐藏统计区 */
+(function () {
+  if (typeof fetch !== "function") return; // 无 fetch 环境（如离线测试）跳过，不报错
+  var band = document.getElementById("statBand");
+  fetch("/api/wuxing-stats", { cache: "no-store" })
+    .then(function (r) { return r.json(); })
+    .then(function (j) {
+      if (!j || !j.ok || typeof j.total !== "number") { if (band) band.style.display = "none"; return; }
+      var n = document.getElementById("statNum");
+      if (n) n.textContent = j.total.toLocaleString("zh-CN");
+      var f = document.getElementById("statFoot");
+      if (f) f.textContent = j.lastAt ? ("最近一次：" + j.lastAt.slice(0, 10) + " · 匿名提交") : "数据实时更新 · 匿名提交";
+    })
+    .catch(function () { if (band) band.style.display = "none"; });
+})();
 var mode = "self";
 var KEYS = { self: "wxr_v1_self", other: "wxr_v1_other" };
 var HISTKEYS = { self: "wxr_hist_v1_self", other: "wxr_hist_v1_other" };
