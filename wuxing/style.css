@@ -1,4 +1,11 @@
 /* 五行人格学在线测评 · 共享样式（中式简洁 · 浅色 · 移动优先） */
+/* 测评人数统计区（联系我们页） */
+.statband { margin:22px auto 4px; max-width:620px; text-align:center; padding:18px 20px 16px;
+  border:1px solid #E3DCCB; border-radius:14px; background:linear-gradient(180deg,#FFFDF8,#FBF7EE); }
+.statnum { font-size:72px; line-height:1; font-weight:800; letter-spacing:-2px;
+  background:linear-gradient(90deg,#3B6D11,#D4A825,#185FA5); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.statlabel { font-size:17px; font-weight:700; color:#3E3A32; margin-top:6px; }
+.statfoot { font-size:12px; color:#8B8578; margin-top:4px; }
 html { scroll-behavior: smooth; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {

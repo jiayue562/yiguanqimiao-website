@@ -93,6 +93,12 @@
     </div>
   </div>
 
+  <div id="statBand" class="statband" aria-live="polite">
+    <div class="statnum" id="statNum">—</div>
+    <div class="statlabel">人次已完成测评</div>
+    <div class="statfoot" id="statFoot">数据实时更新 · 匿名提交</div>
+  </div>
+
   <div class="shengke grid-logo">
     <div class="card" style="margin:0;display:flex;align-items:center;justify-content:center;padding:16px">
       <img src="../img/logo.jpg" alt="以观其妙书院 LOGO" style="width:100%;max-width:300px;border-radius:14px">
@@ -234,5 +240,22 @@
     <a href="camp.html">陪跑营 →</a>
   </div>
 </div>
+<script>
+/* 完成测评人数统计：从 D1 统计接口取 count(*)，与数据库实际行数一致；失败则隐藏统计区 */
+(function () {
+  if (typeof fetch !== "function") return;
+  var band = document.getElementById("statBand");
+  fetch("/api/wuxing-stats", { cache: "no-store" })
+    .then(function (r) { return r.json(); })
+    .then(function (j) {
+      if (!j || !j.ok || typeof j.total !== "number") { if (band) band.style.display = "none"; return; }
+      var n = document.getElementById("statNum");
+      if (n) n.textContent = j.total.toLocaleString("zh-CN");
+      var f = document.getElementById("statFoot");
+      if (f) f.textContent = j.lastAt ? ("最近一次：" + j.lastAt.slice(0, 10) + " · 匿名提交") : "数据实时更新 · 匿名提交";
+    })
+    .catch(function () { if (band) band.style.display = "none"; });
+})();
+</script>
 </body>
 </html>
