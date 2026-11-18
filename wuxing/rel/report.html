@@ -25,6 +25,8 @@
   ul.kblist { margin:8px 0 14px; padding-left:20px; }
   ul.kblist li { margin:9px 0; line-height:1.8; font-size:15px; }
   .kbdef { color:#5F5E5A; font-size:14px; }
+  .kbattr { color:#A3720B; font-size:13.5px; margin-top:2px; }
+  .kbattr .muted { color:#8B8578; }
   .kbmeta { font-size:13px; color:#8B8578; }
   .concl { width:100%; border-collapse:collapse; margin-top:6px; }
   .concl td { border:0; border-bottom:1px dashed #E3DCCB; padding:9px 6px; font-size:15px; vertical-align:top; }
@@ -70,9 +72,11 @@
 </div>
 <script src="../data.js?v=20261116b"></script>
 <script src="knowledge.js?v=20261116b"></script>
+<script src="lexicon.js?v=20261118"></script>
 <script src="../engine.js?v=20261116b"></script>
 <script src="engine_rel.js?v=20261116c"></script>
 <script src="report_text.js?v=20261116e"></script>
+<script src="base25.js?v=20261118"></script>
 <script>
 (function(){
   var KEYS = { self: "wxr_v1_self", other: "wxr_v1_other" };
@@ -354,8 +358,11 @@
       s += "<h4>" + x + " 维度</h4><ul class='kblist'>";
       byX[x].sort(function(a, b) { return a.layer - b.layer; }).forEach(function(it) {
         var k = (window.WXKB.words || {})[it.word] || {};
+        var lx = (window.WXLEX && window.WXLEX.words) ? window.WXLEX.words[it.word] : null;
         s += "<li><strong>" + it.word + "</strong>　<span class='muted'>L" + it.layer + (k.f ? " · " + k.f : " · 题库词条") + "</span><br>"
-          + "<span class='kbdef'>" + (k.d || it.def || "") + "</span></li>";
+          + "<span class='kbdef'>" + (k.d || it.def || "") + "</span>"
+          + (lx ? "<br><span class='kbattr'>原始词→属性词：" + lx.e + "　<span class='muted'>" + lx.n + "</span></span>" : "")
+          + "</li>";
       });
       s += "</ul>";
     });
@@ -670,6 +677,16 @@
   h += "<p><strong>" + rel.dirText + "</strong>——关系方向按双方主类型判定（相生：木→火→土→金→水→木；相克：木克土→土克水→水克火→火克金→金克木）。</p>";
   h += "<p>统计范围：双方主行词库（<strong>" + rel.scopeText + "</strong>）。范围内生证据 S = <strong>" + rel.sAll + "</strong>（其中共鸣区 " + rel.sR + "），克证据 K = <strong>" + rel.kAll + "</strong>（其中共鸣区 " + rel.kR + "）——作为方向佐证与功课素材呈现。</p>";
   if (rel.rl) h += "<p>关系层级指数 RL = <strong>L" + rel.rl + " " + LAYER_NAMES[rel.rl] + "</strong>（双方峰值层中更深的一方拖住关系整体）。克证据规则：阴面词克阳面词才计入（阳对阳克＝调节磨合，不计损伤）。</p>";
+  /* R3.2 基本动力四段（25 组全手写；按双方主行取组，两池实词嵌句） */
+  if (typeof RT_R.base25 === "object" && rel.scopeRows && rel.scopeRows.length >= 2) {
+    var bP = rel.scopeRows[0], bQ = rel.scopeRows[1], seg4 = RT_R.base25[bP] && RT_R.base25[bP][bQ];
+    if (seg4) {
+      h += "<h4>基本动力四段（" + bP + "行 × " + bQ + "行 · 怎么流动 / 天然好处 / 摩擦点 / 谁更难受）</h4><div class='card'>";
+      var bNames = ["怎么流动", "天然好处", "摩擦点", "谁更难受"];
+      seg4.forEach(function(txt, i) { h += "<p><strong>" + bNames[i] + "：</strong>" + txt + "</p>"; });
+      h += "</div>";
+    }
+  }
   h += "<h4>克证据对表（按 K 分降序，前 10）</h4>";
   if (rel.kePairs.length) {
     h += "<table class='qtable'><tr><th>源词（克方）</th><th>靶词（被克方·阳面）</th><th>K 分</th><th>计入共鸣区判定</th></tr>";
