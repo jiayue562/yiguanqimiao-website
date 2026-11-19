@@ -77,7 +77,7 @@ export async function onRequestPost(context) {
       return json(res, 200);
     }
 
-    const model = env.AI_MODEL || "@cf/meta/llama-3.1-8b-instruct";
+    const model = env.AI_MODEL || "@cf/meta/llama-3.1-8b-instruct-fp8";
     const messages = buildMessages(facts, input.question, input.mode);
     let ai = null, aiErr = null;
     try {
