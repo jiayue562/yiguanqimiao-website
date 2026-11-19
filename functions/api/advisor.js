@@ -72,17 +72,17 @@ export async function onRequestPost(context) {
     // 无 AI 绑定 → 确定性兜底（不报错）
     if (!env.AI) {
       const answer = fallbackAnswer(facts);
-      const res = { ok: true, answer, facts, disclaimer: DISCLAIMER, model: "deterministic-fallback", degraded: true, ruleVersion: META.hash.reportText };
+      const res = { ok: true, answer, facts, disclaimer: DISCLAIMER, model: "deterministic-fallback", degraded: true, aiErr, hasAI: !!env.AI, hasDB: !!env.DB_LEX, ruleVersion: META.hash.reportText };
       await bumpCounter(env, "fallback");
       return json(res, 200);
     }
 
     const model = env.AI_MODEL || "@cf/meta/llama-3.1-8b-instruct";
     const messages = buildMessages(facts, input.question, input.mode);
-    let ai = null;
+    let ai = null, aiErr = null;
     try {
       ai = await env.AI.run(model, { messages, max_tokens: 800, temperature: 0.3 });
-    } catch (e) { ai = null; }
+    } catch (e) { ai = null; aiErr = String(e && e.message || e).slice(0, 200); }
 
     let answer = ai && (ai.response || ai.result || "");
     let check = validateAnswer(answer, facts);
