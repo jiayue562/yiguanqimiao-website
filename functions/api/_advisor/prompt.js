@@ -49,11 +49,16 @@ export function validateAnswer(answer, facts) {
   const s = String(answer || "").trim();
   if (!s) return { ok: false, reason: "empty" };
   if (s.length > 1600) return { ok: false, reason: "too_long" };
-  // 主型必须与引擎一致
+  // 主型防篡改：只拦截「你是X行人/你的主型是X」这类直接声称，不拦截解释中提到的其它行
   if (facts && facts.mainType) {
-    const claimed = ELEMENTS.filter(e => new RegExp(`${e}(行|主型)`).test(s));
-    if (claimed.length && !claimed.includes(facts.mainType) && !(facts.typeState === "复合型" && claimed.length <= 2)) {
-      return { ok: false, reason: "main_type_mismatch" };
+    const claimPatterns = [
+      /你(是|属于)\s*([木火土金水])行人/,
+      /你的?主型是\s*([木火土金水])/,
+      /判定(你|结果为)[:：]?\s*([木火土金水])/,
+    ];
+    for (const re of claimPatterns) {
+      const m = s.match(re);
+      if (m && m[1] && m[1] !== facts.mainType) return { ok: false, reason: "main_type_mismatch" };
     }
   }
   // 诊断红线词

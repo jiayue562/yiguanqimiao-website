@@ -98,7 +98,7 @@ export async function onRequestPost(context) {
     if (!check.ok) {
       await bumpCounter(env, "fallback");
       const res = { ok: true, answer: fallbackAnswer(facts), facts, disclaimer: DISCLAIMER,
-        model: "deterministic-fallback", degraded: true, reason: check.reason, ruleVersion: META.hash.reportText };
+        model: "deterministic-fallback", degraded: true, reason: check.reason, aiErr, hasAI: !!env.AI, hasDB: !!env.DB_LEX, ruleVersion: META.hash.reportText };
       return json(res, 200);
     }
 
