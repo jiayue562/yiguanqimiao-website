@@ -16,41 +16,13 @@ function json(obj, status) {
   return new Response(JSON.stringify(obj), { status, headers: { "content-type": "application/json; charset=utf-8", ...CORS } });
 }
 
-/* D1 检索：按主型/象维取知识片段（确定性键，不做运行时 RAG） */
+/* D1 检索：书稿原文优先，词条仅作词级证据（2026-11-20 重写） */
 async function retrieve(env, facts, question) {
   if (!env.DB_LEX) return [];
-  const els = [];
-  if (facts.mainType) els.push(facts.mainType);
-  // 从问题里识别其它五行字（最多补一个）
-  for (const e of ["木","火","土","金","水"]) {
-    if (question.includes(e) && !els.includes(e)) els.push(e);
-  }
-  const out = [];
-  for (const el of els.slice(0, 2)) {
-    try {
-      const rs = await env.DB_LEX.prepare(
-        "SELECT source,section,chunk_text,tag_el,tag_xiang FROM knowledge WHERE tag_el=?1 ORDER BY source='knowledge-js' DESC, id LIMIT 4"
-      ).bind(el).all();
-      (rs.results || []).forEach(r => out.push({ source: r.source, section: r.section, text: r.chunk_text, tag_el: r.tag_el, tag_xiang: r.tag_xiang }));
-    } catch (e) {}
-  }
-  // 兜底：带标签命中不足时，从问题里抽五行/象维关键词，按正文匹配补书稿/llms-full
-  if (out.filter(x => x.source !== "knowledge-js").length < 2) {
-    const kws = [];
-    for (const e of ["木","火","土","金","水"]) if (question.includes(e)) kws.push(e);
-    for (const x of ["顶","忍","边界","成长","承载","标准","退让","表达","冲突","关系"]) if (question.includes(x)) kws.push(x);
-    for (const src of ["book", "llms-full"]) {
-      for (const kw of kws.slice(0, 3)) {
-        try {
-          const rs = await env.DB_LEX.prepare(
-            "SELECT source,section,chunk_text,tag_el,tag_xiang FROM knowledge WHERE source=?1 AND chunk_text LIKE ?2 ORDER BY char_len DESC LIMIT 2"
-          ).bind(src, "%" + kw + "%").all();
-          (rs.results || []).forEach(r => { if (!out.some(x => x.source === r.source && x.section === r.section)) out.push({ source: r.source, section: r.section, text: r.chunk_text, tag_el: r.tag_el, tag_xiang: r.tag_xiang }); });
-        } catch (e) {}
-      }
-    }
-  }
-  // 词条证据：按 qid 精确取原始词（判断层用）
+  const out = [], seen = new Set();
+  const push = r => { const k = r.source + "|" + r.section; if (!seen.has(k)) { seen.add(k); out.push({ source: r.source, section: r.section, text: r.chunk_text, tag_el: r.tag_el, tag_xiang: r.tag_xiang }); } };
+
+  // 词条证据：按 qid 取原始词（判断层用）——同时这些词是书稿检索的最佳锚点
   if (!facts.manual && facts.evidence.length) {
     const ids = facts.evidence.slice(0, 6).map(e => e.qid);
     for (const qid of ids) {
@@ -60,7 +32,48 @@ async function retrieve(env, facts, question) {
       } catch (e) {}
     }
   }
-  return out.slice(0, 8);
+
+  // 检索锚点：答是词原文（傲慢孤僻/抗上不服）→ 书稿对这些词有专章；手动模式回退主型象维
+  const anchors = (facts.evidence || []).map(e => e.word).filter(Boolean).slice(0, 6);
+  if (!anchors.length && facts.mainType) {
+    const XIANG = { 木:["曲直","生发","独","顶","傲"], 火:["炎上","明亮","发散","急"], 土:["承载","容纳","稳定","忍"], 金:["收敛","坚固","标准","锋利"], 水:["润下","通透","沉潜","藏"] };
+    anchors.push(...(XIANG[facts.mainType] || [facts.mainType]));
+  }
+  const qWords = [];
+  for (const x of ["顶","忍","边界","成长","承载","标准","退让","表达","冲突","关系","孤僻","不服","傲"]) if (question && question.includes(x)) qWords.push(x);
+  const kws = [...anchors, ...qWords];
+
+  // ① 书稿优先：锚点命中 book 正文
+  for (const kw of kws.slice(0, 5)) {
+    try {
+      const rs = await env.DB_LEX.prepare(
+        "SELECT source,section,chunk_text,tag_el,tag_xiang FROM knowledge WHERE source='book' AND chunk_text LIKE ?1 ORDER BY char_len ASC LIMIT 2"
+      ).bind("%" + kw + "%").all();
+      (rs.results || []).forEach(push);
+    } catch (e) {}
+  }
+  // ② llms-full 补 1-2 块
+  for (const kw of [...(facts.evidence || []).map(e => e.xiang).filter(Boolean), facts.mainType].filter(Boolean).slice(0, 2)) {
+    try {
+      const rs = await env.DB_LEX.prepare(
+        "SELECT source,section,chunk_text,tag_el,tag_xiang FROM knowledge WHERE source='llms-full' AND chunk_text LIKE ?1 ORDER BY char_len ASC LIMIT 1"
+      ).bind("%" + kw + "%").all();
+      (rs.results || []).forEach(push);
+    } catch (e) {}
+  }
+  // ③ 词条兜底：仅 2 条，且书稿不足时才补
+  if (out.filter(x => x.source === "book").length < 2) {
+    for (const kw of kws.slice(0, 3)) {
+      try {
+        const rs = await env.DB_LEX.prepare(
+          "SELECT source,section,chunk_text,tag_el,tag_xiang FROM knowledge WHERE source='knowledge-js' AND (section LIKE ?1 OR chunk_text LIKE ?1) LIMIT 1"
+        ).bind("%" + kw + "%").all();
+        (rs.results || []).forEach(push);
+      } catch (e) {}
+    }
+  }
+  const rank = { book: 0, "llms-full": 1, "knowledge-js": 2 };
+  return out.sort((a, b) => (rank[a.source] ?? 9) - (rank[b.source] ?? 9)).slice(0, 8);
 }
 
 export async function onRequestPost(context) {
@@ -74,6 +87,7 @@ export async function onRequestPost(context) {
     const rate = await checkRate(env, ip);
     if (!rate.ok) return json({ ok: false, error: "rate_limited", retryAfter: rate.retryAfter, disclaimer: DISCLAIMER }, 429);
 
+    let ai = null, aiErr = null; // 提前声明：无AI兜底分支(L91)也要引用
     const facts = buildFacts(input, body.qEl || null);
     const ck = cacheKey(facts, input.question);
     const cached = await getCache(env, ck);
@@ -95,18 +109,20 @@ export async function onRequestPost(context) {
 
     const model = env.AI_MODEL || "@cf/meta/llama-3.1-8b-instruct-fp8";
     const messages = buildMessages(facts, input.question, input.mode);
-    let ai = null, aiErr = null;
     try {
-      ai = await env.AI.run(model, { messages, max_tokens: 800, temperature: 0.3 });
+      ai = await env.AI.run(model, { messages, max_tokens: 1100, temperature: 0.35 });
     } catch (e) { ai = null; aiErr = String(e && e.message || e).slice(0, 200); }
 
     let answer = ai && (ai.response || ai.result || "");
     let check = validateAnswer(answer, facts);
     if (!check.ok) {
-      // 纠正重试一次：强制纪律段重述
+      // 纠正重试一次：字数不足则明确要求扩写并多引用书稿片段
+      const hint = check.reason === "too_short"
+        ? "\n（上一条太短了。请扩写到 300 字以上：多引用上方必读书稿的原文句子，讲透机制、给具体场景，分 3–4 点展开。）"
+        : "\n（请严格遵守：只用给定事实与片段，不作诊断，主型不得改写。）";
       try {
-        const retry = buildMessages(facts, input.question + "\n（请严格遵守：只用给定事实与片段，不作诊断，主型不得改写）", input.mode);
-        ai = await env.AI.run(model, { messages: retry, max_tokens: 700, temperature: 0.1 });
+        const retry = buildMessages(facts, input.question + hint, input.mode);
+        ai = await env.AI.run(model, { messages: retry, max_tokens: 1100, temperature: 0.4 });
         answer = ai && (ai.response || ai.result || "");
         check = validateAnswer(answer, facts);
       } catch (e) { check = { ok: false, reason: "retry_failed" }; }
