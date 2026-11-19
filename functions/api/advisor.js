@@ -134,7 +134,13 @@ export async function onRequestPost(context) {
       return json(res, 200);
     }
 
-    const out = { ok: true, answer: String(answer).trim(), facts, disclaimer: DISCLAIMER,
+    // 出处标注兜底：小模型常漏标 [book:章节]，服务端用实际注入的书稿片段自动补，保证可追溯
+    let finalAnswer = String(answer).trim();
+    if (!/\[book:/.test(finalAnswer)) {
+      const bookSecs = (facts.knowledge || []).filter(k => k.source === "book").slice(0, 3).map(k => k.section);
+      if (bookSecs.length) finalAnswer += "\n\n【依据书稿】" + bookSecs.join("；") + "。";
+    }
+    const out = { ok: true, answer: finalAnswer, facts, disclaimer: DISCLAIMER,
       model, cached: false, degraded: false, ruleVersion: META.hash.reportText };
     await setCache(env, ck, out);
     await bumpCounter(env, "answered");
