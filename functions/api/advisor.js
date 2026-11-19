@@ -34,6 +34,22 @@ async function retrieve(env, facts, question) {
       (rs.results || []).forEach(r => out.push({ source: r.source, section: r.section, text: r.chunk_text, tag_el: r.tag_el, tag_xiang: r.tag_xiang }));
     } catch (e) {}
   }
+  // 兜底：带标签命中不足时，从问题里抽五行/象维关键词，按正文匹配补书稿/llms-full
+  if (out.filter(x => x.source !== "knowledge-js").length < 2) {
+    const kws = [];
+    for (const e of ["木","火","土","金","水"]) if (question.includes(e)) kws.push(e);
+    for (const x of ["顶","忍","边界","成长","承载","标准","退让","表达","冲突","关系"]) if (question.includes(x)) kws.push(x);
+    for (const src of ["book", "llms-full"]) {
+      for (const kw of kws.slice(0, 3)) {
+        try {
+          const rs = await env.DB_LEX.prepare(
+            "SELECT source,section,chunk_text,tag_el,tag_xiang FROM knowledge WHERE source=?1 AND chunk_text LIKE ?2 ORDER BY char_len DESC LIMIT 2"
+          ).bind(src, "%" + kw + "%").all();
+          (rs.results || []).forEach(r => { if (!out.some(x => x.source === r.source && x.section === r.section)) out.push({ source: r.source, section: r.section, text: r.chunk_text, tag_el: r.tag_el, tag_xiang: r.tag_xiang }); });
+        } catch (e) {}
+      }
+    }
+  }
   // 词条证据：按 qid 精确取原始词（判断层用）
   if (!facts.manual && facts.evidence.length) {
     const ids = facts.evidence.slice(0, 6).map(e => e.qid);
