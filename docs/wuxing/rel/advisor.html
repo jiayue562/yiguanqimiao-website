@@ -45,7 +45,9 @@
     <span class="chip" id="chipReport">报告模式</span>
     <span class="chip" id="chipManual">手动模式</span>
     <span class="muted" id="modeInfo"></span>
+    <button class="chip" style="margin-left:auto;cursor:pointer" onclick="newSession()">新会话</button>
   </div>
+  <div id="bannerNew" class="banner" style="display:none">已开启新会话，此前摘要已清除。</div>
   <div id="manualBox" class="manual" style="display:none">
     <label for="selEl">选择主型：</label>
     <select id="selEl"><option value="">— 请选择 —</option><option>木</option><option>火</option><option>土</option><option>金</option><option>水</option></select>
@@ -59,7 +61,7 @@
     <button id="askBtn" onclick="ask()">提问</button>
   </div>
   <div id="err" class="err"></div>
-  <p class="muted" style="text-align:center">AI 依据五行体系作答，判定由测评引擎给出；回答仅供参考，非医疗或心理诊断。提问不留存。</p>
+  <p class="muted" style="text-align:center">AI 依据五行体系作答，判定由测评引擎给出；回答仅供参考，非医疗或心理诊断。为支持多轮追问，仅保存结构化的测评判定与每轮简短摘要（最多 12 轮），<strong>不保存逐字提问与回答</strong>，可随时点「新会话」清除。</p>
 </div>
 <script src="../data.js?v=20261116b"></script>
 <script src="../engine.js?v=20261116b"></script>
@@ -67,7 +69,21 @@
 <script src="lexicon.js?v=20261118"></script>
 <script>
 var KEYS = { self: "wxr_v1_self", other: "wxr_v1_other" };
+var AGENT_BASE = "https://wuxing-advisor-agent.jiayue562.workers.dev";
+var SID_KEY = "wxr_agent_sid";
 var mode = "report", ctx = null, busy = false;
+function getSid(){
+  var sid = null; try { sid = localStorage.getItem(SID_KEY); } catch(e){}
+  if (!sid) { sid = (crypto.randomUUID ? crypto.randomUUID() : ("s"+Date.now()+Math.random().toString(36).slice(2))); try{ localStorage.setItem(SID_KEY, sid); }catch(e){} }
+  return sid;
+}
+function newSession(){
+  var sid = getSid();
+  fetch(AGENT_BASE + "/agents/advisor-agent/" + sid + "/reset", {method:"POST", headers:{"content-type":"application/json"}, body:JSON.stringify({schema:"wxr_agent_reset"})})
+    .catch(function(){});
+  document.getElementById("log").innerHTML = "";
+  var b = document.getElementById("bannerNew"); if (b) { b.style.display="block"; setTimeout(function(){b.style.display="none";},2500); }
+}
 function getState(k){ try{ return JSON.parse(localStorage.getItem(k)); }catch(e){ return null; } }
 function detect(){
   var params = new URLSearchParams(location.search);
@@ -107,17 +123,22 @@ function ask(){
   var err = document.getElementById("err"); err.textContent = "";
   var q = document.getElementById("q").value.trim();
   if (!q) { err.textContent = "请先输入问题"; return; }
-  var payload = { schema: "wxr_advisor_v1", mode: ctx.mode, question: q };
+  var payload = { mode: ctx.mode, question: q };
   if (ctx.mode === "report") { payload.kind = ctx.kind; payload.yesIds = ctx.yesIds; }
   else {
     var el = document.getElementById("selEl").value;
     if (!el) { err.textContent = "请先选择主型"; return; }
     payload.mainType = el;
   }
+  var agentPayload = Object.assign({schema:"wxr_agent_v1"}, payload);
+  var oldPayload = Object.assign({schema:"wxr_advisor_v1"}, payload);
   busy = true; var btn = document.getElementById("askBtn"); btn.disabled = true; btn.textContent = "思考中…";
   addQA(q, "<span class='muted'>正在依据五行体系作答…</span>", "", "");
-  fetch("/api/advisor", { method:"POST", headers:{"content-type":"application/json"}, body:JSON.stringify(payload) })
-    .then(function(r){ return r.json().then(function(j){ return {status:r.status, j:j}; }); })
+  // 有状态 Agent 优先；失败自动回退旧无状态接口
+  fetch(AGENT_BASE + "/agents/advisor-agent/" + getSid(), { method:"POST", headers:{"content-type":"application/json"}, body:JSON.stringify(agentPayload) })
+    .then(function(r){ if(!r.ok) throw new Error("agent_http_"+r.status); return r.json(); })
+    .then(function(j){ if(!j || !j.ok) throw new Error("agent_bad"); return j; })
+    .catch(function(){ return fetch("/api/advisor", { method:"POST", headers:{"content-type":"application/json"}, body:JSON.stringify(oldPayload) }).then(function(r){ return r.json(); }).then(function(j){ return {status:200, j:j}; }); })
     .then(function(x){
       var last = document.getElementById("log").lastElementChild;
       if (x.j && x.j.ok) {
