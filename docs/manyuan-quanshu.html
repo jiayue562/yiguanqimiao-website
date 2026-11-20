@@ -202,6 +202,9 @@ body{
 .toc-resume b{color:var(--ink)}
 :target{scroll-margin-top:18px}
 .c :target{background:linear-gradient(transparent 62%,rgba(201,160,90,.18) 0);border-radius:2px}
+/* 移动端：确保正文可顺畅长按选字，悬浮工具本身不被选中 */
+.c p,.c h1,.c h2,.c h3{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default}
+.fab button,.ai-selbtn,.ai-drawer{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 
 /* ============ 随书 AI 助理 ============ */
 .ai-drawer{position:fixed;top:0;right:0;width:min(420px,92vw);height:100vh;z-index:1100;
@@ -2563,26 +2566,52 @@ var AI_ANCHOR_MAP={"sec-0001": "前言", "sec-0002": "一、 世界宗教简述"
     historyDigest=[];aiLog.innerHTML='<div class="ai-msg a">已开启新会话。这本书里哪一段读不懂？直接问我，或选中原文点「问这段」。</div>';
     try{localStorage.removeItem(SID_KEY);}catch(e){}aiInput.value='';aiSelHint.classList.remove('show');pendingSel='';
   };
-  // 监听选中文本
-  document.addEventListener('mouseup',function(){
-    setTimeout(function(){
-      var s=String(window.getSelection()||'').trim();
-      if(s.length>=4&&s.length<=400){
+  // ---- 选中文本监听（移动端优先：selectionchange + touchend + mouseup，防抖）----
+  var selTimer=null;
+  function onSelection(){
+    if(selTimer)clearTimeout(selTimer);
+    selTimer=setTimeout(function(){
+      var sel=window.getSelection();
+      var s=sel?String(sel).trim():'';
+      if(s.length>=4&&s.length<=400 && !aiDrawer.classList.contains('open')){
         pendingSel=s.slice(0,400);
         aiSelHint.textContent='已选：'+pendingSel.slice(0,32)+(pendingSel.length>32?'…':'');
         aiSelHint.classList.add('show');
-        var sel=window.getSelection();
-        if(sel&&sel.rangeCount){var r=sel.getRangeAt(0).getBoundingClientRect();
-          aiSelBtn.style.left=Math.max(8,Math.min(r.left,window.innerWidth-150))+'px';
-          aiSelBtn.style.top=Math.max(6,r.top-40)+'px';aiSelBtn.classList.add('show');}
+        if(sel.rangeCount){
+          var r=sel.getRangeAt(0).getBoundingClientRect();
+          var bw=150, bh=48;
+          // 优先放选区下方（拇指自然位置），空间不足再放上方
+          var left=Math.max(8,Math.min(r.left,window.innerWidth-bw-8));
+          var below=r.bottom+12;
+          var top=(below+bh<window.innerHeight-8)?below:Math.max(8,r.top-bh-12);
+          aiSelBtn.style.left=left+'px';aiSelBtn.style.top=top+'px';
+          aiSelBtn.classList.add('show');
+        }
+      }else if(s.length===0){
+        aiSelBtn.classList.remove('show'); // 选区被清空：收起按钮，但保留 pendingSel
       }
-    },10);
-  });
-  aiSelBtn.onclick=function(){
+    },220); // 移动端选区稳定需要时间
+  }
+  document.addEventListener('selectionchange',onSelection);
+  document.addEventListener('touchend',function(){setTimeout(onSelection,120);},{passive:true});
+  document.addEventListener('mouseup',function(){setTimeout(onSelection,20);});
+  // 按钮按下时阻止默认，避免触屏先清空选区导致 pendingSel 丢失
+  function holdSel(e){e.preventDefault();e.stopPropagation();}
+  aiSelBtn.addEventListener('touchstart',holdSel,{passive:false});
+  aiSelBtn.addEventListener('mousedown',holdSel);
+  aiSelBtn.onclick=function(e){
+    e.preventDefault();e.stopPropagation();
     aiSelBtn.classList.remove('show');
     if(!aiDrawer.classList.contains('open'))openAI();
-    aiSelHint.classList.add('show');aiInput.focus();
+    aiSelHint.classList.add('show');
+    if(pendingSel){aiInput.value=aiInput.value||('解释这段话：'+pendingSel.slice(0,30));}
+    aiInput.focus();
   };
+  // 点击正文空白处收起按钮（不干扰正常阅读）
+  document.addEventListener('touchstart',function(e){
+    if(!aiSelBtn.classList.contains('show'))return;
+    if(e.target!==aiSelBtn)aiSelBtn.classList.remove('show');
+  },{passive:true,capture:true});
   function renderAnswer(text,refuse,sources,disc){
     var html=aiEsc(text).replace(/\n/g,'<br>');
     // [book:章节] -> 可点击跳到对应 heading
