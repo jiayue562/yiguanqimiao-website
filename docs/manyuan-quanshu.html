@@ -164,7 +164,7 @@ body{
 /* 进度条 + 悬浮工具 */
 .progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:999;
   background:linear-gradient(90deg,var(--accent),var(--cinnabar))}
-.fab{position:fixed;right:18px;bottom:22px;display:flex;flex-direction:column;gap:9px;z-index:998}
+.fab{position:fixed;right:18px;bottom:22px;display:flex;flex-direction:column;align-items:flex-end;gap:9px;z-index:998}
 .fab button{
   width:44px;height:44px;border:1px solid var(--line);border-radius:50%;cursor:pointer;
   background:var(--card);color:var(--accent-d);font-size:15px;font-weight:600;
@@ -173,6 +173,9 @@ body{
 }
 .fab button:hover{transform:translateY(-2px);background:var(--quote-bg)}
 .fab button.sm{font-size:12px}
+.font-ctrl{display:flex;gap:6px}
+.fab button.dim{opacity:.3;cursor:default}
+.fab button.dim:hover{transform:none;background:var(--card)}
 
 /* 断点续读提示条 */
 .resume{
@@ -2313,7 +2316,7 @@ body{
 </div>
 <div class="fab">
 <button id="btnToc" title="目录">目</button>
-<button id="btnFont" title="字号（点击切换）">16</button>
+<div class="font-ctrl"><button id="btnFontDec" title="缩小字号">A-</button><button id="btnFontInc" title="放大字号">A+</button></div>
 <button id="btnNight" title="夜间模式">☾</button>
 <button id="btnTop" title="返回顶部">顶</button>
 </div>
@@ -2324,18 +2327,21 @@ body{
   var c=document.getElementById('content'), body=document.body;
   var KEY='manyuan_progress';
 
-  /* ---- 主题 / 字号 ---- */
+  /* ---- 主题 / 字号（A+ 放大 / A- 缩小） ---- */
   var FS=[14,16,18,20,23,26], fi=1;
   try{fi=parseInt(localStorage.getItem('my_fs')||'1',10);}catch(e){}
   if(isNaN(fi)||fi<0||fi>=FS.length)fi=1;
-  var fontBtn=document.getElementById('btnFont');
+  var inc=document.getElementById('btnFontInc'), dec=document.getElementById('btnFontDec');
   function applyFs(){
     c.style.fontSize=FS[fi]+'px';
-    fontBtn.textContent=String(FS[fi]);
-    fontBtn.title='字号 '+FS[fi]+'px（点击切换）';
+    inc.classList.toggle('dim',fi>=FS.length-1);
+    dec.classList.toggle('dim',fi<=0);
+    inc.title='放大字号（当前 '+FS[fi]+'px）';
+    dec.title='缩小字号（当前 '+FS[fi]+'px）';
   }
   applyFs();
-  fontBtn.onclick=function(){fi=(fi+1)%FS.length;applyFs();try{localStorage.setItem('my_fs',fi);}catch(e){};};
+  inc.onclick=function(){if(fi<FS.length-1){fi++;applyFs();try{localStorage.setItem('my_fs',fi);}catch(e){}}};
+  dec.onclick=function(){if(fi>0){fi--;applyFs();try{localStorage.setItem('my_fs',fi);}catch(e){}}};
   var night=false;
   try{night=localStorage.getItem('my_night')==='1';}catch(e){}
   function applyNight(){body.classList.toggle('night',night);document.getElementById('btnNight').textContent=night?'☀':'☾';}
