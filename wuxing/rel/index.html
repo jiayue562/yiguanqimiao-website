@@ -3,38 +3,110 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>关系测评 · 五行人格学</title>
-<link rel="stylesheet" href="../style.css">
+<title>五行人格关系测评｜225题自测+他测，测你与TA的能量关系</title>
+<meta name="description" content="五行人格关系测评：自测卷（我测自己）与他测卷（我测 TA）各 225 题，按五行五段作答，答完自动生成关系测评报告——关系四象限、相生/相克分型、双线功课（主生课+主克课+日课）与 90 天行动地图。进度保存在本地浏览器，支持中途续答，免费。">
+<meta name="keywords" content="五行人格关系测评,关系测评,双人人格测评,亲密关系测试,五行识人,相生相克,关系四象限,90天行动地图,人格测试,性格测试">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://yiguanqimiao-website.pages.dev/wuxing/rel/">
+<link rel="stylesheet" href="../style.css?v=20261116b">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="以观其妙书院">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="五行人格关系测评｜225题自测+他测">
+<meta property="og:description" content="自测卷与他测卷各 225 题，答完自动生成关系测评报告：关系四象限、相生相克分型、双线功课与 90 天行动地图。免费，进度存在本地浏览器。">
+<meta property="og:url" content="https://yiguanqimiao-website.pages.dev/wuxing/rel/">
+<meta property="og:image" content="https://yiguanqimiao-website.pages.dev/img/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="五行人格关系测评 · 以观其妙书院">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="五行人格关系测评｜225题自测+他测">
+<meta name="twitter:description" content="自测卷与他测卷各 225 题，答完生成关系测评报告：关系四象限、相生相克分型、双线功课与 90 天行动地图。">
+<meta name="twitter:image" content="https://yiguanqimiao-website.pages.dev/img/og-default.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://yiguanqimiao-website.pages.dev/wuxing/rel/#app",
+      "name": "五行人格关系测评",
+      "url": "https://yiguanqimiao-website.pages.dev/wuxing/rel/",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web",
+      "browserRequirements": "需要支持 JavaScript 的现代浏览器",
+      "inLanguage": "zh-CN",
+      "isAccessibleForFree": true,
+      "description": "自测卷与他测卷各 225 题，答完自动生成关系测评报告——关系四象限、相生相克分型、双线功课与 90 天行动地图。",
+      "featureList": [
+        "自测卷与他测卷各 225 题",
+        "五行五段作答",
+        "关系四象限分析",
+        "相生相克分型",
+        "双线功课与 90 天行动地图",
+        "进度本地保存，可中途续答"
+      ],
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
+      "publisher": { "@type": "Organization", "name": "以观其妙书院", "url": "https://yiguanqimiao-website.pages.dev/" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "以观其妙书院", "item": "https://yiguanqimiao-website.pages.dev/" },
+        { "@type": "ListItem", "position": 2, "name": "五行人格学", "item": "https://yiguanqimiao-website.pages.dev/wuxing/" },
+        { "@type": "ListItem", "position": 3, "name": "关系测评", "item": "https://yiguanqimiao-website.pages.dev/wuxing/rel/" }
+      ]
+    }
+  ]
+}
+</script>
 <style>
-  .duo { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:18px 0; }
-  .duo .dcard { border:2px solid #E3DCCB; border-radius:12px; padding:18px 14px; text-align:center;
-    cursor:pointer; background:#FFFDF8; transition:all .15s; }
-  .duo .dcard.sel { border-color:#854F0B; background:#FAEEDA; box-shadow:0 2px 10px rgba(133,79,11,.12); }
-  .duo .dcard .ico { font-size:34px; }
-  .duo .dcard h3 { margin:8px 0 2px; font-size:18px; }
-  .duo .dcard .sub { color:#854F0B; font-weight:600; font-size:14px; }
-  .duo .dcard .cnt { color:#8B8578; font-size:13px; margin-top:6px; }
-  .duo .dcard .desc { font-size:13px; color:#5C564A; margin-top:8px; line-height:1.6; }
-  .duo .dcard .st { font-size:12px; margin-top:8px; color:#8B8578; }
+  .duo { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:26px 0; }
+  .duo .dcard { min-width:0; border:2px solid #E3DCCB; border-radius:16px; padding:26px 20px; text-align:center;
+    cursor:pointer; background:#FFFDF8; transition:all .18s; box-shadow:0 2px 12px rgba(44,44,42,.04); }
+  .duo .dcard:hover { border-color:#C9A96A; transform:translateY(-2px); box-shadow:0 6px 20px rgba(44,44,42,.08); }
+  .duo .dcard.sel { border-color:#854F0B; background:#FAEEDA; box-shadow:0 4px 16px rgba(133,79,11,.14); }
+  .duo .dcard .ico { font-size:40px; line-height:1.2; }
+  .duo .dcard h3 { margin:12px 0 4px; font-size:21px; }
+  .duo .dcard .sub { color:#854F0B; font-weight:600; font-size:15px; }
+  .duo .dcard .cnt { color:#8B8578; font-size:14px; margin-top:8px; }
+  .duo .dcard .desc { font-size:14.5px; color:#5C564A; margin-top:12px; line-height:1.75; }
+  .duo .dcard .st { font-size:13.5px; margin-top:12px; color:#8B8578; }
   .duo .dcard .st.done { color:#3B6D11; font-weight:600; }
-  .rstbtn { display:inline-block; margin-top:8px; padding:4px 12px; font-size:12px; border:1px solid #C9C2B0;
+  .rstbtn { display:inline-block; margin-top:10px; padding:6px 14px; font-size:13px; border:1px solid #C9C2B0;
     background:#FFFDF8; color:#854F0B; border-radius:8px; cursor:pointer; }
   .rstbtn:hover { background:#FAEEDA; }
-  .bigbtn { display:block; width:100%; max-width:420px; margin:10px auto; padding:15px 20px;
-    background:#854F0B; color:#fff; border:none; border-radius:12px; font-size:19px; font-weight:700;
-    cursor:pointer; text-align:center; }
+  .bigbtn { display:block; width:100%; max-width:460px; margin:16px auto; padding:17px 22px;
+    background:#854F0B; color:#fff; border:none; border-radius:14px; font-size:19px; font-weight:700;
+    cursor:pointer; text-align:center; box-shadow:0 4px 14px rgba(133,79,11,.18); transition:all .18s; }
+  .bigbtn:hover { background:#6E400A; transform:translateY(-1px); box-shadow:0 8px 22px rgba(133,79,11,.26); }
   .bigbtn.gold { background:#A3720B; }
-  .namebox { display:none; max-width:420px; margin:0 auto 10px; }
-  .namebox input { width:100%; padding:11px 14px; border:2px solid #E3DCCB; border-radius:10px;
-    font-size:15px; box-sizing:border-box; }
-  .backline { text-align:center; margin-top:16px; }
+  .bigbtn.gold:hover { background:#8A5F09; }
+  .namebox { display:none; max-width:460px; margin:0 auto 12px; }
+  .namebox input { width:100%; padding:12px 15px; border:2px solid #E3DCCB; border-radius:10px;
+    font-size:15.5px; box-sizing:border-box; }
+  .backline { text-align:center; margin-top:22px; }
   .backline a { color:#854F0B; }
+  @media (max-width:560px) {
+    .duo { grid-template-columns:1fr; gap:14px; margin:20px 0; }
+    .duo .dcard { padding:20px 16px; }
+    .duo .dcard .ico { font-size:34px; }
+    .duo .dcard h3 { font-size:20px; }
+    .duo .dcard .desc { font-size:14px; }
+    .bigbtn { font-size:17.5px; padding:15px 16px; border-radius:12px; }
+  }
 </style>
 </head>
 <body>
 <header class="site">
   <a class="brand" href="../../index.html">以观其妙书院</a>
-  <nav><a href="../index.html">五行人格测评</a> <a href="../quiz.html">单人自测</a></nav>
+  <nav>
+    <a href="index.html" class="cur">关系测评</a>
+    <a href="baike.html">五行人格学</a>
+    <a href="advisor.html">AI 顾问</a>
+    <a href="camp.html">陪跑营</a>
+    <a href="contact.html">联系我们</a>
+  </nav>
 </header>
 <div class="wrap">
   <h1 style="text-align:center">五行人格关系测评</h1>
@@ -72,7 +144,38 @@
   </div>
   <p class="muted" style="text-align:center;margin-top:10px">支持中途保存：进度自动存在你的浏览器里（不上传服务器），随时退出、随时续答。重新开始重做并完成后，报告页会自动给出与上一轮的得分对比与连续变化（历史存档保留最近 20 轮）。完成作答时，作答数据将<strong>匿名上传</strong>用于统计改进（只含答题结果，不含姓名、联系方式等任何个人信息）。三个月后可用同一套卷复测，验证功课成效。</p>
 
-  <div class="backline"><a href="../index.html">← 返回五行人格测评首页</a></div>
+  <div class="hubwrap">
+    <div class="hublead">
+      <h2>从哪一处进去</h2>
+      <p class="muted" style="margin-top:4px">先测、再查、再按方法论落到功课——三条路，任选一条开始。</p>
+    </div>
+    <div class="hubgrid">
+
+      <a class="hubcard" href="baike.html" style="--ac:#185FA5;--acl:#E6F1FB">
+        <span class="hicon">📖</span>
+        <h3>五行人格学</h3>
+        <p>从骨架到类型一站式：一心三界五行九层怎么咬合、相生相克怎么看方向；木火土金水五种底色的能量形态、五维度、阳面优势与阴面病链条；225 个词逐条释义，可搜、可辨异、可溯源。</p>
+        <span class="hcta">看方法论 · 查词条 · 看五型</span>
+      </a>
+
+      <a class="hubcard" href="advisor.html" style="--ac:#0F6E56;--acl:#E1F5EE">
+        <span class="hicon">🤖</span>
+        <h3>AI 顾问</h3>
+        <p>就你的测评结果直接提问：为什么说你总在关系里顶人、该怎么破。AI 依据五行体系作答，判定由测评引擎给出，回答可溯源、不留存。</p>
+        <span class="hcta">向顾问提问 →</span>
+      </a>
+
+      <a class="hubcard" href="camp.html" style="--ac:#A3720B;--acl:#FBF3D9">
+        <span class="hicon">⛺</span>
+        <h3>五行陪跑营</h3>
+        <p>90 天，把一份报告过成日子：定位 → 拔阴 → 化克 → 复测。按主导行配功课，拆到 30 秒能做完。</p>
+        <span class="hcta">了解怎么跑</span>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="backline"><a href="index.html">← 返回关系测评主页</a> ｜ <a href="data.html" style="color:#8B8578;font-size:13px">数据查看（内部）</a></div>
 </div>
 <script>
 var mode = "self";

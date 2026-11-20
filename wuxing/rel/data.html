@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>测评数据查看（内部）</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+  .wrap{max-width:1000px}
+  .statline{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
+  .statbox{flex:1;min-width:140px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px 16px;text-align:center}
+  .statbox b{display:block;font-size:34px;color:#185FA5;line-height:1.2}
+  .statbox span{font-size:13px;color:#8B8578}
+  .lock{max-width:420px;margin:48px auto;text-align:center}
+  .lock input{width:100%;padding:12px;border:1px solid #d1d5db;border-radius:8px;font-size:16px;box-sizing:border-box}
+  table.plain{width:100%;border-collapse:collapse;font-size:14px}
+  table.plain th,table.plain td{border-bottom:1px solid #eef0f2;padding:8px 10px;text-align:left;vertical-align:top}
+  table.plain th{background:#f7f8fa;color:#5F5E5A;white-space:nowrap}
+  .ids{font-family:ui-monospace,Consolas,monospace;font-size:12px;color:#5F5E5A;word-break:break-all;max-width:420px}
+  .pager{display:flex;gap:10px;justify-content:center;align-items:center;margin:20px 0}
+  .err{color:#A32D2D;text-align:center;margin:16px 0}
+</style>
+</head>
+<body>
+<header><div class="brand">五行人格学 · 数据查看</div><nav><a href="index.html">← 测评主页</a></nav></header>
+<div class="wrap">
+  <h1>测评提交记录</h1>
+  <p class="muted">内部页面 · 口令保护 · 数据匿名（不含姓名与联系方式）。每轮测评完成后匿名上传一条记录。</p>
+
+  <div id="lockView" class="lock card">
+    <h2>🔒 请输入查看口令</h2>
+    <p class="muted">口令由站点管理者持有；未配置口令时本页不可用。</p>
+    <input id="keyInput" type="password" placeholder="查看口令" autocomplete="off">
+    <p><button class="btn" onclick="load(0)">查看数据</button></p>
+    <p id="lockErr" class="err"></p>
+  </div>
+
+  <div id="dataView" style="display:none">
+    <div class="statline">
+      <div class="statbox"><b id="stTotal">—</b><span>累计提交</span></div>
+      <div class="statbox"><b id="stSelf">—</b><span>自测卷</span></div>
+      <div class="statbox"><b id="stOther">—</b><span>他测卷</span></div>
+      <div class="statbox"><b id="stYes">—</b><span>最新一轮答「是」</span></div>
+    </div>
+    <div id="loadErr" class="err"></div>
+    <div style="overflow-x:auto">
+      <table class="plain" id="tbl">
+        <thead><tr><th>ID</th><th>提交时间</th><th>卷别</th><th>主型</th><th>答「是」数</th><th>答「是」题号（0–224）</th><th>上传ID</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <div class="pager">
+      <button class="btn" id="prevBtn" onclick="goPage(-1)">← 上一页</button>
+      <span id="pageInfo" class="muted"></span>
+      <button class="btn" id="nextBtn" onclick="goPage(1)">下一页 →</button>
+    </div>
+    <p class="muted">题号对应《五行人格学-关系测评题目重排清单.md》（0–224）。本页只读，不做任何写入。</p>
+  </div>
+</div>
+<script>
+var LIMIT = 20, offset = 0, total = 0;
+function key() { return document.getElementById("keyInput").value.trim(); }
+function load(off) {
+  offset = Math.max(0, off);
+  var err = document.getElementById("loadErr");
+  err.textContent = "";
+  fetch("/api/wuxing-records?key=" + encodeURIComponent(key()) + "&limit=" + LIMIT + "&offset=" + offset)
+    .then(function (r) { return r.json().then(function (j) { return { status: r.status, j: j }; }); })
+    .then(function (x) {
+      var j = x.j;
+      if (!j.ok) {
+        document.getElementById("lockErr").textContent =
+          j.error === "unauthorized" ? "口令错误" :
+          j.error === "view_not_configured" ? "本站未配置查看口令，页面不可用" :
+          "读取失败：" + (j.error || x.status);
+        return;
+      }
+      document.getElementById("lockView").style.display = "none";
+      document.getElementById("dataView").style.display = "";
+      total = j.total;
+      document.getElementById("stTotal").textContent = j.total;
+      var selfN = 0, otherN = 0;
+      j.records.forEach(function (r) { if (r.kind === "self") selfN++; else if (r.kind === "other") otherN++; });
+      // 卷别统计用当前页，完整总数以累计提交为准
+      document.getElementById("stSelf").textContent = selfN;
+      document.getElementById("stOther").textContent = otherN;
+      document.getElementById("stYes").textContent = j.records.length ? j.records[0].yesCount : "—";
+      var tb = document.getElementById("tbody");
+      tb.innerHTML = j.records.map(function (r) {
+        return "<tr><td>" + r.id + "</td><td>" + r.submittedAt + "</td><td>" +
+          (r.kind === "other" ? "他测卷" : "自测卷") + "</td><td>" + (r.mainType || "—") +
+          "</td><td>" + r.yesCount + "</td><td class='ids'>" + (r.yesIds.join(", ") || "—") +
+          "</td><td class='ids'>" + r.uploadId + "</td></tr>";
+      }).join("") || "<tr><td colspan='7' style='text-align:center;color:#8B8578'>暂无记录</td></tr>";
+      document.getElementById("pageInfo").textContent =
+        "第 " + (Math.floor(offset / LIMIT) + 1) + " / " + Math.max(1, Math.ceil(total / LIMIT)) + " 页";
+      document.getElementById("prevBtn").disabled = offset === 0;
+      document.getElementById("nextBtn").disabled = offset + LIMIT >= total;
+    })
+    .catch(function (e) { err.textContent = "网络错误：" + e.message; });
+}
+function goPage(d) { load(offset + d * LIMIT); }
+document.getElementById("keyInput").addEventListener("keydown", function (e) { if (e.key === "Enter") load(0); });
+</script>
+</body>
+</html>

@@ -3,26 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>答题 · 五行人格关系测评</title>
-<link rel="stylesheet" href="../style.css">
+<title>五行人格关系测评答题页（自测卷/他测卷 225题）· 五行人格学</title>
+<meta name="description" content="五行人格关系测评答题页：自测卷（我测自己）与他测卷（我测 TA）各 225 题，按五行五段作答；进度自动保存在本地浏览器，两卷答完自动生成关系测评报告。">
+<meta name="keywords" content="五行人格关系测评答题,他测卷,自测卷,225题关系测试,亲密关系五行测评">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://yiguanqimiao-website.pages.dev/wuxing/rel/quiz">
+<link rel="stylesheet" href="../style.css?v=20261116b">
 <style>
   .segbar { display:flex; gap:3px; margin:14px 0 6px; height:14px; border-radius:7px; overflow:hidden; background:#E9E4D6; }
   .segbar div { transition:width .3s; }
-  .seglabel { font-size:13px; color:#8B8578; text-align:center; margin-bottom:12px; }
-  .trans { text-align:center; padding:30px 16px; }
-  .trans .done { font-size:40px; }
+  .seglabel { font-size:14px; color:#8B8578; text-align:center; margin-bottom:12px; }
+  .trans { text-align:center; padding:34px 16px; }
+  .trans .done { font-size:44px; }
   .trans h2 { margin:12px 0 6px; }
-  .trans .next { font-size:15px; color:#5C564A; margin-bottom:18px; }
+  .trans .next { font-size:16px; color:#5C564A; margin-bottom:18px; line-height:1.8; }
   .intro { margin-bottom:14px; }
 </style>
 </head>
 <body>
 <header class="site">
   <a class="brand" href="../../index.html">以观其妙书院</a>
-  <nav><a href="index.html">关系测评</a> <a href="../quiz.html">单人自测</a></nav>
+  <nav><a href="index.html">关系测评</a></nav>
 </header>
 <div class="wrap" id="root"></div>
-<script src="../data.js"></script>
+<script src="../data.js?v=20261116b"></script>
 <script>
 (function(){
   var data = QUIZ_DATA; /* 题库全局变量（data.js 定义为 const QUIZ_DATA） */
@@ -77,8 +81,24 @@
           : Date.now().toString(16) + "-" + Math.floor(Math.random() * 0xffffffffffff).toString(16);
         save();
       }
+      // 主型轻量判定：按答「是」题数取最多的行（与计分引擎 P 同向，仅用于数据标注，不进报告）
+      // data.js 每题含 e 字段（木火土金水），下标即题号；此处不引入 engine.js，避免拖慢答题页
+      var mainType = null;
+      try {
+        if (typeof QUIZ_DATA !== "undefined" && QUIZ_DATA.length) {
+          var cnt = { "木": 0, "火": 0, "土": 0, "金": 0, "水": 0 };
+          Object.keys(state.ans).forEach(function (k) {
+            if (state.ans[k] === true && QUIZ_DATA[Number(k)] && cnt[QUIZ_DATA[Number(k)].e] !== undefined)
+              cnt[QUIZ_DATA[Number(k)].e]++;
+          });
+          var best = "木";
+          ["火", "土", "金", "水"].forEach(function (e) { if (cnt[e] > cnt[best]) best = e; });
+          var max = cnt[best], tied = ["木", "火", "土", "金", "水"].filter(function (e) { return cnt[e] === max; });
+          if (max >= 5 && tied.length === 1) mainType = best; // 与引擎定型门槛一致：≥5 题且唯一领先
+        }
+      } catch (e) {}
       fetch("/api/wuxing-response", { method: "POST", headers: { "content-type": "application/json" },
-        body: JSON.stringify({ kind: mode, schema: "wxr_v1", ans: state.ans, ts: state.ts, uid: state.uploadId })
+        body: JSON.stringify({ kind: mode, schema: "wxr_v1", ans: state.ans, ts: state.ts, uid: state.uploadId, mainType: mainType })
       }).catch(function () {});
     } catch (e) {}
   }
@@ -139,11 +159,11 @@
       + '<div style="margin-top:14px"><button class="btn ghost" id="restartBtnT" style="font-size:13px">重新开始做题</button></div>'
       + '</div>';
     root.innerHTML = h;
-    document.getElementById("contBtn").onclick = function() { renderPage(); };
+    document.getElementById("contBtn").onclick = function() { renderPage(true); };
     document.getElementById("restartBtnT").onclick = restart;
   }
 
-  function renderPage() {
+  function renderPage(scrollToQuiz) {
     var start = state.page * PAGE;
     if (start >= order.length) { finish(); return; }
     var seg = segOf(start);
@@ -171,8 +191,13 @@
     h += '<button class="btn" id="nextBtn">' + (end >= order.length ? "完成作答" : "下一页") + '</button></div>'
       + '<div style="text-align:center;margin:0 0 18px"><button class="btn ghost" id="restartBtn" style="font-size:13px">重新开始做题</button></div>';
     root.innerHTML = h;
+    /* 翻页/过场续答后定位到本页答题区顶部（进度条处），上一页/下一页行为一致 */
+    if (scrollToQuiz) {
+      var anchor = document.querySelector(".segbar") || document.getElementById("qlist");
+      if (anchor && anchor.scrollIntoView) anchor.scrollIntoView(); else window.scrollTo(0, 0);
+    }
 
-    if (state.page > 0) document.getElementById("prevBtn").onclick = function() { state.page--; save(); renderPage(); };
+    if (state.page > 0) document.getElementById("prevBtn").onclick = function() { state.page--; save(); renderPage(true); };
     document.getElementById("restartBtn").onclick = restart;
     document.getElementById("nextBtn").onclick = function() {
       var missing = 0;
@@ -189,7 +214,7 @@
       }
       state.page++;
       save();
-      renderPage();
+      renderPage(true);
     };
   }
 

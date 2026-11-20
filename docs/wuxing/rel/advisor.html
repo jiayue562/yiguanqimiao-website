@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>五行人格 · AI 顾问</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+  .chatbox{max-width:820px;margin:0 auto}
+  .modebar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0}
+  .chip{display:inline-block;padding:6px 12px;border:1px solid #E3DCCB;border-radius:999px;background:#FFFDF8;color:#5F5E5A;font-size:13px}
+  .chip.on{background:#185FA5;color:#fff;border-color:#185FA5}
+  .banner{background:#FAEEDA;border:1px solid #E3C77B;border-radius:10px;padding:10px 14px;font-size:13.5px;color:#633806;margin:10px 0}
+  .qa{border:1px solid #E3DCCB;border-radius:12px;padding:14px 16px;margin:12px 0;background:#fff}
+  .qa .q{font-weight:700;color:#3E3A32;margin-bottom:8px}
+  .qa .a{line-height:1.9;font-size:15px;color:#2C2C2A}
+  .qa .src{font-size:12.5px;color:#8B8578;margin-top:10px;border-top:1px dashed #E3DCCB;padding-top:8px;white-space:pre-wrap}
+  .askbar{display:flex;gap:10px;margin:16px 0}
+  .askbar input{flex:1;padding:12px 14px;border:1px solid #d1d5db;border-radius:10px;font-size:15px}
+  .askbar button{padding:12px 22px;border:0;border-radius:10px;background:#185FA5;color:#fff;font-size:15px;cursor:pointer}
+  .askbar button:disabled{background:#B4B2A9;cursor:not-allowed}
+  .manual{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0}
+  .manual select{padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:15px}
+  .muted{color:#8B8578;font-size:13px}
+  .err{color:#A32D2D;font-size:13.5px;margin:8px 0}
+  .disclaimer{font-size:12.5px;color:#8B8578;margin-top:8px}
+</style>
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="../../index.html">以观其妙书院</a>
+  <nav>
+    <a href="index.html">关系测评</a>
+    <a href="baike.html">五行人格学</a>
+    <a href="report.html">我的报告</a>
+    <a href="advisor.html" class="cur">AI 顾问</a>
+  </nav>
+</header>
+<div class="wrap chatbox">
+  <h1 style="text-align:center">五行人格 · AI 顾问</h1>
+  <p style="text-align:center;color:#8B8578">就你的测评结果提问，或有主型直接问</p>
+
+  <div class="modebar" id="modeBar">
+    <span class="chip" id="chipReport">报告模式</span>
+    <span class="chip" id="chipManual">手动模式</span>
+    <span class="muted" id="modeInfo"></span>
+    <button class="chip" style="margin-left:auto;cursor:pointer" onclick="newSession()">新会话</button>
+  </div>
+  <div id="bannerNew" class="banner" style="display:none">已开启新会话，此前摘要已清除。</div>
+  <div id="manualBox" class="manual" style="display:none">
+    <label for="selEl">选择主型：</label>
+    <select id="selEl"><option value="">— 请选择 —</option><option>木</option><option>火</option><option>土</option><option>金</option><option>水</option></select>
+    <span class="muted">未做测评时的通用类型解读，不构成个人判定。</span>
+  </div>
+  <div class="banner" id="bannerManual" style="display:none">当前为<strong>手动输入主型</strong>：通用类型解读，非个人判定；不引用你的测评证据。</div>
+
+  <div id="log"></div>
+  <div class="askbar">
+    <input id="q" maxlength="300" placeholder="例如：我总在关系里顶人，怎么破？">
+    <button id="askBtn" onclick="ask()">提问</button>
+  </div>
+  <div id="err" class="err"></div>
+  <p class="muted" style="text-align:center">AI 依据五行体系作答，判定由测评引擎给出；回答仅供参考，非医疗或心理诊断。为支持多轮追问，仅保存结构化的测评判定与每轮简短摘要（最多 12 轮），<strong>不保存逐字提问与回答</strong>，可随时点「新会话」清除。</p>
+</div>
+<script src="../data.js?v=20261116b"></script>
+<script src="../engine.js?v=20261116b"></script>
+<script src="engine_rel.js?v=20261116c"></script>
+<script src="lexicon.js?v=20261118"></script>
+<script>
+var KEYS = { self: "wxr_v1_self", other: "wxr_v1_other" };
+var AGENT_BASE = "https://wuxing-advisor-agent.jiayue562.workers.dev";
+var SID_KEY = "wxr_agent_sid";
+var mode = "report", ctx = null, busy = false;
+function getSid(){
+  var sid = null; try { sid = localStorage.getItem(SID_KEY); } catch(e){}
+  if (!sid) { sid = (crypto.randomUUID ? crypto.randomUUID() : ("s"+Date.now()+Math.random().toString(36).slice(2))); try{ localStorage.setItem(SID_KEY, sid); }catch(e){} }
+  return sid;
+}
+function newSession(){
+  var sid = getSid();
+  fetch(AGENT_BASE + "/agents/advisor-agent/" + sid + "/reset", {method:"POST", headers:{"content-type":"application/json"}, body:JSON.stringify({schema:"wxr_agent_reset"})})
+    .catch(function(){});
+  document.getElementById("log").innerHTML = "";
+  var b = document.getElementById("bannerNew"); if (b) { b.style.display="block"; setTimeout(function(){b.style.display="none";},2500); }
+}
+function getState(k){ try{ return JSON.parse(localStorage.getItem(k)); }catch(e){ return null; } }
+function detect(){
+  var params = new URLSearchParams(location.search);
+  if (params.get("mode") === "manual") return { mode: "manual" };
+  var s = getState(KEYS.self), o = getState(KEYS.other);
+  var src = params.get("src") || (o && o.done ? "other" : "self");
+  var st = src === "other" ? o : s;
+  if (!st || !st.done || !st.ans) return { mode: "manual" };
+  var res = scoreQuiz(st.ans, QUIZ_DATA);
+  return { mode: "report", kind: src, res: res, ts: st.ts, yesIds: Object.keys(st.ans).filter(function(k){return st.ans[k]===true;}).map(Number) };
+}
+function render(){
+  ctx = detect();
+  var isR = ctx.mode === "report";
+  document.getElementById("chipReport").className = "chip" + (isR ? " on" : "");
+  document.getElementById("chipManual").className = "chip" + (!isR ? " on" : "");
+  document.getElementById("manualBox").style.display = isR ? "none" : "flex";
+  document.getElementById("bannerManual").style.display = isR ? "none" : "block";
+  document.getElementById("modeInfo").textContent = isR
+    ? "基于 " + new Date(ctx.ts).toISOString().slice(0,10) + " 的" + (ctx.kind==="other"?"他测":"自测") + "答卷 · 主型 " + (ctx.res.mainType || "未显")
+    : "未检测到已完成测评，可手选主型提问";
+}
+function setMode(m){ var u = new URL(location.href); if(m==="manual"){ u.searchParams.set("mode","manual"); } else { u.searchParams.delete("mode"); } location.href = u.toString(); }
+document.getElementById("chipManual").onclick = function(){ setMode("manual"); };
+document.getElementById("chipReport").onclick = function(){ setMode("report"); };
+function addQA(q, a, src, disclaimer){
+  var d = document.createElement("div"); d.className = "qa";
+  d.innerHTML = "<div class='q'>" + esc(q) + "</div><div class='a'>" + a + "</div>"
+    + (src ? "<div class='src'>依据：" + esc(src) + "</div>" : "")
+    + (disclaimer ? "<div class='disclaimer'>" + esc(disclaimer) + "</div>" : "");
+  document.getElementById("log").appendChild(d);
+  d.scrollIntoView({behavior:"smooth", block:"nearest"});
+}
+function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+function ask(){
+  if (busy) return;
+  var err = document.getElementById("err"); err.textContent = "";
+  var q = document.getElementById("q").value.trim();
+  if (!q) { err.textContent = "请先输入问题"; return; }
+  var payload = { mode: ctx.mode, question: q };
+  if (ctx.mode === "report") { payload.kind = ctx.kind; payload.yesIds = ctx.yesIds; }
+  else {
+    var el = document.getElementById("selEl").value;
+    if (!el) { err.textContent = "请先选择主型"; return; }
+    payload.mainType = el;
+  }
+  var agentPayload = Object.assign({schema:"wxr_agent_v1"}, payload);
+  var oldPayload = Object.assign({schema:"wxr_advisor_v1"}, payload);
+  busy = true; var btn = document.getElementById("askBtn"); btn.disabled = true; btn.textContent = "思考中…";
+  addQA(q, "<span class='muted'>正在依据五行体系作答…</span>", "", "");
+  // 有状态 Agent 优先；失败自动回退旧无状态接口
+  fetch(AGENT_BASE + "/agents/advisor-agent/" + getSid(), { method:"POST", headers:{"content-type":"application/json"}, body:JSON.stringify(agentPayload) })
+    .then(function(r){ if(!r.ok) throw new Error("agent_http_"+r.status); return r.json(); })
+    .then(function(j){ if(!j || !j.ok) throw new Error("agent_bad"); return j; })
+    .catch(function(){ return fetch("/api/advisor", { method:"POST", headers:{"content-type":"application/json"}, body:JSON.stringify(oldPayload) }).then(function(r){ return r.json(); }).then(function(j){ return {status:200, j:j}; }); })
+    .then(function(x){
+      var last = document.getElementById("log").lastElementChild;
+      if (x.j && x.j.ok) {
+        var f = x.j.facts || {};
+        var src = [ f.mainType ? "主型：" + f.mainType : "", f.layer ? "层位：L" + f.layer : "",
+          f.relationClass ? "关系：" + f.relationClass : "",
+          (f.evidence||[]).map(function(e){ return e.qid + " " + e.word; }).join("、"),
+          (f.knowledge||[]).map(function(k){ return k.source + "·" + k.section; }).join("；") ].filter(Boolean).join(" ｜ ");
+        last.querySelector(".a").innerHTML = esc(x.j.answer).replace(/\n/g,"<br>");
+        if (src) { var sd = document.createElement("div"); sd.className="src"; sd.textContent="依据："+src; last.appendChild(sd); }
+        if (x.j.disclaimer) { var dd=document.createElement("div"); dd.className="disclaimer"; dd.textContent=x.j.disclaimer; last.appendChild(dd); }
+      } else {
+        last.querySelector(".a").textContent = (x.j && x.j.answer) ? x.j.answer : ("暂时无法回答（" + (x.j && x.j.error ? x.j.error : x.status) + "），请稍后重试。");
+        if (x.j && x.j.disclaimer) { var d2=document.createElement("div"); d2.className="disclaimer"; d2.textContent=x.j.disclaimer; last.appendChild(d2); }
+      }
+      document.getElementById("q").value = "";
+    })
+    .catch(function(e){ document.getElementById("err").textContent = "网络错误：" + e.message; })
+    .finally(function(){ busy=false; btn.disabled=false; btn.textContent="提问"; });
+}
+document.getElementById("q").addEventListener("keydown", function(e){ if(e.key==="Enter") ask(); });
+render();
+</script>
+</body>
+</html>

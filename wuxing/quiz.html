@@ -3,8 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>答题 · 五行人格学在线测评</title>
-<link rel="stylesheet" href="style.css">
+<title>五行人格测评答题页（225题）· 五行人格学在线测评</title>
+<meta name="description" content="五行人格测评答题页：225 题、每题一句自陈式陈述，按木→火→土→金→水五段作答；支持中途保存、随时续答，答案仅保存在本地浏览器，不上传服务器。">
+<meta name="keywords" content="五行人格测评答题,225题人格测试,五行人格测试入口,九层人格测评,五行人格在线测试">
+<link rel="canonical" href="https://yiguanqimiao-website.pages.dev/wuxing/quiz">
+<meta name="robots" content="noindex, follow">
+<link rel="stylesheet" href="style.css?v=20261116b">
 </head>
 <body>
 <header class="site">
@@ -22,7 +26,7 @@
   </div>
   <p class="muted noprint" id="hint"></p>
 </div>
-<script src="data.js"></script>
+<script src="data.js?v=20261116b"></script>
 <script>
 /* 顺序生成：按原象词分桶，桶内洗牌，round-robin 交错 → 同一词的九题两两间隔 ≥25 题 */
 function buildOrder() {
@@ -84,7 +88,7 @@ function answeredCount() {
   var n = 0; store.order.forEach(function(i){ if (ans[i] === true || ans[i] === false) n++; });
   return n;
 }
-function render() {
+function render(scrollToQuiz) {
   var el = document.getElementById("qlist");
   el.innerHTML = "";
   var start = page * PAGE;
@@ -108,7 +112,13 @@ function render() {
   }
   updateProgress();
   localStorage.setItem(KEY+"_page", String(page));
-  window.scrollTo(0, 0);
+  /* 翻页后定位到本页答题区顶部（进度条处），上一页/下一页行为一致 */
+  if (scrollToQuiz) {
+    var anchor = document.querySelector(".progressbar") || document.getElementById("qlist");
+    if (anchor && anchor.scrollIntoView) anchor.scrollIntoView(); else window.scrollTo(0, 0);
+  } else {
+    window.scrollTo(0, 0);
+  }
 }
 function updateProgress() {
   var n = answeredCount(), total = QUIZ_DATA.length;
@@ -116,7 +126,7 @@ function updateProgress() {
   document.getElementById("ptext").textContent = "进度 " + n + " / " + total + "（第 " + (page+1) + " / " + (maxPage+1) + " 页）";
 }
 document.getElementById("prev").addEventListener("click", function(){
-  if (page > 0) { page--; render(); }
+  if (page > 0) { page--; render(true); }
 });
 document.getElementById("next").addEventListener("click", function(){
   var start = page * PAGE, missing = 0;
@@ -127,7 +137,7 @@ document.getElementById("next").addEventListener("click", function(){
   if (missing > 0) {
     document.getElementById("hint").textContent = "本页还有 " + missing + " 题未作答——可以跳过继续，但未答的题不计入结果。";
   }
-  if (page < maxPage) { page++; render(); }
+  if (page < maxPage) { page++; render(true); }
   else {
     var n = answeredCount();
     if (n < QUIZ_DATA.length) {

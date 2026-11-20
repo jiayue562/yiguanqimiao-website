@@ -4,44 +4,80 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>关系测评报告 · 五行人格学</title>
-<link rel="stylesheet" href="../style.css">
+<meta name="description" content="五行人格关系测评报告页：结果由你在本机浏览器中的作答计算生成，包含关系四象限、相生相克分型、双线功课与 90 天行动地图。">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://yiguanqimiao-website.pages.dev/wuxing/rel/report">
+<link rel="stylesheet" href="../style.css?v=20261116b">
 <style>
-  .qtable { width:100%; border-collapse:collapse; font-size:13px; margin-top:8px; }
-  .qtable th, .qtable td { border:1px solid #E3DCCB; padding:6px 8px; text-align:left; }
-  .qtable th { background:#FAEEDA; }
-  .vbig { font-size:22px; font-weight:700; color:#854F0B; }
-  .quad4 { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px; }
-  .quad4 .qb { border:1px solid #E3DCCB; border-radius:10px; padding:12px; background:#FFFDF8; }
-  .quad4 .qb h4 { margin:0 0 6px; font-size:15px; }
-  .quad4 .qb .n { font-size:20px; font-weight:700; }
-  .lesson { border:2px solid #854F0B; border-radius:12px; padding:16px; margin-top:14px; background:#FFFDF8; }
+  .qtable { width:100%; border-collapse:collapse; font-size:14px; margin-top:10px; }
+  .qtable th, .qtable td { border:1px solid #E3DCCB; padding:9px 11px; text-align:left; }
+  .qtable th { background:#FAEEDA; font-weight:700; }
+  .vbig { font-size:25px; font-weight:700; color:#854F0B; }
+  .quad4 { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px; }
+  .quad4 .qb { min-width:0; border:1px solid #E3DCCB; border-radius:12px; padding:16px; background:#FFFDF8; }
+  .quad4 .qb h4 { margin:0 0 8px; font-size:16px; }
+  .quad4 .qb .n { font-size:23px; font-weight:700; }
+  .lesson { border:2px solid #854F0B; border-radius:14px; padding:20px; margin-top:18px; background:#FFFDF8; }
   .lesson h3 { margin-top:0; color:#854F0B; }
-  details.kb { margin:8px 0; border:1px solid #E3DCCB; border-radius:10px; background:#FFFDF8; }
-  details.kb summary { cursor:pointer; padding:10px 12px; font-size:14px; }
+  details.kb { margin:10px 0; border:1px solid #E3DCCB; border-radius:10px; background:#FFFDF8; }
+  details.kb summary { cursor:pointer; padding:12px 14px; font-size:15px; }
   details.kb .card { margin:0; border:0; border-top:1px solid #E3DCCB; border-radius:0 0 10px 10px; }
-  ul.kblist { margin:6px 0 12px; padding-left:20px; }
-  ul.kblist li { margin:8px 0; line-height:1.7; }
-  .kbdef { color:#5F5E5A; font-size:13px; }
-  .kbmeta { font-size:12px; color:#8B8578; }
+  ul.kblist { margin:8px 0 14px; padding-left:20px; }
+  ul.kblist li { margin:9px 0; line-height:1.8; font-size:15px; }
+  .kbdef { color:#5F5E5A; font-size:14px; }
+  .kbattr { color:#A3720B; font-size:13.5px; margin-top:2px; }
+  .kbattr .muted { color:#8B8578; }
+  .kbmeta { font-size:13px; color:#8B8578; }
+  .concl { width:100%; border-collapse:collapse; margin-top:6px; }
+  .concl td { border:0; border-bottom:1px dashed #E3DCCB; padding:9px 6px; font-size:15px; vertical-align:top; }
+  .concl td:first-child { width:150px; color:#8B8578; font-size:13.5px; white-space:nowrap; }
+  .concl tr:last-child td { border-bottom:0; }
+  .traitline { margin:10px 0; line-height:1.8; }
+  .traitline .t { font-weight:700; }
+  .pairgrid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:12px; }
+  .pairgrid .pcol { border:1px solid #E3DCCB; border-radius:12px; padding:16px; background:#FFFDF8; }
+  .pairgrid .pcol h4 { margin:0 0 10px; font-size:16px; }
+  .pairgrid .pcol ul { margin:0; padding-left:20px; }
+  .pairgrid .pcol li { margin:10px 0; line-height:1.75; font-size:14.5px; }
+  .closing { border-left:5px solid #854F0B; background:#FAEEDA; border-radius:0 12px 12px 0; padding:14px 18px; margin-top:16px; font-size:16px; font-weight:700; }
+  .redline { border:2px solid #C0392B; border-radius:12px; padding:14px 18px; margin-top:14px; background:#FCEBEB; color:#8C2A2A; font-size:14.5px; line-height:1.8; }
+  .blurbox { border:1px dashed #854F0B; border-radius:12px; padding:12px 16px; margin-top:12px; background:#FBF7EC; font-size:14.5px; line-height:1.75; }
+  .appx h4 { margin:16px 0 6px; color:#854F0B; }
+  .appx p { line-height:1.85; font-size:14.5px; color:#444; margin:6px 0; }
+  .li-row { margin:12px 0; line-height:1.8; font-size:14.5px; }
+  .li-row .lw { font-weight:700; }
+  .li-row .lf { color:#5F5E5A; }
+  @media (max-width:560px) {
+    .quad4 { grid-template-columns:1fr; gap:10px; }
+    .qtable { font-size:13px; }
+    .qtable th, .qtable td { padding:7px 8px; }
+    .lesson { padding:16px; }
+    .pairgrid { grid-template-columns:1fr; }
+    .concl td:first-child { width:110px; }
+  }
 </style>
 </head>
 <body>
 <header class="site">
   <a class="brand" href="../../index.html">以观其妙书院</a>
-  <nav><a href="index.html">关系测评</a> <a href="quiz.html?mode=self">补自测卷</a> <a href="quiz.html?mode=other">补他测卷</a></nav>
+  <nav><a href="index.html">关系测评</a> <a href="quiz.html?mode=self">补自测卷</a> <a href="quiz.html?mode=other">补他测卷</a> <a href="advisor.html">AI 顾问</a></nav>
 </header>
 <div class="wrap" id="root"><div class="card"><p>加载中…</p></div></div>
 <div class="wrap" id="actions" style="display:none">
   <div class="card noprint" style="text-align:center">
     <button class="btn ghost" onclick="window.print()">保存 / 打印报告</button>
+    <a class="btn" href="advisor.html" style="margin-left:10px">就这份报告提问 →</a>
     <a class="btn" href="index.html" style="margin-left:10px">返回关系测评入口</a>
   </div>
   <footer>以观其妙书院 · 五行人格关系测评 · 结果为自我探索与关系成长参考，属能量状态描述，非医学诊断。</footer>
 </div>
-<script src="../data.js"></script>
-<script src="knowledge.js"></script>
-<script src="../engine.js"></script>
-<script src="engine_rel.js"></script>
+<script src="../data.js?v=20261116b"></script>
+<script src="knowledge.js?v=20261116b"></script>
+<script src="lexicon.js?v=20261118"></script>
+<script src="../engine.js?v=20261116b"></script>
+<script src="engine_rel.js?v=20261116c"></script>
+<script src="report_text.js?v=20261116e"></script>
+<script src="base25.js?v=20261118"></script>
 <script>
 (function(){
   var KEYS = { self: "wxr_v1_self", other: "wxr_v1_other" };
@@ -54,6 +90,34 @@
   var params = new URLSearchParams(location.search);
   var mode = params.get("mode");
   if (!mode) mode = selfDone && otherDone ? "rel" : (selfDone ? "self" : (otherDone ? "other" : "none"));
+  /* rel 模式守卫：双卷齐备才进关系报告，缺卷回落 */
+  if (mode === "rel" && !(selfDone && otherDone)) {
+    mode = selfDone ? "self" : (otherDone ? "other" : "none");
+  }
+  /* 断法自选（R4 输入，存本地） */
+  var DUAN_KEY = "wxr_rel_duan_v1";
+  var REV_KEY = "wxr_rel_review_v1";
+  function loadDuan() {
+    try { var v = JSON.parse(localStorage.getItem(DUAN_KEY) || "null"); return (v && ["水","金","木","火","土"].indexOf(v.duan) !== -1) ? v : null; } catch (e) { return null; }
+  }
+  window.pickDuan = function(d) {
+    localStorage.setItem(DUAN_KEY, JSON.stringify({ duan: d, ts: Date.now() }));
+    location.reload();
+  };
+  window.resetDuan = function() {
+    localStorage.removeItem(DUAN_KEY);
+    location.reload();
+  };
+  /* 复盘预约（R7 输入：方式 + 默认第 13 周复测日） */
+  window.saveReview = function(way) {
+    var d = new Date(Date.now() + 13 * 7 * 86400000).toISOString().slice(0, 10);
+    localStorage.setItem(REV_KEY, JSON.stringify({ way: way, date: d, ts: Date.now() }));
+    location.reload();
+  };
+  window.resetReview = function() {
+    localStorage.removeItem(REV_KEY);
+    location.reload();
+  };
   var root = document.getElementById("root");
   var h = "";
 
@@ -66,100 +130,288 @@
   var otherRes = otherDone ? scoreQuiz(sOther.ans, QUIZ_DATA) : null;
   var otherName = (sOther && sOther.name) ? sOther.name : "TA";
 
-  /* ---------- 共用渲染件 ---------- */
-  function typeCard(res, owner) {
-    var t = res.typeState === "能量未显" ? null : TYPES[res.mainType];
-    var c = ELEMENT_COLOR[res.mainType || res.sorted[0]];
-    var s = "<div class='card' style='background:" + c.light + "'>";
-    if (!t) {
-      s += "<h2>能量未显（" + owner + "）</h2><p>得分最高为 " + res.P[res.sorted[0]] + " 分（" + res.sorted[0] + " 行，满分 100），未达定型标准（≥11 分）。暂以得分最高行（" + res.sorted[0] + "）作暂定主行，转能量状态描述。</p>";
-    } else {
-      s += "<h2 style='color:" + EL_TEXT[res.mainType] + "'>" + owner + "：" + t.name + "（" + t.xiang + "）</h2>"
-        + "<p class='muted'>定型形态：" + (res.typeState === "复合型" ? "复合型（" + res.mainType + "＋" + res.subType + "）" : "单一型") + "　｜　" + res.mainType + " 行得分 " + res.P[res.mainType] + " / 100</p>"
-        + "<p><em>" + t.metaphor + "</em></p><p>" + t.core + "</p>";
-    }
-    return s + "</div>";
-  }
-  function stepsPanel(res, owner) {
-    var s = "<h3>三步判定（" + owner + "）</h3>";
-    var pMax = Math.max(1, res.P[res.sorted[0]]);
-    res.sorted.forEach(function(e) {
-      var c = ELEMENT_COLOR[e];
-      s += "<div class='bar-row'><div class='lbl'>" + e + "</div><div class='track'><div class='fill' style='width:" + (res.P[e] / pMax * 100) + "%;background:" + ELEMENT_COLOR[e].main + "'></div></div><div class='val'>" + res.P[e] + "</div></div>";
-    });
-    var yy = res.yinYang;
-    if (yy) {
-      s += "<p class='muted'>阴阳判定：" + res.mainType + "行内 阳 " + yy.y + " 词 / 中间带 " + yy.m + " 词 / 阴 " + yy.n + " 词"
-        + (yy.verdict === "阴阳未显" ? " → 阴阳未显" : " → 阳 " + yy.yangPct + "% vs 阴 " + yy.yinPct + "%，" + yy.verdict) + "；行内峰值层 L" + res.mainPeak + "，起点层 L" + res.mainStart + "。</p>";
-    }
-    return s;
-  }
-  function segHtml(res, owner) {
-    return "<div class='stat3'>"
-      + "<div class='stat'><div class='num' style='color:" + SEG_TEXT[1] + "'>" + res.seg[1] + "</div><div class='cap'>健康段（" + owner + "）</div></div>"
-      + "<div class='stat'><div class='num' style='color:" + SEG_TEXT[2] + "'>" + res.seg[2] + "</div><div class='cap'>一般段（" + owner + "）</div></div>"
-      + "<div class='stat'><div class='num' style='color:" + SEG_TEXT[3] + "'>" + res.seg[3] + "</div><div class='cap'>不健康段（" + owner + "）</div></div>"
-      + "<div class='stat'><div class='num'>" + (res.GHI === null ? "—" : res.GHI) + "</div><div class='cap'>GHI（" + owner + "）</div></div></div>";
-  }
-  function layerHtml(res, owner) {
-    var s = "";
-    for (var k = 9; k >= 1; k--) {
-      var seg = k <= 3 ? 1 : (k <= 6 ? 2 : 3);
-      var col = SEG_COLOR[seg];
-      var v = res.layers[k], mx = Math.max(1, res.peakVal || 1);
-      s += "<div class='bar-row'><div class='lbl'>L" + k + " " + LAYER_NAMES[k] + "</div><div class='track'><div class='fill' style='width:" + (v / mx * 100) + "%;background:" + col + "'></div></div><div class='val'>" + v + "</div></div>";
-    }
-    if (res.peak) s += "<p style='margin-top:10px'>" + owner + "峰值层：<strong>L" + res.peak + " " + LAYER_NAMES[res.peak] + "</strong></p>";
-    return s;
-  }
-  function wordChips(words, cap) {
-    var n = Math.min(words.length, cap || 40);
-    var s = "<div class='wordchips'>";
-    for (var i = 0; i < n; i++) {
-      var w = words[i].it || words[i];
-      var c = ELEMENT_COLOR[w.e];
-      s += "<span class='chip' style='color:" + EL_TEXT[w.e] + ";border-color:" + EL_TEXT[w.e] + "'>" + w.word + " <span class='muted'>L" + w.layer + "</span></span>";
-    }
-    return s + "</div>" + (words.length > n ? "<p class='muted'>（显示前 " + n + " 词，共 " + words.length + " 词）</p>" : "");
+  /* ---------- 词域入口：主行∩答是词（悟空 2026-11-16 词域纪律） ---------- */
+  function mwOf(res) { return mainWords(res); }
+  function wordsIn(list, lo, hi) {
+    return list.filter(function(w) { return w.layer >= lo && w.layer <= hi; });
   }
 
-  /* ---------- 知识库延伸：按「答是」的词逐条给出定稿解释与归类坐标 ---------- */
-  function kbSection(ans, who) {
-    if (!window.WXKB || !ans) return "";
-    var byRow = {}, total = 0;
+  /* ---------- M0 报告头：使用说明 + 边界 ---------- */
+  function m0Head(res, mw, who) {
+    var introHtml = "";
+    RT.intro.forEach(function(line, i) {
+      var txt = line.replace("___", String(mw.length));
+      if (i === 1) {
+        txt = "本次全卷答「是」共 " + res.total + " 个词，其中" + who + "主型行 " + mw.length + " 个——报告所有判断只引用这 " + mw.length + " 个词，其他行的词不进入描述（词域纪律）。";
+      }
+      introHtml += "<p class='li-row'><span class='lf'>" + txt + "</span></p>";
+    });
+    return "<div class='card'><h3>这份报告怎么读</h3>" + introHtml
+      + "<p class='muted' style='margin-top:8px'>边界：以下内容属能量状态描述，供自我探索与关系成长参考——非医学诊断、不预测命运。</p></div>";
+  }
+
+  /* ---------- M1 一句话结论（一屏六行，每行 ≤30 字） ---------- */
+  function m1Conclusion(res, mw, owner) {
+    var t = res.typeState === "能量未显" ? null : TYPES[res.mainType];
+    var mainRow = res.mainType || res.sorted[0];
+    var cl = clarity(res);
+    var row1;
+    if (!t) {
+      row1 = "能量未显（暂定主行 " + mainRow + "）";
+    } else if (cl.type === "模糊") {
+      var bk = RT_blurKey(res.sorted[0], res.sorted[1]);
+      row1 = mainRow + " 与 " + res.sorted[1] + " 能量接近（暂以" + mainRow + "叙述）";
+    } else {
+      row1 = t.name + "（" + t.xiang + "）";
+    }
+    var ratio = "主导" + res.sorted[0] + " " + res.P[res.sorted[0]] + " · 辅助" + res.sorted[1] + " " + res.P[res.sorted[1]] + " · 待补" + res.sorted[4] + " " + res.P[res.sorted[4]];
+    var sumRow = t ? RT_summaryPick(mainRow, res) : "按暂定主行读下方状态描述，暂不给型结论";
+    var tellRow = t ? RT_tellPick(mainRow, res) : "先把状态安顿好，型会自己显出来";
+    var s = "<h2>一句话结论</h2><div class='card'><table class='concl'>"
+      + "<tr><td>" + owner + "主型</td><td><strong>" + row1 + "</strong></td></tr>"
+      + "<tr><td>核心驱动力</td><td>" + (t ? RT.drive[mainRow] : "能量未显——先看九层状态") + "</td></tr>"
+      + "<tr><td>五行配比</td><td>" + ratio + "</td></tr>"
+      + "<tr><td>判型清晰度</td><td>型 " + cl.type + " ｜ 阴阳 " + cl.yinyang + " ｜ 九层 " + cl.layer + " —— 总档 <strong>" + cl.grade + "</strong></td></tr>"
+      + "<tr><td>一句话总结</td><td>" + sumRow + "</td></tr>"
+      + "<tr><td>最想告诉你</td><td>" + tellRow + "</td></tr>"
+      + "</table></div>";
+    return s;
+  }
+
+  /* ---------- M2 主型判定：意象/特质挂词/代价/配比表/清晰度 ---------- */
+  function m2Type(res, mw, owner) {
+    var t = res.typeState === "能量未显" ? null : TYPES[res.mainType];
+    if (!t) {
+      return "<h2>主型判定</h2><div class='card'><p>得分最高为 " + res.P[res.sorted[0]] + " 分（" + res.sorted[0] + " 行，满分 100），未达定型标准（≥11 分）。暂以得分最高行（" + res.sorted[0] + "）作暂定主行，以下按能量状态描述输出，不给型结论。</p></div>";
+    }
+    var mainRow = res.mainType;
+    var cl = clarity(res);
+    var s = "<h2>主型判定</h2><div class='card'>";
+    s += "<p style='margin-top:0'><em>" + t.metaphor + "</em>　" + t.core + "</p>";
+    /* 模糊档：先声明 */
+    if (cl.type === "模糊") {
+      var bk = RT_blurKey(res.sorted[0], res.sorted[1]);
+      s += "<div class='blurbox'><strong>先说清楚一件事：</strong>你的【" + res.sorted[0] + "】与【" + res.sorted[1] + "】能量接近，本报告暂以" + mainRow + "行叙述。" + (bk ? bk.txt : "两行同为你的可用资源，只是叙述只走主行。") + "</div>";
+    }
+    /* 特质画像：表现 + 显现场景 + 挂答是词 */
+    s += "<h4>特质画像（每条都挂着你自己确认的词）</h4>";
+    t.traits.forEach(function(tr, i) {
+      var dim = (RT.traitDim[mainRow] || [])[i];
+      var w = RT_dimWord(mw, dim);
+      var wordHtml = w ? "你确认了「<strong>" + w.word + "</strong>」（L" + w.layer + "）——" : "";
+      s += "<p class='traitline'><strong class='t'>" + (i + 1) + "．" + tr + "</strong>——" + ((RT.traitScene[mainRow] || [])[i] || "") + "<br><span class='muted'>" + wordHtml + "这个词就是这条特质在你身上的落点。</span></p>";
+    });
+    /* 天然代价 */
+    s += "<h4>这一行的天然代价</h4><p>" + RT.cost[mainRow] + "</p>";
+    /* 配比表：三行 */
+    s += "<h4>五行配比（满分 100）</h4><table class='qtable'><tr><th>角色</th><th>行</th><th>得分</th><th>它在说明什么</th></tr>"
+      + "<tr><td><strong>主导</strong></td><td>" + res.sorted[0] + "</td><td>" + res.P[res.sorted[0]] + "</td><td>你的默认反应方式——遇事最先启动的那股劲</td></tr>"
+      + "<tr><td><strong>辅助</strong></td><td>" + res.sorted[1] + "</td><td>" + res.P[res.sorted[1]] + "</td><td>你的第二资源——主导不够用时顶上</td></tr>"
+      + "<tr><td><strong>待补</strong></td><td>" + res.sorted[4] + "</td><td>" + res.P[res.sorted[4]] + "</td><td>你最薄的一环——成长空间在这里</td></tr></table>"
+      + "<p class='muted'>没有纯粹的某一行人——每个人五行俱全，配比说的是相对强弱，不是「你只有这一行」。</p>";
+    /* 清晰度表 */
+    s += "<h4>判型清晰度</h4><table class='qtable'><tr><th>判定项</th><th>结果</th><th>口径</th></tr>"
+      + "<tr><td>型清晰度</td><td>" + cl.type + "</td><td>主行与次行百分制差：" + (res.P[res.sorted[0]] - res.P[res.sorted[1]]) + " 个点</td></tr>"
+      + "<tr><td>阴阳清晰度</td><td>" + cl.yinyang + "</td><td>" + (res.yinYang && res.yinYang.verdict !== "阴阳未显" ? "阳 " + res.yinYang.yangPct + "% vs 阴 " + res.yinYang.yinPct + "%" : "两极词不足，阴阳未显") + "</td></tr>"
+      + "<tr><td>九层清晰度</td><td>" + cl.layer + "</td><td>" + (cl.layer === "清楚" ? "主行词集中在同一段，位置明确" : (cl.layer === "一般" ? "主行词跨两个段" : "主行词跨三个段，位置拉得太开")) + "</td></tr></table>"
+      + "<p class='blurbox' style='margin-top:6px'>" + RT.gradeSay[cl.grade] + "</p>";
+    return s + "</div>";
+  }
+
+  /* ---------- M3 阴阳双面：占比 + 成对清单 + 零评判收尾 ---------- */
+  function m3Yinyang(res, mw) {
+    var mainRow = res.mainType || res.sorted[0];
+    var yy = res.yinYang;
+    var yangW = wordsIn(mw, 1, 3), yinW = wordsIn(mw, 7, 9);
+    var s = "<h2>阴阳双面</h2><div class='card'>";
+    if (!yy || yy.verdict === "阴阳未显") {
+      s += "<p>" + mainRow + "行内两极（L1–L3 与 L7–L9）确认词不足，阴阳倾向未显——以下清单仍按你确认的词给出，供对照。</p>";
+    } else {
+      s += "<table class='qtable'><tr><th>阳面（L1–L3）</th><th>中间带（L4–L6）</th><th>阴面（L7–L9）</th></tr>"
+        + "<tr><td><strong>" + yy.y + "</strong> 词</td><td>" + yy.m + " 词</td><td><strong>" + yy.n + "</strong> 词</td></tr></table>"
+        + "<p>两极里阳占 " + yy.yangPct + "%、阴占 " + yy.yinPct + "%——判定：<strong>" + yy.verdict + "</strong>。</p>";
+    }
+    /* 阳面清单（复用 strengths + 转阴条件，挂 L1–3 答是词） */
+    s += "<div class='pairgrid'><div class='pcol'><h4>阳面清单（通畅时的样子）</h4><ul>";
+    (TYPES[mainRow].strengths).forEach(function(st, i) {
+      var w = yangW.length ? yangW[i % yangW.length] : null;
+      var turn = (RT.yangTurn[mainRow] || [])[i] || "";
+      s += "<li>" + st + "。" + (turn ? "<span class='muted'>" + turn + "</span>" : "")
+        + (w ? "<br><span class='muted'>例证：你确认了「" + w.word + "」（L" + w.layer + "）</span>" : "") + "</li>";
+    });
+    s += "</ul></div>";
+    /* 阴面清单（零评判，挂 L7–9 答是词；词不足 2 个不渲染整节——证据不足不硬写） */
+    s += "<div class='pcol'><h4>阴面清单（受限时的表达）</h4>";
+    if (yinW.length >= 2) {
+      s += "<ul>";
+      (RT.yinList[mainRow] || []).forEach(function(it, i) {
+        var w = yinW[i % yinW.length];
+        s += "<li><strong>表现：</strong>" + it.p + "。<br><strong>实际影响：</strong>" + it.f + "。"
+          + "<br><span class='muted'>例证：你确认了「" + w.word + "」（L" + w.layer + "）</span></li>";
+      });
+      s += "</ul>";
+    } else {
+      s += "<p class='muted'>你本次确认的不健康段词不足 2 个——阴面证据不足，此处不硬写。这是好状态。</p>";
+    }
+    s += "</div></div>";
+    s += "<div class='closing'>阴面不是缺点，是这股能量在受限时的表达。同一股力量，通了是阳，堵了是阴。</div>";
+    return s + "</div>";
+  }
+
+  /* ---------- M4 九层定位（五段式，层分布主行化） ---------- */
+  function m4Layers(res, mw) {
+    var mainRow = res.mainType || res.sorted[0];
+    var cl = clarity(res);
+    var mp = res.mainPeak, mVal = res.mainLayers || {};
+    var mx = Math.max(1, res.mainPeakVal || 1);
+    var s = "<h2>九层定位</h2><div class='card'>";
+    if (!mp) {
+      s += "<p>" + mainRow + "行内暂无可定位的层（该行确认词不足以分层）——先看五行配比与整体状态。</p></div>";
+      return s;
+    }
+    var seg = mp <= 3 ? 1 : (mp <= 6 ? 2 : 3);
+    var mpWords = mw.filter(function(w) { return w.layer === mp; });
+    /* ① 当前层 */
+    s += "<h4>① 你现在站在哪一层</h4><p><strong>L" + mp + " · " + LAYER_NAMES[mp] + "（" + RT.segLead[seg] + "）</strong></p>"
+      + "<p>" + (RT.L45[mainRow] && RT.L45[mainRow][mp] || "") + "</p>"
+      + (mpWords.length ? "<p class='muted'>这一层你确认了：" + mpWords.slice(0, 5).map(function(w) { return "「" + w.word + "」"; }).join("、") + "</p>" : "");
+    /* ② 往上看 */
+    var up = Math.max(1, mp - 2), sUp = "";
+    for (var k = mp - 1; k >= up; k--) {
+      if (k < 1) break;
+      var uw = mw.filter(function(w) { return w.layer === k; });
+      sUp += "<p><strong>L" + k + " " + LAYER_NAMES[k] + "：</strong>" + (RT.L45[mainRow] && RT.L45[mainRow][k] || "")
+        + (uw.length ? "<span class='muted'>（这层你确认过 " + uw.length + " 个词）</span>" : "<span class='muted'>（这层本次没有你的词——它是你往上的路）</span>") + "</p>";
+    }
+    s += "<h4>② 往上看（L" + (mp - 1 > 0 ? mp - 1 : "—") + (mp - 2 > 0 ? "、L" + (mp - 2) : "") + " 长什么样）</h4>" + (sUp || "<p class='muted'>已在顶层附近。</p>");
+    /* ③ 往下滑 */
+    var dn = Math.min(9, mp + 2), sDn = "";
+    for (var k2 = mp + 1; k2 <= dn; k2++) {
+      if (k2 > 9) break;
+      var dw = mw.filter(function(w) { return w.layer === k2; });
+      sDn += "<p><strong>L" + k2 + " " + LAYER_NAMES[k2] + "：</strong>" + (RT.L45[mainRow] && RT.L45[mainRow][k2] || "")
+        + (dw.length ? "<span class='muted'>（注意：这层你已确认 " + dw.length + " 个词）</span>" : "") + "</p>";
+    }
+    s += "<h4>③ 往下看（如果能量继续受限）</h4>" + (sDn || "<p class='muted'>已在底层附近——往上的路就是全部的路。</p>");
+    var sl = RT.slide[mainRow] || [];
+    if (sl.length) s += "<p class='muted'>最常见的两个下滑触发：" + sl[0] + "；" + sl[1] + "。</p>";
+    /* ④ 转化抓手 */
+    var cp = CHECKPOINTS[mainRow];
+    s += "<h4>④ 转化抓手</h4><p>本行通关点：修「<strong>" + cp.name + "</strong>」——" + cp.how + "。（木→火→土→金→水→木，" + mainRow + "行往" + cp.to + "行走，就是化克为生的方向。）</p>";
+    /* ⑤ 层级会动 */
+    s += "<div class='closing'>层级会动。这是这套体系最核心的主张——今天站在 L" + mp + "，不等于一直站在 L" + mp + "：每层的词都是可以移动的，复测时看它们的层位变化，比看分数更有意义。</div>";
+    /* L7+ 红线 */
+    if (mp >= 7 || res.mainStart >= 7) {
+      s += "<div class='redline'><strong>红线提示</strong>：你的主行确认词已深入不健康段（L" + res.mainStart + "）。层位数字只作自我观察参考——若这些状态已明显影响睡眠、工作或关系，请优先寻求专业心理咨询支持；本报告不做精神医学诊断。</div>";
+    }
+    /* 主行层分布图（词域纪律：主行化） */
+    s += "<h4 style='margin-top:18px'>" + mainRow + "行九层分布（只显示主型行）</h4>";
+    for (var k3 = 9; k3 >= 1; k3--) {
+      var sg = k3 <= 3 ? 1 : (k3 <= 6 ? 2 : 3);
+      var v = mVal[k3] || 0;
+      s += "<div class='bar-row'><div class='lbl'>L" + k3 + " " + LAYER_NAMES[k3] + "</div><div class='track'><div class='fill' style='width:" + (v / mx * 100) + "%;background:" + SEG_COLOR[sg] + "'></div></div><div class='val'>" + v + "</div></div>";
+    }
+    /* 三段能量剖面（全域统计 + 口径标注） */
+    s += "<div class='stat3' style='margin-top:16px'>"
+      + "<div class='stat'><div class='num' style='color:" + SEG_TEXT[1] + "'>" + res.seg[1] + "</div><div class='cap'>健康段</div></div>"
+      + "<div class='stat'><div class='num' style='color:" + SEG_TEXT[2] + "'>" + res.seg[2] + "</div><div class='cap'>一般段</div></div>"
+      + "<div class='stat'><div class='num' style='color:" + SEG_TEXT[3] + "'>" + res.seg[3] + "</div><div class='cap'>不健康段</div></div>"
+      + "<div class='stat'><div class='num'>" + (res.GHI === null ? "—" : res.GHI) + "</div><div class='cap'>GHI</div></div></div>"
+      + "<p class='muted'>口径标注：三段计数与 GHI 为含全五行作答的整体参考；层分布图只显示主型行（词域纪律）。</p>";
+    return s + "</div>";
+  }
+
+  /* ---------- M5 答是词画像（词域纪律：仅主行） ---------- */
+  function m5Words(res, mw) {
+    if (!mw.length) return "";
+    var s = "<h2>答是词画像（全报告的词级总账）</h2><div class='card'>"
+      + "<p class='muted' style='margin-top:0'>以下是你主型行内全部答「是」的词——报告的每一条判断都出自这里，逐词可核对。</p>";
+    [[1, 3, "健康段"], [4, 6, "一般段"], [7, 9, "不健康段"]].forEach(function(gr) {
+      var ws = wordsIn(mw, gr[0], gr[1]);
+      if (!ws.length) return;
+      s += "<h4>" + gr[2] + "（" + ws.length + " 词）</h4><div class='wordchips'>";
+      ws.forEach(function(w) {
+        s += "<span class='chip' style='color:" + EL_TEXT[w.e] + ";border-color:" + EL_TEXT[w.e] + "'>" + w.word + " <span class='muted'>L" + w.layer + "</span></span>";
+      });
+      s += "</div><p class='muted'>" + RT.groupSay[gr[0] <= 3 ? 1 : (gr[0] <= 6 ? 2 : 3)] + "</p>";
+    });
+    return s + "</div>";
+  }
+
+  /* ---------- M6 词条释义（词域纪律：仅主行折叠） ---------- */
+  function kbSection(ans, who, mainRow) {
+    if (!window.WXKB || !ans || !mainRow) return "";
+    var list = [];
     QUIZ_DATA.forEach(function(it, i) {
-      if (ans[i] !== true) return;
-      (byRow[it.e] = byRow[it.e] || []).push(it);
-      total++;
+      if (ans[i] !== true || it.e !== mainRow) return;
+      list.push(it);
     });
-    var rows = ["木", "火", "土", "金", "水"].filter(function(e) { return byRow[e]; });
-    if (!rows.length) return "";
-    var s = "<h2>知识库延伸 · " + who + "确认的词汇释义</h2>"
-      + "<p class='muted'>本卷共答「是」<strong>" + total + "</strong> 个词。以下释义取自《五行人格学人格词汇分类与解释表（定稿）》，按行折叠——可核对" + who + "对这些词的理解是否与体系口径一致；同一维度内的词互为边界，读释义末句「区别于……」即可辨同异。</p>";
-    rows.forEach(function(e) {
-      var list = byRow[e];
-      s += "<details class='kb'><summary><strong>" + e + "行</strong> · 确认 " + list.length + " 词 · 展开看释义与归类</summary><div class='card'>";
-      var byX = {}, order = [];
-      list.forEach(function(it) {
-        if (!byX[it.xiang]) { byX[it.xiang] = []; order.push(it.xiang); }
-        byX[it.xiang].push(it);
-      });
-      order.forEach(function(x) {
-        s += "<h4>" + x + " 维度</h4><ul class='kblist'>";
-        byX[x].sort(function(a, b) { return a.layer - b.layer; }).forEach(function(it) {
-          var k = (window.WXKB.words || {})[it.word] || {};
-          s += "<li><strong>" + it.word + "</strong>　<span class='muted'>L" + it.layer + (k.f ? " · " + k.f : " · 题库词条") + "</span><br>"
-            + "<span class='kbdef'>" + (k.d || it.def || "") + "</span></li>";
-        });
-        s += "</ul>";
-      });
-      s += "</div></details>";
+    if (!list.length) return "";
+    var s = "<h2>知识库延伸 · " + who + "主型行确认的词汇释义</h2>"
+      + "<p class='muted'>只折叠主型行（" + mainRow + "行，共 " + list.length + " 词）——释义取自《五行人格学人格词汇分类与解释表（定稿）》。可逐词核对理解是否与体系口径一致；同一维度内的词互为边界，读释义末句「区别于……」即可辨同异。</p>";
+    var byX = {}, order = [];
+    list.forEach(function(it) {
+      if (!byX[it.xiang]) { byX[it.xiang] = []; order.push(it.xiang); }
+      byX[it.xiang].push(it);
     });
+    s += "<details class='kb'><summary><strong>" + mainRow + "行（主型）</strong> · 确认 " + list.length + " 词 · 展开看释义与归类</summary><div class='card'>";
+    order.forEach(function(x) {
+      s += "<h4>" + x + " 维度</h4><ul class='kblist'>";
+      byX[x].sort(function(a, b) { return a.layer - b.layer; }).forEach(function(it) {
+        var k = (window.WXKB.words || {})[it.word] || {};
+        var lx = (window.WXLEX && window.WXLEX.words) ? window.WXLEX.words[it.word] : null;
+        s += "<li><strong>" + it.word + "</strong>　<span class='muted'>L" + it.layer + (k.f ? " · " + k.f : " · 题库词条") + "</span><br>"
+          + "<span class='kbdef'>" + (k.d || it.def || "") + "</span>"
+          + (lx ? "<br><span class='kbattr'>原始词→属性词：" + lx.e + "　<span class='muted'>" + lx.n + "</span></span>" : "")
+          + "</li>";
+      });
+      s += "</ul>";
+    });
+    s += "</div></details>";
     s += "<p class='kbmeta'>出处：" + (window.WXKB.meta && window.WXKB.meta.src ? window.WXKB.meta.src : "《五行人格学人格词汇分类与解释表（定稿）》")
       + (window.WXKB.meta && window.WXKB.meta.srcUrl ? "　<a href='" + window.WXKB.meta.srcUrl + "' target='_blank' rel='noopener'>在公开知识库查看原表 →</a>" : "")
+      + (window.WXKB.meta && window.WXKB.meta.stdUrl ? "　｜　<a href='" + window.WXKB.meta.stdUrl + "' target='_blank' rel='noopener'>题目重排清单（唯一标准）→</a>" : "")
+      + (window.WXKB.meta && window.WXKB.meta.quizUrl ? "　｜　<a href='" + window.WXKB.meta.quizUrl + "' target='_blank' rel='noopener'>重做测评 →</a>" : "")
       + "　（释义随版本编译固定，保证同一份报告可复现、可追溯）</p>";
     return s;
   }
+
+  /* ---------- M14 附录 ---------- */
+  function m14Appendix() {
+    var A = RT.appendix;
+    var s = "<h2>附录 · 报告的可信度与边界</h2><div class='card appx'>"
+      + "<h4>1．这份报告是怎么来的</h4><p>" + A.how + "</p>"
+      + "<h4>2．它可能错在哪里</h4><p>" + A.wrong + "</p>"
+      + "<h4>3．怎么验证它准不准</h4><p>" + A.verify + "</p>"
+      + "<h4>4．误判了怎么办</h4><p>" + A.misc + "</p>"
+      + "<h4>5．转介红线</h4><p style='color:#8C2A2A'>" + A.redline + "</p>"
+      + "<h4>6．边界声明</h4><p>" + A.boundary + "</p>"
+      + "<h4>7．概念速查</h4>";
+    A.glossary.forEach(function(g) {
+      s += "<p><strong>" + g[0] + "</strong>：" + g[1] + "</p>";
+    });
+    s += "<p class='muted'>术语完整口径见 <a href='baike.html'>百科与方法论</a>。</p></div>";
+    return s;
+  }
+
+  /* ---------- 统一渲染件（A 自测 / B 第一部分 / 他测摘要 共用） ---------- */
+  function renderSelfCore(res, ans, owner, store, withAppendix) {
+    var mw = mwOf(res);
+    var a = buildAdvice(res);
+    var mainRow = res.mainType || res.sorted[0];
+    var out = "";
+    out += m0Head(res, mw, owner);
+    out += m1Conclusion(res, mw, owner);
+    out += m2Type(res, mw, owner);
+    out += m3Yinyang(res, mw);
+    out += m4Layers(res, mw);
+    out += "<h2>起点建议</h2><div class='card'>" + a.html + "</div>";
+    out += m5Words(res, mw);
+    out += kbSection(ans, owner, mainRow);
+    if (withAppendix !== false) out += m14Appendix();
+    return out;
+  }
+
   function metaLine(store, label) {
     return label + "　作答 " + new Date(store.ts || Date.now()).toLocaleDateString("zh-CN")
       + "　有效作答 " + Object.keys(store.ans).filter(function(k){ return store.ans[k] === true; }).length + " 个「是」词";
@@ -247,14 +499,8 @@
 
   /* ---------- 模式A：自测报告 ---------- */
   if (mode === "self") {
-    var a = buildAdvice(selfRes);
     h += "<h1>自测报告（关系测评 · 模式A）</h1><p class='muted'>" + metaLine(sSelf, "本人自测卷") + "</p>";
-    h += typeCard(selfRes, "你");
-    h += "<h2>五行得分与三步判定</h2><div class='card'>" + stepsPanel(selfRes, "你") + "</div>";
-    h += "<h2>三段能量剖面</h2>" + segHtml(selfRes, "你");
-    h += "<h2>九层定位</h2><div class='card'>" + layerHtml(selfRes, "你") + "</div>";
-    h += "<h2>起点建议</h2><div class='card'>" + a.html + "</div>";
-    h += kbSection(sSelf.ans, "你");
+    h += renderSelfCore(selfRes, sSelf.ans, "你", sSelf);
     h += histSection("histSelf", HISTKEYS.self, selfRes, "你", "你");
     if (otherDone) {
       h += "<div class='card' style='background:#FAEEDA'><p>他测卷已完成——<a class='btn' href='report.html?mode=rel'>查看完整关系测评报告</a></p></div>";
@@ -271,11 +517,7 @@
   if (mode === "other") {
     h += "<h1>他测摘要（你眼中的 " + otherName + "）</h1><p class='muted'>" + metaLine(sOther, "他测卷") + "</p>";
     h += "<div class='card' style='background:#FAEEDA'><p><strong>视角边界</strong>：以下为「你眼中 " + otherName + "」的能量画像——是他测窗口的数据，不是 " + otherName + " 的自知。报告据此做关系分析，不作为对 " + otherName + " 的独立人格论断。</p></div>";
-    h += typeCard(otherRes, otherName + "（你眼中）");
-    h += "<h2>五行得分与三步判定</h2><div class='card'>" + stepsPanel(otherRes, otherName) + "</div>";
-    h += "<h2>三段能量剖面</h2>" + segHtml(otherRes, otherName);
-    h += "<h2>九层定位</h2><div class='card'>" + layerHtml(otherRes, otherName) + "</div>";
-    h += kbSection(sOther.ans, "你眼中的 " + otherName);
+    h += renderSelfCore(otherRes, sOther.ans, "你眼中的 " + otherName, sOther);
     h += histSection("histOther", HISTKEYS.other, otherRes, "你眼中的 " + otherName, otherName);
     if (selfDone) {
       h += "<div class='card' style='background:#FAEEDA'><p>自测卷已完成——<a class='btn' href='report.html?mode=rel'>查看完整关系测评报告</a></p></div>";
@@ -288,42 +530,103 @@
     return;
   }
 
-  /* ---------- 模式B：完整关系测评报告 ---------- */
+  /* ---------- 模式B：完整关系测评报告（八块叙事 · v1.2 第一批） ---------- */
   var rel = computeRelation(sSelf.ans, sOther.ans, QUIZ_DATA);
   rel.otherName = otherName;
   var pack = relLessonPack(rel);
-  var aSelf = buildAdvice(rel.selfRes);
+  var RT_R = RT.relText;
+  var duanSel = loadDuan();
+  var D = duanSel ? duanSel.duan : null;
 
   h += "<h1>关系测评报告</h1><p class='muted'>" + metaLine(sSelf, "自测卷") + "　｜　" + metaLine(sOther, "他测卷（" + otherName + "）") + "</p>";
 
-  /* 第一部分 · 本人测评 */
-  h += "<h2>第一部分 · 你的测评</h2>";
-  h += typeCard(rel.selfRes, "你");
-  h += "<div class='card'>" + stepsPanel(rel.selfRes, "你") + "</div>";
-  h += segHtml(rel.selfRes, "你");
-  h += "<div class='card'>" + layerHtml(rel.selfRes, "你") + "</div>";
-  h += "<div class='card'>" + aSelf.html + "</div>";
-  h += kbSection(sSelf.ans, "你");
+  /* 断法自选卡（未认领时只渲染此卡——R4 输入） */
+  if (!D) {
+    h += "<div class='card'><h3>先认领一件事：你们卡在哪一断</h3>"
+      + "<p>一段关系从「感觉到对方」到「真正碰上」，中间有五步。五步走完，一次接触才闭合；中间哪一步断了，关系就在哪一步卡住。填的时候只看一条：<strong>你们俩反复吵的那件事，最像下面哪一句？</strong></p>";
+    ["水", "金", "木", "火", "土"].forEach(function(d) {
+      h += "<p class='li-row'><button class='btn ghost' style='margin-right:8px' onclick=\"window.pickDuan('" + d + "')\">选 " + d + " 断</button>" + RT_R.duanQuote[d]
+        + "　<span class='muted'>" + RT_R.duanTab[d].name + "</span></p>";
+    });
+    h += "<p class='muted'>认领后报告生成完整结构；进报告后可随时在「卡点定位」区重选。只挑最主要的那一个——给三个动作等于没给。</p></div>";
+    document.getElementById("actions").style.display = "block";
+    root.innerHTML = h;
+    return;
+  }
 
-  /* 第二部分 · 测他摘要 */
-  h += "<h2>第二部分 · 测他摘要（你眼中的 " + otherName + "）</h2>";
+  /* R1 一页速览（七行铁律，每行 ≤30 字） */
+  function peakOf(res) { return res.mainPeak || res.peak || null; }
+  function yinStr(res) {
+    var yy = res.yinYang;
+    if (!yy || yy.verdict === "阴阳未显") return "阴阳未显";
+    return yy.verdict;
+  }
+  function peakStr(res) {
+    var p = peakOf(res);
+    return p ? "第 " + p + " 层，" + yinStr(res) : "层位未显，" + yinStr(res);
+  }
+  var structShort = rel.dirText.split("（")[0];
+  var r1 = "<h2>一页速览——你们卡在哪一句</h2><div class='card'><table class='concl'>"
+    + "<tr><td>关系</td><td><strong>你（" + rel.P.mainType + "）与 " + otherName + "（" + rel.Q.mainType + "，在你眼中）</strong></td></tr>"
+    + "<tr><td>结构</td><td>" + structShort + " · " + rel.verdict + "</td></tr>"
+    + "<tr><td>" + otherName + "</td><td>" + peakStr(rel.otherRes) + "（按你的判断）</td></tr>"
+    + "<tr><td>你</td><td>" + peakStr(rel.selfRes) + "</td></tr>"
+    + "<tr><td>卡点</td><td>" + RT_R.duanTab[D].name.split("（")[0] + "——" + RT_R.duanKadian[D] + "</td></tr>"
+    + "<tr><td>最像你们</td><td><strong>" + RT_R.duanQuote[D] + "</strong></td></tr>"
+    + "<tr><td>下一步（只做一件事）</td><td>" + RT_R.duanTab[D].fix + "</td></tr>"
+    + "</table>"
+    + "<p class='muted' style='margin-top:10px'>「这一句最像你们」是全篇的灵魂——如果它戳中了，往下读；如果都不像，重选一断或直接看生克结构。</p></div>";
+  h += r1;
+
+  /* 三种数据来源标明（横切：决定数据质量） */
+  h += "<div class='card' style='background:#FAEEDA'><p><strong>数据来源标明</strong>：" + RT_R.threeSrcBoth.replace(/\{name\}/g, otherName) + "</p>"
+    + "<p class='muted'>" + RT_R.threeSrcWord + "</p></div>";
+
+  /* 第一块 · 两人坐标（你的完整画像，自测窗口） */
+  h += "<h2>第一块 · 两人坐标——你（自测窗口）</h2>";
+  h += renderSelfCore(rel.selfRes, sSelf.ans, "你", sSelf, false);
+
+  /* 第二块 · 两人坐标（测他摘要，他测窗口） */
+  h += "<h2>第二块 · 两人坐标——你眼中的 " + otherName + "（他测窗口）</h2>";
   h += "<div class='card' style='background:#FAEEDA'><p><strong>视角边界</strong>：此为你眼中 " + otherName + " 的画像（他测窗口），非对方自知，不作为对 " + otherName + " 的独立人格论断。</p></div>";
-  h += typeCard(rel.otherRes, otherName + "（你眼中）");
-  h += "<div class='card'>" + stepsPanel(rel.otherRes, otherName) + "</div>";
-  h += segHtml(rel.otherRes, otherName);
-  h += "<div class='card'>" + layerHtml(rel.otherRes, otherName) + "</div>";
-  h += kbSection(sOther.ans, "你眼中的 " + otherName);
+  h += renderSelfCore(rel.otherRes, sOther.ans, "你眼中的 " + otherName, sOther, false);
+
+  /* R2 收束 · 双池对照（驱动力表 + 关系化阴阳面） */
+  h += "<h3>双池对照 · 他要的和你给的不是一回事</h3><div class='card'>";
+  h += "<h4 style='margin-top:0'>核心驱动力表</h4><table class='qtable'><tr><th>人</th><th>行</th><th>核心驱动力</th><th>在关系里最想要的是</th></tr>"
+    + "<tr><td><strong>你</strong></td><td>" + rel.P.mainType + "</td><td>" + RT_R.driveRow[rel.P.mainType][0] + "</td><td>" + RT_R.driveRow[rel.P.mainType][1] + "</td></tr>"
+    + "<tr><td><strong>" + otherName + "（你眼中）</strong></td><td>" + rel.Q.mainType + "</td><td>" + RT_R.driveRow[rel.Q.mainType][0] + "</td><td>" + RT_R.driveRow[rel.Q.mainType][1] + "</td></tr></table>"
+    + "<p class='muted'>大多数关系里的委屈，不是对方不给，是给错了东西。</p>";
+  function relFaces(res, tag) {
+    var mw2 = mainWords(res);
+    var yin = mw2.filter(function(w) { return w.layer >= 7; }).sort(function(a, b) { return b.layer - a.layer; }).slice(0, 4);
+    var yang = mw2.filter(function(w) { return w.layer <= 3; }).sort(function(a, b) { return a.layer - b.layer; }).slice(0, 3);
+    var s = "<ul>";
+    yang.forEach(function(w) {
+      s += "<li><strong style='color:" + EL_TEXT[w.e] + "'>" + w.word + "</strong>（L" + w.layer + " 阳面）——" + (w.def || "") + "</li>";
+    });
+    if (yin.length) {
+      yin.forEach(function(w) {
+        s += "<li><strong style='color:" + EL_TEXT[w.e] + "'>" + w.word + "</strong>（L" + w.layer + "）——在这段关系里，通常表现成：" + (RT_R.dimRel[w.xiang] || "受限时的惯性表达") + "</li>";
+      });
+    } else {
+      s += "<li class='muted'>本次确认的不健康段词不足——不硬写，这是好状态。</li>";
+    }
+    return s + "</ul>";
+  }
+  h += "<div class='pairgrid'><div class='pcol'><h4>你的阴阳面（自测池 · 关系化）</h4>" + relFaces(rel.selfRes, "你") + "</div>"
+    + "<div class='pcol'><h4>" + otherName + " 的阴阳面（他测池 · 你眼中）</h4>" + relFaces(rel.otherRes, "TA") + "</div></div></div>";
 
   /* 测评历史与对比（两卷各自与其历史存档对比；关系指标四档对比属二期复测报告） */
   h += histSection("histSelf", HISTKEYS.self, rel.selfRes, "你", "你");
   h += histSection("histOther", HISTKEYS.other, rel.otherRes, "你眼中的 " + otherName, otherName);
 
-  /* 第三部分 · 关系篇 */
-  h += "<h2>第三部分 · 关系篇</h2>";
+  /* 第三块 · 生克结构（关系窗四象限 + 关系分型） */
+  h += "<h2>第三块 · 生克结构——这两股能量撞在一起会怎样</h2>";
 
   /* 关系篇一 · 关系窗（四象限，仅双方主行词库） */
   h += "<h3>关系窗 · 关系四象限词级分布</h3>";
-  h += "<p class='muted'>统计范围：双方主行词库（<strong>" + rel.scopeText + "，你=" + rel.P.mainType + " / " + otherName + "=" + rel.Q.mainType + "）</strong>——其他行词不参与整理与统计。空白区聚合表同理仅列主行。</p><div class='quad4'>";
+  h += "<p class='muted'>统计范围：双方主行词库（<strong>" + rel.scopeText + "，你=" + rel.P.mainType + " / " + otherName + "=" + rel.Q.mainType + "）</strong>——其他行词不参与整理与统计。空白区聚合表同理仅列主行。<strong>词来源标签</strong>：你的词＝自测卷；" + otherName + " 的词＝他测卷（你眼中）。</p><div class='quad4'>";
   var qn = [["resonance", "共鸣区", "我认己亦见人——关系的共同语言（起点区）", "#3B6D11"],
             ["projection", "投射区", "我在 TA 身上看见、却不在自己身上选出的词——先求证，后定义", "#185FA5"],
             ["defense", "防御区", "我身上呈现而 TA 未回应的部分——暴露练习", "#854F0B"],
@@ -333,9 +636,18 @@
       + "<p class='muted'>" + q[2] + "</p></div>";
   });
   h += "</div>";
+  function quadChips(words, cap) {
+    var n = Math.min(words.length, cap || 40);
+    var s = "<div class='wordchips'>";
+    for (var i = 0; i < n; i++) {
+      var w = words[i].it || words[i];
+      s += "<span class='chip' style='color:" + EL_TEXT[w.e] + ";border-color:" + EL_TEXT[w.e] + "'>" + w.word + " <span class='muted'>L" + w.layer + "</span></span>";
+    }
+    return s + "</div>" + (words.length > n ? "<p class='muted'>（显示前 " + n + " 词，共 " + words.length + " 词）</p>" : "");
+  }
   ["resonance", "projection", "defense"].forEach(function(q) {
     if (rel.quad[q].length) {
-      h += "<div class='card'><h4>" + relQName(q) + "词清单（" + rel.quad[q].length + " 词）</h4>" + wordChips(rel.quad[q], 40) + "</div>";
+      h += "<div class='card'><h4>" + relQName(q) + "词清单（" + rel.quad[q].length + " 词）</h4>" + quadChips(rel.quad[q], 40) + "</div>";
     }
   });
   if (rel.quad.blank.length) {
@@ -351,17 +663,36 @@
     h += "</table></div>";
   }
 
+  /* 差值 · 最大误解（双向对填升级位 + 当前误解线索） */
+  h += "<h3>最大误解 · 我怎么看他 vs 我怎么看自己</h3><div class='card'>";
+  h += "<p style='margin-top:0'>" + RT_R.maxMis + "</p><ul>";
+  [["projection", "投射区（你判断 TA 有、你不认自己有的词）"], ["defense", "防御区（你身上有、TA 未回应的词）"]].forEach(function(qd) {
+    var ws = rel.quad[qd[0]].slice(0, 3).map(function(w) { return "「" + (w.it || w).word + "」"; }).join("、");
+    h += "<li><strong>" + qd[1] + "</strong>：" + (ws || "该区为空——不硬给") + (rel.quad[qd[0]].length > 3 ? "（前 3 / 共 " + rel.quad[qd[0]].length + "）" : "") + "</li>";
+  });
+  h += "</ul><p class='muted'>这两区就是单向数据下的误解线索：投射区的词先求证后定义，防御区的词先表达后期待——差异最大的几项，就是误解最深的地方。</p></div>";
+
   /* 关系篇二 · 关系分型 */
   h += "<h3>关系分型 · 相生 / 相克判定</h3><div class='card'>";
   h += "<p class='vbig'>" + rel.verdict + "</p>";
   h += "<p><strong>" + rel.dirText + "</strong>——关系方向按双方主类型判定（相生：木→火→土→金→水→木；相克：木克土→土克水→水克火→火克金→金克木）。</p>";
   h += "<p>统计范围：双方主行词库（<strong>" + rel.scopeText + "</strong>）。范围内生证据 S = <strong>" + rel.sAll + "</strong>（其中共鸣区 " + rel.sR + "），克证据 K = <strong>" + rel.kAll + "</strong>（其中共鸣区 " + rel.kR + "）——作为方向佐证与功课素材呈现。</p>";
   if (rel.rl) h += "<p>关系层级指数 RL = <strong>L" + rel.rl + " " + LAYER_NAMES[rel.rl] + "</strong>（双方峰值层中更深的一方拖住关系整体）。克证据规则：阴面词克阳面词才计入（阳对阳克＝调节磨合，不计损伤）。</p>";
+  /* R3.2 基本动力四段（25 组全手写；按双方主行取组，两池实词嵌句） */
+  if (typeof RT_R.base25 === "object" && rel.scopeRows && rel.scopeRows.length >= 2) {
+    var bP = rel.scopeRows[0], bQ = rel.scopeRows[1], seg4 = RT_R.base25[bP] && RT_R.base25[bP][bQ];
+    if (seg4) {
+      h += "<h4>基本动力四段（" + bP + "行 × " + bQ + "行 · 怎么流动 / 天然好处 / 摩擦点 / 谁更难受）</h4><div class='card'>";
+      var bNames = ["怎么流动", "天然好处", "摩擦点", "谁更难受"];
+      seg4.forEach(function(txt, i) { h += "<p><strong>" + bNames[i] + "：</strong>" + txt + "</p>"; });
+      h += "</div>";
+    }
+  }
   h += "<h4>克证据对表（按 K 分降序，前 10）</h4>";
   if (rel.kePairs.length) {
     h += "<table class='qtable'><tr><th>源词（克方）</th><th>靶词（被克方·阳面）</th><th>K 分</th><th>计入共鸣区判定</th></tr>";
     rel.kePairs.slice(0, 10).forEach(function(p) {
-      h += "<tr><td>" + (p.side === "self" ? "我" : otherName) + "的「" + p.src.word + "」（" + p.src.e + " L" + p.src.layer + "，" + relQName(p.srcQ) + "）</td>"
+      h += "<tr><td>" + (p.side === "self" ? "我（自测）" : otherName + "（他测）") + "的「" + p.src.word + "」（" + p.src.e + " L" + p.src.layer + "，" + relQName(p.srcQ) + "）</td>"
         + "<td>" + (p.side === "self" ? otherName : "我") + "的「" + p.tgt.word + "」（" + p.tgt.e + " L" + p.tgt.layer + "）</td>"
         + "<td>" + p.score.toFixed(3) + "</td><td>" + (p.bothRes ? "✓" : "—") + "</td></tr>";
     });
@@ -373,7 +704,7 @@
   if (rel.shengPairs.length) {
     h += "<table class='qtable'><tr><th>源词（生方·阳面）</th><th>靶词（被生方·阳面）</th><th>S 分</th><th>计入共鸣区判定</th></tr>";
     rel.shengPairs.slice(0, 10).forEach(function(p) {
-      h += "<tr><td>" + (p.side === "self" ? "我" : otherName) + "的「" + p.src.word + "」（" + p.src.e + " L" + p.src.layer + "）</td>"
+      h += "<tr><td>" + (p.side === "self" ? "我（自测）" : otherName + "（他测）") + "的「" + p.src.word + "」（" + p.src.e + " L" + p.src.layer + "）</td>"
         + "<td>" + (p.side === "self" ? otherName : "我") + "的「" + p.tgt.word + "」（" + p.tgt.e + " L" + p.tgt.layer + "）</td>"
         + "<td>" + p.score.toFixed(3) + "</td><td>" + (p.bothRes ? "✓" : "—") + "</td></tr>";
     });
@@ -383,6 +714,86 @@
   }
   h += "</div>";
 
+  /* 第三块之二 · 层面生克图谱（R3.5 四件套：判定/原因/生克点/策略） */
+  function segStrategy(pt, vn) {
+    var tgtWho = pt.side === "self" ? otherName : "你";
+    var srcWho = pt.side === "self" ? "你" : otherName;
+    if (vn === "生点") {
+      if (pt.side === "self") return "助生固本——用你的「" + pt.src.word + "」继续滋养 " + otherName + " 的「" + pt.tgt.word + "」：每周一次主动共处，当面说一个具体好处。";
+      return "接住这份滋养——" + otherName + " 的「" + pt.src.word + "」一直在滋养你的「" + pt.tgt.word + "」：当面点名这个好处，让它显形。";
+    }
+    if (vn === "变相克点") {
+      var cpS = CHECKPOINTS[pt.src.e];
+      return "拔阴取阳——" + srcWho + "把「" + pt.src.word + "」拔向" + cpS.to + "行（通关点修「" + cpS.name + "」：" + cpS.how + "）。生过头处做减法：精简节奏、留无计划日。";
+    }
+    if (vn === "克点") {
+      var yRow = REL_SHENG[pt.tgt.e];
+      return "化克为生——被克方（" + tgtWho + "）养" + yRow + "行：" + RT_R.yCarrier[yRow] + "。把「" + pt.tgt.word + "」的需求变成可执行动作，不硬顶「" + pt.src.word + "」。";
+    }
+    return null; /* 观察带/摩擦带不给策略 */
+  }
+  h += "<h3>层面生克图谱——生在哪里、克在哪里</h3><div class='card'>";
+  h += "<p style='margin-top:0'><strong>关系判定：" + rel.verdict + "。</strong>" + rel.dirText + "。</p>";
+  h += "<h4>原因说明</h4><p>" + RT_R.segCause[rel.segTypeKey] + "</p>";
+  h += "<h4>生克点清单（三段层面 × 词对，每段至多 4 点）</h4>";
+  [1, 2, 3].forEach(function(seg) {
+    var sm = rel.segMap[seg], vn = sm.valence;
+    h += "<h4 style='margin-top:12px'>" + RT_R.segName[seg] + " · 判定：<strong>" + vn + "</strong>（词对 " + sm.total + " 组）</h4>";
+    h += "<p class='muted' style='margin-top:0'>" + RT_R.segReason[rel.segTypeKey + seg] + "。</p>";
+    if (!sm.points.length) {
+      h += "<p class='muted'>该层面两池没有可配的词对——不硬给。</p>";
+      return;
+    }
+    sm.points.forEach(function(pt) {
+      var srcTag = pt.side === "self" ? "我（自测）" : otherName + "（他测）";
+      var tgtTag = pt.side === "self" ? otherName + "（他测）" : "我（自测）";
+      h += "<p class='li-row'><span class='lw'>" + srcTag + "的「" + pt.src.word + "」（" + pt.src.e + " L" + pt.src.layer + "）× " + tgtTag + "的「" + pt.tgt.word + "」（" + pt.tgt.e + " L" + pt.tgt.layer + "）</span>"
+        + "<br><span class='lf'>" + RT_R.segReason[rel.segTypeKey + seg] + "。</span>";
+      var strat = segStrategy(pt, vn);
+      if (strat) h += "<br><strong>策略：</strong>" + strat;
+      h += "</p>";
+    });
+  });
+  h += "</div>";
+
+  /* 第四块 · 卡点定位（断法 = 两池能量的断裂处；判断依据引两池证据） */
+  h += "<h3>第四块 · 卡点定位——你们卡在哪一断</h3><div class='card'>";
+  h += "<p class='muted' style='margin-top:0'>一段关系从「感觉到对方」到「真正碰上」，中间有五步——五步各归一行，因为每一行本来就是一种「动」的方式：</p><ul>";
+  RT_R.huanjie.forEach(function(hj) {
+    h += "<li><strong>" + hj[0] + "</strong>：" + hj[1] + "。</li>";
+  });
+  h += "</ul><p>五步走完，一次接触才闭合。中间哪一步断了，关系就在哪一步卡住。</p>";
+  /* 主断四段写法 */
+  var dt = RT_R.duanTab[D], hjRow = RT_R.huanjie[RT_R.duanHuan[D]];
+  h += "<h4>① 你们卡在哪一断</h4><p><strong>" + dt.name + "</strong>——" + RT_R.duanKadian[D] + "。</p>";
+  h += "<h4>② 判断依据</h4><p>你自己认领了这一断（反复吵的事最像「" + RT_R.duanQuote[D] + "」）。";
+  if (rel.topKe.length) {
+    var kp = rel.topKe[0];
+    h += "佐证：" + (kp.side === "self" ? "我（自测）" : otherName + "（他测）") + "的「" + kp.src.word + "」（" + kp.src.e + " L" + kp.src.layer + "，" + relQName(kp.srcQ) + "）正在克伤 " + (kp.side === "self" ? otherName + "（他测）" : "我（自测）") + "的「" + kp.tgt.word + "」（" + kp.tgt.e + " L" + kp.tgt.layer + "，阳面）——与" + D + "断同向。";
+  } else {
+    h += "本次克证据对为零——以你的认领为准，克点留待复测核对。";
+  }
+  h += "</p><p class='muted'>其余四种断法（" + ["水", "金", "木", "火", "土"].filter(function(x) { return x !== D; }).join("／") + "）也可能同时存在——只挑最主要的一个，其余一句带过，给三个动作等于没给。</p>";
+  h += "<h4>③ 这一断的机制</h4><p>" + dt.stuck + "。环节对照：<strong>" + hjRow[0] + "</strong>——" + hjRow[1] + "。</p>";
+  h += "<h4>④ 一个修复动作（就一个，具体到下一次开口）</h4><p><strong>" + dt.fix + "</strong>。</p>";
+  h += "<p style='margin-top:10px'><button class='btn ghost' onclick='window.resetDuan()'>重选断法</button></p></div>";
+
+  /* 第五块 · 层级与难度（层级决定语气；层级差大专项） */
+  h += "<h3>第五块 · 层级与难度——这个卡点好不好解</h3><div class='card'>";
+  function segOfP(p) { return p == null ? null : (p <= 3 ? 1 : (p <= 6 ? 2 : 3)); }
+  var sp = peakOf(rel.selfRes), op = peakOf(rel.otherRes);
+  h += "<table class='qtable'><tr><th>人</th><th>层级</th><th>这一层的修复方式</th></tr>";
+  [["你（自测）", sp], [otherName + "（你眼中，他测）", op]].forEach(function(rw) {
+    var sg = segOfP(rw[1]);
+    h += "<tr><td><strong>" + rw[0] + "</strong></td><td>" + (rw[1] ? "L" + rw[1] + " " + LAYER_NAMES[rw[1]] : "层位未显") + "</td><td>" + (sg ? RT_R.fixWay[sg] : "层位未显——先看该卷九层定位。") + "</td></tr>";
+  });
+  h += "</table>";
+  var gap = (sp != null && op != null) ? Math.abs(sp - op) : null;
+  if (gap != null && gap >= 3) h += "<div class='blurbox'><strong>层级差专项</strong>：" + RT_R.gapBig + "</div>";
+  var deepPeak = rel.rl || (sp != null && op != null ? Math.max(sp, op) : (sp != null ? sp : op));
+  h += "<div class='closing'>你们卡在" + D + "断，第 " + deepPeak + " 层，" + RT_R.duanKadian[D] + "。下一步只做一件事：" + dt.fix + "。</div>"
+    + "<p class='muted'>这一句把「卡在哪、多难、怎么办」压进了一句话——你会记住这一句，其他都记不住。</p></div>";
+
   /* 关系篇三 · 关系行动 */
   h += "<h3>关系行动 · 四象限分区措施</h3><div class='card'><ul>"
     + "<li><strong>共鸣区（起点区）</strong>：所有关系改善从共识的词出发——相生措施把生链互动固化为习惯锚点；克对在克源词上落通关点修炼。首月只做共鸣区（起点纪律）。</li>"
@@ -390,13 +801,57 @@
     + "<li><strong>防御区（" + rel.quad.defense.length + " 词）</strong>：暴露练习——「在我感到 X 之后，我告诉对方这个词」的词级表达微行为。</li>"
     + "<li><strong>空白区（" + rel.quad.blank.length + " 词）</strong>：不强制行动，聚合呈现「共同未开发区」——见上方行 × 层计数表。</li></ul></div>";
 
-  h += "<h2>功课包（本轮 3 个月 · 双主线）</h2>";
+  h += "<h2>第六、七块 · 关系功课——化克为生与下一次开口</h2>";
   if (pack.shengCard) h += "<div class='lesson'>" + pack.shengCard + "</div>";
   if (pack.keCard) h += "<div class='lesson'>" + pack.keCard + "</div>";
   h += "<div class='lesson'>" + pack.daily + "</div>";
   h += "<div class='lesson'>" + pack.map90 + "</div>";
 
+  /* R6.6 · 化克为生落点（克点词对直接对接为策略） */
+  if (rel.segTypeKey === "ke" && rel.segMap[3].points.length) {
+    h += "<div class='lesson'><h3>化克为生落点（来自层面生克图谱的克点）</h3><ul>";
+    rel.segMap[3].points.forEach(function(pt) {
+      var yRow = REL_SHENG[pt.tgt.e];
+      var tgtWho = pt.side === "self" ? otherName : "你";
+      h += "<li><strong>" + (pt.side === "self" ? "我（自测）" : otherName + "（他测）") + "的「" + pt.src.word + "」克" + tgtWho + "的「" + pt.tgt.word + "」</strong> → " + tgtWho + "养" + yRow + "行：" + RT_R.yCarrier[yRow] + "。</li>";
+    });
+    h += "</ul><p class='muted'>两条铁律：杠杆点在「生」处不在「克」处——不去顶压你的力量，去养中间那一行；谁难受谁改变——先从自己这一侧动。内圈不由你来克：最亲的关系里，克交给第三方（制度/规则/双方都接受的人）。</p></div>";
+  }
+
+  /* 第七块 · 关系功课（四原则 + 下一次开口 + 复盘预约） */
+  h += "<h3>关系功课 · 四条原则与下一次开口</h3><div class='card'>";
+  h += "<h4 style='margin-top:0'>四条关系原则</h4><ul>";
+  RT_R.r7Principles.forEach(function(p) { h += "<li><strong>" + p[0] + "</strong>：" + p[1] + "。</li>"; });
+  h += "</ul>";
+  h += "<h4>下一次开口，可以这样说（按你认领的" + D + "断）</h4>"
+    + "<p><strong>" + RT_R.duanSay[D][0] + "</strong>　<span class='muted'>" + RT_R.duanSay[D][1] + "</span></p>"
+    + "<p class='muted'>其余断法的开口句（一句带过）：" + ["水", "金", "木", "火", "土"].filter(function(x) { return x !== D; }).map(function(x) { return x + "断" + RT_R.duanSay[x][0]; }).join("；") + "。</p>";
+  h += "<h4>一个微行为（B=MAP，只给一个）</h4><p class='muted'>见上方功课包「主克课 / 主生课」——动机 / 能力 / 提示三件套已按克源词锚定，不再重复给第二个。给三个动作等于没给。</p>";
+  /* 复盘预约（交互） */
+  var rev = load(REV_KEY);
+  h += "<h4>复盘预约（不预约，这一块就是空的）</h4><p>" + RT_R.reviewIntro + "</p>";
+  var defDate = new Date(Date.now() + 13 * 7 * 86400000).toISOString().slice(0, 10);
+  if (rev && rev.way && rev.date) {
+    h += "<div class='closing'>已预约：复测日 " + rev.date + " · " + (rev.way === "both" ? "两个人一起看" : "各自看，再对笔记") + "。</div>"
+      + "<p>" + RT_R.reviewLook + "</p>"
+      + "<p><button class='btn ghost' onclick='window.resetReview()'>改约</button></p>";
+  } else {
+    h += "<p class='li-row'><strong>方式</strong>：<button class='btn ghost' onclick=\"window.saveReview('both')\">两个人一起看</button> <button class='btn ghost' style='margin-left:6px' onclick=\"window.saveReview('solo')\">各自看，再对笔记</button></p>"
+      + "<p class='muted'>默认复测日为第 13 周（" + defDate + "），预约后可在报告里改约。</p>";
+  }
+  h += "</div>";
+
   h += "<div class='card'><p><strong>复测提示</strong>：第 13 周（3 个月 ±7 天）用同一套卷重做双窗口，系统将对比克线（主克 K 分下降 ≥30%）与生线（主生 S 分维持 ≥95%）及双方峰值层位移，出四档判定（大效 / 显效 / 有效 / 未显效）。重做方式：入口页对应卷卡上点「重新开始」→ 重做完成 → 本报告「测评历史与对比」区自动给出与上一轮的得分差异与连续变化（关系指标四档对比属二期复测报告）。</p></div>";
+
+  /* 第八块 · 附录（关系版边界，比自测报告更重） */
+  h += "<h2>附录 · 这份关系报告的边界与可信度</h2><div class='card appx'>"
+    + "<h4>1．边界声明（先说做不到的）</h4><p>" + RT_R.relAppx.boundary + "</p>"
+    + "<div class='closing'>" + RT_R.relAppx.fixed + "</div>"
+    + "<h4>2．它可能错在哪里</h4><p>" + RT_R.relAppx.wrong + "</p>"
+    + "<h4>3．怎么验证</h4><p>" + RT_R.relAppx.verify + "</p>"
+    + "<h4>4．数据来源标明</h4><p>" + RT_R.threeSrcBoth.replace(/\{name\}/g, otherName) + "</p><p class='muted'>" + RT_R.threeSrcWord + "</p>"
+    + "<h4>5．概念速查</h4><p>一心三界五行九层三段、相生相克方向、五种断法、关系四象限（非乔哈里视窗）——完整口径见 <a href='baike.html'>百科与方法论</a>。</p>"
+    + "</div>";
 
   document.getElementById("actions").style.display = "block";
   root.innerHTML = h;

@@ -1,0 +1,109 @@
+name: Deploy redirect to GitHub Pages
+
+# 2026-11-16 SEO 改造：主站已迁至 https://yiguanqimiao-website.pages.dev（Cloudflare Pages，
+# 由仓库 docs/ 目录自动构建）。旧域名 jiayue562.github.io/yiguanqimiao-website 不再承载
+# 完整站点，改为整站跳转，消除双域名重复内容；历史外链权重随跳转导向新站。
+
+on:
+  # 手动触发（保留）
+  workflow_dispatch:
+    inputs:
+      article_source:
+        description: '已废弃，保留兼容'
+        required: false
+        default: 'redirect'
+      geo_optimize:
+        description: '已废弃，保留兼容'
+        required: false
+        default: 'false'
+        type: boolean
+
+  # 推送到 main/master 时触发
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build redirect site
+        run: |
+          echo "构建跳转站..."
+          mkdir -p dist
+          cat > dist/index.html <<'REDIRECT_HTML'
+          <!DOCTYPE html>
+          <html lang="zh-CN">
+          <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta name="robots" content="noindex, follow">
+          <title>以观其妙书院 · 已迁移</title>
+          <script>
+          (function () {
+            var NEW = "https://yiguanqimiao-website.pages.dev";
+            var u = new URL(location.href);
+            var p = u.pathname.replace(/^\/yiguanqimiao-website/, "");
+            var target = NEW + "/";
+            if (p !== "/" && p !== "/index.html") {
+              var keep = ["/articles/", "/llms.txt", "/robots.txt", "/sitemap", "/ai.txt"];
+              for (var i = 0; i < keep.length; i++) {
+                if (p.indexOf(keep[i]) === 0) { target = NEW + p + u.search + u.hash; break; }
+              }
+            }
+            location.replace(target);
+          })();
+          </script>
+          </head>
+          <body style="font-family:sans-serif;text-align:center;padding:60px 20px;color:#46403a">
+          <p>以观其妙书院已迁移至
+          <a href="https://yiguanqimiao-website.pages.dev/" style="color:#854F0B">yiguanqimiao-website.pages.dev</a>，正在为你跳转……</p>
+          <noscript><meta http-equiv="refresh" content="0;url=https://yiguanqimiao-website.pages.dev/"></noscript>
+          </body>
+          </html>
+          REDIRECT_HTML
+          cp dist/index.html dist/404.html
+          echo ".nojekyll" > dist/.nojekyll
+          echo "跳转站构建完成"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  notify:
+    needs: build-and-deploy
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Notify deployment status
+        env:
+          WECOM_BOT_WEBHOOK: ${{ secrets.WECOM_BOT_WEBHOOK }}
+        run: |
+          if [ "${{ needs.build-and-deploy.result }}" == "success" ]; then
+            echo "跳转站部署成功！"
+          else
+            echo "跳转站部署失败！请检查 GitHub Actions 日志"
+          fi

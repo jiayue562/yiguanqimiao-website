@@ -233,3 +233,54 @@ function buildAdvice(res) {
   html += `<p><strong>第三步 · 福格行为模型（微行为落地）</strong>：从起点词中选一个最贴你的词，设计一个两分钟内可完成的小行为——锚点句式「当我出现这个念头之后，我就做（那个小动作）」。先只做观察记录两周，再进入替换。三个月后复测，看这个词在九层上的位置是否向 L1 方向移动。</p>`;
   return { noStart: false, html };
 }
+
+/* ============================================================
+   判型清晰度（悟空 2026-11-16 第一批令：模板 1.4 算法入引擎）
+   输出 { type: 清楚|一般|模糊, yinyang: 偏向|拉锯, layer: 清楚|一般|模糊,
+          grade: 高|中|低, blurry: 模糊项数 }
+   ①型：d = P[sorted[0]] − P[sorted[1]]；≥10 清楚 / 5–10 一般 / <5 模糊；
+     能量未显 → 型直接「模糊」
+   ②阴阳：verdict「阴阳未显」→ 拉锯；|yangPct − yinPct| < 8 → 拉锯，否则偏向
+   ③九层：主行峰值层与相邻层最大词数差 ≤1 → 过渡带模糊；峰值层无词 → 模糊；否则清楚
+   ④总档：模糊项 ≥2 → 低；=1 → 中；0 → 高
+   ============================================================ */
+function clarity(res) {
+  const out = { type: "清楚", yinyang: "偏向", layer: "清楚", grade: "高", blurry: 0 };
+  /* ① 型 */
+  if (!res.mainType) {
+    out.type = "模糊"; out.blurry++;
+  } else {
+    const d = res.P[res.sorted[0]] - res.P[res.sorted[1]];
+    if (d >= 10) out.type = "清楚";
+    else if (d >= 5) out.type = "一般";
+    else out.type = "模糊";
+    if (out.type === "模糊") out.blurry++;
+  }
+  /* ② 阴阳 */
+  const yy = res.yinYang;
+  if (!yy || yy.verdict === "阴阳未显") { out.yinyang = "拉锯"; out.blurry++; }
+  else if (Math.abs(yy.yangPct - yy.yinPct) < 8) { out.yinyang = "拉锯"; out.blurry++; }
+  /* ③ 九层：段跨度口径——主行答是词跨几个段（段内均匀分布时单层判定会误报过渡带，
+     因题库每行每层恰好 5 词；改为按段集合大小判定位置清晰度）：
+     全部落在同一段 → 清楚；跨两段 → 一般；跨三段 → 模糊（位置在台阶上拉得太开） */
+  if (res.mainType && res.mainLayers) {
+    const segSet = new Set();
+    for (let k = 1; k <= 9; k++) { if ((res.mainLayers[k] || 0) > 0) segSet.add(segmentOf(k)); }
+    if (segSet.size === 1) out.layer = "清楚";
+    else if (segSet.size === 2) out.layer = "一般";
+    else { out.layer = "模糊"; out.blurry++; }
+  } else { out.layer = "模糊"; out.blurry++; }
+  /* ④ 总档 */
+  out.grade = out.blurry >= 2 ? "低" : (out.blurry === 1 ? "中" : "高");
+  return out;
+}
+
+/* ============================================================
+   词域纪律（悟空 2026-11-16 指令）：主型行 ∩ 答是词，全报告唯一词源入口
+   mainWords(res) — 主型行答是词（按层深→浅排序）
+   ============================================================ */
+function mainWords(res) {
+  const mainRow = res.mainType || res.sorted[0];
+  return (res.yesWords || []).filter(w => w.e === mainRow)
+    .slice().sort((a, b) => b.layer - a.layer);
+}
