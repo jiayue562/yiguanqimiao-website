@@ -5,6 +5,7 @@
 import { validateInput, buildFacts, qidOf } from "./_advisor/validate.js";
 import { buildMessages, validateAnswer, fallbackAnswer, DISCLAIMER } from "./_advisor/prompt.js";
 import { checkRate, cacheKey, getCache, setCache, bumpCounter } from "./_advisor/rate.js";
+import { generate, modelStatus } from "./_advisor/model.js";
 import { META } from "./_advisor/core.generated.js";
 
 const CORS = {
@@ -87,7 +88,6 @@ export async function onRequestPost(context) {
     const rate = await checkRate(env, ip);
     if (!rate.ok) return json({ ok: false, error: "rate_limited", retryAfter: rate.retryAfter, disclaimer: DISCLAIMER }, 429);
 
-    let ai = null, aiErr = null; // 提前声明：无AI兜底分支(L91)也要引用
     const facts = buildFacts(input, body.qEl || null);
     const ck = cacheKey(facts, input.question);
     const cached = await getCache(env, ck);
@@ -99,49 +99,35 @@ export async function onRequestPost(context) {
     const knowledge = await retrieve(env, facts, input.question);
     facts.knowledge = knowledge;
 
-    // 无 AI 绑定 → 确定性兜底（不报错）
-    if (!env.AI) {
-      const answer = fallbackAnswer(facts);
-      const res = { ok: true, answer, facts, disclaimer: DISCLAIMER, model: "deterministic-fallback", degraded: true, aiErr, hasAI: !!env.AI, hasDB: !!env.DB_LEX, ruleVersion: META.hash.reportText };
-      await bumpCounter(env, "fallback");
-      return json(res, 200);
-    }
-
-    const model = env.AI_MODEL || "@cf/meta/llama-3.1-8b-instruct-fp8";
     const messages = buildMessages(facts, input.question, input.mode);
-    try {
-      ai = await env.AI.run(model, { messages, max_tokens: 1100, temperature: 0.35 });
-    } catch (e) { ai = null; aiErr = String(e && e.message || e).slice(0, 200); }
+    // 多级降级：GLM 免费模型 → Workers AI → 确定性兜底（顾客永远有回答）
+    let gen = await generate(env, messages, { maxTokens: 1100, temperature: 0.35 });
+    let answer = gen.text, check = validateAnswer(answer, facts);
 
-    let answer = ai && (ai.response || ai.result || "");
-    let check = validateAnswer(answer, facts);
     if (!check.ok) {
-      // 纠正重试一次：字数不足则明确要求扩写并多引用书稿片段
       const hint = check.reason === "too_short"
         ? "\n（上一条太短了。请扩写到 300 字以上：多引用上方必读书稿的原文句子，讲透机制、给具体场景，分 3–4 点展开。）"
         : "\n（请严格遵守：只用给定事实与片段，不作诊断，主型不得改写。）";
-      try {
-        const retry = buildMessages(facts, input.question + hint, input.mode);
-        ai = await env.AI.run(model, { messages: retry, max_tokens: 1100, temperature: 0.4 });
-        answer = ai && (ai.response || ai.result || "");
-        check = validateAnswer(answer, facts);
-      } catch (e) { check = { ok: false, reason: "retry_failed" }; }
+      // 重试也走适配器（可能换到下一级模型）
+      gen = await generate(env, buildMessages(facts, input.question + hint, input.mode), { maxTokens: 1100, temperature: 0.4 });
+      answer = gen.text;
+      check = validateAnswer(answer, facts);
     }
     if (!check.ok) {
       await bumpCounter(env, "fallback");
       const res = { ok: true, answer: fallbackAnswer(facts), facts, disclaimer: DISCLAIMER,
-        model: "deterministic-fallback", degraded: true, reason: check.reason, aiErr, hasAI: !!env.AI, hasDB: !!env.DB_LEX, ruleVersion: META.hash.reportText };
+        model: "deterministic-fallback", degraded: true, reason: check.reason, aiErr: gen.tried.join(" | "), hasAI: !!env.AI, hasDB: !!env.DB_LEX, ruleVersion: META.hash.reportText };
       return json(res, 200);
     }
 
-    // 出处标注兜底：小模型常漏标 [book:章节]，服务端用实际注入的书稿片段自动补，保证可追溯
+    // 出处标注兜底：模型常漏标 [book:章节]，服务端用实际注入的书稿片段自动补
     let finalAnswer = String(answer).trim();
     if (!/\[book:/.test(finalAnswer)) {
       const bookSecs = (facts.knowledge || []).filter(k => k.source === "book").slice(0, 3).map(k => k.section);
       if (bookSecs.length) finalAnswer += "\n\n【依据书稿】" + bookSecs.join("；") + "。";
     }
     const out = { ok: true, answer: finalAnswer, facts, disclaimer: DISCLAIMER,
-      model, cached: false, degraded: false, ruleVersion: META.hash.reportText };
+      model: gen.model, tier: gen.tier, tried: gen.tried, cached: false, degraded: false, ruleVersion: META.hash.reportText };
     await setCache(env, ck, out);
     await bumpCounter(env, "answered");
     return json(out, 200);
