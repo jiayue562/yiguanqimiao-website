@@ -9,8 +9,8 @@
 
 const GLM_ENDPOINT = "https://open.bigmodel.cn/api/paas/v4/chat/completions";
 const FREE_MODELS = [
-  "glm-4.7-flash",        // 免费·200K·延续 4.7 基座（首选）
-  "glm-4-flash-250414",   // 免费·128K·高速
+  "glm-4-flash-250414",   // 免费·128K·实测稳定（首选）
+  "glm-4.7-flash",        // 免费·200K·4.7基座（有时返回空，降级链自动跳过）
   "glm-4.5-flash",        // 免费·128K·备胎
 ];
 const COOLDOWN_MS = 10 * 60 * 1000;
