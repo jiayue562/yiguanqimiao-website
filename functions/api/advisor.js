@@ -3,7 +3,7 @@
  * 判定由服务端确定性引擎重算；AI 只做表达；不落库任何提问/回答原文。
  */
 import { validateInput, buildFacts, qidOf } from "./_advisor/validate.js";
-import { buildMessages, validateAnswer, fallbackAnswer, DISCLAIMER } from "./_advisor/prompt.js";
+import { buildMessages, validateAnswer, fallbackAnswer, DISCLAIMER, PERSONA } from "./_advisor/prompt.js";
 import { checkRate, cacheKey, getCache, setCache, bumpCounter } from "./_advisor/rate.js";
 import { generate, modelStatus } from "./_advisor/model.js";
 import { META } from "./_advisor/core.generated.js";
@@ -93,7 +93,7 @@ export async function onRequestPost(context) {
     const cached = await getCache(env, ck);
     if (cached && cached.answer) {
       await bumpCounter(env, "cached");
-      return json({ ...cached, cached: true, ruleVersion: META.hash.reportText }, 200);
+      return json({ ...cached, cached: true, persona: PERSONA, ruleVersion: META.hash.reportText }, 200);
     }
 
     const knowledge = await retrieve(env, facts, input.question);
@@ -115,7 +115,7 @@ export async function onRequestPost(context) {
     }
     if (!check.ok) {
       await bumpCounter(env, "fallback");
-      const res = { ok: true, answer: fallbackAnswer(facts), facts, disclaimer: DISCLAIMER,
+      const res = { ok: true, answer: fallbackAnswer(facts), facts, disclaimer: DISCLAIMER, persona: PERSONA,
         model: "deterministic-fallback", degraded: true, reason: check.reason, aiErr: gen.tried.join(" | "), hasAI: !!env.AI, hasDB: !!env.DB_LEX, ruleVersion: META.hash.reportText };
       return json(res, 200);
     }
@@ -126,7 +126,7 @@ export async function onRequestPost(context) {
       const bookSecs = (facts.knowledge || []).filter(k => k.source === "book").slice(0, 3).map(k => k.section);
       if (bookSecs.length) finalAnswer += "\n\n【依据书稿】" + bookSecs.join("；") + "。";
     }
-    const out = { ok: true, answer: finalAnswer, facts, disclaimer: DISCLAIMER,
+    const out = { ok: true, answer: finalAnswer, facts, disclaimer: DISCLAIMER, persona: PERSONA,
       model: gen.model, tier: gen.tier, tried: gen.tried, cached: false, degraded: false, ruleVersion: META.hash.reportText };
     await setCache(env, ck, out);
     await bumpCounter(env, "answered");

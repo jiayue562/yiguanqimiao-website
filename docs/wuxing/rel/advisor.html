@@ -25,6 +25,16 @@
   .muted{color:#8B8578;font-size:13px}
   .err{color:#A32D2D;font-size:13.5px;margin:8px 0}
   .disclaimer{font-size:12.5px;color:#8B8578;margin-top:8px}
+  .lg-hero{display:flex;gap:16px;align-items:center;justify-content:center;margin:6px 0 14px}
+  .lg-hero img{width:76px;height:76px;object-fit:cover;border-radius:14px;border:1px solid #E3DCCB;background:#fff}
+  .lg-hero .lg-t{text-align:left}
+  .lg-hero h1{margin:0;font-size:23px;letter-spacing:.5px}
+  .lg-hero .lg-role{font-size:13px;color:#8B8578;margin:3px 0 0}
+  .lg-creed{text-align:center;font-size:13px;color:#5F5E5A;background:#FFFDF8;border:1px solid #E3DCCB;border-radius:10px;padding:8px 12px;margin:0 0 14px}
+  .qa .lg-sign{font-size:12px;color:#A32D2D;text-align:right;margin-top:6px;font-weight:700}
+  .qa.lg-welcome{background:#FFFDF8;border-style:dashed}
+  .qa.lg-welcome .a{font-size:14px;color:#5F5E5A}
+  @media(max-width:520px){.lg-hero img{width:60px;height:60px}.lg-hero h1{font-size:19px}}
 </style>
 </head>
 <body>
@@ -38,8 +48,14 @@
   </nav>
 </header>
 <div class="wrap chatbox">
-  <h1 style="text-align:center">五行人格 · AI 顾问</h1>
-  <p style="text-align:center;color:#8B8578">就你的测评结果提问，或有主型直接问</p>
+  <div class="lg-hero">
+    <img src="longgui-advisor.jpg" alt="龙龟图腾：青龙首、玄龟甲、金爪护妙字" width="76" height="76">
+    <div class="lg-t">
+      <h1>龙龟AI顾问</h1>
+      <p class="lg-role">以观其妙书院 · 五行体系守护灵</p>
+    </div>
+  </div>
+  <p class="lg-creed">把书里的话讲活，把报告里的人看懂。只说书里有的，判定归引擎，我只负责解释。</p>
 
   <div class="modebar" id="modeBar">
     <span class="chip" id="chipReport">报告模式</span>
@@ -109,6 +125,14 @@ function render(){
 function setMode(m){ var u = new URL(location.href); if(m==="manual"){ u.searchParams.set("mode","manual"); } else { u.searchParams.delete("mode"); } location.href = u.toString(); }
 document.getElementById("chipManual").onclick = function(){ setMode("manual"); };
 document.getElementById("chipReport").onclick = function(){ setMode("report"); };
+function addWelcome(){
+  var log = document.getElementById("log");
+  if (log.getAttribute("data-welcomed")) return;
+  log.setAttribute("data-welcomed","1");
+  var d = document.createElement("div"); d.className = "qa lg-welcome";
+  d.innerHTML = "<div class='q'>龙龟开场</div><div class='a'>我是龙龟，书院的守门人。判定已由引擎算好，我只解释它、不改写它。你可以直接问：为什么说你在关系里总顶人、该怎么破。我会引书稿原句、翻译成具体场景，最后给你一个两分钟能做完的动作。</div><div class='lg-sign'>— 龙龟</div>";
+  log.appendChild(d);
+}
 function addQA(q, a, src, disclaimer){
   var d = document.createElement("div"); d.className = "qa";
   d.innerHTML = "<div class='q'>" + esc(q) + "</div><div class='a'>" + a + "</div>"
@@ -147,8 +171,13 @@ function ask(){
           f.relationClass ? "关系：" + f.relationClass : "",
           (f.evidence||[]).map(function(e){ return e.qid + " " + e.word; }).join("、"),
           (f.knowledge||[]).map(function(k){ return k.source + "·" + k.section; }).join("；") ].filter(Boolean).join(" ｜ ");
-        last.querySelector(".a").innerHTML = esc(x.j.answer).replace(/\n/g,"<br>");
+        var degraded = !!x.j.degraded;
+        var head = degraded
+          ? "<div class='a'><strong>【龙龟·确定性回应】</strong>模型暂时未接通，我按书稿框架直接给你骨架。" + esc(x.j.answer).replace(/\n/g,"<br>") + "</div>"
+          : "<div class='a'>" + esc(x.j.answer).replace(/\n/g,"<br>") + "</div>";
+        last.querySelector(".a").outerHTML = head;
         if (src) { var sd = document.createElement("div"); sd.className="src"; sd.textContent="依据："+src; last.appendChild(sd); }
+        var sg = document.createElement("div"); sg.className="lg-sign"; sg.textContent="— 龙龟"; last.appendChild(sg);
         if (x.j.disclaimer) { var dd=document.createElement("div"); dd.className="disclaimer"; dd.textContent=x.j.disclaimer; last.appendChild(dd); }
       } else {
         last.querySelector(".a").textContent = (x.j && x.j.answer) ? x.j.answer : ("暂时无法回答（" + (x.j && x.j.error ? x.j.error : x.status) + "），请稍后重试。");
@@ -161,6 +190,7 @@ function ask(){
 }
 document.getElementById("q").addEventListener("keydown", function(e){ if(e.key==="Enter") ask(); });
 render();
+addWelcome();
 </script>
 </body>
 </html>
