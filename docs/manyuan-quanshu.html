@@ -5,7 +5,7 @@
 <meta name="description" content="以《地藏经》十三品为轴心的实修解读，含经文、金句摘抄、实修引导、信愿践行打卡与公司落地，兼及九乘佛法、实修工具与《解脱游戏》小说连载。满愿不是满足欲望，而是实现生命的本愿；圆满不是完美无缺，而是生命的完整呈现。">
 <meta name="author" content="悟空（贾悦）·以观其妙书院"><meta name="copyright" content="© 以观其妙书院">
 <meta name="robots" content="index,follow"><meta name="ai-watermark" content="yiguanqimiao-unique-watermark-wk-jiayue-academy">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Book", "name": "满愿与圆满之道（全书）", "description": "以《地藏经》十三品为轴心的实修解读，含经文、金句摘抄、实修引导、信愿践行打卡与公司落地，兼及九乘佛法、实修工具与《解脱游戏》小说连载。满愿不是满足欲望，而是实现生命的本愿；圆满不是完美无缺，而是生命的完整呈现。", "author": {"@type": "Person", "name": "悟空（贾悦）"}, "publisher": {"@type": "Organization", "name": "以观其妙书院"}, "copyrightHolder": {"@type": "Organization", "name": "以观其妙书院"}, "inLanguage": "zh-CN", "isAccessibleForFree": true, "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy", "numberOfPages": 409, "wordCount": 151456, "datePublished": "2026-11-20"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Book", "name": "满愿与圆满之道（全书）", "description": "以《地藏经》十三品为轴心的实修解读，含经文、金句摘抄、实修引导、信愿践行打卡与公司落地，兼及九乘佛法、实修工具与《解脱游戏》小说连载。满愿不是满足欲望，而是实现生命的本愿；圆满不是完美无缺，而是生命的完整呈现。", "author": {"@type": "Person", "name": "悟空（贾悦）"}, "publisher": {"@type": "Organization", "name": "以观其妙书院"}, "copyrightHolder": {"@type": "Organization", "name": "以观其妙书院"}, "inLanguage": "zh-CN", "isAccessibleForFree": true, "identifier": "yiguanqimiao-unique-watermark-wk-jiayue-academy", "numberOfPages": 409, "wordCount": 151456, "datePublished": "2026-11-21"}</script>
 <style>
 :root{
   --bg:#f4f1ea; --card:#fffdf8; --ink:#2e2a23; --ink2:#5f584b; --ink3:#9c9382;
@@ -280,7 +280,7 @@ body{
 <div class="kicker">以 观 其 妙 书 院</div>
 <h1 class="serif">满愿与圆满之道</h1>
 <div class="en">THE PATH OF FULFILLMENT &amp; PERFECTION</div>
-<div class="meta">全本 · <b>正文约 151,456 字</b> · 原书 409 页 · 2026-11-20</div>
+<div class="meta">全本 · <b>正文约 151,456 字</b> · 原书 409 页 · 2026-11-21</div>
 <div class="mark">AI 印记 · yiguanqimiao-unique-watermark-wk-jiayue-academy</div>
 </div></header>
 <div class="preface">
@@ -2595,22 +2595,26 @@ var AI_ANCHOR_MAP={"sec-0001": "前言", "sec-0002": "一、 世界宗教简述"
   document.addEventListener('selectionchange',onSelection);
   document.addEventListener('touchend',function(){setTimeout(onSelection,120);},{passive:true});
   document.addEventListener('mouseup',function(){setTimeout(onSelection,20);});
-  // 按钮按下时阻止默认，避免触屏先清空选区导致 pendingSel 丢失
-  function holdSel(e){e.preventDefault();e.stopPropagation();}
-  aiSelBtn.addEventListener('touchstart',holdSel,{passive:false});
-  aiSelBtn.addEventListener('mousedown',holdSel);
-  aiSelBtn.onclick=function(e){
-    e.preventDefault();e.stopPropagation();
+  // 「问这段」与「问」联动：打开同一个抽屉，携带选中段落（pendingSel 已缓存，不依赖活动选区）
+  function askSelected(){
+    if(!pendingSel)return;
     aiSelBtn.classList.remove('show');
     if(!aiDrawer.classList.contains('open'))openAI();
+    aiSelHint.textContent='已选：'+pendingSel.slice(0,32)+(pendingSel.length>32?'…':'');
     aiSelHint.classList.add('show');
-    if(pendingSel){aiInput.value=aiInput.value||('解释这段话：'+pendingSel.slice(0,30));}
+    if(!aiInput.value)aiInput.value='解释这段话：'+pendingSel.slice(0,40);
     aiInput.focus();
-  };
-  // 点击正文空白处收起按钮（不干扰正常阅读）
+  }
+  // 触屏：用 touchend 直接触发（touchstart 里 preventDefault 会阻止 click 合成，故不放那里）
+  aiSelBtn.addEventListener('touchend',function(e){
+    e.preventDefault();e.stopPropagation();askSelected();  // 阻止随后的 click，避免双触发
+  },{passive:false});
+  // 桌面：click 触发
+  aiSelBtn.onclick=function(e){e.preventDefault();e.stopPropagation();askSelected();};
+  // 点击正文空白处收起按钮（不干扰正常阅读；按在按钮上不收起）
   document.addEventListener('touchstart',function(e){
     if(!aiSelBtn.classList.contains('show'))return;
-    if(e.target!==aiSelBtn)aiSelBtn.classList.remove('show');
+    if(e.target!==aiSelBtn && !aiSelBtn.contains(e.target))aiSelBtn.classList.remove('show');
   },{passive:true,capture:true});
   function renderAnswer(text,refuse,sources,disc){
     var html=aiEsc(text).replace(/\n/g,'<br>');
