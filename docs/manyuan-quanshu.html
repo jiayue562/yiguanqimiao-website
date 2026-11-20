@@ -173,6 +173,30 @@ body{
 }
 .fab button:hover{transform:translateY(-2px);background:var(--quote-bg)}
 .fab button.sm{font-size:12px}
+
+/* 断点续读提示条 */
+.resume{
+  position:fixed;left:50%;top:14px;transform:translateX(-50%) translateY(-140%);
+  z-index:1000;display:flex;align-items:center;gap:14px;max-width:92vw;
+  padding:10px 18px;border-radius:24px;white-space:nowrap;
+  background:var(--topbar2);color:#f0e8d8;box-shadow:0 6px 24px rgba(0,0,0,.28);
+  font-size:13px;transition:transform .45s cubic-bezier(.2,.9,.3,1.2);border:1px solid var(--accent)
+}
+.resume.show{transform:translateX(-50%) translateY(0)}
+.resume .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none}
+.resume .txt{overflow:hidden;text-overflow:ellipsis}
+.resume .txt b{color:#e8c887;font-weight:600}
+.resume button{
+  border:1px solid rgba(232,200,135,.5);background:transparent;color:#e8c887;
+  border-radius:14px;padding:3px 12px;cursor:pointer;font-size:12px;flex:none
+}
+.resume button:hover{background:rgba(232,200,135,.15)}
+.toc-resume{
+  display:none;margin:0 0 18px;padding:10px 16px;border-radius:8px;
+  background:var(--quote-bg);border:1px dashed var(--accent);font-size:13px;color:var(--accent-d);cursor:pointer
+}
+.toc-resume:hover{background:var(--script-bg)}
+.toc-resume b{color:var(--ink)}
 :target{scroll-margin-top:18px}
 .c :target{background:linear-gradient(transparent 62%,rgba(201,160,90,.18) 0);border-radius:2px}
 
@@ -189,10 +213,12 @@ body{
   .c p.scripture{padding:14px;font-size:1.08em;line-height:2.4;letter-spacing:.08em}
   .fab{right:12px;bottom:14px}
   .fab button{width:38px;height:38px}
+  .resume{top:8px;padding:8px 12px;font-size:12px;gap:8px;border-radius:18px}
 }
 </style>
 </head><body>
 <div class="progress" id="progress"></div>
+<div class="resume" id="resume"><span class="dot"></span><span class="txt" id="resumeTxt">已回到上次读到的位置</span><button id="resumeBtn">从头读起</button></div>
 <div class="wrap">
 <header class="hero"><div class="inner">
 <div class="seal">观其<br>妙</div>
@@ -209,6 +235,7 @@ body{
 </div>
 <nav class="toc-box" id="toc">
 <div class="toc-head"><div class="t serif">目　录</div><div class="s">点击标题即可跳转 · 页码为原书页码</div></div>
+<div class="toc-resume" id="tocResume">↳ 继续上次阅读：<b id="tocResumeTxt"></b></div>
 <div class="toc-group"><div class="toc-group-title serif"><a href="#content" style="color:inherit;text-decoration:none">卷　首</a></div>
 <div class="toc-item cls-pin"><a href="#sec-0001">前言</a><span class="dot"></span><span class="pg">12</span></div>
 <div class="toc-item cls-pin"><a href="#sec-0002">一、 世界宗教简述</a><span class="dot"></span><span class="pg">13</span></div>
@@ -2294,26 +2321,125 @@ body{
 
 (function(){
   var bar=document.getElementById('progress');
-  function upd(){var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
-    bar.style.width=(max>0?(h.scrollTop||document.body.scrollTop)/max*100:0)+'%';}
-  window.addEventListener('scroll',upd,{passive:true});upd();
-
   var c=document.getElementById('content'), body=document.body;
-  var FS=[15,16,17,18,20];
-  var fi=1;
+  var KEY='manyuan_progress';
+
+  /* ---- 主题 / 字号 ---- */
+  var FS=[15,16,17,18,20], fi=1;
   try{fi=parseInt(localStorage.getItem('my_fs')||'1',10);}catch(e){}
   function applyFs(){c.style.fontSize=FS[fi]+'px';document.getElementById('btnFont').textContent=(fi>=FS.length-1?'A-':'A+');}
   applyFs();
-  document.getElementById('btnFont').onclick=function(){fi=(fi+1)%FS.length;applyFs();try{localStorage.setItem('my_fs',fi);}catch(e){}};
-
+  document.getElementById('btnFont').onclick=function(){fi=(fi+1)%FS.length;applyFs();try{localStorage.setItem('my_fs',fi);}catch(e){};};
   var night=false;
   try{night=localStorage.getItem('my_night')==='1';}catch(e){}
   function applyNight(){body.classList.toggle('night',night);document.getElementById('btnNight').textContent=night?'☀':'☾';}
   applyNight();
-  document.getElementById('btnNight').onclick=function(){night=!night;applyNight();try{localStorage.setItem('my_night',night?'1':'0');}catch(e){}};
+  document.getElementById('btnNight').onclick=function(){night=!night;applyNight();try{localStorage.setItem('my_night',night?'1':'0');}catch(e){};};
+
+  /* ---- 断点续读：以「章节锚点 + 段内比例」存储，字号变化也能大致回到原处 ---- */
+  var heads=[], timer=null, restoring=false;
+  function collectHeads(){heads=Array.prototype.filter.call(
+    document.querySelectorAll('#content h1[id],#content h2[id],#content h3[id]'),
+    function(el){return !!el.offsetParent;});}
+  function scrollY(){return window.pageYOffset||document.documentElement.scrollTop||0;}
+  function maxScroll(){var h=document.documentElement;return Math.max(0,h.scrollHeight-h.clientHeight);}
+
+  function currentPos(){
+    var y=scrollY(), best=null, bestTop=-1;
+    for(var i=0;i<heads.length;i++){
+      var top=heads[i].getBoundingClientRect().top+y;
+      if(top<=y+8){best=heads[i];bestTop=top;}else{break;}
+    }
+    var data={y:y, ratio:maxScroll()>0?y/maxScroll():0, ts:Date.now()};
+    if(best){
+      var nextTop=maxScroll();
+      for(var j=0;j<heads.length;j++){
+        var t=heads[j].getBoundingClientRect().top+y;
+        if(t>bestTop+8){nextTop=t;break;}
+      }
+      var span=Math.max(1,nextTop-bestTop);
+      data.anchor=best.id;
+      data.inSeg=Math.min(1,Math.max(0,(y-bestTop)/span));
+      data.title=(best.textContent||'').trim();
+    }
+    return data;
+  }
+  function save(){
+    if(restoring)return;
+    try{localStorage.setItem(KEY,JSON.stringify(currentPos()));}catch(e){}
+  }
+  function onScroll(){
+    var mx=maxScroll();bar.style.width=(mx>0?scrollY()/mx*100:0)+'%';
+    if(timer)clearTimeout(timer);
+    timer=setTimeout(save,350);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('beforeunload',save);
+
+  function fmtTime(ts){
+    try{var d=new Date(ts);return (d.getMonth()+1)+'月'+d.getDate()+'日 '+('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2);}catch(e){return '';}
+  }
+  function showToast(title,ts){
+    var el=document.getElementById('resume'), t=document.getElementById('resumeTxt');
+    t.innerHTML='已回到上次读到的 <b>'+title+'</b>'+(ts?' · '+fmtTime(ts):'');
+    el.classList.add('show');
+    setTimeout(function(){el.classList.remove('show');},5200);
+  }
+  function showTocResume(title,anchor,ts){
+    var box=document.getElementById('tocResume'), t=document.getElementById('tocResumeTxt');
+    if(!title)return;
+    t.textContent=title+(ts?'（'+fmtTime(ts)+'）':'');
+    box.style.display='block';
+    box.onclick=function(){
+      var el=document.getElementById(anchor);
+      if(el)window.scrollTo({top:el.getBoundingClientRect().top+scrollY()-10,behavior:'smooth'});
+    };
+  }
+  function clearProgress(){
+    try{localStorage.removeItem(KEY);}catch(e){}
+    document.getElementById('tocResume').style.display='none';
+    document.getElementById('resume').classList.remove('show');
+  }
+
+  function restore(){
+    collectHeads();
+    var raw=null;
+    try{raw=localStorage.getItem(KEY);}catch(e){}
+    if(!raw){onScroll();return;}
+    var d;
+    try{d=JSON.parse(raw);}catch(e){onScroll();return;}
+    if(!d||typeof d!=='object'||!d.ts){onScroll();return;}
+    // 距上次阅读超过 90 天则不自动跳转，仅显示目录入口
+    var stale=(Date.now()-d.ts)/86400000>90;
+    var anchorEl=d.anchor?document.getElementById(d.anchor):null;
+    if(!stale&&anchorEl){
+      restoring=true;
+      var top=anchorEl.getBoundingClientRect().top+scrollY();
+      var nextTop=maxScroll();
+      for(var j=0;j<heads.length;j++){
+        var t=heads[j].getBoundingClientRect().top+scrollY();
+        if(t>top+8){nextTop=t;break;}
+      }
+      var span=Math.max(1,nextTop-top);
+      var target=top+span*(d.inSeg||0);
+      if(!isFinite(target)||target<=0&&d.ratio>0.05)target=d.ratio*maxScroll();
+      window.scrollTo(0,target);
+      showToast(d.title||'上次的位置',d.ts);
+      setTimeout(function(){restoring=false;save();},600);
+    }
+    showTocResume(d.title,d.anchor,d.ts);
+    onScroll();
+  }
+  // 布局稳定后恢复（ruby 注音与宋体加载会影响高度）
+  if(document.readyState==='complete')setTimeout(restore,80);
+  else window.addEventListener('load',function(){setTimeout(restore,80);});
+  window.addEventListener('resize',collectHeads);
 
   document.getElementById('btnToc').onclick=function(){document.getElementById('toc').scrollIntoView({behavior:'smooth'});};
   document.getElementById('btnTop').onclick=function(){window.scrollTo({top:0,behavior:'smooth'});};
+  document.getElementById('resumeBtn').onclick=function(){
+    clearProgress();window.scrollTo({top:0,behavior:'smooth'});
+  };
 })();
 
 </script>
