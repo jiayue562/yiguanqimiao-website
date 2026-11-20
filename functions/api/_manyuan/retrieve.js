@@ -59,8 +59,25 @@ function scoreChunk(chunk, kws) {
   return { score, hit };
 }
 
+/* 书外信息意图识别：这些问题本质在问本书正文不可能有的事实，直接拒答
+ * 双保险第一道（第二道是 prompt 的「无依据必须拒答」）。
+ */
+const OUT_OF_BOOK = [
+  /星座|生肖|属相|八字|血型/,
+  /住址|家庭地址|电话|手机号|邮箱|身份证/,
+  /收入|年薪|工资|身价|资产多少|赚了多少/,
+  /第\s*\d+\s*页.{0,6}(第?\d+行|这段|那句)/,   // 精确到页码行号，正文检索无法保证
+  /彩票|中奖号码|明天.{0,4}(涨|跌)|股价|比特币.{0,4}(价格|预测)/,
+  /量子力学|相对论|微积分|化学方程式/,
+];
+export function isOutOfBookQuestion(question) {
+  const q = String(question || "");
+  return OUT_OF_BOOK.some(re => re.test(q));
+}
+
 /* 主检索：返回带出处的命中块（最多 limit 块） */
 export function retrieve(question, selectedText, currentAnchor, limit) {
+  if (isOutOfBookQuestion(question)) return { chunks: [], hit: 0, keywords: [], outOfBook: true };
   const qKws = extractKeywords(question, 18);
   const sKws = selectedText ? extractKeywords(selectedText, 12) : [];
   // 选中段落词权重加倍（读者明确指向它）
