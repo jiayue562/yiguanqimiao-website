@@ -2313,7 +2313,7 @@ body{
 </div>
 <div class="fab">
 <button id="btnToc" title="目录">目</button>
-<button id="btnFont" title="字号">A+</button>
+<button id="btnFont" title="字号（点击切换）">16</button>
 <button id="btnNight" title="夜间模式">☾</button>
 <button id="btnTop" title="返回顶部">顶</button>
 </div>
@@ -2325,11 +2325,17 @@ body{
   var KEY='manyuan_progress';
 
   /* ---- 主题 / 字号 ---- */
-  var FS=[15,16,17,18,20], fi=1;
+  var FS=[14,16,18,20,23,26], fi=1;
   try{fi=parseInt(localStorage.getItem('my_fs')||'1',10);}catch(e){}
-  function applyFs(){c.style.fontSize=FS[fi]+'px';document.getElementById('btnFont').textContent=(fi>=FS.length-1?'A-':'A+');}
+  if(isNaN(fi)||fi<0||fi>=FS.length)fi=1;
+  var fontBtn=document.getElementById('btnFont');
+  function applyFs(){
+    c.style.fontSize=FS[fi]+'px';
+    fontBtn.textContent=String(FS[fi]);
+    fontBtn.title='字号 '+FS[fi]+'px（点击切换）';
+  }
   applyFs();
-  document.getElementById('btnFont').onclick=function(){fi=(fi+1)%FS.length;applyFs();try{localStorage.setItem('my_fs',fi);}catch(e){};};
+  fontBtn.onclick=function(){fi=(fi+1)%FS.length;applyFs();try{localStorage.setItem('my_fs',fi);}catch(e){};};
   var night=false;
   try{night=localStorage.getItem('my_night')==='1';}catch(e){}
   function applyNight(){body.classList.toggle('night',night);document.getElementById('btnNight').textContent=night?'☀':'☾';}
