@@ -85,10 +85,15 @@ export function fallbackAnswer(facts) {
   const rel = f.relationClass || "自对";
   const cp = P && CHECKPOINTS[P] ? CHECKPOINTS[P] : null;
   const car = f.yEl && CARRIER[f.yEl] ? CARRIER[f.yEl] : "";
-  let out = `关系判定：${P || "—"} × ${Q || "—"}，${rel}。\n`;
-  if (seg && seg[0]) out += `怎么流动：${seg[0]}\n`;
-  if (seg && seg[2]) out += `摩擦点：${seg[2]}\n`;
-  if (cp) out += `通关点：${cp.attr_word}（${cp.how}）。\n`;
-  if (car) out += `可执行动作：${car}。\n`;
+  let out = `你的主型是${P || "—"}，关系判定为「${rel}」。以下按《五行人格心理学》原书框架作答：\n`;
+  if (seg) {
+    if (seg[0]) out += `【怎么流动】${seg[0]}\n`;
+    if (seg[1]) out += `【阳面表现】${seg[1]}\n`;
+    if (seg[2]) out += `【摩擦点】${seg[2]}\n`;
+    if (seg[3]) out += `【怎么转】${seg[3]}\n`;
+  }
+  if (cp) out += `【通关点】属性词「${cp.attr_word || ""}」——${cp.how || ""}。把这条做成这周一次的固定动作：找一个具体时间，对着一个具体的人，把这个属性词说出来、做出来。\n`;
+  if (car) out += `【五式载体】${typeof car === "object" ? JSON.stringify(car).slice(0, 260) : String(car).slice(0, 260)}。\n`;
+  out += "这不是性格缺陷，是同一种能量用过了头。看清它往哪个方向流，你就知道该在哪一处收、哪一处放。先挑上面一条，今天就做一次。\n";
   return out + DISCLAIMER;
 }

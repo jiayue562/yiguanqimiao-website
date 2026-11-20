@@ -67,8 +67,12 @@ async function callWorkersAI(env, messages, maxTokens, temperature) {
   if (!env.AI) throw new Error("no_ai_binding");
   const model = env.AI_MODEL || HF_MODEL;
   const r = await env.AI.run(model, { messages, max_tokens: maxTokens, temperature });
-  const text = r && (r.response || r.result || "");
-  if (!text) throw new Error("ai_empty");
+  // Workers AI 返回形态不一：{response} / {result} / 直接字符串 / {result:{response}}
+  let text = "";
+  if (typeof r === "string") text = r;
+  else if (r && typeof r === "object") text = r.response || r.result?.response || r.result || "";
+  if (typeof text !== "string") text = String(text || "");
+  if (!text.trim()) throw new Error("ai_empty");
   return { text, model };
 }
 
