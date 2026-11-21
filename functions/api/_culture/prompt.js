@@ -11,7 +11,7 @@ import { EXAMPLE_CRITERIA } from "./registry.js";
 export { EXAMPLE_CRITERIA };
 /* 67 个词条的统一判据在 registry.js；6 个既有示例保留人工精判据。 */
 
-export function buildMessages(result, userText, exampleId) {
+export function buildMessages(result, userText, exampleId, term, opts) {
   const crit = (exampleId && EXAMPLE_CRITERIA[exampleId]) || null;
   const evidence = result.chunks.map((c, i) =>
     `【${i + 1}】《${c.book}》· ${c.section}\n${c.text}`
@@ -23,16 +23,20 @@ export function buildMessages(result, userText, exampleId) {
     "1. 唯一知识源是下方【必读书稿】。严禁使用任何书外知识、常识、个人观点或推测。",
     "2. 若填写内容在书稿中找不到对应判据，必须明确说「依据两本书无法判断」，不得勉强评价。",
     "3. 每条判断都要标注依据出自哪本书、哪一节，格式 [book:书名/章节]。",
-    "4. 不诊断、不评价个人，只评估这段填写内容是否符合本节要求与书稿口径。",
+    "4. 不诊断、不评价个人，只评估这段填写内容是否符合当前词条要求与书稿口径。",
     "5. 用中文，300-600 字，分「符合之处」「不符合之处及依据」「改写建议」三部分。",
     "6. 改写建议中的每一条也必须能追溯到必读书稿，不得凭空发挥。",
+    "7. 当前词条定义是全部逻辑起点；先按定义确认词条边界，再判断填写内容与书稿口径的关系。",
   ].join("\n");
 
   const user = [
-    crit ? `【当前示例】${crit.name}\n【本节要求】${crit.requirement}\n` : "",
+    term ? `【当前词条】${term.name}\n【词条定义·逻辑起点】${term.definition || "（见本节四行体例）"}\n` : "",
+    crit ? `【本节要求】${crit.requirement}\n` : "",
     "【用户填写的内容】\n" + userText,
     "\n【必读书稿（唯一知识源）】\n" + evidence,
-    "\n请按铁律评估：先说符合之处，再逐条指出不符合之处及对应书稿依据，最后给出可追溯的改写建议。",
+    opts && opts.strict
+      ? "\n请严格遵守：只用给定书稿原文；先复述词条定义作为判断起点；分「符合之处」「不符合之处及依据」「改写建议」三部分；每条判断标注 [book:书名/章节]；无依据就明确说无法判断。"
+      : "\n请按铁律评估：先以词条定义为起点，再说符合之处，接着逐条指出不符合之处及对应书稿依据，最后给出可追溯的改写建议。",
   ].join("\n");
 
   return [

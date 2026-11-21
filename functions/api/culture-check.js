@@ -2,17 +2,20 @@
  * POST /api/culture-check
  *   { schema:"culture_check_v1", exampleId:"01-1-1", text:"用户填写内容" }
  *
+ * 该接口只做入口治理（校验 / 限流 / 缓存 / 计数 / 响应包装）；
+ * 所有问答逻辑交给 _culture/agent.js 后台智能体统一编排：
+ *   词条定义 → 限定知识库检索 → GLM 优先 → 质量门禁 → 网站既有兜底链 → 结果归一
+ *
  * 硬纪律（对齐用户要求）：
  *  - 唯一知识源 = 《生生》+《企业文化顶层设计》两本书编译的知识包（_culture/kb.js）
  *  - 无依据明确拒答，绝不调用生成模型（杜绝编造书外结论）
- *  - 每条判断带 [book:书名/章节] 出处；模型输出经校验与出处兜底
- *  - 不落库任何填写/评估原文；复用 _advisor/model.js 的多级降级（GLM→Workers AI）
+ *  - 回答带 [book:书名/章节] 出处；模型输出经质量门禁与服务端补依据
+ *  - 不落库任何填写/评估原文；缓存只存哈希 key 与脱敏结果
  */
 import { validateInput } from "./_culture/validate.js";
-import { retrieve, hasEvidence } from "./_culture/retrieve.js";
-import { buildMessages, validateAnswer, fallbackAnswer, DISCLAIMER, REFUSAL, PERSONA, EXAMPLE_CRITERIA } from "./_culture/prompt.js";
+import { runCultureAgent, resolveTerm } from "./_culture/agent.js";
+import { DISCLAIMER } from "./_culture/prompt.js";
 import { checkRate, cacheKey, getCache, setCache, bumpCounter } from "./_culture/rate.js";
-import { generate } from "./_advisor/model.js";
 import { META } from "./_culture/kb.js";
 
 const CORS = {
@@ -38,62 +41,22 @@ export async function onRequestPost(context) {
     const rate = await checkRate(env, ip);
     if (!rate.ok) return json({ ok: false, error: "rate_limited", retryAfter: rate.retryAfter, disclaimer: DISCLAIMER }, 429);
 
-    // 唯一知识源检索：当前示例锚点 + 用户填写内容
-    const result = retrieve(input.text, input.exampleId, 6);
-    if (!hasEvidence(result)) {
-      await bumpCounter(env, "refused");
-      return json({
-        ok: true, answer: REFUSAL, refused: true, evidenced: false,
-        sources: [], example: (EXAMPLE_CRITERIA[input.exampleId] || {}).name || "",
-        disclaimer: DISCLAIMER, kbVersion: META.kb_version,
-      }, 200);
-    }
-
-    const ck = cacheKey(input);
+    // 缓存键纳入词条定义，注册表升级后旧答案不会串味
+    const term = resolveTerm(input.exampleId);
+    const ck = cacheKey({ ...input, definition: term ? term.definition : "" });
     const cached = await getCache(env, ck);
     if (cached && cached.answer) {
       await bumpCounter(env, "cached");
       return json({ ...cached, cached: true, kbVersion: META.kb_version }, 200);
     }
 
-    const messages = buildMessages(result, input.text, input.exampleId);
-    let gen = await generate(env, messages, { maxTokens: 1100, temperature: 0.3 });
-    let answer = gen.text;
-    let check = validateAnswer(answer, hasEvidence(result));
+    const out = await runCultureAgent(input, env);
+    if (!out.ok) return json(out, 400);
 
-    if (!check.ok && check.reason !== "too_short") {
-      const hint = "\n（请严格遵守：只用给定书稿原文，无依据就说明无法判断；每条标 [book:书名/章节]，分符合之处／不符合之处及依据／改写建议三部分。）";
-      gen = await generate(env, buildMessages({ chunks: result.chunks }, input.text + hint, input.exampleId), { maxTokens: 1100, temperature: 0.35 });
-      answer = gen.text;
-      check = validateAnswer(answer, hasEvidence(result));
-    }
-    if (!check.ok || !answer) {
-      await bumpCounter(env, "fallback");
-      return json({
-        ok: true, answer: fallbackAnswer(result), degraded: true, evidenced: true,
-        model: "deterministic-fallback", reason: check.reason || "no_output",
-        sources: result.chunks.map(c => ({ book: c.book, section: c.section })),
-        example: (EXAMPLE_CRITERIA[input.exampleId] || {}).name || "",
-        disclaimer: DISCLAIMER, kbVersion: META.kb_version,
-      }, 200);
-    }
-
-    let finalAnswer = String(answer).trim();
-    if (!/\[book:/.test(finalAnswer)) {
-      const srcs = result.chunks.slice(0, 3).map(c => `[book:${c.book}/${c.section}]`);
-      if (srcs.length) finalAnswer += "\n\n【依据】" + srcs.join("；") + "。";
-    }
-
-    const out = {
-      ok: true, answer: finalAnswer, refused: false, evidenced: true, cached: false, degraded: false,
-      model: gen.model, tier: gen.tier,
-      sources: result.chunks.map(c => ({ book: c.book, section: c.section })),
-      example: (EXAMPLE_CRITERIA[input.exampleId] || {}).name || "",
-      persona: PERSONA, disclaimer: DISCLAIMER, kbVersion: META.kb_version,
-    };
-    await setCache(env, ck, out);
-    await bumpCounter(env, "answered");
-    return json(out, 200);
+    const final = { ...out, cached: false };
+    await setCache(env, ck, final);
+    await bumpCounter(env, out.refused ? "refused" : out.switched ? "switched" : "answered");
+    return json(final, 200);
   } catch (e) {
     return json({ ok: false, error: "server_error", detail: String(e && e.message || e).slice(0, 100), disclaimer: DISCLAIMER }, 500);
   }

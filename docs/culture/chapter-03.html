@@ -125,9 +125,11 @@
       if (!x.ok || !j.ok) { out.className = 'kcheck-result kcheck-err'; out.textContent = '评估服务暂不可用：' + (j.error || '请求失败') + '，请稍后再试。'; return; }
       var body = esc(j.answer || '').replace(/\n/g, '<br>');
       var flag = j.refused ? '<div class="kcheck-flag">未检索到书中依据 · 已拒答</div>' :
-                 (j.degraded ? '<div class="kcheck-flag">模型未接通 · 给出原文依据骨架</div>' : '');
+                 (j.switched ? '<div class="kcheck-flag">GLM 回答未达标 · 已切换兜底</div>' :
+                 (j.degraded ? '<div class="kcheck-flag">模型未接通 · 给出原文依据骨架</div>' : ''));
+      var termLine = j.term && j.term.name ? '<div class="kcheck-term">词条起点：' + esc(j.term.name) + '</div>' : '';
       out.className = 'kcheck-result' + (j.refused ? ' kcheck-refused' : '');
-      out.innerHTML = flag + '<div class="kcheck-answer">' + body + '</div>' + renderCites(j.sources) +
+      out.innerHTML = termLine + flag + '<div class="kcheck-answer">' + body + '</div>' + renderCites(j.sources) +
         '<div class="kcheck-disc">' + esc(j.disclaimer || '') + '</div>';
     })
     .catch(function(){ out.className = 'kcheck-result kcheck-err'; out.textContent = '网络错误，请检查连接后重试。'; })

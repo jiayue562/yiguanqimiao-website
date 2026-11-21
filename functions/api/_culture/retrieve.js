@@ -63,10 +63,14 @@ function evidenceHit(chunk, kws) {
 
 /* 主检索：question=用户填写内容；exampleId=当前示例（可选）
  * 锚点词只提升排序分；hit（是否有依据）只由用户填写内容决定。 */
-export function retrieve(question, exampleId, limit) {
+export function retrieve(question, exampleId, limit, options) {
   const qKws = extractKeywords(question, 24);
   const anchors = (exampleId && EXAMPLE_ANCHORS[exampleId]) || [];
-  const scoreKws = Array.from(new Set([...anchors, ...qKws, ...qKws]));
+  const termKws = options && options.extraKws
+    ? extractKeywords(Array.isArray(options.extraKws) ? options.extraKws.join(" ") : String(options.extraKws), 12)
+    : [];
+  // 词条定义/要求只参与排序；hit（是否有依据）仍只由用户填写内容决定
+  const scoreKws = Array.from(new Set([...anchors, ...termKws, ...qKws, ...qKws]));
   if (!scoreKws.length) return { chunks: [], hit: 0, keywords: [] };
 
   const scored = [];

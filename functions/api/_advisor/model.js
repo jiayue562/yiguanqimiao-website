@@ -82,12 +82,14 @@ async function callWorkersAI(env, messages, maxTokens, temperature) {
 export async function generate(env, messages, opts) {
   const maxTokens = (opts && opts.maxTokens) || 1100;
   const temperature = (opts && opts.temperature != null) ? opts.temperature : 0.35;
+  const glmOnly = !!(opts && opts.glmOnly);     // 只试 GLM，供智能体做质量门禁
+  const skipGlm = !!(opts && opts.skipGlm);     // 跳过 GLM，走网站既有兜底链
   const tried = [];
   const down = await cooldowns(env);
   const pref = await getPreferred(env);
 
-  // 有 key 才排 GLM；上次成功的模型置顶，其它保持优先级
-  const glmList = env.GLM_API_KEY
+  // 有 key 且未显式跳过时排 GLM；上次成功的模型置顶，其它保持优先级
+  const glmList = (env.GLM_API_KEY && !skipGlm)
     ? [...FREE_MODELS].sort((a, b) => (a === pref ? -1 : b === pref ? 1 : 0))
     : [];
 
@@ -103,12 +105,14 @@ export async function generate(env, messages, opts) {
     }
   }
 
-  // GLM 全线失败/未配置 → Workers AI 保底
-  try {
-    const r = await callWorkersAI(env, messages, maxTokens, temperature);
-    return { ...r, tier: "workers-ai", tried };
-  } catch (e) {
-    tried.push("workers-ai:" + String(e.message || e).slice(0, 60));
+  // GLM 全线失败/未配置 → Workers AI 保底（glmOnly 时留给上层智能体判定）
+  if (!glmOnly) {
+    try {
+      const r = await callWorkersAI(env, messages, maxTokens, temperature);
+      return { ...r, tier: "workers-ai", tried };
+    } catch (e) {
+      tried.push("workers-ai:" + String(e.message || e).slice(0, 60));
+    }
   }
 
   // 全链失败 → 交给调用方确定性兜底（永远有回答）

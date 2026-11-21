@@ -23,7 +23,12 @@ export async function checkRate(env, ip) {
   return { ok: true };
 }
 export function cacheKey(input) {
-  const base = [String(input.text || "").trim().toLowerCase().replace(/\s+/g, ""), input.exampleId || ""].join("|");
+  const base = [
+    "culture-agent-v2",
+    String(input.text || "").trim().toLowerCase().replace(/\s+/g, ""),
+    input.exampleId || "",
+    String(input.definition || "").slice(0, 120),
+  ].join("|");
   let h = 0;
   for (let i = 0; i < base.length; i++) { h = ((h << 5) - h + base.charCodeAt(i)) | 0; }
   return "culture:cache:" + (h >>> 0).toString(36);
