@@ -2,9 +2,12 @@
 import { ALLOWED_IDS, EXAMPLE_CRITERIA, EXAMPLE_ANCHORS } from "./functions/api/_culture/registry.js";
 import { validateInput } from "./functions/api/_culture/validate.js";
 import { retrieve, hasEvidence } from "./functions/api/_culture/retrieve.js";
-import { buildMessages, validateAnswer } from "./functions/api/_culture/prompt.js";
+import { buildMessages, validateAnswer, EXAMPLE_CRITERIA as PROMPT_CRITERIA } from "./functions/api/_culture/prompt.js";
 
 const fail = [];
+if (Object.keys(PROMPT_CRITERIA || {}).length !== ALLOWED_IDS.length) {
+  fail.push("prompt.js does not re-export full criteria registry");
+}
 const noEvidenceText = "今天天气很好，我想去打篮球和吃披萨，顺便买彩票中奖";
 const bookGroundedText = "本企业依据心文化与企业文化建设顶层设计，明确使命、愿景、价值观，区分信息体、能量体与物质体，通过课程体系、讲师体系、培训体系与运营体系实现知行合一。";
 

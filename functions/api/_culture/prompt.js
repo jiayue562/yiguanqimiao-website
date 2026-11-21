@@ -8,6 +8,7 @@ export const REFUSAL = "依据《生生》与《企业文化顶层设计》两�
 export const PERSONA = "以观其妙书院 · 企业文化知识库评估";
 
 import { EXAMPLE_CRITERIA } from "./registry.js";
+export { EXAMPLE_CRITERIA };
 /* 67 个词条的统一判据在 registry.js；6 个既有示例保留人工精判据。 */
 
 export function buildMessages(result, userText, exampleId) {
