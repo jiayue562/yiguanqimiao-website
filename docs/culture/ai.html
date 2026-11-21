@@ -16,8 +16,10 @@
   .creed { text-align: center; color: #5C564A; font-size: 16.5px; margin-bottom: 24px; }
   .askmock { display: flex; gap: 10px; max-width: 560px; margin: 0 auto; }
   .askmock input { flex: 1; padding: 14px 16px; border: 2px solid #E3DCCB; border-radius: 10px; font-size: 15.5px; font-family: inherit; background: #FFFDF8; }
-  .askmock button { padding: 14px 26px; background: #C9A96A; color: #fff; border: none; border-radius: 10px; font-size: 16px; cursor: not-allowed; font-family: inherit; }
-  .chip { display: inline-block; padding: 6px 12px; border: 1px solid #E3DCCB; border-radius: 999px; font-size: 13.5px; color: #5F5E5A; background: #FFFDF8; margin: 4px; }
+  .askmock button { padding: 14px 26px; background: #C9A96A; color: #fff; border: none; border-radius: 10px; font-size: 16px; cursor: pointer; font-family: inherit; transition: background .15s; }
+  .askmock button:hover { background: #B08E52; }
+  .chip { display: inline-block; padding: 6px 12px; border: 1px solid #E3DCCB; border-radius: 999px; font-size: 13.5px; color: #5F5E5A; background: #FFFDF8; margin: 4px; text-decoration: none; transition: all .15s; }
+  a.chip:hover { background: #FAEEDA; border-color: #C9A96A; color: #854F0B; }
   .feature { display: flex; gap: 12px; margin: 14px 0; }
   .feature .fi { flex: 0 0 34px; font-size: 24px; }
 </style>
@@ -47,9 +49,9 @@
 
   <div class="askmock">
     <input disabled placeholder="例如：我们的价值观「正直诚信」，在晋升时怎么判定？">
-    <button disabled>提问</button>
+    <button type="button" onclick="location.href='../wuxing/rel/advisor.html'">提问</button>
   </div>
-  <p class="muted" style="text-align:center;margin-top:10px">输入框为展示占位，当前不可使用</p>
+  <p class="muted" style="text-align:center;margin-top:10px">本页输入框为展示占位；点「提问」可前往书院已上线的龙龟 AI 顾问体验同类能力</p>
 
   <div style="text-align:center;margin:18px 0">
     <span class="chip">解释条款</span>
