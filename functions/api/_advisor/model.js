@@ -14,7 +14,12 @@ const FREE_MODELS = [
   "glm-4.5-flash",        // 免费·128K·备胎
 ];
 const COOLDOWN_MS = 10 * 60 * 1000;
-const HF_MODEL = "@cf/meta/llama-3.1-8b-instruct-fp8";
+/* Workers AI 模型链：旧 llama-3.1-8b 已被平台下线，改用当前可用的 Text Generation 模型 */
+const HF_MODELS = [
+  "@cf/zai-org/glm-4.7-flash",                    // 首选：GLM 系，中文口径一致
+  "@cf/meta/llama-3.3-70b-instruct-fp8-fast",     // 次选：稳定通用
+  "@cf/mistralai/mistral-small-3.1-24b-instruct", // 末选：多语种
+];
 
 /* 读 KV 熔断记录：返回被临时拉黑的模型集合 */
 async function cooldowns(env) {
@@ -63,9 +68,8 @@ async function callGLM(env, model, messages, maxTokens, temperature) {
 }
 
 /* 单次调用 Workers AI（保底，永远在） */
-async function callWorkersAI(env, messages, maxTokens, temperature) {
+async function callWorkersAI(env, model, messages, maxTokens, temperature) {
   if (!env.AI) throw new Error("no_ai_binding");
-  const model = env.AI_MODEL || HF_MODEL;
   const r = await env.AI.run(model, { messages, max_tokens: maxTokens, temperature });
   // Workers AI 返回形态不一：{response} / {result} / 直接字符串 / {result:{response}}
   let text = "";
@@ -106,12 +110,15 @@ export async function generate(env, messages, opts) {
   }
 
   // GLM 全线失败/未配置 → Workers AI 保底（glmOnly 时留给上层智能体判定）
-  if (!glmOnly) {
-    try {
-      const r = await callWorkersAI(env, messages, maxTokens, temperature);
-      return { ...r, tier: "workers-ai", tried };
-    } catch (e) {
-      tried.push("workers-ai:" + String(e.message || e).slice(0, 60));
+  if (!glmOnly && env.AI) {
+    const aiList = env.AI_MODEL ? [env.AI_MODEL] : HF_MODELS;
+    for (const model of aiList) {
+      try {
+        const r = await callWorkersAI(env, model, messages, maxTokens, temperature);
+        return { ...r, tier: "workers-ai", tried };
+      } catch (e) {
+        tried.push("workers-ai/" + model + ":" + String(e.message || e).slice(0, 60));
+      }
     }
   }
 
@@ -127,6 +134,6 @@ export async function modelStatus(env) {
     workersAIConfigured: !!env.AI,
     preferred: await getPreferred(env),
     cooldown: down,
-    chain: [...FREE_MODELS, "workers-ai", "deterministic-fallback"],
+    chain: [...FREE_MODELS, ...(env.AI_MODEL ? [env.AI_MODEL] : HF_MODELS), "deterministic-fallback"],
   };
 }
