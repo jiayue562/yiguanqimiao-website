@@ -156,6 +156,9 @@ footer a { color: #854F0B; text-decoration: none; }
 .flrow:last-child { border-bottom: none; }
 .flrow .flk { flex: 0 0 108px; background: #F3EFE2; color: #6E400A; font-weight: 700; padding: 14px 16px; text-align: center; }
 .flrow .flv { flex: 1; padding: 14px 18px; line-height: 1.8; }
+.exblock { display: flex; background: #FBFAF4; border: 1px solid #D3D1C7; border-radius: 12px; overflow: hidden; margin: 0 0 8px; }
+.exblock .exk { flex: 0 0 108px; background: #EDE7D2; color: #6E400A; font-weight: 700; padding: 14px 16px; text-align: center; }
+.exblock .exv { flex: 1; padding: 14px 18px; line-height: 1.85; color: #4A4A46; }
 .sublist { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
 .subitem { display: inline-block; background: #FFFDF8; border: 1px solid #D3D1C7; border-radius: 999px; padding: 6px 14px; font-size: 13.5px; color: #5C564A; text-decoration: none; cursor: pointer; transition: all .15s; }
 .subitem:hover { background: #FAEEDA; border-color: #C9A96A; color: #854F0B; }
