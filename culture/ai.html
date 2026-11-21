@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>AI 文化顾问（即将上线）｜企业文化咨询 · 以观其妙书院</title>
-<meta name="description" content="企业文化咨询 AI 助手入口预留：未来可就你的文化手册提问、解释条款、推演裁决。本阶段暂未开放。">
+<title>AI 文化顾问｜企业文化咨询 · 以观其妙书院</title>
+<meta name="description" content="企业文化咨询 AI 助手：只依据《生生》与《企业文化顶层设计》两本书回答，无依据即拒答。">
 <link rel="stylesheet" href="style.css">
 <style>
   .chatbox { max-width: 860px; margin: 0 auto; }
@@ -13,15 +13,27 @@
   .ai-hero .lg { font-size: 64px; line-height: 1; }
   .ai-hero h1 { font-size: 28px; margin: 0; }
   .ai-hero .role { color: #854F0B; font-size: 15px; font-weight: 600; }
-  .creed { text-align: center; color: #5C564A; font-size: 16.5px; margin-bottom: 24px; }
-  .askmock { display: flex; gap: 10px; max-width: 560px; margin: 0 auto; }
-  .askmock input { flex: 1; padding: 14px 16px; border: 2px solid #E3DCCB; border-radius: 10px; font-size: 15.5px; font-family: inherit; background: #FFFDF8; }
-  .askmock button { padding: 14px 26px; background: #C9A96A; color: #fff; border: none; border-radius: 10px; font-size: 16px; cursor: pointer; font-family: inherit; transition: background .15s; }
-  .askmock button:hover { background: #B08E52; }
-  .chip { display: inline-block; padding: 6px 12px; border: 1px solid #E3DCCB; border-radius: 999px; font-size: 13.5px; color: #5F5E5A; background: #FFFDF8; margin: 4px; text-decoration: none; transition: all .15s; }
-  a.chip:hover { background: #FAEEDA; border-color: #C9A96A; color: #854F0B; }
+  .creed { text-align: center; color: #5C564A; font-size: 16.5px; margin-bottom: 20px; }
+  .chatwin { border: 1px solid #D3D1C7; border-radius: 12px; background: #FFFDF8; overflow: hidden; }
+  .chatbar { display: flex; align-items: center; gap: 10px; padding: 10px 16px; background: #F3EFE2; border-bottom: 1px solid #E3DCCB; font-size: 13px; color: #5F5E5A; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: #B08E52; display: inline-block; }
+  .dot.on { background: #3B6D11; }
+  .chatlog { height: 380px; overflow-y: auto; padding: 18px; display: flex; flex-direction: column; gap: 12px; }
+  .msg { max-width: 82%; padding: 11px 14px; border-radius: 12px; font-size: 14.5px; line-height: 1.8; white-space: pre-wrap; word-break: break-word; }
+  .msg.u { align-self: flex-end; background: #854F0B; color: #fff; border-bottom-right-radius: 3px; }
+  .msg.a { align-self: flex-start; background: #F7F5F0; border: 1px solid #E3DCCB; border-bottom-left-radius: 3px; }
+  .msg.sys { align-self: center; background: none; color: #888780; font-size: 12.5px; text-align: center; padding: 4px; }
+  .askrow { display: flex; gap: 10px; padding: 12px 16px; border-top: 1px solid #E3DCCB; background: #FFFCF5; }
+  .askrow input { flex: 1; padding: 12px 14px; border: 1px solid #D3D1C7; border-radius: 9px; font-size: 15px; font-family: inherit; background: #fff; }
+  .askrow input:focus { outline: none; border-color: #C9A96A; box-shadow: 0 0 0 3px rgba(201,169,106,.16); }
+  .askrow button { padding: 12px 22px; background: #854F0B; color: #fff; border: none; border-radius: 9px; font-size: 15px; cursor: pointer; font-family: inherit; }
+  .askrow button:hover { background: #6E400A; }
+  .askrow button:disabled { opacity: .55; cursor: not-allowed; }
+  .chip { display: inline-block; padding: 6px 12px; border: 1px solid #E3DCCB; border-radius: 999px; font-size: 13.5px; color: #5F5E5A; background: #FFFDF8; margin: 4px; cursor: pointer; transition: all .15s; }
+  .chip:hover { background: #FAEEDA; border-color: #C9A96A; color: #854F0B; }
   .feature { display: flex; gap: 12px; margin: 14px 0; }
   .feature .fi { flex: 0 0 34px; font-size: 24px; }
+  .src-note { font-size: 12px; color: #888780; text-align: center; margin-top: 10px; line-height: 1.7; }
 </style>
 </head>
 <body>
@@ -31,7 +43,7 @@
     <a href="index.html">首页</a>
     <a href="service.html">服务介绍</a>
     <a href="about.html">关于我们</a>
-    <a href="ai.html" class="cur">AI 助手<span class="badge" style="font-size:10px;padding:1px 6px">即将上线</span></a>
+    <a href="ai.html" class="cur">AI 助手<span class="badge" style="font-size:10px;padding:1px 6px">已上线</span></a>
     <a href="contact.html">联系咨询</a>
     <a href="../index.html" class="back">← 返回书院</a>
   </nav>
@@ -40,43 +52,89 @@
 <div class="wrap chatbox">
   <div class="ai-slot">
     <div class="ico">🐉</div>
-    <span class="soon">即将上线 · 本阶段预留</span>
+    <span class="soon">有状态 Agent · 已上线</span>
     <h2 style="margin:14px 0 6px">AI 文化顾问</h2>
-    <p class="muted">把手册讲活，把条款讲清。只说手册里有的，判定归规则，我只负责解释。</p>
+    <p class="muted">把手册讲活，把条款讲清。只说两本书里有的，无依据我就说无法判断。</p>
   </div>
 
-  <p class="creed" style="margin-top:28px">参照书院「龙龟AI顾问」形式预留的入口。第二阶段将在此接入完整 AI 功能——现在先把位置与边界说清楚。</p>
-
-  <div class="askmock">
-    <input disabled placeholder="例如：我们的价值观「正直诚信」，在晋升时怎么判定？">
-    <button type="button" onclick="location.href='../wuxing/rel/advisor.html'">提问</button>
-  </div>
-  <p class="muted" style="text-align:center;margin-top:10px">本页输入框为展示占位；点「提问」可前往书院已上线的龙龟 AI 顾问体验同类能力</p>
-
-  <div style="text-align:center;margin:18px 0">
-    <span class="chip">解释条款</span>
-    <span class="chip">推演裁决</span>
-    <span class="chip">查映射关系</span>
-    <span class="chip">验收口径问答</span>
+  <div class="chatwin" style="margin-top:22px">
+    <div class="chatbar"><span class="dot" id="dot"></span><span id="status">正在连接…</span><span style="margin-left:auto">会话记忆已开启</span></div>
+    <div class="chatlog" id="log">
+      <div class="msg sys">依据《生生：文化操作系统》与《企业文化顶层设计》回答 · 每条判断标注出处</div>
+    </div>
+    <div class="askrow">
+      <input id="q" placeholder="例如：企业文化观怎么写才算落地？" autocomplete="off">
+      <button id="send">发送</button>
+    </div>
   </div>
 
-  <h2>规划中的能力（第二阶段）</h2>
+  <div style="text-align:center;margin:14px 0">
+    <span class="chip">企业文化观</span>
+    <span class="chip">使命怎么写</span>
+    <span class="chip">成功观</span>
+    <span class="chip">礼乐仪式</span>
+    <span class="chip">功勋体系</span>
+  </div>
+  <p class="src-note">点击上方标签可直接提问 · 每个浏览器会话独立持久，刷新后仍记得前文</p>
+
+  <h2>能做什么</h2>
   <div class="card">
-    <div class="feature"><div class="fi">📖</div><div><h3 style="margin:0 0 4px">解释条款</h3><p style="margin:0;color:#5C564A">就手册的任意一节提问：这条规定解决什么问题、怎么判定、违反了怎么处理。</p></div></div>
-    <div class="feature"><div class="fi">⚖️</div><div><h3 style="margin:0 0 4px">推演裁决</h3><p style="margin:0;color:#5C564A">两条原则撞车时，按裁决表给出优先级与理由，并提示这是判例还是新冲突。</p></div></div>
-    <div class="feature"><div class="fi">🔗</div><div><h3 style="margin:0 0 4px">查映射关系</h3><p style="margin:0;color:#5C564A">一条价值观对应哪个奖、哪场仪式、哪条红线、哪个纪念日——查得到就算落地。</p></div></div>
-    <div class="feature"><div class="fi">📊</div><div><h3 style="margin:0 0 4px">验收口径问答</h3><p style="margin:0;color:#5C564A">四个验收数怎么取、谁填、多久复测——把「成没成」说成可回答的问题。</p></div></div>
-  </div>
-
-  <div class="academy-link">
-    <div class="al-t"><b>想先看 AI 功能长什么样？</b><br>书院五行人格站的「龙龟AI顾问」已上线，可先去体验同构形式。</div>
-    <a class="btn ghost" href="../wuxing/rel/advisor.html">体验龙龟AI顾问 →</a>
+    <div class="feature"><div class="fi">📖</div><div><h3 style="margin:0 0 4px">解释条款</h3><p style="margin:0;color:#5C564A">就手册的任意一节提问：这条规定解决什么问题、怎么判定。</p></div></div>
+    <div class="feature"><div class="fi">🔗</div><div><h3 style="margin:0 0 4px">查映射关系</h3><p style="margin:0;color:#5C564A">一条价值观对应哪个奖、哪场仪式、哪条红线。</p></div></div>
+    <div class="feature"><div class="fi">⚖️</div><div><h3 style="margin:0 0 4px">有据可查</h3><p style="margin:0;color:#5C564A">每条判断带 [book:书名/章节]；书里没有的，直接说无法判断。</p></div></div>
   </div>
 
   <footer>
-    <p>以观其妙书院 · 企业文化咨询 &nbsp;|&nbsp; AI 功能入口预留，第二阶段实现</p>
+    <p>以观其妙书院 · 企业文化咨询 &nbsp;|&nbsp; AI 文化顾问（有状态 Agent v0.1）</p>
     <p><a href="../index.html">返回书院首页</a> · <a href="index.html">咨询首页</a> · <a href="contact.html">联系咨询</a></p>
   </footer>
 </div>
+
+<script>
+(function(){
+  const WS = "wss://culture-agent.jiayue562.workers.dev/agents/CultureAgent/web";
+  const log = document.getElementById('log');
+  const q = document.getElementById('q');
+  const send = document.getElementById('send');
+  const dot = document.getElementById('dot');
+  const status = document.getElementById('status');
+  let ws = null, queue = [];
+
+  function add(cls, text){
+    const d = document.createElement('div');
+    d.className = 'msg ' + cls;
+    d.textContent = text;
+    log.appendChild(d);
+    log.scrollTop = log.scrollHeight;
+    return d;
+  }
+  function connect(){
+    try { ws = new WebSocket(WS); } catch(e){ return; }
+    ws.onopen = () => { dot.classList.add('on'); status.textContent = '已连接 · 企业文化顾问'; queue.forEach(x => ws.send(x)); queue = []; };
+    ws.onclose = () => { dot.classList.remove('on'); status.textContent = '连接中断 · 3 秒后重连'; setTimeout(connect, 3000); };
+    ws.onerror = () => { status.textContent = '连接异常 · 重试中'; };
+    ws.onmessage = (e) => {
+      const t = e.data && (e.data.text ? e.data.text() : e.data);
+      if (pending) { pending.textContent = t || ''; pending = null; }
+      else add('a', t || '');
+      send.disabled = false;
+    };
+  }
+  let pending = null;
+  function ask(text){
+    if (!text) return;
+    add('u', text);
+    q.value = '';
+    send.disabled = true;
+    pending = add('a', '正在检索书稿…');
+    const payload = JSON.stringify({ type: 'message', text });
+    if (ws && ws.readyState === 1) ws.send(payload); else queue.push(payload);
+  }
+  send.addEventListener('click', () => ask(q.value.trim()));
+  q.addEventListener('keydown', e => { if (e.key === 'Enter') ask(q.value.trim()); });
+  document.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => ask(c.textContent.trim())));
+  connect();
+})();
+</script>
 </body>
 </html>
