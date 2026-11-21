@@ -47,6 +47,20 @@
     <div class="flrow"><div class="flk">填写要点</div><div class="flv">善用卡尼曼锚定效应——标杆锚、标准锚、仪式锚、待遇锚；借鉴国家功勋七要素（类型等级/评授周期/评选机制/颁授机制/勋奖章/待遇/管理）；首批评选须为公认标杆；警惕「地板锚」。</div></div>
     <div class="flrow"><div class="flk">合格</div><div class="flv">每条价值观对应具体奖项；荣誉与实质性利益强绑定；标准公开透明；涉造假泄密者收回勋章及权益；三级荣誉各有评定周期与颁授机制。</div></div>
   </div>
+  <div class="kcheck" data-example="ch-06">
+    <div class="kcheck-h">
+      <div class="kcheck-t">📝 填写内容 · 知识库评估</div>
+      <div class="kcheck-s">依据《生生》与《企业文化顶层设计》两本书判断 · 不引入书外结论</div>
+    </div>
+    <textarea class="kcheck-input" maxlength="1500" placeholder="请按本章要求填写，例如：回答「价值观怎么被奖励」。按价值观分类设计，每条价值观对应一个奖项；三重激励闭环（物质 + 精神 + 发展）；两道红线（价值观一票否决 + ……"></textarea>
+    <div class="kcheck-bar">
+      <span class="kcheck-count">0 / 1500</span>
+      <button type="button" class="btn kcheck-btn">提交评估 →</button>
+    </div>
+    <div class="kcheck-result" hidden></div>
+    <p class="kcheck-note">评估只依据两本书原文；无对应判据时会明确告知「无法判断」，不会勉强评价。</p>
+  </div>
+
   <p class="muted">口径来源：《企业文化框架·通用模板》（按《工具05·企业文化建设共创框架》原文骨架补齐）与《企业文化手册通用模板 v3·定义版（四行体例）》。</p>
 
   <h2>本章小节</h2>
@@ -75,5 +89,49 @@
     <p><a href="index.html">咨询首页</a> · <a href="service.html">服务介绍</a> · <a href="contact.html">联系咨询</a></p>
   </footer>
 </div>
+
+<script>
+(function () {
+  var box = document.querySelector('.kcheck');
+  if (!box) return;
+  var pid = box.getAttribute('data-example');
+  var input = box.querySelector('.kcheck-input');
+  var count = box.querySelector('.kcheck-count');
+  var btn = box.querySelector('.kcheck-btn');
+  var out = box.querySelector('.kcheck-result');
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  function renderCites(cites) {
+    if (!cites || !cites.length) return '';
+    return '<div class="kcheck-src">依据章节：' + cites.map(function(c){
+      return esc((c.book || '') + ' · ' + (c.section || ''));
+    }).join('；') + '</div>';
+  }
+  input.addEventListener('input', function(){ count.textContent = input.value.length + ' / 1500'; });
+  btn.addEventListener('click', function () {
+    var text = input.value.trim();
+    if (text.length < 4) { out.hidden = false; out.className = 'kcheck-result kcheck-err'; out.textContent = '请至少填写 4 个字再提交。'; return; }
+    btn.disabled = true; btn.textContent = '评估中…';
+    out.hidden = false; out.className = 'kcheck-result'; out.innerHTML = '<span class="kcheck-wait">正在依据两本书检索并评估…</span>';
+    fetch('/api/culture-check', {
+      method: 'POST', headers: {'content-type': 'application/json'},
+      body: JSON.stringify({schema: 'culture_check_v1', exampleId: pid, text: text})
+    })
+    .then(function(r){ return r.json().then(function(j){ return {ok: r.ok, j: j}; }); })
+    .then(function(x) {
+      var j = x.j || {};
+      if (!x.ok || !j.ok) { out.className = 'kcheck-result kcheck-err'; out.textContent = '评估服务暂不可用：' + (j.error || '请求失败') + '，请稍后再试。'; return; }
+      var body = esc(j.answer || '').replace(/\n/g, '<br>');
+      var flag = j.refused ? '<div class="kcheck-flag">未检索到书中依据 · 已拒答</div>' :
+                 (j.degraded ? '<div class="kcheck-flag">模型未接通 · 给出原文依据骨架</div>' : '');
+      out.className = 'kcheck-result' + (j.refused ? ' kcheck-refused' : '');
+      out.innerHTML = flag + '<div class="kcheck-answer">' + body + '</div>' + renderCites(j.sources) +
+        '<div class="kcheck-disc">' + esc(j.disclaimer || '') + '</div>';
+    })
+    .catch(function(){ out.className = 'kcheck-result kcheck-err'; out.textContent = '网络错误，请检查连接后重试。'; })
+    .finally(function(){ btn.disabled = false; btn.textContent = '提交评估 →'; });
+  });
+})();
+</script>
+
 </body>
 </html>

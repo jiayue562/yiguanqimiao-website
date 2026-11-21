@@ -1,5 +1,6 @@
-/* _culture/validate.js — 输入校验：防注入、限长、示例 ID 白名单 */
-const ALLOWED = new Set(["01-1-1", "01-1-6", "02-2-1", "04-4-3", "05-5-1", "06-6-5"]);
+/* _culture/validate.js — 输入校验：防注入、限长、词条 ID 白名单（统一注册表） */
+import { ALLOWED_IDS } from "./registry.js";
+const ALLOWED = new Set(ALLOWED_IDS);
 
 export function validateInput(body) {
   if (!body || typeof body !== "object") return { ok: false, error: "bad_request" };

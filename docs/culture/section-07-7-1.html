@@ -47,6 +47,20 @@
     <div class="flrow"><div class="flk">填写要点</div><div class="flv">分层分岗课程清单。</div></div>
     
   </div>
+  <div class="kcheck" data-example="07-7-1">
+    <div class="kcheck-h">
+      <div class="kcheck-t">📝 填写内容 · 知识库评估</div>
+      <div class="kcheck-s">依据《生生》与《企业文化顶层设计》两本书判断 · 不引入书外结论</div>
+    </div>
+    <textarea class="kcheck-input" maxlength="1500" placeholder="请按本节要求填写，例如：新员工课程 / 干部课程 / 技能课程 / 文化课程……"></textarea>
+    <div class="kcheck-bar">
+      <span class="kcheck-count">0 / 1500</span>
+      <button type="button" class="btn kcheck-btn">提交评估 →</button>
+    </div>
+    <div class="kcheck-result" hidden></div>
+    <p class="kcheck-note">评估只依据两本书原文；无对应判据时会明确告知「无法判断」，不会勉强评价。</p>
+  </div>
+
   <p class="muted">口径来源：《企业文化框架·通用模板》对应小节原文；示例中的公司名、人名、数据已脱敏，不得照抄。</p>
 
   <h2>本章合格标准</h2>
@@ -64,5 +78,49 @@
     <p><a href="index.html">咨询首页</a> · <a href="service.html">服务介绍</a> · <a href="contact.html">联系咨询</a></p>
   </footer>
 </div>
+
+<script>
+(function () {
+  var box = document.querySelector('.kcheck');
+  if (!box) return;
+  var pid = box.getAttribute('data-example');
+  var input = box.querySelector('.kcheck-input');
+  var count = box.querySelector('.kcheck-count');
+  var btn = box.querySelector('.kcheck-btn');
+  var out = box.querySelector('.kcheck-result');
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  function renderCites(cites) {
+    if (!cites || !cites.length) return '';
+    return '<div class="kcheck-src">依据章节：' + cites.map(function(c){
+      return esc((c.book || '') + ' · ' + (c.section || ''));
+    }).join('；') + '</div>';
+  }
+  input.addEventListener('input', function(){ count.textContent = input.value.length + ' / 1500'; });
+  btn.addEventListener('click', function () {
+    var text = input.value.trim();
+    if (text.length < 4) { out.hidden = false; out.className = 'kcheck-result kcheck-err'; out.textContent = '请至少填写 4 个字再提交。'; return; }
+    btn.disabled = true; btn.textContent = '评估中…';
+    out.hidden = false; out.className = 'kcheck-result'; out.innerHTML = '<span class="kcheck-wait">正在依据两本书检索并评估…</span>';
+    fetch('/api/culture-check', {
+      method: 'POST', headers: {'content-type': 'application/json'},
+      body: JSON.stringify({schema: 'culture_check_v1', exampleId: pid, text: text})
+    })
+    .then(function(r){ return r.json().then(function(j){ return {ok: r.ok, j: j}; }); })
+    .then(function(x) {
+      var j = x.j || {};
+      if (!x.ok || !j.ok) { out.className = 'kcheck-result kcheck-err'; out.textContent = '评估服务暂不可用：' + (j.error || '请求失败') + '，请稍后再试。'; return; }
+      var body = esc(j.answer || '').replace(/\n/g, '<br>');
+      var flag = j.refused ? '<div class="kcheck-flag">未检索到书中依据 · 已拒答</div>' :
+                 (j.degraded ? '<div class="kcheck-flag">模型未接通 · 给出原文依据骨架</div>' : '');
+      out.className = 'kcheck-result' + (j.refused ? ' kcheck-refused' : '');
+      out.innerHTML = flag + '<div class="kcheck-answer">' + body + '</div>' + renderCites(j.sources) +
+        '<div class="kcheck-disc">' + esc(j.disclaimer || '') + '</div>';
+    })
+    .catch(function(){ out.className = 'kcheck-result kcheck-err'; out.textContent = '网络错误，请检查连接后重试。'; })
+    .finally(function(){ btn.disabled = false; btn.textContent = '提交评估 →'; });
+  });
+})();
+</script>
+
 </body>
 </html>

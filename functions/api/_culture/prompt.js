@@ -7,15 +7,8 @@ export const REFUSAL = "依据《生生》与《企业文化顶层设计》两�
 
 export const PERSONA = "以观其妙书院 · 企业文化知识库评估";
 
-/* 6 个示例的标准口径（来自《企业文化框架·通用模板》，作为评估的"当前示例要求"） */
-export const EXAMPLE_CRITERIA = {
-  "01-1-1": { name: "1.1 文化观", requirement: "回答「我们的文化信条是什么」，用一两句凝练的话说清信仰体系；可提炼为四层结构并每条配释义。" },
-  "01-1-6": { name: "1.6 成功观", requirement: "回答「什么是成功、成功标准是什么」；成功公式须含「修心」因子，并区分物质体、能量体、信息体三个层面。" },
-  "02-2-1": { name: "2.1 使命", requirement: "一句话宜短；每个关键词做「三体解构」（物质体／能量体／信息体），防止使命悬空。" },
-  "04-4-3": { name: "4.3 誓词", requirement: "模板固定，填空处填本企业使命／价值观／愿景；是把承诺说出来的「每日复诵」。" },
-  "05-5-1": { name: "5.1 宣誓仪式", requirement: "流程可重复、可照做，精确到主持词；先诵后唱，固定流程／时间／场合。" },
-  "06-6-5": { name: "6.5 公司级荣誉", requirement: "按七字段填写；荣誉按价值观分类设计，每条价值观对应奖项，警惕「地板锚」。" },
-};
+import { EXAMPLE_CRITERIA } from "./registry.js";
+/* 67 个词条的统一判据在 registry.js；6 个既有示例保留人工精判据。 */
 
 export function buildMessages(result, userText, exampleId) {
   const crit = (exampleId && EXAMPLE_CRITERIA[exampleId]) || null;
