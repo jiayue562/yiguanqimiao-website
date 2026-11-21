@@ -16,7 +16,11 @@ import { retrieve, hasEvidence } from "./retrieve.js";
 import { buildMessages, fallbackAnswer, REFUSAL, DISCLAIMER, PERSONA } from "./prompt.js";
 import { generate } from "../_advisor/model.js";
 
-const STRICT_MIN = 120;
+/* GLM 回答质量门禁：不达标就切换兜底，不让用户收到"看似有话、实则无用"的回答
+ * 达标四要件：① ≥300 字 ② 带 [book:] 出处 ③ 锚定词条 ④ 复述并用词条定义作判断标准
+ */
+export const MIN_ANSWER_CHARS = 300;
+const STRICT_MIN = MIN_ANSWER_CHARS;
 
 function coreName(name) {
   return String(name || "")
@@ -24,6 +28,15 @@ function coreName(name) {
     .replace(/^\d+(?:\.\d+)*\s*/, "")
     .replace(/（[^）]*）/g, "")
     .trim();
+}
+
+/* 抽取定义中的关键片段，用于判断模型是否真的把定义当标尺用了。
+ * 取定义里连续的 6 个汉字作为指纹；定义过短则退化为整句。 */
+function definitionFingerprint(definition) {
+  const s = String(definition || "").replace(/\s+/g, "");
+  if (!s) return "";
+  const m = s.match(/[\u4e00-\u9fa5]{6,}/);
+  return m ? m[0].slice(0, 8) : s.slice(0, 8);
 }
 
 export function resolveTerm(exampleId) {
@@ -41,7 +54,11 @@ export function resolveTerm(exampleId) {
 export function assessQuality(answer, result, term, opts) {
   const s = String(answer || "").trim();
   if (!s) return { ok: false, reason: "empty" };
-  if (opts && opts.allowFallback && /模型暂未接通|原文摘录/.test(s)) {
+  // 确定性兜底走专属校验：必须达到 300 字、带出处、含定义判据与三段结构
+  if (opts && opts.allowFallback && /判断骨架|模型暂未接通|原文摘录/.test(s)) {
+    if (s.length < STRICT_MIN) return { ok: false, reason: "too_short" };
+    if (!/\[book:/.test(s)) return { ok: false, reason: "no_citation" };
+    if (!/判断标准|定义/.test(s)) return { ok: false, reason: "definition_not_used_as_criterion" };
     return { ok: true, reason: "deterministic_fallback" };
   }
   if (s.length < STRICT_MIN) return { ok: false, reason: "too_short" };
@@ -51,6 +68,13 @@ export function assessQuality(answer, result, term, opts) {
   }
   const core = coreName(term && term.name);
   if (core && !s.includes(core)) return { ok: false, reason: "term_not_anchored" };
+  // 词条定义必须被当作判断标准：答案需出现「定义/判断标准/边界/标尺」等判据词，
+  // 且复述定义的关键片段（去重空格后比对），否则视为没按定义判断。
+  const hasCriterionWord = /定义|判断标准|判断标尺|划定边界|边界|界定/.test(s);
+  const fp = definitionFingerprint(term && term.definition);
+  const compact = s.replace(/\s+/g, "");
+  const quotesDef = fp ? compact.includes(fp) : false;
+  if (!hasCriterionWord || !quotesDef) return { ok: false, reason: "definition_not_used_as_criterion" };
   const parts = ["符合之处", "不符合之处", "改写建议"].filter(x => s.includes(x)).length;
   if (parts < 2) return { ok: false, reason: "missing_structure" };
   if (/作为(?:一个)?(?:AI|人工智能|语言模型)/i.test(s)) return { ok: false, reason: "meta_chatter" };
@@ -124,7 +148,7 @@ export async function runCultureAgent({ text, exampleId }, env) {
 
   // 第一路：GLM 优先，独立判定，避免"有输出但答非所问"直接进入用户眼前
   let gen = await generate(env, messages, {
-    maxTokens: 1100, temperature: 0.3, glmOnly: true,
+    maxTokens: 1800, temperature: 0.3, glmOnly: true,
   });
   tried.push(...(gen.tried || []));
   let quality = assessQuality(gen.text, result, term);
@@ -134,7 +158,7 @@ export async function runCultureAgent({ text, exampleId }, env) {
   if (!quality.ok) {
     switched = true;
     gen = await generate(env, strictMessages, {
-      maxTokens: 1100, temperature: 0.35, skipGlm: true,
+      maxTokens: 1800, temperature: 0.35, skipGlm: true,
     });
     tried.push(...(gen.tried || []));
     quality = assessQuality(gen.text, result, term, { allowFallback: gen.tier === "fallback" });
@@ -143,7 +167,7 @@ export async function runCultureAgent({ text, exampleId }, env) {
   // 最终保底：模型链全断时，用知识库原文摘录，保证稳定且有出处
   if (!gen.text || (!quality.ok && gen.tier !== "fallback")) {
     gen = {
-      text: fallbackAnswer(result),
+      text: fallbackAnswer(result, term),
       model: "deterministic-fallback",
       tier: "fallback",
       tried: [],

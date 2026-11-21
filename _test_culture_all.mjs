@@ -3,7 +3,7 @@ import { ALLOWED_IDS, EXAMPLE_CRITERIA, EXAMPLE_ANCHORS } from "./functions/api/
 import { validateInput } from "./functions/api/_culture/validate.js";
 import { retrieve, hasEvidence } from "./functions/api/_culture/retrieve.js";
 import { buildMessages, validateAnswer, EXAMPLE_CRITERIA as PROMPT_CRITERIA } from "./functions/api/_culture/prompt.js";
-import { resolveTerm, assessQuality, runCultureAgent } from "./functions/api/_culture/agent.js";
+import { resolveTerm, assessQuality, runCultureAgent, MIN_ANSWER_CHARS } from "./functions/api/_culture/agent.js";
 
 const fail = [];
 if (Object.keys(PROMPT_CRITERIA || {}).length !== ALLOWED_IDS.length) {
@@ -27,7 +27,8 @@ for (const id of ALLOWED_IDS) {
 
   const msgs = buildMessages({ chunks: [] }, crit.requirement, id, term);
   if (!msgs[0].content.includes("[book:书名/章节]")) fail.push(`${id}: no citation rule`);
-  if (!msgs[1].content.includes("词条定义·逻辑起点")) fail.push(`${id}: definition not used as starting point`);
+  if (!msgs[1].content.includes("词条定义·判断标准")) fail.push(`${id}: definition not used as criterion`);
+  if (!msgs[1].content.includes("不少于 300 字")) fail.push(`${id}: 300-char rule missing in prompt`);
   if (!msgs[1].content.includes(crit.name)) fail.push(`${id}: name missing in prompt`);
 }
 
@@ -52,18 +53,26 @@ for (const id of ALLOWED_IDS) {
 }
 
 // 4. GLM 回答质量门禁：好答案放行，坏答案必须触发兜底
+// 新要求：定义作判断标准 + 不少于 300 字
 const probeResult = { chunks: [{ book: "生生", section: "卷二", text: "信息体、能量体、物质体三体并建。" }], hit: 3 };
 const probeTerm = resolveTerm("01-1-1");
-const goodAnswer = "文化观：符合之处是你抓住了心文化之根与本的部分表述。" +
-  "不符合之处及依据是未把文化观与信息体、能量体、物质体的关系说清，书稿反复强调三体并建。" +
-  "改写建议：先写清本企业信什么，再按物质体、能量体、信息体分别落到行为边界，逐条写清每条信条的释义与可观察行为，避免只留一句口号。[book:生生/卷二]";
+const DEF = probeTerm.definition;
+const goodAnswer =
+  "【词条定义·判断标准】文化观：" + DEF +
+  " 我据以判断的标准是：先看填写内容是否落在「我们信什么」这一定义边界内，再用书稿原文核对内容口径；定义管对不对题，原文管内容对不对。\n" +
+  "【符合之处】你写到「以食载道、信仰为本」，落在文化观信条范围之内，方向正确，且与书稿把心文化之根归于信仰为本的表述一致。[book:生生/卷一]\n" +
+  "【不符合之处及依据】你没有把信条展开为可背诵、有出处的 1-3 条，也没区分根、本、路、果四层；书稿明确四层结构，并要求每条信条配释义，因此这部分不符合本节词条要求。[book:生生/卷二]\n" +
+  "【改写建议】先写清本企业信什么，再按根、本、路、果四层各列一条信条并配释义；每条都标注出处，最后再回到定义复核是否仍在文化观边界内，避免只留一句口号。[book:生生/卷二]";
+if (String(goodAnswer).length < MIN_ANSWER_CHARS) fail.push("test goodAnswer shorter than MIN_ANSWER_CHARS");
 if (!assessQuality(goodAnswer, probeResult, probeTerm).ok) fail.push("good answer rejected by quality gate");
+const longEnough = "x".repeat(MIN_ANSWER_CHARS + 20);
 for (const [label, bad] of [
   ["empty", ""],
   ["too_short", "文化观符合之处"],
-  ["no_citation", "文化观符合之处是你抓住了根本。不符合之处及依据是没有出处。改写建议是重写一遍。"],
-  ["term_not_anchored", "这段内容整体符合组织操作系统的口径。不符合之处及依据是没有三体。改写建议是补齐。 [book:生生/卷二]"],
-  ["missing_structure", "文化观整体方向正确，但缺少结构。请把内容写得更具体。[book:生生/卷二]"],
+  ["no_citation", DEF + " 符合之处是你抓住了根本。不符合之处及依据是没有出处。改写建议是重写一遍。" + longEnough],
+  ["term_not_anchored", "这段内容整体符合组织操作系统的口径。" + DEF + " 不符合之处及依据是没有三体。改写建议是补齐。 [book:生生/卷二]" + longEnough],
+  ["definition_not_used_as_criterion", "文化观整体方向正确。" + longEnough + " 符合之处略。不符合之处及依据见原文。改写建议重写。[book:生生/卷二]"],
+  ["missing_structure", DEF + " 这段内容整体方向正确，但缺少结构。请把内容写得更具体。" + longEnough + " [book:生生/卷二]"],
 ]) {
   if (assessQuality(bad, probeResult, probeTerm).ok) fail.push(`bad answer accepted: ${label}`);
 }
@@ -77,6 +86,8 @@ if (!degraded.ok || degraded.refused) fail.push("agent fallback path not answere
 if (!degraded.switched || !degraded.degraded || degraded.tier !== "fallback") fail.push("fallback switch flags invalid");
 if (!String(degraded.answer || "").includes("[book:")) fail.push("fallback answer missing citation");
 if (!degraded.term || !degraded.term.definition) fail.push("result missing term definition");
+if (String(degraded.answer || "").length < MIN_ANSWER_CHARS) fail.push("fallback answer shorter than 300 chars");
+if (!/判断标准|定义/.test(String(degraded.answer || ""))) fail.push("fallback answer missing definition criterion");
 
 // 6. 观察项 + 非法 ID + 出处校验
 let grounded = 0;
