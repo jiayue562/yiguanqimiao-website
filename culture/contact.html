@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>联系咨询｜预约企业文化诊断 · 以观其妙书院</title>
+<meta name="description" content="联系以观其妙书院企业文化咨询：说说你企业现在的文化状况，我们从一次定向诊断开始。">
+<link rel="canonical" href="https://yiguanqimiao-website.pages.dev/culture/contact.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="../index.html">以观其妙书院<span class="brand-sub">/ 企业文化咨询</span></a>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="service.html">服务介绍</a>
+    <a href="about.html">关于我们</a>
+    <a href="ai.html">AI 助手<span class="badge" style="font-size:10px;padding:1px 6px">即将上线</span></a>
+    <a href="contact.html" class="cur">联系咨询</a>
+    <a href="../index.html" class="back">← 返回书院</a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <h1 style="text-align:center">联系咨询</h1>
+  <p style="text-align:center" class="lead-p">说说你企业现在的文化状况，我们从一次定向诊断开始。</p>
+
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+    <div class="card" style="margin:0;text-align:center"><div style="font-size:26px">🧭</div><h3 style="margin:6px 0">第一步</h3><p class="muted" style="margin:0">免费初谈，明确这次做什么、不做什么</p></div>
+    <div class="card" style="margin:0;text-align:center"><div style="font-size:26px">📊</div><h3 style="margin:6px 0">第二步</h3><p class="muted" style="margin:0">出差距表，判断哪些章该写厚</p></div>
+    <div class="card" style="margin:0;text-align:center"><div style="font-size:26px">🤝</div><h3 style="margin:6px 0">第三步</h3><p class="muted" style="margin:0">确认范围与报价，进入共创</p></div>
+  </div>
+
+  <h2>填写咨询意向</h2>
+  <div class="card">
+    <form id="contactForm" onsubmit="return submitForm(event)">
+      <div class="formrow">
+        <label for="name">怎么称呼您 *</label>
+        <input id="name" name="name" required maxlength="40" placeholder="姓名或职务">
+      </div>
+      <div class="formrow">
+        <label for="org">企业名称</label>
+        <input id="org" name="org" maxlength="80" placeholder="公司/组织名称">
+      </div>
+      <div class="formrow">
+        <label for="contact">联系方式 *</label>
+        <input id="contact" name="contact" required maxlength="100" placeholder="手机号、邮箱或微信">
+        <div class="formnote">我们只用这个联系您，不对外公开。</div>
+      </div>
+      <div class="formrow">
+        <label for="stage">企业所处阶段</label>
+        <select id="stage" name="stage">
+          <option value="">请选择</option>
+          <option>初创期（先解决生存）</option>
+          <option>成长期（准备系统建设文化）</option>
+          <option>成熟期（文化需要迭代升级）</option>
+          <option>连锁/多店（需要统一口径）</option>
+          <option>其他</option>
+        </select>
+      </div>
+      <div class="formrow">
+        <label for="need">现在最想解决的文化问题</label>
+        <textarea id="need" name="need" maxlength="1000" placeholder="例如：员工说不清公司的价值观；各店处理同类事情口径不一；制度有了但没人认……"></textarea>
+      </div>
+      <button class="btn" type="submit">提交咨询意向 →</button>
+    </form>
+    <div class="okmsg" id="okmsg">
+      <b>已记录（本地演示）。</b><br>
+      当前为静态站点，表单暂未接入后端。正式上线后可对接邮件或企业微信。您也可直接通过书院公众号联系悟空。
+    </div>
+    <p class="formnote" style="margin-top:14px">说明：本页表单为第一阶段静态版本，提交仅在本地提示，不会发送到服务器。正式联系方式以书院公众号为准。</p>
+  </div>
+
+  <h2>其他联系路径</h2>
+  <ul>
+    <li><b>书院公众号</b>：以观其妙书院 — 后台留言「企业文化咨询」</li>
+    <li><b>书院主站</b>：<a href="../index.html" style="color:#854F0B">yiguanqimiao-website.pages.dev</a> — 了解完整知识体系与五行人格测评</li>
+    <li><b>五行人格测评</b>：<a href="../wuxing/index.html" style="color:#854F0B">先做一次自测</a>，有助于初谈时更快定位</li>
+  </ul>
+
+  <footer>
+    <p>以观其妙书院 · 企业文化咨询 &nbsp;|&nbsp; 你的信息仅用于本次沟通</p>
+    <p><a href="../index.html">返回书院首页</a> · <a href="index.html">咨询首页</a> · <a href="service.html">服务介绍</a></p>
+  </footer>
+</div>
+
+<script>
+function submitForm(e) {
+  e.preventDefault();
+  document.getElementById('okmsg').style.display = 'block';
+  document.getElementById('contactForm').reset();
+  window.scrollTo({ top: document.getElementById('okmsg').offsetTop - 120, behavior: 'smooth' });
+  return false;
+}
+</script>
+</body>
+</html>
